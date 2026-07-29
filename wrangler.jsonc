@@ -6,4 +6,7 @@
     "directory": "./dist",
     "not_found_handling": "single-page-application",
   },
+  // Apex domain is bound here so `wrangler deploy` is the single source of truth.
+  // Requires the cloakyard.com zone to already exist in this Cloudflare account.
+  "routes": [{ "pattern": "cloakyard.com", "custom_domain": true }],
 }

@@ -4,8 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-The toolchain is **Vite+**, driven by the `vp` CLI — not `pnpm run`. `package.json` intentionally
-defines only a `deploy` script; everything else is a built-in `vp` command.
+The toolchain is **Vite+**, driven by the `vp` CLI — not `pnpm run`. `package.json` defines only
+`deploy` and a thin `build` alias (the latter exists so Cloudflare Workers Builds can auto-detect a
+build command); everything else is a built-in `vp` command.
 
 | Command         | Purpose                                            |
 | --------------- | -------------------------------------------------- |
