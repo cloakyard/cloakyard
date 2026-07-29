@@ -696,7 +696,7 @@ svg {
 }
 
 .tool-card--img {
-  --tool-accent: oklch(0.55 0.2 301);
+  --tool-accent: #f5613a;
 }
 
 .tool-card--drop {
