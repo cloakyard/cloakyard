@@ -1,4 +1,5 @@
-import { ArrowDownRight, GitBranch } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, GitBranch } from "lucide-react";
+import { productivityTools } from "../data/tools";
 
 export function Hero() {
   return (
@@ -36,14 +37,54 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="hero-directory" aria-label="Cloakyard directory summary">
-          <div>
-            <strong>Productivity tools</strong>
-            <p>PDFs · Résumés · Images · Downloads</p>
+        <div className="hero-system" aria-label="Cloakyard private toolkit">
+          <div className="hero-system-head">
+            <span>Cloakyard / Private toolkit</span>
+            <span className="hero-system-state">
+              <i aria-hidden="true" />
+              04 focused tools
+            </span>
           </div>
-          <div>
-            <strong>Fun experiments</strong>
-            <p>Physics · Sound · The curious web</p>
+
+          <div className="hero-system-body">
+            <div className="hero-system-intro">
+              <div className="hero-system-mark" aria-hidden="true">
+                <img src="/cloakyard-mark.svg" alt="" width="64" height="64" />
+              </div>
+              <p>One shared foundation</p>
+              <strong>
+                Bring the work.
+                <span>Keep the data.</span>
+              </strong>
+              <small>Local-first · Open source · No accounts</small>
+            </div>
+
+            <div className="hero-tool-grid">
+              {productivityTools.map((tool, index) => {
+                const Icon = tool.icon;
+
+                return (
+                  <a
+                    className={`hero-tool hero-tool--${tool.slug}`}
+                    href={tool.href}
+                    key={tool.slug}
+                    aria-label={`Open ${tool.name}`}
+                  >
+                    <span className="hero-tool-top">
+                      <span className="hero-tool-index">0{index + 1}</span>
+                      <Icon size={20} strokeWidth={1.6} aria-hidden="true" />
+                    </span>
+                    <span className="hero-tool-name">
+                      Cloak<b>{tool.shortName}</b>
+                    </span>
+                    <span className="hero-tool-bottom">
+                      <span>{tool.privacy}</span>
+                      <ArrowUpRight size={16} aria-hidden="true" />
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
