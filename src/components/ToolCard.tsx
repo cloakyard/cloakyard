@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { ArrowUpRight, GitBranch } from "lucide-react";
 import type { ProductivityTool } from "../data/tools";
 
 export function ToolCard({ tool }: { tool: ProductivityTool }) {
-  const Icon = tool.icon;
+  const [markUnavailable, setMarkUnavailable] = useState(false);
+  const FallbackIcon = tool.icon;
 
   return (
     <article className={`tool-card tool-card--${tool.slug}`}>
@@ -12,8 +14,21 @@ export function ToolCard({ tool }: { tool: ProductivityTool }) {
           {tool.status}
         </span>
       </div>
-      <div className="tool-icon" aria-hidden="true">
-        <Icon size={25} strokeWidth={1.6} />
+      <div
+        className={`tool-icon${markUnavailable ? " tool-icon--fallback" : ""}`}
+        aria-hidden="true"
+      >
+        {markUnavailable ? (
+          <FallbackIcon size={25} strokeWidth={1.6} />
+        ) : (
+          <img
+            src={tool.mark}
+            alt=""
+            width="60"
+            height="60"
+            onError={() => setMarkUnavailable(true)}
+          />
+        )}
       </div>
       <div className="tool-copy">
         <h3>

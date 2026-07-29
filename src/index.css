@@ -732,15 +732,27 @@ svg {
 }
 
 .tool-icon {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3.75rem;
+  height: 3.75rem;
   display: grid;
   place-items: center;
   margin-top: clamp(2rem, 6vw, 4rem);
+  border-radius: 50%;
+  box-shadow: 0 0.8rem 1.8rem -1rem color-mix(in oklab, var(--tool-accent) 42%, transparent);
+}
+
+.tool-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tool-icon--fallback {
   border: 1px solid color-mix(in oklab, var(--tool-accent) 30%, var(--rule));
   border-radius: var(--radius);
   color: var(--tool-accent);
   background: color-mix(in oklab, var(--tool-accent) 8%, var(--surface));
+  box-shadow: none;
 }
 
 .tool-copy {
