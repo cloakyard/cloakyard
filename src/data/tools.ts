@@ -19,6 +19,7 @@ export interface ProductivityTool extends YardProject {
   platform: string;
   privacy: string;
   status: "Live" | "Beta";
+  mark: string;
   icon: LucideIcon;
 }
 
@@ -34,6 +35,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "Web · PWA",
     privacy: "Files stay local",
     status: "Live",
+    mark: "https://pdf.cloakyard.com/cloakpdf-mark.svg",
     icon: FileText,
   },
   {
@@ -47,6 +49,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "Web · PWA",
     privacy: "Drafts stay local",
     status: "Live",
+    mark: "https://resume.cloakyard.com/cloakresume-mark.svg",
     icon: PanelsTopLeft,
   },
   {
@@ -60,6 +63,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "Web · PWA",
     privacy: "Pixels stay local",
     status: "Live",
+    mark: "https://img.cloakyard.com/cloakimg-mark.svg",
     icon: ImageIcon,
   },
   {
@@ -73,6 +77,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "macOS · Native",
     privacy: "Zero telemetry",
     status: "Beta",
+    mark: "https://drop.cloakyard.com/cloakdrop-mark.svg",
     icon: Download,
   },
 ];

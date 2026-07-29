@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "vp build",
-    "deploy": "vp check && vp build && wrangler deploy"
+    "deploy": "vp check && vp build && wrangler deploy",
+    "generate:og": "node scripts/render-og.mjs"
   },
   "dependencies": {
     "lucide-react": "1.27.0",

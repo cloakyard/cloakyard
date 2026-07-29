@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200, initial-scale=1" />
+    <title>Cloakyard Open Graph artwork</title>
+    <style>
+      @font-face {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: block;
+        src: url("../public/fonts/archivo-latin.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "JetBrains Mono";
+        font-style: normal;
+        font-weight: 100 800;
+        font-display: block;
+        src: url("../public/fonts/jetbrains-mono-latin.woff2") format("woff2");
+      }
+
+      :root {
+        --paper: oklch(0.975 0.009 255);
+        --ink: oklch(0.225 0.031 255);
+        --ink-3: oklch(0.52 0.03 255);
+        --rule: oklch(0.865 0.022 255);
+        --rule-strong: oklch(0.72 0.032 255);
+        --accent: oklch(0.546 0.245 262.881);
+        --font-sans: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .card {
+        width: 1200px;
+        height: 630px;
+        padding: 28px 44px 40px;
+        background:
+          radial-gradient(
+            circle at 79% 25%,
+            color-mix(in oklab, var(--accent) 3.5%, transparent),
+            transparent 29%
+          ),
+          var(--paper);
+      }
+
+      .masthead {
+        height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--rule-strong);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .brand img {
+        width: 58px;
+        height: 58px;
+        display: block;
+        border-radius: 50%;
+        box-shadow: 0 10px 24px color-mix(in oklab, var(--accent) 20%, transparent);
+      }
+
+      .wordmark {
+        font-size: 39px;
+        font-weight: 820;
+        letter-spacing: -0.035em;
+        line-height: 1;
+      }
+
+      .wordmark span {
+        color: var(--accent);
+      }
+
+      .masthead-meta {
+        display: grid;
+        justify-items: end;
+        gap: 7px;
+        font-family: var(--font-mono);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.075em;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .masthead-meta strong {
+        color: var(--accent);
+        font-weight: inherit;
+      }
+
+      .masthead-meta span {
+        color: var(--ink-3);
+      }
+
+      .hero {
+        padding-top: 57px;
+      }
+
+      .kicker {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--accent);
+        font-family: var(--font-mono);
+        font-size: 16px;
+        font-weight: 620;
+        letter-spacing: 0.075em;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .kicker::before {
+        width: 28px;
+        height: 1px;
+        background: currentColor;
+        content: "";
+      }
+
+      h1 {
+        max-width: 1080px;
+        margin: 28px 0 0;
+        font-size: 78px;
+        font-weight: 850;
+        letter-spacing: -0.07em;
+        line-height: 0.86;
+      }
+
+      h1 span {
+        display: block;
+        margin-top: 0.12em;
+        color: var(--accent);
+      }
+
+      .directory {
+        height: 107px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 66px;
+        border-block: 1px solid var(--rule-strong);
+      }
+
+      .directory section {
+        display: grid;
+        align-content: center;
+        gap: 11px;
+        padding: 0 27px;
+        border-right: 1px solid var(--rule);
+      }
+
+      .directory section:first-child {
+        padding-left: 0;
+      }
+
+      .directory section:last-child {
+        border-right: 0;
+      }
+
+      .directory strong {
+        font-size: 19px;
+        font-weight: 760;
+        letter-spacing: -0.025em;
+        line-height: 1;
+      }
+
+      .directory p {
+        margin: 0;
+        color: var(--ink-3);
+        font-size: 14px;
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <header class="masthead">
+        <div class="brand">
+          <img src="../public/cloakyard-mark.svg" alt="" />
+          <div class="wordmark">Cloak<span>yard</span></div>
+        </div>
+        <div class="masthead-meta">
+          <strong>Open source</strong>
+          <span>cloakyard.com</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="kicker">Privacy by default</div>
+        <h1>
+          Useful tools.
+          <span>Your data stays yours.</span>
+        </h1>
+      </section>
+
+      <footer class="directory">
+        <section>
+          <strong>Productivity tools</strong>
+          <p>PDFs · Résumés · Images · Downloads</p>
+        </section>
+        <section>
+          <strong>Fun experiments</strong>
+          <p>Physics · Sound · The curious web</p>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
