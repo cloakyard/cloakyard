@@ -1,5 +1,4 @@
 import { ArrowUpRight, GitBranch, Scale } from "lucide-react";
-import { allTools } from "../data/tools";
 import { Brand } from "./Brand";
 
 export function Footer() {
@@ -10,14 +9,11 @@ export function Footer() {
           <Brand inverse />
           <p>Independent software from Sumit Sahoo.</p>
         </div>
-        <nav aria-label="Cloakyard products">
-          <p>Explore the yard</p>
-          {allTools.map((tool) => (
-            <a key={tool.slug} href={tool.href}>
-              {tool.name}
-              <ArrowUpRight size={13} aria-hidden="true" />
-            </a>
-          ))}
+        <nav aria-label="Page navigation">
+          <p>On this page</p>
+          <a href="#tools">Tools</a>
+          <a href="#experiments">Experiments</a>
+          <a href="#principles">Principles</a>
         </nav>
         <nav aria-label="Cloakyard links">
           <p>Elsewhere</p>

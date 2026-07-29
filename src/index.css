@@ -617,7 +617,7 @@ svg {
   box-shadow: 0 0 0 3px color-mix(in oklab, var(--positive) 14%, transparent);
 }
 
-.hero-system {
+.hero-proof {
   margin-top: clamp(3.75rem, 7vw, 7rem);
   overflow: hidden;
   border: 1px solid var(--rule-strong);
@@ -627,7 +627,7 @@ svg {
   animation: directory-in 760ms 170ms var(--ease-out) both;
 }
 
-.hero-system-head {
+.hero-proof-head {
   min-height: 3.4rem;
   display: flex;
   align-items: center;
@@ -643,14 +643,14 @@ svg {
   text-transform: uppercase;
 }
 
-.hero-system-state {
+.hero-proof-state {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
   white-space: nowrap;
 }
 
-.hero-system-state i {
+.hero-proof-state i {
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
@@ -658,229 +658,274 @@ svg {
   box-shadow: 0 0 0 3px color-mix(in oklab, var(--positive) 14%, transparent);
 }
 
-.hero-system-body {
+.hero-proof-body {
   display: grid;
-  grid-template-columns: minmax(17rem, 0.72fr) minmax(0, 1.28fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.55fr);
   min-height: 23rem;
 }
 
-.hero-system-intro {
+.hero-flow {
   position: relative;
   isolation: isolate;
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   overflow: hidden;
-  padding: clamp(1.5rem, 3.2vw, 2.6rem);
-  color: var(--night-muted);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
   background:
     radial-gradient(
-      circle at 26% 13%,
-      color-mix(in oklab, var(--accent) 92%, white 8%) 0 4rem,
-      transparent 13rem
+      circle at 50% 42%,
+      color-mix(in oklab, var(--accent) 8%, transparent),
+      transparent 32%
     ),
-    var(--night);
+    var(--surface);
 }
 
-.hero-system-intro::before,
-.hero-system-intro::after {
+.hero-flow::before {
   content: "";
   position: absolute;
+  inset: 0;
   z-index: -1;
+  opacity: 0.48;
+  background-image:
+    linear-gradient(var(--rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+  background-size: 2.7rem 2.7rem;
+  mask-image: radial-gradient(circle at 50% 45%, black, transparent 78%);
   pointer-events: none;
 }
 
-.hero-system-intro::before {
-  inset: 0;
-  opacity: 0.42;
-  background-image:
-    linear-gradient(var(--night-rule) 1px, transparent 1px),
-    linear-gradient(90deg, var(--night-rule) 1px, transparent 1px);
-  background-size: 2.6rem 2.6rem;
-  mask-image: linear-gradient(to bottom, black, transparent 88%);
-}
-
-.hero-system-intro::after {
-  top: -9rem;
-  left: -8rem;
-  width: 23rem;
-  height: 23rem;
-  border: 1px solid color-mix(in oklab, white 18%, transparent);
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 3rem color-mix(in oklab, white 4%, transparent),
-    0 0 0 6rem color-mix(in oklab, white 3%, transparent);
-}
-
-.hero-system-mark {
-  position: absolute;
-  top: clamp(1.5rem, 3vw, 2.5rem);
-  left: clamp(1.5rem, 3.2vw, 2.6rem);
-  width: 4.5rem;
-  height: 4.5rem;
-  display: grid;
-  place-items: center;
-  border: 1px solid color-mix(in oklab, white 24%, transparent);
-  border-radius: 50%;
-  background: color-mix(in oklab, var(--night) 58%, transparent);
-  box-shadow:
-    0 1.2rem 3rem -1.25rem black,
-    inset 0 0 0 0.45rem color-mix(in oklab, white 4%, transparent);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-}
-
-.hero-system-mark img {
-  width: 3.25rem;
-  height: 3.25rem;
-}
-
-.hero-system-intro > p,
-.hero-system-intro > small {
+.hero-proof-label {
+  color: var(--ink-3);
   font-family: var(--font-mono);
   font-size: 0.62rem;
+  font-weight: 580;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.hero-system-intro > p {
-  color: oklch(0.76 0.14 251);
-}
-
-.hero-system-intro > strong {
-  display: block;
-  max-width: 14ch;
-  margin-top: 0.8rem;
-  color: var(--night-ink);
-  font-size: clamp(2rem, 3vw, 3rem);
-  font-weight: 780;
-  letter-spacing: -0.055em;
-  line-height: 0.96;
-}
-
-.hero-system-intro > strong span {
-  display: block;
-  color: oklch(0.76 0.14 251);
-}
-
-.hero-system-intro > small {
-  margin-top: 1.5rem;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--night-rule);
-  color: var(--night-muted);
-}
-
-.hero-tool-grid {
+.hero-flow-track {
   min-width: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.12fr) auto minmax(0, 1fr);
+  align-items: center;
+  margin-top: clamp(2rem, 4vw, 3.4rem);
 }
 
-.hero-tool {
-  --hero-tool-tone: var(--accent);
+.hero-flow-node {
   min-width: 0;
-  min-height: 11.5rem;
+  min-height: 13rem;
   display: flex;
   flex-direction: column;
-  padding: clamp(1.25rem, 2.6vw, 2rem);
-  border-right: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  background:
-    linear-gradient(
-      145deg,
-      color-mix(in oklab, var(--hero-tool-tone) 6%, transparent),
-      transparent 52%
-    ),
-    var(--surface);
+  padding: clamp(1.1rem, 2vw, 1.55rem);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: color-mix(in oklab, var(--surface) 92%, transparent);
+  box-shadow: 0 1.4rem 3rem -2.6rem color-mix(in oklab, var(--night) 44%, transparent);
   transition:
-    background 200ms ease,
-    box-shadow 220ms ease;
+    border-color 200ms ease,
+    transform 240ms var(--ease-out);
 }
 
-.hero-tool:nth-child(2n) {
-  border-right: 0;
+.hero-flow-node:hover {
+  border-color: color-mix(in oklab, var(--accent) 48%, var(--rule-strong));
+  transform: translateY(-3px);
 }
 
-.hero-tool:nth-last-child(-n + 2) {
-  border-bottom: 0;
-}
-
-.hero-tool--resume {
-  --hero-tool-tone: oklch(0.52 0.15 154);
-}
-
-.hero-tool--img {
-  --hero-tool-tone: #f5613a;
-}
-
-.hero-tool--drop {
-  --hero-tool-tone: oklch(0.54 0.11 224);
-}
-
-.hero-tool:hover {
+.hero-flow-node--local {
+  min-height: 15.5rem;
+  border-color: var(--night-rule);
+  color: var(--night-muted);
   background:
-    linear-gradient(
-      145deg,
-      color-mix(in oklab, var(--hero-tool-tone) 12%, transparent),
-      transparent 58%
+    radial-gradient(
+      circle at 50% 18%,
+      color-mix(in oklab, var(--accent) 36%, transparent),
+      transparent 45%
     ),
-    var(--surface);
-  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--hero-tool-tone) 42%, transparent);
+    var(--night);
+  box-shadow: 0 2rem 4rem -2.8rem color-mix(in oklab, var(--accent) 64%, transparent);
 }
 
-.hero-tool-top,
-.hero-tool-bottom {
+.hero-flow-node--local:hover {
+  border-color: color-mix(in oklab, oklch(0.76 0.14 251) 58%, var(--night-rule));
+}
+
+.hero-flow-node-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  color: var(--accent);
 }
 
-.hero-tool-top {
-  color: var(--hero-tool-tone);
-}
-
-.hero-tool-index,
-.hero-tool-bottom {
+.hero-flow-node-top b,
+.hero-flow-node small {
   font-family: var(--font-mono);
-  font-size: 0.61rem;
+  font-size: 0.58rem;
+  font-weight: 560;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.hero-tool-index {
+.hero-flow-node-top b,
+.hero-flow-node small {
   color: var(--ink-3);
 }
 
-.hero-tool-name {
+.hero-flow-node strong {
   margin-top: auto;
-  padding-top: 1.5rem;
+  padding-top: 1.4rem;
   color: var(--ink);
-  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
   font-weight: 760;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.04em;
   line-height: 1;
 }
 
-.hero-tool-name b {
-  color: var(--hero-tool-tone);
-  font-weight: inherit;
+.hero-flow-node small {
+  margin-top: 0.6rem;
+  line-height: 1.45;
+  text-transform: none;
 }
 
-.hero-tool-bottom {
-  margin-top: 0.8rem;
+.hero-flow-node--local .hero-flow-node-top {
+  color: oklch(0.76 0.14 251);
+}
+
+.hero-flow-node--local .hero-flow-node-top b,
+.hero-flow-node--local small {
+  color: var(--night-muted);
+}
+
+.hero-flow-node--local strong {
+  color: var(--night-ink);
+}
+
+.hero-flow-mark {
+  width: 3.65rem;
+  height: 3.65rem;
+  display: grid;
+  place-items: center;
+  margin-top: 1.1rem;
+  border: 1px solid color-mix(in oklab, white 22%, transparent);
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--night) 56%, transparent);
+  box-shadow:
+    0 1rem 2.4rem -1rem black,
+    inset 0 0 0 0.35rem color-mix(in oklab, white 4%, transparent);
+}
+
+.hero-flow-mark img {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.hero-flow-arrow {
+  width: clamp(1.6rem, 2.8vw, 2.8rem);
+  display: grid;
+  place-items: center;
+  color: var(--rule-strong);
+}
+
+.hero-flow-caption {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: clamp(1.6rem, 3vw, 2.2rem);
   color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 0.61rem;
+  letter-spacing: 0.025em;
 }
 
-.hero-tool-bottom svg {
+.hero-flow-caption svg {
   flex: none;
-  color: var(--hero-tool-tone);
-  transition: transform 200ms var(--ease-out);
+  color: var(--positive);
 }
 
-.hero-tool:hover .hero-tool-bottom svg {
-  transform: translate(2px, -2px);
+.hero-boundary {
+  min-width: 0;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-left: 1px solid var(--night-rule);
+  color: var(--night-muted);
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      color-mix(in oklab, var(--accent) 18%, transparent),
+      transparent 42%
+    ),
+    var(--night);
+}
+
+.hero-boundary-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  color: color-mix(in oklab, var(--night-muted) 72%, transparent);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.055em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.hero-boundary-head b {
+  color: oklch(0.76 0.14 251);
+  font-weight: 580;
+  white-space: nowrap;
+}
+
+.hero-boundary ul {
+  margin: clamp(2.5rem, 5vw, 4rem) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-boundary li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.8rem;
+  padding-block: 1rem;
+  border-top: 1px solid var(--night-rule);
+}
+
+.hero-boundary li:last-child {
+  border-bottom: 1px solid var(--night-rule);
+}
+
+.hero-boundary li > svg {
+  color: oklch(0.71 0.13 25);
+}
+
+.hero-boundary li span {
+  min-width: 0;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.hero-boundary li strong {
+  color: var(--night-ink);
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.hero-boundary li small,
+.hero-boundary li > b {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-weight: 520;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.hero-boundary li small {
+  color: color-mix(in oklab, var(--night-muted) 72%, transparent);
+}
+
+.hero-boundary li > b {
+  color: oklch(0.76 0.14 251);
+  white-space: nowrap;
 }
 
 /* Productivity tools ---------------------------------------------------- */
@@ -1549,6 +1594,15 @@ svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero-proof-body {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-boundary {
+    border-top: 1px solid var(--night-rule);
+    border-left: 0;
+  }
+
   .section-heading {
     gap: 1.75rem;
   }
@@ -1605,16 +1659,22 @@ svg {
     grid-template-columns: 1fr;
   }
 
-  .hero-system-body {
+  .hero-flow-track {
     grid-template-columns: 1fr;
   }
 
-  .hero-system-intro {
-    min-height: 20rem;
+  .hero-flow-node {
+    min-height: 10.5rem;
   }
 
-  .hero-system-intro > strong {
-    font-size: clamp(2.25rem, 8vw, 3.5rem);
+  .hero-flow-node--local {
+    min-height: 13.5rem;
+  }
+
+  .hero-flow-arrow {
+    width: auto;
+    height: 2.6rem;
+    transform: rotate(90deg);
   }
 
   .tool-grid {
@@ -1661,27 +1721,9 @@ svg {
     font-size: clamp(3rem, 15.5vw, 4.35rem);
   }
 
-  .hero-system-head {
+  .hero-proof-head {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .hero-tool-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-tool {
-    min-height: 10.5rem;
-    border-right: 0;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .hero-tool:nth-last-child(2) {
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .hero-tool:last-child {
-    border-bottom: 0;
   }
 
   .tool-meta {
