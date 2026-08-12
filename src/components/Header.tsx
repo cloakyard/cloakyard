@@ -34,12 +34,28 @@ export function Header() {
               <GitBranch size={15} aria-hidden="true" />
               <span>Source</span>
             </a>
-            <details className="mobile-menu">
-              <summary aria-label="Toggle navigation">
+            <div
+              className="mobile-menu"
+              onKeyDown={(event) => {
+                if (event.key === "Escape") {
+                  event.currentTarget.querySelector<HTMLElement>("[popover]")?.hidePopover();
+                }
+              }}
+            >
+              <button
+                type="button"
+                popoverTarget="mobile-navigation"
+                aria-label="Toggle navigation"
+              >
                 <Menu className="menu-open" size={20} aria-hidden="true" />
                 <X className="menu-close" size={20} aria-hidden="true" />
-              </summary>
-              <div className="mobile-menu-panel">
+              </button>
+              <div
+                className="mobile-menu-panel"
+                id="mobile-navigation"
+                popover="auto"
+                aria-label="Navigation menu"
+              >
                 <p>Navigate</p>
                 <nav aria-label="Mobile navigation">
                   {nav.map((item) => (
@@ -47,7 +63,7 @@ export function Header() {
                       key={item.href}
                       href={item.href}
                       onClick={(event) => {
-                        event.currentTarget.closest("details")?.removeAttribute("open");
+                        event.currentTarget.closest<HTMLElement>("[popover]")?.hidePopover();
                       }}
                     >
                       {item.label}
@@ -56,7 +72,7 @@ export function Header() {
                 </nav>
                 <small>Open source · Privacy first</small>
               </div>
-            </details>
+            </div>
           </div>
         </div>
         <div className="header-rule" aria-hidden="true" />
