@@ -1641,6 +1641,7 @@ svg {
 
   .source-link {
     width: 44px;
+    min-height: 44px;
     padding-inline: 0;
   }
 
