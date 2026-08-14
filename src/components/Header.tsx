@@ -75,7 +75,6 @@ export function Header() {
             </div>
           </div>
         </div>
-        <div className="header-rule" aria-hidden="true" />
       </header>
     </>
   );
