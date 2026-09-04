@@ -2,8 +2,9 @@ allowBuilds:
   esbuild: true
   workerd: true
 peerDependencyRules:
-  allowedVersions:
-    vite: 0.2.9
+  allowAny:
+    - vite
+    - vitest
 minimumReleaseAgeExclude:
   - miniflare@4.20260722.1 || 5.20260804.1-alpha
   - "@voidzero-dev/vite-plus-core@0.2.9"
