@@ -6,7 +6,10 @@
   "scripts": {
     "build": "vp build",
     "deploy": "vp check && vp build && wrangler deploy",
-    "generate:og": "node scripts/render-og.mjs"
+    "generate:og": "node scripts/render-og.mjs",
+    "design:check": "node scripts/check-air-design.mjs",
+    "design:inventory": "node scripts/air-inventory.mjs",
+    "design:sync": "node scripts/sync-air-design.mjs"
   },
   "dependencies": {
     "lucide-react": "1.52.0",

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "1.0.0",
+  "note": "Presence in this inventory is not audit or validation. Preserve evidence when updating.",
+  "surfaces": [
+    {
+      "path": "src/App.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/Brand.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/ExperimentSection.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/Header.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/Hero.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/Principles.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/ToolCard.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/components/ToolSection.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/index.css",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "path": "src/main.tsx",
+      "kind": "app-surface",
+      "sourceReviewed": false,
+      "airImplemented": false,
+      "validated": false,
+      "states": [],
+      "viewports": [],
+      "evidence": [],
+      "notes": ""
+    }
+  ]
+}
