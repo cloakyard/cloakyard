@@ -676,8 +676,9 @@
         font-family: var(--air-font);
         font-size: 27px;
       }
-      .resume-paper {
+      #document > .resume-paper {
         font-family: var(--air-font);
+        min-height: 0;
       }
       .resume-role {
         font-size: 12px;
@@ -705,6 +706,11 @@
         overflow: auto;
         padding: 24px;
         scrollbar-gutter: stable;
+      }
+      .workbench[data-app="resume"] .inspector-content {
+        width: 100%;
+        max-width: 560px;
+        margin-inline: auto;
       }
       .panel-actions {
         display: none;
@@ -786,6 +792,174 @@
         max-height: 140px;
         margin-top: 16px;
       }
+      .writing-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+      .writing-head label {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .writing-tools {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+      }
+      .writing-tools .air-icon-button {
+        min-width: var(--air-control-compact);
+        min-height: var(--air-control-compact);
+        padding: 4px;
+        border-color: transparent;
+        background: transparent;
+      }
+      .writing-tools .air-icon-button[aria-pressed="true"] {
+        background: var(--air-surface-soft);
+        color: var(--air-ink);
+      }
+      .writing-tools code {
+        font: 500 13px var(--air-font-mono);
+      }
+      .writing-field {
+        resize: vertical;
+        field-sizing: content;
+        min-height: 112px;
+        white-space: pre-wrap;
+      }
+      .headline-field {
+        resize: vertical;
+        field-sizing: content;
+        min-height: 64px;
+      }
+      .resume-entry + .resume-entry {
+        border-top: 1px solid var(--air-line);
+        margin-top: 24px;
+        padding-top: 24px;
+      }
+      .entry-heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .entry-heading h4 {
+        font: 500 14px/1.5 var(--air-font);
+      }
+      .entry-heading span {
+        font-size: 12px;
+        color: var(--air-ink-muted);
+      }
+      .resume-entry .field-group {
+        margin-bottom: 12px;
+      }
+      .entry-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 8px;
+      }
+      .entry-actions .air-button {
+        padding-inline: 8px;
+        font-size: 12px;
+      }
+      .date-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .date-trigger {
+        text-align: left;
+        cursor: pointer;
+        font-variant-numeric: tabular-nums;
+      }
+      .resume-entry .air-check-label {
+        min-height: 44px;
+        margin-bottom: 12px;
+      }
+      .resume-study-note {
+        margin-top: 24px;
+      }
+      .resume-paper .resume-role,
+      .resume-paper .resume-summary,
+      .resume-paper .resume-detail {
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+      }
+      .resume-paper ul {
+        margin: 0 0 12px;
+        padding-left: 12px;
+      }
+      .resume-paper li {
+        font-size: 10px;
+      }
+      .resume-template-choice {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        text-align: left;
+      }
+      .resume-template-choice[aria-pressed="true"] {
+        background: var(--air-surface-soft);
+        border-color: var(--air-line-control);
+        color: var(--air-ink);
+      }
+      .resume-template-choice span {
+        font-size: 12px;
+        color: var(--air-ink-secondary);
+      }
+      #date-dialog {
+        width: min(360px, calc(100% - 32px));
+        overscroll-behavior: contain;
+      }
+      @media (max-width: 640px) {
+        #date-dialog {
+          width: 100%;
+        }
+      }
+      .date-months {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 4px;
+        margin-top: 16px;
+      }
+      .date-months .air-button {
+        min-height: 44px;
+        padding-inline: 4px;
+        border-color: transparent;
+        background: transparent;
+      }
+      .date-months .air-button[aria-pressed="true"] {
+        background: var(--air-surface-soft);
+        color: var(--air-ink);
+        border-color: var(--air-line-control);
+      }
+      #date-dialog .air-field {
+        font-size: 16px;
+      }
+      #date-dialog .dialog-actions {
+        flex-wrap: wrap;
+      }
+      .study-announcement {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+      .resume-undo {
+        margin-block: 12px;
+      }
+      @media (pointer: coarse) {
+        .writing-tools .air-icon-button {
+          min-width: 44px;
+          min-height: 44px;
+        }
+      }
       .contact-row + .contact-row {
         border-top: 1px solid var(--air-line);
         padding-top: 24px;
@@ -849,8 +1023,9 @@
         justify-content: space-between;
         align-items: center;
         gap: 12px;
-        margin-bottom: 10px;
-        font-size: 12px;
+        margin-bottom: 8px;
+        font-size: 13px;
+        line-height: 1.4;
         font-weight: 500;
       }
       .field-title output {
@@ -867,7 +1042,7 @@
         min-height: 32px;
       }
       .inspector .air-field {
-        font-size: 13px;
+        font-size: 14px;
       }
       .inspector .air-segments > button {
         font-size: 12px;
@@ -1858,7 +2033,8 @@
         .dialog-close {
           min-height: 44px;
         }
-        .swatch {
+        .swatch,
+        .inspector .swatch {
           width: 44px;
           height: 44px;
         }
@@ -2185,8 +2361,8 @@
         </div>
         <p class="air-help" style="margin-top: 28px">
           Reduced motion preserves feedback without spatial movement. Theme changes are immediate.
-          This study uses a static light field; the optional production shader is a separate
-          performance and accessibility review.
+          This study currently uses a static light field. A working Shaders light treatment and its
+          performance/accessibility review are required before the design is locked.
         </p>
       </section>
     </main>
@@ -2218,6 +2394,37 @@
           </button>
         </div>
       </form>
+    </dialog>
+    <p class="study-announcement" id="resume-announcement" role="status"></p>
+    <dialog
+      class="air-dialog"
+      id="date-dialog"
+      aria-labelledby="date-title"
+      aria-describedby="date-help"
+    >
+      <h2 id="date-title">Choose date</h2>
+      <p id="date-help">Choose a month and year, or keep just the year.</p>
+      <label class="air-label" for="date-year">Year</label
+      ><input
+        class="air-field"
+        id="date-year"
+        inputmode="numeric"
+        maxlength="4"
+        autocomplete="off"
+        aria-describedby="date-error"
+      />
+      <p class="air-help air-help--error" id="date-error" role="status" hidden>
+        Enter a four-digit year.
+      </p>
+      <div class="date-months" role="group" aria-label="Month"></div>
+      <label class="air-check-label"
+        ><input class="air-check" id="date-year-only" type="checkbox" />Year only</label
+      >
+      <div class="dialog-actions">
+        <button class="air-button air-button--quiet" id="date-clear">Clear</button
+        ><button class="air-button" id="date-cancel" autofocus>Cancel</button
+        ><button class="air-button air-button--primary" id="date-apply">Use date</button>
+      </div>
     </dialog>
     <script>
       const paths = {
@@ -2297,7 +2504,7 @@
             ["file", "Contact"],
             ["work", "Experience"],
             ["template", "Template"],
-            ["sliders", "Format"],
+            ["sliders", "Options"],
           ],
           active: 0,
         },
@@ -2307,6 +2514,86 @@
         title: "Product Designer",
         about: "I help small teams turn complex problems into clear, considered experiences.",
       };
+      const resumeOptions = { paper: "A4", colour: "#34534D", treatment: "sans" };
+      let resumeNextId = 3,
+        removedRole = null;
+      const resumeRoles = [
+        {
+          id: 1,
+          role: "Product Designer",
+          company: "North Studio",
+          location: "Remote",
+          start: "Aug 2022",
+          end: "Sep 2026",
+          current: true,
+          detail:
+            "Designing **useful tools** with care for the details.\nHelping a small team build a clearer design language.",
+        },
+        {
+          id: 2,
+          role: "Designer",
+          company: "Fieldwork",
+          location: "Bengaluru",
+          start: "2020",
+          end: "Jul 2022",
+          current: false,
+          detail: "Turned complex workflows into approachable everyday experiences.",
+        },
+      ];
+      const richFormats = [
+        ["bold", "Bold", "**", "**", "<b>B</b>"],
+        ["italic", "Italic", "*", "*", "<i>I</i>"],
+        ["underline", "Underline", "<u>", "</u>", "<u>U</u>"],
+        ["code", "Code", "`", "`", "<code>&lt;/&gt;</code>"],
+      ];
+      function richField(label, id, value, extra = "") {
+        return `<div class="field-group"><div class="writing-head"><label for="${id}">${label}</label><div class="writing-tools" role="group" aria-label="${label} formatting">${richFormats.map(([key, name, , , glyph]) => `<button class="air-icon-button" aria-label="${name} · ${label}" aria-pressed="false" data-format="${key}" data-writing="${id}">${glyph}</button>`).join("")}</div><textarea class="air-field writing-field" id="${id}" data-rich ${extra} rows="4">${escapeValue(value)}</textarea></div>`;
+      }
+      function roleMarkup(role, i) {
+        const input = (label, key) =>
+          field(
+            `<label for="role-${role.id}-${key}">${label}</label>`,
+            `<input class="air-field" id="role-${role.id}-${key}" data-role="${role.id}" data-key="${key}" value="${escapeValue(role[key])}"/>`,
+          );
+        const date = (label, key) =>
+          field(
+            `<label id="role-${role.id}-${key}-label">${label}</label>`,
+            `<button class="air-field date-trigger" id="role-${role.id}-${key}" aria-labelledby="role-${role.id}-${key}-label role-${role.id}-${key}" aria-haspopup="dialog" data-date="${key}" data-role="${role.id}" ${key === "end" && role.current ? "disabled" : ""}>${key === "end" && role.current ? "Present" : escapeValue(role[key]) || "Choose date…"}</button>`,
+          );
+        return `<section class="resume-entry" data-entry="${role.id}" aria-label="Experience ${i + 1}"><div class="entry-heading"><h4>Experience ${i + 1}</h4><span>${i + 1} of ${resumeRoles.length}</span></div>${input("Role", "role")}${input("Company", "company")}${input("Location", "location")}<div class="date-row">${date("Start", "start")}${date("End", "end")}</div><label class="air-check-label"><input type="checkbox" class="air-check" data-current="${role.id}" ${role.current ? "checked" : ""}/>I currently work here</label>${richField("Highlights", `role-${role.id}-detail`, role.detail, `data-role="${role.id}" data-key="detail"`)}<p class="air-help">One highlight per line in this study.</p><div class="entry-actions"><button class="air-button air-button--quiet" data-role-move="${role.id}" data-direction="-1" aria-label="Move experience ${i + 1} up" ${i === 0 ? "disabled" : ""}>Move up</button><button class="air-button air-button--quiet" data-role-move="${role.id}" data-direction="1" aria-label="Move experience ${i + 1} down" ${i === resumeRoles.length - 1 ? "disabled" : ""}>Move down</button><button class="air-button air-button--quiet" data-role-remove="${role.id}" aria-label="Remove experience ${i + 1}">Remove</button></div></section>`;
+      }
+      function paintResume() {
+        if (currentApp !== "resume") return;
+        const paper = doc.querySelector(".resume-paper");
+        paper.querySelector("h3").textContent = profile.name || "Your name";
+        paper.querySelector(".resume-role").textContent = profile.title;
+        paper.querySelector(".resume-summary").replaceChildren(...renderRich(profile.about));
+        paper.querySelector(".resume-experience").innerHTML = resumeRoles
+          .map(
+            (role) =>
+              `<p><strong>${escapeValue(role.role)} · ${escapeValue(role.company)}</strong><br/>${escapeValue(role.location)}<br/>${escapeValue(role.start)}${role.start && (role.current || role.end) ? " — " : ""}${role.current ? "Present" : escapeValue(role.end)}</p><ul data-preview-role="${role.id}"></ul>`,
+          )
+          .join("");
+        resumeRoles.forEach((role) => {
+          const list = paper.querySelector(`[data-preview-role="${role.id}"]`);
+          role.detail
+            .split("\n")
+            .filter((line) => line.trim())
+            .forEach((line) => {
+              const li = document.createElement("li");
+              li.className = "resume-detail";
+              li.append(...renderRich(line));
+              list.append(li);
+            });
+        });
+        paper.querySelectorAll("h3,h4").forEach((el) => (el.style.color = resumeOptions.colour));
+        paper.style.fontFamily =
+          resumeOptions.treatment === "serif" ? "Georgia, serif" : "var(--air-font)";
+
+        paper.querySelector(".paper-note").textContent =
+          `${resumeOptions.paper} · simplified preview, no pagination`;
+        fitDocument();
+      }
       const signatureDraft = {
         mode: "draw",
         ink: false,
@@ -2328,7 +2615,7 @@
       const pdfMarkup =
         '<article class="paper"><div class="paper-label">Field notes · October</div><h3>A little space<br/>to think.</h3><p>Good work starts with a clear page.<br/>And a little room to make it your own.</p><div class="paper-rule"></div><h4>What matters most</h4><p>Keep the useful things close.<br/>Let <mark>everything else</mark> breathe.</p><div class="document-extra"><h4>Make room for the next idea</h4><p>A thought, a sketch, a small improvement.<br/>Sometimes that’s all it takes.</p></div><p class="paper-note">01 / A quieter kind of workspace.</p></article>';
       const resumeMarkup =
-        '<article class="paper resume-paper"><div class="paper-label">Product designer</div><h3>Alex Morgan</h3><div class="resume-role">Thoughtful systems. Useful experiences.</div><div class="paper-rule"></div><h4>ABOUT</h4><p>I help small teams turn complex problems into clear, considered experiences.</p><h4>EXPERIENCE</h4><p><strong>Product Designer · North Studio</strong><br/>2022 — Present</p><p>Designing tools that help people do their best work, with care for the details.</p><div class="document-extra"><h4>EDUCATION</h4><p>Bachelor of Design<br/>2016 — 2020</p></div><p class="paper-note">Sample résumé content</p></article>';
+        '<article class="paper resume-paper"><h3>Alex Morgan</h3><div class="resume-role"></div><div class="paper-rule"></div><h4>ABOUT</h4><p class="resume-summary"></p><h4>EXPERIENCE</h4><div class="resume-experience"></div><p class="paper-note"></p></article>';
       const imageMarkup =
         '<div class="image-art"><svg viewBox="0 0 600 500" role="img" aria-label="Illustrated coastal landscape for the image-editor design preview"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#aabdc8"/><stop offset="1" stop-color="#e7dfce"/></linearGradient><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#6d929e"/><stop offset="1" stop-color="#92b1b4"/></linearGradient><linearGradient id="sand" x2=".5" y2="1"><stop stop-color="#ddd0b4"/><stop offset="1" stop-color="#a58664"/></linearGradient></defs><path fill="url(#sky)" d="M0 0h600v500H0z"/><circle cx="428" cy="125" r="36" fill="#f4ead2" opacity=".8"/><path fill="url(#sea)" d="M0 232c138-10 268 3 600-4v272H0z"/><path d="M0 304c118-85 261-11 302 30 47 45 184 21 298 3v163H0z" fill="url(#sand)"/><path d="M0 297c143-76 252-1 304 39 58 39 191 22 296 6" fill="none" stroke="#edf0e5" stroke-opacity=".85" stroke-width="4"/><path d="M0 374c127-19 195 11 279 65l81 61H0z" fill="#8c9271"/><path d="M0 410c153-45 195 29 253 90H0z" fill="#65765b"/><path d="M0 246h600M215 272h289M80 283h202" stroke="#eef4ef" stroke-opacity=".25"/></svg><span class="image-tag">Sample illustration</span></div>';
       function field(title, content) {
@@ -2519,12 +2806,9 @@
             ) +
             field(
               '<label for="person-title">Professional title</label>',
-              '<input class="air-field" id="person-title" value="Product Designer"/>',
+              '<textarea class="air-field headline-field" id="person-title" rows="2" aria-describedby="headline-help">Product Designer</textarea><p class="air-help" id="headline-help">The app supports four rendered lines. This study keeps all your text.</p>',
             ) +
-            field(
-              '<label for="person-about">About you</label>',
-              '<textarea class="air-field" id="person-about" rows="4">I help small teams turn complex problems into clear, considered experiences.</textarea>',
-            ) +
+            richField("About you", "person-about", profile.about) +
             '<p class="panel-tip">' +
             icon("lock") +
             "<span>Your story stays on your device.</span></p>";
@@ -2607,38 +2891,32 @@
             slider("Luminance", "hsl-" + colourBand + "-luminance", 0, "", -50, 50);
         if (currentApp === "resume" && a.active === 2)
           content =
-            field(
-              '<label for="role-name">Role</label>',
-              '<input class="air-field" id="role-name" value="Product Designer"/>',
-            ) +
-            field(
-              '<label for="company-name">Company</label>',
-              '<input class="air-field" id="company-name" value="North Studio"/>',
-            ) +
-            field(
-              '<label for="start-year">Start year</label>',
-              '<input class="air-field" id="start-year" type="number" value="2022"/>',
-            ) +
-            '<label class="air-check-label"><input class="air-check" type="checkbox" checked/>I currently work here</label>';
+            resumeRoles.map(roleMarkup).join("") +
+            `<div class="resume-undo" ${removedRole ? "" : "hidden"}><p class="air-help">Experience removed.</p><button class="air-button" id="undo-role">Undo removal</button></div><button class="air-button" id="add-role">Add experience</button><p class="air-help resume-study-note">Changes stay in this tab. The app retains separate rich-text bullets, full history and document saving.</p>`;
         if (currentApp === "resume" && a.active === 3)
           content =
-            field(
-              "Document style",
-              '<div class="air-segments" aria-label="Document style"><button aria-pressed="true" data-document-font="sans">Clean</button><button aria-pressed="false" data-document-font="serif">Editorial</button></div>',
-            ) +
-            '<p class="air-help">The document can have its own character. Its controls stay in the Air family.</p><div class="panel-separator"></div><p class="panel-tip">' +
-            icon("template") +
-            "<span>These sample treatments are design previews, not the full template gallery.</span></p>";
+            '<p class="air-help">Two typography studies. The app’s full template library and layouts will be preserved.</p><div class="panel-separator"></div>' +
+            [
+              ["sans", "Clean", "System sans"],
+              ["serif", "Editorial", "Serif"],
+            ]
+              .map(
+                ([key, title, description]) =>
+                  `<button class="air-button resume-template-choice" data-document-font="${key}" aria-pressed="${resumeOptions.treatment === key}">${title}<span>${description}</span></button>`,
+              )
+              .join("") +
+            '<p class="air-help">These are simplified treatments, not production templates.</p>';
         if (currentApp === "resume" && a.active === 4)
           content =
             field(
               '<label for="paper-size">Paper size</label>',
-              '<select class="air-field" id="paper-size"><option>A4</option><option>US Letter</option></select>',
+              `<select class="air-field" id="paper-size"><option ${resumeOptions.paper === "A4" ? "selected" : ""}>A4</option><option ${resumeOptions.paper === "US Letter" ? "selected" : ""}>US Letter</option></select>`,
             ) +
-            slider("Text size", "text-size", 50, "") +
-            '<label class="air-check-label"><input class="air-check" type="checkbox" checked/>Keep sections together</label><p class="panel-tip">' +
-            icon("info") +
-            "<span>Formatting changes belong to the document, not the app theme.</span></p>";
+            field(
+              '<label for="resume-colour">Primary colour</label>',
+              `<input class="air-field" id="resume-colour" value="${resumeOptions.colour}" spellcheck="false" aria-describedby="resume-colour-help"/><p class="air-help" id="resume-colour-help" aria-live="polite">Six-digit hex, for example #34534D.</p><div class="swatches">${["#34534D", "#285AD7", "#202329", "#854C37"].map((colour, i) => `<button class="swatch" data-resume-colour="${colour}" aria-label="${["Forest", "Blue", "Graphite", "Clay"][i]} document colour" aria-pressed="${resumeOptions.colour === colour}" style="--swatch:${colour}"><i></i></button>`).join("")}</div>`,
+            ) +
+            '<p class="air-help">Paper stays white in both themes. Colour belongs to your document.</p><div class="panel-separator"></div><button class="air-button" id="resume-save">Save résumé · JSON</button><p class="air-help">PDF export and editable JSON saving are separate actions in the app. This study creates no files.</p>';
         if (currentApp === "resume" && a.active === 1)
           content =
             contacts
@@ -2738,17 +3016,19 @@
         if (id === "resume") area.insertBefore(inspector, area.querySelector(".canvas-host"));
         else area.append(inspector);
         if (id === "pdf") paintHighlight();
-        if (id === "resume") {
-          doc.querySelector("h3").textContent = profile.name;
-          doc.querySelector(".resume-role").textContent = profile.title;
-          doc.querySelector(".resume-paper p").textContent = profile.about;
-        }
+        if (id === "resume") paintResume();
+        document.querySelector("#open-dialog").innerHTML =
+          (id === "resume" ? "Export PDF" : "Export") + icon("right");
 
         document.querySelector("#zoom-value").textContent = "Fit";
         renderPanel();
         fitDocument();
       }
       function fitDocument() {
+        const resumePaper = doc.querySelector(".resume-paper");
+        if (resumePaper)
+          resumePaper.style.minHeight =
+            resumePaper.offsetWidth * (resumeOptions.paper === "A4" ? 297 / 210 : 11 / 8.5) + "px";
         const canvas = document.querySelector(".canvas-content"),
           frame = document.querySelector(".document-frame");
         const style = getComputedStyle(canvas);
@@ -2878,9 +3158,13 @@
             .forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
         if (button.dataset.ratio)
           doc.querySelector(".image-art").style.aspectRatio = button.dataset.ratio;
-        if (button.dataset.documentFont)
-          doc.querySelector(".resume-paper").style.fontFamily =
-            button.dataset.documentFont === "serif" ? "Georgia, serif" : "var(--air-font)";
+        if (button.dataset.documentFont) {
+          resumeOptions.treatment = button.dataset.documentFont;
+          inspector
+            .querySelectorAll("[data-document-font]")
+            .forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
+          paintResume();
+        }
         if (button.id === "preview-mask") {
           const mask = button.getAttribute("aria-pressed") !== "true";
           button.setAttribute("aria-pressed", String(mask));
@@ -2956,15 +3240,15 @@
           contacts[Number(target.dataset.contact)].value = target.value;
         if (target.id === "person-name") {
           profile.name = target.value;
-          doc.querySelector("h3").textContent = target.value;
+          paintResume();
         }
         if (target.id === "person-title") {
           profile.title = target.value;
-          doc.querySelector(".resume-role").textContent = target.value;
+          paintResume();
         }
         if (target.id === "person-about") {
           profile.about = target.value;
-          doc.querySelector(".resume-paper p").textContent = target.value;
+          paintResume();
         }
 
         if (target.getAttribute("aria-label") === "Hex colour") {
@@ -3158,7 +3442,7 @@
         const formats = {
           pdf: ["PDF", "PNG", "JPEG", "WebP", "Contact sheet", "Split pages"],
           img: ["JPEG", "PNG", "WebP", "AVIF", "HEIC"],
-          resume: ["PDF", "JSON backup"],
+          resume: ["PDF"],
         }[currentApp];
         let options = field(
           '<label for="export-format">Format</label>',
@@ -3181,9 +3465,13 @@
           options +=
             slider("Quality", "export-quality", 92) +
             '<div class="export-dimensions"><div><label class="air-label" for="export-width">Width · px</label><input class="air-field" id="export-width" type="number" value="1200"/></div><div><label class="air-label" for="export-height">Height · px</label><input class="air-field" id="export-height" type="number" value="1000"/></div></div><label class="air-check-label"><input class="air-check" type="checkbox" checked/>Keep aspect ratio</label><label class="air-check-label"><input class="air-check" type="checkbox" checked/>Remove metadata</label><p class="air-help">Privacy review and face detection remain separate, explicit actions in the app.</p>';
-        if (currentApp === "resume")
-          options +=
-            '<p class="air-help">PDF keeps your selected template and paper size. A JSON backup keeps the editable résumé.</p>';
+        if (currentApp === "resume") {
+          const saving = Boolean(event.target.closest("#resume-save"));
+          document.querySelector("#export-title").textContent = saving
+            ? "Save editable résumé"
+            : "Export PDF";
+          options = `<p class="air-help">${saving ? "JSON preserves the editable résumé. Load it in the app to continue." : `The app exports PDF directly using your chosen template, ${resumeOptions.paper} paper and document colour.`}</p>`;
+        }
         document.querySelector("#export-options").innerHTML = options;
         dialog.showModal();
         document.querySelector("#export-name").value = apps[currentApp].file.replace(
@@ -3224,6 +3512,542 @@
           first.focus();
         }
       });
+
+      // Study-only copy of Resume richText helpers; product retains its tested implementation.
+      const MARKER_RE = /(\*\*|__|\*|_|`|<u>)/;
+
+      function closingMarker(marker) {
+        return marker === "<u>" ? "</u>" : marker;
+      }
+
+      function parseInline(input) {
+        const out = [];
+        let remaining = input;
+        while (remaining.length > 0) {
+          const match = MARKER_RE.exec(remaining);
+          if (!match) {
+            out.push({ type: "text", value: remaining });
+            break;
+          }
+          if (match.index > 0) {
+            out.push({ type: "text", value: remaining.slice(0, match.index) });
+          }
+          const marker = match[0];
+          const rest = remaining.slice(match.index + marker.length);
+          // Underscores inside identifiers (e.g. event_source_id) are literal text.
+          if (
+            marker.startsWith("_") &&
+            /[\p{L}\p{N}]/u.test(remaining[match.index - 1] ?? "") &&
+            /[\p{L}\p{N}]/u.test(rest[0] ?? "")
+          ) {
+            out.push({ type: "text", value: marker });
+            remaining = rest;
+            continue;
+          }
+          const close = closingMarker(marker);
+          const closeIdx = findClose(rest, close);
+          if (closeIdx === -1) {
+            // No matching close — treat as literal.
+            out.push({ type: "text", value: marker });
+            remaining = rest;
+            continue;
+          }
+          const inner = rest.slice(0, closeIdx);
+          remaining = rest.slice(closeIdx + close.length);
+          if (marker === "**" || marker === "__") {
+            out.push({ type: "bold", children: parseInline(inner) });
+          } else if (marker === "*" || marker === "_") {
+            out.push({ type: "italic", children: parseInline(inner) });
+          } else if (marker === "`") {
+            out.push({ type: "code", value: inner });
+          } else if (marker === "<u>") {
+            out.push({ type: "underline", children: parseInline(inner) });
+          }
+        }
+        return out;
+      }
+
+      function findClose(s, marker) {
+        // Look for the next occurrence of the same marker that isn't stuck to the opening.
+        let i = 0;
+        while (i < s.length) {
+          const idx = s.indexOf(marker, i);
+          if (idx === -1) return -1;
+          // Ensure we don't match a different-length marker as a prefix (e.g. `*` inside `**`).
+          if (marker === "*" && s[idx + 1] === "*") {
+            i = idx + 2;
+            continue;
+          }
+          if (marker === "_" && s[idx + 1] === "_") {
+            i = idx + 2;
+            continue;
+          }
+          return idx;
+        }
+        return -1;
+      }
+
+      function toggleSelection(textarea, marker) {
+        const { selectionStart: s, selectionEnd: e, value } = textarea;
+        const m = marker.length;
+        const closeMarker = closingMarker(marker);
+        const c = closeMarker.length;
+
+        // Inline formatting is scoped to a line. Wrap each selected line separately,
+        // leaving blank lines and indentation intact so toolbar actions match preview.
+        const selected = value.slice(s, e);
+        if (/[\r\n]/.test(selected)) {
+          const inner = selected
+            .split(/(\r\n|\r|\n)/)
+            .map((line) => {
+              if (!line.trim()) return line;
+              const start = line.length - line.trimStart().length;
+              const end = line.trimEnd().length;
+              return toggleSelection(
+                { value: line, selectionStart: start, selectionEnd: end },
+                marker,
+              ).value;
+            })
+            .join("");
+          return {
+            value: value.slice(0, s) + inner + value.slice(e),
+            start: s,
+            end: s + inner.length,
+          };
+        }
+
+        // Markers sit immediately outside the selection: **[foo]**
+        if (
+          s >= m &&
+          e + c <= value.length &&
+          value.slice(s - m, s) === marker &&
+          value.slice(e, e + c) === closeMarker
+        ) {
+          const next = value.slice(0, s - m) + value.slice(s, e) + value.slice(e + c);
+          return { value: next, start: s - m, end: e - m };
+        }
+
+        // Markers sit just inside the selection: [**foo**]
+        if (
+          e - s >= m + c &&
+          value.slice(s, s + m) === marker &&
+          value.slice(e - c, e) === closeMarker
+        ) {
+          const next = value.slice(0, s) + value.slice(s + m, e - c) + value.slice(e);
+          return { value: next, start: s, end: e - m - c };
+        }
+
+        // Collapsed cursor inside a matched pair on the same line — unwrap it.
+        if (s === e) {
+          const enclosing = findEnclosingPair(value, s, marker);
+          if (enclosing) {
+            const { open, close } = enclosing;
+            const next =
+              value.slice(0, open) + value.slice(open + m, close) + value.slice(close + c);
+            // Clamp the caret to the new (unwrapped) region.
+            const caret = Math.max(open, Math.min(s - m, close - m));
+            return { value: next, start: caret, end: caret };
+          }
+        }
+
+        // Default: wrap the selection (or insert placeholder when empty).
+        const placeholder = "text";
+        const inner = selected || placeholder;
+        const next = `${value.slice(0, s)}${marker}${inner}${closeMarker}${value.slice(e)}`;
+        const innerStart = s + m;
+        const innerEnd = innerStart + inner.length;
+        return { value: next, start: innerStart, end: innerEnd };
+      }
+
+      /**
+       * Compute which inline markers are "open" at the given cursor position.
+       * Scoped to the current line since our grammar doesn't span newlines.
+       *
+       * Uses a simple toggle-on-encounter scan — longer markers (`**`, `__`)
+       * are matched before single-character ones so `*` inside `**…**` isn't
+       * mistaken for italic start/end.
+       */
+      function formatStateAt(value, pos, selectionEnd = pos) {
+        // A multiline toolbar action selects the markers too. Inspect the first
+        // selected character after opening markers so the chosen format stays active.
+        if (selectionEnd > pos) {
+          pos +=
+            value.slice(pos, selectionEnd).match(/^\s*(?:(?:\*\*|__|\*|_|`|<u>))*/)?.[0].length ??
+            0;
+        }
+        const lineStart = value.lastIndexOf("\n", pos - 1) + 1;
+        const end = Math.min(pos, value.length);
+        let boldStar = false;
+        let boldUnder = false;
+        let italicStar = false;
+        let italicUnder = false;
+        let code = false;
+        let underline = false;
+        let i = lineStart;
+        while (i < end) {
+          // Inside a code span the other markers are literal — ignore them.
+          if (code) {
+            if (value[i] === "`") {
+              code = false;
+              i += 1;
+            } else {
+              i += 1;
+            }
+            continue;
+          }
+          if (value.startsWith("<u>", i)) {
+            underline = true;
+            i += 3;
+          } else if (value.startsWith("</u>", i)) {
+            underline = false;
+            i += 4;
+          } else if (value.slice(i, i + 2) === "**") {
+            boldStar = !boldStar;
+            i += 2;
+          } else if (value.slice(i, i + 2) === "__") {
+            boldUnder = !boldUnder;
+            i += 2;
+          } else if (value[i] === "*") {
+            italicStar = !italicStar;
+            i += 1;
+          } else if (value[i] === "_") {
+            italicUnder = !italicUnder;
+            i += 1;
+          } else if (value[i] === "`") {
+            code = true;
+            i += 1;
+          } else {
+            i += 1;
+          }
+        }
+        return {
+          bold: boldStar || boldUnder,
+          italic: italicStar || italicUnder,
+          underline,
+          code,
+        };
+      }
+
+      /**
+       * Scan the current line for a matched marker pair that encloses `pos`.
+       * Returns the absolute indices of the opening and closing markers, or
+       * null if `pos` isn't inside such a pair.
+       */
+      function findEnclosingPair(value, pos, marker) {
+        const lineStart = value.lastIndexOf("\n", pos - 1) + 1;
+        const nextNl = value.indexOf("\n", pos);
+        const lineEnd = nextNl === -1 ? value.length : nextNl;
+        const m = marker.length;
+
+        if (marker === "<u>") {
+          const pattern = /<u>|<\/u>/g;
+          pattern.lastIndex = lineStart;
+          let open = null;
+          for (
+            let match = pattern.exec(value);
+            match && match.index < lineEnd;
+            match = pattern.exec(value)
+          ) {
+            if (match[0] === "<u>") open = match.index;
+            else if (open !== null) {
+              if (pos >= open + m && pos <= match.index) return { open, close: match.index };
+              open = null;
+            }
+          }
+          return null;
+        }
+
+        // Collect marker positions on this line while respecting longer variants.
+        const positions = [];
+        let i = lineStart;
+        while (i < lineEnd) {
+          if (marker === "*" && value.slice(i, i + 2) === "**") {
+            i += 2;
+            continue;
+          }
+          if (marker === "_" && value.slice(i, i + 2) === "__") {
+            i += 2;
+            continue;
+          }
+          if (value.slice(i, i + m) === marker) {
+            positions.push(i);
+            i += m;
+          } else {
+            i += 1;
+          }
+        }
+
+        for (let k = 0; k + 1 < positions.length; k += 2) {
+          const open = positions[k];
+          const close = positions[k + 1];
+          if (pos >= open + m && pos <= close) {
+            return { open, close };
+          }
+        }
+        return null;
+      }
+
+      function renderRich(value) {
+        function nodes(tokens) {
+          return tokens.map((token) => {
+            if (token.type === "text") return document.createTextNode(token.value);
+            const element = document.createElement(
+              { bold: "strong", italic: "em", underline: "u", code: "code" }[token.type],
+            );
+            if (token.type === "code") element.textContent = token.value;
+            else element.append(...nodes(token.children));
+            return element;
+          });
+        }
+        return value
+          .split(/\r\n|\r|\n/)
+          .flatMap((line, i) => [
+            ...(i ? [document.createElement("br")] : []),
+            ...nodes(parseInline(line)),
+          ]);
+      }
+      function refreshWriting(textarea) {
+        if (!textarea?.matches("[data-rich]")) return;
+        const state = formatStateAt(textarea.value, textarea.selectionStart, textarea.selectionEnd);
+        textarea
+          .closest(".field-group")
+          .querySelectorAll("[data-format]")
+          .forEach((button) =>
+            button.setAttribute("aria-pressed", String(state[button.dataset.format])),
+          );
+      }
+      function formatWriting(textarea, key) {
+        const format = richFormats.find((item) => item[0] === key);
+        if (!format || !textarea) return;
+        const next = toggleSelection(textarea, format[2]);
+        const scroll = textarea.closest(".inspector-content"),
+          top = scroll.scrollTop;
+        textarea.focus({ preventScroll: true });
+        textarea.select();
+        // Native edit command keeps this operation in the textarea's undo history.
+        if (!document.execCommand("insertText", false, next.value)) {
+          textarea.value = next.value;
+          textarea.dispatchEvent(new Event("input", { bubbles: true }));
+        }
+        textarea.setSelectionRange(next.start, next.end);
+        scroll.scrollTop = top;
+        refreshWriting(textarea);
+      }
+      document.addEventListener("selectionchange", () => refreshWriting(document.activeElement));
+      document.addEventListener("select", (event) => refreshWriting(event.target), true);
+      document.addEventListener("keydown", (event) => {
+        if (
+          !event.target.matches("[data-rich]") ||
+          event.isComposing ||
+          !(event.metaKey || event.ctrlKey) ||
+          event.altKey
+        )
+          return;
+        const key = { b: "bold", i: "italic", u: "underline" }[event.key.toLowerCase()];
+        if (key) {
+          event.preventDefault();
+          formatWriting(event.target, key);
+        }
+      });
+      document.addEventListener("pointerdown", (event) => {
+        if (event.target.closest("[data-format]")) event.preventDefault();
+      });
+      function resumeAnnounce(message) {
+        document.querySelector("#resume-announcement").textContent = message;
+      }
+      function focusRole(id) {
+        inspector.querySelector(`#role-${id}-role`)?.focus();
+      }
+      document.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        if (button.dataset.format)
+          formatWriting(document.getElementById(button.dataset.writing), button.dataset.format);
+        if (button.dataset.roleMove) {
+          const from = resumeRoles.findIndex((role) => role.id === Number(button.dataset.roleMove));
+          const to = from + Number(button.dataset.direction);
+          if (to < 0 || to >= resumeRoles.length) return;
+          const [role] = resumeRoles.splice(from, 1);
+          resumeRoles.splice(to, 0, role);
+          renderPanel();
+          paintResume();
+          focusRole(role.id);
+          resumeAnnounce(`Experience moved to position ${to + 1}.`);
+        }
+        if (button.dataset.roleRemove) {
+          const at = resumeRoles.findIndex((role) => role.id === Number(button.dataset.roleRemove));
+          removedRole = { at, role: resumeRoles.splice(at, 1)[0] };
+          renderPanel();
+          paintResume();
+          inspector.querySelector("#undo-role").focus();
+          resumeAnnounce("Experience removed. Undo removal is available.");
+        }
+        if (button.id === "undo-role" && removedRole) {
+          const { at, role } = removedRole;
+          resumeRoles.splice(at, 0, role);
+          removedRole = null;
+          renderPanel();
+          paintResume();
+          focusRole(role.id);
+          resumeAnnounce("Experience restored.");
+        }
+        if (button.id === "add-role") {
+          const role = {
+            id: resumeNextId++,
+            role: "",
+            company: "",
+            location: "",
+            start: "",
+            end: "",
+            current: false,
+            detail: "",
+          };
+          resumeRoles.push(role);
+          renderPanel();
+          paintResume();
+          focusRole(role.id);
+          resumeAnnounce("New experience added.");
+        }
+        if (button.dataset.resumeColour) {
+          const field = inspector.querySelector("#resume-colour");
+          field.value = button.dataset.resumeColour;
+          field.dispatchEvent(new Event("input", { bubbles: true }));
+        }
+        if (button.id === "resume-save") openDialog(event);
+      });
+      document.addEventListener("input", (event) => {
+        const target = event.target;
+        if (target.dataset.role && target.dataset.key) {
+          resumeRoles.find((role) => role.id === Number(target.dataset.role))[target.dataset.key] =
+            target.value;
+          paintResume();
+        }
+        if (target.matches("[data-rich]")) refreshWriting(target);
+        if (target.id === "resume-colour") {
+          const valid = /^#[a-f\d]{6}$/i.test(target.value);
+          target.setAttribute("aria-invalid", String(!valid));
+          const help = document.querySelector("#resume-colour-help");
+          help.textContent = valid
+            ? "Document colour updated."
+            : "Enter a six-digit hex value, like #34534D.";
+          help.classList.toggle("air-help--error", !valid);
+          if (valid) {
+            resumeOptions.colour = target.value.toUpperCase();
+            paintResume();
+            inspector
+              .querySelectorAll("[data-resume-colour]")
+              .forEach((button) =>
+                button.setAttribute(
+                  "aria-pressed",
+                  String(button.dataset.resumeColour === resumeOptions.colour),
+                ),
+              );
+          }
+        }
+      });
+      document.addEventListener("change", (event) => {
+        const target = event.target;
+        if (target.dataset.current) {
+          const role = resumeRoles.find((role) => role.id === Number(target.dataset.current));
+          role.current = target.checked;
+          const end = inspector.querySelector(`#role-${role.id}-end`);
+          end.disabled = role.current;
+          end.textContent = role.current ? "Present" : role.end || "Choose date…";
+          paintResume();
+        }
+        if (target.id === "paper-size") {
+          resumeOptions.paper = target.value;
+          paintResume();
+        }
+      });
+      const dateDialog = document.querySelector("#date-dialog"),
+        dateYear = document.querySelector("#date-year"),
+        dateOnly = document.querySelector("#date-year-only");
+      const monthNames = Array.from({ length: 12 }, (_, i) =>
+        new Intl.DateTimeFormat("en", { month: "short" }).format(new Date(2020, i, 1)),
+      );
+      let dateDraft = null;
+      function renderDateMonths() {
+        dateDialog.querySelector(".date-months").innerHTML = monthNames
+          .map(
+            (month, i) =>
+              `<button class="air-button" aria-pressed="${!dateOnly.checked && dateDraft.month === i}" data-month="${i}">${month}</button>`,
+          )
+          .join("");
+      }
+      document.addEventListener("click", (event) => {
+        const button = event.target.closest("button");
+        if (!button) return;
+        if (button.dataset.date) {
+          const role = resumeRoles.find((role) => role.id === Number(button.dataset.role));
+          const value = role[button.dataset.date],
+            match = value.match(/^(?:(\w{3}) )?(\d{4})$/);
+          dateDraft = {
+            role,
+            key: button.dataset.date,
+            trigger: button.id,
+            month: match?.[1] ? monthNames.indexOf(match[1]) : 0,
+          };
+          dateYear.value = match?.[2] || "";
+          dateOnly.checked = !match?.[1];
+          dateYear.setAttribute("aria-invalid", "false");
+          document.querySelector("#date-error").hidden = true;
+          document.querySelector("#date-title").textContent =
+            button.dataset.date === "start" ? "Start date" : "End date";
+          renderDateMonths();
+          dateDialog.showModal();
+        }
+        if (button.dataset.month !== undefined) {
+          dateDraft.month = Number(button.dataset.month);
+          dateOnly.checked = false;
+          dateDialog
+            .querySelectorAll("[data-month]")
+            .forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
+        }
+        if (button.id === "date-cancel") dateDialog.close();
+        if (button.id === "date-apply" || button.id === "date-clear") {
+          if (button.id === "date-apply" && !/^\d{4}$/.test(dateYear.value)) {
+            dateYear.setAttribute("aria-invalid", "true");
+            document.querySelector("#date-error").hidden = false;
+            dateYear.focus();
+            return;
+          }
+          dateDraft.role[dateDraft.key] =
+            button.id === "date-clear"
+              ? ""
+              : (dateOnly.checked ? "" : monthNames[dateDraft.month] + " ") + dateYear.value;
+          const trigger = document.getElementById(dateDraft.trigger);
+          trigger.textContent = dateDraft.role[dateDraft.key] || "Choose date…";
+          paintResume();
+          dateDialog.close();
+        }
+      });
+      dateDialog.addEventListener("keydown", (event) => {
+        if (event.key !== "Tab") return;
+        const controls = [...dateDialog.querySelectorAll("button,input")].filter(
+          (control) => !control.disabled,
+        );
+        const first = controls[0],
+          last = controls.at(-1);
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      });
+      dateOnly.addEventListener("change", renderDateMonths);
+      dateYear.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.querySelector("#date-apply").click();
+        }
+      });
+      dateDialog.addEventListener("close", () =>
+        document.getElementById(dateDraft?.trigger)?.focus(),
+      );
+
       let completionAnimation;
       document.querySelector("#play-completion").addEventListener("click", (event) => {
         const orb = document.querySelector(".saved-orb");

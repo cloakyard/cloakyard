@@ -4,7 +4,7 @@ version: 1.0.0
 status: design-review
 date: 2026-10-11
 scope: complete-web-product
-family-contract-sha256: 982f0e18a38096e56c0e7242d02ae570cc28b8ebf549e34f7fc782313f55a3b4
+family-contract-sha256: a14c9aca33eebe0e1f20f6d0f209d2aef798b48cfe04f1523aa442d9965ef9f0
 ---
 
 <!-- BEGIN CLOAKYARD AIR CONTRACT -->
@@ -458,6 +458,15 @@ pointers, reduced motion, and no-WebGPU/static fallback. Automated checks suppor
 human visual inspection; passing a linter does not establish UX conformance.
 
 ## 7. Motion and shader discipline
+
+Motion is part of Air's design acceptance, not a later decorative pass. Before
+locking the system, the reference must demonstrate a working, locally bundled
+light treatment using [Shaders](https://shaders.com/) and its
+[open-source library](https://github.com/shader-effects-inc/shaders). Compose it
+around Air's two offset planes and quiet blue light rather than adopting a preset
+unchanged. Review the short arrival and deliberate pointer response in both
+themes, alongside touch, reduced-motion, static and no-WebGPU alternatives.
+The present static reference does not satisfy that acceptance requirement.
 
 - Shared motion: press 120ms; hover/colour 160ms; popover 180ms; dialog 240ms;
   exit 160ms. Ease-out `cubic-bezier(0.23, 1, 0.32, 1)`; reversible spatial motion

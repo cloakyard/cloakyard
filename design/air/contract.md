@@ -448,6 +448,15 @@ human visual inspection; passing a linter does not establish UX conformance.
 
 ## 7. Motion and shader discipline
 
+Motion is part of Air's design acceptance, not a later decorative pass. Before
+locking the system, the reference must demonstrate a working, locally bundled
+light treatment using [Shaders](https://shaders.com/) and its
+[open-source library](https://github.com/shader-effects-inc/shaders). Compose it
+around Air's two offset planes and quiet blue light rather than adopting a preset
+unchanged. Review the short arrival and deliberate pointer response in both
+themes, alongside touch, reduced-motion, static and no-WebGPU alternatives.
+The present static reference does not satisfy that acceptance requirement.
+
 - Shared motion: press 120ms; hover/colour 160ms; popover 180ms; dialog 240ms;
   exit 160ms. Ease-out `cubic-bezier(0.23, 1, 0.32, 1)`; reversible spatial motion
   `cubic-bezier(0.77, 0, 0.175, 1)`. Sheet easing: `cubic-bezier(0.32, 0.72, 0, 1)`. No per-app timing scale.

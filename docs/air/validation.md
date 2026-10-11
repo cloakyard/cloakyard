@@ -258,3 +258,56 @@ but Modern Minimal/Letter and Prism/Letter timed out in the template harness's
 Resume editing click (`tests/template-layouts.spec.ts:125`). Resume remains
 uncommitted pending diagnosis and a complete passing run. Assertions and timeouts
 are unchanged.
+
+## Resume reference refinement and motion acceptance — 2026-10-11
+
+The opt-in study now uses the audited Resume writing patterns: multiline headline,
+scoped bold/italic/underline/code tools above one-contour fields, open repeated
+experience groups, month/year and year-only dates, retained end dates, keyboard
+reordering and undoable removal. The document options are paper and primary colour;
+PDF export and JSON saving are represented separately. The speculative text-size
+slider and keep-sections switch were removed, including their obsolete IDs.
+The two template treatments are explicitly labelled as simplified studies.
+
+Evidence: `evidence/air-03-resume-study-checks.json` records 70 panel cases (five
+panels × seven sizes × two themes), 14 date-dialog cases and 23 functional checks.
+Sizes: 1440×900, 1280×800, 1024×768, 768×1024, 390×844, 320×568 and 844×390.
+The five smaller configurations used touch emulation. No measured horizontal
+page/panel overflow; inspected fields and formatting actions satisfy fine/coarse
+size rules. Date choices are at least 44px and dialogs remain in the viewport.
+Single-contour focus and white document paper pass in both themes.
+
+Functional checks include multiline formatting/native undo, scoped entry editing,
+reorder/focus return, removal/undo, month/year/year-only/clear/invalid/Escape paths,
+previous end-date restoration, long-text preservation, valid/invalid document
+colour, paper state, separate save/export views and immediate reduced-motion
+export. Keyboard focus now wraps inside the date dialog. A discovered JSON-save
+routing error was corrected before recording the final passing result.
+
+The field labels now use the contract's 13px/1.4 with an 8px field gap; ordinary
+inspector field text is 14px (16px coarse). The phone swatch rule no longer overrides
+44px touch targets. `evidence/air-03-shared-field-checks.json` records another 196
+cases across all 14 PDF/IMG/Resume default panels, seven sizes and both themes,
+with no measured overflow, undersized fields or undersized editable text.
+Four final `air-03-resume-*.jpg` captures were visually reviewed. The growing white
+sample paper was corrected to contain long content. No browser console errors
+were observed.
+
+These checks cover the reference only. The study has a scrolling page with fixed
+editor frames, simplified paper without pagination, one line per experience
+highlight, and no actual file output. Production templates, separately editable
+nested bullets, real import/export, physical keyboards/IME, software keyboards,
+Safari and assistive-technology checks remain migration gates. Resume's production
+baseline still has two browser-entry timeouts; no Resume commit or product feature
+pass is claimed here.
+
+The user reiterated the Shaders requirement. The portable contract and TODO now
+require a working locally bundled Shaders light treatment before design sign-off,
+including dark/light, deliberate pointer response, short arrival and static,
+reduced-motion and no-WebGPU alternatives. The present hero remains static; the
+shader requirement is **not complete**. No new runtime dependency was installed.
+
+Cloakyard `vp check`, `vp build`, inline-script syntax and `git diff --check` pass.
+All five standalone design checkers and exact-copy sync pass at contract hash
+`a14c9aca33ee` (prefix). The shared reference remains opt-in; production UI imports
+are unchanged. Sibling bundles are synchronized but retain their own commit gates.
