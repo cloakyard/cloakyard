@@ -1,6 +1,11 @@
 {
   "version": "1.0.0",
   "stylesheet": "src/styles/air.css",
-  "sha256": "c9ace3f80bedd86bbbe26986778568a2ac90c0e6d46cf975fcbca9ef8a4fa28d",
+  "studyAssets": {
+    "light-controller.mjs": "44014dfa43d0a26b62f56159273b48f55f65af9dca083e4bb1258ea4f0bad2c2",
+    "assets/air-light-shader.js": "1af6866d8cdea4e5ba073fc4b14cca88a521547553de25d00bebc24f92e695be",
+    "assets/THIRD_PARTY_LICENSES.txt": "f1bb174da42107f7e1a847515b6b568864ac47a5067d24ae85f53bee9d22a47c"
+  },
+  "sha256": "38688148e1e4c1e8e3df8d33790c96e5329e2f2e81ad26d7ee08c0b35a8ec6fb",
   "note": "Pinned family bundle. Runtime migration is tracked separately in surfaces.json."
 }

@@ -61,9 +61,20 @@ ${appendix}
     ).replace("__AIR_STYLESHEET__", `../../${cssPath}`);
     await sync(resolve(roots, slug, cssPath), css);
     await sync(resolve(roots, slug, "docs/air/components.html"), gallery);
+    const studyAssets = {};
+    for (const asset of [
+      "light-controller.mjs",
+      "assets/air-light-shader.js",
+      "assets/THIRD_PARTY_LICENSES.txt",
+    ]) {
+      const content = await readFile(resolve(repository, "design/air", asset), "utf8");
+      await sync(resolve(roots, slug, "docs/air", asset), content);
+      studyAssets[asset] = createHash("sha256").update(content).digest("hex");
+    }
     const manifest = {
       version: "1.0.0",
       stylesheet: cssPath,
+      studyAssets,
       sha256: createHash("sha256").update(css).digest("hex"),
       note: "Pinned family bundle. Runtime migration is tracked separately in surfaces.json.",
     };

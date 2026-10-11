@@ -304,10 +304,71 @@ pass is claimed here.
 The user reiterated the Shaders requirement. The portable contract and TODO now
 require a working locally bundled Shaders light treatment before design sign-off,
 including dark/light, deliberate pointer response, short arrival and static,
-reduced-motion and no-WebGPU alternatives. The present hero remains static; the
-shader requirement is **not complete**. No new runtime dependency was installed.
+reduced-motion and no-WebGPU alternatives. At that earlier checkpoint the hero remained static and the
+shader requirement was incomplete. No dependency was installed in that checkpoint.
 
 Cloakyard `vp check`, `vp build`, inline-script syntax and `git diff --check` pass.
 All five standalone design checkers and exact-copy sync pass at contract hash
 `a14c9aca33ee` (prefix). The shared reference remains opt-in; production UI imports
 are unchanged. Sibling bundles are synchronized but retain their own commit gates.
+
+## Working Shaders light study — 2026-10-11
+
+The opt-in reference now includes a real custom composition using Shaders 4.0.4,
+with two overlapping planes, a 600ms arrival and a bounded pointer-following light.
+Light and dark share geometry and semantic colour tokens. The reference includes
+Replay arrival and Still artwork controls; technical rendering notes stay outside
+the simulated product. Production imports and build output remain unchanged.
+
+The local renderer is lazy, has no telemetry or remote media, caps effective DPR
+at 1.5 and submits at most 30 frames/second while responding. It stops submitting
+frames at rest and disposes its renderer/device offscreen or hidden. Abort handling
+covers initialization in flight and its late completion. Rapid intersection
+updates use the latest observation. An elapsed-time bound prevents a stalled
+compositor animation from keeping the light active. The previous static ribbon
+markup/styles and current-reference placeholder wording were removed.
+
+Validation recorded in `evidence/air-03-light-checks.json`:
+
+- **14/14** final layout cases: 1440×900, 1280×800, 1024×768, 768×1024,
+  390×844, 320×568 and 844×390, in light and dark. No horizontal overflow;
+  artwork aligns with the hero edges; touch controls are at least 44px.
+- Initial arrival and deliberate pointer response settle. An idle frame count
+  remains unchanged. Offscreen exit removes the live canvas; return initializes
+  it again. Still artwork and five rapid disable/enable cycles recover correctly.
+- Rapid replay retains one animation and its current opacity. Keyboard replay
+  leaves zero animations. Coarse pointers do not wake pointer-following motion.
+  A 1318×200 CSS canvas renders at 1977×300 on DPR 2, confirming the 1.5 cap.
+- Reduced motion loads no shader asset and submits zero frames. Re-enabling motion
+  requests only the local shader asset. The observed requests contain no external
+  destinations. Simulated missing WebGPU, low memory/core count, Save-Data and
+  hidden visibility select the fallback. Simulated adapter failure recovers via
+  Retry light using real WebGPU.
+- Four `air-03-light-*.jpg` captures were inspected: desktop light/dark,
+  tablet light and phone dark. No browser console errors were observed.
+
+During iteration, the browser retained a Node environment check in the first
+library build; the build now replaces it explicitly. Mobile artwork initially
+extended 4px beyond its container; it now shares the hero's exact edges. Rapid
+visibility and initialization transitions were corrected before this checkpoint.
+
+Local starts observed during this session were approximately 39–111ms, with
+roughly 0.4–0.8ms average CPU submission. These are local/reloaded measurements,
+not cold-network benchmarks or GPU timings. The final self-contained renderer is
+2,248,986 bytes / **368,564 bytes gzip** (SHA prefix `1af6866d8cde`). The 400 kB
+study build ceiling does not approve that payload for production. Real-device
+GPU/battery/thermal checks, slow-network startup, Safari/Firefox and visual sign-off
+remain open. Hidden/device capability tests above are simulations, not proof of
+physical-device behaviour. The full family motion audit remains open as well.
+
+The reproducible build is documented in `design/air/LIGHT.md`. The pinned catalog
+adapter is guarded by its exact source hash and interface; renderer/std source is
+unchanged. All included MIT notices are shipped beside the asset. The controller,
+renderer and license files are copied to each standalone reference with hashes in
+`bundle.json`. Generated assets are excluded from formatting/lint, and validated
+through the deterministic rebuild and hash checks.
+
+Cloakyard `vp check`, `vp build`, deterministic shader rebuild, exact-copy bundle
+sync, all five standalone design checkers and `git diff --check` pass. Contract
+hash: `c309bd4e4f44` (prefix). This checkpoint commits only Cloakyard's design study;
+sibling synchronized files retain their independent validation/commit gates.

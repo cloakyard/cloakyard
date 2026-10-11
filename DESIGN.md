@@ -4,7 +4,7 @@ version: 1.0.0
 status: design-review
 date: 2026-10-11
 scope: complete-web-product
-family-contract-sha256: a14c9aca33eebe0e1f20f6d0f209d2aef798b48cfe04f1523aa442d9965ef9f0
+family-contract-sha256: c309bd4e4f4447f920c4bef1a7879dd54fc21b1bae6a6037cb3645b48d14b380
 ---
 
 <!-- BEGIN CLOAKYARD AIR CONTRACT -->
@@ -466,7 +466,9 @@ light treatment using [Shaders](https://shaders.com/) and its
 around Air's two offset planes and quiet blue light rather than adopting a preset
 unchanged. Review the short arrival and deliberate pointer response in both
 themes, alongside touch, reduced-motion, static and no-WebGPU alternatives.
-The present static reference does not satisfy that acceptance requirement.
+The reference now demonstrates this custom Shaders composition. Its working
+implementation is review evidence; it does not itself grant visual or production
+performance approval.
 
 - Shared motion: press 120ms; hover/colour 160ms; popover 180ms; dialog 240ms;
   exit 160ms. Ease-out `cubic-bezier(0.23, 1, 0.32, 1)`; reversible spatial motion
@@ -496,6 +498,19 @@ The present static reference does not satisfy that acceptance requirement.
   autonomous loop longer than five seconds needs a visible pause/stop control.
   Prefer one short entrance or deliberate pointer response. Content and actions
   never depend on GPU support or successful effect loading.
+- The reference's light follows a mass 1 / stiffness 100 / damping 10 spring,
+  confined to the middle 70% of the artwork. It settles within 1.8s after the last
+  pointer input. The 600ms arrival uses `motion-arrival` and the shared ease-out;
+  interrupted replay continues from its current opacity. Keyboard replay is immediate.
+- Cap this study at 30 submitted frames/second and effective pixel ratio 1.5.
+  Submit no frames at rest. Release the GPU device offscreen/hidden and cancel
+  pending initialization. Reduced motion, Save-Data, unavailable WebGPU, and
+  reported memory/core counts of 4 or fewer use the static artwork. These browser
+  hints supplement, rather than replace, real-device performance validation.
+- Bundle Shaders locally, pinned to 4.0.4 for this candidate, with no telemetry,
+  hosted presets or remote assets. The lazy study bundle is approximately 369 kB
+  gzip, with a 400 kB build ceiling. This is a measured study budget, not an
+  approved production payload. Preserve dependency licenses and asset hashes.
 - Measure impact on startup, scrolling, input, memory, and battery-sensitive
   devices; no shader competes with document rendering or on-device AI work.
 

@@ -33,7 +33,12 @@ for (const surface of inventory.surfaces) {
 }
 const bundle = await readFile(resolve(root, "docs/air/bundle.json"), "utf8").catch(() => null);
 if (bundle) {
-  const { stylesheet, sha256, version } = JSON.parse(bundle);
+  const { stylesheet, sha256, version, studyAssets = {} } = JSON.parse(bundle);
+  for (const [asset, hash] of Object.entries(studyAssets)) {
+    const content = await readFile(resolve(root, "docs/air", asset));
+    if (createHash("sha256").update(content).digest("hex") !== hash)
+      fail(`Air study asset drift: ${asset}`);
+  }
   const css = await readFile(resolve(root, stylesheet), "utf8");
   if (createHash("sha256").update(css).digest("hex") !== sha256) {
     fail("Family CSS drift: update the canonical bundle and synchronize all products.");

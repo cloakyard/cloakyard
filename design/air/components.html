@@ -216,7 +216,7 @@
         position: relative;
         isolation: isolate;
         text-align: center;
-        padding: 56px 24px 100px;
+        padding: 56px 24px 0;
         overflow: clip;
       }
       .hero-overline {
@@ -263,42 +263,82 @@
         height: 16px;
       }
       .light-field {
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 0;
-        bottom: -90px;
-        height: 300px;
+        position: relative;
+        height: 200px;
+        margin: 24px -24px 0;
+        color: var(--air-accent);
+        background-color: var(--air-surface);
+        outline-color: var(--air-surface-soft);
         pointer-events: none;
-        background: radial-gradient(
-          ellipse at 50% 95%,
-          color-mix(in srgb, var(--air-accent) 11%, transparent),
-          transparent 68%
-        );
+        overflow: clip;
       }
-      .light-ribbon {
+      .light-field canvas,
+      .light-fallback {
         position: absolute;
-        width: 74%;
-        height: 160px;
-        left: 13%;
-        bottom: -6px;
-        border-radius: 50%;
-        border-top: 1px solid color-mix(in srgb, var(--air-accent) 18%, transparent);
-        box-shadow: 0 -12px 42px color-mix(in srgb, var(--air-accent) 8%, transparent);
-        background: linear-gradient(
-          180deg,
-          color-mix(in srgb, var(--air-accent-soft) 55%, transparent),
-          transparent 60%
-        );
-        transform: rotate(-5deg);
+        inset: 0;
+        width: 100%;
+        height: 100%;
       }
-      .light-ribbon:after {
-        content: "";
-        position: absolute;
-        inset: 34px -12% -22px;
-        border-radius: 50%;
-        border-top: 1px solid color-mix(in srgb, var(--air-accent) 14%, transparent);
-        transform: rotate(10deg);
+      .light-field canvas {
+        visibility: hidden;
+      }
+      .light-field[data-light-ready="true"] canvas {
+        visibility: visible;
+      }
+      .light-fallback .plane-fill {
+        stop-color: var(--air-surface-soft);
+      }
+      .light-fallback .plane-edge {
+        stroke: var(--air-accent);
+      }
+      .light-study-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 16px 0 24px;
+        padding-inline: 4px;
+      }
+      .light-study-controls strong {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .light-study-controls p {
+        margin-top: 4px;
+        color: var(--air-ink-secondary);
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .light-study-actions {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .light-study-notes {
+        color: var(--air-ink-secondary);
+        font-size: 12px;
+        line-height: 1.6;
+        margin-top: 16px;
+      }
+      .light-study-notes summary {
+        cursor: pointer;
+        min-height: 44px;
+        display: list-item;
+        align-content: center;
+      }
+      .light-study-notes output {
+        display: block;
+        margin-top: 8px;
+      }
+      @media (max-width: 767px) {
+        .light-study-controls {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
+        .light-study-actions {
+          flex-wrap: wrap;
+        }
       }
       .family-products {
         display: grid;
@@ -1535,7 +1575,7 @@
         }
         .hero {
           padding-top: 40px;
-          padding-bottom: 80px;
+          padding-bottom: 0;
         }
         .work-area {
           grid-template-columns: 64px minmax(0, 1fr) 288px;
@@ -1814,7 +1854,10 @@
           display: none;
         }
         .hero {
-          padding: 28px 20px 68px;
+          padding: 28px 20px 0;
+        }
+        .light-field {
+          margin-inline: -20px;
         }
         .hero h1 {
           font-size: clamp(38px, 10.5cqw, 48px);
@@ -2113,7 +2156,42 @@
                 >Find your flow <span data-icon="right"></span></a
               ><a class="air-button air-button--quiet" href="#components">Meet the family</a>
             </div>
-            <div class="light-field" aria-hidden="true"><div class="light-ribbon"></div></div>
+            <div class="light-field" id="air-light" aria-hidden="true">
+              <svg class="light-fallback" viewBox="0 0 1200 240" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="air-plane" x2="0" y2="1">
+                    <stop class="plane-fill" stop-opacity=".8" />
+                    <stop offset="1" class="plane-fill" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient id="air-edge-fade">
+                    <stop stop-color="white" stop-opacity="0" />
+                    <stop offset=".2" stop-color="white" />
+                    <stop offset=".8" stop-color="white" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                  <mask id="air-light-mask">
+                    <path d="M0 0H1200V240H0Z" fill="url(#air-edge-fade)" />
+                  </mask>
+                </defs>
+                <g mask="url(#air-light-mask)">
+                  <path d="M0 100Q600 84 1200 145V240H0Z" fill="url(#air-plane)" />
+                  <path
+                    class="plane-edge"
+                    d="M0 100Q600 84 1200 145"
+                    fill="none"
+                    stroke-opacity=".22"
+                  />
+                  <path d="M0 182Q600 132 1200 139V240H0Z" fill="url(#air-plane)" />
+                  <path
+                    class="plane-edge"
+                    d="M0 182Q600 132 1200 139"
+                    fill="none"
+                    stroke-opacity=".28"
+                  />
+                </g>
+              </svg>
+              <canvas></canvas>
+            </div>
           </section>
           <div class="family-products">
             <button class="product-entry" data-app="pdf" aria-pressed="true">
@@ -2140,6 +2218,18 @@
           <div class="experiment-link">
             <span>A little room for curiosity, too.</span
             ><a href="https://kerr.cloakyard.com">Explore KERR <span data-icon="arrow"></span></a>
+          </div>
+        </div>
+        <div class="light-study-controls" aria-label="Air light study controls">
+          <div>
+            <strong>Air light · motion study</strong>
+            <p id="light-status" role="status">
+              Still artwork. The interactive light loads when visible.
+            </p>
+          </div>
+          <div class="light-study-actions">
+            <button class="air-button" id="light-replay">Replay arrival</button
+            ><button class="air-button" id="light-still" aria-pressed="false">Still artwork</button>
           </div>
         </div>
         <div class="specimen-title" id="workspace">
@@ -2361,11 +2451,21 @@
         </div>
         <p class="air-help" style="margin-top: 28px">
           Reduced motion preserves feedback without spatial movement. Theme changes are immediate.
-          This study currently uses a static light field. A working Shaders light treatment and its
-          performance/accessibility review are required before the design is locked.
+          Air’s two planes catch a soft light on arrival and respond to a mouse. The landing artwork
+          rests when idle and releases its graphics resources when hidden or offscreen. Review the
+          motion and its still alternative before the design is locked.
         </p>
       </section>
     </main>
+    <details class="reference light-study-notes">
+      <summary>Light study · rendering notes</summary>
+      <p>
+        Custom Air composition, locally bundled with Shaders 4.0.4. No hosted presets, media,
+        telemetry or continuous loop. Reduced motion, unavailable graphics and constrained devices
+        use the still artwork. Pointer response is for a mouse; touch keeps the brief arrival.
+      </p>
+      <output id="light-metrics" aria-live="off">Waiting for the light to become visible.</output>
+    </details>
     <footer class="study-footer">
       <span>Air · a Cloakyard design study. Product migration has not started.</span
       ><a href="../../DESIGN.md">Read the complete design contract</a>
@@ -4064,5 +4164,6 @@
           );
       });
     </script>
+    <script type="module" src="./light-controller.mjs"></script>
   </body>
 </html>

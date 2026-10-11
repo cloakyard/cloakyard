@@ -3,6 +3,6 @@ import { defineConfig } from "vite-plus";
 
 export default defineConfig({
   plugins: [react()],
-  fmt: { ignorePatterns: [".agents/**"] },
-  lint: { ignorePatterns: [".agents/**"] },
+  fmt: { ignorePatterns: [".agents/**", "design/air/assets/**", "docs/air/assets/**"] },
+  lint: { ignorePatterns: [".agents/**", "design/air/assets/**", "docs/air/assets/**"] },
 });

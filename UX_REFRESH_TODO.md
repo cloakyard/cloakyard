@@ -39,11 +39,15 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Specify purposeful playful motion with exact timing, interruption, keyboard and reduced-motion rules.
 - [x] Validate the representative refined reference and synchronize the portable contract and bundle; [coverage and remaining gates](docs/air/validation.md).
 - [ ] Review and lock the detailed system before product migration.
-- [ ] Build and review the actual Shaders-based Air light treatment before locking
-      the system. The current static light field is a placeholder, not completion
-      of the requested motion direction. Use the library from shaders.com and
-      shader-effects-inc/shaders; demonstrate deliberate pointer response and a
-      short arrival in light/dark, with static/reduced-motion/no-WebGPU fallbacks.
+- [x] Build the actual Shaders-based Air light treatment: custom overlapping
+      planes, deliberate pointer response, finite arrival and local assets.
+      Light/dark and all seven viewport classes pass the reference checks.
+      Reduced motion, still artwork and simulated unsupported/constrained graphics
+      retain the fallback. See the recorded motion evidence.
+- [ ] Review and approve the working light treatment before locking the system.
+      Measure physical-device GPU/battery/thermal behaviour, Safari/Firefox and
+      slower-network startup; the 369 kB gzip study payload is not yet a production
+      budget approval.
 - [ ] Validate motion as a family: press/hover, sheet/dialog interruption,
       completion feedback, keyboard immediacy and mobile touch. Measure shader
       startup/frame cost and offscreen/hidden pause; keep effects out of active
