@@ -47,7 +47,7 @@ the refined system is defined and reviewed as requested by the user.
 - [ ] Baseline all existing unit/logic suites; record failures before changing UI.
 - [x] Inspect representative real Resume/PDF/IMG editors before further design; [audit and limits](docs/air/existing-editor-audit.md).
 - [-] Inspect PDF desktop/laptop/mobile editor, every tool panel, standalone utilities and overlays. All 22 default panels inspected at desktop/light and phone/dark; date picker and conditional signature/annotation states inspected. Remaining states/utilities are tracked in PDF’s `docs/air/editor-audit.md`.
-- [ ] Inspect IMG desktop/laptop/mobile editor, every tool panel, custom colour/curve controls and AI states.
+- [-] Inspect IMG desktop/laptop/mobile editor, every tool panel, custom colour/curve controls and AI states. All 26 default desktop/light panels and 25 phone/dark tools inspected; selected layer, colour DOM and AI consent audited. Remaining states and the Cancel/re-entry finding are tracked in IMG’s `docs/air/editor-audit.md`.
 - [ ] Inspect Resume desktop/laptop/mobile editor, every section, template/ATS/format/export overlays.
 - [ ] Inspect Drop website, download flow, privacy page and 404 at every layout class.
 - [ ] Inspect narrow/landscape phone handling, software keyboard and 200% zoom.

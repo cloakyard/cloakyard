@@ -78,3 +78,21 @@ Select/Pen/Highlight/Line/Arrow/Rectangle/Oval/Text/Icons; the study is correcte
 match. Signature is Draw/Choose with independent ink/background switches; its
 reference now shows those controls instead of a typed-name generator. The writing
 width table is also corrected to agree with the 420px/360px editor composition.
+
+## Full IMG default-panel follow-up
+
+All 26 default desktop panels (1440 × 900 / light) and 25 mobile picker tools
+(390 × 844 / dark / coarse pointer) have now been inspected. Detailed requirements,
+raw snapshots and limits live in CloakIMG’s `docs/air/editor-audit.md`. No mobile
+default panel overflowed horizontally; Cancel/Done targets remained 44 × 44 and
+reachable. The mobile Adjust slider view, AI consent, selected text layer, history
+and colour picker DOM were also inspected. AI downloads and export were not run.
+
+The Air study now uses real IMG adjustment ranges, separate adjustment/curve views,
+precise curve controls and actual tool names. It no longer invents an adjustment
+layer or generic brush-strength control. The contract covers point accessibility,
+layer action separation and tool commit boundaries.
+
+A baseline behaviour finding remains: mobile Exposure +0.4 persisted in the field
+after Cancel and re-entry. Track this as a product regression to reproduce, not a
+passed rollback test or an Air reference defect.

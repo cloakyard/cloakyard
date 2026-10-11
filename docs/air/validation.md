@@ -174,3 +174,51 @@ warnings in PDF's build remain warnings; no runtime chunks were changed by this
 opt-in bundle. PDF checkpoint: `4830570`. All 13 reference tool headings were
 rechecked after the names changed, and expanded controls were checked in all three
 editor variants. Switch focus has one contour around the track, with no outer box.
+
+## IMG audit and precision-control refinement — 2026-10-11
+
+Inspected all 26 existing IMG desktop default panels (1440 × 900 / light) and
+25 mobile picker tools (390 × 844 / dark / coarse pointer). Also inspected mobile
+Adjust sliders, first-use AI consent/decline, selected text/layer/history and the
+colour picker DOM. Per-tool requirements, raw snapshots, evidence and remaining
+states are in IMG's `docs/air/editor-audit.md`. A mobile exposure value persisted
+after Cancel/re-entry; this is a recorded baseline finding to reproduce before
+product migration, not a passing rollback test. No export or model download was run.
+
+The shared contract and reference now define signed domain values, aligned units,
+compact precision rows, editable curve points, layer action separation and explicit
+commit/rollback boundaries. IMG's study uses Adjust, Crop & rotate, Spot heal,
+Levels and Selective color. It replaces inaccurate percentage exposure, generic
+brush strength and an invented adjustment-layer example. Actual processing remains
+in the product; this checkpoint does not import Air into any application runtime.
+
+Reference verification:
+
+- 70 panel cases: five IMG tools × seven sizes × two themes. No page/panel horizontal
+  overflow; inspected number fields meet fine/coarse height and coarse font rules.
+- 14 final curve cases at 1440 × 900, 1280 × 800, 1024 × 768, 768 × 1024,
+  390 × 844, 320 × 568 and 844 × 390, both themes. The square plot and precise
+  value fields fit inside the study's working panel; coarse point targets ≥44px.
+- Exact signed exposure, invalid-value retention, curve keyboard/Shift movement,
+  numeric editing, add/remove/reset, protected endpoints, pointer dragging and
+  tool-switch persistence checked. Levels reject crossed input bounds; colour-band
+  values remain independent. Compact curve selection expands controls; Restore
+  split view works and reopening the curve expands it again.
+- Focus is one 2px solid replacement contour, offset 0, transparent border and no
+  shadow in light/dark. All 14 current reference tool headings render correctly.
+- Visually reviewed new desktop/light adjustment, tablet/light curve, phone/dark
+  curve and focused phone-field captures. Evidence is in
+  `evidence/air-03-img-controls-checks.json`, `air-03-tool-checks.json` and the new
+  `air-03-img-*.jpg` files.
+
+These are fixed-height reference frames in a scrolling study page. They do not
+validate production full-screen short-height layouts, physical software keyboards
+or assistive technology. The in-app browser cannot inject native touch cancellation;
+its handler was source-reviewed, and physical cancellation remains pending.
+
+Checks passed: Cloakyard `vp check` and `vp build`; IMG `vp check`, 470/470 unit tests
+and `pnpm run build` including the 100-file / 25 MiB deployment asset gate. Existing
+large-chunk warnings remain. All five portable contract checks and exact-copy sync
+pass at contract hash `80ae0cf6d1d6` (prefix). Product feature/E2E/model/codec/PWA
+probes remain required when those production surfaces change; no such coverage is
+claimed by this documentation and opt-in reference checkpoint.

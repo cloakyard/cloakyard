@@ -4,7 +4,7 @@ version: 1.0.0
 status: design-review
 date: 2026-10-11
 scope: complete-web-product
-family-contract-sha256: 2b0b13f20830fc01ed37bcbc0f02af03df6e72523e72797df2683122d0ee21b5
+family-contract-sha256: 80ae0cf6d1d664e6f47679826d6a324029a25c9035e0cdffd47ce0fb2440d4c1
 ---
 
 <!-- BEGIN CLOAKYARD AIR CONTRACT -->
@@ -319,6 +319,32 @@ no screenshot, simulation, orbital illustration, animated preview, or embedded a
   input remains editable and receives nearby feedback; never silently coerce it.
   Use the same single-contour field, 32px minimum only for fine-pointer density,
   44px on touch. Histograms/curves remain functional content within neutral shells.
+- Precision controls display domain values, never internal normalized percentages:
+  exposure in EV, rotation in degrees, dimensions in px/mm, levels in 0–255 and
+  gamma as a decimal. Signed controls mark their neutral point. Keep labels above
+  the track, values aligned at the trailing edge, and units outside the editable
+  number in a reserved 20px unit slot. Value fields are 32px high for fine pointers
+  and 44px on touch; leave 4px between the value row and track, and 16px between
+  numeric groups. Do not animate a value, thumb or canvas response while editing.
+- Curves use an undistorted plot, inset endpoints and a quiet identity reference.
+  Keep histogram data separate from the editable line; name channels in addition
+  to colouring them. Provide selectable points, precise input/output fields,
+  arrow-key movement, explicit add/remove/reset and protected endpoints. A drag
+  gesture must not be the only way to edit or remove a point. Pointer cancellation
+  restores the pre-drag state. Small screens can separate adjustments and curves
+  into labelled views; changing view preserves every value and allows scrolling
+  outside the plot. Open detailed curves in expanded controls on compact layouts,
+  retaining the preview and a return-to-split action. Use a 224px square compact
+  plot (up to 288px in a narrow inspector), with at least 44px point hit areas.
+  Never stretch the graph to fill a shallow drawer.
+- Layer rows separate selection from visibility/delete/filter actions; no nested
+  buttons. Keep image layers, vector objects and baked image history distinct.
+  Do not invent an adjustment-layer model when the product bakes edits into history.
+  Supply keyboard reorder actions alongside dragging and name every icon action.
+- Preserve each tool's commit boundary explicitly. Cancel restores both pending
+  values and edits made since tool entry; Done applies once and creates the expected
+  history entry. Tool switches and export flush only the pending edits the product
+  already promises to save. Test re-entry after Cancel, not only drawer dismissal.
 - Writing rows combine type, value and keyboard reorder actions with open grouping.
   Rich text, image/logo pickers and date fields retain their full behaviour and
   follow the same field/focus rules. Do not replace these with plain text inputs

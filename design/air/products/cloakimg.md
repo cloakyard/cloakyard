@@ -18,6 +18,16 @@
   print/PDF output, metadata removal, and the deploy asset-size gate.
 - Use shared `SelectControl`, `ModalFrame` and field/atom shells; custom widgets
   obey identical focus, target-size, radius, colour and responsive contracts.
+- Adjust has eleven signed values: exposure −2…+2 EV (0.1 steps), and contrast,
+  highlights, shadows, whites, blacks, saturation, vibrance, temperature, vignette
+  and sharpen −100…+100. Neutral is zero, not 50%. Preserve the production math.
+- Selective colour has eight named bands; hue −60…+60°, saturation −100…+100,
+  luminance −50…+50. Levels preserve 0–255 endpoints, ordered input bounds and
+  the existing gamma mapping. Scope is Whole / Subject / Background with explicit
+  readiness and consent; unavailable scope must not silently edit the whole image.
+- Tone curves need keyboard and numeric point editing in addition to the existing
+  pointer gesture. Baked adjustments belong in history; Layers lists the actual
+  Fabric objects and their existing visibility, filters, deletion and ordering.
 - Required gates: `vp check`, `vp test run`, `pnpm run build`, `pnpm test:tools`,
   applicable `test:audit`/PWA scripts and feature probes for export/history, AI,
   mobile apply/cancel, crop, masks and all changed tools. Record actual coverage;

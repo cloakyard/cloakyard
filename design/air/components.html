@@ -716,10 +716,16 @@
         color: var(--air-ink-muted);
         font-weight: 400;
       }
+      .numeric-value > span {
+        min-width: 20px;
+        text-align: left;
+      }
       .numeric-value .air-field {
-        width: 68px;
+        width: 76px;
         padding-inline: 8px;
         min-height: 32px;
+        height: 32px;
+        padding-block: 4px;
         text-align: right;
         font-variant-numeric: tabular-nums;
       }
@@ -831,6 +837,12 @@
       }
       .field-group {
         margin-bottom: 24px;
+      }
+      .field-group--numeric {
+        margin-bottom: 16px;
+      }
+      .field-group--numeric .field-title {
+        margin-bottom: 4px;
       }
       .field-title {
         display: flex;
@@ -950,12 +962,22 @@
         margin-top: 3px;
       }
       .curve {
-        width: 100%;
-        height: 100px;
+        width: min(100%, 288px);
+        height: auto;
+        aspect-ratio: 1;
+        display: block;
+        touch-action: none;
         border: 1px solid var(--air-line);
         border-radius: var(--air-radius-control);
         background: var(--air-page);
-        margin: 10px 0 16px;
+        margin: 16px auto 8px;
+      }
+      .inspector[data-curve="true"] .inspector-description {
+        display: none;
+      }
+      .curve-editor {
+        max-width: 320px;
+        margin-inline: auto;
       }
       .curve .grid-line {
         stroke: var(--air-line);
@@ -965,10 +987,72 @@
         fill: none;
         stroke-width: 2;
       }
-      .curve circle {
+      .range-track {
+        position: relative;
+      }
+      .range-neutral {
+        position: absolute;
+        width: 1px;
+        height: 9px;
+        left: 50%;
+        top: calc(50% - 4px);
+        background: var(--air-line-control);
+        pointer-events: none;
+      }
+      .adjustment-views {
+        margin-bottom: 24px;
+      }
+      .curve .curve-identity {
+        fill: none;
+        stroke: var(--air-line-control);
+        stroke-dasharray: 3 5;
+      }
+      .curve-point {
+        cursor: grab;
+        outline: none;
+      }
+      .curve .curve-hit {
+        fill: transparent;
+        stroke: none;
+      }
+      .curve .curve-dot {
         fill: var(--air-surface);
         stroke: var(--air-accent);
         stroke-width: 1.5;
+      }
+      .curve-point[aria-pressed="true"] .curve-dot {
+        fill: var(--air-accent);
+      }
+      .curve-point:focus-visible .curve-dot {
+        stroke: var(--air-ink);
+        stroke-width: 3;
+      }
+      .curve-point:active {
+        cursor: grabbing;
+      }
+      .curve-axis {
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        color: var(--air-ink-muted);
+      }
+      .curve-values {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 16px;
+      }
+      .curve-values .air-field {
+        margin-top: 8px;
+      }
+      .curve-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin: 12px 0;
+      }
+      .band-swatches {
+        flex-wrap: wrap;
       }
       .workspace-footer {
         height: 36px;
@@ -1319,6 +1403,21 @@
         }
       }
       @container preview (max-width:767px) {
+        .inspector[data-curve="true"] .adjustment-views {
+          margin-bottom: 4px;
+        }
+        .curve {
+          width: min(100%, 224px);
+          margin: 4px auto;
+        }
+        .curve-axis {
+          max-width: 224px;
+          margin-inline: auto;
+        }
+        .curve-values {
+          margin-top: 4px;
+        }
+
         .workbench {
           height: 740px;
         }
@@ -2183,9 +2282,10 @@
           file: "Coastal light.png",
           tools: [
             ["sliders", "Adjust"],
-            ["crop", "Crop"],
-            ["spark", "Retouch"],
-            ["layers", "Layers"],
+            ["crop", "Crop & rotate"],
+            ["spark", "Spot heal"],
+            ["sliders", "Levels"],
+            ["sun", "Selective color"],
           ],
           active: 0,
         },
@@ -2235,9 +2335,128 @@
         return `<div class="field-group"><div class="field-title">${title}</div>${content}</div>`;
       }
       const controlValues = {};
-      function slider(label, id, value, unit = "%") {
+      function slider(label, id, value, unit = "%", min = 0, max = 100, step = 1) {
         value = controlValues[id] ?? value;
-        return `<div class="field-group"><div class="field-title"><label for="${id}">${label}</label><div class="numeric-value"><input class="air-field" id="${id}-value" type="number" min="0" max="100" value="${value}" aria-label="${label} value" aria-describedby="${id}-error" data-range="${id}"/><span>${unit}</span></div></div><input class="air-range" id="${id}" type="range" min="0" max="100" value="${value}" data-unit="${unit}"/><p class="air-help air-help--error" id="${id}-error" hidden>Enter a value from 0 to 100.</p></div>`;
+        return `<div class="field-group field-group--numeric"><div class="field-title"><label for="${id}">${label}</label><div class="numeric-value"><input class="air-field" id="${id}-value" type="number" min="${min}" max="${max}" step="${step}" value="${value}" aria-label="${label} value" aria-describedby="${id}-error" data-range="${id}"/><span>${unit}</span></div></div><div class="range-track">${min < 0 ? '<span class="range-neutral" aria-hidden="true"></span>' : ""}<input class="air-range" id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${value}" aria-valuetext="${value}${unit ? " " + unit : ""}" data-unit="${unit}"/></div><p class="air-help air-help--error" id="${id}-error" hidden>Enter a value from ${min} to ${max}, in steps of ${step}.</p></div>`;
+      }
+      const adjustNames = [
+        "Contrast",
+        "Highlights",
+        "Shadows",
+        "Whites",
+        "Blacks",
+        "Saturation",
+        "Vibrance",
+        "Temperature",
+        "Vignette",
+        "Sharpen",
+      ];
+      let adjustView = "adjust",
+        colourBand = "Red";
+      const colourBands = ["Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Purple", "Magenta"];
+      const bandColours = [
+        "#e36161",
+        "#dc9659",
+        "#d1b548",
+        "#5d9967",
+        "#54aeb5",
+        "#638acf",
+        "#9a77c9",
+        "#c06da4",
+      ];
+      function imageScope() {
+        return field(
+          "Apply to",
+          '<div class="air-segments" aria-label="Adjustment scope"><button aria-pressed="true">Whole</button><button aria-pressed="false" disabled title="Requires a subject mask in the app">Subject</button><button aria-pressed="false" disabled title="Requires a subject mask in the app">Background</button></div><p class="air-help">Subject/background need a local mask.</p>',
+        );
+      }
+      function constrainLevels() {
+        const bounds = [
+          ["levels-black", 0, Number(controlValues["levels-white"] ?? 255) - 1],
+          ["levels-white", Number(controlValues["levels-black"] ?? 0) + 1, 255],
+        ];
+        for (const [id, min, max] of bounds) {
+          const range = document.getElementById(id),
+            value = document.getElementById(id + "-value");
+          if (!range) continue;
+          range.min = value.min = min;
+          range.max = value.max = max;
+          document.getElementById(id + "-error").textContent =
+            `Enter a whole number from ${min} to ${max}. Input black must stay below input white.`;
+        }
+      }
+      let curvePoints = [
+          { x: 0, y: 0 },
+          { x: 128, y: 128 },
+          { x: 255, y: 255 },
+        ],
+        curveSelected = 1,
+        curveDrag = null;
+      function curveMarkup() {
+        return '<div class="curve-editor"><svg class="curve" id="tone-curve" viewBox="0 0 300 300" role="group" aria-label="Tone curve" aria-describedby="curve-instructions"><path class="grid-line" d="M90 30v240M150 30v240M210 30v240M30 90h240M30 150h240M30 210h240"/><path class="curve-identity" d="M30 270L270 30"/><path class="curve-line" id="curve-line"/><g id="curve-points"></g></svg><div class="curve-axis"><span>Shadows</span><span>Highlights</span></div><div class="curve-values"><label class="air-label">Input<input class="air-field" id="curve-x" type="number" min="0" max="255" step="1" aria-describedby="curve-error"/></label><label class="air-label">Output<input class="air-field" id="curve-y" type="number" min="0" max="255" step="1" aria-describedby="curve-error"/></label></div><p class="air-help air-help--error" id="curve-error" hidden>Use whole numbers from 0 to 255. Input must stay between neighbouring points.</p><div class="curve-actions"><button class="air-button air-button--quiet" id="curve-add">Add point</button><button class="air-button air-button--quiet" id="curve-remove">Remove</button><button class="air-button air-button--quiet" id="curve-reset">Reset</button></div><p class="air-help" id="curve-instructions">Select a point. Drag or use arrow keys; Shift moves by 10.</p><p class="air-help">Curve interaction study. Image processing remains in the app.</p></div>';
+      }
+      function drawCurve(rebuild = false) {
+        const plot = inspector.querySelector("#tone-curve");
+        if (!plot) return;
+        const nodes = plot.querySelector("#curve-points");
+        if (rebuild)
+          nodes.innerHTML = curvePoints
+            .map(
+              (_, i) =>
+                `<g class="curve-point" role="button" tabindex="0" data-curve-point="${i}"><circle class="curve-hit" r="30"/><circle class="curve-dot" r="5"/></g>`,
+            )
+            .join("");
+        // Smooth the visual study through its points; the production LUT is unchanged.
+        const coordinate = (x, y) =>
+          `${30 + (x * 240) / 255} ${270 - (Math.max(0, Math.min(255, y)) * 240) / 255}`;
+        const slope = (index) => {
+          const before = curvePoints[Math.max(0, index - 1)],
+            after = curvePoints[Math.min(curvePoints.length - 1, index + 1)];
+          return (after.y - before.y) / (after.x - before.x);
+        };
+        let line = `M${coordinate(curvePoints[0].x, curvePoints[0].y)}`;
+        for (let i = 1; i < curvePoints.length; i++) {
+          const a = curvePoints[i - 1],
+            b = curvePoints[i],
+            dx = (b.x - a.x) / 3;
+          line += ` C${coordinate(a.x + dx, a.y + slope(i - 1) * dx)} ${coordinate(b.x - dx, b.y - slope(i) * dx)} ${coordinate(b.x, b.y)}`;
+        }
+        plot.querySelector("#curve-line").setAttribute("d", line);
+        nodes.querySelectorAll("[data-curve-point]").forEach((node, i) => {
+          const p = curvePoints[i];
+          node.setAttribute(
+            "transform",
+            `translate(${30 + (p.x * 240) / 255} ${270 - (p.y * 240) / 255})`,
+          );
+          node.setAttribute("aria-label", `Point ${i + 1}, input ${p.x}, output ${p.y}`);
+          node.setAttribute("aria-pressed", String(i === curveSelected));
+        });
+        const x = inspector.querySelector("#curve-x"),
+          y = inspector.querySelector("#curve-y"),
+          point = curvePoints[curveSelected];
+        x.value = point.x;
+        y.value = point.y;
+        const endpoint = curveSelected === 0 || curveSelected === curvePoints.length - 1;
+        x.readOnly = endpoint;
+        x.min = endpoint ? point.x : curvePoints[curveSelected - 1].x + 1;
+        x.max = endpoint ? point.x : curvePoints[curveSelected + 1].x - 1;
+        inspector.querySelector("#curve-remove").disabled = endpoint;
+        inspector.querySelector("#curve-add").disabled = curvePoints.length >= 12;
+        x.setAttribute("aria-invalid", "false");
+        y.setAttribute("aria-invalid", "false");
+        inspector.querySelector("#curve-error").hidden = true;
+      }
+      function moveCurvePoint(x, y) {
+        const point = curvePoints[curveSelected],
+          end = curveSelected === 0 || curveSelected === curvePoints.length - 1;
+        point.x = end
+          ? point.x
+          : Math.max(
+              curvePoints[curveSelected - 1].x + 1,
+              Math.min(curvePoints[curveSelected + 1].x - 1, Math.round(x)),
+            );
+        point.y = Math.max(0, Math.min(255, Math.round(y)));
+        drawCurve();
       }
       function renderPanel() {
         const a = apps[currentApp],
@@ -2280,19 +2499,18 @@
             "<span>Select a passage on the page to add emphasis.</span></p>";
         } else if (currentApp === "img") {
           content =
-            field(
-              "Apply to",
-              '<div class="air-segments" aria-label="Adjustment scope"><button aria-pressed="true">Whole image</button><button aria-pressed="false" disabled title="Requires a subject mask in the app">Subject</button><button aria-pressed="false" disabled title="Requires a subject mask in the app">Background</button></div><p class="air-help">Subject controls become available after creating a mask.</p>',
-            ) +
-            slider("Exposure", "exposure", 50) +
-            slider("Warmth", "warmth", 40) +
-            field(
-              "Tone curve",
-              '<svg class="curve" viewBox="0 0 260 100" aria-label="Tone curve preview"><path class="grid-line" d="M65 0v100M130 0v100M195 0v100M0 25h260M0 50h260M0 75h260"/><path class="curve-line" d="M12 88C86 92 84 16 248 12"/><circle cx="105" cy="47" r="4"/></svg>',
-            ) +
-            '<div class="air-segments" aria-label="Image view"><button aria-pressed="true">After</button><button aria-pressed="false">Before</button></div><p class="panel-tip">' +
-            icon("info") +
-            "<span>The image keeps its own colour. The tools stay neutral.</span></p>";
+            '<div class="air-segments adjustment-views" aria-label="Adjustment view"><button aria-pressed="' +
+            (adjustView === "adjust") +
+            '" data-adjust-view="adjust">Adjustments</button><button aria-pressed="' +
+            (adjustView === "curve") +
+            '" data-adjust-view="curve">Tone curve</button></div>' +
+            (adjustView === "curve"
+              ? curveMarkup()
+              : imageScope() +
+                slider("Exposure", "exposure", 0, "EV", -2, 2, 0.1) +
+                adjustNames
+                  .map((name) => slider(name, "adjust-" + name.toLowerCase(), 0, "", -100, 100))
+                  .join(""));
         } else {
           content =
             field(
@@ -2348,28 +2566,45 @@
               "Aspect ratio",
               '<div class="air-segments" aria-label="Crop ratio"><button aria-pressed="true" data-ratio="1.2">Original</button><button aria-pressed="false" data-ratio="1">Square</button></div>',
             ) +
-            slider("Straighten", "straighten", 50, "") +
+            slider("Rotation", "straighten", 0, "°", -45, 45) +
             '<label class="air-check-label"><input class="air-check" type="checkbox" checked/>Keep aspect ratio</label><p class="panel-tip">' +
             icon("crop") +
             "<span>Geometry controls keep the same field rhythm and precise values.</span></p>";
         if (currentApp === "img" && a.active === 2)
           content =
-            field(
-              "Brush",
-              '<div class="air-segments" aria-label="Brush edge"><button aria-pressed="true">Soft</button><button aria-pressed="false">Hard</button></div>',
-            ) +
-            slider("Size", "brush-size", 32, " px") +
-            slider("Strength", "brush-strength", 60) +
+            slider("Brush size", "brush-size", 32, "px", 0, 100) +
+            slider("Edge feather", "brush-feather", 6, "px", 0, 30) +
             '<p class="panel-tip">' +
             icon("info") +
-            "<span>These are representative brush controls. Painting is not part of this study.</span></p>";
+            "<span>Click a spot to heal it from neighbouring pixels. Brush-control study; painting stays in the app.</span></p>";
         if (currentApp === "img" && a.active === 3)
           content =
-            '<div class="air-segments" aria-label="Layer selection" style="flex-direction:column"><button aria-pressed="true">Light adjustments</button><button aria-pressed="false">Coastal image</button></div><div class="panel-separator"></div>' +
-            slider("Layer opacity", "layer-opacity", 100) +
-            '<label class="air-check-label"><input class="air-check" type="checkbox" checked/>Visible</label><p class="panel-tip">' +
-            icon("layers") +
-            "<span>Layers, history and page lists share one row language.</span></p>";
+            imageScope() +
+            slider("Input black", "levels-black", 0, "", 0, 255) +
+            slider("Midtone", "levels-gamma", 1, "γ", 0.1, 3, 0.1) +
+            slider("Input white", "levels-white", 255, "", 0, 255) +
+            slider("Output black", "levels-output-black", 0, "", 0, 255) +
+            slider("Output white", "levels-output-white", 255, "", 0, 255) +
+            '<p class="air-help">Precision-control study. The app retains its existing gamma mapping and ordered input limits.</p>';
+        if (currentApp === "img" && a.active === 4)
+          content =
+            imageScope() +
+            field(
+              "Colour band",
+              '<div class="swatches band-swatches" aria-label="Colour band">' +
+                colourBands
+                  .map(
+                    (name, i) =>
+                      `<button class="swatch" aria-label="${name}" aria-pressed="${name === colourBand}" data-band="${name}" style="--swatch:${bandColours[i]}"><i></i></button>`,
+                  )
+                  .join("") +
+                '</div><p class="air-help">' +
+                colourBand +
+                "</p>",
+            ) +
+            slider("Hue", "hsl-" + colourBand + "-hue", 0, "°", -60, 60) +
+            slider("Saturation", "hsl-" + colourBand + "-saturation", 0, "", -100, 100) +
+            slider("Luminance", "hsl-" + colourBand + "-luminance", 0, "", -50, 50);
         if (currentApp === "resume" && a.active === 2)
           content =
             field(
@@ -2413,7 +2648,20 @@
               )
               .join("") +
             '<p class="air-help">Reorder with buttons or a keyboard. Contact rows share the same quiet fields as the rest of the editor.</p>';
-        inspector.innerHTML = `<div class="inspector-content"><div class="inspector-head"><h3>${tool}</h3>${icon(a.tools[a.active][0])}<button class="air-icon-button view-toggle" id="expand-controls" aria-label="${document.querySelector(".workbench").dataset.editingExpanded === "true" ? "Restore split view" : "Expand controls"}" aria-pressed="${document.querySelector(".workbench").dataset.editingExpanded === "true"}">${icon("expand")}</button></div><p class="inspector-description">${currentApp === "pdf" && a.active === 1 ? "Draw or choose an image to place on your page." : { pdf: "Mark, shape and refine the details on your page.", img: "Find the balance that feels right for your image.", resume: "Your story, with room to make it your own." }[currentApp]}</p>${content}</div><div class="panel-actions"><select class="air-field" aria-label="Active tool" id="mobile-tool">${a.tools.map(([, name], i) => `<option value="${i}" ${i === a.active ? "selected" : ""}>${name}</option>`).join("")}</select><button class="air-button" id="panel-done">Done</button></div>`;
+        inspector.dataset.curve = String(
+          currentApp === "img" && a.active === 0 && adjustView === "curve",
+        );
+        inspector.innerHTML = `<div class="inspector-content"><div class="inspector-head"><h3>${tool}</h3>${icon(a.tools[a.active][0])}<button class="air-icon-button view-toggle" id="expand-controls" aria-label="${document.querySelector(".workbench").dataset.editingExpanded === "true" ? "Restore split view" : "Expand controls"}" aria-pressed="${document.querySelector(".workbench").dataset.editingExpanded === "true"}">${icon("expand")}</button></div><p class="inspector-description">${currentApp === "pdf" && a.active === 1 ? "Draw or choose an image to place on your page." : { pdf: "Mark, shape and refine the details on your page.", img: "Precise light, colour and detail.", resume: "Your story, with room to make it your own." }[currentApp]}</p>${content}</div><div class="panel-actions"><select class="air-field" aria-label="Active tool" id="mobile-tool">${a.tools.map(([, name], i) => `<option value="${i}" ${i === a.active ? "selected" : ""}>${name}</option>`).join("")}</select><button class="air-button" id="panel-done">Done</button></div>`;
+        if (currentApp === "img" && a.active === 0 && adjustView === "curve") {
+          drawCurve(true);
+          if (inspector.querySelector("#mobile-tool").getClientRects().length) {
+            document.querySelector(".workbench").dataset.editingExpanded = "true";
+            const expand = inspector.querySelector("#expand-controls");
+            expand.setAttribute("aria-label", "Restore split view");
+            expand.setAttribute("aria-pressed", "true");
+          }
+        }
+        if (currentApp === "img" && a.active === 3) constrainLevels();
         if (currentApp === "pdf" && a.active === 1) restoreSignature();
         if (currentApp === "resume" && a.active === 0) {
           inspector.querySelector("#person-name").value = profile.name;
@@ -2484,7 +2732,7 @@
         zoom = 1;
         doc.style.transform = "";
         doc.style.filter =
-          id === "img" ? `brightness(${0.5 + Number(controlValues.exposure ?? 50) / 100})` : "";
+          id === "img" ? `brightness(${2 ** Number(controlValues.exposure ?? 0)})` : "";
         document.querySelector(".workbench").dataset.app = id;
         const area = document.querySelector(".work-area");
         if (id === "resume") area.insertBefore(inspector, area.querySelector(".canvas-host"));
@@ -2514,7 +2762,20 @@
         frame.style.height = doc.offsetHeight * scale + "px";
         doc.style.transform = `scale(${scale})`;
       }
-      const canvasResize = new ResizeObserver(fitDocument);
+      let previousCompact = false;
+      const canvasResize = new ResizeObserver(() => {
+        const compact = Boolean(inspector.querySelector("#mobile-tool")?.getClientRects().length);
+        const enteringCompact = compact && !previousCompact;
+        previousCompact = compact;
+        if (
+          enteringCompact &&
+          currentApp === "img" &&
+          apps.img.active === 0 &&
+          adjustView === "curve"
+        )
+          renderPanel();
+        fitDocument();
+      });
       canvasResize.observe(document.querySelector(".canvas-content"));
       canvasResize.observe(doc);
       setApp("pdf");
@@ -2561,6 +2822,52 @@
           renderPanel();
           inspector.querySelector(`#contact-${to}`).focus();
         }
+        if (button.dataset.adjustView) {
+          adjustView = button.dataset.adjustView;
+          renderPanel();
+          inspector.querySelector(`[data-adjust-view="${adjustView}"]`).focus();
+        }
+        if (button.dataset.band) {
+          colourBand = button.dataset.band;
+          renderPanel();
+          inspector.querySelector(`[data-band="${colourBand}"]`).focus();
+        }
+        if (button.id === "curve-add") {
+          let gap = 0,
+            at = 0;
+          for (let i = 1; i < curvePoints.length; i++)
+            if (curvePoints[i].x - curvePoints[i - 1].x > gap) {
+              gap = curvePoints[i].x - curvePoints[i - 1].x;
+              at = i;
+            }
+          const left = curvePoints[at - 1],
+            right = curvePoints[at];
+          curvePoints.splice(at, 0, {
+            x: Math.round((left.x + right.x) / 2),
+            y: Math.round((left.y + right.y) / 2),
+          });
+          curveSelected = at;
+          drawCurve(true);
+          inspector.querySelector(`[data-curve-point="${at}"]`).focus();
+        }
+        if (
+          button.id === "curve-remove" &&
+          curveSelected > 0 &&
+          curveSelected < curvePoints.length - 1
+        ) {
+          curvePoints.splice(curveSelected, 1);
+          curveSelected--;
+          drawCurve(true);
+          inspector.querySelector(`[data-curve-point="${curveSelected}"]`).focus();
+        }
+        if (button.id === "curve-reset") {
+          curvePoints = [
+            { x: 0, y: 0 },
+            { x: 255, y: 255 },
+          ];
+          curveSelected = 0;
+          drawCurve(true);
+        }
         if (button.dataset.tool) {
           apps[currentApp].active = Number(button.dataset.tool);
           renderPanel();
@@ -2601,6 +2908,11 @@
         const target = event.target;
         if (target.matches("input[type=range]")) {
           controlValues[target.id] = target.value;
+          if (target.id.startsWith("levels-")) constrainLevels();
+          target.setAttribute(
+            "aria-valuetext",
+            target.value + (target.dataset.unit ? " " + target.dataset.unit : ""),
+          );
           const valueField = document.querySelector("#" + target.id + "-value");
           valueField.value = target.value;
           valueField.setAttribute("aria-invalid", "false");
@@ -2610,15 +2922,31 @@
             paintHighlight();
           }
           if (target.id === "exposure")
-            doc.style.filter = `brightness(${0.5 + Number(target.value) / 100})`;
+            doc.style.filter = `brightness(${2 ** Number(target.value)})`;
         }
         if (target.dataset.range) {
           const range = document.getElementById(target.dataset.range);
           const number = Number(target.value);
-          if (target.value !== "" && number >= Number(range.min) && number <= Number(range.max)) {
+          if (
+            target.value !== "" &&
+            target.validity.valid &&
+            number >= Number(range.min) &&
+            number <= Number(range.max)
+          ) {
             range.value = target.value;
             target.setAttribute("aria-invalid", "false");
-            range.dispatchEvent(new Event("input", { bubbles: true }));
+            controlValues[range.id] = range.value;
+            if (range.id.startsWith("levels-")) constrainLevels();
+            range.setAttribute(
+              "aria-valuetext",
+              range.value + (range.dataset.unit ? " " + range.dataset.unit : ""),
+            );
+            document.getElementById(range.id + "-error").hidden = true;
+            if (range.id === "exposure") doc.style.filter = `brightness(${2 ** number})`;
+            if (range.id === "opacity") {
+              highlightOpacity = number;
+              paintHighlight();
+            }
           } else {
             target.setAttribute("aria-invalid", "true");
             document.getElementById(target.dataset.range + "-error").hidden = false;
@@ -2651,6 +2979,88 @@
             highlightColour = target.value;
             paintHighlight();
           }
+        }
+      });
+      document.addEventListener("input", (event) => {
+        const target = event.target;
+        if (target.id !== "curve-x" && target.id !== "curve-y") return;
+        if (target.value === "" || !target.validity.valid) {
+          target.setAttribute("aria-invalid", "true");
+          inspector.querySelector("#curve-error").hidden = false;
+          return;
+        }
+        curvePoints[curveSelected][target.id === "curve-x" ? "x" : "y"] = Number(target.value);
+        drawCurve();
+      });
+      document.addEventListener("focusin", (event) => {
+        const point = event.target.closest("[data-curve-point]");
+        if (point) {
+          curveSelected = Number(point.dataset.curvePoint);
+          drawCurve();
+        }
+      });
+      document.addEventListener("keydown", (event) => {
+        const node = event.target.closest("[data-curve-point]");
+        if (!node) return;
+        curveSelected = Number(node.dataset.curvePoint);
+        const p = curvePoints[curveSelected],
+          n = event.shiftKey ? 10 : 1;
+        if (
+          [
+            "ArrowLeft",
+            "ArrowRight",
+            "ArrowUp",
+            "ArrowDown",
+            "Enter",
+            " ",
+            "Delete",
+            "Backspace",
+          ].includes(event.key)
+        )
+          event.preventDefault();
+        if (event.key === "ArrowLeft") moveCurvePoint(p.x - n, p.y);
+        if (event.key === "ArrowRight") moveCurvePoint(p.x + n, p.y);
+        if (event.key === "ArrowUp") moveCurvePoint(p.x, p.y + n);
+        if (event.key === "ArrowDown") moveCurvePoint(p.x, p.y - n);
+        if (event.key === "Enter" || event.key === " ") drawCurve();
+        if (
+          (event.key === "Delete" || event.key === "Backspace") &&
+          curveSelected > 0 &&
+          curveSelected < curvePoints.length - 1
+        )
+          inspector.querySelector("#curve-remove").click();
+      });
+      document.addEventListener("pointerdown", (event) => {
+        const point = event.target.closest("[data-curve-point]");
+        if (!point || !event.isPrimary) return;
+        event.preventDefault();
+        curveSelected = Number(point.dataset.curvePoint);
+        point.focus();
+        const plot = point.closest("svg");
+        curveDrag = { id: event.pointerId, original: curvePoints.map((p) => ({ ...p })) };
+        plot.setPointerCapture(event.pointerId);
+        drawCurve();
+      });
+      document.addEventListener("pointermove", (event) => {
+        if (!curveDrag || curveDrag.id !== event.pointerId) return;
+        const plot = inspector.querySelector("#tone-curve");
+        if (!plot) {
+          curveDrag = null;
+          return;
+        }
+        const p = new DOMPoint(event.clientX, event.clientY).matrixTransform(
+          plot.getScreenCTM().inverse(),
+        );
+        moveCurvePoint(((p.x - 30) * 255) / 240, ((270 - p.y) * 255) / 240);
+      });
+      document.addEventListener("pointerup", () => {
+        curveDrag = null;
+      });
+      document.addEventListener("pointercancel", () => {
+        if (curveDrag) {
+          curvePoints = curveDrag.original;
+          curveDrag = null;
+          drawCurve();
         }
       });
       let signaturePointer = null;

@@ -1,6 +1,6 @@
 # Cloakyard Air bundle
 
-Refinement 02 is a **design-review candidate**. Review and lock the detailed system
+Refinement 03 is a **design-review candidate**. Review and lock the detailed system
 before importing it into product UI. The copied bundle is a reference only.
 
 `contract.md` is the visual and interaction contract. Product appendices preserve
@@ -65,3 +65,8 @@ in `docs/air/existing-editor-audit.md`. Writing uses a left entry panel; media a
 document manipulation use a right inspector. Mobile uses a persistent tool selector
 and a working panel with a scrolling body. The study is representative; it does not
 replace the full feature and custom-control audit before migration.
+
+The IMG follow-up defines real signed adjustment ranges, levels, colour bands and
+a keyboard/pointer curve study. Compact curves open expanded controls with a
+persistent preview. See the per-app editor audit for the remaining colour, layer,
+AI and commit/rollback states; a reference interaction is not a feature migration.
