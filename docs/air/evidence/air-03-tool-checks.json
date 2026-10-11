@@ -1,0 +1,67 @@
+[
+  {
+    "app": "PDF",
+    "name": "Annotate",
+    "heading": true
+  },
+  {
+    "app": "PDF",
+    "name": "Sign",
+    "heading": true
+  },
+  {
+    "app": "PDF",
+    "name": "Redact",
+    "heading": true
+  },
+  {
+    "app": "PDF",
+    "name": "Pages",
+    "heading": true
+  },
+  {
+    "app": "IMG",
+    "name": "Adjust",
+    "heading": true
+  },
+  {
+    "app": "IMG",
+    "name": "Crop",
+    "heading": true
+  },
+  {
+    "app": "IMG",
+    "name": "Retouch",
+    "heading": true
+  },
+  {
+    "app": "IMG",
+    "name": "Layers",
+    "heading": true
+  },
+  {
+    "app": "Resume",
+    "name": "Profile",
+    "heading": true
+  },
+  {
+    "app": "Resume",
+    "name": "Contact",
+    "heading": true
+  },
+  {
+    "app": "Resume",
+    "name": "Experience",
+    "heading": true
+  },
+  {
+    "app": "Resume",
+    "name": "Template",
+    "heading": true
+  },
+  {
+    "app": "Resume",
+    "name": "Format",
+    "heading": true
+  }
+]

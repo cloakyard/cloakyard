@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active** · Direction approved: **Air** · Started: **2026-10-11**
+Status: **active — refining the design system before product implementation** · Direction: **Air** · Started: **2026-10-11**
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
@@ -21,6 +21,21 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
+## Current priority — design refinement requested 2026-10-11
+
+Product UI migration has not started. The first component reference was judged too
+generic; Air's detailed system is still under review. Preserve existing validation
+as foundation evidence, not visual approval. Do not implement product screens until
+the refined system is defined and reviewed as requested by the user.
+
+- [x] Define a recognisable family composition/material/selection language beyond a generic card grid.
+- [x] Tighten optical spacing, typography, icon alignment, radii, fields and elevation rules.
+- [x] Define light and dark as equally deliberate themes, including every interactive state.
+- [x] Build reviewable landing/editor/custom-control examples across desktop, tablet and phone.
+- [x] Specify purposeful playful motion with exact timing, interruption, keyboard and reduced-motion rules.
+- [x] Validate the representative refined reference and synchronize the portable contract and bundle; [coverage and remaining gates](docs/air/validation.md).
+- [ ] Review and lock the detailed system before product migration.
+
 ## Phase 0 — scope, baseline, and full-surface audit
 
 - [x] Confirm Air direction and create the persistent refresh goal.
@@ -30,6 +45,7 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - [x] Baseline format/lint/type checks: Cloakyard, PDF, IMG, Resume.
 - [x] Baseline Drop site check/build.
 - [ ] Baseline all existing unit/logic suites; record failures before changing UI.
+- [x] Inspect representative real Resume/PDF/IMG editors before further design; [audit and limits](docs/air/existing-editor-audit.md).
 - [ ] Inspect PDF desktop/laptop/mobile editor, every tool panel, standalone utilities and overlays.
 - [ ] Inspect IMG desktop/laptop/mobile editor, every tool panel, custom colour/curve controls and AI states.
 - [ ] Inspect Resume desktop/laptop/mobile editor, every section, template/ATS/format/export overlays.
@@ -44,11 +60,11 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - [x] Replace/create each repository's DESIGN.md, including Drop's website specification.
 - [x] Preserve domain invariants and output-format exceptions in product appendices.
 - [x] Add exact-copy contract synchronization and drift checks; no sibling dependency at runtime.
-- [ ] Add canonical versioned tokens and shared CSS component primitives.
+- [x] Add canonical versioned tokens and shared CSS component primitives (opt-in; product migration pending).
 - [ ] Map existing token/Tailwind aliases to Air; eliminate competing palettes/type/radius scales.
-- [ ] Add a portable component reference covering controls and all applicable states.
+- [-] Add a portable component reference covering controls and all applicable states. Representative editors are reviewable; full custom-widget/state coverage remains.
 - [x] Enforce adoption instructions for current and future apps through repository guidance.
-- [ ] Add static conformance checks with a narrow documented content/visual-data exception list.
+- [x] Add static conformance checks with a narrow documented content/visual-data exception list.
 - [-] Add CI/local validation entry points and screenshot baseline policy. Contract/inventory CI is installed; runtime style and screenshot gates follow with the shared bundle.
 - [-] Validate standalone checkout portability and token/contract equality. All five standalone contract bundles pass; runtime tokens are next.
 - [ ] Commit the verified contract/foundation as bounded pieces.
@@ -150,5 +166,9 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 
 ## Commit ledger
 
-No implementation commits yet. Record repository, commit, scope, checks and evidence
-here after each passing piece. Native application code and KERR remain out of scope.
+Governance commits (no product runtime changes): Cloakyard `8d5dcea`, CloakPDF
+`5a1755f`, CloakIMG `9cd1200`, CloakDrop `5133124`. Each passed its applicable
+checks. Resume had one serial 288/288 pass, followed by a 287/288 run with an
+unresolved focus-ring assertion; its commit gate remains closed. The Air refinement
+03 design checkpoint is recorded in Cloakyard's git history after reference checks.
+No product implementation commits. Native code and KERR are unchanged.

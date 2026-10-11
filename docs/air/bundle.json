@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "stylesheet": "src/styles/air.css",
+  "sha256": "f3dfdd58527ac2b1755232321f26de41460295f1278b4de9f1b7917644ab9562",
+  "note": "Pinned family bundle. Runtime migration is tracked separately in surfaces.json."
+}

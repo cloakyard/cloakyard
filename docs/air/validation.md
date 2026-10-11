@@ -59,3 +59,79 @@ logs are retained under `/tmp/cloakyard-air-checks` during the refresh.
 
 Rendered editor/component findings and screenshots are pending the full inventory
 sweep. Existing historical audits are background evidence, not Air sign-off.
+
+## 2026-10-11 — shared component bundle
+
+The pinned local CSS and working `docs/air/components.html` reference are identical
+across the family. They are not yet imported into product screens. Contract/bundle
+hashes, palette equality and standalone-copy validation pass. All 15 required and
+breakpoint-neighbour viewport sizes have no document overflow in light and dark.
+The reference was visually inspected on desktop, laptop and phone, including the
+390px dark sheet and 320px light controls. Evidence images are recorded in the
+family repository's `docs/air/evidence/reference-*.jpg`.
+
+Verified: field/select editing; checkbox and segment selection; slider keyboard
+increment; dialog initial focus, forward/reverse focus wrap, Escape, Done and focus
+return; 44px coarse-pointer controls; 16px mobile inputs; zero-duration reduced
+motion. Fixed the native dialog's default max-width narrowing the phone sheet.
+Contrast calculations: all tested normal text/semantic pairs >=4.5:1; required
+field boundaries >=3:1 (light 3.31:1, dark 4.39:1). Source review covers disabled,
+busy, hover/press and status variants. Product-specific controls, real app state
+sweeps, 200% browser zoom and software-keyboard behaviour remain separate gates.
+
+The CSS is an explicit standalone reference entry for PDF's dead-code tool because
+its HTML reference imports it; it is not a dead-code ignore. Product migration will
+replace this entry with the application's normal stylesheet import.
+
+## 2026-10-11 — refinement 03, grounded in existing editors
+
+The live Resume, PDF and IMG editors were inspected before this refinement. See
+[the existing-editor audit](existing-editor-audit.md) for the actual workflows,
+fixtures, sources, 24 layout measurements and seven reviewed captures. This is a
+representative audit; no product migration or full feature certification is implied.
+
+The reference now has a 420px left writing panel for Resume (360px compact), and
+328/288px right inspectors for PDF and IMG. It includes nine annotation modes,
+editable numeric slider values with validation, contact ordering, and product-specific
+export choices. A phone tool selector and Done action stay outside the scrolling
+panel. Canvas Fit accounts for both available dimensions. All fields use one border;
+focus uses a transparent border plus one 2px outline at zero offset, with no shadow.
+
+Reference verification:
+
+- 120 DOM layout checks: three editors × two themes × twenty sizes, including
+  320px phones, 844×390 landscape, tablets, laptops, desktop and breakpoint neighbours.
+  No document/panel horizontal overflow; sample output fits its stage.
+- All 13 representative tool panels render the expected heading; no browser errors.
+- Visual review: Resume 1440×900 light and 1280×720 dark; IMG 1440×900 dark;
+  PDF 1024×768 light and 390×844 dark; IMG export sheet 390×844 dark.
+- Numeric field/range synchronization and invalid-value feedback; contact reorder
+  with focus retained on the moved row; profile values retained across mobile tool
+  switching and expanded preview; live profile text reflected on the sample paper.
+- Export initial focus, forward/reverse wrap, Escape and focus return. The phone
+  export actions are visible inside the viewport. Light/dark field focus has exactly
+  one outline, transparent border and no box shadow. Coarse fields are 16px/44px.
+- Shared contract hash `1699e014b48a` (prefix); six DESIGN documents and five bundles
+  synchronized; all five local contract/inventory checks pass (289 source records).
+
+Evidence: `evidence/air-03-layout-checks.json`, `air-03-tool-checks.json` and
+`air-03-*.jpg`. Earlier evidence belongs to earlier candidates. Unreliable captures
+from rapid background resize sequences were excluded, not treated as visual proof.
+
+Limits: this is a design study with synthetic output and selected interactions.
+Actual exports, all custom colour/rich-text/date widgets, AI flows, Safari/Firefox,
+physical keyboards/touch devices, 200% zoom and performance still need migration
+validation. Reduced motion was enabled for stable capture; the existing motion
+specification remains, and further motion review is pending design lock.
+
+Resume baseline update: one serial full run passed 288/288. A later complete run
+passed 287/288 and failed the existing browser focus-ring assertion. That remains
+unresolved. No production UI, test assertions or test configuration were changed to
+hide it, and Resume's required commit gate remains closed. Reference/layout results
+must not be reported as a passing Resume feature suite.
+
+Final reference checkpoint checks: Cloakyard `vp check` (52 formatted files, 16
+linted) and `vp build` pass. PDF `vp check` (251/210), IMG (306/273) and Resume
+(151/114) pass format/lint/type checks. These do not override the unresolved Resume
+browser-suite result above. Drop's unchanged site passed Astro check (19 files,
+zero errors/warnings/hints) during this refinement. Runtime imports remain unchanged.

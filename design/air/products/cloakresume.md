@@ -9,7 +9,7 @@
 - Preserve A4/Letter pagination, natural word wrapping, links/symbols and multi-page
   PDF fidelity. Long entries, custom sections, statistics and images must survive
   preview, JSON save/load, browser restore and export.
-- Desktop uses the common rail with a writing panel and preview. Narrow screens
+- Desktop uses rail → left writing panel → preview (420px reference, 360px compact). Narrow screens
   keep one active section/picker and a persistent preview with an expanded mode.
   Keyboard/short-height/landscape handling must keep input and actions accessible.
 - Keep keyboard reorder alternatives, stable focus on section changes, issue jumps,

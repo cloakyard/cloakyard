@@ -1,0 +1,74 @@
+[
+  {
+    "app": "PDF",
+    "tool": "Annotate",
+    "heading": "Annotate",
+    "overflow": false
+  },
+  {
+    "app": "PDF",
+    "tool": "Sign",
+    "heading": "Sign",
+    "overflow": false
+  },
+  {
+    "app": "PDF",
+    "tool": "Redact",
+    "heading": "Redact",
+    "overflow": false
+  },
+  {
+    "app": "PDF",
+    "tool": "Pages",
+    "heading": "Pages",
+    "overflow": false
+  },
+  {
+    "app": "IMG",
+    "tool": "Adjust",
+    "heading": "Adjust",
+    "overflow": false
+  },
+  {
+    "app": "IMG",
+    "tool": "Crop",
+    "heading": "Crop",
+    "overflow": false
+  },
+  {
+    "app": "IMG",
+    "tool": "Retouch",
+    "heading": "Retouch",
+    "overflow": false
+  },
+  {
+    "app": "IMG",
+    "tool": "Layers",
+    "heading": "Layers",
+    "overflow": false
+  },
+  {
+    "app": "Resume",
+    "tool": "Profile",
+    "heading": "Profile",
+    "overflow": false
+  },
+  {
+    "app": "Resume",
+    "tool": "Experience",
+    "heading": "Experience",
+    "overflow": false
+  },
+  {
+    "app": "Resume",
+    "tool": "Template",
+    "heading": "Template",
+    "overflow": false
+  },
+  {
+    "app": "Resume",
+    "tool": "Format",
+    "heading": "Format",
+    "overflow": false
+  }
+]
