@@ -222,3 +222,39 @@ large-chunk warnings remain. All five portable contract checks and exact-copy sy
 pass at contract hash `80ae0cf6d1d6` (prefix). Product feature/E2E/model/codec/PWA
 probes remain required when those production surfaces change; no such coverage is
 claimed by this documentation and opt-in reference checkpoint.
+
+## Resume section audit and structured-writing contract — 2026-10-11
+
+The existing Resume editor now has 104 default-section geometry cases: 13 populated
+sections at 1440×900, 1280×800, 768×1024 and 390×844 in both themes. Phone and tablet
+used touch emulation. No measured page/panel horizontal overflow; this does not
+certify scrolled descendants, output or untested states. Per-app evidence names
+tablet 40px targets, 10px desktop contact selectors and 40px phone review actions as
+baseline defects to correct during migration.
+
+Twelve conditional observations cover month/year lists, mobile options/colour,
+template/icon search, all four review tabs and inline writing hints. The local
+writing-engine loading and completed review were observed. No document content
+was edited and no export was initiated by this manual audit. Two baseline images
+were visually reviewed; they are not proposed Air styling or design approval.
+
+The canonical contract now defines rich-text toolbar scope, caret/scroll stability,
+open repeated entries, partial dates and distinct hint/error states. Touch targets
+cannot shrink at desktop breakpoints. Resume's appendix preserves its actual
+template/colour/paper and direct PDF/JSON workflows. Bringing the reduced Resume
+study into line with those detailed requirements remains explicitly in the TODO.
+This checkpoint changes documentation, not runtime UI or the reference rendering.
+
+Cloakyard `vp check` and `git diff --check` pass. All five standalone design
+checkers and exact-copy sync pass at contract hash `982f0e18a380` (prefix). The
+portable release gate also carries the required legacy-design cleanup into every
+app's contract. Resume
+format/lint/type and production build pass. Its full serial suite initially passed
+287/288 with a Horizon PDF-symbol timeout; the eight symbol cases and four earlier
+contact-focus cases pass in targeted runs. Resume's validation record retains the
+full-suite result and commit gate separately; a targeted pass is not a waiver.
+The subsequent isolated run finished 286/288: all 107 editor-browser cases passed,
+but Modern Minimal/Letter and Prism/Letter timed out in the template harness's
+Resume editing click (`tests/template-layouts.spec.ts:125`). Resume remains
+uncommitted pending diagnosis and a complete passing run. Assertions and timeouts
+are unchanged.

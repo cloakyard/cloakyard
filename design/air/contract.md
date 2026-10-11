@@ -189,6 +189,11 @@ Fields use the single-contour exception above: zero-offset outline, transparent
 resting border during focus, no box shadow. Invalid fields retain a nearby error
 message when the blue focus contour replaces their red resting border.
 
+Touch target sizing is independent of layout width. A tablet or touch laptop must
+not inherit 32px/40px targets from a desktop breakpoint. Check the effective hit
+area of the whole labelled control, including inline clear, reorder, formatting,
+calendar and review actions; a 16px checkbox is acceptable inside a 44px label row.
+
 Elevations use a contact shadow plus a diffuse shadow, never a thick glow:
 
 | Surface | Light shadows                                | Dark shadows                                 |
@@ -273,6 +278,47 @@ accessible existing primitives, and shared shells are preferred to new widgets.
 Every component must define default, hover, focus, pressed/selected, disabled,
 busy, empty, success, error, and overflow behaviour where applicable. Mark truly
 inapplicable states with a reason in the inventory; do not silently skip them.
+
+### Writing and structured entry
+
+- **Rich text:** use the same single-contour field as plain text. Place the label
+  and formatting toolbar above it, with 8px separation from the field; wrap the
+  toolbar onto its own row when space is short. No second bordered container or
+  underline around the field/toolbar group. Toolbar buttons use neutral selected
+  surfaces and expose pressed state. Preserve the active field, caret and selection
+  when activating formatting by pointer or keyboard. A toolbar shared by several
+  fields must stay scoped to its entry and never format a different entry.
+- **Long writing:** grow multiline fields without resetting the working panel's
+  scroll position or moving the caret. The focused line must remain reachable
+  with a software keyboard open. Preserve rich-text syntax, explicit line breaks,
+  paste, undo and IME composition. Product-specific title limits are explained
+  beside the field; do not truncate stored text to fit the chrome.
+- **Repeated entries:** one plain heading/action row per role, project or group,
+  followed by its fields. Use 24px between entries and 12px within a related field
+  group; add one divider only where a long list needs a clear boundary. Nested
+  bullets use open rows rather than another padded card. Keep reorder and removal
+  actions separate from the editable area and give them the item's context in
+  their accessible names. On narrow panels, move actions to a row rather than
+  squeezing prose between two permanent action columns. Reorder keeps the edited
+  item's identity/focus and announces its new position; removal is confirmable or
+  undoable, with predictable focus after completion.
+- **Partial dates:** month/year, year-only, empty and Present are distinct values.
+  Do not replace them with a full-day picker or silently normalize imported text.
+  Start/end fields share the normal shell; Current job is a labelled checkbox
+  with a 44px row. Preserve the previous end date when toggling Current job during
+  an edit. Month and year choices keep 44px touch targets at every width, use
+  tabular sans numerals, and return focus after selection or Escape.
+- **Writing hints:** validation errors and optional writing suggestions are
+  distinct. Reserve space for a named hint action so it cannot cover text or the
+  caret. Suggestions use readable text and explicit replacement actions in an
+  opaque, viewport-contained popover; opening it never changes content. Returning
+  from review lands on the named field, with one focus contour. Scores, counts and
+  progress retain textual labels; no colour-only interpretation.
+- **Pickers and review:** searchable icon/template libraries, colour controls and
+  review tabs follow the shared overlay rules. Search has clear and no-results
+  states; close returns to the originating control. Keep the chosen document
+  template/colour separate from the application theme. A reduced study must name
+  its limits and must not present invented controls as existing product features.
 
 ## 5. Composition and workflow
 
@@ -455,6 +501,10 @@ For each bounded implementation piece:
 
 1. Name the affected surfaces, states, behaviours, and test matrix in the TODO.
 2. Implement with shared primitives/tokens; update custom component shells too.
+   After the initial design refinement, retire each replaced surface's obsolete
+   styles, components, assets, dependencies and authoritative design references.
+   Check dynamic consumers before removal; record justified output/native/history
+   exceptions and re-scan for legacy cues before final family sign-off.
 3. Review source and rendered output, including light/dark, mobile/laptop/desktop,
    keyboard, touch, reduced motion, error/loading/empty and long-content states.
 4. Run the repository's required format/lint/type, unit/logic, build/dead-code and

@@ -39,6 +39,9 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Specify purposeful playful motion with exact timing, interruption, keyboard and reduced-motion rules.
 - [x] Validate the representative refined reference and synchronize the portable contract and bundle; [coverage and remaining gates](docs/air/validation.md).
 - [ ] Review and lock the detailed system before product migration.
+- [ ] Refine Resume's study from the full section audit: rich writing, repeated
+      entries and partial dates; replace speculative formatting controls with
+      actual template/primary-colour/paper choices and preserve direct export/save.
 - [ ] After the initial refinements land, remove superseded design cues and unused
       code from the Air reference itself, then repeat this cleanup as each app migrates.
 
@@ -51,10 +54,14 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Baseline format/lint/type checks: Cloakyard, PDF, IMG, Resume.
 - [x] Baseline Drop site check/build.
 - [ ] Baseline all existing unit/logic suites; record failures before changing UI.
+- [ ] Diagnose Resume's intermittent browser-entry/focus/export timing failures
+      without weakening assertions. Latest isolated full run: 286/288; Modern
+      Minimal/Letter and Prism/Letter timed out entering Resume editing at
+      `tests/template-layouts.spec.ts:125`. Capture the failing UI before rerunning.
 - [x] Inspect representative real Resume/PDF/IMG editors before further design; [audit and limits](docs/air/existing-editor-audit.md).
 - [-] Inspect PDF desktop/laptop/mobile editor, every tool panel, standalone utilities and overlays. All 22 default panels inspected at desktop/light and phone/dark; date picker and conditional signature/annotation states inspected. Remaining states/utilities are tracked in PDF’s `docs/air/editor-audit.md`.
 - [-] Inspect IMG desktop/laptop/mobile editor, every tool panel, custom colour/curve controls and AI states. All 26 default desktop/light panels and 25 phone/dark tools inspected; selected layer, colour DOM and AI consent audited. Remaining states and the Cancel/re-entry finding are tracked in IMG’s `docs/air/editor-audit.md`.
-- [ ] Inspect Resume desktop/laptop/mobile editor, every section, template/ATS/format/export overlays.
+- [-] Inspect Resume desktop/laptop/mobile editor, every section, template/ATS/format/export overlays. All 13 populated sections measured at desktop/laptop/tablet/phone in both themes; date/year, logo, colour, options, template search and all four review tabs inspected. Tablet touch targets and small contact typography need migration fixes; remaining states/exports are tracked in Resume's `docs/air/editor-audit.md`.
 - [ ] Inspect Drop website, download flow, privacy page and 404 at every layout class.
 - [ ] Inspect narrow/landscape phone handling, software keyboard and 200% zoom.
 - [ ] Audit focus/keyboard/touch, reduced motion, dark mode and long-content cases.
@@ -135,6 +142,8 @@ the refined system is defined and reviewed as requested by the user.
 - [ ] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description.
 - [ ] Repeated entry cards, drag/reorder controls, rich text, month/year fields, logo/colour pickers.
+- [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
+      rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.
 - [ ] ATS overview/keywords/insights/parse preview, writing review, field jumps and issue states.
 - [ ] Confirm, privacy, bottom sheet, reload prompt, validation and error boundary.
@@ -212,8 +221,9 @@ interiors, custom controls, canvas chrome and less-visible states.
 
 Governance commits (no product runtime changes): Cloakyard `8d5dcea`, CloakPDF
 `5a1755f`, CloakIMG `9cd1200`, CloakDrop `5133124`. Each passed its applicable
-checks. Resume had one serial 288/288 pass, followed by a 287/288 run with an
-unresolved focus-ring assertion; its commit gate remains closed. The Air refinement
+checks. Resume had an earlier serial 288/288 pass, followed by focus/export/entry
+timing failures. Its latest full run is 286/288; its commit gate remains closed.
+The Air refinement
 03 design checkpoint is recorded in Cloakyard's git history after reference checks.
 No product implementation commits. Native code and KERR are unchanged.
 

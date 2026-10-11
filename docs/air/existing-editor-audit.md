@@ -58,7 +58,7 @@ from desktop to mobile, tapping that already-selected tool did not leave the
 picker; choosing Levels did. Record this for a reproducible migration regression
 case rather than asserting a complete diagnosis here.
 
-Still pending: all 22 PDF/26 IMG tool states, every résumé section, destructive and
+Still pending: remaining PDF/IMG tool states, résumé edge states, destructive and
 AI consent/progress/error flows, real export and template fidelity, keyboard-only
 full journeys, Safari/Firefox, physical touch/software keyboards, 200% zoom,
 long-content/translation stress and performance. No existing source is marked
@@ -96,3 +96,31 @@ layer action separation and tool commit boundaries.
 A baseline behaviour finding remains: mobile Exposure +0.4 persisted in the field
 after Cancel and re-entry. Track this as a product regression to reproduce, not a
 passed rollback test or an Air reference defect.
+
+## Resume default-section and writing-control follow-up
+
+All 13 populated sections now have baseline geometry evidence at 1440×900,
+1280×800, 768×1024 and 390×844, light/dark: 104 cases. Narrow sizes used touch
+emulation. No page/panel horizontal overflow was measured. The per-app
+`docs/air/editor-audit.md` records preservation requirements, source findings,
+conditional controls, screenshots and remaining states; no runtime Air migration
+or all-feature certification is implied.
+
+Tablet controls expose a breakpoint mistake: 12 of 13 sections contain buttons
+below 44px under touch emulation, and contact fields/date choices shrink to 40px.
+Desktop contact-kind selectors use 10px uppercase mono. The phone review's Re-scan
+and Open JD editor actions are also 40px high. Those findings now have explicit
+migration tasks and reinforce the shared input-capability sizing rule.
+
+The conditional audit covers month/year selection UI, options/colour sheets,
+template and logo no-results states, all four review tabs, writing-engine progress
+and inline hints. It preserves a useful distinction: résumé fields are autosaved
+writing, while image/PDF tools may have Apply/Cancel transactions. The shared
+contract now defines rich-text toolbar scope, growing-field scroll/caret stability,
+open repeated entries, partial dates and separate writing-hint/error treatment.
+
+The reduced Resume study still needs its Experience/date/rich-text and document
+format examples brought into line with this audit. Actual document controls are
+template, primary colour and A4/Letter; speculative text-size/keep-together controls
+are not a product requirement. Direct PDF export and separate JSON save/load must
+remain available during migration.
