@@ -61,8 +61,13 @@ ${appendix}
     ).replace("__AIR_STYLESHEET__", `../../${cssPath}`);
     await sync(resolve(roots, slug, cssPath), css);
     await sync(resolve(roots, slug, "docs/air/components.html"), gallery);
-    const studyAssets = {};
+    await sync(
+      resolve(roots, slug, "scripts/check-air-design.mjs"),
+      await readFile(resolve(repository, "scripts/check-air-design.mjs"), "utf8"),
+    );
+    const studyAssets = { "components.html": createHash("sha256").update(gallery).digest("hex") };
     for (const asset of [
+      "motion.mjs",
       "light-controller.mjs",
       "assets/air-light-shader.js",
       "assets/THIRD_PARTY_LICENSES.txt",

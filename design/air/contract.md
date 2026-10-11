@@ -459,7 +459,7 @@ The reference now demonstrates this custom Shaders composition. Its working
 implementation is review evidence; it does not itself grant visual or production
 performance approval.
 
-- Shared motion: press 120ms; hover/colour 160ms; popover 180ms; dialog 240ms;
+- Shared motion: pointer press 120ms; hover arrow 160ms; popover 180ms; dialog 240ms;
   exit 160ms. Ease-out `cubic-bezier(0.23, 1, 0.32, 1)`; reversible spatial motion
   `cubic-bezier(0.77, 0, 0.175, 1)`. Sheet easing: `cubic-bezier(0.32, 0.72, 0, 1)`. No per-app timing scale.
 - A completion acknowledgement may settle from 4px/0.96 scale over 240ms, once.
@@ -467,10 +467,16 @@ performance approval.
   playful character. Avoid bouncing controls, moving text, repeated reveals and
   continuous decorative activity during work.
 - Pointer hover may move a directional arrow by 2px over 160ms. Press uses 0.98
-  scale for 120ms; release returns from the current state. No hover lift on touch.
+  scale for 120ms; release is immediate. Keyboard presses never compress controls.
+  Control colours, selection, focus and appearance changes are immediate. No hover
+  lift on touch; a focused keyboard control never acquires decorative hover motion.
 - Dialogs enter from 4px/0.98 over 240ms and exit over 160ms. On phones they rise
   from the bottom with sheet easing. Keyboard activation and Escape are immediate.
   Focus moves as soon as opened; animation cannot delay access to controls.
+- Shared `motion.mjs` demonstrates native-dialog and completion behaviour. Dialog
+  exits sample the current composited pose before cancelling an entrance; repeated
+  close requests do not restart the exit. Completion replay uses its current pose
+  and remaining duration. A live reduced-motion change settles either immediately.
 - Rapid repeat actions retarget/cancel the current motion. Never queue entrances,
   restart progress, remount a content stage, or wait for animation to accept input.
 - Frequent tool/section switching and keyboard commands are immediate. Motion

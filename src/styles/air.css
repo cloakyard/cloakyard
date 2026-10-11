@@ -100,10 +100,6 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition:
-    background-color var(--air-motion-hover) var(--air-ease-out),
-    color var(--air-motion-hover) var(--air-ease-out),
-    transform var(--air-motion-press) var(--air-ease-out);
 }
 .air-icon-button {
   flex: 0 0 auto;
@@ -138,9 +134,11 @@
 .air-button[aria-busy="true"] {
   cursor: progress;
 }
-.air-button:active:not(:disabled),
-.air-icon-button:active:not(:disabled) {
+/* Pointer press is deliberate; release, keyboard feedback and colours are immediate. */
+.air-button:active:not(:disabled):not(:focus-visible),
+.air-icon-button:active:not(:disabled):not(:focus-visible) {
   transform: scale(0.98);
+  transition: transform var(--air-motion-press) var(--air-ease-out);
 }
 .air-field {
   box-sizing: border-box;
@@ -402,8 +400,9 @@
   .air-icon-button {
     transition: none;
   }
-  .air-button:active:not(:disabled),
-  .air-icon-button:active:not(:disabled) {
+  .air-button:active:not(:disabled):not(:focus-visible),
+  .air-icon-button:active:not(:disabled):not(:focus-visible) {
     transform: none;
+    transition: none;
   }
 }

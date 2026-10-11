@@ -105,13 +105,13 @@ function fail(error) {
   failed = true;
   deactivate("failed");
 }
-async function mount() {
+function mount() {
   const reason = restriction();
   if (reason) {
     deactivate(reason);
     return;
   }
-  if (renderer || mounting) return;
+  if (renderer || mounting) return mounting;
   const token = ++generation,
     started = performance.now();
   setState("loading");
@@ -161,6 +161,7 @@ async function mount() {
       if (token === generation) mounting = null;
     }
   })();
+  return mounting;
 }
 function playArrival() {
   if (!renderer || restriction()) return;
@@ -246,7 +247,7 @@ const visibility = new IntersectionObserver(
     const entry = entries.at(-1);
     visible = entry.isIntersecting && entry.intersectionRatio > 0.01;
     if (restriction()) deactivate(restriction());
-    else mount();
+    else void mount();
   },
   { threshold: [0, 0.01] },
 );
@@ -261,7 +262,7 @@ resize.observe(field);
 function refresh() {
   const reason = restriction();
   if (reason) deactivate(reason);
-  else if (!renderer) mount();
+  else if (!renderer) void mount();
   else {
     dirty = true;
     wake();

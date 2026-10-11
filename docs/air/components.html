@@ -396,7 +396,7 @@
       .product-entry small svg {
         width: 13px;
         height: 13px;
-        transition: transform 160ms var(--air-ease-out);
+        transition: transform var(--air-motion-hover) var(--air-ease-out);
       }
       .product-entry[aria-pressed="true"] small {
         color: var(--air-accent);
@@ -466,7 +466,7 @@
         box-shadow: 0 1px 3px color-mix(in srgb, var(--air-ink) 8%, transparent);
         color: var(--air-ink);
       }
-      .workbench {
+      .editor-workspace {
         height: 680px;
         background: var(--air-surface);
         border: 1px solid var(--air-line);
@@ -528,10 +528,10 @@
         display: grid;
         grid-template-columns: 72px minmax(0, 1fr) 328px;
       }
-      .workbench[data-app="resume"] .work-area {
+      .editor-workspace[data-app="resume"] .work-area {
         grid-template-columns: 72px 420px minmax(0, 1fr);
       }
-      .workbench[data-app="resume"] .inspector {
+      .editor-workspace[data-app="resume"] .inspector {
         border-left: 0;
         border-right: 1px solid var(--air-line);
       }
@@ -576,9 +576,6 @@
         left: 0;
         border-radius: 999px;
       }
-      .rail-space {
-        flex: 1;
-      }
       .canvas-host {
         margin: 8px;
         position: relative;
@@ -608,7 +605,7 @@
         width: 300px;
         transform-origin: top left;
       }
-      .workbench[data-app="img"] #document {
+      .editor-workspace[data-app="img"] #document {
         width: 460px;
       }
       .paper {
@@ -747,7 +744,7 @@
         padding: 24px;
         scrollbar-gutter: stable;
       }
-      .workbench[data-app="resume"] .inspector-content {
+      .editor-workspace[data-app="resume"] .inspector-content {
         width: 100%;
         max-width: 560px;
         margin-inline: auto;
@@ -1561,6 +1558,11 @@
         .hero-actions .air-button svg {
           transition: transform var(--air-motion-hover) var(--air-ease-out);
         }
+        .product-entry:focus-visible small svg,
+        .hero-actions .air-button:focus-visible svg {
+          transition: none;
+          transform: none;
+        }
       }
       @container preview (max-width:1023px) {
         .family-products {
@@ -1580,7 +1582,7 @@
         .work-area {
           grid-template-columns: 64px minmax(0, 1fr) 288px;
         }
-        .workbench[data-app="resume"] .work-area {
+        .editor-workspace[data-app="resume"] .work-area {
           grid-template-columns: 64px 360px minmax(0, 1fr);
         }
         .tool-rail {
@@ -1633,11 +1635,11 @@
           margin-top: 4px;
         }
 
-        .workbench {
+        .editor-workspace {
           height: 740px;
         }
         .work-area,
-        .workbench[data-app="resume"] .work-area {
+        .editor-workspace[data-app="resume"] .work-area {
           grid-template-columns: 1fr;
           grid-template-rows: minmax(210px, 0.9fr) minmax(290px, 1.1fr);
         }
@@ -1649,7 +1651,7 @@
           padding: 16px;
         }
         #document,
-        .workbench[data-app="img"] #document {
+        .editor-workspace[data-app="img"] #document {
           width: max-content;
         }
         .paper {
@@ -1722,11 +1724,8 @@
           left: calc(50% - 8px);
           bottom: 0;
         }
-        .rail-space {
-          display: none;
-        }
         .inspector,
-        .workbench[data-app="resume"] .inspector {
+        .editor-workspace[data-app="resume"] .inspector {
           grid-row: 2;
           border-left: 0;
           border-right: 0;
@@ -1791,35 +1790,35 @@
         .view-toggle {
           display: inline-flex;
         }
-        .workbench[data-expanded="true"] .canvas-zoom {
+        .editor-workspace[data-expanded="true"] .canvas-zoom {
           display: flex;
         }
-        .workbench[data-expanded="true"] .work-area {
+        .editor-workspace[data-expanded="true"] .work-area {
           grid-template-rows: 1fr;
         }
-        .workbench[data-expanded="true"] .inspector {
+        .editor-workspace[data-expanded="true"] .inspector {
           display: none;
         }
-        .workbench[data-editing-expanded="true"]:not([data-expanded="true"]) .work-area {
+        .editor-workspace[data-editing-expanded="true"]:not([data-expanded="true"]) .work-area {
           grid-template-rows: 112px minmax(0, 1fr);
         }
-        .workbench[data-expanded="true"] .paper {
+        .editor-workspace[data-expanded="true"] .paper {
           width: 240px;
           min-width: 240px;
           min-height: 330px;
           font-size: 10px;
           padding: 24px;
         }
-        .workbench[data-expanded="true"] .paper .document-extra {
+        .editor-workspace[data-expanded="true"] .paper .document-extra {
           display: block;
         }
-        .workbench[data-expanded="true"] .paper h3 {
+        .editor-workspace[data-expanded="true"] .paper h3 {
           font-size: 25px;
         }
-        .workbench[data-expanded="true"] .canvas-host {
+        .editor-workspace[data-expanded="true"] .canvas-host {
           align-items: center;
         }
-        .workbench[data-expanded="true"] .image-art {
+        .editor-workspace[data-expanded="true"] .image-art {
           width: 90%;
           height: auto;
           aspect-ratio: 1.2;
@@ -2246,7 +2245,7 @@
             ><button data-app="resume" aria-pressed="false">Resume</button>
           </div>
         </div>
-        <div class="workbench" data-expanded="false">
+        <div class="editor-workspace" data-expanded="false">
           <header class="editor-bar">
             <div class="editor-brand">
               <span data-icon="brand"></span><span id="product-name">CloakPDF</span>
@@ -2425,7 +2424,8 @@
             <h3>Finishing should feel good.</h3>
             <p>
               A brief, soft settle confirms completion. No confetti, looping ornaments or moving
-              text. Try it again—the interaction restarts cleanly without stacking effects.
+              text. Try it again—the motion continues from its current position without stacking
+              effects.
             </p>
           </div>
           <div class="save-example">
@@ -2526,7 +2526,8 @@
         ><button class="air-button air-button--primary" id="date-apply">Use date</button>
       </div>
     </dialog>
-    <script>
+    <script type="module">
+      import { createDialogMotion, createCompletionMotion } from "./motion.mjs";
       const paths = {
         right: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
         arrow: '<path d="M7 17 17 7M7 7h10v10"/>',
@@ -3029,11 +3030,11 @@
         inspector.dataset.curve = String(
           currentApp === "img" && a.active === 0 && adjustView === "curve",
         );
-        inspector.innerHTML = `<div class="inspector-content"><div class="inspector-head"><h3>${tool}</h3>${icon(a.tools[a.active][0])}<button class="air-icon-button view-toggle" id="expand-controls" aria-label="${document.querySelector(".workbench").dataset.editingExpanded === "true" ? "Restore split view" : "Expand controls"}" aria-pressed="${document.querySelector(".workbench").dataset.editingExpanded === "true"}">${icon("expand")}</button></div><p class="inspector-description">${currentApp === "pdf" && a.active === 1 ? "Draw or choose an image to place on your page." : { pdf: "Mark, shape and refine the details on your page.", img: "Precise light, colour and detail.", resume: "Your story, with room to make it your own." }[currentApp]}</p>${content}</div><div class="panel-actions"><select class="air-field" aria-label="Active tool" id="mobile-tool">${a.tools.map(([, name], i) => `<option value="${i}" ${i === a.active ? "selected" : ""}>${name}</option>`).join("")}</select><button class="air-button" id="panel-done">Done</button></div>`;
+        inspector.innerHTML = `<div class="inspector-content"><div class="inspector-head"><h3>${tool}</h3>${icon(a.tools[a.active][0])}<button class="air-icon-button view-toggle" id="expand-controls" aria-label="${document.querySelector(".editor-workspace").dataset.editingExpanded === "true" ? "Restore split view" : "Expand controls"}" aria-pressed="${document.querySelector(".editor-workspace").dataset.editingExpanded === "true"}">${icon("expand")}</button></div><p class="inspector-description">${currentApp === "pdf" && a.active === 1 ? "Draw or choose an image to place on your page." : { pdf: "Mark, shape and refine the details on your page.", img: "Precise light, colour and detail.", resume: "Your story, with room to make it your own." }[currentApp]}</p>${content}</div><div class="panel-actions"><select class="air-field" aria-label="Active tool" id="mobile-tool">${a.tools.map(([, name], i) => `<option value="${i}" ${i === a.active ? "selected" : ""}>${name}</option>`).join("")}</select><button class="air-button" id="panel-done">Done</button></div>`;
         if (currentApp === "img" && a.active === 0 && adjustView === "curve") {
           drawCurve(true);
           if (inspector.querySelector("#mobile-tool").getClientRects().length) {
-            document.querySelector(".workbench").dataset.editingExpanded = "true";
+            document.querySelector(".editor-workspace").dataset.editingExpanded = "true";
             const expand = inspector.querySelector("#expand-controls");
             expand.setAttribute("aria-label", "Restore split view");
             expand.setAttribute("aria-pressed", "true");
@@ -3111,7 +3112,7 @@
         doc.style.transform = "";
         doc.style.filter =
           id === "img" ? `brightness(${2 ** Number(controlValues.exposure ?? 0)})` : "";
-        document.querySelector(".workbench").dataset.app = id;
+        document.querySelector(".editor-workspace").dataset.app = id;
         const area = document.querySelector(".work-area");
         if (id === "resume") area.insertBefore(inspector, area.querySelector(".canvas-host"));
         else area.append(inspector);
@@ -3187,7 +3188,7 @@
           restoreSignature();
         }
         if (button.id === "expand-controls") {
-          const workspace = document.querySelector(".workbench");
+          const workspace = document.querySelector(".editor-workspace");
           const expanded = workspace.dataset.editingExpanded !== "true";
           workspace.dataset.editingExpanded = String(expanded);
           button.setAttribute("aria-pressed", String(expanded));
@@ -3507,7 +3508,7 @@
           expanded = b.getAttribute("aria-pressed") !== "true";
         b.setAttribute("aria-pressed", String(expanded));
         b.setAttribute("aria-label", expanded ? "Return to editing" : "Expand preview");
-        document.querySelector(".workbench").dataset.expanded = String(expanded);
+        document.querySelector(".editor-workspace").dataset.expanded = String(expanded);
       });
       function setZoom(delta) {
         zoom = Math.max(0.75, Math.min(1.25, zoom + delta));
@@ -3516,23 +3517,9 @@
       }
       document.querySelector("#zoom-out").addEventListener("click", () => setZoom(-0.1));
       document.querySelector("#zoom-in").addEventListener("click", () => setZoom(0.1));
-      const dialog = document.querySelector("#export-dialog"),
-        reduce = matchMedia("(prefers-reduced-motion:reduce)");
-      let dialogAnimation;
-      function dialogMotion(enter) {
-        const sheet = matchMedia("(max-width:640px)").matches;
-        const resting = { opacity: 1, transform: "translateY(0) scale(1)" };
-        const displaced = {
-          opacity: sheet ? 1 : 0,
-          transform: sheet ? "translateY(100%)" : "translateY(4px) scale(.98)",
-        };
-        return dialog.animate(enter ? [displaced, resting] : [resting, displaced], {
-          duration: enter ? 240 : 160,
-          easing: sheet ? "cubic-bezier(.32,.72,0,1)" : "cubic-bezier(.23,1,.32,1)",
-        });
-      }
+      const dialog = document.querySelector("#export-dialog");
+      const exportMotion = createDialogMotion(dialog);
       function openDialog(event) {
-        dialogAnimation?.cancel();
         document.querySelector("#export-title").textContent =
           currentApp === "img"
             ? "Export image"
@@ -3578,16 +3565,10 @@
           /\.(pdf|png)$/,
           "",
         );
-        if (event.detail !== 0 && !reduce.matches) dialogAnimation = dialogMotion(true);
+        exportMotion.enter(event);
       }
       function closeDialog(event, value = "cancel") {
-        dialogAnimation?.cancel();
-        if (event.detail === 0 || reduce.matches) {
-          dialog.close(value);
-          return;
-        }
-        dialogAnimation = dialogMotion(false);
-        dialogAnimation.finished.then(() => dialog.close(value)).catch(() => {});
+        exportMotion.close(event, value);
       }
       document.querySelector("#open-dialog").addEventListener("click", openDialog);
       document.querySelector("#sample-export").addEventListener("click", openDialog);
@@ -3598,7 +3579,6 @@
           closeDialog(event, button.value);
         }),
       );
-      dialog.addEventListener("cancel", () => dialogAnimation?.cancel());
       dialog.addEventListener("keydown", (event) => {
         if (event.key !== "Tab") return;
         const controls = [...dialog.querySelectorAll("button,input,select,textarea")],
@@ -4148,20 +4128,11 @@
         document.getElementById(dateDraft?.trigger)?.focus(),
       );
 
-      let completionAnimation;
+      const completionMotion = createCompletionMotion(document.querySelector(".saved-orb"));
       document.querySelector("#play-completion").addEventListener("click", (event) => {
-        const orb = document.querySelector(".saved-orb");
-        completionAnimation?.cancel();
         document.querySelector(".motion-status").textContent =
           "All done. A small detail, thoughtfully finished.";
-        if (event.detail !== 0 && !reduce.matches)
-          completionAnimation = orb.animate(
-            [
-              { transform: "translateY(4px) scale(.96)", opacity: 0.4 },
-              { transform: "translateY(0) scale(1)", opacity: 1 },
-            ],
-            { duration: 240, easing: "cubic-bezier(.23,1,.32,1)" },
-          );
+        completionMotion.play(event);
       });
     </script>
     <script type="module" src="./light-controller.mjs"></script>

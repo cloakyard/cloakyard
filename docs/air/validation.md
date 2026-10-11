@@ -372,3 +372,52 @@ Cloakyard `vp check`, `vp build`, deterministic shader rebuild, exact-copy bundl
 sync, all five standalone design checkers and `git diff --check` pass. Contract
 hash: `c309bd4e4f44` (prefix). This checkpoint commits only Cloakyard's design study;
 sibling synchronized files retain their independent validation/commit gates.
+
+## Shared motion and isolated portability — 2026-10-11
+
+The reference now shares native-dialog and completion motion through `motion.mjs`.
+Interrupted exits preserve the current desktop or phone-sheet pose; repeated close
+requests keep the existing exit. Completion replay continues from its current pose
+with the remaining duration. Keyboard actions, release and theme/control colours
+are immediate. A live reduced-motion change settles active motion immediately.
+Native dialog focus and modality remain intact. See [the motion review](motion-review.md).
+
+`evidence/air-03-motion-checks.json` records 42/42 PDF/IMG/Resume export-dialog cases:
+seven viewport classes, both themes, no measured horizontal overflow, dialog
+containment, focus entry/restoration, and 40px fine / 44px coarse buttons and text
+fields. The documented numeric-slider value exception remains 32px on fine
+pointers. Another 21 observations cover interrupted/repeated actions, native focus
+wrapping, Enter/Space, Escape, pointer press/release, hover gating, reduced-motion
+changes and shader startup. Final desktop-light and phone-dark captures were
+visually inspected. These checks use browser emulation, not physical-device proof.
+
+The current reference's unused rail spacer, old workspace class naming, duplicate
+inline animation handlers and duplicate timing values were removed. A CSS-class
+consumer search found no remaining orphan inline-style classes; the inline module
+also passes a separate lint check. Historical migration references remain explicit.
+Production cleanup is still required for every migrated piece.
+
+Each standalone manifest now hashes the HTML, shared modules, renderer and licence
+asset. `scripts/check-air-portability.mjs` copies only the required bundle into an
+isolated temporary directory and verifies the baseline, omitted motion hash,
+altered motion code, missing manifest and restored bundle. All five checks pass
+for each product (25/25). Browser checks of both flat and nested-site copies loaded
+their own CSS, motion and real WebGPU assets without foreign requests. The test
+servers and temporary copies were removed afterwards. CI runs the portability gate.
+
+PDF, IMG and Resume format/lint/type checks pass with no warnings. Generated vendor
+assets are excluded from those tools; shared source modules remain checked and
+generated assets retain deterministic rebuild and integrity gates. The stricter
+checkers exposed floating startup promises in the light controller; `mount()` now
+returns its actual in-flight promise and background callers explicitly discard it.
+
+Real touch/software-keyboard behaviour, Safari/Firefox, production adapters and
+full product feature suites remain separate gates. Resume's previously recorded
+286/288 baseline has not been rerun or resolved in this checkpoint. No sibling
+commit or production UI migration is claimed here. User visual sign-off remains open.
+
+Final Cloakyard `vp check`, `vp build`, inline-module syntax, deterministic shader
+rebuild, exact-copy bundle synchronization, all five standalone checkers and
+`git diff --check` pass. The 25 isolated portability assertions were rerun after
+the startup-promise correction and pass. Contract hash: `be2cbc3b068b` (prefix).
+The production build remains 242.40 kB JS / 28.52 kB CSS with no Air imports.

@@ -13,5 +13,6 @@ jobs:
         with:
           node-version: "24"
       - run: node scripts/check-air-design.mjs
+      - run: node scripts/check-air-portability.mjs
       - run: node scripts/air-inventory.mjs
       - run: git diff --exit-code -- docs/air/surfaces.json docs/air/surface-inventory.md

@@ -32,8 +32,18 @@ for (const surface of inventory.surfaces) {
   }
 }
 const bundle = await readFile(resolve(root, "docs/air/bundle.json"), "utf8").catch(() => null);
-if (bundle) {
+if (!bundle) fail("Missing portable Air bundle manifest.");
+else {
   const { stylesheet, sha256, version, studyAssets = {} } = JSON.parse(bundle);
+  for (const asset of [
+    "components.html",
+    "motion.mjs",
+    "light-controller.mjs",
+    "assets/air-light-shader.js",
+    "assets/THIRD_PARTY_LICENSES.txt",
+  ]) {
+    if (!studyAssets[asset]) fail(`Missing Air study asset hash: ${asset}`);
+  }
   for (const [asset, hash] of Object.entries(studyAssets)) {
     const content = await readFile(resolve(root, "docs/air", asset));
     if (createHash("sha256").update(content).digest("hex") !== hash)

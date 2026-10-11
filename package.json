@@ -10,6 +10,7 @@
     "design:light": "node scripts/build-air-light.mjs",
     "design:light:check": "node scripts/build-air-light.mjs --check",
     "design:check": "node scripts/check-air-design.mjs",
+    "design:portability": "node scripts/check-air-portability.mjs",
     "design:inventory": "node scripts/air-inventory.mjs",
     "design:sync": "node scripts/sync-air-design.mjs"
   },

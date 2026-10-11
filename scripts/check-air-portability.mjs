@@ -1,0 +1,96 @@
+/** Exercise the portable bundle and its drift guards without a sibling checkout. */
+import assert from "node:assert/strict";
+import { copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { dirname, resolve, relative, isAbsolute, basename } from "node:path";
+import { tmpdir } from "node:os";
+import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
+
+const args = process.argv.slice(2);
+const source = resolve(
+  args.find((arg) => !arg.startsWith("--")) ||
+    resolve(dirname(fileURLToPath(import.meta.url)), ".."),
+);
+assert(
+  args.every((arg) => !arg.startsWith("--") || arg === "--keep"),
+  "Unknown option",
+);
+const fixture = await mkdtemp(resolve(tmpdir(), "air-portability-"));
+const manifestPath = "docs/air/bundle.json";
+const manifestText = await readFile(resolve(source, manifestPath), "utf8");
+const manifest = JSON.parse(manifestText);
+const assets = Object.keys(manifest.studyAssets).map((asset) => `docs/air/${asset}`);
+const files = [
+  "DESIGN.md",
+  manifestPath,
+  "docs/air/surfaces.json",
+  "scripts/check-air-design.mjs",
+  manifest.stylesheet,
+  ...assets,
+];
+const checks = [];
+try {
+  for (const file of new Set(files)) {
+    const target = resolve(fixture, file);
+    assert(
+      !isAbsolute(file) && !relative(fixture, target).startsWith(".."),
+      `Non-portable path: ${file}`,
+    );
+    await mkdir(dirname(target), { recursive: true });
+    await copyFile(resolve(source, file), target);
+  }
+  function verify() {
+    const result = spawnSync(process.execPath, [resolve(fixture, "scripts/check-air-design.mjs")], {
+      cwd: fixture,
+      encoding: "utf8",
+    });
+    if (result.error) throw result.error;
+    return result;
+  }
+  const baseline = verify();
+  assert.equal(baseline.status, 0, baseline.stderr);
+  checks.push("isolated bundle passes with no dependencies or sibling files");
+
+  const withoutMotion = structuredClone(manifest);
+  delete withoutMotion.studyAssets["motion.mjs"];
+  await writeFile(resolve(fixture, manifestPath), JSON.stringify(withoutMotion));
+  const missingHash = verify();
+  assert.notEqual(missingHash.status, 0);
+  assert.match(missingHash.stderr, /Missing Air study asset hash: motion\.mjs/);
+  checks.push("missing motion hash rejected");
+  await writeFile(resolve(fixture, manifestPath), manifestText);
+
+  const motionPath = resolve(fixture, "docs/air/motion.mjs");
+  const motion = await readFile(motionPath, "utf8");
+  await writeFile(motionPath, `${motion}\n// Deliberate portability-test drift.\n`);
+  const drift = verify();
+  assert.notEqual(drift.status, 0);
+  assert.match(drift.stderr, /Air study asset drift: motion\.mjs/);
+  checks.push("altered motion module rejected");
+  await writeFile(motionPath, motion);
+
+  await rm(resolve(fixture, manifestPath));
+  const missingManifest = verify();
+  assert.notEqual(missingManifest.status, 0);
+  assert.match(missingManifest.stderr, /Missing portable Air bundle manifest/);
+  checks.push("missing manifest rejected");
+  await writeFile(resolve(fixture, manifestPath), manifestText);
+
+  const restored = verify();
+  assert.equal(restored.status, 0, restored.stderr);
+  checks.push("restored bundle passes");
+  console.log(
+    JSON.stringify(
+      {
+        product: basename(source),
+        checks,
+        files: files.length,
+        fixture: args.includes("--keep") ? fixture : null,
+      },
+      null,
+      2,
+    ),
+  );
+} finally {
+  if (!args.includes("--keep")) await rm(fixture, { recursive: true });
+}

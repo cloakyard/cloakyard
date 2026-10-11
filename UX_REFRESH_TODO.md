@@ -48,17 +48,22 @@ the refined system is defined and reviewed as requested by the user.
       Measure physical-device GPU/battery/thermal behaviour, Safari/Firefox and
       slower-network startup; the 369 kB gzip study payload is not yet a production
       budget approval.
-- [ ] Validate motion as a family: press/hover, sheet/dialog interruption,
-      completion feedback, keyboard immediacy and mobile touch. Measure shader
-      startup/frame cost and offscreen/hidden pause; keep effects out of active
-      document/image canvases. Record the working motion study and review evidence.
+- [x] Validate shared-reference press/hover, sheet/dialog interruption, completion
+      feedback, keyboard immediacy, focus and live reduced-motion changes. All 42
+      PDF/IMG/Resume dialog viewport/theme cases pass. See [motion review](docs/air/motion-review.md).
+- [ ] Repeat motion validation on production adapters and real touch devices;
+      cover actual tooltips/popovers and Safari/Firefox. Shader local startup,
+      idle and visibility checks pass; physical-device costs remain open.
 - [x] Refine Resume's study from the full section audit: rich writing, repeated
       entries and partial dates; replace speculative formatting controls with
       actual template/primary-colour/paper choices and preserve direct export/save.
       Representative study validated; full product templates, nested bullets and
       import/export remain product migration gates. See the validation record.
-- [ ] After the initial refinements land, remove superseded design cues and unused
-      code from the Air reference itself, then repeat this cleanup as each app migrates.
+- [x] Remove superseded cues and unused code from the current Air reference:
+      obsolete light geometry, unused rail spacer, old workspace class naming,
+      duplicate inline motion handlers and timing literals. Record the search scope.
+- [ ] Repeat legacy-design searches and cleanup throughout each app as it migrates,
+      including custom components, styles, assets, dependencies and documentation.
 
 ## Phase 0 — scope, baseline, and full-surface audit
 
@@ -94,7 +99,11 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Enforce adoption instructions for current and future apps through repository guidance.
 - [x] Add static conformance checks with a narrow documented content/visual-data exception list.
 - [-] Add CI/local validation entry points and screenshot baseline policy. Contract/inventory CI is installed; runtime style and screenshot gates follow with the shared bundle.
-- [-] Validate standalone checkout portability and token/contract equality. All five standalone contract bundles pass; runtime tokens are next.
+- [x] Validate the opt-in bundle in isolated directories: all five products pass
+      contract/token/HTML/module integrity plus negative drift checks (25/25).
+      Flat and nested-site references load their own CSS, motion and shader assets
+      in the browser. No app dependencies or sibling checkouts are needed.
+- [ ] Validate portable production integration as each app adopts the bundle.
 - [ ] Commit the verified contract/foundation as bounded pieces.
 
 ## Phase 2 — Cloakyard family home
