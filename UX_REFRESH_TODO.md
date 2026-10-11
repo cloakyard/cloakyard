@@ -18,6 +18,10 @@ part of the current work. All repositories use branch `codex/air-refresh`.
   user changes out. Never substitute a screenshot for functional verification.
 - Per-app migrations may need several commits. Complete shared foundations first;
   carry any shared corrections back to all migrated apps before advancing.
+- After the initial Air refinements land, include a legacy-design cleanup pass in
+  each migrated piece before its validation and commit. Track remaining findings
+  in Phase 7; replacing a screen does not finish its migration while obsolete
+  design code or authoritative references remain.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
@@ -35,6 +39,8 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Specify purposeful playful motion with exact timing, interruption, keyboard and reduced-motion rules.
 - [x] Validate the representative refined reference and synchronize the portable contract and bundle; [coverage and remaining gates](docs/air/validation.md).
 - [ ] Review and lock the detailed system before product migration.
+- [ ] After the initial refinements land, remove superseded design cues and unused
+      code from the Air reference itself, then repeat this cleanup as each app migrates.
 
 ## Phase 0 — scope, baseline, and full-surface audit
 
@@ -151,7 +157,45 @@ the refined system is defined and reviewed as requested by the user.
 - [ ] Run asset sync, Astro check and production build; verify links and policy content.
 - [ ] Verify no Swift/native changes; record evidence and commit.
 
-## Phase 7 — family-wide regression and completion
+## Phase 7 — legacy design cleanup after redesign
+
+Begin after the initial refinements land, repeat within each app's migration, and
+finish with a family-wide search after all redesigned surfaces are in place. Cover
+Cloakyard, CloakPDF, CloakIMG, CloakResume and CloakDrop's website, including editor
+interiors, custom controls, canvas chrome and less-visible states.
+
+- [ ] Inventory legacy design findings by repository and source location; record
+      replacement/removal, remaining work and verified exceptions in the audit evidence.
+- [ ] Search for obsolete tokens, palettes, fonts, spacing/radius/shadow scales,
+      breakpoint/theme overrides, hardcoded styles and compatibility aliases.
+      Replace live UI uses with Air primitives and remove unused definitions.
+- [ ] Find duplicate or abandoned components, stylesheets/selectors, imports,
+      hooks, feature flags, conditional branches and commented-out UI experiments.
+      Check routes, dynamic imports and generated class names before deleting.
+- [ ] Remove superseded animation/keyframe/shader code and dependencies that are
+      unused after migration; keep motion aligned with Air and reduced-motion rules.
+- [ ] Audit old icons, illustrations, fonts, screenshots, social/PWA artwork and
+      asset-generation scripts. Replace active product imagery and remove orphaned
+      assets only after checking their runtime, metadata and documentation consumers.
+- [ ] Remove stale design directions and references from contributor instructions,
+      README files, comments, examples, component studies and other maintained docs.
+      Keep DESIGN.md authoritative and synchronize any portable-contract corrections.
+- [ ] Update tests, fixtures and visual baselines that encode superseded UI only
+      after validating the replacement; preserve feature and accessibility assertions.
+- [ ] Remove obsolete packages/configuration and refresh lockfiles, build inputs
+      and PWA/precache references where affected; verify no broken imports or asset URLs.
+- [ ] Preserve document/template styling, user content colours, exported output,
+      KERR and native macOS exceptions. Retain useful historical audit evidence as
+      clearly labelled history, never as current design guidance.
+- [ ] Run available dead-code checks and repository-required format/lint/type,
+      feature tests and builds for each cleanup piece. Inspect affected controls
+      and states at desktop/laptop/tablet/mobile sizes in light and dark themes,
+      including keyboard, touch and reduced motion; commit only after passing.
+- [ ] Repeat legacy-name/style/reference searches across all five repositories.
+      Record search coverage and explain remaining matches; no unexplained obsolete
+      design code or conflicting instructions may remain at final sign-off.
+
+## Phase 8 — family-wide regression and completion
 
 - [ ] Compare all landing pages together at the same widths/themes.
 - [ ] Compare controls, editors/canvases, tool panels and overlays across the three web apps.
