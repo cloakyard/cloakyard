@@ -135,3 +135,42 @@ linted) and `vp build` pass. PDF `vp check` (251/210), IMG (306/273) and Resume
 (151/114) pass format/lint/type checks. These do not override the unresolved Resume
 browser-suite result above. Drop's unchanged site passed Astro check (19 files,
 zero errors/warnings/hints) during this refinement. Runtime imports remain unchanged.
+
+## 2026-10-11 — full PDF default-panel audit and signature follow-up
+
+All 22 actual PDF default panels were inspected at 1440×900/light and 390×844/dark,
+with conditional annotation and signature states and Metadata's date/time popup.
+CloakPDF's `docs/air/editor-audit.md` contains the per-tool preservation requirements,
+limits, source progress, accessible snapshots and mobile measurements. No actual
+PDF edit or export was applied during that audit.
+
+The Air study now uses the actual nine annotation mode names and Draw/Choose
+signature sources. Native switch controls have 44×44px targets, a 40×24px track,
+18px thumb and keyboard operation. The signature study supports pointer drawing,
+clear, local image preview and retained source/ink/background state across tool
+changes. PDF placement/export is deliberately outside this reduced study. A phone
+can expand the controls while retaining a 112px preview region, then restore the
+split or expanded preview without resetting tool values.
+
+Fourteen signature layout/theme checks (320, 390, 768, 844 landscape, 1024, 1280, 1440) found no page/panel overflow and all switches measured 44×44px. Manual checks
+covered Space toggle, clear/draw, PNG source preview, tool-switch persistence,
+expanded-controls/split/preview return and no browser errors. Evidence is in
+`air-03-signature-checks.json` and the signature desktop/phone captures.
+
+The portable contract also specifies date/time calendars, position grids, insertion
+chips, report/list rows and transactional Apply/Cancel semantics. Its writing-width
+table now agrees with the 420px/360px editor composition. These detailed patterns
+remain design targets: they have not been applied to production apps.
+
+CloakPDF gates for its documentation/opt-in bundle checkpoint: `vp check`,
+`pnpm check:dead`, and all **355/355** unit tests pass. Existing production UI is
+unchanged; this is not a production E2E certification. Full state/feature/utility
+coverage remains pending and is named in the per-app audit.
+
+The follow-up also passed Cloakyard `vp check` (54 formatted/16 linted) and build,
+and PDF production build including PWA generation. All five local design checkers
+and exact-copy sync pass at contract hash `2b0b13f20830` (prefix). Existing large-chunk
+warnings in PDF's build remain warnings; no runtime chunks were changed by this
+opt-in bundle. PDF checkpoint: `4830570`. All 13 reference tool headings were
+rechecked after the names changed, and expanded controls were checked in all three
+editor variants. Switch focus has one contour around the track, with no outer box.

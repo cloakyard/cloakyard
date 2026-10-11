@@ -63,3 +63,18 @@ AI consent/progress/error flows, real export and template fidelity, keyboard-onl
 full journeys, Safari/Firefox, physical touch/software keyboards, 200% zoom,
 long-content/translation stress and performance. No existing source is marked
 fully validated by this initial inspection.
+
+## Follow-up — PDF tool coverage
+
+The next sweep opened all 22 actual PDF panels at 1440×900/light and 390×844/dark
+with coarse pointer. None had measured horizontal overflow, offscreen Cancel/Done,
+or inspected text fields below 16px on the phone. This does not certify feature
+outputs. The per-tool requirements and remaining states now live in CloakPDF's
+`docs/air/editor-audit.md`, with accessible panel snapshots and mobile measurements.
+
+Metadata's touch calendar has ~37.4px-wide day targets despite 44px height. The Air
+contract now specifies a wider touch calendar/sheet. Actual annotation choices are
+Select/Pen/Highlight/Line/Arrow/Rectangle/Oval/Text/Icons; the study is corrected to
+match. Signature is Draw/Choose with independent ink/background switches; its
+reference now shows those controls instead of a typed-name generator. The writing
+width table is also corrected to agree with the 420px/360px editor composition.

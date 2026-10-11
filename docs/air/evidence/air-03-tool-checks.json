@@ -6,7 +6,7 @@
   },
   {
     "app": "PDF",
-    "name": "Sign",
+    "name": "Signature",
     "heading": true
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "app": "PDF",
-    "name": "Pages",
+    "name": "Organize",
     "heading": true
   },
   {

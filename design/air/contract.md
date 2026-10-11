@@ -161,25 +161,25 @@ control. Errors/warnings/success also use text and an appropriate icon.
 
 ### Geometry
 
-| Primitive              | Normative value                                       |
-| ---------------------- | ----------------------------------------------------- |
-| Spacing scale          | 4, 8, 12, 16, 20, 24, 32, 48, 64, 96px                |
-| Page max width         | 1200px                                                |
-| Page gutters           | 16px phone; 24px tablet; 32px laptop/desktop          |
-| Marketing header       | 72px desktop; at least 64px narrow                    |
-| Editor top bar         | 64px; may wrap/reflow on narrow screens               |
-| Icon rail              | 72px desktop; 64px compact, with labels/tooltips      |
-| Inspector              | 288–360px; 328px default desktop                      |
-| Content entry panel    | 328px default; up to 560px if writing needs the space |
-| Control radius         | 10px                                                  |
-| Small chip/tab radius  | 8px                                                   |
-| Panel/card radius      | 18px                                                  |
-| Dialog radius          | 20px                                                  |
-| Floating menu radius   | 12px                                                  |
-| Normal control height  | 40px; 44px minimum touch target                       |
-| Compact control height | 32px on fine pointers only                            |
-| Field/row interior     | 12–16px; section group gap 24px                       |
-| Reading measure        | 65ch maximum                                          |
+| Primitive              | Normative value                                   |
+| ---------------------- | ------------------------------------------------- |
+| Spacing scale          | 4, 8, 12, 16, 20, 24, 32, 48, 64, 96px            |
+| Page max width         | 1200px                                            |
+| Page gutters           | 16px phone; 24px tablet; 32px laptop/desktop      |
+| Marketing header       | 72px desktop; at least 64px narrow                |
+| Editor top bar         | 64px; may wrap/reflow on narrow screens           |
+| Icon rail              | 72px desktop; 64px compact, with labels/tooltips  |
+| Inspector              | 288–360px; 328px default desktop                  |
+| Content entry panel    | 420px writing default; 360px compact; up to 560px |
+| Control radius         | 10px                                              |
+| Small chip/tab radius  | 8px                                               |
+| Panel/card radius      | 18px                                              |
+| Dialog radius          | 20px                                              |
+| Floating menu radius   | 12px                                              |
+| Normal control height  | 40px; 44px minimum touch target                   |
+| Compact control height | 32px on fine pointers only                        |
+| Field/row interior     | 12–16px; section group gap 24px                   |
+| Reading measure        | 65ch maximum                                      |
 
 Full-bleed app rails may meet an edge without rounded outer corners. Do not nest
 several padded cards. Use whitespace and modest section dividers inside inspectors.
@@ -225,6 +225,48 @@ No glass blur behind forms, body copy, tables, or document content.
 | Rich text/signature/drawing     | Air toolbar and focus; preserve content formatting; keyboard/tap alternative where feasible; undo/reset; visible selection.                                                                            |
 | Privacy/help/404/error boundary | Same typography, width, navigation and controls; clear return/retry path; technical detail only when relevant.                                                                                         |
 | PWA/install/update              | Same notice/dialog language; do not reload over unsaved work; readable offline/cache/download distinctions.                                                                                            |
+
+### Dense editor controls
+
+These patterns are required by the existing PDF tools; they also govern the
+same controls in IMG, Resume and future apps.
+
+- **Mode/position grids:** compact labelled mode choices share the neutral selected
+  surface and blue marker. Preserve spatial meaning for a 3×2 page-position grid;
+  do not flatten it into a list. Every cell has a meaningful accessible name and
+  a 44px touch target. A selected mode is distinct from a selected document object.
+- **Signature/image sources:** Draw and Choose are source modes. Drawing has a
+  clear/reset action and an equivalent image chooser; neither a typed-name generator
+  nor a style selector may replace those existing capabilities. Realistic ink and
+  opaque background are independent switches. Actual ink, alpha and image preview
+  are output data; the surrounding canvas border, labels and controls use Air.
+- **Switch rows:** one unboxed label/help group with a 44×44px control target.
+  Inside it, a 40×24px track contains an 18px thumb. Off is neutral; on uses accent.
+  The thumb position and exposed switch state convey the value without colour alone.
+  Focus replaces the track edge with one 2px zero-offset outline; do not draw a
+  second box around its larger hit area. Space toggles a focused switch; the
+  associated label is clickable. Keep dangerous
+  bulk operations as explicit actions, not switches.
+- **Date/time:** the field trigger uses the same single-contour shell. Calendar,
+  year list, hour/minute menus and AM/PM controls share panel/menu styling, focus
+  return and viewport containment. Preserve the current date restrictions and time
+  semantics. Coarse calendars need room for seven 44px columns; use a full-width
+  sheet on a 320px phone with a 4px calendar-grid inset, rather than shrinking cells.
+  The other sheet content keeps the normal gutter. Short screens scroll the body
+  while dismissal and completion stay reachable.
+- **Field insertion:** page/date/file-name chips insert at the last active text
+  caret and return focus there. They wrap into rows and keep 44px touch targets;
+  ordinary chip labels are sans. Template variables may remain verbatim user data.
+- **Lists and reports:** bookmark nesting/page targets, attached files, form fields,
+  detected matches and privacy counts use open rows with labels and aligned actions.
+  Preserve user-supplied field-name casing. Empty, detecting, ready, no-match, failed,
+  disabled and destructive states need separate examples and recovery paths.
+- **Apply semantics:** a tool with one staged operation has one Apply action. On
+  mobile the persistent Done action may execute it; it is disabled until ready.
+  Cancel rolls back the tool's pending transaction. Tools with multiple operations
+  keep their distinct actions, and export-time redaction must retain its explicit
+  permanence notice. Do not reinterpret Done as a harmless preview toggle in a real
+  transactional editor. The reduced study must label its narrower behaviour.
 
 A custom implementation is reviewed against the same contract. Native controls,
 accessible existing primitives, and shared shells are preferred to new widgets.

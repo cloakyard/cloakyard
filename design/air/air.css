@@ -190,6 +190,71 @@
   min-height: var(--air-control);
   font: 400 14px/1.5 var(--air-font);
 }
+/* Native checkbox semantics with switch presentation; the full box is the target. */
+.air-switch {
+  appearance: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  margin: 0;
+  border: 0;
+  border-radius: var(--air-radius-control);
+  background: transparent;
+  cursor: pointer;
+}
+.air-switch::before {
+  content: "";
+  position: absolute;
+  inset: 10px 2px;
+  border: 1px solid var(--air-line-control);
+  border-radius: 12px;
+  background: var(--air-surface-soft);
+}
+.air-switch::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--air-ink-secondary);
+}
+.air-switch:checked::before {
+  border-color: var(--air-accent);
+  background: var(--air-accent);
+}
+.air-switch:checked::after {
+  transform: translateX(16px);
+  background: var(--air-surface);
+}
+.air-switch:focus-visible {
+  outline: none;
+}
+.air-switch:focus-visible::before {
+  border-color: transparent;
+  outline: 2px solid var(--air-accent);
+  outline-offset: 0;
+}
+.air-switch:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.air-switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 44px;
+  margin: 12px 0;
+  font: 400 13px/1.5 var(--air-font);
+}
+.air-switch-row small {
+  display: block;
+  color: var(--air-ink-secondary);
+  font-size: 12px;
+}
 .air-panel {
   border: 1px solid var(--air-line);
   border-radius: var(--air-radius-panel);
@@ -277,6 +342,7 @@
   .air-icon-button,
   .air-field,
   .air-check,
+  .air-switch,
   .air-segments > button
 ):focus-visible {
   outline: 2px solid var(--air-accent);

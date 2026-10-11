@@ -46,7 +46,7 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Baseline Drop site check/build.
 - [ ] Baseline all existing unit/logic suites; record failures before changing UI.
 - [x] Inspect representative real Resume/PDF/IMG editors before further design; [audit and limits](docs/air/existing-editor-audit.md).
-- [ ] Inspect PDF desktop/laptop/mobile editor, every tool panel, standalone utilities and overlays.
+- [-] Inspect PDF desktop/laptop/mobile editor, every tool panel, standalone utilities and overlays. All 22 default panels inspected at desktop/light and phone/dark; date picker and conditional signature/annotation states inspected. Remaining states/utilities are tracked in PDF’s `docs/air/editor-audit.md`.
 - [ ] Inspect IMG desktop/laptop/mobile editor, every tool panel, custom colour/curve controls and AI states.
 - [ ] Inspect Resume desktop/laptop/mobile editor, every section, template/ATS/format/export overlays.
 - [ ] Inspect Drop website, download flow, privacy page and 404 at every layout class.
@@ -172,3 +172,9 @@ checks. Resume had one serial 288/288 pass, followed by a 287/288 run with an
 unresolved focus-ring assertion; its commit gate remains closed. The Air refinement
 03 design checkpoint is recorded in Cloakyard's git history after reference checks.
 No product implementation commits. Native code and KERR are unchanged.
+
+Design/audit checkpoints: Cloakyard `721911c` established refinement 03;
+CloakPDF `4830570` records the complete default-panel audit and synchronized opt-in
+reference after format/lint/type, dead-code, 355 units and production build passed.
+The family signature/dense-control follow-up is recorded in Cloakyard git history.
+These commits do not migrate production UI or waive remaining feature gates.
