@@ -27,11 +27,20 @@ migration and detailed visual sign-off remain open. No push or deployment occurr
   support gates are in the select/motion section of `validation.md`. No product
   migration or sibling commit is included in this checkpoint.
 
+- The component-foundations checkpoint makes main-repo ownership explicit in
+  `design/air/README.md`, the portable contract and bundle provenance. Both local
+  validators are synchronized. Expanded fields/choices have working validation,
+  read-only/disabled/multiline states, mixed checkboxes and native radio segments.
+  `design/air/COMPONENTS.md` is the component coverage/next-work map. Production
+  adoption and user visual sign-off remain open.
+
 ## Next bounded pieces
 
-1. Continue refining the shared system. Extend relative typography and enlarged
-   text testing through fields, custom controls, editor chrome and dialogs.
-   Preserve output artwork geometry and the graceful single-contour input shell.
+1. Continue component refinement with compound search/clear/unit fields and
+   button busy/retry states, then real popovers/tooltips/context menus and long or
+   invalid overlays. Shared primitive and export-dialog text stress passes;
+   custom controls/editor chrome still need relative typography coverage. Follow
+   `design/air/COMPONENTS.md`; preserve output geometry and single-contour fields.
 2. Add explicit privacy/long-reading and recovery-page studies. Keep the same
    family navigation, reading measure and action hierarchy across both themes.
 3. Continue actual browser zoom, physical touch/software-keyboard and cross-engine

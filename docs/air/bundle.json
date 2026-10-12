@@ -1,13 +1,19 @@
 {
   "version": "1.0.0",
+  "source": {
+    "repository": "https://github.com/cloakyard/cloakyard",
+    "directory": "design/air",
+    "status": "design-review",
+    "contractSha256": "5bd4b3b1f158711a572d530ecf99899823b85fd6999c00a5fa14bb5a2b266aed"
+  },
   "stylesheet": "src/styles/air.css",
   "studyAssets": {
-    "components.html": "f0d71e59e99bd66e223c9819946520b042e73588e6e5311eb2b6308c1ea79ac0",
+    "components.html": "8b935e9c364a514ddf85d557d62106c4ce7ddf13599fbd0ff74f54cff966c95e",
     "motion.mjs": "9ed84c388b39cff2f3ebed3f04c4e99d5951023838b659498d51ce0952a179b0",
     "light-controller.mjs": "e123ac7e3005d1287ed77134270de091e5ef52f728788d1ef68a86c4ab2cc7f7",
     "assets/air-light-shader.js": "f375a59db6e1138b490bda285d02035d3793706313128cb3a1204f5b76f2ede3",
     "assets/THIRD_PARTY_LICENSES.txt": "c0624d0848ea3de0ef47c127a134566f1dfd23fd95580f2c39eb8fb123d78d8a"
   },
-  "sha256": "789c955212ea80366c70ab687f3134e8cfc379d0b09836b36773c81041a0b962",
+  "sha256": "00fdc5227640dd2fb68fbf55291bf8908ff3ecb1a3c4abfd6c964b7aa08f8759",
   "note": "Pinned family bundle. Runtime migration is tracked separately in surfaces.json."
 }

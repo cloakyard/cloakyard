@@ -7,6 +7,7 @@ const repository = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const roots = resolve(repository, "..");
 const check = process.argv.includes("--check");
 const bundle = process.argv.includes("--bundle");
+const sourceRepository = "https://github.com/cloakyard/cloakyard";
 const products = [
   ["cloakyard", "Cloakyard", ["DESIGN.md"]],
   ["cloakpdf", "CloakPDF", ["DESIGN.md"]],
@@ -39,6 +40,8 @@ version: 1.0.0
 status: design-review
 date: 2026-10-12
 scope: complete-web-product
+source-repository: ${sourceRepository}
+source-directory: design/air
 family-contract-sha256: ${hash}
 ---
 
@@ -55,16 +58,19 @@ ${appendix}
   }
   if (bundle) {
     const css = await readFile(resolve(repository, "design/air/air.css"), "utf8");
+    const cssHash = createHash("sha256").update(css).digest("hex");
     const cssPath = `${slug === "cloakdrop" ? "apps/site/" : ""}src/styles/air.css`;
     const gallery = (
       await readFile(resolve(repository, "design/air/components.html"), "utf8")
-    ).replace("__AIR_STYLESHEET__", `../../${cssPath}`);
+    ).replace("__AIR_STYLESHEET__", `../../${cssPath}?air=${cssHash.slice(0, 12)}`);
     await sync(resolve(roots, slug, cssPath), css);
     await sync(resolve(roots, slug, "docs/air/components.html"), gallery);
-    await sync(
-      resolve(roots, slug, "scripts/check-air-design.mjs"),
-      await readFile(resolve(repository, "scripts/check-air-design.mjs"), "utf8"),
-    );
+    for (const script of ["check-air-design.mjs", "check-air-portability.mjs"]) {
+      await sync(
+        resolve(roots, slug, "scripts", script),
+        await readFile(resolve(repository, "scripts", script), "utf8"),
+      );
+    }
     const studyAssets = { "components.html": createHash("sha256").update(gallery).digest("hex") };
     for (const asset of [
       "motion.mjs",
@@ -78,9 +84,15 @@ ${appendix}
     }
     const manifest = {
       version: "1.0.0",
+      source: {
+        repository: sourceRepository,
+        directory: "design/air",
+        status: "design-review",
+        contractSha256: hash,
+      },
       stylesheet: cssPath,
       studyAssets,
-      sha256: createHash("sha256").update(css).digest("hex"),
+      sha256: cssHash,
       note: "Pinned family bundle. Runtime migration is tracked separately in surfaces.json.",
     };
     await sync(

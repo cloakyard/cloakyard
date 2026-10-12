@@ -9,6 +9,16 @@
       * {
         box-sizing: border-box;
       }
+      .study-skip {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: var(--air-z-recovery);
+        transform: translateY(-200%);
+      }
+      .study-skip:focus {
+        transform: none;
+      }
       body {
         margin: 0;
         background: var(--air-page);
@@ -1014,7 +1024,7 @@
         border-color: var(--air-line-control);
       }
       #date-dialog .air-field {
-        font-size: 16px;
+        font-size: var(--air-text-editable);
       }
       #date-dialog .dialog-actions {
         flex-wrap: wrap;
@@ -1402,12 +1412,12 @@
         border-bottom: 1px solid var(--air-line);
       }
       .component-row h3 {
-        font-size: 17px;
+        font-size: 1.0625rem;
         letter-spacing: -0.3px;
       }
-      .component-row p {
+      .component-row > div:first-child p {
         color: var(--air-ink-muted);
-        font-size: 12px;
+        font-size: var(--air-text-meta);
         line-height: 1.7;
         margin-top: 8px;
       }
@@ -1420,9 +1430,43 @@
       .component-examples .air-field {
         max-width: 240px;
       }
-      .field-demo {
-        width: min(240px, 100%);
+      .component-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+        gap: 24px;
+        align-items: start;
+        min-width: 0;
       }
+      .component-grid > * {
+        min-width: 0;
+      }
+      .component-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        grid-column: 1 / -1;
+      }
+      .component-actions .air-help {
+        margin: 0;
+        flex: 1 1 15rem;
+      }
+      .component-index {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 32px;
+      }
+      .component-row {
+        scroll-margin-block-start: 24px;
+      }
+      .choice-children {
+        padding-inline-start: 30px;
+      }
+      .choice-help {
+        margin-bottom: 12px;
+      }
+
       .status-line {
         display: flex;
         align-items: center;
@@ -1537,7 +1581,7 @@
         text-underline-offset: 4px;
       }
       .air-dialog h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: -0.8px;
         line-height: 1.2;
         margin-bottom: 12px;
@@ -1555,15 +1599,16 @@
         display: flex;
         justify-content: flex-end;
         gap: 8px;
+        flex-wrap: wrap;
         margin-top: 28px;
       }
       .dialog-kicker {
-        font-size: 12px;
+        font-size: var(--air-text-meta);
         color: var(--air-ink-muted);
         margin-bottom: 16px;
       }
       .dialog-meta {
-        font-size: 12px;
+        font-size: var(--air-text-meta);
         color: var(--air-ink-muted);
         margin-top: 12px;
       }
@@ -2183,6 +2228,7 @@
     </style>
   </head>
   <body>
+    <a class="air-button study-skip" href="#study-main">Skip to design reference</a>
     <header class="study-bar">
       <div class="study-title">
         <b>Air</b><span>by Cloakyard</span><span>·</span><span>Design study · refinement 03</span>
@@ -2211,7 +2257,7 @@
         ><a href="#motion">Motion</a>
       </nav>
     </div>
-    <main>
+    <main id="study-main" tabindex="-1">
       <div class="preview-wrap" data-size="desktop" id="experience">
         <div class="experience">
           <nav class="family-nav" aria-label="Landing preview">
@@ -2463,7 +2509,14 @@
             </p>
           </article>
         </div>
-        <div class="component-row">
+        <nav class="component-index" aria-label="Component studies">
+          <a class="air-button air-button--quiet" href="#action-study">Actions</a>
+          <a class="air-button air-button--quiet" href="#field-study">Fields</a>
+          <a class="air-button air-button--quiet" href="#select-study">Menus</a>
+          <a class="air-button air-button--quiet" href="#choice-study">Choices</a>
+          <a class="air-button air-button--quiet" href="#overlay-study">Overlays</a>
+        </nav>
+        <div class="component-row" id="action-study">
           <div>
             <h3>Actions, with hierarchy.</h3>
             <p>
@@ -2479,32 +2532,93 @@
             ><button class="air-button" disabled>Unavailable</button>
           </div>
         </div>
-        <div class="component-row">
+        <div class="component-row" id="field-study">
           <div>
             <h3>Fields, with clarity.</h3>
             <p>
-              One quiet contour. Persistent labels and nearby help. Focus replaces the contour with
-              blue, without a second line or a change in layout.
+              One quiet contour, in every state. Labels stay in place. Help explains the next step;
+              focus never adds a second line.
             </p>
           </div>
-          <div class="component-examples">
-            <div class="field-demo">
-              <label class="air-label" for="reference-name">File name</label
-              ><input class="air-field" id="reference-name" value="Field notes" />
-              <p class="air-help">Saved to your chosen location.</p>
+          <form class="component-grid" id="field-study-form" novalidate>
+            <div>
+              <label class="air-label" for="reference-name">File name · required</label>
+              <input
+                class="air-field"
+                id="reference-name"
+                name="file-name"
+                value="Field notes"
+                required
+                autocomplete="off"
+                aria-describedby="name-help name-error"
+              />
+              <p class="air-help" id="name-help">Use a name you’ll recognise later.</p>
+              <p class="air-help air-help--error" id="name-error" hidden>Enter a file name.</p>
             </div>
-            <div class="field-demo">
-              <label class="air-label" for="reference-error">Page range</label
-              ><input
+            <div>
+              <label class="air-label" for="reference-error">Page range</label>
+              <input
                 class="air-field"
                 id="reference-error"
+                name="page-range"
                 value="0–4"
+                autocomplete="off"
                 aria-invalid="true"
-                aria-describedby="range-error"
+                aria-describedby="range-help range-error"
               />
-              <p class="air-help air-help--error" id="range-error">Start with page 1 or later.</p>
+              <p class="air-help" id="range-help">One page or an ordered range, like 1–4.</p>
+              <p class="air-help air-help--error" id="range-error">
+                Use page 1 or later and put the smaller number first.
+              </p>
             </div>
-          </div>
+            <div>
+              <label class="air-label" for="reference-readonly">Original file</label>
+              <input
+                class="air-field"
+                id="reference-readonly"
+                name="original"
+                value="Field notes.pdf"
+                readonly
+                aria-describedby="readonly-help"
+              />
+              <p class="air-help" id="readonly-help">
+                Read only. You can still select and copy this name.
+              </p>
+            </div>
+            <div>
+              <label class="air-label" for="reference-disabled">Encryption password</label>
+              <input
+                class="air-field"
+                id="reference-disabled"
+                name="password"
+                type="password"
+                disabled
+                autocomplete="off"
+                aria-describedby="disabled-help"
+              />
+              <p class="air-help" id="disabled-help">Unavailable for this unencrypted sample.</p>
+            </div>
+            <div>
+              <label class="air-label" for="reference-note">Export note · optional</label>
+              <textarea
+                class="air-field"
+                id="reference-note"
+                name="note"
+                rows="3"
+                placeholder="A short note…"
+                aria-describedby="note-help"
+              ></textarea>
+              <p class="air-help" id="note-help">
+                Multiline writing uses the same contour and spacing.
+              </p>
+            </div>
+            <div class="component-actions">
+              <button class="air-button" type="submit">Check details</button>
+              <p class="air-help" role="status" id="field-study-status">
+                Interaction study. No file is created.
+              </p>
+            </div>
+          </form>
         </div>
         <div class="component-row" id="select-study">
           <div>
@@ -2534,24 +2648,105 @@
             </div>
           </div>
         </div>
-        <div class="component-row">
+        <div class="component-row" id="choice-study">
           <div>
             <h3>Choices, with precision.</h3>
             <p>
-              Neutral selection surfaces. Blue for focus and the active indicator. Visual colour
-              data keeps its real values.
+              A shared shape and a clear state. Native keyboard behavior, generous label targets and
+              no decorative movement during work.
             </p>
           </div>
-          <div class="component-examples">
-            <div class="air-segments" aria-label="Reference alignment">
-              <button aria-pressed="true">Left</button><button aria-pressed="false">Centre</button
-              ><button aria-pressed="false">Right</button>
+          <div class="component-grid">
+            <fieldset class="air-choice-group">
+              <legend>Include in export</legend>
+              <p class="air-help choice-help" id="include-help">
+                A mixed selection keeps its own visible mark.
+              </p>
+              <label class="air-check-label"
+                ><input
+                  class="air-check"
+                  id="reference-all"
+                  type="checkbox"
+                  aria-describedby="include-help"
+                />All additions</label
+              >
+              <div class="choice-children">
+                <label class="air-check-label"
+                  ><input
+                    class="air-check"
+                    data-reference-child
+                    type="checkbox"
+                    checked
+                  />Annotations</label
+                >
+                <label class="air-check-label"
+                  ><input class="air-check" data-reference-child type="checkbox" />Bookmarks</label
+                >
+              </div>
+              <label class="air-check-label"
+                ><input class="air-check" type="checkbox" disabled />Embedded files ·
+                unavailable</label
+              >
+            </fieldset>
+            <fieldset class="air-choice-group">
+              <legend>Pages</legend>
+              <label class="air-check-label"
+                ><input
+                  type="radio"
+                  name="reference-pages"
+                  value="all"
+                  class="air-check"
+                  checked
+                />All pages</label
+              >
+              <label class="air-check-label"
+                ><input
+                  type="radio"
+                  name="reference-pages"
+                  value="current"
+                  class="air-check"
+                />Current page</label
+              >
+              <label class="air-check-label"
+                ><input
+                  type="radio"
+                  name="reference-pages"
+                  value="selection"
+                  class="air-check"
+                  disabled
+                />Selection · unavailable</label
+              >
+            </fieldset>
+            <fieldset class="air-choice-group">
+              <legend>Alignment</legend>
+              <div class="air-segments">
+                <label class="air-segment"
+                  ><input type="radio" name="reference-align" value="left" checked />Left</label
+                >
+                <label class="air-segment"
+                  ><input type="radio" name="reference-align" value="centre" />Centre</label
+                >
+                <label class="air-segment"
+                  ><input type="radio" name="reference-align" value="right" />Right</label
+                >
+              </div>
+              <p class="air-help">One choice. Use arrow keys to move within the group.</p>
+            </fieldset>
+            <div>
+              <label class="air-switch-row"
+                ><span>Keep original quality<small>No additional compression.</small></span
+                ><input
+                  class="air-switch"
+                  id="reference-switch"
+                  type="checkbox"
+                  role="switch"
+                  checked
+              /></label>
+              <label class="air-switch-row"
+                ><span>Sync to a workspace<small>Unavailable in this local study.</small></span
+                ><input class="air-switch" type="checkbox" role="switch" disabled
+              /></label>
             </div>
-            <label class="air-check-label"
-              ><input type="checkbox" class="air-check" checked />Keep original quality</label
-            ><label class="air-check-label"
-              ><input type="radio" name="pages" class="air-check" checked />All pages</label
-            >
           </div>
         </div>
         <div class="component-row">
@@ -2573,6 +2768,19 @@
               <span data-icon="alert"></span
               ><span>Couldn’t open the file. Choose another and try again.</span>
             </div>
+          </div>
+        </div>
+        <div class="component-row" id="overlay-study">
+          <div>
+            <h3>Overlays, with clear boundaries.</h3>
+            <p>
+              The same surface, readable spacing and reachable actions. A dialog becomes a sheet on
+              a phone; Escape returns you to where you started.
+            </p>
+          </div>
+          <div class="component-examples">
+            <button class="air-button" id="inspect-overlay">Inspect export dialog</button>
+            <p class="air-help">Uses the active editor’s sample export options.</p>
           </div>
         </div>
       </section>
@@ -3747,6 +3955,7 @@
       }
       document.querySelector("#open-dialog").addEventListener("click", openDialog);
       document.querySelector("#sample-export").addEventListener("click", openDialog);
+      document.querySelector("#inspect-overlay").addEventListener("click", openDialog);
       dialog.querySelector(".dialog-close").addEventListener("click", closeDialog);
       dialog.querySelectorAll("form button").forEach((button) =>
         button.addEventListener("click", (event) => {
@@ -4302,6 +4511,53 @@
       dateDialog.addEventListener("close", () =>
         document.getElementById(dateDraft?.trigger)?.focus(),
       );
+
+      const fieldStudy = document.querySelector("#field-study-form");
+      const nameStudy = document.querySelector("#reference-name");
+      const rangeStudy = document.querySelector("#reference-error");
+      const fieldStudyStatus = document.querySelector("#field-study-status");
+      fieldStudy.addEventListener("input", () => {
+        const message = "Details changed. Check them when you’re ready.";
+        if (fieldStudyStatus.textContent !== message) fieldStudyStatus.textContent = message;
+      });
+      function validateStudyField(input) {
+        const value = input.value.trim();
+        const range = /^(\d+)(?:\s*[–-]\s*(\d+))?$/.exec(value);
+        const valid =
+          input === nameStudy
+            ? Boolean(value)
+            : Boolean(
+                range &&
+                Number(range[1]) >= 1 &&
+                (!range[2] || Number(range[2]) >= Number(range[1])),
+              );
+        input.setAttribute("aria-invalid", String(!valid));
+        document.querySelector(input === nameStudy ? "#name-error" : "#range-error").hidden = valid;
+        return valid;
+      }
+      for (const input of [nameStudy, rangeStudy])
+        input.addEventListener("blur", () => validateStudyField(input));
+      fieldStudy.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const invalid = [nameStudy, rangeStudy].filter((input) => !validateStudyField(input));
+        document.querySelector("#field-study-status").textContent = invalid.length
+          ? "Check the highlighted details."
+          : "Details are ready. No file was created.";
+        invalid[0]?.focus();
+      });
+      const allAdditions = document.querySelector("#reference-all");
+      const additionChoices = [...document.querySelectorAll("[data-reference-child]")];
+      function reflectAdditions() {
+        const count = additionChoices.filter((input) => input.checked).length;
+        allAdditions.checked = count === additionChoices.length;
+        allAdditions.indeterminate = count > 0 && count < additionChoices.length;
+      }
+      allAdditions.addEventListener("change", () => {
+        additionChoices.forEach((input) => (input.checked = allAdditions.checked));
+        reflectAdditions();
+      });
+      additionChoices.forEach((input) => input.addEventListener("change", reflectAdditions));
+      reflectAdditions();
 
       const completionMotion = createCompletionMotion(document.querySelector(".saved-orb"));
       document.querySelector("#play-completion").addEventListener("click", (event) => {

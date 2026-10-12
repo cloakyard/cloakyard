@@ -1,0 +1,1543 @@
+{
+  "fields": [
+    {
+      "focus": "reference-name",
+      "invalid": ["reference-name", "reference-error"],
+      "nameError": true,
+      "rangeError": true,
+      "status": "Check the highlighted details.",
+      "test": "invalid submit"
+    },
+    {
+      "invalid": 0,
+      "note": "First line\nA second line with café and 日本語.",
+      "status": "Details are ready. No file was created.",
+      "test": "valid correction preserves writing"
+    },
+    {
+      "disabled": true,
+      "focus": "reference-note",
+      "readonly": "Field notes.pdf",
+      "test": "readonly retained, Tab skips disabled"
+    },
+    {
+      "focus": "study-main",
+      "hash": "#study-main",
+      "test": "skip link"
+    },
+    {
+      "error": true,
+      "invalid": "true",
+      "status": "Details changed. Check them when you’re ready.",
+      "test": "editing clears stale success"
+    }
+  ],
+  "choices": [
+    {
+      "checked": false,
+      "mixed": true,
+      "test": "initial mixed"
+    },
+    {
+      "checked": true,
+      "children": [true, true],
+      "mixed": false,
+      "test": "Space selects all"
+    },
+    {
+      "mixed": true,
+      "test": "child updates mixed"
+    },
+    {
+      "alignment": "centre",
+      "page": "current",
+      "switch": false,
+      "test": "native choice keys"
+    }
+  ],
+  "layouts": [
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["14px", "14px", "14px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 36.1953125,
+      "theme": "light",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["28px", "28px", "28px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "light",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["14px", "14px", "14px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 36.1953125,
+      "theme": "dark",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["28px", "28px", "28px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "dark",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["14px", "14px", "14px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 36.1953125,
+      "theme": "light",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["28px", "28px", "28px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "light",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["14px", "14px", "14px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 36.1953125,
+      "theme": "dark",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["28px", "28px", "28px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "dark",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["14px", "14px", "14px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 36.1953125,
+      "theme": "light",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["28px", "28px", "28px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "light",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["14px", "14px", "14px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 36.1953125,
+      "theme": "dark",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": false,
+      "escaping": [],
+      "fonts": ["28px", "28px", "28px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "dark",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "light",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "light",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "dark",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "dark",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "light",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "light",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "dark",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "dark",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "light",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "light",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "dark",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "dark",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "light",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 90.796875,
+      "theme": "light",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "dark",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 90.796875,
+      "theme": "dark",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "light",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "light",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["16px", "16px", "16px"],
+      "labelHeight": 44,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "16px",
+      "segmentHeight": 44,
+      "theme": "dark",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "escaping": [],
+      "fonts": ["32px", "32px", "32px"],
+      "labelHeight": 62,
+      "overflow": false,
+      "readOnly": "1",
+      "root": "32px",
+      "segmentHeight": 54.3984375,
+      "theme": "dark",
+      "viewport": [844, 390]
+    }
+  ],
+  "dialogs": [
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 749.5859375,
+        "w": 576,
+        "x": 432,
+        "y": 75.203125
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [1440, 900],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 779.28125,
+        "w": 576,
+        "x": 432,
+        "y": 60.359375
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [1440, 900],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 409.390625,
+        "w": 576,
+        "x": 432,
+        "y": 245.3046875
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [1440, 900],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 749.5859375,
+        "w": 576,
+        "x": 432,
+        "y": 75.203125
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 779.28125,
+        "w": 576,
+        "x": 432,
+        "y": 60.359375
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 409.390625,
+        "w": 576,
+        "x": 432,
+        "y": 245.3046875
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 736,
+        "w": 576,
+        "x": 224,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [1024, 768],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 736,
+        "w": 576,
+        "x": 224,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [1024, 768],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 417.390625,
+        "w": 576,
+        "x": 224,
+        "y": 175.3046875
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [1024, 768],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 736,
+        "w": 576,
+        "x": 224,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [1024, 768],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 736,
+        "w": 576,
+        "x": 224,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [1024, 768],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 417.390625,
+        "w": 576,
+        "x": 224,
+        "y": 175.3046875
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [1024, 768],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 761.5859375,
+        "w": 576,
+        "x": 96,
+        "y": 131.203125
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [768, 1024],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 819.28125,
+        "w": 576,
+        "x": 96,
+        "y": 102.359375
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [768, 1024],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 417.390625,
+        "w": 576,
+        "x": 96,
+        "y": 303.3046875
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [768, 1024],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 761.5859375,
+        "w": 576,
+        "x": 96,
+        "y": 131.203125
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [768, 1024],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 819.28125,
+        "w": 576,
+        "x": 96,
+        "y": 102.359375
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [768, 1024],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 417.390625,
+        "w": 576,
+        "x": 96,
+        "y": 303.3046875
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [768, 1024],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 759.1875,
+        "w": 390,
+        "x": 0,
+        "y": 84.8125
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [390, 844],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 828,
+        "w": 390,
+        "x": 0,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [390, 844],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 432.9921875,
+        "w": 390,
+        "x": 0,
+        "y": 411.0078125
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [390, 844],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 759.1875,
+        "w": 390,
+        "x": 0,
+        "y": 84.8125
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [390, 844],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 828,
+        "w": 390,
+        "x": 0,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [390, 844],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 432.9921875,
+        "w": 390,
+        "x": 0,
+        "y": 411.0078125
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [390, 844],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 552,
+        "w": 320,
+        "x": 0,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [320, 568],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 552,
+        "w": 320,
+        "x": 0,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [320, 568],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 450.9921875,
+        "w": 320,
+        "x": 0,
+        "y": 117.0078125
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [320, 568],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 552,
+        "w": 320,
+        "x": 0,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [320, 568],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 552,
+        "w": 320,
+        "x": 0,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [320, 568],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 450.9921875,
+        "w": 320,
+        "x": 0,
+        "y": 117.0078125
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [320, 568],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 358,
+        "w": 576,
+        "x": 134,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [844, 390],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 358,
+        "w": 576,
+        "x": 134,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [844, 390],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 358,
+        "w": 576,
+        "x": 134,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "light",
+      "viewport": [844, 390],
+      "returned": true
+    },
+    {
+      "app": "PDF",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 358,
+        "w": 576,
+        "x": 134,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [844, 390],
+      "returned": true
+    },
+    {
+      "app": "IMG",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 358,
+        "w": 576,
+        "x": 134,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [844, 390],
+      "returned": true
+    },
+    {
+      "app": "Resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "overflow": false,
+      "rect": {
+        "h": 358,
+        "w": 576,
+        "x": 134,
+        "y": 16
+      },
+      "root": "16px",
+      "theme": "dark",
+      "viewport": [844, 390],
+      "returned": true
+    }
+  ],
+  "forcedColors": [
+    {
+      "active": true,
+      "animations": 0,
+      "checked": true,
+      "nativeCheck": "auto",
+      "pseudo": "none",
+      "segmentSelected": "rgba(55, 0, 110, 0.8)"
+    }
+  ],
+  "dialogFocus": [
+    {
+      "app": "PDF",
+      "viewport": [1440, 900],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-format",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "IMG",
+      "viewport": [1440, 900],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-format",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-quality-value",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-quality",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-width",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-height",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "Resume",
+      "viewport": [1440, 900],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "PDF",
+      "viewport": [320, 568],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-format",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "IMG",
+      "viewport": [320, 568],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-format",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-quality-value",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-quality",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-width",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-height",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "Resume",
+      "viewport": [320, 568],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "PDF",
+      "viewport": [844, 390],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-format",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "IMG",
+      "viewport": [844, 390],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-format",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-quality-value",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-quality",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-width",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "export-height",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "checkbox",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    },
+    {
+      "app": "Resume",
+      "viewport": [844, 390],
+      "steps": [
+        {
+          "id": "export-name",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "Cancel",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n            Done \n          ",
+          "inside": true,
+          "seen": true
+        },
+        {
+          "id": "\n        \n      ",
+          "inside": true,
+          "seen": true
+        }
+      ]
+    }
+  ],
+  "focus": [
+    {
+      "border": "rgba(0, 0, 0, 0)",
+      "errorVisible": true,
+      "focus": "reference-error",
+      "offset": "0px",
+      "outline": "2px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [1440, 900]
+    },
+    {
+      "border": "rgba(0, 0, 0, 0)",
+      "errorVisible": true,
+      "focus": "reference-error",
+      "offset": "0px",
+      "outline": "2px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [1440, 900]
+    },
+    {
+      "border": "rgba(0, 0, 0, 0)",
+      "errorVisible": true,
+      "focus": "reference-error",
+      "offset": "0px",
+      "outline": "2px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [390, 844]
+    },
+    {
+      "border": "rgba(0, 0, 0, 0)",
+      "errorVisible": true,
+      "focus": "reference-error",
+      "offset": "0px",
+      "outline": "2px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [390, 844]
+    }
+  ],
+  "console": [],
+  "scope": "Air reference only, 2026-10-12, Chromium IAB. Viewport, coarse-pointer, forced-colour and reduced-motion emulation; 200% root-font stress is not browser zoom or physical-device evidence."
+}

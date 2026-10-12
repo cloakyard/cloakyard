@@ -54,9 +54,23 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Strengthen the finite light arrival and completion acknowledgement; verify
       both themes, responsive rendering, interruption, keyboard immediacy, idle
       behavior and reduced motion. User visual review remains open.
-- [ ] Extend relative typography and enlarged-text validation through shared fields,
-      custom controls, editor chrome, dialogs and the reference documentation controls.
-      Preserve document/canvas output dimensions; do not mistake root-font stress for browser zoom.
+- [x] Establish Cloakyard as the explicit canonical source; document inheritance,
+      pin bundle provenance to the exact contract, and reject mismatched revisions.
+      Synchronize both standalone validators and use a content-versioned stylesheet URL.
+- [x] Refine field/choice anatomy and working states, including validation recovery,
+      read-only/disabled/multiline, mixed checkbox groups and native radio segments.
+      Shared component typography is relative; single-contour focus is preserved.
+      See [component refinement matrix](design/air/COMPONENTS.md) and validation evidence.
+- [ ] Add compound search/clear/unit fields and real button busy/retry examples;
+      validate width stability, keyboard behavior and long labels.
+- [ ] Build real popover, tooltip and context-menu specimens; cover anchors,
+      clipping, touch/keyboard dismissal and long content. Complete destructive,
+      invalid and nested-overlay states separately from the export-dialog study.
+- [-] Extend relative typography and enlarged-text validation through shared fields,
+  custom controls, editor chrome, dialogs and the reference documentation controls.
+  Shared primitive specimens and enlarged export traversal now pass; custom
+  editor chrome/controls remain. Preserve document/canvas output dimensions;
+  do not mistake root-font stress for browser zoom.
 - [ ] Add explicit privacy/long-reading and recovery-page compositions to the reference,
       using the same navigation, reading measure, action hierarchy and both themes.
 - [ ] Review and lock the detailed system before product migration.

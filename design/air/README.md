@@ -1,12 +1,47 @@
-# Cloakyard Air bundle
+# Air — the Cloakyard family design system
 
 Refinement 03 is a **design-review candidate**. Review and lock the detailed system
 before importing it into product UI. The copied bundle is a reference only.
+
+This directory in **cloakyard/cloakyard is the canonical source** for every Air web
+app and landing page. Other repositories derive pinned, standalone copies from it.
+They may add domain rules; they may not maintain alternate component designs.
+
+| Source                                                       | Owns                                                                                                     |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| [contract.md](contract.md)                                   | Normative foundations, component anatomy/states, behavior, responsiveness, themes, motion and exceptions |
+| [air.css](air.css)                                           | Semantic tokens and shared component shells                                                              |
+| [components.html](components.html)                           | Working specimens and representative editor/overlay compositions                                         |
+| [motion.mjs](motion.mjs), [LIGHT.md](LIGHT.md)               | Shared motion behavior and the optional Shaders light study                                              |
+| [products/](products/)                                       | Product-specific routes, feature invariants and output exceptions                                        |
+| [COMPONENTS.md](COMPONENTS.md)                               | Component refinement coverage and remaining review gates                                                 |
+| [../../docs/air/validation.md](../../docs/air/validation.md) | Actual checks, visual evidence and limitations                                                           |
 
 `contract.md` is the visual and interaction contract. Product appendices preserve
 domain requirements. `air.css` contains the shared tokens and opt-in component
 shells. `components.html` is a working reference, not a product UI or exhaustive
 replacement for each app's specialised widgets.
+
+## How apps derive from the source
+
+Change shared decisions here first. The sync command composes each product's
+`DESIGN.md` from the exact family contract plus its own appendix, then copies the
+shared reference and assets. Do not edit the generated copies independently.
+Framework wrappers translate APIs, never invent a visual variant. A new widget
+must define its family anatomy and state examples here before product adoption.
+
+`DESIGN.md` and `docs/air/bundle.json` identify this repository and directory.
+The manifest pins the contract and every asset by SHA-256; the checker rejects a
+bundle paired with a different contract. The preview stylesheet URL includes its
+content revision so a cached earlier skin cannot masquerade as the current one.
+No live upstream fetch, sibling checkout or runtime network dependency is needed.
+
+During review, exact content hashes and the source commit identify a candidate.
+The version `1.0.0` is the target contract interface, not approval to ship. After
+visual approval, changes follow major (breaking), minor (additive) and patch
+(compatible corrections) versions. Record the affected components and adoption
+steps in the validation/change record, sync the candidate, then let each app pass
+its own feature/visual gates before committing its runtime adoption.
 
 ## Existing app adoption
 
@@ -32,7 +67,7 @@ server; it uses the exact local production bundle.
 Copy the complete family contract into DESIGN.md, retain the contract markers and
 hash, and add a product appendix with routes, surfaces, output exceptions and gates.
 Copy `air.css`, the inventory/check scripts, the component reference, bundle hash
-manifest and Air CI workflow. Adjust the stylesheet path in the manifest/reference
+manifest (including canonical provenance) and Air CI workflow. Adjust the stylesheet path in the manifest/reference
 for the app's layout; root `src` and Drop's `apps/site/src` layouts are supported.
 Generate the app's own inventory. There is no sibling import, hosted font, private
 package, or runtime service requirement. Register the app in the family sync script
@@ -40,7 +75,9 @@ when it joins the maintained product roster.
 
 ## Enforcement and visual evidence
 
-The local/CI checker validates the full contract hash, the CSS bundle hash, version
+The local/CI checker also verifies that canonical source edits in this repository
+have been regenerated. Standalone copies need no source checkout. It validates
+canonical provenance and the full contract hash, the CSS bundle hash, version
 alignment, and forbids family token redefinitions in product UI sources. Sources
 marked Air-implemented additionally reject heavy UI weights, uppercase labels,
 legacy fonts, broad transitions, and (for CSS) literal colours/arbitrary radii.

@@ -37,6 +37,36 @@ validation. An exception cannot be justified by preference, convenience, or an
 existing hardcoded value. Document and image output are explicit exceptions to UI
 colour/typography; their surrounding controls are not exceptions.
 
+### Canonical source and inheritance
+
+The main **cloakyard/cloakyard** repository owns `design/air/`: this contract,
+tokens, component shells, reference interactions, motion and product appendices.
+Every existing or future web app derives from that source. Product `DESIGN.md`
+files are generated snapshots, not separate design authorities.
+
+1. Change a shared pattern in Cloakyard first, including its anatomy, states,
+   keyboard/touch behavior, responsive/theme rules and reference example.
+2. Validate it there, then copy the complete contract and local assets as one
+   revision. Each bundle records its source repository, directory, review status,
+   contract SHA-256 and asset hashes. A bundle paired with another contract fails
+   validation even if its individual assets are intact.
+3. Product wrappers may adapt framework APIs and domain behavior, but cannot
+   redefine tokens, geometry, states or motion. Product appendices add constraints;
+   they do not override the family contract. Proposed exceptions return upstream.
+4. Keep a product's adopted revision pinned until its affected feature and visual
+   checks pass. Synchronization updates the candidate reference; it is not runtime
+   adoption. Never fetch the live specification or CSS at app startup.
+5. Record changes and migration requirements with the source commit. During design
+   review, content hashes identify exact candidate revisions; `1.0.0` is the target
+   contract version, not a production-release claim. After approval, breaking
+   changes increment major, additive patterns minor, and compatible fixes patch.
+
+A new app starts with the complete portable contract, its own surface inventory
+and product appendix, the same local bundle and the same drift/portability checks.
+Standalone builds work offline without another checkout. The central component
+review matrix records remaining design work; each app still owns proof that its
+real features and custom widgets conform.
+
 ## 2. Visual signature — the Air identity
 
 Air should be recognisable with the logo covered. Its identity comes from the
@@ -154,6 +184,10 @@ control. Errors/warnings/success also use text and an appropriate icon.
   `-0.03em`. Workspace/dialog heading: 20–24px, 500, 1.25.
 - Page prose 16–18px/1.6; UI body 14px/1.5; labels 13px/1.4; metadata minimum
   12px/1.5. Mobile editable text remains at least 16px to avoid focus zoom.
+- Shared component sizes use relative tokens: `text-body` .875rem, `text-label`
+  .8125rem, `text-meta` .75rem, `text-editable` 1rem. The pixel values above describe
+  a 16px root, not fixed text boxes. Let controls grow at enlarged text; never alter
+  document artwork dimensions to compensate.
 - Sentence case. Tabular numerals for dimensions, sizes, percentages, and aligned
   counts. No tracked uppercase eyebrows, pipeline IDs, or marketing tool counts.
 - Natural word boundaries; wrap long filenames/URLs without forcing normal prose
@@ -230,6 +264,74 @@ No glass blur behind forms, body copy, tables, or document content.
 | Rich text/signature/drawing     | Air toolbar and focus; preserve content formatting; keyboard/tap alternative where feasible; undo/reset; visible selection.                                                                            |
 | Privacy/help/404/error boundary | Same typography, width, navigation and controls; clear return/retry path; technical detail only when relevant.                                                                                         |
 | PWA/install/update              | Same notice/dialog language; do not reload over unsaved work; readable offline/cache/download distinctions.                                                                                            |
+
+### Field anatomy and validation
+
+- One persistent label, 8px gap to the field, then help/error 8px below. Related
+  fields share a 12–24px gap. Use the shared relative label/body/help typography;
+  do not force equal-height error areas or truncate long assistance text.
+- The single contour uses 10px corners and 8px block/12px inline padding. Height
+  is at least 40px fine / 44px coarse and grows with its content. Editable text is
+  at least 1rem on coarse pointers and narrow screens, independent of layout mode.
+  A multiline field starts at 7.5rem and permits vertical resizing.
+- Populated, empty, focused, invalid, read-only and disabled are different states.
+  Read-only content stays full contrast on `surface-soft`, focusable and copyable;
+  disabled controls cannot accept input or focus and explain why nearby. Never
+  simulate read-only with disabled or hide a stored value behind placeholder text.
+- Focus replaces the resting or invalid boundary with one blue contour. Keep the
+  actual error and `aria-invalid` while focused. Hover does not add a new edge,
+  shadow or motion. Numeric suffixes stay outside the editable value.
+- Use native labels/types, meaningful names, appropriate autocomplete and input
+  modes; placeholders are examples only. Connect help and errors with
+  `aria-describedby`. Required and optional labels are explicit in ambiguous forms.
+- Validate at blur/submit or the product's established completion boundary, not
+  halfway through composition. On submit, preserve all values, expose actionable
+  errors, announce the outcome and focus the first invalid field. Correcting a
+  value clears its error at the next validation boundary; never report success
+  while another field is invalid. Allow paste, undo and IME without interception.
+
+### Choice anatomy and semantics
+
+- Checkbox/radio glyphs occupy 18×18px with a 1px `line-control` boundary. Checkbox
+  corners are 4px; radio corners are circular. Selected glyphs use `accent` and a
+  contrasting `surface` tick/dot. Mixed checkbox state is an 8×2px dash, exposed
+  through the native `indeterminate` property, never a misleading checked value.
+- The entire label is a minimum 44px target with 12px glyph/text separation. Align
+  the glyph to the first line when the label wraps. Disable the actual input,
+  not just its styling; keep the reason visible. Use a fieldset/legend for a group.
+- Native inputs own checkbox Space, radio arrow-key traversal and form values.
+  Mutually exclusive segmented choices use one native radio group (or an already
+  established accessible equivalent); all-selected and partial-selected checkbox
+  groups accurately reflect their children. Tabs control named panels and retain
+  tab semantics; action/toggle groups must not pretend to be tabs.
+- Segments keep the shared neutral selected plane and 2×16px blue marker. Native
+  radio inputs inside those segments retain one group Tab stop; focus outlines the
+  selected label, without exposing a second invisible-control contour. Buttons
+  retain `aria-pressed` only when they truly toggle or act as an existing choice
+  adapter. Explicitly test disabled choices and arrow navigation.
+- Selection changes are immediate. No tick drawing, bounce, sliding selection
+  pill or delayed state change in frequently used controls. Forced-colour mode
+  uses native checkbox/radio glyphs and system focus/selection colours. Both
+  ordinary themes keep the exact same geometry and contrast-tested indicators.
+
+### Overlay anatomy and acceptance
+
+- Dialogs use the native modal top layer or an established accessible primitive:
+  a visible title, concise description, clear dismissal, scrollable content and
+  one primary completion action. The background is inert. Choose initial focus
+  according to the task; dangerous actions never receive automatic primary focus.
+- The 576px maximum reference dialog has 24px padding, 20px corners and shared
+  elevation. At 640px and below it becomes a full-width bottom sheet with safe-area
+  padding. Keep 16px viewport clearance above it; never force a minimum body height
+  that pushes actions off a short screen. Footer actions wrap at enlarged text.
+- Scroll stays in the overlay, keyboard-focused content cannot hide behind sticky
+  actions, and long names/validation never widen it. Preserve entered values on
+  viewport/theme changes. Nested selects use the top layer and close before the
+  containing dialog when Escape is pressed. Closing returns focus to the trigger.
+- Test open, mid-transition dismissal/reopening, invalid input, long content,
+  nested picker, short screen, enlarged text, focus traversal and reduced motion.
+  A popover, tooltip, context menu or destructive confirmation needs its own real
+  state example before adoption; an export dialog alone does not certify them.
 
 ### Select anatomy
 
@@ -592,8 +694,9 @@ For each bounded implementation piece:
 6. Review the complete diff, then make a focused commit with validation evidence.
    Never silently bless a visual regression or weaken a functional assertion.
 
-Maintain a gallery/reference of shared controls and editor states. CI checks token
-and contract drift, forbidden arbitrary UI styling, and reference screenshots.
-Screenshot updates require visual review. A new state/component is incomplete
+Maintain a gallery/reference of shared controls and editor states. CI checks token/contract provenance, asset drift and forbidden arbitrary UI
+styling. Rendered screenshot evidence is reviewed separately; the static checker
+does not certify pixels, accessibility or product behavior. Screenshot updates
+require visual review. A new state/component is incomplete
 until its inventory and tests are added. Final family sign-off repeats the same
 journeys across all apps; it is not inferred from the pilot alone.

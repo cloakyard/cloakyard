@@ -49,6 +49,19 @@ The site makes no API calls, has no account layer, and ships no analytics.
 
 ---
 
+## Air design system
+
+This repository owns the [Air family specification](design/air/README.md) for all
+Cloakyard web apps and landing pages. The [contract](design/air/contract.md),
+[component review matrix](design/air/COMPONENTS.md), tokens and interactive
+reference live together in `design/air/`. Product repositories derive pinned,
+portable copies; shared refinements return here first.
+
+Air is under detailed design review. Follow [the phased refresh](UX_REFRESH_TODO.md)
+and its validation gates before adopting a candidate in production.
+
+---
+
 ## ⚙️ Tech stack
 
 | Area      | Technology                                                              |

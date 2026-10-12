@@ -51,6 +51,33 @@ try {
   assert.equal(baseline.status, 0, baseline.stderr);
   checks.push("isolated bundle passes with no dependencies or sibling files");
 
+  const canonicalProbe = resolve(fixture, "design/air/contract.md");
+  await mkdir(dirname(canonicalProbe), { recursive: true });
+  await writeFile(canonicalProbe, "Deliberately unsynchronized canonical contract.\n");
+  const staleSource = verify();
+  assert.notEqual(staleSource.status, 0);
+  assert.match(staleSource.stderr, /Canonical Air contract differs from DESIGN.md/);
+  checks.push("unsynchronized canonical source rejected when present");
+  await rm(resolve(fixture, "design"), { recursive: true });
+
+  const wrongSource = structuredClone(manifest);
+  wrongSource.source.contractSha256 = "0".repeat(64);
+  await writeFile(resolve(fixture, manifestPath), JSON.stringify(wrongSource));
+  const sourceDrift = verify();
+  assert.notEqual(sourceDrift.status, 0);
+  assert.match(sourceDrift.stderr, /Air bundle provenance does not match/);
+  checks.push("bundle paired with a different contract rejected");
+  await writeFile(resolve(fixture, manifestPath), manifestText);
+
+  const designPath = resolve(fixture, "DESIGN.md");
+  const design = await readFile(designPath, "utf8");
+  await writeFile(designPath, design.replace(/^version: .+$/m, "version: 0.0.0-probe"));
+  const versionDrift = verify();
+  assert.notEqual(versionDrift.status, 0);
+  assert.match(versionDrift.stderr, /Bundle and DESIGN.md contract versions differ/);
+  checks.push("mismatched document version rejected");
+  await writeFile(designPath, design);
+
   const withoutMotion = structuredClone(manifest);
   delete withoutMotion.studyAssets["motion.mjs"];
   await writeFile(resolve(fixture, manifestPath), JSON.stringify(withoutMotion));

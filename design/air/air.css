@@ -26,6 +26,11 @@
   --air-checker-b: light-dark(#dce1e8, #363d48);
   --air-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --air-font-mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --air-text-body: 0.875rem;
+  --air-text-label: 0.8125rem;
+  --air-text-meta: 0.75rem;
+  --air-text-editable: 1rem;
+  --air-radius-check: 4px;
   --air-radius-control: 10px;
   --air-radius-chip: 8px;
   --air-radius-panel: 18px;
@@ -85,6 +90,9 @@
 
 .air-button,
 .air-icon-button {
+  box-sizing: border-box;
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +104,7 @@
   border-radius: var(--air-radius-control);
   background: var(--air-surface);
   color: var(--air-ink);
-  font: 500 14px/1.4 var(--air-font);
+  font: 500 var(--air-text-body)/1.4 var(--air-font);
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -150,7 +158,7 @@
   border-radius: var(--air-radius-control);
   background: var(--air-surface);
   color: var(--air-ink);
-  font: 400 14px/1.5 var(--air-font);
+  font: 400 var(--air-text-body)/1.5 var(--air-font);
 }
 /* One field contour; the picker and every option share the Air surface language.
  * Native select behavior retains form values, typeahead, focus and dismissal. */
@@ -261,6 +269,13 @@ select.air-field {
     font-size: 1rem;
   }
 }
+textarea.air-field {
+  min-block-size: 7.5rem;
+  resize: vertical;
+}
+.air-field[readonly] {
+  background-color: var(--air-surface-soft);
+}
 .air-field::placeholder {
   color: var(--air-ink-muted);
 }
@@ -275,28 +290,92 @@ select.air-field {
   display: block;
   margin-bottom: 8px;
   color: var(--air-ink);
-  font: 500 13px/1.4 var(--air-font);
+  font: 500 var(--air-text-label)/1.4 var(--air-font);
 }
 .air-help {
   margin: 8px 0 0;
   color: var(--air-ink-secondary);
-  font: 400 12px/1.5 var(--air-font);
+  font: 400 var(--air-text-meta)/1.5 var(--air-font);
 }
 .air-help--error {
   color: var(--air-danger);
 }
+/* Style the visible glyph; native inputs still own values, grouping and keys. */
 .air-check {
-  accent-color: var(--air-accent);
+  appearance: none;
+  box-sizing: border-box;
+  display: inline-grid;
+  place-content: center;
   width: 18px;
   height: 18px;
-  flex: 0 0 auto;
+  flex: 0 0 18px;
+  margin: calc((1.5em - 18px) / 2) 0 0;
+  border: 1px solid var(--air-line-control);
+  border-radius: var(--air-radius-check);
+  background: var(--air-surface);
+  color: var(--air-surface);
+  cursor: pointer;
+  font: inherit;
+}
+.air-check::after {
+  content: "";
+  display: none;
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+}
+.air-check:checked,
+.air-check:indeterminate {
+  border-color: var(--air-accent);
+  background: var(--air-accent);
+}
+.air-check:checked::after {
+  display: block;
+  clip-path: polygon(10% 45%, 23% 32%, 42% 53%, 78% 14%, 92% 27%, 42% 81%);
+}
+.air-check:indeterminate::after {
+  display: block;
+  width: 8px;
+  height: 2px;
+  clip-path: none;
+}
+.air-check[type="radio"] {
+  border-radius: 50%;
+}
+.air-check[type="radio"]:checked::after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  clip-path: none;
+}
+.air-check:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 .air-check-label {
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
-  min-height: var(--air-control);
-  font: 400 14px/1.5 var(--air-font);
+  min-height: 44px;
+  padding-block: 10px;
+  font: 400 var(--air-text-body)/1.5 var(--air-font);
+  cursor: pointer;
+}
+.air-check-label:has(:disabled) {
+  color: var(--air-ink-muted);
+  cursor: not-allowed;
+}
+.air-choice-group {
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.air-choice-group > legend {
+  margin-bottom: 8px;
+  padding: 0;
+  font: 500 var(--air-text-label)/1.4 var(--air-font);
 }
 /* Native checkbox semantics with switch presentation; the full box is the target. */
 .air-switch {
@@ -356,12 +435,12 @@ select.air-field {
   gap: 16px;
   min-height: 44px;
   margin: 12px 0;
-  font: 400 13px/1.5 var(--air-font);
+  font: 400 var(--air-text-label)/1.5 var(--air-font);
 }
 .air-switch-row small {
   display: block;
   color: var(--air-ink-secondary);
-  font-size: 12px;
+  font-size: var(--air-text-meta);
 }
 .air-panel {
   border: 1px solid var(--air-line);
@@ -378,8 +457,14 @@ select.air-field {
   border-radius: var(--air-radius-control);
   background: var(--air-surface-soft);
 }
-.air-segments > button {
+.air-segments > button,
+.air-segment {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-wrap: anywhere;
   flex: 1;
   min-height: var(--air-control-compact);
   padding: 8px 12px;
@@ -387,17 +472,19 @@ select.air-field {
   border-radius: var(--air-radius-chip);
   background: transparent;
   color: var(--air-ink-secondary);
-  font: 500 13px/1.4 var(--air-font);
+  font: 500 var(--air-text-label)/1.4 var(--air-font);
   cursor: pointer;
 }
 .air-segments > button[aria-pressed="true"],
-.air-segments > button[aria-selected="true"] {
+.air-segments > button[aria-selected="true"],
+.air-segment:has(input:checked) {
   border-color: var(--air-line);
   background: var(--air-surface);
   color: var(--air-ink);
 }
 .air-segments > button[aria-pressed="true"]::after,
-.air-segments > button[aria-selected="true"]::after {
+.air-segments > button[aria-selected="true"]::after,
+.air-segment:has(input:checked)::after {
   content: "";
   position: absolute;
   inset-inline-start: calc(50% - 8px);
@@ -407,6 +494,24 @@ select.air-field {
   border-radius: 1px;
   background: var(--air-accent);
 }
+.air-segment > input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+.air-segment:has(input:focus-visible) {
+  outline: 2px solid var(--air-accent);
+  outline-offset: 3px;
+}
+.air-segments > button:disabled,
+.air-segment:has(input:disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .air-notice {
   display: flex;
   gap: 12px;
@@ -414,7 +519,7 @@ select.air-field {
   border-radius: var(--air-radius-control);
   background: var(--air-accent-soft);
   color: var(--air-accent);
-  font: 400 14px/1.5 var(--air-font);
+  font: 400 var(--air-text-body)/1.5 var(--air-font);
 }
 .air-notice--error {
   background: var(--air-danger-soft);
@@ -435,12 +540,14 @@ select.air-field {
   max-height: calc(100dvh - 32px);
   padding: 24px;
   overflow: auto;
+  overscroll-behavior: contain;
+  scroll-padding-block: 24px 96px;
   border: 1px solid var(--air-line);
   border-radius: var(--air-radius-dialog);
   background: var(--air-surface);
   color: var(--air-ink);
   box-shadow: var(--air-shadow-dialog);
-  font: 400 14px/1.5 var(--air-font);
+  font: 400 var(--air-text-body)/1.5 var(--air-font);
 }
 .air-dialog::backdrop {
   background: var(--air-scrim);
@@ -464,6 +571,11 @@ select.air-field {
   box-shadow: none;
 }
 @media (hover: hover) and (pointer: fine) {
+  .air-check:hover:not(:disabled):not(:checked):not(:indeterminate),
+  .air-segments > button:hover:not(:disabled),
+  .air-segment:hover:not(:has(input:disabled)) {
+    background: var(--air-surface-hover);
+  }
   .air-button:hover:not(:disabled),
   .air-icon-button:hover:not(:disabled) {
     background: var(--air-surface-hover);
@@ -492,10 +604,12 @@ select.air-field {
     --air-control-compact: 44px;
   }
 }
-@media (max-width: 640px) {
+@media (pointer: coarse), (max-width: 640px) {
   .air-field {
-    font-size: 16px;
+    font-size: var(--air-text-editable);
   }
+}
+@media (max-width: 640px) {
   .air-dialog {
     margin: auto 0 0;
     width: 100%;
@@ -513,5 +627,40 @@ select.air-field {
   .air-icon-button:active:not(:disabled):not(:focus-visible) {
     transform: none;
     transition: none;
+  }
+}
+
+/* Keep system contrast choices and native glyphs when colours are constrained. */
+@media (forced-colors: active) {
+  .air-check {
+    appearance: auto;
+    background: revert;
+    border: revert;
+    color: revert;
+  }
+  .air-check::after {
+    content: none;
+    display: none;
+  }
+  .air-segment:has(input:checked) {
+    border-color: Highlight;
+  }
+  .air-segment:has(input:checked)::after {
+    background: Highlight;
+  }
+  .air-switch::before {
+    background: Canvas;
+    border-color: ButtonText;
+  }
+  .air-switch::after {
+    background: ButtonText;
+  }
+  .air-switch:checked::before {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+  .air-switch:checked::after {
+    background: HighlightText;
+    forced-color-adjust: none;
   }
 }

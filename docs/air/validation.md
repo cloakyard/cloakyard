@@ -543,3 +543,90 @@ standalone contract checkers and 25/25 isolated portability assertions. Contract
 hash prefix: `5f24d99e3a9a`. Production output remains 242.40kB JS / 28.52kB CSS;
 no Air runtime import was added. Temporary browser test tabs and overrides were
 removed. The user's reference tab and existing servers were left in place.
+
+## Component foundations and canonical ownership — 2026-10-12
+
+Cloakyard's main repository is now the explicit upstream authority in the contract,
+root README, `design/air/README.md` and every derived DESIGN document. Product
+appendices add domain constraints; wrappers adapt APIs without changing the skin.
+The central `design/air/COMPONENTS.md` records component coverage and remaining
+state/browser/feature work. Candidate revisions remain under design review.
+
+Bundle provenance identifies the source repository/directory, review status and
+exact contract SHA-256. The standalone checker rejects mismatched provenance or
+versions in addition to existing CSS/module drift. In the main repository it
+also compares canonical contract, CSS and study assets to their generated copies,
+so forgetting to synchronize a source edit fails the same CI command. Both validators synchronize to
+each app. The HTML uses a stylesheet URL pinned by its content hash: the browser
+was observed holding an earlier unversioned stylesheet after a reload, and the
+versioned URL loaded the correct custom primitives. This is a preview cache fix,
+not a runtime dependency on the source repository.
+
+The portable contract now defines field/choice/overlay anatomy and acceptance in
+detail. Shared primitives use relative body/label/help/editable tokens. Fields have
+read-only and multiline treatment; checkbox/radio glyphs share Air's boundary,
+geometry and selection colours while retaining native semantics. Segmented choices
+use native radio groups. Forced-colour mode restores native glyphs and system
+selection colours. The export dialog has relative type, wrapping actions and
+scroll containment/padding. A native skip link reaches the reference's main region.
+
+### Review findings corrected
+
+Reviewed against the [Web Interface Guidelines](https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md)
+with Air's canonical visual rules retained:
+
+- `design/air/air.css:29` — shared fixed-size text did not respond to root-font
+  enlargement; component type now uses relative semantic tokens.
+- `design/air/components.html:2543` — field help lacked complete programmatic
+  associations and required/read-only/disabled/multiline states were absent;
+  expanded labelled specimens now connect help/errors and preserve entered text.
+- `design/air/components.html:2724` — the standalone alignment buttons had no working
+  selection handler; native grouped radios now own selection and arrow traversal.
+- `design/air/components.html:4519` — a success message remained after subsequent
+  invalid edits during testing; the input boundary now clears stale success
+  without validating midway through typing/composition.
+- `design/air/air.css:304` — checkbox/radio appearance depended on platform defaults;
+  shared geometry now applies, with explicit system-colour fallback.
+- `design/air/components.html:2231` — reference navigation lacked a skip destination;
+  the visible-on-focus native link now moves focus to the main region.
+
+### Recorded evidence
+
+`evidence/air-03-component-foundations-2026-10-12.json` records:
+
+- 32 layout cases: eight desktop/laptop/tablet/phone/landscape sizes × both themes
+  × 100%/200% root font. No page or component horizontal escape; every choice
+  label is at least 44px and coarse-pointer segments are at least 44px high.
+  Phone editable text measures 16px normally and 32px when enlarged.
+- Invalid submit focuses the first invalid field and retains both errors; valid
+  correction preserves multilingual multiline text. Editing clears stale success;
+  reversed ranges stay invalid. Read-only content resists typing and Tab skips the
+  disabled field. Four theme/size focus checks retain one 2px zero-offset contour,
+  transparent border, no shadow and visible error text.
+- Mixed checkbox/child synchronization, Space selecting all, radio and segmented
+  arrow navigation, rendered disabled states and switch Space behavior. Forced-colour
+  emulation uses native glyphs (`appearance:auto`, no custom pseudo-content);
+  reduced-motion choice interaction creates zero animations.
+- 36 PDF/IMG/Resume native export-dialog cases at six sizes and both themes: modal
+  state, viewport containment, no horizontal overflow, initial field focus and
+  Escape return all pass. Nine additional 200% dark-theme journeys traverse every
+  dialog control at laptop, narrow phone and short landscape. Hit testing confirms
+  focused controls remain visible instead of hidden beneath sticky actions.
+- Four saved, visually inspected captures: `air-03-components-fields-laptop-dark`,
+  `air-03-components-choices-laptop-light`, `air-03-components-choices-phone-dark`
+  and `air-03-components-fields-text200-phone-light` (all `.png` in `evidence/`).
+  No console warnings or errors. Temporary overrides and audit tab were restored.
+
+The field form is explicitly a local interaction study, not a product export.
+The central matrix keeps compound fields, busy/retry actions, actual popovers,
+tooltips, destructive/invalid overlays and specialised editor states open. Other
+editor typography is not certified by the shared primitive pass. Root-font and
+forced-colour emulation do not certify real zoom, software keyboards, screen
+readers or Safari/Firefox. Production apps remain unmigrated; Resume's 286/288
+baseline is unresolved. Sibling candidate sync retains separate commit gates.
+
+Final gates pass: `vp check` (73 formatted / 23 linted), `vp build`, inline-module
+syntax/lint, deterministic shader verification, exact-copy synchronization,
+all five standalone checkers and 40/40 isolated portability assertions. Contract
+hash prefix: `5bd4b3b1f158`. Production output is unchanged at 242.40kB JS and
+28.52kB CSS. No product runtime import, push, deployment or sibling commit was made.
