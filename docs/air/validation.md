@@ -476,3 +476,70 @@ standalone design checkers and isolated portability. Contract hash prefix:
 `5ad8bd070341`. The final matrix also checks the enlarged summary stays within
 its header. Production output remains 242.40 kB JS / 28.52 kB CSS, with no Air
 imports. Sibling reference synchronization retains separate commit gates.
+
+## Dropdown and motion visibility refinement — 2026-10-12
+
+Scope: the canonical opt-in Air reference and synchronized portable design bundle.
+Production screens, KERR and native macOS are unchanged. The native custom picker
+uses `appearance: base-select` with shared Air field/menu tokens; the browser owns
+keyboard navigation, focus, typeahead, form values and top-layer placement.
+[MDN's customizable-select documentation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select)
+records limited browser support. Unsupported engines retain an inset-arrow native
+fallback; an established accessible adapter and cross-engine visual verification
+are explicit pre-rollout requirements, not a claimed pass.
+
+Dropdown changes: 12px arrow inset, fixed 16px chevron, one field contour, opaque
+light/dark menus, 8px menu inset, neutral selected row, blue trailing checkmark,
+keyboard outline, disabled choices and 40px fine/44px coarse minimum rows. Pickers
+follow trigger width with a viewport-capped 15rem readable minimum. Long labels
+wrap; native anchor placement and `max-block-size: stretch` constrain scrolling
+to the available space. A first short-landscape check exposed clipping; that
+constraint corrected it before the final matrix was recorded. Inspector selects
+now respect relative font sizing without changing document artwork.
+
+`evidence/air-03-select-motion-checks-2026-10-12.json` records:
+
+- 16 final reference menu cases: eight sizes (1920×1080, 1440×900, 1280×800,
+  1024×768, 768×1024, 390×844, 320×568, 844×390), both themes. No page overflow;
+  menu panels remain within the viewport. Offscreen rows inside scrollable menus
+  are intentional and are not panel-overflow failures.
+- Four additional 200% root-font cases at 320×568/844×390 in both themes. The
+  select font is 32px, panels remain contained and End selects WebP while skipping
+  the disabled last option. A separate compact IMG check wraps Selective color,
+  retains the arrow and shows the selected row within the scrolling picker.
+- Space/arrow/Enter selection, End skipping disabled choices, Home/Escape
+  cancellation, typeahead, Tab dismissal and disabled-control exclusion.
+- Twelve PDF/IMG export-menu cases across laptop/phone/landscape and both themes.
+  Native modal layering and menu bounds pass. IMG export keyboard selection,
+  PDF/IMG/Resume tool switching and focus return pass; Resume's paper select
+  changes the preview to US Letter. Resume exports PDF directly and has no format
+  select, so it is not counted among export-picker cases.
+- Real pointer completion uses 240ms; Enter and reduced motion have no animation.
+  Interrupted completion retains one animation and its current pose. The light's
+  arrival uses 900ms; live reduced motion releases it; rest submits no frames;
+  pointer response settles; still and offscreen states release readiness.
+- The final renderer draws and settles at laptop/phone sizes in both themes.
+  Fresh reduced motion makes zero shader requests. No external HTTP requests or
+  console warnings/errors. Inline SVG data resources are local, not network calls.
+- Five saved and visually inspected captures: `air-03-select-laptop-light.png`,
+  `air-03-select-export-phone-dark.png`, `air-03-select-text200-phone-light.png`,
+  and `air-03-light-refined-laptop-{light,dark}.png`.
+
+The finite shader now uses stronger light-theme contrast, larger initial plane
+offsets and a traveling light concentration. Generated bundle: 2,249,127 bytes /
+368,615 gzip, SHA-256 prefix `f375a59db6e1`; the 400kB study ceiling still passes.
+The controller's 30fps/DPR1.5, lazy-loading, interruption and disposal limits are
+unchanged. Physical GPU/battery/thermal and slower-network measurements remain
+open. Emulation and root-font stress do not certify real touch or browser zoom.
+
+Remaining broader work includes relative text throughout other controls, complete
+state/assistive-technology coverage, cross-engine select adaptation, the user's
+visual review and all per-app migration/feature gates. Resume's existing 286/288
+baseline remains unresolved; no sibling commit or feature-suite pass is claimed.
+
+Final gates pass: Cloakyard `vp check` (71 formatted, 23 linted), `vp build`,
+extracted inline-module syntax/lint, deterministic shader rebuild, all five
+standalone contract checkers and 25/25 isolated portability assertions. Contract
+hash prefix: `5f24d99e3a9a`. Production output remains 242.40kB JS / 28.52kB CSS;
+no Air runtime import was added. Temporary browser test tabs and overrides were
+removed. The user's reference tab and existing servers were left in place.

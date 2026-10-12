@@ -231,6 +231,28 @@ No glass blur behind forms, body copy, tables, or document content.
 | Privacy/help/404/error boundary | Same typography, width, navigation and controls; clear return/retry path; technical detail only when relevant.                                                                                         |
 | PWA/install/update              | Same notice/dialog language; do not reload over unsaved work; readable offline/cache/download distinctions.                                                                                            |
 
+### Select anatomy
+
+- Every single-value dropdown uses the shared field contour, 12px inline inset,
+  16px chevron and at least 12px between its value and icon. The chevron has a
+  stable reserved box; it never touches the field's trailing edge. Focus remains
+  one replacement contour, including while validation text is present.
+- The open picker uses the opaque `surface`, `line` edge, 12px menu radius,
+  shared menu shadow and 8px inset. Its width follows the trigger, with a 15rem
+  readable minimum capped by the viewport. Long labels wrap; lists scroll within
+  the available space above or below the trigger. Rows use 8px block/12px inline
+  padding, 8px corners, 40px fine/44px coarse minimum height, and the UI sans family.
+- Selected rows have a neutral surface and blue checkmark at the trailing edge.
+  Hover uses `surface-hover`; keyboard focus has a 2px inset blue outline.
+  Selection, opening and dismissal are immediate in frequently used selects.
+  Disabled choices remain identifiable and cannot be selected.
+- The reference styles native `base-select` pickers so semantics, typeahead,
+  keyboard traversal, form values and top-layer placement remain native. Its
+  unsupported-browser fallback preserves native operation and the inset arrow,
+  but does not certify a custom menu appearance. Before production rollout, use
+  an established accessible adapter for unsupported target browsers and validate
+  the same appearance/behavior. Do not hand-roll a second keyboard/focus system.
+
 ### Dense editor controls
 
 These patterns are required by the existing PDF tools; they also govern the
@@ -488,8 +510,8 @@ performance approval.
 - Shared motion: pointer press 120ms; hover arrow 160ms; popover 180ms; dialog 240ms;
   exit 160ms. Ease-out `cubic-bezier(0.23, 1, 0.32, 1)`; reversible spatial motion
   `cubic-bezier(0.77, 0, 0.175, 1)`. Sheet easing: `cubic-bezier(0.32, 0.72, 0, 1)`. No per-app timing scale.
-- A completion acknowledgement may settle from 4px/0.96 scale over 240ms, once.
-  A landing entry may use a single 600ms light arrival. These are the moments for
+- A completion acknowledgement may settle from 8px/0.90 scale over 240ms, once.
+  A landing entry may use a single 900ms light arrival. These are the moments for
   playful character. Avoid bouncing controls, moving text, repeated reveals and
   continuous decorative activity during work.
 - Pointer hover may move a directional arrow by 2px over 160ms. Press uses 0.98
@@ -521,7 +543,7 @@ performance approval.
   never depend on GPU support or successful effect loading.
 - The reference's light follows a mass 1 / stiffness 100 / damping 10 spring,
   confined to the middle 70% of the artwork. It settles within 1.8s after the last
-  pointer input. The 600ms arrival uses `motion-arrival` and the shared ease-out;
+  pointer input. The 900ms arrival uses `motion-arrival` and the shared ease-out;
   interrupted replay continues from its current opacity. Keyboard replay is immediate.
 - Cap this study at 30 submitted frames/second and effective pixel ratio 1.5.
   Submit no frames at rest. Release the GPU device offscreen/hidden and cancel

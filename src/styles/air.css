@@ -60,7 +60,7 @@
   --air-motion-popover: 180ms;
   --air-motion-dialog: 240ms;
   --air-motion-exit: 160ms;
-  --air-motion-arrival: 600ms;
+  --air-motion-arrival: 900ms;
   --air-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --air-ease-sheet: cubic-bezier(0.32, 0.72, 0, 1);
   --air-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
@@ -151,6 +151,115 @@
   background: var(--air-surface);
   color: var(--air-ink);
   font: 400 14px/1.5 var(--air-font);
+}
+/* One field contour; the picker and every option share the Air surface language.
+ * Native select behavior retains form values, typeahead, focus and dismissal. */
+select.air-field {
+  font-size: 0.875rem;
+  appearance: none;
+  min-inline-size: 0;
+  padding-inline: 12px 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23778395' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: right 12px center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+@supports (appearance: base-select) {
+  select.air-field,
+  select.air-field::picker(select) {
+    appearance: base-select;
+  }
+  select.air-field {
+    padding-inline: 12px;
+    background-image: none;
+    align-items: center;
+    gap: 12px;
+  }
+  select.air-field::picker-icon {
+    content: "";
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    margin-inline-start: auto;
+    color: var(--air-ink-secondary);
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      center / contain no-repeat;
+  }
+  select.air-field:open::picker-icon {
+    rotate: 180deg;
+  }
+  select.air-field::picker(select) {
+    box-sizing: border-box;
+    inline-size: anchor-size(width);
+    min-inline-size: min(15rem, calc(100vw - 32px));
+    max-inline-size: calc(100vw - 32px);
+    /* Keep the native anchor's available-space constraint on short screens. */
+    max-block-size: stretch;
+    position-try-order: most-block-size;
+    margin-block: 8px;
+    padding: 8px;
+    border: 1px solid var(--air-line);
+    border-radius: var(--air-radius-menu);
+    background: var(--air-surface);
+    color: var(--air-ink);
+    box-shadow: var(--air-shadow-menu);
+    font: 400 0.875rem/1.5 var(--air-font);
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+  select.air-field option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-block-size: 40px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: var(--air-radius-chip);
+    background: transparent;
+    color: var(--air-ink);
+    white-space: normal;
+    overflow-wrap: anywhere;
+    font: inherit;
+  }
+  select.air-field option:checked {
+    background: var(--air-surface-soft);
+    font-weight: 500;
+  }
+  select.air-field option::checkmark {
+    content: "";
+    order: 1;
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    margin-inline-start: auto;
+    background: var(--air-accent);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      center / contain no-repeat;
+  }
+  select.air-field option:focus-visible {
+    outline: 2px solid var(--air-accent);
+    outline-offset: -2px;
+  }
+  select.air-field option:disabled {
+    opacity: 0.5;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    select.air-field option:hover:not(:disabled) {
+      background: var(--air-surface-hover);
+    }
+  }
+  @media (pointer: coarse) {
+    select.air-field option {
+      min-block-size: 44px;
+      font-size: 1rem;
+    }
+  }
+}
+@media (pointer: coarse), (max-width: 640px) {
+  select.air-field {
+    font-size: 1rem;
+  }
 }
 .air-field::placeholder {
   color: var(--air-ink-muted);

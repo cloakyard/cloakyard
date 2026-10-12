@@ -20,6 +20,13 @@ migration and detailed visual sign-off remain open. No push or deployment occurr
   mark. The validation record contains 96 layout + 96 text-bound cases, keyboard,
   no-JS, touch emulation, field contours and 12 editor-dialog smoke checks.
 
+- The 2026-10-12 dropdown/motion refinement gives all reference selects a shared
+  native custom picker, inset arrow, neutral selected row/blue checkmark and
+  viewport-constrained scrolling. The light has a stronger finite 900ms sweep;
+  completion settles from 8px/.90 over 240ms. Evidence and remaining browser
+  support gates are in the select/motion section of `validation.md`. No product
+  migration or sibling commit is included in this checkpoint.
+
 ## Next bounded pieces
 
 1. Continue refining the shared system. Extend relative typography and enlarged
@@ -28,7 +35,8 @@ migration and detailed visual sign-off remain open. No push or deployment occurr
 2. Add explicit privacy/long-reading and recovery-page studies. Keep the same
    family navigation, reading measure and action hierarchy across both themes.
 3. Continue actual browser zoom, physical touch/software-keyboard and cross-engine
-   checks. Root-font enlargement and browser emulation are separate evidence.
+   checks. Native custom selects fall back to platform pickers in unsupported
+   browsers; establish and test the accessible adapter before product adoption. Root-font enlargement and browser emulation are separate evidence.
 4. Complete the remaining custom-control/state and full-family motion reviews.
    The shader works in the study; physical GPU/battery/thermal and slow-network
    costs still need evidence before any production adoption.

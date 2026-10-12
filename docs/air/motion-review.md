@@ -12,7 +12,7 @@ feedback. Production components and physical-device behaviour are separate gates
 | Motion values lived in several inline handlers; colour transitions also tweened theme changes. | One portable module reads shared timing tokens; control colours and theme changes are immediate.           | All apps can adopt one behaviour, and appearance changes do not animate every control.     |
 | Reduced motion was checked only when an action began.                                          | A live preference change settles an open dialog, finishes an exit or cancels completion motion.            | Accessibility preferences also apply to motion already in progress.                        |
 
-## Verdict
+## Earlier refinement verdict
 
 **Feel-breaking regressions:** the keyboard and interrupted-dialog findings were
 blocking before correction. Genuine Enter/Space activation now produces no
@@ -71,3 +71,35 @@ Generated vendor assets are excluded from formatting/lint in the web repositorie
 source modules remain checked, and the integrity/rebuild gates cover generated
 assets. The stricter app checkers also caught and resolved two floating startup
 promises in the shared light controller.
+
+## Visibility refinement — 2026-10-12
+
+The earlier table and line references describe the previous checkpoint. This
+bounded follow-up responds to the user's request for clearer motion.
+
+| Before                                                  | After                                                                                                                                    | Reason                                                                            |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Completion moved 4px from .96 scale.                    | 8px from .90 scale, .30 initial opacity; unchanged 240ms settle. The icon rests on `accent-soft`.                                        | The acknowledgement is easier to perceive without extending a work action.        |
+| Light appeared over 600ms with 7px/3.6px plane offsets. | One 900ms arrival, 24px/12px offsets at the 200px artwork height, a sweep from 14% of its width, and stronger theme-specific edges/glow. | The movement reads as light crossing two planes rather than a nearly static fade. |
+| Pointer input shifted illumination only.                | A small opposing displacement also separates the two planes.                                                                             | The response has a visible spatial cue while remaining confined below the copy.   |
+
+Actual pointer completion invokes the new keyframes at 240ms. Enter invokes no
+animation. An interrupted replay samples the current pose, keeps one animation
+and completes with approximately 33ms remaining in the recorded case. Reduced
+motion produces no completion animation; enabling it during the light arrival
+cancels motion, releases the renderer and disables replay.
+
+The final shader compiles and draws in light/dark on laptop/phone. It rests after
+arrival and pointer response. The idle observation held at 36 submitted frames
+for 1.1 seconds. Still mode and offscreen disposal remove readiness; a fresh
+reduced-motion load makes zero shader requests. Only local HTTP assets load.
+The increased strength does not add a continuous loop or a new rendering pass.
+
+Select opening/selection stays immediate because these are frequent precision
+controls. Native picker behavior owns focus, typeahead and dismissal. No new
+menu animation, hand-written focus system or motion dependency was introduced.
+
+**Pass for this bounded reference behavior.** User visual sign-off, cross-engine
+select parity, actual touch/assistive technology and physical GPU/battery costs
+remain open. Evidence: `evidence/air-03-select-motion-checks-2026-10-12.json` and
+`air-03-light-refined-laptop-{light,dark}.png` in the evidence directory.

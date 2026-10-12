@@ -2,12 +2,12 @@
   "version": "1.0.0",
   "stylesheet": "src/styles/air.css",
   "studyAssets": {
-    "components.html": "55a6422e27f57ab58a9876a7b4ff39711c6c7383de907ae6960ee82ead52caaa",
-    "motion.mjs": "7536727d673cd666780a21ba76d7fafab0fcf87f28bf9a1290d1367bf5ef95b1",
+    "components.html": "f0d71e59e99bd66e223c9819946520b042e73588e6e5311eb2b6308c1ea79ac0",
+    "motion.mjs": "9ed84c388b39cff2f3ebed3f04c4e99d5951023838b659498d51ce0952a179b0",
     "light-controller.mjs": "e123ac7e3005d1287ed77134270de091e5ef52f728788d1ef68a86c4ab2cc7f7",
-    "assets/air-light-shader.js": "1af6866d8cdea4e5ba073fc4b14cca88a521547553de25d00bebc24f92e695be",
+    "assets/air-light-shader.js": "f375a59db6e1138b490bda285d02035d3793706313128cb3a1204f5b76f2ede3",
     "assets/THIRD_PARTY_LICENSES.txt": "c0624d0848ea3de0ef47c127a134566f1dfd23fd95580f2c39eb8fb123d78d8a"
   },
-  "sha256": "ab701ccf8304868ae2df85ae28c81afc62cb277a11f4c62814de0a9ab10e8f22",
+  "sha256": "789c955212ea80366c70ab687f3134e8cfc379d0b09836b36773c81041a0b962",
   "note": "Pinned family bundle. Runtime migration is tracked separately in surfaces.json."
 }

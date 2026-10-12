@@ -44,6 +44,16 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Validate the representative refined reference and synchronize the portable contract and bundle; [coverage and remaining gates](docs/air/validation.md).
 - [x] Refine landing text enlargement, compact navigation and short-landscape composition;
       validate container/text bounds, native no-JS navigation and preserve single-contour fields.
+- [x] Refine dropdown anatomy and the actual open picker: inset chevron, shared
+      option surfaces/checkmark/focus, disabled rows, keyboard behavior, viewport
+      scrolling and enlarged select text. Validate reference, tool, paper and export
+      selects. See the 2026-10-12 select/motion evidence.
+- [ ] Validate the custom select in target browser engines; where native
+      `base-select` is unavailable, adopt an established accessible adapter and
+      verify the same Air appearance before any production rollout.
+- [x] Strengthen the finite light arrival and completion acknowledgement; verify
+      both themes, responsive rendering, interruption, keyboard immediacy, idle
+      behavior and reduced motion. User visual review remains open.
 - [ ] Extend relative typography and enlarged-text validation through shared fields,
       custom controls, editor chrome, dialogs and the reference documentation controls.
       Preserve document/canvas output dimensions; do not mistake root-font stress for browser zoom.

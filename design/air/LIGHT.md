@@ -43,3 +43,11 @@ Browser evidence and remaining gates are in `docs/air/validation.md` and
 `UX_REFRESH_TODO.md`. Fallback simulations are labelled separately from actual
 hardware/browser coverage. No screenshots of KERR or graphics in editing canvases
 are introduced by this study.
+
+The 2026-10-12 visibility refinement keeps a finite 900ms arrival. The rear/front
+planes begin 24px/12px below their resting position at the 200px reference height;
+a light concentration sweeps from 14% of the width toward the pointer target.
+Pointer movement slightly separates the two planes as well as moving the light.
+The existing 30fps/DPR limits, spring, resting state and disposal remain unchanged.
+The stronger edge/glow lives below the hero copy. Reduced-motion and still modes
+retain the quiet SVG fallback instead of requesting the renderer.

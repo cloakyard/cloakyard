@@ -1484,7 +1484,8 @@
         place-items: center;
         border-radius: 50%;
         color: var(--air-accent);
-        background: var(--air-surface);
+        background: var(--air-accent-soft);
+        border: 1px solid var(--air-line);
         box-shadow: var(--air-shadow-surface);
         position: relative;
       }
@@ -1882,6 +1883,9 @@
         .inspector .air-field {
           font-size: 16px;
         }
+        .inspector select.air-field {
+          font-size: 1rem;
+        }
       }
       @container preview (max-width:40rem) {
         .family-nav {
@@ -2143,6 +2147,9 @@
         }
         .inspector .air-field {
           font-size: 16px;
+        }
+        .inspector select.air-field {
+          font-size: 1rem;
         }
         .tiny-segments button,
         .product-switch button,
@@ -2499,6 +2506,34 @@
             </div>
           </div>
         </div>
+        <div class="component-row" id="select-study">
+          <div>
+            <h3>Menus, with the same care.</h3>
+            <p>
+              A little breathing room for the arrow. Quiet option rows, a clear selection and one
+              consistent surface.
+            </p>
+          </div>
+          <div class="component-examples">
+            <div style="width: 240px; max-width: 100%">
+              <label class="air-label" for="reference-format">Image format</label>
+              <select class="air-field" id="reference-format">
+                <option>PNG</option>
+                <option>JPEG</option>
+                <option>WebP</option>
+                <option disabled>AVIF · unavailable in this study</option>
+              </select>
+              <p class="air-help">Open to compare the complete menu.</p>
+            </div>
+            <div style="width: 240px; max-width: 100%">
+              <label class="air-label" for="reference-select-disabled">Preset</label>
+              <select class="air-field" id="reference-select-disabled" disabled>
+                <option>Original quality</option>
+              </select>
+              <p class="air-help">Unavailable choices remain identifiable.</p>
+            </div>
+          </div>
+        </div>
         <div class="component-row">
           <div>
             <h3>Choices, with precision.</h3>
@@ -2553,9 +2588,9 @@
           <div class="motion-copy">
             <h3>Finishing should feel good.</h3>
             <p>
-              A brief, soft settle confirms completion. No confetti, looping ornaments or moving
-              text. Try it again—the motion continues from its current position without stacking
-              effects.
+              A clear lift and soft landing confirm completion. No confetti, looping ornaments or
+              moving text. Try it again—the motion continues from its current position without
+              stacking effects.
             </p>
           </div>
           <div class="save-example">
