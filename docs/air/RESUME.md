@@ -34,11 +34,18 @@ migration and detailed visual sign-off remain open. No push or deployment occurr
   `design/air/COMPONENTS.md` is the component coverage/next-work map. Production
   adoption and user visual sign-off remain open.
 
+- The compound-fields/action-states checkpoint adds clearable template filtering,
+  a bounded numeric unit field with visible retained applied value, and explicit
+  busy/success/failure/retry/cancel controls. Shared shells preserve one field
+  contour, a 44px clear target and stable translated action dimensions. The
+  outcomes are simulated; no product file is processed. Evidence is in the dated
+  validation section and `air-03-compound-actions-2026-10-12.json`.
+
 ## Next bounded pieces
 
-1. Continue component refinement with compound search/clear/unit fields and
-   button busy/retry states, then real popovers/tooltips/context menus and long or
-   invalid overlays. Shared primitive and export-dialog text stress passes;
+1. Continue with real popovers/tooltips/context menus and long, invalid or
+   destructive overlays. Compound search/unit fields and busy/retry/cancel state
+   studies are now refined and validated; real async adapters remain a rollout gate. Shared primitive and export-dialog text stress passes;
    custom controls/editor chrome still need relative typography coverage. Follow
    `design/air/COMPONENTS.md`; preserve output geometry and single-contour fields.
 2. Add explicit privacy/long-reading and recovery-page studies. Keep the same

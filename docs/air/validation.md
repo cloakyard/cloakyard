@@ -630,3 +630,80 @@ syntax/lint, deterministic shader verification, exact-copy synchronization,
 all five standalone checkers and 40/40 isolated portability assertions. Contract
 hash prefix: `5bd4b3b1f158`. Production output is unchanged at 242.40kB JS and
 28.52kB CSS. No product runtime import, push, deployment or sibling commit was made.
+
+## 2026-10-12 — compound fields and action states
+
+Bounded reference refinement; the detailed design remains under review. Canonical
+sources are `design/air/air.css`, `components.html` and `contract.md`. The same
+candidate contract and bundle are synchronized to all five web repositories;
+production imports and real processing flows are unchanged.
+
+### Changes
+
+- Search/clear and numeric-unit fields share one outer boundary. Input focus
+  replaces it; clear-button focus identifies only its 44px action with an inset
+  ring. The empty clear slot reserves geometry and is absent from tab order.
+  The initial inspection found a height change caused by the reference's generic
+  hidden rule; a reserved action slot fixes it without overriding hidden semantics.
+- The local template search supports clear, no results, accent/case normalization
+  and composition completion. Quality accepts native whole-number input within
+  1–100, validates on blur/apply, and keeps the applied value visible when an
+  invalid draft is being corrected. No image or file is processed.
+- The explicit action-state study supports start, success, failure, retry and
+  cancellation. All labels reserve their intrinsic dimensions; busy remains
+  readable/focusable and guards duplicate activation. A separate live status
+  reports outcomes. Study resolution controls return focus before disabling;
+  ordinary production completion must not move focus. No new motion or dependency.
+- Removed the reference's inert Cancel/Reset sample buttons. Working actions now
+  demonstrate their semantics; product async lifecycle and stale-result guards
+  remain separate required tests.
+
+### Recorded evidence
+
+`evidence/air-03-compound-actions-2026-10-12.json` records:
+
+- **32 final layout cases:** 1920×1080, 1440×900, 1280×800, 1024×768, 768×1024,
+  390×844, 320×568 and 844×390, in both themes at 100%/200% root font. Zero
+  page/component horizontal escape. Every action-state label keeps its width and
+  height; empty/populated search geometry stays identical. Long queries scroll
+  inside the field. Clear targets remain 44×44px; phone input text is 16px/32px.
+- **16 interaction records:** native search Tab/Enter and focus return, absent
+  empty-clear tab stop, case/accent filtering, no-results recovery, simulated IME
+  composition boundary, four invalid numeric submissions, native arrow stepping,
+  valid apply, retained applied value, busy duplicate Enter/Space/programmatic-click
+  rejection, error/retry/success and cancellation. Values and status messages are
+  recorded, not inferred from screenshots.
+- **12 focus probes:** both fields and clear action at laptop/phone in both themes.
+  Input focus has a transparent outer border, one solid 2px zero-offset group
+  outline and no inner outline/shadow. Clear focus has its own inset 2px outline;
+  the group outline is `none`. Computed outline width alone is insufficient: this
+  browser reports a width even for `outline-style:none`, so style is recorded too.
+- A 320px/200% translated-label stress case preserves all action dimensions,
+  including wrapped height. A long suffix wraps within half the field without
+  overlapping the editable value or escaping its container.
+- Forced-colour and reduced-motion emulation preserves readable system colours,
+  one focus boundary, a 44px clear action and zero busy-button animations. Shared
+  read-only/disabled shell styles were probed; clear remains hidden even without
+  the gallery's generic hidden rule. Physical devices/screen readers remain open.
+- **18 export-dialog regressions:** PDF/IMG/Resume at laptop/tablet/phone in both
+  themes retain native modal state, initial field focus, containment, no overflow
+  and Escape focus return. An initial programmatic click probe correctly returned
+  to its previously focused search field; the final matrix uses focused native
+  Enter activation to exercise the actual trigger journey.
+- Four saved and visually reviewed PNGs: `air-03-compound-laptop-dark`,
+  `air-03-actions-tablet-light`, `air-03-compound-phone-light` and
+  `air-03-number-text200-phone-dark`. No console warnings/errors. Temporary browser
+  overrides and the audit tab were removed; the user's reference tab is untouched.
+
+The action outcomes are deliberately manually resolved simulations; they do not
+certify product processing, cancellation or race handling. Real search loading,
+result selection, native IME/software keyboards, actual browser zoom and other
+browser engines remain required. Next component work: popovers/tooltips/context
+menus, destructive/invalid overlays, then remaining specialised editor controls.
+Resume's 286/288 feature baseline and all product rollout gates remain open.
+
+Final gates pass: `vp check` (74 formatted / 23 linted), `vp build`, inline-module
+syntax/lint, exact-copy synchronization, all five standalone contract checkers and
+40/40 isolated portability assertions. Contract hash prefix: `9806c42e6fab`.
+Production assets remain 242.40kB JS / 28.52kB CSS. No runtime adoption, sibling
+commit, push or deployment is included in this checkpoint.

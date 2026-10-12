@@ -142,8 +142,24 @@
 .air-button[aria-busy="true"] {
   cursor: progress;
 }
+/* Reserve every translated label's intrinsic size; change only its visibility. */
+.air-action-labels {
+  display: grid;
+  min-inline-size: 0;
+}
+.air-action-labels > span {
+  grid-area: 1 / 1;
+  visibility: hidden;
+}
+.air-action-labels > [data-active] {
+  visibility: visible;
+}
+.air-button[aria-disabled="true"]:not([aria-busy="true"]) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 /* Pointer press is deliberate; release, keyboard feedback and colours are immediate. */
-.air-button:active:not(:disabled):not(:focus-visible),
+.air-button:active:not(:disabled):not([aria-disabled="true"]):not(:focus-visible),
 .air-icon-button:active:not(:disabled):not(:focus-visible) {
   transform: scale(0.98);
   transition: transform var(--air-motion-press) var(--air-ease-out);
@@ -285,6 +301,79 @@ textarea.air-field {
 .air-field:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+/* One outer contour owns the field, its unit and any embedded clear action. */
+.air-field-group {
+  display: flex;
+  align-items: center;
+  min-inline-size: 0;
+  border: 1px solid var(--air-line-control);
+  border-radius: var(--air-radius-control);
+  background: var(--air-surface);
+}
+.air-field-group > .air-field {
+  flex: 1 1 0%;
+  min-inline-size: 0;
+  min-height: calc(var(--air-control) - 2px);
+  border: 0;
+  background: transparent;
+}
+.air-field-group > .air-field:focus-visible {
+  outline: none;
+}
+.air-field-group:has(> .air-field[aria-invalid="true"]) {
+  border-color: var(--air-danger);
+}
+.air-field-group:has(> .air-field:focus-visible) {
+  border-color: transparent;
+  outline: 2px solid var(--air-accent);
+  outline-offset: 0;
+}
+.air-field-group:has(> .air-field:disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.air-field-group > .air-field:disabled {
+  opacity: 1;
+}
+.air-field-group:has(> .air-field[readonly]) {
+  background: var(--air-surface-soft);
+}
+.air-field-unit {
+  flex: 0 1 auto;
+  max-inline-size: 50%;
+  padding-inline-end: 12px;
+  overflow-wrap: anywhere;
+  color: var(--air-ink-secondary);
+  font: 400 var(--air-text-body)/1.5 var(--air-font);
+}
+.air-field-group > input[type="number"] {
+  appearance: textfield;
+  font-variant-numeric: tabular-nums;
+}
+.air-field-group > input[type="number"]::-webkit-inner-spin-button,
+.air-field-group > input[type="number"]::-webkit-outer-spin-button,
+.air-field-group > input[type="search"]::-webkit-search-cancel-button,
+.air-field-group > input[type="search"]::-webkit-search-decoration {
+  appearance: none;
+}
+.air-field-actions {
+  display: flex;
+  flex: 0 0 auto;
+  min-inline-size: 46px;
+  min-block-size: 44px;
+  align-items: center;
+}
+.air-field-clear {
+  min-inline-size: 44px;
+  min-block-size: 44px;
+  margin-inline-end: 2px;
+}
+.air-field-clear[hidden] {
+  display: none;
+}
+.air-field-clear:focus-visible {
+  outline-offset: -4px;
 }
 .air-label {
   display: block;
@@ -576,14 +665,14 @@ textarea.air-field {
   .air-segment:hover:not(:has(input:disabled)) {
     background: var(--air-surface-hover);
   }
-  .air-button:hover:not(:disabled),
+  .air-button:hover:not(:disabled):not([aria-disabled="true"]),
   .air-icon-button:hover:not(:disabled) {
     background: var(--air-surface-hover);
   }
-  .air-button--primary:hover:not(:disabled) {
+  .air-button--primary:hover:not(:disabled):not([aria-disabled="true"]) {
     background: color-mix(in srgb, var(--air-action) 88%, var(--air-on-action));
   }
-  .air-button--danger:hover:not(:disabled) {
+  .air-button--danger:hover:not(:disabled):not([aria-disabled="true"]) {
     background: color-mix(in srgb, var(--air-danger-soft) 88%, var(--air-danger));
   }
 }

@@ -61,8 +61,13 @@ the refined system is defined and reviewed as requested by the user.
       read-only/disabled/multiline, mixed checkbox groups and native radio segments.
       Shared component typography is relative; single-contour focus is preserved.
       See [component refinement matrix](design/air/COMPONENTS.md) and validation evidence.
-- [ ] Add compound search/clear/unit fields and real button busy/retry examples;
-      validate width stability, keyboard behavior and long labels.
+- [x] Add compound search/clear/unit fields and an explicitly simulated action-state
+      study for busy/success/error/retry/cancel. Validate stable geometry, keyboard
+      focus, single contours, invalid drafts, retained applied values and long labels.
+      See the 2026-10-12 compound-fields/action-states evidence.
+- [ ] Validate real production async adapters: duplicate submission, cancellation,
+      stale results/races, truthful progress and preserved work on failure. The
+      manual state study defines appearance and interaction, not real file processing.
 - [ ] Build real popover, tooltip and context-menu specimens; cover anchors,
       clipping, touch/keyboard dismissal and long content. Complete destructive,
       invalid and nested-overlay states separately from the export-dialog study.

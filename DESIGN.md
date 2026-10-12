@@ -6,7 +6,7 @@ date: 2026-10-12
 scope: complete-web-product
 source-repository: https://github.com/cloakyard/cloakyard
 source-directory: design/air
-family-contract-sha256: 5bd4b3b1f158711a572d530ecf99899823b85fd6999c00a5fa14bb5a2b266aed
+family-contract-sha256: 9806c42e6fab1a276e671a3859d6088b3eca10b4cec5cbfc30795cc84db49bb6
 ---
 
 <!-- BEGIN CLOAKYARD AIR CONTRACT -->
@@ -302,6 +302,63 @@ No glass blur behind forms, body copy, tables, or document content.
   errors, announce the outcome and focus the first invalid field. Correcting a
   value clears its error at the next validation boundary; never report success
   while another field is invalid. Allow paste, undo and IME without interception.
+
+### Compound search and numeric fields
+
+- A compound field has one `air-field-group` boundary and no interior input
+  border, underline or shadow. Input focus replaces only that outer contour.
+  Focusing an embedded action instead identifies that action with an inset ring;
+  it must not add a second field contour. Invalid, disabled and read-only styles
+  belong to the complete group, with help and errors outside it.
+- Keep 12px text inset, 10px corners and shared field typography. Units sit after
+  the value with a 12px trailing inset. Let an unusually long unit wrap within
+  half the field; preserve room for editing. Never append a unit to the editable
+  string or shrink the number to fit. Expose the unit in the label or description,
+  and hide a duplicate visual suffix from assistive technology.
+- Search has a persistent label and one named clear button. Its glyph remains
+  small, but its target is at least 44×44px; the containing field may grow to 46px
+  to enclose it. Reserve this space when empty to avoid value-width movement.
+  An empty clear action is visually hidden and absent from focus/accessibility.
+  Clearing restores focus to the input and the full result set. Suppress the
+  platform's duplicate search-cancel decoration only when this equivalent exists.
+- Filtering preserves the typed query, handles composition before updating
+  results, and announces meaningful result-count/no-results changes without
+  moving focus. No-results copy offers recovery. A product search still needs its
+  real loading, failure, result-navigation and selection behavior validated.
+- Numeric controls use native number semantics, explicit bounds/step and suitable
+  input mode. The reference hides platform spinner chrome while retaining native
+  arrow-key stepping and direct entry; do not add a second keyboard implementation.
+  If visible steppers are needed in a product, specify and validate them upstream.
+- Empty, out-of-range and fractional values remain editable; validate on blur or
+  apply, preserve the draft and last committed value, and focus invalid input on
+  submission. Never silently clamp, round, reset or apply an invalid number.
+  Disabled/read-only values keep the base field rules. No typing or focus motion.
+
+### Action states and stability
+
+- Use a real button for actions. Ready, busy, success and recoverable failure
+  retain the same geometry and hierarchy. Reserve the intrinsic size of all
+  translated labels (including wrapped height), using shared `air-action-labels`;
+  expose only the current accessible name. Do not hardcode a pixel width or
+  shrink labels to hide layout movement.
+- Busy begins when work actually starts, remains until it settles, and prevents
+  duplicate pointer, keyboard and programmatic activation. A focused action may
+  use `aria-disabled` with a guarded handler to preserve focus; ARIA alone does
+  not block execution. `aria-busy` identifies work, with a separate concise live
+  status outside that busy subtree. Keep the label readable at full contrast.
+- Give successful completion a truthful result and clear next action. Recoverable
+  failure keeps input/work intact, explains the failure and offers retry. Do not
+  automatically reset a result on a timer or move focus for an ordinary outcome.
+  Cancellation must actually stop or safely disregard pending work; stale results
+  must not overwrite a newer attempt. Production adapters own and test that lifecycle.
+- Frequent action-state changes are immediate, with no pulsing text, perpetual
+  decorative spinner or artificial delay. If real work supplies progress, use an
+  honest progress component; never invent a percentage. Existing pointer press
+  feedback respects disabled/busy, keyboard and reduced-motion rules.
+- The reference provides explicit start/resolve/cancel controls for a deterministic
+  state study. Its outcomes are simulated and process no files. Only those study
+  controls return focus before disabling themselves; this does not authorize
+  production focus jumps. Validate real async cancellation/races in each adapter.
 
 ### Choice anatomy and semantics
 
