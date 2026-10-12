@@ -60,9 +60,16 @@ ${appendix}
     const css = await readFile(resolve(repository, "design/air/air.css"), "utf8");
     const cssHash = createHash("sha256").update(css).digest("hex");
     const cssPath = `${slug === "cloakdrop" ? "apps/site/" : ""}src/styles/air.css`;
-    const gallery = (
-      await readFile(resolve(repository, "design/air/components.html"), "utf8")
-    ).replace("__AIR_STYLESHEET__", `../../${cssPath}?air=${cssHash.slice(0, 12)}`);
+    const overlayHash = createHash("sha256")
+      .update(await readFile(resolve(repository, "design/air/assets/air-overlays.js")))
+      .digest("hex");
+    const loader = (
+      await readFile(resolve(repository, "design/air/overlays-loader.mjs"), "utf8")
+    ).replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12));
+    const loaderHash = createHash("sha256").update(loader).digest("hex");
+    const gallery = (await readFile(resolve(repository, "design/air/components.html"), "utf8"))
+      .replace("__AIR_STYLESHEET__", `../../${cssPath}?air=${cssHash.slice(0, 12)}`)
+      .replace("__AIR_OVERLAY_LOADER_REVISION__", loaderHash.slice(0, 12));
     await sync(resolve(roots, slug, cssPath), css);
     await sync(resolve(roots, slug, "docs/air/components.html"), gallery);
     for (const script of ["check-air-design.mjs", "check-air-portability.mjs"]) {
@@ -77,8 +84,13 @@ ${appendix}
       "light-controller.mjs",
       "assets/air-light-shader.js",
       "assets/THIRD_PARTY_LICENSES.txt",
+      "overlays-loader.mjs",
+      "assets/air-overlays.js",
+      "assets/OVERLAY_LICENSES.txt",
     ]) {
-      const content = await readFile(resolve(repository, "design/air", asset), "utf8");
+      let content = await readFile(resolve(repository, "design/air", asset), "utf8");
+      if (asset === "overlays-loader.mjs")
+        content = content.replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12));
       await sync(resolve(roots, slug, "docs/air", asset), content);
       studyAssets[asset] = createHash("sha256").update(content).digest("hex");
     }

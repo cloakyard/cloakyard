@@ -7,15 +7,16 @@ This directory in **cloakyard/cloakyard is the canonical source** for every Air 
 app and landing page. Other repositories derive pinned, standalone copies from it.
 They may add domain rules; they may not maintain alternate component designs.
 
-| Source                                                       | Owns                                                                                                     |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| [contract.md](contract.md)                                   | Normative foundations, component anatomy/states, behavior, responsiveness, themes, motion and exceptions |
-| [air.css](air.css)                                           | Semantic tokens and shared component shells                                                              |
-| [components.html](components.html)                           | Working specimens and representative editor/overlay compositions                                         |
-| [motion.mjs](motion.mjs), [LIGHT.md](LIGHT.md)               | Shared motion behavior and the optional Shaders light study                                              |
-| [products/](products/)                                       | Product-specific routes, feature invariants and output exceptions                                        |
-| [COMPONENTS.md](COMPONENTS.md)                               | Component refinement coverage and remaining review gates                                                 |
-| [../../docs/air/validation.md](../../docs/air/validation.md) | Actual checks, visual evidence and limitations                                                           |
+| Source                                                                   | Owns                                                                                                     |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| [contract.md](contract.md)                                               | Normative foundations, component anatomy/states, behavior, responsiveness, themes, motion and exceptions |
+| [air.css](air.css)                                                       | Semantic tokens and shared component shells                                                              |
+| [components.html](components.html)                                       | Working specimens and representative editor/overlay compositions                                         |
+| [overlays.tsx](overlays.tsx), [overlays-loader.mjs](overlays-loader.mjs) | Unstyled accessible floating-control adapters, local sample operations and lazy loading                  |
+| [motion.mjs](motion.mjs), [LIGHT.md](LIGHT.md)                           | Shared motion behavior and the optional Shaders light study                                              |
+| [products/](products/)                                                   | Product-specific routes, feature invariants and output exceptions                                        |
+| [COMPONENTS.md](COMPONENTS.md)                                           | Component refinement coverage and remaining review gates                                                 |
+| [../../docs/air/validation.md](../../docs/air/validation.md)             | Actual checks, visual evidence and limitations                                                           |
 
 `contract.md` is the visual and interaction contract. Product appendices preserve
 domain requirements. `air.css` contains the shared tokens and opt-in component
@@ -45,7 +46,9 @@ its own feature/visual gates before committing its runtime adoption.
 
 ## Existing app adoption
 
-1. Change canonical files here, format them, then run
+1. Change canonical files here and format them. When changing `overlays.tsx`, run
+   `node scripts/build-air-overlays.mjs`; its `--check` mode verifies deterministic
+   output and bundled licenses. Then run
    `node scripts/sync-air-design.mjs --bundle` from Cloakyard.
 2. Check exact copies with `node scripts/sync-air-design.mjs --bundle --check`.
 3. In each app run `node scripts/air-inventory.mjs` and
@@ -61,6 +64,15 @@ A copied bundle is intentionally inert until imported. Its presence never claims
 that a product has been migrated. The gallery is available at
 `docs/air/components.html` when serving the repository root with a local static
 server; it uses the exact local production bundle.
+
+The floating-control study bundles pinned Base UI 1.9.0 and React into one local
+module with its license inventory. Air CSS owns every visible part; the unstyled
+library owns focus, navigation, dismissal and collision handling. The module loads
+only near the study and provides a deliberate retry after a failed fetch. Both
+loader and module URLs carry content revisions. This is a self-contained reference
+asset, not a runtime import: production React apps should reuse their existing
+React runtime and import only the primitives they need after passing their own
+feature and bundle gates. The 150 kB gzip ceiling applies to this lazy study only.
 
 ## A new independent app
 
@@ -92,7 +104,9 @@ must be reviewed visually; never automatically accept a new screenshot to make a
 failure disappear. Compare at identical viewport/theme/input settings. Re-run the
 affected functional suites after any shared correction. The canonical reference
 currently covers buttons, fields, select, check/radio, segments, slider, notices,
-paper surround, representative PDF/IMG/Resume editor panels, and a responsive dialog.
+paper surround, representative PDF/IMG/Resume editor panels, responsive dialogs,
+settings popovers, delayed hover/keyboard tooltips, action/context menus, invalid
+rename forms and safe remove/restore handoffs.
 Data-entry fields use one continuous border and one replacement focus contour; no
 separate bottom accent, inset shadow, or stacked focus ring is permitted. Product-specific galleries must extend
 that coverage to real editor, layer, colour/curve, AI and export states.

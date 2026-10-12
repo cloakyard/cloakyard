@@ -2547,6 +2547,7 @@
           <a class="air-button air-button--quiet" href="#select-study">Menus</a>
           <a class="air-button air-button--quiet" href="#choice-study">Choices</a>
           <a class="air-button air-button--quiet" href="#overlay-study">Overlays</a>
+          <a class="air-button air-button--quiet" href="#floating-study">Floating controls</a>
         </nav>
         <div class="component-row" id="action-study">
           <div>
@@ -2926,6 +2927,28 @@
             </div>
           </div>
         </div>
+        <div class="component-row" id="floating-study">
+          <div>
+            <h3>Small surfaces. Clear purpose.</h3>
+            <p>
+              Settings stay close to their trigger. Actions work by touch or keyboard. Confirmation
+              keeps the safe choice within reach.
+            </p>
+          </div>
+          <div id="air-overlay-root">
+            <p class="air-help" role="status" id="air-overlay-load-status">
+              Preparing the interactive examples…
+            </p>
+            <button type="button" class="air-button" id="air-overlay-retry" hidden>
+              Retry examples</button
+            ><noscript
+              ><p class="air-help">
+                These interaction examples need JavaScript. Their complete rules are in the design
+                contract.
+              </p></noscript
+            >
+          </div>
+        </div>
         <div class="component-row" id="overlay-study">
           <div>
             <h3>Overlays, with clear boundaries.</h3>
@@ -2968,7 +2991,8 @@
             <strong>Press · 120ms</strong><span>2% compression, immediate release feedback.</span>
           </div>
           <div>
-            <strong>Popover · 180ms</strong><span>From its trigger. Four pixels, at most.</span>
+            <strong>Menus · immediate</strong
+            ><span>Frequent controls respond without a transition.</span>
           </div>
           <div>
             <strong>Dialog · 240ms</strong><span>Soft arrival. A sheet rises on a phone.</span>
@@ -4814,5 +4838,6 @@
       });
     </script>
     <script type="module" src="./light-controller.mjs"></script>
+    <script type="module" src="./overlays-loader.mjs?air=__AIR_OVERLAY_LOADER_REVISION__"></script>
   </body>
 </html>

@@ -41,15 +41,24 @@ migration and detailed visual sign-off remain open. No push or deployment occurr
   outcomes are simulated; no product file is processed. Evidence is in the dated
   validation section and `air-03-compound-actions-2026-10-12.json`.
 
+- The floating-controls checkpoint adds settings popovers, named/hoverable
+  tooltips, equivalent action/context menus, invalid rename and safe remove/restore
+  dialogs. 56 viewport/theme/text configurations cover four surfaces each, with
+  keyboard/focus journeys, text-stress traversal and lazy-load recovery. Canonical
+  React adapters use unstyled Base UI 1.9.0; their generated local reference module
+  and licenses are portable. Product runtime imports remain unchanged.
+
 ## Next bounded pieces
 
-1. Continue with real popovers/tooltips/context menus and long, invalid or
-   destructive overlays. Compound search/unit fields and busy/retry/cancel state
-   studies are now refined and validated; real async adapters remain a rollout gate. Shared primitive and export-dialog text stress passes;
-   custom controls/editor chrome still need relative typography coverage. Follow
-   `design/air/COMPONENTS.md`; preserve output geometry and single-contour fields.
-2. Add explicit privacy/long-reading and recovery-page studies. Keep the same
+1. Add explicit privacy/long-reading and recovery-page studies. Keep the same
    family navigation, reading measure and action hierarchy across both themes.
+   Continue custom editor typography/controls with `design/air/COMPONENTS.md`;
+   preserve output geometry and single-contour fields.
+2. Cover stacked/nested overlays, submenu dismissal and real product forms. The
+   floating study validates local sample behavior; real async adapters, processing
+   failures and unsaved-work guards remain rollout gates. Rebuild `overlays.tsx`
+   changes with `node scripts/build-air-overlays.mjs` before bundle sync; verify
+   deterministic output with `--check`.
 3. Continue actual browser zoom, physical touch/software-keyboard and cross-engine
    checks. Native custom selects fall back to platform pickers in unsupported
    browsers; establish and test the accessible adapter before product adoption. Root-font enlargement and browser emulation are separate evidence.

@@ -68,9 +68,14 @@ the refined system is defined and reviewed as requested by the user.
 - [ ] Validate real production async adapters: duplicate submission, cancellation,
       stale results/races, truthful progress and preserved work on failure. The
       manual state study defines appearance and interaction, not real file processing.
-- [ ] Build real popover, tooltip and context-menu specimens; cover anchors,
-      clipping, touch/keyboard dismissal and long content. Complete destructive,
-      invalid and nested-overlay states separately from the export-dialog study.
+- [x] Build real popover, tooltip and action/context-menu specimens with Air
+      surfaces and accessible primitive behavior. Validate 56 size/theme/text
+      configurations, invalid rename, safe confirmation, focus handoffs and recovery.
+      See the 2026-10-12 floating-controls evidence; sample actions are local only.
+- [ ] Validate stacked/nested overlays and submenus, real touch/software keyboards,
+      assistive technology and Safari/Firefox; repeat on actual product operations.
+- [x] Package the floating reference as one lazy local module with licenses,
+      content revisions, failure/retry handling and standalone integrity guards.
 - [-] Extend relative typography and enlarged-text validation through shared fields,
   custom controls, editor chrome, dialogs and the reference documentation controls.
   Shared primitive specimens and enlarged export traversal now pass; custom
@@ -92,7 +97,8 @@ the refined system is defined and reviewed as requested by the user.
       feedback, keyboard immediacy, focus and live reduced-motion changes. All 42
       PDF/IMG/Resume dialog viewport/theme cases pass. See [motion review](docs/air/motion-review.md).
 - [ ] Repeat motion validation on production adapters and real touch devices;
-      cover actual tooltips/popovers and Safari/Firefox. Shader local startup,
+      cover Safari/Firefox and layered overlays. Reference tooltips/popovers now
+      have keyboard/hover/reduced-motion checks. Shader local startup,
       idle and visibility checks pass; physical-device costs remain open.
 - [x] Refine Resume's study from the full section audit: rich writing, repeated
       entries and partial dates; replace speculative formatting controls with
@@ -144,7 +150,8 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Add static conformance checks with a narrow documented content/visual-data exception list.
 - [-] Add CI/local validation entry points and screenshot baseline policy. Contract/inventory CI is installed; runtime style and screenshot gates follow with the shared bundle.
 - [x] Validate the opt-in bundle in isolated directories: all five products pass
-      contract/token/HTML/module integrity plus negative drift checks (25/25).
+      contract/token/HTML/module integrity plus negative drift checks. The latest
+      checkpoint adds overlay-bundle cases; counts are in the validation record.
       Flat and nested-site references load their own CSS, motion and shader assets
       in the browser. No app dependencies or sibling checkouts are needed.
 - [ ] Validate portable production integration as each app adopts the bundle.

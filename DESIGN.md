@@ -6,7 +6,7 @@ date: 2026-10-12
 scope: complete-web-product
 source-repository: https://github.com/cloakyard/cloakyard
 source-directory: design/air
-family-contract-sha256: 9806c42e6fab1a276e671a3859d6088b3eca10b4cec5cbfc30795cc84db49bb6
+family-contract-sha256: dc6032235f40df1b56a753d80bd66f7360862c3ef5b68e2fce37893143cf19e5
 ---
 
 <!-- BEGIN CLOAKYARD AIR CONTRACT -->
@@ -403,6 +403,58 @@ No glass blur behind forms, body copy, tables, or document content.
   A popover, tooltip, context menu or destructive confirmation needs its own real
   state example before adoption; an export dialog alone does not certify them.
 
+### Floating surfaces and safe action handoffs
+
+- A settings popover is a small, non-modal form; an action menu is a keyboard
+  command list; a tooltip is supplemental text. Do not interchange their roles.
+  Use established accessible primitives for focus, dismissal, typeahead, pointer
+  handling and positioning. The reference uses locally bundled Base UI 1.9.0;
+  wrappers may adapt frameworks, but must preserve this contract and its behavior.
+- Floating content uses an opaque `surface`, `line` edge, 12px corners and the
+  shared menu shadow. Keep 8px from the trigger and at least 16px from viewport
+  edges. Portals escape clipping ancestors; flip/shift near edges, constrain to
+  available space, wrap labels and scroll inside the surface. Resizing, scrolling
+  and theme changes preserve the current state and keep actions reachable.
+- Menus are 18rem wide before viewport constraints, with 8px padding. Rows have
+  8px block/12px inline padding, 8px corners and 40px fine/44px coarse minimum
+  height. Hover uses a neutral surface; keyboard focus adds an inset 2px blue
+  outline. Checked actions use a trailing blue tick and checked semantics.
+  Disabled items explain their unavailable state and cannot activate. A divider
+  separates destructive actions; danger colour always accompanies explicit text.
+- Enter/Space or arrow keys open the visible action trigger. Menu primitives own
+  arrows, Home/End, typeahead, selection, Tab and Escape. A contextual menu exposes
+  the same actions through a visible button on touch/keyboard; right-click or long
+  press can never be the only path. Dismissal returns to the actual source control.
+- Popovers use 20px padding and a 20rem preferred width, with named title and
+  description. Keep native fields, labels and validation inside. Touch opening
+  focuses the surface instead of unnecessarily raising a software keyboard;
+  keyboard navigation enters the controls normally. Non-modal outside interaction
+  and Escape dismiss; nested pickers dismiss before their containing popover.
+- Tooltips have 8px block/12px inline padding, 13px relative text and an 18rem
+  maximum width. Hover waits 400ms; focused controls show the hint immediately.
+  Adjacent hints may appear immediately. Keep the hint hoverable and dismissible
+  with Escape; never put a required instruction or interactive control only in a
+  tooltip. Its trigger keeps a meaningful name and works on touch without the hint.
+  Expose the visible hint as `role="tooltip"` and connect it with `aria-describedby`;
+  verify this association in the rendered adapter instead of assuming a library adds it.
+- These frequently used floating surfaces appear immediately. Reserve motion for
+  occasional dialogs: pointer entry 240ms, exit 160ms, shared curves; keyboard
+  opening/dismissal and reduced motion are immediate. The desktop dialog moves
+  4px/.98; the phone sheet rises from below. Animate transform/opacity only.
+- Menu-to-dialog handoffs must move focus into the dialog without a menu's closing
+  callback pulling it away. Form dialogs focus the first field on fine pointers
+  and the surface on touch, retain invalid drafts, show nearby error text, and
+  focus the invalid field on submit. A long filename never changes dialog width.
+- Destructive confirmation names the object and consequence, focuses the safe
+  action first and ignores backdrop presses. Escape cancels. On removal, return
+  focus to the logical recovery/next control if the original trigger no longer
+  exists. Restoration preserves the object's name/state. Real permanent actions
+  must describe their actual recovery limits; study-only undo is not a product promise.
+- The reference's rename/remove/restore operations affect only an in-memory sample.
+  Its lazy bundle, licenses and revision hashes travel with the portable gallery;
+  loading errors have a retry path. Validate actual product operations, layered
+  overlays, assistive technology, software keyboards and browser engines separately.
+
 ### Select anatomy
 
 - Every single-value dropdown uses the shared field contour, 12px inline inset,
@@ -679,7 +731,7 @@ The reference now demonstrates this custom Shaders composition. Its working
 implementation is review evidence; it does not itself grant visual or production
 performance approval.
 
-- Shared motion: pointer press 120ms; hover arrow 160ms; popover 180ms; dialog 240ms;
+- Shared motion: pointer press 120ms; hover arrow 160ms; occasional popover ceiling 180ms; dialog 240ms;
   exit 160ms. Ease-out `cubic-bezier(0.23, 1, 0.32, 1)`; reversible spatial motion
   `cubic-bezier(0.77, 0, 0.175, 1)`. Sheet easing: `cubic-bezier(0.32, 0.72, 0, 1)`. No per-app timing scale.
 - A completion acknowledgement may settle from 8px/0.90 scale over 240ms, once.

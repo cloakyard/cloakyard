@@ -36,8 +36,9 @@ are absent. Final desktop and phone captures were visually inspected.
 
 **Approve — for the tested shared-reference motion.** This is a code/interaction
 review verdict, not the user's visual sign-off or full product-migration approval.
-Actual tooltip/popover implementations, production adapters, real touch devices,
-Safari/Firefox and the shader's real-device GPU/battery budget remain open.
+At that checkpoint, actual tooltip/popover implementations, production adapters,
+real touch devices, Safari/Firefox and the shader's real-device GPU/battery budget
+remained open. The floating-reference follow-up below closes only its stated scope.
 
 Evidence: `evidence/air-03-motion-checks.json`,
 `evidence/air-03-motion-dialog-desktop-light.png`, and
@@ -103,3 +104,25 @@ menu animation, hand-written focus system or motion dependency was introduced.
 select parity, actual touch/assistive technology and physical GPU/battery costs
 remain open. Evidence: `evidence/air-03-select-motion-checks-2026-10-12.json` and
 `air-03-light-refined-laptop-{light,dark}.png` in the evidence directory.
+
+## Floating controls — 2026-10-12
+
+Frequent action/context menus and settings popovers appear immediately. Tooltip
+hover waits 400ms and keyboard focus reveals the hint immediately; pointer movement
+into the hint keeps it visible, and Escape dismisses it. These surfaces need no
+spatial animation. The obsolete blanket “Popover · 180ms” legend is replaced with
+“Menus · immediate”; 180ms remains a ceiling for occasional popovers in the contract.
+
+The new React dialog adapter shares Air's 240ms pointer entry / 160ms exit tokens,
+4px/.98 desktop pose and phone sheet geometry. CSS transitions handle interruption;
+Base UI owns presence/focus. Recorded pointer entrance uses two transitions only,
+transform and opacity. Escape interrupts immediately, and keyboard reopening has
+zero animations. Reduced-motion emulation also reports zero. The final CSSOM and
+computed pose agree on 4 CSS pixels; the raw DPR-2 browser keyframe report gives 8,
+so both readings are retained rather than normalizing the evidence silently.
+
+The 56 responsive/theme/text cases validate immediate keyboard behavior and layout;
+they do not certify physical phone animation feel. Menu-to-dialog focus handoff,
+safe confirmation focus, recovery focus and tooltip naming all pass the recorded
+journeys. Further nested overlays, actual touch, cross-engine behavior and product
+adapters remain open. See `evidence/air-03-overlays-2026-10-12.json`.

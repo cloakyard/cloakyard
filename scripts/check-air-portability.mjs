@@ -96,6 +96,24 @@ try {
   checks.push("altered motion module rejected");
   await writeFile(motionPath, motion);
 
+  const withoutOverlays = structuredClone(manifest);
+  delete withoutOverlays.studyAssets["assets/air-overlays.js"];
+  await writeFile(resolve(fixture, manifestPath), JSON.stringify(withoutOverlays));
+  const missingOverlayHash = verify();
+  assert.notEqual(missingOverlayHash.status, 0);
+  assert.match(missingOverlayHash.stderr, /Missing Air study asset hash: assets\/air-overlays\.js/);
+  checks.push("missing overlay bundle hash rejected");
+  await writeFile(resolve(fixture, manifestPath), manifestText);
+
+  const overlayPath = resolve(fixture, "docs/air/assets/air-overlays.js");
+  const overlay = await readFile(overlayPath, "utf8");
+  await writeFile(overlayPath, `${overlay}\n// Deliberate portability-test drift.\n`);
+  const overlayDrift = verify();
+  assert.notEqual(overlayDrift.status, 0);
+  assert.match(overlayDrift.stderr, /Air study asset drift: assets\/air-overlays\.js/);
+  checks.push("altered overlay module rejected");
+  await writeFile(overlayPath, overlay);
+
   await rm(resolve(fixture, manifestPath));
   const missingManifest = verify();
   assert.notEqual(missingManifest.status, 0);

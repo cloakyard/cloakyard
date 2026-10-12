@@ -9,6 +9,8 @@
     "generate:og": "node scripts/render-og.mjs",
     "design:light": "node scripts/build-air-light.mjs",
     "design:light:check": "node scripts/build-air-light.mjs --check",
+    "design:overlays": "node scripts/build-air-overlays.mjs",
+    "design:overlays:check": "node scripts/build-air-overlays.mjs --check",
     "design:check": "node scripts/check-air-design.mjs",
     "design:portability": "node scripts/check-air-portability.mjs",
     "design:inventory": "node scripts/air-inventory.mjs",
@@ -20,6 +22,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@base-ui/react": "1.9.0",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.1.2",

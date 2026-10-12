@@ -63,6 +63,9 @@ else {
     "light-controller.mjs",
     "assets/air-light-shader.js",
     "assets/THIRD_PARTY_LICENSES.txt",
+    "overlays-loader.mjs",
+    "assets/air-overlays.js",
+    "assets/OVERLAY_LICENSES.txt",
   ]) {
     if (!studyAssets[asset]) fail(`Missing Air study asset hash: ${asset}`);
   }
@@ -72,11 +75,18 @@ else {
       fail(`Air study asset drift: ${asset}`);
     if (fromCanonical) {
       let canonical = await readFile(resolve(root, "design/air", asset), "utf8");
-      if (asset === "components.html")
+      if (asset === "overlays-loader.mjs")
         canonical = canonical.replace(
-          "__AIR_STYLESHEET__",
-          `../../${stylesheet}?air=${sha256.slice(0, 12)}`,
+          "__AIR_OVERLAY_REVISION__",
+          studyAssets["assets/air-overlays.js"]?.slice(0, 12) ?? "missing",
         );
+      if (asset === "components.html")
+        canonical = canonical
+          .replace("__AIR_STYLESHEET__", `../../${stylesheet}?air=${sha256.slice(0, 12)}`)
+          .replace(
+            "__AIR_OVERLAY_LOADER_REVISION__",
+            studyAssets["overlays-loader.mjs"]?.slice(0, 12) ?? "missing",
+          );
       if (content.toString("utf8") !== canonical)
         fail(`Canonical Air study asset differs from its generated copy: ${asset}`);
     }

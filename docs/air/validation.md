@@ -707,3 +707,88 @@ syntax/lint, exact-copy synchronization, all five standalone contract checkers a
 40/40 isolated portability assertions. Contract hash prefix: `9806c42e6fab`.
 Production assets remain 242.40kB JS / 28.52kB CSS. No runtime adoption, sibling
 commit, push or deployment is included in this checkpoint.
+
+## 2026-10-12 — floating controls and safe action handoffs
+
+This bounded reference checkpoint adds settings popovers, action/context menus,
+tooltips, invalid rename and safe remove/restore dialogs. Air's canonical contract,
+CSS, interaction source and coverage map remain in the main Cloakyard repository.
+All actions affect an in-memory sample; product files and processing are untouched.
+
+### Design and implementation
+
+- Floating planes share opaque theme surfaces, 12px corners, quiet shadow, 8px
+  trigger offset and 16px viewport clearance. Menus have inset 40px fine / 44px
+  coarse rows, neutral highlight, blue checked marker, visible disabled commands
+  and a separated danger action. Relative typography wraps within available space.
+- Unstyled Base UI 1.9.0 owns navigation, positioning, dismissal and focus. Air
+  owns the appearance. A small Shift+F10/ContextMenu trigger adapter bridges the
+  embedded browser's missing synthesized contextmenu event; it does not implement
+  menu navigation. More and contextual menus expose the same actions.
+- Rename validates whitespace and retains the previous name. Confirmation begins
+  on Keep sample and ignores outside presses. Removal focuses Restore sample;
+  restoration retains the edited name/review mark and focuses its new More button
+  before Restore becomes disabled. That last focus handoff was corrected in testing.
+- The tooltip explicitly supplies its role and description association; the
+  library alone did not expose the association in this adapter. Hover remains
+  hoverable, Escape dismisses, and the trigger works without a touch tooltip.
+- The React study is built to one local, lazy module with ten bundled package
+  licenses. It costs **557,054 bytes / 142,703 gzip**, within its 150 kB study-only
+  ceiling. It adds no production import. Actual app adoption must reuse the app's
+  React runtime and pass its own bundle/performance gates.
+- Loader and module each carry content revisions. A failed dynamic-import fetch
+  initially could not recover because the browser cached the rejection. Deliberate
+  retry now uses a fresh URL and restores focus to View settings after mounting.
+  The observer disconnects at the first attempt, so failure cannot trigger a loop.
+
+Primary API references consulted: [Base UI Popover](https://base-ui.com/react/components/popover),
+[Tooltip](https://base-ui.com/react/components/tooltip),
+[Context Menu](https://base-ui.com/react/components/context-menu) and
+[Alert Dialog](https://base-ui.com/react/components/alert-dialog). These supply
+behavioral primitives; the family contract remains the design authority.
+
+### Recorded evidence
+
+`evidence/air-03-overlays-2026-10-12.json` records:
+
+- **56 layout configurations / 224 surface checks:** 1920×1080, 1440×900,
+  1366×768, 1280×720, 1024×768, 768×1024, 844×390, 320×568, 375×812,
+  390×844, 430×932, 639×800, 640×800 and 641×800; both themes at 100%/200%
+  root font. Each opens settings, the action menu, rename and confirmation. All
+  fit the viewport without horizontal escape. Keyboard opening is immediate;
+  dismissal returns to the trigger, with surface-first rename focus on coarse
+  pointers. Root-font stress is not actual browser zoom.
+- **15 interaction records:** keyboard context entry, invalid and valid rename,
+  actual-origin focus restoration, checked actions, Home/End/typeahead, safe
+  confirmation focus, Escape cancellation, remove/restore, tooltip association
+  and dismissal, settings updates, disabled command rejection and outside-press
+  protection. The disabled-command probe deliberately focuses an unavailable row
+  before Enter to verify its guard; ordinary navigation skips it.
+- **15 enlarged-text focus checks** across laptop, 320px phone and short landscape:
+  the invalid field and subsequent actions remain visible/reachable as the dialog
+  scrolls. Long content scrolls internally; header/footer are not claimed fixed.
+- Pointer entrance timing/interruption, immediate keyboard reopen, delayed hover,
+  hoverable tooltip, forced-colour focus/borders and reduced-motion emulation.
+  The raw CSS/keyframe measurement difference is documented in `motion-review.md`.
+- Deferred loading makes no bundle request before the study approaches the
+  viewport. A blocked-module test exposes Retry examples; recovery mounts the
+  study and restores focus. Normal operation reports no console warnings/errors;
+  the deliberate network-block case is kept separate.
+- Four saved, visually reviewed PNGs: `air-03-menu-laptop-dark`,
+  `air-03-popover-laptop-light`, `air-03-confirmation-phone-dark` and
+  `air-03-rename-text200-phone-light`. Temporary audit tabs and viewport/media/touch
+  overrides were removed; the user's reference tab remains untouched.
+
+The final matrix uses settled keyboard focus between menu navigation and activation;
+an earlier automation sequence advanced before that focus update and was rerun.
+Real touch/software keyboards, actual zoom, assistive technology, Safari/Firefox,
+nested/stacked overlays and production processing remain open. The complete system
+still needs user visual sign-off before rollout. Resume's 286/288 baseline remains
+unresolved; sibling candidate synchronization does not authorize sibling commits.
+
+Final gates pass: `vp check` (79 formatted / 27 linted), `vp exec tsc --noEmit`,
+`vp build`, deterministic overlay rebuild/license verification, exact-copy sync,
+all five standalone contract checkers and **50/50 isolated portability assertions**
+(13 files per dependency-free fixture). Contract hash prefix: `dc6032235f40`;
+overlay module: `cd7f69ff30c0`. Production output remains **242.40kB JS / 28.52kB
+CSS**. No runtime adoption, sibling commit, push or deployment is included.
