@@ -1,6 +1,6 @@
 # Cloakyard Air design contract
 
-Version: **1.0.0 — refinement 03 candidate** · Direction: **Air** · Updated: **2026-10-11**
+Version: **1.0.0 — refinement 03 candidate** · Direction: **Air** · Updated: **2026-10-12**
 
 The Air direction is approved. This detailed refinement is **under design review**;
 product migration waits for that review. The reference is an interactive design
@@ -334,6 +334,31 @@ The family home is a product directory. Each card says what the app does, its
 platform, and how to open it. KERR is a text exploration link with brief context;
 no screenshot, simulation, orbital illustration, animated preview, or embedded app.
 
+### Landing navigation and text resilience
+
+- Keep every destination available at every width. A compact header uses a native,
+  in-flow disclosure; its links expand below the brand row without covering the
+  page. Opening changes layout immediately, with no animated text/reflow. The
+  reference uses a 40rem content boundary so larger text enters compact mode
+  earlier. Use a 44×44px minimum brand/summary target independently of pointer type.
+- Below 22rem of content width, use the family mark with the complete accessible
+  home-link name. Do not fragment the wordmark across lines. The mark and chevron
+  render without JavaScript. Native Enter/Space activation and Tab order work;
+  an enhanced Escape closes the disclosure and returns focus to its summary.
+  Link activation closes it when scripts run. Without scripts it stays in flow,
+  leaving the destination unobscured and the explicit toggle available.
+- Keep the promise, explanation and actions in one reading group. On short
+  landscape screens, reduce ornamental gaps/light-field height before reducing
+  type or moving the primary action out of the composition. Do not bottom-align
+  unrelated hero columns. Body copy wraps naturally; avoid forced desktop breaks.
+- Interpret UI type sizes as the 16px-root reference: author text with rem/em so
+  user font preferences are respected. Preserve fixed document/canvas output as
+  an explicit exception. Fields and labels must eventually follow the same rule;
+  the current landing study does not certify all editor controls at enlarged text.
+- Test both container bounds and actual text bounds, with menus open/closed.
+  At 200% root font, let actions wrap and groups grow. A long product name may
+  wrap at a deliberate word boundary; never reduce its type to hide overflow.
+
 ### Editors and canvases
 
 - Consistent action placement: identity/document at start; undo/view/tool context
@@ -437,7 +462,8 @@ No horizontal document overflow, cropped controls, inaccessible tool options, or
 forced orientation as a substitute for responsive design. Editing regions may
 scroll deliberately; the surrounding page may not hide layout bugs with overflow
 clipping. Long filenames, translated labels, empty/large lists and 200% browser
-zoom are required cases. Pinch zoom stays enabled. Respect safe-area insets and
+zoom are required cases. Also test 200% root-font enlargement as a separate
+text-reflow stress case; it is not proof of browser zoom support. Pinch zoom stays enabled. Respect safe-area insets and
 software keyboards. DOM order follows reading/focus order.
 
 Semantic buttons/links/landmarks, labels, visible focus, contrast, screen-reader

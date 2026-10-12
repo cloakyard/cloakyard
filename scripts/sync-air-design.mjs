@@ -37,7 +37,7 @@ for (const [slug, name, destinations] of products) {
 name: ${name} — Cloakyard Air
 version: 1.0.0
 status: design-review
-date: 2026-10-11
+date: 2026-10-12
 scope: complete-web-product
 family-contract-sha256: ${hash}
 ---

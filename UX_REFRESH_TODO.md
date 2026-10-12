@@ -1,6 +1,9 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — refining the design system before product implementation** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — resumed 2026-10-12; refining the design system before product implementation** · Direction: **Air** · Started: **2026-10-11**
+
+Resume from [the saved handoff](docs/air/RESUME.md). Detailed design review and
+production migration remain open; no deployment or push has occurred.
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
@@ -25,8 +28,9 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Current priority — design refinement requested 2026-10-11
+## Current priority — keep refining Air before rollout (2026-10-12)
 
+The user explicitly reaffirmed further refinement before rollout on 2026-10-12.
 Product UI migration has not started. The first component reference was judged too
 generic; Air's detailed system is still under review. Preserve existing validation
 as foundation evidence, not visual approval. Do not implement product screens until
@@ -38,6 +42,13 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Build reviewable landing/editor/custom-control examples across desktop, tablet and phone.
 - [x] Specify purposeful playful motion with exact timing, interruption, keyboard and reduced-motion rules.
 - [x] Validate the representative refined reference and synchronize the portable contract and bundle; [coverage and remaining gates](docs/air/validation.md).
+- [x] Refine landing text enlargement, compact navigation and short-landscape composition;
+      validate container/text bounds, native no-JS navigation and preserve single-contour fields.
+- [ ] Extend relative typography and enlarged-text validation through shared fields,
+      custom controls, editor chrome, dialogs and the reference documentation controls.
+      Preserve document/canvas output dimensions; do not mistake root-font stress for browser zoom.
+- [ ] Add explicit privacy/long-reading and recovery-page compositions to the reference,
+      using the same navigation, reading measure, action hierarchy and both themes.
 - [ ] Review and lock the detailed system before product migration.
 - [x] Build the actual Shaders-based Air light treatment: custom overlapping
       planes, deliberate pointer response, finite arrival and local assets.
@@ -82,7 +93,11 @@ the refined system is defined and reviewed as requested by the user.
 - [-] Inspect PDF desktop/laptop/mobile editor, every tool panel, standalone utilities and overlays. All 22 default panels inspected at desktop/light and phone/dark; date picker and conditional signature/annotation states inspected. Remaining states/utilities are tracked in PDF’s `docs/air/editor-audit.md`.
 - [-] Inspect IMG desktop/laptop/mobile editor, every tool panel, custom colour/curve controls and AI states. All 26 default desktop/light panels and 25 phone/dark tools inspected; selected layer, colour DOM and AI consent audited. Remaining states and the Cancel/re-entry finding are tracked in IMG’s `docs/air/editor-audit.md`.
 - [-] Inspect Resume desktop/laptop/mobile editor, every section, template/ATS/format/export overlays. All 13 populated sections measured at desktop/laptop/tablet/phone in both themes; date/year, logo, colour, options, template search and all four review tabs inspected. Tablet touch targets and small contact typography need migration fixes; remaining states/exports are tracked in Resume's `docs/air/editor-audit.md`.
-- [ ] Inspect Drop website, download flow, privacy page and 404 at every layout class.
+- [-] Inspect Drop website, download flow, privacy page and 404 at every layout class.
+  Saved 90 initial DOM measurements across 15 sizes, both themes and three routes;
+  no measured horizontal overflow, broken images or foreign resource requests.
+  Coarse-pointer target gaps remain. Visual/interaction/flow audit is unfinished;
+  see Drop's `docs/air/website-audit.md` and the saved handoff.
 - [ ] Inspect narrow/landscape phone handling, software keyboard and 200% zoom.
 - [ ] Audit focus/keyboard/touch, reduced motion, dark mode and long-content cases.
 - [ ] Record findings with source locations and concrete validation coverage.
@@ -181,6 +196,15 @@ the refined system is defined and reviewed as requested by the user.
 
 ## Phase 6 — CloakDrop website
 
+- [x] Complete the existing-site baseline source/visual/functional audit: 18 production
+      sources plus the opt-in Air stylesheet, 90 normal layout cases, 24 header journeys,
+      370 opaque-background text pairs and 12 enlarged-root-font cases. Evidence in
+      `cloakdrop/docs/air/website-audit.md`; this does not mark production as migrated.
+- [ ] Resolve the baseline dark skip-link contrast, enlarged-text home/404 clipping,
+      40px touch targets, tablet hero spacing, keyboard motion and no-JS menu findings.
+- [ ] Replace/remove the recorded unused style tokens/classes, old band artwork and
+      maintained editorial-design references as each surface migrates.
+
 - [ ] Refresh shared header, hero, product/craft/privacy sections, download/install guidance and footer.
 - [ ] Preserve native app screenshots as product evidence; apply Air only to surrounding website UI.
 - [ ] Privacy and 404 use the same Air reading and navigation patterns.
@@ -256,3 +280,8 @@ CloakPDF `4830570` records the complete default-panel audit and synchronized opt
 reference after format/lint/type, dead-code, 355 units and production build passed.
 The family signature/dense-control follow-up is recorded in Cloakyard git history.
 These commits do not migrate production UI or waive remaining feature gates.
+
+CloakDrop `4124a5b` saves its complete website baseline audit and opt-in refinement
+03 bundle. Astro check/build, asset sync, integrity, isolated portability and
+inventory idempotence pass. Baseline UX failures remain migration requirements;
+no production website or native code was changed.

@@ -178,20 +178,24 @@
         box-shadow: var(--air-shadow-surface);
       }
       .family-nav {
-        height: 72px;
-        padding: 0 32px;
+        min-height: 72px;
+        padding-block: 12px;
+        padding-inline: 32px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 16px;
       }
       .wordmark {
+        min-height: 44px;
+        min-width: 44px;
+        justify-content: center;
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        font-size: 19px;
+        font-size: 1.1875rem;
         font-weight: 500;
-        letter-spacing: -0.7px;
+        letter-spacing: -0.035em;
         white-space: nowrap;
       }
       .mark {
@@ -201,16 +205,48 @@
       .family-links {
         display: flex;
         gap: 24px;
+        flex-wrap: wrap;
         color: var(--air-ink-secondary);
-        font-size: 13px;
+        font-size: 0.8125rem;
       }
       .family-links a {
-        min-height: 40px;
+        min-height: 44px;
         display: flex;
         align-items: center;
       }
       .family-links a:hover {
         color: var(--air-accent);
+      }
+      .family-menu {
+        display: none;
+      }
+      .family-menu summary {
+        list-style: none;
+        font-size: 0.875rem;
+      }
+      .family-menu summary::-webkit-details-marker {
+        display: none;
+      }
+      .family-menu summary svg {
+        width: 16px;
+        height: 16px;
+      }
+      .family-menu[open] summary svg {
+        transform: rotate(180deg);
+      }
+      .family-menu-links {
+        display: grid;
+        gap: 4px;
+        padding-block: 12px 4px;
+      }
+      .family-menu-links a {
+        min-height: 44px;
+        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        border-radius: var(--air-radius-control);
+        font-size: 0.875rem;
+        color: var(--air-ink-secondary);
       }
       .hero {
         position: relative;
@@ -224,16 +260,16 @@
         align-items: center;
         gap: 8px;
         color: var(--air-ink-secondary);
-        font-size: 13px;
+        font-size: 0.8125rem;
       }
       .hero-overline svg {
         width: 15px;
         height: 15px;
       }
       .hero h1 {
-        font-size: clamp(40px, 5.5cqw, 72px);
-        line-height: 1.03;
-        letter-spacing: -0.055em;
+        font-size: clamp(2.5rem, 5.5cqw, 4.5rem);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
         margin: 24px auto 20px;
         max-width: 850px;
       }
@@ -244,8 +280,8 @@
         max-width: 440px;
         margin: auto;
         color: var(--air-ink-secondary);
-        font-size: 16px;
-        line-height: 1.65;
+        font-size: 1rem;
+        line-height: 1.6;
       }
       .hero-actions {
         margin-top: 28px;
@@ -256,6 +292,8 @@
         flex-wrap: wrap;
       }
       .hero-actions .air-button {
+        font-size: 0.875rem;
+        max-width: 100%;
         padding-inline: 20px;
       }
       .hero .air-button svg {
@@ -370,9 +408,10 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        font-size: 15px;
+        font-size: 0.9375rem;
+        flex-wrap: wrap;
         font-weight: 500;
-        letter-spacing: -0.2px;
+        letter-spacing: -0.015em;
       }
       .product-entry-head svg {
         width: 24px;
@@ -380,7 +419,7 @@
         stroke-width: 1.5;
       }
       .product-entry p {
-        font-size: 13px;
+        font-size: 0.8125rem;
         color: var(--air-ink-secondary);
         margin: 12px 0 16px;
         max-width: 210px;
@@ -390,7 +429,7 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        font-size: 12px;
+        font-size: 0.75rem;
         color: var(--air-ink-muted);
       }
       .product-entry small svg {
@@ -408,7 +447,7 @@
         gap: 16px;
         padding: 20px 40px;
         border-top: 1px solid var(--air-line);
-        font-size: 13px;
+        font-size: 0.8125rem;
       }
       .experiment-link span {
         color: var(--air-ink-secondary);
@@ -417,7 +456,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        min-height: 40px;
+        min-height: 44px;
         white-space: nowrap;
       }
       .experiment-link svg {
@@ -1844,14 +1883,40 @@
           font-size: 16px;
         }
       }
-      @container preview (max-width:639px) {
+      @container preview (max-width:40rem) {
         .family-nav {
-          height: 64px;
-          padding-inline: 20px;
+          position: relative;
+          display: block;
+          min-height: 64px;
+          padding: 10px 16px;
         }
         .family-links {
           display: none;
         }
+        .family-menu {
+          display: block;
+        }
+        .family-nav .wordmark {
+          /* Match the summary's text line plus padding when text is enlarged. */
+          min-height: max(44px, calc(1.225rem + 18px));
+        }
+        .family-menu summary {
+          position: absolute;
+          top: 10px;
+          right: 16px;
+          min-height: 44px;
+        }
+        .family-menu[open] .family-menu-links {
+          border-top: 1px solid var(--air-line);
+          margin-top: 10px;
+        }
+      }
+      @container preview (max-width:22rem) {
+        .wordmark-name {
+          display: none;
+        }
+      }
+      @container preview (max-width:639px) {
         .hero {
           padding: 28px 20px 0;
         }
@@ -1859,22 +1924,17 @@
           margin-inline: -20px;
         }
         .hero h1 {
-          font-size: clamp(38px, 10.5cqw, 48px);
-          letter-spacing: -0.05em;
-          line-height: 1.04;
+          font-size: clamp(2.5rem, 10.5cqw, 3rem);
+          letter-spacing: -0.045em;
+          line-height: 1.05;
         }
         .hero p {
-          font-size: 14px;
-          max-width: 300px;
-        }
-        .hero-overline {
-          font-size: 12px;
+          max-width: 30ch;
         }
         .hero-actions {
           margin-top: 24px;
         }
         .hero-actions .air-button {
-          font-size: 13px;
           min-height: 44px;
         }
         .family-products {
@@ -1884,7 +1944,7 @@
         .product-entry {
           padding: 20px 8px;
           display: grid;
-          grid-template-columns: 1fr auto;
+          grid-template-columns: minmax(0, 1fr) auto;
           column-gap: 12px;
           border-radius: 0;
         }
@@ -1912,7 +1972,7 @@
           height: 16px;
         }
         .product-entry-head {
-          font-size: 15px;
+          font-size: 0.9375rem;
           gap: 10px;
         }
         .product-entry-head svg {
@@ -1926,7 +1986,7 @@
           gap: 4px;
         }
         .experiment-link span {
-          font-size: 12px;
+          font-size: 0.8125rem;
         }
         .family-products .product-entry:hover {
           background: transparent;
@@ -1936,11 +1996,26 @@
           height: 40px;
         }
         .wordmark {
-          font-size: 18px;
+          font-size: 1.1875rem;
         }
         .mark {
           width: 32px;
           height: 32px;
+        }
+      }
+      @media (max-height: 500px) and (min-width: 640px) {
+        .hero {
+          padding-top: 20px;
+        }
+        .hero h1 {
+          font-size: 2.5rem;
+          margin-block: 16px;
+        }
+        .hero-actions {
+          margin-top: 20px;
+        }
+        .light-field {
+          height: 120px;
         }
       }
       @media (max-width: 900px) {
@@ -2133,13 +2208,66 @@
       <div class="preview-wrap" data-size="desktop" id="experience">
         <div class="experience">
           <nav class="family-nav" aria-label="Landing preview">
-            <div class="wordmark"><span data-icon="brand"></span>Cloakyard</div>
+            <a class="wordmark" href="#experience" aria-label="Cloakyard home">
+              <svg class="mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient
+                    id="brand-fill"
+                    x1="11"
+                    y1="6"
+                    x2="51"
+                    y2="58"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#6FC3FF" />
+                    <stop offset=".45" stop-color="#3975F6" />
+                    <stop offset="1" stop-color="#2444D7" />
+                  </linearGradient>
+                </defs>
+                <circle cx="32" cy="32" r="30" fill="url(#brand-fill)" />
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="29.25"
+                  stroke="white"
+                  stroke-opacity=".28"
+                  stroke-width="1.5"
+                />
+                <g stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M29.03 46.85V24.58a1.49 1.49 0 0 0-1.49-1.49h-7.42a2.97 2.97 0 0 0-2.97 2.97v17.82a2.97 2.97 0 0 0 2.97 2.97h17.82a2.97 2.97 0 0 0 2.97-2.97v-7.43a1.49 1.49 0 0 0-1.49-1.48H17.15"
+                  />
+                  <rect x="34.97" y="17.15" width="11.88" height="11.88" rx="1.49" />
+                </g></svg
+              ><span class="wordmark-name">Cloakyard</span>
+            </a>
             <div class="family-links">
               <a href="#workspace">The tools</a><a href="#components">Our approach</a
               ><a href="https://github.com/cloakyard"
                 >Source <span data-icon="arrow" style="margin-left: 6px; width: 14px"></span
               ></a>
             </div>
+            <details class="family-menu">
+              <summary class="air-button air-button--quiet">
+                Explore
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </summary>
+              <div class="family-menu-links">
+                <a href="#workspace">The tools</a>
+                <a href="#components">Our approach</a>
+                <a href="https://github.com/cloakyard">Source</a>
+              </div>
+            </details>
           </nav>
           <section class="hero">
             <div class="hero-overline">
@@ -2147,8 +2275,8 @@
             </div>
             <h1>Your work.<br /><span>A little lighter.</span></h1>
             <p>
-              Thoughtful tools for the things you need to do.<br />With a little more space, and a
-              lot less noise.
+              Thoughtful tools for the things you need to do. With a little more space, and a lot
+              less noise.
             </p>
             <div class="hero-actions">
               <a class="air-button air-button--primary" href="#workspace"
@@ -2204,7 +2332,9 @@
               <small>Open the workspace <span data-icon="arrow"></span></small>
             </button>
             <button class="product-entry" data-app="resume" aria-pressed="false">
-              <div class="product-entry-head"><span data-icon="resume"></span>CloakResume</div>
+              <div class="product-entry-head">
+                <span data-icon="resume"></span><span>Cloak<wbr />Resume</span>
+              </div>
               <p>Your experience, beautifully told.</p>
               <small>Open the workspace <span data-icon="arrow"></span></small>
             </button>
@@ -2559,8 +2689,7 @@
         alert: '<path d="M12 3 2 21h20zM12 9v5m0 3h.01"/>',
         close: '<path d="m6 6 12 12M6 18 18 6"/>',
       };
-      const brand =
-        '<svg class="mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><linearGradient id="brand-fill" x1="11" y1="6" x2="51" y2="58" gradientUnits="userSpaceOnUse"><stop stop-color="#6FC3FF"/><stop offset=".45" stop-color="#3975F6"/><stop offset="1" stop-color="#2444D7"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="url(#brand-fill)"/><circle cx="32" cy="32" r="29.25" stroke="white" stroke-opacity=".28" stroke-width="1.5"/><g stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M29.03 46.85V24.58a1.49 1.49 0 0 0-1.49-1.49h-7.42a2.97 2.97 0 0 0-2.97 2.97v17.82a2.97 2.97 0 0 0 2.97 2.97h17.82a2.97 2.97 0 0 0 2.97-2.97v-7.43a1.49 1.49 0 0 0-1.49-1.48H17.15"/><rect x="34.97" y="17.15" width="11.88" height="11.88" rx="1.49"/></g></svg>';
+      const brand = document.querySelector(".wordmark .mark").outerHTML;
       let brandCount = 0;
       function icon(name) {
         return name === "brand"
@@ -3288,6 +3417,17 @@
           highlightColour = button.dataset.colour;
           paintHighlight();
         }
+      });
+      const familyMenu = document.querySelector(".family-menu");
+      familyMenu.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && familyMenu.open) {
+          event.preventDefault();
+          familyMenu.open = false;
+          familyMenu.querySelector("summary").focus();
+        }
+      });
+      familyMenu.addEventListener("click", (event) => {
+        if (event.target.closest("a")) familyMenu.open = false;
       });
       document.addEventListener("input", (event) => {
         const target = event.target;

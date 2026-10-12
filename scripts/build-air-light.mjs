@@ -89,6 +89,7 @@ for (const packagePath of packages) {
   const metadata = JSON.parse(await readFile(packagePath, "utf8"));
   licenses += `${metadata.name} ${metadata.version} (${metadata.license})\n${await readFile(resolve(dirname(packagePath), "LICENSE"), "utf8")}\n\n`;
 }
+licenses = `${licenses.trimEnd()}\n`;
 const licensePath = resolve(root, "design/air/assets/THIRD_PARTY_LICENSES.txt");
 if (check) {
   if ((await readFile(licensePath, "utf8")) !== licenses)

@@ -1,0 +1,46 @@
+# Air refresh — current handoff
+
+Resumed at the user's request on 2026-10-12 after the 2026-10-11 pause.
+The user explicitly chose **keep refining Air before rollout**. Production
+migration and detailed visual sign-off remain open. No push or deployment occurred.
+
+## Saved checkpoints
+
+- Cloakyard `0f32115`: shared motion and portable bundle integrity; `b2fbee4`:
+  locally bundled Shaders light study. Current reference is served at
+  `http://127.0.0.1:8120/docs/air/components.html` while the existing server runs.
+- CloakDrop `4124a5b`: complete website baseline source/visual/functional audit and
+  opt-in Air bundle. All 18 production source files reviewed; 19 inventory entries
+  include the shared CSS. Evidence records 90 layouts, 24 header journeys,
+  370 computed text pairs, 12 text-stress cases and 16 reviewed screenshots.
+  Dark skip-link contrast and narrow enlarged-text home/404 layouts fail; the
+  source-linked audit tracks these as migration requirements. Astro gates pass.
+- The 2026-10-12 Cloakyard landing refinement adds native compact navigation,
+  relative landing typography, short-landscape composition and a static family
+  mark. The validation record contains 96 layout + 96 text-bound cases, keyboard,
+  no-JS, touch emulation, field contours and 12 editor-dialog smoke checks.
+
+## Next bounded pieces
+
+1. Continue refining the shared system. Extend relative typography and enlarged
+   text testing through fields, custom controls, editor chrome and dialogs.
+   Preserve output artwork geometry and the graceful single-contour input shell.
+2. Add explicit privacy/long-reading and recovery-page studies. Keep the same
+   family navigation, reading measure and action hierarchy across both themes.
+3. Continue actual browser zoom, physical touch/software-keyboard and cross-engine
+   checks. Root-font enlargement and browser emulation are separate evidence.
+4. Complete the remaining custom-control/state and full-family motion reviews.
+   The shader works in the study; physical GPU/battery/thermal and slow-network
+   costs still need evidence before any production adoption.
+5. Review the refined system with the user before production migration. Then
+   migrate one bounded piece at a time, remove replaced legacy code/references,
+   verify all applicable features, record evidence and commit only on a pass.
+
+Resume's latest full feature baseline remains 286/288 (Modern Minimal/Letter and
+Prism/Letter entry timeouts). Do not claim it passed or commit that app until the
+required gate is resolved. Other synchronized sibling files retain their own
+validation/commit gates; synchronization is not a product migration.
+
+The task's CloakDrop preview server was stopped and its browser tab closed.
+Temporary Air audit tabs/viewport/touch/media/font overrides were restored or
+closed. Existing user/reference/editor servers and the user's Air tab remain.

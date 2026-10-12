@@ -421,3 +421,58 @@ rebuild, exact-copy bundle synchronization, all five standalone checkers and
 `git diff --check` pass. The 25 isolated portability assertions were rerun after
 the startup-promise correction and pass. Contract hash: `be2cbc3b068b` (prefix).
 The production build remains 242.40 kB JS / 28.52 kB CSS with no Air imports.
+
+## Landing navigation and text refinement — 2026-10-12
+
+The user explicitly chose to keep refining Air before production rollout. The
+landing study now retains all navigation on phones through a native in-flow
+Explore disclosure. Its open content pushes the page down instead of covering it.
+The brand and chevron render without JavaScript. Summary/home targets are at least
+44×44px; navigation links are at least 44px high on desktop and touch layouts.
+The 40rem navigation and 22rem compact-mark boundaries respond to enlarged text.
+
+Landing type uses relative units, display tracking/leading matches the contract,
+body prose wraps naturally at 16px reference size, and actions wrap without
+shrinking. Short landscape reduces ornamental spacing and the light field; the
+primary action fits within the 844×390 landing composition (the study's own
+control bar is outside this composition). The native family mark is now one static
+SVG source, reused by the editor study; there is no new external asset.
+
+`evidence/air-03-landing-checks-2026-10-12.json` records:
+
+- 96 closed-menu layout cases: 24 viewport/breakpoint sizes × light/dark ×
+  100%/200% root font. No measured document or landing-descendant overflow.
+- 96 open-menu text-bound checks at the same settings. No text outside the
+  containing experience or brand/summary collision.
+- Enter/Space, Tab to the first destination, Escape/focus return, same-page
+  dismissal and a no-JS anchor journey. Keyboard disclosure has zero animations.
+- Coarse-pointer emulation at 320px/1024px: every visible header target ≥44px in
+  both dimensions. These are browser simulations, not physical-device tests.
+- Four field-focus checks: transparent border, one 2px outline at zero offset and
+  no shadow on desktop/phone in both themes. Twelve PDF/IMG/Resume export-dialog
+  checks retain focus inside a contained dialog and the family mark.
+- Nine saved, visually inspected `air-03-landing-*.png` captures covering desktop,
+  laptop, tablet, phone, short landscape, menu, enlarged text and no-JS. An initially
+  stale desktop capture was replaced after settling. No console errors/warnings.
+
+The 200% setting is root-font stress, not browser zoom. Shared editor/control text
+still needs relative-unit refinement and enlarged-text coverage. Physical touch,
+software keyboards, Safari/Firefox, assistive technology, real GPU/battery costs
+and final visual review remain open. This is a bounded landing-reference pass.
+Production UI, KERR and native macOS remain unchanged.
+
+CloakDrop's separate audit checkpoint `4124a5b` records 90 existing-site layouts,
+24 header journeys and source-linked migration findings. Its dark skip link fails
+contrast and narrow home/404 fail enlarged text. These remain explicit pending
+work; baseline audit completion does not certify Air conformance.
+
+The shader licence generator now emits exactly one trailing newline. This fixes
+the first-add whitespace gate in standalone repositories without changing licence
+text or renderer bytes. The bundle and contract are synchronized to all products.
+
+Final Cloakyard gates pass: `vp check`, `vp build`, extracted inline-module syntax
+and lint, deterministic shader rebuild, exact-copy synchronization, all five
+standalone design checkers and isolated portability. Contract hash prefix:
+`5ad8bd070341`. The final matrix also checks the enlarged summary stays within
+its header. Production output remains 242.40 kB JS / 28.52 kB CSS, with no Air
+imports. Sibling reference synchronization retains separate commit gates.
