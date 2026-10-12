@@ -53,7 +53,8 @@ its own feature/visual gates before committing its runtime adoption.
 2. Check exact copies with `node scripts/sync-air-design.mjs --bundle --check`.
 3. In each app run `node scripts/air-inventory.mjs` and
    `node scripts/check-air-design.mjs`. Local package aliases are `design:inventory`
-   and `design:check`; Drop's aliases run from `apps/site`.
+   and `design:check`; `design:portability` checks an isolated copy and negative
+   drift cases. Drop's aliases run from `apps/site`.
 4. Import that app's local `src/styles/air.css` from its UI entry stylesheet.
    Migrate legacy aliases to `var(--air-...)`, remove competing palette literals,
    and use shared component classes or a product wrapper with the same tokens.

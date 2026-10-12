@@ -2,7 +2,10 @@
 
 Resumed at the user's request on 2026-10-12 after the 2026-10-11 pause.
 The user explicitly chose **keep refining Air before rollout**. Production
-migration and detailed visual sign-off remain open. No push or deployment occurred.
+migration and detailed visual sign-off remain open. The user subsequently requested
+committing all saved work and an implementation plan. Follow
+[IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) for execution order, commit slices
+and gates. No production redesign, push or deployment occurred in that planning step.
 
 ## Saved checkpoints
 
@@ -69,10 +72,15 @@ migration and detailed visual sign-off remain open. No push or deployment occurr
    migrate one bounded piece at a time, remove replaced legacy code/references,
    verify all applicable features, record evidence and commit only on a pass.
 
-Resume's latest full feature baseline remains 286/288 (Modern Minimal/Letter and
-Prism/Letter entry timeouts). Do not claim it passed or commit that app until the
-required gate is resolved. Other synchronized sibling files retain their own
-validation/commit gates; synchronization is not a product migration.
+The commit-all checkpoint is saved: PDF `f960092`, IMG `2a639c4`, Resume `5367f46`
+and Drop `9340c6d`; Cloakyard's reference is `340aee8`, followed by the implementation
+plan checkpoint. Each repository passed its applicable gates before commit.
+Resume's fresh full serial suite passes **288/288 in eight files, 386.58s**, with
+zero skips or weakened assertions/timeouts. This supersedes the previous failing
+latest-run gate. Historical intermittent failures are not claimed fixed; entry
+failure capture now preserves UI state/screenshots before rethrowing. The complete
+log is committed in Resume's `docs/air/evidence/precommit-suite-2026-10-12.log`.
+All runtime Air adoption and product-specific migration gates remain open.
 
 The task's CloakDrop preview server was stopped and its browser tab closed.
 Temporary Air audit tabs/viewport/touch/media/font overrides were restored or

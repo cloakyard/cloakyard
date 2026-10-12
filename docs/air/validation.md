@@ -792,3 +792,35 @@ all five standalone contract checkers and **50/50 isolated portability assertion
 (13 files per dependency-free fixture). Contract hash prefix: `dc6032235f40`;
 overlay module: `cd7f69ff30c0`. Production output remains **242.40kB JS / 28.52kB
 CSS**. No runtime adoption, sibling commit, push or deployment is included.
+
+## 2026-10-12 — commit-all checkpoint and implementation plan
+
+At the user's request, saved the outstanding canonical reference copies, local
+contracts, audits and validation tooling in all sibling repositories. Product UI,
+KERR and native macOS sources remain unchanged. No push or deployment occurred.
+
+- CloakPDF `f960092`: `vp check`, `pnpm check:dead`, 355/355 unit tests (34 files),
+  `vp run build` and 138-file deployment asset gate pass. Knip initially found the
+  portability checker unreferenced; adding the actual `design:portability` package
+  script fixed it without an ignore. The same useful alias is exposed in all apps.
+- CloakIMG `2a639c4`: `vp check`, 470/470 tests (46 files), `vp run build` and the
+  100-file deployment asset gate pass.
+- CloakDrop `9340c6d`: Astro check (19 files, no errors/warnings/hints), asset sync
+  (all seven current) and home/privacy/404 build pass. Native sources are untouched.
+- CloakResume `5367f46`: check, TypeScript/build/PWA and the **complete serial
+  288/288 tests in eight files, zero skipped**, pass in **386.58s**. The two old
+  failing template cases first passed a targeted diagnostic run. Entry failures
+  now capture rendered page/focus/button state and a screenshot before rethrowing.
+  No timeout/assertion/retry policy or runtime source changed. The old failing
+  baseline is superseded by this fresh full pass, not claimed permanently fixed.
+- All five contract checkers and 50 isolated portability assertions pass. Exact
+  synchronization verifies six standalone DESIGN.md files including Drop's site.
+  Post-commit hook formatting is covered by a final sync check.
+- Cloakyard `vp check` (80 formatted / 27 linted) and `vp build` pass; production
+  output remains 242.40kB JS / 28.52kB CSS.
+
+[IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) sets the base closure, production
+adapter strategy, product order, commit slices, validation matrix, output invariants,
+legacy cleanup and final family review. The existing exhaustive TODO remains the
+scope tracker. The plan retains detailed visual review before runtime adoption;
+this request was to commit and plan, so no product implementation began.

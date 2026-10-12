@@ -2,8 +2,10 @@
 
 Status: **active — resumed 2026-10-12; refining the design system before product implementation** · Direction: **Air** · Started: **2026-10-11**
 
-Resume from [the saved handoff](docs/air/RESUME.md). Detailed design review and
-production migration remain open; no deployment or push has occurred.
+Resume from [the saved handoff](docs/air/RESUME.md). The
+[implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
+commit slices and acceptance gates. Detailed design review and production migration
+remain open; no deployment or push has occurred.
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
@@ -119,20 +121,20 @@ the refined system is defined and reviewed as requested by the user.
 - [x] Inventory UI files and existing test/build commands.
 - [x] Baseline format/lint/type checks: Cloakyard, PDF, IMG, Resume.
 - [x] Baseline Drop site check/build.
-- [ ] Baseline all existing unit/logic suites; record failures before changing UI.
-- [ ] Diagnose Resume's intermittent browser-entry/focus/export timing failures
-      without weakening assertions. Latest isolated full run: 286/288; Modern
-      Minimal/Letter and Prism/Letter timed out entering Resume editing at
-      `tests/template-layouts.spec.ts:125`. Capture the failing UI before rerunning.
+- [x] Baseline required unit/logic suites: PDF 355/355, IMG 470/470 and Resume
+      288/288 including browser/template tests. See the 2026-10-12 checkpoint.
+- [ ] Investigate any recurrence of Resume's historical entry/focus/export timing
+      failures without weakening assertions. Latest serial suite passes 288/288
+      in 386.58s; the earlier 286/288 result is superseded. Entry failure capture
+      now saves UI state/screenshots before rethrowing; no root-cause fix is claimed.
 - [x] Inspect representative real Resume/PDF/IMG editors before further design; [audit and limits](docs/air/existing-editor-audit.md).
 - [-] Inspect PDF desktop/laptop/mobile editor, every tool panel, standalone utilities and overlays. All 22 default panels inspected at desktop/light and phone/dark; date picker and conditional signature/annotation states inspected. Remaining states/utilities are tracked in PDF’s `docs/air/editor-audit.md`.
 - [-] Inspect IMG desktop/laptop/mobile editor, every tool panel, custom colour/curve controls and AI states. All 26 default desktop/light panels and 25 phone/dark tools inspected; selected layer, colour DOM and AI consent audited. Remaining states and the Cancel/re-entry finding are tracked in IMG’s `docs/air/editor-audit.md`.
 - [-] Inspect Resume desktop/laptop/mobile editor, every section, template/ATS/format/export overlays. All 13 populated sections measured at desktop/laptop/tablet/phone in both themes; date/year, logo, colour, options, template search and all four review tabs inspected. Tablet touch targets and small contact typography need migration fixes; remaining states/exports are tracked in Resume's `docs/air/editor-audit.md`.
-- [-] Inspect Drop website, download flow, privacy page and 404 at every layout class.
-  Saved 90 initial DOM measurements across 15 sizes, both themes and three routes;
-  no measured horizontal overflow, broken images or foreign resource requests.
-  Coarse-pointer target gaps remain. Visual/interaction/flow audit is unfinished;
-  see Drop's `docs/air/website-audit.md` and the saved handoff.
+- [x] Inspect Drop website, download flow, privacy page and 404 at every layout
+      class. Completed baseline: 90 layouts, 24 header journeys, 370 text pairs,
+      12 enlarged-text cases and source review of all 18 production files. Findings
+      remain migration work; see Phase 6 and Drop's `docs/air/website-audit.md`.
 - [ ] Inspect narrow/landscape phone handling, software keyboard and 200% zoom.
 - [ ] Audit focus/keyboard/touch, reduced motion, dark mode and long-content cases.
 - [ ] Record findings with source locations and concrete validation coverage.
@@ -155,7 +157,7 @@ the refined system is defined and reviewed as requested by the user.
       Flat and nested-site references load their own CSS, motion and shader assets
       in the browser. No app dependencies or sibling checkouts are needed.
 - [ ] Validate portable production integration as each app adopts the bundle.
-- [ ] Commit the verified contract/foundation as bounded pieces.
+- [x] Commit the verified contract/reference foundation in all five repositories; see ledger.
 
 ## Phase 2 — Cloakyard family home
 
@@ -305,8 +307,8 @@ interiors, custom controls, canvas chrome and less-visible states.
 
 Governance commits (no product runtime changes): Cloakyard `8d5dcea`, CloakPDF
 `5a1755f`, CloakIMG `9cd1200`, CloakDrop `5133124`. Each passed its applicable
-checks. Resume had an earlier serial 288/288 pass, followed by focus/export/entry
-timing failures. Its latest full run is 286/288; its commit gate remains closed.
+checks. Resume had an earlier serial 288/288 pass followed by focus/export/entry
+timing failures; its gate stayed closed until the fresh full pass recorded below.
 The Air refinement
 03 design checkpoint is recorded in Cloakyard's git history after reference checks.
 No product implementation commits. Native code and KERR are unchanged.
@@ -321,3 +323,17 @@ CloakDrop `4124a5b` saves its complete website baseline audit and opt-in refinem
 03 bundle. Astro check/build, asset sync, integrity, isolated portability and
 inventory idempotence pass. Baseline UX failures remain migration requirements;
 no production website or native code was changed.
+
+The 2026-10-12 commit-all checkpoint saves the refined reference after fresh gates:
+
+| Repository  | Commit                                                      | Validation                                                                           |
+| ----------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Cloakyard   | `340aee8` reference; implementation plan in this checkpoint | Check/build, exact sync, 50 family portability assertions; reference visual evidence |
+| CloakPDF    | `f960092`                                                   | Check, dead-code, 355 units, TypeScript/build/PWA, asset limit                       |
+| CloakIMG    | `2a639c4`                                                   | Check, 470 tests, TypeScript/build/PWA, asset limit                                  |
+| CloakResume | `5367f46`                                                   | Check, full serial 288/288, TypeScript/build/PWA, failure capture                    |
+| CloakDrop   | `9340c6d`                                                   | Asset sync, Astro check and three-route build                                        |
+
+All local reference/contract checks pass. These are reference/audit/tooling commits,
+not product migrations; no push or deployment. The implementation plan defines
+shared-adapter adoption and small product slices with the same per-commit gates.
