@@ -75,14 +75,15 @@ Recovery uses a local sample note: session storage and text download are real,
 while the preview and unavailable-storage controls are explicitly simulated.
 Neither page replaces a product policy or its actual persistence/error lifecycle.
 
-The floating-control study bundles pinned Base UI 1.9.0 and React into one local
-module with its license inventory. Air CSS owns every visible part; the unstyled
+The floating-control and collection studies each bundle pinned Base UI 1.9.0 and
+React into a self-contained local module with a shared license inventory. Each page
+lazily loads only its own study; the 150 kB gzip ceiling is enforced per module. Air CSS owns every visible part; the unstyled
 library owns focus, navigation, dismissal and collision handling. The module loads
 only near the study and provides a deliberate retry after a failed fetch. Both
 loader and module URLs carry content revisions. This is a self-contained reference
 asset, not a runtime import: production React apps should reuse their existing
 React runtime and import only the primitives they need after passing their own
-feature and bundle gates. The 150 kB gzip ceiling applies to this lazy study only.
+feature and bundle gates. The size ceiling applies to these lazy studies only.
 
 ## A new independent app
 
@@ -133,3 +134,11 @@ The IMG follow-up defines real signed adjustment ranges, levels, colour bands an
 a keyboard/pointer curve study. Compact curves open expanded controls with a
 persistent preview. See the per-app editor audit for the remaining colour, layer,
 AI and commit/rollback states; a reference interaction is not a feature migration.
+
+The final collection reference is `collections.html`, with `collections.tsx` and
+`collection-model.ts` as its editable sources. It demonstrates custom Select,
+filter/selection, safe rename/reorder/removal, undo/redo history, submenus and nested
+confirmation. The reducer is sample data, never a replacement product document
+engine. Run `node --test scripts/test-air-collections.mjs` for its invariants and
+`node scripts/build-air-overlays.mjs` for both independent lazy modules. The final
+review and migration boundary are in `docs/air/DESIGN_FREEZE.md`.

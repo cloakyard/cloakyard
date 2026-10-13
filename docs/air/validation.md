@@ -1014,3 +1014,66 @@ PDF/IMG/Drop commits carry the final shared-disclosure consistency correction.
 Only reference markup/CSS/cache revisions changed after the product suites;
 format/type, standalone integrity, portability and affected UI checks were repeated.
 No product runtime or feature behavior changed, and nothing was pushed or deployed.
+
+## 2026-10-13 — collections and final base candidate
+
+The final broad base-pattern pass adds `docs/air/collections.html`. It combines
+ruled layer rows, complete names, mixed/filtered selection, a fully custom Base UI
+Select, explicit reorder actions, rename/discard, visibility, reversible removal
+and branching history. Nested submenus and confirmations use one shared layering
+and focus policy. Existing PDF/IMG/Resume code was inspected before defining it;
+the product-specific transaction constraints are recorded in the implementation
+plan. No product engines or runtime UI imports changed.
+
+[Structured observations](evidence/air-collections-2026-10-13.json) record **76
+viewport/theme/text cases**, **16 nested-dialog cases**, **23 interaction
+observations**, five reviewed screenshots and final nested-backdrop checks.
+Coverage spans 320/375/390/430px phones, 844×390 landscape, 768/1024px tablets,
+1280/1366px laptops, 1440/1920px desktops, and both sides of the affected layout
+thresholds. Each layout was checked with 16px/32px root text and both themes.
+There is no page/control overflow or undersized coarse row action in the final
+matrix. Text stress is not real browser zoom; touch/reduced-motion/forced-colour
+settings are Chromium emulation, not physical-device or assistive-technology proof.
+
+Interactions cover custom-option selection/typeahead/Enter and focus return,
+selection retained outside filters with explicit counts, no results, filtered
+reorder disabling, keyboard submenu entry/Escape, a 100th-row keyboard move,
+blank/corrected rename, dirty-draft preservation, discard, safe initial focus,
+eight settled Tab steps within the nested dialog, removal/Undo focus, undo/redo
+branching, no-JavaScript guidance and deliberately blocked module/retry recovery.
+Six model tests prove object identity/order, immutable history, branch replacement,
+selection reconciliation, invalid/no-op edits and 100-row operations.
+
+Issues found and corrected before this checkpoint: missing Base UI group context,
+enlarged-text filter crowding just above tablet width, focus loss after removal or
+exhausting Undo, and Base UI's default omission of a nested backdrop. Container
+reflow now respects text size; a nested confirmation visibly dims its parent.
+The latest mobile sheet capture uses the actual emulated viewport, avoiding a
+full-page capture's repositioning of fixed elements. Temporary browser overrides
+were cleared and audit tabs closed; the existing user tabs/server were retained.
+
+The attempted combined study exceeded the existing 150,000-byte gzip limit.
+It was split into independent per-page lazy modules without increasing the limit:
+overlays **142,703 bytes gzip**, collections **147,472 bytes gzip**. Both contain
+local pinned dependencies and ten recorded licences. Production apps must reuse
+their own React runtime and import individual primitives, never these demo bundles.
+The shared loader has versioned URLs and an explicit retry. Standalone integrity
+checks now require the collection assets and reject an altered collection page.
+
+Passing gates: Cloakyard `vp check`, explicit TypeScript, `vp build`, six collection
+tests, deterministic two-bundle rebuild, exact six-spec sync, all five standalone
+checkers, and **75/75 isolated portability assertions** (20 files per fixture).
+PDF: check, dead-code, **355/355 tests**, build and 138-file deploy asset check.
+IMG: check, **470/470 tests**, build and 100-file deploy asset check. Drop: 19-file
+Astro check with no diagnostics, seven current assets and three-route build.
+Resume: check/build/PWA and its first complete serial suite, **288/288 tests in
+eight files, 386.12s**, with no skips or weakened assertions. Historical timing
+flakiness is not claimed fixed.
+[Resume gate log](evidence/resume-collections-gate-passed-2026-10-13.txt).
+
+`DESIGN_FREEZE.md` closes broad exploration into one review candidate. Detailed
+user approval remains open. Actual browser/device, format/IME/AI/output, shader
+performance and specialised product-state gates remain mapped to their owning
+implementation. Next after visual lock: **AIR-04 shared foundation + Cloakyard
+home**, then PDF, IMG, Resume and Drop. KERR becomes link-only in the home piece.
+No production adoption, native UI change, push or deployment occurred here.

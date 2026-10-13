@@ -69,9 +69,12 @@ ${appendix}
     const overlayHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/assets/air-overlays.js")))
       .digest("hex");
-    const loader = (
-      await readFile(resolve(repository, "design/air/overlays-loader.mjs"), "utf8")
-    ).replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12));
+    const collectionHash = createHash("sha256")
+      .update(await readFile(resolve(repository, "design/air/assets/air-collections.js")))
+      .digest("hex");
+    const loader = (await readFile(resolve(repository, "design/air/overlays-loader.mjs"), "utf8"))
+      .replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12))
+      .replace("__AIR_COLLECTION_REVISION__", collectionHash.slice(0, 12));
     const loaderHash = createHash("sha256").update(loader).digest("hex");
     const gallery = (await readFile(resolve(repository, "design/air/components.html"), "utf8"))
       .replace("__AIR_STYLESHEET__", `../../${cssPath}?air=${cssHash.slice(0, 12)}`)
@@ -90,6 +93,7 @@ ${appendix}
       "recovery.html",
       "pages.mjs",
       "files.html",
+      "collections.html",
       "files.mjs",
       "motion.mjs",
       "light-controller.mjs",
@@ -97,6 +101,7 @@ ${appendix}
       "assets/THIRD_PARTY_LICENSES.txt",
       "overlays-loader.mjs",
       "assets/air-overlays.js",
+      "assets/air-collections.js",
       "assets/OVERLAY_LICENSES.txt",
     ]) {
       let content = await readFile(resolve(repository, "design/air", asset), "utf8");
@@ -104,9 +109,12 @@ ${appendix}
         content = content
           .replace("__AIR_STYLESHEET__", `../../${cssPath}?air=${cssHash.slice(0, 12)}`)
           .replace("__AIR_PAGES_REVISION__", pagesHash.slice(0, 12))
-          .replace("__AIR_FILES_REVISION__", filesHash.slice(0, 12));
+          .replace("__AIR_FILES_REVISION__", filesHash.slice(0, 12))
+          .replace("__AIR_OVERLAY_LOADER_REVISION__", loaderHash.slice(0, 12));
       if (asset === "overlays-loader.mjs")
-        content = content.replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12));
+        content = content
+          .replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12))
+          .replace("__AIR_COLLECTION_REVISION__", collectionHash.slice(0, 12));
       await sync(resolve(roots, slug, "docs/air", asset), content);
       studyAssets[asset] = createHash("sha256").update(content).digest("hex");
     }

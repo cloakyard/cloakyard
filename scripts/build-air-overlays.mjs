@@ -8,32 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
-const result = await build({
-  root,
-  configFile: false,
-  plugins: [react()],
-  logLevel: "warn",
-  define: { "process.env.NODE_ENV": JSON.stringify("production") },
-  build: {
-    write: false,
-    minify: true,
-    target: "es2022",
-    lib: { entry: resolve(root, "design/air/overlays.tsx"), formats: ["es"] },
-    rolldownOptions: { output: { entryFileNames: "air-overlays.js", codeSplitting: false } },
-  },
-});
-const output = (Array.isArray(result) ? result[0] : result).output;
-if (
-  output.length !== 1 ||
-  output[0].type !== "chunk" ||
-  output[0].imports.length ||
-  output[0].dynamicImports.length
-)
-  throw new Error("Expected one self-contained overlay study bundle");
-const code = "/* Air overlay study. Generated; see OVERLAY_LICENSES.txt. */\n" + output[0].code;
-const compressed = gzipSync(code).byteLength;
-if (compressed > 150_000)
-  throw new Error(`Overlay study exceeds 150 kB lazy gzip ceiling: ${compressed}`);
+const packages = new Map();
 async function save(name, content) {
   const path = resolve(root, "design/air/assets", name);
   await mkdir(dirname(path), { recursive: true });
@@ -41,29 +16,62 @@ async function save(name, content) {
     if ((await readFile(path, "utf8")) !== content) throw new Error(`Overlay asset drift: ${name}`);
   } else await writeFile(path, content);
 }
-await save("air-overlays.js", code);
-const packages = new Map();
-for (const module of Object.keys(output[0].modules)) {
-  if (!module.includes("node_modules/")) continue;
-  let dir = dirname(module);
-  while (dir.includes("node_modules")) {
-    const meta = await readFile(resolve(dir, "package.json"), "utf8").then(JSON.parse, () => null);
-    if (meta?.name) {
-      if (!packages.has(meta.name)) {
-        let license;
-        for (const name of ["LICENSE", "LICENSE.md", "LICENSE.txt", "license"]) {
-          license = await readFile(resolve(dir, name), "utf8").catch(() => null);
-          if (license) break;
+for (const study of ["overlays", "collections"]) {
+  const result = await build({
+    root,
+    configFile: false,
+    plugins: [react()],
+    logLevel: "warn",
+    define: { "process.env.NODE_ENV": JSON.stringify("production") },
+    build: {
+      write: false,
+      minify: true,
+      target: "es2022",
+      lib: { entry: resolve(root, `design/air/${study}.tsx`), formats: ["es"] },
+      rolldownOptions: { output: { entryFileNames: `air-${study}.js`, codeSplitting: false } },
+    },
+  });
+  const output = (Array.isArray(result) ? result[0] : result).output;
+  if (
+    output.length !== 1 ||
+    output[0].type !== "chunk" ||
+    output[0].imports.length ||
+    output[0].dynamicImports.length
+  )
+    throw new Error("Expected one self-contained overlay study bundle");
+  const code = "/* Air overlay study. Generated; see OVERLAY_LICENSES.txt. */\n" + output[0].code;
+  const compressed = gzipSync(code).byteLength;
+  if (compressed > 150_000)
+    throw new Error(`Overlay study exceeds 150 kB lazy gzip ceiling: ${compressed}`);
+  await save(`air-${study}.js`, code);
+  console.log(
+    `${check ? "Verified" : "Built"} Air ${study}: ${Buffer.byteLength(code)} bytes / ${compressed} gzip; SHA ${createHash("sha256").update(code).digest("hex").slice(0, 12)}`,
+  );
+  for (const module of Object.keys(output[0].modules)) {
+    if (!module.includes("node_modules/")) continue;
+    let dir = dirname(module);
+    while (dir.includes("node_modules")) {
+      const meta = await readFile(resolve(dir, "package.json"), "utf8").then(
+        JSON.parse,
+        () => null,
+      );
+      if (meta?.name) {
+        if (!packages.has(meta.name)) {
+          let license;
+          for (const name of ["LICENSE", "LICENSE.md", "LICENSE.txt", "license"]) {
+            license = await readFile(resolve(dir, name), "utf8").catch(() => null);
+            if (license) break;
+          }
+          if (!license) throw new Error(`Missing license for ${meta.name}`);
+          packages.set(
+            meta.name,
+            `${meta.name} ${meta.version} (${meta.license})\n${license.trim()}\n`,
+          );
         }
-        if (!license) throw new Error(`Missing license for ${meta.name}`);
-        packages.set(
-          meta.name,
-          `${meta.name} ${meta.version} (${meta.license})\n${license.trim()}\n`,
-        );
+        break;
       }
-      break;
+      dir = dirname(dir);
     }
-    dir = dirname(dir);
   }
 }
 if (!packages.has("@base-ui/react") || !packages.has("react-dom"))
@@ -76,6 +84,4 @@ await save(
       .map(([, value]) => value)
       .join("\n"),
 );
-console.log(
-  `${check ? "Verified" : "Built"} Air overlays: ${Buffer.byteLength(code)} bytes / ${compressed} gzip; SHA ${createHash("sha256").update(code).digest("hex").slice(0, 12)}; ${packages.size} licenses`,
-);
+console.log(`Verified ${packages.size} bundled dependency licenses.`);

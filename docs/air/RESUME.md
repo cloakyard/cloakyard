@@ -7,27 +7,25 @@ committing all saved work and an implementation plan. Follow
 [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) for execution order, commit slices
 and gates. No production redesign, push or deployment occurred in that planning step.
 
-The latest 2026-10-13 continuation completes file intake and processing at reference
-level, after the reading/recovery checkpoint. Open `docs/air/files.html` from the
-shared navigation or gallery. Canonical files live in `design/air/`; all five
-standalone bundles carry the same contract, CSS and versioned behavior. The study
-uses real local UTF-8 reads with measured progress, cancellation, stale-result
-protection and preserved preview. Simulated pause/interruption/unknown-total states
-are clearly labelled. It does not process real product formats.
+The latest continuation closes the broad base-pattern work with collections,
+layers, history, custom Select and nested overlays. The user asked to wind up the
+design and start implementation. **Read DESIGN_FREEZE.md next: one detailed visual
+lock, then AIR-04 (shared runtime foundation + complete Cloakyard home).** Do not
+start another general component-refinement cycle. The review decision is pending;
+product sources still do not import the Air bundle.
 
-Evidence includes 68 viewport/theme/text configurations, 27 interaction observations,
-nine lifecycle tests, six screenshots and 70 isolated portability assertions. See
-`validation.md` for exact gate results and limitations. No production source imports,
-native UI, KERR, output styling, push or deployment changed. Continue with long
-lists/layers/history using the audit and acceptance outline in the implementation
-plan. Real product adapters, browser/device parity and detailed visual sign-off
-remain open. Historical Resume suite flakiness must not be represented as fixed.
+The new reference is `docs/air/collections.html`. The canonical reducer uses local
+sample rows only. It covers filtered/mixed selection, 100 rows, reorder alternatives,
+rename/discard, visibility, remove/undo, history branching and focus restoration.
+Both lazy modules are independently budgeted below 150 kB gzip. The complete
+portable contract and inert reference bundles are synchronized across all five repos.
+See the dated collection section in `validation.md` for current checks and limits.
 
-Final file-reference copies are saved in PDF `fe090e8`, IMG `d514ae6`, Resume
-`60947b9` and Drop `de00cb2`. Resume's first full serial run passed 288/288 in
-384.70s; its log is saved in `evidence/resume-files-gate-passed-2026-10-13.txt`.
-All temporary audit tabs and overrides are removed. The existing reference server
-and user tabs remain available.
+Browser/device parity, actual formats/IME/output and specialised product control
+states remain open against their owning rollout pieces. The final candidate's
+review gate does not mean those checks passed. KERR/native UI stay unchanged;
+KERR becomes an exploration link during the first home implementation. No push or
+deployment is included. Historical Resume flakiness is not claimed fixed.
 
 ## Saved checkpoints
 
@@ -75,26 +73,17 @@ and user tabs remain available.
 
 ## Next bounded pieces
 
-1. Continue with long lists/layers/history. File intake and progress/cancel/retry
-   are complete at reference level; actual product adapters remain open. Reading/recovery studies are now complete at reference
-   level (2026-10-13): shared navigation, 65ch reading, retry/save failures, actual
-   session restore/text backup and unsaved navigation. See the dated evidence in
-   `validation.md`. Continue editor typography/controls with
-   `design/air/COMPONENTS.md`; preserve output geometry and single-contour fields.
-2. Cover stacked/nested overlays, submenu dismissal and real product forms. The
-   floating study validates local sample behavior; real async adapters, processing
-   failures and unsaved-work guards remain rollout gates. Rebuild `overlays.tsx`
-   changes with `node scripts/build-air-overlays.mjs` before bundle sync; verify
-   deterministic output with `--check`.
-3. Continue actual browser zoom, physical touch/software-keyboard and cross-engine
-   checks. Native custom selects fall back to platform pickers in unsupported
-   browsers; establish and test the accessible adapter before product adoption. Root-font enlargement and browser emulation are separate evidence.
-4. Complete the remaining custom-control/state and full-family motion reviews.
-   The shader works in the study; physical GPU/battery/thermal and slow-network
-   costs still need evidence before any production adoption.
-5. Review the refined system with the user before production migration. Then
-   migrate one bounded piece at a time, remove replaced legacy code/references,
-   verify all applicable features, record evidence and commit only on a pass.
+1. Close the detailed visual review using `DESIGN_FREEZE.md`; record the user's
+   approval or specific remaining correction. Do not infer approval from test passes.
+2. Implement AIR-04 shared foundation and Cloakyard home as defined there. Extract
+   only real production primitives, preserve the content registry/hash routes,
+   replace KERR's illustration with a link, clean old design code and pass every gate.
+3. Continue PDF → IMG → Resume → Drop website. Keep all engine/device, specialised
+   state, processing/output and full-feature tests on the owning piece's checklist.
+   Use `IMPLEMENTATION_PLAN.md` and `UX_REFRESH_TODO.md`, not a landing-only rollout.
+4. Every shared correction goes to the canonical source first, then all affected
+   bundles. Rebuild both studies with `node scripts/build-air-overlays.mjs` and
+   verify determinism with `--check` before sync. Commit only passing pieces.
 
 The commit-all checkpoint is saved: PDF `f960092`, IMG `2a639c4`, Resume `5367f46`
 and Drop `9340c6d`; Cloakyard's reference is `340aee8`, followed by the implementation
@@ -109,3 +98,10 @@ All runtime Air adoption and product-specific migration gates remain open.
 The task's CloakDrop preview server was stopped and its browser tab closed.
 Temporary Air audit tabs/viewport/touch/media/font overrides were restored or
 closed. Existing user/reference/editor servers and the user's Air tab remain.
+
+Final base portable checkpoints (2026-10-13): PDF `dea80e8`, IMG `68b0828`, Resume
+`4fb514c`, Drop `f44a492`; the Cloakyard commit containing this handoff owns the
+canonical change. Contract `c6ec55c0fe59`, CSS `80fb336bb4eb`, collection module
+`0bbea11f0a18`. All checks pass; Resume's complete serial gate is 288/288 in
+386.12s. Evidence and five reviewed screenshots are in the collection section of
+`validation.md`. Next: close the candidate's visual review, then AIR-04.

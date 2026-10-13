@@ -4,7 +4,8 @@ Prepared 2026-10-12 after the request to commit the current work and plan rollou
 This document defines execution order and commit boundaries. The exhaustive scope
 remains in [UX_REFRESH_TODO.md](../../UX_REFRESH_TODO.md); the component matrix is
 [design/air/COMPONENTS.md](../../design/air/COMPONENTS.md). A checked reference study
-is not a migrated product. This planning checkpoint starts no production redesign.
+is not a migrated product. The final base review is now consolidated in [DESIGN_FREEZE.md](DESIGN_FREEZE.md).
+After that visual lock, start AIR-04 without another broad reference pass.
 
 ## Starting point and decisions
 
@@ -26,8 +27,11 @@ is not a migrated product. This planning checkpoint starts no production redesig
 
 ## 0. Close the base before product screens
 
-Each item below is a separate reference/spec commit with evidence. Reuse the
-existing studies and completed checks; do not restart the visual direction.
+The table below records the original closure scope. Reading/recovery, files,
+collections/history, nested overlays and the custom Select now have working
+references. Remaining device/engine and domain checks belong to the affected
+production adapters, as mapped in `DESIGN_FREEZE.md`; they are not marked passed.
+Reuse the completed evidence and close the detailed visual review once.
 
 | Piece                       | Deliverable                                                                                                                     | Exit condition                                                                                                                    |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -272,3 +276,29 @@ per-app selection colours, density scales or bespoke overlays. Extend the existi
 menu/dialog adapters where appropriate, then run the same responsive/theme/input,
 feature, output and portable-bundle gates. Keep real product adoption separate from
 reference completion, and remove replaced legacy code only within an adopted slice.
+
+### Base closure and first implementation — 2026-10-13
+
+The final collection pass closes the remaining shared reference interactions.
+`DESIGN_FREEZE.md` supersedes the earlier “next bounded piece” recommendation.
+**Next is visual lock, then AIR-04: shared foundation + Cloakyard home.** It is not
+another open-ended round of component studies. Preserve the complete per-product
+phase scope and all outstanding engine/device/feature gates.
+
+Source audit for collections (no product behavior changed in this pass):
+
+- IMG `src/editor/LayersList.tsx`: preserve reversed Fabric stacking order, stable
+  IDs, transient-tool exclusion and filter access. Replace the row `role=button`
+  containing nested actions, coral selection and small controls with separate
+  Air selection/actions; add explicit reorder alternatives. `HistoryScrubber.tsx`
+  stays bound to real snapshots/jumpToStep, with compact undo/redo on mobile.
+- PDF `src/editor/panels/OrganizeTool.tsx`: preserve pending order/deletion/rotation,
+  its existing up/down actions, reset and Apply transaction, at-least-one-page
+  guard, thumbnail disposal and document-ID protection during async blank scanning.
+- Resume `src/components/DragList.tsx`: retain existing move controls, current-item
+  ref and protected two-step removal; use contextual accessible names and Air target
+  sizes. Do not invent multi-selection or a new history model for structured entries.
+
+The standalone reducer proves sample invariants; it does not migrate any of these
+engines. Product processing/async/error and complete specialised-widget states stay
+on their implementation acceptance lists. Keep true document output outside Air CSS.

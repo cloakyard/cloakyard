@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — resumed 2026-10-12; refining the design system before product implementation** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — 2026-10-13 final base candidate; visual lock then AIR-04 implementation** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -30,7 +30,7 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Current priority — keep refining Air before rollout (2026-10-12)
+## Current priority — close the base and begin implementation (2026-10-13)
 
 The user explicitly reaffirmed further refinement before rollout on 2026-10-12.
 Product UI migration has not started. The first component reference was judged too
@@ -74,9 +74,13 @@ the refined system is defined and reviewed as requested by the user.
       surfaces and accessible primitive behavior. Validate 56 size/theme/text
       configurations, invalid rename, safe confirmation, focus handoffs and recovery.
       See the 2026-10-12 floating-controls evidence; sample actions are local only.
-- [ ] Validate stacked/nested overlays and submenus, real touch/software keyboards,
-      assistive technology and Safari/Firefox; repeat on actual product operations.
-- [x] Package the floating reference as one lazy local module with licenses,
+- [x] Define and validate collection rows, long names, filtered selection, custom
+      Select, explicit reorder, rename, reversible removal and history; 76 layout
+      cases, 16 nested-dialog cases and six model tests. Submenu Escape and stacked
+      dirty-draft confirmations preserve focus and work.
+- [ ] Repeat nested overlays/Select on real product operations, physical touch,
+      software keyboards, assistive technology and Safari/Firefox.
+- [x] Package floating and collection references as independent lazy modules with licenses,
       content revisions, failure/retry handling and standalone integrity guards.
 - [-] Extend relative typography and enlarged-text validation through shared fields,
   custom controls, editor chrome, dialogs and the reference documentation controls.
@@ -98,7 +102,12 @@ the refined system is defined and reviewed as requested by the user.
 - [ ] Validate file adapters in real products: encrypted/corrupt PDF, HEIC/HEIF
       including empty MIME types, batch images, résumé JSON/schema/draft protection,
       clipboard permissions, resource disposal, export and processing failures.
+- [x] Consolidate the final base candidate and map every remaining check to its
+      owning implementation in [DESIGN_FREEZE.md](docs/air/DESIGN_FREEZE.md).
 - [ ] Review and lock the detailed system before product migration.
+- [ ] Start AIR-04 immediately after lock: shared runtime foundation and the complete
+      Cloakyard home, including KERR link-only treatment, legacy cleanup and all gates.
+      No further broad specimen pass is planned.
 - [x] Build the actual Shaders-based Air light treatment: custom overlapping
       planes, deliberate pointer response, finite arrival and local assets.
       Light/dark and all seven viewport classes pass the reference checks.
@@ -358,3 +367,14 @@ and 70 isolated portability assertions pass. Sibling final checkpoints: PDF
 `fe090e8`, IMG `d514ae6`, Resume `60947b9`, Drop `de00cb2`. Detailed evidence,
 limitations and the Resume log are in `docs/air/validation.md`. Production
 adoption and detailed visual sign-off remain open.
+
+### Final base candidate — 2026-10-13
+
+- Cloakyard: this checkpoint contains collections, nested overlays, custom Select,
+  shared rules, verified evidence and `DESIGN_FREEZE.md`.
+- Portable copies: PDF `dea80e8`, IMG `68b0828`, Resume `4fb514c`, Drop `f44a492`.
+- Contract `c6ec55c0fe59`, CSS `80fb336bb4eb`, collections `0bbea11f0a18`.
+- All required checks pass; 355 PDF, 470 IMG and 288 Resume tests pass. Six model
+  tests, 75 portability assertions and the reference interaction/layout checks pass.
+- Detailed visual approval is pending. Next after lock: AIR-04 shared foundation
+  and Cloakyard home. No product runtime adoption, push or deployment in this checkpoint.
