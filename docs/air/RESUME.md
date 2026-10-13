@@ -1,31 +1,40 @@
 # Air refresh — current handoff
 
-Resumed at the user's request on 2026-10-12 after the 2026-10-11 pause.
-The user explicitly chose **keep refining Air before rollout**. Production
-migration and detailed visual sign-off remain open. The user subsequently requested
-committing all saved work and an implementation plan. Follow
-[IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) for execution order, commit slices
-and gates. No production redesign, push or deployment occurred in that planning step.
+2026-10-13: the user authorized one final agent review followed by implementation.
+The review is complete; **Air 1.0.0 is locked**. Do not restart broad design studies
+or ask for another design approval. `DESIGN_FREEZE.md` records the decision.
 
-The latest continuation closes the broad base-pattern work with collections,
-layers, history, custom Select and nested overlays. The user asked to wind up the
-design and start implementation. **Read DESIGN_FREEZE.md next: one detailed visual
-lock, then AIR-04 (shared runtime foundation + complete Cloakyard home).** Do not
-start another general component-refinement cycle. The review decision is pending;
-product sources still do not import the Air bundle.
+**AIR-04 is now implemented locally**: the complete Cloakyard homepage imports the
+canonical CSS, with open product rows, system typography/themes, in-flow mobile
+navigation, focus-safe anchors, KERR exploration links, principles/footer and a
+new social image. Legacy font assets, old cards/pipeline/KERR artwork and competing
+CSS are removed. No standalone study bundles or shader runtime enter production.
+The two-plane still artwork has a finite 900ms CSS arrival and reduced-motion path.
 
-The new reference is `docs/air/collections.html`. The canonical reducer uses local
-sample rows only. It covers filtered/mixed selection, 100 rows, reorder alternatives,
-rename/discard, visibility, remove/undo, history branching and focus restoration.
-Both lazy modules are independently budgeted below 150 kB gzip. The complete
-portable contract and inert reference bundles are synchronized across all five repos.
-See the dated collection section in `validation.md` for current checks and limits.
+The local preview is `http://127.0.0.1:8131/` (production build); the development server on port 8130 was stopped after verification.
+Existing reference/product servers are untouched. Evidence is in
+`evidence/home-2026-10-13.json` and the dated section of `validation.md`.
 
-Browser/device parity, actual formats/IME/output and specialised product control
-states remain open against their owning rollout pieces. The final candidate's
-review gate does not mean those checks passed. KERR/native UI stay unchanged;
-KERR becomes an exploration link during the first home implementation. No push or
-deployment is included. Historical Resume flakiness is not claimed fixed.
+Passing: check/type/build, 76 layout/theme/text cases, keyboard/menu/Escape/hash/
+back-forward/malformed hash/skip-link/coarse target checks, reduced motion/forced
+colours, no-JS links, production local-only requests, 13 remote destinations, native
+Safari 27.0.1 and Firefox 157.0.1 checks (including real 200% zoom), all five bundles
+and 75 portability assertions. Full product tests from the preceding checkpoint
+remain relevant to unchanged sibling runtime sources; no new sibling UI is adopted.
+
+The user subsequently instructed **“commit then continue”** after the two remaining
+checks were explicitly reported. This authorizes the current local commit with
+those gaps documented. Physical-touch and screen-reader speech/navigation remain
+unverified; `validated: false` is retained rather than claiming they passed.
+Design lock commits: Cloakyard `ea26823`, PDF `e59bcd5`, IMG `0182ec0`, Resume
+`b91e39e`, Drop `f507724`. The next commit contains the complete homepage work.
+
+Next: **CloakPDF entry/landing and reading surfaces**, then its editor and custom
+controls, followed by IMG, Resume, Drop website and family comparison. Use
+`IMPLEMENTATION_PLAN.md`; no further general design approval is needed. Extract
+complex production adapters when real product behavior needs them. Keep device
+follow-ups visible. Live shaders retain their separate performance gate. KERR's
+app/native macOS UI remain unchanged. No push or deployment is included.
 
 ## Saved checkpoints
 
@@ -73,17 +82,13 @@ deployment is included. Historical Resume flakiness is not claimed fixed.
 
 ## Next bounded pieces
 
-1. Close the detailed visual review using `DESIGN_FREEZE.md`; record the user's
-   approval or specific remaining correction. Do not infer approval from test passes.
-2. Implement AIR-04 shared foundation and Cloakyard home as defined there. Extract
-   only real production primitives, preserve the content registry/hash routes,
-   replace KERR's illustration with a link, clean old design code and pass every gate.
-3. Continue PDF → IMG → Resume → Drop website. Keep all engine/device, specialised
-   state, processing/output and full-feature tests on the owning piece's checklist.
-   Use `IMPLEMENTATION_PLAN.md` and `UX_REFRESH_TODO.md`, not a landing-only rollout.
-4. Every shared correction goes to the canonical source first, then all affected
-   bundles. Rebuild both studies with `node scripts/build-air-overlays.mjs` and
-   verify determinism with `--check` before sync. Commit only passing pieces.
+1. Migrate CloakPDF entry/landing, search, file intake, policy and recovery with
+   Air foundations, preserving existing routing and processing contracts.
+2. Proceed through PDF editor chrome, every tool panel, overlays and exported
+   output checks. Then IMG → Resume → Drop website → full-family comparison.
+3. Shared corrections return to Cloakyard first and propagate as a pinned revision.
+   Run available required feature/build/design checks before each local commit;
+   record physical-device/assistive follow-ups without reporting them as passed.
 
 The commit-all checkpoint is saved: PDF `f960092`, IMG `2a639c4`, Resume `5367f46`
 and Drop `9340c6d`; Cloakyard's reference is `340aee8`, followed by the implementation

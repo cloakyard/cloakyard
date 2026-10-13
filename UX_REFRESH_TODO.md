@@ -1,11 +1,11 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — 2026-10-13 final base candidate; visual lock then AIR-04 implementation** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air locked; AIR-04 implemented locally, device acceptance remains** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
-commit slices and acceptance gates. Detailed design review and production migration
-remain open; no deployment or push has occurred.
+commit slices and acceptance gates. Detailed design review is complete. AIR-04 is implemented locally; its remaining
+acceptance checks and the other app migrations stay open. No deployment or push has occurred.
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
@@ -30,13 +30,15 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Current priority — close the base and begin implementation (2026-10-13)
+## Current priority — validate the first implementation (2026-10-13)
 
-The user explicitly reaffirmed further refinement before rollout on 2026-10-12.
-Product UI migration has not started. The first component reference was judged too
-generic; Air's detailed system is still under review. Preserve existing validation
-as foundation evidence, not visual approval. Do not implement product screens until
-the refined system is defined and reviewed as requested by the user.
+The user authorized one final glance followed by implementation. The delegated
+review is complete and Air 1.0.0 is locked. The gallery navigation correction
+passes phone/tablet/desktop in both themes. AIR-04 now imports the canonical
+bundle and implements the complete Cloakyard directory. See the dated validation
+record for passing checks and the two outstanding device/assistive checks; do not
+claim those passed. The user subsequently authorized committing this local piece
+with the device checks recorded, then continuing the rollout.
 
 - [x] Define a recognisable family composition/material/selection language beyond a generic card grid.
 - [x] Tighten optical spacing, typography, icon alignment, radii, fields and elevation rules.
@@ -104,8 +106,8 @@ the refined system is defined and reviewed as requested by the user.
       clipboard permissions, resource disposal, export and processing failures.
 - [x] Consolidate the final base candidate and map every remaining check to its
       owning implementation in [DESIGN_FREEZE.md](docs/air/DESIGN_FREEZE.md).
-- [ ] Review and lock the detailed system before product migration.
-- [ ] Start AIR-04 immediately after lock: shared runtime foundation and the complete
+- [x] Review and lock the detailed system before product migration; user-authorized final review 2026-10-13.
+- [x] Start AIR-04 immediately after lock: shared runtime foundation and the complete
       Cloakyard home, including KERR link-only treatment, legacy cleanup and all gates.
       No further broad specimen pass is planned.
 - [x] Build the actual Shaders-based Air light treatment: custom overlapping
@@ -183,16 +185,19 @@ the refined system is defined and reviewed as requested by the user.
 
 ## Phase 2 — Cloakyard family home
 
-- [ ] Apply shared typography, surfaces, controls, navigation, focus and spacing.
-- [ ] Replace the technical hero/pipeline with the Air promise and restrained light treatment.
-- [ ] Refresh product cards; retain correct destinations, platform, status and privacy truth.
-- [ ] Replace KERR's entire illustrated preview with a concise exploration link.
-- [ ] Refresh principles, footer, mobile navigation and long-link handling.
-- [ ] Keep source, author, licence, privacy and family links correct.
-- [ ] Update metadata/theme colour, social artwork and README where affected.
-- [ ] Inspect every specified viewport plus dark/reduced-motion/no-effect fallbacks.
-- [ ] Validate all links/anchors, keyboard focus, initial/return hash navigation and no runtime errors.
-- [ ] Run check/build, inspect diff and commit only after all checks pass.
+- [x] Apply shared typography, surfaces, controls, navigation, focus and spacing.
+- [x] Replace the technical hero/pipeline with the Air promise and restrained light treatment.
+- [x] Refresh product cards; retain correct destinations, platform, status and privacy truth.
+- [x] Replace KERR's entire illustrated preview with a concise exploration link.
+- [x] Refresh principles, footer, mobile navigation and long-link handling.
+- [x] Keep source, author, licence, privacy and family links correct.
+- [x] Update metadata/theme colour, social artwork and README where affected.
+- [x] Inspect every specified viewport plus dark/reduced-motion/no-effect fallbacks.
+- [x] Validate all links/anchors, keyboard focus, initial/return hash navigation and no runtime errors.
+- [x] Check/type/build, 76 layouts, Chromium journeys, Safari/Firefox and 13 destination checks pass.
+      Physical touch and screen-reader interaction remain open; user authorized the local commit with those gaps recorded.
+- [ ] Activate live shaders only after their separate payload/GPU/device performance gate.
+- [ ] Complete physical touch and screen-reader navigation and record results.
 
 ## Phase 3 — CloakPDF reference product
 
@@ -378,3 +383,9 @@ adoption and detailed visual sign-off remain open.
   tests, 75 portability assertions and the reference interaction/layout checks pass.
 - Detailed visual approval is pending. Next after lock: AIR-04 shared foundation
   and Cloakyard home. No product runtime adoption, push or deployment in this checkpoint.
+
+### 2026-10-13 design lock checkpoint
+
+- Cloakyard `ea26823`, PDF `e59bcd5`, IMG `0182ec0`, Resume `b91e39e`, Drop `f507724`: reviewed Air baseline and gallery navigation correction, all synchronized.
+- AIR-04 home implementation, cleanup and evidence are included in the user-authorized local commit; physical-touch and screen-reader acceptance remain open. Production preview: `http://127.0.0.1:8131/`.
+- Root check/type/build, sibling format/lint/type and Drop Astro checks pass; bundle checks and the preceding unchanged-runtime suite evidence are recorded in validation.md.

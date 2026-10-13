@@ -1077,3 +1077,102 @@ performance and specialised product-state gates remain mapped to their owning
 implementation. Next after visual lock: **AIR-04 shared foundation + Cloakyard
 home**, then PDF, IMG, Resume and Drop. KERR becomes link-only in the home piece.
 No production adoption, native UI change, push or deployment occurred here.
+
+## 2026-10-13 — final review lock and first home implementation
+
+The user authorized “One final glance over on design then after that let's start”.
+The delegated review is complete. The expanded gallery navigation overflowed at
+390px after Collections was added; wrapping/min-width fixes it. Eight checks at
+320/390/768/1440px in both themes have no document overflow. Desktop landing and
+IMG, phone Resume and tablet PDF were visually reviewed. The final baseline is
+Air 1.0.0, contract `4232d7b9e8e0`; this is design approval for implementation,
+not a claim that every real product/device state is validated.
+[Final glance](evidence/air-final-glance-2026-10-13.json).
+
+AIR-04 is implemented **in the working tree**, with the pinned Air CSS imported
+at runtime. Header, hero, open product rows, KERR link-only section, principles,
+footer, metadata and social artwork now share the family language. A native
+in-flow disclosure replaces the previous floating mobile menu. Hash navigation
+handles initial loads, encoded/malformed fragments, keyboard focus and back/forward.
+Closing the menu restores trigger focus before a new-tab link, while hash links
+handoff to their destination. A six-link no-JS directory remains available.
+
+The home needs CSS/native links/disclosure only: no study bundle, new UI library,
+shader payload, external font, remote icon or API is loaded. The horizon retains
+the reviewed two-plane geometry, with one finite 900ms CSS arrival. Reduced motion
+removes animation and forced colours omit the artwork. Live Shaders are still a
+separate planned enhancement; no GPU/battery claim is made. The 704px header
+breakpoint is a documented content collision threshold for brand + three labels
+
+- Source; 352px hides the wordmark while retaining the named home link. Container
+  queries follow enlarged type, in addition to the shared 640/1024 composition steps.
+
+Passing observations and gates:
+
+- **76 layout combinations**: 11 contract viewports plus 639/640/641, 703/704/705,
+  1023/1025; light/dark; 16/32px root text. No document or measured text overflow.
+  This is enlarged-text stress, not browser zoom. Native Firefox separately
+  verified actual **200% page zoom**.
+- Chromium keyboard menu/Enter/Escape, trigger/anchor focus, back/forward,
+  malformed and encoded hashes on reload, skip link, 44px coarse targets,
+  reduced-motion, forced-colours, and production no-JS directory pass. No console
+  warnings/errors were observed. Resource inspection shows only local JS/CSS/mark.
+- Real Firefox **157.0.1**: desktop rendering, actual 200% zoom and focused tool
+  anchor. Real Safari **27.0.1**: desktop rendering, 390×844 native responsive
+  disclosure, Escape focus return and anchor handoff; 768×844 open product rows.
+  Browser native accessibility trees expose the links and disclosure state.
+- **122 computed text contrast pairs** pass: minimum 5.19:1 light / 8.48:1 dark.
+  Desktop light, tablet/phone dark, lower-page/footer, Safari phone/tablet and
+  Firefox zoom screenshots were inspected. Social artwork rendered at 1200×630.
+- **13/13 public destinations return HTTP 200**, including all apps/KERR, GitHub
+  source repositories, author and licence. Existing destinations are preserved.
+- `vp check`, explicit `tsc --noEmit`, production `vp build`, `git diff --check`,
+  exact six-spec sync, five standalone design checks, **75/75 portability
+  assertions**, and **15/15 file/collection reference tests** pass. Sibling runtime
+  sources are unchanged; their preceding full-suite evidence is not rerun or
+  relabelled as a fresh product test.
+
+Legacy cleanup: removed ToolCard, pipeline/KERR illustration, remote-mark fallback,
+old palette/typography/layout rules, unused registry aliases and both WOFF2 assets
+(75,332 bytes). Authoritative README/CLAUDE/metadata/artwork now describe Air.
+Source search finds no Archivo/JetBrains/font-face/font-path, tool-card, pipeline
+or orbital artwork references in the migrated runtime/docs/artwork. Historical
+audit records and explicit contract anti-patterns remain as evidence.
+The canonical CSS adds shared shells (~45.0 kB raw total CSS versus 28.5 kB before);
+JS decreases from 242.4 kB to 234.4 kB. Removed fonts avoid 75.3 kB of raw assets.
+[Exact build comparison](evidence/home-build.json),
+[baseline](evidence/home-baseline.json).
+
+**Acceptance remains open:** physical-touch interaction and screen-reader speech/
+navigation have not been executed. Responsive/touch emulation and accessibility
+DOM inspection do not substitute for them. There is no connected physical touch
+surface in this session. Under the saved commit gate, the home runtime change is
+kept uncommitted and all 13 inventory entries remain `validated: false`. The
+reviewed design lock can be committed separately; no push or deployment occurred.
+Next: complete these checks, commit AIR-04, then begin PDF entry and shared real
+editor adapters. No additional broad design review is needed.
+
+[Layout/interaction evidence](evidence/home-2026-10-13.json) ·
+[Destinations](evidence/home-links.json) ·
+[Desktop light](evidence/home-desktop-light.png) ·
+[Tablet dark](evidence/home-tablet-dark.png) ·
+[Phone dark](evidence/home-phone-dark.png) ·
+[Footer dark](evidence/home-footer-dark.png) ·
+[No-JS](evidence/home-no-js.png) ·
+[Safari phone](evidence/home-safari-phone-menu.png) ·
+[Safari tablet](evidence/home-safari-tablet.png) ·
+[Firefox 200%](evidence/home-firefox-200.png).
+
+Design-lock-only commits: Cloakyard `ea26823`, PDF `e59bcd5`, IMG `0182ec0`,
+Resume `b91e39e`, Drop `f507724`. Fresh PDF/IMG/Resume `vp check` and Drop's
+19-file Astro check pass. Commit hooks also passed. Runtime implementation and
+its evidence remain in the working tree under the outstanding acceptance gate.
+
+### User-authorized local commit and rollout continuation
+
+After the preceding report explicitly identified physical-touch and screen-reader
+gaps, the user instructed **“commit then continue”**. The complete AIR-04 working
+tree is committed on that authority; those two checks remain open and inventory
+validation flags stay false. This supersedes the earlier local-commit hold, not
+the evidence itself. Continue with CloakPDF's first bounded production piece.
+No push or deployment is authorized or performed.

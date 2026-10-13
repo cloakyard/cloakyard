@@ -1,0 +1,67 @@
+[
+  {
+    "url": "https://pdf.cloakyard.com",
+    "status": 200,
+    "destination": "https://pdf.cloakyard.com"
+  },
+  {
+    "url": "https://resume.cloakyard.com",
+    "status": 200,
+    "destination": "https://resume.cloakyard.com"
+  },
+  {
+    "url": "https://img.cloakyard.com",
+    "status": 200,
+    "destination": "https://img.cloakyard.com"
+  },
+  {
+    "url": "https://drop.cloakyard.com",
+    "status": 200,
+    "destination": "https://drop.cloakyard.com"
+  },
+  {
+    "url": "https://kerr.cloakyard.com",
+    "status": 200,
+    "destination": "https://kerr.cloakyard.com"
+  },
+  {
+    "url": "https://github.com/cloakyard",
+    "status": 200,
+    "destination": "https://github.com/cloakyard"
+  },
+  {
+    "url": "https://github.com/cloakyard/cloakpdf",
+    "status": 200,
+    "destination": "https://github.com/cloakyard/cloakpdf"
+  },
+  {
+    "url": "https://github.com/cloakyard/cloakresume",
+    "status": 200,
+    "destination": "https://github.com/cloakyard/cloakresume"
+  },
+  {
+    "url": "https://github.com/cloakyard/cloakimg",
+    "status": 200,
+    "destination": "https://github.com/cloakyard/cloakimg"
+  },
+  {
+    "url": "https://github.com/cloakyard/cloakdrop",
+    "status": 200,
+    "destination": "https://github.com/cloakyard/cloakdrop"
+  },
+  {
+    "url": "https://github.com/cloakyard/kerr",
+    "status": 200,
+    "destination": "https://github.com/cloakyard/kerr"
+  },
+  {
+    "url": "https://github.com/sumitsahoo",
+    "status": 200,
+    "destination": "https://github.com/sumitsahoo"
+  },
+  {
+    "url": "https://github.com/cloakyard/cloakyard/blob/main/LICENSE",
+    "status": 200,
+    "destination": "https://github.com/cloakyard/cloakyard/blob/main/LICENSE"
+  }
+]

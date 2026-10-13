@@ -1,23 +1,21 @@
 import type { ProductivityTool } from "../data/tools";
-import { ToolCard } from "./ToolCard";
+import { ToolEntry } from "./ToolEntry";
 
 export function ToolSection({ tools }: { tools: ProductivityTool[] }) {
   return (
-    <section className="section tools-section" id="tools">
-      <div className="site-frame">
-        <p className="section-kicker">Productivity</p>
-        <div className="section-heading">
-          <h2>Get the job done. Keep the data.</h2>
-          <p>
-            Focused tools for documents, images, résumés, and downloads. Each product stands on its
-            own; all of them share the same privacy-first foundation.
-          </p>
-        </div>
-        <div className="tool-grid">
-          {tools.map((tool) => (
-            <ToolCard key={tool.slug} tool={tool} />
-          ))}
-        </div>
+    <section
+      id="tools"
+      className="tools-section site-frame"
+      tabIndex={-1}
+      aria-labelledby="tools-title"
+    >
+      <h2 id="tools-title" className="visually-hidden">
+        Meet the family
+      </h2>
+      <div className="tool-list">
+        {tools.map((tool) => (
+          <ToolEntry key={tool.slug} tool={tool} />
+        ))}
       </div>
     </section>
   );

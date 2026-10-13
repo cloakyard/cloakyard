@@ -5,13 +5,14 @@ This document defines execution order and commit boundaries. The exhaustive scop
 remains in [UX_REFRESH_TODO.md](../../UX_REFRESH_TODO.md); the component matrix is
 [design/air/COMPONENTS.md](../../design/air/COMPONENTS.md). A checked reference study
 is not a migrated product. The final base review is now consolidated in [DESIGN_FREEZE.md](DESIGN_FREEZE.md).
-After that visual lock, start AIR-04 without another broad reference pass.
+That visual lock is complete. AIR-04 is the first local implementation; continue
+with the saved product sequence after its validation gate.
 
 ## Starting point and decisions
 
 - **Direction:** Air. Canonical source: `cloakyard/design/air/`. Reference checkpoint
-  `340aee8`; contract SHA-256 prefix `dc6032235f40`. `1.0.0` remains a design-review
-  candidate until the remaining base patterns and detailed review gate are closed.
+  `638a571`; Air `1.0.0` was locked on 2026-10-13 after the user-authorized final
+  review. `bundle.json` records the current contract and asset hashes.
 - **Scope:** Cloakyard home, all CloakPDF/CloakIMG/CloakResume web surfaces, and the
   entire CloakDrop website. KERR's app and native macOS UI retain their appearance.
   Cloakyard shows KERR as an exploration link with no screenshot or simulated preview.
@@ -79,11 +80,16 @@ ceilings are not production budget approvals.
 
 ## 2. Cloakyard home — first production expression
 
-- **Commit A:** page/theme/type foundations and shared header, navigation, focus,
+The three home slices below were implemented together as one coherent local
+change, avoiding a temporary mixed visual language. The shared CSS is the only
+runtime foundation needed by this directory; complex production adapters begin
+with the first real editor that needs them.
+
+- **Slice A:** page/theme/type foundations and shared header, navigation, focus,
   footer and complete product links. Preserve hash navigation and narrow no-JS use.
-- **Commit B:** hero, product presentation and principles. Replace KERR's preview
+- **Slice B:** hero, product presentation and principles. Replace KERR's preview
   with the exploration link. Add the reviewed finite Air light with its fallback.
-- **Commit C:** metadata/social image and maintained docs; remove replaced CSS,
+- **Slice C:** metadata/social image and maintained docs; remove replaced CSS,
   old hero/pipeline artwork, fonts and unused motion/assets after consumer checks.
 
 **Gate per commit:** `vp check`, `vp build`, links/anchors/return navigation, all

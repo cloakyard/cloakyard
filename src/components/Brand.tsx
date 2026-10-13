@@ -1,9 +1,9 @@
 export function Brand() {
   return (
     <a className="brand" href="/" aria-label="Cloakyard home">
-      <img className="brand-mark" src="/cloakyard-mark.svg" alt="" width="40" height="40" />
+      <img src="/cloakyard-mark.svg" alt="" width="32" height="32" />
       <span className="brand-word" translate="no">
-        Cloak<span>yard</span>
+        Cloakyard
       </span>
     </a>
   );

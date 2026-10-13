@@ -9,22 +9,29 @@ import { experiments, productivityTools } from "./data/tools";
 
 export default function App() {
   useEffect(() => {
-    if (!window.location.hash) {
-      return;
-    }
-
-    void document.fonts.ready.then(() => {
-      document.querySelector(window.location.hash)?.scrollIntoView();
-    });
+    const followHash = () => {
+      if (!window.location.hash) return;
+      try {
+        const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+        if (!target) return;
+        target.focus({ preventScroll: true });
+        target.scrollIntoView();
+      } catch {
+        // A malformed URL fragment must not break the directory.
+      }
+    };
+    followHash();
+    window.addEventListener("hashchange", followHash);
+    return () => window.removeEventListener("hashchange", followHash);
   }, []);
 
   return (
     <div className="site-shell">
       <Header />
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         <Hero />
         <ToolSection tools={productivityTools} />
-        <ExperimentSection experiment={experiments[0]} />
+        <ExperimentSection experiments={experiments} />
         <Principles />
       </main>
       <Footer />
