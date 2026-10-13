@@ -1,9 +1,13 @@
-# Air — final base review candidate
+# Air — implementation baseline
 
-2026-10-13 · Target 1.0.0 · **Awaiting detailed visual approval**
+2026-10-13 · Version 1.0.0 · **Locked for implementation**
 
-The broad design exploration closes with this candidate. Keep the existing Air
-direction and begin the implementation sequence after the requested visual lock.
+The user authorized one final agent review followed by implementation. That review
+is complete: the expanded gallery navigation needed wrapping at phone widths;
+the correction passes 320/390/768/1440px in both themes
+([review evidence](evidence/air-final-glance-2026-10-13.json)). The desktop landing,
+IMG inspector, Resume phone writing panel and PDF tablet composition were reviewed.
+Proceed with the locked Air direction and existing implementation sequence.
 Do not start another general redesign or create another specimen for a pattern
 already covered. Fix a concrete failure in the canonical source, then propagate
 that correction to affected apps.
@@ -49,7 +53,7 @@ not count them as passed. A missing result blocks that affected piece's commit.
 
 | Gate                                                                                         | Owning implementation                                                                            |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Detailed visual lock of this candidate                                                       | Before product screen migration; record the user's decision and date                             |
+| Detailed visual lock                                                                         | Closed 2026-10-13 after the user-authorized final review                                         |
 | Safari/WebKit, Firefox, real browser zoom, screen readers, physical touch/software keyboards | Each adopted adapter and its real route; reference Chromium emulation is not equivalent evidence |
 | Every specialised control state, IME, rich text, colour/curves, AI and export                | The owning PDF/IMG/Resume panel, against the existing complete surface inventory                 |
 | PDF/HEIC/JSON processing, races, cancellation, output fidelity and saved work                | Each real file/processing adapter; the sample studies cannot certify those formats               |
@@ -84,8 +88,8 @@ page. A shared correction returns here first and is propagated before continuing
 
 - Candidate assembled: 2026-10-13; collection evidence and current repository
   gates are recorded in `validation.md`.
-- User approval: **pending**. Earlier approval of the Air direction did not
-  approve every detailed component. The user's later request to wind up design
-  sets the priority; it does not invent a completed visual review.
-- Runtime adoption: **not started**. This checkpoint completes shared reference
-  patterns and the implementation handoff. No push or deployment is included.
+- User authorization: “One final glance over on design then after that let's start”
+  on 2026-10-13. The agent completed that delegated review; this does not claim the
+  user personally inspected every state. No additional design approval is needed.
+- Runtime adoption: **AIR-04 implemented locally**. Validation evidence and any
+  remaining device checks are recorded separately. No push or deployment is included.

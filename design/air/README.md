@@ -1,7 +1,8 @@
 # Air — the Cloakyard family design system
 
-Refinement 03 is a **design-review candidate**. Review and lock the detailed system
-before importing it into product UI. The copied bundle is a reference only.
+Air 1.0.0 is **locked for implementation** following the user-authorized final
+review on 2026-10-13. Product adoption and feature/device evidence remain separate.
+See [the review record](../../docs/air/DESIGN_FREEZE.md).
 
 This directory in **cloakyard/cloakyard is the canonical source** for every Air web
 app and landing page. Other repositories derive pinned, standalone copies from it.

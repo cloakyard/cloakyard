@@ -37,7 +37,7 @@ for (const [slug, name, destinations] of products) {
   const content = `---
 name: ${name} — Cloakyard Air
 version: 1.0.0
-status: design-review
+status: approved
 date: 2026-10-13
 scope: complete-web-product
 source-repository: ${sourceRepository}
@@ -123,7 +123,7 @@ ${appendix}
       source: {
         repository: sourceRepository,
         directory: "design/air",
-        status: "design-review",
+        status: "approved",
         contractSha256: hash,
       },
       stylesheet: cssPath,

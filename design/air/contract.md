@@ -1,10 +1,11 @@
 # Cloakyard Air design contract
 
-Version: **1.0.0 — refinement 03 candidate** · Direction: **Air** · Updated: **2026-10-13**
+Version: **1.0.0 — implementation baseline** · Direction: **Air** · Updated: **2026-10-13**
 
-The Air direction is approved. This detailed refinement is **under design review**;
-product migration waits for that review. The reference is an interactive design
-study, not an implementation of the products.
+The detailed Air system is **locked for implementation**. On 2026-10-13 the user
+authorized one final agent review followed by implementation; that review is
+complete. The reference remains an interactive design study, not proof of product
+conformance. Each adopted surface still passes its own feature and device gates.
 
 This is the portable design contract for the Cloakyard web family.
 It applies to existing and future products, all routes, all states, and every
