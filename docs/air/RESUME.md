@@ -57,8 +57,8 @@ Resume `f361733`, Drop `5d79ab9`; PDF includes it in `dc20fe6`. Fresh IMG checks
 CloakPDF utility headers, global error boundary and route loading are committed
 as `70e0b70`. Recovery copy failure, retry focus, reload, 132 utility header cases
 and 88 recovery/loading cases pass. All six synthetic standalone output workflows
-and home-to-editor hand-offs pass again. The existing phone orientation overlay
-and deeper utility/editor surfaces remain pending.
+and home-to-editor hand-offs pass again. The later constructor checkpoint below
+removes the phone orientation overlay; deeper utility/editor surfaces remain pending.
 
 The reusable light lifecycle and its TypeScript declarations are synchronized in
 IMG `a894c1d`, Resume `e22f441` and Drop `bb02e6f`; PDF includes them in `70e0b70`.
@@ -67,11 +67,34 @@ handoff's Cloakyard commit contains the production shader and recorded evidence.
 Temporary audit tabs and emulation are cleared; the existing homepage preview
 was refreshed to the live shader. Product editor tabs and preview servers remain.
 
-Next: **CloakPDF standalone file lists/actions/results**, then editor chrome, every
+Next: **CloakPDF remaining utility-specific options/results**, then editor chrome, every
 panel, canvas and overlays. Continue IMG → Resume → Drop website →
 family comparison using `IMPLEMENTATION_PLAN.md`. No further general design
 approval is needed. Shared adapters/corrections return to Cloakyard first. KERR
 and native macOS UI remain unchanged. No push or deployment is included.
+
+## Latest bounded implementation — PDF constructors
+
+CloakPDF `aba5643`: Merge and Images to PDF share one Air queue with
+natural sorting, preserved manual order, explicit/keyboard moves, persistent Undo,
+wrapped names and image previews. Shared action/segment/error/progress controls use
+the pinned skins; busy actions retain focus/geometry and guard repeated dispatch.
+File intake and queue changes are locked during work; late results cannot download
+or open an editor after navigation. Obsolete queue skins, motion and the standalone
+orientation gate are removed. A crop tool-switch registration defect found during
+regression testing is fixed and covered by the existing editor workflows.
+
+Passing: 112 final layout/theme/text cases, six landscape entries, reordered output
+page dimensions, sorting/Undo focus, real held-work lifecycle, native Safari/Firefox
+200% shared-component checks, 355 units, all six standalone outputs, desktop/mobile
+editor smokes, three-fixture placement/preview, extended interactions, routing/motion, build/dead-code/design and
+17 portability assertions. Physical touch/software keyboard and screen-reader
+speech remain open. Full evidence: PDF `docs/air/validation.md` and
+`docs/air/evidence/constructors-2026-10-13.json`.
+
+Next slice: **Extract Images** file/selection/thumbnail/download states, followed
+by Password, Digital Signature, Compare and AI, then all editor surfaces. Preview
+remains `http://127.0.0.1:8132/`. No user editor tab was reloaded; no push/deployment.
 
 ## Saved checkpoints
 
@@ -119,8 +142,9 @@ and native macOS UI remain unchanged. No push or deployment is included.
 
 ## Next bounded pieces
 
-1. Complete CloakPDF standalone file lists/actions/results and landscape handling.
-   Entry/search/intake/policy/encrypted/PWA, utility headers and global recovery are implemented.
+1. Complete Extract Images selection/results, Password/signature options and results,
+   Compare results and on-device AI states. Entry, constructors, shared utility controls,
+   landscape handling, policy/encrypted/PWA, utility headers and recovery are implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported
    output checks. Then IMG → Resume → Drop website → full-family comparison.
 3. Shared corrections return to Cloakyard first and propagate as a pinned revision.

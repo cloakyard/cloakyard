@@ -217,7 +217,13 @@ with the device checks recorded, then continuing the rollout.
       132 utility header + 88 recovery/loading cases, keyboard recovery and all six
       synthetic standalone output workflows pass; physical/assistive checks remain.
 - [x] Standalone utility outer shell and requirement/eligibility headings.
-- [ ] Standalone file lists, sorting/reorder, progress, result/download states and landscape handling.
+- [x] Merge/Images constructors: shared queue, sorting/manual order, explicit/keyboard moves,
+      removal/Undo, busy/error/result states and guarded editor/download delivery.
+      112 layouts and actual reordered outputs pass; physical/assistive gates remain.
+- [x] Shared utility actions, segments, errors/progress and responsive landscape entry.
+      All six non-AI workflows, desktop/mobile editor and interaction checks pass.
+- [ ] Remaining utility bodies: Extract Images selection/results, Password options,
+      Compare inputs/results, Digital Signature fields/results and on-device AI states.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
@@ -347,6 +353,25 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Mark the persistent goal complete only after every required item is verified.
 
 ## Commit ledger
+
+### Completed PDF slice — constructors and shared utility controls
+
+Committed in CloakPDF `aba5643`; evidence and passing test output are in that
+repository’s `docs/air/evidence/constructors-2026-10-13.json` and companion log.
+
+- [x] Merge and Images to PDF: one Air file queue; wrapped names, optional previews,
+      sorting, drag/keyboard/visible moves, focus-safe removal and persistent Undo.
+- [x] Shared utility actions, segmented choices, errors and measured progress use
+      the pinned Air skins; preserve processing, output and secondary editor hand-offs.
+- [x] Preserve inputs on failure; guard duplicate processing and late delivery
+      after navigation. Show truthful completion without resetting it on a timer.
+- [x] Remove the standalone-only orientation gate after landscape checks; editor
+      already supports landscape. Verify all six non-AI utilities remain reachable.
+- [x] Validate both constructors' populated/error/result states at all contract
+      sizes/themes plus enlarged text, keyboard/coarse input, sorting/reorder/undo,
+      output page counts/order and editor hand-offs. Run required checks before commit.
+- [x] Audit replaced classes/motion and record evidence. Other utility-specific
+      option/result bodies and AI states remain separate upcoming pieces.
 
 Governance commits (no product runtime changes): Cloakyard `8d5dcea`, CloakPDF
 `5a1755f`, CloakIMG `9cd1200`, CloakDrop `5133124`. Each passed its applicable

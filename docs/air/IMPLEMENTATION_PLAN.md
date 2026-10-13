@@ -335,3 +335,25 @@ PDF utility headers and global error/loading recovery are implemented. Next is
 standalone file lists/actions/progress/results and landscape handling, followed by
 editor chrome and every specialised panel. Keep the existing orientation overlay
 visible in the pending inventory until the utilities work fully in landscape.
+
+### PDF constructors checkpoint — 2026-10-13
+
+CloakPDF `aba5643`: Merge and Images to PDF now share production file-queue controls, Air actions,
+segments, error/progress and persistent result states. All six utility entries work
+in landscape, so the obsolete orientation overlay has been removed. This supersedes
+the previous orientation note. Sorting/manual order, explicit moves, Undo/focus,
+duplicate/late delivery and real output order have evidence in CloakPDF's
+`docs/air/evidence/constructors-2026-10-13.json`. The canonical Air bundle is unchanged.
+
+Next bounded pieces, in order:
+
+1. Extract Images file summary, selection controls, thumbnail results and download
+   states; inspect empty/error/all/partial selection and actual PNG/ZIP outputs.
+2. Password fields/permissions and signature certificate fields/results. Preserve
+   encryption/signature behavior, secrets handling and existing disclosures.
+3. Compare input/replacement/results and desktop AI consent/model/chat states.
+4. Editor chrome, each panel, canvas, overlays and exports, then IMG → Resume → Drop.
+
+Use shared controls for every custom state. Remove replaced legacy selectors and
+references within each piece. Keep physical touch/software keyboard and assistive
+speech gates open; passing emulation or desktop browser tests does not close them.
