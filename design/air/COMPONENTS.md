@@ -23,9 +23,9 @@ and feature invariants. Mark inapplicable states with a reason, not silence.
 | Navigation / tool rail           | Shared landing and representative editor rails                                                                               | Complete route/back/focus states and long translated labels                                    |
 | Dialog / sheet                   | Export/date examples; long/invalid rename, safe remove/restore, menu handoff and origin focus                                | Stacked overlays, production forms/unsaved work, real software keyboard                        |
 | Popover / context menu / tooltip | Working anchored settings, equivalent More/context menus, delayed hover and named keyboard tooltip; 56 size/theme/text cases | Nested submenu/overlay dismissal, actual assistive technology, cross-engine and physical touch |
-| Notices / toast / progress       | Static semantic messages; live completion status                                                                             | Timed/retry/undo/long content, actual loading progress and focus-safe placement                |
+| Notices / toast / progress       | Semantic messages; real byte progress, unknown-total phase, cancellation and interruption/retry                              | Timed/retry/undo, actual product processing and assistive-technology announcements             |
 | Lists / layers / history         | Representative Resume repeated entries                                                                                       | Large lists, rename/reorder/undo, multi-selection, empty/error and mobile row actions          |
-| Upload / drop zone               | Contract defined                                                                                                             | Browse/drop parity, wrong type, corrupt/encrypted/large-file, progress/cancel/retry            |
+| Upload / drop zone               | Real text browse/drop/paste, retained selection, byte progress, abort/retry and stale-result tests                           | Real image/PDF/JSON adapters, encrypted files, device/engine and permission parity             |
 | Rich writing                     | Resume writing, repeated entries and partial dates                                                                           | Nested formatting, IME/paste/undo/selection, every template/output invariant                   |
 | Signature / drawing              | PDF draw/choose and toggles                                                                                                  | Real pen/touch/undo, import failure, rollback, placement and export                            |
 | Colour / curves / levels         | Representative IMG custom widgets                                                                                            | Remaining modes, keyboard reachability, clipping, touch and processing fidelity                |
@@ -37,20 +37,20 @@ and feature invariants. Mark inapplicable states with a reason, not silence.
 
 ## Current bounded pass
 
-Floating surfaces share opaque Air planes, restrained elevation and inset rows.
-Menus and precision popovers open immediately; tooltips have a deliberate hover
-delay and immediate keyboard access. Rename validation retains the previous name;
-confirmation starts on the safe action. Removal and restoration move focus to a
-surviving, meaningful control. All operations affect only the local study sample.
+File intake uses one matte plane, a ruled selected-file row and a separate text
+preview. Browse/drop/paste share validation; invalid acquisition keeps the previous
+file. Real UTF-8 reads report measured bytes, retain partial work on cancel/error,
+and reject stale results after replacement/removal. Busy actions preserve geometry
+and focus, while phase changes are announced independently of busy content.
 
-The next checkpoint extends that language into long reading and recovery pages:
-65ch prose, open composition, responsive contents navigation, explicit routes and
-single-contour fields. Failed save/retry keeps the local sample intact; downloads
-preserve exact UTF-8 text and unsaved navigation warns before leaving.
+The standalone file study covers known/unknown totals, manual inspection pause,
+interruption and retry. The latter modes are labelled study controls; it does not
+validate product formats. The reference is checked across 68 size/theme/text
+configurations and 27 interaction observations, plus nine lifecycle tests.
 
-Validation and screenshots are recorded in the dated **reading and recovery
-reference** section of `../../docs/air/validation.md`; earlier floating-control and
-compound-field evidence remains valid. Next: upload/drop and progress/cancel/retry,
-long lists/layers/history, nested overlays, remaining editor typography and
-specialised controls. Browser/device parity and real product lifecycles remain
-explicit gates before adoption.
+Validation and screenshots are recorded in the dated **file intake and measured
+progress reference** section of `../../docs/air/validation.md`. Earlier reading,
+recovery, floating-control and compound-field evidence remains valid. Next: long
+lists/layers/history, nested overlays, remaining editor typography and specialised
+controls. Browser/device parity and real product lifecycles remain explicit gates
+before adoption.

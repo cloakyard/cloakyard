@@ -194,8 +194,8 @@ skin or hiding a feature. Shared changes carry migration notes and are revalidat
 in every affected app. Do not perform a coordinated public release until the
 family comparison and user-requested review are complete.
 
-First implementation action after this planning checkpoint: finish and validate the
-reading/privacy/recovery base, then close the remaining base gates above. Production
+Reference execution has completed reading/recovery and file acquisition/processing
+states. Continue with long lists/layers/history, then close the remaining base gates above. Production
 work starts with the shared adapters and Cloakyard home in the stated order.
 
 ### Execution update — 2026-10-13
@@ -207,16 +207,16 @@ keyboard/no-JS navigation, failed retry/save, real session restore, exact UTF-8
 download and dirty-navigation protection. This closes the reference deliverable,
 not production policy, persistence or cross-browser approval.
 
-Next bounded piece: upload/drop and progress/cancel/retry with truthful state
-transitions and preserved inputs. Then long lists/layers/history, nested overlays,
+The subsequent file checkpoint below completes upload/drop and progress/cancel/retry
+at reference level. Next: long lists/layers/history, nested overlays,
 remaining editor-specific controls and device/browser gates. Detailed review still
 precedes shared production adapters and the product order above. Remove replaced
 legacy code and maintained references within each adopted slice, as required by
 the per-piece checklist; do not delete still-used production styles during review.
 
-### Next reference slice — file input and processing states
+### File input and processing reference — 2026-10-13
 
-Ground the next specimen in these existing consumers before changing its anatomy:
+The file specimen was grounded in these existing consumers before defining its anatomy:
 
 - PDF `src/components/FileDropZone.tsx` supplies caller-specific accepted formats,
   multiple-file mode and an encrypted-file replacement state; its input reset
@@ -245,3 +245,30 @@ Repeat the full responsive/theme/text matrix. Product format, encryption, codec,
 model and output tests remain rollout gates. Keep obsolete drop-zone status bars,
 palette overrides and spinner references on the removal list for their actual
 product migration, after verifying every consumer.
+
+The reference implementation now lives in canonical `files.html` and `files.mjs`.
+It reads local UTF-8 text with actual `FileReader` byte counts, retains partial
+preview on cancellation/error, rejects stale completions and bounds preview memory.
+Browse, drop and paste have one validation path. It uses the existing Air buttons,
+checkboxes, type, surfaces and theme tokens. No additional dependency or production
+import was introduced. The reference-only pause/interruption/unknown-total controls
+make otherwise brief states inspectable without inventing progress.
+
+Evidence is in `validation.md` and `evidence/air-03-files-2026-10-13.json`: 68
+responsive/theme/text cases, nine deterministic lifecycle tests, 27 interaction
+observations and six screenshots. Browser/OS permission and physical-device parity
+remain open. All bundles pin both new assets; standalone checks now include missing
+file-behavior and altered file-markup probes. Each new product inherits the complete
+contract and reference, not a sibling-repository runtime dependency.
+
+### Next bounded piece — lists, layers and history
+
+Audit the actual Resume repeated-entry groups, PDF page/object/history controls and
+IMG layers/history first. Define long-name/empty/selected/disabled/busy/error rows,
+search/filter/no-results, keyboard selection and safe rename/reorder/undo. Reorder
+needs explicit controls as well as dragging; focus must survive removal, filtering
+and restoration. Cover small/large lists and compact row actions without creating
+per-app selection colours, density scales or bespoke overlays. Extend the existing
+menu/dialog adapters where appropriate, then run the same responsive/theme/input,
+feature, output and portable-bundle gates. Keep real product adoption separate from
+reference completion, and remove replaced legacy code only within an adopted slice.

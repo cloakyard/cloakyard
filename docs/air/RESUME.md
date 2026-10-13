@@ -7,20 +7,27 @@ committing all saved work and an implementation plan. Follow
 [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) for execution order, commit slices
 and gates. No production redesign, push or deployment occurred in that planning step.
 
-The 2026-10-13 continuation completes the reading/recovery reference slice. The
-gallery links to `reading.html` and `recovery.html`; canonical ownership stays in
-`design/air/`. Both themes, 136 size/text configurations, keyboard/no-JS behavior,
-real sample save/restore/download and dirty-navigation protection are recorded in
-`validation.md`. Primary links and buttons now share the same token colours.
+The latest 2026-10-13 continuation completes file intake and processing at reference
+level, after the reading/recovery checkpoint. Open `docs/air/files.html` from the
+shared navigation or gallery. Canonical files live in `design/air/`; all five
+standalone bundles carry the same contract, CSS and versioned behavior. The study
+uses real local UTF-8 reads with measured progress, cancellation, stale-result
+protection and preserved preview. Simulated pause/interruption/unknown-total states
+are clearly labelled. It does not process real product formats.
 
-Synchronized copies are committed in PDF `bf0777a`, IMG `a63b87e`, Resume `e110863`
-and Drop `e35933c`. All applicable checks/builds and the final complete test suites
-pass. Resume's first full run failed two intermittent browser cases; a focused
-diagnostic and then all **288/288** passed without source/test changes. Keep the
-three dated logs under `docs/air/evidence/`; do not treat the failures as fixed.
-The next reference slice is file acquisition and processing states, detailed in
-the implementation plan. Runtime rollout, cross-engine/device checks and user
-visual sign-off remain open. Nothing was pushed or deployed.
+Evidence includes 68 viewport/theme/text configurations, 27 interaction observations,
+nine lifecycle tests, six screenshots and 70 isolated portability assertions. See
+`validation.md` for exact gate results and limitations. No production source imports,
+native UI, KERR, output styling, push or deployment changed. Continue with long
+lists/layers/history using the audit and acceptance outline in the implementation
+plan. Real product adapters, browser/device parity and detailed visual sign-off
+remain open. Historical Resume suite flakiness must not be represented as fixed.
+
+Final file-reference copies are saved in PDF `fe090e8`, IMG `d514ae6`, Resume
+`60947b9` and Drop `de00cb2`. Resume's first full serial run passed 288/288 in
+384.70s; its log is saved in `evidence/resume-files-gate-passed-2026-10-13.txt`.
+All temporary audit tabs and overrides are removed. The existing reference server
+and user tabs remain available.
 
 ## Saved checkpoints
 
@@ -68,8 +75,8 @@ visual sign-off remain open. Nothing was pushed or deployed.
 
 ## Next bounded pieces
 
-1. Continue with upload/drop and progress/cancel/retry, followed by long
-   lists/layers/history. Reading/recovery studies are now complete at reference
+1. Continue with long lists/layers/history. File intake and progress/cancel/retry
+   are complete at reference level; actual product adapters remain open. Reading/recovery studies are now complete at reference
    level (2026-10-13): shared navigation, 65ch reading, retry/save failures, actual
    session restore/text backup and unsaved navigation. See the dated evidence in
    `validation.md`. Continue editor typography/controls with

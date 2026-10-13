@@ -919,3 +919,98 @@ new module and gallery inline script syntax. Final gates:
 
 No product redesign, push or deployment occurred. The detailed design review and
 remaining component/browser/device requirements still precede rollout.
+
+## 2026-10-13 — file intake and measured progress reference
+
+Canonical `files.html` and `files.mjs` extend the shared page family with one matte
+file area and a separate text preview. Browse/drop/paste share validation, selected
+names wrap, one action leads each state, and progress uses actual completed bytes.
+The reference reads UTF-8 `.txt`/`.json` files up to 4 MiB with a safe, bounded
+1,200-code-point preview. It does not parse JSON, decode images, unlock PDFs,
+import résumés, upload, persist or modify the original file. Manual halfway pause,
+interruption and unknown-total presentation are explicitly labelled study controls.
+
+The source audit reviewed PDF's `FileDropZone.tsx`/`ProgressBar.tsx`, IMG's
+`DropZone.tsx` and Resume's `CloakWorkbenchLanding.tsx`. Domain formats, encryption,
+HEIC/HEIF MIME fallbacks, batch mode, preview cleanup and saved-JSON validation stay
+with their existing adapters. Clipboard denial now has an explicit shared recovery
+rule. Those actual product operations still need validation before adoption.
+
+Evidence: [raw file-study observations](evidence/air-03-files-2026-10-13.json).
+
+- **68 configurations:** 17 sizes × light/dark × normal/200% root text. Sizes are
+  1920×1080, 1440×900, 1366×768, 1280×800, 1024×768, 768×1024, 844×390,
+  320×568, 375×812, 390×844, 430×932, and 639/640/641/959/960/961 × 800.
+  Paused progress, selected file, preview and expanded study options were visible.
+  No horizontal document/component overflow or undersized inspected targets.
+  Coarse pointer emulation applied at widths ≤1024. Long filenames, translated
+  actions and unbroken preview text also fit 320px at 200% root text.
+- **27 interaction observations:** actual native Browse with known local fixtures,
+  exact UTF-8 output, same-file reselection/input reset, malformed UTF-8 failure,
+  cancel before a real FileReader callback, manual pause/continue, cancellation
+  with retained partial text, retry and focus recovery. Unknown totals omit current
+  and maximum values and show bytes/phase without a determinate fill. Keyboard
+  cancel returns focus; the skip link reaches the main region.
+- Synthetic DataTransfer/ClipboardEvent fixtures verify nested drag stability,
+  accepted drop propagation, missed-drop navigation protection, wrong type/count/
+  size retaining the valid file, and paste selection. Tab-local clipboard API
+  mocks verify denied/empty/successful reads and late results after selection or
+  cancellation. These are handler checks, not OS dragging or actual clipboard
+  permission evidence. No user clipboard was read or changed.
+- Nine deterministic lifecycle tests cover UTF-8 across 3-byte boundaries,
+  code-point preview bounds, empty/malformed files, invalid acquisition retaining
+  input, measured pause/resume, duplicate starts, cancellation/retry, interruption,
+  incomplete reads and late completions after cancel/replacement/removal/disposal.
+  Deferred readers intentionally ignore AbortSignal to verify stale results cannot
+  publish. Run `node --test scripts/test-air-file-workflow.mjs`.
+- Native no-JS content and navigation remain available; unavailable interactive
+  controls stay hidden. System light/dark, forced-colour keyboard focus and reduced
+  motion pass. No active animation or shader work occurs during reading. Console
+  has no warnings/errors; all observed resources are local CSS and two modules.
+- Six saved and visually inspected captures: laptop/light full page, laptop/light
+  working area, tablet/dark, 390px light/dark and 320px enlarged filename. Final
+  captures use the full emulated page surface because the host-panel screenshot
+  API cropped/scaled emulated viewports. Layout measurements use the page's actual
+  viewport and content bounds. Temporary tab/media/touch/viewport overrides were
+  cleared and the audit tab was closed; existing user tabs/server remain.
+
+Shared rules are in the portable contract's **File acquisition and measured
+progress** section. The component matrix, TODO and implementation handoff now point
+to lists/layers/history and real adapter gates. All 47 local page links/anchors
+resolve. Existing production styles remain in place until their tracked migration;
+no obsolete alternate upload design, duplicate dependency or compatibility alias
+was introduced. No production import changed; Cloakyard output remains
+**242.40 kB JS / 28.52 kB CSS**.
+
+This is Chromium reference evidence. Root-font stress is not browser zoom; actual
+Safari/Firefox, physical touch/software keyboards, screen readers, OS file dragging,
+clipboard permission flows and real format/processing/export invariants remain
+open. This checkpoint does not lock the visual system or authorize product rollout.
+
+Repository gates: Cloakyard format/lint, nine lifecycle tests and build pass. PDF
+check/dead-code, 355 tests in 34 files, build and 138-file asset limit pass. IMG
+check, 470 tests in 46 files, build and 100-file asset limit pass. Drop's 19-file
+Astro check, seven current assets and three-route build pass. All five design
+checkers and **70/70 isolated portability assertions** pass with 18 files per
+fixture, including missing-file-behavior and altered-file-page detection. Resume
+check/build/PWA and its complete serial suite pass: **288/288 tests in eight files,
+zero skips, 384.70s**, on the first full run of this checkpoint. Historical flakiness
+remains a separate concern; no assertions, timing or source were weakened.
+[Full serial gate log](evidence/resume-files-gate-passed-2026-10-13.txt).
+
+Final consistency review replaced the native disclosure marker with the existing
+Air chevron and Escape/focus behavior, removing duplicate summary styling. The
+file disclosure fills its working column rather than inheriting the reading
+column's 65ch cap. The 68-case matrix was repeated after the shared-disclosure
+change, with a final width-alignment spot check. The lifecycle module was unchanged.
+The evidence retains initial and final observations; the six unique screenshots
+show the final composition (the filename stress image excludes the disclosure).
+All final reference checks and bundle hashes were revalidated before commit.
+
+Final pinned revisions: contract `69673d876d00`, CSS `776013044c75`, file behavior
+`7ae954ca6df8`. Local sibling checkpoints: PDF `4dc0eb5` + `fe090e8`, IMG
+`df38956` + `d514ae6`, Drop `d65ad03` + `de00cb2`, Resume `60947b9`. The second
+PDF/IMG/Drop commits carry the final shared-disclosure consistency correction.
+Only reference markup/CSS/cache revisions changed after the product suites;
+format/type, standalone integrity, portability and affected UI checks were repeated.
+No product runtime or feature behavior changed, and nothing was pushed or deployed.

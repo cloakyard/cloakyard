@@ -89,6 +89,15 @@ the refined system is defined and reviewed as requested by the user.
       retained work, save/restore, exact text download and unsaved navigation.
       See the 2026-10-13 reading/recovery evidence; product policies and real
       persistence/processing adapters still require their own validation.
+- [x] Define and exercise shared file intake/progress in a standalone reference:
+      real browse/text reading, drop/paste handler parity, same-file reselection,
+      invalid selection preservation, known/unknown progress, cancellation/retry,
+      late-result guards and focus recovery. Validate 68 viewport/theme/text cases,
+      27 interaction observations and nine lifecycle tests. Study interruptions
+      are labelled; actual product formats and engines remain rollout gates.
+- [ ] Validate file adapters in real products: encrypted/corrupt PDF, HEIC/HEIF
+      including empty MIME types, batch images, résumé JSON/schema/draft protection,
+      clipboard permissions, resource disposal, export and processing failures.
 - [ ] Review and lock the detailed system before product migration.
 - [x] Build the actual Shaders-based Air light treatment: custom overlapping
       planes, deliberate pointer response, finite arrival and local assets.
@@ -341,3 +350,11 @@ The 2026-10-12 commit-all checkpoint saves the refined reference after fresh gat
 All local reference/contract checks pass. These are reference/audit/tooling commits,
 not product migrations; no push or deployment. The implementation plan defines
 shared-adapter adoption and small product slices with the same per-commit gates.
+
+The 2026-10-13 file-reference checkpoint defines portable intake, actual byte
+progress, cancellation/retry and stale-result handling, with 68 layout cases,
+27 interaction observations and nine lifecycle tests. All required product gates
+and 70 isolated portability assertions pass. Sibling final checkpoints: PDF
+`fe090e8`, IMG `d514ae6`, Resume `60947b9`, Drop `de00cb2`. Detailed evidence,
+limitations and the Resume log are in `docs/air/validation.md`. Production
+adoption and detailed visual sign-off remain open.

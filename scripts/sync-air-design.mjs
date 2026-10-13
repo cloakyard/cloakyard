@@ -62,6 +62,9 @@ ${appendix}
     const pagesHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/pages.mjs")))
       .digest("hex");
+    const filesHash = createHash("sha256")
+      .update(await readFile(resolve(repository, "design/air/files.mjs")))
+      .digest("hex");
     const cssPath = `${slug === "cloakdrop" ? "apps/site/" : ""}src/styles/air.css`;
     const overlayHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/assets/air-overlays.js")))
@@ -86,6 +89,8 @@ ${appendix}
       "reading.html",
       "recovery.html",
       "pages.mjs",
+      "files.html",
+      "files.mjs",
       "motion.mjs",
       "light-controller.mjs",
       "assets/air-light-shader.js",
@@ -98,7 +103,8 @@ ${appendix}
       if (asset.endsWith(".html"))
         content = content
           .replace("__AIR_STYLESHEET__", `../../${cssPath}?air=${cssHash.slice(0, 12)}`)
-          .replace("__AIR_PAGES_REVISION__", pagesHash.slice(0, 12));
+          .replace("__AIR_PAGES_REVISION__", pagesHash.slice(0, 12))
+          .replace("__AIR_FILES_REVISION__", filesHash.slice(0, 12));
       if (asset === "overlays-loader.mjs")
         content = content.replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12));
       await sync(resolve(roots, slug, "docs/air", asset), content);

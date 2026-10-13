@@ -13,6 +13,7 @@ They may add domain rules; they may not maintain alternate component designs.
 | [air.css](air.css)                                                                   | Semantic tokens and shared component shells                                                              |
 | [components.html](components.html)                                                   | Working specimens and representative editor/overlay compositions                                         |
 | [reading.html](reading.html), [recovery.html](recovery.html), [pages.mjs](pages.mjs) | Shared long-reading navigation, privacy layout, interruption and preserved-work studies                  |
+| [files.html](files.html), [files.mjs](files.mjs)                                     | Real local text intake, measured progress, cancellation, interruption/retry and stale-result guards      |
 | [overlays.tsx](overlays.tsx), [overlays-loader.mjs](overlays-loader.mjs)             | Unstyled accessible floating-control adapters, local sample operations and lazy loading                  |
 | [motion.mjs](motion.mjs), [LIGHT.md](LIGHT.md)                                       | Shared motion behavior and the optional Shaders light study                                              |
 | [products/](products/)                                                               | Product-specific routes, feature invariants and output exceptions                                        |
