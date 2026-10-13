@@ -97,6 +97,8 @@ ${appendix}
       "files.mjs",
       "motion.mjs",
       "light-controller.mjs",
+      "light-runtime.mjs",
+      "light-runtime.d.mts",
       "assets/air-light-shader.js",
       "assets/THIRD_PARTY_LICENSES.txt",
       "overlays-loader.mjs",

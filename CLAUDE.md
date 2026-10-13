@@ -49,10 +49,13 @@ there is no stored homepage preference to migrate. Content-sized container queri
 make enlarged text reflow; 44px targets apply on coarse input. Keep semantic links,
 labels, decorative icon hiding, keyboard focus and the skip link intact.
 
-`AirHorizon` uses the reference's two-plane still artwork and a finite 900ms CSS
-arrival. Reduced motion removes its movement, and forced colours omit the artwork.
-No canvas or shader payload is shipped on this page. Live light remains a separate
-performance-gated enhancement, including physical GPU/battery measurements.
+`AirHorizon` mounts the canonical `design/air/light-runtime.mjs`. Its pinned Shaders
+renderer is a separate lazy chunk, loaded only for visible, supported, unconstrained
+artwork. The 900ms arrival and spring pointer response stop at rest; offscreen/hidden
+states release the device. Reduced motion uses the still SVG, forced colours hide
+it. `vite.config.ts` enforces 350 kB gzip for the shader and 85 kB for the page entry,
+and ships dependency licenses. No shader is mounted inside an editor. Physical
+battery/thermal validation remains tracked separately after the user's live activation request.
 
 ## Metadata and scope
 

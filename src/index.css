@@ -161,22 +161,28 @@ summary:focus-visible {
   margin-top: var(--air-space-24);
 }
 .air-horizon {
-  display: block;
+  position: relative;
   width: 100%;
   height: 200px;
   margin-top: var(--air-space-24);
-  animation: horizon-arrive var(--air-motion-arrival) var(--air-ease-out) both;
+  color: var(--air-accent);
+  background-color: var(--air-page);
+  outline-color: var(--air-surface-soft);
   pointer-events: none;
+  overflow: clip;
 }
-@keyframes horizon-arrive {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+.air-horizon svg,
+.air-horizon canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.air-horizon canvas {
+  visibility: hidden;
+}
+.air-horizon[data-light-ready="true"] canvas {
+  visibility: visible;
 }
 .tools-section {
   margin-top: var(--air-space-24);
@@ -503,9 +509,6 @@ summary:focus-visible {
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .air-horizon {
-    animation: none;
-  }
   .text-link > svg,
   .text-link:hover:not(:focus-visible) > svg {
     transform: none;

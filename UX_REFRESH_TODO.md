@@ -201,8 +201,11 @@ with the device checks recorded, then continuing the rollout.
 - [x] Recheck the actual Shaders reference: six size/theme cases, finite arrival/pointer response,
       idle rest, reduced-motion no-download, offscreen disposal and unavailable-GPU fallback.
       Production SVG arrival passes desktop/phone with and without reduced motion.
-- [ ] Activate live shaders only after their separate payload/GPU/device performance gate.
-      The current homepage uses SVG; this item is not completed by reference verification.
+- [x] Activate the real shader in the homepage hero following the user's explicit request.
+      Production checks: 22 size/theme cases, idle/device cleanup, native Safari,
+      294.3 kB gzip lazy chunk, 350 kB enforced ceiling; local graphics timing recorded.
+- [ ] Complete physical mobile GPU/battery/thermal acceptance for the live shader.
+      Viewport emulation and queue-fence timings do not complete this device gate.
 - [ ] Complete physical touch and screen-reader navigation and record results.
 
 ## Phase 3 — CloakPDF reference product
@@ -210,8 +213,11 @@ with the device checks recorded, then continuing the rollout.
 - [x] Landing, file input, searchable toolkit rows, policy, common navigation/footer and encrypted-file recovery.
       88 layout cases, search/routing, synthetic standalone workflows and mobile editor checks pass.
 - [x] Update/offline notices use shared Air states; twelve layout/theme/text cases and busy focus verified.
-- [ ] Global loading/error boundary and standalone utility header/recovery adapters.
-- [ ] Standalone utility shell, file lists, sorting/reorder, progress and result/download states.
+- [x] Global error boundary, route loading and standalone utility header/recovery adapters.
+      132 utility header + 88 recovery/loading cases, keyboard recovery and all six
+      synthetic standalone output workflows pass; physical/assistive checks remain.
+- [x] Standalone utility outer shell and requirement/eligibility headings.
+- [ ] Standalone file lists, sorting/reorder, progress, result/download states and landscape handling.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.

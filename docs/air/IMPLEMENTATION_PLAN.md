@@ -323,3 +323,15 @@ idle, keyboard, reduced-motion, offscreen and unavailable-GPU checks. Production
 currently uses the finite SVG arrival. Live activation still needs its separate
 payload/GPU/device performance evidence. Keep physical-touch and assistive acceptance
 open and preserve pending full-product feature gates. No push/deployment occurred.
+
+### Live light and PDF recovery checkpoint — 2026-10-13
+
+The user's follow-up explicitly requested the missing shader. The real Cloakyard
+hero now uses the shared, locally bundled Shaders runtime, with production payload
+and lifecycle checks recorded in `validation.md`. Physical power/thermal coverage
+remains open; the homepage is no longer SVG-only.
+
+PDF utility headers and global error/loading recovery are implemented. Next is
+standalone file lists/actions/progress/results and landscape handling, followed by
+editor chrome and every specialised panel. Keep the existing orientation overlay
+visible in the pending inventory until the utilities work fully in landscape.

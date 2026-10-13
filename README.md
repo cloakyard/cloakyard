@@ -148,3 +148,12 @@ Contributions are welcome. Keep the homepage focused: it is a directory and stat
 Licensed under the [MIT License](LICENSE).
 
 <p align="center">Built with care by <a href="https://github.com/sumitsahoo">Sumit Sahoo</a></p>
+
+### Air light
+
+The homepage hero includes the shared, locally bundled Shaders light. It arrives
+once and responds to the mouse, then rests. Reduced motion, constrained devices
+and unavailable graphics use the still artwork. Code loads only when the effect
+is visible; hidden/offscreen effects release their device. The design reference
+and homepage share `design/air/light-runtime.mjs`. Runtime checks: `node --test
+scripts/test-air-light-runtime.mjs`; build budgets and licenses are enforced by Vite.

@@ -8,8 +8,9 @@ or ask for another design approval. `DESIGN_FREEZE.md` records the decision.
 canonical CSS, with open product rows, system typography/themes, in-flow mobile
 navigation, focus-safe anchors, KERR exploration links, principles/footer and a
 new social image. Legacy font assets, old cards/pipeline/KERR artwork and competing
-CSS are removed. No standalone study bundles or shader runtime enter production.
-The two-plane still artwork has a finite 900ms CSS arrival and reduced-motion path.
+CSS are removed. The live Shaders renderer is now a separate lazy production
+chunk with a finite 900ms arrival, pointer response and complete static fallback.
+The design gallery and overlay demo bundles do not enter production.
 
 The local preview is `http://127.0.0.1:8131/` (production build); the development server on port 8130 was stopped after verification.
 Existing reference/product servers are untouched. Evidence is in
@@ -31,10 +32,11 @@ Design lock commits: Cloakyard `ea26823`, PDF `e59bcd5`, IMG `0182ec0`, Resume
 
 Cloakyard now uses the four real local product marks at a consistent 36px. All
 22 size/theme cases pass; KERR remains a text exploration link. Sources and update
-rules are in `../brand-assets.md`. Shader verification is recorded in
-`evidence/shader-verification-2026-10-13.json`: live reference rendering and its
-fallbacks pass, while production retains the verified 900ms SVG arrival. GPU/device
-performance acceptance remains separate; no live shader is silently enabled.
+rules are in `../brand-assets.md`. The user's subsequent shader activation request is implemented in the homepage
+hero. Reference and production share `light-runtime.mjs`; the actual renderer is
+lazy, finite and capped. Evidence: `evidence/live-shader-2026-10-13.json` and the
+recorded pointer-response GIF. Production payload is 294.3 kB gzip with a 350 kB
+build ceiling. Physical battery/thermal acceptance remains open.
 
 **CloakPDF entry is committed as `dc20fe6`**: homepage/search, shared navigation/footer, privacy,
 file intake, encrypted-file recovery and PWA notices. Check/dead-code, 355 units,
@@ -52,8 +54,21 @@ complete. All five bundles pass all 75 assertions. Synchronized fix commits: IMG
 Resume `f361733`, Drop `5d79ab9`; PDF includes it in `dc20fe6`. Fresh IMG checks and
 470 tests, Resume checks and 288 tests, and Drop asset/Astro check/build all pass.
 
-Next: **CloakPDF standalone shell and global loading/error recovery**, then editor
-chrome, every panel, canvas and overlays. Continue IMG → Resume → Drop website →
+CloakPDF utility headers, global error boundary and route loading are committed
+as `70e0b70`. Recovery copy failure, retry focus, reload, 132 utility header cases
+and 88 recovery/loading cases pass. All six synthetic standalone output workflows
+and home-to-editor hand-offs pass again. The existing phone orientation overlay
+and deeper utility/editor surfaces remain pending.
+
+The reusable light lifecycle and its TypeScript declarations are synchronized in
+IMG `a894c1d`, Resume `e22f441` and Drop `bb02e6f`; PDF includes them in `70e0b70`.
+All 85 portability assertions and each product's applicable checks pass. This
+handoff's Cloakyard commit contains the production shader and recorded evidence.
+Temporary audit tabs and emulation are cleared; the existing homepage preview
+was refreshed to the live shader. Product editor tabs and preview servers remain.
+
+Next: **CloakPDF standalone file lists/actions/results**, then editor chrome, every
+panel, canvas and overlays. Continue IMG → Resume → Drop website →
 family comparison using `IMPLEMENTATION_PLAN.md`. No further general design
 approval is needed. Shared adapters/corrections return to Cloakyard first. KERR
 and native macOS UI remain unchanged. No push or deployment is included.
@@ -104,8 +119,8 @@ and native macOS UI remain unchanged. No push or deployment is included.
 
 ## Next bounded pieces
 
-1. Complete CloakPDF standalone utility shell and global loading/error recovery.
-   The entry/search/intake/policy/encrypted/PWA slice is already implemented.
+1. Complete CloakPDF standalone file lists/actions/results and landscape handling.
+   Entry/search/intake/policy/encrypted/PWA, utility headers and global recovery are implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported
    output checks. Then IMG → Resume → Drop website → full-family comparison.
 3. Shared corrections return to Cloakyard first and propagate as a pinned revision.

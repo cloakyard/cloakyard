@@ -986,3 +986,9 @@ journeys across all apps; it is not inferred from the pilot alone.
   light/dark, keyboard/touch/reduced-motion and long-copy inspection.
 - Work tracking: `UX_REFRESH_TODO.md`; source inventory and validation evidence in
   `docs/air/`. A documentation-only phase is not a completed visual migration.
+
+- The hero uses the canonical finite Shaders runtime with a static first paint. Lazy
+  shader payload must remain below 350 kB gzip; page entry below 85 kB gzip. Preserve
+  licenses, 30fps/pixel-ratio caps, no idle frames and complete effect cleanup.
+  Record measured startup and queue completion separately from physical battery
+  and thermal acceptance. Do not add the renderer to product editors.

@@ -1218,3 +1218,47 @@ Continuation commits: PDF `dc20fe6` (entry/recovery); IMG `d6f4cdb`, Resume
 `f361733`, Drop `5d79ab9` (isolated portability fixture only). Fresh IMG check +
 470 tests and Resume check + 288 tests (292.72s) pass. Drop asset sync, 19-file
 Astro check and static build pass. No IMG/Resume/Drop product runtime changes.
+
+## 2026-10-13 — live homepage shader
+
+The user explicitly requested the missing shader before continuing rollout. The
+production hero now runs the real Shaders 4.0.4 two-plane composition. The reference
+and React adapter share one portable lifecycle. Static SVG renders first; no
+shader runs in PDF or other editing workspaces. Corrected the canvas base to match
+the page exactly in both themes. React unmount cancels initialization, frames and
+observers/listeners. Async draws cannot overlap or drop pointer input arriving
+during submission. Resize failure restores the fallback.
+
+Verified 22 viewport/theme cases across all eleven Air dimensions. Native Safari and Firefox
+render the light and preserve the tools anchor/focus. Production warm first draw
+on this Mac was 53–64ms. Instrumented actual queue submissions completed in
+0.5–3.1ms (GPU queue completion plus driver/callback scheduling, not hardware GPU
+timestamps); no long tasks were observed in the measured interaction window.
+Frames stop at idle. Offscreen and simulated-hidden checks each destroyed their
+actual device. Unavailable WebGPU restores the still artwork; cold reduced motion
+downloads no renderer. Reference still/replay controls remain functional.
+
+Production output: page entry 75.59 kB gzip; separately requested renderer 294.30 kB
+gzip. Build enforces 85/350 kB ceilings and emits the dependency license file. The
+large optional-chunk warning remains visible. Five controlled lifecycle tests pass,
+covering idle rest, pending-init cleanup, input during draw, reduced motion and
+resize failure; browser evidence tests the real renderer separately.
+
+[Evidence](evidence/live-shader-2026-10-13.json) ·
+[Recorded pointer response](evidence/live-shader-pointer.gif) ·
+[Safari rendering](evidence/live-shader-safari.png).
+Physical mobile GPU/battery/thermal measurements remain open. This user-authorized
+local implementation supersedes the preceding still-only state, without claiming
+those physical checks passed. No push or deployment.
+
+The shared runtime declarations also travel in the portable bundle. All 85
+isolated assertions pass across five products. Fresh IMG 470/470 and Resume
+288/288 (290.62s) suites and Drop asset/Astro check/build pass; sibling runtime
+imports remain unchanged.
+
+Saved continuation: PDF `70e0b70` implements utility headers, route loading and
+global recovery with 88 recovery/loading and 132 utility-header layout cases,
+355 unit tests, all six standalone output workflows, home-to-editor hand-offs,
+dead-code and production build checks passing. Its own validation record and
+evidence retain the remaining landscape, deeper-tool and physical-device limits.
+Shared lifecycle commits: IMG `a894c1d`, Resume `e22f441`, Drop `bb02e6f`.

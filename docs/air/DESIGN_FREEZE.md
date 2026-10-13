@@ -93,3 +93,11 @@ page. A shared correction returns here first and is propagated before continuing
   user personally inspected every state. No additional design approval is needed.
 - Runtime adoption: **AIR-04 implemented locally**. Validation evidence and any
   remaining device checks are recorded separately. No push or deployment is included.
+
+### Live shader activation — 2026-10-13
+
+The user subsequently asked “Where is the shader animation? once done continue
+with rest”, authorizing the live hero implementation. The shared runtime is now
+used by the real homepage after local payload, rendering and lifecycle validation.
+This supersedes the still-only rollout choice. Physical mobile battery/thermal
+acceptance remains open; it is not implied by local Mac measurements.
