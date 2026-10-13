@@ -7,6 +7,21 @@ committing all saved work and an implementation plan. Follow
 [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) for execution order, commit slices
 and gates. No production redesign, push or deployment occurred in that planning step.
 
+The 2026-10-13 continuation completes the reading/recovery reference slice. The
+gallery links to `reading.html` and `recovery.html`; canonical ownership stays in
+`design/air/`. Both themes, 136 size/text configurations, keyboard/no-JS behavior,
+real sample save/restore/download and dirty-navigation protection are recorded in
+`validation.md`. Primary links and buttons now share the same token colours.
+
+Synchronized copies are committed in PDF `bf0777a`, IMG `a63b87e`, Resume `e110863`
+and Drop `e35933c`. All applicable checks/builds and the final complete test suites
+pass. Resume's first full run failed two intermittent browser cases; a focused
+diagnostic and then all **288/288** passed without source/test changes. Keep the
+three dated logs under `docs/air/evidence/`; do not treat the failures as fixed.
+The next reference slice is file acquisition and processing states, detailed in
+the implementation plan. Runtime rollout, cross-engine/device checks and user
+visual sign-off remain open. Nothing was pushed or deployed.
+
 ## Saved checkpoints
 
 - Cloakyard `0f32115`: shared motion and portable bundle integrity; `b2fbee4`:
@@ -53,10 +68,12 @@ and gates. No production redesign, push or deployment occurred in that planning 
 
 ## Next bounded pieces
 
-1. Add explicit privacy/long-reading and recovery-page studies. Keep the same
-   family navigation, reading measure and action hierarchy across both themes.
-   Continue custom editor typography/controls with `design/air/COMPONENTS.md`;
-   preserve output geometry and single-contour fields.
+1. Continue with upload/drop and progress/cancel/retry, followed by long
+   lists/layers/history. Reading/recovery studies are now complete at reference
+   level (2026-10-13): shared navigation, 65ch reading, retry/save failures, actual
+   session restore/text backup and unsaved navigation. See the dated evidence in
+   `validation.md`. Continue editor typography/controls with
+   `design/air/COMPONENTS.md`; preserve output geometry and single-contour fields.
 2. Cover stacked/nested overlays, submenu dismissal and real product forms. The
    floating study validates local sample behavior; real async adapters, processing
    failures and unsaved-work guards remain rollout gates. Rebuild `overlays.tsx`

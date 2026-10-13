@@ -83,8 +83,12 @@ the refined system is defined and reviewed as requested by the user.
   Shared primitive specimens and enlarged export traversal now pass; custom
   editor chrome/controls remain. Preserve document/canvas output dimensions;
   do not mistake root-font stress for browser zoom.
-- [ ] Add explicit privacy/long-reading and recovery-page compositions to the reference,
+- [x] Add explicit privacy/long-reading and recovery-page compositions to the reference,
       using the same navigation, reading measure, action hierarchy and both themes.
+      Validate 136 viewport/theme/text combinations, keyboard/no-JS navigation,
+      retained work, save/restore, exact text download and unsaved navigation.
+      See the 2026-10-13 reading/recovery evidence; product policies and real
+      persistence/processing adapters still require their own validation.
 - [ ] Review and lock the detailed system before product migration.
 - [x] Build the actual Shaders-based Air light treatment: custom overlapping
       planes, deliberate pointer response, finite arrival and local assets.

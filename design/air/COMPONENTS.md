@@ -31,9 +31,9 @@ and feature invariants. Mark inapplicable states with a reason, not silence.
 | Colour / curves / levels         | Representative IMG custom widgets                                                                                            | Remaining modes, keyboard reachability, clipping, touch and processing fidelity                |
 | Canvas / document chrome         | Three editor compositions and compact expanded controls                                                                      | Real zoom/pan/selection handles/context controls and all object states                         |
 | Search / template / icon library | Local filtering/clear/no-results, composition boundary and focus return                                                      | Real loading/error/results navigation/selection; large libraries and long names                |
-| AI / privacy / recovery          | Contract and domain invariants defined                                                                                       | Model consent/download/cache/retry, privacy review and recovery-page specimens                 |
+| AI / privacy / recovery          | Long-reading privacy and recovery studies; retained note, real session save/restore/download and unload guard                | Model consent/download/cache/retry, actual product persistence/failures and policy review      |
 | PWA / install / update           | Contract defined                                                                                                             | Offline/update/unsaved-work prompts and interruption behavior                                  |
-| Landing / reading / footer       | Landing family composition and compact navigation                                                                            | Privacy/long-reading/recovery compositions; complete production routes                         |
+| Landing / reading / footer       | Landing plus standalone reading/recovery compositions; shared navigation/footer, 136 layout/theme/text cases                 | Complete production routes, browser/device/assistive-technology parity                         |
 
 ## Current bounded pass
 
@@ -43,9 +43,14 @@ delay and immediate keyboard access. Rename validation retains the previous name
 confirmation starts on the safe action. Removal and restoration move focus to a
 surviving, meaningful control. All operations affect only the local study sample.
 
-Validation and screenshots are recorded in the dated **floating controls and safe
-action handoffs** section of `../../docs/air/validation.md`. The earlier compound
-field/action-state evidence remains valid. The family TODO keeps unresolved work
-above open. Next: privacy/long-reading/recovery compositions, remaining editor
-typography and specialised controls; nested overlays and browser/device parity
-remain explicit gates before product adoption.
+The next checkpoint extends that language into long reading and recovery pages:
+65ch prose, open composition, responsive contents navigation, explicit routes and
+single-contour fields. Failed save/retry keeps the local sample intact; downloads
+preserve exact UTF-8 text and unsaved navigation warns before leaving.
+
+Validation and screenshots are recorded in the dated **reading and recovery
+reference** section of `../../docs/air/validation.md`; earlier floating-control and
+compound-field evidence remains valid. Next: upload/drop and progress/cancel/retry,
+long lists/layers/history, nested overlays, remaining editor typography and
+specialised controls. Browser/device parity and real product lifecycles remain
+explicit gates before adoption.

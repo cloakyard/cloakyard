@@ -197,3 +197,51 @@ family comparison and user-requested review are complete.
 First implementation action after this planning checkpoint: finish and validate the
 reading/privacy/recovery base, then close the remaining base gates above. Production
 work starts with the shared adapters and Cloakyard home in the stated order.
+
+### Execution update — 2026-10-13
+
+The reading/recovery reference piece is implemented and validated in Cloakyard.
+Canonical `reading.html`, `recovery.html` and `pages.mjs` now travel in the pinned
+standalone bundle. Evidence covers both themes, all size classes, 200% text stress,
+keyboard/no-JS navigation, failed retry/save, real session restore, exact UTF-8
+download and dirty-navigation protection. This closes the reference deliverable,
+not production policy, persistence or cross-browser approval.
+
+Next bounded piece: upload/drop and progress/cancel/retry with truthful state
+transitions and preserved inputs. Then long lists/layers/history, nested overlays,
+remaining editor-specific controls and device/browser gates. Detailed review still
+precedes shared production adapters and the product order above. Remove replaced
+legacy code and maintained references within each adopted slice, as required by
+the per-piece checklist; do not delete still-used production styles during review.
+
+### Next reference slice — file input and processing states
+
+Ground the next specimen in these existing consumers before changing its anatomy:
+
+- PDF `src/components/FileDropZone.tsx` supplies caller-specific accepted formats,
+  multiple-file mode and an encrypted-file replacement state; its input reset
+  permits choosing the same file again. `ProgressBar.tsx` reports completed/total
+  units and handles unknown totals. Preserve the distinction between acquisition,
+  encryption recovery and processing.
+- IMG `src/components/DropZone.tsx` supports browse/drop/paste, single/batch modes
+  and selected previews. HEIC/HEIF uses local decoding, including empty MIME types;
+  changed files cancel stale previews and release resources. Retain these features
+  and define visible unsupported/denied-clipboard feedback in the shared state map.
+- Resume `src/components/CloakWorkbenchLanding.tsx` loads saved JSON through
+  `onLoadFile`, alongside blank/sample/resume actions. This is a saved-document
+  workflow, not an image importer; preserve validation and draft protection.
+
+Define one shared shell with explicit Browse, optional Paste, format/help copy,
+selected filename/size and remove/change actions. Keep the drop affordance useful
+on touch and keyboard. Cover idle, drag-over, selected, invalid, busy, cancelled,
+failed, retry and complete; distinguish unknown progress from measured progress.
+The reference must clearly name any simulated outcome and must not suggest it
+has decoded or validated a real PDF/image when it has only read a sample file.
+
+Acceptance includes browse/drop parity, same-file reselection, long names, invalid
+selection preserving prior work, duplicate submission, cancellation during work,
+late results after replacement, focus/live announcements and resource disposal.
+Repeat the full responsive/theme/text matrix. Product format, encryption, codec,
+model and output tests remain rollout gates. Keep obsolete drop-zone status bars,
+palette overrides and spinner references on the removal list for their actual
+product migration, after verifying every consumer.

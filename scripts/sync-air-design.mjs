@@ -38,7 +38,7 @@ for (const [slug, name, destinations] of products) {
 name: ${name} — Cloakyard Air
 version: 1.0.0
 status: design-review
-date: 2026-10-12
+date: 2026-10-13
 scope: complete-web-product
 source-repository: ${sourceRepository}
 source-directory: design/air
@@ -59,6 +59,9 @@ ${appendix}
   if (bundle) {
     const css = await readFile(resolve(repository, "design/air/air.css"), "utf8");
     const cssHash = createHash("sha256").update(css).digest("hex");
+    const pagesHash = createHash("sha256")
+      .update(await readFile(resolve(repository, "design/air/pages.mjs")))
+      .digest("hex");
     const cssPath = `${slug === "cloakdrop" ? "apps/site/" : ""}src/styles/air.css`;
     const overlayHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/assets/air-overlays.js")))
@@ -80,6 +83,9 @@ ${appendix}
     }
     const studyAssets = { "components.html": createHash("sha256").update(gallery).digest("hex") };
     for (const asset of [
+      "reading.html",
+      "recovery.html",
+      "pages.mjs",
       "motion.mjs",
       "light-controller.mjs",
       "assets/air-light-shader.js",
@@ -89,6 +95,10 @@ ${appendix}
       "assets/OVERLAY_LICENSES.txt",
     ]) {
       let content = await readFile(resolve(repository, "design/air", asset), "utf8");
+      if (asset.endsWith(".html"))
+        content = content
+          .replace("__AIR_STYLESHEET__", `../../${cssPath}?air=${cssHash.slice(0, 12)}`)
+          .replace("__AIR_PAGES_REVISION__", pagesHash.slice(0, 12));
       if (asset === "overlays-loader.mjs")
         content = content.replace("__AIR_OVERLAY_REVISION__", overlayHash.slice(0, 12));
       await sync(resolve(roots, slug, "docs/air", asset), content);

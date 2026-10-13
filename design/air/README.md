@@ -7,16 +7,17 @@ This directory in **cloakyard/cloakyard is the canonical source** for every Air 
 app and landing page. Other repositories derive pinned, standalone copies from it.
 They may add domain rules; they may not maintain alternate component designs.
 
-| Source                                                                   | Owns                                                                                                     |
-| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| [contract.md](contract.md)                                               | Normative foundations, component anatomy/states, behavior, responsiveness, themes, motion and exceptions |
-| [air.css](air.css)                                                       | Semantic tokens and shared component shells                                                              |
-| [components.html](components.html)                                       | Working specimens and representative editor/overlay compositions                                         |
-| [overlays.tsx](overlays.tsx), [overlays-loader.mjs](overlays-loader.mjs) | Unstyled accessible floating-control adapters, local sample operations and lazy loading                  |
-| [motion.mjs](motion.mjs), [LIGHT.md](LIGHT.md)                           | Shared motion behavior and the optional Shaders light study                                              |
-| [products/](products/)                                                   | Product-specific routes, feature invariants and output exceptions                                        |
-| [COMPONENTS.md](COMPONENTS.md)                                           | Component refinement coverage and remaining review gates                                                 |
-| [../../docs/air/validation.md](../../docs/air/validation.md)             | Actual checks, visual evidence and limitations                                                           |
+| Source                                                                               | Owns                                                                                                     |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| [contract.md](contract.md)                                                           | Normative foundations, component anatomy/states, behavior, responsiveness, themes, motion and exceptions |
+| [air.css](air.css)                                                                   | Semantic tokens and shared component shells                                                              |
+| [components.html](components.html)                                                   | Working specimens and representative editor/overlay compositions                                         |
+| [reading.html](reading.html), [recovery.html](recovery.html), [pages.mjs](pages.mjs) | Shared long-reading navigation, privacy layout, interruption and preserved-work studies                  |
+| [overlays.tsx](overlays.tsx), [overlays-loader.mjs](overlays-loader.mjs)             | Unstyled accessible floating-control adapters, local sample operations and lazy loading                  |
+| [motion.mjs](motion.mjs), [LIGHT.md](LIGHT.md)                                       | Shared motion behavior and the optional Shaders light study                                              |
+| [products/](products/)                                                               | Product-specific routes, feature invariants and output exceptions                                        |
+| [COMPONENTS.md](COMPONENTS.md)                                                       | Component refinement coverage and remaining review gates                                                 |
+| [../../docs/air/validation.md](../../docs/air/validation.md)                         | Actual checks, visual evidence and limitations                                                           |
 
 `contract.md` is the visual and interaction contract. Product appendices preserve
 domain requirements. `air.css` contains the shared tokens and opt-in component
@@ -66,6 +67,13 @@ that a product has been migrated. The gallery is available at
 `docs/air/components.html` when serving the repository root with a local static
 server; it uses the exact local production bundle.
 
+The gallery links to `docs/air/reading.html` and `docs/air/recovery.html`. Their
+appearance choice travels between reference pages in the URL; system remains the
+default. Reading content and native contents navigation work without JavaScript.
+Recovery uses a local sample note: session storage and text download are real,
+while the preview and unavailable-storage controls are explicitly simulated.
+Neither page replaces a product policy or its actual persistence/error lifecycle.
+
 The floating-control study bundles pinned Base UI 1.9.0 and React into one local
 module with its license inventory. Air CSS owns every visible part; the unstyled
 library owns focus, navigation, dismissal and collision handling. The module loads
@@ -108,6 +116,8 @@ currently covers buttons, fields, select, check/radio, segments, slider, notices
 paper surround, representative PDF/IMG/Resume editor panels, responsive dialogs,
 settings popovers, delayed hover/keyboard tooltips, action/context menus, invalid
 rename forms and safe remove/restore handoffs.
+Standalone reading/recovery pages extend the same navigation, typography, field
+and action rules to long content, not-found, retry and unsaved-work states.
 Data-entry fields use one continuous border and one replacement focus contour; no
 separate bottom accent, inset shadow, or stacked focus ring is permitted. Product-specific galleries must extend
 that coverage to real editor, layer, colour/curve, AI and export states.

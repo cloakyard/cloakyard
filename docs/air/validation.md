@@ -824,3 +824,98 @@ adapter strategy, product order, commit slices, validation matrix, output invari
 legacy cleanup and final family review. The existing exhaustive TODO remains the
 scope tracker. The plan retains detailed visual review before runtime adoption;
 this request was to commit and plan, so no product implementation began.
+
+## 2026-10-13 — reading and recovery reference
+
+Canonical `design/air/reading.html`, `recovery.html` and `pages.mjs` add full-page
+patterns to the reference. Shared navigation/footer, quiet display typography,
+65ch prose, a responsive native contents disclosure and ruled definition rows
+extend Air beyond the gallery. Privacy wording is explicitly illustrative; no
+product policy, router, processing, persistence or native source is replaced.
+The recovery page covers a missing page, preview interruption and an editable
+sample note. Storage failure and preview outcomes are labelled simulations;
+session saving/restoring, the text backup and unsaved-navigation guard are real.
+
+The portable contract now defines these patterns, keyboard behavior, reading
+measure, truthful recovery copy and output boundaries. All five bundles include
+the pages and content-versioned behavior module. Gallery links carry the explicit
+appearance choice; system remains the default. The integrity checks reject missing
+page behavior and altered reading markup in an isolated standalone checkout.
+
+Evidence: [raw observations](evidence/air-03-reading-recovery-2026-10-13.json).
+
+- **136 configurations:** two pages × 17 sizes × light/dark × normal/200% root
+  text. Sizes: 1920×1080, 1440×900, 1366×768, 1280×800, 1024×768, 768×1024,
+  844×390, 320×568, 375×812, 390×844, 430×932; breakpoint neighbours 639/640/641
+  and 959/960/961 at 800px high. Coarse input was emulated at widths ≤1024.
+  No horizontal container/text overflow or undersized checked targets; one h1 per
+  page. No external network assets. The local inline SVG select arrow is not an
+  external request; the measurement excludes data URLs from that classification.
+- Keyboard skip/section links move focus to their real targets. Contents Escape
+  collapses and returns focus to its summary. Native contents still toggles with
+  JavaScript disabled; reading content remains available and unavailable sample
+  actions stay hidden. System light/dark, reduced-motion and forced-colour focus
+  were checked. Recovery and reading have no ambient animation or shader work.
+- Failed save and preview retry preserve exact note text and initiating focus.
+  Storage failure does not mark valid note contents invalid. Successful retry
+  updates the heading as well as the status; successful save restores on reload.
+  An unsaved edit emits the browser's beforeunload dialog and cancelled navigation
+  retains the page. Saving clears the guard. A real downloaded UTF-8 backup matches
+  the edited note including newlines, accents and Japanese characters byte-for-byte.
+- The initial data-URL download did not complete in the embedded browser. Replacing
+  it with a temporary local Blob URL and attached download anchor fixed delivery;
+  the URL is released after the browser begins reading it. The interface requests
+  verification of the downloaded file and does not falsely claim durable saving.
+- Gallery appearance handoffs and the existing export dialog pass after settled
+  load. The raw record retains an early click that preceded opening, followed by
+  the successful focused dialog check. No console warnings/errors were observed.
+  Long translated recovery actions also fit 320px at 200% text.
+- Final specificity review caught the page link reset overriding primary-link
+  text colour. Excluding `.air-button` from that reset restores exact link/button
+  parity. Eight rendered checks across laptop/tablet/390px/320px in both themes
+  give **14.83:1 light / 13.92:1 dark** primary-action text contrast. Layout bounds
+  remain intact; this correction changes colour only.
+- Six saved, visually inspected screenshots: laptop reading/light, tablet
+  reading/dark, phone recovery/light and dark, 320px reading at 200% text, and
+  laptop missing-page/retry actions in dark mode.
+  Audit tab and temporary viewport/touch/media/font overrides were removed.
+
+This is Chromium reference evidence. Root-font enlargement is not browser zoom;
+Safari/Firefox, physical touch/software keyboard, assistive technology and actual
+product persistence/failure flows remain open. The sample's 404 label does not
+assert a server status. Detailed user review remains required before rollout.
+
+Scope review found no production Air imports, output-style changes, new external
+dependencies or native edits. New page styles are shared and token-based; obsolete
+data-URL download code was removed. Existing production styles remain tracked for
+removal in their migration slices. The component matrix, exhaustive TODO, handoff
+and implementation plan now point to upload/drop and progress/cancel/retry next.
+
+Validation also resolves all **32 local page links and anchors** and checks the
+new module and gallery inline script syntax. Final gates:
+
+- Cloakyard: `vp check` (87 formatted / 29 linted), `vp build`, syntax and diff
+  checks pass. Production output remains **242.40kB JS / 28.52kB CSS**.
+- All five standalone design checkers and **60/60 portability assertions** pass
+  with 16 files per isolated fixture. Six complete DESIGN.md copies match the
+  canonical contract (`cc0c56b98f5a`); final CSS is `d5d711391750`, page behavior
+  `11af689c6047`. These are design-review assets, not runtime adoption.
+- PDF: check, dead-code check, **355/355 tests** in 34 files, build and 138-file
+  deployment limit pass. Saved as `bf0777a`.
+- IMG: check, **470/470 tests** in 46 files, build and 100-file deployment limit
+  pass. Saved as `a63b87e`.
+- Drop: seven assets current, Astro check (19 files, no errors/warnings/hints),
+  three-route build and standalone checks pass. Saved as `e35933c`; no native edits.
+- Resume: check, build/PWA and final **288/288 serial tests** in eight files,
+  zero skips, pass in **384.00s**. Saved as `e110863`. The first full run had two
+  failures: a detached Remove button after viewport reflow and a Classic
+  Sidebar/Letter readiness timeout. Both passed a focused diagnostic run, then the
+  complete suite passed unchanged. No runtime source, assertion, timeout, retry
+  or test was modified. This is a passing commit gate, not a claimed fix for the
+  intermittent failures. Logs:
+  [initial full run](evidence/resume-reading-gate-failed-2026-10-13.txt),
+  [focused diagnostic](evidence/resume-reading-gate-targeted-2026-10-13.txt),
+  [final full run](evidence/resume-reading-gate-passed-2026-10-13.txt).
+
+No product redesign, push or deployment occurred. The detailed design review and
+remaining component/browser/device requirements still precede rollout.
