@@ -1,11 +1,12 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air locked; AIR-04 implemented locally, device acceptance remains** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — AIR-04 committed; CloakPDF entry implemented, device acceptance remains** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
-commit slices and acceptance gates. Detailed design review is complete. AIR-04 is implemented locally; its remaining
-acceptance checks and the other app migrations stay open. No deployment or push has occurred.
+commit slices and acceptance gates. Detailed design review is complete. AIR-04 is committed as `39c08f9`; CloakPDF entry
+is committed as `dc20fe6` after local verification. Remaining device acceptance and deeper product
+surfaces stay open. No deployment or push has occurred.
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
@@ -187,7 +188,8 @@ with the device checks recorded, then continuing the rollout.
 
 - [x] Apply shared typography, surfaces, controls, navigation, focus and spacing.
 - [x] Replace the technical hero/pipeline with the Air promise and restrained light treatment.
-- [x] Refresh product cards; retain correct destinations, platform, status and privacy truth.
+- [x] Refresh product rows; retain correct destinations, platform, status and privacy truth.
+- [x] Use each product’s real local SVG mark at a consistent 36px; verify eleven dimensions in both themes.
 - [x] Replace KERR's entire illustrated preview with a concise exploration link.
 - [x] Refresh principles, footer, mobile navigation and long-link handling.
 - [x] Keep source, author, licence, privacy and family links correct.
@@ -196,19 +198,27 @@ with the device checks recorded, then continuing the rollout.
 - [x] Validate all links/anchors, keyboard focus, initial/return hash navigation and no runtime errors.
 - [x] Check/type/build, 76 layouts, Chromium journeys, Safari/Firefox and 13 destination checks pass.
       Physical touch and screen-reader interaction remain open; user authorized the local commit with those gaps recorded.
+- [x] Recheck the actual Shaders reference: six size/theme cases, finite arrival/pointer response,
+      idle rest, reduced-motion no-download, offscreen disposal and unavailable-GPU fallback.
+      Production SVG arrival passes desktop/phone with and without reduced motion.
 - [ ] Activate live shaders only after their separate payload/GPU/device performance gate.
+      The current homepage uses SVG; this item is not completed by reference verification.
 - [ ] Complete physical touch and screen-reader navigation and record results.
 
 ## Phase 3 — CloakPDF reference product
 
-- [ ] Landing, file input, searchable toolkit, tool cards, policy, footer and loading/error boundary.
+- [x] Landing, file input, searchable toolkit rows, policy, common navigation/footer and encrypted-file recovery.
+      88 layout cases, search/routing, synthetic standalone workflows and mobile editor checks pass.
+- [x] Update/offline notices use shared Air states; twelve layout/theme/text cases and busy focus verified.
+- [ ] Global loading/error boundary and standalone utility header/recovery adapters.
 - [ ] Standalone utility shell, file lists, sorting/reorder, progress and result/download states.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
 - [ ] Every editor panel listed in the surface inventory, including advanced/disclosed controls.
 - [ ] Export modal: PDF/images/contact-sheet/split, options, busy/error and result flows.
-- [ ] Command palette, all modal shells, AI consent/model choice/details, notifications and PWA prompt.
+- [ ] Command palette, all modal shells, AI consent/model choice/details and editor notifications.
+      Entry PWA prompt is implemented above; editor integration acceptance remains.
 - [ ] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
 - [ ] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
 - [ ] Feature sweep: redaction/smart erase, metadata/scrub, forms/autofill, links/bookmarks/attachments, OCR.

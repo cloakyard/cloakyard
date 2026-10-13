@@ -1,0 +1,386 @@
+{
+  "date": "2026-10-13",
+  "scope": "Live Shaders 4.0.4 reference and production homepage SVG arrival; shader is not activated in production",
+  "environment": "Local Mac Chromium. Viewport, theme and coarse input emulation; not physical mobile hardware.",
+  "layouts": [
+    {
+      "spec": {
+        "w": 1440,
+        "h": 1000,
+        "touch": false
+      },
+      "theme": "light",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "coarse": false,
+      "metrics": "Local Shaders 4.0.4 · first draw 73 ms · 31 submitted frames · 0.51 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "rect": {
+        "height": 200,
+        "width": 1318
+      },
+      "state": {
+        "lightFirstDraw": "73.1",
+        "lightFrames": "31",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "spec": {
+        "w": 1440,
+        "h": 1000,
+        "touch": false
+      },
+      "theme": "dark",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "coarse": false,
+      "metrics": "Local Shaders 4.0.4 · first draw 73 ms · 32 submitted frames · 0.50 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "rect": {
+        "height": 200,
+        "width": 1318
+      },
+      "state": {
+        "lightFirstDraw": "73.1",
+        "lightFrames": "32",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "spec": {
+        "w": 768,
+        "h": 1024,
+        "touch": true
+      },
+      "theme": "light",
+      "canvas": {
+        "height": 200,
+        "width": 718
+      },
+      "coarse": true,
+      "metrics": "Local Shaders 4.0.4 · first draw 73 ms · 35 submitted frames · 0.49 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "rect": {
+        "height": 200,
+        "width": 718
+      },
+      "state": {
+        "lightFirstDraw": "73.1",
+        "lightFrames": "35",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "spec": {
+        "w": 768,
+        "h": 1024,
+        "touch": true
+      },
+      "theme": "dark",
+      "canvas": {
+        "height": 200,
+        "width": 718
+      },
+      "coarse": true,
+      "metrics": "Local Shaders 4.0.4 · first draw 73 ms · 36 submitted frames · 0.49 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "rect": {
+        "height": 200,
+        "width": 718
+      },
+      "state": {
+        "lightFirstDraw": "73.1",
+        "lightFrames": "36",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "spec": {
+        "w": 390,
+        "h": 844,
+        "touch": true
+      },
+      "theme": "light",
+      "canvas": {
+        "height": 200,
+        "width": 364
+      },
+      "coarse": true,
+      "metrics": "Local Shaders 4.0.4 · first draw 73 ms · 38 submitted frames · 0.48 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "rect": {
+        "height": 200,
+        "width": 364
+      },
+      "state": {
+        "lightFirstDraw": "73.1",
+        "lightFrames": "38",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "spec": {
+        "w": 390,
+        "h": 844,
+        "touch": true
+      },
+      "theme": "dark",
+      "canvas": {
+        "height": 200,
+        "width": 364
+      },
+      "coarse": true,
+      "metrics": "Local Shaders 4.0.4 · first draw 73 ms · 39 submitted frames · 0.48 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "rect": {
+        "height": 200,
+        "width": 364
+      },
+      "state": {
+        "lightFirstDraw": "73.1",
+        "lightFrames": "39",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "test": "phone arrival settles and stops",
+      "samples": [
+        {
+          "frames": 46,
+          "ms": 0,
+          "opacity": "0.760193",
+          "state": "live"
+        },
+        {
+          "frames": 52,
+          "ms": 202,
+          "opacity": "0.957385",
+          "state": "live"
+        },
+        {
+          "frames": 58,
+          "ms": 402,
+          "opacity": "0.994715",
+          "state": "live"
+        },
+        {
+          "frames": 64,
+          "ms": 601,
+          "opacity": "0.999921",
+          "state": "live"
+        },
+        {
+          "frames": 67,
+          "ms": 802,
+          "opacity": "1",
+          "state": "idle"
+        },
+        {
+          "frames": 67,
+          "ms": 1002,
+          "opacity": "1",
+          "state": "idle"
+        },
+        {
+          "frames": 67,
+          "ms": 1202,
+          "opacity": "1",
+          "state": "idle"
+        },
+        {
+          "frames": 67,
+          "ms": 1402,
+          "opacity": "1",
+          "state": "idle"
+        },
+        {
+          "frames": 67,
+          "ms": 1602,
+          "opacity": "1",
+          "state": "idle"
+        },
+        {
+          "frames": 67,
+          "ms": 1802,
+          "opacity": "1",
+          "state": "idle"
+        }
+      ]
+    },
+    {
+      "test": "mouse response settles and stops",
+      "samples": [
+        {
+          "frames": 70,
+          "ms": 0,
+          "state": "live"
+        },
+        {
+          "frames": 82,
+          "ms": 404,
+          "state": "live"
+        },
+        {
+          "frames": 94,
+          "ms": 805,
+          "state": "live"
+        },
+        {
+          "frames": 100,
+          "ms": 1205,
+          "state": "idle"
+        },
+        {
+          "frames": 100,
+          "ms": 1605,
+          "state": "idle"
+        },
+        {
+          "frames": 100,
+          "ms": 2005,
+          "state": "idle"
+        },
+        {
+          "frames": 100,
+          "ms": 2405,
+          "state": "idle"
+        }
+      ]
+    },
+    {
+      "test": "still selection",
+      "canvasVisibility": "hidden",
+      "disabled": true,
+      "state": {
+        "lightFirstDraw": "73.1",
+        "lightFrames": "101",
+        "lightState": "still"
+      }
+    },
+    {
+      "test": "cold reduced motion",
+      "canvasVisibility": "hidden",
+      "disabled": true,
+      "shaderRequests": [],
+      "state": {
+        "lightFirstDraw": "0.0",
+        "lightFrames": "0",
+        "lightState": "reduced"
+      }
+    },
+    {
+      "test": "offscreen disposal",
+      "canvasVisibility": "hidden",
+      "state": {
+        "lightFirstDraw": "83.7",
+        "lightFrames": "28",
+        "lightState": "offscreen"
+      }
+    },
+    {
+      "test": "simulated WebGPU unavailable",
+      "canvasVisibility": "hidden",
+      "disabled": true,
+      "state": {
+        "lightFirstDraw": "83.7",
+        "lightFrames": "29",
+        "lightState": "unsupported"
+      }
+    },
+    {
+      "test": "keyboard replay is immediate",
+      "activeAnimations": 0,
+      "focus": "light-replay",
+      "resources": [
+        {
+          "bytes": 2249127,
+          "name": "http://127.0.0.1:8120/docs/air/assets/air-light-shader.js"
+        }
+      ],
+      "state": {
+        "lightFirstDraw": "83.7",
+        "lightFrames": "31",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "shape": {
+        "width": 1440,
+        "height": 1000
+      },
+      "reduced": false,
+      "opacity": "1",
+      "running": 0,
+      "shaderRequests": [],
+      "timing": [
+        {
+          "duration": 900,
+          "iterations": 1
+        }
+      ],
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "shape": {
+        "width": 1440,
+        "height": 1000
+      },
+      "reduced": true,
+      "opacity": "1",
+      "running": 0,
+      "shaderRequests": [],
+      "timing": [],
+      "transform": "none"
+    },
+    {
+      "shape": {
+        "width": 390,
+        "height": 844
+      },
+      "reduced": false,
+      "opacity": "1",
+      "running": 0,
+      "shaderRequests": [],
+      "timing": [
+        {
+          "duration": 900,
+          "iterations": 1
+        }
+      ],
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "shape": {
+        "width": 390,
+        "height": 844
+      },
+      "reduced": true,
+      "opacity": "1",
+      "running": 0,
+      "shaderRequests": [],
+      "timing": [],
+      "transform": "none"
+    }
+  ],
+  "limits": [
+    "CPU submission is not measured GPU time.",
+    "Physical device power, thermal and GPU gate remains open.",
+    "Live shader remains isolated to the design reference."
+  ]
+}

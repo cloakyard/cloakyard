@@ -1176,3 +1176,45 @@ tree is committed on that authority; those two checks remain open and inventory
 validation flags stay false. This supersedes the earlier local-commit hold, not
 the evidence itself. Continue with CloakPDF's first bounded production piece.
 No push or deployment is authorized or performed.
+
+## 2026-10-13 — real product marks and shader verification
+
+Replaced generic directory glyphs with exact local SVG marks from the four product
+repositories. Each renders at 36×36px without recolouring or an extra frame.
+Decorative image alternatives are empty because each adjacent heading names the
+product. KERR remains a text exploration link. All four assets load in 22 cases
+(eleven contract dimensions × light/dark), with no horizontal overflow and unchanged
+product/source destinations. Provenance is in `../brand-assets.md`. Check, TypeScript,
+production build and the full source validator pass.
+
+The live Shaders 4.0.4 reference passes six desktop/tablet/phone × theme cases, finite
+arrival and pointer response, stable idle frame count, still artwork, cold reduced
+motion with no renderer request, offscreen disposal, simulated unavailable WebGPU
+and immediate keyboard replay. No console warning/error was observed. First draw
+on this Mac measured 73–84ms; this is not a GPU or cold-network benchmark. The local
+renderer is 2,249,127 raw bytes / 368,615 gzip bytes; its reproducible build and
+SHA `f375a59db6e1` pass. This still needs the separate production payload gate.
+Production SVG arrival is exactly one 900ms iteration; desktop/phone reduced motion
+is fully static, with no shader requests. Live production activation and physical
+GPU/battery/thermal coverage remain pending.
+
+The isolated portability fixture initially failed after PDF product sources were
+marked implemented: it retained inventory entries for source files not present in
+the copied bundle. The fixture now keeps its single bundled stylesheet entry. The
+real-repository validator still checks the complete product inventory, and all
+negative hash/provenance checks remain. All five repositories pass 75 assertions.
+No canonical design token or contract content changed.
+
+[Real mark evidence](evidence/home-real-logos-2026-10-13.json) ·
+[Desktop](evidence/home-real-logos-desktop.png) ·
+[Tablet dark](evidence/home-real-logos-tablet-dark.png) ·
+[Shader evidence](evidence/shader-verification-2026-10-13.json).
+
+CloakPDF's subsequent entry implementation and its feature/output/browser checks
+are recorded in its own `docs/air/validation.md`. Homepage base commit: `39c08f9`.
+Physical-touch and screen-reader acceptance remain open; no push or deployment.
+
+Continuation commits: PDF `dc20fe6` (entry/recovery); IMG `d6f4cdb`, Resume
+`f361733`, Drop `5d79ab9` (isolated portability fixture only). Fresh IMG check +
+470 tests and Resume check + 288 tests (292.72s) pass. Drop asset sync, 19-file
+Astro check and static build pass. No IMG/Resume/Drop product runtime changes.

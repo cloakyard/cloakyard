@@ -1,11 +1,3 @@
-import {
-  Download,
-  FileText,
-  Image as ImageIcon,
-  PanelsTopLeft,
-  type LucideIcon,
-} from "lucide-react";
-
 export interface YardProject {
   name: string;
   slug: string;
@@ -18,7 +10,7 @@ export interface ProductivityTool extends YardProject {
   platform: string;
   privacy: string;
   status: "Live" | "Beta";
-  icon: LucideIcon;
+  logo: string;
 }
 
 export const productivityTools: ProductivityTool[] = [
@@ -31,7 +23,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "Web · PWA",
     privacy: "Files stay local",
     status: "Live",
-    icon: FileText,
+    logo: "/brands/cloakpdf-mark.svg",
   },
   {
     name: "CloakResume",
@@ -43,7 +35,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "Web · PWA",
     privacy: "Drafts stay local",
     status: "Live",
-    icon: PanelsTopLeft,
+    logo: "/brands/cloakresume-mark.svg",
   },
   {
     name: "CloakIMG",
@@ -54,7 +46,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "Web · PWA",
     privacy: "Pixels stay local",
     status: "Live",
-    icon: ImageIcon,
+    logo: "/brands/cloakimg-mark.svg",
   },
   {
     name: "CloakDrop",
@@ -66,7 +58,7 @@ export const productivityTools: ProductivityTool[] = [
     platform: "macOS · Native",
     privacy: "Zero telemetry",
     status: "Beta",
-    icon: Download,
+    logo: "/brands/cloakdrop-mark.svg",
   },
 ];
 

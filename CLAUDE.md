@@ -26,7 +26,7 @@ Shared design commands:
 
 A client-rendered React directory: no router, backend, analytics, external fonts,
 or runtime data fetch. `src/data/tools.ts` owns product names, descriptions,
-platform/privacy/status, icons, source links and destinations. Product entries and
+platform/privacy/status, local brand assets, source links and destinations. Product entries and
 exploration links render from that registry. KERR is a text exploration link,
 with no screenshot or simulated preview. Native macOS interfaces are outside scope.
 

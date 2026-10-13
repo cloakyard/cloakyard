@@ -2,11 +2,10 @@ import { ArrowUpRight, GitBranch } from "lucide-react";
 import type { ProductivityTool } from "../data/tools";
 
 export function ToolEntry({ tool }: { tool: ProductivityTool }) {
-  const Icon = tool.icon;
   return (
     <article className="tool-entry">
       <div className="tool-heading">
-        <Icon size={24} strokeWidth={1.6} aria-hidden="true" />
+        <img className="tool-logo" src={tool.logo} alt="" width="36" height="36" />
         {tool.status === "Beta" && <span className="tool-status">Beta</span>}
       </div>
       <h3 translate="no">{tool.name}</h3>

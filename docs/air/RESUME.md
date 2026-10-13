@@ -4,7 +4,7 @@
 The review is complete; **Air 1.0.0 is locked**. Do not restart broad design studies
 or ask for another design approval. `DESIGN_FREEZE.md` records the decision.
 
-**AIR-04 is now implemented locally**: the complete Cloakyard homepage imports the
+**AIR-04 is committed as `39c08f9`**: the complete Cloakyard homepage imports the
 canonical CSS, with open product rows, system typography/themes, in-flow mobile
 navigation, focus-safe anchors, KERR exploration links, principles/footer and a
 new social image. Legacy font assets, old cards/pipeline/KERR artwork and competing
@@ -19,22 +19,44 @@ Passing: check/type/build, 76 layout/theme/text cases, keyboard/menu/Escape/hash
 back-forward/malformed hash/skip-link/coarse target checks, reduced motion/forced
 colours, no-JS links, production local-only requests, 13 remote destinations, native
 Safari 27.0.1 and Firefox 157.0.1 checks (including real 200% zoom), all five bundles
-and 75 portability assertions. Full product tests from the preceding checkpoint
-remain relevant to unchanged sibling runtime sources; no new sibling UI is adopted.
+and 75 portability assertions. See the entry checkpoint below for subsequent PDF
+runtime adoption; IMG, Resume and Drop product UI remains unchanged.
 
 The user subsequently instructed **“commit then continue”** after the two remaining
 checks were explicitly reported. This authorizes the current local commit with
 those gaps documented. Physical-touch and screen-reader speech/navigation remain
 unverified; `validated: false` is retained rather than claiming they passed.
 Design lock commits: Cloakyard `ea26823`, PDF `e59bcd5`, IMG `0182ec0`, Resume
-`b91e39e`, Drop `f507724`. The next commit contains the complete homepage work.
+`b91e39e`, Drop `f507724`. Homepage implementation: `39c08f9`.
 
-Next: **CloakPDF entry/landing and reading surfaces**, then its editor and custom
-controls, followed by IMG, Resume, Drop website and family comparison. Use
-`IMPLEMENTATION_PLAN.md`; no further general design approval is needed. Extract
-complex production adapters when real product behavior needs them. Keep device
-follow-ups visible. Live shaders retain their separate performance gate. KERR's
-app/native macOS UI remain unchanged. No push or deployment is included.
+Cloakyard now uses the four real local product marks at a consistent 36px. All
+22 size/theme cases pass; KERR remains a text exploration link. Sources and update
+rules are in `../brand-assets.md`. Shader verification is recorded in
+`evidence/shader-verification-2026-10-13.json`: live reference rendering and its
+fallbacks pass, while production retains the verified 900ms SVG arrival. GPU/device
+performance acceptance remains separate; no live shader is silently enabled.
+
+**CloakPDF entry is committed as `dc20fe6`**: homepage/search, shared navigation/footer, privacy,
+file intake, encrypted-file recovery and PWA notices. Check/dead-code, 355 units,
+build, 88 layout cases, dev/production search and routing, six synthetic standalone
+workflows, mobile editor smoke and serial responsive-motion checks pass. Native
+Safari and Firefox 200% checks pass. The original standalone scanned/guide fixtures
+are absent; generated demo fixtures were used explicitly. Physical touch/software
+keyboard and screen-reader speech remain open. Full evidence is in CloakPDF's
+`docs/air/validation.md`; production preview is `http://127.0.0.1:8132/`.
+
+The first migrated product exposed an isolated portability-fixture bug: the fixture
+retained product inventory entries without their source files. The canonical test
+now selects its bundled CSS entry only; real repository inventory checks remain
+complete. All five bundles pass all 75 assertions. Synchronized fix commits: IMG `d6f4cdb`,
+Resume `f361733`, Drop `5d79ab9`; PDF includes it in `dc20fe6`. Fresh IMG checks and
+470 tests, Resume checks and 288 tests, and Drop asset/Astro check/build all pass.
+
+Next: **CloakPDF standalone shell and global loading/error recovery**, then editor
+chrome, every panel, canvas and overlays. Continue IMG → Resume → Drop website →
+family comparison using `IMPLEMENTATION_PLAN.md`. No further general design
+approval is needed. Shared adapters/corrections return to Cloakyard first. KERR
+and native macOS UI remain unchanged. No push or deployment is included.
 
 ## Saved checkpoints
 
@@ -82,8 +104,8 @@ app/native macOS UI remain unchanged. No push or deployment is included.
 
 ## Next bounded pieces
 
-1. Migrate CloakPDF entry/landing, search, file intake, policy and recovery with
-   Air foundations, preserving existing routing and processing contracts.
+1. Complete CloakPDF standalone utility shell and global loading/error recovery.
+   The entry/search/intake/policy/encrypted/PWA slice is already implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported
    output checks. Then IMG → Resume → Drop website → full-family comparison.
 3. Shared corrections return to Cloakyard first and propagate as a pinned revision.

@@ -308,3 +308,18 @@ Source audit for collections (no product behavior changed in this pass):
 The standalone reducer proves sample invariants; it does not migrate any of these
 engines. Product processing/async/error and complete specialised-widget states stay
 on their implementation acceptance lists. Keep true document output outside Air CSS.
+
+### Rollout checkpoint — 2026-10-13
+
+The final review and design lock are complete. Homepage implementation is committed
+as `39c08f9`; the following refinement replaces generic product glyphs with the
+real marks. CloakPDF entry/search/intake/policy/encrypted recovery/PWA notices are
+implemented with evidence in that repository. Next is the standalone utility
+shell plus global loading/error recovery, followed by the editor and every panel.
+This supersedes the earlier “next is visual lock” note; do not reopen design approval.
+
+The real Shaders reference passes fresh desktop/tablet/phone theme, arrival, pointer,
+idle, keyboard, reduced-motion, offscreen and unavailable-GPU checks. Production
+currently uses the finite SVG arrival. Live activation still needs its separate
+payload/GPU/device performance evidence. Keep physical-touch and assistive acceptance
+open and preserve pending full-product feature gates. No push/deployment occurred.

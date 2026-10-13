@@ -199,8 +199,15 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: var(--air-space-12);
-  min-height: 32px;
+  min-height: 36px;
   color: var(--air-ink-secondary);
+}
+.tool-logo {
+  display: block;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 .tool-status {
   font-size: var(--air-text-meta);
@@ -465,9 +472,6 @@ summary:focus-visible {
     border-inline-start: none;
     border-top: 1px solid var(--air-line);
     padding: var(--air-space-24) 0;
-  }
-  .tool-heading {
-    min-height: 24px;
   }
   .tool-entry h3 {
     margin-top: var(--air-space-12);

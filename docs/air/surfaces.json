@@ -64,7 +64,11 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": ["docs/air/evidence/home-2026-10-13.json", "docs/air/validation.md"],
+      "evidence": [
+        "docs/air/evidence/home-2026-10-13.json",
+        "docs/air/validation.md",
+        "docs/air/evidence/shader-verification-2026-10-13.json"
+      ],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
     },
     {
@@ -288,8 +292,12 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": ["docs/air/evidence/home-2026-10-13.json", "docs/air/validation.md"],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
+      "evidence": [
+        "docs/air/evidence/home-2026-10-13.json",
+        "docs/air/validation.md",
+        "docs/air/evidence/home-real-logos-2026-10-13.json"
+      ],
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases."
     },
     {
       "path": "src/components/ToolSection.tsx",
@@ -352,8 +360,13 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": ["docs/air/evidence/home-2026-10-13.json", "docs/air/validation.md"],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
+      "evidence": [
+        "docs/air/evidence/home-2026-10-13.json",
+        "docs/air/validation.md",
+        "docs/air/evidence/home-real-logos-2026-10-13.json",
+        "docs/air/evidence/shader-verification-2026-10-13.json"
+      ],
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases."
     },
     {
       "path": "src/main.tsx",
