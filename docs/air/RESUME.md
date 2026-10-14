@@ -1,5 +1,24 @@
 # Air refresh — current handoff
 
+## Latest checkpoint — 2026-10-14
+
+Air 1.0.1 remains the locked baseline. PDF preview recovery is committed as
+`a2935ac`; the separately tested AI preparation-cancellation fix is `cf2cbed`.
+Retry keeps valid bytes, forms, page plans, OCR review, marks and undo/redo; missing
+pages are named, preview memory is bounded, and obsolete render/encode paths are
+removed. 384 units, 28 browser suites, 44 new layout/theme states and native
+Safari/Firefox recovery pass, including Firefox 200% zoom. Evidence lives in
+CloakPDF's dated validation record and `preview-recovery-2026-10-14.json`.
+
+Next bounded slice: **Redact and Smart Erase panel interiors**, including custom
+controls and destructive-output checks. General shell loading/error/draft banners,
+other tool interiors and the other products remain tracked in `UX_REFRESH_TODO.md`.
+Physical touch/software keyboards, OS IME and assistive speech remain open. Continue
+one validated, cleaned-up piece per commit; no new design approval is needed.
+No push or deployment has occurred.
+
+## Earlier checkpoints
+
 2026-10-13: the user authorized one final agent review followed by implementation.
 The review is complete; **Air 1.0.0 is locked**. Do not restart broad design studies
 or ask for another design approval. `DESIGN_FREEZE.md` records the decision.

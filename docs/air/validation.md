@@ -1289,3 +1289,20 @@ Resume portable copy `a09ef58`: 288/288 serial tests pass (360.20s), with editor
 browser checks against the fixed production build, plus format/lint/types/build.
 Its validation record retains the two preceding development-run transients.
 All current bundle and portability checks pass; no push or deployment.
+
+## 2026-10-14 — PDF preview recovery checkpoint
+
+PDF `a2935ac` implements one Air recovery strip for missing previews without
+resetting document bytes, tool drafts, OCR review, page plans or history. The
+canvas fallback remains readable at small fit sizes and enlarged text. Preview
+memory is bounded independently of export resolution; unused encoding/rendering
+paths and stale OCR references are removed. `cf2cbed` separately fixes a cancelled
+AI preparation overtaking a newer retry, found by the required browser gate.
+
+384 units, 28 browser suites, 44 new canvas/grid layouts in both themes,
+Safari/Firefox retry and actual 200% Firefox zoom pass. Full output and scope
+records are in CloakPDF's `docs/air/validation.md` and compact preview-recovery
+evidence. Root lint/types/build, design integrity/isolation and exact six-document/
+five-bundle synchronization pass. Air 1.0.1 and its contract hash are unchanged;
+the portable PDF appendix now defines recovery. Other panels/products and physical
+or assistive acceptance remain open. No push or deployment.

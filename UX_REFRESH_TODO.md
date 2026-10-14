@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — AIR-04 committed; CloakPDF entry implemented, device acceptance remains** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF preview recovery committed; tool interiors and device acceptance remain** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,7 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Current priority — validate the first implementation (2026-10-13)
+## Initial implementation checkpoint (2026-10-13)
 
 The user authorized one final glance followed by implementation. The delegated
 review is complete and Air 1.0.0 is locked. The gallery navigation correction
@@ -780,3 +780,31 @@ inventory and isolated/adversarial portability pass. Main-repo lint/types/build,
 design checks and exact six-document/five-bundle sync pass. Runtime source is
 98 lines smaller after removing the replaced OCR paths; tests and evidence are
 kept separately.
+
+### AIR-07 PDF preview recovery — 2026-10-14
+
+- [x] Retain valid PDFs and successful page previews after partial render failure;
+      replace blank/broken canvas output with a named fallback and Air retry.
+- [x] Rebuild only missing previews without resetting forms, pending marks, OCR,
+      page plans or undo/redo; guard stale completion and release preview resources.
+- [x] Bound preview raster memory; remove redundant encodes from blank-page scans
+      and obsolete rendering APIs/comments. Keep image exports fail-closed.
+- [x] Validate all Air viewport classes in light/dark, enlarged text, keyboard,
+      failure/retry/decode/cancellation/history and real feature/output regressions.
+- [x] Record evidence and commit this bounded piece after required checks pass.
+
+384 units pass. Preview recovery covers 44 canvas/grid layouts in light/dark,
+200% root text, real render/decode failure, retained drafts/OCR/history and stale
+retry disposal. Native Safari/Firefox restore the source page. The broader gates
+also found and fixed an AI preparation-cancellation race; deterministic regression,
+modal retry and real multipage AI loading/questions/tier swap/reload pass. See
+CloakPDF's dated validation/evidence for commands and scope. Physical-device and
+assistive acceptance remain open. Next bounded piece: **Redact and Smart Erase
+panel interiors**, their custom controls and destructive-output validation.
+
+PDF commits: `cf2cbed` (AI preparation ownership) and `a2935ac` (preview recovery).
+All 16 production smoke suites, seven extended suites, preview/geometry/N-up/OCR
+integrations and the real multipage AI suite pass: 28 browser suites in total.
+Final image-ownership changes also pass focused recovery/canvas regressions.
+General shell loading/error/restored-draft banners remain separately pending;
+this recovery strip does not complete their migration. No push or deployment.
