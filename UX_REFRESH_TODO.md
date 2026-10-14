@@ -239,7 +239,9 @@ with the device checks recorded, then continuing the rollout.
 - [x] AI consent/progress/error, details, cache actions, model switching and shared
       modal frame implemented (`747aa44`); 268 layouts, real model lifecycle and
       cross-browser keyboard/zoom reviewed. Physical/assistive gates remain open.
-- [ ] Remaining utility body: Ask PDF chat, indexing, messages/citations and errors.
+- [x] Ask PDF chat, measured indexing, source-page links and recoverable errors;
+      448 layouts, real model lifecycle and native browser zoom pass.
+      Physical/assistive acceptance remains open; see the completed slice below.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
@@ -372,7 +374,7 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Final per-app checks/builds, visual evidence, clean git state and commit ledger.
 - [ ] Mark the persistent goal complete only after every required item is verified.
 
-### Next PDF slices — finish modal interiors, then chat
+### PDF modal and chat checkpoints
 
 - [x] Export: six native format choices, all PDF options/compression levels, full
       filenames, busy/error/retry, focus return and exact real output validation.
@@ -395,8 +397,12 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Remove each replaced interior's obsolete selectors, helpers and imports;
       run dead-code, required checks and applicable feature/output tests, save
       compact evidence, then commit. Do not add dependencies without a real need.
-- [ ] Follow with Ask PDF chat, indexing, messages/citations and recoverable errors,
-      then the complete editor chrome, canvas and every panel/overlay.
+- [x] Ask PDF conversation, indexing, citations and recovery implemented and
+      validated locally; physical/assistive acceptance remains open.
+- [ ] Next bounded piece: editor header and tool navigation, including mobile
+      picker, keyboard paths, short-height layouts and preserved document state.
+- [ ] Follow with properties/page navigation/thumbnails, canvas surround, then
+      every remaining editor panel and overlay with the same commit gates.
 
 ### Completed PDF slices — AI setup and model dialogs
 
@@ -580,3 +586,28 @@ adoption and detailed visual sign-off remain open.
 - Cloakyard `ea26823`, PDF `e59bcd5`, IMG `0182ec0`, Resume `b91e39e`, Drop `f507724`: reviewed Air baseline and gallery navigation correction, all synchronized.
 - AIR-04 home implementation, cleanup and evidence are included in the user-authorized local commit; physical-touch and screen-reader acceptance remain open. Production preview: `http://127.0.0.1:8131/`.
 - Root check/type/build, sibling format/lint/type and Drop Astro checks pass; bundle checks and the preceding unchanged-runtime suite evidence are recorded in validation.md.
+
+### Completed PDF slice — Ask PDF conversation
+
+Committed in CloakPDF `12b11b5`; evidence and passing logs are recorded in that
+repository. Cloakyard check/type/build, six-repository exact sync, design integrity
+and portability checks also pass.
+
+- [x] Air transcript, single-contour labelled composer, normal author/status labels,
+      readable markdown and locally scrolling code/tables; real source-page links.
+- [x] Actual page/passage progress, explicit retry/no-text recovery, partial answer
+      retention, protected next drafts, IME-aware sending and focus return.
+- [x] Stable model readiness, per-attempt/session ownership, late-result isolation
+      after replacement/navigation, source URL cleanup and reader-owned scrolling.
+- [x] 448 viewport/theme/text layouts; native Safari/Firefox keyboard and actual
+      200% zoom; real model initial/warm answers, extraction, tier swap and memory
+      release/reload; AI modal storage/download/recovery regression.
+- [x] Remove unused InfoCallout and orphan selector, weighted-progress helper,
+      obsolete comments and replaced skins. Net 216 production lines removed; no
+      dependencies. Check/dead-code, 366 units, build/PWA/assets, design and
+      portability pass. Evidence: PDF `docs/air/evidence/chat-2026-10-14.json`.
+
+Physical touch/software keyboard, real OS IME and assistive speech remain open.
+Underlying indexing is not abortable; obsolete results are discarded on replacement.
+This completes the bounded chat implementation, not the full PDF/family migration.
+Next: editor header and tool navigation, then every remaining editor interior.
