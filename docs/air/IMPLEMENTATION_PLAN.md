@@ -417,3 +417,19 @@ unequal-length PDFs, preserve document pixels and clean up every partial resourc
 The central TODO includes explicit dead/dangling-code removal and feature gates.
 Then AI and every editor surface. Shared changes must return upstream; this slice
 keeps Air 1.0.0 unchanged.
+
+### 2026-10-14 Compare checkpoint and next piece
+
+CloakPDF `f1d99d5` completes Compare input/result controls, cancellation/resource
+ownership and page-geometry preservation. Required checks, 366 units, six standalone
+workflows, both editor smoke suites, 484 geometry cases, reviewed screenshots and
+native Safari/Firefox 200% pass. Detailed evidence and remaining physical/assistive
+gates are in the PDF validation record. Replaced code and unused stepper APIs are
+removed; no new dependencies. Compare payload: 11.20 kB raw / 4.14 kB gzip.
+
+Next: AI setup, tier selection, consent and model-management states; then chat,
+indexing and citations. Audit real runtime ownership before styling. Preserve
+model choices, consent, download/cache recovery and RAG behavior. Keep each piece
+bounded and its evidence compact. User steering requires a lean codebase: reuse
+existing contracts, delete replaced implementations instead of leaving parallel
+paths, audit real consumers and pass dead-code/feature/build gates before commit.

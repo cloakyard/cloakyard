@@ -233,7 +233,9 @@ with the device checks recorded, then continuing the rollout.
       trust disclosures, cancellation/recovery and independently verified output.
       484 geometry observations, native 200% zoom, Unicode/CMS/source fidelity and
       dead-code checks pass; physical/assistive gates remain.
-- [ ] Remaining utility bodies: Compare inputs/results and on-device AI states.
+- [x] Compare inputs/results: Air file context, modes, page navigation and recovery;
+      cancellable rendering and complete resource cleanup. Committed `f1d99d5`.
+- [ ] Remaining utility bodies: on-device AI setup, consent, cache and chat states.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
@@ -362,23 +364,39 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Final per-app checks/builds, visual evidence, clean git state and commit ledger.
 - [ ] Mark the persistent goal complete only after every required item is verified.
 
-### Next PDF slice — Compare inputs and results
+### Next PDF slice — AI setup, consent and model controls
 
-- [ ] Audit both intake regions, selected/encrypted/corrupt files, progress,
-      side-by-side and overlay modes, change visibility, page navigation and summary.
-- [ ] Apply pinned Air controls and open composition to every custom control and
-      result state; preserve paper and functional diff highlight colours.
-- [ ] Guard overlapping detection/comparison, cancellation, replacement and late
-      results; retain useful input on failure and restore meaningful focus.
-- [ ] Close PDF loading tasks, page/canvas resources and every object URL on
-      success/error/cancel/replacement/unmount, including partial load failures.
-- [ ] Verify identical/changed/unequal-length documents, diff classification and
-      percentages, both view modes, keyboard page changes and source fidelity.
-- [ ] Inspect all eleven contract sizes, both themes, enlarged text, coarse input,
-      short landscape, reduced motion/forced colours and native 200% browser zoom.
-- [ ] Remove replaced skins, obsolete state/helpers/imports and dangling callbacks;
-      inspect remaining consumers before deleting shared code. Run dead-code and
-      legacy-cue scans, required feature/build/design checks, record evidence, commit.
+- [ ] Audit setup/tier selection, consent, model details, cache/storage actions,
+      download/loading/error/cancel/retry and loaded-model handoffs before changing UI.
+- [ ] Migrate the setup and model-management components using pinned Air controls;
+      keep truthful sizes, hardware needs, local-data boundaries and explicit consent.
+- [ ] Preserve cached/partial-cache loading, tier changes, focus restoration,
+      cancellation, memory release and confirmed cache deletion behavior.
+- [ ] Validate all contract sizes/themes, enlarged text, keyboard/coarse targets,
+      reduced motion/forced colours, native zoom and applicable real AI workflows.
+- [ ] Remove replaced skins, obsolete helpers/props and dead references; check
+      actual consumers. Avoid new dependencies or abstractions without a real need.
+      Record bundle cost, run required checks, save compact evidence, then commit.
+- [ ] Complete Ask PDF chat, indexing, messages/citations and errors as the following
+      bounded piece; the setup migration alone does not complete AI or PDF.
+
+### Completed PDF slice — Compare inputs and results
+
+CloakPDF `f1d99d5`; evidence: `docs/air/evidence/compare-2026-10-14.json`.
+
+- [x] Migrate both inputs, persistent file names, both views, diff visibility,
+      page/thumbnail navigation, summary and every recovery state to Air.
+- [x] Preserve source bytes and page geometry; verify real pixel changes,
+      transparent identical overlays and unequal page counts/sizes.
+- [x] Cancel and release reads/tasks/renders/encoders and every partial URL;
+      prevent late results, preserve input on failure and restore focus.
+- [x] Inspect 484 layout observations plus representative screenshots, coarse
+      targets, native Safari/Firefox 200%, reduced motion and forced colours.
+- [x] Remove old pipeline/skins, unused average and stepper variants; pass dead-code,
+      366 units, six standalone workflows, both editor smoke suites and build/design
+      checks. Keep larger local screenshot sets outside Git to limit evidence growth.
+
+Physical touch/software keyboard and screen-reader acceptance remain open.
 
 ## Commit ledger
 
@@ -400,7 +418,7 @@ Committed in CloakPDF `109baea`; evidence and passing output are in that reposit
 - [x] Pass check/type, 359 units, six production standalone flows, build/PWA/129-asset
       limits, inventory, design integrity, 17 portability assertions and canonical sync.
 
-Physical touch/software keyboard and screen-reader acceptance remain open. Compare,
+Physical touch/software keyboard and screen-reader acceptance remain open.
 AI and every editor surface remain in scope; this is not a completed PDF migration.
 
 ### Completed PDF slice — Password options and results

@@ -146,7 +146,7 @@ inventory `validated` stays false. PDF preview 8132 and dev 8122 are running.
 Own tabs/zoom/emulation and synthetic download were cleaned up, without reloading
 user tabs. No push or deployment.
 
-## Latest bounded implementation — Digital Signature (2026-10-14)
+## Previous bounded implementation — Digital Signature (2026-10-14)
 
 CloakPDF `109baea` adopts Air for certificate import/generation, password visibility,
 existing/loaded metadata, optional details and result/recovery. It removes replaced
@@ -169,10 +169,7 @@ Physical touch/software keyboard and screen-reader acceptance remain open;
 `validated` stays false. Own test tabs/emulation/downloads were cleaned up.
 No user tab reload, push or deployment.
 
-**Next: Compare PDF inputs/results**, including both view modes, page navigation,
-diff fidelity and complete cleanup of loading tasks/canvases/object URLs. The
-central TODO owns the bounded checklist, including dead/dangling-code removal.
-Then AI and all editor surfaces; Air 1.0.0 remains pinned and unchanged.
+The Compare slice is now complete; see the latest checkpoint below.
 
 ## Saved checkpoints
 
@@ -220,7 +217,7 @@ Then AI and all editor surfaces; Air 1.0.0 remains pinned and unchanged.
 
 ## Next bounded pieces
 
-1. Complete Compare inputs/results and on-device AI states. Entry, constructors, shared utility controls,
+1. Complete on-device AI setup/model management, then chat/indexing/citations. Entry, constructors, shared utility controls,
    landscape handling, policy/encrypted/PWA, utility headers and recovery are implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported
    output checks. Then IMG → Resume → Drop website → full-family comparison.
@@ -248,3 +245,25 @@ canonical change. Contract `c6ec55c0fe59`, CSS `80fb336bb4eb`, collection module
 `0bbea11f0a18`. All checks pass; Resume's complete serial gate is 288/288 in
 386.12s. Evidence and five reviewed screenshots are in the collection section of
 `validation.md`. Next: close the candidate's visual review, then AIR-04.
+
+## Latest bounded implementation — Compare (2026-10-14)
+
+CloakPDF `f1d99d5`: both input regions, persistent file identities, comparison modes,
+page/difference controls, thumbnail navigation and recovery now use Air. Different
+page sizes retain their geometry. Cancellation closes both PDF.js tasks; partial
+failures, replacement and unmount release canvases and every temporary URL. The
+shared mobile-editor page stepper adopts Air and drops obsolete size/variant props.
+
+Passing: 366 units, six expanded standalone production workflows, desktop/mobile
+editor smoke, format/lint/type/dead-code, build/PWA/128-asset limits, design integrity,
+17 isolated portability assertions and canonical sync. 484 layout observations,
+representative pixel review, 44px coarse controls, forced colours/reduced motion
+and native Safari/Firefox 200% zoom pass. Two proof screenshots are committed;
+the larger local set is referenced by the compact evidence record. No dependencies
+or shared contract changes. Physical/assistive gates remain open. No push/deploy.
+
+Next: AI setup/model-management components and consent, followed by Ask PDF chat
+and then the editor. The user explicitly asked to continue after Compare and keep
+the codebase lean: remove replaced code and unused APIs, inspect actual consumers,
+run dead-code checks, avoid unnecessary abstractions/dependencies and record bundle
+cost per piece. Use the central TODO; do not count setup-only work as full AI migration.
