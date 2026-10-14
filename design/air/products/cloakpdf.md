@@ -53,3 +53,15 @@
   bitmap. An unavailable preview has a labelled fallback. Apply/Undo/Redo/Reset
   must keep bytes, page count, thumbnails and pending plans in agreement; explicit
   Cancel discards the tool draft while ordinary tool navigation preserves it.
+
+- The canvas surround inherits Air surface-soft, with 16/24/32px space according
+  to the available viewport. Keep navigation in the compact toolbar, not another
+  canvas row. Page focus has one visible contour; direct manipulation is immediate.
+- On white PDF paper, selection chrome uses Air's light accent in both themes for
+  contrast. Author content retains its own colours and fonts. Inline document text
+  editing is an output-aligned exception to ordinary field height/radius: its box
+  follows the placed text, uses 4px corners and one focus contour, and remains
+  opaque. Touch editing has a 16px visible floor even when the page is zoomed out.
+  Composition owns Enter/Escape; explicit completion/cancellation returns canvas
+  focus, while blur follows the user's new target. Touch resize targets are 44px
+  with nearest-handle resolution when targets overlap.

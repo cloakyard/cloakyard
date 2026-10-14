@@ -1262,3 +1262,30 @@ global recovery with 88 recovery/loading and 132 utility-header layout cases,
 dead-code and production build checks passing. Its own validation record and
 evidence retain the remaining landscape, deeper-tool and physical-device limits.
 Shared lifecycle commits: IMG `a894c1d`, Resume `e22f441`, Drop `bb02e6f`.
+
+## 2026-10-14 — Air 1.0.1 header identity and canvas contrast
+
+The portable rule now fixes the family header mark at 36×36px in landing, reading
+and editor headers, including tablet/phone, with at least a 44px interactive target.
+The canonical workspace study and CloakPDF editor follow it without increasing
+normal toolbar height. The new paper-accent equals the light Air blue in either
+appearance, preserving contrast on white document paper. It does not change PDF
+content or export colours. Contract hash: `201f7c381b5f`.
+
+All six DESIGN copies and five independent bundles are synchronized. Inventory
+scripts read the manifest version to avoid a second version constant. Format/lint,
+TypeScript, production build, exact sync, design integrity and portability pass.
+Detailed canvas, keyboard, responsive/theme and real-output evidence is in
+CloakPDF's `docs/air/validation.md` and `evidence/canvas-2026-10-14.json`.
+This patch does not mark other products migrated; physical-device gates remain open.
+
+The reference also removes its old 24px phone override. All six preview presets
+(desktop/tablet/phone × light/dark) render a 36px mark without header overflow.
+PDF implementation is `7743488`, with final reference copy `f40842a`; IMG portable
+copy is `88253d7`, and Drop is `f073a51`. IMG's 470 tests, its build and checks,
+and Drop's 19-file Astro check/three-route build pass. Native macOS is untouched.
+
+Resume portable copy `a09ef58`: 288/288 serial tests pass (360.20s), with editor
+browser checks against the fixed production build, plus format/lint/types/build.
+Its validation record retains the two preceding development-run transients.
+All current bundle and portability checks pass; no push or deployment.

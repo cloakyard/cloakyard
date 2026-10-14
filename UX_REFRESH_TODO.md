@@ -659,3 +659,31 @@ Evidence is in `cloakpdf/docs/air/validation.md` and
 `cloakpdf/docs/air/evidence/collections-2026-10-14.json`. Physical touch/software
 keyboard, OS IME and assistive speech gates remain open. Canvas chrome and remaining
 panel/overlay interiors are next; the full PDF and family migration remain incomplete.
+
+### Completed PDF slice — Canvas chrome and brand consistency (2026-10-14)
+
+PDF implementation `7743488`; final portable reference `f40842a`.
+
+- [x] Replace canvas surround, paper focus and inline text contours with Air; keep
+      paper/author content accurate and preserve the persistent gesture surface.
+- [x] Share the 36px landing/editor identity at all viewport sizes; remove smaller
+      overrides and update the portable family rule/reference.
+- [x] Verify composition, focus return, direct editing/zoom/pan, touch handle
+      selection, exports and required responsive/theme matrix before committing.
+- [x] Remove obsolete canvas palette fields, redundant accent overrides and skins;
+      run dead-code checks and inspect the final diff.
+- [ ] Separate geometry follow-up: saved /Rotate and non-origin CropBox are not
+      consistently mapped through focus-stage geometry and vector export writers.
+      Test preview and exported placement together for annotations/signatures/codes,
+      crop/stamps/forms and destructive marks before changing coordinate behavior.
+
+Canvas evidence: `cloakpdf/docs/air/evidence/canvas-2026-10-14.json` and validation.md.
+68 canvas layouts, 15 browser suites, 367 units, dead-code and build gates pass.
+Native Safari/Firefox 200% browser zoom inspected. Air 1.0.1 carries the common
+36px brand rule and white-paper selection accent in every portable contract.
+Physical touch, OS IME and assistive speech remain open. Next: coherent page
+geometry/output mapping, preview recovery, then remaining panel interiors/overlays.
+
+Portable checkpoint: IMG `88253d7`, Resume `a09ef58`, Drop `f073a51`.
+All required checks pass, including 470 IMG and 288 Resume tests; exact six-document
+sync and all five independent bundles pass. No push or deployment.
