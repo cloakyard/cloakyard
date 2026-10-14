@@ -248,7 +248,8 @@ with the device checks recorded, then continuing the rollout.
   implemented (PDF `5f8ab8c`); 320 layouts, real outputs/redaction and
   keyboard/zoom pass. Physical/assistive acceptance remains open.
 - [-] Modal coverage: shared frame and AI consent/model choice/details implemented.
-  Export interior is implemented; command-palette interior and editor notifications remain pending.
+  Export and command-palette interiors are implemented (PDF `5f8ab8c`, `343bc00`);
+  editor notifications and physical/assistive acceptance remain pending.
   Entry PWA prompt is implemented above; editor integration acceptance remains.
 - [ ] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
 - [ ] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
@@ -379,11 +380,16 @@ interiors, custom controls, canvas chrome and less-visible states.
       Existing processors do not support cancellation: protect preparation with
       explicit status until settlement. No invented page-range or rename controls.
       PDF `5f8ab8c`; compact evidence in its `docs/air/evidence/export-2026-10-14.json`.
-- [ ] Command palette: search input, grouped results, active row, key hints,
-      empty/no-results, scroll containment and command-to-dialog handoffs.
+- [x] Command palette: shared compound search, readable category/result rows,
+      active indicator, hints, empty recovery, IME guard and responsive focus return.
+      Real tool and Undo/Redo/Reset handoffs, 192 layouts, short/enlarged recovery,
+      forced colours and native Safari/Firefox 200% zoom pass. No dependencies.
+      PDF `343bc00`; evidence in `docs/air/evidence/palette-2026-10-14.json`.
+      Palette has no dialog-opening commands; no invented actions were added.
 - [-] Export keyboard and trigger return pass in Chromium/Safari/Firefox, including
   200% browser zoom. Global editor shortcuts cannot mutate work behind dialogs.
-  Complete command-palette interior and its handoffs next.
+  Command-palette interior and tool/history handoffs also pass (`343bc00`).
+  Physical touch/software-keyboard, real OS IME and assistive speech gates stay open.
 - [ ] Review all required sizes/themes, enlarged text, touch targets, short
       landscape, reduced motion/forced colours and actual browser zoom per slice.
 - [ ] Remove each replaced interior's obsolete selectors, helpers and imports;

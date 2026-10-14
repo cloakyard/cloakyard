@@ -315,3 +315,23 @@ results, key hints, scrolling and safe handoffs. Then Ask PDF chat/indexing/cita
 followed by remaining editor chrome/canvas/panels. Physical touch/software-keyboard
 and assistive speech acceptance remain open. Commit only after the same validation
 and cleanup gates; no push or deployment is authorized.
+
+## 2026-10-14 — Command palette checkpoint
+
+PDF `343bc00` completes the next modal interior: Air compound search, neutral
+result rows, readable category labels/hints, phone sheet and empty recovery. IME
+filtering/confirmation, fresh reopen and focus return across replaced desktop/mobile
+triggers are covered. Old numbered/mono/tinted styling and reset effects are removed.
+No dependency or portable-contract change. Editor JS decreases 0.19 kB gzip; CSS
+adds 0.23 kB gzip. Compact evidence and two synthetic-document screenshots are saved
+in PDF's `docs/air/evidence/palette-2026-10-14.json` and adjacent proof files.
+
+192 palette layouts, 366 units, required checks/build/dead-code/portability and real
+command/history actions pass. Export outputs (320 layouts), AI states (192 layouts),
+modal stack and responsive motion regressions pass. Native Safari/Firefox keyboard
+and actual 200% zoom inspected. Physical touch, software keyboard, real OS IME and
+assistive speech acceptance remain open; no full-product migration claim.
+
+Next bounded slice: **Ask PDF chat, indexing, citations and recovery**, then remaining
+editor chrome/canvas/panels/overlays. Continue removing replaced code, validate real
+features and all required sizes/themes before each local commit. No push/deployment.
