@@ -222,8 +222,11 @@ with the device checks recorded, then continuing the rollout.
       112 layouts and actual reordered outputs pass; physical/assistive gates remain.
 - [x] Shared utility actions, segments, errors/progress and responsive landscape entry.
       All six non-AI workflows, desktop/mobile editor and interaction checks pass.
-- [ ] Remaining utility bodies: Extract Images selection/results, Password options,
-      Compare inputs/results, Digital Signature fields/results and on-device AI states.
+- [x] Extract Images and shared selected-file identity: native selection, thumbnails,
+      PNG/ZIP output, empty/recovery, measured scan cancellation and guarded downloads.
+      176 geometry cases, real output/lifecycle regressions and native 200% zoom pass.
+- [ ] Remaining utility bodies: Password options, Compare inputs/results,
+      Digital Signature fields/results and on-device AI states.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
@@ -352,7 +355,37 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Final per-app checks/builds, visual evidence, clean git state and commit ledger.
 - [ ] Mark the persistent goal complete only after every required item is verified.
 
+### Next PDF slice — Password options and results
+
+- [ ] Audit add/remove flows, password visibility, permission settings, detection,
+      encrypted/plain inputs, success/error/retry and file replacement during work.
+- [ ] Adopt the pinned Air fields, choices, action and feedback rules; preserve
+      encryption/decryption semantics and the existing security disclosures.
+- [ ] Validate both themes and all viewport classes, keyboard/zoom/long names,
+      wrong-password recovery, permissions and actual encrypted/decrypted outputs.
+- [ ] Remove replaced styles/references, record evidence and run required checks
+      before committing. Shared control changes must return upstream first.
+
 ## Commit ledger
+
+### Completed PDF slice — Extract Images
+
+Committed in CloakPDF `b25ae2c`; evidence and passing output are in that repository's
+`docs/air/evidence/extract-2026-10-14.json` and companion checks log.
+
+- [x] Migrate selected-file summary, native image selection/previews, bulk controls,
+      selected count, PNG/ZIP actions and success/error/empty states to Air.
+- [x] Preserve image bytes/order and selection on download failure; guard duplicate
+      or late delivery, cancel obsolete scans and restore meaningful focus.
+- [x] Inspect light/dark across the full viewport/text matrix, keyboard selection,
+      native zoom, long names, no-images/corrupt/encrypted input and busy states.
+- [x] Verify individual PNG and partial/all ZIP contents, cancellation/replacement,
+      shared non-AI file-summary consumers and all six standalone regressions.
+- [x] Remove replaced styles/references, update inventory/evidence, run required
+      checks and commit the bounded piece.
+
+Physical touch/software keyboard, screen-reader speech and loaded-model AskPDF
+integration remain on their explicit gates; this is not a completed PDF migration.
 
 ### Completed PDF slice — constructors and shared utility controls
 

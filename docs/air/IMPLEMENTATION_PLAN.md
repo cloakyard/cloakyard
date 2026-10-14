@@ -357,3 +357,19 @@ Next bounded pieces, in order:
 Use shared controls for every custom state. Remove replaced legacy selectors and
 references within each piece. Keep physical touch/software keyboard and assistive
 speech gates open; passing emulation or desktop browser tests does not close them.
+
+### 2026-10-14 Extract Images checkpoint
+
+CloakPDF `b25ae2c` adopts Air for the complete extraction flow and shared file
+identity. Selection, full-resolution PNG/ZIP output, empty/error/encrypted/busy
+states, cancellation/replacement, focus recovery and late-download suppression
+are validated. 176 geometry cases span every contract size, both themes and root
+text enlargement; representative screenshots and native Safari/Firefox 200% zoom
+were reviewed. Required checks, 355 units, all six standalone production workflows,
+build/dead-code and portable design integrity pass. Detailed evidence lives in PDF's
+`docs/air/validation.md`. Physical/assistive and loaded-model AI gates remain open.
+
+Next bounded piece: **Password options/results**, including both add/remove modes,
+permission controls, visibility, wrong-password recovery and encrypted/decrypted
+output fidelity. Then Signature, Compare, AI and every editor surface. Keep the
+canonical Air spec pinned; shared corrections return to Cloakyard first.

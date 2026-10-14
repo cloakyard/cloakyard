@@ -92,9 +92,35 @@ editor smokes, three-fixture placement/preview, extended interactions, routing/m
 speech remain open. Full evidence: PDF `docs/air/validation.md` and
 `docs/air/evidence/constructors-2026-10-13.json`.
 
-Next slice: **Extract Images** file/selection/thumbnail/download states, followed
-by Password, Digital Signature, Compare and AI, then all editor surfaces. Preview
+This constructor checkpoint was followed by the Extract Images slice below. Preview
 remains `http://127.0.0.1:8132/`. No user editor tab was reloaded; no push/deployment.
+
+## Latest bounded implementation — Extract Images (2026-10-14)
+
+CloakPDF `b25ae2c`: image selection/results, shared selected-file identity,
+full-resolution PNG/ZIP delivery and complete empty/error/busy/recovery states use
+Air. Cancel scan aborts obsolete work and releases PDF.js/canvas resources; replacement
+survives late callbacks. Busy downloads guard repeated dispatch, preserve geometry
+and focus, retain selection on failure and suppress delivery after navigation.
+Unused spinner/file-info styles and references are removed. Canonical tokens and
+control skins are unchanged; no sibling runtime change is required.
+
+Passing: 176 DOM size/theme/text cases plus representative reviewed screenshots;
+Safari/Firefox actual 200% zoom with real extracted images; keyboard, forced colours,
+reduced motion, encrypted/corrupt recovery; PNG resolution, full/partial ZIP
+names/counts and sampled byte equality, retry and cancellation lifecycle checks.
+355 units, all six standalone production flows, check/type, dead-code, production
+build/PWA/139-file limits, design inventory/integrity and 17 PDF portability assertions
+pass. Explicit synthetic fixtures substitute for absent original scanned/guide PDFs.
+PDF evidence is in `docs/air/validation.md` and `evidence/extract-2026-10-14.json`.
+Physical touch/software keyboard, screen-reader speech and loaded-model AskPDF
+integration remain open. Inventory `validated` remains false.
+
+**Next: PDF Password options/results**, then Digital Signature, Compare, AI and
+all editor surfaces. Continue with the active checklist in `UX_REFRESH_TODO.md`.
+PDF preview 8132 and dev 8122 are running. Earlier home/reference servers were not
+restarted or verified during this checkpoint. Own test tabs/emulation were cleaned
+up; no user tab was reloaded. No push or deployment.
 
 ## Saved checkpoints
 
@@ -142,7 +168,7 @@ remains `http://127.0.0.1:8132/`. No user editor tab was reloaded; no push/deplo
 
 ## Next bounded pieces
 
-1. Complete Extract Images selection/results, Password/signature options and results,
+1. Complete Password/signature options and results,
    Compare results and on-device AI states. Entry, constructors, shared utility controls,
    landscape handling, policy/encrypted/PWA, utility headers and recovery are implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported
