@@ -395,3 +395,25 @@ import/generation, identity and passphrase fields, signing/recovery, signed-outp
 validity and source fidelity. Then Compare, AI and every editor surface. See the
 active TODO for the complete bounded checklist and the PDF validation record for
 evidence. Keep Air pinned; proposed shared changes return upstream first.
+
+### 2026-10-14 Digital Signature checkpoint
+
+CloakPDF `109baea` implements certificate import/generation, single-contour fields,
+loaded/existing metadata, signing and recovery with pinned Air primitives. Dead
+visual code and redundant state/imports are removed. Worker cancellation, import
+replacement before an old read resolves, duplicate/late-output guards and focus
+recovery pass. Padding and Unicode certificate/CMS encoding fixes preserve actual
+signed-output integrity; independent OpenSSL CMS and exact source streams verify it.
+
+All six production standalone workflows, 359 units, format/lint/type, dead-code,
+build/PWA/129-asset limits, inventory/source/portability and canonical sync pass.
+484 geometry observations cover eleven responsive sizes, themes and enlarged text;
+representative screenshots, native Safari/Firefox 200% zoom, reduced motion and
+forced colours are reviewed. Physical and assistive acceptance remains open.
+
+Next bounded piece: **Compare inputs/results**. Audit both files, all views,
+navigation, summaries, failure/retry and cancellation. Verify changed/identical/
+unequal-length PDFs, preserve document pixels and clean up every partial resource.
+The central TODO includes explicit dead/dangling-code removal and feature gates.
+Then AI and every editor surface. Shared changes must return upstream; this slice
+keeps Air 1.0.0 unchanged.

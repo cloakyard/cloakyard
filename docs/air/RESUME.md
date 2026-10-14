@@ -122,7 +122,7 @@ PDF preview 8132 and dev 8122 are running. Earlier home/reference servers were n
 restarted or verified during this checkpoint. Own test tabs/emulation were cleaned
 up; no user tab was reloaded. No push or deployment.
 
-## Latest bounded implementation — Password (2026-10-14)
+## Previous bounded implementation — Password (2026-10-14)
 
 CloakPDF `5770f7b` completes the Password option/result slice: single-contour Air
 fields, inset visibility focus, explicit permissions, detection/corrupt recovery,
@@ -140,12 +140,39 @@ all six standalone flows, build/PWA/135-asset limits, inventory, design integrit
 17 portability assertions and canonical synchronization pass. PDF evidence:
 `docs/air/validation.md` and `evidence/password-2026-10-14.json`.
 
-**Next: Digital Signature options/results**, then Compare, AI and all editor
-surfaces. The central TODO has the next bounded checklist. Air 1.0.0 remains
+This checkpoint was followed by Digital Signature below. Air 1.0.0 remains
 unchanged. Physical touch/software keyboard and screen-reader acceptance stay open;
 inventory `validated` stays false. PDF preview 8132 and dev 8122 are running.
 Own tabs/zoom/emulation and synthetic download were cleaned up, without reloading
 user tabs. No push or deployment.
+
+## Latest bounded implementation — Digital Signature (2026-10-14)
+
+CloakPDF `109baea` adopts Air for certificate import/generation, password visibility,
+existing/loaded metadata, optional details and result/recovery. It removes replaced
+skins, mono/uppercase/tinted presentation, obsolete imports and redundant async state.
+Cancellation terminates the crypto worker; new imports complete before an obsolete
+read resolves, without a dangling shared-action guard. File replacement, focus,
+error-input retention, duplicate dispatch and late output are covered.
+
+Validation exposed and fixed padded signature parsing and Unicode certificate/CMS
+issuer encoding. Generated and imported signatures, certificate chains and empty
+passwords pass independent OpenSSL CMS verification plus ByteRange, page count and
+exact source-stream checks. All six standalone production workflows pass alongside
+359 unit tests, format/lint/type, dead-code, build/PWA/129-asset limits, design checks,
+17 isolated-portability assertions and canonical synchronization.
+
+484 geometry observations cover every contract size, both themes and 16/32px text
+across eleven states. Representative screenshots, forced colours/reduced motion
+and native Safari/Firefox 200% zoom are recorded in the PDF validation/evidence files.
+Physical touch/software keyboard and screen-reader acceptance remain open;
+`validated` stays false. Own test tabs/emulation/downloads were cleaned up.
+No user tab reload, push or deployment.
+
+**Next: Compare PDF inputs/results**, including both view modes, page navigation,
+diff fidelity and complete cleanup of loading tasks/canvases/object URLs. The
+central TODO owns the bounded checklist, including dead/dangling-code removal.
+Then AI and all editor surfaces; Air 1.0.0 remains pinned and unchanged.
 
 ## Saved checkpoints
 
@@ -193,8 +220,7 @@ user tabs. No push or deployment.
 
 ## Next bounded pieces
 
-1. Complete Digital Signature options and results,
-   Compare results and on-device AI states. Entry, constructors, shared utility controls,
+1. Complete Compare inputs/results and on-device AI states. Entry, constructors, shared utility controls,
    landscape handling, policy/encrypted/PWA, utility headers and recovery are implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported
    output checks. Then IMG → Resume → Drop website → full-family comparison.

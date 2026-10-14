@@ -229,8 +229,11 @@ with the device checks recorded, then continuing the rollout.
       guarded work, true output feedback and immediate mismatch correction.
       264 state layouts + 44 final field geometry checks, native 200% zoom and
       encrypted/decrypted output fidelity pass; physical/assistive gates remain.
-- [ ] Remaining utility bodies: Digital Signature fields/results, Compare inputs/results
-      and on-device AI states.
+- [x] Digital Signature options/results: shared Air certificate controls, metadata,
+      trust disclosures, cancellation/recovery and independently verified output.
+      484 geometry observations, native 200% zoom, Unicode/CMS/source fidelity and
+      dead-code checks pass; physical/assistive gates remain.
+- [ ] Remaining utility bodies: Compare inputs/results and on-device AI states.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
@@ -359,22 +362,46 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Final per-app checks/builds, visual evidence, clean git state and commit ledger.
 - [ ] Mark the persistent goal complete only after every required item is verified.
 
-### Next PDF slice — Digital Signature options and results
+### Next PDF slice — Compare inputs and results
 
-- [ ] Audit PDF and certificate intake, import/self-signed modes, identity and
-      passphrase fields, disclosures, signing options and result/recovery states.
-- [ ] Adopt pinned Air controls and open composition for every custom state;
-      preserve certificate/signature semantics and keep secrets local.
-- [ ] Guard duplicate work, cancellation/replacement and late output; retain useful
-      inputs on failure and restore focus after mode/file changes.
-- [ ] Inspect every viewport class, both themes, enlarged text, keyboard, forced
-      colours and reduced motion, plus native Safari/Firefox zoom.
-- [ ] Verify imported/generated certificates, incorrect passphrase and malformed
-      input recovery, signed PDF validity and unchanged source page/content.
-- [ ] Remove replaced visual code/references; record evidence, run applicable
-      feature/design/build checks, then commit. Shared skin changes return upstream.
+- [ ] Audit both intake regions, selected/encrypted/corrupt files, progress,
+      side-by-side and overlay modes, change visibility, page navigation and summary.
+- [ ] Apply pinned Air controls and open composition to every custom control and
+      result state; preserve paper and functional diff highlight colours.
+- [ ] Guard overlapping detection/comparison, cancellation, replacement and late
+      results; retain useful input on failure and restore meaningful focus.
+- [ ] Close PDF loading tasks, page/canvas resources and every object URL on
+      success/error/cancel/replacement/unmount, including partial load failures.
+- [ ] Verify identical/changed/unequal-length documents, diff classification and
+      percentages, both view modes, keyboard page changes and source fidelity.
+- [ ] Inspect all eleven contract sizes, both themes, enlarged text, coarse input,
+      short landscape, reduced motion/forced colours and native 200% browser zoom.
+- [ ] Remove replaced skins, obsolete state/helpers/imports and dangling callbacks;
+      inspect remaining consumers before deleting shared code. Run dead-code and
+      legacy-cue scans, required feature/build/design checks, record evidence, commit.
 
 ## Commit ledger
+
+### Completed PDF slice — Digital Signature options and results
+
+Committed in CloakPDF `109baea`; evidence and passing output are in that repository's
+`docs/air/evidence/signature-2026-10-14.json` and companion checks log.
+
+- [x] Migrate certificate import/generation, single-contour fields, password
+      visibility, existing/loaded identity, disclosures, metadata and recovery.
+- [x] Preserve and independently verify generated/imported signatures, Unicode
+      names, certificate chains, empty passwords, ByteRange and exact source streams.
+- [x] Guard duplicate/late signing; terminate cancelled certificate workers and
+      allow replacement imports before obsolete file reads resolve. Preserve focus.
+- [x] Review 484 geometry observations in all contract sizes/themes/enlarged text,
+      representative screenshots, native Safari/Firefox 200% zoom and forced colours.
+- [x] Remove replaced visual code and redundant async state/imports; prevent a
+      cancelled import leaving a dangling action guard. Dead-code scan passes.
+- [x] Pass check/type, 359 units, six production standalone flows, build/PWA/129-asset
+      limits, inventory, design integrity, 17 portability assertions and canonical sync.
+
+Physical touch/software keyboard and screen-reader acceptance remain open. Compare,
+AI and every editor surface remain in scope; this is not a completed PDF migration.
 
 ### Completed PDF slice — Password options and results
 
