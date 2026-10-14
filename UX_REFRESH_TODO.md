@@ -243,7 +243,7 @@ with the device checks recorded, then continuing the rollout.
       448 layouts, real model lifecycle and native browser zoom pass.
       Physical/assistive acceptance remains open; see the completed slice below.
 - [x] Editor compact toolbar, tool rail/search, mobile picker and shared page stepper.
-- [ ] Properties panel, page context, overview grid and thumbnails.
+- [x] Properties panel, page context, overview grid and thumbnails; physical/assistive gates remain open.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
 - [ ] Every editor panel listed in the surface inventory, including advanced/disclosed controls.
@@ -402,8 +402,9 @@ interiors, custom controls, canvas chrome and less-visible states.
       validated locally; physical/assistive acceptance remains open.
 - [x] Editor header and tool navigation, including compact phone/tablet toolbar,
       mobile picker, keyboard paths, short-height layouts and preserved state.
-- [ ] Next bounded piece: properties/page context/overview/thumbnails, then canvas surround and
-      every remaining editor panel and overlay with the same commit gates.
+- [x] Properties/page context, overview/thumbnails and Organize page actions, including real history/output tests.
+- [ ] Next bounded piece: canvas surround, selection/zoom/pan chrome and context overlays,
+      then every remaining editor panel with the same commit gates.
 
 ### Completed PDF slices — AI setup and model dialogs
 
@@ -634,3 +635,27 @@ CloakPDF commit: `38dbc8b`. Evidence is in that repository's
 Physical touch/software keyboard, OS IME and assistive speech acceptance stay open.
 Inspector, overview/thumbnails, canvas chrome and tool interiors remain pending.
 Next: properties/page context and page collections; retain the same per-piece gates.
+
+### Completed PDF slice — Inspector and page collections (2026-10-14)
+
+Committed in CloakPDF as `4343432`.
+
+- [x] Air inspector headers/empty state/Cancel, immediate tool navigation and shared
+      primary action skin. Omit the repeated page count; retain the compact toolbar.
+- [x] One responsive grid for browsing and organizing, neutral selected page marker,
+      readable removed state, 40/44px actions and explicit keyboard reorder controls.
+- [x] Saved/pending rotation fits the complete thumbnail; labelled preview fallback;
+      blank-scan failure/retry and obsolete-result guard.
+- [x] Real tests found and fixed restored page counts after Undo/Reset, stale pending
+      plans after geometry changes, and explicit Cancel draft cleanup. Preserve
+      ordinary tool reselection, staged Apply, exports and history.
+- [x] 88 collection layouts, real PDF output, single-page density, 60-page keyboard
+      focus; desktop/laptop/tablet/mobile light/dark renders and native Safari/Firefox
+      200% zoom. Existing editor/navigation/export/modal suites and required checks pass.
+- [x] Remove replaced skins, unused entrance animation/thumbnail class option and
+      obsolete milestone references. No dependency added. Portable PDF appendix synced.
+
+Evidence is in `cloakpdf/docs/air/validation.md` and
+`cloakpdf/docs/air/evidence/collections-2026-10-14.json`. Physical touch/software
+keyboard, OS IME and assistive speech gates remain open. Canvas chrome and remaining
+panel/overlay interiors are next; the full PDF and family migration remain incomplete.
