@@ -678,7 +678,8 @@ PDF implementation `7743488`; final portable reference `f40842a`.
       forms and destructive marks; native field metadata remains intact.
 - [x] Follow the visible-page geometry through N-up/booklet output, including
       cropped/rotated/mixed/blank pages, physical units and native form appearances.
-- [ ] Follow the geometry matrix through searchable OCR output. Broader native
+- [x] Follow the geometry matrix through searchable OCR output (OCR checkpoint below).
+- [ ] Broader native
       annotation appearance/assistive acceptance remains part of its panel audit.
 
 Canvas evidence: `cloakpdf/docs/air/evidence/canvas-2026-10-14.json` and validation.md.
@@ -731,8 +732,8 @@ exact portable specification/bundle sync pass.
 - [x] Compare 23 exported sheets independently with PDF.js source renders; audit
       all five layouts across seven viewports in both themes (70 cases), 200% text,
       forced colours and reduced motion. Native Safari/Firefox keyboard/zoom reviewed.
-- [ ] Searchable OCR geometry and stale-result recovery are next, followed by
-      preview failure recovery and the remaining panel/overlay interiors.
+- [x] Searchable OCR geometry and stale-result recovery (OCR checkpoint below).
+- [ ] Preview failure recovery and the remaining panel/overlay interiors.
 
 Evidence is recorded in `cloakpdf/docs/air/validation.md` and
 `cloakpdf/docs/air/evidence/nup-2026-10-14.json`. Full product/family migration,
@@ -743,3 +744,39 @@ extended browser suites + the N-up integration (24 suites), lint/types/format,
 dead-code, build/PWA/asset limits, design inventory and portability. Main-repo
 lint/types/build and exact six-document/five-bundle sync also pass. No push or
 deployment. The full refresh remains in progress.
+
+### AIR-07 PDF searchable OCR and review — 2026-10-14
+
+- [x] Replace OCR panel/preview skins with Air select, actions, notices and reading
+      surfaces. Use side-by-side panes when space allows; Text/Source switching
+      retains useful canvas height on narrow displays. Keep toolbar page navigation.
+- [x] Request real word boxes from Tesseract; use visible cropped/rotated physical
+      dimensions and fit the invisible output to recognised bounds. Preserve native
+      text once and retain original page pixels.
+- [x] Bind extraction to the current document revision; discard abandoned results,
+      retain failures for retry, verify apply/undo, and require pending marks to be
+      applied before recognition so redacted content cannot be resurrected.
+- [x] Remove unused OCR/fallback writers, raster/preprocessing helpers, old styles
+      and dangling references. No new dependency. Update the portable PDF appendix.
+- [x] Validate real OCR and output across eight rotation/UserUnit combinations,
+      crop offsets, native/blank pages, 20 responsive/theme preview states, 200%
+      text, keyboard menus, forced colours and reduced motion. Native Safari and
+      Firefox extraction/apply pass. Regression gates and evidence recorded.
+- [ ] Next: thumbnail/preview failure recovery, then remaining panel/overlay interiors.
+- [ ] OCR follow-up: embed wider Unicode scripts, preserving correct glyph mapping
+      and selection. Until then, unsupported OCR output fails explicitly and leaves
+      the preview available for copying; it must never silently omit words.
+- [ ] OCR follow-up: safely recognise scanned regions on pages that also contain
+      native text, without duplication. Current OCR preserves any existing text layer.
+
+Evidence: `cloakpdf/docs/air/validation.md` and `evidence/ocr-2026-10-14.json`.
+381 units, 16 production smoke + seven extended + OCR/geometry integrations (25
+browser suites) pass, including stale-result and redaction privacy checks.
+Air 1.0.1 is unchanged. Full product/family migration, physical touch/software
+keyboard, OS IME and assistive speech remain open. No push or deployment.
+
+PDF checkpoint: `a5efb95`. Format/lint/types, dead-code, build/PWA/128 asset limits,
+inventory and isolated/adversarial portability pass. Main-repo lint/types/build,
+design checks and exact six-document/five-bundle sync pass. Runtime source is
+98 lines smaller after removing the replaced OCR paths; tests and evidence are
+kept separately.
