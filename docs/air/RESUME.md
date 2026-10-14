@@ -95,7 +95,7 @@ speech remain open. Full evidence: PDF `docs/air/validation.md` and
 This constructor checkpoint was followed by the Extract Images slice below. Preview
 remains `http://127.0.0.1:8132/`. No user editor tab was reloaded; no push/deployment.
 
-## Latest bounded implementation — Extract Images (2026-10-14)
+## Prior bounded implementation — Extract Images (2026-10-14)
 
 CloakPDF `b25ae2c`: image selection/results, shared selected-file identity,
 full-resolution PNG/ZIP delivery and complete empty/error/busy/recovery states use
@@ -116,11 +116,36 @@ PDF evidence is in `docs/air/validation.md` and `evidence/extract-2026-10-14.jso
 Physical touch/software keyboard, screen-reader speech and loaded-model AskPDF
 integration remain open. Inventory `validated` remains false.
 
-**Next: PDF Password options/results**, then Digital Signature, Compare, AI and
-all editor surfaces. Continue with the active checklist in `UX_REFRESH_TODO.md`.
+This checkpoint was followed by Password below. The active checklist is in
+`UX_REFRESH_TODO.md`.
 PDF preview 8132 and dev 8122 are running. Earlier home/reference servers were not
 restarted or verified during this checkpoint. Own test tabs/emulation were cleaned
 up; no user tab was reloaded. No push or deployment.
+
+## Latest bounded implementation — Password (2026-10-14)
+
+CloakPDF `5770f7b` completes the Password option/result slice: single-contour Air
+fields, inset visibility focus, explicit permissions, detection/corrupt recovery,
+one wrong-password error and truthful completion. Busy work preserves drafts,
+blocks duplicate dispatch and prevents late output after leaving. Cancelled
+security detection cannot replace a newer file. A corrected mismatch clears while
+typing; the old input/disclosure/mono/tint code is removed.
+
+Passing: 264 state/size/theme/text geometry observations and 44 final icon geometry
+rechecks, reviewed representative screenshots, native Safari/Firefox 200% zoom,
+forced colours and reduced motion. Production feature tests verify permission bits,
+AES-256, source-stream equality through protection/unlocking, wrong/empty-password
+handling, editor handoff and cancellation/replacement. Check/dead-code, 355 units,
+all six standalone flows, build/PWA/135-asset limits, inventory, design integrity,
+17 portability assertions and canonical synchronization pass. PDF evidence:
+`docs/air/validation.md` and `evidence/password-2026-10-14.json`.
+
+**Next: Digital Signature options/results**, then Compare, AI and all editor
+surfaces. The central TODO has the next bounded checklist. Air 1.0.0 remains
+unchanged. Physical touch/software keyboard and screen-reader acceptance stay open;
+inventory `validated` stays false. PDF preview 8132 and dev 8122 are running.
+Own tabs/zoom/emulation and synthetic download were cleaned up, without reloading
+user tabs. No push or deployment.
 
 ## Saved checkpoints
 
@@ -168,7 +193,7 @@ up; no user tab was reloaded. No push or deployment.
 
 ## Next bounded pieces
 
-1. Complete Password/signature options and results,
+1. Complete Digital Signature options and results,
    Compare results and on-device AI states. Entry, constructors, shared utility controls,
    landscape handling, policy/encrypted/PWA, utility headers and recovery are implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported

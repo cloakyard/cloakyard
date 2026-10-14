@@ -373,3 +373,25 @@ Next bounded piece: **Password options/results**, including both add/remove mode
 permission controls, visibility, wrong-password recovery and encrypted/decrypted
 output fidelity. Then Signature, Compare, AI and every editor surface. Keep the
 canonical Air spec pinned; shared corrections return to Cloakyard first.
+
+### 2026-10-14 Password checkpoint
+
+CloakPDF `5770f7b` adopts Air for add/remove fields, visibility, permission choices,
+file detection and result/recovery. Original encryption/decryption algorithms and
+permission defaults/bits are preserved. Detection cancellation, replacement,
+error-input retention, duplicate dispatch and late-delivery guards are exercised.
+Production output tests verify AES-256/permissions, exact source-stream equality,
+wrong/empty-password handling and the editor handoff.
+
+264 state/size/theme/text geometry observations plus 44 final icon checks pass;
+representative visual reviews and native Safari/Firefox 200% zoom are recorded.
+Required checks, 355 units, six standalone production flows, dead-code/build/PWA
+and design/portability checks pass. Physical/assistive acceptance remains open.
+The product fallback focus rule now lets the canonical field-action inset win;
+no shared token/contract change was needed. Replaced visual code was removed.
+
+Next bounded piece: **Digital Signature options/results**, covering certificate
+import/generation, identity and passphrase fields, signing/recovery, signed-output
+validity and source fidelity. Then Compare, AI and every editor surface. See the
+active TODO for the complete bounded checklist and the PDF validation record for
+evidence. Keep Air pinned; proposed shared changes return upstream first.

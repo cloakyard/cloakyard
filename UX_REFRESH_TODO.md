@@ -225,8 +225,12 @@ with the device checks recorded, then continuing the rollout.
 - [x] Extract Images and shared selected-file identity: native selection, thumbnails,
       PNG/ZIP output, empty/recovery, measured scan cancellation and guarded downloads.
       176 geometry cases, real output/lifecycle regressions and native 200% zoom pass.
-- [ ] Remaining utility bodies: Password options, Compare inputs/results,
-      Digital Signature fields/results and on-device AI states.
+- [x] Password options/results: Air fields, explicit permissions, detection/recovery,
+      guarded work, true output feedback and immediate mismatch correction.
+      264 state layouts + 44 final field geometry checks, native 200% zoom and
+      encrypted/decrypted output fidelity pass; physical/assistive gates remain.
+- [ ] Remaining utility bodies: Digital Signature fields/results, Compare inputs/results
+      and on-device AI states.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
@@ -355,18 +359,43 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Final per-app checks/builds, visual evidence, clean git state and commit ledger.
 - [ ] Mark the persistent goal complete only after every required item is verified.
 
-### Next PDF slice — Password options and results
+### Next PDF slice — Digital Signature options and results
 
-- [ ] Audit add/remove flows, password visibility, permission settings, detection,
-      encrypted/plain inputs, success/error/retry and file replacement during work.
-- [ ] Adopt the pinned Air fields, choices, action and feedback rules; preserve
-      encryption/decryption semantics and the existing security disclosures.
-- [ ] Validate both themes and all viewport classes, keyboard/zoom/long names,
-      wrong-password recovery, permissions and actual encrypted/decrypted outputs.
-- [ ] Remove replaced styles/references, record evidence and run required checks
-      before committing. Shared control changes must return upstream first.
+- [ ] Audit PDF and certificate intake, import/self-signed modes, identity and
+      passphrase fields, disclosures, signing options and result/recovery states.
+- [ ] Adopt pinned Air controls and open composition for every custom state;
+      preserve certificate/signature semantics and keep secrets local.
+- [ ] Guard duplicate work, cancellation/replacement and late output; retain useful
+      inputs on failure and restore focus after mode/file changes.
+- [ ] Inspect every viewport class, both themes, enlarged text, keyboard, forced
+      colours and reduced motion, plus native Safari/Firefox zoom.
+- [ ] Verify imported/generated certificates, incorrect passphrase and malformed
+      input recovery, signed PDF validity and unchanged source page/content.
+- [ ] Remove replaced visual code/references; record evidence, run applicable
+      feature/design/build checks, then commit. Shared skin changes return upstream.
 
 ## Commit ledger
+
+### Completed PDF slice — Password options and results
+
+Committed in CloakPDF `5770f7b`; evidence and passing output are in that repository's
+`docs/air/evidence/password-2026-10-14.json` and companion checks log.
+
+- [x] Audit and migrate add/remove fields, visibility, permission choices,
+      detection, selected-file states, success and retry to pinned Air controls.
+- [x] Preserve AES-256/permission bits and source streams through protection and
+      unlocking; verify wrong/empty-password handling and real editor handoff.
+- [x] Guard duplicate/late delivery, ignore obsolete detection after cancellation,
+      preserve drafts during errors and restore intake/field focus.
+- [x] Review all contract sizes in both themes/enlarged text, native Safari/Firefox
+      200% zoom, forced colours and reduced motion. Correct page fallback focus
+      overriding the canonical field action; no shared contract change was needed.
+- [x] Remove replaced skins/mono headings/tinted icons/disclosure code, update
+      inventory and evidence; pass 355 units, six standalone production workflows,
+      check/dead-code/build/PWA/135-asset limits, design integrity and portability.
+
+Physical touch/software keyboard and screen-reader acceptance remain open. The
+complete PDF migration, including every editor surface, is still in progress.
 
 ### Completed PDF slice — Extract Images
 
