@@ -451,3 +451,27 @@ chat/indexing/citations and the rest of the editor. Keep the stage/document/hist
 intact. The shared frame does not certify an untouched modal interior. Remove each
 replaced implementation and test complete features before its local commit. Physical
 touch/software-keyboard and assistive speech gates remain open.
+
+## 2026-10-14 — Export interior checkpoint
+
+PDF `5f8ab8c` migrates all six Export formats, PDF modifiers, compression
+segments, progress/error/retry and the compact trigger. Native Air choices replace
+numbered ledgers and accent strips. Export retains settings and focus on failure;
+duplicate work is guarded. Existing processing is not cancellable, so dismissal
+is protected with explicit status until settlement. Global document shortcuts
+cannot escape a modal; the command palette keeps its toggle shortcut.
+
+320 layout cases pass across all Air sizes, 640/1024px neighbors, light/dark and
+16/32px root text. Safari/Firefox native keyboard and actual 200% zoom inspected.
+Real outputs cover all formats/modifiers and combinations, exact source/history
+preservation, grayscale pixels, form flattening, metadata removal and redaction
+across every format. Required checks, 366 units, build/PWA, dead-code and applicable
+modal/editor/output suites pass. No dependencies or contract changes. Obsolete
+Export styles, helper and imports removed. Compact evidence plus two synthetic
+proof PNGs live in PDF's `docs/air/evidence/`; larger captures stay local.
+
+Next bounded slice: **command palette interior** — search, grouped/selected/empty
+results, key hints, scrolling and safe handoffs. Then Ask PDF chat/indexing/citations,
+followed by remaining editor chrome/canvas/panels. Physical touch/software-keyboard
+and assistive speech acceptance remain open. Commit only after the same validation
+and cleanup gates; no push or deployment is authorized.

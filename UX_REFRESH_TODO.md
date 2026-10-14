@@ -244,9 +244,11 @@ with the device checks recorded, then continuing the rollout.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
 - [ ] Every editor panel listed in the surface inventory, including advanced/disclosed controls.
-- [ ] Export modal: PDF/images/contact-sheet/split, options, busy/error and result flows.
+- [-] Export modal: all six formats, native choices, PDF modifiers and busy/error/retry
+  implemented (PDF `5f8ab8c`); 320 layouts, real outputs/redaction and
+  keyboard/zoom pass. Physical/assistive acceptance remains open.
 - [-] Modal coverage: shared frame and AI consent/model choice/details implemented.
-  Export and command-palette interiors and editor notifications remain pending.
+  Export interior is implemented; command-palette interior and editor notifications remain pending.
   Entry PWA prompt is implemented above; editor integration acceptance remains.
 - [ ] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
 - [ ] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
@@ -371,13 +373,17 @@ interiors, custom controls, canvas chrome and less-visible states.
 
 ### Next PDF slices — finish modal interiors, then chat
 
-- [ ] Export: review every format and option, format choice, page range, filenames,
-      fields/selects, busy/cancel/error/retry, output summary and focus restoration.
-      Preserve real PDF/image/text exports and data-loss disclosures.
+- [x] Export: six native format choices, all PDF options/compression levels, full
+      filenames, busy/error/retry, focus return and exact real output validation.
+      All six formats burn pending redaction; working source/history unchanged.
+      Existing processors do not support cancellation: protect preparation with
+      explicit status until settlement. No invented page-range or rename controls.
+      PDF `5f8ab8c`; compact evidence in its `docs/air/evidence/export-2026-10-14.json`.
 - [ ] Command palette: search input, grouped results, active row, key hints,
       empty/no-results, scroll containment and command-to-dialog handoffs.
-- [ ] Confirm keyboard trigger return in Safari as well as Chromium/Firefox for
-      both editor dialogs, including pending actions and disappearing triggers.
+- [-] Export keyboard and trigger return pass in Chromium/Safari/Firefox, including
+  200% browser zoom. Global editor shortcuts cannot mutate work behind dialogs.
+  Complete command-palette interior and its handoffs next.
 - [ ] Review all required sizes/themes, enlarged text, touch targets, short
       landscape, reduced motion/forced colours and actual browser zoom per slice.
 - [ ] Remove each replaced interior's obsolete selectors, helpers and imports;
