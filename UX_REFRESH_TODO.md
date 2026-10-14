@@ -672,10 +672,12 @@ PDF implementation `7743488`; final portable reference `f40842a`.
       selection, exports and required responsive/theme matrix before committing.
 - [x] Remove obsolete canvas palette fields, redundant accent overrides and skins;
       run dead-code checks and inspect the final diff.
-- [ ] Separate geometry follow-up: saved /Rotate and non-origin CropBox are not
-      consistently mapped through focus-stage geometry and vector export writers.
-      Test preview and exported placement together for annotations/signatures/codes,
-      crop/stamps/forms and destructive marks before changing coordinate behavior.
+- [x] Visible-page geometry follow-up: saved /Rotate, CropBox/MediaBox offsets and
+      UserUnit now map consistently through the focus stage and vector overlays.
+      PDF.js pixel comparisons cover annotations/signatures/codes, crop/stamps/flat
+      forms and destructive marks; native field metadata remains intact.
+- [ ] Follow the same geometry matrix through N-up/booklet and searchable OCR output.
+      Native form appearance/assistive acceptance remains part of its panel audit.
 
 Canvas evidence: `cloakpdf/docs/air/evidence/canvas-2026-10-14.json` and validation.md.
 68 canvas layouts, 15 browser suites, 367 units, dead-code and build gates pass.
@@ -687,3 +689,28 @@ geometry/output mapping, preview recovery, then remaining panel interiors/overla
 Portable checkpoint: IMG `88253d7`, Resume `a09ef58`, Drop `f073a51`.
 All required checks pass, including 470 IMG and 288 Resume tests; exact six-document
 sync and all five independent bundles pass. No push or deployment.
+
+### AIR-07 PDF visible-page geometry — 2026-10-14
+
+- [x] Use one visible-page coordinate helper for editor dimensions and vector writes;
+      preserve source content, saved rotation, crop offsets and physical units.
+- [x] Remove raw-rotation metadata, duplicate thumbnail rotation adjustment, old crop/
+      font-suggestion skip branches, stale UI copy and the unused crop barrel export.
+- [x] Share Crop/Strip-furniture conversion and remap pending shapes, strokes, text,
+      signatures and codes so cropping does not move or resize their document content.
+- [x] Compare real PDF.js output for 12 geometry configurations and 10 overlay writers,
+      crop pixels, pending annotation equivalence, erasure/redaction then vector output.
+- [x] Check 48 rotated-page layouts in six size classes and both themes; inspect
+      desktop/laptop/tablet/phone renders and direct rotated crop/undo behavior.
+- [x] Pass 376 unit tests, 16 smoke + seven extended browser suites, final production
+      canvas/collection/rotation regressions, dead-code, types/lint/build and portability.
+- [ ] Next: N-up/booklet and searchable OCR geometry, preview failure recovery, then
+      remaining tool and overlay interiors. Full PDF/family conformance remains open.
+
+Evidence: `cloakpdf/docs/air/evidence/geometry-2026-10-14.json` and validation.md.
+Air 1.0.1 is unchanged; this slice implements its existing output-preservation rule.
+No dependency added, push or deployment. Physical touch/software keyboard, real OS
+IME and assistive speech are still acceptance gates, not inferred from emulation.
+
+PDF implementation checkpoint: `c7124a6`. Main-repo format/lint/types/build and
+exact portable specification/bundle sync pass.
