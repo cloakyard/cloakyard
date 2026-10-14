@@ -433,3 +433,21 @@ model choices, consent, download/cache recovery and RAG behavior. Keep each piec
 bounded and its evidence compact. User steering requires a lean codebase: reuse
 existing contracts, delete replaced implementations instead of leaving parallel
 paths, audit real consumers and pass dead-code/feature/build gates before commit.
+
+### 2026-10-14 AI setup/model dialogs checkpoint and next piece
+
+CloakPDF `74e32ed` implements the setup and native tier choices; `747aa44` implements
+shared Air dialog geometry/motion, model consent/loading/error, details/storage,
+pending tier selection and loaded-model actions. Complete keyboard ownership,
+Safari focus behavior, interrupted loading and storage transaction recovery are
+covered. 268 responsive/theme/text cases and real AI lifecycle checks pass alongside
+366 units, dead-code, build and design/portability checks. Native Safari/Firefox
+200% zoom is reviewed. 791 net production lines removed; no dependencies added.
+
+The user's modal priority makes the next bounded piece **Export's full interior**:
+every format, option, input/select, busy/error/retry/result state and actual output.
+Then migrate **command-palette search/results/key hints/handoffs**, then Ask PDF
+chat/indexing/citations and the rest of the editor. Keep the stage/document/history
+intact. The shared frame does not certify an untouched modal interior. Remove each
+replaced implementation and test complete features before its local commit. Physical
+touch/software-keyboard and assistive speech gates remain open.

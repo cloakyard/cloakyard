@@ -235,14 +235,19 @@ with the device checks recorded, then continuing the rollout.
       dead-code checks pass; physical/assistive gates remain.
 - [x] Compare inputs/results: Air file context, modes, page navigation and recovery;
       cancellable rendering and complete resource cleanup. Committed `f1d99d5`.
-- [ ] Remaining utility bodies: on-device AI setup, consent, cache and chat states.
+- [x] AI setup and model tiers: native Air choices, bundle estimates and one loading owner (`74e32ed`).
+- [x] AI consent/progress/error, details, cache actions, model switching and shared
+      modal frame implemented (`747aa44`); 268 layouts, real model lifecycle and
+      cross-browser keyboard/zoom reviewed. Physical/assistive gates remain open.
+- [ ] Remaining utility body: Ask PDF chat, indexing, messages/citations and errors.
 - [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
 - [ ] Every editor panel listed in the surface inventory, including advanced/disclosed controls.
 - [ ] Export modal: PDF/images/contact-sheet/split, options, busy/error and result flows.
-- [ ] Command palette, all modal shells, AI consent/model choice/details and editor notifications.
-      Entry PWA prompt is implemented above; editor integration acceptance remains.
+- [-] Modal coverage: shared frame and AI consent/model choice/details implemented.
+  Export and command-palette interiors and editor notifications remain pending.
+  Entry PWA prompt is implemented above; editor integration acceptance remains.
 - [ ] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
 - [ ] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
 - [ ] Feature sweep: redaction/smart erase, metadata/scrub, forms/autofill, links/bookmarks/attachments, OCR.
@@ -364,21 +369,47 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Final per-app checks/builds, visual evidence, clean git state and commit ledger.
 - [ ] Mark the persistent goal complete only after every required item is verified.
 
-### Next PDF slice — AI setup, consent and model controls
+### Next PDF slices — finish modal interiors, then chat
 
-- [ ] Audit setup/tier selection, consent, model details, cache/storage actions,
-      download/loading/error/cancel/retry and loaded-model handoffs before changing UI.
-- [ ] Migrate the setup and model-management components using pinned Air controls;
-      keep truthful sizes, hardware needs, local-data boundaries and explicit consent.
-- [ ] Preserve cached/partial-cache loading, tier changes, focus restoration,
-      cancellation, memory release and confirmed cache deletion behavior.
-- [ ] Validate all contract sizes/themes, enlarged text, keyboard/coarse targets,
-      reduced motion/forced colours, native zoom and applicable real AI workflows.
-- [ ] Remove replaced skins, obsolete helpers/props and dead references; check
-      actual consumers. Avoid new dependencies or abstractions without a real need.
-      Record bundle cost, run required checks, save compact evidence, then commit.
-- [ ] Complete Ask PDF chat, indexing, messages/citations and errors as the following
-      bounded piece; the setup migration alone does not complete AI or PDF.
+- [ ] Export: review every format and option, format choice, page range, filenames,
+      fields/selects, busy/cancel/error/retry, output summary and focus restoration.
+      Preserve real PDF/image/text exports and data-loss disclosures.
+- [ ] Command palette: search input, grouped results, active row, key hints,
+      empty/no-results, scroll containment and command-to-dialog handoffs.
+- [ ] Confirm keyboard trigger return in Safari as well as Chromium/Firefox for
+      both editor dialogs, including pending actions and disappearing triggers.
+- [ ] Review all required sizes/themes, enlarged text, touch targets, short
+      landscape, reduced motion/forced colours and actual browser zoom per slice.
+- [ ] Remove each replaced interior's obsolete selectors, helpers and imports;
+      run dead-code, required checks and applicable feature/output tests, save
+      compact evidence, then commit. Do not add dependencies without a real need.
+- [ ] Follow with Ask PDF chat, indexing, messages/citations and recoverable errors,
+      then the complete editor chrome, canvas and every panel/overlay.
+
+### Completed PDF slices — AI setup and model dialogs
+
+- [x] Setup/tier selection and bundle estimates, one return-visitor loader,
+      partial-cache guard, native radios and real cold/warm/swap paths (`74e32ed`).
+- [x] Shared Air frame and phone sheet; consent/loading/error/retry/cancel; model
+      metadata; memory release; confirmed cache/index deletion and recovery;
+      loaded-model actions and pending tier selection (`747aa44`).
+- [x] Preserve modal ownership through exit; immediate keyboard/reduced motion;
+      native radio single Tab stop; Safari link traversal and trigger return.
+- [x] Inspect 268 layout cases in both themes at 16/32px root text, all Air sizes
+      and dialog breakpoint neighbors. Native Safari/Firefox 200% zoom inspected.
+- [x] Validate real model loads, warm return, PDF questions/extraction, tier swap,
+      cancel/reopen, explicit RAM release/reload and existing document recovery.
+      CacheStorage denial and IDB transaction abort remain retryable; successful
+      deletion removes real disposable test records and readiness flags.
+- [x] Remove old modal skin, unused animation presets, estimated-percentage helper,
+      unused single-model API and duplicate details owners. Net production change:
+      **791 lines removed**, zero dependencies; Ask PDF 596.20/179.08 kB raw/gzip
+      versus 611.72/181.88 kB before the modal slice.
+- [x] Format/lint/types, dead-code, 366 units, production build/127-asset limits,
+      design/portability and applicable editor/modal/AI browser suites pass.
+      Compact evidence is in PDF `docs/air/evidence/ai-modals-2026-10-14.json`.
+- [ ] Physical touch/software-keyboard and assistive speech acceptance remain open.
+      These checkpoints do not complete Ask PDF, the editor or the family refresh.
 
 ### Completed PDF slice — Compare inputs and results
 

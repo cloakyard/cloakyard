@@ -217,7 +217,7 @@ The Compare slice is now complete; see the latest checkpoint below.
 
 ## Next bounded pieces
 
-1. Complete on-device AI setup/model management, then chat/indexing/citations. Entry, constructors, shared utility controls,
+1. Finish Export and command-palette interiors, then Ask PDF chat/indexing/citations. AI setup/model dialogs, entry, constructors, shared utility controls,
    landscape handling, policy/encrypted/PWA, utility headers and recovery are implemented.
 2. Proceed through PDF editor chrome, every tool panel, overlays and exported
    output checks. Then IMG → Resume → Drop website → full-family comparison.
@@ -267,3 +267,27 @@ and then the editor. The user explicitly asked to continue after Compare and kee
 the codebase lean: remove replaced code and unused APIs, inspect actual consumers,
 run dead-code checks, avoid unnecessary abstractions/dependencies and record bundle
 cost per piece. Use the central TODO; do not count setup-only work as full AI migration.
+
+## Latest bounded implementation — AI setup and dialogs (2026-10-14)
+
+PDF `74e32ed` implements setup/tier selection and one complete-bundle loader.
+PDF `747aa44` implements the shared Air modal frame, consent/progress/error,
+model details/storage actions, tier picker and loaded-model bar. Pointer dialogs
+retain focus/inertness through exit; keyboard/reduced motion is immediate. Safari
+Tab traversal and trigger return, explicit memory release/reload, cancelled warm
+loading, IDB transaction failure and pending tier reset are corrected.
+
+268 layout cases, both themes, enlarged text, coarse targets, forced colours and
+native Safari/Firefox 200% zoom reviewed. Required checks, 366 units, real AI
+questions/extraction/warm-return/switch/reload, storage failure/retry, modal stacks,
+command palette, responsive motion and three-fixture editor features pass. No new
+dependencies; 791 net production lines removed. Ask PDF is 596.20/179.08 kB raw/gzip.
+Only two proof PNGs and compact evidence/log enter Git. Larger local captures live
+in the task's `air-ai-modals` visualization directory; model-picker captures include
+private fixture replies and must not be published. No push or deployment.
+
+Next: **Export dialog interior**, then **command palette interior**, followed by
+Ask PDF chat/indexing/citations and every remaining editor surface. The user called
+out modals explicitly; finish those interiors before returning to chat. Their shared
+frame is implemented, not their full migration. Physical-device/assistive speech
+acceptance stays open. Preserve the lean-code and validate-before-commit workflow.
