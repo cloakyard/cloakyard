@@ -676,8 +676,10 @@ PDF implementation `7743488`; final portable reference `f40842a`.
       UserUnit now map consistently through the focus stage and vector overlays.
       PDF.js pixel comparisons cover annotations/signatures/codes, crop/stamps/flat
       forms and destructive marks; native field metadata remains intact.
-- [ ] Follow the same geometry matrix through N-up/booklet and searchable OCR output.
-      Native form appearance/assistive acceptance remains part of its panel audit.
+- [x] Follow the visible-page geometry through N-up/booklet output, including
+      cropped/rotated/mixed/blank pages, physical units and native form appearances.
+- [ ] Follow the geometry matrix through searchable OCR output. Broader native
+      annotation appearance/assistive acceptance remains part of its panel audit.
 
 Canvas evidence: `cloakpdf/docs/air/evidence/canvas-2026-10-14.json` and validation.md.
 68 canvas layouts, 15 browser suites, 367 units, dead-code and build gates pass.
@@ -714,3 +716,30 @@ IME and assistive speech are still acceptance gates, not inferred from emulation
 
 PDF implementation checkpoint: `c7124a6`. Main-repo format/lint/types/build and
 exact portable specification/bundle sync pass.
+
+### AIR-07 PDF N-up/booklet and shared select — 2026-10-14
+
+- [x] Air N-up panel, shared custom field/menu anatomy and native switch; gapless
+      sheet preview uses real booklet padding and optional fold/trim marks.
+- [x] Visible-page embedding preserves crop bounds, saved rotation, physical units,
+      vector text and native form appearances; truly blank pages no longer fail.
+- [x] Protect pending annotations/signatures/codes with review links to their tools;
+      preserve the chosen layout on return. Verify real Apply/Undo page counts.
+- [x] Fix Safari pointer-opened select keyboard ownership, menu anchoring and
+      inspector reflow. Remove replaced dropdown skins, duplicated placement loops
+      and the obsolete SimpleTools filename. No dependency added.
+- [x] Compare 23 exported sheets independently with PDF.js source renders; audit
+      all five layouts across seven viewports in both themes (70 cases), 200% text,
+      forced colours and reduced motion. Native Safari/Firefox keyboard/zoom reviewed.
+- [ ] Searchable OCR geometry and stale-result recovery are next, followed by
+      preview failure recovery and the remaining panel/overlay interiors.
+
+Evidence is recorded in `cloakpdf/docs/air/validation.md` and
+`cloakpdf/docs/air/evidence/nup-2026-10-14.json`. Full product/family migration,
+physical touch/software keyboard, OS IME and assistive speech remain open.
+
+PDF checkpoint: `a820e66`. All gates pass: 381 unit tests, 16 smoke + seven
+extended browser suites + the N-up integration (24 suites), lint/types/format,
+dead-code, build/PWA/asset limits, design inventory and portability. Main-repo
+lint/types/build and exact six-document/five-bundle sync also pass. No push or
+deployment. The full refresh remains in progress.
