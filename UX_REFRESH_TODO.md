@@ -242,7 +242,8 @@ with the device checks recorded, then continuing the rollout.
 - [x] Ask PDF chat, measured indexing, source-page links and recoverable errors;
       448 layouts, real model lifecycle and native browser zoom pass.
       Physical/assistive acceptance remains open; see the completed slice below.
-- [ ] Editor header, tool rail/search, properties panel, page navigation, overview grid and thumbnails.
+- [x] Editor compact toolbar, tool rail/search, mobile picker and shared page stepper.
+- [ ] Properties panel, page context, overview grid and thumbnails.
 - [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
 - [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
 - [ ] Every editor panel listed in the surface inventory, including advanced/disclosed controls.
@@ -399,9 +400,9 @@ interiors, custom controls, canvas chrome and less-visible states.
       compact evidence, then commit. Do not add dependencies without a real need.
 - [x] Ask PDF conversation, indexing, citations and recovery implemented and
       validated locally; physical/assistive acceptance remains open.
-- [ ] Next bounded piece: editor header and tool navigation, including mobile
-      picker, keyboard paths, short-height layouts and preserved document state.
-- [ ] Follow with properties/page navigation/thumbnails, canvas surround, then
+- [x] Editor header and tool navigation, including compact phone/tablet toolbar,
+      mobile picker, keyboard paths, short-height layouts and preserved state.
+- [ ] Next bounded piece: properties/page context/overview/thumbnails, then canvas surround and
       every remaining editor panel and overlay with the same commit gates.
 
 ### Completed PDF slices — AI setup and model dialogs
@@ -611,3 +612,25 @@ Physical touch/software keyboard, real OS IME and assistive speech remain open.
 Underlying indexing is not abortable; obsolete results are discarded on replacement.
 This completes the bounded chat implementation, not the full PDF/family migration.
 Next: editor header and tool navigation, then every remaining editor interior.
+
+### Completed PDF slice — Compact toolbar and editor navigation
+
+CloakPDF commit: `38dbc8b`. Evidence is in that repository's
+`docs/air/evidence/navigation-2026-10-14.json`.
+
+- [x] One 64px toolbar at normal text size, with no filename/page-count subtitle.
+      Tablet/phone disclose the filename and home action from the document mark;
+      paging, undo/redo and export stay available. Pending marks use a small badge.
+- [x] Air labelled rail, neutral selection, full-name mobile tool list, labelled
+      search and clear/empty states; expand/split retains the document and tool.
+- [x] Correct laptop/short-landscape breakpoints; immediate tool navigation and
+      focus return; palette commands wait for modal cleanup; busy/modal history guards.
+- [x] 176 layout cases plus four long-filename cases, both themes and 200% text;
+      native Safari/Firefox keyboard and actual 200% zoom; nine browser suites,
+      366 units, check/dead-code, build/PWA/asset limits and portability checks.
+- [x] Remove replaced header/mobile/rail styling, duplicate page stepper and
+      orphan motion selectors. No dependencies; portable product appendix updated.
+
+Physical touch/software keyboard, OS IME and assistive speech acceptance stay open.
+Inspector, overview/thumbnails, canvas chrome and tool interiors remain pending.
+Next: properties/page context and page collections; retain the same per-piece gates.
