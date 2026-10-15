@@ -1326,3 +1326,28 @@ Air 1.0.1. Main-repo check/types/build, design and sync/portability pass.
 
 Next: Find & Act and Scrub interiors. Full product/family and physical-device/OS
 IME/assistive acceptance remain open. No push or deployment.
+
+## 2026-10-15 — PDF search and scrub checkpoint
+
+The PDF Find & Act/Scrub interiors now use the pinned Air controls and report
+styles. Search preserves query/results/inclusion across failure and cancellation,
+rejects stale coordinates, and keeps author colours separate from snippet UI.
+Scrub has actionable analysis retry, selected-category readiness and explicit
+bookmark/form/annotation consequences. Promised mobile apply is awaited before
+closing; failures keep work available and repeat Done is guarded.
+
+384 units, 16 production smoke suites, seven extended suites, focused search/scrub
+and privacy panels pass (25 browser suites). 44 required layouts and 16 edge-state
+examples cover both themes, with enlarged text and forced-colour/reduced-motion
+checks. Native Safari and Firefox actions pass; Firefox actual 200% zoom reviewed.
+Output tests cover selectable marked text, both annotation modes and scrub category
+keep/remove, failure/retry and undo. The final term-padding change receives its own
+focused rerun. Full command scope/evidence lives in PDF's `docs/air/validation.md`.
+
+127 lines of unused legacy CSS and dangling motion variants removed. Repository
+searches and Knip pass; remaining old shared controls still have real consumers.
+No dependency or contract change. Product appendix updated and regenerated; six
+portable specs/five bundles remain exact. Main repo check/types/build/design and
+portability pass. Physical-device/OS IME/assistive gates remain open. Next: Metadata,
+Bookmarks and Attach, including unresolved asynchronous callback contracts in
+remaining tool interiors. No full-product completion, push or deployment claim.

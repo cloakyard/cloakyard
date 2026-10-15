@@ -1,6 +1,30 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15
+## Latest checkpoint — 2026-10-15 (search and scrub)
+
+PDF commit `fcd913a`: Find & Act and Scrub now use Air throughout their panel interiors. Search retains
+query/results/inclusions after failure, cancels safely and ties matches to exact
+bytes. Scrub reports failure/retry and selected-category readiness, with explicit
+bookmark/form loss and annotation limitations. Mobile Done waits for promised
+apply completion; failure keeps the tool open and repeat activation cannot apply
+twice. Desktop primary actions consume reported failures.
+
+384 units, all 16 production smoke suites, seven extended suites and two focused
+search/privacy suites pass. 44 required layouts, 16 error/busy/long-term states,
+200% root text and native Safari/Firefox including actual Firefox 200% zoom reviewed.
+Real highlight/box/scrub outputs and undo/retry pass. Required checks, build,
+dead-code, provenance and isolated portability pass. Removed 127 unused legacy
+CSS lines and stale motion references; no dependency added. Air 1.0.1 is unchanged.
+
+Next bounded slice: **Metadata, Bookmarks and Attach panel interiors**. Continue
+checking the remaining tool callbacks that return void before their asynchronous
+apply completes, shared controls and shell loading/error/draft banners. Keep source
+and output cleanup in each piece. Physical touch/software keyboards, OS IME and
+assistive speech remain open; full PDF/family migration is unfinished. Local commits
+are authorized; no push or deployment. Product evidence lives in the dated PDF
+validation record and `evidence/search-scrub-2026-10-15.json`.
+
+## Previous checkpoint — 2026-10-15 (privacy marks)
 
 Air 1.0.1 remains locked. PDF commit `c0ac5c0` gives Redact and Smart Erase Air choices, search,
 colour controls and a shared pending-mark list. Cancelled/stale scans cannot add

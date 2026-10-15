@@ -831,3 +831,25 @@ are updated. Physical-device/OS IME/assistive acceptance remains open.
 Next bounded slice: **Find & Act and Scrub panel interiors**. Continue with the
 remaining tool interiors and shell loading/error/draft banners afterward. This
 does not complete PDF or the family migration. No push or deployment.
+
+### AIR-07 PDF Find & Act and Scrub — 2026-10-15
+
+- [x] Replace remaining panel skins with Air fields, choices, colour controls and open reports.
+- [x] Preserve search drafts/selections across failure; invalidate stale byte/tool results.
+- [x] Add Scrub analysis retry, selected-category readiness and explicit rebuild consequences.
+- [x] Make mobile Done await apply and retain the panel on failure.
+- [x] Audit removed consumers and delete unused legacy selectors, animation rules and imports.
+- [x] Finish responsive/native/output regressions, record evidence and commit this slice.
+
+Next: remaining tool interiors (Metadata, Bookmarks and Attach), then shared control
+adapters and shell loading/error/draft banners. Physical-device and assistive gates
+remain open; no full-product migration claim.
+
+44 required layouts, 16 error/busy/long-term states, enlarged text, native Safari
+and Firefox (actual 200% zoom), real highlight/box/scrub outputs and mobile failure/
+retry pass. All 384 units, 16 production smoke + seven extended + two focused
+browser suites pass. Required build/dead-code/portability gates pass. Removed
+127 lines of unused legacy CSS and dangling motion variants; no dependency added.
+PDF checkpoint: `fcd913a`.
+Physical-device/OS IME/assistive acceptance remains open. Other tool callbacks
+returning void still need their asynchronous completion/error lifecycle reviewed.
