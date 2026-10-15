@@ -1392,3 +1392,29 @@ remain intact. No dependencies; editor +1.32 kB gzip, CSS +0.03 kB gzip. The can
 PDF appendix and portable DESIGN are synchronized; family contract remains Air 1.0.1.
 Full evidence is in the PDF repository's dated validation and `bookmarks-2026-10-15.json`.
 Next: Attach, including failed-read recovery, retained retry files and name-tree identity.
+
+## 2026-10-15 — PDF Attach checkpoint
+
+PDF commit `8fcdbe8` adopts Air throughout Attach: open rows, complete filenames,
+40/44px controls, explicit reading/error/retry, byte-scoped failed selections,
+discard/Cancel, guarded immediate actions and Undo. Unicode/duplicate filenames
+have distinct identities, nested name trees are supported, additions get unique
+sorted keys and removal cleans standard AF/annotation references plus unshared
+streams. Shared data survives; unsupported references fail without source changes.
+The shared busy overlay now restores the initiating or surviving action instead
+of always sending focus to Export. Export regression behavior remains intact.
+
+400 units, 16 production smoke suites, seven extended suites and focused Attach/
+Bookmarks pass. All 22 required layouts/themes, 16 edge examples, 200% root text,
+forced colours/reduced motion and native Safari/Firefox are reviewed (Firefox at
+actual 200% zoom). Final production preview add/remove/Undo passes. PDF check,
+dead-code, build/PWA/asset ceiling, inventory and isolated portability pass; root
+check/type/build/design/portability and exact six-spec/five-bundle sync pass.
+
+Old skins, name-only removal, unused barrel exports and redundant traversal are
+gone. No new dependency; editor 290.52 kB raw / 88.34 kB gzip, CSS 144.58 / 25.29.
+Air 1.0.1 is unchanged; canonical PDF appendix and portable DESIGN are updated.
+Full details and proof images live in PDF's dated validation and attachment evidence.
+Physical-device/OS IME/assistive gates remain open; full product/family completion
+is not claimed. Next: Crop and Strip furniture interiors, shared controls and
+promised failure/retry handling. No push or deployment.

@@ -884,3 +884,35 @@ browser suites pass. Required build/dead-code/portability gates pass. Removed
 PDF checkpoint: `fcd913a`.
 Physical-device/OS IME/assistive acceptance remains open. Other tool callbacks
 returning void still need their asynchronous completion/error lifecycle reviewed.
+
+### AIR-07 PDF document properties and Attach — 2026-10-15
+
+- [x] Metadata/date-time controls, read/retry, byte-scoped drafts, safe mobile Done,
+      complete calendar and real output/Undo (`76b2d42`; evidence in PDF validation).
+- [x] Bookmarks, shared nesting menu, reorder/remove/restore, target validation,
+      heading ownership, safe contents insertion and promised retry (`3163a35`).
+- [x] Attach Air rows, complete filenames, sizes and distinct 40/44px remove controls.
+- [x] Explicit attachment reading/failure/retry; retain failed selections across
+      tool/viewport navigation and retire them after success or Cancel.
+- [x] Unicode/nested-tree/duplicate identity, unique sorted add keys, safe standard
+      reference cleanup, shared-stream preservation and physical unshared-byte removal.
+- [x] Guard immediate operations; preserve source/Undo and pending privacy marks;
+      restore focus to the initiating or surviving action after busy states.
+- [x] Remove replaced skins, name-only identity, dead barrel exports and redundant
+      traversal; verify no dependencies, dead symbols or dangling imports added.
+- [x] Validate required size/theme matrix, edge states, keyboard/enlarged text,
+      native browsers and real output; record evidence and commit (`8fcdbe8`).
+- [ ] Next: Crop and Strip furniture interiors, numeric drafts, promised mobile
+      failure/retry, shared whole-document controls and real crop output/Undo.
+- [ ] Continue remaining panel interiors and shell loading/error/restored-draft
+      banners. Keep live legacy shared adapters until every consumer migrates.
+
+Attach: 400 units, 16 production smoke, seven extended and focused Attach/Bookmarks
+pass (25 browser suites), plus check/build/dead-code/design/portability. All 22
+required layouts/themes, 16 edge examples, enlarged text, forced colours/reduced
+motion and native Safari/Firefox (actual Firefox 200% zoom) reviewed. The production
+preview also passes add/remove/Undo. No dependency added; editor +0.05 kB gzip,
+CSS +0.05 kB gzip. Canonical PDF appendix and generated DESIGN are synchronized.
+Evidence lives in PDF's dated validation and `attachments-2026-10-15.json`.
+Physical-device, OS IME and assistive-speech gates remain open. Full PDF/family
+migration remains unfinished; no push or deployment.

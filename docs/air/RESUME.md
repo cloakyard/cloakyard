@@ -1,6 +1,41 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Bookmarks)
+## Latest checkpoint — 2026-10-15 (Attach)
+
+PDF commit `8fcdbe8`: Attach now uses Air open rows, complete filenames, sizes and
+40/44px actions, explicit read failure/retry, retained byte-scoped selections,
+discard/Cancel and immediate undoable changes. Duplicate Unicode names have
+separate identities. Nested trees, unique sorted keys, standard AF/annotation
+cleanup, shared streams and physical removal of unshared bytes are tested.
+Malformed trees and unsupported surviving references fail without changing the PDF.
+Shared busy focus now returns to the initiating control or surviving Attach action;
+closed dialogs keep their Export fallback. Pending privacy marks are protected.
+
+400 units in 40 files, 16 production smoke + seven extended + focused Attach and
+Bookmarks pass (25 browser suites). All 22 required layouts/themes, 16 empty/read/
+failure/retry examples, enlarged text, forced colours/reduced motion and Safari/
+Firefox native checks pass, including actual Firefox 200% zoom. Final production
+add/remove/Undo reviewed. Check, dead-code, build, design and portability pass.
+Evidence: PDF `docs/air/evidence/attachments-2026-10-15.json` and dated validation.
+
+Old panel skins, name-only removal, unused exports and a redundant graph traversal
+are removed. No dependencies added; editor 88.34 kB gzip (+0.05), CSS 25.29 kB gzip
+(+0.05). Canonical PDF appendix and portable DESIGN are synchronized. Temporary
+native tabs are closed, Firefox zoom reset and server 8138 stopped. Preview 8132
+contains a synthetic PDF with two attachments and expanded Attach controls.
+
+Next bounded slice: **Crop and Strip furniture interiors**. Their callbacks still
+return void before `applyTransform` finishes; review mobile Done/failure retention,
+invalid numeric drafts, shared WholeDocPanel/Segmented controls, safe crop geometry
+and output/Undo. Keep shared controls with live Signature/Stamp consumers until
+migrated. Then remaining tool interiors and shell loading/error/restored-draft
+banners. Continue source/dead-code audit and commit only after applicable checks.
+
+Air 1.0.1 remains locked. Full PDF/family migration, physical touch/software keyboards,
+real OS IME and assistive speech remain open. Local commits are authorized; no push
+or deployment. Do not call the family goal complete.
+
+## Previous checkpoint — 2026-10-15 (Bookmarks)
 
 PDF commit `3163a35`: Bookmarks is implemented and validated with Air fields,
 shared nesting menus, keyboard reorder and remove/restore, explicit target
