@@ -1,6 +1,47 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (shared colour wheel)
+## Latest checkpoint — 2026-10-15 (Auto-fill)
+
+PDF **`58ac944`** migrates the printed-form Auto-fill interior to Air:
+open detection/profile/answer groups, complete labelled fields, page actions and
+one scrolling inspector. Profile values are validated on load; failed storage
+retains the draft and shows retry guidance. Profile fill changes only empty answers
+and keeps focus when complete. Re-detection preserves manual/empty matching values.
+
+Scans/answers belong to exact document bytes; cancellation, exit and newer edits
+reject stale results. Failed/empty scans preserve valid answers. No-text/no-blanks
+states explain OCR/manual alternatives; pending privacy marks block detection and
+filling. Promised Apply/mobile Done preserves failed drafts and deduplicates output.
+Successful previews retire, Undo/Redo restore exact bytes, stale success feedback
+clears after Undo and Cancel restores the checkpoint. Preview/writer share physical
+layout and explicit shrink/ellipsis semantics. Unsupported text fails atomically.
+
+432 units in 45 files, focused Auto-fill lifecycle/output suite, all 16 production
+smoke suites, seven extended suites, check/dead/build/asset/design/18 portability
+and exact design sync pass. Native Safari and Firefox actual 200% review found two
+small feedback/focus defects; focused regressions pass after fixing them. 44
+required size/theme regions, six enlarged-text cases and forced colours/reduced
+motion reviewed. Physical touch/software keyboard, actual OS IME and assistive
+speech remain open; inventory stays validated:false.
+
+Removed the final TextField adapter/useId, unused FieldFill export bridge and
+retired Auto-fill styles. Keep Labeled/Toggle for FillForm, PositionGrid for Bates/
+PageNumbers and Rgb for FindAct/Redact. No dependencies. Editor 317.04/96.88 kB
+raw/gzip (+0.09); CSS 142.66/24.92 (-0.10); 128 assets/77 PWA entries. Air remains
+1.0.2 (`bb90f52e0b0a`); only the PDF product appendix/standalone DESIGN changes.
+
+Evidence/log/two proofs: PDF `docs/air/evidence/autofill-2026-10-15*`; full captures,
+synthetic source and output in `/tmp/cloakpdf-air-review`. IAB tab19 on 8132 now
+shows Auto-fill with three synthetic answers, profile untouched. Old tab12 draft
+preserved. Native review tabs closed, Firefox zoom restored and synthetic profile
+name cleared. Existing servers remain available. Local commits only; no deploy.
+
+Next bounded PDF piece: **FillFormTool**, then **NupTool**. Migrate remaining custom
+controls, empty/errors, raw values, output and awaited mobile completion, validating
+all sizes/themes and actual PDFs. IMG/Resume wheel adoption remains separately
+tracked; do not expand this completed Auto-fill slice into a full-family claim.
+
+## Previous checkpoint — 2026-10-15 (shared colour wheel)
 
 PDF **`917ae41`** replaces the colour square in every direct picker consumer with
 one Air hue/saturation wheel, brightness track, hex field and optional native

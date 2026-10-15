@@ -1170,3 +1170,13 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
       with the family pattern; preserve primary colour and every template/export.
 - [ ] Continue Fill form → Auto-fill → N-up in PDF; retain physical touch/software
       keyboard, OS IME and spoken assistive acceptance gates. Full refresh is ongoing.
+
+### AIR-07 — PDF Auto-fill (2026-10-15)
+
+- [x] Migrate detection, saved profile, detected-answer rows, page links and apply/recovery to Air; keep original field-name casing and complete input values.
+- [x] Bind scans/answers to exact source bytes, cancel abandoned detection, preserve answers after failed/empty rescans and show truthful local-profile storage failures.
+- [x] Await Apply/mobile Done; retain failed drafts, guard duplicate work and verify Undo/Redo/Cancel. Prevent stale use around pending privacy marks.
+- [x] Share preview/output text positioning and fitting; disclose existing long-answer shortening. Preserve original PDF text, rotated/cropped physical geometry and catalog data.
+- [x] Inspect desktop/laptop/tablet/phone, light/dark, enlarged text, forced colours and native browser interaction; record remaining physical/assistive gates.
+- [x] Remove the unused legacy TextField adapter and retired Auto-fill styling; pass required code, 432 unit tests, 24 browser suites, output and portable-design checks. PDF commit `58ac944`.
+- [ ] Continue FillFormTool and NupTool; complete physical touch/software keyboard, actual OS IME and spoken assistive acceptance. Full PDF/family refresh remains unfinished.

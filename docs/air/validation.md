@@ -1650,3 +1650,26 @@ Resume `docs/air/evidence/colour-wheel-contract-2026-10-15-tests.log`.
 Evidence/proofs/check log are in PDF `docs/air/evidence/colour-wheel-2026-10-15*`.
 Portable bundle commits: IMG `d8a3259`, Drop `a42e8b1`, Resume `76d311c`.
 Full product/family refresh is still in progress; local commits only.
+
+## 2026-10-15 — CloakPDF Auto-fill
+
+PDF **`58ac944`** replaces the remaining printed-form detection/profile/answer
+interior with Air groups, full-width fields and named page actions. Scans/answers
+belong to exact bytes; cancelled/stale work cannot replace newer drafts. Failed
+rescans and Apply preserve answers; profile storage failures remain explicit and
+profile fill never overwrites manual values. Apply/mobile Done awaits output;
+Undo/Redo/Cancel and shared preview/output text fitting are covered.
+
+432 units, 24 distinct browser suites (focused Auto-fill, 16 production smoke,
+seven extended), check/dead/build/asset/design/18 portability and exact sync pass.
+44 size/theme regions, six enlarged-text cases and forced colours/reduced motion
+reviewed. Native Safari and Firefox 200% interaction review found stale Undo feedback
+and a profile-fill focus loss; both now have passing focused regressions. Physical
+touch/software keyboard, actual OS IME and spoken assistive acceptance remain open.
+
+No dependencies. Removed TextField/useId, unused FieldFill re-export and replaced
+panel skins; retained controls with live consumers. Editor gzip +0.09 kB to 96.88,
+CSS -0.10 to 24.92; 128 assets/77 PWA entries. Only PDF appendix/standalone DESIGN
+changes; family Air 1.0.2 remains unchanged. Root format/lint/types/build/design/
+portability and sync pass. Evidence/log/proofs in PDF `docs/air/evidence/autofill-2026-10-15*`.
+FillFormTool/NupTool and full family work remain open. Local commits only.
