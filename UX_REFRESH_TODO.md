@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF Bookmarks committed; remaining interiors and device acceptance open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF Header & footer committed; remaining interiors and device acceptance open** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,17 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Page numbers (2026-10-15)
+## Latest bounded piece — Header & footer (2026-10-15)
+
+PDF `f467a87` completes Air grouped text fields, explicit token insertion, shared
+Stamp field/clock controls, precise Size/Margin and validated output. All 420 units
+and 26 browser suites pass; 44 size/theme regions, twelve enlarged-text cases and
+native Safari/Firefox (actual 200% zoom) reviewed. Old panel/token paths removed;
+no dependencies added. Required checks/build/dead/design/portability pass. See the
+dated AIR-07 checklist and PDF evidence. Next: Bates and remaining editor/shell
+states. Physical device/assistive acceptance and full PDF/family migration stay open.
+
+## Previous bounded piece — Page numbers (2026-10-15)
 
 PDF `b7e0c69` completes the Air Page numbers interior, shared precision controls and
 position picker. All 412 units and 26 browser suites pass; 44 size/theme regions,
@@ -967,7 +977,8 @@ full family refresh are not complete. Local commits only; no push/deployment.
       including 200% zoom. Build/dead/design/portability pass; no dependencies added.
 - [x] Stamp interior completed in PDF `3a9eef1`; detailed evidence is recorded below.
 - [x] Page numbers completed in the checkpoint below.
-- [ ] Next: Header & footer and Bates interiors.
+- [x] Header & footer completed in the checkpoint below.
+- [ ] Next: Bates interior.
       Retain WholeDocPanel/Segmented until all live consumers migrate.
 - [ ] Remaining custom controls/panels, shell loading/error/restored-draft banners,
       and physical-device/real OS IME/assistive speech acceptance.
@@ -989,7 +1000,8 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Validate actual PDF text/catalog/attachments, page geometry, retry/cancellation,
       all required size/theme classes, enlarged text and forced-colour controls.
 - [x] Page numbers completed in the checkpoint below.
-- [ ] Next bounded slice: Header & footer, then Bates. Keep shared
+- [x] Header & footer completed in the checkpoint below.
+- [ ] Next bounded slice: Bates. Keep shared
       WholeDocPanel/Segmented/controls while those live consumers remain.
 - [ ] Continue remaining custom panels and shell loading/error/restored-draft banners;
       physical touch/software keyboards, real OS IME and assistive speech stay open.
@@ -1010,9 +1022,31 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
       controls with live consumers. No dependency added; CSS bundle slightly smaller.
 - [x] Complete all 26 browser suites, 412 units and required checks; save evidence and
       commit PDF `b7e0c69`.
-- [ ] Next: Header & footer. Replace cramped three-field rows and legacy token controls;
-      use real PDF title and one captured time for preview/output; handle overlapping
-      text and unsupported characters explicitly; await saves and retain failed drafts.
-- [ ] Then Bates and remaining shell/loading/error/restored-draft surfaces. Reuse the
+- [x] Header & footer completed below: grouped fields, shared tokens/clock, validation,
+      promised saves and failed-draft recovery.
+- [ ] Next: Bates and remaining shell/loading/error/restored-draft surfaces. Reuse the
       shared precision adapter and position grid. Physical touch/software keyboards,
       real OS IME and assistive speech stay open; full PDF/family work is unfinished.
+
+### AIR-07 PDF Header & footer — 2026-10-15
+
+- [x] Replace cramped triple rows with Header/Footer segments and full-width labelled
+      fields; preserve all six values and make token selection/target/caret explicit.
+- [x] Share TextTokens and the byte-owned title/clock reader with Stamp; capture one
+      time for preview/output, expose read retry and ignore abandoned async results.
+- [x] Reuse precision fields for Size/Margin and Air Skip first page; retain invalid
+      drafts, last valid preview, associated errors and long-text wrapping.
+- [x] Share slot geometry; check actual text fit/overlap on every visible page and
+      report unsupported/multiline/empty fields without changing the source.
+- [x] Await Apply/mobile Done; preserve failures and focus, retire previews before
+      Undo, explicitly re-arm and restore Cancel's checkpoint.
+- [x] Verify real text/title/time, mixed pages, rotation/CropBox/UserUnit, metadata,
+      attachments and exact Undo; remove old panel/stage/reader/token setter paths.
+- [x] Inspect 44 responsive/theme regions, 12 enlarged-text states, forced colours,
+      reduced motion, native Safari and Firefox actual 200% zoom.
+- [x] Pass 420 units, 26 browser suites and required check/dead/build/design/sync/
+      portability gates. No dependencies; CSS gzip unchanged. PDF commit `f467a87`.
+- [ ] Next: Bates sequence/prefix/suffix/precision and output/state ownership. Remove
+      obsolete adapters only after checking live consumers; keep the code lean.
+- [ ] Remaining custom panels and shell feedback; physical touch/software keyboard,
+      actual OS IME and assistive speech. Full PDF/family refresh remains unfinished.

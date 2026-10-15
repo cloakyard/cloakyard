@@ -1,6 +1,48 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Page numbers)
+## Latest checkpoint — 2026-10-15 (Header & footer)
+
+PDF commit `f467a87`: Header & footer now uses Air Header/Footer segments, three
+full-width alignment fields per group, explicit token target/expanded preview,
+shared colour/precision controls and the Air cover switch. All six fields and raw
+invalid numeric drafts persist across tool/layout changes. Output uses the actual
+PDF title and one captured preview clock. Shared geometry checks every visible
+page with exact embedded-font widths; overlap, clipping, multiline/unsupported
+text, empty expansion and an excluded only page fail without changing the source.
+
+Apply/mobile Done awaits output, retains failed drafts and panel focus, retires
+successful previews before Undo and explicitly re-arms another header/footer.
+Cancel restores the checkpoint. Stamp shares TextTokens and the title/clock reader;
+removed old TripleRow, HeaderFooter UI/stage/default reader, duplicate layout and
+native-setter token insertion. No dependencies. Editor 95.94 kB gzip (+1.02); CSS
+25.47 (unchanged). Air 1.0.1 remains locked; product appendix/portable DESIGN synced.
+
+420 units in 44 files, 26 browser suites (16 production smoke, 7 extended, focused
+Header/footer/Stamp/geometry), check/dead/build/design/portability/exact sync pass.
+All 44 region captures + 12 enlarged-text states reviewed, both themes, forced
+colours/reduced motion. Safari insertion/keyboard/Apply/focus/Undo/re-arm and Firefox
+actual 200% zoom/error recovery/Apply pass. Temporary native tabs closed; zoom reset.
+Compression smoke's timestamp-dependent byte comparison now fixes/restores the
+creation clock while preserving explicit date parsing; strict comparisons pass.
+Compact evidence, log and two proof PNGs are in PDF's dated validation/evidence.
+
+Next bounded piece: **Bates numbering** (the only remaining consumer in
+StampTools.tsx). Migrate prefix/suffix, sequence/digit width, colour and precision
+controls; preserve raw drafts, exact output geometry and selectable identifiers.
+Audit sequence overflow, fit/encoding, Apply/mobile Done/failure retention, preview
+ownership, Undo/re-arm and Cancel. Reuse existing Air adapters and rename/remove
+obsolete StampTools/WholeDocPanel/Segmented/controls only after checking all live
+consumers. Then continue remaining custom panels and shell loading/error/restored-
+draft states. Keep validation before each local commit. No push/deployment.
+
+Physical touch/software keyboard, actual OS IME and assistive speech remain open;
+full PDF/family migration is unfinished. Servers unchanged: PDF dev 8122, preview
+8132, Air reference 8120 and homepage 8131. In-app tab 12 at 8132 holds synthetic
+Air header-footer.pdf, Header & footer active with `{title}` in Header left and
+`Page {page} of {total}` in Footer center, size 10/margin 36, unsaved preview.
+Default split, no viewport override. Other three product repositories unchanged.
+
+## Previous checkpoint — 2026-10-15 (Page numbers)
 
 PDF commit `b7e0c69`: Page numbers now has Air position, format, colour and precise
 sequence/size/margin controls. First page and Start at expose existing writer

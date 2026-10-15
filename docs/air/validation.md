@@ -1501,3 +1501,26 @@ pass. Canonical product rules and the standalone DESIGN agree; Air 1.0.1 is unch
 Next: Header & footer, then Bates and remaining shell states. Physical touch/software
 keyboards, real OS IME and assistive speech remain open. Full PDF/family migration is
 unfinished; no push or deployment. The other product repositories remain unchanged.
+
+## 2026-10-15 — PDF Header & footer checkpoint
+
+PDF `f467a87` implements grouped full-width text fields, named token destinations,
+shared Stamp field/clock controls, precise Size/Margin and Air Skip first page.
+Preview/output use one captured clock and real title; exact output-font metrics
+reject overlap/clipping and unsupported/empty text. Drafts survive failures and
+reflow; promised Apply/mobile Done, focus, Undo retirement/re-arm and Cancel pass.
+Old panel/stage/default reader, TripleRow and native-setter token insertion removed.
+
+420 units in 44 files and 26 browser suites pass, including real PDF text/catalog,
+rotation/CropBox/UserUnit, mobile wait/failure/retry, Stamp regressions and all core
+features. Reviewed 44 size/theme regions plus twelve enlarged-text captures, forced
+colours/reduced motion, Safari and Firefox at actual 200% zoom. Existing compression
+comparison is now deterministic against PDF creation timestamps; assertions remain
+strict. No dependencies. Editor 95.94 kB gzip (+1.02); CSS 25.47 (unchanged).
+
+Root check/types/build, family design/standalone portability/exact sync and PDF
+check/dead/build/design/portability pass. Canonical PDF appendix regenerated into
+portable DESIGN; Air 1.0.1 stays unchanged. Evidence, log and two synthetic proof
+images live in PDF's `docs/air/evidence/header-footer-2026-10-15*`. Next: Bates, then
+remaining editor/shell surfaces. Physical touch/software keyboard, real OS IME and
+assistive speech remain open. Local commits only; full refresh is unfinished.
