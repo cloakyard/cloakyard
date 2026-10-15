@@ -1,6 +1,40 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Metadata and date/time)
+## Latest checkpoint — 2026-10-15 (Bookmarks)
+
+PDF commit `3163a35`: Bookmarks is implemented and validated with Air fields,
+shared nesting menus, keyboard reorder and remove/restore, explicit target
+validation, retained drafts, cancellable/owned heading detection and safe contents
+insertion. Pending overlays are protected. Applied drafts retire; Cancel discards.
+A shared pending-apply bug is fixed: validation failure keeps Done ready for retry,
+and concurrent flushes await one operation. No silent target clamping remains.
+
+390 units, all 16 production smoke suites, seven extended suites and focused
+Bookmarks/Metadata pass (25 browser suites). All 22 required layouts/themes,
+six container-boundary cases, 12 empty/pending/failure states, enlarged text,
+forced colours and native Safari/Firefox (actual 200% zoom) reviewed. Check,
+build, dead-code, design and portability pass. Evidence is in PDF's dated
+validation record and `docs/air/evidence/bookmarks-2026-10-15.json`.
+
+Removed legacy panel skins/cycling controls, unused imports/global row counter,
+obsolete target helper and unused outline-node properties. No dependencies added;
+editor +1.32 kB gzip, CSS +0.03 kB gzip. Keep live legacy shared controls until their
+remaining consumers migrate. The in-app production preview on 8132 is updated,
+with the synthetic Air review PDF and expanded Bookmarks controls. Native review
+tabs are closed and Firefox zoom restored; temporary server 8138 is stopped.
+
+Next bounded slice: **Attach**. Audit found failed reads masquerading as empty
+lists, void asynchronous actions, loss of failed file selections, Unicode display
+name/name-tree key mismatches, unsupported nested Kids and duplicate-name identity.
+Verify add/remove/retry, retained bytes, safe embedded-stream removal, output and
+Undo before committing. Then remaining custom tool interiors and shell loading/
+error/draft banners. Use the exhaustive TODO and keep cleanup in each slice.
+
+Air 1.0.1 remains locked. Other products and physical touch/software keyboards,
+real OS IME and assistive speech gates remain open. Full PDF/family refresh is
+unfinished. Local commits remain authorized; no push or deployment.
+
+## Previous checkpoint — 2026-10-15 (Metadata and date/time)
 
 PDF commit `76b2d42`: the Metadata/date-time slice is implemented and validated. Metadata has Air fields
 and an open report, explicit read/retry, byte-scoped drafts, safe failure recovery,

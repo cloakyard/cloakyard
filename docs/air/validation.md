@@ -1370,3 +1370,25 @@ in CloakPDF `docs/air/evidence/metadata-calendar-2026-10-15.json` and its valida
 The portable PDF appendix is regenerated from Cloakyard; Air 1.0.1 remains pinned.
 Physical-device and assistive-speech acceptance is still open. Bookmarks and Attach
 are next; this record does not certify the entire PDF product or web family.
+
+## 2026-10-15 — PDF Bookmarks checkpoint
+
+CloakPDF's Bookmarks panel now follows Air throughout manual/detected entries,
+fields, shared nesting menu, reorder/remove/restore, contents options, validation,
+cancel/retry and mobile Done. Pending overlays are protected before page insertion.
+A shared pending-apply fix retains failed validation for retry and makes concurrent
+flush callers await one operation. Applied drafts retire; real output and Undo pass.
+
+390 unit tests, 16 production smoke suites, seven extended suites and focused
+Bookmarks/Metadata suites pass. Acceptance covers 22 required layouts/themes,
+six container-boundary cases, 12 error/pending/empty states, 200% root text, forced
+colours/reduced motion and native Safari/Firefox, including actual Firefox 200%
+browser zoom. Physical touch/software keyboards, OS IME and assistive speech remain
+open. The full PDF/family migration remains unfinished.
+
+Removed old panel skins/cycling controls, spinner/Toggle imports, global row counter,
+silent target clamps and unused outline properties. Existing shared-control consumers
+remain intact. No dependencies; editor +1.32 kB gzip, CSS +0.03 kB gzip. The canonical
+PDF appendix and portable DESIGN are synchronized; family contract remains Air 1.0.1.
+Full evidence is in the PDF repository's dated validation and `bookmarks-2026-10-15.json`.
+Next: Attach, including failed-read recovery, retained retry files and name-tree identity.

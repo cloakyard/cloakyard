@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF Metadata/date picker committed; remaining interiors and device acceptance open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF Bookmarks committed; remaining interiors and device acceptance open** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -30,6 +30,20 @@ part of the current work. All repositories use branch `codex/air-refresh`.
   design code or authoritative references remain.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
+
+## Latest bounded piece — Bookmarks (2026-10-15)
+
+- [x] Finish Air rows, persistent title/page/nesting labels, reorder/remove recovery and responsive controls.
+- [x] Validate targets without clamping, retain drafts through failure/tool/viewport changes and retire applied drafts.
+- [x] Own/cancel heading detection by exact bytes; preserve manual work on error/no result/cancellation.
+- [x] Protect unapplied overlays before contents insertion; verify nested outlines, multiple contents pages, links and Undo.
+- [x] Inspect required sizes/themes, keyboard, enlarged text and native browsers; run required checks, output tests and dead-code audit before commit.
+- [ ] Next separate piece: Attach. Read failure must differ from empty; retain failed file selections. Audit Unicode/duplicate display names, name-tree identity, nested Kids and safe removal of embedded bytes.
+
+Committed as CloakPDF `3163a35`. Evidence: `docs/air/evidence/bookmarks-2026-10-15.json` and dated validation record.
+390 units, 25 browser suites, all required layouts/themes, boundary neighbors and native
+Safari/Firefox (actual 200% zoom) pass. Replaced skins/control imports, target clamping
+and unused outline properties removed; no dependencies. Physical/assistive gates remain open.
 
 ## Latest bounded piece — Metadata and date/time (2026-10-15)
 
