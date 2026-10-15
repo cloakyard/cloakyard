@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF Header & footer committed; remaining interiors and device acceptance open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF Bates implementation committed; native loading/chooser acceptance and remaining interiors open** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,28 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Header & footer (2026-10-15)
+## Latest bounded piece — Bates numbering (2026-10-15)
+
+PDF `9a4b56a` implements Air affixes/minimum-digit segments, shared position/colour
+controls, nine-digit sequence entry and Size/Margin precision. Shared formatting
+and Courier geometry protect complete, selectable identifiers; byte-owned previews,
+awaited Apply/mobile Done, failure retry, Undo/Redo, re-arm and Cancel pass.
+
+- [x] Replace the legacy panel/stage and remove StampTools, ColorRow and duplicate position types after checking consumers.
+- [x] Validate real output, digit growth, fit/encoding/sequence errors, raw-draft retention and recovery.
+- [x] Inspect 44 size/theme regions, twelve enlarged-text cases, forced colours/reduced motion and Firefox actual 200% workflow.
+- [x] Pass 429 units, 25 browser suites, check/dead/build/design/17 portability assertions/exact sync; record evidence and commit.
+- [ ] Native Safari: opening stalls before Bates appears, including a clean-origin in-memory fixture. Diagnose and rerun; no pass claimed.
+- [ ] Firefox native file chooser: disabled for new and older synthetic PDFs. Component workflow passes using an in-memory File; chooser acceptance remains open.
+- [ ] Physical touch/software keyboard, OS IME and assistive speech acceptance remain open.
+
+No dependencies added; Editor +0.33 kB gzip, CSS +0.03. Canonical product appendix
+and portable DESIGN synced; Air 1.0.1 unchanged. Full PDF/family migration remains
+unfinished. Next: **shell loading/error/restored-draft states**, starting with native
+loading diagnostics, then QR/barcode and remaining annotation/form interiors.
+Evidence: PDF `docs/air/evidence/bates-2026-10-15.json` and dated validation record.
+
+## Previous bounded piece — Header & footer (2026-10-15)
 
 PDF `f467a87` completes Air grouped text fields, explicit token insertion, shared
 Stamp field/clock controls, precise Size/Margin and validated output. All 420 units

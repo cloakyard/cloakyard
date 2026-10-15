@@ -1524,3 +1524,28 @@ portable DESIGN; Air 1.0.1 stays unchanged. Evidence, log and two synthetic proo
 images live in PDF's `docs/air/evidence/header-footer-2026-10-15*`. Next: Bates, then
 remaining editor/shell surfaces. Physical touch/software keyboard, real OS IME and
 assistive speech remain open. Local commits only; full refresh is unfinished.
+
+## 2026-10-15 — PDF Bates implementation checkpoint
+
+PDF `9a4b56a` brings Bates affixes, minimum digits, position, colour and precision
+controls into Air. Complete/selectable identifiers share preview/output formatting
+and geometry, with exact page fit and actionable encoding/sequence validation.
+Raw drafts, awaited Apply/mobile Done, failure retry, Undo/Redo retirement, explicit
+restart and Cancel pass. Removed StampTools, unused ColorRow and duplicate position
+types; retained only shared adapters with live consumers. No dependencies added.
+
+429 units in 45 files, 25 browser suites, format/lint/types/dead code, build/asset
+limits, design/17 portability assertions and exact canonical synchronization pass.
+Reviewed 44 required size/theme regions, twelve enlarged-text captures, forced
+colours/reduced motion and Firefox actual 200% workflow. Editor 96.27 kB gzip
+(+0.33); CSS 25.50 (+0.03). Evidence/log/two proofs are in PDF's Bates evidence.
+
+Native checks remain open: Safari stalled at Opening PDF before reaching Bates,
+including a clean-origin in-memory fixture; cause is unconfirmed. Firefox native
+file selection stayed disabled, while the real app's in-memory fixture workflow
+passed. Neither unavailable check is marked passed. Temporary harness/server removed,
+native tabs closed and zoom reset. Physical touch/software keyboard, actual OS IME
+and assistive speech remain open. The in-app 8132 preview shows pending Bates on a
+synthetic PDF. Next: shell loading/error/restored-draft audit, then QR/barcode and
+remaining interiors. Canonical PDF rules/portable DESIGN updated; Air 1.0.1 unchanged.
+No push/deploy; full PDF/family migration remains unfinished.

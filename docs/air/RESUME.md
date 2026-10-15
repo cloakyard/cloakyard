@@ -1,6 +1,50 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Header & footer)
+## Latest checkpoint — 2026-10-15 (Bates numbering)
+
+PDF commit `9a4b56a`: Air full-width affixes, minimum-digit segments, shared
+position/colour/precision controls and nine-digit Start at entry. One formatter
+and Courier geometry keep identifiers complete/selectable across digit boundaries.
+Writer checks exact fit on every visible page, encoding, single-line affixes and
+safe sequence precision. Raw invalid numeric drafts persist; Apply/mobile Done
+awaits output and keeps failed drafts, success retires the byte-scoped preview,
+Undo/Redo do not resurrect it, restart is explicit and Cancel restores checkpoint.
+Removed StampTools.tsx, ColorRow and duplicate/unused position type; other shared
+controls still have live consumers. No dependencies. Editor 314.55/96.27 kB raw/gzip
+(+0.33 gzip), CSS 146.06/25.50 (+0.03). 128 assets, 77 PWA entries.
+
+429 units in 45 files, 25 browser suites (16 production smoke, seven extended,
+Bates and page geometry), check/dead/build/design/portability/exact sync pass.
+Reviewed 44 regions across eleven sizes/both themes, twelve enlarged-text cases,
+forced colours and reduced motion. Firefox actual 200% keyboard/affixes/nine-digit
+entry, validation, slider recovery, Apply/focus/Undo/re-arm pass using an in-memory
+synthetic File in the real production app.
+
+**Open native checks:** Safari remained at Opening PDF before Bates opened, even
+with reload, a clean origin and an in-memory synthetic fixture. Window Raise and
+Bring All to Front did not resolve it; inspector did not yield actionable diagnostics.
+Cause is not established. Inspect runBusy's double-rAF scheduling as a hypothesis,
+then document creation/preview loading; do not assume or claim a root cause. Firefox's
+native file chooser kept Open disabled for both new and older synthetic PDFs, even
+with its All Files filter; its in-memory workflow passed. Rerun native file selection.
+Unavailable engine/device checks remain open per the rollout plan, not marked passed.
+
+Next bounded piece: **shell loading/error/restored-draft states**, starting with
+these native loading diagnostics and recovery. Then QR/barcode controls and remaining
+annotation/form interiors. Keep required checks green before every local commit;
+remove replaced code without deleting live adapters. Physical touch/software keyboard,
+actual OS IME and assistive speech acceptance remain open. No full migration claim.
+
+Canonical product appendix and standalone DESIGN synced; Air 1.0.1 unchanged.
+Evidence/log/two proofs: PDF `docs/air/evidence/bates-2026-10-15*`. Full captures in
+`/tmp/cloakpdf-air-review/bates-*.png`. Temporary in-memory fixture harness removed
+from dist, 8133 server stopped, native temporary tabs closed, Firefox zoom reset.
+Servers remain PDF dev 8122/preview 8132, Air 8120, homepage 8131. In-app tab 12 at
+8132 holds synthetic Air Bates.pdf with CASE- prefix/-A suffix, six digits/start 1,
+size 10/margin 36, bottom-right, pending on page 1; default split, no viewport override.
+Other three product repos unchanged. Local commits only; no push/deployment.
+
+## Previous checkpoint — 2026-10-15 (Header & footer)
 
 PDF commit `f467a87`: Header & footer now uses Air Header/Footer segments, three
 full-width alignment fields per group, explicit token target/expanded preview,
