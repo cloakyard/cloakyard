@@ -808,3 +808,26 @@ integrations and the real multipage AI suite pass: 28 browser suites in total.
 Final image-ownership changes also pass focused recovery/canvas regressions.
 General shell loading/error/restored-draft banners remain separately pending;
 this recovery strip does not complete their migration. No push or deployment.
+
+### AIR-07 PDF Redact and Smart Erase — 2026-10-15
+
+- [x] Adopt Air choices, search, colour controls, mark lists and pending/export disclosures.
+- [x] Guard repeated, cancelled and stale detection/search; retain valid marks and retry inputs.
+- [x] Remove replaced panel skins and redundant control paths; no new dependency.
+- [x] Inspect all required viewport classes/light/dark, enlarged text, keyboard/coarse targets,
+      custom colour states, failure/cancel/retry, mark history and actual destructive output.
+- [x] Record evidence and commit only after the applicable checks pass.
+
+44 panel and 22 colour-popover layouts pass in light/dark. Real detection/search,
+failure/cancel/retry, stale byte/tool ownership, mark undo, all three erase-output
+methods and rotated/cropped physical geometry pass. Native Safari and Firefox
+checks include Firefox 200% zoom; this exposed and fixed open-popup positioning.
+384 units, 16 production smoke suites, seven extended suites and the two focused
+privacy/geometry integrations pass. The last spacing cleanup passes a focused
+responsive rerun. PDF commit: `c0ac5c0`. No dependency was added; replaced panel skins, duplicate scan
+logic and duplicate mark rows are removed. Product evidence and portable appendix
+are updated. Physical-device/OS IME/assistive acceptance remains open.
+
+Next bounded slice: **Find & Act and Scrub panel interiors**. Continue with the
+remaining tool interiors and shell loading/error/draft banners afterward. This
+does not complete PDF or the family migration. No push or deployment.

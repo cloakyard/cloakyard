@@ -1,6 +1,26 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-14
+## Latest checkpoint — 2026-10-15
+
+Air 1.0.1 remains locked. PDF commit `c0ac5c0` gives Redact and Smart Erase Air choices, search,
+colour controls and a shared pending-mark list. Cancelled/stale scans cannot add
+boxes to another byte revision. The shared colour picker keeps invalid drafts,
+keyboard axes, touch targets and focus; its popup stays reachable during zoom.
+No dependency was added. Replaced skins and duplicate lifecycle/list code are gone.
+
+384 units, 16 production smoke suites, seven extended suites and privacy/geometry
+integrations pass. The focused privacy suite covers 44 panel/theme states, 22
+picker states, enlarged text, failure/cancel/retry, mark undo and real erase output.
+Native Safari/Firefox pass, including actual Firefox 200% zoom. Evidence and the
+portable PDF appendix are recorded in CloakPDF and the main refresh TODO.
+
+Next bounded slice: **Find & Act and Scrub panel interiors**, including real output
+and cleanup. Other interiors, shell loading/error/draft banners and other products
+remain pending. Physical touch/software keyboards, OS IME and assistive speech
+remain open. Continue one validated piece per local commit; no new design approval
+is needed. No push or deployment is authorized.
+
+## Previous checkpoint — 2026-10-14
 
 Air 1.0.1 remains the locked baseline. PDF preview recovery is committed as
 `a2935ac`; the separately tested AI preparation-cancellation fix is `cf2cbed`.

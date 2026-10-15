@@ -1306,3 +1306,23 @@ evidence. Root lint/types/build, design integrity/isolation and exact six-docume
 five-bundle synchronization pass. Air 1.0.1 and its contract hash are unchanged;
 the portable PDF appendix now defines recovery. Other panels/products and physical
 or assistive acceptance remain open. No push or deployment.
+
+## 2026-10-15 — PDF privacy panels and colour controls
+
+The PDF Redact/Smart Erase slice implements shared Air control anatomy, one pending
+mark collection and safe byte-revision ownership for cancellable detection/search.
+The shared colour picker removes overlapping targets and hidden-only axes; it
+keeps invalid hex drafts, explicit selection and accessible viewport containment.
+Native Firefox 200% zoom exposed an offscreen-anchor bug, fixed and rechecked.
+
+44 panel layouts, 22 colour-popup layouts, 200% text, native Safari/Firefox, actual
+search/PII, mark undo, stale/cancel/error/retry, all erase methods and geometry
+checks pass. 384 units, 16 production smoke and seven extended suites pass; the
+final spacing cleanup is followed by the focused layout/behaviour suite. Build,
+dead-code, inventory and portability pass. Evidence is in CloakPDF's dated
+validation section and `docs/air/evidence/privacy-panels-2026-10-15.json`. The
+canonical product appendix and generated DESIGN.md agree; family tokens stay at
+Air 1.0.1. Main-repo check/types/build, design and sync/portability pass.
+
+Next: Find & Act and Scrub interiors. Full product/family and physical-device/OS
+IME/assistive acceptance remain open. No push or deployment.
