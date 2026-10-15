@@ -1,6 +1,60 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (QR / barcode)
+## Latest checkpoint — 2026-10-15 (Annotate inspector)
+
+PDF **`0c30b05`**: Air tool/style groups, full-width font selector, named colours,
+switches and precise size/opacity entry. A custom placed-annotation selector reaches
+marks across pages. Selected text/shapes/icons show their own settings; fill/glyph
+controls stay accessible in Select mode. Raw invalid drafts survive tool/layout
+changes. Drawing/text remain arm-once; icons preserve repeated stamping. Output
+keeps vector marks, selectable text, embedded fonts and original catalog data.
+
+Apply/mobile Done awaits output, retains failure selection/objects, deduplicates
+retry and removes overlays only on success. Undo restores them, Redo reapplies.
+Style/nudge timers use moveObject's optional expectedPayload guard: stale callbacks
+after Undo/Cancel/removal/Apply cannot create history. Style edits no longer advance
+the tool Cancel checkpoint. Existing immediate moveObject callers are unchanged.
+
+Removed final RangeField export/consumer, private StyleToggle/FontControls skins,
+redundant colour labels and old selected-card markup. No dependencies. Editor
+315.12/96.56 kB raw/gzip (+0.19 gzip), CSS 142.03/24.78 (-0.43); 128 assets, 77 PWA
+entries, inventory 92. Contract 1.0.1 unchanged; canonical PDF appendix/portable DESIGN
+synced. Verified remaining controls.tsx consumers: Labeled/Toggle in FillForm,
+Labeled/TextField in AutoFill, PositionGrid in Bates/PageNumbers, Rgb in FindAct/
+Redact; WholeDocPanel remains live in N-up. Do not delete them prematurely.
+
+429 units / 45 files, **24 distinct browser suites** (focused annotation, 16
+production smoke, seven extended), check/dead/build/design/17 portability/exact sync
+pass. Updated old smoke assumptions (Pen before colour picker; selector instead of
+removed “Mark selected” card). Rotation test now waits for the export dialog to
+close before rotating again and respects the configured profile; both 90°/180°
+assertions and the complete extended rerun pass. No output assertion weakened.
+110 region/size/theme captures, 18 text200 cases and forced-colours/reduced-motion
+inspected. Coarse/fine input actually emulated; no overflow or uncaught errors.
+
+Safari native chooser, font menu typeahead, underlined inline text, invalid-size
+recovery, Apply/focus, Undo and restored font/size pass. Firefox native chooser at
+actual **200%** browser zoom, pointer icon placement, Down/Return selection, glyph
+editing in Select mode, Done/focus and Undo pass. Reset zoom and closed native review
+tabs. Physical touch/software keyboard, OS IME and assistive speech remain open.
+
+**Next bounded piece: FillFormTool** (`src/editor/panels/FillFormTool.tsx`). Migrate
+field types, custom selectors/switches, empty/unsupported states and fill/flatten
+options. Preserve field geometry, values, raw drafts across reflow, existing form
+semantics and actual PDF output. Apply currently voids applyTransform; fix awaited
+mobile completion/failure/retry, Undo/Cancel. Then AutoFillTool and NupTool. Continue
+source/dead-code audits and all required size/theme/feature gates before each commit.
+Full PDF/family migration remains unfinished. Local commits only; no push/deploy.
+
+Evidence: PDF `docs/air/evidence/annotate-2026-10-15*`; full captures/contact sheets
+and synthetic PDF `/tmp/cloakpdf-air-review/annotate-*` / `Air annotations.pdf`.
+Servers unchanged: 8122/8132 PDF, 8120 Air reference, 8131 family homepage. IAB tab12
+was already on the homepage at first read (the prior code draft absent); updated
+to current production build and now holds Air annotations.pdf, one selected pending
+Helvetica text “A little clarity.” on page1, Annotate active, no viewport override.
+Other product repos unchanged. Preserve this review draft when continuing.
+
+## Previous checkpoint — 2026-10-15 (QR / barcode)
 
 PDF **`2c3b901`**: Air type/payload/colour/caption controls, associated errors and
 neutral preview surround. Keyboard placement/selection/move/resize/remove shares

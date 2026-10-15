@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF QR/barcode committed; annotation and form interiors next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF annotation inspector committed; form interiors next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,27 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — QR / barcode (2026-10-15)
+## Latest bounded piece — Annotate inspector (2026-10-15)
+
+PDF **`0c30b05`** adopts Air tool/style groups, full-width font selection, colour,
+switch and precise numeric controls. Selected text/shapes/icons expose their actual
+settings through a custom cross-page selector. Deferred style/nudge commits are
+owned by the live payload; mobile Apply waits and failed work remains recoverable.
+
+- [x] Preserve all drawing modes, repeat icon stamping, inline text, geometry, keyboard nudging and embedded fonts; verify vector output, selectable text, metadata and attachments.
+- [x] Validate per-object fill/glyph editing, raw invalid drafts, cross-page selection, deletion focus, coalesced Undo/Cancel, Apply failure/wait/retry/dedup and Undo/Redo.
+- [x] Inspect 110 responsive/theme captures, 18 enlarged-text states and forced colours/reduced motion; no horizontal overflow or undersized coarse-pointer controls.
+- [x] Native Safari font-menu/inline-text/validation/Apply/Undo and Firefox actual 200% pointer placement/custom selection/glyph editing/Done/Undo pass. Review tabs closed and zoom reset.
+- [x] Remove retired RangeField, StyleToggle/FontControls skins and selected-card styling; retain verified live form/N-up adapters. No new dependency.
+- [x] Pass 429 units, 24 browser suites, check/dead/build/design/17 portability/exact sync. Update legacy smoke selectors and wait for export-modal exit in rotation test; full reruns pass without weakening output assertions.
+- [ ] Next: FillFormTool field types, fill/flatten, persistence, error recovery and responsive states; then AutoFillTool and NupTool.
+- [ ] Physical touch/software keyboard, actual OS IME and assistive speech acceptance remain open.
+
+Editor 96.56 kB gzip (+0.19); CSS 24.78 (-0.43). Canonical PDF appendix and portable
+DESIGN synced; Air 1.0.1 unchanged. Evidence: PDF `docs/air/evidence/annotate-2026-10-15*`.
+The full PDF/family migration remains unfinished. Local commits only.
+
+## Previous bounded piece — QR / barcode (2026-10-15)
 
 PDF `2c3b901` adopts Air type/content/colour/caption controls, associated encoding
 errors and neutral preview surfaces. Keyboard Place/select/move/resize/remove shares

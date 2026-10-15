@@ -1594,3 +1594,27 @@ portable DESIGN updated, Air 1.0.1 unchanged. PDF evidence/log/proofs live under
 `docs/air/evidence/codes-2026-10-15*`. Annotation/form interiors and physical touch,
 software keyboard, OS IME, assistive speech and final-size scanning remain open.
 Full PDF/family migration is unfinished; local commits only, no push/deployment.
+
+## 2026-10-15 — CloakPDF annotation inspector
+
+PDF **`0c30b05`** migrates tool/font/style/colour/fill/background/glyph controls to
+Air and adds cross-page custom annotation selection. Raw numeric drafts and selected
+object values survive reflow; selected shape fill and icon editing stay available.
+Apply/mobile Done awaits completion and retains failed work. Guarded deferred style/
+nudge snapshots preserve Undo/Cancel ownership. All drawing modes, repeated icon
+stamping, inline text, vector output and embedded-font fidelity remain intact.
+
+Check/dead, 429 units, build/asset limits and **24 distinct browser suites** pass:
+focused annotations, 16 production smoke, seven extended. Legacy panel selectors
+were updated; rotation test waits for export-modal exit before the next edit. The
+complete reruns pass without relaxing PDF output assertions. 110 responsive regions,
+18 enlarged-text states, forced colours/reduced motion, native Safari and Firefox
+actual 200% reviewed. Physical touch/software keyboard, real OS IME and assistive
+speech remain open. Editor gzip +0.19 kB to 96.56; CSS -0.43 to 24.78; no dependencies.
+Retired RangeField and private annotation skins; retained live form/N-up controls.
+
+The PDF product appendix and standalone DESIGN match; contract remains Air 1.0.1.
+Root format/lint/types/build/design/17 portability and exact six-document sync pass.
+Evidence/log/two PNGs in PDF `docs/air/evidence/annotate-2026-10-15*`; full captures
+in `/tmp/cloakpdf-air-review/annotate-*`. Next: FillFormTool, AutoFillTool, NupTool.
+This is a bounded migration; the complete PDF/family refresh is still unfinished.
