@@ -1,6 +1,47 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Stamp interior)
+## Latest checkpoint — 2026-10-15 (Page numbers)
+
+PDF commit `b7e0c69`: Page numbers now has Air position, format, colour and precise
+sequence/size/margin controls. First page and Start at expose existing writer
+settings; raw invalid values survive tool/layout changes. Preview/output share one
+formatter. The writer rejects invalid values and text that cannot fit a mixed-size
+visible page. Apply/mobile Done awaits output, retains failed drafts and panel
+focus, and retires the byte-scoped preview before Undo. Explicit Start another
+numbering re-arms settings; Cancel restores the tool checkpoint.
+
+Stamp and Page numbers share PrecisionField and its styling. Both numeric groups
+now have real 16px separation (a missing nested flex layout was caught visually).
+Bates shares the revised Air 3×2 position picker. Removed old PageNumbers UI/stage,
+default reader, duplicate formatter and Stamp-specific numeric skins. No dependency
+added. Editor 94.92 kB gzip (+1.87), CSS 25.47 (-0.03); 128 deployment assets/77 PWA
+entries. Air 1.0.1 stays locked; canonical PDF appendix and portable DESIGN synced.
+
+412 units in 43 files, sixteen production smoke + seven extended + focused Page
+numbers/Stamp/geometry pass (26 distinct browser suites). Smoke now waits for a
+ready Apply button and actual completion instead of racing initial disabled state
+and a brief spinner. Reviewed 44 size/theme regions, twelve enlarged-text cases,
+forced colours/reduced motion and Stamp precision regressions. Native Safari and
+Firefox pass; Firefox tested production at actual 200% zoom. Temporary native tabs
+closed and zoom reset. Check/dead/build/design/portability/exact sync pass. Evidence
+is in PDF's validation record and `docs/air/evidence/page-numbers-2026-10-15.json`.
+
+Next bounded piece: **Header & footer** in StampTools.tsx. Replace cramped TripleRow
+and legacy TokenBar/RangeField/Toggle controls. Its preview currently uses an empty
+title and a fresh clock while output uses metadata; own one context for both. Audit
+text overlap/fit and encoding errors, raw numeric drafts, awaited Apply/mobile Done,
+failed-draft recovery, preview retirement, Cancel and Undo. Reuse PrecisionField;
+keep WholeDocPanel/Segmented and remaining controls until their live consumers move.
+Then Bates and remaining shell loading/error/restored-draft states. Physical touch/
+software keyboard, actual OS IME and assistive speech stay open. Full PDF/family
+migration is unfinished. Local commits authorized; no push/deployment.
+
+Servers unchanged: 8122 PDF dev, 8132 PDF preview, 8120 Air reference, 8131 homepage.
+In-app tab 12 at 8132 holds synthetic `Air numbers.pdf`, Page numbers open, pending
+Page 1 of N / first page 1 / start 1 / size 12 / margin 36, default split, no viewport
+override. Native review tabs closed; no new server. Other product repos unchanged.
+
+## Previous checkpoint — 2026-10-15 (Stamp interior)
 
 PDF commit `3a9eef1`: Stamp now has a dedicated WatermarkTool adapter with Air text,
 field insertion, shape/finish segments, colour and precise numeric/slider controls.

@@ -31,7 +31,16 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Bookmarks (2026-10-15)
+## Latest bounded piece — Page numbers (2026-10-15)
+
+PDF `b7e0c69` completes the Air Page numbers interior, shared precision controls and
+position picker. All 412 units and 26 browser suites pass; 44 size/theme regions,
+twelve enlarged-text cases and native Safari/Firefox reviewed. Dead-code checks,
+build and portable spec checks pass. Details and remaining gates are in the dated
+AIR-07 checklist below and PDF's validation record. Next: Header & footer, then
+Bates and remaining shell states. Full PDF/family migration remains open.
+
+## Previous bounded piece — Bookmarks (2026-10-15)
 
 - [x] Finish Air rows, persistent title/page/nesting labels, reorder/remove recovery and responsive controls.
 - [x] Validate targets without clamping, retain drafts through failure/tool/viewport changes and retire applied drafts.
@@ -45,7 +54,7 @@ Committed as CloakPDF `3163a35`. Evidence: `docs/air/evidence/bookmarks-2026-10-
 Safari/Firefox (actual 200% zoom) pass. Replaced skins/control imports, target clamping
 and unused outline properties removed; no dependencies. Physical/assistive gates remain open.
 
-## Latest bounded piece — Metadata and date/time (2026-10-15)
+## Previous bounded piece — Metadata and date/time (2026-10-15)
 
 PDF commit: `76b2d42`.
 
@@ -957,7 +966,8 @@ full family refresh are not complete. Local commits only; no push/deployment.
       cases, short-landscape/forced-colours/reduced-motion and native Safari/Firefox
       including 200% zoom. Build/dead/design/portability pass; no dependencies added.
 - [x] Stamp interior completed in PDF `3a9eef1`; detailed evidence is recorded below.
-- [ ] Next: Page numbers, Header & footer and Bates interiors.
+- [x] Page numbers completed in the checkpoint below.
+- [ ] Next: Header & footer and Bates interiors.
       Retain WholeDocPanel/Segmented until all live consumers migrate.
 - [ ] Remaining custom controls/panels, shell loading/error/restored-draft banners,
       and physical-device/real OS IME/assistive speech acceptance.
@@ -978,7 +988,31 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
       canvases. Remove old Stamp UI, preview painter, void Apply and unused branches.
 - [x] Validate actual PDF text/catalog/attachments, page geometry, retry/cancellation,
       all required size/theme classes, enlarged text and forced-colour controls.
-- [ ] Next bounded slice: Page numbers, then Header & footer and Bates. Keep shared
+- [x] Page numbers completed in the checkpoint below.
+- [ ] Next bounded slice: Header & footer, then Bates. Keep shared
       WholeDocPanel/Segmented/controls while those live consumers remain.
 - [ ] Continue remaining custom panels and shell loading/error/restored-draft banners;
       physical touch/software keyboards, real OS IME and assistive speech stay open.
+
+### AIR-07 PDF Page numbers — 2026-10-15
+
+- [x] Replace the legacy panel with Air position, format, colour and precision controls;
+      share the numeric adapter with Stamp and the six-cell position picker with Bates.
+- [x] Expose first-page/start-label settings; preserve invalid drafts, validate integer
+      bounds and reject text that does not fit any visible page.
+- [x] Share preview/output formatting, await Apply/mobile Done, preserve failed drafts,
+      retire successful previews before Undo and explicitly re-arm another numbering.
+- [x] Verify actual PDF text, skipped cover, mixed sizes, rotation/CropBox/UserUnit,
+      metadata/attachments, Cancel and exact Undo restoration.
+- [x] Inspect 44 layout regions and twelve enlarged-text cases, both themes, forced
+      colours/reduced motion; validate native Safari and Firefox at actual 200% zoom.
+- [x] Remove old panel/painter/formatter paths and old numeric skins. Keep only shared
+      controls with live consumers. No dependency added; CSS bundle slightly smaller.
+- [x] Complete all 26 browser suites, 412 units and required checks; save evidence and
+      commit PDF `b7e0c69`.
+- [ ] Next: Header & footer. Replace cramped three-field rows and legacy token controls;
+      use real PDF title and one captured time for preview/output; handle overlapping
+      text and unsupported characters explicitly; await saves and retain failed drafts.
+- [ ] Then Bates and remaining shell/loading/error/restored-draft surfaces. Reuse the
+      shared precision adapter and position grid. Physical touch/software keyboards,
+      real OS IME and assistive speech stay open; full PDF/family work is unfinished.

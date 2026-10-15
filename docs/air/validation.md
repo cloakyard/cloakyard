@@ -1471,3 +1471,33 @@ and root checks/types/build/design/portability/exact sync pass. Product evidence
 in its `stamp-panel-2026-10-15.json`, check log and three images. Portable PDF appendix
 is synchronized. Physical device/IME/assistive gates remain open. Next bounded piece:
 Page numbers, then Header & footer and Bates; full PDF/family refresh is unfinished.
+
+## 2026-10-15 — PDF Page numbers and shared precision controls
+
+PDF commit `b7e0c69` completes Air Page numbers: named 3×2 positions, a custom format
+menu, colour and precise first-page/start-label/size/margin controls. Preview/output
+share formatting; invalid drafts persist and text-fit failures identify the page.
+Apply/mobile Done waits, preserves failed work and focus, retires previews before
+Undo and offers explicit re-arming. PDF text, cover skipping, metadata, attachments,
+geometry and exact Undo restoration are verified.
+
+Stamp and Page numbers share one PrecisionField adapter; inspection corrected a
+missing flex layout so numeric rows have 16px separation. Bates shares the Air
+position grid. Removed replaced PageNumbers code, duplicated formatting and old
+Stamp numeric skins; remaining legacy controls still have live consumers. No new
+dependency. Editor gzip 94.92 kB (+1.87), CSS 25.47 (-0.03).
+
+412 units/43 files and 26 browser suites pass: sixteen production smoke, seven
+extended and focused Page numbers/Stamp/page geometry. The smoke test now waits
+for readiness and confirmed completion instead of racing a disabled control and
+brief spinner. All 44 layout regions and twelve enlarged-text cases were inspected,
+plus forced colours/reduced motion. Native Safari and production Firefox at actual
+200% zoom pass. Native tabs closed, zoom reset; the in-app preview contains a
+synthetic PDF and pending Page 1 of N. Evidence and full logs are stored in PDF's
+`docs/air/evidence/page-numbers-2026-10-15.*` with three proof images.
+
+PDF and family checks, dead-code audit, build, exact synchronization and portability
+pass. Canonical product rules and the standalone DESIGN agree; Air 1.0.1 is unchanged.
+Next: Header & footer, then Bates and remaining shell states. Physical touch/software
+keyboards, real OS IME and assistive speech remain open. Full PDF/family migration is
+unfinished; no push or deployment. The other product repositories remain unchanged.
