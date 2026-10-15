@@ -934,11 +934,33 @@ migration remains unfinished; no push or deployment.
       unused imports and obsolete cross-tool comments; no dependencies added.
 - [x] 404 units, 25 browser suites, all 44 layout/theme cases, 12 enlarged-text
       cases, native Safari/Firefox (actual 200% zoom), build/dead/design/portability.
-- [ ] Next: Signature interior, image source/background controls and promised
-      apply/failure lifecycle; retain shared legacy adapters until all consumers migrate.
+- [x] Signature interior, image source/background controls and promised
+      apply/failure lifecycle — completed in the checkpoint below.
 - [ ] Then Stamp/numbering interiors and shell loading/error/restored-draft banners.
 
 PDF commit: `9f64243`. Evidence is in PDF's dated validation and
 `crop-furniture-2026-10-15.json`.
 Physical-device, real OS IME and assistive speech gates remain open. PDF and the
 full family refresh are not complete. Local commits only; no push/deployment.
+
+### AIR-07 PDF Signature interior — 2026-10-15
+
+- [x] Air Draw/Choose, colour/background controls, one pad focus contour and preview.
+- [x] Persistent editable strokes, separate upload source, decode/size errors and
+      same-file retry, aborted abandoned reads and retained previous ready image.
+- [x] Keyboard placement/selection/movement/resize/removal; scoped page shortcuts.
+- [x] Preserve physical aspect on mixed-page copies and contain initial placement.
+- [x] Promised mobile Done, failure retention/retry, actual output, Undo and Cancel.
+- [x] Audit/remove legacy skins, unused Switch/focusRing, stale payload/standalone
+      references, global Delete listener, silent decode and void Apply paths.
+- [x] 405 units, 25 browser suites, 44 layout/theme cases, twelve enlarged-text
+      cases, short-landscape/forced-colours/reduced-motion and native Safari/Firefox
+      including 200% zoom. Build/dead/design/portability pass; no dependencies added.
+- [ ] Next: Stamp/numbering interiors, starting with Stamp (WatermarkPanel).
+      Retain WholeDocPanel/Segmented until all live consumers migrate.
+- [ ] Remaining custom controls/panels, shell loading/error/restored-draft banners,
+      and physical-device/real OS IME/assistive speech acceptance.
+
+PDF commit `24a1965`. Evidence: PDF `docs/air/evidence/signature-panel-2026-10-15.json`
+and dated validation. Air 1.0.1 unchanged; portable appendix updated. PDF and the
+full family refresh remain unfinished. Local commits only; no push/deployment.

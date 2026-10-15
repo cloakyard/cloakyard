@@ -1,6 +1,46 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Crop and Strip furniture)
+## Latest checkpoint — 2026-10-15 (Signature interior)
+
+PDF commit `24a1965`: Signature now uses Air source segments, labelled switches,
+colour controls, an object selector and keyboard placement/move/resize/remove.
+Drawing has one focus contour, preserves completed strokes through tool/layout
+changes, handles single taps/final segments and ignores cancellation from another
+pointer. The pad caps its display size without stretching ink, including short
+landscape. Draw and Choose keep separate drafts. Image preparation reports errors,
+retains the previous image for retry, supports same-file retry and aborts abandoned
+reads. Existing transparency/white ink survives; opaque paper becomes transparent.
+
+Copy to remaining pages preserves aspect on mixed sizes. Apply awaits PDF embedding;
+failed mobile Done retains the tool/placements for retry, and Undo restores exact
+prior bytes/objects. PDF.js confirms raster ink, selectable text, metadata and
+attachments. Removed old skins, unused Switch/focusRing, ignored payload property,
+global Delete handling, silent decode fallbacks, void Apply and stale standalone
+references. No dependencies added; editor 91.13 kB gzip (+1.43), CSS 25.14 (-0.09).
+
+405 units in 42 files, 16 production smoke + seven extended + focused Signature and
+page-geometry suites pass (25 distinct browser suites). Inspected 44 source/size/
+theme cases, twelve enlarged-text cases, expanded short-landscape, forced colours
+and reduced motion. Native Safari and Firefox pass, including actual Firefox 200%
+zoom. Final display refinements were rerun through focused Signature and production
+motion. Check/dead/build/design/portability pass. Evidence is in PDF's validation
+and `docs/air/evidence/signature-panel-2026-10-15.json`. Air 1.0.1 remains locked;
+canonical PDF appendix and standalone DESIGN are synchronized.
+
+Native review tabs are closed; Firefox zoom restored. In-app tab 12 at 8132 holds
+synthetic `Air signature.pdf` with Signature open for review. Servers 8122 (PDF dev),
+8132 (PDF preview), 8120 (reference), 8131 (homepage) remain; no new server was added.
+
+Next bounded piece: **Stamp/numbering interiors** in `StampTools.tsx` — start with
+Stamp (WatermarkPanel), then page numbers/header-footer/Bates. All four still use
+legacy WholeDocPanel/Segmented and void `applyTransform` callbacks. Migrate controls,
+draft/Apply/failure ownership and actual output; keep those adapters until their
+last consumers migrate. Then remaining custom controls/panels and shell loading/
+error/restored-draft banners. Keep the source/dead-code audit and green-check commit
+gate. Physical pen/touch/software keyboards, real OS IME and assistive speech remain
+open. PDF/family migration is unfinished. Local commits authorized; no push/deploy.
+
+## Previous checkpoint — 2026-10-15 (Crop and Strip furniture)
 
 PDF commit `9f64243`: Crop and Strip furniture interiors use Air fields, scope
 segments, full sample rows and explicit feedback. Crop now has keyboard percentage

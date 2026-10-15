@@ -1433,3 +1433,22 @@ Root checks/types/build/design/portability and exact synchronization pass. Air 1
 is unchanged. Physical-device/IME/assistive gates and remaining tool interiors are
 open. Next bounded piece: Signature and its shared controls, then Stamp/numbering
 and shell feedback. This is not a complete PDF/family migration.
+
+## 2026-10-15 — PDF Signature interior
+
+PDF commit `24a1965` migrates Signature sources, the drawing pad, background and
+placement controls to Air. Strokes survive responsive/tool changes; uploads expose
+failure/retry and preserve alpha; mixed-page copies preserve image aspect. Mobile
+Done awaits embedding and retains failed placements. Actual PDF raster/text,
+metadata, attachments, Undo and Cancel pass. Obsolete skins, Switch/focusRing,
+legacy payload property, global Delete listener and void Apply were removed.
+
+405 units and 25 distinct browser suites pass, with 44 mode/size/theme cases,
+twelve enlarged-text cases, a contained short-landscape pad, forced colours/reduced
+motion and native Safari/Firefox (200% zoom). Final display refinements were checked
+again with focused Signature and production motion. Product check/dead/build/design/
+portability pass; no dependencies added. Editor 91.13 kB gzip (+1.43), CSS 25.14
+(-0.09). Canonical PDF appendix synchronized; family tokens/version remain locked.
+Detailed evidence lives in PDF's validation and `signature-panel-2026-10-15.json`.
+Physical-device/real OS IME/assistive speech gates and full migration remain open.
+Next: Stamp/numbering interiors. Local commits only; no push/deployment.
