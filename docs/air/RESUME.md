@@ -1,6 +1,55 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Editor loading / saved-session recovery)
+## Latest checkpoint — 2026-10-15 (QR / barcode)
+
+PDF **`2c3b901`**: Air type/payload/colour/caption controls, associated errors and
+neutral preview surround. Keyboard placement/selection/move/resize/remove shares
+`PlacementActions.tsx` with signatures. Complete quiet zones stay inside the page;
+all-pages copy preserves physical proportions on mixed sizes and skips occupied
+pages. Barcode caption baseline/raster rounding matches vector output; long preview
+width caps at 4096px. Settings affect new placements. Apply returns its promise;
+mobile Done waits, failed reads retain objects, retry deduplicates, Undo restores
+pending objects and Redo reapplies. Cancel restores the checkpoint.
+
+Removed the old WholeDocPanel Segmented implementation, its measurements/observer/
+thumb animation, CodeStampTool legacy imports/skins and duplicated signature buttons
+and CSS selector. No new dependencies. Editor 315.07/96.37 kB raw/gzip (+0.47 gzip),
+CSS 144.17/25.21 (-0.04); 128 deployment assets, 77 PWA entries. Inventory now 92.
+
+429 units / 45 files and **24 browser suites** pass: focused codes, 16 production
+smoke and 7 extended. First smoke stopped on AI modal pointer timing with no active
+animation sampled. The unchanged isolated retry and subsequent complete clean smoke
+both pass; no assertion weakened or modal runtime change. All required check/dead/
+build/design/17 portability assertions/exact sync pass. 101 focused captures include
+88 state/region/size/theme views, 12 text200 and forced-colours/reduced-motion.
+Coarse/fine input is actually emulated and asserted. Real PDF module/quiet-zone
+pixels, vector operators, caption, original text/catalog, draft/error/retry/Undo/
+Redo/Cancel checked. No uncaught errors.
+
+Safari native chooser, barcode validation/recovery, place/resize/copy/Apply/focus/
+Undo pass. Firefox native chooser, QR place/resize/copy, custom selection with
+Down/Return and mobile Done pass at actual **200% browser zoom**. Review tabs closed;
+Firefox zoom reset. Physical touch/software keyboard, actual OS IME, assistive
+speech and final-size real-device scan acceptance remain open.
+
+**Next bounded piece: Annotate inspector** (`src/editor/panels/AnnotateTool.tsx`):
+text/font/weight/style, drawing and shape controls, stroke/fill/opacity precision,
+selected-object editing and empty/disabled states. Preserve canvas geometry,
+keyboard editing, per-object settings, font embedding, Apply/export fidelity and
+Undo/Cancel. Audit all sizes/themes before commit; then FillFormTool, AutoFillTool,
+NupTool and remaining legacy consumers. `controls.tsx` still serves Labeled/Toggle/
+TextField/RangeField/PositionGrid/Rgb consumers; WholeDocPanel remains live in N-up.
+Do not delete live adapters or claim full PDF/family completion.
+
+Canonical PDF appendix and portable DESIGN synced; family contract stays Air 1.0.1.
+Evidence: PDF `docs/air/evidence/codes-2026-10-15*`; full captures `/tmp/cloakpdf-air-review/codes-*`.
+Servers remain 8122/8132, reference 8120, homepage 8131. IAB tab12 now holds synthetic
+Air codes.pdf, QR payload https://cloakyard.com, one pending code on page1; no viewport
+override. User's former Bates draft was already absent at the first read this turn
+(the tab showed the homepage). Other product repositories unchanged. Local commits
+only; no push/deploy. Keep testing and removing replaced code in each bounded piece.
+
+## Previous checkpoint — 2026-10-15 (Editor loading / saved-session recovery)
 
 PDF `8b181bf`: shared Air file intake, reading/preview progress, error and
 saved-session notices, and processing surface. Failed restore retains source bytes,

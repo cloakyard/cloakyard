@@ -1574,3 +1574,23 @@ Temporary harnesses removed, review tabs closed, Firefox zoom reset. Physical to
 software keyboard, actual OS IME and assistive speech remain open. Next: QR/barcode,
 then annotation/form interiors and final legacy cleanup. No full migration claim;
 local commits only, no push/deployment. Evidence/proofs/log live in PDF's dated record.
+
+## 2026-10-15 — CloakPDF QR / barcode
+
+PDF `2c3b901` migrates code payload/type/colour/caption and placement controls to Air.
+Shared PlacementActions removes duplicated signature buttons; unused WholeDocPanel
+Segmented measurement/observer/animation code and QR legacy skins/imports are gone.
+Edge placement keeps quiet zones intact; mixed-page copying preserves proportions.
+Awaited Apply/mobile Done, retained failures, deduplication, Undo/Redo and Cancel
+pass against real output. QR module and quiet-zone pixels match on three mixed
+pages; exports remain vector and retain captions/text/catalog data.
+
+429 units, 24 browser suites (16 production smoke, 7 extended, focused codes),
+101 focused visual captures, native Safari and Firefox actual 200% pass. An initial
+AI modal timing sample found no active animation; unchanged isolated retry and the
+full clean smoke run pass. Required check/dead/build/design/17 portability/sync gates
+pass. No dependencies; Editor +0.47 kB gzip, CSS -0.04. Canonical product appendix and
+portable DESIGN updated, Air 1.0.1 unchanged. PDF evidence/log/proofs live under
+`docs/air/evidence/codes-2026-10-15*`. Annotation/form interiors and physical touch,
+software keyboard, OS IME, assistive speech and final-size scanning remain open.
+Full PDF/family migration is unfinished; local commits only, no push/deployment.

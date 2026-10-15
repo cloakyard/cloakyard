@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF loading/recovery committed; QR/barcode and remaining interiors next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF QR/barcode committed; annotation and form interiors next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,27 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Editor loading and saved-session recovery (2026-10-15)
+## Latest bounded piece — QR / barcode (2026-10-15)
+
+PDF `2c3b901` adopts Air type/content/colour/caption controls, associated encoding
+errors and neutral preview surfaces. Keyboard Place/select/move/resize/remove shares
+PlacementActions with signatures. Edge placement retains quiet zones; mixed-page
+copy preserves proportions. Awaited Apply/mobile Done keeps failed work recoverable.
+
+- [x] Verify QR module/quiet-zone pixels on three actual mixed-page vector exports, barcode captions and original text/catalog preservation.
+- [x] Validate Unicode/invalid/over-capacity/long payloads, settings retention, cross-page selection, removal, copy, Apply failure/retry/dedup, Undo/Redo and Cancel.
+- [x] Inspect 88 responsive/theme captures, 12 enlarged-text views and forced-colours/reduced-motion; coarse/fine targets and no horizontal overflow pass.
+- [x] Native Safari placement/Apply/Undo; Firefox custom selection and Done at actual 200% zoom pass. Reset zoom and close temporary review tabs.
+- [x] Remove retired Segmented measurement/observer/animation code and QR skins; deduplicate signature adjustment buttons. No dependency added.
+- [x] Pass 429 units, 24 browser suites and check/dead/build/design/17 portability/sync gates. An initial modal timing sample failed; unchanged isolated retry and the full clean smoke run pass.
+- [ ] Next: Annotate inspector (text/font/shape/stroke/fill/draw controls), then Fill form, Auto-fill, N-up and remaining legacy cleanup.
+- [ ] Physical touch/software keyboard, OS IME, assistive speech and final-size real-device scan acceptance remain open.
+
+Editor 96.37 kB gzip (+0.47), CSS 25.21 (-0.04). Canonical PDF appendix and portable
+DESIGN synced; Air 1.0.1 unchanged. Evidence: PDF `docs/air/evidence/codes-2026-10-15*`.
+Full PDF/family migration remains unfinished. Local commits only.
+
+## Previous bounded piece — Editor loading and saved-session recovery (2026-10-15)
 
 PDF `8b181bf` unifies file intake, loading, measured preview progress,
 errors, saved sessions and processing with Air. Failed restores retain the original
@@ -1099,5 +1119,15 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] 141 responsive/theme/text captures, keyboard scroll access, coarse-pointer emulation, forced colours/reduced motion; 429 units and 26 browser suites pass.
 - [x] Native Safari and Firefox recovery reviewed, including Firefox actual 200% zoom; hidden-page Safari scheduling documented without a speculative fix.
 - [x] Remove replaced visual paths and unused private adapter; bundle sizes decrease and dead-code check passes.
-- [ ] Continue CodeStampTool (QR/barcode), then annotation/form interiors; retain live shared adapters until their consumers move.
+- [x] QR/barcode completed in `2c3b901`; annotation/form interiors remain next. Retain shared adapters with live consumers.
 - [ ] Full physical touch/software keyboard, OS IME and assistive speech acceptance remain open.
+
+### AIR-07 — QR / barcode checkpoint (2026-10-15)
+
+- [x] Replace legacy payload/type/caption/all-pages controls with Air; add keyboard placement/adjustment/removal and custom cross-page selection.
+- [x] Preserve quiet zones at page edges, aspect across mixed pages and preview/output caption geometry; bound long barcode preview memory.
+- [x] Await Apply/mobile Done and verify failure/retry/dedup, Undo/Redo, Cancel, actual vector modules/caption and catalog preservation.
+- [x] Inspect 101 captures; pass 429 units, 24 browser suites, native Safari and Firefox 200%, required checks and record PDF `2c3b901`.
+- [x] Remove unused Segmented control and QR legacy imports/skins; share signature/code adjustment buttons. No dependencies; CSS shrinks.
+- [ ] Continue Annotate, Fill form, Auto-fill, N-up and remaining consumer-aware cleanup.
+- [ ] Complete physical-device, assistive speech, OS IME and final-size scan acceptance; full product/family refresh is unfinished.
