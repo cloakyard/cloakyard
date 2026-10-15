@@ -1351,3 +1351,22 @@ portable specs/five bundles remain exact. Main repo check/types/build/design and
 portability pass. Physical-device/OS IME/assistive gates remain open. Next: Metadata,
 Bookmarks and Attach, including unresolved asynchronous callback contracts in
 remaining tool interiors. No full-product completion, push or deployment claim.
+
+## 2026-10-15 — CloakPDF Metadata and date/time
+
+The next bounded PDF slice adopts Air for the document report, metadata fields and
+complete calendar/year/time control. Read failure/retry, byte ownership, draft
+retention, clear/save/undo/Cancel and mobile Done are tested against real PDF output.
+Clearing standard fields retains XMP and says so. Replaced skins, duplicate date
+markup and the last legacy popover selector are removed; modal suspension follows
+actual Air portals. No dependency added; calendar code is 76 lines shorter.
+
+PDF check/dead-code, 384 units, build/design/portability, all 16 production smoke suites,
+seven extended suites and focused metadata/date acceptance pass. Responsive themes,
+long text, read/loading failure, calendar targets, nested menus, enlarged text,
+native Safari and Firefox actual 200% zoom are reviewed. The production interaction
+suite was rerun after the before-paint focus fix. Evidence and screenshots are kept
+in CloakPDF `docs/air/evidence/metadata-calendar-2026-10-15.json` and its validation log.
+The portable PDF appendix is regenerated from Cloakyard; Air 1.0.1 remains pinned.
+Physical-device and assistive-speech acceptance is still open. Bookmarks and Attach
+are next; this record does not certify the entire PDF product or web family.

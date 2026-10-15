@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF preview recovery committed; tool interiors and device acceptance remain** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF Metadata/date picker committed; remaining interiors and device acceptance open** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -30,6 +30,23 @@ part of the current work. All repositories use branch `codex/air-refresh`.
   design code or authoritative references remain.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
+
+## Latest bounded piece — Metadata and date/time (2026-10-15)
+
+PDF commit: `76b2d42`.
+
+- [x] Migrate the document report, editable properties and complete custom calendar/time picker.
+- [x] Verify read failure/retry, byte ownership, draft retention, clear/save/undo and mobile Done.
+- [x] Inspect required sizes/themes, calendar targets, keyboard/nested menus, enlarged text and native engines.
+- [x] Remove replaced skins/dead references; lint/types, dead-code, 384 units, build, 16 smoke suites,
+      seven extended suites and focused metadata/date acceptance pass. Evidence is recorded in CloakPDF.
+- [ ] Physical touch/software keyboards, actual OS IME and assistive speech remain pending.
+- [ ] Next: Bookmarks and Attach. Replace silent page clamping with explicit validation; retain
+      drafts through detection/apply failures; ignore stale scans; inspect nested outline and contents-page
+      output/undo. Attach must distinguish failed reads from empty lists, retain chosen files on failure,
+      verify name-tree removal/duplicate names and attachment bytes, and test every viewport/theme.
+- [ ] Continue auditing remaining tool callbacks that return before asynchronous Apply settles,
+      shell loading/error/draft banners, legacy controls, unused styles and dangling selectors.
 
 ## Initial implementation checkpoint (2026-10-13)
 

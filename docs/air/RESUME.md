@@ -1,6 +1,29 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (search and scrub)
+## Latest checkpoint — 2026-10-15 (Metadata and date/time)
+
+PDF commit `76b2d42`: the Metadata/date-time slice is implemented and validated. Metadata has Air fields
+and an open report, explicit read/retry, byte-scoped drafts, safe failure recovery,
+clear/save/undo/Cancel and promised mobile Done. Saving retires the applied draft.
+The full calendar/year/hour/minute/AM-PM control uses Air with seven 44px columns,
+320px full-width layout, immediate keyboard focus and nested-menu dismissal.
+
+384 units, 16 production smoke suites, seven extended suites and focused acceptance
+pass, alongside check/build/dead-code/design/portability. Required layouts/themes,
+narrow-calendar breakpoint neighbors, long filenames, error/loading, 200% root text,
+Safari and Firefox actual 200% zoom reviewed. No dependency added; date code is
+76 lines shorter, the unused old popover skin is gone and modal suspension now
+recognises actual Air surfaces. Evidence is in CloakPDF's dated validation record.
+
+Next bounded slice: **Bookmarks and Attach**. Audit already found silent page clamping,
+void asynchronous callbacks and failed attachment reads shown as empty lists. Keep
+output/undo, nested outlines/contents pages, duplicate filenames, retained retry input,
+stale detection and code cleanup in scope. Then remaining tool interiors and shell
+loading/error/draft banners. Other products and physical touch/software keyboards,
+OS IME and assistive speech remain open. Air 1.0.1 is unchanged. Local commits are
+authorized; no push/deployment. Do not mark PDF or the full family complete.
+
+## Previous checkpoint — 2026-10-15 (search and scrub)
 
 PDF commit `fcd913a`: Find & Act and Scrub now use Air throughout their panel interiors. Search retains
 query/results/inclusions after failure, cancels safely and ties matches to exact
