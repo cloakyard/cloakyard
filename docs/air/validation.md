@@ -1549,3 +1549,28 @@ and assistive speech remain open. The in-app 8132 preview shows pending Bates on
 synthetic PDF. Next: shell loading/error/restored-draft audit, then QR/barcode and
 remaining interiors. Canonical PDF rules/portable DESIGN updated; Air 1.0.1 unchanged.
 No push/deploy; full PDF/family migration remains unfinished.
+
+## 2026-10-15 — PDF loading and saved-session recovery checkpoint
+
+PDF `8b181bf` brings initial/error intake, measured preview preparation,
+error/saved-session notices and processing into Air. Failed restores retain the
+original and retry action; later files and departed sessions reject stale results
+and release thumbnails. Discard isolation, focus handoffs and StrictMode pass.
+Removed legacy Spinner, coloured banners/intake skins and a one-use restore adapter.
+No dependencies. Editor 95.90 kB gzip (-0.37), CSS 25.25 (-0.25).
+
+429 units, 26 distinct browser suites and 141 layout/text captures pass, including
+verified coarse-pointer targets, keyboard scroll access and forced colours/reduced
+motion. Root/PDF check, types, build, dead-code audit, design/17 portability assertions
+and exact canonical sync pass. See PDF's evidence for final reruns after presentation
+polish. Air 1.0.1 remains unchanged; portable product rules updated.
+
+Native file selection/loading passes in Safari and Firefox. Recovery failure/retry/
+focus passes in the real editor in both; Firefox also at actual 200% zoom and discard.
+Safari visible Bates Apply passes. One stalled reload reports a hidden page, waiting
+animation frame, completed reads and no preview encoding; earlier stalls remain
+unattributed without their own trace. No speculative scheduling workaround added.
+Temporary harnesses removed, review tabs closed, Firefox zoom reset. Physical touch/
+software keyboard, actual OS IME and assistive speech remain open. Next: QR/barcode,
+then annotation/form interiors and final legacy cleanup. No full migration claim;
+local commits only, no push/deployment. Evidence/proofs/log live in PDF's dated record.

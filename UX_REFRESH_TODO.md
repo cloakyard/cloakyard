@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF Bates implementation committed; native loading/chooser acceptance and remaining interiors open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF loading/recovery committed; QR/barcode and remaining interiors next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,27 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Bates numbering (2026-10-15)
+## Latest bounded piece — Editor loading and saved-session recovery (2026-10-15)
+
+PDF `8b181bf` unifies file intake, loading, measured preview progress,
+errors, saved sessions and processing with Air. Failed restores retain the original
+and retry action; stale reads/draft lookups and results after exit cannot replace
+newer work or leak thumbnails. Reused status/progress controls; removed old spinners,
+coloured banners, intake skins and the one-use restore wrapper. No dependencies.
+
+- [x] Validate corrupt-file retry/tool intent, measured progress, restore failure/retry/dedup/focus, discard isolation, late file/hash results, StrictMode and exit during open/restore.
+- [x] Review 141 captures across eleven sizes, light/dark, verified coarse/fine pointers and enlarged text; keyboard scroll access, forced colours and reduced motion pass.
+- [x] Pass 429 units, 26 browser suites, check/dead/build/design/17 portability checks and exact sync; record evidence.
+- [x] Rerun native Safari/Firefox file selection/loading; recovery retry passes in both, Firefox at actual 200% zoom.
+- [x] Diagnose one Safari stall: visibility hidden, one waiting animation frame, file reads complete, preview encoding not started. Visible runs finish; no speculative rendering change.
+- [ ] Physical touch/software keyboard, OS IME and assistive speech acceptance remain open.
+- [ ] Next: QR/barcode payload/type/caption/placement/Apply controls, then annotation/form interiors and remaining legacy cleanup.
+
+Editor 95.90 kB gzip (-0.37), CSS 25.25 (-0.25). Canonical product appendix and
+portable DESIGN synced; Air 1.0.1 unchanged. Evidence is in PDF's dated validation
+and `docs/air/evidence/editor-recovery-2026-10-15.json`. Full migration is unfinished.
+
+## Previous bounded piece — Bates numbering (2026-10-15)
 
 PDF `9a4b56a` implements Air affixes/minimum-digit segments, shared position/colour
 controls, nine-digit sequence entry and Size/Margin precision. Shared formatting
@@ -42,8 +62,8 @@ awaited Apply/mobile Done, failure retry, Undo/Redo, re-arm and Cancel pass.
 - [x] Validate real output, digit growth, fit/encoding/sequence errors, raw-draft retention and recovery.
 - [x] Inspect 44 size/theme regions, twelve enlarged-text cases, forced colours/reduced motion and Firefox actual 200% workflow.
 - [x] Pass 429 units, 25 browser suites, check/dead/build/design/17 portability assertions/exact sync; record evidence and commit.
-- [ ] Native Safari: opening stalls before Bates appears, including a clean-origin in-memory fixture. Diagnose and rerun; no pass claimed.
-- [ ] Firefox native file chooser: disabled for new and older synthetic PDFs. Component workflow passes using an in-memory File; chooser acceptance remains open.
+- [x] Follow-up in shell checkpoint: native opening and visible Bates Apply pass. One reproduced stall reports a hidden document and suspended animation frames; earlier stalls have no complete trace.
+- [x] Follow-up in shell checkpoint: native chooser opens the synthetic PDF and reaches the editor; the disabled state is no longer reproduced.
 - [ ] Physical touch/software keyboard, OS IME and assistive speech acceptance remain open.
 
 No dependencies added; Editor +0.33 kB gzip, CSS +0.03. Canonical product appendix
@@ -1071,3 +1091,13 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
       obsolete adapters only after checking live consumers; keep the code lean.
 - [ ] Remaining custom panels and shell feedback; physical touch/software keyboard,
       actual OS IME and assistive speech. Full PDF/family refresh remains unfinished.
+
+### AIR-07 — Editor shell loading/recovery checkpoint (2026-10-15)
+
+- [x] Shared Air status/progress, plain file-error intake, neutral error/saved-session notices and busy surface.
+- [x] Retained failed restoration, guarded retry, discard isolation, focus handoffs and request ownership/cleanup through exit and StrictMode.
+- [x] 141 responsive/theme/text captures, keyboard scroll access, coarse-pointer emulation, forced colours/reduced motion; 429 units and 26 browser suites pass.
+- [x] Native Safari and Firefox recovery reviewed, including Firefox actual 200% zoom; hidden-page Safari scheduling documented without a speculative fix.
+- [x] Remove replaced visual paths and unused private adapter; bundle sizes decrease and dead-code check passes.
+- [ ] Continue CodeStampTool (QR/barcode), then annotation/form interiors; retain live shared adapters until their consumers move.
+- [ ] Full physical touch/software keyboard, OS IME and assistive speech acceptance remain open.

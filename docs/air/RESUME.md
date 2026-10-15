@@ -1,6 +1,52 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Bates numbering)
+## Latest checkpoint — 2026-10-15 (Editor loading / saved-session recovery)
+
+PDF `8b181bf`: shared Air file intake, reading/preview progress, error and
+saved-session notices, and processing surface. Failed restore retains source bytes,
+saved draft and retry; success/discard hands focus to Export. Latest file request
+owns progress, install, security recheck and draft lookup. Exit during read/restore
+releases late previews; StrictMode succeeds. Removed Spinner, one-off coloured
+banners, legacy intake skins and applyDraft wrapper; no dependencies added.
+Editor 313.87/95.90 kB raw/gzip (-0.37 gzip), CSS 144.28/25.25 (-0.25).
+
+429 units / 45 files and 26 distinct browser suites pass (16 production smoke,
+7 extended, focused editor recovery, preview recovery and Bates). Full smoke rerun
+after restore-exit guard; final presentation adjustments checked by focused recovery,
+production entry/motion and build as recorded in evidence. 141 captures cover eleven
+sizes, both themes, real coarse-pointer emulation, 30 enlarged-text states and one
+measured-progress state. Keyboard scrolling at 320px/200%, forced colours/reduced
+motion, no uncaught errors and zero leaked thumbnail URLs pass. Required check/dead/
+build/design/17 portability assertions/exact sync pass; 128 assets, 77 PWA entries.
+Canonical PDF appendix and portable DESIGN synced; family contract stays Air 1.0.1.
+
+**Native diagnosis:** Both Safari and Firefox now open PDFs through native file
+selection. The disabled Firefox chooser is no longer reproduced. Safari's real-editor
+failure/retry/focus and Bates Apply pass when visible; one instrumented stalled reload
+reported visibility hidden, 0/1 delivered frames, 2/2 reads complete and no PNG encoding.
+Initial load does NOT use runBusy, contrary to the prior hypothesis; PDF.js also uses
+animation frames for display rendering. No renderer/scheduler workaround was added.
+Do not attribute every earlier stall to this without its own trace. Firefox recovery,
+Return activation, success focus and discard pass at actual 200% zoom. Native review
+tabs closed and zoom reset; temporary diagnostic files removed. Physical touch/software
+keyboard, real OS IME and assistive speech remain open.
+
+**Next bounded piece: QR / barcode** in `src/editor/panels/CodeStampTool.tsx`.
+Replace Labeled/TextField/Toggle and legacy WholeDocPanel Segmented use with Air
+payload/type/caption controls. Preserve scannability, QR quiet zones, Code128 caption
+geometry, vector output, placement/move/resize/all-pages, draft persistence, Apply/
+mobile Done/failure/Undo/Cancel ownership. Audit error/empty/long payload and every
+size/theme. Then annotation/form interiors and remaining dead-code cleanup. Keep
+controls.tsx and WholeDocPanel adapters with live consumers until their migrations.
+Do not claim full PDF/family completion. Local commits only; no push/deploy.
+
+Evidence: PDF `docs/air/evidence/editor-recovery-2026-10-15*`; full screenshots
+`/tmp/cloakpdf-air-review/shell-*.png`. Development/preview servers remain 8122/8132,
+Air reference 8120, homepage 8131. Existing in-app tab 12 (8132) was preserved with
+its synthetic Air Bates.pdf, CASE- / -A, six digits, start 1, size 9, margin 36,
+bottom-right, pending preview; no viewport override. Other product repos unchanged.
+
+## Previous checkpoint — 2026-10-15 (Bates numbering)
 
 PDF commit `9a4b56a`: Air full-width affixes, minimum-digit segments, shared
 position/colour/precision controls and nine-digit Start at entry. One formatter
