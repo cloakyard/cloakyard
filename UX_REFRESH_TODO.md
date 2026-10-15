@@ -956,7 +956,8 @@ full family refresh are not complete. Local commits only; no push/deployment.
 - [x] 405 units, 25 browser suites, 44 layout/theme cases, twelve enlarged-text
       cases, short-landscape/forced-colours/reduced-motion and native Safari/Firefox
       including 200% zoom. Build/dead/design/portability pass; no dependencies added.
-- [ ] Next: Stamp/numbering interiors, starting with Stamp (WatermarkPanel).
+- [x] Stamp interior completed in PDF `3a9eef1`; detailed evidence is recorded below.
+- [ ] Next: Page numbers, Header & footer and Bates interiors.
       Retain WholeDocPanel/Segmented until all live consumers migrate.
 - [ ] Remaining custom controls/panels, shell loading/error/restored-draft banners,
       and physical-device/real OS IME/assistive speech acceptance.
@@ -964,3 +965,20 @@ full family refresh are not complete. Local commits only; no push/deployment.
 PDF commit `24a1965`. Evidence: PDF `docs/air/evidence/signature-panel-2026-10-15.json`
 and dated validation. Air 1.0.1 unchanged; portable appendix updated. PDF and the
 full family refresh remain unfinished. Local commits only; no push/deployment.
+
+### AIR-07 PDF Stamp interior — 2026-10-15
+
+- [x] Extract Stamp from the still-pending numbering panels; use Air text, tokens,
+      segments, colour and precise number/slider controls with single field contours.
+- [x] Preserve invalid drafts, token selection/caret and settings across view/tool
+      changes; actual title plus one captured preview timestamp reach saved output.
+- [x] Await Apply/mobile Done, preserve failed drafts, retire saved previews before
+      Undo and offer explicit Start another stamp. Keep busy focus within the panel.
+- [x] Reuse output raster for ink previews; bound/clear caches and release temporary
+      canvases. Remove old Stamp UI, preview painter, void Apply and unused branches.
+- [x] Validate actual PDF text/catalog/attachments, page geometry, retry/cancellation,
+      all required size/theme classes, enlarged text and forced-colour controls.
+- [ ] Next bounded slice: Page numbers, then Header & footer and Bates. Keep shared
+      WholeDocPanel/Segmented/controls while those live consumers remain.
+- [ ] Continue remaining custom panels and shell loading/error/restored-draft banners;
+      physical touch/software keyboards, real OS IME and assistive speech stay open.

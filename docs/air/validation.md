@@ -1452,3 +1452,22 @@ portability pass; no dependencies added. Editor 91.13 kB gzip (+1.43), CSS 25.14
 Detailed evidence lives in PDF's validation and `signature-panel-2026-10-15.json`.
 Physical-device/real OS IME/assistive speech gates and full migration remain open.
 Next: Stamp/numbering interiors. Local commits only; no push/deployment.
+
+## 2026-10-15 — PDF Stamp checkpoint
+
+PDF commit `3a9eef1` migrates Stamp to Air with precise fields/sliders, field insertion,
+shape/finish and colour controls. Title/time previews match saved tokens; successful
+Apply retires its preview before Undo and failed mobile Done preserves the draft.
+Native Safari exposed a focus jump; the final adapter keeps focus inside Stamp.
+Ink preview/output now share a bounded, released raster cache. Old Stamp controls,
+painter, void Apply and dead branches/references are removed; live numbering adapters
+remain. No dependencies added; editor 93.05 kB gzip and CSS 25.50.
+
+405 units and 25 distinct browser suites pass, plus focused/motion repeats for final
+refinements and a production preview check. Inspected 44 region/size/theme captures,
+twelve enlarged-text cases, forced colours and reduced motion. Safari and Firefox
+pass, including actual Firefox 200% zoom. Product check/dead/build/design/portability
+and root checks/types/build/design/portability/exact sync pass. Product evidence lives
+in its `stamp-panel-2026-10-15.json`, check log and three images. Portable PDF appendix
+is synchronized. Physical device/IME/assistive gates remain open. Next bounded piece:
+Page numbers, then Header & footer and Bates; full PDF/family refresh is unfinished.

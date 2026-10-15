@@ -1,6 +1,45 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Signature interior)
+## Latest checkpoint — 2026-10-15 (Stamp interior)
+
+PDF commit `3a9eef1`: Stamp now has a dedicated WatermarkTool adapter with Air text,
+field insertion, shape/finish segments, colour and precise numeric/slider controls.
+Invalid drafts persist through layout/tool changes; actual PDF title and a captured
+preview time reach output. Token insertion retains the caret without stealing focus
+from a later field. Applied previews retire before Undo; Start another stamp re-arms
+settings. Mobile Done waits, failed saves retain the draft and busy focus stays in
+Stamp text (verified in native Safari/Firefox).
+
+Ink previews now share the exact supersampled output buffer. Fractional cache keys
+remain distinct; caches have a 16-million-pixel total/12-entry/8192px-side bound and
+release buffers on eviction/tool exit. Oversized text gets a recoverable error.
+Removed the old Stamp UI/painter, void Apply, obsolete imports/comments and unused
+null branch. Numbering still uses live WholeDocPanel/Segmented/controls: keep them
+until their remaining consumers migrate. No dependencies added. Editor 93.05 kB
+gzip (+1.92), CSS 25.50 (+0.36); Air 1.0.1 remains locked and portable.
+
+405 units in 42 files, 16 production smoke + seven extended + focused Stamp and
+page geometry suites pass (25 distinct browser suites). Final focus/caret/visual
+refinements reran focused Stamp and production motion, with a final production
+Stamp preview check. Inspected 44 size/theme region captures, twelve enlarged-text
+cases, forced colours and reduced motion. Native Firefox passed at actual 200%
+zoom; Safari's discovered focus issue was fixed and rechecked. Native tabs closed
+and Firefox zoom reset. Check/dead/build/design/portability pass. Product validation,
+JSON, three proof images and complete check logs record evidence. The evidence PDF
+contains an applied APPROVED plus a pending CONFIDENTIAL stamp deliberately.
+
+Next bounded piece: **Page numbers** in StampTools.tsx, then Header & footer and
+Bates. Audit precise values, live preview/token metadata, draft ownership, awaited
+Apply/mobile Done, failure/retry, output and Undo. Then remaining custom panels and
+shell loading/error/restored-draft banners. Continue dead-code checks each slice.
+Physical touch/software keyboard, real OS IME and assistive speech stay open; full
+PDF/family migration is unfinished. Local commits authorized; no push/deployment.
+
+Servers 8122 (PDF dev), 8132 (PDF preview), 8120 (Air reference) and 8131 (home)
+remain. In-app tab 12 on 8132 is the production Stamp review with a synthetic PDF.
+No server was added. The other three product repositories remain unchanged.
+
+## Previous checkpoint — 2026-10-15 (Signature interior)
 
 PDF commit `24a1965`: Signature now uses Air source segments, labelled switches,
 colour controls, an object selector and keyboard placement/move/resize/remove.
