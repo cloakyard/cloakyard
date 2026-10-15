@@ -1418,3 +1418,18 @@ Full details and proof images live in PDF's dated validation and attachment evid
 Physical-device/OS IME/assistive gates remain open; full product/family completion
 is not claimed. Next: Crop and Strip furniture interiors, shared controls and
 promised failure/retry handling. No push or deployment.
+
+## 2026-10-15 — PDF Crop and Strip furniture checkpoint
+
+PDF commit `9f64243`: Crop/furniture interiors now use Air throughout their scope, fields, selection,
+preview and feedback states. Both await mobile Done and retain failed drafts.
+Straighten preserves the catalog and original page geometry, rejecting unsafe
+native annotation changes. Full output, cancellation, source ownership and Undo
+are covered. Replaced skins, duplicate preview state and void async chains are
+removed; no dependency added. 404 units and 25 browser suites pass, alongside
+44 size/theme layouts, 12 enlarged-text cases and native Safari/Firefox including
+actual Firefox 200% zoom. Product evidence and the portable PDF appendix are updated.
+Root checks/types/build/design/portability and exact synchronization pass. Air 1.0.1
+is unchanged. Physical-device/IME/assistive gates and remaining tool interiors are
+open. Next bounded piece: Signature and its shared controls, then Stamp/numbering
+and shell feedback. This is not a complete PDF/family migration.

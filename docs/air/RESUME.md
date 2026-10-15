@@ -1,6 +1,45 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Attach)
+## Latest checkpoint — 2026-10-15 (Crop and Strip furniture)
+
+PDF commit `9f64243`: Crop and Strip furniture interiors use Air fields, scope
+segments, full sample rows and explicit feedback. Crop now has keyboard percentage
+entry, shared pointer geometry and cancellable/owned content suggestions. Furniture
+selections survive tool/layout changes; preview bands derive from the selected
+result without duplicate state. Both tools await mobile Done and retain failed
+drafts for retry. Applied drafts retire before Undo. Busy focus stays in the panel.
+
+Straighten preserves the catalog/page references and original rotated/CropBox/
+UserUnit geometry instead of rebuilding everything and applying rotation twice.
+Changed native annotated/widget pages are rejected before writing; pending marks
+block automatic adjustments. Actual raster rows, untouched text/forms, metadata,
+attachments and exact no-op bytes are tested. Crop's data-retention limits remain
+explicit. Old skins, void apply chains, duplicate state and obsolete comments are
+removed. No dependencies added; editor 89.70 kB gzip (+1.36), CSS 25.23 (-0.06).
+
+404 units in 41 files, all 16 production smoke + seven extended + focused crop/
+furniture and geometry suites pass (25 browser suites). All 44 tool/size/theme
+combinations and 12 enlarged-text cases were inspected. Forced colours/reduced
+motion and native Safari/Firefox pass, including actual Firefox 200% zoom. Check,
+dead-code, build, design and portability pass. Evidence is in PDF's dated validation
+and `docs/air/evidence/crop-furniture-2026-10-15.json`. The smoke now waits for actual
+scan/apply completion instead of rail labels/static help. Canonical PDF appendix
+and standalone DESIGN are synchronized; Air 1.0.1 remains locked.
+
+Native review tabs are closed and Firefox zoom restored. In-app tab 12 at 8132
+holds synthetic `Air crop.pdf`, Crop controls expanded, Top = 8% as an unapplied
+review draft. No new server was started; 8122 dev and 8132 production remain.
+
+Next bounded piece: **Signature interior** — its shared legacy source toggle,
+image upload/background controls, canvas input, promised apply/failure/retry and
+output/Undo. `WholeDocPanel.Segmented` still has live Signature/Stamp consumers;
+do not delete it until each migrates. Then Stamp/numbering interiors, remaining
+panels and shell loading/error/restored-draft banners. Keep dead-code audit in every
+slice and commit only after all applicable checks. Physical touch/software keyboards,
+real OS IME and assistive speech remain open. Full PDF/family migration is unfinished.
+Local commits authorized; no push/deployment. Do not mark the family goal complete.
+
+## Previous checkpoint — 2026-10-15 (Attach)
 
 PDF commit `8fcdbe8`: Attach now uses Air open rows, complete filenames, sizes and
 40/44px actions, explicit read failure/retry, retained byte-scoped selections,

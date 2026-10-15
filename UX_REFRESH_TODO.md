@@ -902,8 +902,8 @@ returning void still need their asynchronous completion/error lifecycle reviewed
       traversal; verify no dependencies, dead symbols or dangling imports added.
 - [x] Validate required size/theme matrix, edge states, keyboard/enlarged text,
       native browsers and real output; record evidence and commit (`8fcdbe8`).
-- [ ] Next: Crop and Strip furniture interiors, numeric drafts, promised mobile
-      failure/retry, shared whole-document controls and real crop output/Undo.
+- [x] Crop and Strip furniture interiors, numeric drafts, promised mobile
+      failure/retry, shared Air scope controls and real crop output/Undo (`9f64243`).
 - [ ] Continue remaining panel interiors and shell loading/error/restored-draft
       banners. Keep live legacy shared adapters until every consumer migrates.
 
@@ -916,3 +916,29 @@ CSS +0.05 kB gzip. Canonical PDF appendix and generated DESIGN are synchronized.
 Evidence lives in PDF's dated validation and `attachments-2026-10-15.json`.
 Physical-device, OS IME and assistive-speech gates remain open. Full PDF/family
 migration remains unfinished; no push or deployment.
+
+### AIR-07 PDF Crop and Strip furniture — 2026-10-15
+
+- [x] Air scope segments, persistent percentage fields, keyboard/pointer parity,
+      invalid-draft feedback and primary action beside the fields.
+- [x] Cancellable/owned content suggestions; preserve manual input after failure,
+      cancellation and superseded reads.
+- [x] Open furniture rows, full samples, explicit empty/unsupported/read/retry
+      states and byte-scoped selections across tool/viewport navigation.
+- [x] Promised mobile Done, retained failure/retry and retired applied drafts.
+- [x] Preserve actual rotated/CropBox/UserUnit crop output and pending-mark mapping.
+- [x] Fix Straighten's full-document rebuild and duplicate rotation; preserve
+      metadata, attachments, untouched forms/text and exact no-op bytes. Guard
+      pending marks and native annotations before rasterising affected pages.
+- [x] Remove legacy skins, duplicate preview state/effects, void async chains,
+      unused imports and obsolete cross-tool comments; no dependencies added.
+- [x] 404 units, 25 browser suites, all 44 layout/theme cases, 12 enlarged-text
+      cases, native Safari/Firefox (actual 200% zoom), build/dead/design/portability.
+- [ ] Next: Signature interior, image source/background controls and promised
+      apply/failure lifecycle; retain shared legacy adapters until all consumers migrate.
+- [ ] Then Stamp/numbering interiors and shell loading/error/restored-draft banners.
+
+PDF commit: `9f64243`. Evidence is in PDF's dated validation and
+`crop-furniture-2026-10-15.json`.
+Physical-device, real OS IME and assistive speech gates remain open. PDF and the
+full family refresh are not complete. Local commits only; no push/deployment.
