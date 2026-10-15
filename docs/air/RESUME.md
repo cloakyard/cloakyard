@@ -1,6 +1,53 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Annotate inspector)
+## Latest checkpoint — 2026-10-15 (shared colour wheel)
+
+PDF **`917ae41`** replaces the colour square in every direct picker consumer with
+one Air hue/saturation wheel, brightness track, hex field and optional native
+precise axes. All nine tools share it. Pointer cancellation restores the starting
+colour; secondary pointers cannot cancel the active drag. External values update
+the cursor; black/grey retain useful hue through brightness edits. A wheel choice
+from pure black becomes visible. Invalid hex never changes output. Near-red hue
+rounding stays inside the native range. Removed obsolete square/point CSS and
+per-axis callbacks; no dependency added.
+
+Family **Air 1.0.2**, contract `bb90f52e0b0a`: upstream anatomy/rules, opt-in CSS,
+shared `colour.mjs` + types and inline `components.html#colour-study`. All six
+portable DESIGNs and five bundles/inventory versions synchronized. The colour
+math is shared by the PDF adapter and reference. IMG/Resume runtime pickers remain
+pending; preserve their RGB/recents/eyedropper and document output during adoption.
+Drop receives the bundle only; native/KERR unchanged.
+
+PDF checks: 429 units, all 25 distinct browser suites (wheel, 16 production smoke,
+7 extended, privacy panels), check/dead/build/asset limits/design/18 portability
+pass. The final red-seam refinement and revised keyboard order also pass focused
+wheel + production interactions. 22 required size/theme, six text200, forced
+colours/reduced motion reviewed; actual coarse input and touch/cancel emulated.
+Safari wheel/black/brightness/reopen/focus and Firefox precise keyboard/error/
+focus at actual 200% pass. Physical touch/software keyboards and spoken assistive
+acceptance remain open. Root math checks cover cardinal mapping, inverse cursor
+geometry and 4096 byte-exact RGB round trips. Editor 315.68/96.79 kB raw/gzip
+(+0.23 gzip); CSS 143.18/25.02 (+0.24); 128 assets/77 PWA entries.
+
+Bundle commits: IMG `d8a3259`, Drop `a42e8b1`, Resume `76d311c`.
+
+Sibling gates: IMG check/470 tests/build, Drop Astro check/build, Resume
+check/build/288 production tests pass. Resume development runs had isolated prism
+timeout and contact-focus timing failures; isolated retry, four production focus
+cases and full production suite pass without changing code/assertions.
+
+Evidence and checks: PDF `docs/air/evidence/colour-wheel-2026-10-15*`; all captures
+`/tmp/cloakpdf-air-review/colour-wheel-*`. New IAB review tab19 on 8132 has the
+synthetic document and wheel open; old tab12 draft was preserved. Native temporary
+tabs closed, Firefox zoom restored. All existing servers remain available.
+
+Next PDF piece remains **FillFormTool**, then AutoFillTool and NupTool. Track the
+new family wheel requirement in IMG/Resume migrations; do not mark those pickers
+implemented merely because their portable bundle changed. Continue feature/output,
+size/theme checks, consumer-aware cleanup and local commits. Full family refresh
+is unfinished; no push/deploy.
+
+## Previous checkpoint — 2026-10-15 (Annotate inspector)
 
 PDF **`0c30b05`**: Air tool/style groups, full-width font selector, named colours,
 switches and precise size/opacity entry. A custom placed-annotation selector reaches

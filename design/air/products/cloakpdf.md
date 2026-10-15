@@ -108,10 +108,13 @@
   replacement or tool exit; prevent duplicate dispatch and retain valid inputs on
   failure. A processing error does not make the search phrase invalid.
 - Colour presets have separate 40/44px targets and explicit selected state. The
-  custom picker keeps the actual colour field, labelled saturation/brightness/hue
-  axes and direct hex entry inside the Air popover. Preserve invalid drafts and
-  the last valid output colour; Escape returns focus. Keep the popup reachable
-  after scrolling, resizing or zooming, even when its anchor moves offscreen.
+  shared custom picker uses the family hue/saturation wheel, a brightness track,
+  exact hex entry and optional native hue/saturation controls. Use this same picker
+  in every annotation, signature, stamp, numbering, redaction and search colour.
+  Preserve raw invalid hex and the last valid output; external Undo updates the
+  cursor. Cancelled drags restore their starting colour, and unrelated pointers
+  cannot cancel a live gesture. Keep the popup reachable after scrolling, resizing
+  or zooming, even when its anchor moves offscreen. Escape returns focus.
 - Redaction/erase remain deferred until export or a byte operation. Explain the
   permanent removal, loss of selectable text on marked pages and possible file
   growth. Pixelation can retain recognisable details; it is not a substitute for

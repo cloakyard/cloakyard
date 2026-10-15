@@ -1618,3 +1618,35 @@ Root format/lint/types/build/design/17 portability and exact six-document sync p
 Evidence/log/two PNGs in PDF `docs/air/evidence/annotate-2026-10-15*`; full captures
 in `/tmp/cloakpdf-air-review/annotate-*`. Next: FillFormTool, AutoFillTool, NupTool.
 This is a bounded migration; the complete PDF/family refresh is still unfinished.
+
+## 2026-10-15 — Air 1.0.2 shared colour wheel
+
+PDF **`917ae41`** adopts the wheel across all nine tools with direct colour controls.
+The family source now defines its anatomy, exact polar mapping, brightness/hex,
+native precise axes, keyboard/touch and cancellation semantics. Shared opt-in CSS
+and `colour.mjs`/types back the working reference and PDF adapter. All six DESIGNs,
+five bundles and inventory versions are pinned to 1.0.2 (`bb90f52e0b0a`). IMG and
+Resume receive the portable pattern; their live picker migrations remain open.
+
+PDF: check/dead, 429 units, build/asset limits and 25 browser suites pass (wheel,
+16 production smoke, seven extended, privacy panels). A final hue-range edge and
+keyboard-order assertion pass in focused wheel and production interaction reruns.
+Twenty-two required size/theme captures, six text200, forced colours/reduced motion,
+actual coarse/touch emulation inspected. Safari pointer/brightness/reopen/focus and
+Firefox keyboard/hex recovery at actual 200% pass. Root's three math tests cover
+4096 RGB round trips and spectrum/cursor geometry. Portable isolation/drift checks
+now include the colour module: 18 assertions per repository. Physical touch,
+software keyboards and spoken assistive acceptance remain open.
+
+No dependency added. Removed the old PDF colour plane/point and redundant handlers.
+Editor gzip 96.79 kB (+0.23), CSS 25.02 (+0.24). Root format/lint/types/build/design
+and exact sync pass. IMG check, 470 tests and build pass. Drop asset sync, Astro
+check (zero diagnostics) and build pass. Resume check/build and the complete
+production suite pass: 288 tests in eight files (272.96s). Development runs each
+had one isolated failure (prism PDF-symbol timeout, then contact focus-ring timing);
+the isolated prism retry, all four production focus cases and the full production
+run pass without product-code or assertion changes. Its pass log is saved in
+Resume `docs/air/evidence/colour-wheel-contract-2026-10-15-tests.log`.
+Evidence/proofs/check log are in PDF `docs/air/evidence/colour-wheel-2026-10-15*`.
+Portable bundle commits: IMG `d8a3259`, Drop `a42e8b1`, Resume `76d311c`.
+Full product/family refresh is still in progress; local commits only.

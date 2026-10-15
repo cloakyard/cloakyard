@@ -1151,3 +1151,22 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Remove unused Segmented control and QR legacy imports/skins; share signature/code adjustment buttons. No dependencies; CSS shrinks.
 - [ ] Continue Annotate, Fill form, Auto-fill, N-up and remaining consumer-aware cleanup.
 - [ ] Complete physical-device, assistive speech, OS IME and final-size scan acceptance; full product/family refresh is unfinished.
+
+### AIR-07 — Shared colour wheel (2026-10-15)
+
+- [x] Replace the PDF colour square with a hue/saturation wheel, brightness track,
+      exact hex and optional independent native ranges in all nine consumer tools.
+- [x] Match displayed spectrum/cursor math; preserve exact RGB, black/grey continuity,
+      valid output during invalid hex, external values, pointer capture/cancellation
+      and primary-pointer ownership. Preserve presets and focus return.
+- [x] Add Air 1.0.2 upstream rules, opt-in CSS, shared math/types, a live reference,
+      math regression tests and portable drift checks; synchronize all six DESIGNs.
+- [x] Inspect eleven sizes in light/dark, enlarged text, emulated touch/cancel,
+      forced colours and reduced motion. Safari reviewed; Firefox at actual 200% reviewed.
+- [x] Remove replaced square/point styles and redundant callbacks; no dependency added.
+- [ ] Adopt the same wheel in CloakIMG's shared picker, preserving RGB, recent colours
+      and eye-dropper access; validate every tool consumer and actual image output.
+- [ ] Align CloakResume's existing wheel mapping, controls and gesture/hex recovery
+      with the family pattern; preserve primary colour and every template/export.
+- [ ] Continue Fill form → Auto-fill → N-up in PDF; retain physical touch/software
+      keyboard, OS IME and spoken assistive acceptance gates. Full refresh is ongoing.

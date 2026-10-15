@@ -28,7 +28,7 @@ and feature invariants. Mark inapplicable states with a reason, not silence.
 | Upload / drop zone               | Real text browse/drop/paste, retained selection, byte progress, abort/retry and stale-result tests                           | Real image/PDF/JSON adapters, encrypted files, device/engine and permission parity                 |
 | Rich writing                     | Resume writing, repeated entries and partial dates                                                                           | Nested formatting, IME/paste/undo/selection, every template/output invariant                       |
 | Signature / drawing              | PDF draw/choose and toggles                                                                                                  | Real pen/touch/undo, import failure, rollback, placement and export                                |
-| Colour / curves / levels         | Representative IMG custom widgets                                                                                            | Remaining modes, keyboard reachability, clipping, touch and processing fidelity                    |
+| Colour / curves / levels         | Shared wheel/brightness/hex study; PDF adapter and all nine tool consumers; representative IMG custom widgets                | Remaining modes, keyboard reachability, clipping, touch and processing fidelity                    |
 | Canvas / document chrome         | Three editor compositions and compact expanded controls                                                                      | Real zoom/pan/selection handles/context controls and all object states                             |
 | Search / template / icon library | Local filtering/clear/no-results, composition boundary and focus return                                                      | Real loading/error/results navigation/selection; large libraries and long names                    |
 | AI / privacy / recovery          | Long-reading privacy and recovery studies; retained note, real session save/restore/download and unload guard                | Model consent/download/cache/retry, actual product persistence/failures and policy review          |
@@ -51,3 +51,12 @@ review and first production piece. Remaining browser/device and domain-specific
 checks are mapped to their adapters; they remain open and block affected commits.
 Do not reopen broad exploration before AIR-04 unless the review finds a concrete
 shared issue. A complete prototype is not user approval or product migration.
+
+## 2026-10-15 colour-wheel refinement
+
+Air 1.0.2 makes a hue/saturation wheel the shared author-colour pattern. The inline
+`components.html#colour-study` uses the same portable math and CSS as PDF. PDF's
+real adapter covers native ranges, invalid hex, pointer capture/cancel, external
+values and clipped-panel popovers. IMG and Resume runtime adoption remains pending;
+their existing picker/eyedropper features must survive that migration. Physical
+touch/software-keyboard and spoken assistive checks remain open.
