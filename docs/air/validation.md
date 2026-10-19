@@ -2076,3 +2076,64 @@ Wrangler cache headers and 12 responsive/theme/text layouts pass, with the real
 links, logos, compact menu/Escape and no-JavaScript fallback. Evidence:
 `evidence/releases-2026-10-19/home-headers-*`. Live no-injection checks follow the
 passing PR and deployment; they have not yet been counted as a pass.
+
+## 2026-10-19 — release completion
+
+Cloakyard v1.0.1 (`6bd318f`, PR #10) and CloakPDF v2.0.0 (`4277829`,
+PRs #201/#202) are published after passing CI and Cloudflare production builds.
+Both live deployments match validated assets and serve no-transform without the
+edge-injected scripts discovered in the first PDF live acceptance attempt.
+Home's 12 responsive/theme/text cases and real links/menu/no-JS pass. PDF's six
+actual-output workflows, 68 horizon layouts/GPU lifecycle and four desktop/mobile
+light/dark editor captures pass. White paper retains real text/vector content in
+both themes. All release URLs, exact commits, logs and captures are recorded in
+`evidence/releases-2026-10-19/releases.json` and adjacent files.
+
+Physical input, assistive and hardware limits remain open. CloakDrop's local
+landing horizon follows, then Resume logo/photo; IMG remains parked last.
+
+## 2026-10-19 — CloakDrop horizon follow-up
+
+Local commit `0cdd8fd` adds the pinned finite Air horizon to Astro's home only.
+432 layouts/34 journeys, real GPU lifecycle/six fallback profiles, 35 captures,
+Safari anchor/rendering, build/check/assets/19-source design/18 portability pass.
+Desktop/laptop/phone light/dark reviewed. Native source, screenshots and OG unchanged.
+A browser-Back test was corrected to assert restored footer/offscreen release
+before scrolling to reactivate. Evidence lives in Drop's
+`docs/air/evidence/landing-horizon-2026-10-19/`. No Drop push or deployment.
+Resume logo/photo follows; hardware/assistive gates remain open.
+
+## 2026-10-19 — CloakResume logo/photo
+
+Local commit `9cc74df` completes Profile/Skills logo and photo controls.
+303/303 full production tests in eight files (372.83s, zero skips), 320 layouts,
+20 contrast pairs, 256 date regression layouts, forced/reduced states, emulated
+touch cancellation, Safari and Firefox actual 200% pass. Check/build/design/18
+portability/exact sync pass. Saved icon names, exact image bytes and output remain
+intact. Stable search height fixes a fast-touch target shift; a border fixes the
+forced-colour selection marker. Shared date/logo placement removes duplication.
+
+The first full run passed 301/303; two old source-location assertions now follow
+the shared placement helper without dropping viewport/listener/placement coverage.
+The final full suite passes. Eleven PNGs and compact proof/checks live in Resume
+`docs/air/evidence/logo-photo-2026-10-19.json`. Next: shared colour wheel.
+No Resume push/deploy; physical input/assistive gates remain open and IMG stays last.
+
+## 2026-10-19 — CloakDrop release candidate and installer scope
+
+CloakDrop's local 1.0.0-rc.1 preparation includes compatible dependency refresh
+(`27953ff`) and the separately requested Air installer (`df413b2`). The canonical
+Drop appendix now permits fixed light installer artwork while preserving SwiftUI
+controls. Exact generated specification/bundle checks pass; the contract is still
+Air1.0.2. Full implementation, native/package proof and limitations are retained in
+Drop's October19 dependency/installer/RC audits. The family TODO and RESUME record
+the final local artifact/checksum and retain publication and device gates.
+
+## App-coloured horizons — 2026-10-19
+
+All five landings use original logo colours through Air 1.0.3 artwork tokens.
+See [the audit](brand-horizons-2026-10-19.md) and
+[evidence](evidence/brand-horizons-2026-10-19/checks.json). Sixty viewport/theme
+cases and ten real GPU theme checks pass; desktop/laptop/phone light/dark states
+were visually inspected. Static fallbacks share the computed shader colour.
+Full product migration/device acceptance and deployment are distinct gates.

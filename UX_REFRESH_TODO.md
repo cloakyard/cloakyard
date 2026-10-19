@@ -1,18 +1,40 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select and date controls implemented; logo/photo next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakDrop RC published with the Air installer and Air website deployed; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select, date and logo/photo controls implemented; colour wheel next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
 commit slices and acceptance gates. Detailed design review is complete. AIR-04 is committed as `39c08f9`; CloakPDF entry
 is committed as `dc20fe6` after local verification. Remaining device acceptance and deeper product
-surfaces stay open. Cloakyard v1.0.0 is now released; PDF PR #201 is in progress.
+surfaces stay open. Cloakyard v1.0.1 and CloakPDF v2.0.0 are released and production-verified.
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
 KERR's app and native macOS UI are outside this redesign. The user authorized
-Cloakyard/PDF dev integration, main PRs and releases. CloakDrop’s page follows;
-Drop/Resume/IMG runtime work stays local; IMG remains last.
+Cloakyard/PDF dev integration, main PRs and releases, followed by CloakDrop RC1
+publication and then its Air website deployment. Drop is live; main/dev source
+integration remains separate. Resume/IMG work stays local and IMG remains last.
+The separately requested Drop installer now uses Air.
+
+## App-coloured landing horizons — 2026-10-19
+
+- [x] Apply the user-selected scope of all five landings: Cloakyard/PDF blue,
+      Drop teal, Resume green and IMG coral, using their original logo stops.
+- [x] Air 1.0.3 owns artwork-only theme tokens; shader and static SVG share colour.
+      Preserve neutral UI, shared focus, finite motion and output data.
+- [x] Validate 60 responsive/theme cases and ten real GPU theme checks; inspect
+      desktop/laptop/phone in both themes. Root runtime/type/build, PDF 461 units /
+      68 horizon layouts / 16 smoke suites, Drop 432 layouts / 34 journeys / six
+      fallbacks, Resume 303 production tests and IMG 470 tests / GPU fallbacks /
+      exact PNG RGBA export pass. Exact sync and standalone portability pass.
+- [x] Add IMG's missing horizon as a bounded piece, preserving its parked refresh
+      draft. Full IMG migration remains pending and last; Resume wheel is next.
+- [ ] Publish these colour-only checkpoints when included in the next authorized
+      release/deployment. Current production deployments and RC artifact are unchanged.
+- [ ] Physical GPU/battery/thermal and spoken assistive acceptance remain open.
+
+Evidence: each repository's `docs/air/brand-horizons-2026-10-19.md` and adjacent
+`evidence/brand-horizons-2026-10-19/`.
 
 ## Working rules
 
@@ -32,6 +54,36 @@ Drop/Resume/IMG runtime work stays local; IMG remains last.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
+## CloakDrop RC and Air installer checkpoint (2026-10-19)
+
+- [x] Review September 6/10 release naming, artifact and verification conventions.
+- [x] Latest compatible website dependencies and CI actions (`27953ff`); clean install/tree,
+      zero audit findings, asset sync/check/build/dry run and no-transform local responses.
+- [x] User explicitly retains the official yt-dlp bundle and documented frozen-runtime
+      exception; TypeScript6 remains supported. No custom runtime dependency added.
+- [x] 626 optimized core tests / 87 suites; fresh arm64 Debug/Release, strict lint and
+      localization pass. Website 432 layouts / 34 journeys and horizon GPU/six fallbacks pass.
+- [x] User-requested Air installer (`df413b2`): regular typography, canonical light
+      palette, open composition, finite-artwork horizon and native drag targets preserved.
+      Normal Finder layout, 20 inventory records, 18 portability checks and exact sync pass.
+- [x] Prepare local `CloakDrop-v1.0.0-rc.1.dmg`, build20261019: 48,181,551 bytes,
+      SHA-256 `c363dc38e9cd48ade60b74458f0f3f83c5dd666f60332af274134086556c9471`.
+      RC documentation `a870941`. Direct DMG launch/About, actual checksum transfer, helper loading, 295 file/link
+      comparisons, strict signatures and filesystem verification pass. Exact FFmpeg9.0.2
+      source/licenses included; release draft, manifest and checksums saved.
+- [x] Explicitly authorized RC publication: tag `v1.0.0-rc.1`, release notes and both assets
+      published with matching SHA-256 digests; publication evidence `6ac533f`.
+- [x] Explicitly authorized Air website deployment: pushed `codex/air-refresh` at `6ac533f`,
+      successful Cloudflare build, version `f99e2602` promoted to 100% traffic. Live
+      18 byte-matched responses/no-transform, 432 layouts/34 journeys, GPU/six fallbacks
+      and desktop/laptop/phone light/dark review pass. Evidence commit `8ce17f9`.
+- [ ] Integrate Drop Air source into main/dev before another main-triggered deployment.
+- [ ] Candidate remains ad-hoc and unnotarized; Developer ID/App Group/device/assistive gates remain open.
+
+Evidence: Drop `docs/audits/2026-10-19-{dependencies,installer,rc.1}.md` and
+`docs/releases/v1.0.0-rc.1.md`, plus the website deployment audit and
+`docs/air/evidence/deployment-2026-10-19/`. Resume wheel is next; IMG remains parked last.
+
 ## Release checkpoint and landing follow-up (2026-10-19)
 
 - [x] Cloakyard dev → main [PR #9](https://github.com/cloakyard/cloakyard/pull/9), production build and [v1.0.0 release](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0). Exact live asset hashes, 12 production responsive/theme cases, menu/Escape and no-JS pass.
@@ -40,12 +92,22 @@ Drop/Resume/IMG runtime work stays local; IMG remains last.
 - [x] Remote CodeQL passes after `cab22ba`; all 79 high findings cleared without exceptions.
 - [x] PDF’s canonical landing horizon (`62161d9`): 68 layouts, real GPU/fallbacks, 461 units, 16 smoke suites, 44-layout PWA integration and Safari rendered/navigation review pass.
 - [x] PDF #201 CI and main merge `41273ae`; live built-asset hashes and true 404 pass.
-- [-] Production injected analytics/challenge scripts conflict with CSP. Header-only follow-up #202 (`21f37de`) passes actual Wrangler cache headers, six output workflows, 461 units and PWA integration; await CI/deploy/live acceptance before v2.0.0.
-- [ ] Handle CloakDrop’s page next, then resume CloakResume logo/photo controls. IMG remains last.
+- [x] Production payload integrity: root PR #10/main `6bd318f`, PDF #202/main `4277829`, all CI/deploy checks pass. Both live sites serve `no-transform` without injected analytics/challenge scripts. Live asset hashes, home 12 layouts, PDF six output workflows/68 horizon layouts/GPU lifecycle and four editor captures pass. Published Cloakyard v1.0.1 and CloakPDF v2.0.0.
+- [x] CloakDrop page horizon `0cdd8fd`: 432 layouts, 34 journeys, real GPU lifecycle/six fallbacks, Safari, Astro build/check and portability pass. Subsequently deployed and production-verified in `8ce17f9`.
+- [x] Resume CloakResume logo/photo controls (`9cc74df`).
+- [-] Continue CloakResume colour wheel. IMG remains last.
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 
-## Latest bounded piece — CloakResume partial dates (2026-10-19)
+## Latest bounded piece — CloakResume logo/photo (2026-10-19)
+
+- [x] Air Profile/Skills logo search and photo controls, unknown imported values, exact bytes, existing validation/race/cancellation and focus. Commit `9cc74df`.
+- [x] Stable touch target geometry, shared date/logo viewport placement, forced-colour selection and obsolete cr-control removal.
+- [x] Full 303/303 in eight files, 372.83s, zero skips; 123 editor and 34 template/paper cases. 320 layouts, 20 contrast pairs and 256 date regressions; Safari/Firefox 200%, forced/reduced and emulated touch pass.
+- [x] Check/build/78-source design/18 portability/exact sync; eleven PNGs and compact evidence/checks in Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
+- [ ] Next: shared colour wheel, remaining sections/hints/review/library/export/PWA/static recovery and actual preview assets. Human/device gates remain open. IMG last.
+
+## Previous bounded piece — CloakResume partial dates (2026-10-19)
 
 Resume `648842d` completes MonthYearField, Experience Current job and Education
 Present. The full product remains in progress.
@@ -124,7 +186,7 @@ Drop `e5f2bac` implements all three static routes and the 1200×630 OG card.
 - [x] Remove legacy palette/fonts, overlay menu, repeated stats, unused components/icons and reveal/scroll-progress code. No production dependency added.
 - [x] Pass 432 layout observations, 34 journey records, 374 contrast pairs, 18 active-policy destinations, no-JS/reduced-motion/forced-colour/history checks, asset sync/Astro check/build/design/18 portability/exact sync.
 - [x] Inspect desktop/laptop/tablet/phone light/dark, enlarged text and OG; native Safari and Firefox actual 200% zoom/keyboard/recovery pass. Fix the native Firefox anchor focus issue before commit.
-- [ ] Physical touch and spoken assistive acceptance remain open. No native install/signing/runtime or deployed edge certification is claimed.
+- [ ] Physical touch and spoken assistive acceptance remain open. This earlier website-only checkpoint did not certify native delivery; later RC and production edge evidence are recorded above.
 - [x] Resume entry/recovery followed in the checkpoint above; its full editor is next. CloakIMG remains last and parked.
 
 ## Previous bounded piece — PDF software acceptance and revised rollout (2026-10-19)
@@ -600,6 +662,7 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Inspect all required viewport classes, light/dark, keyboard/emulated coarse input/reduced motion and native 200% zoom.
 - [x] Run asset sync, Astro check and production build; verify links and policy content.
 - [x] Verify no Swift/native changes; record evidence and commit.
+- [x] Deploy and verify the Air website/OG/horizon at the existing production domain; Drop evidence `8ce17f9`.
 
 - [ ] Physical touch and spoken assistive acceptance; browser emulation does not certify these gates.
 
@@ -614,7 +677,8 @@ items retain their documented human/device gates; they do not imply full accepta
       languages, interests, awards, custom, stats and job description.
 - [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
 - [x] Month/year fields, Experience Current job and Education Present; evidence in Resume `docs/air/evidence/date-controls-2026-10-19.json`.
-- [ ] Logo/photo/colour controls and writing-hint popup interiors.
+- [x] Profile/Skills logo search and photo controls; evidence in Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
+- [ ] Colour controls and writing-hint popup interiors.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.

@@ -254,5 +254,6 @@
     }
   ],
   "noJavaScript": true,
-  "errors": []
+  "errors": [],
+  "analytics": []
 }

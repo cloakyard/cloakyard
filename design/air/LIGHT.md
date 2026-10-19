@@ -1,12 +1,16 @@
 # Air light study
 
-This is the opt-in reference implementation of the landing light in Air refinement 03. It is under design review. Production apps do not import these files.
+This is the canonical, locally bundled landing light. Product wrappers import
+`light-runtime.mjs`; the reference gallery uses the same runtime through
+`light-controller.mjs`. Production/device acceptance is tracked per app.
 
 `light-renderer.mjs` defines Air's two illuminated planes using the public
-`shaders/core` and `shaders/std` APIs. `light-controller.mjs` owns lazy loading,
+`shaders/core` and `shaders/std` APIs. `light-runtime.mjs` owns lazy loading,
 pointer response, theme/resize updates, finite drawing and resource disposal.
 The SVG in `components.html` uses the same curve geometry as a permanent fallback.
-Shared CSS tokens supply colour, the arrival duration and easing.
+The horizon wrapper supplies the app logo colour through computed CSS `color`;
+SVG edges use `currentColor`. The theme pairs in `contract.md` apply only to
+artwork. Shared Air tokens retain neutral planes, UI colours, duration and easing.
 
 Build and verify from the Cloakyard checkout:
 
