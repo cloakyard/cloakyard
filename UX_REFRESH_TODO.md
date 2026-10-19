@@ -24,8 +24,9 @@ The separately requested Drop installer now uses Air.
 - [x] Correct Drop's blue Source cascade and footer-credit drift. Check compact
       menus; apply neutral navigation/credits in IMG's parked draft too.
 - [x] Air 1.0.5 records the user's explicit preference and supersedes 1.0.4.
-- [-] Complete rendered matrices, required checks, bounded commits and the
-  root/PDF/Drop corrective deployment. Resume/IMG remain local.
+- [x] All checks and bounded commits pass. Root/PDF/Drop corrections are live
+      through PRs #13/#205/#41; 162 matching files and 72 live layout/link cases
+      pass. Resume/IMG remain local; parked IMG draft is preserved.
 
 Evidence: each repository's `docs/air/hyperlinks-2026-10-19.md`.
 

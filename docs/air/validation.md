@@ -2163,3 +2163,6 @@ see the linked audit's production evidence.
 Air 1.0.5 restores the approved angled hyperlink cue and neutral header/footer
 treatment. See [scope and evidence](hyperlinks-2026-10-19.md). Twenty-four local
 responsive/theme/text cases pass; desktop/laptop/phone captures were inspected.
+
+Production correction: PR #13, main `8abac04`, version `7ba3d015`
+at 100%. All 13 asset hashes and 24 live link/layout cases pass.

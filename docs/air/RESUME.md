@@ -45,8 +45,8 @@ Latest follow-up: the user explicitly prefers **angled hyperlinks** and the
 approved neutral navigation. Air 1.0.5 supersedes the straight-link decision in
 1.0.4. The correction restores angled link cues, fixes Drop's blue Source cascade
 and neutral footer credits, and carries the rule across the family. Local checks
-and screenshots are recorded in `docs/air/hyperlinks-2026-10-19.md`; root/PDF/Drop
-publication is pending. Resume/IMG remain local and unfinished.
+and production proof are recorded in `docs/air/hyperlinks-2026-10-19.md`; root/PDF/Drop
+are live through PRs #13/#205/#41. Resume/IMG remain local and unfinished.
 
 Previously completed work: app-coloured horizons deployed for Cloakyard/PDF/Drop;
 Resume/IMG implementations remain local,
@@ -103,12 +103,11 @@ same family; landing-only or token-only work is not a completed migration.
 
 ### Repository state at handoff
 
-Root uses `codex/air-refresh`, based on deployed main `41a8f4b` (PR #12).
-PDF uses `codex/air-brand-horizons`, based on deployed main `d9ba375` (PR #204).
+Root uses `codex/air-refresh`, based on deployed main `8abac04` (PR #13).
+PDF uses `codex/air-brand-horizons`, based on deployed main `8f801c3` (PR #205).
 Local production-evidence commits follow these merges. Drop uses
-`codex/air-refresh`, based on deployed main `5ee9a01`, with local documentation
-checkpoint `cff7bc7`. Resume/IMG remain on `codex/air-refresh`; their navigation
-checkpoints are `6420ce3` and `583b809` respectively.
+`codex/air-refresh`, based on deployed main `e3edf4e` (PR #41). Resume/IMG remain
+on `codex/air-refresh`; their hyperlink checkpoints are `f1c49cd` and `c38e204`.
 All five carry the Air 1.0.5 hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
@@ -116,11 +115,11 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `41a8f4b`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `d9ba375`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
-| cloakimg    | `583b809`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
-| cloakresume | `6420ce3`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `cff7bc7`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
+| cloakyard   | `8abac04`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `8f801c3`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakimg    | `c38e204`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
+| cloakresume | `f1c49cd`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
+| cloakdrop   | `e3edf4e`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -129,6 +128,30 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 91 prior sources remain implemented; the new OG/metadata entries are validated as
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
+
+### Approved angled hyperlinks — deployed on 2026-10-19
+
+The user explicitly reconfirmed angled hyperlinks and preservation of the main Air
+appearance. Air 1.0.5 (`94c5e537752f`) restores that cue, preserves forward action
+arrows, and protects neutral navigation/footer credits. Drop's generic body-link
+rule had overridden Source; CSS ordering now matches the family header. Its browser
+suite catches colour drift and duplicate compact navigation, including forced colours.
+
+- cloakyard: candidate `6fabe23`, PR #13, main `8abac04`; Cloudflare `7ba3d015` at 100%.
+- cloakpdf: candidate `350efbb`, PR #205, main `8f801c3`; Cloudflare `5f3bbb89` at 100%.
+- cloakdrop: candidate `78cd914`, PR #41, main `e3edf4e`; Cloudflare `f55dfdb2` at 100%.
+- Remote checks pass. All 162 production files match, three missing routes and
+  72 live viewport/theme/text cases pass. Live light/dark desktop/laptop/phone
+  headers/footers were inspected. Local evidence covers 120 family link cases,
+  PDF 461 units plus search/editor handoff, Drop 432 layouts/34 journeys, Resume
+  303 production tests, and IMG 470 isolated / 475 combined-draft tests.
+- Resume `f1c49cd` remains local. IMG `c38e204` commits only the portable contract,
+  canonical angled glyph and evidence; header and neutral compact/footer styling
+  remain with the parked draft. Two pre-existing draft formatting failures remain
+  outside the isolated passing commit. Do not publish the unfinished IMG migration.
+- Audits: each repo's `docs/air/hyperlinks-2026-10-19.md`; deployed evidence is in
+  `docs/air/evidence/hyperlinks-2026-10-19/production/`. Release tags and the Drop
+  RC DMG are unchanged. Next remains Resume's colour wheel, then IMG last.
 
 ### Landing navigation consistency — deployed on 2026-10-19 (superseded)
 
