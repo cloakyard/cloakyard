@@ -1702,3 +1702,33 @@ The production review tab on 8132 shows the synthetic form. N-up was already
 implemented/validated 2026-10-14; the previous next-step prose was stale. Next:
 Select text, then remaining wrapper/stage/provider and obsolete-style consumer
 audits. Full PDF/family refresh is unfinished. Local commits only; no deployment.
+
+## 2026-10-19 — CloakPDF Select text
+
+PDF **`eacefdd`** replaces the remaining selection panel skin with shared Air
+controls, a copyable excerpt, explicit read/clipboard recovery and keyboard range
+selection. Exact byte/page ownership prevents stale actions and retains valid
+selection across reflow/tools. Failed writes preserve selection; committed marks
+retain Undo/Redo, while Cancel clears the current selection. Pending privacy marks
+pause source-text copying. The PDF appendix and standalone DESIGN specify the rules.
+
+Independent output review found baseline-only boxes missing descenders. Selection
+bounds now honor font ascent/descent, transformed corners/shear, crop and rotation;
+other geometry consumers keep their prior bounds. Real highlight/box/redaction
+output, covered-text removal, untouched-page preservation and exact history pass.
+
+453 units/46 files, 26 distinct browser suites (three focused/shared regressions,
+16 production smoke, seven extended), required code/dead/build/asset/design/
+portability and sync pass. Initial parallel AI animation timing sampling missed a
+brief entrance; its unchanged isolated check and complete final serial smoke pass.
+52 size/theme regions, six enlarged-text states and forced colours/reduced motion
+inspected; emulated coarse targets >=44px. Safari application/Undo and Firefox actual
+200% reviewed. Physical touch/software keyboard, OS IME and spoken assistive gates
+remain open, as does complex multi-column logical reading-order acceptance.
+
+No dependency added; removed private button/readSlice/palette/timer/duplicate
+selection payload. Editor gzip 99.50 kB (+1.11), CSS 24.02 (-0.62); 128 deploy assets,
+77 PWA entries. Air remains 1.0.2 / bb90f52e0b0a. Evidence/log/proofs in PDF
+`docs/air/evidence/select-text-2026-10-19*`. Next: the six remaining editor wrappers/
+providers and legacy-consumer audit. Full PDF/family migration remains unfinished.
+Local commits only; no deployment.

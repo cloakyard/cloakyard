@@ -1,6 +1,52 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-19 (Fill form)
+## Latest checkpoint — 2026-10-19 (Select text)
+
+PDF **`eacefdd`** completes the bounded Select text pass. Shared Air actions,
+read-only excerpt, loading/retry/no-text/OCR, clipboard feedback/manual copy and
+focus-scoped keyboard selection replace the legacy panel. Exact-byte/page ownership
+retains valid selections across tools/layouts and rejects stale reads/results.
+Failed writes retain selection. Marks apply explicitly; Cancel clears pending
+selection, Undo/Redo reverses committed PDF changes. Pending privacy marks pause
+source-text selection. Deferred redaction/export semantics stay explicit.
+
+Independent Poppler review found baseline-only boxes leaving descenders exposed.
+Selection geometry now uses font ascent/descent, transformed corners (including
+shear), visible crop and page rotation. The correction is opt-in; other geometry
+consumers retain their bounds. Rotated/cropped/UserUnit real outputs preserve
+geometry/title; redacted text is absent from extraction and rendered pixels.
+
+453 units/46 files, focused selection plus Auto-fill/search-scrub, 16 production
+smoke and seven extended suites pass (26 distinct suites). The initial parallel
+smoke missed an AI modal's brief entrance; unchanged isolated and final serial
+assertions pass. 52 required/breakpoint theme regions, six text200, forced colours,
+reduced motion and 44px coarse targets inspected. Safari apply/focus/Undo and
+Firefox actual 200% reviewed; physical touch/software keyboard, actual OS IME and
+spoken assistive acceptance remain open. Complex multi-column logical order remains
+an existing spatial heuristic. This is not full PDF/family completion.
+
+Removed private button/palette/readSlice/HILITE, duplicate selection payload and
+unowned copy timer. No dependency. Editor 327.17/99.50 kB raw/gzip, CSS 138.20/24.02
+(previous gzip 98.39/24.64); 128 assets/77 PWA entries. Required code/dead/build/
+asset/design/portability and six-document sync pass. Air 1.0.2 / bb90f52e0b0a unchanged;
+canonical PDF appendix and standalone DESIGN updated. Source table regenerated to
+reconcile completed Auto-fill/Fill form/controls entries.
+
+Evidence/log/proofs: PDF `docs/air/evidence/select-text-2026-10-19*`. Full captures,
+source and outputs in `/tmp/cloakpdf-air-review/`. PDF dev8122 and production8132
+remain running. IAB tab2 shows the final selected synthetic text study; tab1 is the
+older synthetic form review. Native review tabs closed and Firefox zoom restored.
+Local commits only; no push/deployment.
+
+**Next bounded audit:** EditorContext, EditorToolStage, EditorView, OverviewMode,
+WholeDocPanel and stage.tsx, followed by remaining legacy-style consumers. Check
+focus when Undo disables its initiating button. N-up already migrated on 2026-10-14;
+do not repeat stale handoff next steps. IMG/Resume wheel adoption and remaining
+family rollout are separate. Stored family goal remains blocked from an earlier
+checkpoint; API has no active/resume mutation. Human continuation authorizes work;
+do not create a duplicate or mark the whole goal complete.
+
+## Previous checkpoint — 2026-10-19 (Fill form)
 
 PDF **`7c8723d`** completes the bounded native Fill form pass. Air text/multiline,
 custom choices, native multi-select/check rows and flatten switch share Auto-fill's

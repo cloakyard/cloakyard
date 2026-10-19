@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF annotation inspector committed; form interiors next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF Select text complete; wrapper/provider audit next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -1191,10 +1191,23 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Remove final Labeled/Toggle and obsolete switch styles, verify live consumers, pass required checks and record evidence. PDF commit `7c8723d`.
 - [x] Reconcile N-up: implemented/validated on 2026-10-14 (docs/air/validation.md); do not repeat its migration based on stale handoff prose.
 
-- [ ] Next bounded tool: Select text — shared Air action/selection states, extraction
-      loading/error/no-text recovery, copy success/failure, keyboard access and
-      highlight/box/redaction output; preserve selections after failed actions.
+- [x] Select text — shared Air actions/excerpt, reading/retry/no-text recovery,
+      clipboard feedback/manual fallback, keyboard access and actual mark output.
+      See the 2026-10-19 checkpoint below.
 - [ ] Then audit the remaining stage/provider/wrapper inventory and obsolete-style
       consumers. N-up is already implemented; validate dependencies without a second
       redesign. Keep physical touch/software keyboard, OS IME and spoken assistive
       acceptance open. Full PDF/family refresh is unfinished.
+
+### AIR-07 — PDF Select text (2026-10-19)
+
+- [x] Replace the private legacy button skin and selection card with shared Air controls; use the paper accent for the canvas overlay.
+- [x] Bind geometry/ranges to exact bytes/page, retain valid tool/layout selections, ignore abandoned reads, and expose read failure/retry versus no-text/OCR.
+- [x] Add page-scoped Left/Right/Shift/Home/End/Escape selection plus Select page text; keep ordinary field and viewport shortcuts intact.
+- [x] Report clipboard refusal/unavailability with manual-copy recovery; preserve selection after failed marks and keep committed-action/Undo/Redo/Cancel semantics.
+- [x] Correct descender/rotation/shear selection bounds; exclude fully cropped-out runs, preserve page geometry and verify real highlight/box/redaction output.
+- [x] Remove old ActionButton/HILITE/readSlice/duplicated selection payload/timer and palette classes; keep shared primitives and utilities with verified consumers.
+- [x] Inspect required sizes/themes, breakpoint neighbors, enlarged text, forced colours and reduced motion; review Safari and Firefox actual 200%.
+- [x] Final serial regression, compact evidence and local commit: PDF `eacefdd`.
+- [ ] Next: audit EditorContext, EditorToolStage, EditorView, OverviewMode, WholeDocPanel and stage wrappers; identify actual obsolete consumers before deletion. Inspect focus after Undo disables its initiating button.
+- [ ] Physical touch/software keyboard, actual OS IME and spoken assistive acceptance remain open. Full PDF/family migration is not complete; IMG/Resume wheel adoption remains separate.
