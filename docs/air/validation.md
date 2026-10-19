@@ -2118,3 +2118,13 @@ the shared placement helper without dropping viewport/listener/placement coverag
 The final full suite passes. Eleven PNGs and compact proof/checks live in Resume
 `docs/air/evidence/logo-photo-2026-10-19.json`. Next: shared colour wheel.
 No Resume push/deploy; physical input/assistive gates remain open and IMG stays last.
+
+## 2026-10-19 — CloakDrop release candidate and installer scope
+
+CloakDrop's local 1.0.0-rc.1 preparation includes compatible dependency refresh
+(`27953ff`) and the separately requested Air installer (`df413b2`). The canonical
+Drop appendix now permits fixed light installer artwork while preserving SwiftUI
+controls. Exact generated specification/bundle checks pass; the contract is still
+Air1.0.2. Full implementation, native/package proof and limitations are retained in
+Drop's October19 dependency/installer/RC audits. The family TODO and RESUME record
+the final local artifact/checksum and retain publication and device gates.

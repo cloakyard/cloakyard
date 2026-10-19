@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select, date and logo/photo controls implemented; colour wheel next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakDrop RC and Air installer prepared locally; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select, date and logo/photo controls implemented; colour wheel next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,6 +31,29 @@ Drop/Resume/IMG runtime work stays local; IMG remains last.
   design code or authoritative references remain.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
+
+## CloakDrop RC and Air installer checkpoint (2026-10-19)
+
+- [x] Review September 6/10 release naming, artifact and verification conventions.
+- [x] Latest compatible website dependencies and CI actions (`27953ff`); clean install/tree,
+      zero audit findings, asset sync/check/build/dry run and no-transform local responses.
+- [x] User explicitly retains the official yt-dlp bundle and documented frozen-runtime
+      exception; TypeScript6 remains supported. No custom runtime dependency added.
+- [x] 626 optimized core tests / 87 suites; fresh arm64 Debug/Release, strict lint and
+      localization pass. Website 432 layouts / 34 journeys and horizon GPU/six fallbacks pass.
+- [x] User-requested Air installer (`df413b2`): regular typography, canonical light
+      palette, open composition, finite-artwork horizon and native drag targets preserved.
+      Normal Finder layout, 20 inventory records, 18 portability checks and exact sync pass.
+- [x] Prepare local `CloakDrop-v1.0.0-rc.1.dmg`, build20261019: 48,181,551 bytes,
+      SHA-256 `c363dc38e9cd48ade60b74458f0f3f83c5dd666f60332af274134086556c9471`.
+      RC documentation `a870941`. Direct DMG launch/About, actual checksum transfer, helper loading, 295 file/link
+      comparisons, strict signatures and filesystem verification pass. Exact FFmpeg9.0.2
+      source/licenses included; release draft, manifest and checksums saved.
+- [ ] Separate authorization for Drop push/RC publication/website deployment. Candidate
+      remains ad-hoc and unnotarized; Developer ID/App Group/device/assistive gates remain open.
+
+Evidence: Drop `docs/audits/2026-10-19-{dependencies,installer,rc.1}.md` and
+`docs/releases/v1.0.0-rc.1.md`. Resume wheel is next; IMG remains parked last.
 
 ## Release checkpoint and landing follow-up (2026-10-19)
 
