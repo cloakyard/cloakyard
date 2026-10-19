@@ -1,6 +1,51 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-19 (PDF foundation and Select)
+## Latest checkpoint — 2026-10-19 (tool registries/session lifecycle)
+
+PDF **`00bdee0`** completes the bounded dispatch/lifecycle audit. Both rosters
+derive route identities and require complete implementation maps; inherited/unknown
+ids are rejected. Removed standaloneOnly flags/filter, redundant lazy aliases and
+obsolete contributor references. All seven standalone components stay lazy. The
+navigation event accepts only the standalone routes it handles; editor search and
+constructor handoff remain intact. Live stage/provider/entry seams remain.
+
+Reproduced abandoned queued work running after unmount. The existing session revision
+now guards queued work, status and transform output; late preview URLs are retired.
+Already-running computation may finish, but its result cannot install after departure.
+No dependencies added. Editor 327.18/98.80 kB raw/gzip (-0.53 gzip); CSS 132.38/22.81
+unchanged. 126 assets/75 PWA entries. Air remains 1.0.2 / bb90f52e0b0a; only PDF's
+product appendix and portable DESIGN changed, with no shared bundle change.
+
+456 units/47 files; 176 tool selections (22 tools × desktop/laptop/tablet/phone ×
+light/dark), 176 navigation layouts, 141 recovery captures, 70 N-up layouts/23 real
+output sheets pass. Complete 16 production smoke + seven extended + recovery/N-up
+= 25 distinct browser suites. Baseline queued-task bug reproduced; harness context/
+responsive heading errors fixed, route exit waits for layout, interrupted concurrent
+recovery replaced by a passing fresh serial run. No weakened output assertions.
+Required PDF code/dead/build/assets/design/18 portability and root code/types/build/
+design/portability/six-document sync pass. All 91 inventory sources are now reviewed/
+implemented; final validation remains false pending device/assistive acceptance.
+
+Inspected responsive/theme screenshots. Production IAB confirms Stamp overlay cleanup,
+Metadata Save/Undo and retained Page 2. Safari/Firefox were covered by the preceding
+foundation piece, not rerun here. Physical touch/software keyboard, actual OS IME
+and spoken assistive acceptance remain open. Full PDF/family migration is unfinished.
+
+**Next bounded piece:** replace legacy `public/screenshots/iPhone.png` and `iPad.png`,
+which still show Workbench. Both feed the PWA install preview; iPad also appears in
+README. Audit manifest colours, dimensions, labels and old design references. Use
+real Air app captures; keep existing output fonts and native/KERR unchanged. Then
+finish full-PDF acceptance and IMG/Resume wheel adoption/family rollout.
+
+Evidence: PDF `docs/air/evidence/registry-lifecycle-2026-10-19.json`, desktop/phone
+PNGs and `registry-lifecycle-checks-2026-10-19.log`; full logs/captures under
+`/tmp/cloakpdf-air-review/registry-*`. Existing PDF dev8122/production8132 remain;
+test-only dev8133 stopped. IAB tab2 is on production Metadata with the synthetic
+three-page PDF; tab1 is the older form review. Stored family goal remains blocked
+from the old checkpoint and the API cannot resume it; human continuation authorizes
+work. Do not duplicate or complete the full-family goal. Local commits only.
+
+## Previous checkpoint — 2026-10-19 (PDF foundation and Select)
 
 PDF **`7bed615`** completes the bounded legacy foundation cleanup. The root,
 editor shell, processing scrim and modal stack now consume Air directly. Deleted

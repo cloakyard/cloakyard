@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF foundation cleanup validated; registry/lifecycle audit next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF registry/lifecycle complete; install-preview cleanup next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,18 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Air foundation and Select (2026-10-19)
+## Latest bounded piece — Tool registries and session lifecycle (2026-10-19)
+
+PDF **`00bdee0`** removes redundant standalone flags/filter/lazy aliases,
+derives complete route maps and rejects unknown/inherited tool ids. Session ownership
+prevents queued work after exit and retires late transform previews. No dependency added.
+
+- [x] Pass 456 units, 25 browser suites, 176 tool selections, 176 navigation layouts, 141 recovery captures and 70 N-up layouts/23 real output sheets.
+- [x] Review desktop/laptop/tablet/phone light/dark and production Stamp→Metadata Save/Undo. Preserve device/assistive acceptance gates.
+- [x] Update canonical/portable PDF rules, authoritative contributor references and the 91-source inventory; record cleanup and test evidence.
+- [ ] Next: replace legacy PWA install/README screenshots and audit associated metadata, then full-PDF acceptance and family rollout.
+
+## Previous bounded piece — Air foundation and Select (2026-10-19)
 
 PDF **`7bed615`** removes the old token/palette layer and two unused UI fonts.
 Root surfaces, typography and layering now use Air directly. Select retains full
@@ -41,7 +52,7 @@ Details and remaining gates are in the final AIR-07 checkpoint and handoff.
 - [x] Pass 453 units, 25 browser suites, 70 N-up layouts/23 real output sheets and 141 recovery captures.
 - [x] Inspect desktop/laptop/tablet/phone light/dark, enlarged text, Safari and Firefox actual 200%; retain device/assistive acceptance gates.
 - [x] Update portable PDF requirements and the 91-surface inventory; remove obsolete runtime style references without new dependencies.
-- [ ] Next: non-visible registry/lifecycle consumers and remaining full-PDF acceptance, then IMG/Resume wheel adoption and family rollout.
+- [x] Non-visible registry/lifecycle consumers audited in the latest checkpoint. Full-PDF acceptance and IMG/Resume wheel adoption remain open.
 
 ## Previous bounded piece — Editor wrappers/history (2026-10-19)
 
@@ -1257,4 +1268,16 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Make frequent Select opening, closing and arrow feedback immediate; remove animation/placement-only state. Let full labels wrap and preserve a readable viewport-bounded menu width.
 - [x] Inspect desktop/laptop/tablet/phone in light/dark, enlarged text and native browsers. Validate pointer/keyboard dropdowns, real N-up output, recovery/processing and all affected features.
 - [x] Pass required code/dead/unit/build/design/portability checks, update portable PDF requirements and inventory, record evidence and commit: PDF `7bed615`.
-- [ ] Next: non-visible registry/lifecycle audit and remaining full-PDF acceptance; then IMG/Resume wheel adoption and family rollout. Physical touch/software keyboard, OS IME and spoken assistive acceptance remain open.
+- [x] Registry/lifecycle audit completed in the following checkpoint. Remaining full-PDF/device acceptance and IMG/Resume wheel adoption stay open.
+
+### AIR-07 — PDF tool registry and session lifecycle (2026-10-19)
+
+- [x] Trace both tool rosters, lazy boundaries, editor dispatch, stage/inline cleanup, preview resources, timers and event subscriptions.
+- [x] Remove redundant standaloneOnly flags/filter and duplicate lazy aliases; derive standalone identities and require a complete implementation map. Reject inherited/unknown tool lookups and invalid active-tool requests.
+- [x] Narrow the existing navigation helper to standalone routes; preserve editor entry and constructor handoff. Remove obsolete authoritative routing references.
+- [x] Reproduce queued work running after editor departure. Guard queued tasks, late transform results and late preview installation with session ownership; release abandoned previews.
+- [x] Validate 22 editor tools through the command surface on desktop/laptop/tablet/phone in both themes; preserve page source, history and heading focus.
+- [x] Pass lifecycle regressions for task departure during queueing, transformation and preview generation, plus live stage cleanup and StrictMode replay.
+- [x] Finish feature regression, code/dead/unit/build/design/portability checks, portable specification/inventory and evidence; commit after green gates: PDF `00bdee0`.
+- [ ] Replace legacy public/screenshots/iPhone.png and iPad.png: both still feed PWA install previews, and iPad.png also appears in README. Audit manifest/theme metadata, screenshot labels/dimensions and remaining old design references alongside them.
+- [ ] Continue full-PDF acceptance, then IMG/Resume wheel adoption and family rollout. Physical touch/software keyboard, OS IME and spoken assistive acceptance remain open.

@@ -1815,3 +1815,37 @@ Evidence: PDF `docs/air/evidence/foundation-2026-10-19.json`, desktop/phone PNGs
 `/tmp/cloakpdf-air-review/foundation-*`. Next: registry/lifecycle consumers and
 remaining full-PDF acceptance, then IMG/Resume wheel adoption and family rollout.
 Local commits only; no push/deployment.
+
+## 2026-10-19 — CloakPDF tool registries and session lifecycle
+
+PDF `00bdee0` removes redundant standalone flags/filter/lazy aliases and
+obsolete contributor references. Derived disjoint rosters require complete maps,
+preserve seven lazy standalone entries and reject inherited/unknown ids. The
+standalone navigation API matches actual consumers; editor search/preselection and
+constructor handoff remain intact. Live stage/provider/cleanup seams remain.
+
+A reproduced abandoned-queue bug is fixed with existing session ownership. Queued
+work never starts after departure; late transforms stop before previews and late
+preview URLs retire. Active computation may finish; its result is discarded.
+
+456 units/47 files, 176 editor selections across four device classes and both themes,
+176 navigation layouts, 141 recovery captures, 70 N-up layouts/23 real output sheets
+and 25 distinct browser suites pass (16 production smoke, seven extended, recovery,
+N-up). Stage cleanup, StrictMode, invalid routing, page/history/focus preservation
+and stale resource retirement are covered. Screenshot review covers responsive
+light/dark and enlarged-text/forced-colour/reduced-motion cases; production IAB
+Stamp→Metadata Save/Undo retains Page 2. Safari/Firefox from the previous piece
+are not counted as new runs. Physical touch/OS IME/spoken assistive acceptance stay open.
+
+The baseline failed as expected; early harness context/heading errors and responsive
+exit timing were corrected. A concurrent capture run was stopped; final fresh serial
+recovery passes all assertions. Required PDF code/dead/build/assets/design/18 portability,
+root code/types/build/design/portability and exact six-document sync pass. Air stays
+1.0.2 / bb90f52e0b0a. Canonical PDF requirements and portable DESIGN are updated.
+All 91 inventory surfaces are reviewed/implemented; final validation remains false.
+Editor 327.18/98.80 kB raw/gzip, CSS 132.38/22.81; 126 assets/75 PWA entries.
+
+Evidence: PDF `docs/air/evidence/registry-lifecycle-2026-10-19.json`, two proof PNGs
+and checks log; full evidence `/tmp/cloakpdf-air-review/registry-*`. Next: legacy
+PWA/README screenshots and associated manifest metadata, then remaining PDF/family
+acceptance. Local commits only; no push/deployment.
