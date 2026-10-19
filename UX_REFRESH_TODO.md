@@ -2,7 +2,7 @@
 
 Status: **active — CloakPDF registry/lifecycle complete; install-preview cleanup next** · Direction: **Air** · Started: **2026-10-11**
 
-Resume from [the saved handoff](docs/air/RESUME.md). The
+Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
 commit slices and acceptance gates. Detailed design review is complete. AIR-04 is committed as `39c08f9`; CloakPDF entry
 is committed as `dc20fe6` after local verification. Remaining device acceptance and deeper product

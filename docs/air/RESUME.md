@@ -1,5 +1,185 @@
 # Air refresh — current handoff
 
+## Start here in a new conversation — saved 2026-10-19
+
+This section is the current entry point. The dated checkpoints below preserve the
+implementation history and evidence. Older “Next” suggestions are historical;
+resolve them against the latest checkpoint and source before repeating work.
+`UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+No product work is uncommitted. This handoff adds documentation only.
+
+### Objective and settled decisions
+
+Refresh the complete Cloakyard web family with **Air**, preserving features and
+output fidelity. The user approved the refined design and authorized implementation
+and local commits. Do not reopen the design-lock question. Priorities are consistency,
+quality, minimalism, a distinctive modern appearance and purposeful playful motion.
+Every custom control, editor, canvas surround, overlay and edge state belongs to the
+same family; landing-only or token-only work is not a completed migration.
+
+- Canonical source is this repo's `design/air/`; current Air **1.0.2**, contract
+  **bb90f52e0b0a**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
+  Product appendices live in `design/air/products/`. Regenerate with
+  `node scripts/sync-air-design.mjs --bundle`, then verify `--bundle --check`.
+  Standalone products must work without a sibling checkout or upstream runtime fetch.
+- Preserve light/dark, desktop/laptop/tablet/phone, landscape and short screens,
+  enlarged text, keyboard/focus, coarse input, reduced motion and forced colours.
+  Inputs have one graceful focus contour; custom menus include their popup items.
+- PDF uses compact one-row editor chrome, no duplicate page count, compact filename
+  disclosure on small screens, and the family logo size. Do not undo those explicit
+  user refinements. Use actual product logos on the family homepage.
+- The user prefers a **colour wheel**. PDF and the canonical reference use the Air
+  hue/saturation wheel, brightness and exact hex. IMG and Resume adoption remains open.
+- Shaders are implemented in the landing artwork with visible finite motion and
+  static/reduced-motion fallbacks. No decorative shader inside an editor. Real-device
+  GPU/battery/thermal acceptance is still open; do not claim it from emulation.
+- KERR's app and native macOS interfaces stay unchanged. The family home shows KERR
+  as an exploration link with no screenshot. Preserve document/template fonts,
+  colours, geometry, image pixels/alpha and all actual exported output.
+- Keep the code lean: trace consumers, remove superseded skins, flags, helpers,
+  assets and references, and retain live seams. No speculative abstraction or extra
+  dependency merely for this refresh. Audit dead/dangling code in every piece.
+- Work in bounded pieces: implement → inspect rendered states → feature/output
+  tests → required checks → evidence/TODO → local commit. Never commit failed gates.
+  No push, merge or deployment is authorized. No subagent delegation was requested.
+
+### Repository state at handoff
+
+All five repositories were clean on `codex/air-refresh` before this documentation
+save. Recheck before editing; preserve any new user changes. Paths are siblings under
+`/Users/sumitsahoo/Developer/`:
+
+| Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
+| ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| cloakyard   | `014c7f8`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakpdf    | `00bdee0`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
+| cloakimg    | `aa9f6f8`                             | Shared bundle synchronized; full product migration and wheel adoption pending                           |
+| cloakresume | `286f57b`                             | Shared bundle synchronized; full product migration and wheel alignment pending                          |
+| cloakdrop   | `0a3a5b5`                             | Shared bundle synchronized; website migration pending, native app excluded                              |
+
+The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
+Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
+have dated implementation/evidence below. Do not restart those from stale early lists.
+All 91 PDF source surfaces are source-reviewed/implemented; final `validated` flags
+remain false because required acceptance is not fully complete.
+
+### Exact next bounded piece: PDF install previews and metadata
+
+1. In `cloakpdf`, inspect `public/screenshots/iPhone.png` and `iPad.png`. They still
+   show the retired design. `vite.config.ts` manifest references both; `README.md:17`
+   embeds iPad.png. Replace them with actual Air application captures using synthetic
+   content. Inspect wide/narrow layouts and both live themes; publish coherent
+   screenshots with truthful dimensions, labels and alternative text.
+2. Audit the manifest in `vite.config.ts`: currently `theme_color: #2563EB` and
+   `background_color: #F0F4FA`. `index.html` already declares light `#fafbfc` and dark
+   `#101216`. Reconcile metadata with the approved Air surfaces; verify actual generated
+   manifest and PWA asset paths. Old screenshot declarations are 1290×2796 narrow and
+   2732×2048 wide. Check actual new pixel dimensions instead of assuming device names.
+3. Search consumers before deleting or renaming old assets. Inspect social metadata
+   and artwork, but do not assume `public/icons/og-image.png` is obsolete: it was
+   already refreshed earlier. Avoid unnecessary regeneration of unchanged logos.
+4. Run the applicable checks below, inspect the built result, update PDF evidence and
+   the family TODO/handoff, and commit only after passing. This is an asset/metadata
+   piece; do not expand it into a new editor redesign.
+
+### What follows, in order
+
+1. **PDF closure:** reconcile the broad Phase 3 checklist with the newer dated
+   evidence, verify any genuinely uncovered feature/state/output cases, finish
+   screenshot/documentation/reference cleanup and retain unperformed device gates.
+   Prior full suites do not establish every state at every viewport or every AI tier.
+2. **CloakIMG:** full landing/editor/canvas/layers/history/custom controls/tool/AI/
+   export migration. Start from its audit/inventory and current source, including
+   recorded Cancel/re-entry findings. Adopt the wheel while preserving RGB, recents,
+   eyedropper, preview/apply/cancel, undo, image pixels/alpha and output formats.
+3. **CloakResume:** full landing/editor/sections/templates/ATS/format/export migration;
+   align its existing wheel. Fix recorded tablet target/contact typography issues.
+   Preserve all 17 templates, pagination, printable fonts/colours and exports.
+4. **CloakDrop website:** Air header/landing/privacy/404/install/download surfaces;
+   resolve recorded dark skip-link, enlarged-text clipping and obsolete assets.
+   Preserve native screenshots as product evidence and do not alter Swift/native UI.
+5. **Family closure:** matched widths/themes across apps, remaining legacy/dependency/
+   reference searches, portable adoption/drift checks, feature/output regression,
+   budgets/privacy/shader fallbacks, evidence and final commit ledger.
+
+Remaining human/device acceptance includes physical touch/software keyboards,
+actual OS IME, spoken assistive technology, final-size QR scanning and physical
+shader GPU/battery/thermal checks. Keep them explicit; emulation is not a pass.
+Existing OCR limitations are separately tracked: wider Unicode font embedding and
+scanned regions mixed with existing native text. Unsupported output fails explicitly;
+do not silently omit words or treat these as already implemented redesign work.
+
+### Verification and durable evidence
+
+Latest PDF: **456 unit tests / 47 files**, **25 distinct browser suites** (16
+production smoke, seven extended, focused recovery/N-up), 176 tool selections
+(22 × four device classes × light/dark), 176 navigation layouts, 141 recovery
+captures, 70 N-up layouts and 23 real output sheets. All required code/dead/build/
+asset/design/18 portability and exact six-document sync gates passed.
+
+The registry/lifecycle fix prevents queued work from starting after editor exit,
+discards late transform output and retires previews already generating. It does not
+interrupt computation already running. Seven standalone components remain lazy;
+unknown/inherited ids are rejected and live stage/provider seams remain intact.
+Editor bundle **327.18 / 98.80 kB raw/gzip**, CSS **132.38 / 22.81 kB**;
+126 assets / 75 PWA entries. Latest build hashes match the browser-tested build.
+
+- PDF durable evidence: `docs/air/evidence/registry-lifecycle-2026-10-19.json`,
+  `registry-lifecycle-checks-2026-10-19.log`, `registry-desktop-2026-10-19.png` and
+  `registry-phone-dark-2026-10-19.png`; summary in `docs/air/validation.md`.
+- Root: `docs/air/validation.md`, `UX_REFRESH_TODO.md`,
+  `docs/air/IMPLEMENTATION_PLAN.md`, `design/air/COMPONENTS.md`, and per-app
+  `docs/air/surfaces.json` / `surface-inventory.md`. Preserve earlier evidence.
+- Large temporary fixtures/captures/logs: `/tmp/cloakpdf-air-review/registry-*`.
+  These may disappear; committed evidence is the durable source.
+- The latest IAB review covered Stamp overlay cleanup, Metadata Save/Undo and
+  retained Page 2. Native Safari/Firefox review belongs to the preceding foundation
+  slice, not a new run for the registry slice. Harness failures/interrupted attempts
+  and the final passing serial runs are recorded honestly in the evidence.
+
+PDF required commands: `pnpm exec vp check`, `pnpm check:dead`, `pnpm test:unit`,
+`pnpm build`, `pnpm design:check`, `pnpm design:portability`, plus applicable browser
+and real-output suites. Full regression commands are `pnpm test:e2e:smoke` and
+`pnpm test:e2e:extended`; focused tests live in `tests/e2e/`. Run heavy suites
+serially. Production smoke used `E2E_URL=http://127.0.0.1:8132`; source-importing
+harnesses used a fresh dev server on 8133. Use synthetic fixtures and isolated browser
+profiles; do not clear the user's real app storage. Inspect package scripts first.
+
+Root checks: `pnpm exec vp check`, `pnpm exec tsc --noEmit`, `pnpm build`,
+`pnpm design:check`, `pnpm design:portability`, and
+`node scripts/sync-air-design.mjs --bundle --check`. Read each sibling's commands
+before working there. Re-run affected checks after actual changes; do not repeat
+already-passing broad suites merely to fill time. Evidence logs are ignored by git;
+force-add only the exact intentional log file when committing.
+
+### Session state and resuming
+
+Last known servers: Air reference8120, family home8131, PDF dev8122 and production8132.
+Test-only PDF dev8133 was stopped. Recheck availability; tool session IDs and browser
+bindings are not portable to another conversation. Preserve existing browser tabs
+and user work. Last IAB tab2 showed a synthetic three-page PDF in Metadata on8132;
+tab1 was an older form review. These ids are historical hints, not future selectors.
+
+The original conversation `01a12abe-1cfd-7980-bf8e-f585aee286a5` owns the full-family
+goal. Its stored status is `blocked` from an older checkpoint; the exposed API cannot
+resume it. The user repeatedly authorized continuation, and implementation is not
+currently blocked on a new design approval. Use the saved objective and files to
+continue; never mark the entire family complete because one slice is finished.
+This handoff does not create a new chat or schedule any automatic work.
+
+Suggested prompt for the new conversation:
+
+> Continue the Cloakyard Air refresh from `/Users/sumitsahoo/Developer/cloakyard/docs/air/RESUME.md`.
+> Read its “Start here in a new conversation” section first, then AGENTS.md, CLAUDE.md,
+> DESIGN.md and UX_REFRESH_TODO.md. The design is approved; implementation and local
+> commits are authorized. Start with CloakPDF's legacy PWA/README screenshots and
+> manifest metadata, then follow the saved rollout order. Keep the code lean, remove
+> obsolete references, preserve features/output, validate responsive light/dark
+> states and applicable tests, and commit each passing bounded piece. Do not push
+> or deploy. Keep the TODO, evidence and handoff current.
+
+---
+
 ## Latest checkpoint — 2026-10-19 (tool registries/session lifecycle)
 
 PDF **`00bdee0`** completes the bounded dispatch/lifecycle audit. Both rosters
