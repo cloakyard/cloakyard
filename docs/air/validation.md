@@ -1990,3 +1990,15 @@ fixed them with original assertions intact. Detailed evidence and remaining
 interior/PWA/device gates are in Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
 No contract revision/dependency/output-source change. Continue Resume shared editor
 fields and writing controls; IMG remains last and parked. Local commits only.
+
+## 2026-10-19 — Resume writing-field checkpoint
+
+Resume `4ba267c` implements shared text/CSV/textarea controls, labels/help,
+validation and scoped formatting; stale removed-field handlers are retired.
+384 layouts, 32 contrast pairs, invalid/selected/forced-colour states, native Safari
+and Firefox actual 200% pass. All 290 tests in eight files pass without skips,
+including 110 editor and all 34 template/paper cases. First-run focus baseline
+failures and harness corrections are recorded without weakening feature gates.
+Detailed evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json` and log.
+No output/schema/font/dependency change. Repeated entries and custom widgets/review/
+PWA/preview assets remain open; IMG stays last. No push or deployment.

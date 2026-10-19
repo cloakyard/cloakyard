@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery and shell implemented; editor interiors next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields implemented; repeated entries next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,18 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — CloakResume editor shell (2026-10-19)
+## Latest bounded piece — CloakResume writing fields (2026-10-19)
+
+Resume `4ba267c` migrates shared text/CSV/textarea and rich formatting. The full product remains in progress.
+
+- [x] Air labels/help/validation, single field contour, readable touch input and 44px formatting/hint targets. Remove empty hint reserves, compact size flags and superseded CSS.
+- [x] Preserve rich text, selection/caret, auto-grow/scroll, raw CSV, title limits and saved/output data. Retire stale field handlers so deleted bullet text cannot be resurrected by formatting.
+- [x] 384 layouts, 32 contrast pairs, invalid/selected/forced-colour states, native Safari and Firefox actual 200%. All 290 production tests pass in eight files with no skips, including 110 editor cases and all 34 template/paper cases.
+- [x] Check/build/design/18 portability/exact sync; no dependency or output-source change. Preserve legacy contact's independent clipping/validation assertions while asserting Air's field contour directly.
+- [ ] Repeated-entry and bullet chrome, reorder/removal identity/focus, select/contact/date/logo/wheel, hint popups/review/templates/export/PWA/static recovery and actual preview assets remain open.
+- [ ] Physical keyboard/touch/IME, spoken assistive and hardware gates remain open. IMG stays parked and last.
+
+## Previous bounded piece — CloakResume editor shell (2026-10-19)
 
 Resume `30696b5` implements the editor frame and navigation; the complete product remains in progress.
 
@@ -40,7 +51,7 @@ Resume `30696b5` implements the editor frame and navigation; the complete produc
 - [x] Retain keyboard focus across compact section handoffs. Fix genuine 320px formatting/bullet containment by wrapping the three action rows, preserving original feature assertions and 44px targets.
 - [x] 324 layouts, ten complete 13-section/zoom/paper journeys, 60 contrast pairs, native Safari and Firefox actual 200%, forced colours and emulated pinch. All 287 tests in eight files pass with no skips; all 107 editor and 34 template/paper cases still run.
 - [x] Remove retired shell styles, rotation code and unused shell/brand tokens. No new dependency or template/PDF/font/data source change; check/build/design/18 portability/exact sync pass.
-- [ ] Continue shared editor fields/repeated-writing controls, every section, widgets/wheel, library/review/export, PWA/static recovery and OG/PWA/README assets. Ready Offline remains oversized at enlarged text and belongs to the pending PWA slice.
+- [ ] Shared writing fields are implemented above; continue repeated entries, every section, widgets/wheel, library/review/export, PWA/static recovery and OG/PWA/README assets. Ready Offline remains oversized at enlarged text and belongs to the pending PWA slice.
 - [ ] Physical touch/software keyboards, OS IME, spoken assistive and shader hardware gates remain open. CloakIMG stays parked and last.
 
 ## Previous bounded piece — CloakResume entry and recovery (2026-10-19)
@@ -547,10 +558,11 @@ items retain their documented human/device gates; they do not imply full accepta
 
 - [x] Landing/start blank/sample/load/restore, capabilities, privacy and footer. Software evidence: Resume `docs/air/evidence/entry-recovery-2026-10-19.json`; physical gates remain open.
 - [x] Editor header, section rail/picker/panel frame, preview surround and zoom, paper/view choices. Software evidence: Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
-- [ ] Format scope and remaining editor interiors; preserve preview pagination/output throughout.
+- [x] Shared text/CSV/textarea fields, labels/help/validation and scoped formatting. Software evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json`; preserve preview pagination/output throughout.
+- [ ] Remaining editor interiors and repeated writing controls.
 - [ ] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description.
-- [ ] Repeated entry cards, drag/reorder controls, rich text, month/year fields, logo/colour pickers.
+- [ ] Repeated entries, drag/reorder/removal focus, month/year fields, logo/colour pickers and writing-hint popup interiors.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.
