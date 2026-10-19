@@ -12,9 +12,24 @@ Goal: refresh the complete web family, preserve all features, enforce one portab
 design language, and commit each bounded piece only after its validation passes.
 KERR's app and native macOS UI are outside this redesign. The user authorized
 Cloakyard/PDF dev integration, main PRs and releases, followed by CloakDrop RC1
-publication and then its Air website deployment. Drop is live; main/dev source
-integration remains separate. Resume/IMG work stays local and IMG remains last.
+publication, its Air website deployment, and the app-colour deployment. Cloakyard,
+PDF and Drop are live with their logo-coloured horizons; main/dev integration is
+complete. Resume/IMG work stays local and IMG remains last.
 The separately requested Drop installer now uses Air.
+
+## Landing navigation arrow consistency — 2026-10-19
+
+- [x] Standardize forward arrows across header/content/footer links: straight right,
+      including outbound links. Keep meaningful back/download/disclosure icons.
+- [x] Fix Cloakyard and PDF shared/recovery headers, Resume header/footer and the
+      parked IMG header draft. Drop already complies. Preserve destinations/targets.
+- [x] Air 1.0.4 owns the rule; remove the shared gallery's diagonal glyph and hover.
+- [x] All five pass 110 required viewport/theme cases plus ten enlarged-text cases;
+      compact menu/Escape, focus and reduced motion pass. Navigation captures reviewed.
+- [-] Finish required checks, commit each bounded piece, and publish the root/PDF
+  correction through the existing release path. Resume/IMG remain local.
+
+Evidence: each repository's `docs/air/link-arrows-2026-10-19.md`.
 
 ## App-coloured landing horizons — 2026-10-19
 
@@ -29,8 +44,11 @@ The separately requested Drop installer now uses Air.
       exact PNG RGBA export pass. Exact sync and standalone portability pass.
 - [x] Add IMG's missing horizon as a bounded piece, preserving its parked refresh
       draft. Full IMG migration remains pending and last; Resume wheel is next.
-- [ ] Publish these colour-only checkpoints when included in the next authorized
-      release/deployment. Current production deployments and RC artifact are unchanged.
+- [x] Deploy Cloakyard/PDF/Drop colours after explicit authorization: dev → main PRs
+      #11/#203/#40, all CI/builds pass; 162 matching live files, 36 responsive/theme
+      cases, six GPU themes and PDF six actual output workflows pass. Evidence in
+      each deployed repo: `docs/air/brand-deployment-2026-10-19.md`. RC artifact unchanged.
+- [ ] Publish Resume/IMG colours with their completed migrations; both remain local.
 - [ ] Physical GPU/battery/thermal and spoken assistive acceptance remain open.
 
 Evidence: each repository's `docs/air/brand-horizons-2026-10-19.md` and adjacent
@@ -77,7 +95,8 @@ Evidence: each repository's `docs/air/brand-horizons-2026-10-19.md` and adjacent
       successful Cloudflare build, version `f99e2602` promoted to 100% traffic. Live
       18 byte-matched responses/no-transform, 432 layouts/34 journeys, GPU/six fallbacks
       and desktop/laptop/phone light/dark review pass. Evidence commit `8ce17f9`.
-- [ ] Integrate Drop Air source into main/dev before another main-triggered deployment.
+- [x] Integrate Drop Air source into dev and main through PR #40 (`5ee9a01`);
+      production colour version `38ca8179` verified at 100% traffic.
 - [ ] Candidate remains ad-hoc and unnotarized; Developer ID/App Group/device/assistive gates remain open.
 
 Evidence: Drop `docs/audits/2026-10-19-{dependencies,installer,rc.1}.md` and

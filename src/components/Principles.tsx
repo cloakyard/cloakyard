@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const principles = [
   {
@@ -46,7 +46,7 @@ export function Principles() {
           target="_blank"
           rel="noreferrer"
         >
-          Build with us <ArrowUpRight size={16} aria-hidden="true" />
+          Build with us <ArrowRight size={16} aria-hidden="true" />
         </a>
       </div>
     </section>

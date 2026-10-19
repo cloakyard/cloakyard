@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.0.2 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.0.4 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 

@@ -1,0 +1,11 @@
+transforming...
+✓ 1909 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               3.08 kB │ gzip:   0.97 kB
+dist/air-light.LICENSE.txt                   15.86 kB │ gzip:   4.72 kB
+dist/assets/index-BHDRycdn.css               47.05 kB │ gzip:   9.11 kB
+dist/assets/index-hyWIBmTp.js               240.17 kB │ gzip:  75.58 kB
+dist/assets/air-light-shader-VlzniAjj.js  1,261.69 kB │ gzip: 294.30 kB
+
+✓ built in 434ms
