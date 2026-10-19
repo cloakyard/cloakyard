@@ -6,13 +6,24 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: Resume dates/current-job (`648842d`), after contact/native
+Current priority: release Cloakyard and CloakPDF, then address CloakDrop's page
+before resuming CloakResume. Cloakyard [PR #9](https://github.com/cloakyard/cloakyard/pull/9)
+is merged at `4f91993`; [v1.0.0](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0)
+is live and verified. PDF [PR #201](https://github.com/cloakyard/cloakpdf/pull/201)
+is open from dev; security fixes are pushed as `1c01e2b` and await CodeQL rescan.
+The user found PDF's missing landing animation: no horizon is mounted there.
+Add the canonical finite horizon, validate, then finish its release. CloakDrop's
+page follows, then Resume logo/photo controls. Full release proof is in
+`docs/air/evidence/releases-2026-10-19/`.
+
+Latest completed product implementation: Resume dates/current-job (`648842d`), after contact/native
 selects (`9d4e7f9`), repeated
 entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Next is Resume's logo search and profile-photo controls; IMG stays parked.
+Resume's next editor piece is logo search/profile photo, after the release/landing
+follow-ups above. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -47,19 +58,23 @@ same family; landing-only or token-only work is not a completed migration.
   dependency merely for this refresh. Audit dead/dangling code in every piece.
 - Work in bounded pieces: implement → inspect rendered states → feature/output
   tests → required checks → evidence/TODO → local commit. Never commit failed gates.
-  No push, merge or deployment is authorized. No subagent delegation was requested.
+  The user subsequently authorized dev integration, main PRs and release for
+  Cloakyard and CloakPDF, followed by CloakDrop’s page. Keep other products local
+  until separately authorized. No subagent delegation was requested.
 
 ### Repository state at handoff
 
-All five repositories use `codex/air-refresh`. PDF, Drop and Resume are clean;
-IMG has the parked draft below. Root has this documentation checkpoint. Recheck
+Root uses `codex/air-refresh`, fast-forwarded through released main `4f91993`.
+PDF is on `dev` for PR #201; Drop/Resume/IMG remain on `codex/air-refresh`.
+The reference security patch updates only generated gallery/bundle files in those
+three siblings. IMG also has the parked runtime draft below. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `e50b882`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakyard   | `4f91993`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `1c01e2b`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
 | cloakresume | `648842d`                             | Entry/recovery/shell/fields/entries/contact/select/dates implemented; logo/photo/wheel/review/PWA/assets pending |
 | cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded                       |

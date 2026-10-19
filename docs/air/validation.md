@@ -2037,3 +2037,26 @@ Present. The full product remains in progress.
 - [x] 256 layouts, 20 selection/clear journeys, 52 contrast pairs, emulated touch cancel, forced colours/reduced motion, native Safari and Firefox actual 200%. Full 300/300 tests in eight files, zero skips; 120 editor and all 34 template/paper cases.
 - [x] Check/build/78-source design/18 portability/exact sync pass. Six proof PNGs and compact evidence/log: Resume `docs/air/evidence/date-controls-2026-10-19.json`; full local records `/tmp/cloakresume-air-dates/`. No dependency, template, output or schema changes.
 - [ ] Next: logo search/profile photo, then wheel, remaining sections/hints/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.
+
+## 2026-10-19 — releases and reference security
+
+Cloakyard [PR #9](https://github.com/cloakyard/cloakyard/pull/9) merged at `4f91993`;
+[v1.0.0](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0) is published.
+Cloudflare production succeeded; deployed entry/CSS/OG bytes match the candidate.
+Twelve local and twelve live responsive/theme/text cases, links/logo/menu/Escape
+and no-JS pass, alongside 23 initial reference tests and check/type/build/portability.
+
+PDF PR #201 is still open. CodeQL's high findings are confined to test temporary
+files (77) and reference HTML reconstruction (2). The canonical reference now
+escapes retained values and synchronizes through the normal bundle command. Two
+new adversarial logic checks bring the root total to 25; six desktop/laptop/phone
+light/dark browser cases retain hostile contact/paper strings as literal text and
+preserve precision values. All 18 portability checks pass in each repository.
+No contract version or production runtime changed in this security checkpoint.
+
+The matching PDF evidence-directory fix passes 461 units and focused canvas, AI
+modal and real PWA update checks. The first PWA rerun exposed a download-read race;
+Chrome completion synchronization fixes the harness with original output checks
+and timeout preserved. Remote CodeQL rescan follows the commit. Logs, proof and
+release state are in `evidence/releases-2026-10-19/`; full scratch files remain in
+`/tmp/{cloakyard,cloakpdf}-air-release-2026-10-19/`.
