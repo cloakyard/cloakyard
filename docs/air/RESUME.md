@@ -41,8 +41,9 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel remains next. See the deployment checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest follow-up: straight landing-link arrows under Air 1.0.4; local visual checks
-pass across all five sites, root/PDF publication pending. See
+Latest follow-up: straight landing-link arrows under Air 1.0.4 are live on
+Cloakyard and PDF through PRs #12/#204. All five local visual matrices pass;
+Drop already used forward arrows. Resume/IMG remain local. See
 `docs/air/link-arrows-2026-10-19.md`. The larger Resume/IMG migrations remain unfinished.
 
 Previously completed work: app-coloured horizons deployed for Cloakyard/PDF/Drop;
@@ -100,11 +101,12 @@ same family; landing-only or token-only work is not a completed migration.
 
 ### Repository state at handoff
 
-Root uses `codex/air-refresh`, now based on deployed main `4e860f3`.
-PDF uses `codex/air-brand-horizons`, based on deployed main `72f8883`;
-Drop uses `codex/air-refresh`, based on deployed main `5ee9a01`. Local deployment
-evidence commits follow those main commits: PDF `0b074cd`, Drop `cde56b5`, plus
-this root handoff commit. Resume/IMG remain on `codex/air-refresh`.
+Root uses `codex/air-refresh`, based on deployed main `41a8f4b` (PR #12).
+PDF uses `codex/air-brand-horizons`, based on deployed main `d9ba375` (PR #204).
+Local production-evidence commits follow these merges. Drop uses
+`codex/air-refresh`, based on deployed main `5ee9a01`, with local documentation
+checkpoint `cff7bc7`. Resume/IMG remain on `codex/air-refresh`; their navigation
+checkpoints are `6420ce3` and `583b809` respectively.
 All five carry the Air 1.0.4 navigation rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
@@ -112,11 +114,11 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `4e860f3`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `72f8883`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
-| cloakimg    | `512c720`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
-| cloakresume | `4c302da`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `5ee9a01`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
+| cloakyard   | `41a8f4b`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `d9ba375`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakimg    | `583b809`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
+| cloakresume | `6420ce3`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
+| cloakdrop   | `cff7bc7`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -125,6 +127,33 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 91 prior sources remain implemented; the new OG/metadata entries are validated as
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
+
+### Landing navigation consistency — deployed on 2026-10-19
+
+- Air 1.0.4 (`0f6ea38f83a9`) standardizes forward landing links on straight right
+  arrows, including external header/content/footer links. Hover moves horizontally;
+  keyboard focus and reduced motion stay still. Back/download/disclosure and
+  editor-document/citation icons preserve their semantics. Destinations are unchanged.
+- Root implementation `f69472a` merged through PR #12 as `41a8f4b`; Cloudflare
+  build `2f2916ad-d35e-4a91-9ffe-2c09c68198a6`, version `b442b862`, 100% traffic.
+- PDF implementation `bf8d1a4` merged through PR #204 as `d9ba375`; Cloudflare
+  build `7fb3d0a2-151d-4e29-86da-9bc771ac9f5a`, version `4a482d95`, 100% traffic.
+- All required local checks and remote CI pass. PDF 461 units plus landing search
+  and real home/merge-to-editor routing pass; Resume's full 303 production tests pass.
+  Five local landings pass 120 responsive/theme/enlarged-text cases. Root/PDF's
+  145 live files match the tested build; no-transform and missing routes pass.
+  All 48 live responsive/theme/enlarged-text cases pass; live navigation captures
+  were visually inspected in desktop/laptop/phone light/dark states.
+- Resume's arrow change is committed locally (`6420ce3`). Drop's portable contract
+  checkpoint is `cff7bc7`, with no runtime change. IMG's portable contract is
+  `583b809`; its one-line header fix stays with the parked uncommitted Air draft.
+  The isolated IMG commit passes all checks; the combined draft passes 475 tests
+  and build. Two pre-existing untracked draft formatting failures remain outside
+  that commit. Do not include or publish the parked migration accidentally.
+- Per-repository audit: `docs/air/link-arrows-2026-10-19.md`, with production
+  evidence under root/PDF `docs/air/evidence/link-arrows-2026-10-19/production/`.
+  Release tags and the published Drop RC artifact remain unchanged. Resume's
+  colour wheel remains next; full IMG migration remains last.
 
 ### CloakDrop RC handoff — published on 2026-10-19
 

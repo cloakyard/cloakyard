@@ -18,3 +18,13 @@ motion pass separately. This does not close full product or physical-device gate
 Evidence: `evidence/link-arrows-2026-10-19/`. Full captures and verification
 commands are retained in `/tmp/air-link-arrows-2026-10-19/`. Root/PDF publication is a
 follow-up to the authorized website release; Resume/IMG remain local.
+
+## Production verification
+
+[PR #12](https://github.com/cloakyard/cloakyard/pull/12) merged the tested
+`f69472a` candidate to main `41a8f4b`. Cloudflare build
+`2f2916ad-d35e-4a91-9ffe-2c09c68198a6` deployed version `b442b862` at 100% traffic.
+All remote checks pass. All 13 production files match local SHA-256, retain
+no-transform and preserve missing-route behavior. The 24 live layout/text cases
+pass, and live desktop/laptop/phone light/dark navigation captures were inspected.
+Evidence: `evidence/link-arrows-2026-10-19/production/`. Release tags are unchanged.

@@ -26,8 +26,10 @@ The separately requested Drop installer now uses Air.
 - [x] Air 1.0.4 owns the rule; remove the shared gallery's diagonal glyph and hover.
 - [x] All five pass 110 required viewport/theme cases plus ten enlarged-text cases;
       compact menu/Escape, focus and reduced motion pass. Navigation captures reviewed.
-- [-] Finish required checks, commit each bounded piece, and publish the root/PDF
-  correction through the existing release path. Resume/IMG remain local.
+- [x] Required checks pass; bounded commits saved. Root/PDF correction deployed
+      through PRs #12/#204, with 145 matching live files and 48 live layout/text
+      cases. Resume remains local;
+      IMG contract committed, header integration preserved in the parked draft.
 
 Evidence: each repository's `docs/air/link-arrows-2026-10-19.md`.
 
