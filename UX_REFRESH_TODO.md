@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF Select text complete; wrapper/provider audit next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF editor wrapper/history committed; legacy CSS and lifecycle audit next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,20 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Annotate inspector (2026-10-15)
+## Latest bounded piece — Editor wrappers/history (2026-10-19)
+
+PDF **`b9738c0`** retains history focus and protects busy history actions. N-up uses
+PrimaryAction directly; unused provider/history APIs and WholeDocPanel are removed.
+The canonical disabled-icon fix is synchronized across the family. Details and
+remaining gates are in the final AIR-07 checkpoint and [handoff](docs/air/RESUME.md).
+
+- [x] Pass 453 units, 25 distinct browser suites, required code/dead/build/design/portability and responsive/native-browser review.
+- [x] Preserve earlier inventory evidence, record the 91 current surfaces and commit the bounded PDF piece.
+- [x] Shared bundle commits after required checks: IMG `aa9f6f8`, Drop `0a3a5b5`, Resume `286f57b`.
+- [ ] Next: legacy CSS, output-font exceptions and registry/lifecycle consumers.
+- [ ] Physical touch/software keyboard, actual OS IME and spoken assistive acceptance remain open; full PDF/family migration is unfinished.
+
+## Previous bounded piece — Annotate inspector (2026-10-15)
 
 PDF **`0c30b05`** adopts Air tool/style groups, full-width font selection, colour,
 switch and precise numeric controls. Selected text/shapes/icons expose their actual
@@ -44,7 +57,7 @@ owned by the live payload; mobile Apply waits and failed work remains recoverabl
 - [x] Native Safari font-menu/inline-text/validation/Apply/Undo and Firefox actual 200% pointer placement/custom selection/glyph editing/Done/Undo pass. Review tabs closed and zoom reset.
 - [x] Remove retired RangeField, StyleToggle/FontControls skins and selected-card styling; retain verified live form/N-up adapters. No new dependency.
 - [x] Pass 429 units, 24 browser suites, check/dead/build/design/17 portability/exact sync. Update legacy smoke selectors and wait for export-modal exit in rotation test; full reruns pass without weakening output assertions.
-- [ ] Next: FillFormTool field types, fill/flatten, persistence, error recovery and responsive states; then AutoFillTool and NupTool.
+- [x] Subsequent Fill form (`7c8723d`), Auto-fill (`58ac944`) and N-up (2026-10-14 checkpoint; revalidated in `b9738c0`) are recorded below.
 - [ ] Physical touch/software keyboard, actual OS IME and assistive speech acceptance remain open.
 
 Editor 96.56 kB gzip (+0.19); CSS 24.78 (-0.43). Canonical PDF appendix and portable
@@ -64,7 +77,7 @@ copy preserves proportions. Awaited Apply/mobile Done keeps failed work recovera
 - [x] Native Safari placement/Apply/Undo; Firefox custom selection and Done at actual 200% zoom pass. Reset zoom and close temporary review tabs.
 - [x] Remove retired Segmented measurement/observer/animation code and QR skins; deduplicate signature adjustment buttons. No dependency added.
 - [x] Pass 429 units, 24 browser suites and check/dead/build/design/17 portability/sync gates. An initial modal timing sample failed; unchanged isolated retry and the full clean smoke run pass.
-- [ ] Next: Annotate inspector (text/font/shape/stroke/fill/draw controls), then Fill form, Auto-fill, N-up and remaining legacy cleanup.
+- [x] Subsequent Annotate, Fill form, Auto-fill and N-up pieces are recorded below. Remaining legacy cleanup is tracked in the latest checkpoint.
 - [ ] Physical touch/software keyboard, OS IME, assistive speech and final-size real-device scan acceptance remain open.
 
 Editor 96.37 kB gzip (+0.47), CSS 25.21 (-0.04). Canonical PDF appendix and portable
@@ -1149,7 +1162,7 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Await Apply/mobile Done and verify failure/retry/dedup, Undo/Redo, Cancel, actual vector modules/caption and catalog preservation.
 - [x] Inspect 101 captures; pass 429 units, 24 browser suites, native Safari and Firefox 200%, required checks and record PDF `2c3b901`.
 - [x] Remove unused Segmented control and QR legacy imports/skins; share signature/code adjustment buttons. No dependencies; CSS shrinks.
-- [ ] Continue Annotate, Fill form, Auto-fill, N-up and remaining consumer-aware cleanup.
+- [x] Annotate, Fill form, Auto-fill and N-up pieces landed in later checkpoints; remaining consumer-aware cleanup is tracked in the latest checkpoint.
 - [ ] Complete physical-device, assistive speech, OS IME and final-size scan acceptance; full product/family refresh is unfinished.
 
 ### AIR-07 — Shared colour wheel (2026-10-15)
@@ -1168,8 +1181,8 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
       and eye-dropper access; validate every tool consumer and actual image output.
 - [ ] Align CloakResume's existing wheel mapping, controls and gesture/hex recovery
       with the family pattern; preserve primary colour and every template/export.
-- [ ] Continue Fill form → Auto-fill → N-up in PDF; retain physical touch/software
-      keyboard, OS IME and spoken assistive acceptance gates. Full refresh is ongoing.
+- [x] PDF Fill form, Auto-fill and N-up pieces are implemented and tested in later checkpoints.
+- [ ] Retain physical touch/software keyboard, OS IME and spoken assistive acceptance gates. Full refresh is ongoing.
 
 ### AIR-07 — PDF Auto-fill (2026-10-15)
 
@@ -1179,7 +1192,8 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Share preview/output text positioning and fitting; disclose existing long-answer shortening. Preserve original PDF text, rotated/cropped physical geometry and catalog data.
 - [x] Inspect desktop/laptop/tablet/phone, light/dark, enlarged text, forced colours and native browser interaction; record remaining physical/assistive gates.
 - [x] Remove the unused legacy TextField adapter and retired Auto-fill styling; pass required code, 432 unit tests, 24 browser suites, output and portable-design checks. PDF commit `58ac944`.
-- [ ] Continue FillFormTool and NupTool; complete physical touch/software keyboard, actual OS IME and spoken assistive acceptance. Full PDF/family refresh remains unfinished.
+- [x] FillFormTool (`7c8723d`) and NupTool (2026-10-14 checkpoint; revalidated in `b9738c0`) are implemented and tested.
+- [ ] Complete physical touch/software keyboard, actual OS IME and spoken assistive acceptance. Full PDF/family refresh remains unfinished.
 
 ### AIR-07 — PDF Fill form (2026-10-19)
 
@@ -1194,10 +1208,9 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Select text — shared Air actions/excerpt, reading/retry/no-text recovery,
       clipboard feedback/manual fallback, keyboard access and actual mark output.
       See the 2026-10-19 checkpoint below.
-- [ ] Then audit the remaining stage/provider/wrapper inventory and obsolete-style
-      consumers. N-up is already implemented; validate dependencies without a second
-      redesign. Keep physical touch/software keyboard, OS IME and spoken assistive
-      acceptance open. Full PDF/family refresh is unfinished.
+- [x] Stage/provider/wrapper inventory audited in `b9738c0`; N-up dependencies revalidated.
+- [ ] Obsolete-style consumers and physical touch/software keyboard, OS IME and spoken
+      assistive acceptance remain open. Full PDF/family refresh is unfinished.
 
 ### AIR-07 — PDF Select text (2026-10-19)
 
@@ -1209,5 +1222,18 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Remove old ActionButton/HILITE/readSlice/duplicated selection payload/timer and palette classes; keep shared primitives and utilities with verified consumers.
 - [x] Inspect required sizes/themes, breakpoint neighbors, enlarged text, forced colours and reduced motion; review Safari and Firefox actual 200%.
 - [x] Final serial regression, compact evidence and local commit: PDF `eacefdd`.
-- [ ] Next: audit EditorContext, EditorToolStage, EditorView, OverviewMode, WholeDocPanel and stage wrappers; identify actual obsolete consumers before deletion. Inspect focus after Undo disables its initiating button.
+- [x] Audit EditorContext, EditorToolStage, EditorView, OverviewMode and stage registration; retire WholeDocPanel. History boundary and responsive remount focus are covered in the checkpoint below.
 - [ ] Physical touch/software keyboard, actual OS IME and spoken assistive acceptance remain open. Full PDF/family migration is not complete; IMG/Resume wheel adoption remains separate.
+
+### AIR-07 — PDF editor wrappers and history (2026-10-19)
+
+- [x] Review the remaining provider/entry/stage/overview seams and their real consumers.
+- [x] Remove unused provider commit/jumpTo actions, history base/size/jumpTo/labels helpers and the single-consumer WholeDocPanel composition. N-up calls PrimaryAction directly.
+- [x] Keep Undo/Redo/Reset focus at boundaries; guard disabled pointer/keyboard actions and provider calls while busy. Preserve toolbar focus through responsive panel mounts.
+- [x] Supply a N-up settings focus fallback after processing; retain tool selection heading focus and existing mobile Done/Cancel semantics.
+- [x] Fix aria-disabled icon styling in the canonical Air CSS and synchronize all five bundles. Keep disabled hover/press inert; add no local skin or dependency.
+- [x] Review 176 navigation and 70 N-up layout cases, both themes and enlarged text; Safari history/apply and Firefox actual 200% zoom.
+- [x] Replace the AI modal test's late animation snapshot with a recorder of real animation creation; keep the 240ms assertion and real execution unchanged.
+- [x] Finish required regression, evidence and local commits: PDF `b9738c0`; shared bundle IMG `aa9f6f8`, Drop `0a3a5b5`, Resume `286f57b`. All required product gates pass.
+- [ ] Next: audit src/index.css and tokens.css aliases/selectors (Ocean Blue utilities and cloak-mono-label appear unused); preserve Select's live cloak-popover-motion until it is migrated. Verify fonts.css against FONT_FAMILIES and exported annotation fonts. Audit non-visible registry/lifecycle consumers, then continue end-to-end PDF closure before family rollout.
+- [ ] Physical touch/software keyboard, actual OS IME and spoken assistive acceptance remain open. IMG/Resume wheel adoption and full product migrations remain separate.

@@ -1732,3 +1732,50 @@ selection payload. Editor gzip 99.50 kB (+1.11), CSS 24.02 (-0.62); 128 deploy a
 `docs/air/evidence/select-text-2026-10-19*`. Next: the six remaining editor wrappers/
 providers and legacy-consumer audit. Full PDF/family migration remains unfinished.
 Local commits only; no deployment.
+
+## 2026-10-19 — CloakPDF editor wrappers/history and shared icon focus
+
+PDF **`b9738c0`** preserves Undo/Redo/Reset focus at history boundaries and across
+responsive inspector mounts. Provider history actions reject calls synchronously
+while processing. N-up uses PrimaryAction directly and a settings focus fallback.
+Removed unused commit/jumpTo, history base/size/jumpTo/labels and WholeDocPanel.
+The live entry/provider/stage dispatch boundaries remain; no dependency added.
+
+Canonical Air aria-disabled icon actions now match the disabled treatment, keep
+hover/press inert and retain a full-strength keyboard focus contour. All five
+standalone bundles carry the same CSS; contract remains 1.0.2 / bb90f52e0b0a. The
+PDF appendix and standalone DESIGN describe focus/history ownership.
+
+453 units/46 files and 25 distinct browser suites pass: complete 16 production
+smoke, seven extended, N-up and Select text. Navigation covers 176 cases across all
+required viewport classes, breakpoint neighbors, light/dark and enlarged text.
+N-up covers 70 layouts and 23 real output sheets. Safari history/apply and Firefox
+actual 200% are reviewed; final IAB screenshots include the corrected disabled
+focus contour. Physical touch/software keyboard, OS IME and spoken assistive
+acceptance remain open. This is not full PDF/family completion.
+
+Validation found and fixed responsive focus stealing and Safari pointer focus.
+The AI modal test now records real animation creation before its click, avoiding
+a missed 240ms entrance without weakening the assertion. Two extended attempts on
+long-lived dev8122 failed before output checks (destroyed compression context, then
+rotation fixture not opened); the complete unchanged command passes on fresh
+dev8133. An earlier smoke run was intentionally stopped for the final CSS rebuild.
+Only completed final runs count as the gates.
+
+Editor 327.04/99.39 kB raw/gzip (gzip -0.11), CSS 138.43/24.05 (+0.03),
+128 assets/77 PWA entries. Required PDF code/dead/build/asset/design/18 portability
+and root code/types/build/design/portability/six-document bundle sync pass. The
+91-surface inventory preserves earlier evidence and leaves device acceptance open.
+Proofs and compact results: PDF `docs/air/evidence/editor-wrappers-2026-10-19*` and
+`editor-wrappers-checks-2026-10-19.log`; full captures in `/tmp/cloakpdf-air-review/`.
+Next: legacy CSS/output-font exceptions and registry/lifecycle consumers.
+Local commits only; no push/deployment.
+
+Shared bundle commits: IMG **`aa9f6f8`**, Drop **`0a3a5b5`**, Resume **`286f57b`**.
+IMG passes 470 tests/46 files plus code/build/assets/design/portability. Drop passes
+Astro (19 files, zero diagnostics), assets, three-route build/design/portability.
+Resume passes code/types/build/design/portability and all 288 tests/eight files in
+a complete serial production run (361.10s). Its initial development run had one
+20-second Academic CV/a4 timeout; the unchanged case passed alone, then the full
+production suite passed. No assertion/timeout was changed. These bundle updates
+do not claim those products' runtime migration is complete.

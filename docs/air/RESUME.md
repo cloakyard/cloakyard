@@ -1,6 +1,56 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-19 (Select text)
+## Latest checkpoint — 2026-10-19 (editor wrappers/history)
+
+PDF **`b9738c0`** commits the bounded provider/entry/stage/overview audit. Undo/Redo/
+Reset retain focus at history boundaries; pointer/keyboard activation is guarded
+and provider history calls reject synchronously while busy. Responsive panel mounts
+retain surviving toolbar focus. N-up composes PrimaryAction directly and supplies
+a settings focus fallback for Safari. Canonical Air aria-disabled icon styling now
+keeps hover/press inert and the keyboard focus contour at full strength; all five
+standalone bundles are synchronized. Air stays 1.0.2 / bb90f52e0b0a.
+
+Removed unused provider commit/jumpTo, history base/size/jumpTo/labels and
+WholeDocPanel/danger. Live dispatch/provider/stage seams remain. No dependencies.
+PDF editor 327.04/99.39 kB raw/gzip, CSS 138.43/24.05; 128 assets/77 PWA entries.
+The PDF appendix/standalone DESIGN and 91-surface inventory reflect the changes.
+
+453 units/46 files, 176 navigation states and 70 N-up layouts/23 real output sheets
+pass. Select text's provider harness covers same-frame/already-busy history guards.
+The full 16-suite production smoke and seven extended suites pass (25 distinct
+suites including N-up and Select text). Shared bundle commits: IMG `aa9f6f8`,
+Drop `0a3a5b5`, Resume `286f57b`. IMG's 470 tests, Drop's Astro/asset checks and
+Resume's full serial production suite (288 tests/eight files, 361.10s) pass, along
+with each product's build/design/18 portability gates. Resume's initial dev run
+reached 287/288; its unchanged timeout case passed alone before the complete
+production pass. Native Safari apply/history and Firefox actual 200% review pass;
+the final IAB proof on dev8122
+shows the full-strength disabled Undo focus ring. Physical touch/software keyboard,
+actual OS IME and spoken assistive acceptance remain open.
+
+Validation caught responsive focus stealing, Safari pointer focus and the dimmed
+focus contour. The AI modal test now records real native animation creation before
+clicking, avoiding a late snapshot after its 240ms entrance. The timing assertion
+and animation execution are unchanged. Extended runs on the long-lived dev8122
+failed with a destroyed compression context and a rotation fixture that did not
+open. The unchanged complete seven-suite command passes on fresh dev8133; that
+temporary server is stopped.
+
+**Next bounded piece:** src/index.css and tokens.css legacy aliases/selectors, then
+font/output exceptions and non-visible registry/lifecycle consumers. Ocean Blue
+utility aliases and cloak-mono-label appear unused; Select still uses
+cloak-popover-motion, so migrate it deliberately before removal. fonts.css is live
+annotation output data tied to FONT_FAMILIES; preserve preview/export parity.
+Continue full PDF closure before family rollout; IMG/Resume wheel adoption is
+separate. Evidence/log/proofs: PDF `docs/air/evidence/editor-wrappers-2026-10-19*`
+and `editor-wrappers-checks-2026-10-19.log`. PDF dev8122 and production8132 remain
+running. IAB tab2 shows the synthetic N-up study with focused unavailable Undo on
+8122; tab1 is the older form review. Native review tabs are closed and Firefox zoom
+is restored. Stored family goal remains blocked from an earlier checkpoint; the API
+cannot resume it. Human continuation authorizes work; do not duplicate or complete
+the full-family goal. Local work only, no push/deployment.
+
+## Previous checkpoint — 2026-10-19 (Select text)
 
 PDF **`eacefdd`** completes the bounded Select text pass. Shared Air actions,
 read-only excerpt, loading/retry/no-text/OCR, clipboard feedback/manual copy and
