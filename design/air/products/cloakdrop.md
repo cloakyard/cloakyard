@@ -31,3 +31,9 @@
 - `scripts/test-air-site.mjs` checks the built site with external Puppeteer tooling;
   it is not a runtime dependency. Supplement it with native browser/zoom review and
   keep physical/assistive acceptance distinct from browser input emulation.
+
+- The hero includes the canonical finite Air horizon between the entry actions and
+  actual native screenshot. Its static SVG is usable without JavaScript; the local
+  renderer loads lazily only for capable, visible, motion-enabled visits. Keep its
+  350 kB gzip build ceiling and license. Stop at rest, release offscreen/hidden and
+  preserve browser Back/Forward restoration. No React runtime or native UI change.

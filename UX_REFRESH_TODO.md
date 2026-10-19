@@ -41,7 +41,8 @@ Drop/Resume/IMG runtime work stays local; IMG remains last.
 - [x] PDF’s canonical landing horizon (`62161d9`): 68 layouts, real GPU/fallbacks, 461 units, 16 smoke suites, 44-layout PWA integration and Safari rendered/navigation review pass.
 - [x] PDF #201 CI and main merge `41273ae`; live built-asset hashes and true 404 pass.
 - [x] Production payload integrity: root PR #10/main `6bd318f`, PDF #202/main `4277829`, all CI/deploy checks pass. Both live sites serve `no-transform` without injected analytics/challenge scripts. Live asset hashes, home 12 layouts, PDF six output workflows/68 horizon layouts/GPU lifecycle and four editor captures pass. Published Cloakyard v1.0.1 and CloakPDF v2.0.0.
-- [ ] Handle CloakDrop’s page next, then resume CloakResume logo/photo controls. IMG remains last.
+- [x] CloakDrop page horizon `0cdd8fd`: 432 layouts, 34 journeys, real GPU lifecycle/six fallbacks, Safari, Astro build/check and portability pass. Local only.
+- [-] Resume CloakResume logo/photo controls. IMG remains last.
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 

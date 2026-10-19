@@ -16,7 +16,8 @@ Both deployments match validated asset bytes and serve `no-transform`, with no
 edge-injected analytics/challenge scripts. Live home 12 layout cases, PDF six
 real-output workflows, 68 horizon layouts/GPU checks and four editor captures pass.
 The PDF dark/light desktop/mobile document content was visually inspected.
-Next: complete CloakDrop's local horizon follow-up, then Resume logo/photo.
+CloakDrop horizon is locally committed as `0cdd8fd`: 432 layouts, 34 journeys,
+real GPU lifecycle/six fallbacks and Safari pass. Next: Resume logo/photo controls.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
 Latest completed product implementation: Resume dates/current-job (`648842d`), after contact/native
@@ -80,7 +81,7 @@ before editing; preserve any new user changes. Paths are siblings under
 | cloakpdf    | `4277829`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
 | cloakresume | `648842d`                             | Entry/recovery/shell/fields/entries/contact/select/dates implemented; logo/photo/wheel/review/PWA/assets pending |
-| cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded                       |
+| cloakdrop   | `0cdd8fd`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded                       |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already

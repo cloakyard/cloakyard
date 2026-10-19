@@ -2091,3 +2091,14 @@ both themes. All release URLs, exact commits, logs and captures are recorded in
 
 Physical input, assistive and hardware limits remain open. CloakDrop's local
 landing horizon follows, then Resume logo/photo; IMG remains parked last.
+
+## 2026-10-19 — CloakDrop horizon follow-up
+
+Local commit `0cdd8fd` adds the pinned finite Air horizon to Astro's home only.
+432 layouts/34 journeys, real GPU lifecycle/six fallback profiles, 35 captures,
+Safari anchor/rendering, build/check/assets/19-source design/18 portability pass.
+Desktop/laptop/phone light/dark reviewed. Native source, screenshots and OG unchanged.
+A browser-Back test was corrected to assert restored footer/offscreen release
+before scrolling to reactivate. Evidence lives in Drop's
+`docs/air/evidence/landing-horizon-2026-10-19/`. No Drop push or deployment.
+Resume logo/photo follows; hardware/assistive gates remain open.
