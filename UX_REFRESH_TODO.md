@@ -6,12 +6,13 @@ Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start h
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
 commit slices and acceptance gates. Detailed design review is complete. AIR-04 is committed as `39c08f9`; CloakPDF entry
 is committed as `dc20fe6` after local verification. Remaining device acceptance and deeper product
-surfaces stay open. No deployment or push has occurred.
+surfaces stay open. Cloakyard v1.0.0 is now released; PDF PR #201 is in progress.
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
-KERR's app and native macOS UI are outside this redesign. No deployment or push is
-part of the current work. All repositories use branch `codex/air-refresh`.
+KERR's app and native macOS UI are outside this redesign. The user authorized
+Cloakyard/PDF dev integration, main PRs and releases. CloakDrop’s page follows;
+Drop/Resume/IMG runtime work stays local; IMG remains last.
 
 ## Working rules
 
@@ -30,6 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
   design code or authoritative references remain.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
+
+## Release checkpoint and landing follow-up (2026-10-19)
+
+- [x] Cloakyard dev → main [PR #9](https://github.com/cloakyard/cloakyard/pull/9), production build and [v1.0.0 release](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0). Exact live asset hashes, 12 production responsive/theme cases, menu/Escape and no-JS pass.
+- [x] PDF dev integration and [PR #201](https://github.com/cloakyard/cloakpdf/pull/201); 459 initial units, 16 production browser suites and real PWA update integration pass.
+- [x] Fix the 79 high CodeQL findings locally: private test evidence directories and escaped portable-reference values. Fresh 461 units, reference logic/browser, canvas/AI modal/PWA and portability checks pass; no security gates weakened.
+- [x] Remote CodeQL passes after `cab22ba`; all 79 high findings cleared without exceptions.
+- [x] PDF’s canonical landing horizon (`62161d9`): 68 layouts, real GPU/fallbacks, 461 units, 16 smoke suites, 44-layout PWA integration and Safari rendered/navigation review pass.
+- [x] PDF #201 CI and main merge `41273ae`; live built-asset hashes and true 404 pass.
+- [-] Production injected analytics/challenge scripts conflict with CSP. Header-only follow-up #202 (`21f37de`) passes actual Wrangler cache headers, six output workflows, 461 units and PWA integration; await CI/deploy/live acceptance before v2.0.0.
+- [ ] Handle CloakDrop’s page next, then resume CloakResume logo/photo controls. IMG remains last.
+
+Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 
 ## Latest bounded piece — CloakResume partial dates (2026-10-19)
 

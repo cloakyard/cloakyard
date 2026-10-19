@@ -1,0 +1,54 @@
+pass: Formatting completed for checked files (1.3s)
+pass: Found no warnings or lint errors in 47 files (99ms, 12 threads)
+✔ reorder preserves identity and every field, with exact undo/redo (0.879958ms)
+✔ new work after undo discards the future while leaving previous snapshots intact (0.120333ms)
+✔ selection across filtered views retains other selections and rejects stale IDs (0.0835ms)
+✔ remove all is reversible and clears stale selections without deleting history (0.112084ms)
+✔ invalid and unchanged mutations create no misleading history entries (0.104333ms)
+✔ 100-row sample stays uniquely addressable through reorder, rename, remove and undo (0.132125ms)
+✔ wheel coordinates match the displayed clockwise spectrum (0.799417ms)
+✔ thumb and pointer are inverse mappings throughout the wheel (0.821ms)
+✔ author colours round-trip without changing channel bytes (3.535292ms)
+✔ invalid, multiple, oversize and cancelled picks retain the current file (1.91875ms)
+✔ UTF-8 characters survive chunk boundaries and preview is bounded (35.851292ms)
+✔ invalid UTF-8 fails without discarding selected file; same file can be picked again (0.254875ms)
+✔ empty text completes with a useful state (0.1955ms)
+✔ manual pause has measured bytes, ignores duplicate starts and resumes (3.113833ms)
+✔ cancel while paused releases the wait and retry starts from zero (0.546708ms)
+✔ late completion after cancel, replacement, removal or disposal cannot publish (0.783333ms)
+✔ interruption keeps partial text and file; retry succeeds without simulation (0.147792ms)
+✔ short read rejects inconsistent byte counts (0.094958ms)
+✔ finite arrival submits once in the settled clock and rests until input (2.230417ms)
+✔ unmount aborts pending startup and destroys its late renderer (0.299208ms)
+✔ input arriving during a pending draw schedules a follow-up without overlap (0.306167ms)
+✔ reduced motion never mounts and preference changes are reversible (0.228041ms)
+✔ resize failure releases the device and leaves the fallback available (0.33575ms)
+✔ reference form values remain text across HTML reconstruction (0.387292ms)
+✔ a reconstructed slider cannot interpolate markup from its retained value (0.11275ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 89.24725
+note: You are running `vp build` as a Vite+ built-in command. If you meant to run the build npm script, use `vpr build` instead.
+transforming...
+✓ 1909 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               3.08 kB │ gzip:   0.97 kB
+dist/air-light.LICENSE.txt                   15.86 kB │ gzip:   4.72 kB
+dist/assets/index-DuUoAHXo.css               46.60 kB │ gzip:   9.01 kB
+dist/assets/index-WqGY6eM-.js               240.18 kB │ gzip:  75.59 kB
+dist/assets/air-light-shader-VlzniAjj.js  1,261.69 kB │ gzip: 294.30 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 368ms
+Air contract and 13 inventory records are valid. Runtime conformance is audited separately.
+Verified six portable Air specifications (bb90f52e0b0a).

@@ -1,0 +1,22 @@
+{
+  "origin": "https://cloakyard.com",
+  "checkedAt": "2026-10-19T10:53:12.759Z",
+  "status": 200,
+  "assets": [
+    {
+      "path": "/assets/index-WqGY6eM-.js",
+      "bytes": 240188,
+      "sha256": "9d448bd669875414ea54c97677129bc060caf1ff1128872f6179f34c9f84d97c"
+    },
+    {
+      "path": "/assets/index-DuUoAHXo.css",
+      "bytes": 46609,
+      "sha256": "63e3f0880161131d6e2d18ac0313490a19316dc04f3709ea39150125ae83223c"
+    },
+    {
+      "path": "/og.png",
+      "bytes": 72218,
+      "sha256": "6150191039b852411b7586e024f0def1b337c2e6f4d6aba7cc03583b99740050"
+    }
+  ]
+}
