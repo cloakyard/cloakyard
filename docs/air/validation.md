@@ -1968,3 +1968,14 @@ no production dependency added. Canonical product appendix and both standalone D
 DESIGN copies are synchronized. Root check/types/build/design/portability/exact sync
 pass. Physical touch/spoken assistive and deployed/native-install checks remain
 explicitly open. Next: Resume, then IMG last. No push or deployment.
+
+## 2026-10-19 — Resume entry/recovery checkpoint
+
+Resume `eda6df6` adopts Air for start/restore/privacy/confirm/error recovery while
+preserving the existing editor and all template/output sources. 341 layouts,
+14 journeys, 124 contrast pairs, native Safari/Firefox 200% and the full serial
+production suite (288 tests, no skips) pass. Detailed source boundaries, test
+synchronization findings, native focus correction and human/device limits are in
+Resume `docs/air/evidence/entry-recovery-2026-10-19.json`. The family contract remains
+Air 1.0.2 / `bb90f52e0b0a`; the product appendix now records runtime adoption.
+Next is Resume's editor shell; IMG remains last and uncommitted.

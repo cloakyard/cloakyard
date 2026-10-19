@@ -135,6 +135,11 @@ are no Swift/native edits. The policy's meaning does not change in a visual refr
 
 ## 5. CloakResume — reuse controls, protect every template
 
+2026-10-19: entry/privacy/confirmation/render recovery completed in `eda6df6`.
+341 responsive state cases, 14 journeys, 124 contrast pairs and full 288 production
+tests pass; physical gates remain open. Continue the editor shell and then each
+interior. Social/PWA/README preview assets remain a separate completion slice.
+
 - **Commit A:** landing, blank/sample/load/restore, privacy and recovery.
 - **Commit B:** writing shell/section navigation and paginated preview surround.
   Correct tablet/coarse targets and undersized contact selectors.

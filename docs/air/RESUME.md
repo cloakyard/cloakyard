@@ -6,10 +6,10 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: complete Drop website/OG migration (`e5f2bac`), after PDF
-software acceptance (`b9d67a9`). Both have dated software evidence; physical/device
-gates remain open. The corrected order is **PDF → Drop website → CloakResume →
-CloakIMG last**. Resume is next; IMG's small entry draft stays parked uncommitted.
+Latest completed piece: Resume entry/recovery (`eda6df6`), after Drop website/OG
+(`e5f2bac`) and PDF software acceptance (`b9d67a9`). Human/device gates remain open.
+The corrected order is **PDF → Drop website → CloakResume → CloakIMG last**.
+Resume's editor shell is next; IMG's small entry draft remains parked uncommitted.
 
 ### Objective and settled decisions
 
@@ -55,10 +55,10 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `051a292`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakyard   | `0b09e86`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
 | cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
-| cloakresume | `286f57b`                             | Shared bundle synchronized; full product migration and wheel alignment pending                          |
+| cloakresume | `eda6df6`                             | Entry/recovery implemented; editor, widgets/wheel, PWA and preview assets pending                       |
 | cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded              |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
@@ -69,18 +69,47 @@ The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: CloakResume entry and recovery
+### Exact next bounded piece: CloakResume editor shell
 
-1. Read Resume AGENTS/CLAUDE/DESIGN, its audit/inventory, and the current landing,
-   blank/sample/load/restore/privacy/error paths. Preserve the printable template
-   boundary and existing saved work. Do not change document typography or geometry.
-2. Implement the first bounded landing/start/restore/privacy/recovery slice, then
-   inspect all required sizes/themes and input states. Run complete logic/browser
-   tests with the saved no-file-parallelism rule and all applicable output checks.
-3. Continue its shell/section/template/ATS/format/export slices per the plan. Align
-   the existing colour wheel while preserving all 17 templates and export fidelity.
-4. IMG remains last. Do not commit or continue its parked draft before Resume is
-   finished; see the draft details below before restarting.
+1. Read Resume AGENTS/CLAUDE/DESIGN and its baseline editor audit. The entry/privacy/
+   confirmations/error slice is done; do not restart it. Inspect `Layout`, toolbar,
+   section navigation/picker/panel and preview surround at all required sizes/themes.
+2. Migrate the shell/section navigation as a bounded piece. Preserve all content,
+   templates, document settings, save/load/export, mobile preview and keyboard paths.
+   Remove the legacy editor orientation blocker only when landscape is usable.
+3. Continue every section/custom control, wheel, template/review/format/export chrome,
+   PWA update safety, true static 404 and refreshed social/PWA/README assets. The capture
+   helpers now recognize the Air heading, but the actual Resume OG/screenshots remain
+   legacy until the preview slice. Keep templates' fonts/geometry/output untouched.
+4. Run `vp check`, `vp run build`, complete `vp test run --no-file-parallelism` with
+   all browser cases executed. Built checks use `CLOAKRESUME_BROWSER_BUILD=production`.
+   Do not edit runtime/build files while a production suite is running. Never skip
+   templates, weaken assertions or increase timeouts to hide a regression.
+5. IMG remains last. Do not commit or continue its parked draft before Resume is
+   finished. Physical/assistive acceptance stays explicit throughout.
+
+Completed Resume entry (`eda6df6`): 341 layout cases (home/menu/privacy/confirmation/
+real render error), 14 journeys, 124 contrast pairs, native Safari and Firefox actual
+200% zoom. Blank/sample/import/restore, malformed/pending/duplicate file handling,
+replacement cancel/confirm, background inertness, privacy swipe/cancel and denied
+clipboard recovery pass. Full 288 production tests pass, including 107 editor cases
+and 17 templates × two paper sizes × five fixtures. No output/template/font source
+change; no dependency added. Five sources are Air-implemented, not fully physically
+validated. Durable record: Resume `docs/air/evidence/entry-recovery-2026-10-19.json`
+and checks log; full captures in `/tmp/cloakresume-air-entry/`.
+
+The test harness fixes are substantive synchronization fixes: responsive remounts
+returned detached-node focus styles, and font-driven auto-grow changed field height
+after the original scroll baseline. Wait for those committed states, retain all
+assertions/timeouts. The screenshot harness also reopens dialogs after capability
+emulation reloads and explicitly requires each measured modal. Native Safari
+pointer-openers now focus explicitly so Escape returns to their real button.
+
+Resume preview ports: 8145 (automation), 8146 (latest native-browser review).
+The optional shader uses the shared finite runtime, is excluded from precache and
+retains SVG fallback. Local idle/reduced/offscreen/unmount checks pass; physical
+GPU/battery/thermal acceptance remains open. Editor/PWA legacy styling is deliberately
+still visible beyond the completed entry boundary; this is not a whole-product claim.
 
 Completed Drop website (`e5f2bac`): all home/policy/404/header/footer/install/download
 surfaces use Air; native in-flow menu and policy contents preserve keyboard/no-JS
