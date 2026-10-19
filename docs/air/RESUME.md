@@ -25,12 +25,18 @@ lifecycle/six fallbacks, a checksum-verified native download and final DMG check
 pass. Official yt-dlp frozen runtime retained by explicit user choice; TS6 remains
 the supported version. RC is ad-hoc signed, not notarized. The user subsequently
 authorized GitHub publication: release tag `9936e47`, exact DMG and checksum file
-are public, with matching GitHub SHA-256 digests. Main/dev were not merged and the
-website was not deployed. Resume logo/photo is complete
-as `9cc74df`; its shared colour wheel remains next after this RC preparation.
+are public, with matching GitHub SHA-256 digests. The user then authorized website
+deployment: Air is live at [drop.cloakyard.com](https://drop.cloakyard.com/), Cloudflare
+version `f99e2602` from source `6ac533f`, promoted to 100% traffic. Eighteen live
+response hashes, no-transform, 432 layouts / 34 journeys and GPU/six fallbacks pass;
+representative live light/dark desktop/laptop/phone captures were visually inspected.
+Deployment evidence is committed as `8ce17f9` in Drop. Main/dev remain unchanged;
+integrate Air before another main-triggered deployment. Resume logo/photo is complete
+as `9cc74df`; its shared colour wheel remains next.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest completed work: Drop dependency/RC preparation and Air installer (`df413b2`),
+Latest completed work: Drop Air website production deployment (`8ce17f9`),
+following dependency/RC preparation and Air installer (`df413b2`),
 after Resume logo/photo (`9cc74df`), dates/current-job
 (`648842d`), contact/native
 selects (`9d4e7f9`), repeated
@@ -75,8 +81,10 @@ same family; landing-only or token-only work is not a completed migration.
   tests → required checks → evidence/TODO → local commit. Never commit failed gates.
   The user subsequently authorized dev integration, main PRs and release for
   Cloakyard and CloakPDF, then explicitly requested the CloakDrop RC GitHub release.
-  Drop RC1 is published through its verified tag; main/dev integration and website
-  deployment remain separate. Resume/IMG stay local. No subagent delegation was requested.
+  Drop RC1 is published through its verified tag. The user then explicitly authorized
+  its website deployment; `codex/air-refresh` was pushed and its Cloudflare build
+  promoted to production. Main/dev integration remains separate. Resume/IMG stay
+  local. No subagent delegation was requested.
 
 ### Repository state at handoff
 
@@ -93,7 +101,7 @@ before editing; preserve any new user changes. Paths are siblings under
 | cloakpdf    | `4277829`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
 | cloakresume | `9cc74df`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `6ac533f`                             | Website/OG/horizon and Air installer complete; 1.0.0-rc.1 published; signing/device gates open                   |
+| cloakdrop   | `8ce17f9`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -128,10 +136,32 @@ Interactive final `validated` flags remain false pending device/assistive accept
   resolves to `9936e47c24fa7264eeaa7790f97f80bf58a1bf2f`; DMG and SHA256SUMS are public.
   GitHub asset sizes/digests and exact release notes verified. Publication proof:
   Drop `docs/audits/evidence/2026-10-19-rc.1-publication.json`.
-- Only the release tag was pushed. No main/dev merge or website deployment. Preserve
-  this exact candidate/checksum; do not retag or rebuild the published RC in place.
+- Initially only the release tag was pushed. The later authorized website deployment
+  pushed `codex/air-refresh` at `6ac533f`, built and promoted version `f99e2602` to
+  100% production traffic. Main/dev remain unmerged. Preserve this exact candidate/
+  checksum; do not retag or rebuild the published RC in place.
   The preparation manifest's `published:false` is historical; use the publication
   record for status. Do not repeat finished dependency or installer work.
+
+### CloakDrop website deployment — complete on 2026-10-19
+
+- Source `6ac533ffc8dc2a7a5094223dd6d180300ab16ed7`; Cloudflare Worker `cloakdrop`,
+  version `f99e2602-7fef-4351-8d53-d51b90c0a455`, build
+  `3edba187-3214-4435-9980-4b63375f7fb7`, 100% traffic on the existing custom domain.
+- Existing Git integration: production branch `main`, non-production builds enabled,
+  root `apps/site`, watch include `*`. Build `npm run build`; branch upload
+  `npx wrangler versions upload`; production deploy `npx wrangler deploy`.
+  No credentials, permissions or deployment settings changed.
+- Live 18 byte-matched responses with no-transform, home/privacy200, unknown404;
+  432 layouts / 34 journeys / 35 captures, no console errors or foreign runtime
+  requests; real GPU lifecycle and six fallback profiles pass. Live desktop/laptop/
+  phone light/dark and phone privacy/recovery visually inspected. Local build/check/
+  dry run, exact sync, 20 inventory / 18 portability and remote checks pass.
+- Drop audit: `docs/audits/2026-10-19-website-deployment.md`, compact evidence and
+  representative captures in `docs/air/evidence/deployment-2026-10-19/` (`8ce17f9`).
+  Main/dev integration is still separate and should precede another main-triggered
+  deployment. No native app or RC artifact was changed. Physical/assistive/device
+  gates remain open; do not repeat the completed deployment.
 
 ### Exact next bounded piece: CloakResume primary-colour wheel
 

@@ -19,11 +19,27 @@
     "Home: 12 responsive/theme/text cases, links/logos/menu/Escape/no-JS and no analytics requests or console errors",
     "PDF: six real-output standalone workflows with strict console checks",
     "PDF: 68 horizon layouts plus real GPU lifecycle and fallback checks",
-    "PDF: four real editor captures, desktop/mobile light/dark, visually inspected"
+    "PDF: four real editor captures, desktop/mobile light/dark, visually inspected",
+    "Drop: 18 production responses byte-match local build; no-transform, home/privacy200 and unknown404",
+    "Drop: 432 layouts, 34 journeys, 35 captures, no script errors or foreign runtime requests",
+    "Drop: real GPU lifecycle/six fallbacks and desktop/laptop/phone light/dark visual review pass"
   ],
   "limits": [
     "Physical touch/software keyboard, spoken assistive, GPU/battery/thermal acceptance remain open",
-    "Additional AI hardware/engine combinations remain unverified; AI remains Beta"
+    "Additional AI hardware/engine combinations remain unverified; AI remains Beta",
+    "Drop main/dev integration remains separate; integrate Air before another main-triggered deployment",
+    "Drop RC is ad-hoc and unnotarized; approved official yt-dlp frozen-runtime exception retained"
   ],
-  "next": "CloakDrop website horizon then CloakResume logo/photo. Drop/Resume/IMG remain local; IMG last."
+  "next": "CloakResume primary-colour wheel. Resume/IMG remain local; IMG last. Drop website deployment is complete.",
+  "cloakdrop": {
+    "version": "1.0.0-rc.1",
+    "tagCommit": "9936e47c24fa7264eeaa7790f97f80bf58a1bf2f",
+    "url": "https://github.com/cloakyard/cloakdrop/releases/tag/v1.0.0-rc.1",
+    "production": "https://drop.cloakyard.com",
+    "websiteSource": "6ac533ffc8dc2a7a5094223dd6d180300ab16ed7",
+    "cloudflareVersion": "f99e2602-7fef-4351-8d53-d51b90c0a455",
+    "productionTrafficPercent": 100,
+    "deploymentEvidenceCommit": "8ce17f969617dce8d75e1b993bfcaf62d460b7a2",
+    "mainDevIntegrated": false
+  }
 }
