@@ -1849,3 +1849,30 @@ Evidence: PDF `docs/air/evidence/registry-lifecycle-2026-10-19.json`, two proof 
 and checks log; full evidence `/tmp/cloakpdf-air-review/registry-*`. Next: legacy
 PWA/README screenshots and associated manifest metadata, then remaining PDF/family
 acceptance. Local commits only; no push/deployment.
+
+## 2026-10-19 — PDF install previews and OG design
+
+PDF `02552f1` replaces the legacy PWA/README screenshots with four actual Annotate
+editor captures using synthetic content and isolated browser contexts. Wide
+1440×900 and narrow 780×1688 (390×844 CSS / DPR 2) light/dark previews, theme-aware
+README, descriptive labels/alternatives, Air manifest surface and a composed
+1200×630 OG card now agree. Original marks/document fonts/output are unchanged.
+The OG generator uses local Air CSS and the editor capture without a temporary
+server. Old assets and active Workbench preview references are removed.
+
+458 units/47 files, code/dead/build/assets/design/18 portability checks pass.
+Production browser checks pass: six standalone output workflows (including the
+changed OG bitmap as Images-to-PDF input), home-routing, landing-search, 176 tool
+selections and 176 navigation layouts. Published screenshots plus laptop/tablet
+light/dark were visually reviewed. Built manifest, nine PNG responses/byte matches,
+OG metadata and Chromium installability pass. Root check/types/build/design/
+portability and exact six-document sync pass. No push/deployment or native-device
+acceptance is claimed.
+
+The expanded PDF inventory includes static/root/artwork HTML (94 surfaces) and
+exposes `public/404.html` as pending: it still has retired styling and removed-font
+links. Next is that bounded recovery-page piece, followed by broad Phase 3 evidence
+reconciliation and IMG. PDF/family acceptance, physical touch/software keyboards,
+OS IME, spoken assistive use and real-device shader checks remain open. Evidence:
+PDF `docs/air/evidence/previews-2026-10-19.json`, companion log/laptop PNGs and five
+published preview images. Full local captures/logs: `/tmp/cloakpdf-air-review/previews/`.

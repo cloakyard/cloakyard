@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF registry/lifecycle complete; install-preview cleanup next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF previews complete; static 404 and closure reconciliation next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Tool registries and session lifecycle (2026-10-19)
+## Latest bounded piece — Install previews and OG design (2026-10-19)
+
+PDF **`02552f1`** replaces legacy PWA/README images with real Air editor captures
+in both themes. A composed OG card uses the actual editor, original mark and local
+Air CSS; metadata/alternatives and the default manifest surface now agree.
+
+- [x] Publish four synthetic-document captures; inspect desktop/laptop/tablet/phone light/dark and the 1200×630 OG card.
+- [x] Remove old device-named assets/references; simplify the OG generator and document reproducible capture.
+- [x] Pass 458 units, six standalone output workflows, routing/search, 176 tool selections and 176 responsive layouts; built manifest, 9 PNG paths/bytes and Chromium installability pass.
+- [x] Pass required code/dead/build/asset/design/portability/root/six-document sync checks and save evidence.
+- [ ] Next: migrate `public/404.html`, discovered by extending the PDF inventory beyond `src/`. Reconcile broad Phase 3 items with dated evidence; retain unperformed physical/device gates, then continue IMG.
+
+## Previous bounded piece — Tool registries and session lifecycle (2026-10-19)
 
 PDF **`00bdee0`** removes redundant standalone flags/filter/lazy aliases,
 derives complete route maps and rejects unknown/inherited tool ids. Session ownership
@@ -40,7 +52,7 @@ prevents queued work after exit and retires late transform previews. No dependen
 - [x] Pass 456 units, 25 browser suites, 176 tool selections, 176 navigation layouts, 141 recovery captures and 70 N-up layouts/23 real output sheets.
 - [x] Review desktop/laptop/tablet/phone light/dark and production Stamp→Metadata Save/Undo. Preserve device/assistive acceptance gates.
 - [x] Update canonical/portable PDF rules, authoritative contributor references and the 91-source inventory; record cleanup and test evidence.
-- [ ] Next: replace legacy PWA install/README screenshots and audit associated metadata, then full-PDF acceptance and family rollout.
+- [x] PWA/README screenshots, OG design and metadata completed in the newer preview checkpoint. Full-PDF acceptance and family rollout remain open.
 
 ## Previous bounded piece — Air foundation and Select (2026-10-19)
 
@@ -429,7 +441,7 @@ with the device checks recorded, then continuing the rollout.
 - [ ] Verify exported PDF/image content and document fidelity; retain destructive-operation disclosures.
 - [ ] Run check, dead-code, all units, build, applicable smoke/extended/AI browser suites.
 - [ ] Inspect desktop/laptop/tablet/phone light/dark, touch/keyboard/reduced motion, 200% zoom.
-- [ ] Update PWA/social screenshots and product documentation.
+- [x] Update PWA/social screenshots and preview documentation (`02552f1`); static 404 remains a separate closure piece.
 - [ ] Record full evidence and commit each verified piece.
 
 ## Phase 4 — CloakIMG
@@ -1279,5 +1291,5 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Validate 22 editor tools through the command surface on desktop/laptop/tablet/phone in both themes; preserve page source, history and heading focus.
 - [x] Pass lifecycle regressions for task departure during queueing, transformation and preview generation, plus live stage cleanup and StrictMode replay.
 - [x] Finish feature regression, code/dead/unit/build/design/portability checks, portable specification/inventory and evidence; commit after green gates: PDF `00bdee0`.
-- [ ] Replace legacy public/screenshots/iPhone.png and iPad.png: both still feed PWA install previews, and iPad.png also appears in README. Audit manifest/theme metadata, screenshot labels/dimensions and remaining old design references alongside them.
+- [x] Replace legacy PWA/README screenshots and audit manifest/theme metadata, labels/dimensions and OG design (`02552f1`). Static 404 was exposed by the expanded inventory and remains pending.
 - [ ] Continue full-PDF acceptance, then IMG/Resume wheel adoption and family rollout. Physical touch/software keyboard, OS IME and spoken assistive acceptance remain open.

@@ -6,7 +6,8 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-No product work is uncommitted. This handoff adds documentation only.
+Latest completed piece: PDF install/README previews, metadata and OG design (`02552f1`).
+PDF static 404 and closure reconciliation are next; do not repeat completed previews.
 
 ### Objective and settled decisions
 
@@ -52,7 +53,7 @@ save. Recheck before editing; preserve any new user changes. Paths are siblings 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | cloakyard   | `014c7f8`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
-| cloakpdf    | `00bdee0`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
+| cloakpdf    | `02552f1`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
 | cloakimg    | `aa9f6f8`                             | Shared bundle synchronized; full product migration and wheel adoption pending                           |
 | cloakresume | `286f57b`                             | Shared bundle synchronized; full product migration and wheel alignment pending                          |
 | cloakdrop   | `0a3a5b5`                             | Shared bundle synchronized; website migration pending, native app excluded                              |
@@ -60,27 +61,32 @@ save. Recheck before editing; preserve any new user changes. Paths are siblings 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
 have dated implementation/evidence below. Do not restart those from stale early lists.
-All 91 PDF source surfaces are source-reviewed/implemented; final `validated` flags
-remain false because required acceptance is not fully complete.
+The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
+91 prior sources remain implemented; the new OG/metadata entries are validated as
+static artifacts. `public/404.html` is source-reviewed but still pending migration.
+Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: PDF install previews and metadata
+### Exact next bounded piece: PDF static 404 and closure reconciliation
 
-1. In `cloakpdf`, inspect `public/screenshots/iPhone.png` and `iPad.png`. They still
-   show the retired design. `vite.config.ts` manifest references both; `README.md:17`
-   embeds iPad.png. Replace them with actual Air application captures using synthetic
-   content. Inspect wide/narrow layouts and both live themes; publish coherent
-   screenshots with truthful dimensions, labels and alternative text.
-2. Audit the manifest in `vite.config.ts`: currently `theme_color: #2563EB` and
-   `background_color: #F0F4FA`. `index.html` already declares light `#fafbfc` and dark
-   `#101216`. Reconcile metadata with the approved Air surfaces; verify actual generated
-   manifest and PWA asset paths. Old screenshot declarations are 1290×2796 narrow and
-   2732×2048 wide. Check actual new pixel dimensions instead of assuming device names.
-3. Search consumers before deleting or renaming old assets. Inspect social metadata
-   and artwork, but do not assume `public/icons/og-image.png` is obsolete: it was
-   already refreshed earlier. Avoid unnecessary regeneration of unchanged logos.
-4. Run the applicable checks below, inspect the built result, update PDF evidence and
-   the family TODO/handoff, and commit only after passing. This is an asset/metadata
-   piece; do not expand it into a new editor redesign.
+1. Migrate `cloakpdf/public/404.html`: it still uses Workbench typography/palette,
+   uppercase mono actions, a dark statement footer and deleted Archivo/JetBrains
+   font URLs. It was missed by the former src-only inventory. Preserve a real home
+   link, skip navigation, useful path feedback, safe text rendering and HTTP 404.
+2. Use the locally pinned Air CSS through a build-owned static entry; do not copy
+   tokens or require a sibling checkout. Keep the no-JavaScript recovery usable.
+3. Validate required sizes/themes, enlarged text, keyboard/touch/reduced-motion,
+   no-JS behavior and actual built paths/status. Remove retired sources/references.
+4. Reconcile Phase 3's broad checklist with dated PDF evidence. Keep unperformed
+   human/device gates explicit. Then proceed to CloakIMG in the rollout below.
+
+Completed preview piece (`02552f1`): four actual Annotate captures with synthetic
+Studio notes content, theme-aware README, Air manifest colours, truthful dimensions/
+labels, composed 1200×630 OG card and matching metadata. Do not regenerate unchanged
+logos. Reproduction instructions: PDF `docs/og-image.md`; evidence:
+`docs/air/evidence/previews-2026-10-19.json` and matching log/PNGs. Required checks,
+458 units/47 files, six standalone output workflows, routing/search and 176 tool
+selections + 176 navigation layouts pass. Built manifest/nine PNG responses and
+Chromium installability pass. No native/physical-install acceptance claimed.
 
 ### What follows, in order
 
@@ -111,7 +117,9 @@ do not silently omit words or treat these as already implemented redesign work.
 
 ### Verification and durable evidence
 
-Latest PDF: **456 unit tests / 47 files**, **25 distinct browser suites** (16
+Latest preview slice: **458 unit tests / 47 files**, four applicable browser suites;
+all required code/dead/build/asset/design/portability/root/sync gates pass.
+Previous registry baseline: **456 unit tests / 47 files**, **25 distinct browser suites** (16
 production smoke, seven extended, focused recovery/N-up), 176 tool selections
 (22 × four device classes × light/dark), 176 navigation layouts, 141 recovery
 captures, 70 N-up layouts and 23 real output sheets. All required code/dead/build/
@@ -172,8 +180,8 @@ Suggested prompt for the new conversation:
 > Continue the Cloakyard Air refresh from `/Users/sumitsahoo/Developer/cloakyard/docs/air/RESUME.md`.
 > Read its “Start here in a new conversation” section first, then AGENTS.md, CLAUDE.md,
 > DESIGN.md and UX_REFRESH_TODO.md. The design is approved; implementation and local
-> commits are authorized. Start with CloakPDF's legacy PWA/README screenshots and
-> manifest metadata, then follow the saved rollout order. Keep the code lean, remove
+> commits are authorized. Start with CloakPDF's static 404 and
+> closure reconciliation, then follow the saved rollout order. Keep the code lean, remove
 > obsolete references, preserve features/output, validate responsive light/dark
 > states and applicable tests, and commit each passing bounded piece. Do not push
 > or deploy. Keep the TODO, evidence and handoff current.
