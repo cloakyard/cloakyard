@@ -1,4 +1,4 @@
-import { ArrowRight, GitBranch } from "lucide-react";
+import { ArrowUpRight, GitBranch } from "lucide-react";
 import type { ProductivityTool } from "../data/tools";
 
 export function ToolEntry({ tool }: { tool: ProductivityTool }) {
@@ -17,7 +17,7 @@ export function ToolEntry({ tool }: { tool: ProductivityTool }) {
       <div className="tool-actions">
         <a className="text-link" href={tool.href}>
           Open {tool.name}
-          <ArrowRight size={16} aria-hidden="true" />
+          <ArrowUpRight size={16} aria-hidden="true" />
         </a>
         <a
           className="air-icon-button air-button--quiet"

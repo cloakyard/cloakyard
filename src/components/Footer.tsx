@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { productivityTools } from "../data/tools";
 
 export function Footer() {
@@ -8,7 +8,7 @@ export function Footer() {
         {productivityTools.map((tool) => (
           <a key={tool.slug} href={tool.href} translate="no">
             {tool.name}
-            <ArrowRight size={14} aria-hidden="true" />
+            <ArrowUpRight size={14} aria-hidden="true" />
           </a>
         ))}
       </nav>

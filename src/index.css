@@ -380,7 +380,7 @@ summary:focus-visible {
     transition: transform var(--air-motion-hover) var(--air-ease-out);
   }
   .text-link:hover:not(:focus-visible) > svg {
-    transform: translateX(2px);
+    transform: translate(2px, -2px);
   }
 }
 @container (width < 64em) {

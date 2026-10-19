@@ -17,7 +17,19 @@ PDF and Drop are live with their logo-coloured horizons; main/dev integration is
 complete. Resume/IMG work stays local and IMG remains last.
 The separately requested Drop installer now uses Air.
 
-## Landing navigation arrow consistency — 2026-10-19
+## Approved hyperlink treatment — 2026-10-19
+
+- [x] Restore the approved angled hyperlink cue throughout the family, including
+      lower source links; preserve forward action/download/back/disclosure semantics.
+- [x] Correct Drop's blue Source cascade and footer-credit drift. Check compact
+      menus; apply neutral navigation/credits in IMG's parked draft too.
+- [x] Air 1.0.5 records the user's explicit preference and supersedes 1.0.4.
+- [-] Complete rendered matrices, required checks, bounded commits and the
+  root/PDF/Drop corrective deployment. Resume/IMG remain local.
+
+Evidence: each repository's `docs/air/hyperlinks-2026-10-19.md`.
+
+## Landing navigation arrow consistency — 2026-10-19 (superseded)
 
 - [x] Standardize forward arrows across header/content/footer links: straight right,
       including outbound links. Keep meaningful back/download/disclosure icons.
@@ -26,8 +38,10 @@ The separately requested Drop installer now uses Air.
 - [x] Air 1.0.4 owns the rule; remove the shared gallery's diagonal glyph and hover.
 - [x] All five pass 110 required viewport/theme cases plus ten enlarged-text cases;
       compact menu/Escape, focus and reduced motion pass. Navigation captures reviewed.
-- [-] Finish required checks, commit each bounded piece, and publish the root/PDF
-  correction through the existing release path. Resume/IMG remain local.
+- [x] Required checks pass; bounded commits saved. Root/PDF correction deployed
+      through PRs #12/#204, with 145 matching live files and 48 live layout/text
+      cases. Resume remains local;
+      IMG contract committed, header integration preserved in the parked draft.
 
 Evidence: each repository's `docs/air/link-arrows-2026-10-19.md`.
 

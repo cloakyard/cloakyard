@@ -1,0 +1,15 @@
+{
+  "hover": {
+    "x": 2,
+    "y": -2
+  },
+  "focus": {
+    "visible": true,
+    "transform": "none"
+  },
+  "reduced": "none",
+  "reference": {
+    "angled": 6,
+    "forward": 2
+  }
+}

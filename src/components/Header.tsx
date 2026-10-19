@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { Brand } from "./Brand";
 
 const navigation = [
@@ -30,7 +30,7 @@ export function Header() {
           target="_blank"
           rel="noreferrer"
         >
-          Source <ArrowRight size={16} aria-hidden="true" />
+          Source <ArrowUpRight size={16} aria-hidden="true" />
         </a>
         <details
           className="mobile-navigation"
@@ -63,7 +63,7 @@ export function Header() {
               </a>
             ))}
             <a href="https://github.com/cloakyard" target="_blank" rel="noreferrer">
-              Source <ArrowRight size={16} aria-hidden="true" />
+              Source <ArrowUpRight size={16} aria-hidden="true" />
             </a>
           </nav>
         </details>

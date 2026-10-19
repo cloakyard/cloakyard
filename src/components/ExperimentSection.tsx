@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { YardProject } from "../data/tools";
 
 export function ExperimentSection({ experiments }: { experiments: YardProject[] }) {
@@ -17,7 +17,7 @@ export function ExperimentSection({ experiments }: { experiments: YardProject[] 
             <div className="experiment-actions">
               <a className="text-link" href={experiment.href}>
                 Explore {experiment.name}
-                <ArrowRight size={16} aria-hidden="true" />
+                <ArrowUpRight size={16} aria-hidden="true" />
               </a>
               <a
                 className="text-link secondary-link"
