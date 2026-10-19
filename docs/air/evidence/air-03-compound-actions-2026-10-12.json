@@ -1,0 +1,2758 @@
+{
+  "date": "2026-10-12",
+  "scope": "Compound fields and action-state reference; no product adoption",
+  "layouts": [
+    {
+      "coarse": false,
+      "editableFont": "14px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "editableFont": "28px",
+      "empty": {
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "editableFont": "14px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "editableFont": "28px",
+      "empty": {
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "editableFont": "14px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "editableFont": "28px",
+      "empty": {
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "editableFont": "14px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "editableFont": "28px",
+      "empty": {
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "editableFont": "14px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": false,
+      "editableFont": "28px",
+      "empty": {
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": false,
+      "editableFont": "14px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 434
+        },
+        "input": {
+          "h": 38,
+          "w": 386
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 40,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": false,
+      "editableFont": "28px",
+      "empty": {
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 60,
+          "w": 892
+        },
+        "input": {
+          "h": 58,
+          "w": 844
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 346
+        },
+        "input": {
+          "h": 42,
+          "w": 298
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 346
+        },
+        "input": {
+          "h": 42,
+          "w": 298
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 716
+        },
+        "input": {
+          "h": 64,
+          "w": 668
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 716
+        },
+        "input": {
+          "h": 64,
+          "w": 668
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 346
+        },
+        "input": {
+          "h": 42,
+          "w": 298
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 346
+        },
+        "input": {
+          "h": 42,
+          "w": 298
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 716
+        },
+        "input": {
+          "h": 64,
+          "w": 668
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 716
+        },
+        "input": {
+          "h": 64,
+          "w": 668
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 251
+        },
+        "input": {
+          "h": 42,
+          "w": 203
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 251
+        },
+        "input": {
+          "h": 42,
+          "w": 203
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 526
+        },
+        "input": {
+          "h": 64,
+          "w": 478
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 526
+        },
+        "input": {
+          "h": 64,
+          "w": 478
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 251
+        },
+        "input": {
+          "h": 42,
+          "w": 203
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 251
+        },
+        "input": {
+          "h": 42,
+          "w": 203
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 526
+        },
+        "input": {
+          "h": 64,
+          "w": 478
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 526
+        },
+        "input": {
+          "h": 64,
+          "w": 478
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 350
+        },
+        "input": {
+          "h": 42,
+          "w": 302
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 350
+        },
+        "input": {
+          "h": 42,
+          "w": 302
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 350
+        },
+        "input": {
+          "h": 64,
+          "w": 302
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 350
+        },
+        "input": {
+          "h": 64,
+          "w": 302
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 350
+        },
+        "input": {
+          "h": 42,
+          "w": 302
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 350
+        },
+        "input": {
+          "h": 42,
+          "w": 302
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 350
+        },
+        "input": {
+          "h": 64,
+          "w": 302
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 350
+        },
+        "input": {
+          "h": 64,
+          "w": 302
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 280
+        },
+        "input": {
+          "h": 42,
+          "w": 232
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 280
+        },
+        "input": {
+          "h": 42,
+          "w": 232
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 280
+        },
+        "input": {
+          "h": 64,
+          "w": 232
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 280
+        },
+        "input": {
+          "h": 64,
+          "w": 232
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 280
+        },
+        "input": {
+          "h": 42,
+          "w": 232
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 280
+        },
+        "input": {
+          "h": 42,
+          "w": 232
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 280
+        },
+        "input": {
+          "h": 64,
+          "w": 232
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 280
+        },
+        "input": {
+          "h": 64,
+          "w": 232
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 289
+        },
+        "input": {
+          "h": 42,
+          "w": 241
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 289
+        },
+        "input": {
+          "h": 42,
+          "w": 241
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "light",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 602
+        },
+        "input": {
+          "h": 64,
+          "w": 554
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 602
+        },
+        "input": {
+          "h": 64,
+          "w": 554
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "light",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "editableFont": "16px",
+      "empty": {
+        "group": {
+          "h": 46,
+          "w": 289
+        },
+        "input": {
+          "h": 42,
+          "w": 241
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 46,
+          "w": 289
+        },
+        "input": {
+          "h": 42,
+          "w": 241
+        }
+      },
+      "rootPercent": 100,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "busy",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "error",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "success",
+          "w": 141.09375
+        },
+        {
+          "h": 44,
+          "state": "idle",
+          "w": 141.09375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "editableFont": "32px",
+      "empty": {
+        "group": {
+          "h": 66,
+          "w": 602
+        },
+        "input": {
+          "h": 64,
+          "w": 554
+        }
+      },
+      "escaping": [],
+      "longQueryNoEscape": true,
+      "pageOverflow": false,
+      "populated": {
+        "clear": {
+          "h": 44,
+          "w": 44
+        },
+        "group": {
+          "h": 66,
+          "w": 602
+        },
+        "input": {
+          "h": 64,
+          "w": 554
+        }
+      },
+      "rootPercent": 200,
+      "stableSearch": true,
+      "stableStates": true,
+      "states": [
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "busy",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "error",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "success",
+          "w": 232.7734375
+        },
+        {
+          "h": 57.1953125,
+          "state": "idle",
+          "w": 232.7734375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [844, 390]
+    }
+  ],
+  "journeys": [
+    {
+      "focus": "reference-clear",
+      "test": "Search accent/case normalization and Tab",
+      "value": "  RESUME  ",
+      "visible": ["Studio résumé"]
+    },
+    {
+      "focus": "reference-search",
+      "hidden": true,
+      "status": "3 templates.",
+      "test": "Clear keyboard activation",
+      "value": ""
+    },
+    {
+      "focus": "reference-quality",
+      "test": "Empty clear absent from tab order"
+    },
+    {
+      "errorVisible": true,
+      "focus": "reference-quality",
+      "invalid": "true",
+      "status": "Check the quality. The previous study value is unchanged.",
+      "test": "Invalid numeric submit",
+      "value": ""
+    },
+    {
+      "errorVisible": true,
+      "focus": "reference-quality",
+      "invalid": "true",
+      "status": "Check the quality. The previous study value is unchanged.",
+      "test": "Invalid numeric submit",
+      "value": "0"
+    },
+    {
+      "errorVisible": true,
+      "focus": "reference-quality",
+      "invalid": "true",
+      "status": "Check the quality. The previous study value is unchanged.",
+      "test": "Invalid numeric submit",
+      "value": "101"
+    },
+    {
+      "errorVisible": true,
+      "focus": "reference-quality",
+      "invalid": "true",
+      "status": "Check the quality. The previous study value is unchanged.",
+      "test": "Invalid numeric submit",
+      "value": "80.5"
+    },
+    {
+      "invalid": "false",
+      "status": "Study value: 76%. No image was changed.",
+      "test": "Native numeric arrow and valid apply",
+      "value": "76"
+    },
+    {
+      "animationCount": 0,
+      "busy": "true",
+      "disabled": "true",
+      "focus": "reference-task",
+      "name": "Preparing…",
+      "state": "busy",
+      "status": "Preparing the sample. Choose an outcome below to finish the study.",
+      "test": "Keyboard starts busy"
+    },
+    {
+      "focus": "reference-task",
+      "state": "busy",
+      "statusWrites": 0,
+      "test": "Busy duplicate Enter Space and click guarded"
+    },
+    {
+      "focus": "reference-task",
+      "outcomesDisabled": true,
+      "retryName": "Try again",
+      "state": "error",
+      "status": "Sample preview failed. Your settings are kept. Try again.",
+      "test": "Failure resolution and focus return"
+    },
+    {
+      "focus": "reference-task",
+      "state": "success",
+      "status": "Sample preview ready. No file was created.",
+      "test": "Retry success"
+    },
+    {
+      "focus": "reference-task",
+      "state": "idle",
+      "status": "Study cancelled. Your settings are kept.",
+      "test": "Cancel and reset"
+    },
+    {
+      "committed": "Applied study value: 76%.",
+      "draft": "101",
+      "invalid": "true",
+      "status": "Check the quality. The previous study value is unchanged.",
+      "test": "Committed quality survives invalid draft"
+    },
+    {
+      "clearAvailable": true,
+      "status": "No templates found. Try another name or clear the search.",
+      "test": "No-results recovery",
+      "visible": 0
+    },
+    {
+      "after": "1 template.",
+      "during": "No templates found. Try another name or clear the search.",
+      "test": "Simulated composition waits for commit",
+      "value": "Field"
+    }
+  ],
+  "focus": [
+    {
+      "focused": "reference-search",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-search",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [1440, 900],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-quality",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-quality",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [1440, 900],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-clear",
+      "groupBorder": "rgb(133, 142, 155)",
+      "groupOffset": "0px",
+      "groupOutline": "3px",
+      "id": "reference-clear",
+      "inputBorder": "1px",
+      "inputOffset": "-4px",
+      "inputOutline": "2px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [1440, 900],
+      "groupStyle": "none",
+      "inputStyle": "solid"
+    },
+    {
+      "focused": "reference-search",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-search",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-quality",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-quality",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-clear",
+      "groupBorder": "rgb(119, 131, 149)",
+      "groupOffset": "0px",
+      "groupOutline": "3px",
+      "id": "reference-clear",
+      "inputBorder": "1px",
+      "inputOffset": "-4px",
+      "inputOutline": "2px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "groupStyle": "none",
+      "inputStyle": "solid"
+    },
+    {
+      "focused": "reference-search",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-search",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [390, 844],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-quality",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-quality",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [390, 844],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-clear",
+      "groupBorder": "rgb(133, 142, 155)",
+      "groupOffset": "0px",
+      "groupOutline": "3px",
+      "id": "reference-clear",
+      "inputBorder": "1px",
+      "inputOffset": "-4px",
+      "inputOutline": "2px",
+      "shadow": "none",
+      "theme": "light",
+      "viewport": [390, 844],
+      "groupStyle": "none",
+      "inputStyle": "solid"
+    },
+    {
+      "focused": "reference-search",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-search",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [390, 844],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-quality",
+      "groupBorder": "rgba(0, 0, 0, 0)",
+      "groupOffset": "0px",
+      "groupOutline": "2px",
+      "id": "reference-quality",
+      "inputBorder": "0px",
+      "inputOffset": "0px",
+      "inputOutline": "3px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [390, 844],
+      "groupStyle": "solid",
+      "inputStyle": "none"
+    },
+    {
+      "focused": "reference-clear",
+      "groupBorder": "rgb(119, 131, 149)",
+      "groupOffset": "0px",
+      "groupOutline": "3px",
+      "id": "reference-clear",
+      "inputBorder": "1px",
+      "inputOffset": "-4px",
+      "inputOutline": "2px",
+      "shadow": "none",
+      "theme": "dark",
+      "viewport": [390, 844],
+      "groupStyle": "none",
+      "inputStyle": "solid"
+    }
+  ],
+  "limits": [
+    "Chromium/IAB only",
+    "Root-font enlargement and pointer emulation; not physical devices or real browser zoom",
+    "Action outcomes are manually resolved study states, not a product async adapter"
+  ],
+  "stress": {
+    "longUnit": {
+      "groupWidth": 280,
+      "inputWidth": 139,
+      "noEscape": true,
+      "noOverlap": true,
+      "unitWidth": 139
+    },
+    "rootPercent": 200,
+    "stable": true,
+    "translatedAction": [
+      {
+        "client": 278,
+        "h": 96.390625,
+        "scroll": 278,
+        "state": "idle",
+        "w": 280
+      },
+      {
+        "client": 278,
+        "h": 96.390625,
+        "scroll": 278,
+        "state": "busy",
+        "w": 280
+      },
+      {
+        "client": 278,
+        "h": 96.390625,
+        "scroll": 278,
+        "state": "error",
+        "w": 280
+      },
+      {
+        "client": 278,
+        "h": 96.390625,
+        "scroll": 278,
+        "state": "success",
+        "w": 280
+      },
+      {
+        "client": 278,
+        "h": 96.390625,
+        "scroll": 278,
+        "state": "idle",
+        "w": 280
+      }
+    ],
+    "viewport": [320, 568]
+  },
+  "accessibility": {
+    "clearTarget": {
+      "bottom": 305.796875,
+      "height": 44,
+      "left": 253,
+      "right": 297,
+      "top": 261.796875,
+      "width": 44,
+      "x": 253,
+      "y": 261.796875
+    },
+    "forced": true,
+    "groupBackground": "rgb(255, 255, 255)",
+    "groupOutline": "rgb(0, 0, 0) solid 2px",
+    "inputColor": "rgb(0, 0, 0)",
+    "inputOutline": "rgba(5, 0, 73, 0.8) none 3px",
+    "reduced": true,
+    "actionAnimations": 0,
+    "busy": "true",
+    "busyOpacity": "1",
+    "status": "Preparing the sample. Choose an outcome below to finish the study."
+  },
+  "shells": {
+    "disabled": {
+      "disabled": true,
+      "inputOpacity": "1",
+      "opacity": "0.5"
+    },
+    "portableClearHidden": "none",
+    "readonly": {
+      "background": "rgb(240, 242, 246)",
+      "value": "80"
+    }
+  },
+  "dialogSmoke": [
+    {
+      "app": "pdf",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [1440, 900],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "img",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [1440, 900],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [1440, 900],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "pdf",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "img",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [1440, 900],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "pdf",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [768, 1024],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "img",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [768, 1024],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [768, 1024],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "pdf",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [768, 1024],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "img",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [768, 1024],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [768, 1024],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "pdf",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [390, 844],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "img",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [390, 844],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "light",
+      "viewport": [390, 844],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "pdf",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [390, 844],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "img",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [390, 844],
+      "returnFocus": "inspect-overlay"
+    },
+    {
+      "app": "resume",
+      "contained": true,
+      "focus": "export-name",
+      "modal": true,
+      "noOverflow": true,
+      "theme": "dark",
+      "viewport": [390, 844],
+      "returnFocus": "inspect-overlay"
+    }
+  ],
+  "console": [],
+  "screenshots": [
+    "air-03-compound-laptop-dark.png",
+    "air-03-actions-tablet-light.png",
+    "air-03-compound-phone-light.png",
+    "air-03-number-text200-phone-dark.png"
+  ],
+  "revision": {
+    "css": "http://127.0.0.1:8120/src/styles/air.css?air=935bd53bebd2",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "dialogProbeNote": "The first scripted smoke probe called element.click() without focusing the trigger; native dialog dismissal correctly restored the pre-existing search focus. Repeated the user journey with focused native Enter activation below."
+}

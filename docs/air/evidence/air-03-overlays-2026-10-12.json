@@ -1,0 +1,4291 @@
+{
+  "date": "2026-10-12",
+  "scope": "Air floating controls and dialog reference only",
+  "journeys": [
+    {
+      "focus": "air-rename-input",
+      "role": "dialog",
+      "test": "Keyboard context to rename"
+    },
+    {
+      "errorVisible": true,
+      "focus": "air-rename-input",
+      "invalid": "true",
+      "oldName": "Field notes.pdf",
+      "test": "Invalid rename"
+    },
+    {
+      "focus": "air-context-target",
+      "name": "Studio résumé — portfolio.pdf",
+      "status": "Sample renamed to Studio résumé — portfolio.pdf.",
+      "test": "Valid rename returns to actual context origin"
+    },
+    {
+      "checked": "true",
+      "open": true,
+      "status": "Sample marked as reviewed.",
+      "test": "Checked action and native arrows"
+    },
+    {
+      "focus": "Remove sample…",
+      "test": "End skips disabled command"
+    },
+    {
+      "focus": "Reviewed",
+      "test": "Home and typeahead"
+    },
+    {
+      "focus": "air-remove-cancel",
+      "role": "alertdialog",
+      "test": "Confirmation safe focus"
+    },
+    {
+      "focus": "air-more-actions",
+      "name": "Studio résumé — portfolio.pdf",
+      "test": "Escape cancels removal"
+    },
+    {
+      "focus": "air-restore-sample",
+      "removed": true,
+      "status": "Sample removed from the study. Restore it whenever you’re ready.",
+      "test": "Confirmed removal offers recovery"
+    },
+    {
+      "focus": "air-more-actions",
+      "name": "Preserved résumé — long project name.pdf",
+      "reviewed": true,
+      "test": "Restore retains edited name and review mark"
+    },
+    {
+      "description": "air-details-tooltip",
+      "focus": "air-details-hint",
+      "role": "tooltip",
+      "test": "Tooltip keyboard semantics",
+      "visible": true
+    },
+    {
+      "closed": true,
+      "focus": "air-details-hint",
+      "test": "Tooltip Escape"
+    },
+    {
+      "focus": "air-view-settings",
+      "paper": "Field notes.pdf4 pages · Letter · Local sample",
+      "test": "Popover updates sample"
+    },
+    {
+      "dialogOpened": false,
+      "focus": "Download original · unavailable",
+      "menuOpen": true,
+      "test": "Disabled command ignores Enter after focus probe"
+    },
+    {
+      "open": true,
+      "test": "Confirmation ignores outside press"
+    }
+  ],
+  "layouts": [
+    {
+      "viewport": [1920, 1080],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 644,
+            "y": 568
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_l_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 1227,
+            "y": 568
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 672,
+            "y": 398.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 672,
+            "y": 448
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1920, 1080],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 644,
+            "y": 577
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_1b_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 939,
+            "y": 568
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 672,
+            "y": 304.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 672,
+            "y": 390.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1920, 1080],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 644,
+            "y": 568
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_21_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 1227,
+            "y": 568
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 672,
+            "y": 398.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 672,
+            "y": 448
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1920, 1080],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 644,
+            "y": 577
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_2n_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 939,
+            "y": 568
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 672,
+            "y": 304.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 672,
+            "y": 390.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1440, 900],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 404,
+            "y": 478
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_bl_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 987,
+            "y": 478
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 432,
+            "y": 308.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 432,
+            "y": 358
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1440, 900],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 404,
+            "y": 487
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_cb_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 699,
+            "y": 478
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 432,
+            "y": 214.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 432,
+            "y": 300.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1440, 900],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 404,
+            "y": 478
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_d1_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 987,
+            "y": 478
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 432,
+            "y": 308.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 432,
+            "y": 358
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1440, 900],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 404,
+            "y": 487
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_dn_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 699,
+            "y": 478
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 432,
+            "y": 214.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 432,
+            "y": 300.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1366, 768],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 367,
+            "y": 412
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_65_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 950,
+            "y": 412
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 395,
+            "y": 242.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 395,
+            "y": 292
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1366, 768],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 576,
+            "y": 356
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_6r_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 662,
+            "y": 412
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 395,
+            "y": 148.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 395,
+            "y": 234.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1366, 768],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 367,
+            "y": 412
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_7h_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 950,
+            "y": 412
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 395,
+            "y": 242.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 395,
+            "y": 292
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1366, 768],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 576,
+            "y": 356
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_87_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 662,
+            "y": 412
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 395,
+            "y": 148.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 395,
+            "y": 234.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1280, 720],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 324,
+            "y": 388
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_8t_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 907,
+            "y": 388
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 352,
+            "y": 218.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 352,
+            "y": 268
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1280, 720],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 533,
+            "y": 318
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_9j_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 315.9765625,
+            "w": 576,
+            "x": 619,
+            "y": 388
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 352,
+            "y": 124.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 352,
+            "y": 210.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1280, 720],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 268.1953125,
+            "w": 320,
+            "x": 324,
+            "y": 388
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_a9_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 229,
+            "w": 288,
+            "x": 907,
+            "y": 388
+          },
+          "role": "menu",
+          "rowHeights": [40, 40, 40, 40]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 282.1953125,
+            "w": 576,
+            "x": 352,
+            "y": 218.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 184,
+            "w": 576,
+            "x": 352,
+            "y": 268
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1280, 720],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 385.59375,
+            "w": 640,
+            "x": 533,
+            "y": 318
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_av_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 315.9765625,
+            "w": 576,
+            "x": 619,
+            "y": 388
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-input",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 471.59375,
+            "w": 576,
+            "x": 352,
+            "y": 124.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 352,
+            "y": 210.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1024, 768],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 284,
+            "y": 414
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_ed_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 691,
+            "y": 414
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 224,
+            "y": 238.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 224,
+            "y": 290
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1024, 768],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 331.4921875,
+            "w": 640,
+            "x": 284,
+            "y": 421
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_f3_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 403,
+            "y": 414
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 576,
+            "x": 224,
+            "y": 145.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 224,
+            "y": 234.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1024, 768],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 284,
+            "y": 414
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_fp_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 691,
+            "y": 414
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 224,
+            "y": 238.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 224,
+            "y": 290
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [1024, 768],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 331.4921875,
+            "w": 640,
+            "x": 284,
+            "y": 421
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_gf_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 403,
+            "y": 414
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 576,
+            "x": 224,
+            "y": 145.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 224,
+            "y": 234.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [768, 1024],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 218,
+            "y": 542
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_h5_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 435,
+            "y": 542
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 96,
+            "y": 366.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 96,
+            "y": 418
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [768, 1024],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 391.59375,
+            "w": 640,
+            "x": 112,
+            "y": 549
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_hr_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 147,
+            "y": 542
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 576,
+            "x": 96,
+            "y": 273.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 96,
+            "y": 362.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [768, 1024],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 218,
+            "y": 542
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_ih_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 435,
+            "y": 542
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 96,
+            "y": 366.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 96,
+            "y": 418
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [768, 1024],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 391.59375,
+            "w": 640,
+            "x": 112,
+            "y": 549
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_j7_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 147,
+            "y": 542
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 576,
+            "x": 96,
+            "y": 273.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 96,
+            "y": 362.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [844, 390],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 349,
+            "y": 98
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_jt_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 149.0078125,
+            "w": 288,
+            "x": 511,
+            "y": 225
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 134,
+            "y": 49.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 134,
+            "y": 101
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [844, 390],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 142.2734375,
+            "w": 640,
+            "x": 188,
+            "y": 232
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_kj_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 148.7734375,
+            "w": 576,
+            "x": 223,
+            "y": 225
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 358,
+            "w": 576,
+            "x": 134,
+            "y": 16
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 134,
+            "y": 45.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [844, 390],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 349,
+            "y": 98
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_l9_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 149.0078125,
+            "w": 288,
+            "x": 511,
+            "y": 225
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 134,
+            "y": 49.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 134,
+            "y": 101
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [844, 390],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 142.2734375,
+            "w": 640,
+            "x": 188,
+            "y": 232
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_lv_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 148.7734375,
+            "w": 576,
+            "x": 223,
+            "y": 225
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 358,
+            "w": 576,
+            "x": 134,
+            "y": 16
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 134,
+            "y": 45.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [320, 568],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 238.25,
+            "w": 288,
+            "x": 16,
+            "y": 314
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_ml_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 238.25,
+            "w": 288,
+            "x": 16,
+            "y": 314
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 326.1953125,
+            "w": 320,
+            "x": 0,
+            "y": 241.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 206,
+            "w": 320,
+            "x": 0,
+            "y": 362
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [320, 568],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 231.375,
+            "w": 288,
+            "x": 16,
+            "y": 321
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_nb_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 237.875,
+            "w": 288,
+            "x": 16,
+            "y": 314
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 552,
+            "w": 320,
+            "x": 0,
+            "y": 16
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 492.390625,
+            "w": 320,
+            "x": 0,
+            "y": 75.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [320, 568],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 238.25,
+            "w": 288,
+            "x": 16,
+            "y": 314
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_o1_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 238.25,
+            "w": 288,
+            "x": 16,
+            "y": 314
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 326.1953125,
+            "w": 320,
+            "x": 0,
+            "y": 241.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 206,
+            "w": 320,
+            "x": 0,
+            "y": 362
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [320, 568],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 231.375,
+            "w": 288,
+            "x": 16,
+            "y": 321
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_on_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 237.875,
+            "w": 288,
+            "x": 16,
+            "y": 314
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 552,
+            "w": 320,
+            "x": 0,
+            "y": 16
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 492.390625,
+            "w": 320,
+            "x": 0,
+            "y": 75.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [375, 812],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 436
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_pd_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 46,
+            "y": 436
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 308.1953125,
+            "w": 375,
+            "x": 0,
+            "y": 503.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 375,
+            "x": 0,
+            "y": 624
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [375, 812],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 353.390625,
+            "w": 343,
+            "x": 16,
+            "y": 443
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_q3_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 359.890625,
+            "w": 343,
+            "x": 16,
+            "y": 436
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 565.59375,
+            "w": 375,
+            "x": 0,
+            "y": 246.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 456.390625,
+            "w": 375,
+            "x": 0,
+            "y": 355.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [375, 812],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 436
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_qp_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 46,
+            "y": 436
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 308.1953125,
+            "w": 375,
+            "x": 0,
+            "y": 503.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 375,
+            "x": 0,
+            "y": 624
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [375, 812],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 353.390625,
+            "w": 343,
+            "x": 16,
+            "y": 443
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_rf_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 359.890625,
+            "w": 343,
+            "x": 16,
+            "y": 436
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 565.59375,
+            "w": 375,
+            "x": 0,
+            "y": 246.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 456.390625,
+            "w": 375,
+            "x": 0,
+            "y": 355.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [390, 844],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 452
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_s5_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 61,
+            "y": 452
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 308.1953125,
+            "w": 390,
+            "x": 0,
+            "y": 535.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 390,
+            "x": 0,
+            "y": 656
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [390, 844],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 369.1796875,
+            "w": 358,
+            "x": 16,
+            "y": 459
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_sr_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 361,
+            "w": 358,
+            "x": 16,
+            "y": 452
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 390,
+            "x": 0,
+            "y": 366.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 456.390625,
+            "w": 390,
+            "x": 0,
+            "y": 387.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [390, 844],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 452
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_th_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 61,
+            "y": 452
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 308.1953125,
+            "w": 390,
+            "x": 0,
+            "y": 535.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 390,
+            "x": 0,
+            "y": 656
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [390, 844],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 369.1796875,
+            "w": 358,
+            "x": 16,
+            "y": 459
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_u7_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 361,
+            "w": 358,
+            "x": 16,
+            "y": 452
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 390,
+            "x": 0,
+            "y": 366.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 456.390625,
+            "w": 390,
+            "x": 0,
+            "y": 387.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [430, 932],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 496
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_ut_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 101,
+            "y": 496
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 430,
+            "x": 0,
+            "y": 641.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 430,
+            "x": 0,
+            "y": 744
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [430, 932],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 413.640625,
+            "w": 398,
+            "x": 16,
+            "y": 502
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_vj_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 361,
+            "w": 398,
+            "x": 16,
+            "y": 496
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 430,
+            "x": 0,
+            "y": 454.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 368.390625,
+            "w": 430,
+            "x": 0,
+            "y": 563.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [430, 932],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 496
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_109_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 101,
+            "y": 496
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 430,
+            "x": 0,
+            "y": 641.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 430,
+            "x": 0,
+            "y": 744
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [430, 932],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 413.640625,
+            "w": 398,
+            "x": 16,
+            "y": 502
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_10v_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 361,
+            "w": 398,
+            "x": 16,
+            "y": 496
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 100, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 430,
+            "x": 0,
+            "y": 454.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 368.390625,
+            "w": 430,
+            "x": 0,
+            "y": 563.609375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [639, 800],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 430
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_11l_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 310,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 639,
+            "x": 0,
+            "y": 509.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 639,
+            "x": 0,
+            "y": 612
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [639, 800],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 347.484375,
+            "w": 607,
+            "x": 16,
+            "y": 437
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_12b_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 22,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 441.59375,
+            "w": 639,
+            "x": 0,
+            "y": 358.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 263.1953125,
+            "w": 639,
+            "x": 0,
+            "y": 536.8046875
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [639, 800],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 430
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_131_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 310,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 639,
+            "x": 0,
+            "y": 509.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 639,
+            "x": 0,
+            "y": 612
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [639, 800],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 347.484375,
+            "w": 607,
+            "x": 16,
+            "y": 437
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_13n_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 22,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 441.59375,
+            "w": 639,
+            "x": 0,
+            "y": 358.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 263.1953125,
+            "w": 639,
+            "x": 0,
+            "y": 536.8046875
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [640, 800],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 430
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_14d_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 311,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 640,
+            "x": 0,
+            "y": 509.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 640,
+            "x": 0,
+            "y": 612
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [640, 800],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 347.28125,
+            "w": 608,
+            "x": 16,
+            "y": 437
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_153_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 23,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 441.59375,
+            "w": 640,
+            "x": 0,
+            "y": 358.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 263.1953125,
+            "w": 640,
+            "x": 0,
+            "y": 536.8046875
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [640, 800],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 20,
+            "y": 430
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_15p_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 311,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 640,
+            "x": 0,
+            "y": 509.8046875
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 640,
+            "x": 0,
+            "y": 612
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [640, 800],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 347.28125,
+            "w": 608,
+            "x": 16,
+            "y": 437
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_16f_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 23,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 441.59375,
+            "w": 640,
+            "x": 0,
+            "y": 358.40625
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 263.1953125,
+            "w": 640,
+            "x": 0,
+            "y": 536.8046875
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [641, 800],
+      "theme": "light",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 218,
+            "y": 430
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_175_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 308,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 32.5,
+            "y": 254.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 32.5,
+            "y": 306
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [641, 800],
+      "theme": "light",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 347.1953125,
+            "w": 609,
+            "x": 16,
+            "y": 437
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_17r_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 20,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 576,
+            "x": 32.5,
+            "y": 161.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 32.5,
+            "y": 250.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [641, 800],
+      "theme": "dark",
+      "rootPercent": 100,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 276.1953125,
+            "w": 320,
+            "x": 218,
+            "y": 430
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_18h_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 245,
+            "w": 288,
+            "x": 308,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [44, 44, 44, 44]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 290.1953125,
+            "w": 576,
+            "x": 32.5,
+            "y": 254.8984375
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 188,
+            "w": 576,
+            "x": 32.5,
+            "y": 306
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    },
+    {
+      "viewport": [641, 800],
+      "theme": "dark",
+      "rootPercent": 200,
+      "surfaces": [
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "",
+          "id": "air-settings-popup",
+          "noXOverflow": true,
+          "rect": {
+            "h": 347.1953125,
+            "w": 609,
+            "x": 16,
+            "y": 437
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "base-ui-_r_197_",
+          "id": "air-action-menu",
+          "noXOverflow": true,
+          "rect": {
+            "h": 319,
+            "w": 576,
+            "x": 20,
+            "y": 430
+          },
+          "role": "menu",
+          "rowHeights": [58, 58, 58, 58]
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-rename-dialog",
+          "id": "air-rename-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 477.59375,
+            "w": 576,
+            "x": 32.5,
+            "y": 161.203125
+          },
+          "role": "dialog",
+          "rowHeights": []
+        },
+        {
+          "animations": 0,
+          "contained": true,
+          "focus": "air-remove-cancel",
+          "id": "air-remove-dialog",
+          "noXOverflow": true,
+          "rect": {
+            "h": 299.1953125,
+            "w": 576,
+            "x": 32.5,
+            "y": 250.3984375
+          },
+          "role": "alertdialog",
+          "rowHeights": []
+        }
+      ],
+      "popoverReturn": "air-view-settings",
+      "renameReturn": "air-more-actions",
+      "confirmReturn": "air-more-actions",
+      "pageOverflow": false
+    }
+  ],
+  "limits": [
+    "Chromium/IAB emulation, not physical devices or screen readers",
+    "In-memory sample actions; no product file changes",
+    "Production rollout remains under design review"
+  ],
+  "refinements": [
+    "Added an explicit Shift+F10/ContextMenu trigger adapter because the embedded browser did not synthesize contextmenu from the key. Base UI still owns all menu navigation and focus.",
+    "Touch rename opening focuses its surface before an editable field."
+  ],
+  "keyboardVisibility": [
+    {
+      "viewport": [1440, 900],
+      "checks": [
+        {
+          "hit": true,
+          "id": "air-rename-input",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Cancel",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Save name",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "air-rename-input",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Cancel",
+          "inDialog": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "viewport": [320, 568],
+      "checks": [
+        {
+          "hit": true,
+          "id": "air-rename-input",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Cancel",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Save name",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "air-rename-input",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Cancel",
+          "inDialog": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "viewport": [844, 390],
+      "checks": [
+        {
+          "hit": true,
+          "id": "air-rename-input",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Cancel",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Save name",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "air-rename-input",
+          "inDialog": true,
+          "visible": true
+        },
+        {
+          "hit": true,
+          "id": "Cancel",
+          "inDialog": true,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "motion": {
+    "animations": [
+      {
+        "duration": 240,
+        "properties": [
+          {
+            "opacity": "0"
+          },
+          {
+            "opacity": "1"
+          }
+        ],
+        "state": "running"
+      },
+      {
+        "duration": 240,
+        "properties": [
+          {
+            "transform": "translateY(8px) scale(0.98)"
+          },
+          {
+            "transform": "none"
+          }
+        ],
+        "state": "running"
+      }
+    ],
+    "motion": "pointer",
+    "test": "Simulated pointer dialog entrance",
+    "transform": "matrix(0.98, 0, 0, 0.98, 0, 4)",
+    "keyboardReopen": {
+      "animations": 0,
+      "open": true
+    },
+    "finalRevisionVerification": {
+      "animations": 0,
+      "css": ["http://127.0.0.1:8120/src/styles/air.css?air=54e940cc480e"],
+      "motion": "pointer",
+      "devicePixelRatio": 2,
+      "open": true,
+      "startingRule": "translateY(4px) scale(0.98)",
+      "note": "Browser CSSOM confirms translateY(4px); computed entrance matrix records 4px, while this DPR-2 Chromium getKeyframes result reports 8px. Raw readings retained."
+    }
+  },
+  "hover": {
+    "role": "tooltip",
+    "visibleWhileHovered": true,
+    "dismissed": true
+  },
+  "accessibility": {
+    "focusOutline": "rgba(5, 0, 73, 0.8) solid 2px",
+    "forced": true,
+    "menuBorder": "rgb(0, 0, 0)",
+    "reduced": true,
+    "background": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "dialogAnimations": 0
+  },
+  "loading": {
+    "before": {
+      "bundleRequested": false,
+      "mounted": false
+    },
+    "failure": {
+      "message": "The examples couldn’t load. Try again.",
+      "retryVisible": true
+    },
+    "recovery": {
+      "focus": "air-view-settings",
+      "mounted": true
+    },
+    "correction": "Failed module fetches are cached by the browser; deliberate retry now uses a fresh URL. Loader and bundle have separate content revisions."
+  },
+  "console": [],
+  "screenshots": [
+    "air-03-menu-laptop-dark.png",
+    "air-03-popover-laptop-light.png",
+    "air-03-confirmation-phone-dark.png",
+    "air-03-rename-text200-phone-light.png"
+  ],
+  "revision": {
+    "css": "http://127.0.0.1:8120/src/styles/air.css?air=54e940cc480e",
+    "overlayModule": "http://127.0.0.1:8120/docs/air/assets/air-overlays.js?air=cd7f69ff30c0",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "gates": {
+    "vpCheck": {
+      "formatted": 79,
+      "linted": 27,
+      "pass": true
+    },
+    "typeCheck": "vp exec tsc --noEmit passed",
+    "productionBuild": {
+      "pass": true,
+      "jsKB": 242.4,
+      "cssKB": 28.52
+    },
+    "overlayBuild": {
+      "deterministic": true,
+      "bytes": 557054,
+      "gzipBytes": 142703,
+      "licensePackages": 10,
+      "shaPrefix": "cd7f69ff30c0"
+    },
+    "contractShaPrefix": "dc6032235f40",
+    "standaloneProducts": 5,
+    "portabilityAssertions": 50,
+    "filesPerFixture": 13,
+    "productRuntimeAdopted": false
+  }
+}

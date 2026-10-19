@@ -1,0 +1,610 @@
+{
+  "date": "2026-10-13",
+  "scope": "Production Cloakyard hero; actual Shaders 4.0.4 WebGPU rendering",
+  "matrix": [
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 104,
+        "width": 288
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 288
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "4",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 104,
+        "width": 288
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 288
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "5",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 104,
+        "width": 343
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 343
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "6",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 104,
+        "width": 343
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 343
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "7",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 104,
+        "width": 358
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 358
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "8",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 104,
+        "width": 358
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 358
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "9",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 104,
+        "width": 398
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 398
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "10",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 104,
+        "width": 398
+      },
+      "coarse": true,
+      "field": {
+        "height": 104,
+        "width": 398
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "11",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 64,
+        "width": 796
+      },
+      "coarse": true,
+      "field": {
+        "height": 64,
+        "width": 796
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "12",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 64,
+        "width": 796
+      },
+      "coarse": true,
+      "field": {
+        "height": 64,
+        "width": 796
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "13",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 200,
+        "width": 720
+      },
+      "coarse": true,
+      "field": {
+        "height": 200,
+        "width": 720
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "15",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 200,
+        "width": 720
+      },
+      "coarse": true,
+      "field": {
+        "height": 200,
+        "width": 720
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "16",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 200,
+        "width": 960
+      },
+      "coarse": true,
+      "field": {
+        "height": 200,
+        "width": 960
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "18",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 200,
+        "width": 960
+      },
+      "coarse": true,
+      "field": {
+        "height": 200,
+        "width": 960
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "19",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "20",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "21",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "22",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "23",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "24",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "25",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "background": "rgb(250, 251, 252)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(250, 251, 252)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "26",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "background": "rgb(16, 18, 22)",
+      "canvas": {
+        "height": 200,
+        "width": 1200
+      },
+      "coarse": false,
+      "field": {
+        "height": 200,
+        "width": 1200
+      },
+      "overflow": false,
+      "pageBackground": "rgb(16, 18, 22)",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "27",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    }
+  ],
+  "lifecycle": [
+    {
+      "test": "idle remains idle",
+      "after": 97,
+      "before": 97,
+      "probe": {
+        "creates": 1,
+        "destroys": 0,
+        "fences": [
+          2.6000000089406967, 2.5, 1.2999999970197678, 3.0999999940395355, 1.3999999910593033, 2,
+          1.0999999940395355, 2, 1, 1.2999999970197678, 1.0999999940395355, 2.5, 0.7999999970197678,
+          2.5, 0.9000000059604645, 1.7999999970197678, 0.9000000059604645, 2.1000000089406967,
+          1.2000000029802322, 0.7000000029802322, 1, 0.7999999970197678, 0.8999999910593033,
+          1.2000000029802322, 0.7999999970197678, 0.7999999970197678, 0.9000000059604645,
+          0.9000000059604645, 1, 2.0999999940395355, 1.1000000089406967, 0.9000000059604645,
+          0.9000000059604645, 0.8999999910593033, 1, 0.6000000089406967, 0.5, 0.9000000059604645,
+          0.9000000059604645, 2, 1, 0.7000000029802322, 1, 0.9000000059604645, 0.9000000059604645,
+          1, 1.2999999970197678, 0.7000000029802322, 1, 1.3999999910593033, 0.5, 1.7999999970197678,
+          0.8999999910593033, 0.8999999910593033, 1, 1.199999988079071, 0.800000011920929, 1,
+          0.8999999910593033, 1, 1, 1.1000000089406967, 1.5999999940395355, 1, 0.9000000059604645,
+          1, 1.5999999940395355, 1, 1, 1.0999999940395355, 1, 1.7000000029802322, 1.699999988079071,
+          0.8999999910593033, 1, 1, 1.4000000059604645, 1.5, 1, 1, 2, 1.9000000059604645,
+          1.5999999940395355, 0.7999999970197678, 0.9000000059604645, 1, 1.7999999970197678
+        ],
+        "longTasks": [],
+        "submits": [
+          28810, 28814.20000000298, 28830.80000001192, 28863.40000000596, 28872.10000000894,
+          28897.5, 28930.80000001192, 28938.30000001192, 28956.80000001192, 28989.30000001192,
+          29006.60000000894, 29039.30000001192, 29056.80000001192, 29088.40000000596,
+          29115.20000000298, 29146.90000000596, 29173.40000000596, 80806.5, 80834.90000000596,
+          80868.10000000894, 80901.40000000596, 80934.70000000298, 80968.10000000894, 81001.5,
+          81034.70000000298, 81068.10000000894, 81101.40000000596, 81134.70000000298, 81168,
+          81201.60000000894, 81234.70000000298, 81268, 81301.40000000596, 81334.80000001192, 81368,
+          81401.5, 81434.90000000596, 81468, 81501.40000000596, 81534.90000000596, 81568,
+          81602.70000000298, 81634.70000000298, 81668, 81701.70000000298, 81733.90000000596,
+          81768.10000000894, 81801.5, 81940.5, 81968.10000000894, 82001.30000001192,
+          82034.70000000298, 82068.10000000894, 82101.30000001192, 82134.90000000596,
+          82167.30000001192, 82201.5, 82235.70000000298, 82268.10000000894, 82302.40000000596,
+          82334.70000000298, 82368.20000000298, 82400.40000000596, 82435.70000000298, 82468,
+          82501.5, 82533.90000000596, 82568, 82601.40000000596, 82635.60000000894, 82667, 82701.5,
+          82734.80000001192, 82768.80000001192, 82801.30000001192, 82834.70000000298, 82868,
+          82900.40000000596, 82933.70000000298, 82967.10000000894, 83000.30000001192, 83035.5,
+          83068.10000000894, 83100.40000000596, 83134.70000000298, 83168.10000000894,
+          83201.40000000596
+        ]
+      },
+      "state": "idle"
+    },
+    {
+      "test": "offscreen releases real device",
+      "creates": 1,
+      "destroys": 1,
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "98",
+        "lightState": "offscreen"
+      }
+    },
+    {
+      "test": "simulated hidden releases real device",
+      "creates": 2,
+      "destroys": 2,
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "99",
+        "lightState": "hidden"
+      }
+    },
+    {
+      "test": "WebGPU unavailable fallback",
+      "state": {
+        "lightFirstDraw": "53.2",
+        "lightFrames": "99",
+        "lightState": "unsupported"
+      },
+      "visibility": "hidden"
+    },
+    {
+      "test": "cold reduced no renderer request",
+      "requests": 0,
+      "state": {
+        "lightFirstDraw": "0.0",
+        "lightFrames": "0",
+        "lightState": "reduced"
+      }
+    }
+  ],
+  "build": {
+    "shaderGzip": 294300,
+    "entryGzip": 75590,
+    "shaderBudget": 350000,
+    "entryBudget": 85000
+  },
+  "limits": [
+    "Viewport/coarse input emulation is not physical phone testing.",
+    "Queue-fence duration includes GPU completion, driver and callback scheduling; it is not a hardware GPU timestamp.",
+    "Physical battery and thermal checks remain open."
+  ]
+}

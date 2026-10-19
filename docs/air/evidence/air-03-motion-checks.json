@@ -1,0 +1,2584 @@
+{
+  "date": "2026-10-11",
+  "scope": "Opt-in Air reference motion; production migration remains pending",
+  "environment": "Codex in-app Chromium on macOS. Viewport/touch/preference emulation, not physical device coverage.",
+  "matrix": [
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Light",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "SELECT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 814.7890625,
+        "height": 729.5859375,
+        "left": 432,
+        "right": 1008,
+        "top": 85.203125,
+        "width": 576,
+        "x": 432,
+        "y": 85.203125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Light",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 32,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 835.640625,
+        "height": 771.28125,
+        "left": 432,
+        "right": 1008,
+        "top": 64.359375,
+        "width": 576,
+        "x": 432,
+        "y": 64.359375
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Light",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 654.6953125,
+        "height": 409.390625,
+        "left": 432,
+        "right": 1008,
+        "top": 245.3046875,
+        "width": 576,
+        "x": 432,
+        "y": 245.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Dark",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "SELECT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 814.7890625,
+        "height": 729.5859375,
+        "left": 432,
+        "right": 1008,
+        "top": 85.203125,
+        "width": 576,
+        "x": 432,
+        "y": 85.203125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Dark",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 32,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 835.640625,
+        "height": 771.28125,
+        "left": 432,
+        "right": 1008,
+        "top": 64.359375,
+        "width": 576,
+        "x": 432,
+        "y": 64.359375
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Dark",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 654.6953125,
+        "height": 409.390625,
+        "left": 432,
+        "right": 1008,
+        "top": 245.3046875,
+        "width": 576,
+        "x": 432,
+        "y": 245.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Light",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "SELECT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 764.7890625,
+        "height": 729.5859375,
+        "left": 352,
+        "right": 928,
+        "top": 35.203125,
+        "width": 576,
+        "x": 352,
+        "y": 35.203125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Light",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 32,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 784,
+        "height": 768,
+        "left": 352,
+        "right": 928,
+        "top": 16,
+        "width": 576,
+        "x": 352,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Light",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 604.6953125,
+        "height": 409.390625,
+        "left": 352,
+        "right": 928,
+        "top": 195.3046875,
+        "width": 576,
+        "x": 352,
+        "y": 195.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Dark",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "SELECT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 764.7890625,
+        "height": 729.5859375,
+        "left": 352,
+        "right": 928,
+        "top": 35.203125,
+        "width": 576,
+        "x": 352,
+        "y": 35.203125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Dark",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 32,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 40,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 784,
+        "height": 768,
+        "left": 352,
+        "right": 928,
+        "top": 16,
+        "width": 576,
+        "x": 352,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Dark",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "INPUT"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 40,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 604.6953125,
+        "height": 409.390625,
+        "left": 352,
+        "right": 928,
+        "top": 195.3046875,
+        "width": 576,
+        "x": 352,
+        "y": 195.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Light",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 752,
+        "height": 736,
+        "left": 224,
+        "right": 800,
+        "top": 16,
+        "width": 576,
+        "x": 224,
+        "y": 16
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Light",
+      "app": "IMG",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 752,
+        "height": 736,
+        "left": 224,
+        "right": 800,
+        "top": 16,
+        "width": 576,
+        "x": 224,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Light",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 592.6953125,
+        "height": 417.390625,
+        "left": 224,
+        "right": 800,
+        "top": 175.3046875,
+        "width": 576,
+        "x": 224,
+        "y": 175.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Dark",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 752,
+        "height": 736,
+        "left": 224,
+        "right": 800,
+        "top": 16,
+        "width": 576,
+        "x": 224,
+        "y": 16
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Dark",
+      "app": "IMG",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 752,
+        "height": 736,
+        "left": 224,
+        "right": 800,
+        "top": 16,
+        "width": 576,
+        "x": 224,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Dark",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 592.6953125,
+        "height": 417.390625,
+        "left": 224,
+        "right": 800,
+        "top": 175.3046875,
+        "width": 576,
+        "x": 224,
+        "y": 175.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Light",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 892.7890625,
+        "height": 761.5859375,
+        "left": 96,
+        "right": 672,
+        "top": 131.203125,
+        "width": 576,
+        "x": 96,
+        "y": 131.203125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Light",
+      "app": "IMG",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 921.640625,
+        "height": 819.28125,
+        "left": 96,
+        "right": 672,
+        "top": 102.359375,
+        "width": 576,
+        "x": 96,
+        "y": 102.359375
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Light",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 720.6953125,
+        "height": 417.390625,
+        "left": 96,
+        "right": 672,
+        "top": 303.3046875,
+        "width": 576,
+        "x": 96,
+        "y": 303.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Dark",
+      "app": "PDF",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 892.7890625,
+        "height": 761.5859375,
+        "left": 96,
+        "right": 672,
+        "top": 131.203125,
+        "width": 576,
+        "x": 96,
+        "y": 131.203125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Dark",
+      "app": "IMG",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "SELECT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 921.640625,
+        "height": 819.28125,
+        "left": 96,
+        "right": 672,
+        "top": 102.359375,
+        "width": 576,
+        "x": 96,
+        "y": 102.359375
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Dark",
+      "app": "Resume",
+      "controls": [
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "INPUT"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        },
+        {
+          "height": 44,
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 720.6953125,
+        "height": 417.390625,
+        "left": 96,
+        "right": 672,
+        "top": 303.3046875,
+        "width": 576,
+        "x": 96,
+        "y": 303.3046875
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Light",
+      "app": "PDF",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 844,
+        "height": 759.1875,
+        "left": 0,
+        "right": 390,
+        "top": 84.8125,
+        "width": 390,
+        "x": 0,
+        "y": 84.8125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Light",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 44,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 844,
+        "height": 828,
+        "left": 0,
+        "right": 390,
+        "top": 16,
+        "width": 390,
+        "x": 0,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Light",
+      "app": "Resume",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 844,
+        "height": 432.9921875,
+        "left": 0,
+        "right": 390,
+        "top": 411.0078125,
+        "width": 390,
+        "x": 0,
+        "y": 411.0078125
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Dark",
+      "app": "PDF",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 844,
+        "height": 759.1875,
+        "left": 0,
+        "right": 390,
+        "top": 84.8125,
+        "width": 390,
+        "x": 0,
+        "y": 84.8125
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Dark",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 44,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 844,
+        "height": 828,
+        "left": 0,
+        "right": 390,
+        "top": 16,
+        "width": 390,
+        "x": 0,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Dark",
+      "app": "Resume",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 844,
+        "height": 432.9921875,
+        "left": 0,
+        "right": 390,
+        "top": 411.0078125,
+        "width": 390,
+        "x": 0,
+        "y": 411.0078125
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Light",
+      "app": "PDF",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 568,
+        "height": 552,
+        "left": 0,
+        "right": 320,
+        "top": 16,
+        "width": 320,
+        "x": 0,
+        "y": 16
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Light",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 44,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 568,
+        "height": 552,
+        "left": 0,
+        "right": 320,
+        "top": 16,
+        "width": 320,
+        "x": 0,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Light",
+      "app": "Resume",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 568,
+        "height": 450.9921875,
+        "left": 0,
+        "right": 320,
+        "top": 117.0078125,
+        "width": 320,
+        "x": 0,
+        "y": 117.0078125
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Dark",
+      "app": "PDF",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 568,
+        "height": 552,
+        "left": 0,
+        "right": 320,
+        "top": 16,
+        "width": 320,
+        "x": 0,
+        "y": 16
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Dark",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 44,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 568,
+        "height": 552,
+        "left": 0,
+        "right": 320,
+        "top": 16,
+        "width": 320,
+        "x": 0,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Dark",
+      "app": "Resume",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 568,
+        "height": 450.9921875,
+        "left": 0,
+        "right": 320,
+        "top": 117.0078125,
+        "width": 320,
+        "x": 0,
+        "y": 117.0078125
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Light",
+      "app": "PDF",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 374,
+        "height": 358,
+        "left": 134,
+        "right": 710,
+        "top": 16,
+        "width": 576,
+        "x": 134,
+        "y": 16
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Light",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 44,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 374,
+        "height": 358,
+        "left": 134,
+        "right": 710,
+        "top": 16,
+        "width": 576,
+        "x": 134,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Light",
+      "app": "Resume",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 374,
+        "height": 358,
+        "left": 134,
+        "right": 710,
+        "top": 16,
+        "width": 576,
+        "x": 134,
+        "y": 16
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Dark",
+      "app": "PDF",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 374,
+        "height": 358,
+        "left": 134,
+        "right": 710,
+        "top": 16,
+        "width": 576,
+        "x": 134,
+        "y": 16
+      },
+      "title": "Export document",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Dark",
+      "app": "IMG",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-format",
+          "tag": "SELECT"
+        },
+        {
+          "compact": true,
+          "height": 44,
+          "id": "export-quality-value",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-width",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-height",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 374,
+        "height": 358,
+        "left": 134,
+        "right": 710,
+        "top": 16,
+        "width": 576,
+        "x": 134,
+        "y": 16
+      },
+      "title": "Export image",
+      "focusRestored": true,
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Dark",
+      "app": "Resume",
+      "controls": [
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "export-name",
+          "tag": "INPUT"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        },
+        {
+          "compact": false,
+          "height": 44,
+          "id": "",
+          "tag": "BUTTON"
+        }
+      ],
+      "focus": "export-name",
+      "overflow": false,
+      "rect": {
+        "bottom": 374,
+        "height": 358,
+        "left": 134,
+        "right": 710,
+        "top": 16,
+        "width": 576,
+        "x": 134,
+        "y": 16
+      },
+      "title": "Export PDF",
+      "focusRestored": true,
+      "pass": true
+    }
+  ],
+  "targetedChecks": [
+    {
+      "test": "dialog-interrupted-entrance",
+      "before": {
+        "animationFound": true,
+        "focus": "export-name",
+        "opacity": "0.775382",
+        "phase": "entering",
+        "transform": "matrix(0.995508, 0, 0, 0.995508, 0, 0.898473)"
+      },
+      "exit": {
+        "duration": 160,
+        "keyframes": [
+          {
+            "composite": "auto",
+            "computedOffset": 0,
+            "easing": "linear",
+            "offset": null,
+            "opacity": "0.775382",
+            "transform": "matrix(0.995508, 0, 0, 0.995508, 0, 0.898473)"
+          },
+          {
+            "composite": "auto",
+            "computedOffset": 1,
+            "easing": "linear",
+            "offset": null,
+            "opacity": "0",
+            "transform": "translateY(4px) scale(0.98)"
+          }
+        ],
+        "phase": "closing"
+      }
+    },
+    {
+      "test": "completion-interrupted-replay",
+      "setup": "Existing animation slowed to 5% and set to 60ms; new animation paused after its click handler for keyframe inspection.",
+      "before": {
+        "found": true,
+        "opacity": "0.865229",
+        "transform": "matrix(0.991015, 0, 0, 0.991015, 0, 0.898473)"
+      },
+      "replay": {
+        "count": 1,
+        "duration": 50.664,
+        "keyframes": [
+          {
+            "composite": "auto",
+            "computedOffset": 0,
+            "easing": "linear",
+            "offset": null,
+            "opacity": "0.87334",
+            "transform": "matrix(0.991556, 0, 0, 0.991556, 0, 0.8444)"
+          },
+          {
+            "composite": "auto",
+            "computedOffset": 1,
+            "easing": "linear",
+            "offset": null,
+            "opacity": "1",
+            "transform": "translateY(0px) scale(1)"
+          }
+        ]
+      }
+    },
+    {
+      "test": "keyboard-completion",
+      "observed": {
+        "animations": 0,
+        "status": "All done. A small detail, thoughtfully finished.",
+        "transform": "none"
+      }
+    },
+    {
+      "test": "keyboard-space",
+      "observed": {
+        "completionAnimations": 0,
+        "focusVisible": true,
+        "focused": true,
+        "transform": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "test": "pointer-press",
+      "observed": {
+        "active": true,
+        "animations": [],
+        "focusVisible": true,
+        "transform": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "test": "pointer-release-immediate",
+      "observed": {
+        "transform": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "test": "pointer-press-from-pointer-focus",
+      "observed": {
+        "active": true,
+        "animations": [
+          {
+            "delay": 0,
+            "direction": "normal",
+            "duration": 120,
+            "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+            "endDelay": 0,
+            "fill": "backwards",
+            "iterationStart": 0,
+            "iterations": 1
+          }
+        ],
+        "focusVisible": false,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition": "0.12s"
+      }
+    },
+    {
+      "test": "pointer-release-from-pointer-focus",
+      "observed": {
+        "transform": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "test": "keyboard-dialog-opens-immediately",
+      "observed": {
+        "animations": 0,
+        "focus": "export-name",
+        "open": true,
+        "phase": "open"
+      }
+    },
+    {
+      "test": "dialog-focus-wrap",
+      "last": "Done",
+      "first": "Close export"
+    },
+    {
+      "test": "sheet-interrupted-entrance",
+      "before": {
+        "found": true,
+        "opacity": "1",
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 240,
+          "easing": "cubic-bezier(0.32, 0.72, 0, 1)",
+          "endDelay": 0,
+          "fill": "both",
+          "iterationStart": 0,
+          "iterations": 1
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 167.681)"
+      },
+      "exit": {
+        "keyframes": [
+          {
+            "composite": "auto",
+            "computedOffset": 0,
+            "easing": "linear",
+            "offset": null,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 167.681)"
+          },
+          {
+            "composite": "auto",
+            "computedOffset": 1,
+            "easing": "linear",
+            "offset": null,
+            "opacity": "1",
+            "transform": "translateY(100%)"
+          }
+        ],
+        "phase": "closing",
+        "timing": {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 160,
+          "easing": "cubic-bezier(0.32, 0.72, 0, 1)",
+          "endDelay": 0,
+          "fill": "both",
+          "iterationStart": 0,
+          "iterations": 1
+        }
+      }
+    },
+    {
+      "test": "Escape-cancels-exit-and-keyboard-reopens",
+      "observed": {
+        "animations": 0,
+        "open": true,
+        "phase": "open"
+      }
+    },
+    {
+      "test": "reduced-motion-change-settles-open-dialog",
+      "observed": {
+        "animations": 0,
+        "phase": "open",
+        "reduced": true,
+        "transform": "none"
+      }
+    },
+    {
+      "test": "reduced-motion-completion",
+      "observed": {
+        "animations": 0,
+        "buttonTransition": "0s",
+        "transform": "none"
+      }
+    },
+    {
+      "test": "theme-colours-immediate",
+      "observed": {
+        "colourTransitions": [],
+        "theme": "dark"
+      }
+    },
+    {
+      "test": "repeated-close-keeps-current-exit",
+      "observed": {
+        "count": 1,
+        "id": "repeat-close-check",
+        "phase": "closing",
+        "time": 40
+      }
+    },
+    {
+      "test": "reduced-motion-change-finishes-exit",
+      "observed": {
+        "animations": 0,
+        "open": false,
+        "phase": "closed"
+      }
+    },
+    {
+      "test": "fine-pointer-hover",
+      "observed": {
+        "animations": [
+          {
+            "keyframes": [
+              {
+                "composite": "auto",
+                "computedOffset": 0,
+                "easing": "linear",
+                "offset": 0,
+                "transform": "none"
+              },
+              {
+                "composite": "auto",
+                "computedOffset": 1,
+                "easing": "linear",
+                "offset": 1,
+                "transform": "translateX(4px)"
+              }
+            ],
+            "timing": {
+              "delay": 0,
+              "direction": "normal",
+              "duration": 160,
+              "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+              "endDelay": 0,
+              "fill": "backwards",
+              "iterationStart": 0,
+              "iterations": 1
+            }
+          }
+        ],
+        "transition": "0.16s"
+      }
+    },
+    {
+      "test": "keyboard-focus-removes-hover-motion",
+      "observed": {
+        "focusVisible": true,
+        "transform": "none",
+        "transition": "0s"
+      }
+    },
+    {
+      "test": "coarse-pointer-no-hover-motion",
+      "observed": {
+        "coarse": true,
+        "transform": "none"
+      }
+    },
+    {
+      "test": "shader-startup-promise-regression",
+      "observed": {
+        "ready": "true",
+        "state": "idle"
+      }
+    }
+  ],
+  "portability": {
+    "products": ["cloakyard", "cloakpdf", "cloakimg", "cloakresume", "cloakdrop"],
+    "checksPerProduct": [
+      "isolated dependency-free bundle passes",
+      "missing motion hash rejected",
+      "altered motion module rejected",
+      "missing manifest rejected",
+      "restored bundle passes"
+    ],
+    "browser": [
+      {
+        "product": "cloakyard",
+        "lightReady": "true",
+        "dialog": true,
+        "fieldHeight": 40,
+        "foreignRequests": [],
+        "resources": [
+          "http://127.0.0.1:50401/src/styles/air.css",
+          "http://127.0.0.1:50401/docs/air/light-controller.mjs",
+          "http://127.0.0.1:50401/docs/air/motion.mjs",
+          "http://127.0.0.1:50401/docs/air/assets/air-light-shader.js",
+          "http://127.0.0.1:50401/favicon.ico"
+        ],
+        "stylesheet": ["http://127.0.0.1:50401/src/styles/air.css"],
+        "errors": []
+      },
+      {
+        "product": "cloakdrop",
+        "lightReady": "true",
+        "dialog": true,
+        "fieldHeight": 40,
+        "foreignRequests": [],
+        "resources": [
+          "http://127.0.0.1:50402/apps/site/src/styles/air.css",
+          "http://127.0.0.1:50402/docs/air/light-controller.mjs",
+          "http://127.0.0.1:50402/docs/air/motion.mjs",
+          "http://127.0.0.1:50402/docs/air/assets/air-light-shader.js",
+          "http://127.0.0.1:50402/favicon.ico"
+        ],
+        "stylesheet": ["http://127.0.0.1:50402/apps/site/src/styles/air.css"],
+        "errors": []
+      }
+    ]
+  },
+  "screenshots": ["air-03-motion-dialog-desktop-light.png", "air-03-motion-dialog-phone-dark.jpg"],
+  "limits": [
+    "Only shared reference motion is approved by this code review.",
+    "Actual popovers/tooltips, production adapters, physical-device gestures and Safari/Firefox remain separate gates.",
+    "Dialog controls measured here are buttons and text/numeric fields; compact numeric fields follow the documented 32px fine-pointer exception.",
+    "Animation inspector tests pause or slow real DOM animations to inspect exact keyframes, then cancel them through UI controls."
+  ]
+}

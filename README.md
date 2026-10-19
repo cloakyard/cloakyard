@@ -2,7 +2,7 @@
 
 # Cloakyard
 
-  <p><strong>Privacy-first, open source tools—made useful, then made beautiful.</strong></p>
+  <p><strong>Your work. A little lighter. Private by nature. Open by choice.</strong></p>
   <p>The home of CloakPDF, CloakResume, CloakIMG, CloakDrop, and the experiments that do not fit in a productivity drawer.</p>
 
   <p><a href="https://cloakyard.com/">cloakyard.com</a></p>
@@ -17,7 +17,7 @@
 </div>
 
 <p align="center">
-  <img src="public/og.png" alt="Cloakyard — useful tools, your data stays yours" width="900">
+  <img src="public/og.png" alt="Cloakyard — Your work. A little lighter." width="900">
 </p>
 
 ---
@@ -49,6 +49,20 @@ The site makes no API calls, has no account layer, and ships no analytics.
 
 ---
 
+## Air design system
+
+This repository owns the [Air family specification](design/air/README.md) for all
+Cloakyard web apps and landing pages. The [contract](design/air/contract.md),
+[component review matrix](design/air/COMPONENTS.md), tokens and interactive
+reference live together in `design/air/`. Product repositories derive pinned,
+portable copies; shared refinements return here first.
+
+Air 1.0.0 is locked for implementation following the final review on 2026-10-13.
+The homepage is the first runtime adopter; the other products follow
+[the phased refresh](UX_REFRESH_TODO.md) and their own feature and device gates.
+
+---
+
 ## ⚙️ Tech stack
 
 | Area      | Technology                                                              |
@@ -56,7 +70,7 @@ The site makes no API calls, has no account layer, and ships no analytics.
 | UI        | [React 19](https://react.dev/) + TypeScript 7                           |
 | Toolchain | [Vite+](https://viteplus.dev/) — dev, checks, build, package management |
 | Icons     | [Lucide](https://lucide.dev/)                                           |
-| Styling   | Hand-authored responsive CSS with self-hosted Archivo + JetBrains Mono  |
+| Styling   | Canonical Air tokens and component CSS, native system typography        |
 | Hosting   | Cloudflare Workers static assets                                        |
 
 The production site is a small client-rendered React app. There is no router, backend, database, state library, or runtime data fetch because the homepage does not need them.
@@ -90,18 +104,18 @@ vp dev
 ```text
 cloakyard/
 ├── public/
-│   ├── fonts/                 # Self-hosted Archivo + JetBrains Mono
 │   ├── cloakyard-mark.svg     # Primary brand mark and favicon
 │   ├── og.png                 # 1200×630 social preview
 │   ├── robots.txt
 │   └── sitemap.xml
 ├── src/
-│   ├── components/            # Header, hero, tool cards, experiment, principles, footer
+│   ├── components/            # Header, hero, open product entries, exploration links, principles, footer
 │   ├── data/tools.ts          # Tool registry and destinations
 │   ├── App.tsx                # One-page composition
-│   ├── index.css              # Design tokens and responsive system
+│   ├── styles/air.css         # Generated, pinned family foundation
+│   ├── index.css              # Homepage composition and responsive layout
 │   └── main.tsx               # React entry
-├── index.html                 # Metadata, font preloads, and structured data
+├── index.html                 # Metadata, no-JS directory, and structured data
 ├── vite.config.ts             # Vite+ / React configuration
 └── wrangler.jsonc             # Cloudflare Workers static-assets configuration
 ```
@@ -134,3 +148,12 @@ Contributions are welcome. Keep the homepage focused: it is a directory and stat
 Licensed under the [MIT License](LICENSE).
 
 <p align="center">Built with care by <a href="https://github.com/sumitsahoo">Sumit Sahoo</a></p>
+
+### Air light
+
+The homepage hero includes the shared, locally bundled Shaders light. It arrives
+once and responds to the mouse, then rests. Reduced motion, constrained devices
+and unavailable graphics use the still artwork. Code loads only when the effect
+is visible; hidden/offscreen effects release their device. The design reference
+and homepage share `design/air/light-runtime.mjs`. Runtime checks: `node --test
+scripts/test-air-light-runtime.mjs`; build budgets and licenses are enforced by Vite.

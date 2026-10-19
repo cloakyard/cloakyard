@@ -1,0 +1,1336 @@
+{
+  "date": "2026-10-11",
+  "scope": "Air refinement 03 opt-in Shaders light study; no production migration",
+  "environment": "Codex in-app Chromium on this Mac. Viewport, touch and preference emulation; not physical device coverage.",
+  "viewportMatrix": [
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Light",
+      "canvas": {
+        "height": 300,
+        "width": 1977
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 110 submitted frames · 0.45 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "110",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 876.953125,
+              "height": 40,
+              "left": 1131.9375,
+              "right": 1254.8671875,
+              "top": 836.953125,
+              "width": 122.9296875,
+              "x": 1131.9375,
+              "y": 836.953125
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 876.953125,
+              "height": 40,
+              "left": 1262.8671875,
+              "right": 1376,
+              "top": 836.953125,
+              "width": 113.1328125,
+              "x": 1262.8671875,
+              "y": 836.953125
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 549.859375,
+          "height": 200,
+          "left": 61,
+          "right": 1379,
+          "top": 349.859375,
+          "width": 1318,
+          "x": 61,
+          "y": 349.859375
+        },
+        "hero": {
+          "bottom": 549.859375,
+          "height": 615.859375,
+          "left": 61,
+          "right": 1379,
+          "top": -66,
+          "width": 1318,
+          "x": 61,
+          "y": -66
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "touch": false,
+      "theme": "Dark",
+      "canvas": {
+        "height": 300,
+        "width": 1977
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 130 submitted frames · 0.45 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "130",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 876.953125,
+              "height": 40,
+              "left": 1131.9375,
+              "right": 1254.8671875,
+              "top": 836.953125,
+              "width": 122.9296875,
+              "x": 1131.9375,
+              "y": 836.953125
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 876.953125,
+              "height": 40,
+              "left": 1262.8671875,
+              "right": 1376,
+              "top": 836.953125,
+              "width": 113.1328125,
+              "x": 1262.8671875,
+              "y": 836.953125
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 549.859375,
+          "height": 200,
+          "left": 61,
+          "right": 1379,
+          "top": 349.859375,
+          "width": 1318,
+          "x": 61,
+          "y": 349.859375
+        },
+        "hero": {
+          "bottom": 549.859375,
+          "height": 615.859375,
+          "left": 61,
+          "right": 1379,
+          "top": -66,
+          "width": 1318,
+          "x": 61,
+          "y": -66
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Light",
+      "canvas": {
+        "height": 200,
+        "width": 1230
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 151 submitted frames · 0.44 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "151",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 827.21875,
+              "height": 40,
+              "left": 1007.9375,
+              "right": 1130.8671875,
+              "top": 787.21875,
+              "width": 122.9296875,
+              "x": 1007.9375,
+              "y": 787.21875
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 827.21875,
+              "height": 40,
+              "left": 1138.8671875,
+              "right": 1252,
+              "top": 787.21875,
+              "width": 113.1328125,
+              "x": 1138.8671875,
+              "y": 787.21875
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 500.125,
+          "height": 200,
+          "left": 25,
+          "right": 1255,
+          "top": 300.125,
+          "width": 1230,
+          "x": 25,
+          "y": 300.125
+        },
+        "hero": {
+          "bottom": 500.125,
+          "height": 607.125,
+          "left": 25,
+          "right": 1255,
+          "top": -107,
+          "width": 1230,
+          "x": 25,
+          "y": -107
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "touch": false,
+      "theme": "Dark",
+      "canvas": {
+        "height": 200,
+        "width": 1230
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 171 submitted frames · 0.44 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "171",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 827.21875,
+              "height": 40,
+              "left": 1007.9375,
+              "right": 1130.8671875,
+              "top": 787.21875,
+              "width": 122.9296875,
+              "x": 1007.9375,
+              "y": 787.21875
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 827.21875,
+              "height": 40,
+              "left": 1138.8671875,
+              "right": 1252,
+              "top": 787.21875,
+              "width": 113.1328125,
+              "x": 1138.8671875,
+              "y": 787.21875
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 500.125,
+          "height": 200,
+          "left": 25,
+          "right": 1255,
+          "top": 300.125,
+          "width": 1230,
+          "x": 25,
+          "y": 300.125
+        },
+        "hero": {
+          "bottom": 500.125,
+          "height": 607.125,
+          "left": 25,
+          "right": 1255,
+          "top": -107,
+          "width": 1230,
+          "x": 25,
+          "y": -107
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Light",
+      "canvas": {
+        "height": 200,
+        "width": 974
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 192 submitted frames · 0.43 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "192",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 936.515625,
+              "height": 44,
+              "left": 751.9375,
+              "right": 874.8671875,
+              "top": 892.515625,
+              "width": 122.9296875,
+              "x": 751.9375,
+              "y": 892.515625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 936.515625,
+              "height": 44,
+              "left": 882.8671875,
+              "right": 996,
+              "top": 892.515625,
+              "width": 113.1328125,
+              "x": 882.8671875,
+              "y": 892.515625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 484.125,
+          "height": 200,
+          "left": 25,
+          "right": 999,
+          "top": 284.125,
+          "width": 974,
+          "x": 25,
+          "y": 284.125
+        },
+        "hero": {
+          "bottom": 484.125,
+          "height": 566.125,
+          "left": 25,
+          "right": 999,
+          "top": -82,
+          "width": 974,
+          "x": 25,
+          "y": -82
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "theme": "Dark",
+      "canvas": {
+        "height": 200,
+        "width": 974
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 212 submitted frames · 0.43 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "212",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 936.515625,
+              "height": 44,
+              "left": 751.9375,
+              "right": 874.8671875,
+              "top": 892.515625,
+              "width": 122.9296875,
+              "x": 751.9375,
+              "y": 892.515625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 936.515625,
+              "height": 44,
+              "left": 882.8671875,
+              "right": 996,
+              "top": 892.515625,
+              "width": 113.1328125,
+              "x": 882.8671875,
+              "y": 892.515625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 484.125,
+          "height": 200,
+          "left": 25,
+          "right": 999,
+          "top": 284.125,
+          "width": 974,
+          "x": 25,
+          "y": 284.125
+        },
+        "hero": {
+          "bottom": 484.125,
+          "height": 566.125,
+          "left": 25,
+          "right": 999,
+          "top": -82,
+          "width": 974,
+          "x": 25,
+          "y": -82
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Light",
+      "canvas": {
+        "height": 200,
+        "width": 718
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 232 submitted frames · 0.42 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "232",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 1064.328125,
+              "height": 44,
+              "left": 495.9375,
+              "right": 618.8671875,
+              "top": 1020.328125,
+              "width": 122.9296875,
+              "x": 495.9375,
+              "y": 1020.328125
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 1064.328125,
+              "height": 44,
+              "left": 626.8671875,
+              "right": 740,
+              "top": 1020.328125,
+              "width": 113.1328125,
+              "x": 626.8671875,
+              "y": 1020.328125
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 611.9375,
+          "height": 200,
+          "left": 25,
+          "right": 743,
+          "top": 411.9375,
+          "width": 718,
+          "x": 25,
+          "y": 411.9375
+        },
+        "hero": {
+          "bottom": 611.9375,
+          "height": 537.9375,
+          "left": 25,
+          "right": 743,
+          "top": 74,
+          "width": 718,
+          "x": 25,
+          "y": 74
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "touch": true,
+      "theme": "Dark",
+      "canvas": {
+        "height": 200,
+        "width": 718
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 252 submitted frames · 0.42 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "252",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 1064.328125,
+              "height": 44,
+              "left": 495.9375,
+              "right": 618.8671875,
+              "top": 1020.328125,
+              "width": 122.9296875,
+              "x": 495.9375,
+              "y": 1020.328125
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 1064.328125,
+              "height": 44,
+              "left": 626.8671875,
+              "right": 740,
+              "top": 1020.328125,
+              "width": 113.1328125,
+              "x": 626.8671875,
+              "y": 1020.328125
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 611.9375,
+          "height": 200,
+          "left": 25,
+          "right": 743,
+          "top": 411.9375,
+          "width": 718,
+          "x": 25,
+          "y": 411.9375
+        },
+        "hero": {
+          "bottom": 611.9375,
+          "height": 537.9375,
+          "left": 25,
+          "right": 743,
+          "top": 74,
+          "width": 718,
+          "x": 25,
+          "y": 74
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Light",
+      "canvas": {
+        "height": 200,
+        "width": 364
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 273 submitted frames · 0.42 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "273",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 1122.390625,
+              "height": 44,
+              "left": 16,
+              "right": 138.9296875,
+              "top": 1078.390625,
+              "width": 122.9296875,
+              "x": 16,
+              "y": 1078.390625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 1122.390625,
+              "height": 44,
+              "left": 146.9296875,
+              "right": 260.0625,
+              "top": 1078.390625,
+              "width": 113.1328125,
+              "x": 146.9296875,
+              "y": 1078.390625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 522.203125,
+          "height": 200,
+          "left": 13,
+          "right": 377,
+          "top": 322.203125,
+          "width": 364,
+          "x": 13,
+          "y": 322.203125
+        },
+        "hero": {
+          "bottom": 522.203125,
+          "height": 535.203125,
+          "left": 13,
+          "right": 377,
+          "top": -13,
+          "width": 364,
+          "x": 13,
+          "y": -13
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "touch": true,
+      "theme": "Dark",
+      "canvas": {
+        "height": 200,
+        "width": 364
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 293 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "293",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 1122.390625,
+              "height": 44,
+              "left": 16,
+              "right": 138.9296875,
+              "top": 1078.390625,
+              "width": 122.9296875,
+              "x": 16,
+              "y": 1078.390625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 1122.390625,
+              "height": 44,
+              "left": 146.9296875,
+              "right": 260.0625,
+              "top": 1078.390625,
+              "width": 113.1328125,
+              "x": 146.9296875,
+              "y": 1078.390625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 522.203125,
+          "height": 200,
+          "left": 13,
+          "right": 377,
+          "top": 322.203125,
+          "width": 364,
+          "x": 13,
+          "y": 322.203125
+        },
+        "hero": {
+          "bottom": 522.203125,
+          "height": 535.203125,
+          "left": 13,
+          "right": 377,
+          "top": -13,
+          "width": 364,
+          "x": 13,
+          "y": -13
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Light",
+      "canvas": {
+        "height": 200,
+        "width": 294
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 313 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "313",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 1004.890625,
+              "height": 44,
+              "left": 16,
+              "right": 138.9296875,
+              "top": 960.890625,
+              "width": 122.9296875,
+              "x": 16,
+              "y": 960.890625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 1004.890625,
+              "height": 44,
+              "left": 146.9296875,
+              "right": 260.0625,
+              "top": 960.890625,
+              "width": 113.1328125,
+              "x": 146.9296875,
+              "y": 960.890625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 383.90625,
+          "height": 200,
+          "left": 13,
+          "right": 307,
+          "top": 183.90625,
+          "width": 294,
+          "x": 13,
+          "y": 183.90625
+        },
+        "hero": {
+          "bottom": 383.90625,
+          "height": 613.40625,
+          "left": 13,
+          "right": 307,
+          "top": -229.5,
+          "width": 294,
+          "x": 13,
+          "y": -229.5
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "touch": true,
+      "theme": "Dark",
+      "canvas": {
+        "height": 200,
+        "width": 294
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 332 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "332",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 1004.890625,
+              "height": 44,
+              "left": 16,
+              "right": 138.9296875,
+              "top": 960.890625,
+              "width": 122.9296875,
+              "x": 16,
+              "y": 960.890625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 1004.890625,
+              "height": 44,
+              "left": 146.9296875,
+              "right": 260.0625,
+              "top": 960.890625,
+              "width": 113.1328125,
+              "x": 146.9296875,
+              "y": 960.890625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 383.90625,
+          "height": 200,
+          "left": 13,
+          "right": 307,
+          "top": 183.90625,
+          "width": 294,
+          "x": 13,
+          "y": 183.90625
+        },
+        "hero": {
+          "bottom": 383.90625,
+          "height": 613.40625,
+          "left": 13,
+          "right": 307,
+          "top": -229.5,
+          "width": 294,
+          "x": 13,
+          "y": -229.5
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Light",
+      "canvas": {
+        "height": 200,
+        "width": 794
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 352 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "352",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 747.625,
+              "height": 44,
+              "left": 571.9375,
+              "right": 694.8671875,
+              "top": 703.625,
+              "width": 122.9296875,
+              "x": 571.9375,
+              "y": 703.625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 747.625,
+              "height": 44,
+              "left": 702.8671875,
+              "right": 816,
+              "top": 703.625,
+              "width": 113.1328125,
+              "x": 702.8671875,
+              "y": 703.625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 295.234375,
+          "height": 200,
+          "left": 25,
+          "right": 819,
+          "top": 95.234375,
+          "width": 794,
+          "x": 25,
+          "y": 95.234375
+        },
+        "hero": {
+          "bottom": 295.234375,
+          "height": 545.734375,
+          "left": 25,
+          "right": 819,
+          "top": -250.5,
+          "width": 794,
+          "x": 25,
+          "y": -250.5
+        }
+      },
+      "pass": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "touch": true,
+      "theme": "Dark",
+      "canvas": {
+        "height": 200,
+        "width": 794
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 371 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "371",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "geometry": {
+        "controls": [
+          {
+            "rect": {
+              "bottom": 747.625,
+              "height": 44,
+              "left": 571.9375,
+              "right": 694.8671875,
+              "top": 703.625,
+              "width": 122.9296875,
+              "x": 571.9375,
+              "y": 703.625
+            },
+            "text": "Replay arrival"
+          },
+          {
+            "rect": {
+              "bottom": 747.625,
+              "height": 44,
+              "left": 702.8671875,
+              "right": 816,
+              "top": 703.625,
+              "width": 113.1328125,
+              "x": 702.8671875,
+              "y": 703.625
+            },
+            "text": "Still artwork"
+          }
+        ],
+        "field": {
+          "bottom": 295.234375,
+          "height": 200,
+          "left": 25,
+          "right": 819,
+          "top": 95.234375,
+          "width": 794,
+          "x": 25,
+          "y": 95.234375
+        },
+        "hero": {
+          "bottom": 295.234375,
+          "height": 545.734375,
+          "left": 25,
+          "right": 819,
+          "top": -250.5,
+          "width": 794,
+          "x": 25,
+          "y": -250.5
+        }
+      },
+      "pass": true
+    }
+  ],
+  "lifecycle": [
+    {
+      "test": "touch-idle-start",
+      "canvas": {
+        "height": 200,
+        "width": 364
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 72 submitted frames · 0.45 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "72",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "coarse-pointer-does-not-wake",
+      "canvas": {
+        "height": 200,
+        "width": 364
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 72 submitted frames · 0.45 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "72",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "interrupted-replay-one-animation",
+      "first": [
+        {
+          "opacity": "0",
+          "state": "running"
+        }
+      ],
+      "replayed": [
+        {
+          "opacity": "0.970493",
+          "state": "running"
+        }
+      ],
+      "canvas": {
+        "height": 300,
+        "width": 1977
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 89 submitted frames · 0.46 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "89",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "keyboard-no-animation",
+      "animations": 0,
+      "canvas": {
+        "height": 300,
+        "width": 1977
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 90 submitted frames · 0.47 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "90",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "final-idle-start",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 392 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "392",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "final-offscreen-released",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 392 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "392",
+        "lightState": "offscreen"
+      }
+    },
+    {
+      "test": "final-return-reinitialized",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 393 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "393",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "final-still-selected",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 393 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "393",
+        "lightState": "still"
+      }
+    },
+    {
+      "test": "final-keyboard-return",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 395 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "395",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "final-idle-no-new-frames",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 395 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "395",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "rapid-still-toggle-five-cycles-final",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 73 ms · 23 submitted frames · 0.53 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "72.8",
+        "lightFrames": "23",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    },
+    {
+      "test": "final-cold-reduced",
+      "canvas": {
+        "height": 150,
+        "width": 300
+      },
+      "metrics": "The renderer loads only when the artwork is visible. No remote assets or telemetry.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "0.0",
+        "lightFrames": "0",
+        "lightState": "reduced"
+      }
+    },
+    {
+      "test": "final-reenable-live",
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 47 ms · 18 submitted frames · 0.47 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "47.3",
+        "lightFrames": "18",
+        "lightReady": "true",
+        "lightState": "idle"
+      }
+    }
+  ],
+  "simulatedFallbacks": [
+    {
+      "test": "WebGPU absent",
+      "simulated": true,
+      "expected": "unsupported",
+      "pass": true,
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 395 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "395",
+        "lightState": "unsupported"
+      }
+    },
+    {
+      "test": "Low memory",
+      "simulated": true,
+      "expected": "constrained",
+      "pass": true,
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 395 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "395",
+        "lightState": "constrained"
+      }
+    },
+    {
+      "test": "Low core count",
+      "simulated": true,
+      "expected": "constrained",
+      "pass": true,
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 395 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "395",
+        "lightState": "constrained"
+      }
+    },
+    {
+      "test": "Save data",
+      "simulated": true,
+      "expected": "constrained",
+      "pass": true,
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 395 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "395",
+        "lightState": "constrained"
+      }
+    },
+    {
+      "test": "Hidden tab",
+      "simulated": true,
+      "expected": "hidden",
+      "pass": true,
+      "canvas": {
+        "height": 200,
+        "width": 1318
+      },
+      "metrics": "Local Shaders 4.0.4 · first draw 39 ms · 395 submitted frames · 0.41 ms average CPU submission. GPU time and battery cost are separate checks.",
+      "overflow": false,
+      "state": {
+        "lightFirstDraw": "39.0",
+        "lightFrames": "395",
+        "lightState": "hidden"
+      }
+    }
+  ],
+  "networkAndRecovery": [
+    {
+      "test": "adapter-unavailable-simulated",
+      "canvasVisible": "hidden",
+      "replayDisabled": false,
+      "state": {
+        "lightFailure": "no-adapter",
+        "lightFirstDraw": "92.0",
+        "lightFrames": "21",
+        "lightState": "failed"
+      },
+      "status": "Still artwork · the light couldn’t start. You can retry."
+    },
+    {
+      "test": "retry-recovers-real-WebGPU",
+      "canvasVisible": "visible",
+      "replayDisabled": false,
+      "state": {
+        "lightFailure": "no-adapter",
+        "lightFirstDraw": "92.0",
+        "lightFrames": "41",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "status": "Move across the light to explore."
+    },
+    {
+      "test": "cold-reduced-no-renderer-download",
+      "canvasVisible": "hidden",
+      "replayDisabled": true,
+      "state": {
+        "lightFirstDraw": "0.0",
+        "lightFrames": "0",
+        "lightState": "reduced"
+      },
+      "status": "Still artwork · reduced motion.",
+      "requests": [
+        "http://127.0.0.1:8120/docs/air/components.html",
+        "http://127.0.0.1:8120/src/styles/air.css",
+        "http://127.0.0.1:8120/docs/air/light-controller.mjs"
+      ]
+    },
+    {
+      "test": "reenabled-local-only-download",
+      "canvasVisible": "visible",
+      "replayDisabled": false,
+      "state": {
+        "lightFirstDraw": "45.5",
+        "lightFrames": "13",
+        "lightReady": "true",
+        "lightState": "idle"
+      },
+      "status": "Move across the light to explore.",
+      "requests": ["http://127.0.0.1:8120/docs/air/assets/air-light-shader.js"]
+    }
+  ],
+  "screenshots": [
+    "air-03-light-desktop-light.jpg",
+    "air-03-light-desktop-dark.jpg",
+    "air-03-light-tablet-light.jpg",
+    "air-03-light-phone-dark.jpg"
+  ],
+  "limits": [
+    "CPU submission timings are not GPU timings.",
+    "Cold runs were local/reloaded and were not a throttled network benchmark.",
+    "Device memory, core count, Save-Data, graphics absence and hidden visibility were simulated.",
+    "Physical device battery/thermal, Safari/Firefox and user visual sign-off remain pending."
+  ],
+  "result": "14/14 layout/theme cases passed; targeted lifecycle/reduced-motion/recovery checks passed; no observed browser console errors."
+}

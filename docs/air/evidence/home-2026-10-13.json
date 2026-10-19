@@ -1,0 +1,857 @@
+{
+  "date": "2026-10-13",
+  "finalReferenceGlance": [
+    {
+      "scrollWidth": 320,
+      "theme": "light",
+      "width": 320
+    },
+    {
+      "scrollWidth": 320,
+      "theme": "dark",
+      "width": 320
+    },
+    {
+      "scrollWidth": 390,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "scrollWidth": 390,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "scrollWidth": 768,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "scrollWidth": 768,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "scrollWidth": 1440,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "scrollWidth": 1440,
+      "theme": "dark",
+      "width": 1440
+    }
+  ],
+  "layouts": [
+    {
+      "columns": "288px",
+      "fontSize": 16,
+      "height": 568,
+      "overflow": [],
+      "scrollWidth": 320,
+      "theme": "light",
+      "width": 320
+    },
+    {
+      "columns": "288px",
+      "fontSize": 32,
+      "height": 568,
+      "overflow": [],
+      "scrollWidth": 320,
+      "theme": "light",
+      "width": 320
+    },
+    {
+      "columns": "288px",
+      "fontSize": 16,
+      "height": 568,
+      "overflow": [],
+      "scrollWidth": 320,
+      "theme": "dark",
+      "width": 320
+    },
+    {
+      "columns": "288px",
+      "fontSize": 32,
+      "height": 568,
+      "overflow": [],
+      "scrollWidth": 320,
+      "theme": "dark",
+      "width": 320
+    },
+    {
+      "columns": "343px",
+      "fontSize": 16,
+      "height": 812,
+      "overflow": [],
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "columns": "343px",
+      "fontSize": 32,
+      "height": 812,
+      "overflow": [],
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 375
+    },
+    {
+      "columns": "343px",
+      "fontSize": 16,
+      "height": 812,
+      "overflow": [],
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "columns": "343px",
+      "fontSize": 32,
+      "height": 812,
+      "overflow": [],
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 375
+    },
+    {
+      "columns": "358px",
+      "fontSize": 16,
+      "height": 844,
+      "overflow": [],
+      "scrollWidth": 390,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "columns": "358px",
+      "fontSize": 32,
+      "height": 844,
+      "overflow": [],
+      "scrollWidth": 390,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "columns": "358px",
+      "fontSize": 16,
+      "height": 844,
+      "overflow": [],
+      "scrollWidth": 390,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "columns": "358px",
+      "fontSize": 32,
+      "height": 844,
+      "overflow": [],
+      "scrollWidth": 390,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "columns": "398px",
+      "fontSize": 16,
+      "height": 932,
+      "overflow": [],
+      "scrollWidth": 430,
+      "theme": "light",
+      "width": 430
+    },
+    {
+      "columns": "398px",
+      "fontSize": 32,
+      "height": 932,
+      "overflow": [],
+      "scrollWidth": 430,
+      "theme": "light",
+      "width": 430
+    },
+    {
+      "columns": "398px",
+      "fontSize": 16,
+      "height": 932,
+      "overflow": [],
+      "scrollWidth": 430,
+      "theme": "dark",
+      "width": 430
+    },
+    {
+      "columns": "398px",
+      "fontSize": 32,
+      "height": 932,
+      "overflow": [],
+      "scrollWidth": 430,
+      "theme": "dark",
+      "width": 430
+    },
+    {
+      "columns": "398px 398px",
+      "fontSize": 16,
+      "height": 390,
+      "overflow": [],
+      "scrollWidth": 844,
+      "theme": "light",
+      "width": 844
+    },
+    {
+      "columns": "812px",
+      "fontSize": 32,
+      "height": 390,
+      "overflow": [],
+      "scrollWidth": 844,
+      "theme": "light",
+      "width": 844
+    },
+    {
+      "columns": "398px 398px",
+      "fontSize": 16,
+      "height": 390,
+      "overflow": [],
+      "scrollWidth": 844,
+      "theme": "dark",
+      "width": 844
+    },
+    {
+      "columns": "812px",
+      "fontSize": 32,
+      "height": 390,
+      "overflow": [],
+      "scrollWidth": 844,
+      "theme": "dark",
+      "width": 844
+    },
+    {
+      "columns": "360px 360px",
+      "fontSize": 16,
+      "height": 1024,
+      "overflow": [],
+      "scrollWidth": 768,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "columns": "736px",
+      "fontSize": 32,
+      "height": 1024,
+      "overflow": [],
+      "scrollWidth": 768,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "columns": "360px 360px",
+      "fontSize": 16,
+      "height": 1024,
+      "overflow": [],
+      "scrollWidth": 768,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "columns": "736px",
+      "fontSize": 32,
+      "height": 1024,
+      "overflow": [],
+      "scrollWidth": 768,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "columns": "240px 240px 240px 240px",
+      "fontSize": 16,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1024,
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "columns": "992px",
+      "fontSize": 32,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1024,
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "columns": "240px 240px 240px 240px",
+      "fontSize": 16,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1024,
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "columns": "992px",
+      "fontSize": 32,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1024,
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 720,
+      "overflow": [],
+      "scrollWidth": 1280,
+      "theme": "light",
+      "width": 1280
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 720,
+      "overflow": [],
+      "scrollWidth": 1280,
+      "theme": "light",
+      "width": 1280
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 720,
+      "overflow": [],
+      "scrollWidth": 1280,
+      "theme": "dark",
+      "width": 1280
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 720,
+      "overflow": [],
+      "scrollWidth": 1280,
+      "theme": "dark",
+      "width": 1280
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1366,
+      "theme": "light",
+      "width": 1366
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1366,
+      "theme": "light",
+      "width": 1366
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1366,
+      "theme": "dark",
+      "width": 1366
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 768,
+      "overflow": [],
+      "scrollWidth": 1366,
+      "theme": "dark",
+      "width": 1366
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1440,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1440,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1440,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1440,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 1080,
+      "overflow": [],
+      "scrollWidth": 1920,
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 1080,
+      "overflow": [],
+      "scrollWidth": 1920,
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "columns": "300px 300px 300px 300px",
+      "fontSize": 16,
+      "height": 1080,
+      "overflow": [],
+      "scrollWidth": 1920,
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "columns": "608px 608px",
+      "fontSize": 32,
+      "height": 1080,
+      "overflow": [],
+      "scrollWidth": 1920,
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "columns": "607px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 639,
+      "theme": "light",
+      "width": 639
+    },
+    {
+      "columns": "607px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 639,
+      "theme": "light",
+      "width": 639
+    },
+    {
+      "columns": "607px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 639,
+      "theme": "dark",
+      "width": 639
+    },
+    {
+      "columns": "607px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 639,
+      "theme": "dark",
+      "width": 639
+    },
+    {
+      "columns": "296px 296px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 640,
+      "theme": "light",
+      "width": 640
+    },
+    {
+      "columns": "608px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 640,
+      "theme": "light",
+      "width": 640
+    },
+    {
+      "columns": "296px 296px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 640,
+      "theme": "dark",
+      "width": 640
+    },
+    {
+      "columns": "608px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 640,
+      "theme": "dark",
+      "width": 640
+    },
+    {
+      "columns": "296.5px 296.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 641,
+      "theme": "light",
+      "width": 641
+    },
+    {
+      "columns": "609px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 641,
+      "theme": "light",
+      "width": 641
+    },
+    {
+      "columns": "296.5px 296.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 641,
+      "theme": "dark",
+      "width": 641
+    },
+    {
+      "columns": "609px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 641,
+      "theme": "dark",
+      "width": 641
+    },
+    {
+      "columns": "327.5px 327.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 703,
+      "theme": "light",
+      "width": 703
+    },
+    {
+      "columns": "671px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 703,
+      "theme": "light",
+      "width": 703
+    },
+    {
+      "columns": "327.5px 327.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 703,
+      "theme": "dark",
+      "width": 703
+    },
+    {
+      "columns": "671px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 703,
+      "theme": "dark",
+      "width": 703
+    },
+    {
+      "columns": "328px 328px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 704,
+      "theme": "light",
+      "width": 704
+    },
+    {
+      "columns": "672px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 704,
+      "theme": "light",
+      "width": 704
+    },
+    {
+      "columns": "328px 328px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 704,
+      "theme": "dark",
+      "width": 704
+    },
+    {
+      "columns": "672px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 704,
+      "theme": "dark",
+      "width": 704
+    },
+    {
+      "columns": "328.5px 328.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 705,
+      "theme": "light",
+      "width": 705
+    },
+    {
+      "columns": "673px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 705,
+      "theme": "light",
+      "width": 705
+    },
+    {
+      "columns": "328.5px 328.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 705,
+      "theme": "dark",
+      "width": 705
+    },
+    {
+      "columns": "673px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 705,
+      "theme": "dark",
+      "width": 705
+    },
+    {
+      "columns": "487.5px 487.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1023,
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "columns": "991px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1023,
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "columns": "487.5px 487.5px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1023,
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "columns": "991px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1023,
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "columns": "240.25px 240.25px 240.25px 240.25px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1025,
+      "theme": "light",
+      "width": 1025
+    },
+    {
+      "columns": "993px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1025,
+      "theme": "light",
+      "width": 1025
+    },
+    {
+      "columns": "240.25px 240.25px 240.25px 240.25px",
+      "fontSize": 16,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1025,
+      "theme": "dark",
+      "width": 1025
+    },
+    {
+      "columns": "993px",
+      "fontSize": 32,
+      "height": 900,
+      "overflow": [],
+      "scrollWidth": 1025,
+      "theme": "dark",
+      "width": 1025
+    }
+  ],
+  "interactions": [
+    {
+      "pass": true,
+      "test": "keyboard menu open"
+    },
+    {
+      "pass": true,
+      "test": "Escape closes and restores focus"
+    },
+    {
+      "pass": true,
+      "test": "mobile tools navigation",
+      "y": 23.875
+    },
+    {
+      "pass": true,
+      "test": "principles navigation"
+    },
+    {
+      "pass": true,
+      "test": "back hash focus"
+    },
+    {
+      "pass": true,
+      "test": "forward hash focus"
+    },
+    {
+      "focus": "principles",
+      "pass": true,
+      "test": "initial fragment #%"
+    },
+    {
+      "focus": "principles",
+      "pass": true,
+      "test": "initial fragment #[broken"
+    },
+    {
+      "focus": "tools",
+      "pass": true,
+      "test": "initial fragment #%74ools"
+    },
+    {
+      "pass": true,
+      "test": "reduced motion"
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "pass": true,
+      "test": "forced colors"
+    },
+    {
+      "focus": "",
+      "pass": true,
+      "test": "reload fragment #%"
+    },
+    {
+      "focus": "",
+      "pass": true,
+      "test": "reload fragment #[broken"
+    },
+    {
+      "focus": "tools",
+      "pass": true,
+      "test": "reload fragment #%74ools"
+    },
+    {
+      "pass": true,
+      "test": "production coarse targets"
+    },
+    {
+      "kerrPreviewCount": 0,
+      "pass": true,
+      "test": "production curiosity keyboard link"
+    },
+    {
+      "pass": true,
+      "test": "skip link"
+    },
+    {
+      "test": "no JavaScript directory",
+      "pass": true,
+      "observed": "Six native links including four apps, KERR and Source, verified in accessibility tree"
+    },
+    {
+      "pass": true,
+      "test": "new-tab Source retains focus at menu trigger"
+    },
+    {
+      "pass": true,
+      "test": "final header hash handoff"
+    }
+  ],
+  "productionRequests": [
+    "http://127.0.0.1:8131/assets/index-CnKpfcEV.css",
+    "http://127.0.0.1:8131/assets/index-BaiC5jUB.js",
+    "http://127.0.0.1:8131/cloakyard-mark.svg"
+  ],
+  "remaining": [
+    "Physical touch hardware",
+    "Screen reader speech/navigation",
+    "Live shader performance gate"
+  ],
+  "engines": {
+    "Chromium": "76 layout checks, input/preferences and production checks",
+    "Firefox": "157.0.1 native desktop, 200% page zoom and anchor focus",
+    "Safari": "27.0.1 native desktop, 390x844 disclosure/Escape/anchor focus and 768x844 product rows"
+  },
+  "contrast": [
+    {
+      "appearance": "light",
+      "count": 61,
+      "failures": [],
+      "min": 5.188556616528007
+    },
+    {
+      "appearance": "dark",
+      "count": 61,
+      "failures": [],
+      "min": 8.48220445336045
+    }
+  ],
+  "motion": {
+    "duration": 900,
+    "iterations": 1,
+    "state": "finished"
+  }
+}

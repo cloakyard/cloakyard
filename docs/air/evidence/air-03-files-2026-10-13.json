@@ -1,0 +1,1657 @@
+{
+  "journeys": [
+    {
+      "name": "browse and real partial read",
+      "result": {
+        "bytes": "27",
+        "focus": "air-file-read",
+        "inputReset": true,
+        "name": "air-fixture.txt",
+        "status": "Paused halfway for this study. Continue reading or cancel.",
+        "total": "53"
+      }
+    },
+    {
+      "name": "cancel returns focus and retains file/partial text",
+      "result": {
+        "focus": "air-file-read",
+        "name": "air-fixture.txt",
+        "preview": "Exact UTF-8 preview. Café ",
+        "status": "Reading cancelled. Your file and any partial preview are still here."
+      }
+    },
+    {
+      "name": "retry completes exact UTF-8",
+      "result": {
+        "focus": "air-file-read",
+        "preview": "Exact UTF-8 preview. Café 日本語 🌿\nNext line.\n",
+        "status": "Text preview ready. The original file is unchanged."
+      }
+    },
+    {
+      "name": "same file can be selected again",
+      "result": "File selected. Preview it when you’re ready."
+    },
+    {
+      "name": "simulated interruption",
+      "result": "Study interruption: reading stopped halfway. Turn off the interruption and try again. Your file is still selected."
+    },
+    {
+      "name": "interruption retry",
+      "result": "Text preview ready. The original file is unchanged."
+    },
+    {
+      "name": "unknown total has phase/bytes and no percentage",
+      "result": {
+        "barHidden": true,
+        "count": "53 bytes read · Total unavailable",
+        "max": null,
+        "now": null
+      }
+    },
+    {
+      "name": "synthetic drag/drop acceptance, nested drag and outside protection",
+      "result": {
+        "accepted": "dropped.json",
+        "nested": true,
+        "outside": true,
+        "reset": true,
+        "retained": "dropped.json"
+      }
+    },
+    {
+      "name": "wrong type and multi-file drop retain previous selection",
+      "result": [
+        {
+          "name": "dropped.json",
+          "status": "Choose a .txt or .json file for this study. Your current selection is unchanged."
+        },
+        {
+          "name": "dropped.json",
+          "status": "Choose one file at a time. Your current selection is unchanged."
+        },
+        {
+          "name": "dropped.json",
+          "status": "This study accepts files up to 4 MiB. Your current selection is unchanged."
+        }
+      ]
+    },
+    {
+      "name": "synthetic clipboard paste and denied access",
+      "result": {
+        "denied": "Clipboard access is unavailable. Paste into this area with your keyboard, or browse for a file. Your selection is unchanged.",
+        "pasted": {
+          "name": "pasted-text.txt",
+          "prevented": true
+        },
+        "retained": "pasted-text.txt"
+      }
+    },
+    {
+      "name": "late clipboard result cannot replace a newer selection",
+      "result": {
+        "name": "air-sample.txt",
+        "status": "File selected. Preview it when you’re ready."
+      }
+    },
+    {
+      "name": "real malformed UTF-8 read",
+      "result": "Couldn’t read this file as UTF-8 text. Your file and any partial preview are still here. Try again or choose another file."
+    },
+    {
+      "name": "remove restores browse focus",
+      "result": {
+        "focus": "air-file-browse",
+        "selectionHidden": true,
+        "status": "Selection removed. The original file is unchanged."
+      }
+    },
+    {
+      "name": "actual FileReader aborted before callback",
+      "result": {
+        "bytes": "0",
+        "preview": "Your preview will appear here.",
+        "status": "Reading cancelled. Your file and any partial preview are still here."
+      }
+    },
+    {
+      "name": "keyboard cancel keeps focus",
+      "result": {
+        "focus": "air-file-read",
+        "status": "Reading cancelled. Your file and any partial preview are still here."
+      }
+    },
+    {
+      "name": "keyboard skip link",
+      "result": "main-content"
+    },
+    {
+      "name": "forced-colour keyboard focus and reduced motion",
+      "result": {
+        "animations": 0,
+        "focus": "air-file-paste",
+        "forced": true,
+        "outline": "rgba(55, 0, 110, 0.8) solid 2px",
+        "reduced": true
+      }
+    },
+    {
+      "name": "320px 200% text with long filename and translated actions",
+      "result": {
+        "buttons": [
+          {
+            "client": 252,
+            "id": "air-file-browse",
+            "scroll": 252
+          },
+          {
+            "client": 154,
+            "id": "air-file-paste",
+            "scroll": 154
+          },
+          {
+            "client": 177,
+            "id": "air-file-sample",
+            "scroll": 177
+          },
+          {
+            "client": 132,
+            "id": "air-file-remove",
+            "scroll": 132
+          },
+          {
+            "client": 244,
+            "id": "air-file-read",
+            "scroll": 244
+          },
+          {
+            "client": 252,
+            "id": "air-file-resume",
+            "scroll": 252
+          },
+          {
+            "client": 119,
+            "id": "air-file-cancel",
+            "scroll": 119
+          }
+        ],
+        "dropWidth": 288,
+        "filenameHeight": 582.359375,
+        "pageWidth": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "no JavaScript fallback",
+      "result": "- link \"Skip to content\":\n  - /url: \"#main-content\"\n- banner:\n  - link \"Cloakyard design reference\":\n    - /url: components.html#experience\n    - generic: Cloakyard\n  - navigation \"Design studies\":\n    - link \"Components\":\n      - /url: components.html\n    - link \"Reading\":\n      - /url: reading.html\n    - link \"Recovery\":\n      - /url: recovery.html\n    - link \"Files\":\n      - /url: files.html\n- paragraph: Air · Design reference\n- main [active]:\n  - paragraph: Files · Interaction study\n  - heading \"A little room to begin.\" [level=1]\n  - paragraph: Bring a file, see what’s happening, and pick up where you left off. The tools stay quiet. Your work stays in view.\n  - paragraph: Local text preview · Design reference\n  - region \"Start with a file\":\n    - heading \"Start with a file\" [level=2]\n    - region \"File selection and paste area\":\n      - paragraph: Drop a text file here.\n      - paragraph: One UTF-8 .txt or .json file, up to 4 MiB. This study previews text; it does not validate JSON or open images and PDFs.\n      - paragraph: Enable JavaScript to try local file reading, paste and progress. The design notes below remain available.\n  - region \"A glimpse of your text\":\n    - heading \"A glimpse of your text\" [level=2]\n    - paragraph: First 1,200 characters · Text only\n    - generic \"Local text preview\": Your preview will appear here.\n    - paragraph: Reading happens on this device. Nothing in this study uploads, edits or saves the original file. A partial preview stays visible if you cancel.\n  - region \"One language. Different kinds of work.\":\n    - heading \"One language. Different kinds of work.\" [level=2]\n    - paragraph: Browse, drop and paste share the same selection rules. Invalid files leave the previous selection intact. Cancel stops the read; retry starts it again with the same file.\n    - paragraph: Each product keeps its own supported formats, size limits and recovery choices. Image decoding, encrypted PDFs and résumé imports need their own verified adapters before this pattern reaches an app.\n- contentinfo:\n  - paragraph: Air by Cloakyard. A little more room.\n  - navigation \"Reference footer\":\n    - link \"Components\":\n      - /url: components.html\n    - link \"Reading study\":\n      - /url: reading.html\n    - link \"Recovery study\":\n      - /url: recovery.html\n    - link \"File study\":\n      - /url: files.html\n    - link \"Design contract\":\n      - /url: ../../DESIGN.md"
+    },
+    {
+      "name": "system light",
+      "result": {
+        "background": "rgb(250, 251, 252)",
+        "override": null
+      }
+    },
+    {
+      "name": "system dark",
+      "result": {
+        "background": "rgb(16, 18, 22)",
+        "override": null
+      }
+    },
+    {
+      "name": "cancel invalidates pending clipboard request",
+      "result": {
+        "name": "air-sample.txt",
+        "status": "Reading cancelled. Your file and any partial preview are still here."
+      }
+    },
+    {
+      "name": "empty clipboard gives visible recovery without replacement",
+      "result": {
+        "name": "air-sample.txt",
+        "status": "The clipboard has no text. Copy some text or browse for a file."
+      }
+    },
+    {
+      "name": "clipboard button accepts fixture text through actual selection handler",
+      "result": {
+        "name": "pasted-text.txt",
+        "status": "File selected. Preview it when you’re ready."
+      }
+    },
+    {
+      "name": "clipboard fixture exact preview",
+      "result": "Fixture clipboard text 🌿"
+    },
+    {
+      "name": "appearance handoff and expanded navigation on phone",
+      "result": {
+        "filesLink": "http://127.0.0.1:8120/docs/air/files.html?theme=dark",
+        "scroll": 390,
+        "url": "http://127.0.0.1:8120/docs/air/reading.html?theme=dark",
+        "width": 390
+      }
+    },
+    {
+      "name": "shared disclosure Escape closes and returns focus",
+      "result": {
+        "chevron": 18,
+        "focus": "SUMMARY",
+        "marker": "none",
+        "open": false,
+        "parent": "air-file-scenarios"
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    }
+  ],
+  "console": [],
+  "resources": [
+    "http://127.0.0.1:8120/src/styles/air.css?air=58ed40b6cb4b",
+    "http://127.0.0.1:8120/docs/air/pages.mjs?air=11af689c6047",
+    "http://127.0.0.1:8120/docs/air/files.mjs?air=7ae954ca6df8"
+  ],
+  "notes": [
+    "Chromium reference evidence only. Coarse pointer and media are emulated; 200% root text is not browser zoom.",
+    "Drag/drop and paste event fixtures plus tab-local clipboard API mocks exercise handlers; OS drag and real clipboard permission prompts remain device gates. No user clipboard was read or changed.",
+    "Page.captureScreenshot used for final captures: host panel screenshot API cropped emulated viewports. Layout measurements use actual page bounds.",
+    "Unknown total, interruption and halfway pause are explicitly labelled study options. FileReader and byte measurements are real.",
+    "Final consistency correction reuses Air’s existing disclosure chevron and Escape/focus behavior; the 68-case matrix was rerun with no failures. The enlarged-filename screenshot remains valid: disclosure is outside its captured region."
+  ],
+  "layoutsBeforeSharedDisclosure": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1920,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1440,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1366,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1280,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 1024,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 768,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 844,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 320,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 375,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 390,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 430,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 639,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 639,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 640,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 640,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 641,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 641,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 959,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 959,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 960,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 960,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "light",
+      "scale": 1,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "light",
+      "scale": 2,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "dark",
+      "scale": 1,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    },
+    {
+      "width": 961,
+      "height": 800,
+      "theme": "dark",
+      "scale": 2,
+      "documentWidth": 961,
+      "h1": 1,
+      "overflow": [],
+      "targets": []
+    }
+  ],
+  "finalAlignment": [
+    {
+      "disclosure": 720,
+      "drop": 720,
+      "page": 768,
+      "width": 768,
+      "y": 501.5
+    },
+    {
+      "disclosure": 288,
+      "drop": 288,
+      "page": 320,
+      "width": 320
+    },
+    {
+      "disclosure": 911,
+      "drop": 911,
+      "page": 959,
+      "width": 959
+    },
+    {
+      "disclosure": 912,
+      "drop": 912,
+      "page": 960,
+      "width": 960
+    },
+    {
+      "disclosure": 424.5,
+      "drop": 424.5,
+      "page": 961,
+      "width": 961
+    }
+  ]
+}
