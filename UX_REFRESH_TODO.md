@@ -17,6 +17,19 @@ PDF and Drop are live with their logo-coloured horizons; main/dev integration is
 complete. Resume/IMG work stays local and IMG remains last.
 The separately requested Drop installer now uses Air.
 
+## Neutral content links and hover — 2026-10-19
+
+- [x] Audit all links, including content/installation/privacy links, and remove
+      blue text from resting and hover states in Cloakyard/Drop.
+- [x] Air 1.0.6 defines neutral text, inline underlines, angled cues and blue focus
+      outlines; shared reading/reference styles and all portable copies agree.
+- [x] Add a portable all-link colour/hover/focus browser check and extend Drop's
+      full website matrix to catch content-link drift.
+- [-] Complete visual/feature gates, passing commits and production verification.
+  Resume/IMG stay local and the parked IMG migration stays separate.
+
+Evidence: `docs/air/neutral-links-2026-10-19.md`.
+
 ## Approved hyperlink treatment — 2026-10-19
 
 - [x] Restore the approved angled hyperlink cue throughout the family, including

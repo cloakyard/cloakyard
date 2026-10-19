@@ -74,7 +74,7 @@ summary:focus-visible {
   justify-content: flex-start;
   gap: var(--air-space-8);
   min-height: var(--air-control);
-  color: var(--air-accent);
+  color: var(--air-ink);
   font-size: var(--air-text-body);
   font-weight: 500;
 }
@@ -371,7 +371,7 @@ summary:focus-visible {
   .desktop-navigation a:hover,
   .footer-products a:hover,
   .footer-meta a:hover {
-    color: var(--air-accent);
+    color: var(--air-ink);
   }
   .air-button--quiet:hover {
     background: var(--air-surface-hover);

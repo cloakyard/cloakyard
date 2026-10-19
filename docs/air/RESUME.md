@@ -41,7 +41,14 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel remains next. See the deployment checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest follow-up: the user explicitly prefers **angled hyperlinks** and the
+Latest follow-up: **all public-page links stay neutral, including hover**.
+The user explicitly included Cloakyard's content links and required the rule in
+Air. Version 1.0.6 removes the previous blue-body-link permission, preserves angled
+cues/inline underlines and blue focus outlines, and supplies a portable all-anchor
+browser checker. Local correction and deployment proof are tracked in
+`docs/air/neutral-links-2026-10-19.md`; publication is pending. Resume/IMG stay local.
+
+Previous follow-up: the user explicitly prefers **angled hyperlinks** and the
 approved neutral navigation. Air 1.0.5 supersedes the straight-link decision in
 1.0.4. The correction restores angled link cues, fixes Drop's blue Source cascade
 and neutral footer credits, and carries the rule across the family. Local checks
@@ -70,8 +77,8 @@ quality, minimalism, a distinctive modern appearance and purposeful playful moti
 Every custom control, editor, canvas surround, overlay and edge state belongs to the
 same family; landing-only or token-only work is not a completed migration.
 
-- Canonical source is this repo's `design/air/`; current Air **1.0.5**, contract
-  **94c5e537752f**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
+- Canonical source is this repo's `design/air/`; current Air **1.0.6**, contract
+  **e7c8a4bcfbc5**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
   Product appendices live in `design/air/products/`. Regenerate with
   `node scripts/sync-air-design.mjs --bundle`, then verify `--bundle --check`.
   Standalone products must work without a sibling checkout or upstream runtime fetch.
@@ -108,7 +115,7 @@ PDF uses `codex/air-brand-horizons`, based on deployed main `8f801c3` (PR #205).
 Local production-evidence commits follow these merges. Drop uses
 `codex/air-refresh`, based on deployed main `e3edf4e` (PR #41). Resume/IMG remain
 on `codex/air-refresh`; their hyperlink checkpoints are `f1c49cd` and `c38e204`.
-All five carry the Air 1.0.5 hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
+All five carry the Air 1.0.6 neutral hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:

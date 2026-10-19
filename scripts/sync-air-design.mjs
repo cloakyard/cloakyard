@@ -36,7 +36,7 @@ for (const [slug, name, destinations] of products) {
   ).trim();
   const content = `---
 name: ${name} — Cloakyard Air
-version: 1.0.5
+version: 1.0.6
 status: approved
 date: 2026-10-19
 scope: complete-web-product
@@ -81,7 +81,11 @@ ${appendix}
       .replace("__AIR_OVERLAY_LOADER_REVISION__", loaderHash.slice(0, 12));
     await sync(resolve(roots, slug, cssPath), css);
     await sync(resolve(roots, slug, "docs/air/components.html"), gallery);
-    for (const script of ["check-air-design.mjs", "check-air-portability.mjs"]) {
+    for (const script of [
+      "check-air-design.mjs",
+      "check-air-portability.mjs",
+      "test-air-links.mjs",
+    ]) {
       await sync(
         resolve(roots, slug, "scripts", script),
         await readFile(resolve(repository, "scripts", script), "utf8"),
@@ -123,7 +127,7 @@ ${appendix}
       studyAssets[asset] = createHash("sha256").update(content).digest("hex");
     }
     const manifest = {
-      version: "1.0.5",
+      version: "1.0.6",
       source: {
         repository: sourceRepository,
         directory: "design/air",

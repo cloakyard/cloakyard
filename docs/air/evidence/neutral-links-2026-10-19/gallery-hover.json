@@ -1,0 +1,122 @@
+[
+  {
+    "theme": "light",
+    "label": "Experience",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Components",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Motion",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Reading",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Recovery",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Files",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Collections",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "The tools",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Our approach",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Source",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Explore KERR",
+    "colour": "rgb(32, 35, 41)"
+  },
+  {
+    "theme": "light",
+    "label": "Read the complete design contract",
+    "colour": "rgb(100, 107, 118)"
+  },
+  {
+    "theme": "dark",
+    "label": "Experience",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Components",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Motion",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Reading",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Recovery",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Files",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Collections",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "The tools",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Our approach",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Source",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Explore KERR",
+    "colour": "rgb(241, 243, 247)"
+  },
+  {
+    "theme": "dark",
+    "label": "Read the complete design contract",
+    "colour": "rgb(167, 175, 188)"
+  }
+]

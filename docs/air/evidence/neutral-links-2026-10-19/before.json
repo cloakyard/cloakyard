@@ -1,0 +1,164 @@
+[
+  {
+    "app": "cloakyard",
+    "route": "/",
+    "links": [
+      {
+        "label": "Skip to content",
+        "href": "#main",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "Cloakyard",
+        "href": "/",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "The tools",
+        "href": "#tools",
+        "color": "rgb(82, 91, 104)",
+        "underline": "none"
+      },
+      {
+        "label": "Curiosity",
+        "href": "#experiments",
+        "color": "rgb(82, 91, 104)",
+        "underline": "none"
+      },
+      {
+        "label": "Our approach",
+        "href": "#principles",
+        "color": "rgb(82, 91, 104)",
+        "underline": "none"
+      },
+      {
+        "label": "Source",
+        "href": "https://github.com/cloakyard",
+        "color": "rgb(82, 91, 104)",
+        "underline": "none"
+      },
+      {
+        "label": "Find your flow",
+        "href": "#tools",
+        "color": "rgb(255, 255, 255)",
+        "underline": "none"
+      },
+      {
+        "label": "Our approach",
+        "href": "#principles",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "Open CloakPDF",
+        "href": "https://pdf.cloakyard.com",
+        "color": "rgb(40, 90, 215)",
+        "underline": "none"
+      },
+      {
+        "label": "",
+        "href": "https://github.com/cloakyard/cloakpdf",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "Open CloakResume",
+        "href": "https://resume.cloakyard.com",
+        "color": "rgb(40, 90, 215)",
+        "underline": "none"
+      },
+      {
+        "label": "",
+        "href": "https://github.com/cloakyard/cloakresume",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "Open CloakIMG",
+        "href": "https://img.cloakyard.com",
+        "color": "rgb(40, 90, 215)",
+        "underline": "none"
+      },
+      {
+        "label": "",
+        "href": "https://github.com/cloakyard/cloakimg",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "Open CloakDrop",
+        "href": "https://drop.cloakyard.com",
+        "color": "rgb(40, 90, 215)",
+        "underline": "none"
+      },
+      {
+        "label": "",
+        "href": "https://github.com/cloakyard/cloakdrop",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "Explore KERR",
+        "href": "https://kerr.cloakyard.com",
+        "color": "rgb(40, 90, 215)",
+        "underline": "none"
+      },
+      {
+        "label": "Source",
+        "href": "https://github.com/cloakyard/kerr",
+        "color": "rgb(82, 91, 104)",
+        "underline": "none"
+      },
+      {
+        "label": "Build with us",
+        "href": "https://github.com/cloakyard",
+        "color": "rgb(40, 90, 215)",
+        "underline": "none"
+      },
+      {
+        "label": "CloakPDF",
+        "href": "https://pdf.cloakyard.com",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "CloakResume",
+        "href": "https://resume.cloakyard.com",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "CloakIMG",
+        "href": "https://img.cloakyard.com",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "CloakDrop",
+        "href": "https://drop.cloakyard.com",
+        "color": "rgb(32, 35, 41)",
+        "underline": "none"
+      },
+      {
+        "label": "Sumit Sahoo",
+        "href": "https://github.com/sumitsahoo",
+        "color": "rgb(100, 107, 118)",
+        "underline": "none"
+      },
+      {
+        "label": "Source",
+        "href": "https://github.com/cloakyard",
+        "color": "rgb(100, 107, 118)",
+        "underline": "none"
+      },
+      {
+        "label": "MIT licensed",
+        "href": "https://github.com/cloakyard/cloakyard/blob/main/LICENSE",
+        "color": "rgb(100, 107, 118)",
+        "underline": "none"
+      }
+    ]
+  }
+]
