@@ -6,9 +6,10 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: PDF active-work PWA update safety (`c3d3264`).
-Previews/OG, static recovery and acceptance reconciliation are complete. Final PDF
-AI acceptance is next, then CloakIMG; full family/device acceptance remains open.
+Latest completed piece: PDF final AI software acceptance (`b9d67a9`). The software
+migration has a complete dated acceptance map; physical/device gates remain open.
+The user revised the rollout: **finish PDF → CloakDrop website → CloakResume →
+CloakIMG last**. A small IMG landing/import draft is parked uncommitted.
 
 ### Objective and settled decisions
 
@@ -47,15 +48,16 @@ same family; landing-only or token-only work is not a completed migration.
 
 ### Repository state at handoff
 
-All five repositories were clean on `codex/air-refresh` before this documentation
-save. Recheck before editing; preserve any new user changes. Paths are siblings under
+All five repositories use `codex/air-refresh`. PDF, Drop and Resume are clean;
+IMG has the parked draft below. Root has this documentation checkpoint. Recheck
+before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `d67c503`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
-| cloakpdf    | `c3d3264`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
-| cloakimg    | `aa9f6f8`                             | Shared bundle synchronized; full product migration and wheel adoption pending                           |
+| cloakyard   | `c3f5825`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
+| cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
 | cloakresume | `286f57b`                             | Shared bundle synchronized; full product migration and wheel alignment pending                          |
 | cloakdrop   | `0a3a5b5`                             | Shared bundle synchronized; website migration pending, native app excluded                              |
 
@@ -67,22 +69,37 @@ The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: PDF final AI acceptance, then IMG
+### Exact next bounded piece: CloakDrop website
 
-1. Read PDF `docs/air/acceptance.md`, the map from broad Phase 3 scope to dated
-   panel/output evidence. Completed panels and PWA integration should not be repeated.
-2. Record the supported AI tier/device matrix from `src/utils/ai-models.ts`, routing
-   eligibility and existing evidence. The two shipped tiers are Compact
-   (`lfm2.5-1.2b`) and Quality (`lfm2-2.6b`); Ask PDF is desktop-only. Distinguish
-   native layout/keyboard checks, synthetic state tests and real inference.
-3. Run the final real-model integration (`pnpm test:e2e`, explicit `CHAT_VARIANT`,
-   `FIXTURE` and dev `E2E_URL`). Verify ground-truth fixture contents first; do not
-   silently substitute demo PDFs. `sample.pdf` and `multipage.pdf` are present in
-   the local ignored fixture directory. Preserve useful test caches and run heavy
-   suites serially. Record exact tiers/fixtures/host coverage and remaining limits.
-4. Then start IMG landing/import/privacy/error surfaces per the saved rollout.
-   Read its AGENTS/CLAUDE/DESIGN and audit/inventory first; reproduce the recorded
-   Adjust Cancel/re-entry finding before changing its editor commit controls.
+1. PDF `docs/air/acceptance.md` now maps every broad software/output item to dated
+   evidence, including both AI tiers × both original fixtures. Do not repeat completed
+   panels or cached model runs; retain physical/device limits explicitly.
+2. Read Drop AGENTS/CLAUDE, root and website DESIGN, nested contributor guidance,
+   `docs/air/website-audit.md` and current inventory/source. Keep Swift/native UI unchanged.
+3. Implement shared layout/navigation/theme and home/product/download/footer as the
+   next bounded slice. Preserve native screenshot evidence and accurate install copy.
+   Then finish privacy/404, OG/metadata and legacy cleanup with the saved gates.
+4. After Drop, migrate Resume; IMG stays last. Do not commit or continue its parked
+   draft before that turn. See the draft details below before restarting.
+
+Completed PDF AI checkpoint (`b9d67a9`): Compact/Quality × sample/multipage all
+pass initial/warm loads, grounded facts, keyboard tier swap/cancel, a generated
+summary and memory release/reload. 256 picker layouts, 192 synthetic modal layouts,
+459 units, code/dead/build/131 assets/design/18 portability pass. Exact host:
+M2 Max/32 GiB/macOS 27.0.1/Chrome 155, available Apple Metal 3 WebGPU. This is not
+fresh-download, mobile inference or other-engine/hardware certification. Imperfect
+generated phrasing and one interrupted run are recorded without overstating quality.
+Evidence: PDF `docs/air/evidence/ai-acceptance-2026-10-19.json` and checks log.
+
+Parked IMG draft (HEAD `aa9f6f8`): landing Header/Footer/Features/Landing, DropZone
+and tests, new `src/styles/air-entry.css`, `scripts/test-air-entry.mjs`, index/no-JS,
+landing orientation allowance, old landing CSS removal and DropZone prop consumers.
+It has 475 passing units, build and 203 browser observations from before a final
+background-height fix. That fix and its new assertion are **not revalidated**.
+Privacy/editor/OG and broader tool/HEIC/output/native checks remain unfinished. Do
+not label or commit this as a passed slice. Local evidence `/tmp/cloakimg-air-entry/`;
+logs `/tmp/cloakimg-air-{check-edit,unit,build,entry}.log`. Reproduce the saved Adjust
+Cancel/re-entry finding before touching editor commit controls when IMG resumes.
 
 Completed PWA safety (`c3d3264`): reproduced pending metadata lost on Update now;
 updates now defer throughout editor/standalone views, explain save/download/home,
@@ -109,23 +126,18 @@ Chromium installability pass. No native/physical-install acceptance claimed.
 
 ### What follows, in order
 
-1. **PDF closure:** reconcile the broad Phase 3 checklist with the newer dated
-   evidence, verify any genuinely uncovered feature/state/output cases, finish
-   screenshot/documentation/reference cleanup and retain unperformed device gates.
-   Prior full suites do not establish every state at every viewport or every AI tier.
-2. **CloakIMG:** full landing/editor/canvas/layers/history/custom controls/tool/AI/
-   export migration. Start from its audit/inventory and current source, including
-   recorded Cancel/re-entry findings. Adopt the wheel while preserving RGB, recents,
-   eyedropper, preview/apply/cancel, undo, image pixels/alpha and output formats.
-3. **CloakResume:** full landing/editor/sections/templates/ATS/format/export migration;
-   align its existing wheel. Fix recorded tablet target/contact typography issues.
-   Preserve all 17 templates, pagination, printable fonts/colours and exports.
-4. **CloakDrop website:** Air header/landing/privacy/404/install/download surfaces;
-   resolve recorded dark skip-link, enlarged-text clipping and obsolete assets.
-   Preserve native screenshots as product evidence and do not alter Swift/native UI.
-5. **Family closure:** matched widths/themes across apps, remaining legacy/dependency/
-   reference searches, portable adoption/drift checks, feature/output regression,
-   budgets/privacy/shader fallbacks, evidence and final commit ledger.
+1. **CloakDrop website:** Air header/landing/privacy/404/install/download surfaces;
+   resolve dark skip-link, enlarged-text clipping and obsolete assets. Preserve real
+   native screenshots and all Swift/native UI. Refresh OG design with the finished site.
+2. **CloakResume:** full landing/editor/sections/templates/ATS/format/export migration;
+   align its existing wheel, correct tablet targets/contact typography, preserve all
+   17 templates, pagination, printable fonts/colours and exports.
+3. **CloakIMG last:** resume and fully validate the parked entry draft, then complete
+   editor/canvas/layers/history/tool/AI/export migration. Adopt the wheel while preserving
+   RGB, recents, eyedropper, preview/apply/cancel, undo, pixels/alpha and output formats.
+4. **Family closure:** matched widths/themes, remaining legacy/dependency/reference
+   searches, portable adoption/drift, feature/output regression, budgets/privacy/shader
+   fallbacks, evidence and final commit ledger. Complete remaining PDF/device gates.
 
 Remaining human/device acceptance includes physical touch/software keyboards,
 actual OS IME, spoken assistive technology, final-size QR scanning and physical
@@ -136,7 +148,8 @@ do not silently omit words or treat these as already implemented redesign work.
 
 ### Verification and durable evidence
 
-Latest preview slice: **458 unit tests / 47 files**, four applicable browser suites;
+Latest PDF AI slice: **459 unit tests / 47 files**, four real-model combinations,
+256 picker and 192 synthetic modal observations;
 all required code/dead/build/asset/design/portability/root/sync gates pass.
 Previous registry baseline: **456 unit tests / 47 files**, **25 distinct browser suites** (16
 production smoke, seven extended, focused recovery/N-up), 176 tool selections

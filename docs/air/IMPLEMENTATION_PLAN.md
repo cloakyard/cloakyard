@@ -17,7 +17,8 @@ with the saved product sequence after its validation gate.
   entire CloakDrop website. KERR's app and native macOS UI retain their appearance.
   Cloakyard shows KERR as an exploration link with no screenshot or simulated preview.
 - **Order:** finish the base → establish production adapters → Cloakyard → CloakPDF
-  → CloakIMG → CloakResume → CloakDrop website → complete family validation.
+  → CloakDrop website → CloakResume → CloakIMG last → complete family validation.
+  The user revised this remaining order on 2026-10-19 after PDF software closure.
   PDF establishes the production editor patterns; IMG and Resume reuse them while
   retaining their different canvas and writing workflows. Phases match the family TODO.
 - **Preserve:** all features, local-data boundaries, undo/history, cancellation,
@@ -112,26 +113,20 @@ plus applicable E2E tests. Before product completion run the full smoke, extende
 and AI coverage. Preserve real redaction consequences, output quality and model
 privacy disclosures. A model download test must use the documented supported path.
 
-## 4. CloakIMG — reuse the shell, preserve the canvas lifecycle
+## 4. CloakDrop website — complete all routes
 
-- **Commit A:** landing, import/drop, privacy, errors and recovery.
-- **Commit B:** editor shell, rail, inspector, mobile picker, canvas surround,
-  layers/history and compare. Keep canvas identity and pool ownership intact.
-- **Commit C:** tool families in separate commits: adjustment/colour/curves/levels;
-  crop/resize/perspective/print; text/shapes/drawing/overlays; retouch/masks/redaction.
-  Cover every one of the 26 desktop panels and every mobile tool, including modes
-  hidden behind disclosures. Histograms/colour data remain functional visual data.
-- **Commit D:** AI consent/download/cache/error/retry/cancel and export/batch flows.
-- **Commit E:** remaining state coverage, PWA/social assets and obsolete design cleanup.
+- **Commit A:** shared layout/navigation/theme, home/hero/product/download/footer.
+  Keep the real native screenshot as product evidence; only the surrounding web
+  design changes. Preserve accurate OS/architecture/signing/release/download copy.
+- **Commit B:** privacy and 404 reading/recovery layouts using the shared patterns.
+  Correct baseline dark skip-link contrast, narrow enlarged-text clipping, coarse
+  targets, tablet spacing, keyboard motion and no-JS menu behavior.
+- **Commit C:** remove unused tokens/classes/band artwork and outdated maintained
+  design references; refresh website metadata/imagery only where affected.
 
-Before migrating commit/cancel controls, reproduce the recorded +0.4 Adjust
-Cancel/re-entry finding on a fresh session. Resolve it in a focused behavior commit
-if confirmed; changing the appearance must not obscure a rollback defect.
-
-**Gate:** `vp check`, `vp test run`, `vp run build` including asset limits, relevant
-`test:tools`/audit/probe scripts, pixel/output checks and real apply/cancel/undo/redo.
-Validate alpha, HEIC/import errors, all supported export formats, layer reordering,
-AI lifecycle and repeated previews. No screenshot substitutes for processing tests.
+**Gate:** asset sync, `npm run check`, `npm run build` in `apps/site`, all route and
+anchor/download/policy checks, both themes, no-JS and reduced motion. Verify there
+are no Swift/native edits. The policy's meaning does not change in a visual refresh.
 
 ## 5. CloakResume — reuse controls, protect every template
 
@@ -152,20 +147,26 @@ symbols, images, export text and document geometry intact. No timeout increase,
 skipped template or weakened assertion may turn a failing gate green. Preserve
 failure artifacts before rerunning an intermittent browser case.
 
-## 6. CloakDrop website — complete all routes
+## 6. CloakIMG — reuse the shell, preserve the canvas lifecycle
 
-- **Commit A:** shared layout/navigation/theme, home/hero/product/download/footer.
-  Keep the real native screenshot as product evidence; only the surrounding web
-  design changes. Preserve accurate OS/architecture/signing/release/download copy.
-- **Commit B:** privacy and 404 reading/recovery layouts using the shared patterns.
-  Correct baseline dark skip-link contrast, narrow enlarged-text clipping, coarse
-  targets, tablet spacing, keyboard motion and no-JS menu behavior.
-- **Commit C:** remove unused tokens/classes/band artwork and outdated maintained
-  design references; refresh website metadata/imagery only where affected.
+- **Commit A:** landing, import/drop, privacy, errors and recovery.
+- **Commit B:** editor shell, rail, inspector, mobile picker, canvas surround,
+  layers/history and compare. Keep canvas identity and pool ownership intact.
+- **Commit C:** tool families in separate commits: adjustment/colour/curves/levels;
+  crop/resize/perspective/print; text/shapes/drawing/overlays; retouch/masks/redaction.
+  Cover every one of the 26 desktop panels and every mobile tool, including modes
+  hidden behind disclosures. Histograms/colour data remain functional visual data.
+- **Commit D:** AI consent/download/cache/error/retry/cancel and export/batch flows.
+- **Commit E:** remaining state coverage, PWA/social assets and obsolete design cleanup.
 
-**Gate:** asset sync, `npm run check`, `npm run build` in `apps/site`, all route and
-anchor/download/policy checks, both themes, no-JS and reduced motion. Verify there
-are no Swift/native edits. The policy's meaning does not change in a visual refresh.
+Before migrating commit/cancel controls, reproduce the recorded +0.4 Adjust
+Cancel/re-entry finding on a fresh session. Resolve it in a focused behavior commit
+if confirmed; changing the appearance must not obscure a rollback defect.
+
+**Gate:** `vp check`, `vp test run`, `vp run build` including asset limits, relevant
+`test:tools`/audit/probe scripts, pixel/output checks and real apply/cancel/undo/redo.
+Validate alpha, HEIC/import errors, all supported export formats, layer reordering,
+AI lifecycle and repeated previews. No screenshot substitutes for processing tests.
 
 ## Per-piece acceptance checklist
 

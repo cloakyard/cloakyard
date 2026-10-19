@@ -1929,3 +1929,22 @@ Evidence: PDF `docs/air/evidence/pwa-update-2026-10-19.json`, checks log and two
 full captures/downloads `/tmp/cloakpdf-air-review/pwa-update/`. Final supported AI
 tier/device real-model acceptance remains next, followed by IMG, Resume and Drop
 website. KERR/native apps are unchanged. No push or deployment.
+
+## 2026-10-19 — PDF software closure and corrected rollout
+
+PDF `b9d67a9` records both shipped tiers × both original ground-truth PDFs on
+M2 Max/32 GiB/Chrome 155 with an Apple Metal 3 adapter. Initial/warm loading,
+required facts, keyboard tier changes, generated summary and memory release/reload
+pass; 256 picker and 192 synthetic modal layouts pass. 459 units/47 files and
+code/dead/build/131 assets/design/18 portability checks pass. Current model/backend,
+cache-size and download references are corrected; no runtime or style change.
+
+The PDF acceptance map reconciles the prior full smoke/extended/output/PWA evidence.
+Cached runs do not certify cold progress, every answer, every engine or physical
+hardware/input. Those limits and one interrupted attempt remain explicit. Evidence:
+PDF `docs/air/evidence/ai-acceptance-2026-10-19.json` and checks log.
+
+The user's correction sets Drop website next, Resume after Drop, IMG last. A small
+IMG landing/import draft is parked uncommitted; its final background fix still needs
+validation. TODO, plan and handoff now agree. Root checks/types/build/design/
+portability/exact bundle sync pass. No push or deployment.

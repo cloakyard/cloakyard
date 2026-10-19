@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF previews/recovery/PWA safety complete; final AI acceptance then IMG** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF software checkpoint complete; CloakDrop website next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — PWA active-work safety (2026-10-19)
+## Latest bounded piece — PDF software acceptance and revised rollout (2026-10-19)
+
+PDF `b9d67a9` closes the final software acceptance matrix. The user revised the
+remaining order: **CloakDrop website → CloakResume → CloakIMG last**.
+
+- [x] Both shipped AI tiers × both verified original fixtures; real initial/warm loading, grounded facts, keyboard tier swap/cancel, generated summary and memory release/reload.
+- [x] 256 model-picker layout cases and 192 synthetic modal cases; 459 units/47 files, code/dead/build/131 assets/design/18 portability gates pass.
+- [x] Correct stale model/backend/cache-size references and harness consent/cleanup; no production behavior, styling or dependency change.
+- [x] Reconcile Phase 3 software/output checks against PDF `docs/air/acceptance.md`; preserve dated evidence and distinguish cached runs from fresh downloads.
+- [ ] Physical touch/software keyboard, OS IME, spoken assistive, physical QR scanning and shader hardware acceptance remain open. Other inference hardware/engines are unverified.
+- [ ] Finish Drop website, then Resume, then IMG. A small IMG landing/import draft is parked uncommitted; it is not a completed slice and must be fully revalidated when resumed.
+
+## Previous bounded piece — PWA active-work safety (2026-10-19)
 
 PDF `c3d3264` fixes reproduced loss of a pending editor draft on Update now.
 
@@ -40,7 +52,7 @@ PDF `c3d3264` fixes reproduced loss of a pending editor draft on Update now.
 - [x] Real waiting-worker, pointer/keyboard, metadata Save/export, two-tab, standalone queue and race checks; 44 responsive/theme/text cases.
 - [x] 459 units/47 files, sixteen production smoke suites, code/dead/build/design/18 portability, root checks and exact sync.
 - [x] Inspect desktop/laptop/tablet/phone light/dark, 320px enlarged text and forced-colour/reduced-motion captures; save evidence and update acceptance map.
-- [ ] Final supported AI tier/device matrix and real-model run, then IMG. Human/device acceptance and full family migration remain open.
+- [x] Final supported AI tier/device matrix and real-model runs completed in `b9d67a9`; Drop website is next. Human/device acceptance remains open.
 
 ## Latest bounded piece — Static recovery and acceptance map (2026-10-19)
 
@@ -460,34 +472,37 @@ items retain their documented human/device gates; they do not imply full accepta
       Physical/assistive acceptance remains open.
       Entry and editor/standalone PWA integration are covered by real waiting-worker tests.
 - [x] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
-- [ ] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
-- [ ] Feature sweep: redaction/smart erase, metadata/scrub, forms/autofill, links/bookmarks/attachments, OCR.
-- [ ] Standalone sweep: merge, images→PDF, extract images, compare, password, digital signature, Ask PDF.
-- [ ] Verify undo/redo, cancellation, replacement/close, file errors, encrypted PDFs and long documents.
-- [ ] Verify exported PDF/image content and document fidelity; retain destructive-operation disclosures.
-- [ ] Run check, dead-code, all units, build, applicable smoke/extended/AI browser suites.
-- [ ] Inspect desktop/laptop/tablet/phone light/dark, touch/keyboard/reduced motion, 200% zoom.
+- [x] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
+- [x] Feature sweep: redaction/smart erase, metadata/scrub, forms/autofill, links/bookmarks/attachments, OCR.
+- [x] Standalone sweep: merge, images→PDF, extract images, compare, password, digital signature, Ask PDF.
+- [x] Verify undo/redo, cancellation, replacement/close, file errors, encrypted PDFs and long documents.
+- [x] Verify exported PDF/image content and document fidelity; retain destructive-operation disclosures.
+- [x] Run check, dead-code, all units, build, applicable smoke/extended/AI browser suites.
+- [x] Inspect desktop/laptop/tablet/phone light/dark, keyboard, emulated coarse input/reduced motion and native 200% zoom; dated scope is in the PDF acceptance map.
+- [ ] Physical touch/software keyboard, OS IME, spoken assistive, physical QR scanning and shader hardware acceptance.
 - [x] Update PWA/social screenshots and preview documentation (`02552f1`), static recovery and installed routing (`82762c4`).
-- [ ] Record full evidence and commit each verified piece.
+- [x] Record software evidence and commit each verified piece through `b9d67a9`.
+- [ ] Complete remaining human/device acceptance; software checks do not certify these gates.
 
-## Phase 4 — CloakIMG
+## Phase 4 — CloakDrop website
 
-- [ ] Landing/header/footer, drop/start flows, features/privacy and error/reload states.
-- [ ] Editor top bar/rail/search/properties, image canvas, stage host and mobile more menu.
-- [ ] Layers, history list/scrubber, compare, file properties, batch view and privacy audit.
-- [ ] All fields/buttons/selects/segments, colour picker, histogram/levels/HSL/curves and numeric units.
-- [ ] All tool panels/stages in the inventory, including preview/apply/cancel and empty/invalid states.
-- [ ] AI scope/consent/download/cached/ready/error/cancel/retry for segmentation, face and depth.
-- [ ] Export formats/options/metadata/privacy/progress and error/recovery flows.
-- [ ] Mobile full tool access, canvas/panel split, short screens, landscape and software keyboard.
-- [ ] Feature sweep: adjust, filters, levels/HSL, time-of-day, relight, blur, background removal.
-- [ ] Feature sweep: crop/resize/perspective, frames/borders, passport/visa layouts and print/PDF.
-- [ ] Feature sweep: retouch/spot heal, masks/faces/redaction, text/shapes/draw/pen, emoji/watermark/images.
-- [ ] Validate layers, reorder, undo/redo, compare, apply/cancel, batch, import HEIC and all export formats.
-- [ ] Keep pixel colours/alpha/output fidelity and AI consent/canvas-pool invariants intact.
-- [ ] Run check, all tests, build/asset limits, tool sweep and applicable audit/probe scripts.
-- [ ] Inspect all required layout classes, themes and input/motion modes; update PWA/social assets.
-- [ ] Record full evidence and commit each verified piece.
+- [x] Complete the existing-site baseline source/visual/functional audit: 18 production
+      sources plus the opt-in Air stylesheet, 90 normal layout cases, 24 header journeys,
+      370 opaque-background text pairs and 12 enlarged-root-font cases. Evidence in
+      `cloakdrop/docs/air/website-audit.md`; this does not mark production as migrated.
+- [ ] Resolve the baseline dark skip-link contrast, enlarged-text home/404 clipping,
+      40px touch targets, tablet hero spacing, keyboard motion and no-JS menu findings.
+- [ ] Replace/remove the recorded unused style tokens/classes, old band artwork and
+      maintained editorial-design references as each surface migrates.
+
+- [ ] Refresh shared header, hero, product/craft/privacy sections, download/install guidance and footer.
+- [ ] Preserve native app screenshots as product evidence; apply Air only to surrounding website UI.
+- [ ] Privacy and 404 use the same Air reading and navigation patterns.
+- [ ] Preserve accurate supported OS, architecture, signing/release status and download links.
+- [ ] Remove obsolete motion/hero geometry only when unused; preserve accessibility and anchors.
+- [ ] Inspect all required viewport classes, dark mode, keyboard/touch/reduced motion and zoom.
+- [ ] Run asset sync, Astro check and production build; verify links and policy content.
+- [ ] Verify no Swift/native changes; record evidence and commit.
 
 ## Phase 5 — CloakResume
 
@@ -509,25 +524,27 @@ items retain their documented human/device gates; they do not imply full accepta
 - [ ] Inspect all required layouts/themes/input/motion modes; update PWA/social assets.
 - [ ] Record full evidence and commit each verified piece.
 
-## Phase 6 — CloakDrop website
+## Phase 6 — CloakIMG (last)
 
-- [x] Complete the existing-site baseline source/visual/functional audit: 18 production
-      sources plus the opt-in Air stylesheet, 90 normal layout cases, 24 header journeys,
-      370 opaque-background text pairs and 12 enlarged-root-font cases. Evidence in
-      `cloakdrop/docs/air/website-audit.md`; this does not mark production as migrated.
-- [ ] Resolve the baseline dark skip-link contrast, enlarged-text home/404 clipping,
-      40px touch targets, tablet hero spacing, keyboard motion and no-JS menu findings.
-- [ ] Replace/remove the recorded unused style tokens/classes, old band artwork and
-      maintained editorial-design references as each surface migrates.
+A landing/import draft is parked uncommitted at the user’s request. It has partial
+checks only; resume after Drop and Resume, then rerun the complete slice gates.
 
-- [ ] Refresh shared header, hero, product/craft/privacy sections, download/install guidance and footer.
-- [ ] Preserve native app screenshots as product evidence; apply Air only to surrounding website UI.
-- [ ] Privacy and 404 use the same Air reading and navigation patterns.
-- [ ] Preserve accurate supported OS, architecture, signing/release status and download links.
-- [ ] Remove obsolete motion/hero geometry only when unused; preserve accessibility and anchors.
-- [ ] Inspect all required viewport classes, dark mode, keyboard/touch/reduced motion and zoom.
-- [ ] Run asset sync, Astro check and production build; verify links and policy content.
-- [ ] Verify no Swift/native changes; record evidence and commit.
+- [ ] Landing/header/footer, drop/start flows, features/privacy and error/reload states.
+- [ ] Editor top bar/rail/search/properties, image canvas, stage host and mobile more menu.
+- [ ] Layers, history list/scrubber, compare, file properties, batch view and privacy audit.
+- [ ] All fields/buttons/selects/segments, colour picker, histogram/levels/HSL/curves and numeric units.
+- [ ] All tool panels/stages in the inventory, including preview/apply/cancel and empty/invalid states.
+- [ ] AI scope/consent/download/cached/ready/error/cancel/retry for segmentation, face and depth.
+- [ ] Export formats/options/metadata/privacy/progress and error/recovery flows.
+- [ ] Mobile full tool access, canvas/panel split, short screens, landscape and software keyboard.
+- [ ] Feature sweep: adjust, filters, levels/HSL, time-of-day, relight, blur, background removal.
+- [ ] Feature sweep: crop/resize/perspective, frames/borders, passport/visa layouts and print/PDF.
+- [ ] Feature sweep: retouch/spot heal, masks/faces/redaction, text/shapes/draw/pen, emoji/watermark/images.
+- [ ] Validate layers, reorder, undo/redo, compare, apply/cancel, batch, import HEIC and all export formats.
+- [ ] Keep pixel colours/alpha/output fidelity and AI consent/canvas-pool invariants intact.
+- [ ] Run check, all tests, build/asset limits, tool sweep and applicable audit/probe scripts.
+- [ ] Inspect all required layout classes, themes and input/motion modes; update PWA/social assets.
+- [ ] Record full evidence and commit each verified piece.
 
 ## Phase 7 — legacy design cleanup after redesign
 
