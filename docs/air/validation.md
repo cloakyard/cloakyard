@@ -2060,3 +2060,19 @@ Chrome completion synchronization fixes the harness with original output checks
 and timeout preserved. Remote CodeQL rescan follows the commit. Logs, proof and
 release state are in `evidence/releases-2026-10-19/`; full scratch files remain in
 `/tmp/{cloakyard,cloakpdf}-air-release-2026-10-19/`.
+
+## 2026-10-19 — production payload integrity follow-up
+
+Live PDF acceptance exposed Cloudflare's injected analytics and inline challenge
+scripts. A separate real-browser homepage probe also requested the analytics
+beacon, despite the source shipping none. `public/_headers` now requests
+`no-transform` while preserving Workers' default immediate revalidation. The
+1.0.1 patch keeps the UI, JS/CSS, artwork and existing security configuration
+unchanged; it prevents edge payload mutation. Cloudflare documents this behavior
+in its [analytics FAQ](https://developers.cloudflare.com/web-analytics/faq/).
+
+Check/types, 25 reference logic tests, build, design and exact sync pass. Actual
+Wrangler cache headers and 12 responsive/theme/text layouts pass, with the real
+links, logos, compact menu/Escape and no-JavaScript fallback. Evidence:
+`evidence/releases-2026-10-19/home-headers-*`. Live no-injection checks follow the
+passing PR and deployment; they have not yet been counted as a pass.

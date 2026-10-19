@@ -10,10 +10,13 @@ Current priority: release Cloakyard and CloakPDF, then address CloakDrop's page
 before resuming CloakResume. Cloakyard [PR #9](https://github.com/cloakyard/cloakyard/pull/9)
 is merged at `4f91993`; [v1.0.0](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0)
 is live and verified. PDF [PR #201](https://github.com/cloakyard/cloakpdf/pull/201)
-is open from dev; security fixes through `cab22ba` pass CodeQL with all 79 high findings cleared.
-PDF landing horizon commit `62161d9` is pushed to dev: 68 layouts, real GPU
-lifecycle/fallbacks, 461 units, all 16 smoke suites and real 44-layout PWA update
-integration pass. Its fresh remote security scan is running before main merge. CloakDrop's
+merged as `41273ae`; candidate asset hashes match production. Final live acceptance
+exposed Cloudflare-injected analytics/challenge scripts blocked by CSP. Header-only
+follow-up [PR #202](https://github.com/cloakyard/cloakpdf/pull/202), dev `21f37de`,
+requests `no-transform` while preserving cache lifetimes and the CSP. Actual Wrangler
+headers, six PDF output workflows, 461 units and real 44-layout PWA checks pass.
+Await #202 CI, merge, verify production again and publish v2.0.0. Horizon `62161d9`
+passes 68 layouts, real GPU lifecycle/fallbacks and all 16 smoke suites. CloakDrop's
 page follows, then Resume logo/photo controls. Full release proof is in
 `docs/air/evidence/releases-2026-10-19/`.
 

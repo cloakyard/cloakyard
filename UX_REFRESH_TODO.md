@@ -39,7 +39,8 @@ Drop/Resume/IMG runtime work stays local; IMG remains last.
 - [x] Fix the 79 high CodeQL findings locally: private test evidence directories and escaped portable-reference values. Fresh 461 units, reference logic/browser, canvas/AI modal/PWA and portability checks pass; no security gates weakened.
 - [x] Remote CodeQL passes after `cab22ba`; all 79 high findings cleared without exceptions.
 - [x] PDF’s canonical landing horizon (`62161d9`): 68 layouts, real GPU/fallbacks, 461 units, 16 smoke suites, 44-layout PWA integration and Safari rendered/navigation review pass.
-- [-] PDF fresh CI, main merge, production verification and v2.0.0 release.
+- [x] PDF #201 CI and main merge `41273ae`; live built-asset hashes and true 404 pass.
+- [-] Production injected analytics/challenge scripts conflict with CSP. Header-only follow-up #202 (`21f37de`) passes actual Wrangler cache headers, six output workflows, 461 units and PWA integration; await CI/deploy/live acceptance before v2.0.0.
 - [ ] Handle CloakDrop’s page next, then resume CloakResume logo/photo controls. IMG remains last.
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
