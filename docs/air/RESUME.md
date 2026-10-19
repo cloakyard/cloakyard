@@ -41,7 +41,11 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel remains next. See the deployment checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest completed work: app-coloured horizons deployed for Cloakyard/PDF/Drop;
+Latest follow-up: straight landing-link arrows under Air 1.0.4; local visual checks
+pass across all five sites, root/PDF publication pending. See
+`docs/air/link-arrows-2026-10-19.md`. The larger Resume/IMG migrations remain unfinished.
+
+Previously completed work: app-coloured horizons deployed for Cloakyard/PDF/Drop;
 Resume/IMG implementations remain local,
 following Drop Air website production deployment (`8ce17f9`),
 following dependency/RC preparation and Air installer (`df413b2`),
@@ -63,8 +67,8 @@ quality, minimalism, a distinctive modern appearance and purposeful playful moti
 Every custom control, editor, canvas surround, overlay and edge state belongs to the
 same family; landing-only or token-only work is not a completed migration.
 
-- Canonical source is this repo's `design/air/`; current Air **1.0.3**, contract
-  **abcaee334ca7**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
+- Canonical source is this repo's `design/air/`; current Air **1.0.4**, contract
+  **0f6ea38f83a9**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
   Product appendices live in `design/air/products/`. Regenerate with
   `node scripts/sync-air-design.mjs --bundle`, then verify `--bundle --check`.
   Standalone products must work without a sibling checkout or upstream runtime fetch.
@@ -101,7 +105,7 @@ PDF uses `codex/air-brand-horizons`, based on deployed main `72f8883`;
 Drop uses `codex/air-refresh`, based on deployed main `5ee9a01`. Local deployment
 evidence commits follow those main commits: PDF `0b074cd`, Drop `cde56b5`, plus
 this root handoff commit. Resume/IMG remain on `codex/air-refresh`.
-All five carry the Air 1.0.3 palette and portable contract. IMG also has the
+All five carry the Air 1.0.4 navigation rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:

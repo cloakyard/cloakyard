@@ -17,6 +17,20 @@ PDF and Drop are live with their logo-coloured horizons; main/dev integration is
 complete. Resume/IMG work stays local and IMG remains last.
 The separately requested Drop installer now uses Air.
 
+## Landing navigation arrow consistency — 2026-10-19
+
+- [x] Standardize forward arrows across header/content/footer links: straight right,
+      including outbound links. Keep meaningful back/download/disclosure icons.
+- [x] Fix Cloakyard and PDF shared/recovery headers, Resume header/footer and the
+      parked IMG header draft. Drop already complies. Preserve destinations/targets.
+- [x] Air 1.0.4 owns the rule; remove the shared gallery's diagonal glyph and hover.
+- [x] All five pass 110 required viewport/theme cases plus ten enlarged-text cases;
+      compact menu/Escape, focus and reduced motion pass. Navigation captures reviewed.
+- [-] Finish required checks, commit each bounded piece, and publish the root/PDF
+  correction through the existing release path. Resume/IMG remain local.
+
+Evidence: each repository's `docs/air/link-arrows-2026-10-19.md`.
+
 ## App-coloured landing horizons — 2026-10-19
 
 - [x] Apply the user-selected scope of all five landings: Cloakyard/PDF blue,
