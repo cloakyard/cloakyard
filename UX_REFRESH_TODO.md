@@ -16,6 +16,26 @@ publication and then its Air website deployment. Drop is live; main/dev source
 integration remains separate. Resume/IMG work stays local and IMG remains last.
 The separately requested Drop installer now uses Air.
 
+## App-coloured landing horizons — 2026-10-19
+
+- [x] Apply the user-selected scope of all five landings: Cloakyard/PDF blue,
+      Drop teal, Resume green and IMG coral, using their original logo stops.
+- [x] Air 1.0.3 owns artwork-only theme tokens; shader and static SVG share colour.
+      Preserve neutral UI, shared focus, finite motion and output data.
+- [x] Validate 60 responsive/theme cases and ten real GPU theme checks; inspect
+      desktop/laptop/phone in both themes. Root runtime/type/build, PDF 461 units /
+      68 horizon layouts / 16 smoke suites, Drop 432 layouts / 34 journeys / six
+      fallbacks, Resume 303 production tests and IMG 470 tests / GPU fallbacks /
+      exact PNG RGBA export pass. Exact sync and standalone portability pass.
+- [x] Add IMG's missing horizon as a bounded piece, preserving its parked refresh
+      draft. Full IMG migration remains pending and last; Resume wheel is next.
+- [ ] Publish these colour-only checkpoints when included in the next authorized
+      release/deployment. Current production deployments and RC artifact are unchanged.
+- [ ] Physical GPU/battery/thermal and spoken assistive acceptance remain open.
+
+Evidence: each repository's `docs/air/brand-horizons-2026-10-19.md` and adjacent
+`evidence/brand-horizons-2026-10-19/`.
+
 ## Working rules
 
 - `[ ]` pending, `[-]` in progress, `[x]` complete with evidence. A new document or

@@ -2128,3 +2128,12 @@ controls. Exact generated specification/bundle checks pass; the contract is stil
 Air1.0.2. Full implementation, native/package proof and limitations are retained in
 Drop's October19 dependency/installer/RC audits. The family TODO and RESUME record
 the final local artifact/checksum and retain publication and device gates.
+
+## App-coloured horizons — 2026-10-19
+
+All five landings use original logo colours through Air 1.0.3 artwork tokens.
+See [the audit](brand-horizons-2026-10-19.md) and
+[evidence](evidence/brand-horizons-2026-10-19/checks.json). Sixty viewport/theme
+cases and ten real GPU theme checks pass; desktop/laptop/phone light/dark states
+were visually inspected. Static fallbacks share the computed shader colour.
+Full product migration/device acceptance and deployment are distinct gates.

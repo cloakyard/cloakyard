@@ -165,7 +165,7 @@ summary:focus-visible {
   width: 100%;
   height: 200px;
   margin-top: var(--air-space-24);
-  color: var(--air-accent);
+  color: var(--air-light-cloakyard);
   background-color: var(--air-page);
   outline-color: var(--air-surface-soft);
   pointer-events: none;

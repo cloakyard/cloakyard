@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "1.0.2",
+  "contractVersion": "1.0.3",
   "note": "Presence in this inventory is not audit or validation. Preserve evidence when updating.",
   "surfaces": [
     {
@@ -68,9 +68,10 @@
         "docs/air/evidence/home-2026-10-13.json",
         "docs/air/validation.md",
         "docs/air/evidence/shader-verification-2026-10-13.json",
-        "docs/air/evidence/live-shader-2026-10-13.json"
+        "docs/air/evidence/live-shader-2026-10-13.json",
+        "docs/air/evidence/brand-horizons-2026-10-19/checks.json"
       ],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Actual shader activated; shared lifecycle and 22 production layout/theme cases pass. Physical power/thermal acceptance pending."
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Actual shader activated; shared lifecycle and 22 production layout/theme cases pass. Physical power/thermal acceptance pending. 2026-10-19: app logo colour in both GPU and static artwork; 12 theme/viewport cases and both GPU themes pass. Physical GPU/battery acceptance remains open."
     },
     {
       "path": "src/components/Brand.tsx",
@@ -366,9 +367,10 @@
         "docs/air/validation.md",
         "docs/air/evidence/home-real-logos-2026-10-13.json",
         "docs/air/evidence/shader-verification-2026-10-13.json",
-        "docs/air/evidence/live-shader-2026-10-13.json"
+        "docs/air/evidence/live-shader-2026-10-13.json",
+        "docs/air/evidence/brand-horizons-2026-10-19/checks.json"
       ],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases. Actual shader activated; shared lifecycle and 22 production layout/theme cases pass. Physical power/thermal acceptance pending."
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases. Actual shader activated; shared lifecycle and 22 production layout/theme cases pass. Physical power/thermal acceptance pending. 2026-10-19: app logo colour in both GPU and static artwork; 12 theme/viewport cases and both GPU themes pass. Physical GPU/battery acceptance remains open."
     },
     {
       "path": "src/main.tsx",

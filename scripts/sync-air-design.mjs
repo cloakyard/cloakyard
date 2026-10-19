@@ -36,9 +36,9 @@ for (const [slug, name, destinations] of products) {
   ).trim();
   const content = `---
 name: ${name} — Cloakyard Air
-version: 1.0.2
+version: 1.0.3
 status: approved
-date: 2026-10-15
+date: 2026-10-19
 scope: complete-web-product
 source-repository: ${sourceRepository}
 source-directory: design/air
@@ -123,7 +123,7 @@ ${appendix}
       studyAssets[asset] = createHash("sha256").update(content).digest("hex");
     }
     const manifest = {
-      version: "1.0.2",
+      version: "1.0.3",
       source: {
         repository: sourceRepository,
         directory: "design/air",

@@ -32,10 +32,13 @@ response hashes, no-transform, 432 layouts / 34 journeys and GPU/six fallbacks p
 representative live light/dark desktop/laptop/phone captures were visually inspected.
 Deployment evidence is committed as `8ce17f9` in Drop. Main/dev remain unchanged;
 integrate Air before another main-triggered deployment. Resume logo/photo is complete
-as `9cc74df`; its shared colour wheel remains next.
+as `9cc74df`; its shared colour wheel remains next. The later user request for
+app-coloured landing shaders is implemented across all five websites as a local
+Air 1.0.3 checkpoint; see the section below. No colour changes are deployed yet.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest completed work: Drop Air website production deployment (`8ce17f9`),
+Latest completed work: app-coloured landing horizons across the family (local),
+following Drop Air website production deployment (`8ce17f9`),
 following dependency/RC preparation and Air installer (`df413b2`),
 after Resume logo/photo (`9cc74df`), dates/current-job
 (`648842d`), contact/native
@@ -55,8 +58,8 @@ quality, minimalism, a distinctive modern appearance and purposeful playful moti
 Every custom control, editor, canvas surround, overlay and edge state belongs to the
 same family; landing-only or token-only work is not a completed migration.
 
-- Canonical source is this repo's `design/air/`; current Air **1.0.2**, contract
-  **bb90f52e0b0a**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
+- Canonical source is this repo's `design/air/`; current Air **1.0.3**, contract
+  **abcaee334ca7**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
   Product appendices live in `design/air/products/`. Regenerate with
   `node scripts/sync-air-design.mjs --bundle`, then verify `--bundle --check`.
   Standalone products must work without a sibling checkout or upstream runtime fetch.
@@ -89,19 +92,20 @@ same family; landing-only or token-only work is not a completed migration.
 ### Repository state at handoff
 
 Root uses `codex/air-refresh`, based on released main `6bd318f`.
-PDF is on released `main` at `4277829`; Drop/Resume/IMG remain on `codex/air-refresh`.
-The reference security patch updates only generated gallery/bundle files in those
-three siblings. IMG also has the parked runtime draft below. Recheck
+PDF is on `codex/air-brand-horizons`, based on released `main` at `4277829`;
+Drop/Resume/IMG remain on `codex/air-refresh`.
+All five carry the Air 1.0.3 palette and portable contract. IMG also has the
+parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | cloakyard   | `6bd318f`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `4277829`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
-| cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
-| cloakresume | `9cc74df`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `8ce17f9`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
+| cloakpdf    | `b67e32d`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakimg    | `512c720`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
+| cloakresume | `4c302da`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
+| cloakdrop   | `a28264f`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -162,6 +166,40 @@ Interactive final `validated` flags remain false pending device/assistive accept
   Main/dev integration is still separate and should precede another main-triggered
   deployment. No native app or RC artifact was changed. Physical/assistive/device
   gates remain open; do not repeat the completed deployment.
+
+### App-coloured landing horizons — local checkpoint on 2026-10-19
+
+Local commits: PDF `b67e32d`, Drop `a28264f`, Resume `4c302da`, IMG `e29495d` plus background integration `512c720`.
+Root contains the canonical contract, palette, gallery, home and family evidence.
+
+- The user explicitly selected **all family landing pages**: Cloakyard/PDF blue,
+  Drop teal, Resume green and IMG coral. Canonical Air 1.0.3 owns artwork-only
+  `--air-light-{app}` tokens from original logo primary/highlight stops. Shared
+  UI accent/focus and neutral planes remain unchanged. SVG uses `currentColor`,
+  the same computed value consumed by the unchanged shader/runtime.
+- All five pass 60 viewport/theme cases and ten real GPU theme checks, with
+  desktop/laptop/phone light/dark visual review. Root checks/types/build, five runtime
+  tests, exact generated sync and all five isolated portability gates pass.
+  PDF: 461 units, dead-code/build, 68 horizon layouts, lifecycle and all 16 smoke
+  suites (documented synthetic fixtures). Drop: Astro/build, 432 layouts / 34
+  journeys and six static fallbacks. Resume: all 303 production tests / eight
+  files, zero skips. IMG: isolated clean tree 470 tests / 46 files, build/assets,
+  GPU/pointer/offscreen/editor disposal and five restricted profiles; 64×48 PNG
+  export preserves exact RGBA pixels/alpha and dimensions. Shader remains lazy,
+  licensed, below 350 kB gzip and outside PWA precache.
+- IMG previously had no horizon. Its bounded addition is kept separate from the
+  parked landing/import draft; full IMG product migration remains last. The
+  existing draft is preserved in its checkout. Its build and all 475 tests also
+  pass, along with twelve theme/layout cases, real GPU and exact PNG output. The
+  horizon blends into the Air page; the legacy background is scoped only to
+  `.cloak-site` until the full IMG landing migration removes it. Do not claim
+  that parked migration completed or publish it.
+- Evidence/audit in each repo: `docs/air/brand-horizons-2026-10-19.md` and
+  `docs/air/evidence/brand-horizons-2026-10-19/`. The root contains the repeatable
+  family runner `scripts/test-air-brand-horizons.mjs`. Full scratch logs/captures:
+  `/tmp/air-brand-horizons-2026-10-19/`. Physical GPU/battery and assistive gates
+  remain open. No pushes/deployments in this checkpoint; the prior live versions
+  remain deployed. Next work returns to Resume's primary-colour wheel below.
 
 ### Exact next bounded piece: CloakResume primary-colour wheel
 
