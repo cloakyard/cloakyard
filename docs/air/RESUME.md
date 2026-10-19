@@ -1,6 +1,53 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-19 (editor wrappers/history)
+## Latest checkpoint — 2026-10-19 (PDF foundation and Select)
+
+PDF **`7bed615`** completes the bounded legacy foundation cleanup. The root,
+editor shell, processing scrim and modal stack now consume Air directly. Deleted
+tokens.css, retired Workbench/Ocean Blue aliases and unused label/selection/pulse/
+scrollbar/motion rules. Select opens immediately for pointer and keyboard, retains
+complete wrapping labels and a readable viewport-bounded popup. Removed animation
+and placement-only state; no dependency added. Frequent select feedback follows
+the existing Air rule; landing shader/artwork motion is unchanged.
+
+Removed two unused UI fonts (75,332 bytes). All 42 document TTF faces for eleven
+embedded families are unchanged and exactly match CSS/registry variants; real
+annotation export still embeds Roboto. fonts.css is an output-preservation surface.
+Air remains 1.0.2 / bb90f52e0b0a. Only PDF's product appendix/standalone DESIGN
+changed; canonical shared assets and other product repositories are unchanged.
+
+453 units/46 files, 70 N-up layouts/23 real output sheets, 141 recovery captures,
+complete 16 production smoke and seven extended suites pass (25 distinct browser
+suites). No failed/retried validation run for this piece. Desktop/laptop/tablet/
+phone light/dark, enlarged text, forced colours/reduced motion reviewed. Safari
+production select/Escape/Apply/Undo and Firefox actual 200% selection/lower action
+access pass. Native review tabs closed and Firefox zoom restored. Physical touch/
+software keyboards, actual OS IME and spoken assistive acceptance remain open.
+
+Required PDF code/dead/build/assets/design/18 portability and root code/types/
+build/design/portability/six-document sync pass. Final rebuild preserves the exact
+tested editor/CSS hashes. Editor 326.91/99.33 kB raw/gzip, CSS 132.38/22.81;
+126 assets/75 PWA entries. PDF inventory retains 91 surfaces and earlier evidence;
+registry.tsx is the only remaining source marked not Air-implemented, as a
+non-visible dispatch map whose consumers still need the final audit.
+
+**Next bounded piece:** audit src/editor/registry.tsx with editor/tools.ts,
+config/tool-registry.ts and live stage/lifecycle consumers. Confirm every tool is
+reachable, dispatch/cleanup ownership is valid and no obsolete registrations or
+dangling references remain. Do not restyle output fonts or delete live seams just
+to reduce file count. Continue remaining full-PDF feature/device acceptance, then
+IMG/Resume colour wheel adoption and family rollout. Full migration is unfinished.
+
+Evidence: PDF `docs/air/evidence/foundation-2026-10-19.json`, desktop/phone PNGs and
+`foundation-checks-2026-10-19.log`; full logs, fixtures, native proofs and captures
+in `/tmp/cloakpdf-air-review/foundation-*`. PDF dev8122 and production8132 remain;
+fresh test-only dev8133 is stopped. IAB tab2 shows the current production N-up
+dropdown with the synthetic study; tab1 is the older form review. Stored family
+goal remains blocked from the earlier checkpoint; API cannot resume it. Human
+continuation authorizes work; do not duplicate or complete the full-family goal.
+Local commits only, no push/deployment.
+
+## Previous checkpoint — 2026-10-19 (editor wrappers/history)
 
 PDF **`b9738c0`** commits the bounded provider/entry/stage/overview audit. Undo/Redo/
 Reset retain focus at history boundaries; pointer/keyboard activation is guarded

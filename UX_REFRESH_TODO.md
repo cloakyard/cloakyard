@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF editor wrapper/history committed; legacy CSS and lifecycle audit next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF foundation cleanup validated; registry/lifecycle audit next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md). The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — Editor wrappers/history (2026-10-19)
+## Latest bounded piece — Air foundation and Select (2026-10-19)
+
+PDF **`7bed615`** removes the old token/palette layer and two unused UI fonts.
+Root surfaces, typography and layering now use Air directly. Select retains full
+labels and immediate interaction; document fonts and real output remain preserved.
+Details and remaining gates are in the final AIR-07 checkpoint and handoff.
+
+- [x] Pass 453 units, 25 browser suites, 70 N-up layouts/23 real output sheets and 141 recovery captures.
+- [x] Inspect desktop/laptop/tablet/phone light/dark, enlarged text, Safari and Firefox actual 200%; retain device/assistive acceptance gates.
+- [x] Update portable PDF requirements and the 91-surface inventory; remove obsolete runtime style references without new dependencies.
+- [ ] Next: non-visible registry/lifecycle consumers and remaining full-PDF acceptance, then IMG/Resume wheel adoption and family rollout.
+
+## Previous bounded piece — Editor wrappers/history (2026-10-19)
 
 PDF **`b9738c0`** retains history focus and protects busy history actions. N-up uses
 PrimaryAction directly; unused provider/history APIs and WholeDocPanel are removed.
@@ -41,7 +53,7 @@ remaining gates are in the final AIR-07 checkpoint and [handoff](docs/air/RESUME
 - [x] Pass 453 units, 25 distinct browser suites, required code/dead/build/design/portability and responsive/native-browser review.
 - [x] Preserve earlier inventory evidence, record the 91 current surfaces and commit the bounded PDF piece.
 - [x] Shared bundle commits after required checks: IMG `aa9f6f8`, Drop `0a3a5b5`, Resume `286f57b`.
-- [ ] Next: legacy CSS, output-font exceptions and registry/lifecycle consumers.
+- [x] Legacy CSS and output-font exceptions audited in the foundation checkpoint below; registry/lifecycle consumers remain next.
 - [ ] Physical touch/software keyboard, actual OS IME and spoken assistive acceptance remain open; full PDF/family migration is unfinished.
 
 ## Previous bounded piece — Annotate inspector (2026-10-15)
@@ -1235,5 +1247,14 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Review 176 navigation and 70 N-up layout cases, both themes and enlarged text; Safari history/apply and Firefox actual 200% zoom.
 - [x] Replace the AI modal test's late animation snapshot with a recorder of real animation creation; keep the 240ms assertion and real execution unchanged.
 - [x] Finish required regression, evidence and local commits: PDF `b9738c0`; shared bundle IMG `aa9f6f8`, Drop `0a3a5b5`, Resume `286f57b`. All required product gates pass.
-- [ ] Next: audit src/index.css and tokens.css aliases/selectors (Ocean Blue utilities and cloak-mono-label appear unused); preserve Select's live cloak-popover-motion until it is migrated. Verify fonts.css against FONT_FAMILIES and exported annotation fonts. Audit non-visible registry/lifecycle consumers, then continue end-to-end PDF closure before family rollout.
+- [x] Foundation checkpoint below completes src/index.css/tokens.css, Select motion and output-font audit. Non-visible registry/lifecycle consumers and full-PDF closure remain next.
 - [ ] Physical touch/software keyboard, actual OS IME and spoken assistive acceptance remain open. IMG/Resume wheel adoption and full product migrations remain separate.
+
+### AIR-07 — PDF legacy foundation removal (2026-10-19)
+
+- [x] Trace every old palette/layer/font/motion consumer; migrate the editor shell, processing scrim and modal stack to canonical Air properties.
+- [x] Remove tokens.css, obsolete theme utilities, label/disclosure/selection/no-scrollbar/pulse styles and the two unused UI font assets. Preserve 42 annotation font files and the preview/export roster.
+- [x] Make frequent Select opening, closing and arrow feedback immediate; remove animation/placement-only state. Let full labels wrap and preserve a readable viewport-bounded menu width.
+- [x] Inspect desktop/laptop/tablet/phone in light/dark, enlarged text and native browsers. Validate pointer/keyboard dropdowns, real N-up output, recovery/processing and all affected features.
+- [x] Pass required code/dead/unit/build/design/portability checks, update portable PDF requirements and inventory, record evidence and commit: PDF `7bed615`.
+- [ ] Next: non-visible registry/lifecycle audit and remaining full-PDF acceptance; then IMG/Resume wheel adoption and family rollout. Physical touch/software keyboard, OS IME and spoken assistive acceptance remain open.

@@ -1779,3 +1779,39 @@ a complete serial production run (361.10s). Its initial development run had one
 20-second Academic CV/a4 timeout; the unchanged case passed alone, then the full
 production suite passed. No assertion/timeout was changed. These bundle updates
 do not claim those products' runtime migration is complete.
+
+## 2026-10-19 — CloakPDF foundation and Select cleanup
+
+PDF **`7bed615`** removes the old Workbench/Ocean Blue token layer and unused UI
+fonts. Root typography/surfaces, editor layers, processing scrim and modal stack
+consume Air directly. Select preserves full labels with wrapping and a readable
+viewport-bounded width; frequent pointer/keyboard interactions and arrow feedback
+are immediate. Removed animation/placement-only state and unused label/selection/
+scrollbar/pulse rules. Live page-grid optimization and native touch scrolling stay.
+
+The deleted UI assets total 75,332 bytes. All 42 document TTF faces for eleven
+embedded families exactly match CSS/registry variants and remain byte-identical;
+real Roboto annotation export passes. fonts.css is recorded as output-preservation.
+No dependency added; no legacy runtime palette/layer/motion/UI-font consumers remain.
+
+453 units/46 files, 70 N-up layouts with 23 real output sheets and 141 recovery
+captures pass. Complete 16 production smoke and seven extended suites pass serially
+without retries (25 distinct suites with focused N-up/recovery). All required
+viewport classes, light/dark, enlarged text, reduced motion and forced colours
+covered; desktop/laptop/tablet/phone screenshots inspected. Safari production
+selection/Escape/Apply/Undo and Firefox actual 200% selection/lower action access
+pass. Native review tabs closed, zoom restored and isolated dev8133 stopped.
+Physical touch/software keyboards, actual OS IME and spoken assistive acceptance
+remain open; this is not full PDF/family completion.
+
+Required PDF code/dead/build/assets/design/18 portability and root code/types/build/
+design/portability/exact six-document sync pass. Final build retains the same
+editor/CSS hashes used by the browser tests. Editor 326.91/99.33 kB raw/gzip,
+CSS 132.38/22.81; 126 assets/75 PWA entries. Canonical PDF appendix and standalone
+DESIGN are synchronized; Air 1.0.2 / bb90f52e0b0a and shared bundles are unchanged.
+
+Evidence: PDF `docs/air/evidence/foundation-2026-10-19.json`, desktop/phone PNGs and
+`foundation-checks-2026-10-19.log`; full temporary evidence under
+`/tmp/cloakpdf-air-review/foundation-*`. Next: registry/lifecycle consumers and
+remaining full-PDF acceptance, then IMG/Resume wheel adoption and family rollout.
+Local commits only; no push/deployment.
