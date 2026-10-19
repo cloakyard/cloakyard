@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields, repeated entries and contact/select implemented; date controls next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select and date controls implemented; logo/photo next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — CloakResume contact and native selects (2026-10-19)
+## Latest bounded piece — CloakResume partial dates (2026-10-19)
+
+Resume `648842d` completes MonthYearField, Experience Current job and Education
+Present. The full product remains in progress.
+
+- [x] Air date fields, separate clear targets, popup and neutral selection grid; responsive date/role pairs and a 44px Current job row. Remove old date skins and exclude Air popups from legacy skin/focus rules.
+- [x] Preserve imported raw strings, month/year/year-only/empty/Present, prior-end restoration and output. Include out-of-range imported years in the picker.
+- [x] Restore focus after disappearing clear/year controls, support nested Escape and non-modal Tab exit, keep closing controls inert and popup content reachable on short/enlarged screens.
+- [x] 256 layouts, 20 selection/clear journeys, 52 contrast pairs, emulated touch cancel, forced colours/reduced motion, native Safari and Firefox actual 200%. Full 300/300 tests in eight files, zero skips; 120 editor and all 34 template/paper cases.
+- [x] Check/build/78-source design/18 portability/exact sync pass. Six proof PNGs and compact evidence/log: Resume `docs/air/evidence/date-controls-2026-10-19.json`; full local records `/tmp/cloakresume-air-dates/`. No dependency, template, output or schema changes.
+- [ ] Next: logo search/profile photo, then wheel, remaining sections/hints/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.
+
+## Previous bounded piece — CloakResume contact and native selects (2026-10-19)
 
 Resume `9d4e7f9` completes contact fields and the shared native select. The full
 product remains in progress.
@@ -587,7 +599,8 @@ items retain their documented human/device gates; they do not imply full accepta
 - [ ] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description.
 - [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
-- [ ] Month/year fields, logo/colour pickers and writing-hint popup interiors.
+- [x] Month/year fields, Experience Current job and Education Present; evidence in Resume `docs/air/evidence/date-controls-2026-10-19.json`.
+- [ ] Logo/photo/colour controls and writing-hint popup interiors.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.

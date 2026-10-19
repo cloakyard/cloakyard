@@ -2025,3 +2025,15 @@ product remains in progress.
 - [x] 128 responsive/theme/text layouts, 20 keyboard/popup journeys, 28 contrast pairs, forced colours, native Safari and Firefox actual 200%. Full 298/298 production tests in eight files, zero skips; 118 editor and all 34 template/paper cases.
 - [x] Check/build/78-source design/18 portability/exact sync pass. Six proof PNGs and compact evidence/log in Resume `docs/air/evidence/contact-selects-2026-10-19.json`; full records in `/tmp/cloakresume-air-selects/`. No dependency, template, output or schema changes.
 - [ ] Next: month/year dates, Experience Current job and Education Present; then logo/wheel, remaining sections, hints/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.
+
+## 2026-10-19 — bounded implementation — CloakResume partial dates (2026-10-19)
+
+Resume `648842d` completes MonthYearField, Experience Current job and Education
+Present. The full product remains in progress.
+
+- [x] Air date fields, separate clear targets, popup and neutral selection grid; responsive date/role pairs and a 44px Current job row. Remove old date skins and exclude Air popups from legacy skin/focus rules.
+- [x] Preserve imported raw strings, month/year/year-only/empty/Present, prior-end restoration and output. Include out-of-range imported years in the picker.
+- [x] Restore focus after disappearing clear/year controls, support nested Escape and non-modal Tab exit, keep closing controls inert and popup content reachable on short/enlarged screens.
+- [x] 256 layouts, 20 selection/clear journeys, 52 contrast pairs, emulated touch cancel, forced colours/reduced motion, native Safari and Firefox actual 200%. Full 300/300 tests in eight files, zero skips; 120 editor and all 34 template/paper cases.
+- [x] Check/build/78-source design/18 portability/exact sync pass. Six proof PNGs and compact evidence/log: Resume `docs/air/evidence/date-controls-2026-10-19.json`; full local records `/tmp/cloakresume-air-dates/`. No dependency, template, output or schema changes.
+- [ ] Next: logo search/profile photo, then wheel, remaining sections/hints/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.

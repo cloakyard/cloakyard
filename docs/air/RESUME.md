@@ -6,12 +6,13 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: Resume contact/native selects (`9d4e7f9`), after repeated
+Latest completed piece: Resume dates/current-job (`648842d`), after contact/native
+selects (`9d4e7f9`), repeated
 entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Next is Resume's month/year dates, Current job and Education Present; IMG stays parked.
+Next is Resume's logo search and profile-photo controls; IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -55,13 +56,13 @@ IMG has the parked draft below. Root has this documentation checkpoint. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
-| Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
-| ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `9abf37d`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
-| cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
-| cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
-| cloakresume | `9d4e7f9`                             | Entry/recovery/shell/fields/entries/contact/select implemented; dates/widgets/review/PWA/assets pending |
-| cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded              |
+| Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
+| ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| cloakyard   | `e50b882`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
+| cloakresume | `648842d`                             | Entry/recovery/shell/fields/entries/contact/select/dates implemented; logo/photo/wheel/review/PWA/assets pending |
+| cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded                       |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -71,17 +72,19 @@ The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: CloakResume month/year and current-job controls
+### Exact next bounded piece: CloakResume logo search and profile photo
 
 1. Read Resume AGENTS/CLAUDE/DESIGN, `docs/air/editor-audit.md` and the inventory.
-   Entry/privacy/recovery/shell, shared fields/entries and contact/select are implemented.
-2. Migrate MonthYearField's trigger, clear action, portaled picker and year grid,
-   plus Experience Current job and Education Present. Preserve raw legacy strings,
-   month/year/year-only/clear/Done semantics and previous-end restoration. Validate
-   complete keyboard paths, focus after disappearing actions, inert exit, touch
-   cancellation, coarse targets, enlarged text and short visual viewports.
-   Read-only prep is `/tmp/cloakresume-air-selects/next-date-notes.md`; no date code yet.
-3. Continue all remaining section interiors, date/logo/wheel, hint popups, template/
+   Entry/privacy/recovery/shell, shared fields/entries, contact/select and dates are implemented.
+2. Migrate shared LogoPicker and both Profile/Skills consumers, plus profile photo
+   controls. Preserve stable icon names/artwork, query/result cap, selected/clear/
+   no-results, unknown imported values, JPG/PNG/2MB decode validation, request
+   cancellation and exact photo bytes. Replace unconditional search autofocus with
+   an intentional touch/keyboard focus policy; cover inert closing, clear focus,
+   short viewports, enlarged text and coarse targets. The date popup is a working
+   reference, not authority to duplicate or invent controls. Read-only notes:
+   `/tmp/cloakresume-air-dates/next-logo-notes.md`; no next-slice code yet.
+3. Continue all remaining section interiors, wheel, hint popups, template/
    library, four review tabs, overflow/export busy/recovery, PWA safety and true
    static404. Actual Resume OG/PWA/README captures remain legacy; regenerate after
    the editor is complete. Ready Offline is still oversized at enlarged text.
@@ -91,6 +94,30 @@ Interactive final `validated` flags remain false pending device/assistive accept
    browser/template skips, weakened feature assertions or inflated timeout budgets.
 5. IMG remains last. Physical touch/keyboard/IME, assistive speech and shader
    hardware gates stay open. Its parked last background fix is not validated.
+
+Completed Resume dates/current-job (`648842d`): Air trigger/clear actions, popup,
+month/year grid and checkbox row; reflowed date and role/company pairs. Keep raw
+imported dates, month/year/year-only/empty/Present and previous-end restoration.
+Year choice and clear return to surviving focus; Escape closes years before popup,
+Tab leaves the non-modal surface, and closing content is inert. Imported years
+outside the usual range stay available. Short screens use more viewport space.
+
+**300/300 in eight files, 381.21s, zero skips**; 120 editor and 34 template/paper
+cases (17 × two papers × five fixtures). 256 layouts, 20 selection/clear journeys,
+52 contrast pairs, emulated touch cancellation, forced/reduced states, Safari and
+Firefox actual 200% pass. Check/build/78-source design/18 portability/exact sync
+pass. Six PNGs and compact proof/log in Resume
+`docs/air/evidence/date-controls-2026-10-19.json`; full local records and next prep
+in `/tmp/cloakresume-air-dates/`. Native review tabs closed and Firefox zoom reset.
+Latest preview 8154; earlier task ports 8145–8153 also remain. Local commits only.
+
+Pixel review exposed legacy 6px corners and 4px focus extent overriding the new
+popup; legacy selectors now exclude Air popovers, retaining other live consumers.
+The final grid reflows into two columns at 320px/32px text, and short viewports
+scroll the surface. A forced-colour probe now waits for actual popup focus before
+Tab. No feature assertions removed, timeout budgets raised or output sources changed.
+Safari's existing preference skips buttons with ordinary Tab; Option-Tab/Space
+verified full-control navigation without changing browser preferences.
 
 Completed Resume contact/native selects (`9d4e7f9`): labelled Air kind/value fields,
 all nine kinds and original validation/autofill/type semantics; shared native select

@@ -135,6 +135,12 @@ are no Swift/native edits. The policy's meaning does not change in a visual refr
 
 ## 5. CloakResume — reuse controls, protect every template
 
+2026-10-19: partial dates followed in `648842d`: 256 layouts, 20 selection/clear
+journeys, 52 contrast pairs, native Safari/Firefox 200% and all 300 production tests
+pass. Raw dates, Present, prior-end restoration and focus after year/clear actions
+are preserved. Next: logo search/profile photo, then remaining wheel/widgets/
+sections/review/export/PWA/assets. IMG stays last.
+
 2026-10-19: contact/native selects followed in `9d4e7f9`: 128 layouts, 20
 keyboard/popup journeys, 28 contrast pairs, native Safari/Firefox 200% and all
 298 production tests pass. Next: month/year, Current job and Education Present,
