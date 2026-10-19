@@ -1,6 +1,48 @@
 # Air refresh — current handoff
 
-## Latest checkpoint — 2026-10-15 (Auto-fill)
+## Latest checkpoint — 2026-10-19 (Fill form)
+
+PDF **`7c8723d`** completes the bounded native Fill form pass. Air text/multiline,
+custom choices, native multi-select/check rows and flatten switch share Auto-fill's
+layout. Required/max-length/read-only/unsupported values are truthful. Existing
+custom dropdown answers and all selections survive. XFA refuses explicitly.
+
+Exact-byte drafts survive tool/page/layout changes. Read errors retry separately
+from empty forms; abandoned reads are ignored. Save writes changed writable values,
+clears choices and reports field-specific failures without losing work. Apply/mobile
+Done awaits output and deduplicates; Undo/Redo/Cancel and privacy gating pass. Native
+review caught success feedback bound to temporary writer bytes: both form tools now
+bind to the committed render, hide it on Undo and preserve form focus after Save.
+
+444 units/46 files, 25 distinct browser suites (Fill form + Auto-fill + 16 production
+smoke + seven extended), required check/dead/build/asset/design/18 portability and
+sync pass. Final affected-focused and production editor smoke reruns cover the
+feedback/focus fix. Eleven sizes × two themes × three regions (66 captures), six
+text200 cases, forced colours/reduced motion and >=44px emulated coarse targets.
+Safari and Firefox (actual 200%) native review complete; final Save/Undo at normal
+Firefox zoom confirms the fix. Editable/flattened PDFs preserve values/flags,
+geometry/catalog; independent two-page Poppler renders match pixel for pixel.
+
+Removed final Labeled/Toggle/SwitchTrack, retired switch CSS, duplicate form parser
+and dead export bridges. PositionGrid, Rgb and transparency checker remain live.
+No dependency or family contract change: Air 1.0.2 / `bb90f52e0b0a`. The PDF appendix
+and standalone DESIGN include the new form rules. Evidence/log/two proof PNGs:
+PDF `docs/air/evidence/fill-form-2026-10-19*`. Full captures/source/output:
+`/tmp/cloakpdf-air-review/`. Final bundle sizes are in the evidence JSON.
+
+N-up was already implemented/validated on 2026-10-14. The previous handoff's next
+N-up entry was stale. **Next: Select text**, then remaining wrapper/stage/provider
+and legacy-style consumer audits. IMG/Resume wheel adoption remains separate.
+Physical touch/software keyboards, OS IME and spoken assistive acceptance stay open;
+this is not full PDF/family completion. The stored family goal remains blocked from
+an earlier checkpoint; the goal API has no active/resume mutation. User continuation
+has authorized the work here. Do not create a duplicate or mark it complete.
+
+PDF dev8122 and production8132 remain available. IAB tab1 shows Fill form with a
+synthetic two-page PDF; native review tabs closed and zoom restored. The older
+IAB tabs described below no longer exist. Local commits only; no push/deployment.
+
+## Previous checkpoint — 2026-10-15 (Auto-fill)
 
 PDF **`58ac944`** migrates the printed-form Auto-fill interior to Air:
 open detection/profile/answer groups, complete labelled fields, page actions and

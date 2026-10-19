@@ -1673,3 +1673,32 @@ CSS -0.10 to 24.92; 128 assets/77 PWA entries. Only PDF appendix/standalone DESI
 changes; family Air 1.0.2 remains unchanged. Root format/lint/types/build/design/
 portability and sync pass. Evidence/log/proofs in PDF `docs/air/evidence/autofill-2026-10-15*`.
 FillFormTool/NupTool and full family work remain open. Local commits only.
+
+## 2026-10-19 — CloakPDF native Fill form
+
+PDF **`7c8723d`** migrates the native AcroForm inspector to Air, including multiline,
+custom/multiple choices, editable answers, read-only/unsupported/XFA states and
+field-level correction. Exact-byte drafts survive tool/layout changes. Changed-only
+writes, empty-choice clearing, promised Apply/mobile Done, failures, Undo/Redo/Cancel
+and privacy gating are verified. Native review found and fixed hidden success
+feedback in both form tools; Save now retains form focus and Undo clears feedback.
+
+444 units/46 files and 25 browser suites pass (two focused, 16 production smoke,
+seven extended), plus final focused and production editor-smoke reruns. 66 size/theme
+regions, six enlarged-text views, forced colours/reduced motion and emulated 44px
+targets checked; Safari and Firefox actual 200% reviewed. Editable/flattened output
+preserves fields/flags/widget geometry, rotated/CropBox/UserUnit pages and catalog.
+Independent Poppler renders match exactly across both synthetic pages. Physical
+touch/software keyboard, actual OS IME and spoken assistive acceptance remain open.
+
+No dependency; removed final legacy input/switch wrappers, duplicate parser/name
+walking and unused export bridges. Editor 322.57/98.39 kB raw/gzip; CSS 141.01/24.64.
+The product evidence JSON records the final measured build. Required code/dead/build/
+asset/design/18 portability, root checks/build and six-document sync pass. Air stays
+1.0.2 (`bb90f52e0b0a`); PDF appendix/standalone DESIGN now specifies these form rules.
+
+Proofs, compact results and command log: PDF `docs/air/evidence/fill-form-2026-10-19*`.
+The production review tab on 8132 shows the synthetic form. N-up was already
+implemented/validated 2026-10-14; the previous next-step prose was stale. Next:
+Select text, then remaining wrapper/stage/provider and obsolete-style consumer
+audits. Full PDF/family refresh is unfinished. Local commits only; no deployment.

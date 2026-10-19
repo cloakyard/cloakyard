@@ -1180,3 +1180,21 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Inspect desktop/laptop/tablet/phone, light/dark, enlarged text, forced colours and native browser interaction; record remaining physical/assistive gates.
 - [x] Remove the unused legacy TextField adapter and retired Auto-fill styling; pass required code, 432 unit tests, 24 browser suites, output and portable-design checks. PDF commit `58ac944`.
 - [ ] Continue FillFormTool and NupTool; complete physical touch/software keyboard, actual OS IME and spoken assistive acceptance. Full PDF/family refresh remains unfinished.
+
+### AIR-07 — PDF Fill form (2026-10-19)
+
+- [x] Replace legacy text/multiline/choice/check/flatten controls with Air; preserve full field names and display read-only/unsupported fields truthfully.
+- [x] Read each byte revision once; keep drafts through tool/layout changes, reject stale reads and distinguish loading, failure/retry and empty forms.
+- [x] Preserve native field flags/options/geometry; clear choices correctly, report field-level save failures and retain partial work without silent omission.
+- [x] Await Apply/mobile Done, prevent duplicates, preserve failures, and validate actual editable/flattened PDF output, Undo/Redo/Cancel and privacy-mark handling.
+- [x] Inspect all eleven viewport classes in light/dark, enlarged text, keyboard, forced colours and native browsers; retain physical-device/assistive gates.
+- [x] Remove final Labeled/Toggle and obsolete switch styles, verify live consumers, pass required checks and record evidence. PDF commit `7c8723d`.
+- [x] Reconcile N-up: implemented/validated on 2026-10-14 (docs/air/validation.md); do not repeat its migration based on stale handoff prose.
+
+- [ ] Next bounded tool: Select text — shared Air action/selection states, extraction
+      loading/error/no-text recovery, copy success/failure, keyboard access and
+      highlight/box/redaction output; preserve selections after failed actions.
+- [ ] Then audit the remaining stage/provider/wrapper inventory and obsolete-style
+      consumers. N-up is already implemented; validate dependencies without a second
+      redesign. Keep physical touch/software keyboard, OS IME and spoken assistive
+      acceptance open. Full PDF/family refresh is unfinished.
