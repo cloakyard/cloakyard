@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select and date controls implemented; logo/photo next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select, date and logo/photo controls implemented; colour wheel next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -42,11 +42,20 @@ Drop/Resume/IMG runtime work stays local; IMG remains last.
 - [x] PDF #201 CI and main merge `41273ae`; live built-asset hashes and true 404 pass.
 - [x] Production payload integrity: root PR #10/main `6bd318f`, PDF #202/main `4277829`, all CI/deploy checks pass. Both live sites serve `no-transform` without injected analytics/challenge scripts. Live asset hashes, home 12 layouts, PDF six output workflows/68 horizon layouts/GPU lifecycle and four editor captures pass. Published Cloakyard v1.0.1 and CloakPDF v2.0.0.
 - [x] CloakDrop page horizon `0cdd8fd`: 432 layouts, 34 journeys, real GPU lifecycle/six fallbacks, Safari, Astro build/check and portability pass. Local only.
-- [-] Resume CloakResume logo/photo controls. IMG remains last.
+- [x] Resume CloakResume logo/photo controls (`9cc74df`).
+- [-] Continue CloakResume colour wheel. IMG remains last.
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 
-## Latest bounded piece — CloakResume partial dates (2026-10-19)
+## Latest bounded piece — CloakResume logo/photo (2026-10-19)
+
+- [x] Air Profile/Skills logo search and photo controls, unknown imported values, exact bytes, existing validation/race/cancellation and focus. Commit `9cc74df`.
+- [x] Stable touch target geometry, shared date/logo viewport placement, forced-colour selection and obsolete cr-control removal.
+- [x] Full 303/303 in eight files, 372.83s, zero skips; 123 editor and 34 template/paper cases. 320 layouts, 20 contrast pairs and 256 date regressions; Safari/Firefox 200%, forced/reduced and emulated touch pass.
+- [x] Check/build/78-source design/18 portability/exact sync; eleven PNGs and compact evidence/checks in Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
+- [ ] Next: shared colour wheel, remaining sections/hints/review/library/export/PWA/static recovery and actual preview assets. Human/device gates remain open. IMG last.
+
+## Previous bounded piece — CloakResume partial dates (2026-10-19)
 
 Resume `648842d` completes MonthYearField, Experience Current job and Education
 Present. The full product remains in progress.
@@ -615,7 +624,8 @@ items retain their documented human/device gates; they do not imply full accepta
       languages, interests, awards, custom, stats and job description.
 - [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
 - [x] Month/year fields, Experience Current job and Education Present; evidence in Resume `docs/air/evidence/date-controls-2026-10-19.json`.
-- [ ] Logo/photo/colour controls and writing-hint popup interiors.
+- [x] Profile/Skills logo search and photo controls; evidence in Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
+- [ ] Colour controls and writing-hint popup interiors.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.

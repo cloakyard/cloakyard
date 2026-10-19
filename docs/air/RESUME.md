@@ -17,17 +17,18 @@ edge-injected analytics/challenge scripts. Live home 12 layout cases, PDF six
 real-output workflows, 68 horizon layouts/GPU checks and four editor captures pass.
 The PDF dark/light desktop/mobile document content was visually inspected.
 CloakDrop horizon is locally committed as `0cdd8fd`: 432 layouts, 34 journeys,
-real GPU lifecycle/six fallbacks and Safari pass. Next: Resume logo/photo controls.
+real GPU lifecycle/six fallbacks and Safari pass. Resume logo/photo is complete
+as `9cc74df`; next is the shared colour wheel.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest completed product implementation: Resume dates/current-job (`648842d`), after contact/native
+Latest completed product implementation: Resume logo/photo (`9cc74df`), after dates/current-job
+(`648842d`), contact/native
 selects (`9d4e7f9`), repeated
 entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Resume's next editor piece is logo search/profile photo, after the release/landing
-follow-ups above. IMG stays parked.
+Resume's next editor piece is the primary-colour wheel. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -80,7 +81,7 @@ before editing; preserve any new user changes. Paths are siblings under
 | cloakyard   | `6bd318f`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
 | cloakpdf    | `4277829`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
-| cloakresume | `648842d`                             | Entry/recovery/shell/fields/entries/contact/select/dates implemented; logo/photo/wheel/review/PWA/assets pending |
+| cloakresume | `9cc74df`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
 | cloakdrop   | `0cdd8fd`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded                       |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
@@ -91,28 +92,45 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: CloakResume logo search and profile photo
+### Exact next bounded piece: CloakResume primary-colour wheel
 
 1. Read Resume AGENTS/CLAUDE/DESIGN, `docs/air/editor-audit.md` and the inventory.
-   Entry/privacy/recovery/shell, shared fields/entries, contact/select and dates are implemented.
-2. Migrate shared LogoPicker and both Profile/Skills consumers, plus profile photo
-   controls. Preserve stable icon names/artwork, query/result cap, selected/clear/
-   no-results, unknown imported values, JPG/PNG/2MB decode validation, request
-   cancellation and exact photo bytes. Replace unconditional search autofocus with
-   an intentional touch/keyboard focus policy; cover inert closing, clear focus,
-   short viewports, enlarged text and coarse targets. The date popup is a working
-   reference, not authority to duplicate or invent controls. Read-only notes:
-   `/tmp/cloakresume-air-dates/next-logo-notes.md`; no next-slice code yet.
-3. Continue all remaining section interiors, wheel, hint popups, template/
-   library, four review tabs, overflow/export busy/recovery, PWA safety and true
-   static404. Actual Resume OG/PWA/README captures remain legacy; regenerate after
-   the editor is complete. Ready Offline is still oversized at enlarged text.
-4. Run `vp check`, `vp run build`, and the complete serial suite with
+   Entry/recovery/shell, shared fields/entries, contact/select, dates and logo/photo
+   are implemented. Read-only preparation: `/tmp/cloakresume-air-logo/next-wheel-notes.md`.
+2. Adopt canonical `docs/air/colour.mjs`, hue/saturation wheel, brightness and exact
+   hex in `ColorPickerContent.tsx`. Preserve all ten preset names/values and the
+   exact stored primary colour until explicit editing, including achromatic hue
+   memory. Current HSL pointer lightness clamp and 48% thumb/full pointer radius
+   disagree; use the canonical mapping. Preserve normalizePrimaryColor, derivePalette,
+   template fonts/geometry and actual export output. No new colour implementation.
+3. Trace desktop ToolbarCenter popup and mobile overflow sheet; retain focus,
+   Escape/Tab, short-screen/visual-viewport placement, pointer capture/cancel/lost
+   capture, keyboard Shift/Home/End, invalid hex recovery and forced-colour fallback.
+4. Continue remaining sections/hints, template/library, four review tabs,
+   overflow/export busy/recovery, PWA safety and true static404. Actual Resume
+   OG/PWA/README assets remain legacy; regenerate after the editor. Ready Offline
+   remains oversized at enlarged text. IMG remains last and parked.
+5. Run check/build and the full serial production suite:
    `CLOAKRESUME_BROWSER_BUILD=production vp test run --no-file-parallelism`.
-   Do not edit runtime/build files while the production suite is running. No missing
-   browser/template skips, weakened feature assertions or inflated timeout budgets.
-5. IMG remains last. Physical touch/keyboard/IME, assistive speech and shader
-   hardware gates stay open. Its parked last background fix is not validated.
+   Do not edit runtime/build while it runs. No feature skips or timeout inflation.
+   Native/physical touch, keyboard/IME and spoken assistive gates remain distinct.
+
+Completed Resume logo/photo (`9cc74df`): Air search/selection/clear and
+photo actions; stable icon names/80-result cap, visible unknown imported names,
+exact photo bytes and original validation/race/cancel handling. Keyboard focuses
+search, touch focuses the surface, and disappearing actions return usable focus.
+Search keeps stable target geometry for quick touches. Shared date/logo placement
+removes duplication; obsolete cr-control skin and logo presence motion are removed.
+
+**303/303 in eight files, 372.83s, zero skips**; 123 editor and 34 template/paper cases.
+320 layouts, 20 contrast pairs, 256 shared-date layouts, forced/reduced states,
+emulated touch cancellation, native Safari and Firefox actual 200% pass.
+Check/build/78-source design/18 portability/exact sync pass. Eleven PNGs and compact
+proof/log: Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
+Two old source-location assertions were updated to follow the shared helper after
+the first full run passed 301/303; all requirements remain asserted and the final
+full run passes. Native review tabs closed and Firefox zoom restored.
+Latest review preview: 8161. Local commits only; full Resume migration unfinished.
 
 Completed Resume dates/current-job (`648842d`): Air trigger/clear actions, popup,
 month/year grid and checkbox row; reflowed date and role/company pairs. Keep raw

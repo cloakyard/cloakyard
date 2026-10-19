@@ -2102,3 +2102,19 @@ A browser-Back test was corrected to assert restored footer/offscreen release
 before scrolling to reactivate. Evidence lives in Drop's
 `docs/air/evidence/landing-horizon-2026-10-19/`. No Drop push or deployment.
 Resume logo/photo follows; hardware/assistive gates remain open.
+
+## 2026-10-19 — CloakResume logo/photo
+
+Local commit `9cc74df` completes Profile/Skills logo and photo controls.
+303/303 full production tests in eight files (372.83s, zero skips), 320 layouts,
+20 contrast pairs, 256 date regression layouts, forced/reduced states, emulated
+touch cancellation, Safari and Firefox actual 200% pass. Check/build/design/18
+portability/exact sync pass. Saved icon names, exact image bytes and output remain
+intact. Stable search height fixes a fast-touch target shift; a border fixes the
+forced-colour selection marker. Shared date/logo placement removes duplication.
+
+The first full run passed 301/303; two old source-location assertions now follow
+the shared placement helper without dropping viewport/listener/placement coverage.
+The final full suite passes. Eleven PNGs and compact proof/checks live in Resume
+`docs/air/evidence/logo-photo-2026-10-19.json`. Next: shared colour wheel.
+No Resume push/deploy; physical input/assistive gates remain open and IMG stays last.
