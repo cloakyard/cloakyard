@@ -135,6 +135,11 @@ are no Swift/native edits. The policy's meaning does not change in a visual refr
 
 ## 5. CloakResume — reuse controls, protect every template
 
+2026-10-19: editor shell/navigation followed in `30696b5`: 324 layouts, ten
+complete section/zoom/paper journeys and 287 full production tests pass. Next:
+shared fields/formatting/repeated-writing controls; keep remaining widgets/review/
+PWA/assets and physical gates explicit. IMG remains last.
+
 2026-10-19: entry/privacy/confirmation/render recovery completed in `eda6df6`.
 341 responsive state cases, 14 journeys, 124 contrast pairs and full 288 production
 tests pass; physical gates remain open. Continue the editor shell and then each

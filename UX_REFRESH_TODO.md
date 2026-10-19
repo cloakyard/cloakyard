@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery implemented; editor next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery and shell implemented; editor interiors next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — CloakResume entry and recovery (2026-10-19)
+## Latest bounded piece — CloakResume editor shell (2026-10-19)
+
+Resume `30696b5` implements the editor frame and navigation; the complete product remains in progress.
+
+- [x] Air header/actions, original 32px mark with 44px link, 72px rail, 360/420px writing-panel frame, section picker and paper/view choices.
+- [x] Keep preview zoom/scroll/pinch/100%/Fit available in a separate dock. Preserve compact equal panes, expanded preview and skip navigation; support short landscape side by side and remove the rotation blocker.
+- [x] Retain keyboard focus across compact section handoffs. Fix genuine 320px formatting/bullet containment by wrapping the three action rows, preserving original feature assertions and 44px targets.
+- [x] 324 layouts, ten complete 13-section/zoom/paper journeys, 60 contrast pairs, native Safari and Firefox actual 200%, forced colours and emulated pinch. All 287 tests in eight files pass with no skips; all 107 editor and 34 template/paper cases still run.
+- [x] Remove retired shell styles, rotation code and unused shell/brand tokens. No new dependency or template/PDF/font/data source change; check/build/design/18 portability/exact sync pass.
+- [ ] Continue shared editor fields/repeated-writing controls, every section, widgets/wheel, library/review/export, PWA/static recovery and OG/PWA/README assets. Ready Offline remains oversized at enlarged text and belongs to the pending PWA slice.
+- [ ] Physical touch/software keyboards, OS IME, spoken assistive and shader hardware gates remain open. CloakIMG stays parked and last.
+
+## Previous bounded piece — CloakResume entry and recovery (2026-10-19)
 
 Resume `eda6df6` adopts Air on the start page, privacy, confirmations and render recovery.
 
@@ -40,7 +52,7 @@ Resume `eda6df6` adopts Air on the start page, privacy, confirmations and render
 - [x] 341 layout cases, 14 journeys, 124 measured contrast pairs; native Safari and Firefox actual 200% zoom; finite horizon/reduced/offscreen/unmount checks.
 - [x] Full 288-test production pass, including 107 editor cases and all 17 templates × A4/Letter × five fixtures; check/build/design/18 portability/exact sync pass.
 - [x] Remove retired entry/privacy/proof/reveal CSS and correct historical audit authority. Keep the optional shader out of the offline shell. No template/output/font source or dependency change.
-- [ ] Next: Resume editor shell and section navigation, then its interiors, widgets/wheel, review/template/export chrome, PWA/static recovery and preview assets. This entry slice does not complete Resume.
+- [x] Editor shell and section navigation followed in the checkpoint above; interiors, widgets/review/PWA/preview assets remain open.
 - [ ] Physical touch/software keyboard, OS IME, spoken assistive and physical GPU/battery acceptance remain open. IMG stays last and parked.
 
 ## Previous bounded piece — Complete CloakDrop website (2026-10-19)
@@ -534,7 +546,8 @@ items retain their documented human/device gates; they do not imply full accepta
 ## Phase 5 — CloakResume
 
 - [x] Landing/start blank/sample/load/restore, capabilities, privacy and footer. Software evidence: Resume `docs/air/evidence/entry-recovery-2026-10-19.json`; physical gates remain open.
-- [ ] Editor header, section rail/picker/panel, canvas/preview pagination, zoom and format scope.
+- [x] Editor header, section rail/picker/panel frame, preview surround and zoom, paper/view choices. Software evidence: Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
+- [ ] Format scope and remaining editor interiors; preserve preview pagination/output throughout.
 - [ ] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description.
 - [ ] Repeated entry cards, drag/reorder controls, rich text, month/year fields, logo/colour pickers.
@@ -543,7 +556,7 @@ items retain their documented human/device gates; they do not imply full accepta
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.
 - [ ] ATS overview/keywords/insights/parse preview, writing review, field jumps and issue states.
 - [-] Confirm, privacy, notices and error boundary implemented; editor bottom sheets, PWA/reload and remaining validation interiors stay open.
-- [ ] Mobile edit/preview split, section navigation, short-height/landscape and software keyboard.
+- [-] Mobile split/expanded preview, section navigation and short landscape implemented and software-validated; physical software-keyboard/IME and assistive acceptance remain open.
 - [ ] Test all 17 templates, A4/Letter, pagination, long content and image/logo boundaries.
 - [ ] Preserve template-specific colours/fonts/layout and printable/exported document geometry.
 - [ ] Verify new/load/save/restore/JSON and PDF export, cancellation, unsaved edits and malformed input.

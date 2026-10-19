@@ -1979,3 +1979,14 @@ synchronization findings, native focus correction and human/device limits are in
 Resume `docs/air/evidence/entry-recovery-2026-10-19.json`. The family contract remains
 Air 1.0.2 / `bb90f52e0b0a`; the product appendix now records runtime adoption.
 Next is Resume's editor shell; IMG remains last and uncommitted.
+
+## 2026-10-19 — Resume editor shell checkpoint
+
+Resume `30696b5` adds Air shell/navigation and reachable preview controls while
+preserving document output. 324 layouts, ten full 13-section/zoom/paper journeys,
+60 contrast pairs, native Safari/Firefox 200% and all 287 production tests pass.
+The first full run caught three real 320px formatting action overflows; wrapping
+fixed them with original assertions intact. Detailed evidence and remaining
+interior/PWA/device gates are in Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
+No contract revision/dependency/output-source change. Continue Resume shared editor
+fields and writing controls; IMG remains last and parked. Local commits only.
