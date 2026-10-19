@@ -6,10 +6,10 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: PDF final AI software acceptance (`b9d67a9`). The software
-migration has a complete dated acceptance map; physical/device gates remain open.
-The user revised the rollout: **finish PDF → CloakDrop website → CloakResume →
-CloakIMG last**. A small IMG landing/import draft is parked uncommitted.
+Latest completed piece: complete Drop website/OG migration (`e5f2bac`), after PDF
+software acceptance (`b9d67a9`). Both have dated software evidence; physical/device
+gates remain open. The corrected order is **PDF → Drop website → CloakResume →
+CloakIMG last**. Resume is next; IMG's small entry draft stays parked uncommitted.
 
 ### Objective and settled decisions
 
@@ -55,11 +55,11 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `c3f5825`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakyard   | `051a292`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
 | cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
 | cloakresume | `286f57b`                             | Shared bundle synchronized; full product migration and wheel alignment pending                          |
-| cloakdrop   | `0a3a5b5`                             | Shared bundle synchronized; website migration pending, native app excluded                              |
+| cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded              |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -69,18 +69,31 @@ The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: CloakDrop website
+### Exact next bounded piece: CloakResume entry and recovery
 
-1. PDF `docs/air/acceptance.md` now maps every broad software/output item to dated
-   evidence, including both AI tiers × both original fixtures. Do not repeat completed
-   panels or cached model runs; retain physical/device limits explicitly.
-2. Read Drop AGENTS/CLAUDE, root and website DESIGN, nested contributor guidance,
-   `docs/air/website-audit.md` and current inventory/source. Keep Swift/native UI unchanged.
-3. Implement shared layout/navigation/theme and home/product/download/footer as the
-   next bounded slice. Preserve native screenshot evidence and accurate install copy.
-   Then finish privacy/404, OG/metadata and legacy cleanup with the saved gates.
-4. After Drop, migrate Resume; IMG stays last. Do not commit or continue its parked
-   draft before that turn. See the draft details below before restarting.
+1. Read Resume AGENTS/CLAUDE/DESIGN, its audit/inventory, and the current landing,
+   blank/sample/load/restore/privacy/error paths. Preserve the printable template
+   boundary and existing saved work. Do not change document typography or geometry.
+2. Implement the first bounded landing/start/restore/privacy/recovery slice, then
+   inspect all required sizes/themes and input states. Run complete logic/browser
+   tests with the saved no-file-parallelism rule and all applicable output checks.
+3. Continue its shell/section/template/ATS/format/export slices per the plan. Align
+   the existing colour wheel while preserving all 17 templates and export fidelity.
+4. IMG remains last. Do not commit or continue its parked draft before Resume is
+   finished; see the draft details below before restarting.
+
+Completed Drop website (`e5f2bac`): all home/policy/404/header/footer/install/download
+surfaces use Air; native in-flow menu and policy contents preserve keyboard/no-JS
+navigation. Native Firefox anchor continuation was reproduced and fixed, then
+verified in Firefox at 200% and Safari. 432 layouts, 34 journeys, 374 contrast pairs,
+18 policy active links, sync/Astro/build/design/18 portability pass. OG is a new
+1200×630 Air composition with the unchanged actual Mac screenshot. Old fonts,
+palette, stats/Kicker/unused icons, overlay menu and scroll/reveal code are removed.
+Policy, logos, native screenshot bytes and Swift source are unchanged. Durable
+proof: Drop `docs/air/evidence/website-air-2026-10-19.json`, log and four PNGs; full
+captures `/tmp/cloakdrop-air/`. Physical touch/spoken assistive and native install/
+runtime checks are not claimed. Preview is `http://127.0.0.1:8144/`; avoid reused
+8134, where native Firefox has an earlier PDF service worker. Do not clear user data.
 
 Completed PDF AI checkpoint (`b9d67a9`): Compact/Quality × sample/multipage all
 pass initial/warm loads, grounded facts, keyboard tier swap/cancel, a generated
@@ -126,18 +139,15 @@ Chromium installability pass. No native/physical-install acceptance claimed.
 
 ### What follows, in order
 
-1. **CloakDrop website:** Air header/landing/privacy/404/install/download surfaces;
-   resolve dark skip-link, enlarged-text clipping and obsolete assets. Preserve real
-   native screenshots and all Swift/native UI. Refresh OG design with the finished site.
-2. **CloakResume:** full landing/editor/sections/templates/ATS/format/export migration;
+1. **CloakResume:** full landing/editor/sections/templates/ATS/format/export migration;
    align its existing wheel, correct tablet targets/contact typography, preserve all
    17 templates, pagination, printable fonts/colours and exports.
-3. **CloakIMG last:** resume and fully validate the parked entry draft, then complete
+2. **CloakIMG last:** resume and fully validate the parked entry draft, then complete
    editor/canvas/layers/history/tool/AI/export migration. Adopt the wheel while preserving
    RGB, recents, eyedropper, preview/apply/cancel, undo, pixels/alpha and output formats.
-4. **Family closure:** matched widths/themes, remaining legacy/dependency/reference
+3. **Family closure:** matched widths/themes, remaining legacy/dependency/reference
    searches, portable adoption/drift, feature/output regression, budgets/privacy/shader
-   fallbacks, evidence and final commit ledger. Complete remaining PDF/device gates.
+   fallbacks, evidence and final commit ledger. Complete remaining PDF/Drop/device gates.
 
 Remaining human/device acceptance includes physical touch/software keyboards,
 actual OS IME, spoken assistive technology, final-size QR scanning and physical

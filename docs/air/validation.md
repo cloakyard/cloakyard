@@ -1948,3 +1948,23 @@ The user's correction sets Drop website next, Resume after Drop, IMG last. A sma
 IMG landing/import draft is parked uncommitted; its final background fix still needs
 validation. TODO, plan and handoff now agree. Root checks/types/build/design/
 portability/exact bundle sync pass. No push or deployment.
+
+## 2026-10-19 — Complete CloakDrop website/OG checkpoint
+
+Drop `e5f2bac` migrates home, header/footer, product/craft/privacy, install/download,
+policy and 404 to Air. A native in-flow menu, source-derived policy contents and
+explicit anchor focus preserve no-JS/keyboard/history. Native Firefox revealed a
+post-anchor Tab reset; the corrected path passes there at 200% and in Safari.
+
+432 layout observations across all required classes/themes/text sizes, 34 journeys,
+374 contrast pairs and 18 policy active destinations pass. Asset sync, Astro check
+(17 files, no diagnostics), three-route production build, design integrity and all
+18 portability checks pass. Four durable PNGs plus full local `/tmp/cloakdrop-air/`
+visual evidence cover the website; `assets/social/og.png` is the new 1200×630 Air
+card. Policy/native source/screenshot/logo bytes are unchanged. The old font pair,
+palette, band/stats/Kicker/icons, overlay menu and scroll/reveal code are removed.
+CSS is 8,882 bytes gzip including shared controls, inline navigation 783 bytes gzip;
+no production dependency added. Canonical product appendix and both standalone Drop
+DESIGN copies are synchronized. Root check/types/build/design/portability/exact sync
+pass. Physical touch/spoken assistive and deployed/native-install checks remain
+explicitly open. Next: Resume, then IMG last. No push or deployment.

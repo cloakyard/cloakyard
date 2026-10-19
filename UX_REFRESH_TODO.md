@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF software checkpoint complete; CloakDrop website next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — PDF software acceptance and revised rollout (2026-10-19)
+## Latest bounded piece — Complete CloakDrop website (2026-10-19)
+
+Drop `e5f2bac` implements all three static routes and the 1200×630 OG card.
+
+- [x] Shared Air home/header/footer, in-flow compact navigation, product/privacy/install groups, source-derived policy contents and true 404 recovery.
+- [x] Preserve download/release/platform/signing guidance, policy meaning/revision and every native screenshot/logo byte. Swift/native UI is unchanged.
+- [x] Remove legacy palette/fonts, overlay menu, repeated stats, unused components/icons and reveal/scroll-progress code. No production dependency added.
+- [x] Pass 432 layout observations, 34 journey records, 374 contrast pairs, 18 active-policy destinations, no-JS/reduced-motion/forced-colour/history checks, asset sync/Astro check/build/design/18 portability/exact sync.
+- [x] Inspect desktop/laptop/tablet/phone light/dark, enlarged text and OG; native Safari and Firefox actual 200% zoom/keyboard/recovery pass. Fix the native Firefox anchor focus issue before commit.
+- [ ] Physical touch and spoken assistive acceptance remain open. No native install/signing/runtime or deployed edge certification is claimed.
+- [ ] Next: CloakResume entry/restore/privacy and then its full editor. CloakIMG remains last with its draft parked uncommitted.
+
+## Previous bounded piece — PDF software acceptance and revised rollout (2026-10-19)
 
 PDF `b9d67a9` closes the final software acceptance matrix. The user revised the
 remaining order: **CloakDrop website → CloakResume → CloakIMG last**.
@@ -41,7 +53,8 @@ remaining order: **CloakDrop website → CloakResume → CloakIMG last**.
 - [x] Correct stale model/backend/cache-size references and harness consent/cleanup; no production behavior, styling or dependency change.
 - [x] Reconcile Phase 3 software/output checks against PDF `docs/air/acceptance.md`; preserve dated evidence and distinguish cached runs from fresh downloads.
 - [ ] Physical touch/software keyboard, OS IME, spoken assistive, physical QR scanning and shader hardware acceptance remain open. Other inference hardware/engines are unverified.
-- [ ] Finish Drop website, then Resume, then IMG. A small IMG landing/import draft is parked uncommitted; it is not a completed slice and must be fully revalidated when resumed.
+- [x] Finish Drop website (`e5f2bac`).
+- [ ] Finish Resume, then IMG. A small IMG landing/import draft is parked uncommitted; it is not a completed slice and must be fully revalidated when resumed.
 
 ## Previous bounded piece — PWA active-work safety (2026-10-19)
 
@@ -490,19 +503,21 @@ items retain their documented human/device gates; they do not imply full accepta
       sources plus the opt-in Air stylesheet, 90 normal layout cases, 24 header journeys,
       370 opaque-background text pairs and 12 enlarged-root-font cases. Evidence in
       `cloakdrop/docs/air/website-audit.md`; this does not mark production as migrated.
-- [ ] Resolve the baseline dark skip-link contrast, enlarged-text home/404 clipping,
+- [x] Resolve the baseline dark skip-link contrast, enlarged-text home/404 clipping,
       40px touch targets, tablet hero spacing, keyboard motion and no-JS menu findings.
-- [ ] Replace/remove the recorded unused style tokens/classes, old band artwork and
+- [x] Replace/remove the recorded unused style tokens/classes, old band artwork and
       maintained editorial-design references as each surface migrates.
 
-- [ ] Refresh shared header, hero, product/craft/privacy sections, download/install guidance and footer.
-- [ ] Preserve native app screenshots as product evidence; apply Air only to surrounding website UI.
-- [ ] Privacy and 404 use the same Air reading and navigation patterns.
-- [ ] Preserve accurate supported OS, architecture, signing/release status and download links.
-- [ ] Remove obsolete motion/hero geometry only when unused; preserve accessibility and anchors.
-- [ ] Inspect all required viewport classes, dark mode, keyboard/touch/reduced motion and zoom.
-- [ ] Run asset sync, Astro check and production build; verify links and policy content.
-- [ ] Verify no Swift/native changes; record evidence and commit.
+- [x] Refresh shared header, hero, product/craft/privacy sections, download/install guidance and footer.
+- [x] Preserve native app screenshots as product evidence; apply Air only to surrounding website UI.
+- [x] Privacy and 404 use the same Air reading and navigation patterns.
+- [x] Preserve accurate supported OS, architecture, signing/release status and download links.
+- [x] Remove obsolete motion/hero geometry only when unused; preserve accessibility and anchors.
+- [x] Inspect all required viewport classes, light/dark, keyboard/emulated coarse input/reduced motion and native 200% zoom.
+- [x] Run asset sync, Astro check and production build; verify links and policy content.
+- [x] Verify no Swift/native changes; record evidence and commit.
+
+- [ ] Physical touch and spoken assistive acceptance; browser emulation does not certify these gates.
 
 ## Phase 5 — CloakResume
 

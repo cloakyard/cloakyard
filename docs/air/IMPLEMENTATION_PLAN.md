@@ -115,6 +115,11 @@ privacy disclosures. A model download test must use the documented supported pat
 
 ## 4. CloakDrop website — complete all routes
 
+Implemented as one coherent static-site piece in `e5f2bac` (2026-10-19), including
+all three routes and social imagery. Its 432 layout observations, 34 journeys,
+374 contrast pairs, native-browser/zoom review and required checks pass. Physical
+touch and spoken assistive acceptance remain open. Continue with Resume, then IMG.
+
 - **Commit A:** shared layout/navigation/theme, home/hero/product/download/footer.
   Keep the real native screenshot as product evidence; only the surrounding web
   design changes. Preserve accurate OS/architecture/signing/release/download copy.
