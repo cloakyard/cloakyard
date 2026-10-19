@@ -18,7 +18,9 @@ It reads original logo stops, checks computed colours and static/GPU parity, and
 uses disposable browser profiles. Full temporary captures/logs are under
 `/tmp/air-brand-horizons-2026-10-19/`.
 
-This is a local checkpoint. These colour changes have not been pushed or deployed.
+Implementation was initially local. The user subsequently authorized deployment;
+[PR #11](https://github.com/cloakyard/cloakyard/pull/11) is merged and the colours are live.
+See [production verification](brand-deployment-2026-10-19.md).
 Physical GPU/battery/thermal and assistive-device gates remain open; emulation
 and desktop Chromium do not establish those results.
 

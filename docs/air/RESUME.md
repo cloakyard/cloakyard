@@ -30,14 +30,19 @@ deployment: Air is live at [drop.cloakyard.com](https://drop.cloakyard.com/), Cl
 version `f99e2602` from source `6ac533f`, promoted to 100% traffic. Eighteen live
 response hashes, no-transform, 432 layouts / 34 journeys and GPU/six fallbacks pass;
 representative live light/dark desktop/laptop/phone captures were visually inspected.
-Deployment evidence is committed as `8ce17f9` in Drop. Main/dev remain unchanged;
-integrate Air before another main-triggered deployment. Resume logo/photo is complete
-as `9cc74df`; its shared colour wheel remains next. The later user request for
-app-coloured landing shaders is implemented across all five websites as a local
-Air 1.0.3 checkpoint; see the section below. No colour changes are deployed yet.
+Deployment evidence is committed as `8ce17f9` in Drop. The later authorized
+app-colour deployment integrated all released sites through dev → main:
+Cloakyard [#11](https://github.com/cloakyard/cloakyard/pull/11) at `4e860f3`,
+PDF [#203](https://github.com/cloakyard/cloakpdf/pull/203) at `72f8883`, and
+Drop [#40](https://github.com/cloakyard/cloakdrop/pull/40) at `5ee9a01`.
+All three Air 1.0.3 colour updates are live and production-verified. Drop main/dev
+integration is complete. Resume and IMG colour checkpoints remain local while
+their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`;
+its shared colour wheel remains next. See the deployment checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest completed work: app-coloured landing horizons across the family (local),
+Latest completed work: app-coloured horizons deployed for Cloakyard/PDF/Drop;
+Resume/IMG implementations remain local,
 following Drop Air website production deployment (`8ce17f9`),
 following dependency/RC preparation and Air installer (`df413b2`),
 after Resume logo/photo (`9cc74df`), dates/current-job
@@ -85,15 +90,17 @@ same family; landing-only or token-only work is not a completed migration.
   The user subsequently authorized dev integration, main PRs and release for
   Cloakyard and CloakPDF, then explicitly requested the CloakDrop RC GitHub release.
   Drop RC1 is published through its verified tag. The user then explicitly authorized
-  its website deployment; `codex/air-refresh` was pushed and its Cloudflare build
-  promoted to production. Main/dev integration remains separate. Resume/IMG stay
-  local. No subagent delegation was requested.
+  its website deployment, then deployment of the app-coloured shaders. All three
+  released sites now have dev integration, merged main PRs and verified production
+  builds. Resume/IMG stay local. No subagent delegation was requested.
 
 ### Repository state at handoff
 
-Root uses `codex/air-refresh`, based on released main `6bd318f`.
-PDF is on `codex/air-brand-horizons`, based on released `main` at `4277829`;
-Drop/Resume/IMG remain on `codex/air-refresh`.
+Root uses `codex/air-refresh`, now based on deployed main `4e860f3`.
+PDF uses `codex/air-brand-horizons`, based on deployed main `72f8883`;
+Drop uses `codex/air-refresh`, based on deployed main `5ee9a01`. Local deployment
+evidence commits follow those main commits: PDF `0b074cd`, Drop `cde56b5`, plus
+this root handoff commit. Resume/IMG remain on `codex/air-refresh`.
 All five carry the Air 1.0.3 palette and portable contract. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
@@ -101,11 +108,11 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `6bd318f`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `b67e32d`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakyard   | `4e860f3`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `72f8883`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `512c720`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
 | cloakresume | `4c302da`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `a28264f`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
+| cloakdrop   | `5ee9a01`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -142,7 +149,7 @@ Interactive final `validated` flags remain false pending device/assistive accept
   Drop `docs/audits/evidence/2026-10-19-rc.1-publication.json`.
 - Initially only the release tag was pushed. The later authorized website deployment
   pushed `codex/air-refresh` at `6ac533f`, built and promoted version `f99e2602` to
-  100% production traffic. Main/dev remain unmerged. Preserve this exact candidate/
+  100% production traffic. Main/dev were subsequently integrated in PR #40. Preserve this exact candidate/
   checksum; do not retag or rebuild the published RC in place.
   The preparation manifest's `published:false` is historical; use the publication
   record for status. Do not repeat finished dependency or installer work.
@@ -163,8 +170,8 @@ Interactive final `validated` flags remain false pending device/assistive accept
   dry run, exact sync, 20 inventory / 18 portability and remote checks pass.
 - Drop audit: `docs/audits/2026-10-19-website-deployment.md`, compact evidence and
   representative captures in `docs/air/evidence/deployment-2026-10-19/` (`8ce17f9`).
-  Main/dev integration is still separate and should precede another main-triggered
-  deployment. No native app or RC artifact was changed. Physical/assistive/device
+  Subsequent PR #40 completed main/dev integration before the colour deployment
+  below. No native app or RC artifact was changed. Physical/assistive/device
   gates remain open; do not repeat the completed deployment.
 
 ### App-coloured landing horizons — local checkpoint on 2026-10-19
@@ -198,8 +205,30 @@ Root contains the canonical contract, palette, gallery, home and family evidence
   `docs/air/evidence/brand-horizons-2026-10-19/`. The root contains the repeatable
   family runner `scripts/test-air-brand-horizons.mjs`. Full scratch logs/captures:
   `/tmp/air-brand-horizons-2026-10-19/`. Physical GPU/battery and assistive gates
-  remain open. No pushes/deployments in this checkpoint; the prior live versions
-  remain deployed. Next work returns to Resume's primary-colour wheel below.
+  remain open. The initial checkpoint was local; the subsequent authorized
+  Cloakyard/PDF/Drop deployment is recorded below. Resume/IMG remain local.
+
+### App-coloured production deployment — complete on 2026-10-19
+
+- Authorized dev → main PRs: Cloakyard #11/main `4e860f3`, PDF #203/main
+  `72f8883`, Drop #40/main `5ee9a01`. Production trees match their validated
+  candidates. All PR/main checks and Cloudflare builds pass.
+- Active versions at 100%: Cloakyard `eaecf313`, PDF `afe96c45`, Drop `38ca8179`.
+  All 162 deployed files match local SHA-256 and no-transform; three missing-route
+  checks pass. Thirty-six responsive/theme cases, six real GPU themes and idle
+  checks pass. Desktop/laptop/phone light/dark captures were visually inspected.
+  PDF's six standalone output workflows also pass, including independent signature
+  verification. Published release tags and the exact Drop RC DMG remain unchanged.
+- Each deployed repo contains `docs/air/brand-deployment-2026-10-19.md` and
+  `docs/air/evidence/brand-deployment-2026-10-19/`. Root family-deployments.json
+  maps all three exact main/source/build identities. Scratch: `/tmp/air-brand-deploy-2026-10-19/`.
+- Cloakyard's existing non-production version command is also `npx wrangler deploy`;
+  a dev push can affect production before main. No settings were changed. Account
+  for this existing configuration before future branch pushes; the final active
+  version is the main build above.
+- Resume and IMG were neither pushed nor deployed. Resume wheel remains next;
+  IMG's parked draft is preserved. Physical GPU/battery/thermal and assistive gates
+  remain open. Do not repeat these completed deployments.
 
 ### Exact next bounded piece: CloakResume primary-colour wheel
 

@@ -2137,3 +2137,12 @@ See [the audit](brand-horizons-2026-10-19.md) and
 cases and ten real GPU theme checks pass; desktop/laptop/phone light/dark states
 were visually inspected. Static fallbacks share the computed shader colour.
 Full product migration/device acceptance and deployment are distinct gates.
+
+## 2026-10-19 — brand-coloured production deployment
+
+Dev → main PR #11 merged as `4e860f3`; Cloudflare version
+`eaecf313` is active at 100%. Fresh checks/builds and remote CI pass.
+Exact live asset hashes, twelve responsive/theme cases, both real GPU themes
+and idle checks pass; desktop/laptop/phone light/dark states were inspected.
+[Deployment audit](brand-deployment-2026-10-19.md) contains the source/build identity
+and evidence. Resume/IMG remain local; physical/assistive acceptance remains open.

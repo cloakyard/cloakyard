@@ -1,0 +1,32 @@
+[
+  {
+    "app": "cloakyard",
+    "label": "Cloakyard",
+    "url": "https://cloakyard.com",
+    "source": "0f290bcb77630183cb792b208376826f16173901",
+    "main": "4e860f33a2e2dc158ec12ea8e98888a18a92823b",
+    "pr": 11,
+    "version": "eaecf313",
+    "build": "f960b3c2-39f4-4688-a2df-d7088263b74b"
+  },
+  {
+    "app": "cloakpdf",
+    "label": "CloakPDF",
+    "url": "https://pdf.cloakyard.com",
+    "source": "b67e32dd6eb1a9d5ed947912758903e4d72b891b",
+    "main": "72f888388490a0b9df1649957829cb9f4e7204f3",
+    "pr": 203,
+    "version": "afe96c45",
+    "build": "3da20ef8-c237-4d1e-b1e7-1b3b218c9583"
+  },
+  {
+    "app": "cloakdrop",
+    "label": "CloakDrop",
+    "url": "https://drop.cloakyard.com",
+    "source": "a28264ff48deeb1cbe9847d7e0d77b0802999ae7",
+    "main": "5ee9a016182ea3eebcce0415fde19ff15eee48f0",
+    "pr": 40,
+    "version": "38ca8179",
+    "build": "c42dcc9b-464a-4887-bf8f-872fcb65ad67"
+  }
+]

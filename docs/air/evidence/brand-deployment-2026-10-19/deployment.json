@@ -1,0 +1,29 @@
+{
+  "app": "cloakyard",
+  "label": "Cloakyard",
+  "url": "https://cloakyard.com",
+  "source": "0f290bcb77630183cb792b208376826f16173901",
+  "main": "4e860f33a2e2dc158ec12ea8e98888a18a92823b",
+  "pr": 11,
+  "version": "eaecf313",
+  "build": "f960b3c2-39f4-4688-a2df-d7088263b74b",
+  "prUrl": "https://github.com/cloakyard/cloakyard/pull/11",
+  "mergedAt": "2026-10-19T13:37:51Z",
+  "trafficPercent": 100,
+  "verifiedAt": "2026-10-19T13:43:53.604Z",
+  "checks": [
+    {
+      "name": "Workers Builds: cloakyard",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/f960b3c2-39f4-4688-a2df-d7088263b74b"
+    },
+    {
+      "name": "contract",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/cloakyard/cloakyard/actions/runs/39261801219/job/118091074583"
+    }
+  ],
+  "scope": "Released websites only; Resume and IMG remain local. Published release tags/assets unchanged."
+}
