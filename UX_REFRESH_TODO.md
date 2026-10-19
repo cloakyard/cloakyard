@@ -25,8 +25,9 @@ The separately requested Drop installer now uses Air.
       outlines; shared reading/reference styles and all portable copies agree.
 - [x] Add a portable all-link colour/hover/focus browser check and extend Drop's
       full website matrix to catch content-link drift.
-- [-] Complete visual/feature gates, passing commits and production verification.
-  Resume/IMG stay local and the parked IMG migration stays separate.
+- [x] Visual/feature gates, bounded commits and production verification pass.
+      Root/PDF/Drop are live: 162 matching assets, 580 live link-state checks and
+      202 keyboard checks. Resume/IMG stay local; the parked IMG draft is preserved.
 
 Evidence: `docs/air/neutral-links-2026-10-19.md`.
 

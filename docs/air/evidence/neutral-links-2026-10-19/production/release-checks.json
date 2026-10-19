@@ -1,0 +1,17 @@
+[
+  {
+    "link": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/6d32b1bd-e595-4d5e-b521-9525c235dd95",
+    "name": "Workers Builds: cloakyard",
+    "state": "SUCCESS"
+  },
+  {
+    "link": "https://github.com/cloakyard/cloakyard/actions/runs/39278108178/job/118147208178",
+    "name": "contract",
+    "state": "SUCCESS"
+  },
+  {
+    "link": "https://github.com/cloakyard/cloakyard/actions/runs/39278062713/job/118147082294",
+    "name": "contract",
+    "state": "SUCCESS"
+  }
+]

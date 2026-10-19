@@ -46,7 +46,9 @@ The user explicitly included Cloakyard's content links and required the rule in
 Air. Version 1.0.6 removes the previous blue-body-link permission, preserves angled
 cues/inline underlines and blue focus outlines, and supplies a portable all-anchor
 browser checker. Local correction and deployment proof are tracked in
-`docs/air/neutral-links-2026-10-19.md`; publication is pending. Resume/IMG stay local.
+`docs/air/neutral-links-2026-10-19.md`; root/PDF/Drop are live and production-verified.
+All 162 deployed files match; 580 live link-state and 202 keyboard checks pass.
+Resume/IMG stay local, with Resume’s 303 production tests passing.
 
 Previous follow-up: the user explicitly prefers **angled hyperlinks** and the
 approved neutral navigation. Air 1.0.5 supersedes the straight-link decision in
@@ -110,11 +112,11 @@ same family; landing-only or token-only work is not a completed migration.
 
 ### Repository state at handoff
 
-Root uses `codex/air-refresh`, based on deployed main `8abac04` (PR #13).
-PDF uses `codex/air-brand-horizons`, based on deployed main `8f801c3` (PR #205).
-Local production-evidence commits follow these merges. Drop uses
-`codex/air-refresh`, based on deployed main `e3edf4e` (PR #41). Resume/IMG remain
-on `codex/air-refresh`; their hyperlink checkpoints are `f1c49cd` and `c38e204`.
+Root uses `codex/air-refresh`, based on deployed main `aa0a1aa` (PR #15).
+PDF uses `codex/air-brand-horizons`, based on deployed main `f863471` (PR #206).
+Drop uses `codex/air-refresh`, based on deployed main `51f178d` (PR #43).
+Local production-evidence commits follow these merges. Resume/IMG remain
+on `codex/air-refresh`; their neutral-link checkpoints are `493e4f5` and `8cbc910`.
 All five carry the Air 1.0.6 neutral hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
@@ -122,11 +124,11 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `8abac04`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `8f801c3`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
-| cloakimg    | `c38e204`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
-| cloakresume | `f1c49cd`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `e3edf4e`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
+| cloakyard   | `aa0a1aa`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `f863471`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
+| cloakresume | `493e4f5`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
+| cloakdrop   | `51f178d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -135,6 +137,27 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 91 prior sources remain implemented; the new OG/metadata entries are validated as
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
+
+### Neutral hyperlink text and hover — deployed on 2026-10-19
+
+Air 1.0.6 (`e7c8a4bcfbc5`) requires neutral public-page link text in every state,
+including hover. Inline links stay underlined; directional links retain ↗; blue
+is reserved for keyboard focus outlines/active markers, with system forced colours.
+All five portable specifications and the shared checker agree. The checker uses
+OS-created temporary evidence directories; the CodeQL finding is resolved.
+
+- cloakyard: PRs #14 and #15, main `aa0a1aa`, Cloudflare `565c336f` at 100%.
+- cloakpdf: PR #206, main `f863471`, Cloudflare `eb28ae8d` at 100%.
+- cloakdrop: PRs #42 and #43, main `51f178d`, Cloudflare `467ce2a7` at 100%.
+- All release checks report success. Production proof covers 162 matching files, three
+  missing routes, 580 link-state cases and 202 keyboard checks. Desktop/laptop/phone
+  light/dark captures, content links and actual policy views were inspected.
+- Resume’s 303 production tests pass; its neutral-link and checker commits remain
+  local (`493e4f5`). IMG’s isolated contract/checker checkpoint (`8cbc910`) passes;
+  the neutral landing rule remains in its parked draft. Do not publish IMG yet.
+- Evidence: each repo’s `docs/air/neutral-links-2026-10-19.md` and dated production
+  folder. Next remains Resume’s colour wheel, then IMG last. Human/device gates
+  remain open. Native apps, RC DMG and release tags are unchanged.
 
 ### Approved angled hyperlinks — deployed on 2026-10-19
 
