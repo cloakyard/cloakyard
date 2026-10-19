@@ -1,0 +1,1657 @@
+{
+  "keyboard": [
+    {
+      "focus": "reference-format",
+      "test": "End skips disabled",
+      "value": "WebP"
+    },
+    {
+      "focus": "reference-format",
+      "open": false,
+      "test": "Escape cancels tentative option",
+      "value": "WebP"
+    },
+    {
+      "focus": "reference-format",
+      "test": "typeahead",
+      "value": "JPEG"
+    },
+    {
+      "disabled": true,
+      "focus": "",
+      "open": false,
+      "test": "Tab dismisses, skips disabled control"
+    },
+    {
+      "focus": "reference-format",
+      "test": "enlarged scroll to final enabled option",
+      "value": "WebP",
+      "viewport": [320, 568]
+    },
+    {
+      "focus": "reference-format",
+      "test": "enlarged scroll to final enabled option",
+      "value": "WebP",
+      "viewport": [320, 568]
+    },
+    {
+      "focus": "reference-format",
+      "test": "enlarged scroll to final enabled option",
+      "value": "WebP",
+      "viewport": [844, 390]
+    },
+    {
+      "focus": "reference-format",
+      "test": "enlarged scroll to final enabled option",
+      "value": "WebP",
+      "viewport": [844, 390]
+    }
+  ],
+  "layouts": [
+    {
+      "coarse": false,
+      "contained": true,
+      "field": {
+        "height": 40,
+        "width": 240,
+        "x": 644,
+        "y": 519.8125
+      },
+      "font": "14px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 763.8125,
+      "pickerHeight": 196,
+      "pickerTop": 567.8125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "PNG",
+          "width": 222,
+          "x": 653,
+          "y": 576.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "JPEG",
+          "width": 222,
+          "x": 653,
+          "y": 616.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "WebP",
+          "width": 222,
+          "x": 653,
+          "y": 656.8125
+        },
+        {
+          "disabled": true,
+          "height": 58,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 653,
+          "y": 696.8125
+        }
+      ],
+      "theme": "light",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "contained": true,
+      "field": {
+        "height": 40,
+        "width": 240,
+        "x": 644,
+        "y": 519.8125
+      },
+      "font": "14px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 763.8125,
+      "pickerHeight": 196,
+      "pickerTop": 567.8125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "PNG",
+          "width": 222,
+          "x": 653,
+          "y": 576.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "JPEG",
+          "width": 222,
+          "x": 653,
+          "y": 616.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "WebP",
+          "width": 222,
+          "x": 653,
+          "y": 656.8125
+        },
+        {
+          "disabled": true,
+          "height": 58,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 653,
+          "y": 696.8125
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1920, 1080]
+    },
+    {
+      "coarse": false,
+      "contained": true,
+      "field": {
+        "height": 40,
+        "width": 240,
+        "x": 404,
+        "y": 429.8125
+      },
+      "font": "14px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 673.8125,
+      "pickerHeight": 196,
+      "pickerTop": 477.8125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "PNG",
+          "width": 222,
+          "x": 413,
+          "y": 486.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "JPEG",
+          "width": 222,
+          "x": 413,
+          "y": 526.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "WebP",
+          "width": 222,
+          "x": 413,
+          "y": 566.8125
+        },
+        {
+          "disabled": true,
+          "height": 58,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 413,
+          "y": 606.8125
+        }
+      ],
+      "theme": "light",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "contained": true,
+      "field": {
+        "height": 40,
+        "width": 240,
+        "x": 404,
+        "y": 429.8125
+      },
+      "font": "14px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 673.8125,
+      "pickerHeight": 196,
+      "pickerTop": 477.8125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "PNG",
+          "width": 222,
+          "x": 413,
+          "y": 486.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "JPEG",
+          "width": 222,
+          "x": 413,
+          "y": 526.8125
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "WebP",
+          "width": 222,
+          "x": 413,
+          "y": 566.8125
+        },
+        {
+          "disabled": true,
+          "height": 58,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 413,
+          "y": 606.8125
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1440, 900]
+    },
+    {
+      "coarse": false,
+      "contained": true,
+      "field": {
+        "height": 40,
+        "width": 240,
+        "x": 324,
+        "y": 379.90625
+      },
+      "font": "14px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 623.90625,
+      "pickerHeight": 196,
+      "pickerTop": 427.90625,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "PNG",
+          "width": 222,
+          "x": 333,
+          "y": 436.90625
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "JPEG",
+          "width": 222,
+          "x": 333,
+          "y": 476.90625
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "WebP",
+          "width": 222,
+          "x": 333,
+          "y": 516.90625
+        },
+        {
+          "disabled": true,
+          "height": 58,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 333,
+          "y": 556.90625
+        }
+      ],
+      "theme": "light",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": false,
+      "contained": true,
+      "field": {
+        "height": 40,
+        "width": 240,
+        "x": 324,
+        "y": 379.90625
+      },
+      "font": "14px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 623.90625,
+      "pickerHeight": 196,
+      "pickerTop": 427.90625,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "PNG",
+          "width": 222,
+          "x": 333,
+          "y": 436.90625
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "JPEG",
+          "width": 222,
+          "x": 333,
+          "y": 476.90625
+        },
+        {
+          "disabled": false,
+          "height": 40,
+          "text": "WebP",
+          "width": 222,
+          "x": 333,
+          "y": 516.90625
+        },
+        {
+          "disabled": true,
+          "height": 58,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 333,
+          "y": 556.90625
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1280, 800]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 284,
+        "y": 361.9921875
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 627.9921875,
+      "pickerHeight": 214,
+      "pickerTop": 413.9921875,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 293,
+          "y": 422.9921875
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 293,
+          "y": 466.9921875
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 293,
+          "y": 510.9921875
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 293,
+          "y": 554.9921875
+        }
+      ],
+      "theme": "light",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 284,
+        "y": 361.9921875
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 627.9921875,
+      "pickerHeight": 214,
+      "pickerTop": 413.9921875,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 293,
+          "y": 422.9921875
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 293,
+          "y": 466.9921875
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 293,
+          "y": 510.9921875
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 293,
+          "y": 554.9921875
+        }
+      ],
+      "theme": "dark",
+      "viewport": [1024, 768]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 218,
+        "y": 489.9140625
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 755.9140625,
+      "pickerHeight": 214,
+      "pickerTop": 541.9140625,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 227,
+          "y": 550.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 227,
+          "y": 594.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 227,
+          "y": 638.9140625
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 227,
+          "y": 682.9140625
+        }
+      ],
+      "theme": "light",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 218,
+        "y": 489.9140625
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 755.9140625,
+      "pickerHeight": 214,
+      "pickerTop": 541.9140625,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 227,
+          "y": 550.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 227,
+          "y": 594.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 227,
+          "y": 638.9140625
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 227,
+          "y": 682.9140625
+        }
+      ],
+      "theme": "dark",
+      "viewport": [768, 1024]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 20,
+        "y": 399.78125
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 665.78125,
+      "pickerHeight": 214,
+      "pickerTop": 451.78125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 29,
+          "y": 460.78125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 29,
+          "y": 504.78125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 29,
+          "y": 548.78125
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 29,
+          "y": 592.78125
+        }
+      ],
+      "theme": "light",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 20,
+        "y": 399.78125
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 665.78125,
+      "pickerHeight": 214,
+      "pickerTop": 451.78125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 29,
+          "y": 460.78125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 29,
+          "y": 504.78125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 29,
+          "y": 548.78125
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 29,
+          "y": 592.78125
+        }
+      ],
+      "theme": "dark",
+      "viewport": [390, 844]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 20,
+        "y": 261.8125
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 527.8125,
+      "pickerHeight": 214,
+      "pickerTop": 313.8125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 29,
+          "y": 322.8125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 29,
+          "y": 366.8125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 29,
+          "y": 410.8125
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 29,
+          "y": 454.8125
+        }
+      ],
+      "theme": "light",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 20,
+        "y": 261.8125
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 527.8125,
+      "pickerHeight": 214,
+      "pickerTop": 313.8125,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 29,
+          "y": 322.8125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 29,
+          "y": 366.8125
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 29,
+          "y": 410.8125
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 29,
+          "y": 454.8125
+        }
+      ],
+      "theme": "dark",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "contained": false,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 218,
+        "y": 172.9140625
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 382.0000625,
+      "pickerHeight": 157.086,
+      "pickerTop": 224.9140625,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 227,
+          "y": 233.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 227,
+          "y": 277.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 227,
+          "y": 321.9140625
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 227,
+          "y": 365.9140625
+        }
+      ],
+      "theme": "light",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "contained": false,
+      "field": {
+        "height": 44,
+        "width": 240,
+        "x": 218,
+        "y": 172.9140625
+      },
+      "font": "16px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "240px"
+      },
+      "pickerBottom": 382.0000625,
+      "pickerHeight": 157.086,
+      "pickerTop": 224.9140625,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "PNG",
+          "width": 222,
+          "x": 227,
+          "y": 233.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "JPEG",
+          "width": 222,
+          "x": 227,
+          "y": 277.9140625
+        },
+        {
+          "disabled": false,
+          "height": 44,
+          "text": "WebP",
+          "width": 222,
+          "x": 227,
+          "y": 321.9140625
+        },
+        {
+          "disabled": true,
+          "height": 64,
+          "text": "AVIF · unavailable in this study",
+          "width": 222,
+          "x": 227,
+          "y": 365.9140625
+        }
+      ],
+      "theme": "dark",
+      "viewport": [844, 390]
+    }
+  ],
+  "contexts": [
+    {
+      "dialog": true,
+      "focus": "export-format",
+      "test": "IMG export keyboard",
+      "value": "HEIC"
+    },
+    {
+      "bg": "rgb(255, 255, 255)",
+      "field": {
+        "width": 526,
+        "x": 457
+      },
+      "native": true,
+      "picker": {
+        "bottom": 653.7890625,
+        "top": 395.7890625,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "light",
+      "title": "Export document",
+      "viewport": [1440, 900]
+    },
+    {
+      "bg": "rgb(255, 255, 255)",
+      "field": {
+        "width": 526,
+        "x": 457
+      },
+      "native": true,
+      "picker": {
+        "bottom": 592.9453125,
+        "top": 374.9453125,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "light",
+      "title": "Export image",
+      "viewport": [1440, 900]
+    },
+    {
+      "bg": "rgb(26, 29, 35)",
+      "field": {
+        "width": 526,
+        "x": 457
+      },
+      "native": true,
+      "picker": {
+        "bottom": 653.7890625,
+        "top": 395.7890625,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "dark",
+      "title": "Export document",
+      "viewport": [1440, 900]
+    },
+    {
+      "bg": "rgb(26, 29, 35)",
+      "field": {
+        "width": 526,
+        "x": 457
+      },
+      "native": true,
+      "picker": {
+        "bottom": 592.9453125,
+        "top": 374.9453125,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "dark",
+      "title": "Export image",
+      "viewport": [1440, 900]
+    },
+    {
+      "bg": "rgb(255, 255, 255)",
+      "field": {
+        "width": 340,
+        "x": 25
+      },
+      "native": true,
+      "picker": {
+        "bottom": 683,
+        "top": 401,
+        "width": 340
+      },
+      "test": "export menu",
+      "theme": "light",
+      "title": "Export document",
+      "viewport": [390, 844]
+    },
+    {
+      "bg": "rgb(255, 255, 255)",
+      "field": {
+        "width": 340,
+        "x": 25
+      },
+      "native": true,
+      "picker": {
+        "bottom": 570.1875,
+        "top": 332.1875,
+        "width": 340
+      },
+      "test": "export menu",
+      "theme": "light",
+      "title": "Export image",
+      "viewport": [390, 844]
+    },
+    {
+      "bg": "rgb(26, 29, 35)",
+      "field": {
+        "width": 340,
+        "x": 25
+      },
+      "native": true,
+      "picker": {
+        "bottom": 683,
+        "top": 401,
+        "width": 340
+      },
+      "test": "export menu",
+      "theme": "dark",
+      "title": "Export document",
+      "viewport": [390, 844]
+    },
+    {
+      "bg": "rgb(26, 29, 35)",
+      "field": {
+        "width": 340,
+        "x": 25
+      },
+      "native": true,
+      "picker": {
+        "bottom": 570.1875,
+        "top": 332.1875,
+        "width": 340
+      },
+      "test": "export menu",
+      "theme": "dark",
+      "title": "Export image",
+      "viewport": [390, 844]
+    },
+    {
+      "bg": "rgb(255, 255, 255)",
+      "field": {
+        "width": 526,
+        "x": 159
+      },
+      "native": true,
+      "picker": {
+        "bottom": 165.086,
+        "top": 8,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "light",
+      "title": "Export document",
+      "viewport": [844, 390]
+    },
+    {
+      "bg": "rgb(255, 255, 255)",
+      "field": {
+        "width": 526,
+        "x": 159
+      },
+      "native": true,
+      "picker": {
+        "bottom": 165.086,
+        "top": 8,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "light",
+      "title": "Export image",
+      "viewport": [844, 390]
+    },
+    {
+      "bg": "rgb(26, 29, 35)",
+      "field": {
+        "width": 526,
+        "x": 159
+      },
+      "native": true,
+      "picker": {
+        "bottom": 165.086,
+        "top": 8,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "dark",
+      "title": "Export document",
+      "viewport": [844, 390]
+    },
+    {
+      "bg": "rgb(26, 29, 35)",
+      "field": {
+        "width": 526,
+        "x": 159
+      },
+      "native": true,
+      "picker": {
+        "bottom": 165.086,
+        "top": 8,
+        "width": 526
+      },
+      "test": "export menu",
+      "theme": "dark",
+      "title": "Export image",
+      "viewport": [844, 390]
+    },
+    {
+      "focus": "paper-size",
+      "note": "US Letter · simplified preview, no pagination",
+      "test": "Resume paper selection",
+      "value": "US Letter"
+    },
+    {
+      "font": "32px",
+      "height": 114,
+      "overflow": false,
+      "test": "IMG 200% root-font",
+      "value": "Selective color",
+      "viewport": [320, 568],
+      "width": 181.4140625
+    },
+    {
+      "app": "pdf",
+      "focus": "mobile-tool",
+      "test": "mobile tool selection",
+      "title": "Organize",
+      "value": "Organize"
+    },
+    {
+      "app": "resume",
+      "focus": "mobile-tool",
+      "test": "mobile tool selection",
+      "title": "Options",
+      "value": "Options"
+    },
+    {
+      "focus": "paper-size",
+      "note": "US Letter · simplified preview, no pagination",
+      "test": "Resume paper selection final",
+      "value": "US Letter"
+    }
+  ],
+  "motion": [
+    {
+      "calls": [
+        {
+          "frames": [
+            {
+              "opacity": 0.3,
+              "transform": "translateY(8px) scale(.9)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0) scale(1)"
+            }
+          ],
+          "options": {
+            "duration": 240,
+            "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+            "fill": "both"
+          }
+        }
+      ],
+      "test": "real pointer completion"
+    },
+    {
+      "calls": [],
+      "test": "real keyboard completion"
+    },
+    {
+      "calls": [
+        {
+          "frames": [
+            {
+              "opacity": 0.3,
+              "transform": "translateY(8px) scale(.9)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0) scale(1)"
+            }
+          ],
+          "options": {
+            "duration": 240,
+            "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+            "fill": "both"
+          }
+        },
+        {
+          "frames": [
+            {
+              "opacity": "0.902354",
+              "transform": "matrix(0.98605, 0, 0, 0.98605, 0, 1.11596)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0) scale(1)"
+            }
+          ],
+          "options": {
+            "duration": 33.47862857142858,
+            "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+            "fill": "both"
+          }
+        }
+      ],
+      "count": 1,
+      "pose": {
+        "opacity": "0.902354",
+        "transform": "matrix(0.98605, 0, 0, 0.98605, 0, 1.11596)"
+      },
+      "resting": "none",
+      "test": "interrupted completion"
+    },
+    {
+      "after": 36,
+      "before": 36,
+      "box": [1318, 200],
+      "canvas": [1318, 200],
+      "ready": "true",
+      "state": "idle",
+      "test": "shader idle"
+    },
+    {
+      "effects": [
+        {
+          "delay": 0,
+          "direction": "normal",
+          "duration": 900,
+          "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+          "endDelay": 0,
+          "fill": "both",
+          "iterationStart": 0,
+          "iterations": 1
+        }
+      ],
+      "test": "arrival timing",
+      "token": "900ms"
+    },
+    {
+      "effects": 0,
+      "ready": false,
+      "replayDisabled": true,
+      "state": "reduced",
+      "test": "live reduced motion"
+    },
+    {
+      "calls": [],
+      "test": "reduced pointer completion"
+    },
+    {
+      "after": 104,
+      "before": 73,
+      "state": "idle",
+      "test": "pointer spring settles"
+    },
+    {
+      "ready": false,
+      "state": "still",
+      "test": "still artwork"
+    },
+    {
+      "ready": false,
+      "state": "offscreen",
+      "test": "offscreen disposal"
+    },
+    {
+      "externalRequests": [],
+      "shaderRequests": 0,
+      "state": "reduced",
+      "test": "reduced fresh-load"
+    }
+  ],
+  "motionLayouts": [
+    {
+      "box": [1318, 200],
+      "canvas": [1318, 200],
+      "frames": "58",
+      "overflow": false,
+      "ready": "true",
+      "state": "idle",
+      "theme": "light",
+      "viewport": [1440, 900]
+    },
+    {
+      "box": [1318, 200],
+      "canvas": [1318, 200],
+      "frames": "87",
+      "overflow": false,
+      "ready": "true",
+      "state": "idle",
+      "theme": "dark",
+      "viewport": [1440, 900]
+    },
+    {
+      "box": [364, 200],
+      "canvas": [364, 200],
+      "frames": "118",
+      "overflow": false,
+      "ready": "true",
+      "state": "idle",
+      "theme": "light",
+      "viewport": [390, 844]
+    },
+    {
+      "box": [364, 200],
+      "canvas": [364, 200],
+      "frames": "147",
+      "overflow": false,
+      "ready": "true",
+      "state": "idle",
+      "theme": "dark",
+      "viewport": [390, 844]
+    }
+  ],
+  "enlarged": [
+    {
+      "coarse": true,
+      "contained": false,
+      "field": {
+        "height": 66,
+        "width": 240,
+        "x": 20,
+        "y": 250.8984375
+      },
+      "font": "32px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "288px"
+      },
+      "pickerBottom": 560.0004375,
+      "pickerHeight": 235.102,
+      "pickerTop": 324.8984375,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "PNG",
+          "width": 270,
+          "x": 29,
+          "y": 333.8984375
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "JPEG",
+          "width": 270,
+          "x": 29,
+          "y": 397.8984375
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "WebP",
+          "width": 270,
+          "x": 29,
+          "y": 461.8984375
+        },
+        {
+          "disabled": true,
+          "height": 160,
+          "text": "AVIF · unavailable in this study",
+          "width": 270,
+          "x": 29,
+          "y": 525.8984375
+        }
+      ],
+      "theme": "light",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "contained": false,
+      "field": {
+        "height": 66,
+        "width": 240,
+        "x": 20,
+        "y": 250.8984375
+      },
+      "font": "32px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "288px"
+      },
+      "pickerBottom": 560.0004375,
+      "pickerHeight": 235.102,
+      "pickerTop": 324.8984375,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "PNG",
+          "width": 270,
+          "x": 29,
+          "y": 333.8984375
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "JPEG",
+          "width": 270,
+          "x": 29,
+          "y": 397.8984375
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "WebP",
+          "width": 270,
+          "x": 29,
+          "y": 461.8984375
+        },
+        {
+          "disabled": true,
+          "height": 160,
+          "text": "AVIF · unavailable in this study",
+          "width": 270,
+          "x": 29,
+          "y": 525.8984375
+        }
+      ],
+      "theme": "dark",
+      "viewport": [320, 568]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 66,
+        "width": 240,
+        "x": 218,
+        "y": 162.03125
+      },
+      "font": "32px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(255, 255, 255)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "480px"
+      },
+      "pickerBottom": 154.031,
+      "pickerHeight": 146.031,
+      "pickerTop": 8,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "PNG",
+          "width": 462,
+          "x": 227,
+          "y": 17
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "JPEG",
+          "width": 462,
+          "x": 227,
+          "y": 81
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "WebP",
+          "width": 462,
+          "x": 227,
+          "y": 145
+        },
+        {
+          "disabled": true,
+          "height": 112,
+          "text": "AVIF · unavailable in this study",
+          "width": 462,
+          "x": 227,
+          "y": 209
+        }
+      ],
+      "theme": "light",
+      "viewport": [844, 390]
+    },
+    {
+      "coarse": true,
+      "contained": true,
+      "field": {
+        "height": 66,
+        "width": 240,
+        "x": 218,
+        "y": 162.03125
+      },
+      "font": "32px",
+      "icon": "16px",
+      "overflow": false,
+      "padding": ["12px", "12px"],
+      "picker": {
+        "bg": "rgb(26, 29, 35)",
+        "padding": "8px",
+        "radius": "12px",
+        "width": "480px"
+      },
+      "pickerBottom": 146.031,
+      "pickerHeight": 146.031,
+      "pickerTop": 0,
+      "rows": [
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "PNG",
+          "width": 462,
+          "x": 227,
+          "y": 9
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "JPEG",
+          "width": 462,
+          "x": 227,
+          "y": 73
+        },
+        {
+          "disabled": false,
+          "height": 64,
+          "text": "WebP",
+          "width": 462,
+          "x": 227,
+          "y": 137
+        },
+        {
+          "disabled": true,
+          "height": 112,
+          "text": "AVIF · unavailable in this study",
+          "width": 462,
+          "x": 227,
+          "y": 201
+        }
+      ],
+      "theme": "dark",
+      "viewport": [844, 390]
+    }
+  ],
+  "console": [],
+  "scope": "2026-10-12: Air opt-in reference, Chromium IAB; emulated viewports/touch/reduced motion, root-font enlargement, not physical hardware or cross-engine certification.",
+  "layoutInterpretation": "Contained rows may be false when a menu scrolls. Picker top/bottom describe the visible panel on these PNG-first reference cases; hidden rows are deliberately scrollable. The short-screen clipping found before max-block-size:stretch was fixed and the final 16 cases rerun."
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "app": "PDF",
+    "actionsInside": true,
+    "expanded": "true",
+    "overflow": false
+  },
+  {
+    "app": "IMG",
+    "actionsInside": true,
+    "expanded": "true",
+    "overflow": false
+  },
+  {
+    "app": "Resume",
+    "actionsInside": true,
+    "expanded": "true",
+    "overflow": false
+  }
+]

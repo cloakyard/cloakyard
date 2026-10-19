@@ -1,0 +1,873 @@
+{
+  "date": "2026-10-13",
+  "scope": "Real local product SVG marks replace generic Lucide product glyphs; action icons remain.",
+  "matrix": [
+    {
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 375,
+      "height": 812,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 430,
+      "height": 932,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 844,
+      "height": 390,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 1280,
+      "height": 720,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 1366,
+      "height": 768,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "light",
+      "width": 1920,
+      "height": 1080,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 375,
+      "height": 812,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 430,
+      "height": 932,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 844,
+      "height": 390,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1280,
+      "height": 720,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1366,
+      "height": 768,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "theme": "dark",
+      "width": 1920,
+      "height": 1080,
+      "kerrImages": 0,
+      "links": [
+        "https://pdf.cloakyard.com/",
+        "https://github.com/cloakyard/cloakpdf",
+        "https://resume.cloakyard.com/",
+        "https://github.com/cloakyard/cloakresume",
+        "https://img.cloakyard.com/",
+        "https://github.com/cloakyard/cloakimg",
+        "https://drop.cloakyard.com/",
+        "https://github.com/cloakyard/cloakdrop"
+      ],
+      "logos": [
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        },
+        {
+          "height": 36,
+          "loaded": true,
+          "width": 36
+        }
+      ],
+      "overflow": 0
+    }
+  ],
+  "checks": [
+    "All four SVG images complete with nonzero intrinsic dimensions",
+    "Rendered 36x36 in all 22 cases",
+    "Existing eight product/action destinations retained",
+    "No KERR screenshot or preview added",
+    "Native aspect ratio, no tint/filter/frame/motion",
+    "Canonical source copies documented in docs/brand-assets.md"
+  ],
+  "unverified": ["Prior home physical-touch/screen-reader follow-ups remain open"]
+}

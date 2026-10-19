@@ -1,0 +1,59 @@
+
+ RUN  v5.0.3 /Users/sumitsahoo/Developer/cloakresume
+
+ ❯ tests/editor-browser.spec.ts (107 tests | 1 failed) 286704ms
+   ❯ editor browser regressions (requires Chrome or CHROME_PATH) (107)
+     × keeps contact reorder and remove controls inside the card at 320px 2225ms
+ ❯ tests/template-layouts.spec.ts (34 tests | 1 failed) 124580ms
+   ❯ template container and content matrix (34)
+     × Classic Sidebar / letter: contains all populated fields 30163ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/editor-browser.spec.ts > editor browser regressions (requires Chrome or CHROME_PATH) > keeps contact reorder and remove controls inside the card at 320px
+Error: Node is detached from document
+ ❯ CdpElementHandle.assertConnectedElement node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1499:13
+ ❯ CdpElementHandle.scrollIntoView node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/cdp/ElementHandle.ts:92:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:140:14
+ ❯ CdpElementHandle.scrollIntoViewIfNeeded node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1516:5
+ ❯ CdpElementHandle.click node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:773:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:150:20
+ ❯ CdpFrame.click node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/Frame.ts:1091:5
+ ❯ tests/editor-browser.spec.ts:1062:7
+    1060|       });
+    1061|       expect(clipped).toEqual([]);
+    1062|       await page.click('.cr-editor-panel button[aria-label="Remove"]');
+       |       ^
+    1063|       await page.click('.cr-editor-panel button[aria-label="Confirm re…
+    1064|       expect((await savedResume()).contact).toEqual([]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/template-layouts.spec.ts > template container and content matrix > Classic Sidebar / letter: contains all populated fields
+TimeoutError: Waiting for selector `.resume-root[data-template-ready="true"] .resume-page` failed
+ ❯ CSSQueryHandler.waitFor node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/common/QueryHandler.ts:213:36
+ ❯ CdpFrame.waitForSelector node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/Frame.ts:765:13
+ ❯ CdpPage.waitForSelector node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/src/api/Page.ts:3321:12
+ ❯ tests/template-layouts.spec.ts:154:11
+    152|             throw error;
+    153|           }
+    154|           await page.waitForSelector('.resume-root[data-template-ready…
+       |           ^
+    155|           await page.evaluate(async () => {
+    156|             await document.fonts.ready;
+
+Caused by: TimeoutError: Waiting failed: 30000ms exceeded
+ ❯ new WaitTask node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/lib/puppeteer/common/WaitTask.js:46:34
+ ❯ IsolatedWorld.waitForFunction node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/lib/puppeteer/api/Realm.js:49:26
+ ❯ CSSQueryHandler.waitFor node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/lib/puppeteer/common/QueryHandler.js:176:95
+ ❯ CdpFrame.waitForSelector node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/lib/puppeteer/api/Frame.js:546:21
+ ❯ CdpPage.waitForSelector node_modules/.pnpm/puppeteer-core@25.12.0/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:1477:20
+ ❯ tests/template-layouts.spec.ts:154:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed | 6 passed (8)
+      Tests  2 failed | 286 passed (288)
+   Start at  13:42:09
+   Duration  414.06s (tests 100%)

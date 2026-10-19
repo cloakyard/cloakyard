@@ -1,0 +1,1098 @@
+{
+  "date": "2026-10-11",
+  "scope": "Opt-in design study, not production Resume",
+  "layouts": [
+    {
+      "height": 900,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 900,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1440
+    },
+    {
+      "height": 800,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 800,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": false,
+      "width": 1280
+    },
+    {
+      "height": 768,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 768,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 1024
+    },
+    {
+      "height": 1024,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 1024,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 768
+    },
+    {
+      "height": 844,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 844,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 390
+    },
+    {
+      "height": 568,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 568,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 320
+    },
+    {
+      "height": 390,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Light",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Profile",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Contact",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Experience",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Template",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 844
+    },
+    {
+      "height": 390,
+      "name": "Options",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "paperOverflow": false,
+      "smallFonts": [],
+      "smallTargets": [],
+      "theme": "Dark",
+      "touch": true,
+      "width": 844
+    }
+  ],
+  "dateDialogs": [
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 900,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Light",
+      "width": 1440
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 900,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Dark",
+      "width": 1440
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 800,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Light",
+      "width": 1280
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 800,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Dark",
+      "width": 1280
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 768,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Light",
+      "width": 1024
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 768,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Dark",
+      "width": 1024
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 1024,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Light",
+      "width": 768
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 1024,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Dark",
+      "width": 768
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 844,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Light",
+      "width": 390
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 844,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Dark",
+      "width": 390
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 568,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Light",
+      "width": 320
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 568,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Dark",
+      "width": 320
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 390,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Light",
+      "width": 844
+    },
+    {
+      "contained": true,
+      "focus": "date-cancel",
+      "height": 390,
+      "monthTargets": true,
+      "noOverflow": true,
+      "theme": "Dark",
+      "width": 844
+    }
+  ],
+  "functional": [
+    {
+      "name": "Rich-text multiline bold and undo",
+      "pass": true
+    },
+    {
+      "name": "Invalid partial year retained",
+      "pass": true
+    },
+    {
+      "name": "Year-only value and focus return",
+      "pass": true
+    },
+    {
+      "name": "Escape leaves stored date unchanged",
+      "pass": true
+    },
+    {
+      "name": "Previous end date restored",
+      "pass": true
+    },
+    {
+      "name": "Reorder keeps identity and focus",
+      "pass": true
+    },
+    {
+      "name": "Removal undo restores entry and focus",
+      "pass": true
+    },
+    {
+      "name": "Document options update preview",
+      "pass": true
+    },
+    {
+      "name": "Invalid document colour preserves last valid output",
+      "pass": true
+    },
+    {
+      "name": "PDF export has no mixed format selector",
+      "pass": true
+    },
+    {
+      "name": "Separate JSON save study after routing correction",
+      "pass": true
+    },
+    {
+      "name": "Italic, underline and code preserve selection",
+      "pass": true,
+      "evidence": [
+        {
+          "focus": "person-about",
+          "preview": "<em>Useful tools</em>",
+          "value": "*Useful tools*"
+        },
+        {
+          "focus": "person-about",
+          "preview": "<u>Useful tools</u>",
+          "value": "<u>Useful tools</u>"
+        },
+        {
+          "focus": "person-about",
+          "preview": "<code>Useful tools</code>",
+          "value": "`Useful tools`"
+        }
+      ]
+    },
+    {
+      "name": "Shared PDF swatches retain 44px phone targets",
+      "pass": true
+    },
+    {
+      "name": "Dark writing field has one focus contour",
+      "pass": true,
+      "style": {
+        "border": "rgba(0, 0, 0, 0)",
+        "outline": "rgb(158, 188, 255) solid 2px",
+        "shadow": "none"
+      }
+    },
+    {
+      "name": "Date dialog forward focus wraps",
+      "pass": true
+    },
+    {
+      "name": "Date dialog backward focus wraps",
+      "pass": true
+    },
+    {
+      "name": "Long writing and title preserve content without horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "New entry formatting stays scoped",
+      "pass": true
+    },
+    {
+      "name": "Month and year selection",
+      "pass": true
+    },
+    {
+      "name": "Clear date returns to empty state",
+      "pass": true
+    },
+    {
+      "name": "Light writing focus contour and white paper",
+      "pass": true
+    },
+    {
+      "name": "Dark writing focus contour and white paper",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion export is immediate",
+      "pass": true,
+      "evidence": "CDP DOM observation: open true; active animations 0"
+    }
+  ],
+  "limits": [
+    "Fixed-height reference within a scrolling page",
+    "Physical software keyboards, Safari, IME and assistive technology remain pending",
+    "No PDF or JSON file is produced",
+    "Simplified growing sample paper, not production templates/pagination",
+    "Highlights use one line per bullet in this study"
+  ]
+}

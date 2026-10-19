@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "index-BaiC5jUB.js": {
+      "bytes": 234416,
+      "gzipBytes": 72423
+    },
+    "index-CnKpfcEV.css": {
+      "bytes": 45012,
+      "gzipBytes": 8624
+    }
+  },
+  "removedFontsBytes": 75332,
+  "note": "Gzip values use Python gzip defaults for both before/after; no shader/demo/Base UI runtime imported."
+}

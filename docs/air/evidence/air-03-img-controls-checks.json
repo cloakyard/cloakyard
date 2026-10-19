@@ -1,0 +1,2842 @@
+{
+  "date": "2026-10-11",
+  "scope": "Standalone Air reference only; fixed-height study frames, not production viewport or physical keyboard tests.",
+  "panelLayouts": [
+    {
+      "theme": "Light",
+      "name": "Adjust",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Exposure value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Contrast value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Highlights value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Shadows value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Whites value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Blacks value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Temperature value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vignette value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Light",
+      "name": "Crop & rotate",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Light",
+      "name": "Spot heal",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Brush size value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Light",
+      "name": "Levels",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Midtone value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input white value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Light",
+      "name": "Selective color",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Hue value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Light",
+      "name": "Adjust",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Exposure value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Contrast value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Highlights value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Shadows value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Whites value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Blacks value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Temperature value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vignette value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Light",
+      "name": "Crop & rotate",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Light",
+      "name": "Spot heal",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Brush size value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Light",
+      "name": "Levels",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Midtone value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input white value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Light",
+      "name": "Selective color",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Hue value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Light",
+      "name": "Adjust",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Exposure value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Contrast value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Highlights value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Shadows value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Whites value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Blacks value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Temperature value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vignette value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Light",
+      "name": "Crop & rotate",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Light",
+      "name": "Spot heal",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Brush size value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Light",
+      "name": "Levels",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Midtone value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input white value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Light",
+      "name": "Selective color",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Hue value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Light",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Light",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Light",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Light",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Light",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Light",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Light",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Light",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Light",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Light",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Light",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Light",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Light",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Light",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Light",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Light",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Light",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Light",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Light",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Light",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Dark",
+      "name": "Adjust",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Exposure value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Contrast value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Highlights value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Shadows value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Whites value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Blacks value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Temperature value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vignette value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Dark",
+      "name": "Crop & rotate",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Dark",
+      "name": "Spot heal",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Brush size value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Dark",
+      "name": "Levels",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Midtone value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input white value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Dark",
+      "name": "Selective color",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Hue value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1440
+    },
+    {
+      "theme": "Dark",
+      "name": "Adjust",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Exposure value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Contrast value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Highlights value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Shadows value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Whites value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Blacks value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Temperature value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vignette value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Dark",
+      "name": "Crop & rotate",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Dark",
+      "name": "Spot heal",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Brush size value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Dark",
+      "name": "Levels",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Midtone value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input white value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Dark",
+      "name": "Selective color",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Hue value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1280
+    },
+    {
+      "theme": "Dark",
+      "name": "Adjust",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Exposure value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Contrast value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Highlights value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Shadows value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Whites value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Blacks value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Temperature value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Vignette value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Dark",
+      "name": "Crop & rotate",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Dark",
+      "name": "Spot heal",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Brush size value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Dark",
+      "name": "Levels",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Midtone value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Input white value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output black value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Dark",
+      "name": "Selective color",
+      "coarse": false,
+      "fields": [
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Hue value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Saturation value"
+        },
+        {
+          "font": "13px",
+          "height": 32,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 1024
+    },
+    {
+      "theme": "Dark",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Dark",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Dark",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Dark",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Dark",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 768
+    },
+    {
+      "theme": "Dark",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Dark",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Dark",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Dark",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Dark",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 390
+    },
+    {
+      "theme": "Dark",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Dark",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Dark",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Dark",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Dark",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 320
+    },
+    {
+      "theme": "Dark",
+      "name": "Adjust",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Exposure value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Contrast value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Highlights value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Shadows value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Whites value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Blacks value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vibrance value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Temperature value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Vignette value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Sharpen value"
+        }
+      ],
+      "heading": "Adjust",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Dark",
+      "name": "Crop & rotate",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Rotation value"
+        }
+      ],
+      "heading": "Crop & rotate",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Dark",
+      "name": "Spot heal",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Brush size value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Edge feather value"
+        }
+      ],
+      "heading": "Spot heal",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Dark",
+      "name": "Levels",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Midtone value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Input white value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output black value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Output white value"
+        }
+      ],
+      "heading": "Levels",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    },
+    {
+      "theme": "Dark",
+      "name": "Selective color",
+      "coarse": true,
+      "fields": [
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Hue value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Saturation value"
+        },
+        {
+          "font": "16px",
+          "height": 44,
+          "name": "Luminance value"
+        }
+      ],
+      "heading": "Selective color",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "width": 844
+    }
+  ],
+  "curveLayouts": [
+    {
+      "theme": "Light",
+      "coarse": false,
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 279,
+      "pointTargets": [
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.399993896484375,
+          "width": 55.4000244140625
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 1440
+    },
+    {
+      "theme": "Light",
+      "coarse": false,
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 279,
+      "pointTargets": [
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.399993896484375,
+          "width": 55.4000244140625
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 1280
+    },
+    {
+      "theme": "Light",
+      "coarse": false,
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 255,
+      "pointTargets": [
+        {
+          "height": 50.5999755859375,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.5999755859375,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.600006103515625,
+          "width": 50.5999755859375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 1024
+    },
+    {
+      "theme": "Light",
+      "coarse": true,
+      "expanded": "true",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 224,
+      "pointTargets": [
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        },
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        },
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 768
+    },
+    {
+      "theme": "Light",
+      "coarse": true,
+      "expanded": "true",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 224,
+      "pointTargets": [
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        },
+        {
+          "height": 44.4000244140625,
+          "width": 44.40000915527344
+        },
+        {
+          "height": 44.399993896484375,
+          "width": 44.399993896484375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 390
+    },
+    {
+      "theme": "Light",
+      "coarse": true,
+      "expanded": "true",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 224,
+      "pointTargets": [
+        {
+          "height": 44.399993896484375,
+          "width": 44.400001525878906
+        },
+        {
+          "height": 44.399993896484375,
+          "width": 44.40000915527344
+        },
+        {
+          "height": 44.399993896484375,
+          "width": 44.399993896484375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 320
+    },
+    {
+      "theme": "Light",
+      "coarse": true,
+      "expanded": "true",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 255,
+      "pointTargets": [
+        {
+          "height": 50.600006103515625,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.5999755859375,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.600006103515625,
+          "width": 50.5999755859375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 844
+    },
+    {
+      "theme": "Dark",
+      "coarse": false,
+      "expanded": "true",
+      "height": 900,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 279,
+      "pointTargets": [
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 1440
+    },
+    {
+      "theme": "Dark",
+      "coarse": false,
+      "expanded": "true",
+      "height": 800,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 279,
+      "pointTargets": [
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.4000244140625,
+          "width": 55.4000244140625
+        },
+        {
+          "height": 55.399993896484375,
+          "width": 55.4000244140625
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 1280
+    },
+    {
+      "theme": "Dark",
+      "coarse": false,
+      "expanded": "true",
+      "height": 768,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 255,
+      "pointTargets": [
+        {
+          "height": 50.5999755859375,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.5999755859375,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.600006103515625,
+          "width": 50.5999755859375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 1024
+    },
+    {
+      "theme": "Dark",
+      "coarse": true,
+      "expanded": "true",
+      "height": 1024,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 224,
+      "pointTargets": [
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        },
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        },
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 768
+    },
+    {
+      "theme": "Dark",
+      "coarse": true,
+      "expanded": "true",
+      "height": 844,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 224,
+      "pointTargets": [
+        {
+          "height": 44.4000244140625,
+          "width": 44.399993896484375
+        },
+        {
+          "height": 44.4000244140625,
+          "width": 44.40000915527344
+        },
+        {
+          "height": 44.399993896484375,
+          "width": 44.399993896484375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 390
+    },
+    {
+      "theme": "Dark",
+      "coarse": true,
+      "expanded": "true",
+      "height": 568,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 224,
+      "pointTargets": [
+        {
+          "height": 44.399993896484375,
+          "width": 44.400001525878906
+        },
+        {
+          "height": 44.399993896484375,
+          "width": 44.40000915527344
+        },
+        {
+          "height": 44.399993896484375,
+          "width": 44.399993896484375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 320
+    },
+    {
+      "theme": "Dark",
+      "coarse": true,
+      "expanded": "true",
+      "height": 390,
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "plotFits": true,
+      "plotSize": 255,
+      "pointTargets": [
+        {
+          "height": 50.600006103515625,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.5999755859375,
+          "width": 50.5999755859375
+        },
+        {
+          "height": 50.600006103515625,
+          "width": 50.5999755859375
+        }
+      ],
+      "square": true,
+      "valueFits": true,
+      "width": 844
+    }
+  ],
+  "interactions": [
+    {
+      "field": "-1.2",
+      "filter": "brightness(0.435275)",
+      "invalid": "false",
+      "range": "-1.2",
+      "test": "signed exposure"
+    },
+    {
+      "errorVisible": true,
+      "field": "8",
+      "invalid": "true",
+      "range": "-1.2",
+      "test": "out-of-range retained"
+    },
+    {
+      "test": "curve keyboard",
+      "x": "138",
+      "y": "129"
+    },
+    {
+      "invalid": "true",
+      "label": "Point 2, input 138, output 170",
+      "test": "curve invalid input",
+      "x": "999"
+    },
+    {
+      "count": 4,
+      "focus": "Point 2, input 64, output 85",
+      "test": "add point"
+    },
+    {
+      "readOnly": true,
+      "removeDisabled": true,
+      "test": "protected endpoint",
+      "x": "0"
+    },
+    {
+      "points": [
+        "Point 1, input 0, output 0",
+        "Point 2, input 128, output 170",
+        "Point 3, input 255, output 255"
+      ],
+      "test": "curve survives tool switch"
+    },
+    {
+      "label": "Point 2, input 142, output 191",
+      "test": "curve pointer drag"
+    },
+    {
+      "points": ["Point 1, input 0, output 0", "Point 2, input 255, output 255"],
+      "test": "curve reset"
+    },
+    {
+      "black": "24",
+      "draft": "24",
+      "invalid": "true",
+      "min": "25",
+      "test": "levels ordered input",
+      "white": "255"
+    },
+    {
+      "test": "independent colour band",
+      "value": "0"
+    },
+    {
+      "test": "colour band persistence",
+      "value": "12"
+    },
+    {
+      "test": "compact curve view toggle",
+      "restoredSplit": "false",
+      "reopenedCurve": "true"
+    }
+  ],
+  "limits": [
+    "Native touch cancellation could not be injected by the in-app browser; handler source reviewed, physical touch cancellation remains pending.",
+    "Image processing, AI, export, and product history are not implemented by this reference."
+  ]
+}

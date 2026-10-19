@@ -1,0 +1,254 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "theme": "Light",
+    "drawingWidth": 246,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "theme": "Dark",
+    "drawingWidth": 246,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "theme": "Light",
+    "drawingWidth": 316,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "theme": "Dark",
+    "drawingWidth": 316,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "theme": "Light",
+    "drawingWidth": 670,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "theme": "Dark",
+    "drawingWidth": 670,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "theme": "Light",
+    "drawingWidth": 255,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "theme": "Dark",
+    "drawingWidth": 255,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "theme": "Light",
+    "drawingWidth": 255,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "theme": "Dark",
+    "drawingWidth": 255,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "theme": "Light",
+    "drawingWidth": 279,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "theme": "Dark",
+    "drawingWidth": 279,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "theme": "Light",
+    "drawingWidth": 279,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "theme": "Dark",
+    "drawingWidth": 279,
+    "pageOverflow": false,
+    "panelOverflow": false,
+    "switches": [
+      {
+        "height": 44,
+        "width": 44
+      },
+      {
+        "height": 44,
+        "width": 44
+      }
+    ]
+  }
+]

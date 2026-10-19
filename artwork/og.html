@@ -1,442 +1,131 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-air-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1200, initial-scale=1" />
-    <title>Cloakyard Open Graph artwork</title>
+    <meta charset="utf-8" />
+    <title>Cloakyard social artwork</title>
+    <link rel="stylesheet" href="../design/air/air.css" />
     <style>
-      @font-face {
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 100 900;
-        font-display: block;
-        src: url("../public/fonts/archivo-latin.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "JetBrains Mono";
-        font-style: normal;
-        font-weight: 100 800;
-        font-display: block;
-        src: url("../public/fonts/jetbrains-mono-latin.woff2") format("woff2");
-      }
-
-      :root {
-        --paper: oklch(0.975 0.009 255);
-        --surface: oklch(0.992 0.004 255);
-        --ink: oklch(0.225 0.031 255);
-        --ink-2: oklch(0.43 0.035 255);
-        --ink-3: oklch(0.52 0.03 255);
-        --rule: oklch(0.865 0.022 255);
-        --accent: oklch(0.546 0.245 262.881);
-        --night: oklch(0.16 0.028 255);
-        --night-2: oklch(0.22 0.032 255);
-        --night-ink: oklch(0.96 0.012 255);
-        --night-muted: oklch(0.735 0.024 255);
-        --night-rule: oklch(0.34 0.034 255);
-        --positive: oklch(0.68 0.18 151);
-        --font-sans: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
-      }
-
       * {
         box-sizing: border-box;
       }
-
-      html,
       body {
         width: 1200px;
         height: 630px;
         margin: 0;
         overflow: hidden;
+        background: var(--air-page);
+        color: var(--air-ink);
+        font-family: var(--air-font);
       }
-
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font-family: var(--font-sans);
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      .card {
-        position: relative;
-        isolation: isolate;
-        width: 1200px;
-        height: 630px;
-        overflow: hidden;
-        padding: 38px 48px 42px;
-        background:
-          radial-gradient(
-            circle at 77% 42%,
-            color-mix(in oklab, var(--accent) 8%, transparent),
-            transparent 29%
-          ),
-          var(--paper);
-      }
-
-      .card::before {
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        opacity: 0.46;
-        background-image:
-          linear-gradient(var(--rule) 1px, transparent 1px),
-          linear-gradient(90deg, var(--rule) 1px, transparent 1px);
-        background-size: 44px 44px;
-        mask-image: linear-gradient(90deg, transparent 0 48%, black 78%, transparent 100%);
-        content: "";
-      }
-
-      .masthead {
-        height: 58px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 13px;
-      }
-
-      .brand img {
-        width: 46px;
-        height: 46px;
-        display: block;
-        border-radius: 50%;
-        box-shadow: 0 10px 24px color-mix(in oklab, var(--accent) 24%, transparent);
-      }
-
-      .wordmark {
-        font-size: 29px;
-        font-weight: 820;
-        letter-spacing: -0.035em;
-        line-height: 1;
-      }
-
-      .wordmark span {
-        color: var(--accent);
-      }
-
-      .masthead-meta {
+      header {
         display: flex;
         align-items: center;
         gap: 12px;
-        color: var(--ink-3);
-        font-family: var(--font-mono);
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
+        margin: 40px 64px;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: -0.04em;
       }
-
-      .masthead-meta i {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--positive);
-        box-shadow: 0 0 0 4px color-mix(in oklab, var(--positive) 14%, transparent);
+      header span:last-child {
+        margin-left: auto;
+        color: var(--air-ink-muted);
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
       }
-
-      .layout {
-        height: 422px;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 394px;
-        align-items: center;
-        gap: 68px;
-        margin-top: 27px;
+      main {
+        text-align: center;
+        padding-top: 24px;
       }
-
-      .copy {
-        padding-left: 3px;
+      p {
+        margin: 0;
+        color: var(--air-ink-secondary);
+        font-size: 16px;
       }
-
-      .kicker {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        color: var(--accent);
-        font-family: var(--font-mono);
-        font-size: 13px;
-        font-weight: 620;
-        letter-spacing: 0.075em;
-        line-height: 1;
-        text-transform: uppercase;
-      }
-
-      .kicker::before {
-        width: 26px;
-        height: 1px;
-        background: currentColor;
-        content: "";
-      }
-
       h1 {
-        max-width: 650px;
-        margin: 28px 0 0;
-        font-size: 80px;
-        font-weight: 850;
-        letter-spacing: -0.072em;
-        line-height: 0.85;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 1.08;
+        letter-spacing: -0.065em;
+        margin: 24px 0;
       }
-
       h1 span {
         display: block;
-        margin-top: 0.11em;
-        color: var(--accent);
+        color: var(--air-ink-secondary);
       }
-
-      .lede {
-        max-width: 510px;
-        margin: 30px 0 0;
-        color: var(--ink-2);
-        font-size: 18px;
-        line-height: 1.48;
-      }
-
-      .proof {
-        height: 410px;
-        overflow: hidden;
-        border: 1px solid var(--night-rule);
-        border-radius: 20px;
-        color: var(--night-muted);
-        background:
-          radial-gradient(
-            circle at 50% 22%,
-            color-mix(in oklab, var(--accent) 45%, transparent),
-            transparent 36%
-          ),
-          var(--night);
-        box-shadow: 0 34px 70px -38px color-mix(in oklab, var(--accent) 60%, transparent);
-      }
-
-      .proof-head {
-        height: 51px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 18px;
-        border-bottom: 1px solid var(--night-rule);
-        color: color-mix(in oklab, var(--night-muted) 78%, transparent);
-        font-family: var(--font-mono);
-        font-size: 9px;
-        font-weight: 580;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-      }
-
-      .proof-head span:last-child {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--night-ink);
-      }
-
-      .proof-head i {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: var(--positive);
-        box-shadow: 0 0 0 3px color-mix(in oklab, var(--positive) 14%, transparent);
-      }
-
-      .core {
-        position: relative;
-        height: 200px;
-        display: grid;
-        place-items: center;
-        border-bottom: 1px solid var(--night-rule);
-      }
-
-      .core::before,
-      .core::after {
+      .air-horizon {
         position: absolute;
-        border: 1px solid color-mix(in oklab, white 12%, transparent);
-        border-radius: 50%;
-        content: "";
+        left: 32px;
+        top: 340px;
+        width: 1136px;
+        height: 200px;
       }
-
-      .core::before {
-        width: 184px;
-        height: 184px;
-      }
-
-      .core::after {
-        width: 246px;
-        height: 246px;
-      }
-
-      .core-mark {
-        position: relative;
-        z-index: 1;
-        display: grid;
-        justify-items: center;
-        gap: 13px;
-      }
-
-      .core-mark img {
-        width: 82px;
-        height: 82px;
-        display: block;
-        border: 10px solid color-mix(in oklab, var(--night) 62%, transparent);
-        border-radius: 50%;
-        box-shadow:
-          0 18px 42px -20px black,
-          0 0 0 1px color-mix(in oklab, white 18%, transparent);
-      }
-
-      .core-mark strong {
-        color: var(--night-ink);
+      footer {
+        position: absolute;
+        bottom: 48px;
+        left: 64px;
+        right: 64px;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        border-top: 1px solid var(--air-line);
+        padding-top: 24px;
         font-size: 20px;
-        font-weight: 740;
         letter-spacing: -0.025em;
-      }
-
-      .core-mark small {
-        color: oklch(0.76 0.14 251);
-        font-family: var(--font-mono);
-        font-size: 9px;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-      }
-
-      .flow {
-        height: 108px;
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .flow section {
-        display: grid;
-        align-content: center;
-        gap: 8px;
-        padding: 0 16px;
-        border-right: 1px solid var(--night-rule);
-      }
-
-      .flow section:last-child {
-        border-right: 0;
-      }
-
-      .flow b {
-        color: oklch(0.76 0.14 251);
-        font-family: var(--font-mono);
-        font-size: 8px;
-        font-weight: 580;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-
-      .flow strong {
-        color: var(--night-ink);
-        font-size: 15px;
-        font-weight: 690;
-        letter-spacing: -0.02em;
-      }
-
-      .proof-foot {
-        height: 51px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 18px;
-        border-top: 1px solid var(--night-rule);
-        color: color-mix(in oklab, var(--night-muted) 76%, transparent);
-        font-family: var(--font-mono);
-        font-size: 8px;
-        letter-spacing: 0.055em;
-        text-transform: uppercase;
-      }
-
-      .proof-foot b {
-        color: var(--night-ink);
-        font-weight: 560;
-      }
-
-      .footer {
-        height: 43px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        border-top: 1px solid var(--rule);
-        color: var(--ink-3);
-        font-family: var(--font-mono);
-        font-size: 10px;
-        font-weight: 580;
-        letter-spacing: 0.065em;
-        text-transform: uppercase;
-      }
-
-      .footer strong {
-        color: var(--ink);
-        font-weight: 620;
       }
     </style>
   </head>
   <body>
-    <main class="card">
-      <header class="masthead">
-        <div class="brand">
-          <img src="../public/cloakyard-mark.svg" alt="" />
-          <div class="wordmark">Cloak<span>yard</span></div>
-        </div>
-        <div class="masthead-meta">
-          <i></i>
-          Open source · Privacy by default
-        </div>
-      </header>
-
-      <div class="layout">
-        <section class="copy">
-          <div class="kicker">Independent software</div>
-          <h1>
-            Useful tools.
-            <span>Your data stays yours.</span>
-          </h1>
-          <p class="lede">
-            Focused software without the account gate, telemetry, or data pipeline.
-          </p>
-        </section>
-
-        <aside class="proof">
-          <div class="proof-head">
-            <span>Privacy model / 01</span>
-            <span><i></i> Boundary set</span>
-          </div>
-          <div class="core">
-            <div class="core-mark">
-              <img src="../public/cloakyard-mark.svg" alt="" />
-              <strong>Handled locally</strong>
-              <small>Processing stays close</small>
-            </div>
-          </div>
-          <div class="flow">
-            <section>
-              <b>01 / Bring</b>
-              <strong>Your work</strong>
-            </section>
-            <section>
-              <b>02 / Work</b>
-              <strong>Your device</strong>
-            </section>
-            <section>
-              <b>03 / Keep</b>
-              <strong>Your result</strong>
-            </section>
-          </div>
-          <div class="proof-foot">
-            <span>No account · No telemetry</span>
-            <b>Local / ✓</b>
-          </div>
-        </aside>
-      </div>
-
-      <footer class="footer">
-        <strong>cloakyard.com</strong>
-        <span>Made useful. Made private.</span>
-      </footer>
+    <header>
+      <img src="../public/cloakyard-mark.svg" width="32" height="32" alt="" />Cloakyard<span
+        >cloakyard.com</span
+      >
+    </header>
+    <main>
+      <p>Private by nature. Open by choice.</p>
+      <h1>Your work.<span>A little lighter.</span></h1>
     </main>
+    <svg
+      class="air-horizon"
+      viewBox="0 0 1200 240"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient id="home-plane" x2="0" y2="1">
+          <stop stop-color="var(--air-surface-soft)" stop-opacity="0.8" />
+          <stop offset="1" stop-color="var(--air-surface-soft)" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="home-edge-fade">
+          <stop stop-color="white" stop-opacity="0" />
+          <stop offset="0.2" stop-color="white" />
+          <stop offset="0.8" stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+        <mask id="home-horizon-mask">
+          <rect width="1200" height="240" fill="url(#home-edge-fade)" />
+        </mask>
+      </defs>
+      <g mask="url(#home-horizon-mask)">
+        <path d="M0 100Q600 84 1200 145V240H0Z" fill="url(#home-plane)" />
+        <path
+          d="M0 100Q600 84 1200 145"
+          fill="none"
+          stroke="var(--air-accent)"
+          stroke-opacity="0.22"
+        />
+        <path d="M0 182Q600 132 1200 139V240H0Z" fill="url(#home-plane)" />
+        <path
+          d="M0 182Q600 132 1200 139"
+          fill="none"
+          stroke="var(--air-accent)"
+          stroke-opacity="0.28"
+        />
+      </g>
+    </svg>
+    <footer>
+      <span>CloakPDF</span><span>CloakResume</span><span>CloakIMG</span><span>CloakDrop</span>
+    </footer>
   </body>
 </html>

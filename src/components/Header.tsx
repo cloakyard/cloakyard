@@ -1,80 +1,72 @@
-import { GitBranch, Menu, X } from "lucide-react";
+import { useRef } from "react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { Brand } from "./Brand";
 
-const nav = [
-  { label: "Tools", href: "#tools" },
-  { label: "Experiments", href: "#experiments" },
-  { label: "Principles", href: "#principles" },
+const navigation = [
+  { href: "#tools", label: "The tools" },
+  { href: "#experiments", label: "Curiosity" },
+  { href: "#principles", label: "Our approach" },
 ];
 
 export function Header() {
+  const disclosure = useRef<HTMLDetailsElement>(null);
   return (
     <>
-      <a className="skip-link" href="#main">
-        Skip to main content
+      <a className="skip-link air-button" href="#main">
+        Skip to content
       </a>
-      <header className="site-header">
-        <div className="site-frame header-inner">
-          <Brand />
-          <nav className="desktop-nav" aria-label="Primary navigation">
-            {nav.map((item) => (
+      <header className="site-header site-frame">
+        <Brand />
+        <nav className="desktop-navigation" aria-label="Main navigation">
+          {navigation.map((item) => (
+            <a key={item.href} href={item.href}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+        <a
+          className="desktop-source text-link"
+          href="https://github.com/cloakyard"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Source <ArrowUpRight size={16} aria-hidden="true" />
+        </a>
+        <details
+          className="mobile-navigation"
+          ref={disclosure}
+          onKeyDown={(event) => {
+            if (event.key === "Escape" && disclosure.current?.open) {
+              disclosure.current.open = false;
+              disclosure.current.querySelector("summary")?.focus();
+              event.preventDefault();
+            }
+          }}
+        >
+          <summary className="air-button air-button--quiet">
+            Menu <ChevronDown size={16} aria-hidden="true" />
+          </summary>
+          <nav
+            aria-label="Main navigation"
+            onClick={(event) => {
+              if ((event.target as Element).closest("a") && disclosure.current) {
+                disclosure.current.open = false;
+                // A new-tab link must not leave focus in the closed disclosure.
+                // Same-page navigation then moves focus to its destination.
+                disclosure.current.querySelector("summary")?.focus({ preventScroll: true });
+              }
+            }}
+          >
+            {navigation.map((item) => (
               <a key={item.href} href={item.href}>
                 {item.label}
               </a>
             ))}
-          </nav>
-          <div className="header-actions">
-            <a
-              className="source-link"
-              href="https://github.com/cloakyard"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View Cloakyard on GitHub"
-            >
-              <GitBranch size={15} aria-hidden="true" />
-              <span>Source</span>
+            <a href="https://github.com/cloakyard" target="_blank" rel="noreferrer">
+              Source <ArrowUpRight size={16} aria-hidden="true" />
             </a>
-            <div
-              className="mobile-menu"
-              onKeyDown={(event) => {
-                if (event.key === "Escape") {
-                  event.currentTarget.querySelector<HTMLElement>("[popover]")?.hidePopover();
-                }
-              }}
-            >
-              <button
-                type="button"
-                popoverTarget="mobile-navigation"
-                aria-label="Toggle navigation"
-              >
-                <Menu className="menu-open" size={20} aria-hidden="true" />
-                <X className="menu-close" size={20} aria-hidden="true" />
-              </button>
-              <div
-                className="mobile-menu-panel"
-                id="mobile-navigation"
-                popover="auto"
-                aria-label="Navigation menu"
-              >
-                <p>Navigate</p>
-                <nav aria-label="Mobile navigation">
-                  {nav.map((item) => (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      onClick={(event) => {
-                        event.currentTarget.closest<HTMLElement>("[popover]")?.hidePopover();
-                      }}
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </nav>
-                <small>Open source · Privacy first</small>
-              </div>
-            </div>
-          </div>
-        </div>
+          </nav>
+        </details>
       </header>
     </>
   );

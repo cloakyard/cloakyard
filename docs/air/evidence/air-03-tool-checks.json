@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-11",
+  "scope": "14 reference tool headings only. Not product feature coverage.",
+  "checks": [
+    {
+      "app": "PDF",
+      "tool": "Annotate",
+      "heading": "Annotate"
+    },
+    {
+      "app": "PDF",
+      "tool": "Signature",
+      "heading": "Signature"
+    },
+    {
+      "app": "PDF",
+      "tool": "Redact",
+      "heading": "Redact"
+    },
+    {
+      "app": "PDF",
+      "tool": "Organize",
+      "heading": "Organize"
+    },
+    {
+      "app": "IMG",
+      "tool": "Adjust",
+      "heading": "Adjust"
+    },
+    {
+      "app": "IMG",
+      "tool": "Crop & rotate",
+      "heading": "Crop & rotate"
+    },
+    {
+      "app": "IMG",
+      "tool": "Spot heal",
+      "heading": "Spot heal"
+    },
+    {
+      "app": "IMG",
+      "tool": "Levels",
+      "heading": "Levels"
+    },
+    {
+      "app": "IMG",
+      "tool": "Selective color",
+      "heading": "Selective color"
+    },
+    {
+      "app": "Resume",
+      "tool": "Profile",
+      "heading": "Profile"
+    },
+    {
+      "app": "Resume",
+      "tool": "Contact",
+      "heading": "Contact"
+    },
+    {
+      "app": "Resume",
+      "tool": "Experience",
+      "heading": "Experience"
+    },
+    {
+      "app": "Resume",
+      "tool": "Template",
+      "heading": "Template"
+    },
+    {
+      "app": "Resume",
+      "tool": "Format",
+      "heading": "Format"
+    }
+  ],
+  "focusChecks": [
+    {
+      "theme": "Light",
+      "border": "rgba(0, 0, 0, 0)",
+      "offset": "0px",
+      "outline": "2px solid",
+      "shadow": "none"
+    },
+    {
+      "theme": "Dark",
+      "border": "rgba(0, 0, 0, 0)",
+      "offset": "0px",
+      "outline": "2px solid",
+      "shadow": "none"
+    }
+  ]
+}
