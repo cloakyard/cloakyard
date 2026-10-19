@@ -135,6 +135,11 @@ are no Swift/native edits. The policy's meaning does not change in a visual refr
 
 ## 5. CloakResume — reuse controls, protect every template
 
+2026-10-19: contact/native selects followed in `9d4e7f9`: 128 layouts, 20
+keyboard/popup journeys, 28 contrast pairs, native Safari/Firefox 200% and all
+298 production tests pass. Next: month/year, Current job and Education Present,
+then the remaining widgets/sections/review/export/PWA/assets. IMG stays last.
+
 2026-10-19: repeated entries/bullets followed in `bcbf8ff`: 640 populated plus
 240 empty layouts, 37 contrast pairs, native Safari/Firefox 200% and all 297
 production tests pass. Duplicate bullet identity, move/confirmation focus and

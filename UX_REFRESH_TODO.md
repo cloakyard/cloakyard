@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields and repeated entries implemented; contact/select next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields, repeated entries and contact/select implemented; date controls next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,18 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — CloakResume repeated entries (2026-10-19)
+## Latest bounded piece — CloakResume contact and native selects (2026-10-19)
+
+Resume `9d4e7f9` completes contact fields and the shared native select. The full
+product remains in progress.
+
+- [x] Air labels, fields, validation and entry headings; preserve all nine contact kinds, exact values, input/autofill semantics and imported custom proficiency.
+- [x] Use canonical native selects and content-sized field pairs. Remove the legacy nested contact skin, uppercase labels and duplicate select arrow. Preserve browser/OS fallback menus.
+- [x] 128 responsive/theme/text layouts, 20 keyboard/popup journeys, 28 contrast pairs, forced colours, native Safari and Firefox actual 200%. Full 298/298 production tests in eight files, zero skips; 118 editor and all 34 template/paper cases.
+- [x] Check/build/78-source design/18 portability/exact sync pass. Six proof PNGs and compact evidence/log in Resume `docs/air/evidence/contact-selects-2026-10-19.json`; full records in `/tmp/cloakresume-air-selects/`. No dependency, template, output or schema changes.
+- [ ] Next: month/year dates, Experience Current job and Education Present; then logo/wheel, remaining sections, hints/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.
+
+## Previous bounded piece — CloakResume repeated entries (2026-10-19)
 
 Resume `bcbf8ff` implements open repeated-entry headings/actions, empty/Add guidance
 and full-width nested bullets. The complete product remains in progress.
@@ -575,7 +586,8 @@ items retain their documented human/device gates; they do not imply full accepta
 - [ ] Remaining editor interiors and custom writing widgets.
 - [ ] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description.
-- [ ] Contact/native selects, month/year fields, logo/colour pickers and writing-hint popup interiors.
+- [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
+- [ ] Month/year fields, logo/colour pickers and writing-hint popup interiors.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.

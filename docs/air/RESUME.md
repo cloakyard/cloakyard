@@ -6,11 +6,12 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: Resume repeated entries (`bcbf8ff`), after writing fields
+Latest completed piece: Resume contact/native selects (`9d4e7f9`), after repeated
+entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Next is Resume's contact/native select controls and language proficiency; IMG stays parked.
+Next is Resume's month/year dates, Current job and Education Present; IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -56,10 +57,10 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `af0c69e`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakyard   | `9abf37d`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
 | cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
-| cloakresume | `bcbf8ff`                             | Entry/recovery/shell/fields/repeated entries implemented; widgets/review/PWA/assets pending             |
+| cloakresume | `9d4e7f9`                             | Entry/recovery/shell/fields/entries/contact/select implemented; dates/widgets/review/PWA/assets pending |
 | cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded              |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
@@ -70,16 +71,16 @@ The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: CloakResume contact and native selects
+### Exact next bounded piece: CloakResume month/year and current-job controls
 
 1. Read Resume AGENTS/CLAUDE/DESIGN, `docs/air/editor-audit.md` and the inventory.
-   Entry/privacy/recovery/shell, shared writing fields and repeated entries are implemented.
-2. Replace contact's 10px uppercase selector, nested bordered row and breakpoint-
-   based sizing with Air labelled kind/value fields and the shared entry actions.
-   Preserve all nine kinds, exact values, validation/type/autofill, IDs and reorder/
-   removal. Align `SelectField` and Languages, including imported custom proficiency,
-   native keyboard/popup fallback and long labels. Reuse canonical `select.air-field`.
-   Read-only prep inspected these sources/tests; no next-slice code exists yet.
+   Entry/privacy/recovery/shell, shared fields/entries and contact/select are implemented.
+2. Migrate MonthYearField's trigger, clear action, portaled picker and year grid,
+   plus Experience Current job and Education Present. Preserve raw legacy strings,
+   month/year/year-only/clear/Done semantics and previous-end restoration. Validate
+   complete keyboard paths, focus after disappearing actions, inert exit, touch
+   cancellation, coarse targets, enlarged text and short visual viewports.
+   Read-only prep is `/tmp/cloakresume-air-selects/next-date-notes.md`; no date code yet.
 3. Continue all remaining section interiors, date/logo/wheel, hint popups, template/
    library, four review tabs, overflow/export busy/recovery, PWA safety and true
    static404. Actual Resume OG/PWA/README captures remain legacy; regenerate after
@@ -90,6 +91,27 @@ Interactive final `validated` flags remain false pending device/assistive accept
    browser/template skips, weakened feature assertions or inflated timeout budgets.
 5. IMG remains last. Physical touch/keyboard/IME, assistive speech and shader
    hardware gates stay open. Its parked last background fix is not validated.
+
+Completed Resume contact/native selects (`9d4e7f9`): labelled Air kind/value fields,
+all nine kinds and original validation/autofill/type semantics; shared native select
+with custom imported proficiency and responsive field pairs. Removed the nested
+contact skin, tiny uppercase labels and duplicate arrow. Native menus keep their
+browser/OS appearance when customizable selects are unsupported. No output change.
+
+**298/298 in eight files, 374.85s, zero skips**; 118 editor and 34 template/paper
+cases (17 × two papers × five fixtures). 128 layouts, 20 keyboard/popup journeys,
+28 contrast pairs, forced colours, Safari and Firefox actual 200% pass. Check/build/
+78-source design/18 portability/exact sync pass. Six PNGs and compact proof/log in
+Resume `docs/air/evidence/contact-selects-2026-10-19.json`; full local records in
+`/tmp/cloakresume-air-selects/`. Native review tabs closed and Firefox zoom reset.
+Latest preview 8153; earlier task ports 8145–8152 also remain. Local commits only.
+
+The first focused run caught test timing before committed focus styles and a
+helper that expects Profile first; both were corrected without weakening assertions.
+Native single-line inputs legitimately scroll long text; their bounding boxes must
+remain contained. Pixel inspection caught a two-line select arrow caused by the
+writing-field display rule; final selects use only canonical `air-field` styling.
+The final 128-layout matrix and full suite were rerun after that correction.
 
 Completed Resume repeated entries (`bcbf8ff`): open headings, Air Add/empty and
 44px contextual move/remove actions; one removal owner and three consolidated

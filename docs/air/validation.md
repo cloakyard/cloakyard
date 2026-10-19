@@ -2014,3 +2014,14 @@ and full-width nested bullets. The complete product remains in progress.
 - [x] 640 populated/confirmation layouts, 240 empty layouts, 37 contrast pairs, forced colours/reduced motion, native Safari and Firefox actual 200%. Full 297/297 production tests in eight files, zero skips; 117 editor and all 34 template/paper cases.
 - [x] Check/build/design/18 portability/exact sync pass. Six proof PNGs and compact evidence are in Resume `docs/air/evidence/repeated-entries-2026-10-19.json`; full local records in `/tmp/cloakresume-air-entries/`.
 - [ ] Next: contact fields/native selects and custom proficiency values, then remaining date/logo/wheel/section, hint/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.
+
+## 2026-10-19 — bounded implementation — CloakResume contact and native selects (2026-10-19)
+
+Resume `9d4e7f9` completes contact fields and the shared native select. The full
+product remains in progress.
+
+- [x] Air labels, fields, validation and entry headings; preserve all nine contact kinds, exact values, input/autofill semantics and imported custom proficiency.
+- [x] Use canonical native selects and content-sized field pairs. Remove the legacy nested contact skin, uppercase labels and duplicate select arrow. Preserve browser/OS fallback menus.
+- [x] 128 responsive/theme/text layouts, 20 keyboard/popup journeys, 28 contrast pairs, forced colours, native Safari and Firefox actual 200%. Full 298/298 production tests in eight files, zero skips; 118 editor and all 34 template/paper cases.
+- [x] Check/build/78-source design/18 portability/exact sync pass. Six proof PNGs and compact evidence/log in Resume `docs/air/evidence/contact-selects-2026-10-19.json`; full records in `/tmp/cloakresume-air-selects/`. No dependency, template, output or schema changes.
+- [ ] Next: month/year dates, Experience Current job and Education Present; then logo/wheel, remaining sections, hints/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.
