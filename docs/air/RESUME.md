@@ -16,14 +16,17 @@ Both deployments match validated asset bytes and serve `no-transform`, with no
 edge-injected analytics/challenge scripts. Live home 12 layout cases, PDF six
 real-output workflows, 68 horizon layouts/GPU checks and four editor captures pass.
 The PDF dark/light desktop/mobile document content was visually inspected.
-CloakDrop **1.0.0-rc.1, build 20261019** is prepared locally with the complete Air
+CloakDrop [**1.0.0-rc.1, build 20261019**](https://github.com/cloakyard/cloakdrop/releases/tag/v1.0.0-rc.1)
+is published as a GitHub prerelease with the complete Air
 website/OG/horizon and newly requested Air installer. Dependencies/checks are
 committed as `27953ff`; installer as `df413b2`; RC documentation is `a870941`. The native app has no new behavior/UI changes in this piece.
 626 core tests, fresh Debug/Release builds, 432 website layouts, 34 journeys, GPU
 lifecycle/six fallbacks, a checksum-verified native download and final DMG checks
 pass. Official yt-dlp frozen runtime retained by explicit user choice; TS6 remains
-the supported version. RC is ad-hoc signed, not notarized. No Drop push/release or
-website deployment was authorized or performed. Resume logo/photo is complete
+the supported version. RC is ad-hoc signed, not notarized. The user subsequently
+authorized GitHub publication: release tag `9936e47`, exact DMG and checksum file
+are public, with matching GitHub SHA-256 digests. Main/dev were not merged and the
+website was not deployed. Resume logo/photo is complete
 as `9cc74df`; its shared colour wheel remains next after this RC preparation.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
@@ -71,8 +74,9 @@ same family; landing-only or token-only work is not a completed migration.
 - Work in bounded pieces: implement → inspect rendered states → feature/output
   tests → required checks → evidence/TODO → local commit. Never commit failed gates.
   The user subsequently authorized dev integration, main PRs and release for
-  Cloakyard and CloakPDF. Update CloakDrop’s page next; keep Drop, Resume and IMG
-  commits local until separately authorized for release. No subagent delegation was requested.
+  Cloakyard and CloakPDF, then explicitly requested the CloakDrop RC GitHub release.
+  Drop RC1 is published through its verified tag; main/dev integration and website
+  deployment remain separate. Resume/IMG stay local. No subagent delegation was requested.
 
 ### Repository state at handoff
 
@@ -89,7 +93,7 @@ before editing; preserve any new user changes. Paths are siblings under
 | cloakpdf    | `4277829`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
 | cloakresume | `9cc74df`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `a870941`                             | Website/OG/horizon and Air installer complete; 1.0.0-rc.1 prepared locally; signing/device gates open            |
+| cloakdrop   | `6ac533f`                             | Website/OG/horizon and Air installer complete; 1.0.0-rc.1 published; signing/device gates open                   |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -99,12 +103,12 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### CloakDrop RC handoff — prepared locally on 2026-10-19
+### CloakDrop RC handoff — published on 2026-10-19
 
 - Artifact: sibling `cloakdrop/apps/macos/build/RC-1.0.0-20261019/CloakDrop-v1.0.0-rc.1.dmg`;
   48,181,551 bytes. SHA-256
   `c363dc38e9cd48ade60b74458f0f3f83c5dd666f60332af274134086556c9471`.
-- Adjacent `SHA256SUMS.txt` and `build-manifest.json`; release draft
+- Adjacent `SHA256SUMS.txt` and `build-manifest.json`; release notes
   `cloakdrop/docs/releases/v1.0.0-rc.1.md`, audits dated 2026-10-19 for dependencies,
   installer and RC. The repository audit manifest preserves exact source SHAs.
 - Current compatible versions: Astro7.4.0, Wrangler4.151.2, TS6.0.3, GRDB7.11.1,
@@ -120,9 +124,14 @@ Interactive final `validated` flags remain false pending device/assistive accept
 - No Developer ID identity exists here. The RC uses teamless sandbox/hardened runtime,
   is not notarized, and does not certify App Group/Share Extension delivery. The
   user reconfirmed the official frozen-runtime exception. No custom PyInstaller build.
-- No source push, GitHub release/tag or website deployment. Publish only after new
-  authorization; preserve this exact candidate/checksum unless deliberately rebuilt.
-  Do not repeat the dependency or installer work when resuming the editor rollout.
+- Published after explicit authorization at 18:13:28 India time. Tag `v1.0.0-rc.1`
+  resolves to `9936e47c24fa7264eeaa7790f97f80bf58a1bf2f`; DMG and SHA256SUMS are public.
+  GitHub asset sizes/digests and exact release notes verified. Publication proof:
+  Drop `docs/audits/evidence/2026-10-19-rc.1-publication.json`.
+- Only the release tag was pushed. No main/dev merge or website deployment. Preserve
+  this exact candidate/checksum; do not retag or rebuild the published RC in place.
+  The preparation manifest's `published:false` is historical; use the publication
+  record for status. Do not repeat finished dependency or installer work.
 
 ### Exact next bounded piece: CloakResume primary-colour wheel
 

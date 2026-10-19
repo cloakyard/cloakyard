@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakDrop RC and Air installer prepared locally; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select, date and logo/photo controls implemented; colour wheel next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakDrop RC published with the Air installer; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select, date and logo/photo controls implemented; colour wheel next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -11,8 +11,9 @@ surfaces stay open. Cloakyard v1.0.1 and CloakPDF v2.0.0 are released and produc
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
 KERR's app and native macOS UI are outside this redesign. The user authorized
-Cloakyard/PDF dev integration, main PRs and releases. CloakDrop’s page follows;
-Drop/Resume/IMG runtime work stays local; IMG remains last.
+Cloakyard/PDF dev integration, main PRs and releases, followed by CloakDrop RC1
+publication. Drop’s website deployment remains separate; Resume/IMG work stays
+local and IMG remains last. The separately requested Drop installer now uses Air.
 
 ## Working rules
 
