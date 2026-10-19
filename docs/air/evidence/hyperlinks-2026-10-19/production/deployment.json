@@ -1,0 +1,25 @@
+{
+  "app": "cloakyard",
+  "pr": 13,
+  "source": "6fabe233f95bc4dd65ceab9a1dce638a3b4cb59b",
+  "main": "8abac0429a7a106675cd762a02c39f2feeccb759",
+  "version": "7ba3d015",
+  "build": "0f9e1759-a92c-4dca-a2b1-6ba1e8e86c6f",
+  "trafficPercent": 100,
+  "verifiedAt": "2026-10-19T14:59:40.152075+00:00",
+  "prUrl": "https://github.com/cloakyard/cloakyard/pull/13",
+  "checks": [
+    {
+      "name": "Workers Builds: cloakyard",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/0f9e1759-a92c-4dca-a2b1-6ba1e8e86c6f"
+    },
+    {
+      "name": "contract",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakyard/actions/runs/39272776682/job/118129160262"
+    }
+  ]
+}

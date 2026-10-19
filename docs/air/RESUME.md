@@ -41,12 +41,19 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel remains next. See the deployment checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest follow-up: the user explicitly prefers **angled hyperlinks** and the
+Latest follow-up: **all public-page links stay neutral, including hover**.
+The user explicitly included Cloakyard's content links and required the rule in
+Air. Version 1.0.6 removes the previous blue-body-link permission, preserves angled
+cues/inline underlines and blue focus outlines, and supplies a portable all-anchor
+browser checker. Local correction and deployment proof are tracked in
+`docs/air/neutral-links-2026-10-19.md`; publication is pending. Resume/IMG stay local.
+
+Previous follow-up: the user explicitly prefers **angled hyperlinks** and the
 approved neutral navigation. Air 1.0.5 supersedes the straight-link decision in
 1.0.4. The correction restores angled link cues, fixes Drop's blue Source cascade
 and neutral footer credits, and carries the rule across the family. Local checks
-and screenshots are recorded in `docs/air/hyperlinks-2026-10-19.md`; root/PDF/Drop
-publication is pending. Resume/IMG remain local and unfinished.
+and production proof are recorded in `docs/air/hyperlinks-2026-10-19.md`; root/PDF/Drop
+are live through PRs #13/#205/#41. Resume/IMG remain local and unfinished.
 
 Previously completed work: app-coloured horizons deployed for Cloakyard/PDF/Drop;
 Resume/IMG implementations remain local,
@@ -70,8 +77,8 @@ quality, minimalism, a distinctive modern appearance and purposeful playful moti
 Every custom control, editor, canvas surround, overlay and edge state belongs to the
 same family; landing-only or token-only work is not a completed migration.
 
-- Canonical source is this repo's `design/air/`; current Air **1.0.5**, contract
-  **94c5e537752f**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
+- Canonical source is this repo's `design/air/`; current Air **1.0.6**, contract
+  **e7c8a4bcfbc5**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
   Product appendices live in `design/air/products/`. Regenerate with
   `node scripts/sync-air-design.mjs --bundle`, then verify `--bundle --check`.
   Standalone products must work without a sibling checkout or upstream runtime fetch.
@@ -103,24 +110,23 @@ same family; landing-only or token-only work is not a completed migration.
 
 ### Repository state at handoff
 
-Root uses `codex/air-refresh`, based on deployed main `41a8f4b` (PR #12).
-PDF uses `codex/air-brand-horizons`, based on deployed main `d9ba375` (PR #204).
+Root uses `codex/air-refresh`, based on deployed main `8abac04` (PR #13).
+PDF uses `codex/air-brand-horizons`, based on deployed main `8f801c3` (PR #205).
 Local production-evidence commits follow these merges. Drop uses
-`codex/air-refresh`, based on deployed main `5ee9a01`, with local documentation
-checkpoint `cff7bc7`. Resume/IMG remain on `codex/air-refresh`; their navigation
-checkpoints are `6420ce3` and `583b809` respectively.
-All five carry the Air 1.0.5 hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
+`codex/air-refresh`, based on deployed main `e3edf4e` (PR #41). Resume/IMG remain
+on `codex/air-refresh`; their hyperlink checkpoints are `f1c49cd` and `c38e204`.
+All five carry the Air 1.0.6 neutral hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `41a8f4b`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `d9ba375`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
-| cloakimg    | `583b809`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
-| cloakresume | `6420ce3`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `cff7bc7`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
+| cloakyard   | `8abac04`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `8f801c3`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakimg    | `c38e204`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
+| cloakresume | `f1c49cd`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
+| cloakdrop   | `e3edf4e`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -129,6 +135,30 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 91 prior sources remain implemented; the new OG/metadata entries are validated as
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
+
+### Approved angled hyperlinks — deployed on 2026-10-19
+
+The user explicitly reconfirmed angled hyperlinks and preservation of the main Air
+appearance. Air 1.0.5 (`94c5e537752f`) restores that cue, preserves forward action
+arrows, and protects neutral navigation/footer credits. Drop's generic body-link
+rule had overridden Source; CSS ordering now matches the family header. Its browser
+suite catches colour drift and duplicate compact navigation, including forced colours.
+
+- cloakyard: candidate `6fabe23`, PR #13, main `8abac04`; Cloudflare `7ba3d015` at 100%.
+- cloakpdf: candidate `350efbb`, PR #205, main `8f801c3`; Cloudflare `5f3bbb89` at 100%.
+- cloakdrop: candidate `78cd914`, PR #41, main `e3edf4e`; Cloudflare `f55dfdb2` at 100%.
+- Remote checks pass. All 162 production files match, three missing routes and
+  72 live viewport/theme/text cases pass. Live light/dark desktop/laptop/phone
+  headers/footers were inspected. Local evidence covers 120 family link cases,
+  PDF 461 units plus search/editor handoff, Drop 432 layouts/34 journeys, Resume
+  303 production tests, and IMG 470 isolated / 475 combined-draft tests.
+- Resume `f1c49cd` remains local. IMG `c38e204` commits only the portable contract,
+  canonical angled glyph and evidence; header and neutral compact/footer styling
+  remain with the parked draft. Two pre-existing draft formatting failures remain
+  outside the isolated passing commit. Do not publish the unfinished IMG migration.
+- Audits: each repo's `docs/air/hyperlinks-2026-10-19.md`; deployed evidence is in
+  `docs/air/evidence/hyperlinks-2026-10-19/production/`. Release tags and the Drop
+  RC DMG are unchanged. Next remains Resume's colour wheel, then IMG last.
 
 ### Landing navigation consistency — deployed on 2026-10-19 (superseded)
 

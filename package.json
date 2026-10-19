@@ -15,7 +15,8 @@
     "design:portability": "node scripts/check-air-portability.mjs",
     "design:inventory": "node scripts/air-inventory.mjs",
     "design:sync": "node scripts/sync-air-design.mjs",
-    "design:files:test": "node --test scripts/test-air-file-workflow.mjs"
+    "design:files:test": "node --test scripts/test-air-file-workflow.mjs",
+    "test:air-links": "node scripts/test-air-links.mjs"
   },
   "dependencies": {
     "lucide-react": "1.52.0",
