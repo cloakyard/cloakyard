@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields implemented; repeated entries next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakResume entry/recovery, shell and shared writing fields and repeated entries implemented; contact/select next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,7 +31,19 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
-## Latest bounded piece — CloakResume writing fields (2026-10-19)
+## Latest bounded piece — CloakResume repeated entries (2026-10-19)
+
+Resume `bcbf8ff` implements open repeated-entry headings/actions, empty/Add guidance
+and full-width nested bullets. The complete product remains in progress.
+
+- [x] Consolidate three bullet editors and duplicate removal state; remove obsolete sub-card skins and compact/stack flags. Saved schema/output remains unchanged.
+- [x] Stable UI-only keys preserve duplicate bullets, selection and formatting through moves. Guarded boundary actions, contextual names, announcements, Escape and survivor/Add recovery retain predictable focus, including Safari pointer activation.
+- [x] Contain live announcements in their list; enlarged phone panes cannot scroll their hidden parent blank. Confirm remains visible at the action.
+- [x] 640 populated/confirmation layouts, 240 empty layouts, 37 contrast pairs, forced colours/reduced motion, native Safari and Firefox actual 200%. Full 297/297 production tests in eight files, zero skips; 117 editor and all 34 template/paper cases.
+- [x] Check/build/design/18 portability/exact sync pass. Six proof PNGs and compact evidence are in Resume `docs/air/evidence/repeated-entries-2026-10-19.json`; full local records in `/tmp/cloakresume-air-entries/`.
+- [ ] Next: contact fields/native selects and custom proficiency values, then remaining date/logo/wheel/section, hint/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.
+
+## Previous bounded piece — CloakResume writing fields (2026-10-19)
 
 Resume `4ba267c` migrates shared text/CSV/textarea and rich formatting. The full product remains in progress.
 
@@ -559,10 +571,11 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Landing/start blank/sample/load/restore, capabilities, privacy and footer. Software evidence: Resume `docs/air/evidence/entry-recovery-2026-10-19.json`; physical gates remain open.
 - [x] Editor header, section rail/picker/panel frame, preview surround and zoom, paper/view choices. Software evidence: Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
 - [x] Shared text/CSV/textarea fields, labels/help/validation and scoped formatting. Software evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json`; preserve preview pagination/output throughout.
-- [ ] Remaining editor interiors and repeated writing controls.
+- [x] Shared repeated-entry headings/Add/empty, full-width nested bullets, stable identity and reorder/removal focus. Software evidence: Resume `docs/air/evidence/repeated-entries-2026-10-19.json`.
+- [ ] Remaining editor interiors and custom writing widgets.
 - [ ] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description.
-- [ ] Repeated entries, drag/reorder/removal focus, month/year fields, logo/colour pickers and writing-hint popup interiors.
+- [ ] Contact/native selects, month/year fields, logo/colour pickers and writing-hint popup interiors.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.

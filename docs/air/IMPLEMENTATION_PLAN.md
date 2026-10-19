@@ -135,6 +135,12 @@ are no Swift/native edits. The policy's meaning does not change in a visual refr
 
 ## 5. CloakResume — reuse controls, protect every template
 
+2026-10-19: repeated entries/bullets followed in `bcbf8ff`: 640 populated plus
+240 empty layouts, 37 contrast pairs, native Safari/Firefox 200% and all 297
+production tests pass. Duplicate bullet identity, move/confirmation focus and
+announcement scroll containment are covered. Next: contact/native selects and
+language proficiency, then remaining widgets/sections/review/export/PWA/assets.
+
 2026-10-19: shared writing fields/formatting followed in `4ba267c`: 384 layouts,
 32 contrast pairs, native Safari/Firefox 200% and all 290 production tests pass.
 Next is repeated-entry/bullet chrome and focus/identity through reorder/removal;

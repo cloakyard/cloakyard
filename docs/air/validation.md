@@ -2002,3 +2002,15 @@ failures and harness corrections are recorded without weakening feature gates.
 Detailed evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json` and log.
 No output/schema/font/dependency change. Repeated entries and custom widgets/review/
 PWA/preview assets remain open; IMG stays last. No push or deployment.
+
+## 2026-10-19 — bounded implementation — CloakResume repeated entries (2026-10-19)
+
+Resume `bcbf8ff` implements open repeated-entry headings/actions, empty/Add guidance
+and full-width nested bullets. The complete product remains in progress.
+
+- [x] Consolidate three bullet editors and duplicate removal state; remove obsolete sub-card skins and compact/stack flags. Saved schema/output remains unchanged.
+- [x] Stable UI-only keys preserve duplicate bullets, selection and formatting through moves. Guarded boundary actions, contextual names, announcements, Escape and survivor/Add recovery retain predictable focus, including Safari pointer activation.
+- [x] Contain live announcements in their list; enlarged phone panes cannot scroll their hidden parent blank. Confirm remains visible at the action.
+- [x] 640 populated/confirmation layouts, 240 empty layouts, 37 contrast pairs, forced colours/reduced motion, native Safari and Firefox actual 200%. Full 297/297 production tests in eight files, zero skips; 117 editor and all 34 template/paper cases.
+- [x] Check/build/design/18 portability/exact sync pass. Six proof PNGs and compact evidence are in Resume `docs/air/evidence/repeated-entries-2026-10-19.json`; full local records in `/tmp/cloakresume-air-entries/`.
+- [ ] Next: contact fields/native selects and custom proficiency values, then remaining date/logo/wheel/section, hint/review/library/export/PWA/static recovery and preview assets. Physical/device gates remain open. IMG stays last.

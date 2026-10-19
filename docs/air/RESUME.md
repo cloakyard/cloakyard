@@ -6,10 +6,11 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: Resume writing fields (`4ba267c`), after editor shell (`30696b5`) and entry/recovery
+Latest completed piece: Resume repeated entries (`bcbf8ff`), after writing fields
+(`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Next is Resume's repeated-entry/bullet layout and reorder/removal focus; IMG stays parked.
+Next is Resume's contact/native select controls and language proficiency; IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -55,10 +56,10 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `cd32f38`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakyard   | `af0c69e`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
 | cloakpdf    | `b9d67a9`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
-| cloakresume | `4ba267c`                             | Entry/recovery/shell/writing fields implemented; repeated entries, widgets/review/PWA/assets pending    |
+| cloakresume | `bcbf8ff`                             | Entry/recovery/shell/fields/repeated entries implemented; widgets/review/PWA/assets pending             |
 | cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded              |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
@@ -69,23 +70,20 @@ The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: CloakResume repeated writing entries
+### Exact next bounded piece: CloakResume contact and native selects
 
 1. Read Resume AGENTS/CLAUDE/DESIGN, `docs/air/editor-audit.md` and the inventory.
-   Entry/privacy/recovery/shell and shared writing fields are implemented.
-2. Migrate shared repeated-entry/Add/empty headings, drag/reorder/remove controls,
-   and full-width nested bullets. Preserve item identity, caret/selection, nested
-   data and formatting scope through reorder/removal; use contextual action names,
-   accessible move alternatives, announcements and predictable recovery focus.
-   `DragList`/`SubCardHead` currently duplicate removal state, and nested strings
-   use index keys. Keep the saved schema/output unchanged. Read-only prep notes:
-   `/tmp/cloakresume-air-fields/next-repeated-notes.md`; no next-slice code exists.
-   The saved `repeated-baseline.json` reproduces correct data order but focus on
-   the wrong nested item, and focus lost to BODY after moving an outer entry.
-3. Continue all 13 section interiors, select/contact/date/logo/wheel, hint popups,
-   template/library, four review tabs, overflow/export busy/recovery, PWA safety and
-   true static404. Actual Resume OG/PWA/README captures remain legacy; regenerate
-   after the editor is complete. Ready Offline is still oversized at enlarged text.
+   Entry/privacy/recovery/shell, shared writing fields and repeated entries are implemented.
+2. Replace contact's 10px uppercase selector, nested bordered row and breakpoint-
+   based sizing with Air labelled kind/value fields and the shared entry actions.
+   Preserve all nine kinds, exact values, validation/type/autofill, IDs and reorder/
+   removal. Align `SelectField` and Languages, including imported custom proficiency,
+   native keyboard/popup fallback and long labels. Reuse canonical `select.air-field`.
+   Read-only prep inspected these sources/tests; no next-slice code exists yet.
+3. Continue all remaining section interiors, date/logo/wheel, hint popups, template/
+   library, four review tabs, overflow/export busy/recovery, PWA safety and true
+   static404. Actual Resume OG/PWA/README captures remain legacy; regenerate after
+   the editor is complete. Ready Offline is still oversized at enlarged text.
 4. Run `vp check`, `vp run build`, and the complete serial suite with
    `CLOAKRESUME_BROWSER_BUILD=production vp test run --no-file-parallelism`.
    Do not edit runtime/build files while the production suite is running. No missing
@@ -93,12 +91,36 @@ Interactive final `validated` flags remain false pending device/assistive accept
 5. IMG remains last. Physical touch/keyboard/IME, assistive speech and shader
    hardware gates stay open. Its parked last background fix is not validated.
 
+Completed Resume repeated entries (`bcbf8ff`): open headings, Air Add/empty and
+44px contextual move/remove actions; one removal owner and three consolidated
+nested bullet editors. Stable UI-only keys preserve duplicate strings, selection
+and formatting. Saved schema/output is unchanged. Guarded `aria-disabled` boundaries
+retain focus; Safari pointer activation explicitly focuses its action. Escape,
+survivor/Add recovery, nested internal drag and native external text drops pass.
+
+Off-screen announcements initially escaped their scrolling list and created a
+blank enlarged-phone pane. Positioning the list contains them; a focused regression
+and the final matrix verify the parent cannot scroll. Confirm is visible at its
+action. Screenshot centering previously moved the root by 32px; captures now scroll
+only the writing pane. Old sub-card CSS, compact/stack flags, duplicate removal
+state and nested bullet markup are removed. No dependency/template/PDF/font change.
+
+**297/297 in eight files, 361.26s, zero skips**; 117 editor cases and 34
+complete template/paper cases (17 × two papers × five fixtures). 640 populated/
+confirmation and 240 empty layouts, 37 contrast pairs, forced colours/reduced motion,
+Safari and Firefox actual 200% pass. Check/build/78-source design/18 portability/
+exact sync pass. Six PNGs and compact evidence/log: Resume
+`docs/air/evidence/repeated-entries-2026-10-19.json`; full local proof and pre-fix
+diagnostics `/tmp/cloakresume-air-entries/`. Native tabs closed; Firefox zoom reset.
+Latest native preview 8151; earlier task preview ports 8145–8150 also remain.
+Individual section widgets are still partial. Local commits only; no push/deploy.
+
 Completed Resume writing fields (`4ba267c`): Air text/CSV/textarea, labels/help,
 validation and scoped formatting. Removed invisible hint rows, compact APIs and
 retired CSS. Handler cleanup prevents stale formatting from resurrecting a removed
 bullet. No template/PDF/font/schema/data/dependency source change. `SelectField`,
-contact and custom widgets, hint popup interiors and repeated-entry chrome are
-still partial; source inventory does not mark them complete.
+contact and custom widgets and hint popup interiors remain partial. Repeated-entry
+chrome has since been completed in the checkpoint above.
 
 384 layouts across six consumers × 16 sizes × themes × 16/32px text; 32 contrast pairs;
 invalid/selected/forced colours; native Safari pointer and Firefox actual 200%
