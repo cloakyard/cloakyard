@@ -41,10 +41,12 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel remains next. See the deployment checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest follow-up: straight landing-link arrows under Air 1.0.4 are live on
-Cloakyard and PDF through PRs #12/#204. All five local visual matrices pass;
-Drop already used forward arrows. Resume/IMG remain local. See
-`docs/air/link-arrows-2026-10-19.md`. The larger Resume/IMG migrations remain unfinished.
+Latest follow-up: the user explicitly prefers **angled hyperlinks** and the
+approved neutral navigation. Air 1.0.5 supersedes the straight-link decision in
+1.0.4. The correction restores angled link cues, fixes Drop's blue Source cascade
+and neutral footer credits, and carries the rule across the family. Local checks
+and screenshots are recorded in `docs/air/hyperlinks-2026-10-19.md`; root/PDF/Drop
+publication is pending. Resume/IMG remain local and unfinished.
 
 Previously completed work: app-coloured horizons deployed for Cloakyard/PDF/Drop;
 Resume/IMG implementations remain local,
@@ -68,8 +70,8 @@ quality, minimalism, a distinctive modern appearance and purposeful playful moti
 Every custom control, editor, canvas surround, overlay and edge state belongs to the
 same family; landing-only or token-only work is not a completed migration.
 
-- Canonical source is this repo's `design/air/`; current Air **1.0.4**, contract
-  **0f6ea38f83a9**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
+- Canonical source is this repo's `design/air/`; current Air **1.0.5**, contract
+  **94c5e537752f**. Read root/product AGENTS.md, CLAUDE.md and DESIGN.md before changes.
   Product appendices live in `design/air/products/`. Regenerate with
   `node scripts/sync-air-design.mjs --bundle`, then verify `--bundle --check`.
   Standalone products must work without a sibling checkout or upstream runtime fetch.
@@ -107,7 +109,7 @@ Local production-evidence commits follow these merges. Drop uses
 `codex/air-refresh`, based on deployed main `5ee9a01`, with local documentation
 checkpoint `cff7bc7`. Resume/IMG remain on `codex/air-refresh`; their navigation
 checkpoints are `6420ce3` and `583b809` respectively.
-All five carry the Air 1.0.4 navigation rule and portable contract, retaining the app-coloured palette. IMG also has the
+All five carry the Air 1.0.5 hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
@@ -128,7 +130,7 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Landing navigation consistency — deployed on 2026-10-19
+### Landing navigation consistency — deployed on 2026-10-19 (superseded)
 
 - Air 1.0.4 (`0f6ea38f83a9`) standardizes forward landing links on straight right
   arrows, including external header/content/footer links. Hover moves horizontally;
