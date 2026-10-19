@@ -11,8 +11,8 @@ surfaces stay open. Cloakyard v1.0.0 is now released; PDF PR #201 is in progress
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
 KERR's app and native macOS UI are outside this redesign. The user authorized
-Cloakyard/PDF dev integration, main PRs and releases, then CloakDrop’s page.
-Resume/IMG runtime work stays local; IMG remains last.
+Cloakyard/PDF dev integration, main PRs and releases. CloakDrop’s page follows;
+Drop/Resume/IMG runtime work stays local; IMG remains last.
 
 ## Working rules
 
@@ -37,7 +37,9 @@ Resume/IMG runtime work stays local; IMG remains last.
 - [x] Cloakyard dev → main [PR #9](https://github.com/cloakyard/cloakyard/pull/9), production build and [v1.0.0 release](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0). Exact live asset hashes, 12 production responsive/theme cases, menu/Escape and no-JS pass.
 - [x] PDF dev integration and [PR #201](https://github.com/cloakyard/cloakpdf/pull/201); 459 initial units, 16 production browser suites and real PWA update integration pass.
 - [x] Fix the 79 high CodeQL findings locally: private test evidence directories and escaped portable-reference values. Fresh 461 units, reference logic/browser, canvas/AI modal/PWA and portability checks pass; no security gates weakened.
-- [ ] Rerun remote CodeQL, add PDF’s missing canonical landing horizon and validate; merge, verify production and publish v2.0.0.
+- [x] Remote CodeQL passes after `cab22ba`; all 79 high findings cleared without exceptions.
+- [x] PDF’s canonical landing horizon (`62161d9`): 68 layouts, real GPU/fallbacks, 461 units, 16 smoke suites, 44-layout PWA integration and Safari rendered/navigation review pass.
+- [-] PDF fresh CI, main merge, production verification and v2.0.0 release.
 - [ ] Handle CloakDrop’s page next, then resume CloakResume logo/photo controls. IMG remains last.
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.

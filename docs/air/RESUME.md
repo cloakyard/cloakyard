@@ -10,9 +10,10 @@ Current priority: release Cloakyard and CloakPDF, then address CloakDrop's page
 before resuming CloakResume. Cloakyard [PR #9](https://github.com/cloakyard/cloakyard/pull/9)
 is merged at `4f91993`; [v1.0.0](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0)
 is live and verified. PDF [PR #201](https://github.com/cloakyard/cloakpdf/pull/201)
-is open from dev; security fixes are pushed as `1c01e2b` and await CodeQL rescan.
-The user found PDF's missing landing animation: no horizon is mounted there.
-Add the canonical finite horizon, validate, then finish its release. CloakDrop's
+is open from dev; security fixes through `cab22ba` pass CodeQL with all 79 high findings cleared.
+PDF landing horizon commit `62161d9` is pushed to dev: 68 layouts, real GPU
+lifecycle/fallbacks, 461 units, all 16 smoke suites and real 44-layout PWA update
+integration pass. Its fresh remote security scan is running before main merge. CloakDrop's
 page follows, then Resume logo/photo controls. Full release proof is in
 `docs/air/evidence/releases-2026-10-19/`.
 
@@ -59,8 +60,8 @@ same family; landing-only or token-only work is not a completed migration.
 - Work in bounded pieces: implement → inspect rendered states → feature/output
   tests → required checks → evidence/TODO → local commit. Never commit failed gates.
   The user subsequently authorized dev integration, main PRs and release for
-  Cloakyard and CloakPDF, followed by CloakDrop’s page. Keep other products local
-  until separately authorized. No subagent delegation was requested.
+  Cloakyard and CloakPDF. Update CloakDrop’s page next; keep Drop, Resume and IMG
+  commits local until separately authorized for release. No subagent delegation was requested.
 
 ### Repository state at handoff
 
@@ -74,7 +75,7 @@ before editing; preserve any new user changes. Paths are siblings under
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | cloakyard   | `4f91993`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `1c01e2b`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakpdf    | `cab22ba`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
 | cloakresume | `648842d`                             | Entry/recovery/shell/fields/entries/contact/select/dates implemented; logo/photo/wheel/review/PWA/assets pending |
 | cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded                       |
@@ -82,7 +83,7 @@ before editing; preserve any new user changes. Paths are siblings under
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
 have dated implementation/evidence below. Do not restart those from stale early lists.
-The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
+The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 91 prior sources remain implemented; the new OG/metadata entries are validated as
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
