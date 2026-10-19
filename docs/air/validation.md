@@ -1876,3 +1876,27 @@ reconciliation and IMG. PDF/family acceptance, physical touch/software keyboards
 OS IME, spoken assistive use and real-device shader checks remain open. Evidence:
 PDF `docs/air/evidence/previews-2026-10-19.json`, companion log/laptop PNGs and five
 published preview images. Full local captures/logs: `/tmp/cloakpdf-air-review/previews/`.
+
+## 2026-10-19 — PDF static recovery and acceptance map
+
+PDF `82762c4` replaces the legacy public 404 with a smaller build-owned entry
+sharing pinned Air reading/navigation CSS. True HTTP 404 survives installation;
+only supported root/index entry paths use the offline navigation fallback. Safe
+long-path text, no-JS skip/home recovery, original mark and light/dark are retained.
+No tool or exported-document code changed. Canonical product appendix and portable
+DESIGN document describe this ownership.
+
+All required PDF checks, 458 units, 131 built assets/80 PWA entries, 66 focused
+layout/theme/text cases, sixteen production smoke and seven extended suites pass.
+The extended Compress test requires source modules: its initial production-target
+run failed, then all seven passed on the dev server. Safari light recovery/home and
+Firefox light actual 200%/scroll/home were reviewed. Chromium covers both themes,
+no-JS, installed/offline routes, reduced motion and forced colours. Root checks,
+types, build, design, portability and exact six-document sync pass.
+
+PDF `docs/air/acceptance.md` reconciles broad Phase 3 with dated evidence. Remaining
+software gap: reproduce Update now with active editor/standalone work and protect
+that work. Final supported AI tier/device coverage, physical touch/keyboards, OS
+IME, spoken assistive use, physical code scans and shader device acceptance remain
+open. Evidence: PDF `docs/air/evidence/recovery-page-2026-10-19.json`, checks log and
+two PNGs; full captures `/tmp/cloakpdf-air-review/recovery-page/`. No push/deploy.

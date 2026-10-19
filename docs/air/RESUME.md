@@ -6,8 +6,8 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: PDF install/README previews, metadata and OG design (`02552f1`).
-PDF static 404 and closure reconciliation are next; do not repeat completed previews.
+Latest completed piece: PDF static 404, installed routing and acceptance reconciliation (`82762c4`).
+Active-work PWA update safety is next; previews/OG and static recovery are complete.
 
 ### Objective and settled decisions
 
@@ -52,8 +52,8 @@ save. Recheck before editing; preserve any new user changes. Paths are siblings 
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `014c7f8`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
-| cloakpdf    | `02552f1`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
+| cloakyard   | `c5660e5`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakpdf    | `82762c4`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
 | cloakimg    | `aa9f6f8`                             | Shared bundle synchronized; full product migration and wheel adoption pending                           |
 | cloakresume | `286f57b`                             | Shared bundle synchronized; full product migration and wheel alignment pending                          |
 | cloakdrop   | `0a3a5b5`                             | Shared bundle synchronized; website migration pending, native app excluded                              |
@@ -63,21 +63,26 @@ Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors a
 have dated implementation/evidence below. Do not restart those from stale early lists.
 The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 91 prior sources remain implemented; the new OG/metadata entries are validated as
-static artifacts. `public/404.html` is source-reviewed but still pending migration.
+static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: PDF static 404 and closure reconciliation
+### Exact next bounded piece: PDF active-work PWA update safety
 
-1. Migrate `cloakpdf/public/404.html`: it still uses Workbench typography/palette,
-   uppercase mono actions, a dark statement footer and deleted Archivo/JetBrains
-   font URLs. It was missed by the former src-only inventory. Preserve a real home
-   link, skip navigation, useful path feedback, safe text rendering and HTTP 404.
-2. Use the locally pinned Air CSS through a build-owned static entry; do not copy
-   tokens or require a sibling checkout. Keep the no-JavaScript recovery usable.
-3. Validate required sizes/themes, enlarged text, keyboard/touch/reduced-motion,
-   no-JS behavior and actual built paths/status. Remove retired sources/references.
-4. Reconcile Phase 3's broad checklist with dated PDF evidence. Keep unperformed
-   human/device gates explicit. Then proceed to CloakIMG in the rollout below.
+1. Read PDF `docs/air/acceptance.md`, the reconciliation map from broad Phase 3
+   scope to dated panel/output evidence. Do not repeat already migrated panels.
+2. Reproduce a real waiting service worker while editor or standalone work is active.
+   Source review found `ReloadPrompt` offers Update now with no active-work guard.
+   Test a disposable pending draft, deferral, export and return-home update.
+3. Fix the reproduced integration gap using existing Air surfaces and lean route
+   state. Validate all required layouts/themes plus real SW lifecycle and output.
+4. Keep final supported AI tier/device coverage and human/device gates explicit.
+   After software closure, proceed to IMG in the rollout below.
+
+Completed static recovery (`82762c4`): build-owned shared Air CSS, real host 404
+before/after install, no-JS keyboard/home recovery and valid offline root/index
+navigation. All 66 layout/theme/text cases, 458 units, sixteen production smoke
+and seven extended suites pass. Safari light/home and Firefox actual 200%/home
+reviewed. Evidence: PDF `docs/air/evidence/recovery-page-2026-10-19.json`.
 
 Completed preview piece (`02552f1`): four actual Annotate captures with synthetic
 Studio notes content, theme-aware README, Air manifest colours, truthful dimensions/

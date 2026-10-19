@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF previews complete; static 404 and closure reconciliation next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF previews/recovery complete; PWA active-work safety next** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,6 +31,17 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
+## Latest bounded piece — Static recovery and acceptance map (2026-10-19)
+
+PDF `82762c4` replaces the retired static Workbench page with a build-owned Air
+entry and preserves true 404 responses after installation.
+
+- [x] Shared pinned CSS, original mark, useful safe path text, skip/home links and no-JS recovery.
+- [x] 66 responsive/theme/text cases, installed routes, valid offline entry, all required checks, 458 units, sixteen smoke and seven extended suites.
+- [x] Inspect desktop/laptop/tablet/phone light/dark, Safari light/home and Firefox actual 200%/home.
+- [x] Map broad Phase 3 to dated evidence in PDF `docs/air/acceptance.md`; retain human/device gates.
+- [ ] Reproduce and protect real PWA update with active editor/standalone work; then remaining PDF software acceptance and IMG.
+
 ## Latest bounded piece — Install previews and OG design (2026-10-19)
 
 PDF **`02552f1`** replaces legacy PWA/README images with real Air editor captures
@@ -41,7 +52,7 @@ Air CSS; metadata/alternatives and the default manifest surface now agree.
 - [x] Remove old device-named assets/references; simplify the OG generator and document reproducible capture.
 - [x] Pass 458 units, six standalone output workflows, routing/search, 176 tool selections and 176 responsive layouts; built manifest, 9 PNG paths/bytes and Chromium installability pass.
 - [x] Pass required code/dead/build/asset/design/portability/root/six-document sync checks and save evidence.
-- [ ] Next: migrate `public/404.html`, discovered by extending the PDF inventory beyond `src/`. Reconcile broad Phase 3 items with dated evidence; retain unperformed physical/device gates, then continue IMG.
+- [x] Static recovery and broad Phase 3 evidence mapping completed in `82762c4`; PWA active-work integration remains next.
 
 ## Previous bounded piece — Tool registries and session lifecycle (2026-10-19)
 
@@ -389,6 +400,9 @@ with the device checks recorded, then continuing the rollout.
 
 ## Phase 3 — CloakPDF reference product
 
+Reconciled 2026-10-19 against PDF `docs/air/acceptance.md`. Checked implementation
+items retain their documented human/device gates; they do not imply full acceptance.
+
 - [x] Landing, file input, searchable toolkit rows, policy, common navigation/footer and encrypted-file recovery.
       88 layout cases, search/routing, synthetic standalone workflows and mobile editor checks pass.
 - [x] Update/offline notices use shared Air states; twelve layout/theme/text cases and busy focus verified.
@@ -423,17 +437,17 @@ with the device checks recorded, then continuing the rollout.
       Physical/assistive acceptance remains open; see the completed slice below.
 - [x] Editor compact toolbar, tool rail/search, mobile picker and shared page stepper.
 - [x] Properties panel, page context, overview grid and thumbnails; physical/assistive gates remain open.
-- [ ] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
-- [ ] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
-- [ ] Every editor panel listed in the surface inventory, including advanced/disclosed controls.
-- [-] Export modal: all six formats, native choices, PDF modifiers and busy/error/retry
-  implemented (PDF `5f8ab8c`); 320 layouts, real outputs/redaction and
-  keyboard/zoom pass. Physical/assistive acceptance remains open.
+- [x] Canvas surround, document shadow, selection handles, text selection, zoom/pan and context overlays.
+- [x] Shared actions, fields, selects, segments, colour picker, date/time, signature and callouts.
+- [x] Every editor panel listed in the surface inventory, including advanced/disclosed controls.
+- [x] Export modal: all six formats, native choices, PDF modifiers and busy/error/retry
+      implemented (PDF `5f8ab8c`); 320 layouts, real outputs/redaction and
+      keyboard/zoom pass. Physical/assistive acceptance remains open.
 - [-] Modal coverage: shared frame and AI consent/model choice/details implemented.
   Export and command-palette interiors are implemented (PDF `5f8ab8c`, `343bc00`);
-  editor notifications and physical/assistive acceptance remain pending.
+  editor recovery/toasts are implemented; active-work PWA integration and physical/assistive acceptance remain pending.
   Entry PWA prompt is implemented above; editor integration acceptance remains.
-- [ ] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
+- [x] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
 - [ ] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
 - [ ] Feature sweep: redaction/smart erase, metadata/scrub, forms/autofill, links/bookmarks/attachments, OCR.
 - [ ] Standalone sweep: merge, images→PDF, extract images, compare, password, digital signature, Ask PDF.
@@ -441,7 +455,7 @@ with the device checks recorded, then continuing the rollout.
 - [ ] Verify exported PDF/image content and document fidelity; retain destructive-operation disclosures.
 - [ ] Run check, dead-code, all units, build, applicable smoke/extended/AI browser suites.
 - [ ] Inspect desktop/laptop/tablet/phone light/dark, touch/keyboard/reduced motion, 200% zoom.
-- [x] Update PWA/social screenshots and preview documentation (`02552f1`); static 404 remains a separate closure piece.
+- [x] Update PWA/social screenshots and preview documentation (`02552f1`), static recovery and installed routing (`82762c4`).
 - [ ] Record full evidence and commit each verified piece.
 
 ## Phase 4 — CloakIMG
@@ -1291,5 +1305,5 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Validate 22 editor tools through the command surface on desktop/laptop/tablet/phone in both themes; preserve page source, history and heading focus.
 - [x] Pass lifecycle regressions for task departure during queueing, transformation and preview generation, plus live stage cleanup and StrictMode replay.
 - [x] Finish feature regression, code/dead/unit/build/design/portability checks, portable specification/inventory and evidence; commit after green gates: PDF `00bdee0`.
-- [x] Replace legacy PWA/README screenshots and audit manifest/theme metadata, labels/dimensions and OG design (`02552f1`). Static 404 was exposed by the expanded inventory and remains pending.
+- [x] Replace legacy PWA/README screenshots and audit manifest/theme metadata, labels/dimensions and OG design (`02552f1`). Static 404 was exposed by the expanded inventory and completed in `82762c4`.
 - [ ] Continue full-PDF acceptance, then IMG/Resume wheel adoption and family rollout. Physical touch/software keyboard, OS IME and spoken assistive acceptance remain open.
