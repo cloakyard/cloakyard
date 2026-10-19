@@ -1,0 +1,2 @@
+Evidence: /var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakpdf-air-horizon-9a7y5r
+PASS: 68 responsive/theme/text layouts; real GPU arrival, pointer response, idle/offscreen/reduced cleanup, editor/standalone teardown and all static fallbacks.

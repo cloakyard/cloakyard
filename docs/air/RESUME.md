@@ -6,19 +6,18 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Current priority: release Cloakyard and CloakPDF, then address CloakDrop's page
-before resuming CloakResume. Cloakyard [PR #9](https://github.com/cloakyard/cloakyard/pull/9)
-is merged at `4f91993`; [v1.0.0](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.0)
-is live and verified. PDF [PR #201](https://github.com/cloakyard/cloakpdf/pull/201)
-merged as `41273ae`; candidate asset hashes match production. Final live acceptance
-exposed Cloudflare-injected analytics/challenge scripts blocked by CSP. Header-only
-follow-up [PR #202](https://github.com/cloakyard/cloakpdf/pull/202), dev `21f37de`,
-requests `no-transform` while preserving cache lifetimes and the CSP. Actual Wrangler
-headers, six PDF output workflows, 461 units and real 44-layout PWA checks pass.
-Await #202 CI, merge, verify production again and publish v2.0.0. Horizon `62161d9`
-passes 68 layouts, real GPU lifecycle/fallbacks and all 16 smoke suites. CloakDrop's
-page follows, then Resume logo/photo controls. Full release proof is in
-`docs/air/evidence/releases-2026-10-19/`.
+Cloakyard and CloakPDF are released and production-verified. Cloakyard
+[PR #10](https://github.com/cloakyard/cloakyard/pull/10) merged at `6bd318f`;
+[v1.0.1](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.1) follows v1.0.0.
+PDF [PR #201](https://github.com/cloakyard/cloakpdf/pull/201) and header follow-up
+[PR #202](https://github.com/cloakyard/cloakpdf/pull/202) are merged; main `4277829`
+is published as [v2.0.0](https://github.com/cloakyard/cloakpdf/releases/tag/v2.0.0).
+Both deployments match validated asset bytes and serve `no-transform`, with no
+edge-injected analytics/challenge scripts. Live home 12 layout cases, PDF six
+real-output workflows, 68 horizon layouts/GPU checks and four editor captures pass.
+The PDF dark/light desktop/mobile document content was visually inspected.
+Next: complete CloakDrop's local horizon follow-up, then Resume logo/photo.
+Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
 Latest completed product implementation: Resume dates/current-job (`648842d`), after contact/native
 selects (`9d4e7f9`), repeated
@@ -68,8 +67,8 @@ same family; landing-only or token-only work is not a completed migration.
 
 ### Repository state at handoff
 
-Root uses `codex/air-refresh`, fast-forwarded through released main `4f91993`.
-PDF is on `dev` for PR #201; Drop/Resume/IMG remain on `codex/air-refresh`.
+Root uses `codex/air-refresh`, based on released main `6bd318f`.
+PDF is on released `main` at `4277829`; Drop/Resume/IMG remain on `codex/air-refresh`.
 The reference security patch updates only generated gallery/bundle files in those
 three siblings. IMG also has the parked runtime draft below. Recheck
 before editing; preserve any new user changes. Paths are siblings under
@@ -77,8 +76,8 @@ before editing; preserve any new user changes. Paths are siblings under
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
 | ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `4f91993`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `cab22ba`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
+| cloakyard   | `6bd318f`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
+| cloakpdf    | `4277829`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
 | cloakimg    | `aa9f6f8`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
 | cloakresume | `648842d`                             | Entry/recovery/shell/fields/entries/contact/select/dates implemented; logo/photo/wheel/review/PWA/assets pending |
 | cloakdrop   | `e5f2bac`                             | Complete website/OG software migration; physical/assistive gates open, native app excluded                       |

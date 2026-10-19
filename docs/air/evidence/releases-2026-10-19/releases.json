@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-19",
+  "cloakyard": {
+    "version": "1.0.1",
+    "main": "6bd318fb8f9fdda33ce8779a54ca1b81387b6db9",
+    "url": "https://github.com/cloakyard/cloakyard/releases/tag/v1.0.1",
+    "prs": [9, 10],
+    "production": "https://cloakyard.com"
+  },
+  "cloakpdf": {
+    "version": "2.0.0",
+    "main": "42778297993ebf1cfc0f80cf225efbf88e3a564e",
+    "url": "https://github.com/cloakyard/cloakpdf/releases/tag/v2.0.0",
+    "prs": [201, 202],
+    "production": "https://pdf.cloakyard.com"
+  },
+  "acceptance": [
+    "Production assets byte-match the validated local builds; no-transform headers and no injected analytics/challenge scripts",
+    "Home: 12 responsive/theme/text cases, links/logos/menu/Escape/no-JS and no analytics requests or console errors",
+    "PDF: six real-output standalone workflows with strict console checks",
+    "PDF: 68 horizon layouts plus real GPU lifecycle and fallback checks",
+    "PDF: four real editor captures, desktop/mobile light/dark, visually inspected"
+  ],
+  "limits": [
+    "Physical touch/software keyboard, spoken assistive, GPU/battery/thermal acceptance remain open",
+    "Additional AI hardware/engine combinations remain unverified; AI remains Beta"
+  ],
+  "next": "CloakDrop website horizon then CloakResume logo/photo. Drop/Resume/IMG remain local; IMG last."
+}

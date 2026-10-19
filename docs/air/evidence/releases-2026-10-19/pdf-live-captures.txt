@@ -1,0 +1,4 @@
+/tmp/cloakpdf-air-release-2026-10-19/live-screenshots/editor-wide-light.png: 1440x900, light, real Annotate editor
+/tmp/cloakpdf-air-release-2026-10-19/live-screenshots/editor-narrow-light.png: 780x1688, light, real Annotate editor
+/tmp/cloakpdf-air-release-2026-10-19/live-screenshots/editor-wide-dark.png: 1440x900, dark, real Annotate editor
+/tmp/cloakpdf-air-release-2026-10-19/live-screenshots/editor-narrow-dark.png: 780x1688, dark, real Annotate editor

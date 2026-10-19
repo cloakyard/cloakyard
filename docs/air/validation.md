@@ -2076,3 +2076,18 @@ Wrangler cache headers and 12 responsive/theme/text layouts pass, with the real
 links, logos, compact menu/Escape and no-JavaScript fallback. Evidence:
 `evidence/releases-2026-10-19/home-headers-*`. Live no-injection checks follow the
 passing PR and deployment; they have not yet been counted as a pass.
+
+## 2026-10-19 — release completion
+
+Cloakyard v1.0.1 (`6bd318f`, PR #10) and CloakPDF v2.0.0 (`4277829`,
+PRs #201/#202) are published after passing CI and Cloudflare production builds.
+Both live deployments match validated assets and serve no-transform without the
+edge-injected scripts discovered in the first PDF live acceptance attempt.
+Home's 12 responsive/theme/text cases and real links/menu/no-JS pass. PDF's six
+actual-output workflows, 68 horizon layouts/GPU lifecycle and four desktop/mobile
+light/dark editor captures pass. White paper retains real text/vector content in
+both themes. All release URLs, exact commits, logs and captures are recorded in
+`evidence/releases-2026-10-19/releases.json` and adjacent files.
+
+Physical input, assistive and hardware limits remain open. CloakDrop's local
+landing horizon follows, then Resume logo/photo; IMG remains parked last.

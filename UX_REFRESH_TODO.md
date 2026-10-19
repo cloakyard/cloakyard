@@ -6,7 +6,7 @@ Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start h
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
 commit slices and acceptance gates. Detailed design review is complete. AIR-04 is committed as `39c08f9`; CloakPDF entry
 is committed as `dc20fe6` after local verification. Remaining device acceptance and deeper product
-surfaces stay open. Cloakyard v1.0.0 is now released; PDF PR #201 is in progress.
+surfaces stay open. Cloakyard v1.0.1 and CloakPDF v2.0.0 are released and production-verified.
 
 Goal: refresh the complete web family, preserve all features, enforce one portable
 design language, and commit each bounded piece only after its validation passes.
@@ -40,7 +40,7 @@ Drop/Resume/IMG runtime work stays local; IMG remains last.
 - [x] Remote CodeQL passes after `cab22ba`; all 79 high findings cleared without exceptions.
 - [x] PDF’s canonical landing horizon (`62161d9`): 68 layouts, real GPU/fallbacks, 461 units, 16 smoke suites, 44-layout PWA integration and Safari rendered/navigation review pass.
 - [x] PDF #201 CI and main merge `41273ae`; live built-asset hashes and true 404 pass.
-- [-] Production injected analytics/challenge scripts conflict with CSP. Header-only follow-up #202 (`21f37de`) passes actual Wrangler cache headers, six output workflows, 461 units and PWA integration; await CI/deploy/live acceptance before v2.0.0.
+- [x] Production payload integrity: root PR #10/main `6bd318f`, PDF #202/main `4277829`, all CI/deploy checks pass. Both live sites serve `no-transform` without injected analytics/challenge scripts. Live asset hashes, home 12 layouts, PDF six output workflows/68 horizon layouts/GPU lifecycle and four editor captures pass. Published Cloakyard v1.0.1 and CloakPDF v2.0.0.
 - [ ] Handle CloakDrop’s page next, then resume CloakResume logo/photo controls. IMG remains last.
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.

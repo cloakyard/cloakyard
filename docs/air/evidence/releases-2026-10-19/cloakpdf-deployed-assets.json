@@ -1,0 +1,41 @@
+{
+  "origin": "https://pdf.cloakyard.com",
+  "checkedAt": "2026-10-19T11:32:45.841Z",
+  "status": 200,
+  "assets": [
+    {
+      "path": "/assets/app-DoJlZeKB.js",
+      "bytes": 250305,
+      "sha256": "7e0c45c28b228e6a36a3dbfa423d8b913c935cb3815adffe87b50d97ca930952"
+    },
+    {
+      "path": "/assets/air-onX8xQOH.css",
+      "bytes": 37900,
+      "sha256": "59f250f2f9d20fab1f674f614ac1bd1e1962ce3bc87ac522c3c68cbf59f9bf9f"
+    },
+    {
+      "path": "/assets/app-BaUDjO1e.css",
+      "bytes": 95078,
+      "sha256": "c2d880f38f719bab8b7af0dd316546531f599d68ecb9c1e0fdcaeec6627a2e62"
+    },
+    {
+      "path": "/icons/og-image.png",
+      "bytes": 80285,
+      "sha256": "300b97475634d7014c9b283419c09495efac76d6b9183af7407613738b43a514"
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "bytes": 1345,
+      "sha256": "f7e8af3fd02ede0fe24be639950f8e288d4bcbcff8c0a8fac9df98fab6536043"
+    },
+    {
+      "path": "/sw.js",
+      "bytes": 7292,
+      "sha256": "09201453b2a1623fde513ef383bf8f069d03140fed66aac95b5d665549f01668"
+    }
+  ],
+  "missing": {
+    "status": 404,
+    "air": true
+  }
+}
