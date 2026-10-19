@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF previews/recovery complete; PWA active-work safety next** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakPDF previews/recovery/PWA safety complete; final AI acceptance then IMG** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -31,6 +31,17 @@ part of the current work. All repositories use branch `codex/air-refresh`.
 - Evidence belongs in `docs/air/validation.md`; large screenshots may stay in
   task-owned output with exact paths recorded. Record actual viewport/theme/state.
 
+## Latest bounded piece — PWA active-work safety (2026-10-19)
+
+PDF `c3d3264` fixes reproduced loss of a pending editor draft on Update now.
+
+- [x] Defer updates in editor/standalone work, explain save/download/home, preserve Later and return-home availability.
+- [x] Guard other-tab activation and editor handoffs racing the delayed reload; preserve future notices after initial cache feedback.
+- [x] Real waiting-worker, pointer/keyboard, metadata Save/export, two-tab, standalone queue and race checks; 44 responsive/theme/text cases.
+- [x] 459 units/47 files, sixteen production smoke suites, code/dead/build/design/18 portability, root checks and exact sync.
+- [x] Inspect desktop/laptop/tablet/phone light/dark, 320px enlarged text and forced-colour/reduced-motion captures; save evidence and update acceptance map.
+- [ ] Final supported AI tier/device matrix and real-model run, then IMG. Human/device acceptance and full family migration remain open.
+
 ## Latest bounded piece — Static recovery and acceptance map (2026-10-19)
 
 PDF `82762c4` replaces the retired static Workbench page with a build-owned Air
@@ -40,7 +51,7 @@ entry and preserves true 404 responses after installation.
 - [x] 66 responsive/theme/text cases, installed routes, valid offline entry, all required checks, 458 units, sixteen smoke and seven extended suites.
 - [x] Inspect desktop/laptop/tablet/phone light/dark, Safari light/home and Firefox actual 200%/home.
 - [x] Map broad Phase 3 to dated evidence in PDF `docs/air/acceptance.md`; retain human/device gates.
-- [ ] Reproduce and protect real PWA update with active editor/standalone work; then remaining PDF software acceptance and IMG.
+- [x] Reproduce and protect real PWA update with active editor/standalone work (`c3d3264`); remaining AI software acceptance and IMG stay next.
 
 ## Latest bounded piece — Install previews and OG design (2026-10-19)
 
@@ -443,10 +454,11 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Export modal: all six formats, native choices, PDF modifiers and busy/error/retry
       implemented (PDF `5f8ab8c`); 320 layouts, real outputs/redaction and
       keyboard/zoom pass. Physical/assistive acceptance remains open.
-- [-] Modal coverage: shared frame and AI consent/model choice/details implemented.
-  Export and command-palette interiors are implemented (PDF `5f8ab8c`, `343bc00`);
-  editor recovery/toasts are implemented; active-work PWA integration and physical/assistive acceptance remain pending.
-  Entry PWA prompt is implemented above; editor integration acceptance remains.
+- [x] Modal coverage: shared frame and AI consent/model choice/details implemented.
+      Export and command-palette interiors are implemented (PDF `5f8ab8c`, `343bc00`);
+      editor recovery/toasts and active-work PWA safety are implemented (`c3d3264`).
+      Physical/assistive acceptance remains open.
+      Entry and editor/standalone PWA integration are covered by real waiting-worker tests.
 - [x] Mobile tool picker, canvas/panel split, expanded preview, short-height and landscape behaviour.
 - [ ] Feature sweep: annotate, signatures, stamps, crop/rotate/resize, organise/reorder/duplicate/delete.
 - [ ] Feature sweep: redaction/smart erase, metadata/scrub, forms/autofill, links/bookmarks/attachments, OCR.

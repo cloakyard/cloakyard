@@ -6,8 +6,9 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
-Latest completed piece: PDF static 404, installed routing and acceptance reconciliation (`82762c4`).
-Active-work PWA update safety is next; previews/OG and static recovery are complete.
+Latest completed piece: PDF active-work PWA update safety (`c3d3264`).
+Previews/OG, static recovery and acceptance reconciliation are complete. Final PDF
+AI acceptance is next, then CloakIMG; full family/device acceptance remains open.
 
 ### Objective and settled decisions
 
@@ -52,8 +53,8 @@ save. Recheck before editing; preserve any new user changes. Paths are siblings 
 
 | Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
 | ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `c5660e5`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
-| cloakpdf    | `82762c4`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
+| cloakyard   | `d67c503`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakpdf    | `c3d3264`                             | Registry/lifecycle cleanup; reference product implementation largely done, full closure still open      |
 | cloakimg    | `aa9f6f8`                             | Shared bundle synchronized; full product migration and wheel adoption pending                           |
 | cloakresume | `286f57b`                             | Shared bundle synchronized; full product migration and wheel alignment pending                          |
 | cloakdrop   | `0a3a5b5`                             | Shared bundle synchronized; website migration pending, native app excluded                              |
@@ -66,17 +67,30 @@ The inventory now covers 94 PDF surfaces including static/artwork/root HTML. The
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
 
-### Exact next bounded piece: PDF active-work PWA update safety
+### Exact next bounded piece: PDF final AI acceptance, then IMG
 
-1. Read PDF `docs/air/acceptance.md`, the reconciliation map from broad Phase 3
-   scope to dated panel/output evidence. Do not repeat already migrated panels.
-2. Reproduce a real waiting service worker while editor or standalone work is active.
-   Source review found `ReloadPrompt` offers Update now with no active-work guard.
-   Test a disposable pending draft, deferral, export and return-home update.
-3. Fix the reproduced integration gap using existing Air surfaces and lean route
-   state. Validate all required layouts/themes plus real SW lifecycle and output.
-4. Keep final supported AI tier/device coverage and human/device gates explicit.
-   After software closure, proceed to IMG in the rollout below.
+1. Read PDF `docs/air/acceptance.md`, the map from broad Phase 3 scope to dated
+   panel/output evidence. Completed panels and PWA integration should not be repeated.
+2. Record the supported AI tier/device matrix from `src/utils/ai-models.ts`, routing
+   eligibility and existing evidence. The two shipped tiers are Compact
+   (`lfm2.5-1.2b`) and Quality (`lfm2-2.6b`); Ask PDF is desktop-only. Distinguish
+   native layout/keyboard checks, synthetic state tests and real inference.
+3. Run the final real-model integration (`pnpm test:e2e`, explicit `CHAT_VARIANT`,
+   `FIXTURE` and dev `E2E_URL`). Verify ground-truth fixture contents first; do not
+   silently substitute demo PDFs. `sample.pdf` and `multipage.pdf` are present in
+   the local ignored fixture directory. Preserve useful test caches and run heavy
+   suites serially. Record exact tiers/fixtures/host coverage and remaining limits.
+4. Then start IMG landing/import/privacy/error surfaces per the saved rollout.
+   Read its AGENTS/CLAUDE/DESIGN and audit/inventory first; reproduce the recorded
+   Adjust Cancel/re-entry finding before changing its editor commit controls.
+
+Completed PWA safety (`c3d3264`): reproduced pending metadata lost on Update now;
+updates now defer throughout editor/standalone views, explain save/download/home,
+retain Later and return-home availability, and guard other-tab activation plus
+route-handoff races. Real waiting workers, output download and 44 responsive/theme/
+text cases pass. All sixteen production smoke suites and 459 units pass; build/
+code/dead/design/portability are green. Evidence: PDF
+`docs/air/evidence/pwa-update-2026-10-19.json`. No new stylesheet/dependency.
 
 Completed static recovery (`82762c4`): build-owned shared Air CSS, real host 404
 before/after install, no-JS keyboard/home recovery and valid offline root/index
@@ -1395,3 +1409,12 @@ assistive speech acceptance remain open; no full-product migration claim.
 Next bounded slice: **Ask PDF chat, indexing, citations and recovery**, then remaining
 editor chrome/canvas/panels/overlays. Continue removing replaced code, validate real
 features and all required sizes/themes before each local commit. No push/deployment.
+
+## 2026-10-19 — Active-work PWA safety checkpoint
+
+PDF `c3d3264` completes the integration gap found during acceptance reconciliation.
+The local Workers server started for the 404 checks has been stopped; pre-existing
+PDF preview 8132 and dev 8122 were preserved. Native Safari/Firefox review tabs were
+closed and Firefox zoom restored. All new evidence uses disposable local content.
+This session also committed previews/OG (`02552f1`) and recovery (`82762c4`), with
+root checkpoints `c5660e5` and `d67c503` plus this handoff save. No push/deployment.

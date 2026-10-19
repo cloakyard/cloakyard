@@ -1900,3 +1900,32 @@ that work. Final supported AI tier/device coverage, physical touch/keyboards, OS
 IME, spoken assistive use, physical code scans and shader device acceptance remain
 open. Evidence: PDF `docs/air/evidence/recovery-page-2026-10-19.json`, checks log and
 two PNGs; full captures `/tmp/cloakpdf-air-review/recovery-page/`. No push/deploy.
+
+## 2026-10-19 — PDF active-work PWA safety
+
+PDF `c3d3264` fixes a reproduced pending-metadata loss: Update now previously
+reloaded the working editor to home. The route now defers update activation in
+editor/standalone views, explains save/download/home and retains Later/return-home
+availability. Only a local accepted update can reload; both SW and fallback paths
+check the current route, including an editor handoff racing an update. Other-tab
+activation keeps work intact. Initial cache auto-dismiss does not hide later updates.
+
+A disposable Chrome profile and ephemeral loopback server exercise genuine waiting
+workers using built assets plus SW revision comments. Pending drafts, keyboard/
+pointer deferral, real metadata PDF download, two tabs, standalone file queue,
+handoff race and home update pass. All 44 required responsive/theme/text cases pass;
+desktop/laptop/tablet/phone light/dark, enlarged 320px and forced-colour/reduced-motion
+were inspected. This is not a deployed old-asset retention test. Native/device/IME/
+spoken assistive acceptance remains explicit. No new stylesheet/dependency.
+
+459 units/47 files, all sixteen production smoke suites, code/dead/build/assets/
+design/18 portability and root checks/types/build/design/portability/exact sync pass.
+Smoke includes 176 tool selections/layouts, 88 collection and 68 canvas layouts,
+real export output and AI interface recovery. The seven extended suites passed in
+the preceding 404/build piece; no document-processing code changed here. Editor
+327.18/98.80 kB raw/gzip; 131 assets/80 precache entries. Air remains 1.0.2/bb90f52e0b0a.
+
+Evidence: PDF `docs/air/evidence/pwa-update-2026-10-19.json`, checks log and two PNGs;
+full captures/downloads `/tmp/cloakpdf-air-review/pwa-update/`. Final supported AI
+tier/device real-model acceptance remains next, followed by IMG, Resume and Drop
+website. KERR/native apps are unchanged. No push or deployment.
