@@ -143,11 +143,21 @@ Evidence: Drop `docs/audits/2026-10-19-{dependencies,installer,rc.1}.md` and
 - [x] Production payload integrity: root PR #10/main `6bd318f`, PDF #202/main `4277829`, all CI/deploy checks pass. Both live sites serve `no-transform` without injected analytics/challenge scripts. Live asset hashes, home 12 layouts, PDF six output workflows/68 horizon layouts/GPU lifecycle and four editor captures pass. Published Cloakyard v1.0.1 and CloakPDF v2.0.0.
 - [x] CloakDrop page horizon `0cdd8fd`: 432 layouts, 34 journeys, real GPU lifecycle/six fallbacks, Safari, Astro build/check and portability pass. Subsequently deployed and production-verified in `8ce17f9`.
 - [x] Resume CloakResume logo/photo controls (`9cc74df`).
-- [-] Continue CloakResume colour wheel. IMG remains last.
+- [x] CloakResume colour wheel software acceptance complete; local checkpoint recorded in the handoff. IMG remains last.
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 
-## Latest bounded piece — CloakResume logo/photo (2026-10-19)
+## Latest bounded piece — CloakResume primary colour (2026-10-21)
+
+Local implementation/evidence commit: Resume `a31e681`. No push or deployment.
+
+- [x] Canonical Air HSV wheel, Brightness, exact hex and optional native precision ranges; all ten presets and original stored colours preserved.
+- [x] Shared desktop/compact portal, short/visual viewport handling, keyboard/focus, pointer rollback and independent phone swipe/cancellation. Removed duplicate HSL/lightness code and unused colour event bridge.
+- [x] 195 responsive/theme/text/edge cases, 14 contrast pairs; Safari and Firefox actual 200%. All 34 template/paper captures and both Poppler-rendered PDF exports match the baseline exactly.
+- [x] Full 310/310 production tests in eight files, zero skips; 130 editor cases and all 34 template/paper cases. Check/build/79-source design/18 portability/exact sync pass. Evidence: Resume `docs/air/evidence/colour-controls-2026-10-21.json`.
+- [ ] Next: writing-hint popup interiors, then remaining sections/review/library/overflow/export/PWA/static recovery and actual assets. Full Resume migration and human/device gates remain open. IMG last.
+
+## Previous bounded piece — CloakResume logo/photo (2026-10-19)
 
 - [x] Air Profile/Skills logo search and photo controls, unknown imported values, exact bytes, existing validation/race/cancellation and focus. Commit `9cc74df`.
 - [x] Stable touch target geometry, shared date/logo viewport placement, forced-colour selection and obsolete cr-control removal.
@@ -726,7 +736,8 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
 - [x] Month/year fields, Experience Current job and Education Present; evidence in Resume `docs/air/evidence/date-controls-2026-10-19.json`.
 - [x] Profile/Skills logo search and photo controls; evidence in Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
-- [ ] Colour controls and writing-hint popup interiors.
+- [x] Primary-colour controls; evidence in Resume `docs/air/evidence/colour-controls-2026-10-21.json`.
+- [ ] Writing-hint popup interiors.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.
@@ -1473,7 +1484,7 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Remove replaced square/point styles and redundant callbacks; no dependency added.
 - [ ] Adopt the same wheel in CloakIMG's shared picker, preserving RGB, recent colours
       and eye-dropper access; validate every tool consumer and actual image output.
-- [ ] Align CloakResume's existing wheel mapping, controls and gesture/hex recovery
+- [x] Align CloakResume's existing wheel mapping, controls and gesture/hex recovery
       with the family pattern; preserve primary colour and every template/export.
 - [x] PDF Fill form, Auto-fill and N-up pieces are implemented and tested in later checkpoints.
 - [ ] Retain physical touch/software keyboard, OS IME and spoken assistive acceptance gates. Full refresh is ongoing.

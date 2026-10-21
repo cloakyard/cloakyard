@@ -1,6 +1,6 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-19
+## Start here in a new conversation — saved 2026-10-21
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
@@ -38,8 +38,19 @@ Drop [#40](https://github.com/cloakyard/cloakdrop/pull/40) at `5ee9a01`.
 All three Air 1.0.3 colour updates are live and production-verified. Drop main/dev
 integration is complete. Resume and IMG colour checkpoints remain local while
 their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`;
-its shared colour wheel remains next. See the deployment checkpoint below.
+its shared colour wheel is now implemented and software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
+
+Latest bounded piece: **CloakResume primary-colour controls** (2026-10-21).
+The canonical wheel, Brightness, exact hex, native precision ranges and shared
+viewport-aware desktop/compact portal are implemented. Exact saved colours,
+ten presets, cancellation, focus and phone swipe dismissal are preserved.
+310/310 production tests, 195 layouts and 14 contrast pairs pass; all 34
+before/after template/paper captures and both PDF render comparisons match.
+Native Safari and Firefox actual 200% reviewed. No pushes or deployment.
+Evidence: Resume `docs/air/evidence/colour-controls-2026-10-21.json`.
+Next: writing-hint popup interiors. Full Resume and physical/assistive acceptance
+remain open; IMG remains last. The local commit identity is recorded below.
 
 Latest follow-up: **all public-page links stay neutral, including hover**.
 The user explicitly included Cloakyard's content links and required the rule in
@@ -68,7 +79,7 @@ entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Resume's next editor piece is the primary-colour wheel. IMG stays parked.
+Resume's next editor piece is writing-hint popup interiors. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -91,7 +102,7 @@ same family; landing-only or token-only work is not a completed migration.
   disclosure on small screens, and the family logo size. Do not undo those explicit
   user refinements. Use actual product logos on the family homepage.
 - The user prefers a **colour wheel**. PDF and the canonical reference use the Air
-  hue/saturation wheel, brightness and exact hex. IMG and Resume adoption remains open.
+  hue/saturation wheel, brightness and exact hex. IMG adoption remains open; Resume adoption is software-validated.
 - Shaders are implemented in the landing artwork with visible finite motion and
   static/reduced-motion fallbacks. No decorative shader inside an editor. Real-device
   GPU/battery/thermal acceptance is still open; do not claim it from emulation.
@@ -318,28 +329,47 @@ Root contains the canonical contract, palette, gallery, home and family evidence
   IMG's parked draft is preserved. Physical GPU/battery/thermal and assistive gates
   remain open. Do not repeat these completed deployments.
 
-### Exact next bounded piece: CloakResume primary-colour wheel
+### Exact next bounded piece: CloakResume writing hints
 
-1. Read Resume AGENTS/CLAUDE/DESIGN, `docs/air/editor-audit.md` and the inventory.
-   Entry/recovery/shell, shared fields/entries, contact/select, dates and logo/photo
-   are implemented. Read-only preparation: `/tmp/cloakresume-air-logo/next-wheel-notes.md`.
-2. Adopt canonical `docs/air/colour.mjs`, hue/saturation wheel, brightness and exact
-   hex in `ColorPickerContent.tsx`. Preserve all ten preset names/values and the
-   exact stored primary colour until explicit editing, including achromatic hue
-   memory. Current HSL pointer lightness clamp and 48% thumb/full pointer radius
-   disagree; use the canonical mapping. Preserve normalizePrimaryColor, derivePalette,
-   template fonts/geometry and actual export output. No new colour implementation.
-3. Trace desktop ToolbarCenter popup and mobile overflow sheet; retain focus,
-   Escape/Tab, short-screen/visual-viewport placement, pointer capture/cancel/lost
-   capture, keyboard Shift/Home/End, invalid hex recovery and forced-colour fallback.
-4. Continue remaining sections/hints, template/library, four review tabs,
-   overflow/export busy/recovery, PWA safety and true static404. Actual Resume
-   OG/PWA/README assets remain legacy; regenerate after the editor. Ready Offline
+1. Read Resume AGENTS/CLAUDE/DESIGN and current Air inventory/validation. The
+   primary-colour checkpoint is complete locally as `a31e681`.
+2. Audit `src/utils/fieldIssues.tsx` and every FieldHint consumer. Shared field
+   chrome already reserves 44px; the badge/popup retains legacy mono/uppercase,
+   small kind chips, truncated actual phrases, brand-tinted suggestion buttons
+   and desktop-width target shrinkage. Read-only prep:
+   `/tmp/cloakresume-air-colour/next-hints-notes.md`.
+3. Adopt Air labels, popup and suggestion actions. Preserve grammar source/ranking,
+   exact replacements, rich-text content and field jumps. Check focus when the last
+   hint/trigger disappears, outside/Escape/Tab, long suggestions, viewport offsets,
+   short screens, and each consumer's loading/error/empty states.
+4. Then continue remaining sections, template/library, four review tabs,
+   overflow/export busy/recovery, PWA safety and true static 404. Actual Resume
+   OG/PWA/README captures remain legacy; regenerate after the editor. Ready Offline
    remains oversized at enlarged text. IMG remains last and parked.
 5. Run check/build and the full serial production suite:
    `CLOAKRESUME_BROWSER_BUILD=production vp test run --no-file-parallelism`.
    Do not edit runtime/build while it runs. No feature skips or timeout inflation.
    Native/physical touch, keyboard/IME and spoken assistive gates remain distinct.
+
+Completed Resume primary colour (`a31e681`, 2026-10-21): shared canonical HSV mapping,
+208px wheel, Brightness, exact hex and independent native precision ranges.
+Presets and saved colours survive untouched until explicit editing; black/grey
+memory, pointer cancel/lost capture, keyboard shortcuts and invalid-hex recovery
+are covered. Desktop Tab exit and compact modal focus/inertness/return share one
+portal, with retained phone swipe dismissal/cancellation. Closed details content
+is excluded from the shared modal Tab order. Removed HSL/lightness math, clamping,
+old slider CSS/tokens, global pointer listeners and unused colour-event bridge.
+
+**310/310 in eight files, zero skips**, 130 editor and 34 template/paper cases;
+195 layouts, 14 contrast pairs, Safari and Firefox actual 200%. All 34 exact
+before/after template/paper renders and two Poppler-rendered PDF exports match.
+Check/build/79-source design/18 portability/exact sync pass. Fourteen proof PNGs
+and compact evidence/full-suite log live in Resume's colour-controls evidence.
+The first full run exposed two stale source-location/count assertions; they now
+follow the shared component and current source count. No assertion removed,
+feature skipped or timeout increased. Full migration remains unfinished.
+Scratch: `/tmp/cloakresume-air-colour/`; native review tabs closed, Firefox zoom
+restored. This turn's preview servers (8188/8189) are stopped; pre-existing servers remain untouched.
 
 Completed Resume logo/photo (`9cc74df`): Air search/selection/clear and
 photo actions; stable icon names/80-result cap, visible unknown imported names,
