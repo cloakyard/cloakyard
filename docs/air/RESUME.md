@@ -38,22 +38,23 @@ Drop [#40](https://github.com/cloakyard/cloakdrop/pull/40) at `5ee9a01`.
 All three Air 1.0.3 colour updates are live and production-verified. Drop main/dev
 integration is complete. Resume and IMG colour checkpoints remain local while
 their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`;
-its shared colour wheel, writing hints, content sections and template library are now software-validated locally. See the current checkpoint below.
+its shared colour wheel, writing hints, content sections, template library and review are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest bounded piece: **CloakResume template library** (`5a001e5`, 2026-10-21).
-The shared Air wide dialog/search and neutral choices replace the legacy gallery.
-Readable metadata precedes all 17 actual previews; filtering keeps stable geometry.
-Identity/stats/extras/custom/interests/tools-only drafts retain their own content.
-Desktop/compact resize preserves search and focus returns to a surviving opener,
-including a handoff that loses its source. Nested save-error and swipe/cancel pass.
-338/338 production tests, 386 distinct layouts and eight contrast pairs pass.
+Latest bounded piece: **CloakResume résumé review** (`ed2a25d`, 2026-10-21).
+Persistent Air frame keeps Close/focus available during lazy loading. Overview,
+Keywords, Insights and Parse retain all data with neutral segments, readable full
+captions/findings/labels and a stable scroll anchor. Actual byte progress replaces
+invented percentages/delay; timestamps record completed current-document scans.
+Retry, duplicate/stale guards, field/JD handoffs, responsive focus, nested notices
+and swipe/cancel pass. 349/349 production tests (9 files, zero skips), 1,154
+layouts and 14 contrast pairs pass; runtime/dist frozen throughout the serial suite.
 All 34 template/paper images and actual A4/Letter PDF renders match the baseline.
-Native Safari and Firefox actual 200% reviewed; tabs closed and zoom restored.
-Evidence: Resume `docs/air/evidence/template-library-2026-10-21.json`.
-Next: review shell and all four tabs, then overflow/export/PWA/static recovery/assets.
+Native Safari and Firefox actual 200% reviewed; own tabs closed and zoom restored.
+Evidence: Resume `docs/air/evidence/resume-review-2026-10-21.json`.
+Next: compact Options sheet and export controls, then PWA/static recovery/assets.
 Physical/assistive gates remain open; IMG stays last and its parked draft untouched.
-No push/deploy. Runtime/dist stayed frozen throughout the complete production suite.
+No push/deploy. Local preview servers 8200/8201 are stopped after validation.
 
 Latest follow-up: **all public-page links stay neutral, including hover**.
 The user explicitly included Cloakyard's content links and required the rule in
@@ -82,7 +83,7 @@ entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Resume's next piece is the complete review surface. IMG stays parked.
+Resume's next piece is compact Options and export controls. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -136,13 +137,13 @@ parked runtime draft below; its isolated horizon commit preserves that draft. Re
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
-| Repository  | Last implementation/checkpoint commit | Current scope                                                                                              |
-| ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `aa0a1aa`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows    |
-| cloakpdf    | `f863471`                             | Software acceptance complete; human/device and additional inference combinations remain open               |
-| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                 |
-| cloakresume | `b75eb76`                             | Entry/shell/writing widgets and all content sections software-validated; library/review/PWA/assets pending |
-| cloakdrop   | `51f178d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open            |
+| Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
+| ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| cloakyard   | `a95e6b1`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
+| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
+| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
+| cloakresume | `ed2a25d`                             | Entry/shell/writing/content/library/review software-validated; overflow/export/PWA/assets pending       |
+| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open         |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -332,36 +333,46 @@ Root contains the canonical contract, palette, gallery, home and family evidence
   IMG's parked draft is preserved. Physical GPU/battery/thermal and assistive gates
   remain open. Do not repeat these completed deployments.
 
-### Exact next bounded piece: CloakResume review
+### Exact next bounded piece: CloakResume Options and export controls
 
 1. Read both repositories' instructions, complete DESIGN, inventory and validation.
-   Template-library checkpoint `5a001e5` is complete locally. Keep accepted writing,
-   repeated-entry, date/logo/photo/colour/hint and library controls intact.
-2. Read complete `AtsReviewModal.tsx` and every `src/components/ats/` source, their
-   App/Toolbar/JD handoffs and feature tests. Replace legacy overlay, tiny mono/
-   uppercase metadata, tinted cards and scan decoration using existing Air shells.
-   Remove the artificial 900ms minimum scanning delay in favor of actual progress.
-   Check timestamp semantics and stale ~7 MB download copy against the bundled
-   engine; remove the ignored Card boxed prop. Preserve all actual reporting/scoring
-   and the four tabs: Overview,
-   Keywords, Insights, Parse. Read-only notes:
-   `/tmp/cloakresume-air-library/next-review-notes.md`.
-3. Preserve keyword hit counts, grammar categories/findings, field jumps, JD handoff,
-   engine progress/readiness/errors, rescan/retry and tab arrow/Home/End semantics.
-   Preserve the 25-finding cap/remaining count and exact Parse text/newlines. Make
-   complete terms, field labels, phrases and dimension captions accessible instead
-   of clipping them. Test every state, nested notice, short screens and focus return.
-   The modal hook now offers optional fallback focus for removed responsive openers.
-   Do not infer full review acceptance from the previously completed writing hints.
-4. Then overflow/export busy/recovery, PWA safety and true static 404; regenerate
-   actual OG/PWA/README assets after editor completion. Ready Offline remains
-   oversized at enlarged text and belongs to the PWA slice. IMG stays last.
-5. Run check/build and full serial production suite:
+   Review checkpoint `ed2a25d` is complete locally. Preserve all accepted
+   writing/date/logo/photo/colour/library/review controls and actual document output.
+2. Read complete `ToolbarOverflow.tsx`, `BottomSheet.tsx`, `ToolbarActions.tsx`,
+   `Toolbar.tsx`, `App.tsx` file/export paths, `utils/fileIO.ts`, `pdfExport.ts`,
+   `useModalDialog.ts`, `useSwipeToDismiss.ts` and applicable browser tests.
+   BottomSheet is now used only by ToolbarOverflow. Its legacy eyebrow/skin,
+   presence animation and 200ms closeThenOpen timer remain; replace with shared Air
+   and reliable handoffs. Do not remove useAnimatedPresence globally: MonthYearField
+   and ReloadPrompt still consume it. Trace each CSS alias before removing it.
+3. Preserve all Options actions: PDF, Scan, Template, Primary colour, A4/Letter,
+   New, Save JSON and Load JSON. Keep Safari pointer focus, nested notices, real
+   file selection/cancel/replacement, draft preservation and paper/template/colour
+   state. Test compact/desktop resize while open or during a handoff. Keep full
+   labels/readable relative text, 44px coarse targets and neutral control states.
+4. Export already guards duplicate requests with exportInFlight and catches actual
+   failures. Reserve the busy label geometry and keep a meaningful focus/status
+   lifecycle across direct and compact triggers. Verify template-not-ready, success,
+   error/retry, long-title/overflow rejection, actual PDF text/links/geometry and
+   A4/Letter output. Avoid speculative progress/cancellation claims; do not rewrite
+   the raster/text/link export implementation for a chrome migration.
+5. Then PWA safety and true static 404; regenerate actual OG/PWA/README assets after
+   editor completion. Ready Offline is oversized at enlarged text and belongs to
+   that PWA slice. IMG stays last and its dirty draft remains untouched.
+6. Run check/build and full serial production suite:
    `CLOAKRESUME_BROWSER_BUILD=production vp test run --no-file-parallelism`.
-   Freeze runtime/dist during the run. No browser/feature skips or timeout inflation.
-   Preserve all 17 templates, A4/Letter, JSON and actual PDF output. Physical touch/
-   software keyboard, OS IME and spoken assistive gates stay separate. Local only;
+   Freeze runtime/dist; no browser/feature skips or timeout inflation. Preserve all
+   17 templates, A4/Letter, JSON and actual PDF output. Physical touch/software
+   keyboard, OS IME and spoken assistive gates remain separate. Local commits only;
    do not push or deploy Resume/IMG.
+
+Completed Resume review (`ed2a25d`, 2026-10-21): Air persistent lazy frame,
+all four panes, complete report text, actual download/scan status and timestamps,
+retry/stale/duplicate guards, keyboard/responsive focus and field/JD handoffs.
+349 tests, 1,154 layouts/14 contrast pairs, native Safari/Firefox actual 200% and
+exact 34 template/paper plus actual A4/Letter PDF output comparisons pass. Runtime
+and dist stayed frozen. Evidence: Resume `docs/air/evidence/resume-review-2026-10-21.json`.
+Physical/assistive gates remain open. Scratch: `/tmp/cloakresume-air-review/`.
 
 Completed Resume template library (`5a001e5`, 2026-10-21): Air shared wide dialog,
 compound search and neutral choices, actual previews with metadata first, complete
