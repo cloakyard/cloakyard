@@ -1,9 +1,11 @@
 # Family rollout preparation — 2026-10-21
 
-**Held before integration. No push, dev/main merge, PR or deployment was made in
-this upgrade pass.** Four dependency pieces are committed; PDF's candidate remains
-uncommitted because a required real-model check fails. Resume and IMG still need
-their remaining full-product Air work.
+**Four-site rollout authorized and in progress.** Create separate `dev` → `main`
+PRs for Cloakyard, CloakPDF, CloakDrop and CloakResume, merge passing candidates,
+verify deployments, and synchronize `dev`. **Exclude IMG** from remote integration
+and deployment. PDF's candidate still needs its Compact/multipage check resolved.
+Resume's remaining design/physical acceptance tasks remain tracked after deployment.
+The preparation records below describe the earlier, unpublished upgrade checkpoint.
 
 | Product     | Validated source                            | Upgrade and evidence                                                                                                                                                                                                                                                |
 | ----------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

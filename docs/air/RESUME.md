@@ -41,6 +41,18 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel, writing hints, content sections, template library, review and Options/export are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
+### Four-site deployment — 2026-10-21 (latest authorization)
+
+The user explicitly requests new individual `dev` → `main` PRs and deployment
+for **Cloakyard, CloakPDF, CloakDrop and CloakResume**, keeping `dev` synchronized.
+**IMG is excluded** while its redesign is pending; preserve its local draft and
+remote branches. This supersedes the earlier instruction to wait for completion
+of Resume/IMG before integrating the four included sites. Resume's remaining
+font/token and physical-device acceptance work stays open after deployment.
+PDF's required Compact/multipage check is still being investigated; do not treat
+this deployment request as permission to weaken a check. Current status and final
+PR/deployment proof belong in `ROLLOUT.md` and its evidence ledger.
+
 ### Release authorization — 2026-10-21
 
 The user now authorizes the final family integration after the remaining work is

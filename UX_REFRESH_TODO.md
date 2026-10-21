@@ -1721,3 +1721,12 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Finish feature regression, code/dead/unit/build/design/portability checks, portable specification/inventory and evidence; commit after green gates: PDF `00bdee0`.
 - [x] Replace legacy PWA/README screenshots and audit manifest/theme metadata, labels/dimensions and OG design (`02552f1`). Static 404 was exposed by the expanded inventory and completed in `82762c4`.
 - [ ] Continue full-PDF acceptance, then IMG/Resume wheel adoption and family rollout. Physical touch/software keyboard, OS IME and spoken assistive acceptance remain open.
+
+### Four-site rollout authorization — 2026-10-21
+
+- [ ] Create individual dev → main PRs, merge passing candidates and verify live
+      Cloakyard, CloakPDF, CloakDrop and CloakResume; synchronize each dev with main.
+- [ ] Resolve PDF's required Compact/multipage check before publishing its upgrade.
+- [x] Explicitly exclude IMG from this deployment; preserve its pending redesign.
+- [ ] Retain Resume's remaining font/token work and all untested physical acceptance
+      gates; deployment is not a claim of complete family migration.
