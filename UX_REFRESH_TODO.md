@@ -824,9 +824,47 @@ Product checkpoint: `24c89e6` (local only).
       recorded source/build files stayed frozen through testing and commit hook.
       Product commit: `f05f97e`. Evidence: Resume
       `docs/air/evidence/unused-foundations-2026-10-21.json`.
-- [ ] Next: remaining live foundation/font bridge, three transitive token orphans,
-      full inventory/44px-target and journey acceptance. Physical/assistive gates
-      remain open. IMG stays last; Phase 9 records final integration authorization.
+- [x] The later privacy/dialog correction retires the live UI font/palette bridge
+      and its three transitive token orphans; see the current entry below.
+- [ ] Continue the full inventory/44px-target, date-motion and journey acceptance.
+      Physical/assistive gates remain open. IMG stays last.
+
+## CloakResume privacy, dialogs and update alignment — 2026-10-21
+
+The user reported remaining privacy/modal/update inconsistencies after deployment
+and explicitly asked for close adherence to the approved Air system.
+
+- [x] Use the existing Air reading styles inside the standard 576px dialog;
+      keep the heading/close control above the scroll body and preserve policy text.
+- [x] Align the update/offline/error notice with Air's opaque neutral panel,
+      shared actions and semantic error icon; preserve draft-saving/activation.
+- [x] Retire the remaining legacy UI fonts, palette/geometry aliases and their
+      orphaned assets. Keep template fonts, actual output colours and the live
+      date-presence adapter. Protect destructive confirmation from backdrop taps.
+- [x] Validate privacy/confirm, Options, library, review, PWA states and inherited
+      UI typography across desktop/laptop/tablet/phone light/dark, coarse input,
+      enlarged text and forced colours. Pass 341 entry layouts / 14 journeys,
+      384 PWA, 192 Options, 960 review and 386 library cases; links stay neutral.
+- [x] Preserve all 34 paper captures and four exported PDFs exactly. Pass all
+      **373/373 production tests, 10 files, zero skips**, check/build, 86-source
+      inventory, 18 portability checks and six-copy contract synchronization.
+- [x] Product commit `9d14555`, dev → main [Resume #41](https://github.com/cloakyard/cloakresume/pull/41),
+      merged `a957b2e`; dev synchronized. All 102 live files match the fresh build,
+      with no-transform and no injected scripts. Live privacy/entry passes 341
+      layouts / 14 journeys and 48 link states / 6 keyboard checks. Evidence:
+      `docs/air/evidence/resume-alignment-2026-10-21/ledger.json`.
+- [ ] Investigate the initial live export raster intermittency: three first-batch
+      PDFs differed only in raster; text/geometry/links matched. The final four
+      fresh exports are exact, as is the pre-change latency baseline. Retain all
+      attempts in `export-attempts.json`; the cause is not yet established. A later
+      instrumented Letter export reproduces the raster-only difference despite
+      reported font readiness; no speculative output-code change ships.
+- [ ] Restrict Tailwind scanning to application sources in a bounded follow-up.
+      The new evidence strings add two unused shadow declarations; the exact
+      build delta is recorded and no active style or application logic differs.
+
+This does not close physical keyboard/IME/assistive/hardware gates or the remaining
+whole-product target sweep. IMG remains excluded and last.
 
 ## Phase 5 — CloakResume
 
@@ -1731,5 +1769,7 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
       for this deployment; retain the unchanged assertion and original fixtures.
 - [ ] Resolve PDF's existing Compact long-document missing-facts limitation separately.
 - [x] Explicitly exclude IMG from this deployment; preserve its pending redesign.
-- [ ] Retain Resume's remaining font/token work and all untested physical acceptance
-      gates; deployment is not a claim of complete family migration.
+- [x] Retire Resume's remaining legacy UI font/palette bridge in the later privacy/
+      dialog correction; keep document typography and live date/drag adapters.
+- [ ] Retain final target/motion and untested physical acceptance gates; deployment
+      is not a claim of complete family migration.

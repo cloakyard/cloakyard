@@ -178,3 +178,21 @@ wait for real remote loading. Resume adds only a static no-transform response ru
 to prevent edge injection. Runtime/output hashes are preserved in both follow-ups.
 IMG's 15 draft hashes and remote branches are unchanged; its redesign remains last.
 The dependency/security constraints and Compact limitation are explicit in ROLLOUT.md.
+
+## CloakResume privacy/dialog alignment — 2026-10-21
+
+The inherited UI font/palette bridge is retired in the current Resume correction:
+53 old token names, 33 unused Tailwind aliases and two UI font files (75,332 bytes)
+are removed. Privacy consumes canonical `air-prose`; duplicate prose/link/list
+skins are gone. Template loading uses ordinary Air UI type. The 17 actual template
+families and exporter are retained, with exact paper/PDF comparisons.
+
+Remaining consumers are explicit: date presence/placement and its motion values,
+the drag transform, and protected document/thumbnail colours. Broad Tailwind
+source scanning still emits two unused utility names from historical tests/evidence;
+restricting that scan is a later bounded cleanup, not a hidden runtime consumer.
+Do not call full-product physical/assistive/target/motion acceptance complete.
+Product evidence: Resume `docs/air/evidence/privacy-dialogs-2026-10-21.json`,
+commit `9d14555`. All 373 production tests pass with zero skips, as do the
+responsive matrices, 34 exact paper captures and four real PDF comparisons.
+The deployed verification is recorded separately in the current rollout ledger.

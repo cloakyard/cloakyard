@@ -1,0 +1,10 @@
+[
+  {
+    "size": "a4",
+    "priorBuildRemoteOriginRasterMatches": true
+  },
+  {
+    "size": "letter",
+    "priorBuildRemoteOriginRasterMatches": true
+  }
+]
