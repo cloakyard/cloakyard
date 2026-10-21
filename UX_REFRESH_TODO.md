@@ -949,14 +949,25 @@ migrations, cleanup and required regression/acceptance gates pass.
 - [x] Upgrade Drop's compatible direct and transitive website dependencies;
       reverify unchanged native upstream versions and retain the official yt-dlp
       runtime/TS6 exceptions. Commits `4e03208`, `575d430`; all website gates pass.
-- [ ] Audit current stable upstream versions across all five repositories: direct
+- [x] Upgrade Resume's compatible direct/transitive packages and CI pins (`5c3bc0d`):
+      372 production tests, 88 responsive comparisons, 34 template/paper captures
+      and four exact PDF comparisons pass. Full migration remains open.
+- [x] Upgrade IMG's committed baseline last (`2718284`), including MediaPipe 1.1.1
+      and rebuilt libheif 1.23.6/libde265 1.1.3/Emscripten 6.0.13. 470 tests,
+      actual face detection, 26 panels, history/output and responsive checks pass.
+      Preserve the 15-file parked draft; this is not completed Air conformance.
+- [-] PDF candidate upgraded and validated except the real Compact/multipage
+  answer gate. The unchanged assertion fails twice and also on the pre-upgrade
+  build. Keep the candidate uncommitted; investigate before integration.
+- [x] Audit current stable upstream versions across all five repositories: direct
       and transitive web dependencies, build tools, package managers, native packages
-      and vendored runtimes. Remove unused packages; update compatible releases and
-      validate breaking upgrades in separate bounded commits.
-- [ ] Record exact resolved versions, audit date, upstream evidence and security
+      and vendored runtimes. Fresh 63-package metadata and native release checks
+      are recorded. Compatible upgrades are committed except the held PDF piece.
+- [x] Record exact resolved versions, audit date, upstream evidence and security
       results. State any supported-version constraint rather than claiming everything
       is latest. Retain the explicitly approved official yt-dlp frozen-runtime
-      exception; do not replace it with a custom bundle.
+      exception; do not replace it with a custom bundle. See [rollout readiness](docs/air/ROLLOUT.md)
+      for the supported TS6 constraint and existing PDF advisory expiry.
 - [ ] Recheck dependency currentness immediately before integration; complete
       feature/output, responsive light/dark, build/dead-code and security gates.
 - [ ] Fetch current branch state, preserve all local work, integrate passing pieces
@@ -967,8 +978,9 @@ migrations, cleanup and required regression/acceptance gates pass.
       settings from merged main; record release readiness and any unresolved device
       or signing constraints. Verify live bytes and essential journeys for deployments
       performed under the user's existing deployment authorization.
-- [ ] Keep the TODO, handoff, cleanup record and final commit/PR/deployment ledger
-      synchronized. Do not mark an incomplete migration or physical gate passed.
+- [x] Record this upgrade checkpoint in TODO, handoff, cleanup and rollout ledger.
+      Continue updating them for integration; PR/deployment and incomplete migration
+      or physical gates remain open.
 
 ### PDF modal and chat checkpoints
 

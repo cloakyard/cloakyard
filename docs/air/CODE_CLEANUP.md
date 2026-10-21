@@ -141,3 +141,29 @@ Committed as Resume `f05f97e`: 372/372 production tests, zero skips, 537.78s;
 output pass. All 283 recorded source/build files remain unchanged after the hook.
 Detailed date/link measurements are retained losslessly as compressed JSON beside
 compact summaries, avoiding repeated expanded evidence in the source tree.
+
+## 2026-10-21 — Dependency rollout preparation
+
+[The rollout ledger](ROLLOUT.md) records versions, checks and gates. Removed
+obsolete release-age exclusions and root's Miniflare/sharp override; compatible
+resolution supplies current versions. Resume no longer needs fast-uri/sharp
+overrides, and Workbox uses scoped glob 13.0.6 instead of deprecated glob 11.
+Active security overrides remain. No new runtime abstraction or package was added
+for the dependency update. CI action versions are pinned to current release SHAs.
+
+PDF's held reduced-motion fix removes mirrored provider media-query state and
+listeners; each dialog reads a current browser snapshot. Its delayed-notification
+regression passes, but the pre-existing Compact long-document answer failure
+prevents committing the full PDF candidate. Do not discard its source or evidence.
+
+IMG's face-probe default pointed to an old product graphic while claiming a
+portrait. It now uses the actual local portrait and retains FACE_FIXTURE override.
+The existing service assertion checks exact JS/WASM version agreement. The HEIF
+codec was rebuilt from maintained upstream tags; output pixel comparisons pass.
+All 15 parked draft files retain their original hashes. The committed baseline
+still has live legacy font/palette/controls; remove them during the actual Air
+migration, not as speculative dependency cleanup. Resume's named live fonts,
+templates, output adapters and date presence remain protected for its next slice.
+
+Drop native source/RC artifact and KERR are unchanged. This is a bounded cleanup
+record, not a claim that every product is migrated or every remaining source is used.

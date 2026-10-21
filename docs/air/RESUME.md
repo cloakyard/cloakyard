@@ -63,27 +63,54 @@ Initial preflight found 38 outdated direct entries; fresh registry metadata is i
 not completed upgrades or a transitive/native/security audit. Latest Astro Check
 0.9.11 still supports TypeScript 5/6, so recheck that constraint before upgrading.
 
-### Dependency upgrade checkpoint — 2026-10-21
+### Rollout preparation checkpoint — 2026-10-21 (current)
 
-Cloakyard dependencies and portable build assets are upgraded and locally validated
-(first commit `78516f5`, followed by a compatible transitive refresh).
-React 19.3.1, Lucide 1.61.0, Vite+ 1.3.0, Wrangler 4.151.3 and pnpm 12.14.0;
-CI actions use current release commit pins. Removed obsolete version exceptions
-and the Miniflare/sharp override. 25 tests, build/types/lint, 18 portability checks,
-six-reference and six-overlay/collection cases, 12 home journeys, both GPU themes,
-136 neutral link states and 52 keyboard checks pass; npm audit reports zero findings.
-Six desktop/laptop/phone light/dark captures were visually inspected.
-Evidence: `docs/air/evidence/dependencies-2026-10-21.json`. Drop is validated and
-committed (`4e03208`, final transitive refresh `575d430`): 432 layouts/34 journeys,
-328 neutral-link states/116 keyboard checks, GPU/six fallbacks and zero npm audit
-findings pass. The final Drop runtime assets are byte-identical; only licenses
-changed. TS6 support and the approved official yt-dlp bundle exception remain.
-PDF and Resume upgrades are being validated; IMG stays last and its parked draft
-is preserved. PDF retains the existing node-forge exception expiring 2026-11-06;
-no unpatched advisory has been silently suppressed or extended.
-No integration or deployment yet. Full-product migration gates below stay open.
+Read [the rollout ledger](ROLLOUT.md) before integration. Latest user request:
+“upgrade and prepare for rollout”. Direct and compatible transitive dependencies,
+CI actions, package managers and IMG's vendored codec have been audited against
+fresh upstream metadata. Current direct-package checks are empty except Drop's
+supported TypeScript 6 constraint. All five deployment dry runs pass.
 
-Latest bounded piece: **CloakResume unused foundation cleanup** (`f05f97e`, local, 2026-10-21).
+Passing bounded commits: Cloakyard `78516f5` / `dffebab`, Drop `4e03208` /
+`575d430`, Resume `5c3bc0d`, IMG `2718284`. Root/Drop responsive, neutral-link,
+GPU and feature checks pass. Resume: 372/372 production tests, 88 responsive
+comparisons, 34 template/paper captures and four exact PDF comparisons. IMG:
+470/470 tests, 26 tool panels, actual portrait face detection, history/export,
+HEIC upload, 88 baseline/current geometry comparisons and actual GPU checks pass.
+Its rebuilt libheif 1.23.6/libde265 1.1.3 codec preserves decoded pixels across the
+HEIC fixture and nine export round trips; container bytes change. The 15-file
+parked Air draft is byte-preserved and excluded from the tested dependency commit.
+The clean tested IMG worktree is `/tmp/cloakyard-rollout-2026-10-21/cloakimg-clean`.
+
+**PDF remains held and uncommitted over `1ce863a`.** Check/dead-code/461 units,
+16 smoke suites, seven extended suites, real PWA/output and horizon/link checks
+pass. A delayed native media-query notification exposed a reduced-motion race;
+the consumer now reads a current external-store snapshot. The deterministic
+regression fails on old source and passes on the fixed source; no assertion was
+weakened. Quality-tier real-model tests pass on both original fixtures, Compact
+passes the short fixture, but Compact/multipage fails its three-fact grounded
+answer check twice. The pre-upgrade build fails the same check. Baseline failure
+is not approval to waive it: resolve it before committing/integrating PDF.
+Sanitized results are in PDF `docs/air/evidence/dependencies-2026-10-21.json`;
+raw private document logs stay outside Git. No new security exception: PDF's
+existing node-forge exception expires 2026-11-06; Drop's official-bundle exception
+and TypeScript 6 constraint remain explicit.
+
+**Next:** resolve PDF's real-model gate, then resume the saved Resume font/token
+migration and final acceptance, then finish IMG last. Dependency upgrades do not
+complete those migrations. IMG's committed baseline still has the old palette /
+hyperlinks and coarse-landscape orientation lock; Air conformance remains open.
+No push, dev/main merge, PR or deployment was made in this pass. Ten projected
+merges of committed heads are conflict-free at recorded fetched refs; recheck after
+remaining work. Exact versions, build hashes, branches, dry-run logs and gates:
+`docs/air/evidence/rollout-2026-10-21/ledger.json`. Scratch:
+`/tmp/cloakyard-rollout-2026-10-21/`. Preserve the held PDF work and IMG draft.
+
+All task-owned preview/test servers are stopped. The clean IMG worktree is retained
+for exact candidate review.
+
+Previous migration checkpoint (still next after the PDF gate):
+**CloakResume unused foundation cleanup** (`f05f97e`, local, 2026-10-21).
 Removed 61 unused token names / 62 declarations, the 241-line unconsumed JSON
 mirror and both unreachable non-Air popup skin rules. Air is now the explicit
 normative authority in the bridge comments and source tests. Live fonts, document

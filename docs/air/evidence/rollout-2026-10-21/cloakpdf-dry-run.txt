@@ -1,0 +1,7 @@
+
+ ⛅️ wrangler 4.151.3
+────────────────────
+✨ Read 149 files from the assets directory /Users/sumitsahoo/Developer/cloakpdf/dist
+Total Upload: 0.35 KiB / gzip: 0.24 KiB
+No bindings found.
+--dry-run: exiting now.
