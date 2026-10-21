@@ -147,7 +147,18 @@ Evidence: Drop `docs/audits/2026-10-19-{dependencies,installer,rc.1}.md` and
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 
-## Latest bounded piece — CloakResume primary colour (2026-10-21)
+## Latest bounded piece — CloakResume writing hints (2026-10-21)
+
+Local implementation/evidence commit: Resume `f334b66`. No push or deployment.
+
+- [x] Air hint trigger/popover, full phrase/reason, neutral explicit replacements and visible close. Shared viewport positioning, immediate opening and responsive touch targets.
+- [x] Six real grammar-field consumers preserve exact first-match replacement, rich text, later occurrences and saved data. Escape/close/Tab/outside dismissal and disappearing-trigger focus pass. Review jumps now focus the named field; Target JD stays outside the grammar scan.
+- [x] Retired duplicate placement/animated presence, tiny mono/uppercase chips, tinted actions, unused .popover skin and decorative field-glow animation.
+- [x] 452 responsive/theme/text/edge cases, 26 contrast pairs; Safari and Firefox actual 200%. All 34 template/paper captures and both exported PDF render comparisons match exactly.
+- [x] Full 318/318 production tests in eight files, zero skips, stable build; 138 editor cases and all 34 template/paper cases. Check/build/79-source design/18 portability/exact sync pass. Evidence: Resume `docs/air/evidence/writing-hints-2026-10-21.json`.
+- [ ] Next: remaining content-section interiors and complete section acceptance, then template/library/review/overflow/export/PWA/static recovery and actual assets. Full Resume and physical/assistive acceptance remain open. IMG last.
+
+## Previous bounded piece — CloakResume primary colour (2026-10-21)
 
 Local implementation/evidence commit: Resume `a31e681`. No push or deployment.
 
@@ -155,7 +166,7 @@ Local implementation/evidence commit: Resume `a31e681`. No push or deployment.
 - [x] Shared desktop/compact portal, short/visual viewport handling, keyboard/focus, pointer rollback and independent phone swipe/cancellation. Removed duplicate HSL/lightness code and unused colour event bridge.
 - [x] 195 responsive/theme/text/edge cases, 14 contrast pairs; Safari and Firefox actual 200%. All 34 template/paper captures and both Poppler-rendered PDF exports match the baseline exactly.
 - [x] Full 310/310 production tests in eight files, zero skips; 130 editor cases and all 34 template/paper cases. Check/build/79-source design/18 portability/exact sync pass. Evidence: Resume `docs/air/evidence/colour-controls-2026-10-21.json`.
-- [ ] Next: writing-hint popup interiors, then remaining sections/review/library/overflow/export/PWA/static recovery and actual assets. Full Resume migration and human/device gates remain open. IMG last.
+- [x] Writing-hint follow-up completed as `f334b66`; remaining scope is tracked in the latest checkpoint.
 
 ## Previous bounded piece — CloakResume logo/photo (2026-10-19)
 
@@ -737,7 +748,7 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Month/year fields, Experience Current job and Education Present; evidence in Resume `docs/air/evidence/date-controls-2026-10-19.json`.
 - [x] Profile/Skills logo search and photo controls; evidence in Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
 - [x] Primary-colour controls; evidence in Resume `docs/air/evidence/colour-controls-2026-10-21.json`.
-- [ ] Writing-hint popup interiors.
+- [x] Writing-hint popup interiors and review field focus; evidence in Resume `docs/air/evidence/writing-hints-2026-10-21.json`.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.
