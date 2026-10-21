@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry, shell, writing widgets, all 13 content sections, template library, review, Options/export and PWA/static recovery software-validated locally; actual assets next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry through actual preview assets software-validated locally; final cleanup/acceptance next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -783,9 +783,27 @@ Product checkpoint: `24c89e6` (local only).
       cases, native Safari/Firefox updates, 34 preserved template/paper captures
       and four exact PDF output comparisons. All 138 recorded source/config/assets
       and 103 build files stayed frozen. Inventory covers 83 sources.
-- [ ] Next: actual OG/PWA/README captures, metadata and generator references; then
-      final product acceptance and cleanup. Physical/assistive gates remain open.
+- [x] Handed off actual OG/PWA/README captures, metadata and generator references
+      to the following asset piece. Final product/physical acceptance remains open.
       Local commits only; CloakIMG stays last with its parked draft untouched.
+
+## CloakResume preview assets and metadata — 2026-10-21
+
+- [x] Replace legacy OG/PWA/README imagery with the Air social card and real
+      production landing/editor captures in both themes. Update screenshot
+      dimensions, content labels, install colours, social copy/alt text and the
+      README picture sources. Keep launcher marks and document output unchanged.
+- [x] Retire the old device-named captures, stale `.cr-input` generator selector
+      and unused field skin. Simplify generators and update active README,
+      contributor and asset guidance. Track live font/token/popup consumers.
+- [x] Check production assets, repeatability, built manifest/README theme selection,
+      responsive light/dark/enlarged layouts, neutral links and exact résumé/PDF
+      output. Run required checks and the full serial production suite, freeze the
+      tested source/build, record evidence, then commit locally.
+- [ ] Next: full-product cleanup and acceptance, starting with exact token/font/
+      selector consumers and remaining inventory/44px target gates. Physical
+      touch/software keyboard, OS IME, spoken assistive and GPU/battery acceptance
+      remain open. CloakIMG remains parked and last; no push/deploy.
 
 ## Phase 5 — CloakResume
 
@@ -815,8 +833,9 @@ unused code, trace retained consumers, and keep current inventories/references a
 - [ ] Preserve template-specific colours/fonts/layout and printable/exported document geometry.
 - [ ] Verify new/load/save/restore/JSON and PDF export, cancellation, unsaved edits and malformed input.
 - [ ] Run check, all logic/browser/template suites and production build.
-- [ ] Inspect all required layouts/themes/input/motion modes; update PWA/social assets.
-- [ ] Record full evidence and commit each verified piece.
+- [x] Update actual PWA/social/README assets in light/dark; evidence in Resume `docs/air/evidence/preview-assets-2026-10-21.json`.
+- [ ] Final inspection of all required layouts/themes/input/motion modes and remaining physical/assistive gates.
+- [ ] Record full-product acceptance evidence after every required gate passes.
 
 ## Phase 6 — CloakIMG (last)
 

@@ -41,7 +41,34 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel, writing hints, content sections, template library, review and Options/export are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest bounded piece: **CloakResume PWA safety and static recovery** (`24c89e6`, local, 2026-10-21).
+Latest bounded piece: **CloakResume preview assets and metadata** (`448daea`, local, 2026-10-21).
+**372/372 production tests, 10 files, zero skips, 530.12s**. The final complete
+run passes after updating one stale README audit-wording assertion to verify
+actual Air inventory coverage; historical source/output checks remain intact.
+Five repeat/dist asset hashes, eight manifest image decodes, README theme selection,
+88 responsive geometry/style comparisons, 124 neutral link states / 32 keyboard
+checks, 34 template/paper and four actual PDF comparisons pass. Format/lint/types,
+build, 86-source inventory, 18 portability assertions and exact family sync pass.
+All 284 recorded source/config/test/document/asset/build files (105 dist) remained
+frozen, including after the commit hook. Product worktree is clean.
+Evidence: Resume `docs/air/evidence/preview-assets-2026-10-21.json`.
+Actual light/dark landing/editor captures replace the old device-named images.
+The Air social card uses the canonical mark, pinned CSS and real editor proof.
+Manifest colours, screenshot labels/dimensions, social text and README theme
+selection agree. Active README/contributor/asset guidance now names Air.
+The obsolete `.cr-input` generator selector and 58 lines of unused field skin/
+comments are removed. Generators are smaller; no runtime feature or dependency
+was added. Live fonts/tokens, date popup and output adapters remain traced in
+`docs/air/code-cleanup.md` and [the family cleanup record](CODE_CLEANUP.md).
+Next: **full-product cleanup and acceptance**, starting with the exact font/token/
+selector consumer audit and remaining inventory/44px target gates. Preserve all
+17 templates, paper/JSON/PDF output and validated flows. Physical/assistive gates
+remain open. CloakIMG stays last with its parked draft untouched. No push/deploy.
+Scratch: `/tmp/cloakresume-air-assets/`. Preview/dev servers 8208/8209/8210 are stopped.
+
+### Previous checkpoint — PWA safety and static recovery
+
+Previous bounded piece: **CloakResume PWA safety and static recovery** (`24c89e6`, local, 2026-10-21).
 Neutral in-flow offline/update/busy/error states retain editor space and focus.
 Updates flush the final edit before activation and reload, wait for actual worker
 activation, preserve this tab during another tab's update, and recover from storage,
@@ -116,7 +143,7 @@ entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Resume's next piece is actual preview assets and metadata. IMG stays parked.
+Resume's next piece is final cleanup/acceptance. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -170,13 +197,13 @@ parked runtime draft below; its isolated horizon commit preserves that draft. Re
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
-| Repository  | Last implementation/checkpoint commit | Current scope                                                                                               |
-| ----------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `53d9f6d`                             | Air source and deployed home; current PWA appendix, cleanup and handoff documentation commit follows        |
-| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open                |
-| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                  |
-| cloakresume | `24c89e6`                             | Entry through PWA/static recovery software-validated; actual OG/PWA/README assets and final acceptance next |
-| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open             |
+| Repository  | Last implementation/checkpoint commit | Current scope                                                                                                  |
+| ----------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| cloakyard   | `7c5fb52`                             | Air source and deployed home; current preview-asset appendix, cleanup and handoff documentation commit follows |
+| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open                   |
+| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                     |
+| cloakresume | `448daea`                             | Entry through actual preview assets software-validated; final product cleanup and acceptance next              |
+| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -366,40 +393,35 @@ Root contains the canonical contract, palette, gallery, home and family evidence
   IMG's parked draft is preserved. Physical GPU/battery/thermal and assistive gates
   remain open. Do not repeat these completed deployments.
 
-### Exact next bounded piece: CloakResume PWA safety and static recovery
+### Exact next bounded piece: CloakResume final cleanup and acceptance
 
-1. Read both repositories' instructions, complete DESIGN, inventory and validation.
-   Options/export is complete locally; preserve all accepted editor/widget/library/
-   review flows and actual output. Read and update `docs/air/CODE_CLEANUP.md` and
-   Resume `docs/air/code-cleanup.md` with traced removals and live consumers.
-2. Read complete `ReloadPrompt.tsx`, SW registration/update helpers, `useAutosave.ts`,
-   `App.tsx`, `vite.config.ts`, `public/404.html` and PWA/recovery tests. The real
-   toolbar is composed in App/Layout, not a `Toolbar.tsx` file. OptionsDialog has
-   replaced BottomSheet. Do not reintroduce queued modal handoff timers.
-3. Migrate offline/update/updating/error notices to Air: readable relative text,
-   reserved busy/retry labels, neutral actions, meaningful focus and honest status.
-   Ready Offline currently overflows at enlarged text; Later/Update use `.tb` and
-   updating uses animated icons. Preserve service-worker polling, offline behavior,
-   real errors/retry and draft safety before reload; test update/no-update, failed
-   install, duplicate attempts and the final keystroke/storage failure lifecycle.
-4. Migrate the real standalone `public/404.html` with local Air assets. It must work
-   without the React app or sibling checkout and route people back safely. Trace
-   Archivo/JetBrains font references, legacy inline tokens and any obsolete scripts
-   before deletion. Preserve CSP, noindex, theme support and recovery/navigation.
-5. Retire `.tb`/toast compatibility only after ReloadPrompt loses its consumers.
-   `useAnimatedPresence` and popover CSS still serve MonthYearField: keep the date
-   adapter intact. Review stale token aliases and generated references by consumer,
-   not by filename. The lazy PDF exporter/fonts/templates remain required output.
-6. After editor/PWA completion, regenerate actual OG, PWA and README assets from
-   the finished surfaces, update manifest labels/metadata, and audit old image/font
-   references. No mock editor screenshots. Keep any independent asset piece bounded.
-7. Run check/build and the complete serial production suite:
+1. Read both repositories’ instructions, complete DESIGN and current inventory/
+   validation. Entry through PWA/static recovery and actual preview assets are
+   implemented locally. Do not repeat the finished PWA or image migration.
+2. Trace every remaining compatibility selector, token/font registration and
+   public asset through runtime, templates, export, lazy/loading and test paths.
+   Start with `index.css`, `cloak-family.css`, `tokens.css` / `tokens.json` and
+   Archivo/JetBrains references. Record the live consumer or remove the unused
+   definition and asset together; preserve document typography and print geometry.
+3. Keep MonthYearField’s live `useAnimatedPresence` / `.cr-popover` adapter until
+   replaced deliberately. ToolbarCenterBridge, Editor, GithubIcon and the lazy
+   exporter/font preparation also have named consumers; do not delete by filename.
+4. Reconcile every pending inventory row and Phase 5 gate with actual evidence.
+   Repeat the remaining coarse-pointer 44px target sweep, enlarged/short-screen,
+   input, error/empty/long-content and complete saved-file/export journeys. Keep
+   browser zoom separate from root-font stress; real touch/software keyboard,
+   OS IME, spoken assistive and GPU/battery gates cannot be closed by emulation.
+5. Keep cleanup bounded. For every changed surface inspect desktop/laptop/tablet/
+   phone light/dark and affected native/forced-colour states; compare all 17
+   templates, both papers and real PDF raster/text/geometry/link output where
+   typography or shared selectors could affect it. No template restyling.
+6. Run check/build/design/portability and the full serial production suite:
    `CLOAKRESUME_BROWSER_BUILD=production vp test run --no-file-parallelism`.
-   Freeze runtime/dist; no browser/feature skips or timeout inflation. Inspect all
-   required sizes/themes, enlarged text, forced colours, native Safari/Firefox and
-   real output. Keep TODO/evidence/handoff/cleanup current and commit locally only.
-   Physical touch/software keyboard, OS IME and spoken assistive gates remain open.
-   No push/deploy. CloakIMG stays last and its dirty draft remains untouched.
+   Freeze runtime/dist until completion, with zero required skips. Regenerate
+   real preview assets only if a changed visible surface makes them stale.
+7. Keep TODO/evidence/handoff/cleanup current and commit each passing piece
+   locally. Do not claim full-product acceptance while required gates remain.
+   No push/deploy; CloakIMG stays last and its dirty draft remains untouched.
 
 Completed Resume Options/export (`54be0f1`, 2026-10-21): shared Air sheet, immediate handoffs,
 real busy/recovery, native JSON cancellation/replacement, responsive paper/focus,
