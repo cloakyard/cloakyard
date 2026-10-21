@@ -2171,3 +2171,18 @@ at 100%. All 13 asset hashes and 24 live link/layout cases pass.
 
 Air 1.0.6 removes blue hyperlink text, including hover, and specifies neutral
 inline/directional treatments. See [scope and evidence](neutral-links-2026-10-19.md).
+
+Neutral hyperlink release verified: main `aa0a1aa`, Cloudflare `565c336f` at 100%; 13 matching production files and 136 live link-state / 52 keyboard checks pass. See the neutral-link audit and production evidence.
+
+## 2026-10-21 — Dependency and rollout preparation
+
+See [rollout status](ROLLOUT.md) and the [exact ledger](evidence/rollout-2026-10-21/ledger.json).
+Root/Drop/Resume/IMG dependency pieces are committed with their applicable passing
+checks and responsive light/dark review. Resume's 372 production tests and exact
+PDF/template comparisons pass; IMG's 470 tests, real detection/codec/output and
+88 baseline comparisons pass. All five deployment dry runs succeed.
+
+PDF's candidate stays uncommitted: 461 units, smoke/extended/PWA/output checks
+pass, but Compact/multipage fails on both upgraded and baseline builds. This is
+a recorded blocker, not waived by Quality-tier results. No integration/deployment
+was performed. Full Resume/IMG migration and physical/assistive gates stay open.

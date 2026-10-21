@@ -44,8 +44,9 @@
 - Entry, privacy, confirmations and render recovery consume the pinned
   `src/styles/air.css`; `air-entry.css` owns entry composition. The editor shell,
   header actions, section rail/picker/panel frame, paper/view segments and preview
-  dock use Air with `air-editor.css` composition. Section interiors, custom widgets,
-  library/review sheets and PWA notices retain the legacy bridge until their slices.
+  dock use Air with `air-editor.css` composition. All 13 content sections and their
+  writing widgets, template library, résumé review, Options/export and PWA notices
+  use Air. The standalone 404 imports the same pinned CSS through Vite.
   Template fonts and output geometry remain independent of both bridges.
 - Entry supports landscape and native in-flow compact navigation. Blank/sample
   and validated file replacement require confirmation when a current draft exists;
@@ -74,8 +75,8 @@
   focus to the selected section or back to its selected row; resizing does not steal
   focus. The zoom dock is outside document scrolling and stays reachable at any zoom.
 - `node scripts/test-air-editor-shell.mjs` checks shell geometry and all 13 navigation
-  routes plus preview/paper operations. These checks do not certify the remaining
-  editor interiors, review sheets, PWA notice, real touch/keyboard or assistive speech.
+  routes plus preview/paper operations. These checks do not certify other
+  editor interiors, review sheets, PWA notices, real touch/keyboard or assistive speech.
 
 - Shared text/CSV/textarea fields and scoped rich-text formatting use Air labels,
   help, contours and capability-based editable text. Blank hint reserves and the
@@ -84,10 +85,9 @@
 - A format scope retires removed textarea handlers and clears its active field;
   stale toolbar actions cannot resurrect removed text. Pointer and keyboard
   formatting preserve the current selection. Selected formatting is neutral.
-- Writing-hint popup interiors remain partial. Do not
-  infer their adoption from the shared field slice. `node scripts/test-air-writing-fields.mjs` checks six field
-  consumers across all viewport classes and text sizes; native IME/touch and
-  assistive speech remain separate acceptance gates.
+- `node scripts/test-air-writing-fields.mjs` checks shared field consumers across
+  all viewport classes and text sizes; native IME/touch and assistive speech remain
+  separate acceptance gates. Writing-hint acceptance is recorded separately below.
 
 - Repeated entries use open headings, contextual 44px reorder/remove controls,
   neutral Add actions and plain empty guidance. Nested bullets place their actions
@@ -146,3 +146,196 @@
   portrait; removal returns focus to Add photo. No template/output typography,
   geometry or image pixels change. `node scripts/test-air-logo-photo.mjs` covers
   portrait/initials, selected/search/empty icons, all viewport classes and themes.
+
+- Primary colour uses the pinned Air hue/saturation mapping, full-brightness wheel,
+  Brightness, exact hex and optional independent native hue/saturation ranges.
+  Preserve all ten presets and the exact saved colour until an explicit edit;
+  no HSL lightness clamp or implicit RGB rounding on opening. Achromatic edits
+  retain hue (and saturation at black); pointer cancellation restores the exact
+  pre-drag value. Invalid hex remains editable with an associated blur error.
+- The colour body and portal are shared by both toolbar paths. Desktop is a
+  non-modal popover with Tab exit; compact mode is modal with background inertness,
+  contained focus and return to More options. Phone drag-handle dismissal and
+  cancellation remain available without intercepting wheel gestures. Reuse date/logo
+  viewport placement,
+  16px safe edges and internal scrolling. Fine input starts at Brightness; coarse
+  input focuses the surface. Hidden fine-tuning ranges never enter the Tab order.
+  Wheel arrow/Shift/Home/End shortcuts remain available alongside native ranges.
+- Colour pixels are functional data; surrounding controls remain neutral Air.
+  Preserve normalizePrimaryColor, derivePalette and every template/export path.
+  `node scripts/test-air-colour.mjs` covers responsive/theme/text/forced-colour
+  states and offset visual viewports. Physical touch, software keyboards, IME and
+  spoken assistive acceptance remain separate gates.
+
+- Writing hints use the Air popover, readable kind/phrase/reason rows, neutral
+  replacement actions and a visible close control. They are optional suggestions,
+  separate from invalid-field errors. Text and targets grow at enlarged text;
+  long phrases and replacements wrap, and long lists scroll within safe edges.
+- Preserve the local Harper report, ordering, category names and exact first-match
+  replacement callbacks. Opening or dismissing cannot change content. The six
+  consumers are summary, experience bullets, project description/roles, award
+  detail and custom bullets. Target JD stays outside the existing grammar scan.
+- Opening focuses the readable surface, with no editor animation or software
+  keyboard request. Escape/close returns to the trigger, non-modal Tab can leave,
+  and outside pointer/focus dismisses. Applying returns to the writing field as
+  report invalidation removes its hint trigger; a refreshed report stays closed.
+  Review jumps focus the named field with the single Air contour, replacing the
+  obsolete decorative glow. Loading/error/no-report states show no stale badges.
+- Hints reuse date/logo/colour viewport placement. `node scripts/test-air-hints.mjs`
+  covers all six real production consumers plus explicitly labelled long-copy
+  stress, short screens, both themes, enlarged text and coarse/forced-colour modes.
+  Native Safari and Firefox zoom are separate from physical touch/software keyboard,
+  OS IME and spoken assistive acceptance. The full review sheet has separate acceptance below.
+
+- All 13 content sections use the shared writing, repeated-entry and picker shells.
+  Awards/Certifications year fields and Quick stats/Extras pairs reflow by available
+  width and relative text size. Year values remain free-form strings; opening,
+  editing another field and reordering never normalize imported values.
+- Quick stats and Extras retain independent arrays, IDs, add/move/remove actions
+  and output behavior. Their headings use ordinary Air text and open grouping.
+  Profile formatting help is associated with the summary field. The unused legacy
+  uppercase/mono field-label skin is retired after tracing its final consumers.
+- Target JD uses a neutral local-processing note and the shared primary action.
+  Coarse targets stay at least 44px at desktop widths. Analyze keeps its review
+  behavior, focuses its trigger before opening (including Safari pointer use) and
+  restores that focus on dismissal. JD persistence and exclusion from Harper stay
+  intact; only résumé prose participates in the existing grammar scan.
+- `node scripts/test-air-sections.mjs` checks every section empty/populated, imported
+  custom values, both themes, text enlargement, breakpoint edges, coarse/fine input
+  and forced colours. Complete source review plus existing field/date/logo/hint and
+  entry tests establish software acceptance; physical touch/software keyboard, OS
+  IME and spoken assistive gates remain separate. Final product acceptance
+  and cleanup remain open.
+
+- The template library uses the shared wide Air dialog, compound search field,
+  neutral selection and readable category/name/description/level metadata. Names
+  precede their live paper previews, so choices remain identifiable on short screens.
+  The header and close action stay reachable while the body scrolls; gallery height
+  stays stable when filtering. The grid reflows with available width and text size.
+- Preserve all 17 actual templates, category ordering, badge labels, name/description/
+  level/category matching, selected state and immediate selection. Search defers
+  filtering during composition, announces counts/no results, and clearing restores
+  input focus. Sample previews appear only for untouched drafts; identity, stats,
+  extras, custom, interests and tools-only drafts retain their own content.
+- Template previews remain inert, use the author's primary colour and retain real
+  lazy template modules, fonts, A4 scaling and document geometry. No gallery style
+  may alter document typography, symbols, images or JSON/PDF output.
+- The library reuses the established modal lifecycle, background inertness and
+  compact swipe handling. Frequent library opening/dismissal is immediate. Native
+  Safari opener focus, keyboard wrap/return, nested save-error notices and drag
+  cancellation remain supported. The toolbar stays mounted across responsive
+  changes; dismissal returns to the surviving Template or More options control.
+- `node scripts/test-air-library.mjs` checks gallery, filtered and no-results states,
+  blank/populated drafts, every viewport class, both themes, text enlargement,
+  coarse/fine targets and forced colours. Native Safari and actual Firefox zoom
+  are separate from physical touch/software keyboard, OS IME and spoken assistive
+  acceptance. Final product acceptance and cleanup remain open.
+
+### Résumé review
+
+- The review uses the shared Air wide dialog/sheet and neutral segments. Its frame
+  loads eagerly so Close, Escape, focus containment and background inertness work
+  while the four panes download. Close stays outside the scrolling report. Short
+  panels share the tab anchor with long panels; tabs wrap at enlarged text and
+  never cover focused report content. Opening and dismissal are immediate.
+- Keep Overview, Keywords, Insights and Parse, their numeric scores, thresholds,
+  dimensions, keyword matching/counts, ordering and complete plain-text output.
+  Score colours are semantic data ink, not tinted application surfaces. Metadata
+  uses readable relative text; captions, findings, reasons and field labels wrap
+  without truncation. Keep the first 25 writing details and the remaining count.
+- The scan button reserves both labels and stays focusable while guarded busy.
+  Progress comes from actual received bytes only when the decoded total is known.
+  Unknown or encoded lengths use an indeterminate track and a named live status;
+  never invent a percentage, duration or minimum scan delay. Download completion,
+  worker preparation and writing review remain distinct. A timestamp records only
+  successful completion for the current document revision.
+- One in-flight scan per current revision prevents duplicate open/re-scan work.
+  Closing keeps the existing background scan; editing invalidates stale results.
+  Failure preserves the ATS report and supports a real retry. No document or JD
+  leaves the browser, and the existing JD exclusion from grammar stays intact.
+- Tab arrows/Home/End preserve roving focus and their associated panels. Field/JD
+  handoffs focus the destination after its section mounts. Dismissal returns to
+  the surviving Scan/More options opener across responsive changes. Nested save
+  notices and compact swipe/cancel retain the shared modal lifecycle.
+- `node scripts/test-air-review.mjs` covers all panes and empty/short/populated
+  reports across required sizes, themes and enlarged text. The companion
+  `node scripts/test-air-review-progress.mjs` covers known/unknown download totals,
+  failure, forced colours and text contrast. Browser regressions cover compressed
+  responses, lazy dismissal, real retry/completion, stale edits and field handoffs.
+  These are software checks; physical touch/software keyboard, OS IME and spoken
+  assistive acceptance remain open. Final product acceptance and cleanup
+  are still required; CloakIMG stays last.
+
+### Options and export controls
+
+- Options uses the standard Air dialog/sheet with a persistent heading, background
+  inertness and one scrolling command region. Keep PDF, Scan, Template, Primary
+  colour, A4/Letter, New, Save JSON and Load JSON available with full relative-size
+  labels and shared neutral controls. The open sheet survives desktop/compact
+  resize; paper state remains unchanged. Read current viewport matches when
+  rendering, even before native change notifications, so dismissal returns to the
+  visible toolbar. Colour handoffs use the existing picker.
+- Frequent command handoffs are immediate. Finish closing Options and restoring
+  its opener before the destination captures focus; never queue a 200ms callback.
+  Keep native file acquisition inside user activation. Cancel preserves the draft;
+  malformed files fail before replacement confirmation; reset the input so the same
+  file can be chosen again. Pointer actions explicitly focus their initiators for
+  Safari. Modal Tab/Shift+Tab wrapping scrolls the destination into view.
+- Both PDF triggers reserve ready/busy labels and remain focusable while guarded
+  busy. A separate live status reports real preparation, download initiation or
+  failure. Options stays open during export. Do not invent percentages, cancellation
+  or a successful saved-file claim: the browser owns the download destination.
+  Keep duplicate guards, template readiness, actual layout rejection, cleanup and
+  retry. JSON save failures also preserve work and show a recoverable notice.
+- Keep the lazy raster/text/link exporter, filenames, data schema, all templates,
+  paper dimensions, fonts and output unchanged. The Options surface is immediate,
+  including reduced motion; emulated swipe/cancel and keyboard dismissal remain.
+- Track removals and retained legacy consumers in `docs/air/code-cleanup.md`.
+  `scripts/test-air-options.mjs` covers ready/busy/failure layouts in both themes
+  and enlarged text; production browser regressions cover native acquisition,
+  handoffs, focus, resize, busy geometry, duplicate attempts and actual render
+  failure/retry. Physical touch/software keyboard and spoken assistive gates remain
+  open. Final product acceptance and cleanup remain required.
+
+### PWA update and static recovery — 2026-10-21
+
+- Place update/offline status in normal flow, with readable neutral copy and shared
+  Air actions. Keep editor/modal controls uncovered; constrain a long notice to
+  45dvh with reachable scrollable actions. No decorative spinner or timed reload.
+- Do not steal focus on arrival. Preserve the invoking focus while busy and restore
+  the previous connected target on dismissal. Pause the offline notice timer while
+  hovered/focused; its timer must never dismiss a pending update.
+- Require explicit same-tab consent. Flush the latest draft before activation and
+  immediately before reload; stop for failed storage or an active file operation.
+  Wait for actual activation, guard duplicates, and offer retry on delivery failure.
+  Another tab's activation must preserve this tab's work. Keep observing later
+  worker installs, including a valid update following a failed install.
+- Build root `404.html` as a standalone Air entry with neutral angled links,
+  noindex and no-JavaScript recovery. Render requested paths with textContent.
+  Restrict the service-worker app-shell fallback to real app entry URLs so missing
+  paths retain HTTP 404 after installation. No React dependency in static recovery.
+- Software evidence is `docs/air/evidence/pwa-recovery-2026-10-21.json`. Physical
+  touch/software keyboards and spoken assistive acceptance remain open. Final
+  product acceptance and cleanup are still required.
+
+### Social, install and README previews — 2026-10-21
+
+- Capture real production landing/editor states in light and dark. Use isolated
+  browser contexts and the built-in synthetic sample, with capture-only seed/date
+  for reproducibility; never capture personal drafts or replace visible controls.
+  Reduced motion and capture-only worker suppression avoid transient artwork/notices.
+- Social artwork is a fixed 1200×630 composition using pinned local Air CSS, the
+  canonical mark and the real editor image. Keep product claims accurate, type
+  neutral and document output unchanged. Artwork source stays out of the app build.
+- Manifest screenshots use content/appearance labels and exact image dimensions.
+  README selects its matching theme with a light fallback. Install metadata uses
+  Air’s light page colour; HTML supplies both system theme colours. Social/store
+  images remain outside the offline application-shell precache.
+- Build, run `generate-screenshots`, then `generate-og`, and rebuild. Inspect every
+  generated image and actual responsive/theme states. Verify repeatable pixels,
+  metadata/resource integrity and preserved template/PDF output. The complete
+  workflow lives in `docs/brand-assets.md` and dated evidence in `docs/air/`.
+- Trace and remove obsolete screenshots, generator selectors and unused skins
+  together. Preserve live template/font/popup adapters until their consumers are
+  migrated. Final product cleanup/acceptance and physical/assistive gates remain
+  open; these assets alone do not finish the product migration.

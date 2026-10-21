@@ -1,0 +1,33 @@
+✔ reorder preserves identity and every field, with exact undo/redo (0.95125ms)
+✔ new work after undo discards the future while leaving previous snapshots intact (0.126083ms)
+✔ selection across filtered views retains other selections and rejects stale IDs (0.076333ms)
+✔ remove all is reversible and clears stale selections without deleting history (0.107834ms)
+✔ invalid and unchanged mutations create no misleading history entries (0.093ms)
+✔ 100-row sample stays uniquely addressable through reorder, rename, remove and undo (0.121875ms)
+✔ wheel coordinates match the displayed clockwise spectrum (0.7755ms)
+✔ thumb and pointer are inverse mappings throughout the wheel (0.826834ms)
+✔ author colours round-trip without changing channel bytes (3.4925ms)
+✔ invalid, multiple, oversize and cancelled picks retain the current file (1.724833ms)
+✔ UTF-8 characters survive chunk boundaries and preview is bounded (33.659625ms)
+✔ invalid UTF-8 fails without discarding selected file; same file can be picked again (0.16525ms)
+✔ empty text completes with a useful state (0.141375ms)
+✔ manual pause has measured bytes, ignores duplicate starts and resumes (2.843791ms)
+✔ cancel while paused releases the wait and retry starts from zero (0.455792ms)
+✔ late completion after cancel, replacement, removal or disposal cannot publish (0.6885ms)
+✔ interruption keeps partial text and file; retry succeeds without simulation (0.126334ms)
+✔ short read rejects inconsistent byte counts (0.074375ms)
+✔ finite arrival submits once in the settled clock and rests until input (2.094375ms)
+✔ unmount aborts pending startup and destroys its late renderer (0.293542ms)
+✔ input arriving during a pending draw schedules a follow-up without overlap (0.303584ms)
+✔ reduced motion never mounts and preference changes are reversible (0.228166ms)
+✔ resize failure releases the device and leaves the fallback available (0.213042ms)
+✔ reference form values remain text across HTML reconstruction (0.475083ms)
+✔ a reconstructed slider cannot interpolate markup from its retained value (0.133917ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 83.69725

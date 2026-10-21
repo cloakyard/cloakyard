@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "popover": true,
+      "rename": true,
+      "selectKeyboard": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "popover": true,
+      "rename": true,
+      "selectKeyboard": true,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "popover": true,
+      "rename": true,
+      "selectKeyboard": true,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "theme": "dark",
+      "popover": true,
+      "rename": true,
+      "selectKeyboard": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "popover": true,
+      "rename": true,
+      "selectKeyboard": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "popover": true,
+      "rename": true,
+      "selectKeyboard": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

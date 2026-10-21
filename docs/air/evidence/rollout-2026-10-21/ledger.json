@@ -1,0 +1,280 @@
+{
+  "checkedAt": "2026-10-21T12:08:46.725768+00:00",
+  "registryCheckedAt": "2026-10-21T12:02:41.375247+00:00",
+  "status": "held-before-family-integration",
+  "projects": {
+    "cloakyard": {
+      "sourceCommit": "dffebababa437f434e5d692c3da29463ca6eb50b",
+      "branch": "codex/air-refresh",
+      "originDev": "8bf604deae361940f66782ebc2abaa721fc43904",
+      "originMain": "aa0a1aa62e56c38392be8032510675db8560a8eb",
+      "candidateCommitted": true,
+      "evidence": "../cloakyard/docs/air/evidence/dependencies-2026-10-21.json",
+      "buildRoot": "/Users/sumitsahoo/Developer/cloakyard/dist",
+      "devMergeConflictFree": true,
+      "devBehindAhead": [0, 13],
+      "mainMergeConflictFree": true,
+      "mainBehindAhead": [0, 12],
+      "outdatedDirect": {},
+      "resolvedDirect": {
+        "lucide-react": "1.61.0",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "@base-ui/react": "1.9.0",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
+        "@vitejs/plugin-react": "6.1.2",
+        "shaders": "4.0.4",
+        "typescript": "7.0.2",
+        "vite": "1.3.0",
+        "vite-plus": "1.3.0",
+        "wrangler": "4.151.3"
+      },
+      "buildFiles": 14,
+      "buildHashInventory": "cloakyard-build.json",
+      "buildInventorySha256": "411ec7b004c54629692ea3a34b55a20e1c98ba26118c2c1bc6249c525064fa41",
+      "wranglerDryRun": "4.151.3 passed; not deployed",
+      "audit": "0 findings"
+    },
+    "cloakpdf": {
+      "sourceCommit": "1ce863a7d99a897cabdb0929842196411f89ec36",
+      "branch": "codex/air-brand-horizons",
+      "originDev": "079b76af3de5e1948b24ba861c26325253491546",
+      "originMain": "f863471bbef1fc670821112c653eab6510580b80",
+      "candidateCommitted": false,
+      "evidence": "../cloakpdf/docs/air/evidence/dependencies-2026-10-21.json",
+      "buildRoot": "/Users/sumitsahoo/Developer/cloakpdf/dist",
+      "devMergeConflictFree": true,
+      "devBehindAhead": [0, 2],
+      "mainMergeConflictFree": true,
+      "mainBehindAhead": [0, 1],
+      "outdatedDirect": {},
+      "resolvedDirect": {
+        "@huggingface/transformers": "4.3.1",
+        "@langchain/core": "1.2.20",
+        "@langchain/langgraph": "1.5.1",
+        "@llamaindex/liteparse-wasm": "2.16.0",
+        "@pdf-lib/fontkit": "1.1.1",
+        "@pdfme/pdf-lib": "6.2.8",
+        "lucide-react": "1.61.0",
+        "motion": "14.5.0",
+        "node-forge": "1.4.0",
+        "pdfjs-dist": "6.4.299",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "react-markdown": "10.1.0",
+        "remark-gfm": "4.0.1",
+        "tesseract.js": "7.0.0",
+        "workbox-window": "7.4.1",
+        "@tailwindcss/vite": "4.3.3",
+        "@types/node-forge": "1.3.14",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
+        "@vite-pwa/assets-generator": "2.0.0",
+        "@vitejs/plugin-react": "6.1.2",
+        "knip": "6.42.1",
+        "puppeteer-core": "25.15.0",
+        "sharp": "0.35.5",
+        "tailwindcss": "4.3.3",
+        "typescript": "7.0.2",
+        "vite": "1.3.0",
+        "vite-plugin-pwa": "2.0.0",
+        "vite-plus": "1.3.0"
+      },
+      "buildFiles": 133,
+      "buildHashInventory": "cloakpdf-build.json",
+      "buildInventorySha256": "f3668ec012389bd746aada1e49c45e9444fd52c94b7a83b84d05d95283c08516",
+      "wranglerDryRun": "4.151.3 passed; not deployed",
+      "uncommittedChangedSource": {
+        ".github/workflows/air-design.yml": "b4f3ea3631653cec61e01f2e4e07584c25634dcb0f15797f67e201f4b3183c28",
+        ".github/workflows/codeql.yml": "2e786f28ccb7137cdc7ba175a72e6ba2c92682cf3e61812a1a021ba28df31bcf",
+        ".github/workflows/scorecard.yml": "0325363f96f198fa921035f4dc393cd03514b449fed72880e303877786442147",
+        ".github/workflows/security.yml": "8cce810b33ab48d9c53baf5730957c96ad9a1fffd3d38bce53e50e1b4e134445",
+        "package.json": "9e675f635a56a467e1ed0c15c09d5be47d354506f58736dd3cbaf78d73d5984f",
+        "pnpm-lock.yaml": "633148ef3c61becc551028139e9c61ebc223ee67c15c1ac9e4ede78037aa4613",
+        "pnpm-workspace.yaml": "186929ba9bdc685b952462c2bc306de986c969b65dab025fe00ca7f6808f12eb",
+        "src/components/motion.tsx": "4c67b4ba4024100296cb23748d224e9af9cd29f5c2ee9b22d699237ae58c002e",
+        "tests/e2e/ai-modal-states.e2e.ts": "868bb2be21be6769783ae18778964cdfbef9f7a252fe0f450fe43eb932ee25ff"
+      },
+      "candidateStatus": "held, not committed, Compact/multipage failed twice; pre-upgrade baseline fails too",
+      "audit": "1 accepted existing high advisory; 0 new findings"
+    },
+    "cloakdrop": {
+      "sourceCommit": "575d430a1d6cac33ab28696b2efa82cf4887a504",
+      "branch": "codex/air-refresh",
+      "originDev": "3b018a93005fcb06cf45b766e7527c4eba5ed4f6",
+      "originMain": "51f178dbee95cee8851387846752f0a73ca8ebb0",
+      "candidateCommitted": true,
+      "evidence": "../cloakdrop/docs/air/evidence/dependencies-2026-10-21.json",
+      "buildRoot": "/Users/sumitsahoo/Developer/cloakdrop/apps/site/dist",
+      "devMergeConflictFree": true,
+      "devBehindAhead": [0, 4],
+      "mainMergeConflictFree": true,
+      "mainBehindAhead": [0, 3],
+      "outdatedDirect": {
+        "typescript": {
+          "current": "6.0.3",
+          "wanted": "6.0.3",
+          "latest": "7.0.2",
+          "dependent": "site",
+          "location": "/Users/sumitsahoo/Developer/cloakdrop/apps/site/node_modules/typescript"
+        }
+      },
+      "resolvedDirect": {
+        "@astrojs/check": "0.9.11",
+        "@astrojs/sitemap": "3.7.4",
+        "astro": "7.4.1",
+        "typescript": "6.0.3",
+        "wrangler": "4.151.3"
+      },
+      "buildFiles": 18,
+      "buildHashInventory": "cloakdrop-build.json",
+      "buildInventorySha256": "af5903d3df91bac2b49e6ca76f7877066ab2836622b9646a7f566c2c9eb2fa35",
+      "wranglerDryRun": "4.151.3 passed; not deployed",
+      "audit": "0 findings"
+    },
+    "cloakresume": {
+      "sourceCommit": "5c3bc0dd422022bd9d4bf6cd2b830775b7bd9f4f",
+      "branch": "codex/air-refresh",
+      "originDev": "dcf6ef789a5886c352593284d82fe10a00f671a3",
+      "originMain": "a15fce0036570f52e9c7ecf84641ec8758684b4d",
+      "candidateCommitted": true,
+      "evidence": "../cloakresume/docs/air/evidence/dependencies-2026-10-21.json",
+      "buildRoot": "/Users/sumitsahoo/Developer/cloakresume/dist",
+      "devMergeConflictFree": true,
+      "devBehindAhead": [0, 34],
+      "mainMergeConflictFree": true,
+      "mainBehindAhead": [1, 34],
+      "outdatedDirect": {},
+      "resolvedDirect": {
+        "@fontsource-variable/geist": "5.3.0",
+        "@fontsource/instrument-serif": "5.3.0",
+        "@fontsource/lora": "5.3.0",
+        "harper.js": "2.13.0",
+        "html2canvas-pro": "2.5.2",
+        "jspdf": "4.2.1",
+        "lucide-react": "1.61.0",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "workbox-window": "7.4.1",
+        "@tailwindcss/vite": "4.3.3",
+        "@types/node": "26.6.5",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
+        "@vite-pwa/assets-generator": "2.0.0",
+        "@vitejs/plugin-react": "6.1.2",
+        "puppeteer-core": "25.15.0",
+        "sharp": "0.35.5",
+        "tailwindcss": "4.3.3",
+        "typescript": "7.0.2",
+        "vite": "1.3.0",
+        "vite-plugin-pwa": "2.0.0",
+        "vite-plus": "1.3.0"
+      },
+      "buildFiles": 105,
+      "buildHashInventory": "cloakresume-build.json",
+      "buildInventorySha256": "4b033fc7ab877f398725cb622581b72cf92037dea2ffc68babbd09fd10d8d41d",
+      "wranglerDryRun": "4.151.3 passed; not deployed",
+      "audit": "0 findings"
+    },
+    "cloakimg": {
+      "sourceCommit": "2718284a91ae8b0d5480e1b4adb9bd3cb980bd50",
+      "branch": "codex/air-refresh",
+      "originDev": "a613be5d350d6f0baaee295a6f09750863ea3802",
+      "originMain": "77a8fccffbec7260892c28d556d3fa2722cad557",
+      "candidateCommitted": true,
+      "evidence": "../cloakimg/docs/air/evidence/dependencies-2026-10-21.json",
+      "buildRoot": "/tmp/cloakyard-rollout-2026-10-21/cloakimg-clean/dist",
+      "devMergeConflictFree": true,
+      "devBehindAhead": [0, 23],
+      "mainMergeConflictFree": true,
+      "mainBehindAhead": [1, 23],
+      "outdatedDirect": {},
+      "resolvedDirect": {
+        "@fontsource/archivo": "5.3.0",
+        "@fontsource/jetbrains-mono": "5.3.0",
+        "@huggingface/transformers": "4.3.1",
+        "@jsquash/avif": "2.1.1",
+        "@mediapipe/tasks-vision": "1.1.1",
+        "fabric": "7.4.0",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite-plugin-pwa": "2.0.0",
+        "workbox-window": "7.4.1",
+        "@tailwindcss/vite": "4.3.3",
+        "@testing-library/jest-dom": "7.0.1",
+        "@testing-library/react": "16.3.3",
+        "@testing-library/user-event": "14.6.8",
+        "@types/node": "26.6.5",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
+        "@vite-pwa/assets-generator": "2.0.0",
+        "@vitejs/plugin-react": "6.1.2",
+        "puppeteer-core": "25.15.0",
+        "tailwindcss": "4.3.3",
+        "typescript": "7.0.2",
+        "vite": "1.3.0",
+        "vite-plus": "1.3.0"
+      },
+      "buildFiles": 101,
+      "buildHashInventory": "cloakimg-build.json",
+      "buildInventorySha256": "ed0f9bed48c6b54e893238d3d61491f673b725c9892c80a580d99e11e4b03908",
+      "wranglerDryRun": "4.151.3 passed; not deployed",
+      "audit": "0 findings",
+      "parkedDraft": "15 files byte-preserved; not included in tested commit",
+      "native": {
+        "libheif": {
+          "version": "1.23.6",
+          "commit": "f81f28ac014b1c28dee483ac45b72c6b05bc421a"
+        },
+        "libde265": {
+          "version": "1.1.3",
+          "commit": "ba62bf4cfb3242f3bf0a45617ff09e35236e4d82"
+        },
+        "kvazaar": {
+          "version": "2.3.2",
+          "commit": "6040962bed5cc68c5ad01234c38c08b8b2822068"
+        },
+        "emscripten": {
+          "version": "6.0.13",
+          "image": "emscripten/emsdk@sha256:fb7864e398acfda863dfcea78b8bc8adad359fa60c6a0bbeb845931de64aa68a"
+        }
+      }
+    }
+  },
+  "noPushMergeOrDeploy": true,
+  "blockers": [
+    "PDF candidate has a failing Compact/multipage grounded-answer check, also reproduced on its pre-upgrade build. Do not commit or integrate it yet.",
+    "Resume live font/token migration, final target audit and acceptance remain unfinished.",
+    "IMG parked entry draft and full Air migration remain unfinished; committed dependency-only baseline retains legacy styling.",
+    "Existing physical/assistive acceptance and Drop RC signing/notarization limits remain open."
+  ],
+  "exceptions": [
+    {
+      "app": "cloakdrop",
+      "kind": "compatibility",
+      "detail": "TypeScript 6.0.3 is current supported major for Astro Check 0.9.11 (peers ^5 || ^6); latest TS 7.0.2 is intentionally not installed."
+    },
+    {
+      "app": "cloakdrop",
+      "kind": "explicit-user-approval",
+      "detail": "Official yt-dlp frozen Python/OpenSSL runtime exception retained; embedded libraries not claimed latest."
+    },
+    {
+      "app": "cloakpdf",
+      "kind": "existing-user-approved-security-exception",
+      "advisory": "GHSA-86w9-cpqp-85rv",
+      "package": "node-forge@1.4.0",
+      "expires": "2026-11-06",
+      "detail": "One high advisory, no patched upstream release. Existing osv-scanner.toml unchanged; no exception extended."
+    }
+  ],
+  "cleanup": {
+    "taskOwnedServersStopped": [
+      5173, 8220, 8221, 8222, 8223, 8224, 8225, 8226, 8227, 8228, 8230, 8231, 8232
+    ],
+    "imgWorktree": "Retained for exact candidate review at /tmp/cloakyard-rollout-2026-10-21/cloakimg-clean",
+    "imgParkedFilesUnchanged": 15,
+    "privateModelLogsCommitted": false
+  }
+}

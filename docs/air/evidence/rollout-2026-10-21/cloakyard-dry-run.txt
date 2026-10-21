@@ -1,0 +1,7 @@
+
+ ⛅️ wrangler 4.151.3
+────────────────────
+✨ Read 16 files from the assets directory /Users/sumitsahoo/Developer/cloakyard/dist
+Total Upload: 0.34 KiB / gzip: 0.24 KiB
+No bindings found.
+--dry-run: exiting now.

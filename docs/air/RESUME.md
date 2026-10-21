@@ -1,6 +1,6 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-19
+## Start here in a new conversation — saved 2026-10-21
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
@@ -38,15 +38,200 @@ Drop [#40](https://github.com/cloakyard/cloakdrop/pull/40) at `5ee9a01`.
 All three Air 1.0.3 colour updates are live and production-verified. Drop main/dev
 integration is complete. Resume and IMG colour checkpoints remain local while
 their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`;
-its shared colour wheel remains next. See the deployment checkpoint below.
+its shared colour wheel, writing hints, content sections, template library, review and Options/export are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
+
+### Four-site deployment — 2026-10-21 (latest authorization)
+
+The user explicitly requests new individual `dev` → `main` PRs and deployment
+for **Cloakyard, CloakPDF, CloakDrop and CloakResume**, keeping `dev` synchronized.
+**IMG is excluded** while its redesign is pending; preserve its local draft and
+remote branches. This supersedes the earlier instruction to wait for completion
+of Resume/IMG before integrating the four included sites. Resume's remaining
+font/token and physical-device acceptance work stays open after deployment.
+PDF's required Compact/multipage check is still being investigated; do not treat
+this deployment request as permission to weaken a check. Current status and final
+PR/deployment proof belong in `ROLLOUT.md` and its evidence ledger.
+
+### Release authorization — 2026-10-21
+
+The user now authorizes the final family integration after the remaining work is
+complete: update dependencies to their latest stable releases, merge each completed
+product into `dev`, open a `dev` → `main` PR, merge after required checks, and prepare
+the deployments. Earlier local-only/no-push notes are historical for those pieces;
+they do not require another approval for this authorized final sequence. Continue
+bounded local work now, finish Resume before IMG, and keep IMG last. Do not publish
+unfinished migrations or call unresolved acceptance gates passed.
+
+Audit manifests, lockfiles, build tools, native packages and vendored runtimes using
+current upstream metadata. Remove unused packages first; validate upgrades in
+bounded commits with feature/output, responsive/theme and build/security checks.
+Document any compatibility constraint explicitly. The user-approved official
+yt-dlp bundle exception remains in force for Drop's frozen embedded runtime.
+Recheck versions immediately before integration, preserve release artifacts, and
+record PRs, CI, source/build hashes and deployment readiness in the final ledger.
+Initial preflight found 38 outdated direct entries; fresh registry metadata is in
+`docs/air/evidence/dependency-preflight-2026-10-21.json`. This is discovery only,
+not completed upgrades or a transitive/native/security audit. Latest Astro Check
+0.9.11 still supports TypeScript 5/6, so recheck that constraint before upgrading.
+
+### Rollout preparation checkpoint — 2026-10-21 (current)
+
+Read [the rollout ledger](ROLLOUT.md) before integration. Latest user request:
+“upgrade and prepare for rollout”. Direct and compatible transitive dependencies,
+CI actions, package managers and IMG's vendored codec have been audited against
+fresh upstream metadata. Current direct-package checks are empty except Drop's
+supported TypeScript 6 constraint. All five deployment dry runs pass.
+
+Passing bounded commits: Cloakyard `78516f5` / `dffebab`, Drop `4e03208` /
+`575d430`, Resume `5c3bc0d`, IMG `2718284`. Root/Drop responsive, neutral-link,
+GPU and feature checks pass. Resume: 372/372 production tests, 88 responsive
+comparisons, 34 template/paper captures and four exact PDF comparisons. IMG:
+470/470 tests, 26 tool panels, actual portrait face detection, history/export,
+HEIC upload, 88 baseline/current geometry comparisons and actual GPU checks pass.
+Its rebuilt libheif 1.23.6/libde265 1.1.3 codec preserves decoded pixels across the
+HEIC fixture and nine export round trips; container bytes change. The 15-file
+parked Air draft is byte-preserved and excluded from the tested dependency commit.
+The clean tested IMG worktree is `/tmp/cloakyard-rollout-2026-10-21/cloakimg-clean`.
+
+**PDF remains held and uncommitted over `1ce863a`.** Check/dead-code/461 units,
+16 smoke suites, seven extended suites, real PWA/output and horizon/link checks
+pass. A delayed native media-query notification exposed a reduced-motion race;
+the consumer now reads a current external-store snapshot. The deterministic
+regression fails on old source and passes on the fixed source; no assertion was
+weakened. Quality-tier real-model tests pass on both original fixtures, Compact
+passes the short fixture, but Compact/multipage fails its three-fact grounded
+answer check twice. The pre-upgrade build fails the same check. Baseline failure
+is not approval to waive it: resolve it before committing/integrating PDF.
+Sanitized results are in PDF `docs/air/evidence/dependencies-2026-10-21.json`;
+raw private document logs stay outside Git. No new security exception: PDF's
+existing node-forge exception expires 2026-11-06; Drop's official-bundle exception
+and TypeScript 6 constraint remain explicit.
+
+**Next:** resolve PDF's real-model gate, then resume the saved Resume font/token
+migration and final acceptance, then finish IMG last. Dependency upgrades do not
+complete those migrations. IMG's committed baseline still has the old palette /
+hyperlinks and coarse-landscape orientation lock; Air conformance remains open.
+No push, dev/main merge, PR or deployment was made in this pass. Ten projected
+merges of committed heads are conflict-free at recorded fetched refs; recheck after
+remaining work. Exact versions, build hashes, branches, dry-run logs and gates:
+`docs/air/evidence/rollout-2026-10-21/ledger.json`. Scratch:
+`/tmp/cloakyard-rollout-2026-10-21/`. Preserve the held PDF work and IMG draft.
+
+All task-owned preview/test servers are stopped. The clean IMG worktree is retained
+for exact candidate review.
+
+Previous migration checkpoint (still next after the PDF gate):
+**CloakResume unused foundation cleanup** (`f05f97e`, local, 2026-10-21).
+Removed 61 unused token names / 62 declarations, the 241-line unconsumed JSON
+mirror and both unreachable non-Air popup skin rules. Air is now the explicit
+normative authority in the bridge comments and source tests. Live fonts, document
+styles, token consumers, DragList and date placement/presence remain unchanged.
+88 responsive comparisons preserve geometry/computed styles; 81 are pixel-exact,
+and seven have only rounded-edge antialiasing (at most 57 pixels / 2 channel levels).
+256 date layouts, 124 neutral link states / 32 keyboard checks, all 34 template/
+paper captures and four actual PDF raster/text/geometry/link comparisons pass.
+**372/372 production tests, 10 files, zero skips, 537.78s**. Check/build, 86-source
+inventory, 18 portability assertions and exact family sync pass. All 283 recorded
+source/config/test/document/asset/build files (105 dist) stayed frozen through
+testing and the commit hook. Product worktree is clean.
+Evidence: Resume `docs/air/evidence/unused-foundations-2026-10-21.json`.
+Next: **live font/token bridge migration, then final product acceptance**. The
+remaining 63 token names are traced in the evidence; three transitive orphan
+candidates are `--color-ink-2`, `--color-overlay` and `--color-rule`. Archivo still
+has base/body/form references; JetBrains remains in Preview loading and the
+compiled mono bridge. Preserve the explicit rich-text code font, all 17 template
+families and PDF font preparation. Do not delete fonts solely by filename.
+Physical/assistive acceptance stays open, and IMG stays last. Final dependency
+updates/integration follow the authorization above. Scratch:
+`/tmp/cloakresume-air-cleanup/`; owned preview ports 8212/8213 are stopped.
+
+### Previous checkpoint — preview assets and metadata
+
+Previous bounded piece: **CloakResume preview assets and metadata** (`448daea`, local, 2026-10-21).
+**372/372 production tests, 10 files, zero skips, 530.12s**. The final complete
+run passes after updating one stale README audit-wording assertion to verify
+actual Air inventory coverage; historical source/output checks remain intact.
+Five repeat/dist asset hashes, eight manifest image decodes, README theme selection,
+88 responsive geometry/style comparisons, 124 neutral link states / 32 keyboard
+checks, 34 template/paper and four actual PDF comparisons pass. Format/lint/types,
+build, 86-source inventory, 18 portability assertions and exact family sync pass.
+All 284 recorded source/config/test/document/asset/build files (105 dist) remained
+frozen, including after the commit hook. Product worktree is clean.
+Evidence: Resume `docs/air/evidence/preview-assets-2026-10-21.json`.
+Actual light/dark landing/editor captures replace the old device-named images.
+The Air social card uses the canonical mark, pinned CSS and real editor proof.
+Manifest colours, screenshot labels/dimensions, social text and README theme
+selection agree. Active README/contributor/asset guidance now names Air.
+The obsolete `.cr-input` generator selector and 58 lines of unused field skin/
+comments are removed. Generators are smaller; no runtime feature or dependency
+was added. Live fonts/tokens, date popup and output adapters remain traced in
+`docs/air/code-cleanup.md` and [the family cleanup record](CODE_CLEANUP.md).
+Next: **full-product cleanup and acceptance**, starting with the exact font/token/
+selector consumer audit and remaining inventory/44px target gates. Preserve all
+17 templates, paper/JSON/PDF output and validated flows. Physical/assistive gates
+remain open. CloakIMG stays last with its parked draft untouched. Final integration
+follows the release authorization above after the remaining work passes.
+Scratch: `/tmp/cloakresume-air-assets/`. Preview/dev servers 8208/8209/8210 are stopped.
+
+### Previous checkpoint — PWA safety and static recovery
+
+Previous bounded piece: **CloakResume PWA safety and static recovery** (`24c89e6`, local, 2026-10-21).
+Neutral in-flow offline/update/busy/error states retain editor space and focus.
+Updates flush the final edit before activation and reload, wait for actual worker
+activation, preserve this tab during another tab's update, and recover from storage,
+delivery and failed-install paths. Short-screen resize keeps focused actions visible.
+Root `404.html` now builds with pinned Air CSS, no-script recovery, safe requested
+path text and true installed-route 404. Removed the 527-line legacy page, obsolete
+`.tb`/toast skins, spinner and timed reload; keep the live date-picker adapter.
+384 light/dark/enlarged layouts, 12 forced-colour cases, 104 neutral link states,
+28 keyboard checks and 11 focused PWA tests pass. All 34 template/paper captures
+and four real A4/Letter PDF comparisons match `54be0f1`. Safari/Firefox real local
+updates preserve the final edit; Firefox actual 200% and native recovery checked.
+**372/372 production tests, 10 files, zero skips, 544.88s**. All 138 source/config/
+asset files and 103 build files remained frozen. The 83-source inventory, 18
+portability checks, format/lint/types, build and exact family sync pass.
+Owned Safari/Firefox tabs are closed, zoom restored; servers 8206/8207/56491 stopped.
+Evidence: Resume `docs/air/evidence/pwa-recovery-2026-10-21.json`.
+Maintain [the family cleanup record](CODE_CLEANUP.md) and Resume's
+`docs/air/code-cleanup.md`; retained code must have a named live consumer.
+Next: **actual OG/PWA/README assets and metadata**, including the stale screenshot
+capture selector, then full-product acceptance/cleanup. Physical/assistive gates
+remain open. CloakIMG stays last with its parked draft untouched. No push/deploy.
+Scratch: `/tmp/cloakresume-air-pwa/`.
+
+### Previous checkpoint — Options/export
+
+Previous bounded piece: **CloakResume Options and export controls** (`54be0f1`, 2026-10-21).
+Shared Air dialog/sheet retains every command with readable neutral rows, wrapped
+paper choices, background inertness and immediate handoffs. Native JSON picker
+cancel/invalid/replacement/same-file paths preserve the draft. PDF actions reserve
+busy labels, block duplicates and keep focus with real failure/retry and status.
+Keyboard wrap scrolls its target into view; the final Air blue focus outline has
+full clearance. Current media-query snapshots prevent stale chrome during resize
+and modal dismissal. Removed BottomSheet, unused configuration, 183 lines of obsolete
+CSS/six keyframes, the delayed handoff and two unused breakpoint exports.
+**361/361 production tests, 9 files, zero skips, 510.69s**; 177 editor cases,
+192 layouts and eight unique contrast pairs pass. All 136 recorded runtime/token/
+config files and 99 build files stayed frozen. All 34 template/paper captures and
+actual A4/Letter PDF raster/text/geometry/link comparisons match the baseline.
+Safari handoffs/native-picker cancellation and Firefox actual 200% checked; own
+tabs closed and zoom restored. Preview servers 8202–8205 are stopped.
+Evidence: Resume `docs/air/evidence/options-export-2026-10-21.json`.
+Maintain [the family cleanup record](CODE_CLEANUP.md) and Resume's
+`docs/air/code-cleanup.md` each piece; retained legacy code has named consumers.
+Next: PWA safety and static 404, then actual OG/PWA/README assets.
+Physical/assistive gates remain open; IMG stays last with its parked draft untouched.
+No push/deploy. Scratch: `/tmp/cloakresume-air-options/`.
 
 Latest follow-up: **all public-page links stay neutral, including hover**.
 The user explicitly included Cloakyard's content links and required the rule in
 Air. Version 1.0.6 removes the previous blue-body-link permission, preserves angled
 cues/inline underlines and blue focus outlines, and supplies a portable all-anchor
 browser checker. Local correction and deployment proof are tracked in
-`docs/air/neutral-links-2026-10-19.md`; publication is pending. Resume/IMG stay local.
+`docs/air/neutral-links-2026-10-19.md`; root/PDF/Drop are live and production-verified.
+All 162 deployed files match; 580 live link-state and 202 keyboard checks pass.
+Resume/IMG stay local, with Resume’s 303 production tests passing.
 
 Previous follow-up: the user explicitly prefers **angled hyperlinks** and the
 approved neutral navigation. Air 1.0.5 supersedes the straight-link decision in
@@ -66,7 +251,7 @@ entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Resume's next editor piece is the primary-colour wheel. IMG stays parked.
+Resume's next piece is final cleanup/acceptance. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -89,7 +274,7 @@ same family; landing-only or token-only work is not a completed migration.
   disclosure on small screens, and the family logo size. Do not undo those explicit
   user refinements. Use actual product logos on the family homepage.
 - The user prefers a **colour wheel**. PDF and the canonical reference use the Air
-  hue/saturation wheel, brightness and exact hex. IMG and Resume adoption remains open.
+  hue/saturation wheel, brightness and exact hex. IMG adoption remains open; Resume adoption is software-validated.
 - Shaders are implemented in the landing artwork with visible finite motion and
   static/reduced-motion fallbacks. No decorative shader inside an editor. Real-device
   GPU/battery/thermal acceptance is still open; do not claim it from emulation.
@@ -106,27 +291,29 @@ same family; landing-only or token-only work is not a completed migration.
   Drop RC1 is published through its verified tag. The user then explicitly authorized
   its website deployment, then deployment of the app-coloured shaders. All three
   released sites now have dev integration, merged main PRs and verified production
-  builds. Resume/IMG stay local. No subagent delegation was requested.
+  builds. Resume/IMG continue locally until the remaining work passes; the latest
+  authorization adds final dependency updates and dev -> PR -> main integration.
+  No subagent delegation was requested.
 
 ### Repository state at handoff
 
-Root uses `codex/air-refresh`, based on deployed main `8abac04` (PR #13).
-PDF uses `codex/air-brand-horizons`, based on deployed main `8f801c3` (PR #205).
-Local production-evidence commits follow these merges. Drop uses
-`codex/air-refresh`, based on deployed main `e3edf4e` (PR #41). Resume/IMG remain
-on `codex/air-refresh`; their hyperlink checkpoints are `f1c49cd` and `c38e204`.
+Root uses `codex/air-refresh`, based on deployed main `aa0a1aa` (PR #15).
+PDF uses `codex/air-brand-horizons`, based on deployed main `f863471` (PR #206).
+Drop uses `codex/air-refresh`, based on deployed main `51f178d` (PR #43).
+Local production-evidence commits follow these merges. Resume/IMG remain
+on `codex/air-refresh`; their neutral-link checkpoints are `493e4f5` and `8cbc910`.
 All five carry the Air 1.0.6 neutral hyperlink rule and portable contract, retaining the app-coloured palette. IMG also has the
 parked runtime draft below; its isolated horizon commit preserves that draft. Recheck
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
-| Repository  | Last implementation/checkpoint commit | Current scope                                                                                                    |
-| ----------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `8abac04`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows          |
-| cloakpdf    | `8f801c3`                             | Software acceptance complete; human/device and additional inference combinations remain open                     |
-| cloakimg    | `c38e204`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                       |
-| cloakresume | `f1c49cd`                             | Entry/recovery/shell/fields/entries/contact/select/dates/logo/photo implemented; wheel/review/PWA/assets pending |
-| cloakdrop   | `e3edf4e`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                  |
+| Repository  | Last implementation/checkpoint commit | Current scope                                                                                          |
+| ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| cloakyard   | `e66bcf9`                             | Air source/deployed home; current cleanup and authorized dependency/integration handoff commit follows |
+| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open           |
+| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending             |
+| cloakresume | `f05f97e`                             | Unused foundations removed; live font/token bridge and final product acceptance next                   |
+| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open        |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -135,6 +322,27 @@ The inventory now covers 95 PDF surfaces including static/artwork/root HTML. The
 91 prior sources remain implemented; the new OG/metadata entries are validated as
 static artifacts. Root `404.html` now replaces the retired public entry and is implemented.
 Interactive final `validated` flags remain false pending device/assistive acceptance.
+
+### Neutral hyperlink text and hover — deployed on 2026-10-19
+
+Air 1.0.6 (`e7c8a4bcfbc5`) requires neutral public-page link text in every state,
+including hover. Inline links stay underlined; directional links retain ↗; blue
+is reserved for keyboard focus outlines/active markers, with system forced colours.
+All five portable specifications and the shared checker agree. The checker uses
+OS-created temporary evidence directories; the CodeQL finding is resolved.
+
+- cloakyard: PRs #14 and #15, main `aa0a1aa`, Cloudflare `565c336f` at 100%.
+- cloakpdf: PR #206, main `f863471`, Cloudflare `eb28ae8d` at 100%.
+- cloakdrop: PRs #42 and #43, main `51f178d`, Cloudflare `467ce2a7` at 100%.
+- All release checks report success. Production proof covers 162 matching files, three
+  missing routes, 580 link-state cases and 202 keyboard checks. Desktop/laptop/phone
+  light/dark captures, content links and actual policy views were inspected.
+- Resume’s 303 production tests pass; its neutral-link and checker commits remain
+  local (`493e4f5`). IMG’s isolated contract/checker checkpoint (`8cbc910`) passes;
+  the neutral landing rule remains in its parked draft. Do not publish IMG yet.
+- Evidence: each repo’s `docs/air/neutral-links-2026-10-19.md` and dated production
+  folder. Next remains Resume’s colour wheel, then IMG last. Human/device gates
+  remain open. Native apps, RC DMG and release tags are unchanged.
 
 ### Approved angled hyperlinks — deployed on 2026-10-19
 
@@ -295,28 +503,129 @@ Root contains the canonical contract, palette, gallery, home and family evidence
   IMG's parked draft is preserved. Physical GPU/battery/thermal and assistive gates
   remain open. Do not repeat these completed deployments.
 
-### Exact next bounded piece: CloakResume primary-colour wheel
+### Exact next bounded piece: CloakResume final cleanup and acceptance
 
-1. Read Resume AGENTS/CLAUDE/DESIGN, `docs/air/editor-audit.md` and the inventory.
-   Entry/recovery/shell, shared fields/entries, contact/select, dates and logo/photo
-   are implemented. Read-only preparation: `/tmp/cloakresume-air-logo/next-wheel-notes.md`.
-2. Adopt canonical `docs/air/colour.mjs`, hue/saturation wheel, brightness and exact
-   hex in `ColorPickerContent.tsx`. Preserve all ten preset names/values and the
-   exact stored primary colour until explicit editing, including achromatic hue
-   memory. Current HSL pointer lightness clamp and 48% thumb/full pointer radius
-   disagree; use the canonical mapping. Preserve normalizePrimaryColor, derivePalette,
-   template fonts/geometry and actual export output. No new colour implementation.
-3. Trace desktop ToolbarCenter popup and mobile overflow sheet; retain focus,
-   Escape/Tab, short-screen/visual-viewport placement, pointer capture/cancel/lost
-   capture, keyboard Shift/Home/End, invalid hex recovery and forced-colour fallback.
-4. Continue remaining sections/hints, template/library, four review tabs,
-   overflow/export busy/recovery, PWA safety and true static404. Actual Resume
-   OG/PWA/README assets remain legacy; regenerate after the editor. Ready Offline
-   remains oversized at enlarged text. IMG remains last and parked.
-5. Run check/build and the full serial production suite:
+1. Read both repositories’ instructions, complete DESIGN and current inventory/
+   validation. Entry through PWA/static recovery and actual preview assets are
+   implemented locally. Do not repeat the finished PWA or image migration.
+2. Trace every remaining compatibility selector, token/font registration and
+   public asset through runtime, templates, export, lazy/loading and test paths.
+   The unused JSON mirror and 61 dead token names are already removed. Start
+   with the remaining `index.css`, `cloak-family.css`, `tokens.css` and
+   Archivo/JetBrains references. Record the live consumer or remove the unused
+   definition and asset together; preserve document typography and print geometry.
+3. Keep MonthYearField’s live `useAnimatedPresence` / `.cr-popover` adapter until
+   replaced deliberately. ToolbarCenterBridge, Editor, GithubIcon and the lazy
+   exporter/font preparation also have named consumers; do not delete by filename.
+4. Reconcile every pending inventory row and Phase 5 gate with actual evidence.
+   Repeat the remaining coarse-pointer 44px target sweep, enlarged/short-screen,
+   input, error/empty/long-content and complete saved-file/export journeys. Keep
+   browser zoom separate from root-font stress; real touch/software keyboard,
+   OS IME, spoken assistive and GPU/battery gates cannot be closed by emulation.
+5. Keep cleanup bounded. For every changed surface inspect desktop/laptop/tablet/
+   phone light/dark and affected native/forced-colour states; compare all 17
+   templates, both papers and real PDF raster/text/geometry/link output where
+   typography or shared selectors could affect it. No template restyling.
+6. Run check/build/design/portability and the full serial production suite:
    `CLOAKRESUME_BROWSER_BUILD=production vp test run --no-file-parallelism`.
-   Do not edit runtime/build while it runs. No feature skips or timeout inflation.
-   Native/physical touch, keyboard/IME and spoken assistive gates remain distinct.
+   Freeze runtime/dist until completion, with zero required skips. Regenerate
+   real preview assets only if a changed visible surface makes them stale.
+7. Keep TODO/evidence/handoff/cleanup current and commit each passing piece
+   locally. Do not claim full-product acceptance while required gates remain.
+   CloakIMG stays last and its dirty draft remains untouched until its turn.
+   Final dependency audit and dev → PR → main integration follow only after the
+   remaining migrations and required gates pass; see current release authorization.
+
+Completed Resume Options/export (`54be0f1`, 2026-10-21): shared Air sheet, immediate handoffs,
+real busy/recovery, native JSON cancellation/replacement, responsive paper/focus,
+scroll-visible keyboard wrap and swipe/cancel. Removed the legacy sheet, 183 lines
+of unused CSS, delayed handoff and two unused breakpoint exports. Air dialogs now
+use the shared blue focus rule. Evidence: Resume
+`docs/air/evidence/options-export-2026-10-21.json`; scratch `/tmp/cloakresume-air-options/`.
+
+Completed Resume review (`ed2a25d`, 2026-10-21): Air persistent lazy frame,
+all four panes, complete report text, actual download/scan status and timestamps,
+retry/stale/duplicate guards, keyboard/responsive focus and field/JD handoffs.
+349 tests, 1,154 layouts/14 contrast pairs, native Safari/Firefox actual 200% and
+exact 34 template/paper plus actual A4/Letter PDF output comparisons pass. Runtime
+and dist stayed frozen. Evidence: Resume `docs/air/evidence/resume-review-2026-10-21.json`.
+Physical/assistive gates remain open. Scratch: `/tmp/cloakresume-air-review/`.
+
+Completed Resume template library (`5a001e5`, 2026-10-21): Air shared wide dialog,
+compound search and neutral choices, actual previews with metadata first, complete
+matching/clear/no-results, composition handling, sample fallback only for untouched
+drafts, inertness, keyboard/swipe/nested recovery and responsive state/focus fixes.
+338 tests, 386 distinct layouts/eight contrast pairs and exact output comparisons
+pass; native Safari/Firefox 200% reviewed. Evidence and implementation notes are in
+Resume `docs/air/evidence/template-library-2026-10-21.json` and `validation.md`.
+
+Completed Resume content sections (`b75eb76`, 2026-10-21): all 13 source compositions
+reviewed with empty/populated/custom/imported values. Reflowed Award/Certification
+year and Stats/Extras fields, ordinary group headings, neutral JD note/action and
+associated Profile help. Removed unused legacy label CSS. Explicit Analyze opener
+focus fixes native Safari pointer return. Schemas, rich text, dates, logo/photo,
+hints, CSV, reorder/removal, grammar and JSON/PDF output are preserved; JD remains
+outside the existing Harper scan.
+
+**323/323 tests in eight files, zero skips, 443.4s**; 143 editor cases and all
+34 template/paper cases with five fixtures each. **1,666 distinct layouts and 16
+contrast pairs**, plus 130 final JD rechecks after correcting its icon to 18px/1.6.
+Native Safari and Firefox actual 200% reviewed; zoom reset and own tabs closed.
+All 34 before/after captures and geometry records and both exported PDF raster
+hashes match. Check/build, 79-source inventory, 18 portability and exact family sync
+pass. Evidence and full-suite log: Resume `docs/air/evidence/content-sections-2026-10-21.json`.
+Runtime/dist stayed unchanged through the full suite. Initial new-test failures
+were a fixture caret assumption and a programmatic focus-visible assumption;
+those now use an explicit end caret and real keyboard Tab, with no weakened checks.
+Scratch: `/tmp/cloakresume-air-sections/`; all 13 raw matrix in `layouts/`, final JD
+matrix in `jd-final/`. This turn's previews 8191/8192/8193 are stopped; older servers
+remain untouched. Local only; full product and physical/assistive gates stay open.
+
+Completed Resume writing hints (`f334b66`, 2026-10-21): Air trigger/popover, readable
+semantic kind and untruncated phrase/reason, neutral explicit replacements and
+visible close. All six consumers preserve first-match replacement, rich text,
+later occurrences and autosave/reload. Opening is non-destructive. Escape/close,
+Tab exit and outside pointer/focus work; applying returns to the surviving field,
+and a refreshed report stays closed. Review jumps now focus the field; the old
+decorative glow is retired. Removed duplicate placement/animated presence, tiny
+mono/uppercase chips, tinted replacement skin and unused .popover rules.
+
+**318/318 in eight files, zero skips, 421.01s**; 138 editor cases and 34
+17-template/two-paper cases with five fixtures each. **452 layouts, 26 contrast
+pairs**, native Safari and Firefox actual 200%. All 34 before/after captures and
+geometry records plus A4/Letter exported PDF raster hashes match exactly.
+Check/build, 79-source inventory, 18 portability checks and exact six-document sync
+pass. Eighteen proof PNGs and the full-suite log accompany the compact evidence.
+The final production build was unchanged throughout the full suite. Early targeted
+runs caught an Awards helper that assumed textareas, then a hidden photo-input
+selector; both were fixed. The real missing review-jump focus was fixed without
+weakening the assertion. Source tests follow shared placement and Air focus now;
+no timeout increase or functional assertion removal.
+Scratch: `/tmp/cloakresume-air-hints/`; raw matrix:
+`/var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakresume-hints-tHtuA6`.
+Native review tabs closed, Firefox zoom reset; this turn's preview on 8190 is stopped.
+Existing preview servers remain untouched. Local only; physical/assistive and full
+product gates are still open.
+
+Completed Resume primary colour (`a31e681`, 2026-10-21): shared canonical HSV mapping,
+208px wheel, Brightness, exact hex and independent native precision ranges.
+Presets and saved colours survive untouched until explicit editing; black/grey
+memory, pointer cancel/lost capture, keyboard shortcuts and invalid-hex recovery
+are covered. Desktop Tab exit and compact modal focus/inertness/return share one
+portal, with retained phone swipe dismissal/cancellation. Closed details content
+is excluded from the shared modal Tab order. Removed HSL/lightness math, clamping,
+old slider CSS/tokens, global pointer listeners and unused colour-event bridge.
+
+**310/310 in eight files, zero skips**, 130 editor and 34 template/paper cases;
+195 layouts, 14 contrast pairs, Safari and Firefox actual 200%. All 34 exact
+before/after template/paper renders and two Poppler-rendered PDF exports match.
+Check/build/79-source design/18 portability/exact sync pass. Fourteen proof PNGs
+and compact evidence/full-suite log live in Resume's colour-controls evidence.
+The first full run exposed two stale source-location/count assertions; they now
+follow the shared component and current source count. No assertion removed,
+feature skipped or timeout increased. Full migration remains unfinished.
+Scratch: `/tmp/cloakresume-air-colour/`; native review tabs closed, Firefox zoom
+restored. This turn's preview servers (8188/8189) are stopped; pre-existing servers remain untouched.
 
 Completed Resume logo/photo (`9cc74df`): Air search/selection/clear and
 photo actions; stable icon names/80-result cap, visible unknown imported names,
