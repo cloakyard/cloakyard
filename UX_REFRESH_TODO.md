@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry, shell, writing widgets, all 13 content sections, template library and review software-validated locally; overflow/export next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry, shell, writing widgets, all 13 content sections, template library, review, Options/export and PWA/static recovery software-validated locally; actual assets next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -766,6 +766,27 @@ items retain their documented human/device gates; they do not imply full accepta
 
 - [ ] Physical touch and spoken assistive acceptance; browser emulation does not certify these gates.
 
+## Current bounded piece — Resume PWA and static recovery (2026-10-21)
+
+Product checkpoint: `24c89e6` (local only).
+
+- [x] Neutral in-flow offline/update/error notices; guarded busy actions, no focus
+      stealing, dismissal focus return, paused offline timer and reachable enlarged-text controls.
+- [x] Save the last edit before activation and reload; retain drafts on storage or
+      delivery failure and another tab's activation. Later valid installs remain discoverable.
+- [x] Replace the legacy 527-line static 404 with a standalone Vite Air entry;
+      no-JavaScript recovery, safe requested-path text, noindex and real installed-route 404.
+- [x] Remove obsolete `.tb`/toast skins, spinner and timed reload. Keep the live
+      MonthYearField presence/popover adapter. Evidence: Resume
+      `docs/air/evidence/pwa-recovery-2026-10-21.json`.
+- [x] 372/372 production tests in 10 files, zero skips; 384 layouts, 12 forced-colour
+      cases, native Safari/Firefox updates, 34 preserved template/paper captures
+      and four exact PDF output comparisons. All 138 recorded source/config/assets
+      and 103 build files stayed frozen. Inventory covers 83 sources.
+- [ ] Next: actual OG/PWA/README captures, metadata and generator references; then
+      final product acceptance and cleanup. Physical/assistive gates remain open.
+      Local commits only; CloakIMG stays last with its parked draft untouched.
+
 ## Phase 5 — CloakResume
 
 Maintain [the cleanup record](docs/air/CODE_CLEANUP.md) with each piece: remove proven
@@ -775,7 +796,7 @@ unused code, trace retained consumers, and keep current inventories/references a
 - [x] Editor header, section rail/picker/panel frame, preview surround and zoom, paper/view choices. Software evidence: Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
 - [x] Shared text/CSV/textarea fields, labels/help/validation and scoped formatting. Software evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json`; preserve preview pagination/output throughout.
 - [x] Shared repeated-entry headings/Add/empty, full-width nested bullets, stable identity and reorder/removal focus. Software evidence: Resume `docs/air/evidence/repeated-entries-2026-10-19.json`.
-- [x] Content-editor interiors and custom writing widgets software-validated; overflow/PWA gates below remain open.
+- [x] Content-editor interiors and custom writing widgets software-validated; physical/assistive and final product gates below remain open.
 - [x] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description. Software evidence: Resume `docs/air/evidence/content-sections-2026-10-21.json`; physical/assistive gates remain open.
 - [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
@@ -788,7 +809,7 @@ unused code, trace retained consumers, and keep current inventories/references a
 - [x] Template library and actual previews; evidence in Resume `docs/air/evidence/template-library-2026-10-21.json`. Search, draft-only content, focus, resize and nested recovery pass.
 - [x] Options and export controls software-validated; Resume `docs/air/evidence/options-export-2026-10-21.json`. Immediate handoffs, native JSON cancel/replacement, busy/error/retry, visible focus and responsive state are covered; physical gates remain open.
 - [x] ATS overview/keywords/insights/parse preview, writing review, field jumps and issue states; evidence in Resume `docs/air/evidence/resume-review-2026-10-21.json`. Physical/assistive gates remain open.
-- [-] Confirm, privacy, notices and error boundary implemented; Options sheet implemented; PWA/reload and remaining validation interiors stay open.
+- [x] Confirm, privacy, notices, error boundary, Options and PWA/static recovery software-validated. PWA evidence: Resume `docs/air/evidence/pwa-recovery-2026-10-21.json`; actual activation, last-edit/storage safety, failed-install recovery and true installed 404 are covered. Physical/assistive gates remain open.
 - [-] Mobile split/expanded preview, section navigation and short landscape implemented and software-validated; physical software-keyboard/IME and assistive acceptance remain open.
 - [ ] Test all 17 templates, A4/Letter, pagination, long content and image/logo boundaries.
 - [ ] Preserve template-specific colours/fonts/layout and printable/exported document geometry.

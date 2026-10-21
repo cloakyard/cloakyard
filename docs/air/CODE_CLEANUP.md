@@ -20,7 +20,7 @@ the shared Air frame and existing modal/swipe lifecycle. Export and document
 output code stays in place. Current documentation no longer refers to the
 nonexistent `Toolbar.tsx`; the real header is composed in `App.tsx` and `Layout.tsx`.
 
-Retained with traced consumers:
+Retained at the Options checkpoint (superseded by the PWA cleanup below):
 
 | Code                                                | Active consumer / next removal condition                                                             |
 | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -42,3 +42,30 @@ Next cleanup: audit the PWA prompt, registration/update lifecycle, static 404 an
 asset generators. Check obsolete loader/HTML/icon/screenshot references as each
 replacement lands. Do not sweep CloakIMG's parked dirty draft or KERR native UI.
 This is a scoped record, not a claim that every repository is free of dead code.
+
+## 2026-10-21 — PWA and static recovery
+
+- Retired the legacy `cr-toast` and `.tb` selectors, toolbar/toast presence rules,
+  Hallmark notice header, spinning icons and timed reload fallback. ReloadPrompt
+  now uses shared Air actions in normal flow and real worker activation.
+- Removed `public/404.html` (527 legacy lines). Root `404.html` is a Vite HTML
+  input importing the pinned Air CSS and one small recovery stylesheet; requested
+  path enhancement has no React dependency. Updated active test references.
+- Stopped using the Workbox message helper that discards its asynchronous result;
+  direct waiting-worker delivery catches synchronous failure. Registration listeners
+  remain active after failed/later installs and are removed on unmount.
+- `useAnimatedPresence` and `.cr-popover` remain live in MonthYearField. They are
+  not dead code. Existing lazy exporter, templates, fonts and file schema are unchanged.
+- Remaining asset work: `build-pwa-screenshots.mjs` still uses the retired `.cr-input`
+  selector. Replace it with actual editor captures in the next asset piece, and
+  trace Archivo/JetBrains registrations, legacy tokens and all image/metadata consumers
+  before removing anything. Do not infer unused assets from the initial bundle.
+- Ignore the local `.wrangler/` development cache. No new dependency was added.
+
+Evidence: `docs/air/evidence/pwa-recovery-2026-10-21.json` in CloakResume.
+Next: actual OG/PWA/README assets and metadata, then full-product cleanup and
+acceptance. Physical/assistive gates remain open; CloakIMG stays parked and last.
+
+Asset-piece cleanup follow-up: `.cr-input` styles have no current TSX consumer;
+the remaining script selector is stale. Remove that obsolete selector and its
+unused skin together when replacing the screenshot generator.

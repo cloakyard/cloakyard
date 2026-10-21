@@ -41,7 +41,33 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel, writing hints, content sections, template library, review and Options/export are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest bounded piece: **CloakResume Options and export controls** (`54be0f1`, 2026-10-21).
+Latest bounded piece: **CloakResume PWA safety and static recovery** (`24c89e6`, local, 2026-10-21).
+Neutral in-flow offline/update/busy/error states retain editor space and focus.
+Updates flush the final edit before activation and reload, wait for actual worker
+activation, preserve this tab during another tab's update, and recover from storage,
+delivery and failed-install paths. Short-screen resize keeps focused actions visible.
+Root `404.html` now builds with pinned Air CSS, no-script recovery, safe requested
+path text and true installed-route 404. Removed the 527-line legacy page, obsolete
+`.tb`/toast skins, spinner and timed reload; keep the live date-picker adapter.
+384 light/dark/enlarged layouts, 12 forced-colour cases, 104 neutral link states,
+28 keyboard checks and 11 focused PWA tests pass. All 34 template/paper captures
+and four real A4/Letter PDF comparisons match `54be0f1`. Safari/Firefox real local
+updates preserve the final edit; Firefox actual 200% and native recovery checked.
+**372/372 production tests, 10 files, zero skips, 544.88s**. All 138 source/config/
+asset files and 103 build files remained frozen. The 83-source inventory, 18
+portability checks, format/lint/types, build and exact family sync pass.
+Owned Safari/Firefox tabs are closed, zoom restored; servers 8206/8207/56491 stopped.
+Evidence: Resume `docs/air/evidence/pwa-recovery-2026-10-21.json`.
+Maintain [the family cleanup record](CODE_CLEANUP.md) and Resume's
+`docs/air/code-cleanup.md`; retained code must have a named live consumer.
+Next: **actual OG/PWA/README assets and metadata**, including the stale screenshot
+capture selector, then full-product acceptance/cleanup. Physical/assistive gates
+remain open. CloakIMG stays last with its parked draft untouched. No push/deploy.
+Scratch: `/tmp/cloakresume-air-pwa/`.
+
+### Previous checkpoint — Options/export
+
+Previous bounded piece: **CloakResume Options and export controls** (`54be0f1`, 2026-10-21).
 Shared Air dialog/sheet retains every command with readable neutral rows, wrapped
 paper choices, background inertness and immediate handoffs. Native JSON picker
 cancel/invalid/replacement/same-file paths preserve the draft. PDF actions reserve
@@ -90,7 +116,7 @@ entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Resume's next piece is PWA safety and static recovery. IMG stays parked.
+Resume's next piece is actual preview assets and metadata. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -144,13 +170,13 @@ parked runtime draft below; its isolated horizon commit preserves that draft. Re
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
-| Repository  | Last implementation/checkpoint commit | Current scope                                                                                           |
-| ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `a95e6b1`                             | Air source, implemented home, family TODO and this handoff; a documentation-only handoff commit follows |
-| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open            |
-| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending              |
-| cloakresume | `ed2a25d`                             | Entry/shell/writing/content/library/review software-validated; overflow/export/PWA/assets pending       |
-| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open         |
+| Repository  | Last implementation/checkpoint commit | Current scope                                                                                               |
+| ----------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| cloakyard   | `53d9f6d`                             | Air source and deployed home; current PWA appendix, cleanup and handoff documentation commit follows        |
+| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open                |
+| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                  |
+| cloakresume | `24c89e6`                             | Entry through PWA/static recovery software-validated; actual OG/PWA/README assets and final acceptance next |
+| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open             |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
