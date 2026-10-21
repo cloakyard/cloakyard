@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakPDF and CloakDrop website software checkpoints complete; CloakDrop RC published with the Air installer and Air website deployed; CloakResume entry/recovery, shell and shared writing fields, repeated entries, contact/select, date and logo/photo controls implemented; colour wheel next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry, shell, writing widgets and all 13 content sections software-validated locally; template library next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -147,7 +147,17 @@ Evidence: Drop `docs/audits/2026-10-19-{dependencies,installer,rc.1}.md` and
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 
-## Latest bounded piece — CloakResume writing hints (2026-10-21)
+## Latest bounded piece — CloakResume content sections (2026-10-21)
+
+- [x] Complete source/empty/populated acceptance for all 13 sections. Award/Certification year fields and Stats/Extras pairs use content-aware reflow; imported strings and separate arrays/IDs remain intact.
+- [x] Neutral Target JD notice and Air Analyze action, including native Safari opener focus return; associated Profile help. Removed the unused legacy uppercase/mono label skin.
+- [x] 1,666 distinct layouts, 16 contrast pairs; 130 JD rechecks after final icon correction. Desktop/laptop/tablet/phone, short landscape, themes, enlarged text, coarse/fine, forced colours, Safari and actual Firefox 200% reviewed.
+- [x] 323/323 production tests in eight files, zero skips (443.4s); 143 editor cases and all 34 template/paper cases × five fixtures. Check/build, 79-source inventory, 18 portability and exact family sync pass. Runtime/dist stayed fixed during the serial suite.
+- [x] All 34 before/after template captures/geometry and both actual A4/Letter PDF rasters match. Existing JSON, rich text, dates, photo/logo, CSV, hints, reorder/removal and restore workflows preserved.
+- [x] Local checkpoint `b75eb76`; inventory, product appendix, validation, proof captures and handoff current. Evidence: Resume `docs/air/evidence/content-sections-2026-10-21.json`.
+- [ ] Next: template library, then review/overflow/export/PWA/static recovery and actual assets. Physical input/IME/assistive gates remain open. No push/deploy; IMG last and parked.
+
+## Previous bounded piece — CloakResume writing hints (2026-10-21)
 
 Local implementation/evidence commit: Resume `f334b66`. No push or deployment.
 
@@ -741,9 +751,9 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Editor header, section rail/picker/panel frame, preview surround and zoom, paper/view choices. Software evidence: Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
 - [x] Shared text/CSV/textarea fields, labels/help/validation and scoped formatting. Software evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json`; preserve preview pagination/output throughout.
 - [x] Shared repeated-entry headings/Add/empty, full-width nested bullets, stable identity and reorder/removal focus. Software evidence: Resume `docs/air/evidence/repeated-entries-2026-10-19.json`.
-- [ ] Remaining editor interiors and custom writing widgets.
-- [ ] Every content section: profile/contact, experience, education, skills, projects, certifications,
-      languages, interests, awards, custom, stats and job description.
+- [x] Content-editor interiors and custom writing widgets software-validated; library/review/overflow/PWA gates below remain open.
+- [x] Every content section: profile/contact, experience, education, skills, projects, certifications,
+      languages, interests, awards, custom, stats and job description. Software evidence: Resume `docs/air/evidence/content-sections-2026-10-21.json`; physical/assistive gates remain open.
 - [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
 - [x] Month/year fields, Experience Current job and Education Present; evidence in Resume `docs/air/evidence/date-controls-2026-10-19.json`.
 - [x] Profile/Skills logo search and photo controls; evidence in Resume `docs/air/evidence/logo-photo-2026-10-19.json`.
