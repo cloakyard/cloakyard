@@ -768,6 +768,9 @@ items retain their documented human/device gates; they do not imply full accepta
 
 ## Phase 5 — CloakResume
 
+Maintain [the cleanup record](docs/air/CODE_CLEANUP.md) with each piece: remove proven
+unused code, trace retained consumers, and keep current inventories/references accurate.
+
 - [x] Landing/start blank/sample/load/restore, capabilities, privacy and footer. Software evidence: Resume `docs/air/evidence/entry-recovery-2026-10-19.json`; physical gates remain open.
 - [x] Editor header, section rail/picker/panel frame, preview surround and zoom, paper/view choices. Software evidence: Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
 - [x] Shared text/CSV/textarea fields, labels/help/validation and scoped formatting. Software evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json`; preserve preview pagination/output throughout.
@@ -783,9 +786,9 @@ items retain their documented human/device gates; they do not imply full accepta
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
 - [x] Template library and actual previews; evidence in Resume `docs/air/evidence/template-library-2026-10-21.json`. Search, draft-only content, focus, resize and nested recovery pass.
-- [ ] Complete document-control and overflow-toolbar acceptance.
+- [x] Options and export controls software-validated; Resume `docs/air/evidence/options-export-2026-10-21.json`. Immediate handoffs, native JSON cancel/replacement, busy/error/retry, visible focus and responsive state are covered; physical gates remain open.
 - [x] ATS overview/keywords/insights/parse preview, writing review, field jumps and issue states; evidence in Resume `docs/air/evidence/resume-review-2026-10-21.json`. Physical/assistive gates remain open.
-- [-] Confirm, privacy, notices and error boundary implemented; editor bottom sheets, PWA/reload and remaining validation interiors stay open.
+- [-] Confirm, privacy, notices and error boundary implemented; Options sheet implemented; PWA/reload and remaining validation interiors stay open.
 - [-] Mobile split/expanded preview, section navigation and short landscape implemented and software-validated; physical software-keyboard/IME and assistive acceptance remain open.
 - [ ] Test all 17 templates, A4/Letter, pagination, long content and image/logo boundaries.
 - [ ] Preserve template-specific colours/fonts/layout and printable/exported document geometry.
