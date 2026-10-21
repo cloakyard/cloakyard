@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-21",
+  "baseline": "481f84b",
+  "changes": {
+    "lucide-react": {
+      "before": "1.52.0",
+      "after": "1.61.0"
+    },
+    "react": {
+      "before": "19.3.0",
+      "after": "19.3.1"
+    },
+    "react-dom": {
+      "before": "19.3.0",
+      "after": "19.3.1"
+    },
+    "wrangler": {
+      "before": "4.148.0",
+      "after": "4.151.3"
+    }
+  },
+  "vitePlus": "1.3.0",
+  "packageManager": "pnpm@12.14.0",
+  "actions": {
+    "checkout": "v7.0.1",
+    "setup-node": "v7.1.0"
+  },
+  "checks": {
+    "formatLintTypes": true,
+    "build": true,
+    "unit": 25,
+    "portableAssertions": 18,
+    "familySync": 6,
+    "referenceSecurityCases": 6,
+    "overlayCollectionCases": 6,
+    "responsiveHomeJourneys": 12,
+    "horizonLayouts": 12,
+    "gpuThemes": 2,
+    "linkStates": 136,
+    "keyboardLinkChecks": 52,
+    "auditVulnerabilities": 0
+  },
+  "visuallyReviewed": ["desktop light/dark", "laptop light/dark", "phone light/dark"],
+  "cleanup": [
+    "removed stale minimumReleaseAgeExclude entries",
+    "removed obsolete miniflare>sharp override; fresh resolved tree has no audit findings",
+    "regenerated portable bundles with current toolchain and matching licenses/hashes"
+  ],
+  "rollout": "Local candidate; family integration waits for remaining Resume/IMG work. No push or deploy.",
+  "buildSha256": {
+    "_headers": "1d92ea09756ee78cfb2c37cc7b3368f018a8e71ac52751e20864260d63c16673",
+    "air-light.LICENSE.txt": "c0624d0848ea3de0ef47c127a134566f1dfd23fd95580f2c39eb8fb123d78d8a",
+    "assets/air-light-shader-BwlRjQzD.js": "08d70bde2975f8e4d3b8f50a07d979d32d6f17917713d3c639d5868eaa6315fa",
+    "assets/index-CndsV8Xc.js": "dabd87b3de5265353fb93b579e834aaee9774e664b53d6450d0f89e3d426f133",
+    "assets/index-DBYkWg7e.css": "d625d74ad55deb4c9586ebf959b517d5657c82629534b12e2b5805bfe034584e",
+    "brands/cloakdrop-mark.svg": "d47058d6f2e955d2bdb5d093ca2378a07c3191c1d8d5b09b928f739d9238e68b",
+    "brands/cloakimg-mark.svg": "4a17998945a270941409abe2c6450b8ec1c15d24e4ca5bae61c95ccb1f2461fe",
+    "brands/cloakpdf-mark.svg": "d1fa98f8ab9245757b4c7b1d1fcf6d8dcf584abb7ca65bc01b3a1ab7363f58aa",
+    "brands/cloakresume-mark.svg": "e679eae8e3644336f9313e99c27c087bd862e84f04d48563a4fee55db779b233",
+    "cloakyard-mark.svg": "351aefa9445440f107f7f7390bf19a6c1811f955fb1676608479bcc5d176c6a9",
+    "index.html": "379b7922752eb5b0f9f6df76f4b76cd49dae398a4c53c32e58b50ba897031bae",
+    "og.png": "6150191039b852411b7586e024f0def1b337c2e6f4d6aba7cc03583b99740050",
+    "robots.txt": "080683ec1bfd5b2d758b4739438dda9a9a61577cfa3e83f2e5d5cbf3244924fe",
+    "sitemap.xml": "fb5e16744fe7ef9cabef803310a7dd59765de0690592e4aa2b4037457f0d1215"
+  }
+}

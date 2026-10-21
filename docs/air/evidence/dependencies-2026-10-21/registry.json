@@ -1,0 +1,293 @@
+{
+  "checkedAt": "2026-10-21T11:09:19.926524+00:00",
+  "packages": {
+    "lucide-react": {
+      "version": "1.61.0",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+        "@types/react": "*"
+      },
+      "dependencies": {},
+      "repository": {
+        "url": "https://github.com/lucide-icons/lucide.git",
+        "type": "git",
+        "directory": "packages/lucide-react"
+      },
+      "source": "https://registry.npmjs.org/lucide-react/latest"
+    },
+    "react": {
+      "version": "19.3.1",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peerDependencies": {},
+      "dependencies": {},
+      "repository": {
+        "url": "git+https://github.com/react/react.git",
+        "type": "git",
+        "directory": "packages/react"
+      },
+      "source": "https://registry.npmjs.org/react/latest"
+    },
+    "react-dom": {
+      "version": "19.3.1",
+      "engines": {},
+      "peerDependencies": {
+        "react": "^19.3.1"
+      },
+      "dependencies": {
+        "scheduler": "^0.28.0"
+      },
+      "repository": {
+        "url": "git+https://github.com/react/react.git",
+        "type": "git",
+        "directory": "packages/react-dom"
+      },
+      "source": "https://registry.npmjs.org/react-dom/latest"
+    },
+    "@base-ui/react": {
+      "version": "1.9.0",
+      "engines": {
+        "node": ">=14.0.0"
+      },
+      "peerDependencies": {
+        "react": "^17 || ^18 || ^19",
+        "date-fns": "^4.0.0",
+        "react-dom": "^17 || ^18 || ^19",
+        "@date-fns/tz": "^1.2.0",
+        "@types/react": "^17 || ^18 || ^19"
+      },
+      "dependencies": {
+        "@babel/runtime": "^7.29.7 || ^8.0.0",
+        "@base-ui/utils": "0.5.0",
+        "@floating-ui/utils": "^0.2.12",
+        "@floating-ui/react-dom": "^2.1.9",
+        "use-sync-external-store": "^1.7.0"
+      },
+      "repository": {
+        "url": "git+https://github.com/mui/base-ui.git",
+        "type": "git",
+        "directory": "packages/react"
+      },
+      "source": "https://registry.npmjs.org/@base-ui/react/latest"
+    },
+    "@types/react": {
+      "version": "19.3.0",
+      "engines": {},
+      "peerDependencies": {},
+      "dependencies": {
+        "csstype": "^3.2.2"
+      },
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/react"
+      },
+      "source": "https://registry.npmjs.org/@types/react/latest"
+    },
+    "@types/react-dom": {
+      "version": "19.3.0",
+      "engines": {},
+      "peerDependencies": {
+        "@types/react": "^19.3.0"
+      },
+      "dependencies": {},
+      "repository": {
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "type": "git",
+        "directory": "types/react-dom"
+      },
+      "source": "https://registry.npmjs.org/@types/react-dom/latest"
+    },
+    "@vitejs/plugin-react": {
+      "version": "6.1.2",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peerDependencies": {
+        "vite": "^8.0.0",
+        "oxc-transform-react": "^0.152.0",
+        "@rolldown/plugin-babel": "^0.1.7 || ^0.2.0",
+        "babel-plugin-react-compiler": "^1.0.0"
+      },
+      "dependencies": {
+        "@rolldown/pluginutils": "^1.0.1"
+      },
+      "repository": {
+        "url": "git+https://github.com/vitejs/vite-plugin-react.git",
+        "type": "git",
+        "directory": "packages/plugin-react"
+      },
+      "source": "https://registry.npmjs.org/@vitejs/plugin-react/latest"
+    },
+    "shaders": {
+      "version": "4.0.4",
+      "engines": {},
+      "peerDependencies": {
+        "vue": "^3.5.0",
+        "react": "^18.0.0 || ^19.0.0",
+        "svelte": "^5",
+        "solid-js": "^1.8.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+      },
+      "dependencies": {
+        "typegpu": "0.12.3"
+      },
+      "repository": {
+        "url": "git+https://github.com/shader-effects-inc/shaders.git",
+        "type": "git",
+        "directory": "packages/shaders"
+      },
+      "source": "https://registry.npmjs.org/shaders/latest"
+    },
+    "typescript": {
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "peerDependencies": {},
+      "dependencies": {
+        "@typescript/typescript-aix-ppc64": "7.0.2",
+        "@typescript/typescript-linux-arm": "7.0.2",
+        "@typescript/typescript-linux-x64": "7.0.2",
+        "@typescript/typescript-sunos-x64": "7.0.2",
+        "@typescript/typescript-win32-x64": "7.0.2",
+        "@typescript/typescript-darwin-x64": "7.0.2",
+        "@typescript/typescript-netbsd-x64": "7.0.2",
+        "@typescript/typescript-freebsd-x64": "7.0.2",
+        "@typescript/typescript-linux-arm64": "7.0.2",
+        "@typescript/typescript-linux-ppc64": "7.0.2",
+        "@typescript/typescript-linux-s390x": "7.0.2",
+        "@typescript/typescript-openbsd-x64": "7.0.2",
+        "@typescript/typescript-win32-arm64": "7.0.2",
+        "@typescript/typescript-darwin-arm64": "7.0.2",
+        "@typescript/typescript-netbsd-arm64": "7.0.2",
+        "@typescript/typescript-freebsd-arm64": "7.0.2",
+        "@typescript/typescript-linux-loong64": "7.0.2",
+        "@typescript/typescript-linux-riscv64": "7.0.2",
+        "@typescript/typescript-openbsd-arm64": "7.0.2",
+        "@typescript/typescript-linux-mips64el": "7.0.2"
+      },
+      "repository": {
+        "url": "git+https://github.com/microsoft/TypeScript.git",
+        "type": "git"
+      },
+      "source": "https://registry.npmjs.org/typescript/latest"
+    },
+    "vite-plus": {
+      "version": "1.3.0",
+      "engines": {
+        "node": "^22.18.0 || ^24.11.0 || >=26.0.0"
+      },
+      "peerDependencies": {
+        "playwright": "*",
+        "@vitest/browser-playwright": "5.0.5",
+        "@vitest/browser-webdriverio": "^5.0.0-beta.5 || >=5.0.0"
+      },
+      "dependencies": {
+        "vite": "npm:@voidzero-dev/vite-plus-core@1.3.0",
+        "oxfmt": "=0.73.0",
+        "oxlint": "=1.88.0",
+        "vitest": "5.0.5",
+        "@vitest/spy": "5.0.5",
+        "@vitest/utils": "5.0.5",
+        "@vitest/mocker": "5.0.5",
+        "@oxlint/plugins": "=1.88.0",
+        "@vitest/browser": "5.0.5",
+        "oxlint-tsgolint": "=7.0.2004",
+        "@vitest/snapshot": "5.0.5",
+        "@oxc-project/types": "=0.154.0",
+        "@vitest/pretty-format": "5.0.5",
+        "@vitest/browser-preview": "5.0.5"
+      },
+      "repository": {
+        "url": "git+https://github.com/voidzero-dev/vite-plus.git",
+        "type": "git",
+        "directory": "packages/cli"
+      },
+      "source": "https://registry.npmjs.org/vite-plus/latest"
+    },
+    "wrangler": {
+      "version": "4.151.3",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "peerDependencies": {
+        "@cloudflare/workers-types": "^5.20261019.1"
+      },
+      "dependencies": {
+        "unenv": "2.0.0-rc.24",
+        "esbuild": "0.28.2",
+        "workerd": "1.20261019.1",
+        "miniflare": "5.20261019.1-beta",
+        "blake3-wasm": "2.1.5",
+        "path-to-regexp": "6.3.0",
+        "@cloudflare/unenv-preset": "2.16.2",
+        "@cloudflare/kv-asset-handler": "0.5.0"
+      },
+      "repository": {
+        "url": "git+https://github.com/cloudflare/workers-sdk.git",
+        "type": "git",
+        "directory": "packages/wrangler"
+      },
+      "source": "https://registry.npmjs.org/wrangler/latest"
+    },
+    "@voidzero-dev/vite-plus-core": {
+      "version": "1.3.0",
+      "engines": {
+        "node": "^20.19.0 || ^22.18.0 || >=24.11.0"
+      },
+      "peerDependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "unrun": "*",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "publint": "^0.3.8",
+        "sugarss": "^5.0.0",
+        "vue-tsc": "~3.2.0 || ~3.3.0",
+        "typescript": "^5.0.0 || ^6.0.0 || ^7.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "unplugin-unused": ">=0.5.0",
+        "@vitejs/devtools": "^0.7.1",
+        "@volar/typescript": "~2.4.0",
+        "@vue/language-core": "~3.2.0 || ~3.3.0",
+        "@arethetypeswrong/core": "^0.18.1",
+        "@typescript/native-preview": "*"
+      },
+      "dependencies": {
+        "postcss": "^8.5.29",
+        "yuku-parser": "0.19.0",
+        "lightningcss": "^1.33.0",
+        "@oxc-project/types": "=0.154.0",
+        "@oxc-project/runtime": "=0.154.0"
+      },
+      "repository": {
+        "url": "git+https://github.com/voidzero-dev/vite-plus.git",
+        "type": "git",
+        "directory": "packages/core"
+      },
+      "source": "https://registry.npmjs.org/@voidzero-dev/vite-plus-core/latest"
+    },
+    "pnpm": {
+      "version": "12.14.0",
+      "engines": {
+        "node": ">=18.*"
+      },
+      "peerDependencies": {},
+      "dependencies": {},
+      "repository": {
+        "url": "https://github.com/pnpm/pnpm",
+        "type": "git",
+        "directory": "pnpm/npm/pnpm"
+      },
+      "source": "https://registry.npmjs.org/pnpm/latest"
+    }
+  }
+}

@@ -63,6 +63,19 @@ Initial preflight found 38 outdated direct entries; fresh registry metadata is i
 not completed upgrades or a transitive/native/security audit. Latest Astro Check
 0.9.11 still supports TypeScript 5/6, so recheck that constraint before upgrading.
 
+### Dependency upgrade checkpoint — 2026-10-21
+
+Cloakyard dependencies and portable build assets are upgraded and locally validated.
+React 19.3.1, Lucide 1.61.0, Vite+ 1.3.0, Wrangler 4.151.3 and pnpm 12.14.0;
+CI actions use current release commit pins. Removed obsolete version exceptions
+and the Miniflare/sharp override. 25 tests, build/types/lint, 18 portability checks,
+six-reference and six-overlay/collection cases, 12 home journeys, both GPU themes,
+136 neutral link states and 52 keyboard checks pass; npm audit reports zero findings.
+Six desktop/laptop/phone light/dark captures were visually inspected.
+Evidence: `docs/air/evidence/dependencies-2026-10-21.json`. PDF, Drop and Resume
+upgrades are being validated; IMG stays last and its parked draft is preserved.
+No integration or deployment yet. Full-product migration gates below stay open.
+
 Latest bounded piece: **CloakResume unused foundation cleanup** (`f05f97e`, local, 2026-10-21).
 Removed 61 unused token names / 62 declarations, the 241-line unconsumed JSON
 mirror and both unreachable non-Air popup skin rules. Air is now the explicit

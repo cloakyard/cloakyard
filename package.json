@@ -19,9 +19,9 @@
     "test:air-links": "node scripts/test-air-links.mjs"
   },
   "dependencies": {
-    "lucide-react": "1.52.0",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "lucide-react": "1.61.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
   },
   "devDependencies": {
     "@base-ui/react": "1.9.0",
@@ -32,10 +32,10 @@
     "typescript": "7.0.2",
     "vite": "catalog:",
     "vite-plus": "catalog:",
-    "wrangler": "4.148.0"
+    "wrangler": "4.151.3"
   },
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@12.9.1"
+  "packageManager": "pnpm@12.14.0"
 }

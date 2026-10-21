@@ -943,6 +943,9 @@ migrations, cleanup and required regression/acceptance gates pass.
       `docs/air/evidence/dependency-preflight-2026-10-21.json`. No dependencies
       changed in this preflight. Latest Astro Check 0.9.11 still declares only
       TypeScript 5/6 support; reassess that constraint during the upgrade phase.
+- [x] Upgrade and validate Cloakyard and regenerate the portable Air bundles with
+      current React/Vite+; remove obsolete exceptions/override. All applicable checks
+      pass; evidence: `docs/air/evidence/dependencies-2026-10-21.json`.
 - [ ] Audit current stable upstream versions across all five repositories: direct
       and transitive web dependencies, build tools, package managers, native packages
       and vendored runtimes. Remove unused packages; update compatible releases and
