@@ -946,6 +946,9 @@ migrations, cleanup and required regression/acceptance gates pass.
 - [x] Upgrade and validate Cloakyard and regenerate the portable Air bundles with
       current React/Vite+; remove obsolete exceptions/override. All applicable checks
       pass; evidence: `docs/air/evidence/dependencies-2026-10-21.json`.
+- [x] Upgrade Drop's compatible direct and transitive website dependencies;
+      reverify unchanged native upstream versions and retain the official yt-dlp
+      runtime/TS6 exceptions. Commits `4e03208`, `575d430`; all website gates pass.
 - [ ] Audit current stable upstream versions across all five repositories: direct
       and transitive web dependencies, build tools, package managers, native packages
       and vendored runtimes. Remove unused packages; update compatible releases and

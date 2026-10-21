@@ -1,0 +1,33 @@
+✔ reorder preserves identity and every field, with exact undo/redo (0.861125ms)
+✔ new work after undo discards the future while leaving previous snapshots intact (0.121042ms)
+✔ selection across filtered views retains other selections and rejects stale IDs (0.079833ms)
+✔ remove all is reversible and clears stale selections without deleting history (0.114458ms)
+✔ invalid and unchanged mutations create no misleading history entries (0.089542ms)
+✔ 100-row sample stays uniquely addressable through reorder, rename, remove and undo (0.123416ms)
+✔ wheel coordinates match the displayed clockwise spectrum (0.777083ms)
+✔ thumb and pointer are inverse mappings throughout the wheel (1.436208ms)
+✔ author colours round-trip without changing channel bytes (7.472958ms)
+✔ invalid, multiple, oversize and cancelled picks retain the current file (2.281959ms)
+✔ UTF-8 characters survive chunk boundaries and preview is bounded (42.065208ms)
+✔ invalid UTF-8 fails without discarding selected file; same file can be picked again (0.197ms)
+✔ empty text completes with a useful state (0.151792ms)
+✔ manual pause has measured bytes, ignores duplicate starts and resumes (2.742667ms)
+✔ cancel while paused releases the wait and retry starts from zero (0.385083ms)
+✔ late completion after cancel, replacement, removal or disposal cannot publish (0.64875ms)
+✔ interruption keeps partial text and file; retry succeeds without simulation (0.124667ms)
+✔ short read rejects inconsistent byte counts (0.073125ms)
+✔ finite arrival submits once in the settled clock and rests until input (2.393041ms)
+✔ unmount aborts pending startup and destroys its late renderer (0.300584ms)
+✔ input arriving during a pending draw schedules a follow-up without overlap (0.318ms)
+✔ reduced motion never mounts and preference changes are reversible (0.254083ms)
+✔ resize failure releases the device and leaves the fallback available (0.228458ms)
+✔ reference form values remain text across HTML reconstruction (0.406625ms)
+✔ a reconstructed slider cannot interpolate markup from its retained value (0.118708ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 94.660875

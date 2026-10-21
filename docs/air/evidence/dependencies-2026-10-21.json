@@ -49,7 +49,7 @@
   "rollout": "Local candidate; family integration waits for remaining Resume/IMG work. No push or deploy.",
   "buildSha256": {
     "_headers": "1d92ea09756ee78cfb2c37cc7b3368f018a8e71ac52751e20864260d63c16673",
-    "air-light.LICENSE.txt": "c0624d0848ea3de0ef47c127a134566f1dfd23fd95580f2c39eb8fb123d78d8a",
+    "air-light.LICENSE.txt": "3b8981e3bcdd59a5fc36c26520dede3fc570039c444974bc80559681fad7f052",
     "assets/air-light-shader-BwlRjQzD.js": "08d70bde2975f8e4d3b8f50a07d979d32d6f17917713d3c639d5868eaa6315fa",
     "assets/index-CndsV8Xc.js": "dabd87b3de5265353fb93b579e834aaee9774e664b53d6450d0f89e3d426f133",
     "assets/index-DBYkWg7e.css": "d625d74ad55deb4c9586ebf959b517d5657c82629534b12e2b5805bfe034584e",
@@ -62,5 +62,23 @@
     "og.png": "6150191039b852411b7586e024f0def1b337c2e6f4d6aba7cc03583b99740050",
     "robots.txt": "080683ec1bfd5b2d758b4739438dda9a9a61577cfa3e83f2e5d5cbf3244924fe",
     "sitemap.xml": "fb5e16744fe7ef9cabef803310a7dd59765de0690592e4aa2b4037457f0d1215"
+  },
+  "transitiveRefresh": {
+    "added": [
+      "@babel/runtime@7.29.10",
+      "@babel/runtime@8.0.7",
+      "@testing-library/user-event@14.6.8",
+      "postcss@8.5.31",
+      "typed-binary@4.3.4"
+    ],
+    "removed": [
+      "@babel/runtime@7.29.7",
+      "@testing-library/user-event@14.6.7",
+      "postcss@8.5.29",
+      "typed-binary@4.3.3"
+    ],
+    "baseline": "HEAD before upgrade",
+    "method": "pnpm update --lockfile-only --ignore-scripts --no-save; upstream-compatible ranges",
+    "verification": "Repeated check/types/build/25 units/audit, home responsive/menu/no-JS, GPU and neutral-link checks pass. Portable runtime bytes unchanged; licenses refreshed."
   }
 }

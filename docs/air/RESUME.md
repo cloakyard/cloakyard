@@ -65,15 +65,22 @@ not completed upgrades or a transitive/native/security audit. Latest Astro Check
 
 ### Dependency upgrade checkpoint — 2026-10-21
 
-Cloakyard dependencies and portable build assets are upgraded and locally validated.
+Cloakyard dependencies and portable build assets are upgraded and locally validated
+(first commit `78516f5`, followed by a compatible transitive refresh).
 React 19.3.1, Lucide 1.61.0, Vite+ 1.3.0, Wrangler 4.151.3 and pnpm 12.14.0;
 CI actions use current release commit pins. Removed obsolete version exceptions
 and the Miniflare/sharp override. 25 tests, build/types/lint, 18 portability checks,
 six-reference and six-overlay/collection cases, 12 home journeys, both GPU themes,
 136 neutral link states and 52 keyboard checks pass; npm audit reports zero findings.
 Six desktop/laptop/phone light/dark captures were visually inspected.
-Evidence: `docs/air/evidence/dependencies-2026-10-21.json`. PDF, Drop and Resume
-upgrades are being validated; IMG stays last and its parked draft is preserved.
+Evidence: `docs/air/evidence/dependencies-2026-10-21.json`. Drop is validated and
+committed (`4e03208`, final transitive refresh `575d430`): 432 layouts/34 journeys,
+328 neutral-link states/116 keyboard checks, GPU/six fallbacks and zero npm audit
+findings pass. The final Drop runtime assets are byte-identical; only licenses
+changed. TS6 support and the approved official yt-dlp bundle exception remain.
+PDF and Resume upgrades are being validated; IMG stays last and its parked draft
+is preserved. PDF retains the existing node-forge exception expiring 2026-11-06;
+no unpatched advisory has been silently suppressed or extended.
 No integration or deployment yet. Full-product migration gates below stay open.
 
 Latest bounded piece: **CloakResume unused foundation cleanup** (`f05f97e`, local, 2026-10-21).
