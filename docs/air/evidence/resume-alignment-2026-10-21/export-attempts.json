@@ -1,0 +1,50 @@
+[
+  {
+    "fixture": "plain",
+    "size": "a4",
+    "equal": false,
+    "differentFields": ["imageHashes"]
+  },
+  {
+    "fixture": "plain",
+    "size": "letter",
+    "equal": false,
+    "differentFields": ["imageHashes"]
+  },
+  {
+    "fixture": "linked",
+    "size": "a4",
+    "equal": false,
+    "differentFields": ["imageHashes"]
+  },
+  {
+    "fixture": "linked",
+    "size": "letter",
+    "equal": true,
+    "differentFields": []
+  },
+  {
+    "fixture": "plain-repeat",
+    "size": "a4",
+    "equal": true,
+    "differentFields": []
+  },
+  {
+    "fixture": "plain-repeat",
+    "size": "letter",
+    "equal": true,
+    "differentFields": []
+  },
+  {
+    "fixture": "pre-change-baseline-with-120ms-latency",
+    "size": "a4",
+    "equal": true,
+    "differentFields": []
+  },
+  {
+    "fixture": "pre-change-baseline-with-120ms-latency",
+    "size": "letter",
+    "equal": true,
+    "differentFields": []
+  }
+]

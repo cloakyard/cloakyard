@@ -27,6 +27,30 @@ is historical. Native installers and earlier Cloudflare versions were not replac
 or deleted. Any rollback should restore the recorded prior source through dev and
 an ordinary main PR, preserving these release records.
 
+## CloakResume privacy and dialog follow-up
+
+[Resume #41](https://github.com/cloakyard/cloakresume/pull/41) merges `9d14555` at
+`a957b2e`; dev is synchronized. The later Cloudflare build is production-verified:
+**102 exact served files**, all no-transform and no injected scripts. The count
+falls by two because unused Archivo/JetBrains UI fonts are removed. This replaces
+the Resume asset set in the original four-site table; the historical ledger stays intact.
+
+Privacy now uses canonical Air reading styles and its standard dialog with a fixed
+close control. PWA notices use the neutral Air panel/shared actions; update activation
+and draft safety remain intact. The inherited UI font/palette bridge is retired.
+Local regression passes **373/373**, zero skips, plus all responsive state matrices,
+34 exact paper captures and four exact PDF comparisons. Live entry/privacy passes
+341 layouts / 14 journeys and 48 neutral link states / 6 keyboard checks.
+See [the follow-up ledger](evidence/resume-alignment-2026-10-21/ledger.json) for hashes,
+CI, screenshots and the fully explained two-unused-variable build difference.
+The 34 live paper captures and final four real PDFs match exactly. The first
+remote export batch had three raster-only differences, with unchanged text,
+geometry and links; retain this intermittent observation for investigation.
+Fresh exports and the pre-change latency baseline match. `export-attempts.json`
+preserves the initial results; it is not a claim that every export attempt matched.
+Later instrumentation reproduces the raster-only difference; the scratch prototype
+also fails one case. No export-code change ships and this follow-up remains open.
+
 ## Dependencies and explicit exceptions
 
 All 63 checked npm latest-release versions were reverified against primary registry
@@ -54,8 +78,9 @@ embedded libraries inside upstream bundles are all the latest release.
 ## Remaining work
 
 Resolve the Compact answer-quality limitation separately, preserving the original
-fixture/assertion. Finish Resume's live font/token bridge and final target audit;
-then complete IMG's pending redesign last. Retain all untested physical touch,
+fixture/assertion. Resume's later privacy/dialog correction retires the legacy
+UI font/palette bridge. Finish its remaining target/date-motion audit and source-
+scan cleanup, then complete IMG's pending redesign last. Retain all untested physical touch,
 software-keyboard, OS IME, spoken assistive and hardware acceptance tasks.
 Deployment of this validated stage does not establish full-family migration.
 

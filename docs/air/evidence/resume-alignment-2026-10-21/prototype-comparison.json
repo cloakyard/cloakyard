@@ -1,0 +1,10 @@
+[
+  {
+    "size": "a4",
+    "prototypeRasterMatches": false
+  },
+  {
+    "size": "letter",
+    "prototypeRasterMatches": true
+  }
+]

@@ -2198,3 +2198,33 @@ Cloudflare build links and reviewed screenshots are in
 long-document limitation was explicitly accepted by the user for this release;
 the failing assertion remains unchanged. IMG was excluded and preserved.
 Remaining physical/device and full migration gates remain open.
+
+## 2026-10-21 — Resume privacy, dialogs and update correction
+
+Resume #41 / `a957b2e` adopts the existing Air 1.0.6 reading/dialog/panel styles,
+removes obsolete UI typography/tokens and preserves destructive-confirmation safety.
+**373/373 production tests, 10 files, zero skips**; 341 entry, 384 PWA, 192 Options,
+960 review and 386 gallery cases pass, plus neutral links and exact 34-paper/four-PDF
+output comparisons. Desktop/laptop/tablet/phone themes and enlarged-text/recovery
+states were inspected. Product evidence is committed with `9d14555`.
+
+All 102 files in the fresh build match production with no-transform and no injected
+scripts. Live entry/privacy passes 341 layouts / 14 journeys and 48 link states /
+6 keyboard checks. The first byte check exposed two unused shadow declarations
+from evidence strings scanned by Tailwind; every other byte difference is a hashed
+reference or precache revision. `build-drift.json` proves this exact transformation.
+The source-scoping cleanup remains explicit; no unknown build delta is accepted.
+Full live evidence is in `evidence/resume-alignment-2026-10-21/ledger.json`.
+Physical/assistive, final target and date-motion gates remain open.
+
+Production output: all 34 paper captures match the pre-change baseline exactly.
+The first remote PDF batch had three raster-only differences; text, geometry and
+URI links were exact. The final four fresh exports match in raster and structure;
+pre-change latency checks match too. Cause is unestablished, and the intermittent
+observation remains an explicit follow-up in `export-attempts.json`.
+
+The follow-up font-paint diagnostic reproduces the raster-only difference on
+Letter despite reported font readiness. Two prior-build exports under the
+production origin match. The cause remains unestablished; this is an open output
+investigation, not a certified deterministic export pass. A scratch-only explicit
+clone-font-load prototype also fails A4 and is unshipped; it is not a verified fix.

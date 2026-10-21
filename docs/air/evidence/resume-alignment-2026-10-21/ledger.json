@@ -1,0 +1,85 @@
+{
+  "verifiedAt": "2026-10-21T13:39:19.064188+00:00",
+  "status": "deployed-and-verified; initial remote export raster intermittency tracked",
+  "url": "https://resume.cloakyard.com",
+  "pullRequest": "https://github.com/cloakyard/cloakresume/pull/41",
+  "sourceCommit": "9d145554b923835941ee2c44cb89482ef3e6d4d3",
+  "productionMain": "a957b2eaed001f2966fb23f30c792d912e63641d",
+  "synchronizedDev": "a957b2eaed001f2966fb23f30c792d912e63641d",
+  "rollbackMain": "845a04ad74ff0245ebee07f6cdf96540de66006c",
+  "cloudflareBuild": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/21ed01ac-31d5-4095-8845-39379fc50971",
+  "allMergeChecksPassed": true,
+  "contract": {
+    "version": "1.0.6",
+    "sha256": "e7c8a4bcfbc5af9d852a9ec15a38649c9bdaa052e3392db3ff9fd52cd91193af",
+    "unchanged": true,
+    "synchronizedCopies": 6
+  },
+  "assets": {
+    "files": 102,
+    "allExact": true,
+    "allNoTransform": true,
+    "injectedScripts": false,
+    "record": "assets.json",
+    "explainedDifferenceFromFrozenTestBuild": "build-drift.json"
+  },
+  "localValidation": {
+    "tests": 373,
+    "passed": 373,
+    "skipped": 0,
+    "files": 10,
+    "seconds": 531.02,
+    "productEvidence": "cloakyard/cloakresume:docs/air/evidence/privacy-dialogs-2026-10-21.json",
+    "entryLayouts": 341,
+    "entryJourneys": 14,
+    "pwaCases": 384,
+    "optionsCases": 192,
+    "reviewCases": 960,
+    "galleryCases": 386,
+    "linksNeutral": true,
+    "paperCapturesExact": 34,
+    "pdfComparisonsExact": 4
+  },
+  "liveValidation": {
+    "entryLayouts": 341,
+    "entryJourneys": 14,
+    "errors": 0,
+    "foreignRequests": 0,
+    "neutralLinkStates": 48,
+    "keyboardChecks": 6,
+    "paperCapturesExact": 34,
+    "finalPdfComparisonsExact": 4,
+    "earlierPdfRasterDifference": "Three of four first exports differed only in raster; text, geometry and links matched. Four fresh exports match exactly; a later instrumented Letter export differs again despite font readiness reporting loaded. Cause is unestablished. Pre-change baseline with 120ms latency and two pre-change exports under the production origin match. No output-code change or speculative fix ships."
+  },
+  "reviewed": "Live desktop/laptop/tablet/phone light/dark privacy captures; full local privacy, update, confirm, Options, review and gallery matrices.",
+  "evidence": [
+    "github.json",
+    "assets.json",
+    "build-drift.json",
+    "entry.json.gz",
+    "links.json.gz",
+    "privacy-review.jpg",
+    "paper-captures.json",
+    "output-comparison.json",
+    "export-attempts.json",
+    "font-paint-diagnostic.json",
+    "prior-origin-comparison.json",
+    "prototype-comparison.json"
+  ],
+  "remaining": [
+    "Investigate intermittent remote PDF raster mismatch; text/geometry/links remain intact, four recorded repeat comparisons are exact, but later instrumentation reproduces the raster-only difference",
+    "Restrict Tailwind scanning to runtime sources; evidence strings currently emit unused variables",
+    "Date-presence/motion and final target sweep",
+    "Physical touch/software keyboard, OS IME, spoken assistive, browser-engine and hardware acceptance",
+    "IMG redesign stays excluded and last"
+  ],
+  "ownedPreviewServersStopped": [8254, 8255],
+  "unchanged": [
+    "KERR",
+    "CloakIMG",
+    "CloakDrop native application and RC",
+    "PDF explicitly accepted Compact limitation and node-forge exception",
+    "Drop official-bundle and TS6 exceptions"
+  ],
+  "diagnosticPrototype": "Scratch only: an onclone explicit-font-load prototype was tested via local browser response interception. No server/source modification. Results are exploratory, not a shipped fix or acceptance."
+}

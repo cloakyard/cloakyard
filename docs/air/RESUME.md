@@ -6,6 +6,54 @@ This section is the current entry point. The dated checkpoints below preserve th
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+
+### CloakResume privacy/dialog correction — 2026-10-21 (current)
+
+The user reported privacy, modal and update-notice deviations and asked for close
+adherence to Air. The passing bounded correction is committed as `9d14555` and
+merged through [Resume #41](https://github.com/cloakyard/cloakresume/pull/41).
+Resume `dev`, `origin/dev` and `origin/main` are synchronized at `a957b2e`.
+Automatic Cloudflare deployment passed; all **102 served files** match a fresh
+build, with `no-transform` and no injected scripts.
+
+Privacy uses canonical `air-prose`, the standard 576px dialog, 16px/1.6 reading
+text and a persistent heading/close control. Update/offline/error notices use
+Air's opaque neutral panel and shared actions. Destructive confirmation resists
+backdrop taps; ordinary dismissal is preserved. Legacy UI fonts, 53 token names,
+33 unused Tailwind aliases and 75,332 font bytes are removed. All 17 résumé
+families, actual document fonts/colours and update/draft-save behavior are retained.
+Air remains pinned at **1.0.6**; no new shared skin or exception was introduced.
+
+**373/373 production tests pass, 10 files, zero skips.** Local privacy/entry,
+Options, gallery, review and real PWA matrices cover desktop/laptop/tablet/phone
+light/dark, enlarged text, coarse input, forced colours and recovery. All 34
+paper-only captures and four actual PDFs preserve output exactly. Live entry and
+privacy additionally pass **341 layouts / 14 journeys** and **48 neutral link
+states / 6 keyboard checks**. Product evidence is Resume
+`docs/air/evidence/privacy-dialogs-2026-10-21.json`; deployment proof is
+[the follow-up ledger](evidence/resume-alignment-2026-10-21/ledger.json).
+
+A fresh build after recording evidence adds two unused Tailwind shadow declarations;
+all other byte changes are their content-hashed references and precache revision.
+This is traced and recorded in `build-drift.json`, not waived as an unknown delta.
+The 34 live paper captures and final four real PDF comparisons are exact. The
+first remote batch had three raster-only differences; text, geometry and links
+matched. Fresh exports and the pre-change baseline with 120ms latency match, but
+the intermittent cause is not established. Keep that output follow-up explicit;
+see `export-attempts.json`. No failed attempt is relabeled as a clean first pass.
+A later instrumented Letter export reproduces the raster-only difference, despite
+reported font readiness. The scratch clone-font-load prototype also fails one
+case and is unshipped; it is not a fix. Export determinism remains unresolved.
+Next: investigate that intermittency, restrict Tailwind scanning to application
+sources in a separately validated cleanup, then finish date-presence/motion and
+full-product target acceptance. Task-owned preview servers are stopped.
+Physical touch/software keyboard, OS IME, spoken assistive, browser-engine and
+hardware gates stay open. Do not repeat the completed font/palette cleanup.
+IMG remains excluded and last; PDF's accepted Compact limitation and existing
+security exception, Drop's official-bundle/TS6 exceptions and native RC are unchanged.
+
+### Earlier release history
+
 Cloakyard and CloakPDF are released and production-verified. Cloakyard
 [PR #10](https://github.com/cloakyard/cloakyard/pull/10) merged at `6bd318f`;
 [v1.0.1](https://github.com/cloakyard/cloakyard/releases/tag/v1.0.1) follows v1.0.0.
@@ -41,7 +89,7 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel, writing hints, content sections, template library, review and Options/export are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-### Four-site production checkpoint — 2026-10-21 (current)
+### Four-site production checkpoint — 2026-10-21 (before Resume #41)
 
 **Cloakyard, CloakPDF, CloakDrop and CloakResume are live.** Individual dev → main
 PRs merged: Cloakyard #16, PDF #207, Drop #44, Resume #39 and header follow-up #40.
@@ -67,7 +115,8 @@ compatibility exceptions remain unchanged. Fresh registry metadata confirms all
 
 **IMG is excluded.** Its remote branches and all 15 local draft hashes are unchanged.
 The clean dependency worktree remains available. KERR and the native Drop RC are
-unchanged. Resume's live font/token bridge, final target sweep, physical keyboard/
+unchanged. At this checkpoint Resume's live font/token bridge was still open;
+the later #41 correction above completes it. Final target/motion, physical keyboard/
 IME/assistive/hardware acceptance and IMG's full redesign remain unfinished.
 Continue that tracked work separately; this deployment is not complete Air migration.
 

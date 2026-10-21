@@ -1,0 +1,14 @@
+[
+  {
+    "size": "a4",
+    "rasterMatches": true,
+    "canvasPaints": 60,
+    "unreadyFontsAtPaint": []
+  },
+  {
+    "size": "letter",
+    "rasterMatches": false,
+    "canvasPaints": 60,
+    "unreadyFontsAtPaint": []
+  }
+]
