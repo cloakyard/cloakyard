@@ -38,21 +38,22 @@ Drop [#40](https://github.com/cloakyard/cloakdrop/pull/40) at `5ee9a01`.
 All three Air 1.0.3 colour updates are live and production-verified. Drop main/dev
 integration is complete. Resume and IMG colour checkpoints remain local while
 their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`;
-its shared colour wheel, writing hints and content sections are now software-validated locally. See the current checkpoint below.
+its shared colour wheel, writing hints, content sections and template library are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest bounded piece: **CloakResume content-section interiors** (`b75eb76`, 2026-10-21).
-All 13 section sources and empty/populated states now have complete software
-acceptance. Content-aware year/stat/extra fields, neutral JD note/action, ordinary
-group headings and associated Profile help close the remaining section gaps.
-Analyze now returns focus correctly after Safari pointer opening. Imported data,
-all editing actions, local grammar and document output remain intact.
-323/323 production tests, 1,666 distinct layouts and 16 contrast pairs pass; all 34
-template/paper captures and both actual PDF renders match the baseline. Native
-Safari and Firefox actual 200% reviewed. No push/deploy.
-Evidence: Resume `docs/air/evidence/content-sections-2026-10-21.json`.
-Next: template library, then review/overflow/export/PWA/static recovery/assets.
+Latest bounded piece: **CloakResume template library** (`5a001e5`, 2026-10-21).
+The shared Air wide dialog/search and neutral choices replace the legacy gallery.
+Readable metadata precedes all 17 actual previews; filtering keeps stable geometry.
+Identity/stats/extras/custom/interests/tools-only drafts retain their own content.
+Desktop/compact resize preserves search and focus returns to a surviving opener,
+including a handoff that loses its source. Nested save-error and swipe/cancel pass.
+338/338 production tests, 386 distinct layouts and eight contrast pairs pass.
+All 34 template/paper images and actual A4/Letter PDF renders match the baseline.
+Native Safari and Firefox actual 200% reviewed; tabs closed and zoom restored.
+Evidence: Resume `docs/air/evidence/template-library-2026-10-21.json`.
+Next: review shell and all four tabs, then overflow/export/PWA/static recovery/assets.
 Physical/assistive gates remain open; IMG stays last and its parked draft untouched.
+No push/deploy. Runtime/dist stayed frozen throughout the complete production suite.
 
 Latest follow-up: **all public-page links stay neutral, including hover**.
 The user explicitly included Cloakyard's content links and required the rule in
@@ -81,7 +82,7 @@ entries (`bcbf8ff`), writing fields
 (`4ba267c`), editor shell (`30696b5`) and entry/recovery
 (`eda6df6`), Drop website/OG (`e5f2bac`) and PDF software acceptance (`b9d67a9`).
 Human/device gates remain open. Order: **PDF → Drop → Resume → CloakIMG last**.
-Resume's next piece is the template library. IMG stays parked.
+Resume's next piece is the complete review surface. IMG stays parked.
 
 ### Objective and settled decisions
 
@@ -331,28 +332,44 @@ Root contains the canonical contract, palette, gallery, home and family evidence
   IMG's parked draft is preserved. Physical GPU/battery/thermal and assistive gates
   remain open. Do not repeat these completed deployments.
 
-### Exact next bounded piece: CloakResume template library
+### Exact next bounded piece: CloakResume review
 
 1. Read both repositories' instructions, complete DESIGN, inventory and validation.
-   Content-section checkpoint `b75eb76` is complete locally. Do not reimplement
-   the already accepted fields, repeated rows, dates, logo/photo, colour or hints.
-2. Audit complete `TemplateModal.tsx` and `TemplatePreview.tsx`, their live consumers,
-   shared overlay/focus behavior and existing feature tests. Replace legacy sheet,
-   search contour, tiny uppercase/mono category metadata and tinted card states
-   with the established Air dialog/search/action patterns. Keep every actual
-   template, category, description/level and name/category search/no-results/clear path.
-   Read-only notes: `/tmp/cloakresume-air-sections/next-library-notes.md`.
-3. Preserve selection, lazy font loading, inert previews, document typography and
-   geometry, focus/return, compact swipe dismissal and nested save-error recovery.
-   All 17 templates, A4/Letter, JSON and actual PDF output must remain unchanged.
-   Then all four review tabs, overflow/export busy/recovery, PWA safety and true
-   static 404. Regenerate actual OG/PWA/README assets after the editor. Ready Offline
-   is oversized at enlarged text; reserve that for its PWA slice. IMG stays last.
-4. Run check/build and full serial production suite:
+   Template-library checkpoint `5a001e5` is complete locally. Keep accepted writing,
+   repeated-entry, date/logo/photo/colour/hint and library controls intact.
+2. Read complete `AtsReviewModal.tsx` and every `src/components/ats/` source, their
+   App/Toolbar/JD handoffs and feature tests. Replace legacy overlay, tiny mono/
+   uppercase metadata, tinted cards and scan decoration using existing Air shells.
+   Remove the artificial 900ms minimum scanning delay in favor of actual progress.
+   Check timestamp semantics and stale ~7 MB download copy against the bundled
+   engine; remove the ignored Card boxed prop. Preserve all actual reporting/scoring
+   and the four tabs: Overview,
+   Keywords, Insights, Parse. Read-only notes:
+   `/tmp/cloakresume-air-library/next-review-notes.md`.
+3. Preserve keyword hit counts, grammar categories/findings, field jumps, JD handoff,
+   engine progress/readiness/errors, rescan/retry and tab arrow/Home/End semantics.
+   Preserve the 25-finding cap/remaining count and exact Parse text/newlines. Make
+   complete terms, field labels, phrases and dimension captions accessible instead
+   of clipping them. Test every state, nested notice, short screens and focus return.
+   The modal hook now offers optional fallback focus for removed responsive openers.
+   Do not infer full review acceptance from the previously completed writing hints.
+4. Then overflow/export busy/recovery, PWA safety and true static 404; regenerate
+   actual OG/PWA/README assets after editor completion. Ready Offline remains
+   oversized at enlarged text and belongs to the PWA slice. IMG stays last.
+5. Run check/build and full serial production suite:
    `CLOAKRESUME_BROWSER_BUILD=production vp test run --no-file-parallelism`.
-   Freeze runtime/dist during the run; no browser/feature skips or timeout inflation.
-   Physical touch/software keyboard, OS IME and spoken assistive gates stay separate.
-   Resume/IMG remain local. Do not push or deploy.
+   Freeze runtime/dist during the run. No browser/feature skips or timeout inflation.
+   Preserve all 17 templates, A4/Letter, JSON and actual PDF output. Physical touch/
+   software keyboard, OS IME and spoken assistive gates stay separate. Local only;
+   do not push or deploy Resume/IMG.
+
+Completed Resume template library (`5a001e5`, 2026-10-21): Air shared wide dialog,
+compound search and neutral choices, actual previews with metadata first, complete
+matching/clear/no-results, composition handling, sample fallback only for untouched
+drafts, inertness, keyboard/swipe/nested recovery and responsive state/focus fixes.
+338 tests, 386 distinct layouts/eight contrast pairs and exact output comparisons
+pass; native Safari/Firefox 200% reviewed. Evidence and implementation notes are in
+Resume `docs/air/evidence/template-library-2026-10-21.json` and `validation.md`.
 
 Completed Resume content sections (`b75eb76`, 2026-10-21): all 13 source compositions
 reviewed with empty/populated/custom/imported values. Reflowed Award/Certification

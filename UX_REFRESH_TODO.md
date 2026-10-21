@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry, shell, writing widgets and all 13 content sections software-validated locally; template library next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry, shell, writing widgets, all 13 content sections and template library software-validated locally; review next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -147,7 +147,18 @@ Evidence: Drop `docs/audits/2026-10-19-{dependencies,installer,rc.1}.md` and
 
 Evidence: `docs/air/evidence/releases-2026-10-19/`. Physical/device gates remain open.
 
-## Latest bounded piece — CloakResume content sections (2026-10-21)
+## Latest bounded piece — CloakResume template library (2026-10-21)
+
+- [x] Shared Air wide dialog/sheet, labelled search and neutral selection; readable metadata precedes all 17 actual previews. Filtering preserves stable dialog geometry.
+- [x] Name/description/level/category matching, composition, clear/no-results, selected state, untouched sample fallback and content-only drafts preserved.
+- [x] Background inertness, keyboard wrap/return, nested save-error and emulated swipe/cancel pass. Fixed responsive toolbar remount and focus return after losing a compact opener.
+- [x] 386 distinct layouts and eight contrast pairs, desktop/laptop/tablet/phone, themes, enlarged text, coarse/fine and forced colours. Native Safari and Firefox actual 200% reviewed.
+- [x] 338/338 production tests in eight files, zero skips; 158 editor cases and all 34 template/paper cases × five fixtures. Check/build, 79-source inventory, 18 portability and exact family sync pass. Runtime/dist stayed frozen during the serial suite.
+- [x] All 34 before/after template images/geometry and actual A4/Letter PDF rasters match; document colour, JSON and output retained.
+- [x] Local checkpoint `5a001e5`; evidence in Resume `docs/air/evidence/template-library-2026-10-21.json`; appendix, inventory and validation updated.
+- [ ] Next: all four review panes, then overflow/export/PWA/static recovery and actual assets. Physical/assistive gates remain open. No push/deploy; IMG stays last and parked.
+
+## Previous bounded piece — CloakResume content sections (2026-10-21)
 
 - [x] Complete source/empty/populated acceptance for all 13 sections. Award/Certification year fields and Stats/Extras pairs use content-aware reflow; imported strings and separate arrays/IDs remain intact.
 - [x] Neutral Target JD notice and Air Analyze action, including native Safari opener focus return; associated Profile help. Removed the unused legacy uppercase/mono label skin.
@@ -751,7 +762,7 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Editor header, section rail/picker/panel frame, preview surround and zoom, paper/view choices. Software evidence: Resume `docs/air/evidence/editor-shell-2026-10-19.json`.
 - [x] Shared text/CSV/textarea fields, labels/help/validation and scoped formatting. Software evidence: Resume `docs/air/evidence/writing-fields-2026-10-19.json`; preserve preview pagination/output throughout.
 - [x] Shared repeated-entry headings/Add/empty, full-width nested bullets, stable identity and reorder/removal focus. Software evidence: Resume `docs/air/evidence/repeated-entries-2026-10-19.json`.
-- [x] Content-editor interiors and custom writing widgets software-validated; library/review/overflow/PWA gates below remain open.
+- [x] Content-editor interiors and custom writing widgets software-validated; review/overflow/PWA gates below remain open.
 - [x] Every content section: profile/contact, experience, education, skills, projects, certifications,
       languages, interests, awards, custom, stats and job description. Software evidence: Resume `docs/air/evidence/content-sections-2026-10-21.json`; physical/assistive gates remain open.
 - [x] Contact/native selects and custom proficiency; evidence in Resume `docs/air/evidence/contact-selects-2026-10-19.json`.
@@ -761,7 +772,8 @@ items retain their documented human/device gates; they do not imply full accepta
 - [x] Writing-hint popup interiors and review field focus; evidence in Resume `docs/air/evidence/writing-hints-2026-10-21.json`.
 - [ ] Correct tablet touch sizing and 10px desktop contact selectors; include calendar,
       rich-text, clear/reorder and review actions in the 44px target sweep.
-- [ ] Template gallery/preview, paper size, typography/formatting controls and overflow toolbar.
+- [x] Template library and actual previews; evidence in Resume `docs/air/evidence/template-library-2026-10-21.json`. Search, draft-only content, focus, resize and nested recovery pass.
+- [ ] Complete document-control and overflow-toolbar acceptance.
 - [ ] ATS overview/keywords/insights/parse preview, writing review, field jumps and issue states.
 - [-] Confirm, privacy, notices and error boundary implemented; editor bottom sheets, PWA/reload and remaining validation interiors stay open.
 - [-] Mobile split/expanded preview, section navigation and short landscape implemented and software-validated; physical software-keyboard/IME and assistive acceptance remain open.
