@@ -1,0 +1,2 @@
+$ node scripts/test-air-links.mjs
+All links neutral: 60 layout/state checks, 18 keyboard checks. Evidence: /tmp/cloakyard-release-2026-10-21/cloakpdf/links

@@ -1,0 +1,139 @@
+{
+  "verifiedAt": "2026-10-21T12:43:47.316684+00:00",
+  "status": "four-sites-deployed-and-verified",
+  "excluded": ["cloakimg"],
+  "deploymentMethod": "Individual dev-to-main PR merges followed by automatic Cloudflare Workers Builds; no manual artifact upload",
+  "projects": {
+    "cloakyard": {
+      "url": "https://cloakyard.com",
+      "releaseMain": "b874426cfb1a160d982449118a010b7221ef3715",
+      "devAtVerification": "b874426cfb1a160d982449118a010b7221ef3715",
+      "pullRequests": ["https://github.com/cloakyard/cloakyard/pull/16"],
+      "cloudflareBuild": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/1309e442-c4c1-4965-8646-5828c6c85bf0",
+      "cloudflareStatus": "success",
+      "exactServedFiles": 13,
+      "allNoTransform": true,
+      "injectedScripts": false,
+      "assets": "cloakyard/assets.json",
+      "github": "cloakyard/github.json",
+      "liveChecks": {
+        "homeCases": 12,
+        "horizonLayouts": 12,
+        "gpuThemes": 2,
+        "neutralLinkStates": 136,
+        "keyboardChecks": 52
+      },
+      "visualReview": "Desktop/laptop/phone light/dark landing screenshots reviewed; Resume editor also reviewed",
+      "rollbackMain": "aa0a1aa62e56c38392be8032510675db8560a8eb"
+    },
+    "cloakpdf": {
+      "url": "https://pdf.cloakyard.com",
+      "releaseMain": "f3a231d3e428893a54915d963def8531dc6a0fca",
+      "devAtVerification": "f3a231d3e428893a54915d963def8531dc6a0fca",
+      "pullRequests": ["https://github.com/cloakyard/cloakpdf/pull/207"],
+      "cloudflareBuild": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/01f5f3ed-22dc-4fac-b49d-04aec5d2c9bd",
+      "cloudflareStatus": "success",
+      "exactServedFiles": 132,
+      "allNoTransform": true,
+      "injectedScripts": false,
+      "assets": "cloakpdf/assets.json",
+      "github": "cloakpdf/github.json",
+      "liveChecks": {
+        "horizonLayouts": 68,
+        "gpuLifecycleAndFallbacks": true,
+        "neutralLinkStates": 60,
+        "keyboardChecks": 18,
+        "realStandaloneOutputWorkflows": 6
+      },
+      "visualReview": "Desktop/laptop/phone light/dark landing screenshots reviewed; Resume editor also reviewed",
+      "rollbackMain": "f863471bbef1fc670821112c653eab6510580b80"
+    },
+    "cloakdrop": {
+      "url": "https://drop.cloakyard.com",
+      "releaseMain": "f42d039d34abf9fd653ac2b0f5fcdfc8ee140ed5",
+      "devAtVerification": "f42d039d34abf9fd653ac2b0f5fcdfc8ee140ed5",
+      "pullRequests": ["https://github.com/cloakyard/cloakdrop/pull/44"],
+      "cloudflareBuild": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakdrop/production/builds/7fb930d4-e7a6-4e30-b217-32bc9afc9d12",
+      "cloudflareStatus": "success",
+      "exactServedFiles": 17,
+      "allNoTransform": true,
+      "injectedScripts": false,
+      "assets": "cloakdrop/assets.json",
+      "github": "cloakdrop/github.json",
+      "liveChecks": {
+        "siteLayouts": 432,
+        "journeys": 34,
+        "horizonLayouts": 12,
+        "gpuThemes": 2,
+        "neutralLinkStates": 328,
+        "keyboardChecks": 116
+      },
+      "visualReview": "Desktop/laptop/phone light/dark landing screenshots reviewed; Resume editor also reviewed",
+      "rollbackMain": "51f178dbee95cee8851387846752f0a73ca8ebb0"
+    },
+    "cloakresume": {
+      "url": "https://resume.cloakyard.com",
+      "releaseMain": "845a04ad74ff0245ebee07f6cdf96540de66006c",
+      "devAtVerification": "845a04ad74ff0245ebee07f6cdf96540de66006c",
+      "pullRequests": [
+        "https://github.com/cloakyard/cloakresume/pull/39",
+        "https://github.com/cloakyard/cloakresume/pull/40"
+      ],
+      "cloudflareBuild": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/c766e936-ce0e-4dff-ab5d-cd740bbbabdc",
+      "cloudflareStatus": "success",
+      "exactServedFiles": 104,
+      "allNoTransform": true,
+      "injectedScripts": false,
+      "assets": "cloakresume/assets.json",
+      "github": "cloakresume/github.json",
+      "liveChecks": {
+        "horizonLayouts": 12,
+        "gpuThemes": 2,
+        "neutralLinkStates": 124,
+        "keyboardChecks": 32,
+        "editorViewportsAndThemes": 6,
+        "templatePaperCaptures": 34,
+        "linkedFixtureCaptures": 2,
+        "exactPdfComparisons": 4
+      },
+      "visualReview": "Desktop/laptop/phone light/dark landing screenshots reviewed; Resume editor also reviewed",
+      "rollbackMain": "a15fce0036570f52e9c7ecf84641ec8758684b4d"
+    }
+  },
+  "registryRecheck": "registry.json",
+  "imgPreservation": "img-excluded.json",
+  "exceptions": [
+    {
+      "app": "cloakdrop",
+      "kind": "compatibility",
+      "detail": "TypeScript 6.0.3 is current supported major for Astro Check 0.9.11 (peers ^5 || ^6); latest TS 7.0.2 is intentionally not installed."
+    },
+    {
+      "app": "cloakdrop",
+      "kind": "explicit-user-approval",
+      "detail": "Official yt-dlp frozen Python/OpenSSL runtime exception retained; embedded libraries not claimed latest."
+    },
+    {
+      "app": "cloakpdf",
+      "kind": "existing-user-approved-security-exception",
+      "advisory": "GHSA-86w9-cpqp-85rv",
+      "package": "node-forge@1.4.0",
+      "expires": "2026-11-06",
+      "detail": "One high advisory, no patched upstream release. Existing osv-scanner.toml unchanged; no exception extended."
+    },
+    {
+      "app": "cloakpdf",
+      "kind": "explicit-user-approved-existing-beta-limitation",
+      "approvedAt": "2026-10-21",
+      "exactApproval": "Deploy PDF with the documented existing limitation",
+      "detail": "Compact/multipage misses required facts on upgraded and pre-upgrade builds, including a fresh index. All original assertions remain. No prompt/model/retrieval change ships. Quality passes both fixtures; Compact passes short fixture."
+    }
+  ],
+  "openWork": [
+    "PDF Compact beta long-document answer quality: explicitly accepted for this release, not a passed test",
+    "Resume live font/token bridge and final target audit",
+    "Physical touch/software keyboard, OS IME, spoken assistive and hardware acceptance remain open",
+    "IMG full redesign remains pending; no remote integration or deployment",
+    "Drop RC1 remains ad-hoc signed, not notarized; native app unchanged"
+  ]
+}

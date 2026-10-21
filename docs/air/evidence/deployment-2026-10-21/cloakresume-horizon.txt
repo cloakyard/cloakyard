@@ -1,0 +1,1 @@
+cloakresume: 12 layouts, both GPU themes and idle checks pass

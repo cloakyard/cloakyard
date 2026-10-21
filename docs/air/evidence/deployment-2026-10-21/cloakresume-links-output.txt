@@ -1,0 +1,1 @@
+production: 2 template/paper captures and two PDF exports

@@ -1,0 +1,2 @@
+Evidence: /tmp/cloakyard-release-2026-10-21/cloakdrop/site/cloakdrop-air-site-wmpKSb
+PASS 432 layouts; 34 journey records; 35 captures; no script errors or foreign runtime requests.

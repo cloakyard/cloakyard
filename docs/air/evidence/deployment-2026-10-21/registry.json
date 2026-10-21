@@ -1,0 +1,258 @@
+{
+  "checkedAt": "2026-10-21T12:31:39.042800+00:00",
+  "packages": {
+    "@astrojs/check": {
+      "version": "0.9.11",
+      "source": "https://registry.npmjs.org/@astrojs/check/latest"
+    },
+    "@astrojs/sitemap": {
+      "version": "3.7.4",
+      "source": "https://registry.npmjs.org/@astrojs/sitemap/latest"
+    },
+    "@base-ui/react": {
+      "version": "1.9.0",
+      "source": "https://registry.npmjs.org/@base-ui/react/latest"
+    },
+    "@fontsource-variable/geist": {
+      "version": "5.3.0",
+      "source": "https://registry.npmjs.org/@fontsource-variable/geist/latest"
+    },
+    "@fontsource/archivo": {
+      "version": "5.3.0",
+      "source": "https://registry.npmjs.org/@fontsource/archivo/latest"
+    },
+    "@fontsource/instrument-serif": {
+      "version": "5.3.0",
+      "source": "https://registry.npmjs.org/@fontsource/instrument-serif/latest"
+    },
+    "@fontsource/jetbrains-mono": {
+      "version": "5.3.0",
+      "source": "https://registry.npmjs.org/@fontsource/jetbrains-mono/latest"
+    },
+    "@fontsource/lora": {
+      "version": "5.3.0",
+      "source": "https://registry.npmjs.org/@fontsource/lora/latest"
+    },
+    "@huggingface/transformers": {
+      "version": "4.3.1",
+      "source": "https://registry.npmjs.org/@huggingface/transformers/latest"
+    },
+    "@jsquash/avif": {
+      "version": "2.1.1",
+      "source": "https://registry.npmjs.org/@jsquash/avif/latest"
+    },
+    "@langchain/core": {
+      "version": "1.2.20",
+      "source": "https://registry.npmjs.org/@langchain/core/latest"
+    },
+    "@langchain/langgraph": {
+      "version": "1.5.1",
+      "source": "https://registry.npmjs.org/@langchain/langgraph/latest"
+    },
+    "@llamaindex/liteparse-wasm": {
+      "version": "2.16.0",
+      "source": "https://registry.npmjs.org/@llamaindex/liteparse-wasm/latest"
+    },
+    "@mediapipe/tasks-vision": {
+      "version": "1.1.1",
+      "source": "https://registry.npmjs.org/@mediapipe/tasks-vision/latest"
+    },
+    "@napi-rs/canvas": {
+      "version": "1.0.13",
+      "source": "https://registry.npmjs.org/@napi-rs/canvas/latest"
+    },
+    "@pdf-lib/fontkit": {
+      "version": "1.1.1",
+      "source": "https://registry.npmjs.org/@pdf-lib/fontkit/latest"
+    },
+    "@pdfme/pdf-lib": {
+      "version": "6.2.8",
+      "source": "https://registry.npmjs.org/@pdfme/pdf-lib/latest"
+    },
+    "@tailwindcss/vite": {
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/@tailwindcss/vite/latest"
+    },
+    "@testing-library/jest-dom": {
+      "version": "7.0.1",
+      "source": "https://registry.npmjs.org/@testing-library/jest-dom/latest"
+    },
+    "@testing-library/react": {
+      "version": "16.3.3",
+      "source": "https://registry.npmjs.org/@testing-library/react/latest"
+    },
+    "@testing-library/user-event": {
+      "version": "14.6.8",
+      "source": "https://registry.npmjs.org/@testing-library/user-event/latest"
+    },
+    "@types/node": {
+      "version": "26.6.5",
+      "source": "https://registry.npmjs.org/@types/node/latest"
+    },
+    "@types/node-forge": {
+      "version": "1.3.14",
+      "source": "https://registry.npmjs.org/@types/node-forge/latest"
+    },
+    "@types/react": {
+      "version": "19.3.0",
+      "source": "https://registry.npmjs.org/@types/react/latest"
+    },
+    "@types/react-dom": {
+      "version": "19.3.0",
+      "source": "https://registry.npmjs.org/@types/react-dom/latest"
+    },
+    "@vite-pwa/assets-generator": {
+      "version": "2.0.0",
+      "source": "https://registry.npmjs.org/@vite-pwa/assets-generator/latest"
+    },
+    "@vitejs/plugin-react": {
+      "version": "6.1.2",
+      "source": "https://registry.npmjs.org/@vitejs/plugin-react/latest"
+    },
+    "@voidzero-dev/vite-plus-core": {
+      "version": "1.3.0",
+      "source": "https://registry.npmjs.org/@voidzero-dev/vite-plus-core/latest"
+    },
+    "adm-zip": {
+      "version": "0.6.1",
+      "source": "https://registry.npmjs.org/adm-zip/latest"
+    },
+    "astro": {
+      "version": "7.4.1",
+      "source": "https://registry.npmjs.org/astro/latest"
+    },
+    "brace-expansion": {
+      "version": "5.0.12",
+      "source": "https://registry.npmjs.org/brace-expansion/latest"
+    },
+    "fabric": {
+      "version": "7.4.0",
+      "source": "https://registry.npmjs.org/fabric/latest"
+    },
+    "fast-uri": {
+      "version": "4.2.3",
+      "source": "https://registry.npmjs.org/fast-uri/latest"
+    },
+    "form-data": {
+      "version": "4.0.6",
+      "source": "https://registry.npmjs.org/form-data/latest"
+    },
+    "glob": {
+      "version": "13.0.6",
+      "source": "https://registry.npmjs.org/glob/latest"
+    },
+    "global-agent": {
+      "version": "4.1.3",
+      "source": "https://registry.npmjs.org/global-agent/latest"
+    },
+    "harper.js": {
+      "version": "2.13.0",
+      "source": "https://registry.npmjs.org/harper.js/latest"
+    },
+    "html2canvas-pro": {
+      "version": "2.5.2",
+      "source": "https://registry.npmjs.org/html2canvas-pro/latest"
+    },
+    "jsdom": {
+      "version": "30.1.3",
+      "source": "https://registry.npmjs.org/jsdom/latest"
+    },
+    "jspdf": {
+      "version": "4.2.1",
+      "source": "https://registry.npmjs.org/jspdf/latest"
+    },
+    "knip": {
+      "version": "6.42.1",
+      "source": "https://registry.npmjs.org/knip/latest"
+    },
+    "lucide-react": {
+      "version": "1.61.0",
+      "source": "https://registry.npmjs.org/lucide-react/latest"
+    },
+    "motion": {
+      "version": "14.5.0",
+      "source": "https://registry.npmjs.org/motion/latest"
+    },
+    "node-forge": {
+      "version": "1.4.0",
+      "source": "https://registry.npmjs.org/node-forge/latest"
+    },
+    "npm": {
+      "version": "12.2.0",
+      "source": "https://registry.npmjs.org/npm/latest"
+    },
+    "onnxruntime-node": {
+      "version": "1.30.0",
+      "source": "https://registry.npmjs.org/onnxruntime-node/latest"
+    },
+    "pdfjs-dist": {
+      "version": "6.4.299",
+      "source": "https://registry.npmjs.org/pdfjs-dist/latest"
+    },
+    "pnpm": {
+      "version": "12.14.0",
+      "source": "https://registry.npmjs.org/pnpm/latest"
+    },
+    "puppeteer-core": {
+      "version": "25.15.0",
+      "source": "https://registry.npmjs.org/puppeteer-core/latest"
+    },
+    "react": {
+      "version": "19.3.1",
+      "source": "https://registry.npmjs.org/react/latest"
+    },
+    "react-dom": {
+      "version": "19.3.1",
+      "source": "https://registry.npmjs.org/react-dom/latest"
+    },
+    "react-markdown": {
+      "version": "10.1.0",
+      "source": "https://registry.npmjs.org/react-markdown/latest"
+    },
+    "remark-gfm": {
+      "version": "4.0.1",
+      "source": "https://registry.npmjs.org/remark-gfm/latest"
+    },
+    "serialize-javascript": {
+      "version": "7.1.2",
+      "source": "https://registry.npmjs.org/serialize-javascript/latest"
+    },
+    "shaders": {
+      "version": "4.0.4",
+      "source": "https://registry.npmjs.org/shaders/latest"
+    },
+    "sharp": {
+      "version": "0.35.5",
+      "source": "https://registry.npmjs.org/sharp/latest"
+    },
+    "tailwindcss": {
+      "version": "4.3.3",
+      "source": "https://registry.npmjs.org/tailwindcss/latest"
+    },
+    "tesseract.js": {
+      "version": "7.0.0",
+      "source": "https://registry.npmjs.org/tesseract.js/latest"
+    },
+    "typescript": {
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/typescript/latest"
+    },
+    "vite-plugin-pwa": {
+      "version": "2.0.0",
+      "source": "https://registry.npmjs.org/vite-plugin-pwa/latest"
+    },
+    "vite-plus": {
+      "version": "1.3.0",
+      "source": "https://registry.npmjs.org/vite-plus/latest"
+    },
+    "workbox-window": {
+      "version": "7.4.1",
+      "source": "https://registry.npmjs.org/workbox-window/latest"
+    },
+    "wrangler": {
+      "version": "4.151.3",
+      "source": "https://registry.npmjs.org/wrangler/latest"
+    }
+  },
+  "changedSincePreparation": []
+}

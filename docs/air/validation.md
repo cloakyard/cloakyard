@@ -2186,3 +2186,15 @@ PDF's candidate stays uncommitted: 461 units, smoke/extended/PWA/output checks
 pass, but Compact/multipage fails on both upgraded and baseline builds. This is
 a recorded blocker, not waived by Quality-tier results. No integration/deployment
 was performed. Full Resume/IMG migration and physical/assistive gates stay open.
+
+## 2026-10-21 — Four-site production verification
+
+Cloakyard, PDF, Drop and Resume release PRs are merged and Cloudflare deployments
+verified. All live assets match the merged builds and serve no-transform without
+injected scripts; responsive light/dark, neutral links/hover, app-coloured shaders
+and essential real output checks pass. Full counts, hashes, PR/main/dev refs, CI,
+Cloudflare build links and reviewed screenshots are in
+`evidence/deployment-2026-10-21/ledger.json` and ROLLOUT.md. PDF's existing Compact
+long-document limitation was explicitly accepted by the user for this release;
+the failing assertion remains unchanged. IMG was excluded and preserved.
+Remaining physical/device and full migration gates remain open.

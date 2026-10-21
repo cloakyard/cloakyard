@@ -935,8 +935,9 @@ interiors, custom controls, canvas chrome and less-visible states.
 
 ## Phase 9 — current dependencies and authorized release integration
 
-Authorized by the user on 2026-10-21; start integration after the remaining
-migrations, cleanup and required regression/acceptance gates pass.
+The latest explicit authorization deploys Cloakyard, PDF, Drop and Resume through
+individual dev → main PRs, while excluding IMG. The four sites are production-
+verified; remaining migration/device gates stay open. See docs/air/ROLLOUT.md.
 
 - [x] Initial direct-dependency discovery: 38 outdated entries across the five
       repositories, with fresh npm registry metadata saved in
@@ -956,31 +957,31 @@ migrations, cleanup and required regression/acceptance gates pass.
       and rebuilt libheif 1.23.6/libde265 1.1.3/Emscripten 6.0.13. 470 tests,
       actual face detection, 26 panels, history/output and responsive checks pass.
       Preserve the 15-file parked draft; this is not completed Air conformance.
-- [-] PDF candidate upgraded and validated except the real Compact/multipage
-  answer gate. The unchanged assertion fails twice and also on the pre-upgrade
-  build. Keep the candidate uncommitted; investigate before integration.
+- [x] PDF upgrade committed and deployed through PR #207. The user explicitly
+      accepted its pre-existing Compact/multipage limitation for this release;
+      other checks pass. Keep the separate missing-facts fix open, not relabeled a pass.
 - [x] Audit current stable upstream versions across all five repositories: direct
       and transitive web dependencies, build tools, package managers, native packages
       and vendored runtimes. Fresh 63-package metadata and native release checks
-      are recorded. Compatible upgrades are committed except the held PDF piece.
+      are recorded. Compatible upgrades are committed, with the explicit PDF release limitation recorded.
 - [x] Record exact resolved versions, audit date, upstream evidence and security
       results. State any supported-version constraint rather than claiming everything
       is latest. Retain the explicitly approved official yt-dlp frozen-runtime
       exception; do not replace it with a custom bundle. See [rollout readiness](docs/air/ROLLOUT.md)
       for the supported TS6 constraint and existing PDF advisory expiry.
-- [ ] Recheck dependency currentness immediately before integration; complete
+- [x] Recheck dependency currentness immediately before integration; complete
       feature/output, responsive light/dark, build/dead-code and security gates.
-- [ ] Fetch current branch state, preserve all local work, integrate passing pieces
+- [x] Fetch current branch state, preserve all local work, integrate passing pieces
       into each repository's `dev`, and validate the combined result.
-- [ ] Create and attach `dev` → `main` PRs with reviewed final descriptions and
+- [x] Create and attach `dev` → `main` PRs with reviewed final descriptions and
       evidence; wait for required CI, resolve conflicts/regressions, then merge.
-- [ ] Prepare exact production builds, release notes/artifacts and deployment
+- [x] Prepare exact production builds, release notes/artifacts and deployment
       settings from merged main; record release readiness and any unresolved device
       or signing constraints. Verify live bytes and essential journeys for deployments
       performed under the user's existing deployment authorization.
 - [x] Record this upgrade checkpoint in TODO, handoff, cleanup and rollout ledger.
-      Continue updating them for integration; PR/deployment and incomplete migration
-      or physical gates remain open.
+      Four-site PRs/deployment are complete; IMG, incomplete migration and physical
+      gates remain open. Proof: docs/air/evidence/deployment-2026-10-21/ledger.json.
 
 ### PDF modal and chat checkpoints
 
@@ -1724,9 +1725,11 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 
 ### Four-site rollout authorization — 2026-10-21
 
-- [ ] Create individual dev → main PRs, merge passing candidates and verify live
+- [x] Create individual dev → main PRs, merge passing candidates and verify live
       Cloakyard, CloakPDF, CloakDrop and CloakResume; synchronize each dev with main.
-- [ ] Resolve PDF's required Compact/multipage check before publishing its upgrade.
+- [x] Record the explicit user exception authorizing the existing Compact limitation
+      for this deployment; retain the unchanged assertion and original fixtures.
+- [ ] Resolve PDF's existing Compact long-document missing-facts limitation separately.
 - [x] Explicitly exclude IMG from this deployment; preserve its pending redesign.
 - [ ] Retain Resume's remaining font/token work and all untested physical acceptance
       gates; deployment is not a claim of complete family migration.
