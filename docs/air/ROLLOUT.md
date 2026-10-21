@@ -59,7 +59,7 @@ then complete IMG's pending redesign last. Retain all untested physical touch,
 software-keyboard, OS IME, spoken assistive and hardware acceptance tasks.
 Deployment of this validated stage does not establish full-family migration.
 
-The production PDF output smoke test now waits for the requested home card before
+The production PDF output smoke test ([follow-up #208](https://github.com/cloakyard/cloakpdf/pull/208)) now waits for the requested home card before
 clicking it: network-idle alone can occur while a remote entry module still loads.
 All six workflows pass with the readiness correction; application bytes are unchanged.
 
@@ -67,3 +67,5 @@ Compact proof is stored in `docs/air/evidence/deployment-2026-10-21/`. Large scr
 captures and generated exports remain in `/tmp/cloakyard-release-2026-10-21/` and
 `/tmp/cloakyard-rollout-2026-10-21/cloakresume/production/`. The clean IMG worktree is
 retained for later redesign work. All task-owned preview servers are stopped at close.
+
+Release records are integrated through [Cloakyard #17](https://github.com/cloakyard/cloakyard/pull/17); these documentation changes preserve the verified site bytes.

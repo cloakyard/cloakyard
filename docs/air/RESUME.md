@@ -45,6 +45,7 @@ Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
 **Cloakyard, CloakPDF, CloakDrop and CloakResume are live.** Individual dev → main
 PRs merged: Cloakyard #16, PDF #207, Drop #44, Resume #39 and header follow-up #40.
+PDF test-readiness/proof follow-up #208 is merged; release records use Cloakyard #17.
 Automatic Cloudflare builds and exact live asset checks pass; dev is synchronized
 with main in all four repos. See [ROLLOUT.md](ROLLOUT.md) and the exact
 [deployment ledger](evidence/deployment-2026-10-21/ledger.json).

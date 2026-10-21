@@ -135,5 +135,18 @@
     "Physical touch/software keyboard, OS IME, spoken assistive and hardware acceptance remain open",
     "IMG full redesign remains pending; no remote integration or deployment",
     "Drop RC1 remains ad-hoc signed, not notarized; native app unchanged"
-  ]
+  ],
+  "followups": {
+    "cloakpdfReadiness": {
+      "url": "https://github.com/cloakyard/cloakpdf/pull/208",
+      "mergeCommit": "605e2252cd98340651b258b90e31c34b7091c683",
+      "devSynchronized": true,
+      "applicationBuildUnchanged": true
+    },
+    "cloakyardEvidence": {
+      "url": "https://github.com/cloakyard/cloakyard/pull/17",
+      "scope": "Release records only; application build unchanged"
+    }
+  },
+  "branchSynchronization": "Primary release refs above record their verified release point. Each subsequent main PR merge is fast-forwarded into dev; follow-up test/documentation commits preserve the same live application assets."
 }
