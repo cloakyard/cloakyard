@@ -533,3 +533,14 @@ assistive speech acceptance remain open; no full-product migration claim.
 Next bounded slice: **Ask PDF chat, indexing, citations and recovery**, then remaining
 editor chrome/canvas/panels/overlays. Continue removing replaced code, validate real
 features and all required sizes/themes before each local commit. No push/deployment.
+
+## 2026-10-21 — final integration authorization
+
+Finish Resume, then IMG last, in passing bounded pieces. Once the remaining work
+and required gates pass, the user authorizes dependency updates across the family,
+merging into `dev`, creating `dev` → `main` PRs, merging after CI and preparing
+deployment. Follow Phase 9 in `UX_REFRESH_TODO.md`; earlier no-push notes are
+historical, not a new approval requirement for this final sequence. Recheck latest
+stable upstream versions before integration, document compatibility constraints,
+and preserve Drop's approved official yt-dlp embedded-runtime exception. Keep
+physical/assistive acceptance honest and record exact release source/build evidence.

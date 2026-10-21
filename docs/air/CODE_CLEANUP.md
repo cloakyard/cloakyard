@@ -114,3 +114,30 @@ conservative token candidates after checking source, token chains and compiled
 Tailwind references; these are candidates, not blanket deletion permission.
 DragList’s `.cr-drag-item` is explicitly live. Review only its earlier transform
 override and the non-Air-only date-popup skin during the next bounded cleanup.
+
+## 2026-10-21 — Resume unused foundations
+
+Removed 61 unused token names / 62 declarations after source/script/compiled CSS
+consumer tracing, the 241-line unused JSON mirror and two unreachable non-Air
+popup skin rules. README/historical links and source tests now identify pinned
+Air as normative. No font, template, export, schema or package change.
+
+Evidence: Resume `docs/air/evidence/unused-foundations-2026-10-21.json`. The
+remaining 63 token names have recorded consumers. Three transitive orphan
+candidates (`--color-ink-2`, `--color-overlay`, `--color-rule`) and the live
+Archivo/JetBrains base/loading bridges belong to the next deliberate migration.
+Preserve explicit rich-text code typography, all template families and PDF font
+preparation. Keep DragList and the MonthYearField placement/presence adapter.
+This slice does not close full-product or physical/assistive acceptance.
+
+The user additionally authorized final family dependency updates and dev → PR →
+main integration once remaining work passes. Initial direct-dependency discovery
+is saved in `evidence/dependency-preflight-2026-10-21.json`; upgrades, transitive/
+native/security audits and integration remain pending. Keep the explicitly
+approved official yt-dlp bundle exception.
+
+Committed as Resume `f05f97e`: 372/372 production tests, zero skips, 537.78s;
+88 responsive comparisons, 256 date layouts, neutral links and exact template/PDF
+output pass. All 283 recorded source/build files remain unchanged after the hook.
+Detailed date/link measurements are retained losslessly as compressed JSON beside
+compact summaries, avoiding repeated expanded evidence in the source tree.

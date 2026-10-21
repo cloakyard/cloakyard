@@ -1,0 +1,444 @@
+{
+  "checkedAt": "2026-10-21T10:53:34.570150+00:00",
+  "scope": "Initial outdated-direct-dependency discovery only. Final audit must cover all direct/resolved/transitive/build/native/vendored/action dependencies and security; no packages changed here. Registry values must be rechecked at integration.",
+  "findings": [
+    {
+      "repo": "cloakyard",
+      "package": "react",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakyard",
+      "package": "react-dom",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakyard",
+      "package": "@voidzero-dev/vite-plus-core",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    },
+    {
+      "repo": "cloakyard",
+      "package": "lucide-react",
+      "current": "1.52.0",
+      "packageManagerLatest": "1.60.0"
+    },
+    {
+      "repo": "cloakyard",
+      "package": "vite-plus",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    },
+    {
+      "repo": "cloakyard",
+      "package": "wrangler",
+      "current": "4.148.0",
+      "packageManagerLatest": "4.151.2"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "@langchain/core",
+      "current": "1.2.17",
+      "packageManagerLatest": "1.2.18"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "@pdfme/pdf-lib",
+      "current": "6.2.4",
+      "packageManagerLatest": "6.2.6"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "react",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "react-dom",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "@langchain/langgraph",
+      "current": "1.4.20",
+      "packageManagerLatest": "1.5.1"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "@llamaindex/liteparse-wasm",
+      "current": "2.15.1",
+      "packageManagerLatest": "2.16.0"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "@voidzero-dev/vite-plus-core",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "knip",
+      "current": "6.40.0",
+      "packageManagerLatest": "6.42.1"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "lucide-react",
+      "current": "1.52.0",
+      "packageManagerLatest": "1.60.0"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "motion",
+      "current": "14.0.0",
+      "packageManagerLatest": "14.4.0"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "puppeteer-core",
+      "current": "25.12.0",
+      "packageManagerLatest": "25.14.0"
+    },
+    {
+      "repo": "cloakpdf",
+      "package": "vite-plus",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    },
+    {
+      "repo": "cloakdrop",
+      "package": "@astrojs/check",
+      "current": "0.9.10",
+      "packageManagerLatest": "0.9.11"
+    },
+    {
+      "repo": "cloakdrop",
+      "package": "astro",
+      "current": "7.4.0",
+      "packageManagerLatest": "7.4.1"
+    },
+    {
+      "repo": "cloakdrop",
+      "package": "typescript",
+      "current": "6.0.3",
+      "packageManagerLatest": "7.0.2"
+    },
+    {
+      "repo": "cloakdrop",
+      "package": "wrangler",
+      "current": "4.151.2",
+      "packageManagerLatest": "4.151.3"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "@types/node",
+      "current": "26.6.4",
+      "packageManagerLatest": "26.6.5"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "react",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "react-dom",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "@voidzero-dev/vite-plus-core",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "harper.js",
+      "current": "2.10.0",
+      "packageManagerLatest": "2.13.0"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "lucide-react",
+      "current": "1.52.0",
+      "packageManagerLatest": "1.60.0"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "puppeteer-core",
+      "current": "25.12.0",
+      "packageManagerLatest": "25.15.0"
+    },
+    {
+      "repo": "cloakresume",
+      "package": "vite-plus",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "@mediapipe/tasks-vision",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.1.1"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "@testing-library/user-event",
+      "current": "14.6.7",
+      "packageManagerLatest": "14.6.8"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "@types/node",
+      "current": "26.6.4",
+      "packageManagerLatest": "26.6.5"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "react",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "react-dom",
+      "current": "19.3.0",
+      "packageManagerLatest": "19.3.1"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "@voidzero-dev/vite-plus-core",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "puppeteer-core",
+      "current": "25.12.0",
+      "packageManagerLatest": "25.14.0"
+    },
+    {
+      "repo": "cloakimg",
+      "package": "vite-plus",
+      "current": "1.1.0",
+      "packageManagerLatest": "1.3.0"
+    }
+  ],
+  "registry": {
+    "@astrojs/check": {
+      "version": "0.9.11",
+      "peerDependencies": {
+        "typescript": "^5.0.0 || ^6.0.0"
+      },
+      "engines": {},
+      "source": "https://registry.npmjs.org/@astrojs/check/latest"
+    },
+    "@langchain/core": {
+      "version": "1.2.20",
+      "peerDependencies": {},
+      "engines": {
+        "node": ">=20"
+      },
+      "source": "https://registry.npmjs.org/@langchain/core/latest"
+    },
+    "@langchain/langgraph": {
+      "version": "1.5.1",
+      "peerDependencies": {
+        "zod": "^3.25.32 || ^4.2.0",
+        "@langchain/core": "^1.1.48"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "source": "https://registry.npmjs.org/@langchain/langgraph/latest"
+    },
+    "@llamaindex/liteparse-wasm": {
+      "version": "2.16.0",
+      "peerDependencies": {},
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "source": "https://registry.npmjs.org/@llamaindex/liteparse-wasm/latest"
+    },
+    "@mediapipe/tasks-vision": {
+      "version": "1.1.1",
+      "peerDependencies": {},
+      "engines": {},
+      "source": "https://registry.npmjs.org/@mediapipe/tasks-vision/latest"
+    },
+    "@pdfme/pdf-lib": {
+      "version": "6.2.8",
+      "peerDependencies": {},
+      "engines": {},
+      "source": "https://registry.npmjs.org/@pdfme/pdf-lib/latest"
+    },
+    "@testing-library/user-event": {
+      "version": "14.6.8",
+      "peerDependencies": {
+        "@testing-library/dom": ">=7.21.4"
+      },
+      "engines": {
+        "npm": ">=6",
+        "node": ">=12"
+      },
+      "source": "https://registry.npmjs.org/@testing-library/user-event/latest"
+    },
+    "@types/node": {
+      "version": "26.6.5",
+      "peerDependencies": {},
+      "engines": {},
+      "source": "https://registry.npmjs.org/@types/node/latest"
+    },
+    "@voidzero-dev/vite-plus-core": {
+      "version": "1.3.0",
+      "peerDependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "unrun": "*",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "publint": "^0.3.8",
+        "sugarss": "^5.0.0",
+        "vue-tsc": "~3.2.0 || ~3.3.0",
+        "typescript": "^5.0.0 || ^6.0.0 || ^7.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "unplugin-unused": ">=0.5.0",
+        "@vitejs/devtools": "^0.7.1",
+        "@volar/typescript": "~2.4.0",
+        "@vue/language-core": "~3.2.0 || ~3.3.0",
+        "@arethetypeswrong/core": "^0.18.1",
+        "@typescript/native-preview": "*"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.18.0 || >=24.11.0"
+      },
+      "source": "https://registry.npmjs.org/@voidzero-dev/vite-plus-core/latest"
+    },
+    "astro": {
+      "version": "7.4.1",
+      "peerDependencies": {
+        "@astrojs/markdown-remark": "^7.3.0"
+      },
+      "engines": {
+        "npm": ">=9.6.5",
+        "node": ">=22.22.0",
+        "pnpm": ">=7.1.0"
+      },
+      "source": "https://registry.npmjs.org/astro/latest"
+    },
+    "harper.js": {
+      "version": "2.13.0",
+      "peerDependencies": {},
+      "engines": {},
+      "source": "https://registry.npmjs.org/harper.js/latest"
+    },
+    "knip": {
+      "version": "6.42.1",
+      "peerDependencies": {},
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "source": "https://registry.npmjs.org/knip/latest"
+    },
+    "lucide-react": {
+      "version": "1.61.0",
+      "peerDependencies": {
+        "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+        "@types/react": "*"
+      },
+      "engines": {},
+      "source": "https://registry.npmjs.org/lucide-react/latest"
+    },
+    "motion": {
+      "version": "14.5.0",
+      "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+      },
+      "engines": {},
+      "source": "https://registry.npmjs.org/motion/latest"
+    },
+    "npm": {
+      "version": "12.2.0",
+      "peerDependencies": {},
+      "engines": {
+        "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+      },
+      "source": "https://registry.npmjs.org/npm/latest"
+    },
+    "pnpm": {
+      "version": "12.14.0",
+      "peerDependencies": {},
+      "engines": {
+        "node": ">=18.*"
+      },
+      "source": "https://registry.npmjs.org/pnpm/latest"
+    },
+    "puppeteer-core": {
+      "version": "25.15.0",
+      "peerDependencies": {},
+      "engines": {
+        "node": ">=22.12.0"
+      },
+      "source": "https://registry.npmjs.org/puppeteer-core/latest"
+    },
+    "react": {
+      "version": "19.3.1",
+      "peerDependencies": {},
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "source": "https://registry.npmjs.org/react/latest"
+    },
+    "react-dom": {
+      "version": "19.3.1",
+      "peerDependencies": {
+        "react": "^19.3.1"
+      },
+      "engines": {},
+      "source": "https://registry.npmjs.org/react-dom/latest"
+    },
+    "typescript": {
+      "version": "7.0.2",
+      "peerDependencies": {},
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "source": "https://registry.npmjs.org/typescript/latest"
+    },
+    "vite-plus": {
+      "version": "1.3.0",
+      "peerDependencies": {
+        "playwright": "*",
+        "@vitest/browser-playwright": "5.0.5",
+        "@vitest/browser-webdriverio": "^5.0.0-beta.5 || >=5.0.0"
+      },
+      "engines": {
+        "node": "^22.18.0 || ^24.11.0 || >=26.0.0"
+      },
+      "source": "https://registry.npmjs.org/vite-plus/latest"
+    },
+    "wrangler": {
+      "version": "4.151.3",
+      "peerDependencies": {
+        "@cloudflare/workers-types": "^5.20261019.1"
+      },
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "source": "https://registry.npmjs.org/wrangler/latest"
+    }
+  }
+}

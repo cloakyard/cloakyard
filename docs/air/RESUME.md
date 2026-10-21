@@ -41,7 +41,55 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel, writing hints, content sections, template library, review and Options/export are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-Latest bounded piece: **CloakResume preview assets and metadata** (`448daea`, local, 2026-10-21).
+### Release authorization — 2026-10-21
+
+The user now authorizes the final family integration after the remaining work is
+complete: update dependencies to their latest stable releases, merge each completed
+product into `dev`, open a `dev` → `main` PR, merge after required checks, and prepare
+the deployments. Earlier local-only/no-push notes are historical for those pieces;
+they do not require another approval for this authorized final sequence. Continue
+bounded local work now, finish Resume before IMG, and keep IMG last. Do not publish
+unfinished migrations or call unresolved acceptance gates passed.
+
+Audit manifests, lockfiles, build tools, native packages and vendored runtimes using
+current upstream metadata. Remove unused packages first; validate upgrades in
+bounded commits with feature/output, responsive/theme and build/security checks.
+Document any compatibility constraint explicitly. The user-approved official
+yt-dlp bundle exception remains in force for Drop's frozen embedded runtime.
+Recheck versions immediately before integration, preserve release artifacts, and
+record PRs, CI, source/build hashes and deployment readiness in the final ledger.
+Initial preflight found 38 outdated direct entries; fresh registry metadata is in
+`docs/air/evidence/dependency-preflight-2026-10-21.json`. This is discovery only,
+not completed upgrades or a transitive/native/security audit. Latest Astro Check
+0.9.11 still supports TypeScript 5/6, so recheck that constraint before upgrading.
+
+Latest bounded piece: **CloakResume unused foundation cleanup** (`f05f97e`, local, 2026-10-21).
+Removed 61 unused token names / 62 declarations, the 241-line unconsumed JSON
+mirror and both unreachable non-Air popup skin rules. Air is now the explicit
+normative authority in the bridge comments and source tests. Live fonts, document
+styles, token consumers, DragList and date placement/presence remain unchanged.
+88 responsive comparisons preserve geometry/computed styles; 81 are pixel-exact,
+and seven have only rounded-edge antialiasing (at most 57 pixels / 2 channel levels).
+256 date layouts, 124 neutral link states / 32 keyboard checks, all 34 template/
+paper captures and four actual PDF raster/text/geometry/link comparisons pass.
+**372/372 production tests, 10 files, zero skips, 537.78s**. Check/build, 86-source
+inventory, 18 portability assertions and exact family sync pass. All 283 recorded
+source/config/test/document/asset/build files (105 dist) stayed frozen through
+testing and the commit hook. Product worktree is clean.
+Evidence: Resume `docs/air/evidence/unused-foundations-2026-10-21.json`.
+Next: **live font/token bridge migration, then final product acceptance**. The
+remaining 63 token names are traced in the evidence; three transitive orphan
+candidates are `--color-ink-2`, `--color-overlay` and `--color-rule`. Archivo still
+has base/body/form references; JetBrains remains in Preview loading and the
+compiled mono bridge. Preserve the explicit rich-text code font, all 17 template
+families and PDF font preparation. Do not delete fonts solely by filename.
+Physical/assistive acceptance stays open, and IMG stays last. Final dependency
+updates/integration follow the authorization above. Scratch:
+`/tmp/cloakresume-air-cleanup/`; owned preview ports 8212/8213 are stopped.
+
+### Previous checkpoint — preview assets and metadata
+
+Previous bounded piece: **CloakResume preview assets and metadata** (`448daea`, local, 2026-10-21).
 **372/372 production tests, 10 files, zero skips, 530.12s**. The final complete
 run passes after updating one stale README audit-wording assertion to verify
 actual Air inventory coverage; historical source/output checks remain intact.
@@ -63,7 +111,8 @@ was added. Live fonts/tokens, date popup and output adapters remain traced in
 Next: **full-product cleanup and acceptance**, starting with the exact font/token/
 selector consumer audit and remaining inventory/44px target gates. Preserve all
 17 templates, paper/JSON/PDF output and validated flows. Physical/assistive gates
-remain open. CloakIMG stays last with its parked draft untouched. No push/deploy.
+remain open. CloakIMG stays last with its parked draft untouched. Final integration
+follows the release authorization above after the remaining work passes.
 Scratch: `/tmp/cloakresume-air-assets/`. Preview/dev servers 8208/8209/8210 are stopped.
 
 ### Previous checkpoint — PWA safety and static recovery
@@ -183,7 +232,9 @@ same family; landing-only or token-only work is not a completed migration.
   Drop RC1 is published through its verified tag. The user then explicitly authorized
   its website deployment, then deployment of the app-coloured shaders. All three
   released sites now have dev integration, merged main PRs and verified production
-  builds. Resume/IMG stay local. No subagent delegation was requested.
+  builds. Resume/IMG continue locally until the remaining work passes; the latest
+  authorization adds final dependency updates and dev -> PR -> main integration.
+  No subagent delegation was requested.
 
 ### Repository state at handoff
 
@@ -197,13 +248,13 @@ parked runtime draft below; its isolated horizon commit preserves that draft. Re
 before editing; preserve any new user changes. Paths are siblings under
 `/Users/sumitsahoo/Developer/`:
 
-| Repository  | Last implementation/checkpoint commit | Current scope                                                                                                  |
-| ----------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| cloakyard   | `7c5fb52`                             | Air source and deployed home; current preview-asset appendix, cleanup and handoff documentation commit follows |
-| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open                   |
-| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending                     |
-| cloakresume | `448daea`                             | Entry through actual preview assets software-validated; final product cleanup and acceptance next              |
-| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open                |
+| Repository  | Last implementation/checkpoint commit | Current scope                                                                                          |
+| ----------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| cloakyard   | `e66bcf9`                             | Air source/deployed home; current cleanup and authorized dependency/integration handoff commit follows |
+| cloakpdf    | `1ce863a`                             | Software acceptance complete; human/device and additional inference combinations remain open           |
+| cloakimg    | `8cbc910`                             | Parked uncommitted landing/import draft; full product migration and wheel adoption pending             |
+| cloakresume | `f05f97e`                             | Unused foundations removed; live font/token bridge and final product acceptance next                   |
+| cloakdrop   | `1f6461d`                             | Website/OG/horizon deployed; 1.0.0-rc.1 published with Air installer; signing/device gates open        |
 
 The preceding PDF foundation commit is `7bed615`; wrappers/history is `b9738c0`.
 Fill form, Auto-fill, Select text, N-up, modals and the other editor interiors already
@@ -400,7 +451,8 @@ Root contains the canonical contract, palette, gallery, home and family evidence
    implemented locally. Do not repeat the finished PWA or image migration.
 2. Trace every remaining compatibility selector, token/font registration and
    public asset through runtime, templates, export, lazy/loading and test paths.
-   Start with `index.css`, `cloak-family.css`, `tokens.css` / `tokens.json` and
+   The unused JSON mirror and 61 dead token names are already removed. Start
+   with the remaining `index.css`, `cloak-family.css`, `tokens.css` and
    Archivo/JetBrains references. Record the live consumer or remove the unused
    definition and asset together; preserve document typography and print geometry.
 3. Keep MonthYearField’s live `useAnimatedPresence` / `.cr-popover` adapter until
@@ -421,7 +473,9 @@ Root contains the canonical contract, palette, gallery, home and family evidence
    real preview assets only if a changed visible surface makes them stale.
 7. Keep TODO/evidence/handoff/cleanup current and commit each passing piece
    locally. Do not claim full-product acceptance while required gates remain.
-   No push/deploy; CloakIMG stays last and its dirty draft remains untouched.
+   CloakIMG stays last and its dirty draft remains untouched until its turn.
+   Final dependency audit and dev → PR → main integration follow only after the
+   remaining migrations and required gates pass; see current release authorization.
 
 Completed Resume Options/export (`54be0f1`, 2026-10-21): shared Air sheet, immediate handoffs,
 real busy/recovery, native JSON cancellation/replacement, responsive paper/focus,

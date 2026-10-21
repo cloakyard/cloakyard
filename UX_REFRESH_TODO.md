@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry through actual preview assets software-validated locally; final cleanup/acceptance next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry through preview assets and unused foundations software-validated locally; live foundation/final acceptance next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -14,7 +14,11 @@ KERR's app and native macOS UI are outside this redesign. The user authorized
 Cloakyard/PDF dev integration, main PRs and releases, followed by CloakDrop RC1
 publication, its Air website deployment, and the app-colour deployment. Cloakyard,
 PDF and Drop are live with their logo-coloured horizons; main/dev integration is
-complete. Resume/IMG work stays local and IMG remains last.
+complete. Continue Resume/IMG locally until their remaining migrations pass; IMG
+remains last. On 2026-10-21 the user authorized final dependency updates, dev
+integration and dev → main PR merges after all remaining work is complete, with
+deployment preparation. This supersedes older local-only notes for that final
+sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
 ## Neutral content links and hover — 2026-10-19
@@ -766,7 +770,7 @@ items retain their documented human/device gates; they do not imply full accepta
 
 - [ ] Physical touch and spoken assistive acceptance; browser emulation does not certify these gates.
 
-## Current bounded piece — Resume PWA and static recovery (2026-10-21)
+## Completed bounded piece — Resume PWA and static recovery (2026-10-21)
 
 Product checkpoint: `24c89e6` (local only).
 
@@ -803,7 +807,26 @@ Product checkpoint: `24c89e6` (local only).
 - [ ] Next: full-product cleanup and acceptance, starting with exact token/font/
       selector consumers and remaining inventory/44px target gates. Physical
       touch/software keyboard, OS IME, spoken assistive and GPU/battery acceptance
-      remain open. CloakIMG remains parked and last; no push/deploy.
+      remain open. CloakIMG remains parked and last. Final integration follows
+      the user-authorized Phase 9 after the remaining gates pass.
+
+## CloakResume unused foundation cleanup — 2026-10-21
+
+- [x] Trace source, scripts, token chains and compiled Tailwind consumers; remove
+      61 unused token names (62 declarations), the unused 241-line JSON mirror
+      and both unreachable non-Air popup skin rules. Update current references
+      and test Air ownership; retain every live font/output/date/drag adapter.
+- [x] 88 responsive geometry/style comparisons, 256 date layouts, 124 neutral
+      link states / 32 keyboard checks and exact 34 template/paper plus four real
+      PDF output comparisons. Rendered desktop/laptop/tablet/phone themes inspected.
+- [x] **372/372 production tests, 10 files, zero skips, 537.78s**; check/build,
+      86-source inventory, 18 portability checks and exact sync pass. All 283
+      recorded source/build files stayed frozen through testing and commit hook.
+      Product commit: `f05f97e`. Evidence: Resume
+      `docs/air/evidence/unused-foundations-2026-10-21.json`.
+- [ ] Next: remaining live foundation/font bridge, three transitive token orphans,
+      full inventory/44px-target and journey acceptance. Physical/assistive gates
+      remain open. IMG stays last; Phase 9 records final integration authorization.
 
 ## Phase 5 — CloakResume
 
@@ -909,6 +932,37 @@ interiors, custom controls, canvas chrome and less-visible states.
 - [ ] Confirm KERR is unchanged and its main-site listing has no preview.
 - [ ] Final per-app checks/builds, visual evidence, clean git state and commit ledger.
 - [ ] Mark the persistent goal complete only after every required item is verified.
+
+## Phase 9 — current dependencies and authorized release integration
+
+Authorized by the user on 2026-10-21; start integration after the remaining
+migrations, cleanup and required regression/acceptance gates pass.
+
+- [x] Initial direct-dependency discovery: 38 outdated entries across the five
+      repositories, with fresh npm registry metadata saved in
+      `docs/air/evidence/dependency-preflight-2026-10-21.json`. No dependencies
+      changed in this preflight. Latest Astro Check 0.9.11 still declares only
+      TypeScript 5/6 support; reassess that constraint during the upgrade phase.
+- [ ] Audit current stable upstream versions across all five repositories: direct
+      and transitive web dependencies, build tools, package managers, native packages
+      and vendored runtimes. Remove unused packages; update compatible releases and
+      validate breaking upgrades in separate bounded commits.
+- [ ] Record exact resolved versions, audit date, upstream evidence and security
+      results. State any supported-version constraint rather than claiming everything
+      is latest. Retain the explicitly approved official yt-dlp frozen-runtime
+      exception; do not replace it with a custom bundle.
+- [ ] Recheck dependency currentness immediately before integration; complete
+      feature/output, responsive light/dark, build/dead-code and security gates.
+- [ ] Fetch current branch state, preserve all local work, integrate passing pieces
+      into each repository's `dev`, and validate the combined result.
+- [ ] Create and attach `dev` → `main` PRs with reviewed final descriptions and
+      evidence; wait for required CI, resolve conflicts/regressions, then merge.
+- [ ] Prepare exact production builds, release notes/artifacts and deployment
+      settings from merged main; record release readiness and any unresolved device
+      or signing constraints. Verify live bytes and essential journeys for deployments
+      performed under the user's existing deployment authorization.
+- [ ] Keep the TODO, handoff, cleanup record and final commit/PR/deployment ledger
+      synchronized. Do not mark an incomplete migration or physical gate passed.
 
 ### PDF modal and chat checkpoints
 
