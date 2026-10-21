@@ -151,10 +151,11 @@ overrides, and Workbox uses scoped glob 13.0.6 instead of deprecated glob 11.
 Active security overrides remain. No new runtime abstraction or package was added
 for the dependency update. CI action versions are pinned to current release SHAs.
 
-PDF's held reduced-motion fix removes mirrored provider media-query state and
+PDF's released reduced-motion fix removes mirrored provider media-query state and
 listeners; each dialog reads a current browser snapshot. Its delayed-notification
-regression passes, but the pre-existing Compact long-document answer failure
-prevents committing the full PDF candidate. Do not discard its source or evidence.
+regression passes. The user explicitly accepted the separate pre-existing Compact
+long-document answer limitation for this release; the failed diagnostic retrieval
+experiment was removed. No extra prompt, model or retrieval abstraction ships.
 
 IMG's face-probe default pointed to an old product graphic while claiming a
 portrait. It now uses the actual local portrait and retains FACE_FIXTURE override.
@@ -167,3 +168,13 @@ templates, output adapters and date presence remain protected for its next slice
 
 Drop native source/RC artifact and KERR are unchanged. This is a bounded cleanup
 record, not a claim that every product is migrated or every remaining source is used.
+
+## 2026-10-21 — Production rollout closure
+
+Four included sites are deployed through individual dev → main PRs. Removed the
+unsuccessful PDF retrieval experiment and its diagnostic unit test before release.
+Kept the existing standalone test assertions and added a bounded card-readiness
+wait for real remote loading. Resume adds only a static no-transform response rule
+to prevent edge injection. Runtime/output hashes are preserved in both follow-ups.
+IMG's 15 draft hashes and remote branches are unchanged; its redesign remains last.
+The dependency/security constraints and Compact limitation are explicit in ROLLOUT.md.

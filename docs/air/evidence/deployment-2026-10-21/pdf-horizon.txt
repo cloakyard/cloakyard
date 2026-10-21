@@ -1,0 +1,3 @@
+$ node --experimental-strip-types tests/e2e/landing-horizon.e2e.ts
+Evidence: /tmp/cloakyard-release-2026-10-21/cloakpdf/horizon/cloakpdf-air-horizon-91GVJt
+PASS: 68 responsive/theme/text layouts; real GPU arrival, pointer response, idle/offscreen/reduced cleanup, editor/standalone teardown and all static fallbacks.

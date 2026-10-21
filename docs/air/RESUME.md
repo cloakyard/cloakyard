@@ -41,19 +41,41 @@ their full migrations are unfinished. Resume logo/photo is complete as `9cc74df`
 its shared colour wheel, writing hints, content sections, template library, review and Options/export are now software-validated locally. See the current checkpoint below.
 Full release proof: `docs/air/evidence/releases-2026-10-19/releases.json`.
 
-### Four-site deployment — 2026-10-21 (latest authorization)
+### Four-site production checkpoint — 2026-10-21 (current)
 
-The user explicitly requests new individual `dev` → `main` PRs and deployment
-for **Cloakyard, CloakPDF, CloakDrop and CloakResume**, keeping `dev` synchronized.
-**IMG is excluded** while its redesign is pending; preserve its local draft and
-remote branches. This supersedes the earlier instruction to wait for completion
-of Resume/IMG before integrating the four included sites. Resume's remaining
-font/token and physical-device acceptance work stays open after deployment.
-PDF's required Compact/multipage check is still being investigated; do not treat
-this deployment request as permission to weaken a check. Current status and final
-PR/deployment proof belong in `ROLLOUT.md` and its evidence ledger.
+**Cloakyard, CloakPDF, CloakDrop and CloakResume are live.** Individual dev → main
+PRs merged: Cloakyard #16, PDF #207, Drop #44, Resume #39 and header follow-up #40.
+PDF test-readiness/proof follow-up #208 is merged; release records use Cloakyard #17.
+Automatic Cloudflare builds and exact live asset checks pass; dev is synchronized
+with main in all four repos. See [ROLLOUT.md](ROLLOUT.md) and the exact
+[deployment ledger](evidence/deployment-2026-10-21/ledger.json).
 
-### Release authorization — 2026-10-21
+Live served-file counts are 13 / 132 / 17 / 104 respectively, all with no-transform
+and no injected scripts. Neutral links including hover, angled hyperlinks,
+app-coloured GPU horizons and responsive light/dark states pass. Drop passes 432
+layouts / 34 journeys. Resume preserves all 34 template/paper captures and four
+actual PDF raster/text/geometry/link comparisons; all 17 template families remain.
+PDF passes six actual output workflows. The smoke harness now waits for the tool
+card to render on a remote connection; the application build is unchanged.
+
+The user explicitly accepted PDF's **existing Compact beta long-document missing-
+facts limitation** for this release. Keep that follow-up open; do not relabel the
+unchanged failing assertion as passed. No model/prompt/retrieval experiment ships.
+The node-forge exception still expires 2026-11-06; Drop's official bundle and TS6
+compatibility exceptions remain unchanged. Fresh registry metadata confirms all
+63 previously checked latest releases are unchanged at rollout.
+
+**IMG is excluded.** Its remote branches and all 15 local draft hashes are unchanged.
+The clean dependency worktree remains available. KERR and the native Drop RC are
+unchanged. Resume's live font/token bridge, final target sweep, physical keyboard/
+IME/assistive/hardware acceptance and IMG's full redesign remain unfinished.
+Continue that tracked work separately; this deployment is not complete Air migration.
+
+All task-owned preview servers are stopped at close. No Cloudflare sign-in is
+needed for the completed automatic deployments. The prior preparation checkpoints
+below are historical and must not cause another deploy or repeat completed work.
+
+### Earlier release authorization — 2026-10-21 (superseded by four-site scope)
 
 The user now authorizes the final family integration after the remaining work is
 complete: update dependencies to their latest stable releases, merge each completed
@@ -75,7 +97,7 @@ Initial preflight found 38 outdated direct entries; fresh registry metadata is i
 not completed upgrades or a transitive/native/security audit. Latest Astro Check
 0.9.11 still supports TypeScript 5/6, so recheck that constraint before upgrading.
 
-### Rollout preparation checkpoint — 2026-10-21 (current)
+### Rollout preparation checkpoint — 2026-10-21 (historical, before deployment)
 
 Read [the rollout ledger](ROLLOUT.md) before integration. Latest user request:
 “upgrade and prepare for rollout”. Direct and compatible transitive dependencies,

@@ -1,7 +1,7 @@
 {
   "checkedAt": "2026-10-21T12:08:46.725768+00:00",
   "registryCheckedAt": "2026-10-21T12:02:41.375247+00:00",
-  "status": "held-before-family-integration",
+  "status": "historical-preparation-superseded-by-four-site-deployment",
   "projects": {
     "cloakyard": {
       "sourceCommit": "dffebababa437f434e5d692c3da29463ca6eb50b",
@@ -242,7 +242,6 @@
       }
     }
   },
-  "noPushMergeOrDeploy": true,
   "blockers": [
     "PDF candidate has a failing Compact/multipage grounded-answer check, also reproduced on its pre-upgrade build. Do not commit or integrate it yet.",
     "Resume live font/token migration, final target audit and acceptance remain unfinished.",
@@ -267,6 +266,13 @@
       "package": "node-forge@1.4.0",
       "expires": "2026-11-06",
       "detail": "One high advisory, no patched upstream release. Existing osv-scanner.toml unchanged; no exception extended."
+    },
+    {
+      "app": "cloakpdf",
+      "kind": "explicit-user-approved-existing-beta-limitation",
+      "approvedAt": "2026-10-21",
+      "exactApproval": "Deploy PDF with the documented existing limitation",
+      "detail": "Compact/multipage misses required facts on upgraded and pre-upgrade builds, including a fresh index. All original assertions remain. No prompt/model/retrieval change ships. Quality passes both fixtures; Compact passes short fixture."
     }
   ],
   "cleanup": {
@@ -276,5 +282,8 @@
     "imgWorktree": "Retained for exact candidate review at /tmp/cloakyard-rollout-2026-10-21/cloakimg-clean",
     "imgParkedFilesUnchanged": 15,
     "privateModelLogsCommitted": false
-  }
+  },
+  "noPushMergeOrDeployAtPreparation": true,
+  "latestDeployment": "../deployment-2026-10-21/ledger.json",
+  "laterAuthorization": "Deploy four sites through individual dev-to-main PRs; exclude IMG. User explicitly accepted the existing PDF Compact beta limitation for this release."
 }
