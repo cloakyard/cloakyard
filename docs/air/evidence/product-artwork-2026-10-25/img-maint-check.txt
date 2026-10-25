@@ -1,0 +1,2 @@
+pass: All 353 files are correctly formatted (511ms, 12 threads)
+pass: Found no warnings, lint errors, or type errors in 290 files (1.2s, 12 threads)

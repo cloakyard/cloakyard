@@ -32,11 +32,12 @@
   it is not a runtime dependency. Supplement it with native browser/zoom review and
   keep physical/assistive acceptance distinct from browser input emulation.
 
-- The hero includes the canonical finite Air horizon between the entry actions and
-  actual native screenshot. Its static SVG is usable without JavaScript; the local
-  renderer loads lazily only for capable, visible, motion-enabled visits. Keep its
-  350 kB gzip build ceiling and license. Stop at rest, release offscreen/hidden and
-  preserve browser Back/Forward restoration. No React runtime or native UI change.
+- The hero assembles teal square pixels into FILE, PKG, ISO and ZIP silhouettes
+  using the portable artwork lifecycle and precomputed Lucide-derived pixel masks.
+  Include a visible neutral Air pause/resume control; static/no-JS visits show FILE.
+  Pause offscreen/hidden and preserve manual pause across Back/Forward restoration.
+  Keep real download actions immediately available and the actual native screenshot
+  in the product section below the hero. No shader, React runtime or native UI change.
 
 - On 2026-10-19 the user extended Air to the **installer background**.
   `apps/macos/scripts/dmg/background.swift` renders the fixed 760×570-point Finder

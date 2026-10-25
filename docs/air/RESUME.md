@@ -1,13 +1,55 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-21
+## Start here in a new conversation — saved 2026-10-25
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### CloakResume privacy/dialog correction — 2026-10-21 (current)
+### Current checkpoint — PDF and Drop product artwork (2026-10-25)
+
+The user approved two interactive concepts and requested production implementation
+in PDF first, then Drop. PDF: five stacked pages unveil left/right, keep order,
+anchor the front page and retain immediate PDF entry. Drop: square teal pixels
+fall into FILE/PKG/ISO/ZIP forms, hold and rebuild; repeated motion has a visible
+pause action. The rest of Air stays strict. Other hero ideas remain unapproved.
+
+Implemented and committed locally: PDF `f6a2503`, Drop `3755dcc`. Air 1.1.0
+documents the approved motifs and shares a small native-animation lifecycle.
+The old production horizon wrappers/styles/build emitters/GPU tests are removed;
+family shader references remain for other apps. Drop's actual screenshot moves
+below the hero. Native app/install/release, document output and other app UIs stay
+unchanged. No runtime dependency was added; Drop's pixel script is 1.94 kB gzip.
+
+PDF passes lint/types/dead-code, 461 units, all 16 smoke suites with synthetic
+standalone fixtures, 68 artwork layouts and 120 link-state/36 keyboard checks.
+Drop passes asset/check/build, 432 site layouts/34 journeys, 68 artwork layouts,
+four forms and 328 link-state/116 keyboard checks. Both were visually inspected in
+desktop/laptop/mobile light/dark; actual Chrome 200% zoom is captured. Fixed white
+paper ink in dark mode using shared paper tokens. All five portable bundles pass
+20 isolated checks each. Evidence is in each app's
+`docs/air/evidence/product-artwork-2026-10-25/` and `docs/air/validation.md`.
+Large link/site matrices are compressed JSON. Physical/assistive and final family
+cross-browser acceptance remain open; the prior Compact AI limitation is unchanged.
+
+The user additionally requested all skills updated using npx and removal of any
+unavailable skill. Refreshed 29 installations across global and four project
+lockfiles; removed IMG docs-react. See `docs/air/skills-2026-10-25.md`.
+Resume maintenance is `89a2ba3`, passing lint, 373 tests and build. IMG maintenance
+is `6e5a974`; its parked UI draft was excluded. The staged maintenance snapshot
+passed lint, 470 tests and build. Repository-owned Drop
+verify and app-managed Codex plugins are outside the CLI's update mechanism.
+
+The shared contract, skill record, evidence and handoff are complete in this
+bounded change. Family evidence is `docs/air/evidence/product-artwork-2026-10-25/`.
+
+Next: review these local production heroes before any requested rollout. Other product motifs are
+still exploratory: do not implement them from rejected studies. Resume precedes
+IMG; retain all existing unfinished migration/acceptance gates. This piece did
+not push, merge a PR or deploy.
+
+### CloakResume privacy/dialog correction — 2026-10-21
 
 The user reported privacy, modal and update-notice deviations and asked for close
 adherence to Air. The passing bounded correction is committed as `9d14555` and

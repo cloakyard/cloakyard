@@ -21,6 +21,40 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Product landing artwork — 2026-10-25
+
+The user approved the PDF page unveiling and Drop falling file pixels after
+interactive visual review. Implement PDF first, then Drop; other product artwork
+remains exploratory. Local commits are authorized. This piece does not deploy.
+
+- [x] Add the approved material/motion rules to Air 1.1.0 and
+      synchronize the portable specifications without changing other app UIs.
+- [x] PDF: anchored front page, rear-sheet unveiling, immediate existing PDF
+      input/editor handoff, finite/reduced/hidden lifecycle and shader cleanup.
+- [x] Drop: falling square pixels, distinct file/package/disc/archive forms,
+      visible pause/resume, static/no-JS fallback and shader cleanup. Preserve
+      factual copy/download/install links; move the real screenshot below the hero.
+- [x] Validate desktop/laptop/tablet/mobile light/dark, enlarged text, keyboard,
+      coarse input, reduced/forced colours, visibility and all applicable features.
+- [x] Record evidence, cleanup and passing local app commits: PDF `f6a2503`,
+      Drop `3755dcc`. Each app has `docs/air/evidence/product-artwork-2026-10-25/`
+      and a validation record. PDF: 461 units, 16 smoke suites, 68 artwork layouts;
+      Drop: 432 site layouts/34 journeys, 68 artwork layouts/four forms. Both pass
+      link conformance, fallbacks, lifecycle and native Chrome 200% zoom. Physical,
+      assistive and final family cross-browser acceptance remain open.
+- [x] Update 29 CLI-managed global/project skill installations with `npx`.
+      Remove unavailable IMG `docs-react`, as explicitly requested; retain
+      repository-owned custom skills and the parked IMG UI draft. See
+      [skill maintenance](docs/air/skills-2026-10-25.md).
+- [x] Finish the shared contract, evidence and handoff. Commit consumer maintenance:
+      Resume `89a2ba3` (373 tests), IMG `6e5a974` (470 tests in an isolated staged
+      snapshot). Both pass lint/build; IMG's parked design draft remains uncommitted.
+
+The two production horizons, shader build emitters, obsolete GPU tests and current
+website references are removed. Canonical shader studies remain for other apps.
+Drop's pixel script is 1.94 kB gzip; neither app gains a runtime dependency.
+Other landing motifs still need their own visual approval. No push/deploy here.
+
 ## Neutral content links and hover — 2026-10-19
 
 - [x] Audit all links, including content/installation/privacy links, and remove

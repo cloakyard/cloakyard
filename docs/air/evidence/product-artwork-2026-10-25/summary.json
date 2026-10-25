@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-25",
+  "contract": "1.1.0",
+  "commits": {
+    "pdf": "f6a2503",
+    "drop": "3755dcc",
+    "resume": "89a2ba3",
+    "imgMaintenance": "6e5a974"
+  },
+  "checks": {
+    "pdf": {
+      "units": 461,
+      "smokeSuites": 16,
+      "artworkLayouts": 68,
+      "links": 120,
+      "keyboardLinks": 36
+    },
+    "drop": {
+      "siteLayouts": 432,
+      "journeys": 34,
+      "artworkLayouts": 68,
+      "forms": 4,
+      "links": 328,
+      "keyboardLinks": 116
+    },
+    "resume": {
+      "tests": 373,
+      "files": 10
+    },
+    "imgMaintenanceSnapshot": {
+      "tests": 470,
+      "files": 46,
+      "parkedDraftExcluded": true
+    },
+    "family": {
+      "portableBundles": 5,
+      "portableSpecifications": 6,
+      "checksPerBundle": 20
+    }
+  },
+  "skills": {
+    "refreshedInstallations": 29,
+    "removed": ["cloakimg/docs-react"],
+    "method": "npx skills update/add/remove"
+  },
+  "deployment": "None. Local commits only.",
+  "remainingAcceptance": [
+    "physical devices",
+    "assistive technology",
+    "final family cross-browser sweep"
+  ]
+}

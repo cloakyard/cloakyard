@@ -462,8 +462,8 @@
   new editor handoff remains safe. First-install cache feedback must not suppress
   later update notices. Validate with real waiting-worker/two-tab tests and output.
 
-- The landing mounts the canonical finite Air horizon with static SVG first paint.
-  Keep the shader lazy, below 350 kB gzip, licensed and outside service-worker
-  precache. Reduced motion, forced colours, Save-Data, constrained or unsupported
-  devices retain static content. Stop at rest and release GPU resources offscreen,
-  hidden, and on every editor/standalone/privacy departure. No editor decoration.
+- The landing unveils four rear paper sheets to either side of an anchored front
+  sheet, once, using the portable artwork lifecycle. Keep their stacking order and
+  the real PDF dropzone fixed throughout. Static/reduced-motion visits show the
+  opened stack. Pause offscreen/hidden and cancel on workspace/privacy departure.
+  This replaces the landing shader; no editor decoration or animation dependency.

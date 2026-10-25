@@ -1,0 +1,24 @@
+✓ Lockfile passes supply-chain policies (verified 4d ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+Update available! 12.14.0 → 12.15.0.
+Changelog: https://pnpm.io/v/12.15.0
+To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+Error:   × installing dependencies
+  ╰─▶ Failed to create directory at "/private/tmp/cloakimg-air-maint.gXjucc/
+      node_modules": workspace hoist directory is not a real directory
+
+[WARN] The install that runs before scripts failed, so your node_modules may be out of sync with your lockfile. Set "verifyDepsBeforeRun: false" to skip this install.
+$ vp test run
+
+ RUN  v5.0.5 /private/tmp/cloakimg-air-maint.gXjucc
+
+
+ Test Files  46 passed (46)
+      Tests  470 passed (470)
+   Start at  19:21:20
+   Duration  5.53s (environment 58%, tests 20%, setup 14%, transform 6%, import 3%)
+
+    Isolate  46 workers spawned · ~762ms startup each (spawn + environment, per file)
+             at least ~2.42s faster with isolate: false — reuses workers across files instead of one per file
+

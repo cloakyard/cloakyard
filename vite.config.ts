@@ -28,6 +28,20 @@ export default defineConfig({
       },
     },
   ],
-  fmt: { ignorePatterns: [".agents/**", "design/air/assets/**", "docs/air/assets/**"] },
-  lint: { ignorePatterns: [".agents/**", "design/air/assets/**", "docs/air/assets/**"] },
+  fmt: {
+    ignorePatterns: [
+      ".agents/**",
+      ".claude/skills/**",
+      "design/air/assets/**",
+      "docs/air/assets/**",
+    ],
+  },
+  lint: {
+    ignorePatterns: [
+      ".agents/**",
+      ".claude/skills/**",
+      "design/air/assets/**",
+      "docs/air/assets/**",
+    ],
+  },
 });
