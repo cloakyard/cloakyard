@@ -4,6 +4,16 @@ This record distinguishes existing baseline checks, documentation validation,
 visual inspection and functional validation. No app is considered migrated until
 its source/state inventory and feature gates pass. Dates use Asia/Kolkata.
 
+## 2026-10-25 — family public-page conformance
+
+Compared Yard/PDF/Drop against Air 1.1.0 and corrected typography, focus contours,
+gutters, inline links and compact navigation. All 480 Chrome/Firefox layouts and
+596 link-state / 202 keyboard checks pass. Native Safari spot review and rendered
+desktop/laptop/phone light/dark inspection pass. Yard lint/types/build, 12 horizon
+layouts/both GPU themes, shared motion and 20 isolated portability checks pass.
+Full findings, limits and captures: [family comparison](family-comparison-2026-10-25.md).
+Physical/assistive and unrelated full-product gates remain open. Local only.
+
 ## 2026-10-11 — baseline and contract preparation
 
 All five repositories started clean on `dev`; each now uses `codex/air-refresh`.

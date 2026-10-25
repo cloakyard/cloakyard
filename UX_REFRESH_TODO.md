@@ -21,6 +21,24 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Family public-page comparison — 2026-10-25
+
+- [x] Compare Cloakyard/PDF/Drop against Air 1.1.0; correct typography, gutters,
+      compact headers, focus contours, neutral links and policy cadence.
+- [x] Verify 480 Chrome/Firefox layouts, 596 link states / 202 keyboard checks,
+      rendered desktop/laptop/mobile light/dark and native Safari spot review.
+- [x] Recheck applicable features: PDF 461 units, 16 smoke suites, 66 recovery
+      and 68 artwork layouts; Drop 432 site layouts / 34 journeys and 68 artwork
+      layouts; Yard horizon/runtime/portable checks. All pass.
+- [x] Remove superseded CSS, add reusable family regression, record independent
+      product evidence and passing local commits (see latest handoff).
+- [x] Prepare a separate animated Resume “storyline” study for visual review.
+- [ ] Approve Resume's new motif before production implementation. Preserve its
+      remaining full-product/export follow-ups; IMG remains last.
+
+[Findings, evidence and scope](docs/air/family-comparison-2026-10-25.md).
+Physical/assistive/hardware acceptance stays open. No push/deployment in this piece.
+
 ## Product landing artwork — 2026-10-25
 
 The user approved the PDF page unveiling and Drop falling file pixels after

@@ -19,6 +19,10 @@ Shared design commands:
 - `node scripts/check-air-design.mjs` checks tokens, provenance and migrated sources.
 - `node scripts/check-air-portability.mjs` checks the independent bundle.
 - `node scripts/air-inventory.mjs` updates the surface list while preserving evidence.
+- `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop public pages.
+  Set `AIR_FAMILY_URLS` (three comma-separated URLs), `PUPPETEER_MODULE` and
+  `AIR_EVIDENCE_DIR`; use `AIR_BROWSER=firefox AIR_THEME=light` (then `dark`)
+  for Firefox, otherwise Chrome covers both themes. Profiles are disposable.
 - `node --test scripts/test-air-file-workflow.mjs` and
   `node --test scripts/test-air-collections.mjs` exercise reference behavior.
 

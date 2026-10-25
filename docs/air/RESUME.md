@@ -7,7 +7,42 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — PDF and Drop product artwork (2026-10-25)
+### Current checkpoint — family comparison and Resume study (2026-10-25)
+
+The approved PDF/Drop artwork is implemented. The user then requested strict
+comparison of Cloakyard, PDF and Drop against Air before exploring Resume.
+Corrected actual public-page drift: canonical hero/section typography, gutter
+boundaries, 44px brand target, focus contours, neutral underlined inline credits,
+PDF's compact in-flow Menu and privacy prose cadence. Removed superseded CSS;
+no dependency, token override or output/native-app logic change. Air stays 1.1.0.
+
+Passing local corrections: PDF `4b4e8a5`, Drop `3efe6af`. The family comparison,
+Yard correction and regression script are recorded with this checkpoint's commit.
+480 Chrome/Firefox layouts (20 sizes, light/dark, normal/enlarged text) report zero
+deviations or browser errors. All 596 link states / 202 keyboard checks pass.
+PDF: lint/types/dead-code/build, 461 units, all 16 smoke suites, 66 local Workers
+recovery and 68 artwork layouts. Drop: check/build, 432 site layouts / 34 journeys,
+68 artwork layouts/four forms. Yard: lint/types/build, 12 horizon layouts, GPU
+light/dark/idle, five shared motion and 20 portability checks. Native Safari spot
+review and rendered desktop/laptop/mobile light/dark pass; Safari was not a full
+matrix. Physical/assistive/hardware and unrelated product gates remain open.
+
+See [the comparison report](family-comparison-2026-10-25.md) and
+`docs/air/evidence/family-comparison-2026-10-25/`. PDF and Drop each retain their
+own matrices/captures/logs. `scripts/test-air-family.mjs` is the reusable comparison;
+CLAUDE.md documents its environment. No push, PR, merge or deployment occurred.
+
+Next: review the exploratory Resume **storyline** concept. A green career path
+with three milestones gathers into a single résumé's spine. The study plays once,
+pauses/replays, suspends hidden/offscreen and settles statically for reduced motion.
+It is not approved or implemented in the product. Durable preview source:
+`/Users/sumitsahoo/.codex/visualizations/2026/10/19/01a152cf-d189-72d1-a5a6-f8b6c6d4555a/resume-storyline.html`.
+Use it for visual discussion; do not promote it to the contract without approval.
+Resume production and IMG's parked draft are unchanged. Preserve earlier Resume
+export/acceptance follow-ups and keep IMG last. Task-owned preview servers stop
+at close; the inline study does not require a running local server.
+
+### Prior checkpoint — PDF and Drop product artwork (2026-10-25)
 
 The user approved two interactive concepts and requested production implementation
 in PDF first, then Drop. PDF: five stacked pages unveil left/right, keep order,
