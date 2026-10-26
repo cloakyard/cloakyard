@@ -27,8 +27,7 @@ production bytes are unchanged. Air 1.2.1 records this rule in all portable copi
 
 Evidence is in each repository's `docs/air/evidence/finite-artwork-2026-10-26/`.
 The initial Air 1.2.0 rollout passed live checks and all 260 asset hashes matched;
-those deployment records are under `evidence/rollout-2026-10-26/`. This follow-up
-will use individual dev → main PRs, then repeat live verification and sync dev.
+those deployment records are under `evidence/rollout-2026-10-26/`. This follow-up is now deployed through the individual dev → main PRs below.
 
 ## Scope and remaining acceptance
 
@@ -39,6 +38,26 @@ Native Drop, RC, installer and KERR remain unchanged. The previously approved PD
 Compact limitation, node-forge exception through 2026-11-06, Drop official-bundle
 exception and physical/assistive/device acceptance remain explicitly open.
 
-The prior local-versus-live export comparison encountered a detached DOM handle
-in its local capture half. The scratch harness now reacquires the element for each
-stable screenshot. No remote export pass is claimed until its new run completes.
+The earlier capture harness failure is resolved by reacquiring DOM handles before
+each stable capture. The new run matches all 58 local/live render pairs and four
+actual Resume exports in pixels, text, links and page geometry. This closes that
+specific rollout check; broader previously documented output fixtures stay open.
+
+## Production verification
+
+All four main builds/checks passed. All 260 served assets match tested candidates,
+with `no-transform`, no injected scripts and correct recovery responses. Live
+checks pass 552 family layouts, 68 artwork layouts per product, Drop 432 layouts /
+34 journeys, and six actual PDF workflows. The controls are absent and completed
+artwork stays still. See [deployment evidence](evidence/finite-artwork-2026-10-26/deployment.json).
+
+| App         | Merge                                                     | Commit    | Verified public assets |
+| ----------- | --------------------------------------------------------- | --------- | ---------------------- |
+| cloakyard   | [PR 20](https://github.com/cloakyard/cloakyard/pull/20)   | `acc7505` | 13                     |
+| cloakdrop   | [PR 46](https://github.com/cloakyard/cloakdrop/pull/46)   | `2c893d2` | 16                     |
+| cloakpdf    | [PR 210](https://github.com/cloakyard/cloakpdf/pull/210)  | `844bee2` | 130                    |
+| cloakresume | [PR 43](https://github.com/cloakyard/cloakresume/pull/43) | `852062c` | 101                    |
+
+Cloudflare deploys main only; non-production branches upload versions. Final
+closeout changes only this release ledger, evidence and handoff. The final branch
+fast-forward includes that documentation merge and preserves these tested bytes.

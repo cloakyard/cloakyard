@@ -7,30 +7,34 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — automatic artwork verified; deploy follow-up (2026-10-26)
+### Current checkpoint — Air 1.2.1 deployed and live-verified (2026-10-26)
 
-Air 1.2.1 removes landing Play/Pause/Replay, the shared control API and unused
-Drop/Resume markup/styles. Resume keeps its 3,400ms arrival; Drop shows all four
-file forms once under five seconds and rests. PDF unveiling and Yard runtime stay
-intact. Automatic suspension/static profiles remain. All fresh checks pass: PDF
-461 units/16 smoke suites; Resume 373 tests with zero skips; 68 artwork layouts
-per product; Drop 432 layouts/34 journeys; 1,104 family Chrome/Firefox layouts.
-See [implementation and evidence](finite-artwork-2026-10-26.md).
+Landing Play/Pause/Replay controls and unused API/styles are removed. Drop shows
+FILE/PKG/ISO/ZIP once under five seconds, Resume retains its 3,400ms arrival, PDF
+keeps its finite page unveiling, and Yard runtime is unchanged. Static profiles
+and automatic hidden/offscreen suspension remain. Stable preview capture also
+fixes missing paper text in the old Resume dark-mode screenshot.
 
-Next: commit the passing pieces and merge individual dev → main follow-ups; reuse
-Drop #46 and rewrite its scope to include finite artwork. Verify main builds,
-production assets and live browser/output results; synchronize dev after merges.
-The initial four PRs are already deployed: Yard #19 (561d44b), PDF #209 (1bc2ff0),
-Drop #45 (a33542b), Resume #42 (f1504e8). All 260 initial served assets matched.
-The scratch remote comparison failed on a detached local capture handle; its
-repaired harness must complete before claiming a remote Resume export pass.
+Merged/deployed: Yard #20 (acc7505), PDF #210 (844bee2), Drop #46 (2c893d2), Resume
+#43 (852062c). All main checks/builds and all 260 live asset hashes pass. Fresh
+local proof: PDF 461 units/all 16 smoke suites; Resume 373 tests/zero skips; 1,104
+Chrome/Firefox family layouts; per-app artwork and Drop website matrices. Live:
+552 family layouts, 68 artwork layouts per product, 432 Drop layouts/34 journeys,
+six real PDF workflows, 58 identical render pairs and four exact Resume exports.
+The scratch detached-handle capture failure is resolved; no application output
+change was needed. See [the complete ledger](finite-artwork-2026-10-26.md).
 
-Cloudflare uses main for deployment and non-production version uploads for all
-four. The GitHub connector cannot create PRs; use the authenticated gh session.
-IMG stays local/last with all 15 parked draft hashes unchanged. Preserve the
-separate Resume main worktree `cloakresume-editor-audit`. Existing PDF Compact,
-node-forge (through 2026-11-06), official-bundle and device exceptions remain open.
-Scratch/check processes: `/tmp/air-finite-2026-10-26/`. No 1.2.1 deployment yet.
+All four dev branches were fast-forwarded to their released main revisions. The
+documentation-only closeout follows the same PR/check/merge/fast-forward process;
+its application bytes remain the verified candidates. Cloudflare deploys main
+only and uploads dev versions. Use gh if the GitHub connector rejects writes.
+
+Next product: retain the unresolved full-product/output/device gates in the TODO;
+keep IMG last. IMG portable maintenance dd93484 is local only and all 15 parked
+draft files are unchanged. Do not push/deploy IMG. Preserve the separate Resume
+main worktree `cloakresume-editor-audit`. Existing Compact beta, node-forge through
+2026-11-06, Drop official-bundle and physical/assistive/hardware exceptions remain
+explicitly open. No native Drop, RC/installer or KERR changes in this rollout.
 
 ### Prior checkpoint — four-app cleanup audit complete (2026-10-26)
 
