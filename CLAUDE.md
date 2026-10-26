@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.0.6 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.2.0 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -19,6 +19,10 @@ Shared design commands:
 - `node scripts/check-air-design.mjs` checks tokens, provenance and migrated sources.
 - `node scripts/check-air-portability.mjs` checks the independent bundle.
 - `node scripts/air-inventory.mjs` updates the surface list while preserving evidence.
+- `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume public pages and secondary reading/recovery shells.
+  Set `AIR_FAMILY_URLS` (four comma-separated URLs, in that order), `PUPPETEER_MODULE` and
+  `AIR_EVIDENCE_DIR`; use `AIR_BROWSER=firefox AIR_THEME=light` (then `dark`)
+  for Firefox, otherwise Chrome covers both themes. Profiles are disposable.
 - `node --test scripts/test-air-file-workflow.mjs` and
   `node --test scripts/test-air-collections.mjs` exercise reference behavior.
 
@@ -68,3 +72,12 @@ The home stays a directory and statement of principles, not per-product marketin
 Track phases and remaining device gates in `UX_REFRESH_TODO.md`; record evidence
 before committing each bounded piece. Do not equate home completion with family
 completion, and do not push or deploy without authorization.
+
+## Dead-code audit
+
+Run `npx --yes knip@6.43.0` for the declared web graph in `knip.json`. The pinned
+CLI can also be supplied externally; no runtime package is required. Manual audit
+commands and portable Air library entries are deliberate public entry points.
+
+Knip covers the JavaScript/TypeScript graph here. Audit CSS imports and selectors
+separately; this repository has no registered Knip stylesheet compiler.

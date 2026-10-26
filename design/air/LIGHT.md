@@ -24,15 +24,15 @@ vp check
 vp build
 ```
 
-The build is pinned to Shaders 4.0.4. Its core imports the full built-in catalog
+The build is pinned to Shaders 4.0.5. Its core imports the full built-in catalog
 for media sizing; Air uses one custom generator and no media. The build adapter
 excludes that catalog after checking its exact SHA-256 and export interface.
-Renderer/std code is unchanged. Review this adapter on every dependency upgrade;
+The published renderer/std code is bundled without local edits. Review this adapter on every dependency upgrade;
 do not relax its guard to make an unfamiliar version build. Hosted presets and
 the Shaders editor are not used. The local bundle includes MIT license notices
 for Shaders, TypeGPU, tinyest, tsover-runtime and typed-binary.
 
-The approximately 369 kB gzip payload is lazy and separate from the product build.
+The approximately 371 kB gzip payload is lazy and separate from the product build.
 The 400 kB build ceiling is a study constraint; production adoption still requires
 startup, real GPU/battery and device validation. CPU submission measurements shown
 in the reference are not GPU timings or proof of battery efficiency. Formatting

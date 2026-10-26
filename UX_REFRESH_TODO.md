@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry through preview assets and unused foundations software-validated locally; live foundation/final acceptance next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — four-app Air 1.2 artwork/chrome implemented locally; web cleanup software-validated locally; four-site rollout authorized and in verification; remaining device acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,110 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Four-site release verification — 2026-10-26
+
+The user authorized deployment after verification, through individual `dev` →
+`main` PRs, keeping dev synchronized. This supersedes earlier local-only limits
+for Yard, PDF, Drop website and Resume. IMG stays excluded; native release assets
+and KERR remain unchanged.
+
+- [x] Refresh primary npm registry metadata and apply compatible current releases.
+- [x] Patch new build-tool advisories; retain only the existing PDF node-forge
+      exception through 2026-11-06. Keep Astro Check's supported TypeScript major.
+- [x] Review the Shaders catalog adapter and regenerate synchronized Air bundles.
+- [x] Finish fresh product, responsive/motion, output and link-state verification.
+- [ ] Commit each passing candidate and create individual dev → main PRs.
+- [ ] Merge passing PRs, verify exact live deployments, and synchronize dev.
+- [ ] Record final deployment identities and keep remaining acceptance explicit.
+
+Cloudflare sign-in completed. Corrected Yard's non-production command to version
+uploads, keeping main as production. PDF/Drop/Resume already use version uploads.
+[Fresh verification and evidence](docs/air/rollout-2026-10-26.md) pass with the
+existing explicit PDF exceptions. No remote branch change yet.
+
+## Four-app web cleanup audit — 2026-10-26
+
+- [x] Trace current modules/exports, dependencies, custom CSS and asset/build/test consumers.
+- [x] Restrict PDF/Resume Tailwind scans; remove Resume's dead grid rule, orphaned
+      data attributes and unused exports. Preserve live preflight font mappings.
+- [x] Record zero-issue Knip graphs and explicit entry points without a new dependency.
+- [x] Complete final feature/output verification: 834 tests, 16 PDF smoke suites,
+      552 family layouts, 58 exact render pairs and four exact PDF export pairs.
+- [x] Record passing local commits (PDF `63781c3`, Resume `a4f7b95`, Drop `678bf2a`)
+      and stop all six task-owned previews. Yard is this checkpoint. See [audit](docs/air/code-cleanup-2026-10-26.md).
+- [ ] Preserve remaining product/device/export acceptance before rollout; keep IMG parked/last.
+
+## Resume Storyline and four-app chrome — 2026-10-26
+
+- [x] User approved implementation; ship the finite Storyline with immediate entry,
+      pause/replay, static/hidden/offscreen/resize/unmount handling and no draft access.
+- [x] Air 1.2.0 owns shared header/footer geometry, type, marks and neutral links.
+      Correct Yard/PDF/Drop/Resume and privacy/recovery routes; remove obsolete skins.
+- [x] Pass 1,104 Chrome/Firefox layouts, 824 link states / 256 keyboard checks,
+      rendered desktop/laptop/phone light/dark and native Safari spot review.
+- [x] Pass Resume 373 tests, 349 entry layouts / 14 journeys, 68 artwork layouts
+      and eight animated arrivals; PDF 461 units / 16 smoke suites / 68 artwork;
+      Drop 432 site layouts / 34 journeys / 68 artwork; Yard/shared checks.
+- [x] Refresh Resume PWA/README/OG captures; record cleanup/evidence and local commits.
+      Preserve IMG's parked draft; validate portable maintenance in isolation.
+- [ ] Complete remaining physical/assistive/hardware and prior full-product/export
+      acceptance. Rollout remains a separate stage; no push/deploy in this piece.
+
+[Audit and evidence](docs/air/storyline-family-2026-10-26.md). The prior audit's
+32px mark exception was mistaken and is superseded by this correction.
+
+## Family public-page comparison — 2026-10-25
+
+- [x] Compare Cloakyard/PDF/Drop against Air 1.1.0; correct typography, gutters,
+      compact headers, focus contours, neutral links and policy cadence.
+- [x] Verify 480 Chrome/Firefox layouts, 596 link states / 202 keyboard checks,
+      rendered desktop/laptop/mobile light/dark and native Safari spot review.
+- [x] Recheck applicable features: PDF 461 units, 16 smoke suites, 66 recovery
+      and 68 artwork layouts; Drop 432 site layouts / 34 journeys and 68 artwork
+      layouts; Yard horizon/runtime/portable checks. All pass.
+- [x] Remove superseded CSS, add reusable family regression, record independent
+      product evidence and passing local commits (see latest handoff).
+- [x] Prepare a separate animated Resume “storyline” study for visual review.
+- [x] Approve Resume's new motif before production implementation (2026-10-26). Preserve its
+      remaining full-product/export follow-ups; IMG remains last.
+
+[Findings, evidence and scope](docs/air/family-comparison-2026-10-25.md).
+Physical/assistive/hardware acceptance stays open. No push/deployment in this piece.
+
+## Product landing artwork — 2026-10-25
+
+The user approved the PDF page unveiling and Drop falling file pixels after
+interactive visual review. Implement PDF first, then Drop; other product artwork
+remains exploratory. Local commits are authorized. This piece does not deploy.
+
+- [x] Add the approved material/motion rules to Air 1.1.0 and
+      synchronize the portable specifications without changing other app UIs.
+- [x] PDF: anchored front page, rear-sheet unveiling, immediate existing PDF
+      input/editor handoff, finite/reduced/hidden lifecycle and shader cleanup.
+- [x] Drop: falling square pixels, distinct file/package/disc/archive forms,
+      visible pause/resume, static/no-JS fallback and shader cleanup. Preserve
+      factual copy/download/install links; move the real screenshot below the hero.
+- [x] Validate desktop/laptop/tablet/mobile light/dark, enlarged text, keyboard,
+      coarse input, reduced/forced colours, visibility and all applicable features.
+- [x] Record evidence, cleanup and passing local app commits: PDF `f6a2503`,
+      Drop `3755dcc`. Each app has `docs/air/evidence/product-artwork-2026-10-25/`
+      and a validation record. PDF: 461 units, 16 smoke suites, 68 artwork layouts;
+      Drop: 432 site layouts/34 journeys, 68 artwork layouts/four forms. Both pass
+      link conformance, fallbacks, lifecycle and native Chrome 200% zoom. Physical,
+      assistive and final family cross-browser acceptance remain open.
+- [x] Update 29 CLI-managed global/project skill installations with `npx`.
+      Remove unavailable IMG `docs-react`, as explicitly requested; retain
+      repository-owned custom skills and the parked IMG UI draft. See
+      [skill maintenance](docs/air/skills-2026-10-25.md).
+- [x] Finish the shared contract, evidence and handoff. Commit consumer maintenance:
+      Resume `89a2ba3` (373 tests), IMG `6e5a974` (470 tests in an isolated staged
+      snapshot). Both pass lint/build; IMG's parked design draft remains uncommitted.
+
+The two production horizons, shader build emitters, obsolete GPU tests and current
+website references are removed. Canonical shader studies remain for other apps.
+Drop's pixel script is 1.94 kB gzip; neither app gains a runtime dependency.
+Other landing motifs still need their own visual approval. No push/deploy here.
 
 ## Neutral content links and hover — 2026-10-19
 

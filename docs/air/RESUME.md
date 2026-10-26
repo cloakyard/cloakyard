@@ -1,13 +1,183 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-21
+## Start here in a new conversation — saved 2026-10-26
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### CloakResume privacy/dialog correction — 2026-10-21 (current)
+### Current checkpoint — authorized four-site rollout in verification (2026-10-26)
+
+The user explicitly authorized deployment after verification, with individual dev
+→ main PRs and dev synchronization. Four sites only: Yard, PDF, Drop website and
+Resume. IMG remains parked/last; native artifacts and KERR remain unchanged.
+Fresh primary npm metadata found 16 newer package/tool releases. Compatible
+updates are installed, including same-major Miniflare → undici 7.30.1 overrides
+and serialize-javascript 7.1.4. Only PDF's existing node-forge exception remains;
+its expiry and the Compact long-document exception are unchanged. Air still uses
+1.2.0 semantics, with reviewed Shaders 4.0.5 and Vite+ 1.4 generated assets.
+
+Fresh verification passes: all builds/lint/types/dead-code/design/portability,
+PDF 461 units and all 16 smoke suites, Resume 373 tests/10 files with zero skips,
+1,104 Chrome/Firefox layouts, 608 neutral link states/206 keyboard checks, artwork
+and real PWA lifecycles. All 58 render pairs and four actual Resume PDF export
+pairs match exactly. Quality passes both AI fixtures and Compact passes short;
+Compact long reproduces its explicitly accepted missing-facts limitation. Initial
+version-pin/harness failures were corrected and fully rerun, not counted as passes.
+See [release verification](rollout-2026-10-26.md) and its per-app evidence folders.
+
+Cloudflare sign-in completed. Corrected Yard's non-production version command from
+`npx wrangler deploy` to `npx wrangler versions upload` and verified Save completed;
+main remains the production branch. PDF/Drop/Resume already use version uploads. No
+push, PR or merge yet; all four branch configurations are verified.
+Do not alter an unrelated main worktree: Resume main is checked out separately in
+`cloakresume-editor-audit`. Current dev can be fast-forwarded after the main PR.
+
+### Prior checkpoint — four-app cleanup audit complete (2026-10-26)
+
+The requested full web audit covers Yard, PDF, Drop website and Resume. Restricted
+PDF/Resume Tailwind to shipped markup, removing 36,809 B of generated CSS. Removed
+Resume's obsolete grid override/two orphaned data attributes and three unused
+exports; their live implementations/types remain. Added accurate Yard/Resume Knip
+entry declarations without new dependencies. All four graphs report zero issues.
+Kept preflight font aliases, format/annotation compatibility, portable Air modules,
+manual test commands and document fonts/output assets. Yard/Drop required no
+speculative runtime deletion. IMG's parked 15-file draft remains identical; native
+apps remain outside this web audit.
+
+Final proof: PDF 461 units and the complete 16-suite production smoke command;
+Resume 373 tests/10 files with zero skips in documented serial mode; all builds,
+applicable lint/types, design, synchronization and 20 portability checks per app.
+552 Chrome home/secondary layouts have zero deviations/errors; desktop/laptop/phone
+light/dark pages/editors reviewed. All 58 paired captures (24 UI + 34 template/paper)
+and four PDF export comparisons match exactly, including raster/text/links/boxes.
+Rebuilds after formatting/docs preserve every tested PDF/Resume production byte.
+Earlier concurrent browser failures are recorded, not hidden or counted as passes.
+
+Passing local commits: PDF `63781c3`, Resume `a4f7b95`, Drop audit `678bf2a`.
+Yard's graph configuration, family audit, TODO and handoff are in this checkpoint's
+commit. All six task-owned preview ports are closed. No push/PR/merge/deployment.
+See [audit and evidence](code-cleanup-2026-10-26.md) and each app's
+`docs/air/evidence/code-cleanup-2026-10-26/`.
+
+Next: review the implemented artwork and remaining product/export/device acceptance
+before rollout; keep IMG last. Earlier Resume export follow-ups, the accepted PDF
+Compact long-document limitation and physical/assistive/hardware gates remain open.
+Do not repeat completed migrations or treat this code cleanup as device approval.
+
+### Prior checkpoint — Resume Storyline and four-app chrome (2026-10-26)
+
+The user approved production Resume implementation and explicitly requested a
+close Yard/PDF/Drop/Resume header/footer audit. Storyline is now implemented: a
+green career path gathers into one résumé, plays once, pauses/replays and settles
+statically when required. Immediate blank/restore entry stays above it. No draft
+access, runtime dependency or template/export behavior change.
+
+Air 1.2.0 owns all four public header/footer shells. Corrected 36px marks, lockup
+metrics, neutral navigation, footer cadence/gutters, enlarged-text alignment and
+secondary routes. **The previous audit's 32px-mark exception was wrong**; the
+contract required 36px. That audit is explicitly superseded. Removed duplicate
+skins and obsolete Resume horizon/PWA references; canonical gallery assets remain.
+PWA/README/OG captures are current. IMG only receives portable maintenance; its
+parked 15-file draft remains byte-for-byte unchanged and must stay parked/last.
+
+All 1,104 Chrome/Firefox layouts and 824 link-state / 256 keyboard checks pass.
+Resume: 373 tests, 349 entry/recovery layouts / 14 journeys, 68 artwork layouts,
+eight animated arrivals and static/lifecycle checks. PDF: 461 units, all 16 smoke
+suites and 68 artwork layouts. Drop: 432 website layouts / 34 journeys and 68
+artwork layouts/four forms. Yard/shared runtime checks and all five portable bundles
+pass. IMG's isolated maintenance snapshot passes 470 tests/lint/build. Rendered
+phone/laptop/desktop light/dark and Safari spot review pass; Safari is not a full
+matrix. Physical/assistive/hardware gates, prior Resume export follow-ups and PDF's
+accepted Compact long-document limitation remain open and unchanged.
+
+See [the complete current audit](storyline-family-2026-10-26.md) and each product's
+`docs/air/evidence/storyline-family-2026-10-26/`. Passing local commits: PDF `e50a3c6`, Drop `fdca131`,
+Resume `1b75cd0`, IMG maintenance `e5253f5`.
+Yard's correction, canonical contract and family evidence are in this checkpoint's commit. No push, PR, merge or deployment in this piece. Task-owned servers stop
+at close. Next: review the implemented Resume motif and close the remaining
+acceptance/export follow-ups before a requested rollout; keep IMG last. Do not
+restart finished migrations or treat this public-shell audit as full-device approval.
+
+### Prior checkpoint — family comparison and Resume study (2026-10-25)
+
+The approved PDF/Drop artwork is implemented. The user then requested strict
+comparison of Cloakyard, PDF and Drop against Air before exploring Resume.
+Corrected actual public-page drift: canonical hero/section typography, gutter
+boundaries, 44px brand target, focus contours, neutral underlined inline credits,
+PDF's compact in-flow Menu and privacy prose cadence. Removed superseded CSS;
+no dependency, token override or output/native-app logic change. Air stays 1.1.0.
+
+Passing local corrections: PDF `4b4e8a5`, Drop `3efe6af`. The family comparison,
+Yard correction and regression script are recorded with this checkpoint's commit.
+480 Chrome/Firefox layouts (20 sizes, light/dark, normal/enlarged text) report zero
+deviations or browser errors. All 596 link states / 202 keyboard checks pass.
+PDF: lint/types/dead-code/build, 461 units, all 16 smoke suites, 66 local Workers
+recovery and 68 artwork layouts. Drop: check/build, 432 site layouts / 34 journeys,
+68 artwork layouts/four forms. Yard: lint/types/build, 12 horizon layouts, GPU
+light/dark/idle, five shared motion and 20 portability checks. Native Safari spot
+review and rendered desktop/laptop/mobile light/dark pass; Safari was not a full
+matrix. Physical/assistive/hardware and unrelated product gates remain open.
+
+See [the comparison report](family-comparison-2026-10-25.md) and
+`docs/air/evidence/family-comparison-2026-10-25/`. PDF and Drop each retain their
+own matrices/captures/logs. `scripts/test-air-family.mjs` is the reusable comparison;
+CLAUDE.md documents its environment. No push, PR, merge or deployment occurred.
+
+Next: review the exploratory Resume **storyline** concept. A green career path
+with three milestones gathers into a single résumé's spine. The study plays once,
+pauses/replays, suspends hidden/offscreen and settles statically for reduced motion.
+It is not approved or implemented in the product. Durable preview source:
+`/Users/sumitsahoo/.codex/visualizations/2026/10/19/01a152cf-d189-72d1-a5a6-f8b6c6d4555a/resume-storyline.html`.
+Use it for visual discussion; do not promote it to the contract without approval.
+Resume production and IMG's parked draft are unchanged. Preserve earlier Resume
+export/acceptance follow-ups and keep IMG last. Task-owned preview servers stop
+at close; the inline study does not require a running local server.
+
+### Prior checkpoint — PDF and Drop product artwork (2026-10-25)
+
+The user approved two interactive concepts and requested production implementation
+in PDF first, then Drop. PDF: five stacked pages unveil left/right, keep order,
+anchor the front page and retain immediate PDF entry. Drop: square teal pixels
+fall into FILE/PKG/ISO/ZIP forms, hold and rebuild; repeated motion has a visible
+pause action. The rest of Air stays strict. Other hero ideas remain unapproved.
+
+Implemented and committed locally: PDF `f6a2503`, Drop `3755dcc`. Air 1.1.0
+documents the approved motifs and shares a small native-animation lifecycle.
+The old production horizon wrappers/styles/build emitters/GPU tests are removed;
+family shader references remain for other apps. Drop's actual screenshot moves
+below the hero. Native app/install/release, document output and other app UIs stay
+unchanged. No runtime dependency was added; Drop's pixel script is 1.94 kB gzip.
+
+PDF passes lint/types/dead-code, 461 units, all 16 smoke suites with synthetic
+standalone fixtures, 68 artwork layouts and 120 link-state/36 keyboard checks.
+Drop passes asset/check/build, 432 site layouts/34 journeys, 68 artwork layouts,
+four forms and 328 link-state/116 keyboard checks. Both were visually inspected in
+desktop/laptop/mobile light/dark; actual Chrome 200% zoom is captured. Fixed white
+paper ink in dark mode using shared paper tokens. All five portable bundles pass
+20 isolated checks each. Evidence is in each app's
+`docs/air/evidence/product-artwork-2026-10-25/` and `docs/air/validation.md`.
+Large link/site matrices are compressed JSON. Physical/assistive and final family
+cross-browser acceptance remain open; the prior Compact AI limitation is unchanged.
+
+The user additionally requested all skills updated using npx and removal of any
+unavailable skill. Refreshed 29 installations across global and four project
+lockfiles; removed IMG docs-react. See `docs/air/skills-2026-10-25.md`.
+Resume maintenance is `89a2ba3`, passing lint, 373 tests and build. IMG maintenance
+is `6e5a974`; its parked UI draft was excluded. The staged maintenance snapshot
+passed lint, 470 tests and build. Repository-owned Drop
+verify and app-managed Codex plugins are outside the CLI's update mechanism.
+
+The shared contract, skill record, evidence and handoff are complete in this
+bounded change. Family evidence is `docs/air/evidence/product-artwork-2026-10-25/`.
+
+Next: review these local production heroes before any requested rollout. Other product motifs are
+still exploratory: do not implement them from rejected studies. Resume precedes
+IMG; retain all existing unfinished migration/acceptance gates. This piece did
+not push, merge a PR or deploy.
+
+### CloakResume privacy/dialog correction — 2026-10-21
 
 The user reported privacy, modal and update-notice deviations and asked for close
 adherence to Air. The passing bounded correction is committed as `9d14555` and

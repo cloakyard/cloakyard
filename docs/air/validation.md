@@ -1,8 +1,30 @@
 # Air refresh — validation evidence
 
+## 2026-10-26 — Storyline and family chrome
+
+Air 1.2.0 now owns the shared four-product public chrome and approved Resume
+Storyline. Corrected marks, wordmarks, navigation/footer typography, spacing,
+gutters, neutral link states and recovery routes. All 1,104 Chrome/Firefox layouts
+and 824 link-state / 256 keyboard checks pass. Yard lint/types/build, 12 horizon
+layouts/both GPU themes/idle, five shared motion tests and all five portable bundles
+pass. See [the complete audit](storyline-family-2026-10-26.md). Local only; physical,
+assistive and unrelated full-product gates remain open.
+
+Evidence: `docs/air/evidence/storyline-family-2026-10-26/`.
+
 This record distinguishes existing baseline checks, documentation validation,
 visual inspection and functional validation. No app is considered migrated until
 its source/state inventory and feature gates pass. Dates use Asia/Kolkata.
+
+## 2026-10-25 — family public-page conformance
+
+Compared Yard/PDF/Drop against Air 1.1.0 and corrected typography, focus contours,
+gutters, inline links and compact navigation. All 480 Chrome/Firefox layouts and
+596 link-state / 202 keyboard checks pass. Native Safari spot review and rendered
+desktop/laptop/phone light/dark inspection pass. Yard lint/types/build, 12 horizon
+layouts/both GPU themes, shared motion and 20 isolated portability checks pass.
+Full findings, limits and captures: [family comparison](family-comparison-2026-10-25.md).
+Physical/assistive and unrelated full-product gates remain open. Local only.
 
 ## 2026-10-11 — baseline and contract preparation
 

@@ -30,8 +30,8 @@
   compact utilities must not reduce their effective targets below 44px.
 - ATS scores are heuristic review aids, not a guarantee of hiring-system success.
   Résumé/job-description content stays local; language assets may be downloaded.
-- Local CSS/Tailwind bridges alias the common tokens. The output template system
-  is the only typography/colour exception; custom app widgets are not exempt.
+- Local CSS/Tailwind bridges alias the common tokens. Output templates and the explicitly approved landing illustration
+  retain their own typesetting; custom app widgets are not exempt.
 - Required gates: `vp check`, `vp test run` (including editor browser and complete
   template matrix, with no missing-browser skip), `pnpm run build`, production
   browser/template tests where affected, exported-document inspection and the
@@ -56,9 +56,13 @@
   focus/scroll lifecycle. Preserve native Safari opener focus, privacy swipe/cancel,
   keyboard wrap and nested notices. Recovery describes the last saved draft without
   guaranteeing that unsaved changes survived a render failure.
-- The landing horizon uses the pinned finite light lifecycle and an SVG fallback.
-  The optional shader is excluded from the PWA shell; reduced motion and unavailable
-  graphics must not prevent entry. Physical GPU/battery acceptance remains separate.
+- The approved Storyline illustration gathers three milestones into a single
+  résumé spine. It plays once in 3400ms, supports Pause/Play/Replay and uses the
+  shared artwork lifecycle. Reduced/forced colours, Save-Data, constrained or
+  unsupported devices receive the static paper; no draft data is read. Entry
+  actions remain above the artwork. Geometry changes settle it; Replay uses the
+  new width. Paper typesetting (11–26px) and decorative labels (14px) are fixed
+  illustration details, never reusable app typography. No production shader loads.
 - `node scripts/test-air-entry.mjs` checks the production entry and recovery matrix.
   Run full tests with `vp test run --no-file-parallelism`; use
   `CLOAKRESUME_BROWSER_BUILD=production` for the built browser/template sweep.
@@ -66,7 +70,7 @@
   measuring focus/scroll; preserve assertions, templates and timeout budgets.
 
 - The editor uses a 360px compact desktop writing panel and 420px from 1280px,
-  beside the 72px section rail. The 32px mark retains a 44px link target. Header
+  beside the 72px section rail. The 36px mark retains a 44px link target. Header
   groups reflow at enlarged text; narrow headers retain the named mark link.
 - Portrait compact editing keeps equal preview/editor panes. From 640–1023px on
   screens at most 600px high, the two panes sit side by side. Both remain scrollable;

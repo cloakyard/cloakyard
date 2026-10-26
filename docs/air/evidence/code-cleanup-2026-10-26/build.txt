@@ -1,0 +1,17 @@
+$ vp build
+transforming...
+✓ 1946 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               3.08 kB │ gzip:   0.97 kB
+dist/air-light.LICENSE.txt                   15.86 kB │ gzip:   4.72 kB
+dist/assets/index-sKgOfo8e.css               47.63 kB │ gzip:   9.22 kB
+dist/assets/index-BEdjPsQC.js               240.37 kB │ gzip:  75.67 kB
+dist/assets/air-light-shader-BwlRjQzD.js  1,261.55 kB │ gzip: 294.31 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 386ms

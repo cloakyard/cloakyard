@@ -1,7 +1,7 @@
 export function Brand() {
   return (
-    <a className="brand" href="/" aria-label="Cloakyard home">
-      <img src="/cloakyard-mark.svg" alt="" width="32" height="32" />
+    <a className="air-page-brand brand" href="/" aria-label="Cloakyard home">
+      <img src="/cloakyard-mark.svg" alt="" className="air-page-mark" width="36" height="36" />
       <span className="brand-word" translate="no">
         Cloakyard
       </span>

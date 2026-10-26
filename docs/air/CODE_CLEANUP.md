@@ -196,3 +196,33 @@ Product evidence: Resume `docs/air/evidence/privacy-dialogs-2026-10-21.json`,
 commit `9d14555`. All 373 production tests pass with zero skips, as do the
 responsive matrices, 34 exact paper captures and four real PDF comparisons.
 The deployed verification is recorded separately in the current rollout ledger.
+
+## 2026-10-26 — Storyline and shared public chrome
+
+Removed Resume's production `mountAirLight` effect/ref/markup, horizon CSS and
+obsolete shader precache exclusion. Canonical shader references remain live in the
+family gallery/Yard; no speculative asset deletion. The family horizon test now
+lists only surviving horizon consumers. New Storyline is native transform/opacity
+motion with shared lifecycle cleanup; no runtime package or draft-data coupling.
+Removed duplicate brand/header/footer link/type/padding rules in favor of the
+portable Air shell. Fixed the reduced-motion reset to zero duration instead of
+creating tiny transitions on previously unanimated layout properties. Kept all
+editor/template/export, update, source/download and native features.
+
+Validation and evidence: `storyline-family-2026-10-26` in current validation records.
+This is a bounded source cleanup; broader migration and physical gates remain open.
+
+## 2026-10-26 — Four-app full web audit
+
+Audited Yard/PDF/Drop website/Resume source graphs, styles, dependency references,
+assets and supported build/test entry points. Removed 36,809 bytes of generated
+PDF/Resume CSS by restricting Tailwind to shipped markup. Removed Resume's obsolete
+grid rule and both orphaned data attributes; made three exports private without
+removing their live implementation or type. Yard/Drop need no speculative runtime
+removal. Added accurate Yard/Resume Knip entry declarations without a new dependency.
+
+Retain theme font mappings used by Tailwind preflight, dynamic rail classes, static
+recovery CSS, portable Air modules, manual test commands, document fonts/exports,
+compatibility assets and native source artwork. The earlier broad-scan follow-up is
+resolved. IMG's parked draft remains identical. Full audit and proof:
+[code-cleanup-2026-10-26.md](code-cleanup-2026-10-26.md). All software gates pass; physical/product follow-ups remain open.

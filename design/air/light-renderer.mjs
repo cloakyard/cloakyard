@@ -1,4 +1,4 @@
-/** Air light — custom composition using Shaders 4.0.4's public core/std APIs.
+/** Air light — custom composition using Shaders 4.0.5's public core/std APIs.
  * This module is bundled locally for the opt-in study. No preset service, textures,
  * telemetry collector, default RAF loop or remote asset is used.
  */

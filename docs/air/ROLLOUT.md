@@ -1,5 +1,9 @@
 # Four-site Air deployment — 2026-10-21
 
+Current 2026-10-26 rollout: [verified Air 1.2 candidates](rollout-2026-10-26.md).
+Four individual dev → main releases are authorized; production results will be
+recorded after merge. The earlier ledger below remains historical evidence.
+
 **Cloakyard, CloakPDF, CloakDrop and CloakResume are deployed and production-verified.**
 Each release used an individual `dev` → `main` PR followed by automatic Cloudflare
 Workers Builds. The four `dev` branches were synchronized with their merged main.

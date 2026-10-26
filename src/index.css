@@ -32,8 +32,7 @@ h3 {
 a:focus-visible,
 summary:focus-visible {
   outline: 2px solid var(--air-accent);
-  outline-offset: 4px;
-  border-radius: var(--air-radius-check);
+  outline-offset: 3px;
 }
 [id][tabindex="-1"] {
   scroll-margin-top: var(--air-space-24);
@@ -91,19 +90,10 @@ summary:focus-visible {
   padding-block: var(--air-space-12);
 }
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--air-space-12);
-  min-height: 44px;
   flex-shrink: 0;
 }
-.brand img {
-  display: block;
-}
 .brand-word {
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: -0.04em;
+  white-space: nowrap;
 }
 .desktop-navigation {
   display: flex;
@@ -115,8 +105,8 @@ summary:focus-visible {
 .desktop-source {
   display: inline-flex;
   align-items: center;
-  min-height: var(--air-control);
-  font-size: var(--air-text-body);
+  min-height: 44px;
+  font: 500 var(--air-text-body)/1.5 var(--air-font);
   color: var(--air-ink-secondary);
 }
 .mobile-navigation {
@@ -138,8 +128,8 @@ summary:focus-visible {
 .hero h1 {
   margin-top: var(--air-space-24);
   font-size: var(--air-text-hero);
-  line-height: 1.08;
-  letter-spacing: -0.065em;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
 }
 .hero h1 span {
   display: block;
@@ -282,7 +272,7 @@ summary:focus-visible {
 .principles h2 {
   font-size: var(--air-text-section);
   line-height: 1.15;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
 }
 .principle-list {
   display: grid;
@@ -316,21 +306,13 @@ summary:focus-visible {
   font-size: var(--air-text-body);
 }
 .site-footer {
-  padding-bottom: var(--air-space-32);
+  display: grid;
+  gap: var(--air-space-16);
 }
 .footer-products {
   display: flex;
   flex-wrap: wrap;
   gap: var(--air-space-8) var(--air-space-24);
-  padding-block: var(--air-space-24);
-  border-top: 1px solid var(--air-line);
-}
-.footer-products a {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--air-space-8);
-  min-height: var(--air-control);
-  font-size: var(--air-text-label);
 }
 .footer-meta {
   display: flex;
@@ -338,8 +320,6 @@ summary:focus-visible {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--air-space-16) var(--air-space-32);
-  font-size: var(--air-text-meta);
-  color: var(--air-ink-muted);
 }
 .footer-meta p,
 .footer-meta nav {
@@ -347,11 +327,6 @@ summary:focus-visible {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--air-space-8) var(--air-space-24);
-}
-.footer-meta a {
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--air-control);
 }
 .no-script {
   max-width: 48rem;
@@ -366,7 +341,7 @@ summary:focus-visible {
 @media (hover: hover) and (pointer: fine) {
   .text-link:hover {
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 3px;
   }
   .desktop-navigation a:hover,
   .footer-products a:hover,
@@ -383,7 +358,7 @@ summary:focus-visible {
     transform: translate(2px, -2px);
   }
 }
-@container (width < 64em) {
+@container (width <= 60em) {
   .site-frame {
     padding-inline: var(--air-space-24);
   }
@@ -407,17 +382,30 @@ summary:focus-visible {
     display: none;
   }
   .site-header {
-    gap: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--air-space-8);
+  }
+  .brand {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: start;
   }
   .mobile-navigation {
     display: block;
-    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    min-width: 0;
+    pointer-events: none;
   }
   .mobile-navigation summary {
-    position: absolute;
-    right: 24px;
-    top: 12px;
+    display: flex;
+    pointer-events: auto;
+    width: fit-content;
+    margin-left: auto;
     list-style: none;
+    min-height: 44px;
   }
   .mobile-navigation summary::-webkit-details-marker {
     display: none;
@@ -426,6 +414,7 @@ summary:focus-visible {
     rotate: 180deg;
   }
   .mobile-navigation nav {
+    pointer-events: auto;
     display: flex;
     flex-direction: column;
     border-top: 1px solid var(--air-line);
@@ -450,12 +439,9 @@ summary:focus-visible {
     gap: var(--air-space-32);
   }
 }
-@container (width < 40em) {
+@container (width <= 40em) {
   .site-frame {
     padding-inline: var(--air-space-16);
-  }
-  .mobile-navigation summary {
-    right: 16px;
   }
   .hero {
     padding-top: var(--air-space-48);

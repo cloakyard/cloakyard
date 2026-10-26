@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "1.0.6",
+  "contractVersion": "1.2.0",
   "note": "Presence in this inventory is not audit or validation. Preserve evidence when updating.",
   "surfaces": [
     {
@@ -102,8 +102,13 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": ["docs/air/evidence/home-2026-10-13.json", "docs/air/validation.md"],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
+      "evidence": [
+        "docs/air/evidence/home-2026-10-13.json",
+        "docs/air/validation.md",
+        "docs/air/evidence/family-comparison-2026-10-25/",
+        "evidence/storyline-family-2026-10-26/chrome.json.gz"
+      ],
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open. 2026-10-26: Air 1.2.0 public-shell/Storyline software audit passes; see current validation. Physical/assistive gates stay separate."
     },
     {
       "path": "src/components/ExperimentSection.tsx",
@@ -175,9 +180,11 @@
         "docs/air/evidence/home-2026-10-13.json",
         "docs/air/validation.md",
         "docs/air/link-arrows-2026-10-19.md",
-        "docs/air/hyperlinks-2026-10-19.md"
+        "docs/air/hyperlinks-2026-10-19.md",
+        "docs/air/evidence/family-comparison-2026-10-25/",
+        "evidence/storyline-family-2026-10-26/chrome.json.gz"
       ],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open. 2026-10-26: Air 1.2.0 public-shell/Storyline software audit passes; see current validation. Physical/assistive gates stay separate."
     },
     {
       "path": "src/components/Header.tsx",
@@ -212,9 +219,11 @@
         "docs/air/evidence/home-2026-10-13.json",
         "docs/air/validation.md",
         "docs/air/link-arrows-2026-10-19.md",
-        "docs/air/hyperlinks-2026-10-19.md"
+        "docs/air/hyperlinks-2026-10-19.md",
+        "docs/air/evidence/family-comparison-2026-10-25/",
+        "evidence/storyline-family-2026-10-26/chrome.json.gz"
       ],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open. 2026-10-26: Air 1.2.0 public-shell/Storyline software audit passes; see current validation. Physical/assistive gates stay separate."
     },
     {
       "path": "src/components/Hero.tsx",
@@ -245,8 +254,12 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": ["docs/air/evidence/home-2026-10-13.json", "docs/air/validation.md"],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
+      "evidence": [
+        "docs/air/evidence/home-2026-10-13.json",
+        "docs/air/validation.md",
+        "docs/air/evidence/family-comparison-2026-10-25/"
+      ],
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open."
     },
     {
       "path": "src/components/Principles.tsx",
@@ -281,9 +294,10 @@
         "docs/air/evidence/home-2026-10-13.json",
         "docs/air/validation.md",
         "docs/air/link-arrows-2026-10-19.md",
-        "docs/air/hyperlinks-2026-10-19.md"
+        "docs/air/hyperlinks-2026-10-19.md",
+        "docs/air/evidence/family-comparison-2026-10-25/"
       ],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open."
     },
     {
       "path": "src/components/ToolEntry.tsx",
@@ -393,9 +407,11 @@
         "docs/air/evidence/brand-horizons-2026-10-19/checks.json",
         "docs/air/link-arrows-2026-10-19.md",
         "docs/air/hyperlinks-2026-10-19.md",
-        "docs/air/neutral-links-2026-10-19.md"
+        "docs/air/neutral-links-2026-10-19.md",
+        "docs/air/evidence/family-comparison-2026-10-25/",
+        "evidence/storyline-family-2026-10-26/chrome.json.gz"
       ],
-      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases. Actual shader activated; shared lifecycle and 22 production layout/theme cases pass. Physical power/thermal acceptance pending. 2026-10-19: app logo colour in both GPU and static artwork; 12 theme/viewport cases and both GPU themes pass. Physical GPU/battery acceptance remains open."
+      "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases. Actual shader activated; shared lifecycle and 22 production layout/theme cases pass. Physical power/thermal acceptance pending. 2026-10-19: app logo colour in both GPU and static artwork; 12 theme/viewport cases and both GPU themes pass. Physical GPU/battery acceptance remains open. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open. 2026-10-26: Air 1.2.0 public-shell/Storyline software audit passes; see current validation. Physical/assistive gates stay separate."
     },
     {
       "path": "src/main.tsx",

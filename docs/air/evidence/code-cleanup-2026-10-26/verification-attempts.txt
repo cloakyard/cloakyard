@@ -1,0 +1,129 @@
+Initial concurrent attempts; superseded by final passing logs.
+
+
+ RUN  v5.0.5 /Users/sumitsahoo/Developer/cloakresume
+
+ ❯ tests/editor-browser.spec.ts (178 tests | 1 failed) 388269ms
+   ❯ editor browser regressions (requires Chrome or CHROME_PATH) (178)
+     × offers to resume a draft containing only a job description 1147ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/editor-browser.spec.ts > editor browser regressions (requires Chrome or CHROME_PATH) > offers to resume a draft containing only a job description
+DOMException: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.
+ ❯ #evaluate node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/cdp/ExecutionContext.ts:473:13
+ ❯ ExecutionContext.evaluate node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/cdp/ExecutionContext.ts:310:12
+ ❯ IsolatedWorld.evaluate node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/cdp/IsolatedWorld.ts:206:12
+ ❯ CdpFrame.evaluate node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/Frame.ts:512:12
+ ❯ CdpPage.evaluate node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/Page.ts:2532:12
+ ❯ openDraft tests/editor-browser.spec.ts:256:7
+    254|       await page.setViewport({ width, height: 1000, hasTouch });
+    255|       await page.goto(url, { waitUntil: "networkidle0" });
+    256|       await page.evaluate(
+       |       ^
+    257|         ({ draft, options }) => {
+    258|           localStorage.setItem(
+ ❯ tests/editor-browser.spec.ts:3262:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 9 passed (10)
+      Tests  1 failed | 372 passed (373)
+   Start at  11:53:01
+   Duration  388.53s (tests 100%)
+
+
+ RUN  v5.0.5 /Users/sumitsahoo/Developer/cloakresume
+
+ ❯ tests/editor-browser.spec.ts (178 tests | 1 failed) 383846ms
+   ❯ editor browser regressions (requires Chrome or CHROME_PATH) (178)
+     × keeps contact reorder and remove controls inside the entry at 320px 1735ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/editor-browser.spec.ts > editor browser regressions (requires Chrome or CHROME_PATH) > keeps contact reorder and remove controls inside the entry at 320px
+Error: Node is detached from document
+ ❯ CdpElementHandle.assertConnectedElement node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1499:13
+ ❯ CdpElementHandle.isIntersectingViewport node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1535:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:140:14
+ ❯ CdpElementHandle.scrollIntoViewIfNeeded node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1510:7
+ ❯ CdpElementHandle.click node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:773:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:150:20
+ ❯ CdpFrame.click node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/src/api/Frame.ts:1091:5
+ ❯ tests/editor-browser.spec.ts:1878:7
+    1876|       });
+    1877|       expect(clipped).toEqual([]);
+    1878|       await page.click('.cr-editor-panel button[aria-label^="Remove "]…
+       |       ^
+    1879|       await page.click('.cr-editor-panel button[aria-label^="Confirm r…
+    1880|       expect((await savedResume()).contact).toEqual([]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 9 passed (10)
+      Tests  1 failed | 372 passed (373)
+   Start at  12:01:56
+   Duration  384.12s (tests 100%)
+
+
+PDF canvas initial failure (subsequently passed individually and in the full final command):
+lly with metadata removed
+→ Export option Flatten
+→ Export option Grayscale
+→ Export option Repair
+→ Export option Compress / low
+→ Export option Compress / medium
+→ Export option Compress / high
+✓ Flatten, grayscale, repair, all three compression levels and combined options produce valid PDFs without changing source/history
+✓ All six formats burn pending redaction; PDF streams contain no original text, PNG pixels retain the redaction ink, OCR exports cannot recover the covered text
+✓ export-long-name: 64 theme/viewport/text cases, including dialog breakpoint neighbors
+✓ Long filenames reflow at every viewport/theme/text size; reduced-motion reopen is immediate
+✓ Single-page Images downloads a PNG; no uncaught errors. Export suite passed.
+Evidence: /var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakpdf-air-modal-states-eGAUAn
+✓ Pointer motion, exit ownership, immediate keyboard/reduced-motion and reopen
+✓ delete-confirmation: 64 theme/viewport/text cases, including dialog breakpoint neighbors
+✓ Safe delete cancellation preserves storage and returns focus
+✓ cache failure remains actionable without false success
+✓ index failure remains actionable without false success
+✓ Retry removes real CacheStorage, committed IDB records and readiness flags
+✓ Cancelled cached loading stays idle and permits explicit reload
+✓ loading: 64 theme/viewport/text cases, including dialog breakpoint neighbors
+✓ download-error: 64 theme/viewport/text cases, including dialog breakpoint neighbors
+✓ Download errors stay at actual ready count; Retry and Cancel recover
+Evidence: /var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakpdf-air-chat-9IniGJ
+✓ indexing: 64 size/theme/text cases
+✓ index-error: 64 size/theme/text cases
+✓ no-text: 64 size/theme/text cases
+✓ empty: 64 size/theme/text cases
+✓ answer-error: 64 size/theme/text cases
+✓ answer: 64 size/theme/text cases
+✓ long-content: 64 size/theme/text cases
+✓ Explicit indexing retry; IME, Shift+Enter and limits; guarded send; partial recovery; draft/focus retention; real source bytes; safe markdown; scroll ownership; obsolete-result isolation; source URL cleanup; reduced motion/forced colours
+Evidence: /var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakpdf-air-navigation-I5Ry4T
+PASS: 176 registered tool selections preserve pages, focus and history.
+PASS: 176 navigation layouts; page/zoom persistence, view modes, mobile search and focus, expanded controls, real apply/undo, modal shortcut ownership, reduced motion and forced colours.
+Evidence: /var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakpdf-air-collections-mMFUkG
+PASS: 88 collection layouts, staged edits, real PDF output and keyboard ownership.
+Evidence: /var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakpdf-air-canvas-RTqkjb
+file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/common/QueryHandler.js:211
+                const waitForSelectorError = new (error instanceof TimeoutError ? TimeoutError : Error)(`Waiting for selector \`${selector}\` failed`);
+                                             ^
+
+TimeoutError: Waiting for selector `.editor-inline-text` failed
+    at CSSQueryHandler.waitFor (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/common/QueryHandler.js:211:46)
+    at async CdpFrame.waitForSelector (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/api/Frame.js:546:21)
+    at async CdpPage.waitForSelector (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:1482:20)
+    at async file:///Users/sumitsahoo/Developer/cloakpdf/tests/e2e/editor-canvas.e2e.ts:270:3 {
+  cause: TimeoutError: Waiting failed: 30000ms exceeded
+      at new WaitTask (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/common/WaitTask.js:46:34)
+      at IsolatedWorld.waitForFunction (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/api/Realm.js:49:26)
+      at CSSQueryHandler.waitFor (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/common/QueryHandler.js:176:95)
+      at async CdpFrame.waitForSelector (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/api/Frame.js:546:21)
+      at async CdpPage.waitForSelector (file:///Users/sumitsahoo/Developer/cloakpdf/node_modules/.pnpm/puppeteer-core@25.15.0/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:1482:20)
+      at async file:///Users/sumitsahoo/Developer/cloakpdf/tests/e2e/editor-canvas.e2e.ts:270:3
+}
+
+Node.js v24.22.1
+[ELIFECYCLE] Command failed with exit code 1.
