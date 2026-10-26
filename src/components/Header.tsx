@@ -17,7 +17,7 @@ export function Header() {
       </a>
       <header className="air-page-header site-header site-frame">
         <Brand />
-        <nav className="air-page-nav desktop-navigation" aria-label="Main navigation">
+        <nav className="air-page-nav desktop-navigation" aria-label="Primary navigation">
           {navigation.map((item) => (
             <a key={item.href} href={item.href}>
               {item.label}
@@ -26,7 +26,7 @@ export function Header() {
         </nav>
         <a
           className="desktop-source text-link"
-          href="https://github.com/cloakyard"
+          href="https://github.com/cloakyard/cloakyard"
           target="_blank"
           rel="noreferrer"
         >
@@ -48,7 +48,7 @@ export function Header() {
           </summary>
           <nav
             className="air-page-nav"
-            aria-label="Main navigation"
+            aria-label="Primary navigation"
             onClick={(event) => {
               if ((event.target as Element).closest("a") && disclosure.current) {
                 disclosure.current.open = false;
@@ -63,7 +63,7 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <a href="https://github.com/cloakyard" target="_blank" rel="noreferrer">
+            <a href="https://github.com/cloakyard/cloakyard" target="_blank" rel="noreferrer">
               Source <ArrowUpRight size={16} aria-hidden="true" />
             </a>
           </nav>
