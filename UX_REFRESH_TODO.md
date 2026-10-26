@@ -13,9 +13,9 @@ design language, and commit each bounded piece only after its validation passes.
 KERR's app and native macOS UI are outside this redesign. The user authorized
 Cloakyard/PDF dev integration, main PRs and releases, followed by CloakDrop RC1
 publication, its Air website deployment, and the app-colour deployment. Cloakyard,
-PDF and Drop are live with their logo-coloured horizons; main/dev integration is
-complete. Continue Resume/IMG locally until their remaining migrations pass; IMG
-remains last. On 2026-10-21 the user authorized final dependency updates, dev
+PDF, Drop website and Resume are now live with their current Air artwork; main/dev
+integration is complete. IMG remains parked, excluded from deployment and last
+in the rollout. On 2026-10-21 the user authorized final dependency updates, dev
 integration and dev → main PR merges after all remaining work is complete, with
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
