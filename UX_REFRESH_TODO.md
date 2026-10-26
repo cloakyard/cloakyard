@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Cloakyard/PDF/Drop deployed; CloakResume entry through preview assets and unused foundations software-validated locally; live foundation/final acceptance next, CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — four-app Air 1.2 artwork/chrome implemented locally; web cleanup software-validated locally; remaining acceptance and rollout open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,18 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Four-app web cleanup audit — 2026-10-26
+
+- [x] Trace current modules/exports, dependencies, custom CSS and asset/build/test consumers.
+- [x] Restrict PDF/Resume Tailwind scans; remove Resume's dead grid rule, orphaned
+      data attributes and unused exports. Preserve live preflight font mappings.
+- [x] Record zero-issue Knip graphs and explicit entry points without a new dependency.
+- [x] Complete final feature/output verification: 834 tests, 16 PDF smoke suites,
+      552 family layouts, 58 exact render pairs and four exact PDF export pairs.
+- [x] Record passing local commits (PDF `63781c3`, Resume `a4f7b95`, Drop `678bf2a`)
+      and stop all six task-owned previews. Yard is this checkpoint. See [audit](docs/air/code-cleanup-2026-10-26.md).
+- [ ] Preserve remaining product/device/export acceptance before rollout; keep IMG parked/last.
 
 ## Resume Storyline and four-app chrome — 2026-10-26
 

@@ -1,0 +1,4 @@
+{
+  "entry": ["index.html", "scripts/**/*.mjs", "design/air/*.mjs", "design/air/*.tsx"],
+  "project": ["src/**/*.{ts,tsx,css,mjs}", "scripts/**/*.mjs", "design/air/*.{mjs,ts,tsx}"]
+}

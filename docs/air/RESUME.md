@@ -7,7 +7,39 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Resume Storyline and four-app chrome (2026-10-26)
+### Current checkpoint — four-app cleanup audit complete (2026-10-26)
+
+The requested full web audit covers Yard, PDF, Drop website and Resume. Restricted
+PDF/Resume Tailwind to shipped markup, removing 36,809 B of generated CSS. Removed
+Resume's obsolete grid override/two orphaned data attributes and three unused
+exports; their live implementations/types remain. Added accurate Yard/Resume Knip
+entry declarations without new dependencies. All four graphs report zero issues.
+Kept preflight font aliases, format/annotation compatibility, portable Air modules,
+manual test commands and document fonts/output assets. Yard/Drop required no
+speculative runtime deletion. IMG's parked 15-file draft remains identical; native
+apps remain outside this web audit.
+
+Final proof: PDF 461 units and the complete 16-suite production smoke command;
+Resume 373 tests/10 files with zero skips in documented serial mode; all builds,
+applicable lint/types, design, synchronization and 20 portability checks per app.
+552 Chrome home/secondary layouts have zero deviations/errors; desktop/laptop/phone
+light/dark pages/editors reviewed. All 58 paired captures (24 UI + 34 template/paper)
+and four PDF export comparisons match exactly, including raster/text/links/boxes.
+Rebuilds after formatting/docs preserve every tested PDF/Resume production byte.
+Earlier concurrent browser failures are recorded, not hidden or counted as passes.
+
+Passing local commits: PDF `63781c3`, Resume `a4f7b95`, Drop audit `678bf2a`.
+Yard's graph configuration, family audit, TODO and handoff are in this checkpoint's
+commit. All six task-owned preview ports are closed. No push/PR/merge/deployment.
+See [audit and evidence](code-cleanup-2026-10-26.md) and each app's
+`docs/air/evidence/code-cleanup-2026-10-26/`.
+
+Next: review the implemented artwork and remaining product/export/device acceptance
+before rollout; keep IMG last. Earlier Resume export follow-ups, the accepted PDF
+Compact long-document limitation and physical/assistive/hardware gates remain open.
+Do not repeat completed migrations or treat this code cleanup as device approval.
+
+### Prior checkpoint — Resume Storyline and four-app chrome (2026-10-26)
 
 The user approved production Resume implementation and explicitly requested a
 close Yard/PDF/Drop/Resume header/footer audit. Storyline is now implemented: a

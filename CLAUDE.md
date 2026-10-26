@@ -72,3 +72,9 @@ The home stays a directory and statement of principles, not per-product marketin
 Track phases and remaining device gates in `UX_REFRESH_TODO.md`; record evidence
 before committing each bounded piece. Do not equate home completion with family
 completion, and do not push or deploy without authorization.
+
+## Dead-code audit
+
+Run `npx --yes knip@6.42.1` for the declared web graph in `knip.json`. The pinned
+CLI can also be supplied externally; no runtime package is required. Manual audit
+commands and portable Air library entries are deliberate public entry points.
