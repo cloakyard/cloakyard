@@ -7,30 +7,37 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.3 consistency verified locally (2026-10-26)
+### Current checkpoint — Air 1.2.3 consistency deployed (2026-10-26)
 
 The latest audit fixes the previous footer exceptions and separate PWA notices.
-Yard/PDF/Drop website/Resume now share footer labels/order and natural heights,
-including enlarged-text reflow. PDF/Resume use the pinned common update notice;
-real activation, task deferral, saving, cross-tab and focus behavior remain intact.
-Headers remain aligned with app-specific task destinations. No native/output changes.
+Yard/PDF/Drop website/Resume share footer content/order and natural heights,
+including enlarged-text reflow. PDF/Resume use the pinned common notice; task
+deferral, saving, cross-tab consent, focus and safe activation are preserved.
+Removed duplicate UI/styles and added direct cross-app comparisons. Headers stay
+aligned with meaningful product destinations. No native/template/output changes.
 
-Local software verification passes: 1,152 Chrome/Firefox family layouts, 240 PWA
-comparison layouts / 30 exact screenshot pairs, PDF 461 units / 16 smoke suites /
-44 deferred-update / 66 recovery layouts, Resume 373 tests (zero skips) / 384 PWA
-layouts / 349 entry layouts and 14 journeys, Drop 432 layouts / 34 journeys, link
-matrices, checks/builds/dead-code and 22 portable checks per bundle. See
-[the visual audit](consistency-2026-10-26.md) for evidence and initial failures.
+Merged/deployed: Yard #24 (`1abd9eb`), PDF #212 (`e818ce9`), Drop #48 (`42fd69a`),
+Resume #45 (`45b62f4`). All required main checks/builds and all 260 public asset
+hashes pass. Local: 1,152 Chrome/Firefox family layouts, 240 PWA layouts / 30 exact
+pairs, PDF 461 units / 16 smoke suites / 44 update / 66 recovery layouts, Resume
+373 tests (zero skips) / 384 PWA / 349 entry layouts and 14 journeys, Drop 432
+layouts / 34 journeys, links/static/dead-code/builds and 22 portability checks.
+Live: 576 family layouts, 432 Drop layouts / 34 journeys, 744 neutral-link states /
+250 keyboard checks and 60 exact renders (48 shell + 12 actual cache notices).
+See [the audit and deployment evidence](consistency-2026-10-26.md), including
+initial failures and their corrections. All four dev branches track released main.
+The documentation-only closeout uses the same PR/merge/sync workflow, with
+application bytes verified unchanged. Cloudflare publishes main only.
 
-Next: commit the passing bounded pieces, create individual dev → main PRs, merge
-only after required checks, verify deployed bytes and live shells, synchronize dev,
-and record the deployment closeout. This is already authorized. IMG is audit-only
-and last; its legacy footer/PWA is explicitly open. All 15 parked paths match
-`/tmp/air26-img-parked.json`; its isolated portable maintenance passes 470 tests.
-Do not push/deploy IMG or touch `cloakresume-editor-audit`. Keep existing Compact
-beta, node-forge through 2026-11-06, Drop frozen-runtime, Resume export-intermittency
-and physical/assistive/hardware acceptance open. Scratch and running preview
-ports 8320–8325 belong to `/tmp/air-consistency-2026-10-26/`; close them after rollout.
+Next: investigate the existing Resume export intermittency as a separate bounded
+piece, then remaining full-product/device acceptance. Keep IMG last: its legacy
+header/footer/PWA is an explicit open deviation, not a passing Air surface. Local
+portable maintenance `d630246` passes isolated 470 tests/check/build; all 15 parked
+paths match `/tmp/air26-img-parked.json`. Do not push/deploy IMG or modify the
+`cloakresume-editor-audit` worktree. Existing Compact beta, node-forge through
+2026-11-06, Drop official runtime, export and physical/assistive/hardware acceptance
+remain open. Scratch: `/tmp/air-consistency-2026-10-26/`. All six task preview
+ports are closed; no ongoing service is needed.
 
 ### Prior checkpoint — Air 1.2.2 public shell deployed (2026-10-26)
 
