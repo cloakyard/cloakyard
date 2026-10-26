@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.2.2 public shell content deployed and verified for Yard/PDF/Drop website/Resume; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.2.3 footer/PWA consistency verified locally; deployment pending for Yard/PDF/Drop website/Resume; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,20 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Footer heights and PWA notice consistency — 2026-10-26
+
+- [x] Visually compare all five websites and record the real footer/PWA deviations.
+- [x] Remove Yard's extra footer row and Drop's extra footer item; share natural height and reflow.
+- [x] Pin one PDF/Resume update/offline/busy/error presentation; retain work safety.
+- [x] Add direct cross-app geometry/content comparison and check responsive light/dark states.
+- [x] Complete applicable feature, real-worker, recovery, link and dead-code checks.
+- [x] Record evidence; keep IMG legacy deviations and parked redesign explicit.
+- [ ] Commit passing pieces and deploy through individual dev → main PRs.
+- [ ] Verify production and synchronize dev.
+
+[Air 1.2.3 visual audit](docs/air/consistency-2026-10-26.md) supersedes the prior
+footer exceptions. Full product/device acceptance and export intermittency stay open.
 
 ## Public header/footer content — 2026-10-26
 

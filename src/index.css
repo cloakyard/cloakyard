@@ -305,11 +305,6 @@ summary:focus-visible {
   color: var(--air-ink-secondary);
   font-size: var(--air-text-body);
 }
-.site-footer {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--air-space-16);
-}
 .no-script {
   max-width: 48rem;
   margin: 48px auto;
@@ -326,7 +321,6 @@ summary:focus-visible {
     text-underline-offset: 3px;
   }
   .desktop-navigation a:hover,
-  .footer-products a:hover,
   .site-footer a:hover {
     color: var(--air-ink);
   }

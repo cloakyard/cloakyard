@@ -7,7 +7,32 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.2 public shell deployed (2026-10-26)
+### Current checkpoint — Air 1.2.3 consistency verified locally (2026-10-26)
+
+The latest audit fixes the previous footer exceptions and separate PWA notices.
+Yard/PDF/Drop website/Resume now share footer labels/order and natural heights,
+including enlarged-text reflow. PDF/Resume use the pinned common update notice;
+real activation, task deferral, saving, cross-tab and focus behavior remain intact.
+Headers remain aligned with app-specific task destinations. No native/output changes.
+
+Local software verification passes: 1,152 Chrome/Firefox family layouts, 240 PWA
+comparison layouts / 30 exact screenshot pairs, PDF 461 units / 16 smoke suites /
+44 deferred-update / 66 recovery layouts, Resume 373 tests (zero skips) / 384 PWA
+layouts / 349 entry layouts and 14 journeys, Drop 432 layouts / 34 journeys, link
+matrices, checks/builds/dead-code and 22 portable checks per bundle. See
+[the visual audit](consistency-2026-10-26.md) for evidence and initial failures.
+
+Next: commit the passing bounded pieces, create individual dev → main PRs, merge
+only after required checks, verify deployed bytes and live shells, synchronize dev,
+and record the deployment closeout. This is already authorized. IMG is audit-only
+and last; its legacy footer/PWA is explicitly open. All 15 parked paths match
+`/tmp/air26-img-parked.json`; its isolated portable maintenance passes 470 tests.
+Do not push/deploy IMG or touch `cloakresume-editor-audit`. Keep existing Compact
+beta, node-forge through 2026-11-06, Drop frozen-runtime, Resume export-intermittency
+and physical/assistive/hardware acceptance open. Scratch and running preview
+ports 8320–8325 belong to `/tmp/air-consistency-2026-10-26/`; close them after rollout.
+
+### Prior checkpoint — Air 1.2.2 public shell deployed (2026-10-26)
 
 Header/footer content is aligned across Yard, PDF, Drop website and Resume. The
 contract defines labels/order/credits, exact Source destinations, shared ink,
