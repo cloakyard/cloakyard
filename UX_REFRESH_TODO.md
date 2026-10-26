@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.2.2 public shell content verified locally; rollout pending; Air 1.2.1 deployed for Yard/PDF/Drop website/Resume; landing playback controls removed; cleanup and live software checks pass; remaining device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.2.2 public shell content deployed and verified for Yard/PDF/Drop website/Resume; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -28,8 +28,12 @@ The separately requested Drop installer now uses Air.
 - [x] Remove duplicate PDF recovery-footer markup and obsolete per-app footer styles.
 - [x] Complete responsive light/dark, keyboard, neutral-link and applicable feature checks.
 - [x] Record rendered evidence and commit passing pieces.
-- [ ] Deploy via individual dev → main PRs.
-- [ ] Verify production and synchronize dev; keep IMG parked and existing exceptions open.
+- [x] Deploy via individual dev → main PRs.
+- [x] Verify production and synchronize dev; keep IMG parked and existing exceptions open.
+
+[Air 1.2.2 deployment evidence](docs/air/public-shell-2026-10-26.md): 260 exact live assets,
+576 live family layouts and passing final render/export comparisons. The known
+Resume export intermittency recurred once and remains an explicit follow-up.
 
 ## Automatic landing artwork — 2026-10-26
 

@@ -1,6 +1,6 @@
 # Public header/footer content audit — 2026-10-26
 
-Status: local checks and rendered verification pass; preparing individual dev → main PRs.
+Status: Air 1.2.2 deployed through four passing dev → main PRs; public-shell checks pass locally and in production.
 
 Scope is Cloakyard, CloakPDF, CloakDrop's website and CloakResume. The user's
 request covers content and behavior as well as Air geometry. Editor task bars,
@@ -85,6 +85,40 @@ results are saved in each product's `docs/air/evidence/public-shell-2026-10-26/`
 Existing PWA/README/OG assets remain current: their artwork/first-view composition
 and document output do not change in this footer/navigation piece.
 
-Deployment identities will be appended after the authorized PR rollout. Existing PDF Compact beta/node-forge and Drop official-bundle exceptions,
+Existing PDF Compact beta/node-forge and Drop official-bundle exceptions,
 plus physical/assistive/device and broader product acceptance, stay explicitly open.
 IMG's 15 parked draft files remain byte-identical; only portable maintenance is local.
+
+## Production verification
+
+All four main checks and Cloudflare builds pass. All 260 public assets match the
+tested candidates, with `no-transform`, no injected scripts and correct recovery
+responses. Live verification passes 576 family layouts, 432 Drop website layouts /
+34 journeys, six actual PDF workflows, and 768 hyperlink states / 262 keyboard
+checks. All 58 local/live screenshots match exactly (24 UI and 34 template/paper).
+See [the deployment ledger](evidence/public-shell-2026-10-26/deployment.json).
+
+| App         | Merge                                                     | Commit    | Verified public assets |
+| ----------- | --------------------------------------------------------- | --------- | ---------------------- |
+| cloakyard   | [PR 22](https://github.com/cloakyard/cloakyard/pull/22)   | `a79f6aa` | 13                     |
+| cloakdrop   | [PR 47](https://github.com/cloakyard/cloakdrop/pull/47)   | `f8f08ce` | 16                     |
+| cloakresume | [PR 44](https://github.com/cloakyard/cloakresume/pull/44) | `71f8ab4` | 101                    |
+| cloakpdf    | [PR 211](https://github.com/cloakyard/cloakpdf/pull/211)  | `822a2f5` | 130                    |
+
+PDF's initial PR contract job detected a stale generated PublicFooter inventory row
+in Markdown; surfaces.json was already correct. Regenerated it in e1854f6 and all
+required CI then passed. No application change or check bypass was needed.
+
+The first live Resume export comparison matched 3/4 PDF rasters. Linked Letter
+output intermittently used blue solid-underlined links instead of the template's
+neutral dotted treatment; extracted text, link destinations/rectangles and page
+geometry still matched. Both synthetic rasters and the failed comparison are kept
+in the evidence. Four fresh-context exports after stable preview capture match
+pixels, text, links and geometry exactly. This is a passing final verification,
+not a fix or closure of the previously documented export intermittency. Export and
+template source is unchanged; the unresolved output follow-up remains explicit.
+
+The four dev branches were fast-forwarded to these released main revisions.
+Cloudflare deploys main only; dev uploads versions. The documentation-only closeout
+follows the same PR/check/merge/fast-forward flow, verifies identical application
+bytes, and includes this ledger and handoff. IMG remains local and parked.
