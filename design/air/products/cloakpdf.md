@@ -455,7 +455,7 @@
   CSS, original mark and real capture. Validate shipped metadata against image bytes;
   include static HTML/artwork in the surface inventory alongside React sources.
 
-- PWA Update now is deferred while an editor or standalone workspace is open.
+- PWA Update and reload is deferred while an editor or standalone workspace is open.
   Explain saving/downloading and returning home; keep Later available and restore
   update availability on return home. A worker activated by another tab must not
   reload this tab's work. Recheck the current route before the delayed reload so a

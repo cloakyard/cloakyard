@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.2.2 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.2.3 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -23,6 +23,9 @@ Shared design commands:
   Set `AIR_FAMILY_URLS` (four comma-separated URLs, in that order), `PUPPETEER_MODULE` and
   `AIR_EVIDENCE_DIR`; use `AIR_BROWSER=firefox AIR_THEME=light` (then `dark`)
   for Firefox, otherwise Chrome covers both themes. Profiles are disposable.
+- `node scripts/test-air-notices.mjs` compares built PDF/Resume PWA notices with real
+  disposable workers across themes, sizes and enlarged text; product lifecycle
+  suites separately verify activation and work preservation.
 - `node --test scripts/test-air-file-workflow.mjs` and
   `node --test scripts/test-air-collections.mjs` exercise reference behavior.
 

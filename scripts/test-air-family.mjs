@@ -167,22 +167,21 @@ function inspectShell(p) {
   const nav = footer.querySelector('nav[aria-label="Footer navigation"]');
   check(!!nav, "named footer navigation");
   const links = [...(nav?.querySelectorAll("a,button") || [])];
-  const expected =
-    p.name === "cloakyard"
-      ? ["Privacy", "Source", "MIT license"]
-      : [
-          ...(p.name === "cloakdrop" ? ["Download"] : []),
-          "Privacy policy",
-          "Source",
-          "MIT license",
-          "Cloakyard",
-        ];
+  const expected = [
+    "Privacy",
+    "Source",
+    "MIT license",
+    p.name === "cloakyard" ? "All apps" : "Cloakyard",
+  ];
   check(JSON.stringify(links.map(label)) === JSON.stringify(expected), "footer labels and order");
   for (const [text, href] of [
     ["Source", p.repo],
     ["MIT license", `${p.repo}/blob/main/LICENSE`],
     ...(p.name === "cloakyard"
-      ? [["Privacy", "#principles"]]
+      ? [
+          ["Privacy", "#principles"],
+          ["All apps", "#tools"],
+        ]
       : [["Cloakyard", "https://cloakyard.com"]]),
   ])
     check(
@@ -215,7 +214,7 @@ function inspectShell(p) {
       ),
       "build-derived footer version",
     );
-  const privacy = links.find((n) => label(n) === "Privacy policy");
+  const privacy = links.find((n) => label(n) === "Privacy");
   if (p.name === "cloakdrop")
     check(privacy?.getAttribute("href") === "/privacy/", "policy destination");
   else if (p.name !== "cloakyard" && privacy?.tagName === "A")
@@ -225,15 +224,7 @@ function inspectShell(p) {
         : privacy.hash === "#privacy-policy",
       "recovery policy destination",
     );
-  const row = footer.querySelector(".air-page-footer-row");
-  if (row)
-    check(
-      near(
-        row.getBoundingClientRect().width,
-        fr.width - parseFloat(fs.paddingLeft) - parseFloat(fs.paddingRight),
-      ),
-      "directory footer row fills content width",
-    );
+  check(footer.children.length === 2, "one identity group and one navigation group");
   const menu = frame.querySelector("details");
   const entries = (nodes) =>
     [...nodes].map((n) => [label(n), n.getAttribute("href"), n.getAttribute("target")]);
@@ -428,6 +419,7 @@ try {
             }
             return {
               heading,
+              footer: style(document.querySelector("footer")),
               sections,
               header: { ...header, gutter: s.paddingLeft },
               brand: style(brand),
@@ -528,14 +520,14 @@ try {
         if (["button", "dialog"].includes(product.privacy)) {
           // A real first-install toast may arrive while the matrix is running.
           // Dismiss that temporary notice before pointer-testing the footer.
-          const notice = await page.$('button[aria-label="Dismiss cache status"]');
+          const notice = await page.$('button[aria-label="Dismiss offline status"]');
           if (notice) {
             await notice.focus();
             await page.keyboard.press("Enter");
           }
           const buttons = await page.$$("button");
           for (const button of buttons)
-            if (await button.evaluate((n) => n.textContent.trim() === "Privacy policy")) {
+            if (await button.evaluate((n) => n.textContent.trim() === "Privacy")) {
               await button.click();
               break;
             }
@@ -706,6 +698,27 @@ try {
       }
     }
     await page.close();
+  }
+  const baseline = evidence.layouts.filter((row) => row.product === "cloakyard");
+  for (const row of evidence.layouts) {
+    const reference = baseline.find(
+      (r) =>
+        r.theme === row.theme &&
+        r.root === row.root &&
+        r.width === row.width &&
+        r.height === row.height,
+    );
+    if (Math.abs(row.footer.height - reference.footer.height) > 0.5)
+      evidence.failures.push({
+        product: row.product,
+        theme: row.theme,
+        root: row.root,
+        width: row.width,
+        height: row.height,
+        issue: "cross-product footer height",
+        actual: row.footer.height,
+        expected: reference.footer.height,
+      });
   }
 } finally {
   await browser.close();
