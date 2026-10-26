@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — four-app Air 1.2 artwork/chrome implemented locally; web cleanup software-validated locally; remaining acceptance and rollout open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — four-app Air 1.2 artwork/chrome implemented locally; web cleanup software-validated locally; four-site rollout authorized and in verification; remaining device acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,27 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Four-site release verification — 2026-10-26
+
+The user authorized deployment after verification, through individual `dev` →
+`main` PRs, keeping dev synchronized. This supersedes earlier local-only limits
+for Yard, PDF, Drop website and Resume. IMG stays excluded; native release assets
+and KERR remain unchanged.
+
+- [x] Refresh primary npm registry metadata and apply compatible current releases.
+- [x] Patch new build-tool advisories; retain only the existing PDF node-forge
+      exception through 2026-11-06. Keep Astro Check's supported TypeScript major.
+- [x] Review the Shaders catalog adapter and regenerate synchronized Air bundles.
+- [x] Finish fresh product, responsive/motion, output and link-state verification.
+- [ ] Commit each passing candidate and create individual dev → main PRs.
+- [ ] Merge passing PRs, verify exact live deployments, and synchronize dev.
+- [ ] Record final deployment identities and keep remaining acceptance explicit.
+
+Cloudflare sign-in completed. Corrected Yard's non-production command to version
+uploads, keeping main as production. PDF/Drop/Resume already use version uploads.
+[Fresh verification and evidence](docs/air/rollout-2026-10-26.md) pass with the
+existing explicit PDF exceptions. No remote branch change yet.
 
 ## Four-app web cleanup audit — 2026-10-26
 

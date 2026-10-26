@@ -1,0 +1,30 @@
+✔ reorder preserves identity and every field, with exact undo/redo (0.909792ms)
+✔ new work after undo discards the future while leaving previous snapshots intact (0.128792ms)
+✔ selection across filtered views retains other selections and rejects stale IDs (0.085458ms)
+✔ remove all is reversible and clears stale selections without deleting history (0.11975ms)
+✔ invalid and unchanged mutations create no misleading history entries (0.092834ms)
+✔ 100-row sample stays uniquely addressable through reorder, rename, remove and undo (0.133083ms)
+✔ invalid, multiple, oversize and cancelled picks retain the current file (1.941167ms)
+✔ UTF-8 characters survive chunk boundaries and preview is bounded (38.182334ms)
+✔ invalid UTF-8 fails without discarding selected file; same file can be picked again (0.220166ms)
+✔ empty text completes with a useful state (0.161375ms)
+✔ manual pause has measured bytes, ignores duplicate starts and resumes (2.853334ms)
+✔ cancel while paused releases the wait and retry starts from zero (0.5295ms)
+✔ late completion after cancel, replacement, removal or disposal cannot publish (0.677542ms)
+✔ interruption keeps partial text and file; retry succeeds without simulation (0.135833ms)
+✔ short read rejects inconsistent byte counts (0.077417ms)
+✔ finite arrival submits once in the settled clock and rests until input (2.403542ms)
+✔ unmount aborts pending startup and destroys its late renderer (0.37075ms)
+✔ input arriving during a pending draw schedules a follow-up without overlap (0.3365ms)
+✔ reduced motion never mounts and preference changes are reversible (0.23925ms)
+✔ resize failure releases the device and leaves the fallback available (0.226666ms)
+✔ reference form values remain text across HTML reconstruction (0.397334ms)
+✔ a reconstructed slider cannot interpolate markup from its retained value (0.117833ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 95.583583

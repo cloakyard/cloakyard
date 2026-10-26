@@ -7,7 +7,34 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — four-app cleanup audit complete (2026-10-26)
+### Current checkpoint — authorized four-site rollout in verification (2026-10-26)
+
+The user explicitly authorized deployment after verification, with individual dev
+→ main PRs and dev synchronization. Four sites only: Yard, PDF, Drop website and
+Resume. IMG remains parked/last; native artifacts and KERR remain unchanged.
+Fresh primary npm metadata found 16 newer package/tool releases. Compatible
+updates are installed, including same-major Miniflare → undici 7.30.1 overrides
+and serialize-javascript 7.1.4. Only PDF's existing node-forge exception remains;
+its expiry and the Compact long-document exception are unchanged. Air still uses
+1.2.0 semantics, with reviewed Shaders 4.0.5 and Vite+ 1.4 generated assets.
+
+Fresh verification passes: all builds/lint/types/dead-code/design/portability,
+PDF 461 units and all 16 smoke suites, Resume 373 tests/10 files with zero skips,
+1,104 Chrome/Firefox layouts, 608 neutral link states/206 keyboard checks, artwork
+and real PWA lifecycles. All 58 render pairs and four actual Resume PDF export
+pairs match exactly. Quality passes both AI fixtures and Compact passes short;
+Compact long reproduces its explicitly accepted missing-facts limitation. Initial
+version-pin/harness failures were corrected and fully rerun, not counted as passes.
+See [release verification](rollout-2026-10-26.md) and its per-app evidence folders.
+
+Cloudflare sign-in completed. Corrected Yard's non-production version command from
+`npx wrangler deploy` to `npx wrangler versions upload` and verified Save completed;
+main remains the production branch. PDF/Drop/Resume already use version uploads. No
+push, PR or merge yet; all four branch configurations are verified.
+Do not alter an unrelated main worktree: Resume main is checked out separately in
+`cloakresume-editor-audit`. Current dev can be fast-forwarded after the main PR.
+
+### Prior checkpoint — four-app cleanup audit complete (2026-10-26)
 
 The requested full web audit covers Yard, PDF, Drop website and Resume. Restricted
 PDF/Resume Tailwind to shipped markup, removing 36,809 B of generated CSS. Removed

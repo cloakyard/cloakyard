@@ -1038,7 +1038,7 @@ performance approval.
   pending initialization. Reduced motion, Save-Data, unavailable WebGPU, and
   reported memory/core counts of 4 or fewer use the static artwork. These browser
   hints supplement, rather than replace, real-device performance validation.
-- Bundle Shaders locally, pinned to 4.0.4 for this candidate, with no telemetry,
+- Bundle Shaders locally, pinned to 4.0.5 for this candidate, with no telemetry,
   hosted presets or remote assets. The lazy study bundle is approximately 369 kB
   gzip, with a 400 kB build ceiling. This is a measured study budget, not an
   approved production payload. Preserve dependency licenses and asset hashes.
