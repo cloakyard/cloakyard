@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-26",
+  "contract": "1.2.2",
+  "releases": {
+    "cloakyard": {
+      "pr": "https://github.com/cloakyard/cloakyard/pull/22",
+      "commit": "a79f6aa7e47d24d5b2d9adec4aec5d9b0fe9de24",
+      "origin": "https://cloakyard.com",
+      "assetsVerified": 13,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/be0e9bb5-cec8-4f42-a056-ac6322c63577",
+      "rollbackCommit": "acc7505f9ea807ddae09f8c44a9dcc0f90083dbb"
+    },
+    "cloakdrop": {
+      "pr": "https://github.com/cloakyard/cloakdrop/pull/47",
+      "commit": "f8f08ceb347d9318060708065a0562891db6393b",
+      "origin": "https://drop.cloakyard.com",
+      "assetsVerified": 16,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakdrop/production/builds/1e5929ea-ae4d-4e92-9dec-53df663ddec3",
+      "rollbackCommit": "2c893d25d90748c99219fee06f6adb161b496397"
+    },
+    "cloakresume": {
+      "pr": "https://github.com/cloakyard/cloakresume/pull/44",
+      "commit": "71f8ab4b30a98a0cb8b5ba3a6ed295949ec5c6e5",
+      "origin": "https://resume.cloakyard.com",
+      "assetsVerified": 101,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/55e00279-7bef-4862-b1ef-7039bb643020",
+      "rollbackCommit": "852062cc9687b12f855e71e4e3126bd0aa6a126c"
+    },
+    "cloakpdf": {
+      "pr": "https://github.com/cloakyard/cloakpdf/pull/211",
+      "commit": "822a2f5551091f552e8c994cea73251c9762d26d",
+      "origin": "https://pdf.cloakyard.com",
+      "assetsVerified": 130,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/481efce9-f43f-4038-b774-0851d346320a",
+      "rollbackCommit": "844bee228f947a5d9e57a60b4f85d7bdf5263cf5"
+    }
+  },
+  "liveBrowserChecks": [
+    {
+      "name": "live-exports",
+      "status": 0,
+      "seconds": 1.8
+    },
+    {
+      "name": "live-family",
+      "status": 0,
+      "seconds": 70.4
+    },
+    {
+      "name": "live-drop-site",
+      "status": 0,
+      "seconds": 83.4
+    },
+    {
+      "name": "live-pdf-output",
+      "status": 0,
+      "seconds": 14.3
+    },
+    {
+      "name": "live-cloakyard-links",
+      "status": 0,
+      "seconds": 5.7
+    },
+    {
+      "name": "live-cloakpdf-links",
+      "status": 0,
+      "seconds": 8.2
+    },
+    {
+      "name": "live-cloakdrop-links",
+      "status": 0,
+      "seconds": 14.2
+    },
+    {
+      "name": "live-cloakresume-links",
+      "status": 0,
+      "seconds": 9.8
+    }
+  ],
+  "liveFamilyLayouts": 576,
+  "renderPairs": 58,
+  "identicalRenderPairs": 58,
+  "finalIdenticalExportPairs": 4,
+  "initialExportComparison": "3/4 exact; linked Letter raster differed only in hyperlink decoration/ink; text, link targets, link rectangles and page geometry match. Four fresh-context stable-preview comparisons all pass; this does not establish a fix for the previously documented export intermittency.",
+  "scope": "Cloakyard, CloakPDF, CloakDrop website, CloakResume; IMG excluded",
+  "remaining": [
+    "Resume intermittent export raster styling previously documented; no export code changed",
+    "Physical/assistive/hardware acceptance",
+    "Previously documented full-product follow-ups beyond these fixtures",
+    "PDF Compact beta long-document limitation (approved)",
+    "node-forge exception through 2026-11-06 (approved)",
+    "Drop official bundled runtime exception (approved)"
+  ],
+  "releaseBranches": {
+    "cloakyard": "a79f6aa7e47d24d5b2d9adec4aec5d9b0fe9de24",
+    "cloakdrop": "f8f08ceb347d9318060708065a0562891db6393b",
+    "cloakresume": "71f8ab4b30a98a0cb8b5ba3a6ed295949ec5c6e5",
+    "cloakpdf": "822a2f5551091f552e8c994cea73251c9762d26d"
+  }
+}

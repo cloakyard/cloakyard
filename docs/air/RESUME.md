@@ -7,34 +7,43 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.2 shell content verified, rollout next (2026-10-26)
+### Current checkpoint — Air 1.2.2 public shell deployed (2026-10-26)
 
 Header/footer content is aligned across Yard, PDF, Drop website and Resume. The
-contract now defines exact labels/order/credits, Source destinations, shared ink,
-spacing, supported macOS rendering and static recovery behavior. Fixed the Yard
-footer track, PDF mobile gaps, Resume prose-margin/ink leakage and divergent
-recovery footers; PDF reuses one PublicFooter. Existing task navigation remains.
+contract defines labels/order/credits, exact Source destinations, shared ink,
+spacing, macOS rendering and static recovery. Fixed the Yard footer track, PDF
+mobile gaps, Resume prose-margin/ink leakage and divergent recovery footers; PDF
+reuses one PublicFooter. Product task navigation and document output code remain.
 
-Fresh proof: 1,152 Chrome/Firefox family layouts, zero deviations/errors; 768 link
-states/262 keyboard checks; PDF 461 units/all 16 smoke suites/66 real-host recovery
-layouts; Resume 373 tests/zero skips and 349 entry layouts/14 journeys; Drop 432
-layouts/34 journeys. Reviewed 48 header/footer crops at phone/laptop/desktop in both
-themes. Build/check/dead-code/design/portability gates pass. Initial test-harness and
-rebuild-related failures plus their complete passing reruns are recorded in
-[the audit](public-shell-2026-10-26.md). No output/template or artwork changes.
+Merged/deployed: Yard #22 (a79f6aa), PDF #211 (822a2f5), Drop #47 (f8f08ce), Resume
+#44 (71f8ab4). All required main checks/builds pass and all 260 live asset hashes
+match. Local: 1,152 Chrome/Firefox family layouts, 768 link states/262 keyboard
+checks, PDF 461 units/all 16 smoke suites/66 real-host recovery layouts, Resume
+373 tests/zero skips and 349 entry layouts/14 journeys, Drop 432 layouts/34 journeys.
+Reviewed 48 header/footer crops in phone/laptop/desktop light/dark. Live: 576 family
+layouts, 432 Drop layouts/34 journeys, six actual PDF workflows, all four link
+matrices, 58 exact render pairs and four final exact PDF export comparisons.
 
-Local passing commits: PDF a31c6b0, Drop dc65a4b, Resume ad84813.
-Yard's canonical changes, evidence, TODO and this handoff are in the current piece.
-Next: execute the authorized individual dev → main PRs, verify production assets
-and browser behavior, synchronize dev, then record deployment identities. Scripts
-and passing ledgers: `/tmp/air-shell-2026-10-26/`. Task preview ports remain 8310,
-8311/8313, 8312 and 8314/8315 for local/live comparison; stop them after completion.
+The first live linked Letter export had a raster-only link-style difference;
+text, links and geometry matched. Fresh-context/stable-preview comparisons pass,
+but this does not fix the previously documented export intermittency. Keep that
+follow-up open and retain both initial/final evidence. The PDF PR's stale generated
+Markdown inventory row was regenerated before merge; all CI passed afterward.
+See [the complete audit and deployment evidence](public-shell-2026-10-26.md).
 
-IMG portable maintenance 069e5f2 stays local; its 15 parked draft files
-still match `/tmp/air26-img-parked.json`. Its isolated snapshot passes 470 tests and
-check/build/portability. Never push/deploy IMG or change the separate Resume main
-worktree. Existing PDF Compact beta, node-forge through 2026-11-06, Drop official
-bundle and physical/assistive/product acceptance exceptions remain open.
+All four dev branches were fast-forwarded to released main. The documentation-only
+closeout follows the same PR/check/merge/fast-forward process and preserves tested
+application bytes. Cloudflare deploys main only and uploads dev versions. Use gh
+if the GitHub connector rejects writes. Scratch: `/tmp/air-shell-2026-10-26/`.
+
+Next: investigate the existing Resume export intermittency as a separate bounded
+piece, then remaining full-product/device acceptance. Keep IMG last. IMG portable
+maintenance 069e5f2 stays local; all 15 parked draft paths still match
+`/tmp/air26-img-parked.json`. Its isolated snapshot passes 470 tests/check/build.
+Do not push/deploy IMG or change `cloakresume-editor-audit`. Existing PDF Compact
+beta, node-forge through 2026-11-06, Drop official-bundle and physical/assistive/
+hardware exceptions stay open. Native Drop, RC/installer and KERR are unchanged.
+All six task-owned preview ports are closed; no ongoing service is required.
 
 ### Prior checkpoint — Air 1.2.1 deployed and live-verified (2026-10-26)
 
