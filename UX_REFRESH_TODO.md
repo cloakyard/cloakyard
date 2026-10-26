@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — four-app Air 1.2 artwork/chrome implemented locally; web cleanup software-validated locally; four sites released; playback-control removal software-verified; deployment follow-up pending; remaining device acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.2.1 deployed for Yard/PDF/Drop website/Resume; landing playback controls removed; cleanup and live software checks pass; remaining device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -13,9 +13,9 @@ design language, and commit each bounded piece only after its validation passes.
 KERR's app and native macOS UI are outside this redesign. The user authorized
 Cloakyard/PDF dev integration, main PRs and releases, followed by CloakDrop RC1
 publication, its Air website deployment, and the app-colour deployment. Cloakyard,
-PDF and Drop are live with their logo-coloured horizons; main/dev integration is
-complete. Continue Resume/IMG locally until their remaining migrations pass; IMG
-remains last. On 2026-10-21 the user authorized final dependency updates, dev
+PDF, Drop website and Resume are now live with their current Air artwork; main/dev
+integration is complete. IMG remains parked, excluded from deployment and last
+in the rollout. On 2026-10-21 the user authorized final dependency updates, dev
 integration and dev → main PR merges after all remaining work is complete, with
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
@@ -28,7 +28,7 @@ The separately requested Drop installer now uses Air.
       static accessibility profiles. Drop shows all four forms once under 5s.
 - [x] Update canonical Air 1.2.1 and portable copies; keep IMG draft unchanged.
 - [x] Verify fresh responsive states, finite lifecycle and applicable full tests.
-- [ ] Commit passing pieces; update individual dev → main PRs, deploy, verify,
+- [x] Commit passing pieces; update individual dev → main PRs, deploy, verify,
       and synchronize dev. Keep prior explicit exceptions and device gates open.
 
 ## Four-site release verification — 2026-10-26
@@ -44,13 +44,14 @@ and KERR remain unchanged.
 - [x] Review the Shaders catalog adapter and regenerate synchronized Air bundles.
 - [x] Finish fresh product, responsive/motion, output and link-state verification.
 - [x] Commit each passing candidate and create individual dev → main PRs.
-- [ ] Merge passing PRs, verify exact live deployments, and synchronize dev.
-- [ ] Record final deployment identities and keep remaining acceptance explicit.
+- [x] Merge passing PRs and verify exact live deployments.
+- [x] Synchronize all four dev branches with their released main revisions.
+- [x] Record final deployment identities and keep remaining acceptance explicit.
 
 Cloudflare sign-in completed. Corrected Yard's non-production command to version
 uploads, keeping main as production. PDF/Drop/Resume already use version uploads.
 [Fresh verification and evidence](docs/air/rollout-2026-10-26.md) pass with the
-existing explicit PDF exceptions. Four initial release PRs are merged and 260 public assets match; the new control-removal follow-up is in progress.
+existing explicit PDF exceptions. Four initial release PRs are merged and 260 public assets match; the control-removal follow-up is also deployed and live-verified. See [Air 1.2.1 release evidence](docs/air/finite-artwork-2026-10-26.md).
 
 ## Four-app web cleanup audit — 2026-10-26
 

@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-26",
+  "contract": "1.2.1",
+  "releases": {
+    "cloakyard": {
+      "pr": "https://github.com/cloakyard/cloakyard/pull/20",
+      "commit": "acc7505f9ea807ddae09f8c44a9dcc0f90083dbb",
+      "origin": "https://cloakyard.com",
+      "assetsVerified": 13,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/b210d2d0-e9eb-44ae-bed0-e74b0d2e0cf1",
+      "rollbackCommit": "561d44bf8599c1d2237225eba1ad9db5aee9cbd7"
+    },
+    "cloakdrop": {
+      "pr": "https://github.com/cloakyard/cloakdrop/pull/46",
+      "commit": "2c893d25d90748c99219fee06f6adb161b496397",
+      "origin": "https://drop.cloakyard.com",
+      "assetsVerified": 16,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakdrop/production/builds/0f0db8c8-9d6d-4533-ac3d-3057de3e26f5",
+      "rollbackCommit": "a33542ba0a99659e10c023a2611885fef80de861"
+    },
+    "cloakpdf": {
+      "pr": "https://github.com/cloakyard/cloakpdf/pull/210",
+      "commit": "844bee228f947a5d9e57a60b4f85d7bdf5263cf5",
+      "origin": "https://pdf.cloakyard.com",
+      "assetsVerified": 130,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/396f8668-49d0-4176-b058-1d09af3947eb",
+      "rollbackCommit": "1bc2ff0bdf54890c6e46c89acf5a6760db3b2477"
+    },
+    "cloakresume": {
+      "pr": "https://github.com/cloakyard/cloakresume/pull/43",
+      "commit": "852062cc9687b12f855e71e4e3126bd0aa6a126c",
+      "origin": "https://resume.cloakyard.com",
+      "assetsVerified": 101,
+      "buildURL": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/36570697-d145-4381-8b3e-58d2c57b725e",
+      "rollbackCommit": "f1504e82814233e6791e3c598eb1646faab7c087"
+    }
+  },
+  "liveBrowserChecks": [
+    {
+      "name": "live-exports",
+      "status": 0,
+      "seconds": 2.5
+    },
+    {
+      "name": "live-family",
+      "status": 0,
+      "seconds": 60.7
+    },
+    {
+      "name": "live-pdf-artwork",
+      "status": 0,
+      "seconds": 17.0
+    },
+    {
+      "name": "live-drop-artwork",
+      "status": 0,
+      "seconds": 45.0
+    },
+    {
+      "name": "live-resume-artwork",
+      "status": 0,
+      "seconds": 46.1
+    },
+    {
+      "name": "live-drop-site",
+      "status": 0,
+      "seconds": 95.9
+    },
+    {
+      "name": "live-pdf-output",
+      "status": 0,
+      "seconds": 16.5
+    }
+  ],
+  "renderPairs": 58,
+  "identicalRenderPairs": 58,
+  "identicalExportPairs": 4,
+  "scope": "Cloakyard, CloakPDF, CloakDrop website, CloakResume; IMG excluded",
+  "remaining": [
+    "Physical/assistive/hardware acceptance",
+    "Previously documented full-product/export follow-ups beyond these fixtures",
+    "PDF Compact beta long-document limitation (approved)",
+    "node-forge exception through 2026-11-06 (approved)",
+    "Drop official bundled runtime exception (approved)"
+  ],
+  "synchronizedBranches": {
+    "cloakyard": {
+      "HEAD": "acc7505f9ea807ddae09f8c44a9dcc0f90083dbb",
+      "origin/dev": "acc7505f9ea807ddae09f8c44a9dcc0f90083dbb",
+      "origin/main": "acc7505f9ea807ddae09f8c44a9dcc0f90083dbb"
+    },
+    "cloakdrop": {
+      "HEAD": "2c893d25d90748c99219fee06f6adb161b496397",
+      "origin/dev": "2c893d25d90748c99219fee06f6adb161b496397",
+      "origin/main": "2c893d25d90748c99219fee06f6adb161b496397"
+    },
+    "cloakpdf": {
+      "HEAD": "844bee228f947a5d9e57a60b4f85d7bdf5263cf5",
+      "origin/dev": "844bee228f947a5d9e57a60b4f85d7bdf5263cf5",
+      "origin/main": "844bee228f947a5d9e57a60b4f85d7bdf5263cf5"
+    },
+    "cloakresume": {
+      "HEAD": "852062cc9687b12f855e71e4e3126bd0aa6a126c",
+      "origin/dev": "852062cc9687b12f855e71e4e3126bd0aa6a126c",
+      "origin/main": "852062cc9687b12f855e71e4e3126bd0aa6a126c"
+    }
+  }
+}
