@@ -7,7 +7,36 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.1 deployed and live-verified (2026-10-26)
+### Current checkpoint — Air 1.2.2 shell content verified, rollout next (2026-10-26)
+
+Header/footer content is aligned across Yard, PDF, Drop website and Resume. The
+contract now defines exact labels/order/credits, Source destinations, shared ink,
+spacing, supported macOS rendering and static recovery behavior. Fixed the Yard
+footer track, PDF mobile gaps, Resume prose-margin/ink leakage and divergent
+recovery footers; PDF reuses one PublicFooter. Existing task navigation remains.
+
+Fresh proof: 1,152 Chrome/Firefox family layouts, zero deviations/errors; 768 link
+states/262 keyboard checks; PDF 461 units/all 16 smoke suites/66 real-host recovery
+layouts; Resume 373 tests/zero skips and 349 entry layouts/14 journeys; Drop 432
+layouts/34 journeys. Reviewed 48 header/footer crops at phone/laptop/desktop in both
+themes. Build/check/dead-code/design/portability gates pass. Initial test-harness and
+rebuild-related failures plus their complete passing reruns are recorded in
+[the audit](public-shell-2026-10-26.md). No output/template or artwork changes.
+
+Local passing commits: PDF a31c6b0, Drop dc65a4b, Resume ad84813.
+Yard's canonical changes, evidence, TODO and this handoff are in the current piece.
+Next: execute the authorized individual dev → main PRs, verify production assets
+and browser behavior, synchronize dev, then record deployment identities. Scripts
+and passing ledgers: `/tmp/air-shell-2026-10-26/`. Task preview ports remain 8310,
+8311/8313, 8312 and 8314/8315 for local/live comparison; stop them after completion.
+
+IMG portable maintenance 069e5f2 stays local; its 15 parked draft files
+still match `/tmp/air26-img-parked.json`. Its isolated snapshot passes 470 tests and
+check/build/portability. Never push/deploy IMG or change the separate Resume main
+worktree. Existing PDF Compact beta, node-forge through 2026-11-06, Drop official
+bundle and physical/assistive/product acceptance exceptions remain open.
+
+### Prior checkpoint — Air 1.2.1 deployed and live-verified (2026-10-26)
 
 Landing Play/Pause/Replay controls and unused API/styles are removed. Drop shows
 FILE/PKG/ISO/ZIP once under five seconds, Resume retains its 3,400ms arrival, PDF

@@ -12,8 +12,8 @@ export function Footer() {
           </a>
         ))}
       </nav>
-      <div className="footer-meta">
-        <p>
+      <div className="air-page-footer-row">
+        <p className="air-page-identity">
           <span translate="no">© {new Date().getFullYear()} Cloakyard</span>
           <span>
             Built by{" "}
@@ -22,8 +22,9 @@ export function Footer() {
             </a>
           </span>
         </p>
-        <nav aria-label="Project information">
-          <a href="https://github.com/cloakyard" target="_blank" rel="noreferrer">
+        <nav aria-label="Footer navigation">
+          <a href="#principles">Privacy</a>
+          <a href="https://github.com/cloakyard/cloakyard" target="_blank" rel="noreferrer">
             Source
           </a>
           <a
@@ -31,7 +32,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            MIT licensed
+            MIT license
           </a>
         </nav>
       </div>

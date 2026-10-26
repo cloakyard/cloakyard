@@ -3,7 +3,7 @@
  * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume list; PUPPETEER_MODULE may
  * point to existing external test tooling. AIR_REPORT_ONLY records initial drift. */
 import assert from "node:assert/strict";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 const { default: puppeteer } = await import(process.env.PUPPETEER_MODULE || "puppeteer-core");
 const engine = process.env.AIR_BROWSER || "chrome";
@@ -52,6 +52,13 @@ const products = [
     privacy: "dialog",
   },
 ];
+for (const p of products) {
+  p.repo = `https://github.com/cloakyard/${p.name}`;
+  if (["cloakpdf", "cloakresume"].includes(p.name))
+    p.version = JSON.parse(
+      await readFile(new URL(`../../${p.name}/package.json`, import.meta.url), "utf8"),
+    ).version;
+}
 const sizes = [
   [863, 800],
   [864, 800],
@@ -117,6 +124,16 @@ function inspectShell(p) {
   }
   const footer = document.querySelector("footer"),
     fs = getComputedStyle(footer);
+  // Firefox serializes the WebKit alias as its native "grayscale" keyword.
+  const smoothing = CSS.supports("-moz-osx-font-smoothing", "grayscale")
+    ? ["-moz-osx-font-smoothing", "grayscale"]
+    : ["-webkit-font-smoothing", "antialiased"];
+  if (CSS.supports(...smoothing))
+    check(
+      getComputedStyle(frame).getPropertyValue(smoothing[0]) === smoothing[1] &&
+        fs.getPropertyValue(smoothing[0]) === smoothing[1],
+      "public chrome font rendering",
+    );
   const fr = footer.getBoundingClientRect(),
     hr = frame.getBoundingClientRect();
   check(
@@ -146,6 +163,94 @@ function inspectShell(p) {
       );
   }
 
+  const label = (n) => n.textContent.trim().replace(/\s+/g, " ");
+  const nav = footer.querySelector('nav[aria-label="Footer navigation"]');
+  check(!!nav, "named footer navigation");
+  const links = [...(nav?.querySelectorAll("a,button") || [])];
+  const expected =
+    p.name === "cloakyard"
+      ? ["Privacy", "Source", "MIT license"]
+      : [
+          ...(p.name === "cloakdrop" ? ["Download"] : []),
+          "Privacy policy",
+          "Source",
+          "MIT license",
+          "Cloakyard",
+        ];
+  check(JSON.stringify(links.map(label)) === JSON.stringify(expected), "footer labels and order");
+  for (const [text, href] of [
+    ["Source", p.repo],
+    ["MIT license", `${p.repo}/blob/main/LICENSE`],
+    ...(p.name === "cloakyard"
+      ? [["Privacy", "#principles"]]
+      : [["Cloakyard", "https://cloakyard.com"]]),
+  ])
+    check(
+      links.find((n) => label(n) === text)?.getAttribute("href") === href,
+      `footer destination: ${text}`,
+    );
+  for (const n of footer.querySelectorAll("nav")) {
+    const spacing = getComputedStyle(n);
+    check(
+      spacing.rowGap === "8px" && spacing.columnGap === "24px",
+      "canonical footer navigation gaps",
+    );
+  }
+  const identity = footer.querySelector(".air-page-identity");
+  if (identity) {
+    const copy = getComputedStyle(identity);
+    check(
+      copy.marginTop === "0px" && copy.marginBottom === "0px",
+      "footer credit has no prose margins",
+    );
+    check(copy.color === fs.color, "footer credit inherits shared neutral ink");
+  }
+  const author = identity?.querySelector("a");
+  check(label(identity || footer).includes("Built by Sumit Sahoo"), "shared author credit");
+  check(author?.getAttribute("href") === "https://github.com/sumitsahoo", "author destination");
+  if (p.version)
+    check(
+      label(identity || footer).startsWith(
+        `${p.name === "cloakpdf" ? "CloakPDF" : "CloakResume"} v${p.version}`,
+      ),
+      "build-derived footer version",
+    );
+  const privacy = links.find((n) => label(n) === "Privacy policy");
+  if (p.name === "cloakdrop")
+    check(privacy?.getAttribute("href") === "/privacy/", "policy destination");
+  else if (p.name !== "cloakyard" && privacy?.tagName === "A")
+    check(
+      p.name === "cloakpdf"
+        ? privacy.search === "?view=privacy"
+        : privacy.hash === "#privacy-policy",
+      "recovery policy destination",
+    );
+  const row = footer.querySelector(".air-page-footer-row");
+  if (row)
+    check(
+      near(
+        row.getBoundingClientRect().width,
+        fr.width - parseFloat(fs.paddingLeft) - parseFloat(fs.paddingRight),
+      ),
+      "directory footer row fills content width",
+    );
+  const menu = frame.querySelector("details");
+  const entries = (nodes) =>
+    [...nodes].map((n) => [label(n), n.getAttribute("href"), n.getAttribute("target")]);
+  const desktop = [...frame.querySelectorAll("nav a,.desktop-source")].filter(
+    (n) => !n.closest("details"),
+  );
+  check(
+    desktop.at(-1)?.getAttribute("href") === p.repo && label(desktop.at(-1) || frame) === "Source",
+    "header Source last and exact repository",
+  );
+  for (const n of frame.querySelectorAll("nav"))
+    check(n.getAttribute("aria-label") === "Primary navigation", "named primary navigation");
+  if (menu)
+    check(
+      JSON.stringify(entries(desktop)) === JSON.stringify(entries(menu.querySelectorAll("nav a"))),
+      "desktop/compact content parity",
+    );
   check(document.documentElement.scrollWidth <= innerWidth + 1, "horizontal overflow");
   return issues;
 }
@@ -314,9 +419,7 @@ try {
               });
             for (const b of buttons)
               check(b.radius === "10px" && b.fontWeight === "500", `control skin: ${b.text}`);
-            for (const link of document.querySelectorAll(
-              ".footer-meta p a,.footer-inner p a,.pdf-footer p a,.resume-footer p a",
-            )) {
+            for (const link of document.querySelectorAll("footer .air-page-identity a")) {
               const s = getComputedStyle(link);
               check(
                 s.textDecorationLine.includes("underline") && s.textUnderlineOffset === "3px",
@@ -362,6 +465,17 @@ try {
               true,
               "Escape restores summary focus",
             );
+          }
+          if (product.name === "cloakresume" && root === 16 && width === 390) {
+            await page.click(`${product.menu} summary`);
+            await page.focus(`${product.menu} a[href="#features"]`);
+            await page.keyboard.press("Enter");
+            assert.equal(
+              await page.evaluate(() => document.activeElement?.id),
+              "features",
+              "Compact section navigation retains destination focus",
+            );
+            await page.evaluate(() => scrollTo(0, 0));
           }
           if (root === 16 && [390, 1280, 1440].includes(width)) {
             await page.evaluate(async () => {
@@ -472,11 +586,70 @@ try {
             }
         }
       }
+      if (index === 1) {
+        await page.goto(urls[index], { waitUntil: "networkidle0" });
+        // Exercise the actual render-boundary shell with a controlled synthetic error.
+        // No production hook or application code is added for this audit.
+        await page.evaluate(() => {
+          const node = document.querySelector(".pdf-site");
+          let fiber = node[Object.keys(node).find((key) => key.startsWith("__reactFiber$"))];
+          while (fiber && !(fiber.stateNode?.handleReload && fiber.stateNode?.handleReset))
+            fiber = fiber.return;
+          if (!fiber) throw new Error("Public render boundary was not found");
+          fiber.stateNode.setState({
+            error: new Error("Synthetic Air shell audit"),
+            copied: false,
+            copyFailed: false,
+          });
+        });
+        await page.waitForSelector("#error-main", { visible: true });
+        for (const root of [16, 32])
+          for (const [width, height] of [
+            [320, 568],
+            [390, 844],
+            [844, 390],
+            [768, 1024],
+            [1280, 720],
+            [1440, 900],
+          ]) {
+            await page.setViewport({ width, height });
+            await page.evaluate(async (size) => {
+              document.documentElement.style.fontSize = `${size}px`;
+              await document.fonts.ready;
+            }, root);
+            const issues = await page.evaluate(inspectShell, product);
+            const state = {
+              product: product.name,
+              route: "render-recovery",
+              theme,
+              root,
+              width,
+              height,
+            };
+            evidence.secondary.push({ ...state, issues });
+            for (const issue of issues) evidence.failures.push({ ...state, issue });
+            if (root === 16 && [390, 1280, 1440].includes(width))
+              await page.screenshot({
+                path: `${out}/${product.name}-render-recovery-${width}-${theme}.png`,
+                fullPage: true,
+              });
+          }
+        await Promise.all([
+          page.waitForNavigation({ waitUntil: "networkidle0" }),
+          page.click('footer a[href$="?view=privacy"]'),
+        ]);
+        await page.waitForSelector(".pdf-policy", { visible: true });
+        evidence.interactions.push({
+          product: product.name,
+          theme,
+          renderRecoveryPolicy: "full navigation reaches actual policy",
+        });
+      }
       if (index > 0) {
         const route = index === 2 ? "/missing-air-page" : "/404.html";
         await page.goto(urls[index] + route, { waitUntil: "networkidle0" });
         const routeShell =
-          index === 2 ? product : { frame: "header", brand: "header .air-page-brand" };
+          index === 2 ? product : { ...product, frame: "header", brand: "header .air-page-brand" };
         for (const root of [16, 32])
           for (const [width, height] of [
             [320, 568],
@@ -501,6 +674,35 @@ try {
           path: `${out}/${product.name}-recovery-${theme}.png`,
           fullPage: true,
         });
+        if (index === 1 || index === 3) {
+          await Promise.all([
+            page.waitForNavigation({ waitUntil: "networkidle0" }),
+            page.click(
+              index === 1 ? 'footer a[href$="?view=privacy"]' : 'footer a[href$="#privacy-policy"]',
+            ),
+          ]);
+          await page.waitForSelector(index === 1 ? ".pdf-policy" : ".resume-policy", {
+            visible: true,
+          });
+          if (index === 1) await page.click('button[aria-label="Back to home"]');
+          else await page.keyboard.press("Escape");
+          assert.equal(
+            new URL(page.url()).hash,
+            "",
+            "Leaving a recovery policy clears its entry hash",
+          );
+          await page.reload({ waitUntil: "networkidle0" });
+          assert.equal(
+            await page.$(index === 1 ? ".pdf-policy" : ".resume-policy"),
+            null,
+            "Dismissed recovery policy does not reopen on refresh",
+          );
+          evidence.interactions.push({
+            product: product.name,
+            theme,
+            recoveryPolicy: "opens actual policy and returns home",
+          });
+        }
       }
     }
     await page.close();
