@@ -1,7 +1,7 @@
 # Footer and PWA consistency audit — 2026-10-26
 
-Status: Air 1.2.3 local software verification passes. Deployment follows the
-authorized individual dev → main PR workflow.
+Status: Air 1.2.3 deployed through four passing dev → main PRs. Production
+assets, responsive shells, neutral links and real first-install notices are verified.
 
 The visual audit includes the live websites for Yard, PDF, Drop, Resume and IMG.
 Corrections cover the four refreshed websites. IMG's legacy UI remains recorded
@@ -106,3 +106,35 @@ and all 16 production smoke suites; 66 actual-host PDF recovery layouts; Resume
 349 entry layouts / 14 journeys; Drop 432 layouts / 34 journeys; all four link
 matrices. Build, types, formatting/lint, dead-code, contract and 22 portability
 checks pass. IMG's isolated maintenance snapshot passes 470 tests/check/build.
+
+## Deployment and production verification
+
+All four main CI and Cloudflare builds pass. All 260 public asset hashes match
+the tested builds, with no injected scripts, `no-transform` and correct recovery
+responses. Live checks pass 576 family layouts, 432 Drop layouts / 34 journeys,
+744 neutral-link states / 250 keyboard checks, and 60 exact local/live render pairs
+(48 header/footer and 12 actual first-install PWA panels). The PWA panels use the
+production workers; expiry is held only for capture. Waiting-worker activation
+and draft preservation were separately verified in local real-worker suites.
+
+| App         | PR                                                        | Merge     | Public assets |
+| ----------- | --------------------------------------------------------- | --------- | ------------- |
+| cloakyard   | [PR 24](https://github.com/cloakyard/cloakyard/pull/24)   | `1abd9eb` | 13            |
+| cloakdrop   | [PR 48](https://github.com/cloakyard/cloakdrop/pull/48)   | `42fd69a` | 16            |
+| cloakpdf    | [PR 212](https://github.com/cloakyard/cloakpdf/pull/212)  | `e818ce9` | 130           |
+| cloakresume | [PR 45](https://github.com/cloakyard/cloakresume/pull/45) | `45b62f4` | 101           |
+
+The initial immediate PWA crops differed in two PDF references by 14/20 rounded-edge
+pixels. All live PDF/Resume pairs matched. Stable-frame local/live captures confirm
+all 12 PWA pairs exactly; no application change was required. The initial comparison
+is retained rather than counted as a pass.
+
+Drop’s first main build failed while Cloudflare installed tools/dependencies, before
+the app build command started. Retried the same `42fd69a` revision through the
+dashboard without changing code, lockfiles or build settings. The retry passed;
+initial failure and retry identities are retained alongside the final checks.
+
+All four dev branches were fast-forwarded to released main. The documentation-only
+closeout follows the same checked PR process and preserves these tested app bytes.
+IMG portable maintenance `d630246` remains local and its parked draft is intact.
+See [the deployment ledger](evidence/consistency-2026-10-26/deployment.json).

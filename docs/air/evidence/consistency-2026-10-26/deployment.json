@@ -1,0 +1,372 @@
+{
+  "apps": {
+    "cloakyard": {
+      "pr": "https://github.com/cloakyard/cloakyard/pull/24",
+      "merge": "1abd9eb10f039a2fb94108cb8be38ca3d5080de7",
+      "assets": 13
+    },
+    "cloakdrop": {
+      "pr": "https://github.com/cloakyard/cloakdrop/pull/48",
+      "merge": "42fd69a316a77a14778971248469c7e7822f65ed",
+      "assets": 16
+    },
+    "cloakpdf": {
+      "pr": "https://github.com/cloakyard/cloakpdf/pull/212",
+      "merge": "e818ce97acf35d1f8d8805ba88a0c3223d57ea09",
+      "assets": 130
+    },
+    "cloakresume": {
+      "pr": "https://github.com/cloakyard/cloakresume/pull/45",
+      "merge": "45b62f45f13e723e2db5c73957025a5b0571fb53",
+      "assets": 101
+    }
+  },
+  "liveChecks": {
+    "running": null,
+    "results": [
+      {
+        "name": "live-family",
+        "status": 0,
+        "seconds": 74.5
+      },
+      {
+        "name": "live-drop",
+        "status": 0,
+        "seconds": 114.5
+      },
+      {
+        "name": "live-cloakyard-links",
+        "status": 0,
+        "seconds": 5.1
+      },
+      {
+        "name": "live-cloakpdf-links",
+        "status": 0,
+        "seconds": 8.8
+      },
+      {
+        "name": "live-cloakdrop-links",
+        "status": 0,
+        "seconds": 15.0
+      },
+      {
+        "name": "live-cloakresume-links",
+        "status": 0,
+        "seconds": 7.9
+      },
+      {
+        "name": "live-captures",
+        "status": 0,
+        "seconds": 45.7
+      }
+    ]
+  },
+  "pixelPairs": [
+    {
+      "file": "cloakdrop-1280-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-1280-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-1280-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-1280-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-1440-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-1440-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-1440-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-1440-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-390-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-390-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-390-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakdrop-390-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1280-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1280-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1280-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1280-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1440-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1440-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1440-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-1440-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-390-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-390-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-390-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakpdf-390-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1280-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1280-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1280-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1280-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1440-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1440-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1440-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-1440-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-390-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-390-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-390-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakresume-390-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1280-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1280-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1280-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1280-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1440-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1440-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1440-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-1440-light-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-390-dark-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-390-dark-header.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-390-light-footer.png",
+      "equal": true
+    },
+    {
+      "file": "cloakyard-390-light-header.png",
+      "equal": true
+    },
+    {
+      "app": "cloakpdf",
+      "mode": "local",
+      "width": 390,
+      "theme": "light",
+      "file": "local-cloakpdf-390-light.png",
+      "sha256": "39ea7cb8c963c603d5353ea699550a71b7a592a40999d1b8875c7843314d68e7",
+      "equal": true
+    },
+    {
+      "app": "cloakpdf",
+      "mode": "local",
+      "width": 1280,
+      "theme": "light",
+      "file": "local-cloakpdf-1280-light.png",
+      "sha256": "66a3396c11f2752c3616eee57530879342599191e37f5d5391ca857c49fa2b8d",
+      "equal": true
+    },
+    {
+      "app": "cloakpdf",
+      "mode": "local",
+      "width": 1440,
+      "theme": "light",
+      "file": "local-cloakpdf-1440-light.png",
+      "sha256": "82c980aa92a4ab44d8ed2177c50f01db1e21da1d54500f74ea0e6e7b290762df",
+      "equal": true
+    },
+    {
+      "app": "cloakpdf",
+      "mode": "local",
+      "width": 390,
+      "theme": "dark",
+      "file": "local-cloakpdf-390-dark.png",
+      "sha256": "c7e3671f4a594db38cd0ebcaa77f498a033e33462748f3aa98b7ec526955c3de",
+      "equal": true
+    },
+    {
+      "app": "cloakpdf",
+      "mode": "local",
+      "width": 1280,
+      "theme": "dark",
+      "file": "local-cloakpdf-1280-dark.png",
+      "sha256": "065f1b14400228cbc5dd58bd052a9ab84b4d2a3beb060df3312379d783653db8",
+      "equal": true
+    },
+    {
+      "app": "cloakpdf",
+      "mode": "local",
+      "width": 1440,
+      "theme": "dark",
+      "file": "local-cloakpdf-1440-dark.png",
+      "sha256": "319b62f8dcd7b083b5422c142c082d171f4d79511f9dc45becc72e86845a098a",
+      "equal": true
+    },
+    {
+      "app": "cloakresume",
+      "mode": "local",
+      "width": 390,
+      "theme": "light",
+      "file": "local-cloakresume-390-light.png",
+      "sha256": "39ea7cb8c963c603d5353ea699550a71b7a592a40999d1b8875c7843314d68e7",
+      "equal": true
+    },
+    {
+      "app": "cloakresume",
+      "mode": "local",
+      "width": 1280,
+      "theme": "light",
+      "file": "local-cloakresume-1280-light.png",
+      "sha256": "66a3396c11f2752c3616eee57530879342599191e37f5d5391ca857c49fa2b8d",
+      "equal": true
+    },
+    {
+      "app": "cloakresume",
+      "mode": "local",
+      "width": 1440,
+      "theme": "light",
+      "file": "local-cloakresume-1440-light.png",
+      "sha256": "82c980aa92a4ab44d8ed2177c50f01db1e21da1d54500f74ea0e6e7b290762df",
+      "equal": true
+    },
+    {
+      "app": "cloakresume",
+      "mode": "local",
+      "width": 390,
+      "theme": "dark",
+      "file": "local-cloakresume-390-dark.png",
+      "sha256": "c7e3671f4a594db38cd0ebcaa77f498a033e33462748f3aa98b7ec526955c3de",
+      "equal": true
+    },
+    {
+      "app": "cloakresume",
+      "mode": "local",
+      "width": 1280,
+      "theme": "dark",
+      "file": "local-cloakresume-1280-dark.png",
+      "sha256": "065f1b14400228cbc5dd58bd052a9ab84b4d2a3beb060df3312379d783653db8",
+      "equal": true
+    },
+    {
+      "app": "cloakresume",
+      "mode": "local",
+      "width": 1440,
+      "theme": "dark",
+      "file": "local-cloakresume-1440-dark.png",
+      "sha256": "319b62f8dcd7b083b5422c142c082d171f4d79511f9dc45becc72e86845a098a",
+      "equal": true
+    }
+  ],
+  "img": {
+    "commit": "d6302461834f2539d0963be809ad4110b6ebd718",
+    "parkedPathsPreserved": true,
+    "pushed": false
+  },
+  "exceptionsRemainOpen": true
+}
