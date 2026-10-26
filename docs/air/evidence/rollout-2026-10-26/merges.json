@@ -1,0 +1,30 @@
+{
+  "cloakyard": {
+    "mergeCommit": {
+      "oid": "561d44bf8599c1d2237225eba1ad9db5aee9cbd7"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakyard/pull/19"
+  },
+  "cloakpdf": {
+    "mergeCommit": {
+      "oid": "1bc2ff0bdf54890c6e46c89acf5a6760db3b2477"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakpdf/pull/209"
+  },
+  "cloakdrop": {
+    "mergeCommit": {
+      "oid": "a33542ba0a99659e10c023a2611885fef80de861"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakdrop/pull/45"
+  },
+  "cloakresume": {
+    "mergeCommit": {
+      "oid": "f1504e82814233e6791e3c598eb1646faab7c087"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakresume/pull/42"
+  }
+}

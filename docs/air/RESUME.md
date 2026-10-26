@@ -7,32 +7,30 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — authorized four-site rollout in verification (2026-10-26)
+### Current checkpoint — automatic artwork verified; deploy follow-up (2026-10-26)
 
-The user explicitly authorized deployment after verification, with individual dev
-→ main PRs and dev synchronization. Four sites only: Yard, PDF, Drop website and
-Resume. IMG remains parked/last; native artifacts and KERR remain unchanged.
-Fresh primary npm metadata found 16 newer package/tool releases. Compatible
-updates are installed, including same-major Miniflare → undici 7.30.1 overrides
-and serialize-javascript 7.1.4. Only PDF's existing node-forge exception remains;
-its expiry and the Compact long-document exception are unchanged. Air still uses
-1.2.0 semantics, with reviewed Shaders 4.0.5 and Vite+ 1.4 generated assets.
+Air 1.2.1 removes landing Play/Pause/Replay, the shared control API and unused
+Drop/Resume markup/styles. Resume keeps its 3,400ms arrival; Drop shows all four
+file forms once under five seconds and rests. PDF unveiling and Yard runtime stay
+intact. Automatic suspension/static profiles remain. All fresh checks pass: PDF
+461 units/16 smoke suites; Resume 373 tests with zero skips; 68 artwork layouts
+per product; Drop 432 layouts/34 journeys; 1,104 family Chrome/Firefox layouts.
+See [implementation and evidence](finite-artwork-2026-10-26.md).
 
-Fresh verification passes: all builds/lint/types/dead-code/design/portability,
-PDF 461 units and all 16 smoke suites, Resume 373 tests/10 files with zero skips,
-1,104 Chrome/Firefox layouts, 608 neutral link states/206 keyboard checks, artwork
-and real PWA lifecycles. All 58 render pairs and four actual Resume PDF export
-pairs match exactly. Quality passes both AI fixtures and Compact passes short;
-Compact long reproduces its explicitly accepted missing-facts limitation. Initial
-version-pin/harness failures were corrected and fully rerun, not counted as passes.
-See [release verification](rollout-2026-10-26.md) and its per-app evidence folders.
+Next: commit the passing pieces and merge individual dev → main follow-ups; reuse
+Drop #46 and rewrite its scope to include finite artwork. Verify main builds,
+production assets and live browser/output results; synchronize dev after merges.
+The initial four PRs are already deployed: Yard #19 (561d44b), PDF #209 (1bc2ff0),
+Drop #45 (a33542b), Resume #42 (f1504e8). All 260 initial served assets matched.
+The scratch remote comparison failed on a detached local capture handle; its
+repaired harness must complete before claiming a remote Resume export pass.
 
-Cloudflare sign-in completed. Corrected Yard's non-production version command from
-`npx wrangler deploy` to `npx wrangler versions upload` and verified Save completed;
-main remains the production branch. PDF/Drop/Resume already use version uploads. No
-push, PR or merge yet; all four branch configurations are verified.
-Do not alter an unrelated main worktree: Resume main is checked out separately in
-`cloakresume-editor-audit`. Current dev can be fast-forwarded after the main PR.
+Cloudflare uses main for deployment and non-production version uploads for all
+four. The GitHub connector cannot create PRs; use the authenticated gh session.
+IMG stays local/last with all 15 parked draft hashes unchanged. Preserve the
+separate Resume main worktree `cloakresume-editor-audit`. Existing PDF Compact,
+node-forge (through 2026-11-06), official-bundle and device exceptions remain open.
+Scratch/check processes: `/tmp/air-finite-2026-10-26/`. No 1.2.1 deployment yet.
 
 ### Prior checkpoint — four-app cleanup audit complete (2026-10-26)
 
