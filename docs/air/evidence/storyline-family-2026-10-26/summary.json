@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-26",
+  "contract": "1.2.0",
+  "scope": "Resume Storyline and Yard/PDF/Drop/Resume public header/footer conformance; local builds only",
+  "family": {
+    "chrome": {
+      "home": 432,
+      "secondary": 120
+    },
+    "firefoxLight": {
+      "home": 216,
+      "secondary": 60
+    },
+    "firefoxDark": {
+      "home": 216,
+      "secondary": 60
+    },
+    "deviations": 0,
+    "browserErrors": 0
+  },
+  "links": {
+    "states": 824,
+    "keyboardChecks": 256
+  },
+  "resume": {
+    "tests": 373,
+    "entryLayouts": 349,
+    "entryJourneys": 14,
+    "artworkLayouts": 68,
+    "animatedArrivalLayouts": 8,
+    "staticProfiles": 4
+  },
+  "pdf": {
+    "units": 461,
+    "smokeSuites": 16,
+    "artworkLayouts": 68
+  },
+  "drop": {
+    "siteLayouts": 432,
+    "journeys": 34,
+    "artworkLayouts": 68,
+    "forms": 4
+  },
+  "yard": {
+    "horizonLayouts": 12,
+    "gpuThemes": 2,
+    "sharedMotionTests": 5
+  },
+  "portability": {
+    "repositories": 5,
+    "checksEach": 20
+  },
+  "imgMaintenance": {
+    "isolatedTests": 470,
+    "parkedDraftUntouched": true
+  },
+  "native": "Safari light-theme spot review, Resume replay and enlarged in-flow menu. Not a full Safari matrix; the PDF update notice partially overlays its native footer capture.",
+  "remaining": "Physical touch/software keyboard, assistive speech and power/thermal gates; previous Resume export follow-ups and accepted PDF Compact long-document limitation unchanged.",
+  "deployment": "No push, merge or deployment.",
+  "localCommits": {
+    "cloakpdf": "e50a3c6",
+    "cloakdrop": "fdca131",
+    "cloakresume": "1b75cd0",
+    "cloakimg": "e5253f5"
+  }
+}

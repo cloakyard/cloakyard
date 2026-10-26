@@ -15,9 +15,9 @@ export function Header() {
       <a className="skip-link air-button" href="#main">
         Skip to content
       </a>
-      <header className="site-header site-frame">
+      <header className="air-page-header site-header site-frame">
         <Brand />
-        <nav className="desktop-navigation" aria-label="Main navigation">
+        <nav className="air-page-nav desktop-navigation" aria-label="Main navigation">
           {navigation.map((item) => (
             <a key={item.href} href={item.href}>
               {item.label}
@@ -30,7 +30,7 @@ export function Header() {
           target="_blank"
           rel="noreferrer"
         >
-          Source <ArrowUpRight size={16} aria-hidden="true" />
+          Source <ArrowUpRight size={16} strokeWidth={1.6} aria-hidden="true" />
         </a>
         <details
           className="mobile-navigation"
@@ -47,6 +47,7 @@ export function Header() {
             Menu <ChevronDown size={16} aria-hidden="true" />
           </summary>
           <nav
+            className="air-page-nav"
             aria-label="Main navigation"
             onClick={(event) => {
               if ((event.target as Element).closest("a") && disclosure.current) {

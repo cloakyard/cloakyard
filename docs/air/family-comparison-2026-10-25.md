@@ -1,5 +1,10 @@
 # Air family public-page comparison — 2026-10-25
 
+> Correction, 2026-10-26: this audit missed the canonical 36px mark and several
+> shared chrome metrics. The PDF-size “exception” below was incorrect. See
+> [the superseding four-app audit](storyline-family-2026-10-26.md), which fixes
+> those discrepancies and includes the now-approved Resume implementation.
+
 Cloakyard, CloakPDF and CloakDrop now pass the inspected public-page contract.
 The comparison uses **Air 1.1.0 as the baseline**, rather than treating a sibling
 site's existing CSS as the specification. No outstanding deviation was found in

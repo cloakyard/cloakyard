@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.1.0 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.2.0 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -19,8 +19,8 @@ Shared design commands:
 - `node scripts/check-air-design.mjs` checks tokens, provenance and migrated sources.
 - `node scripts/check-air-portability.mjs` checks the independent bundle.
 - `node scripts/air-inventory.mjs` updates the surface list while preserving evidence.
-- `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop public pages.
-  Set `AIR_FAMILY_URLS` (three comma-separated URLs), `PUPPETEER_MODULE` and
+- `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume public pages and secondary reading/recovery shells.
+  Set `AIR_FAMILY_URLS` (four comma-separated URLs, in that order), `PUPPETEER_MODULE` and
   `AIR_EVIDENCE_DIR`; use `AIR_BROWSER=firefox AIR_THEME=light` (then `dark`)
   for Firefox, otherwise Chrome covers both themes. Profiles are disposable.
 - `node --test scripts/test-air-file-workflow.mjs` and

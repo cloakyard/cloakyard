@@ -1,13 +1,47 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-25
+## Start here in a new conversation — saved 2026-10-26
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — family comparison and Resume study (2026-10-25)
+### Current checkpoint — Resume Storyline and four-app chrome (2026-10-26)
+
+The user approved production Resume implementation and explicitly requested a
+close Yard/PDF/Drop/Resume header/footer audit. Storyline is now implemented: a
+green career path gathers into one résumé, plays once, pauses/replays and settles
+statically when required. Immediate blank/restore entry stays above it. No draft
+access, runtime dependency or template/export behavior change.
+
+Air 1.2.0 owns all four public header/footer shells. Corrected 36px marks, lockup
+metrics, neutral navigation, footer cadence/gutters, enlarged-text alignment and
+secondary routes. **The previous audit's 32px-mark exception was wrong**; the
+contract required 36px. That audit is explicitly superseded. Removed duplicate
+skins and obsolete Resume horizon/PWA references; canonical gallery assets remain.
+PWA/README/OG captures are current. IMG only receives portable maintenance; its
+parked 15-file draft remains byte-for-byte unchanged and must stay parked/last.
+
+All 1,104 Chrome/Firefox layouts and 824 link-state / 256 keyboard checks pass.
+Resume: 373 tests, 349 entry/recovery layouts / 14 journeys, 68 artwork layouts,
+eight animated arrivals and static/lifecycle checks. PDF: 461 units, all 16 smoke
+suites and 68 artwork layouts. Drop: 432 website layouts / 34 journeys and 68
+artwork layouts/four forms. Yard/shared runtime checks and all five portable bundles
+pass. IMG's isolated maintenance snapshot passes 470 tests/lint/build. Rendered
+phone/laptop/desktop light/dark and Safari spot review pass; Safari is not a full
+matrix. Physical/assistive/hardware gates, prior Resume export follow-ups and PDF's
+accepted Compact long-document limitation remain open and unchanged.
+
+See [the complete current audit](storyline-family-2026-10-26.md) and each product's
+`docs/air/evidence/storyline-family-2026-10-26/`. Passing local commits: PDF `e50a3c6`, Drop `fdca131`,
+Resume `1b75cd0`, IMG maintenance `e5253f5`.
+Yard's correction, canonical contract and family evidence are in this checkpoint's commit. No push, PR, merge or deployment in this piece. Task-owned servers stop
+at close. Next: review the implemented Resume motif and close the remaining
+acceptance/export follow-ups before a requested rollout; keep IMG last. Do not
+restart finished migrations or treat this public-shell audit as full-device approval.
+
+### Prior checkpoint — family comparison and Resume study (2026-10-25)
 
 The approved PDF/Drop artwork is implemented. The user then requested strict
 comparison of Cloakyard, PDF and Drop against Air before exploring Resume.

@@ -1,6 +1,6 @@
 /** Compare built public surfaces against Air, not against one another's drift.
  * Uses disposable Chrome/Firefox profiles. No external destinations are followed.
- * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop list; PUPPETEER_MODULE may
+ * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume list; PUPPETEER_MODULE may
  * point to existing external test tooling. AIR_REPORT_ONLY records initial drift. */
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
@@ -11,7 +11,8 @@ const themes = engine === "firefox" ? [process.env.AIR_THEME || "light"] : ["lig
 const out = resolve(process.env.AIR_EVIDENCE_DIR || `/tmp/air-family-${engine}`);
 await mkdir(out, { recursive: true });
 const urls = (
-  process.env.AIR_FAMILY_URLS || "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182"
+  process.env.AIR_FAMILY_URLS ||
+  "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182,http://127.0.0.1:8184"
 ).split(",");
 const products = [
   {
@@ -41,8 +42,24 @@ const products = [
     source: ".desktop-source",
     privacy: "/privacy/",
   },
+  {
+    name: "cloakresume",
+    frame: ".resume-header",
+    brand: ".resume-brand",
+    sections: ".resume-site main > section h2",
+    menu: ".resume-menu",
+    source: ".resume-nav a:last-child",
+    privacy: "dialog",
+  },
 ];
 const sizes = [
+  [863, 800],
+  [864, 800],
+  [865, 800],
+  [767, 800],
+  [769, 800],
+  [1023, 800],
+  [1025, 800],
   [320, 568],
   [375, 812],
   [390, 844],
@@ -64,6 +81,75 @@ const sizes = [
   [704, 800],
   [705, 800],
 ];
+function inspectShell(p) {
+  const visible = (n) => n.getClientRects().length && getComputedStyle(n).visibility !== "hidden";
+  const style = (n) => {
+    const s = getComputedStyle(n),
+      r = n.getBoundingClientRect();
+    return {
+      text: n.textContent.trim(),
+      size: parseFloat(s.fontSize),
+      weight: s.fontWeight,
+      line: parseFloat(s.lineHeight),
+      tracking: parseFloat(s.letterSpacing) || 0,
+      width: r.width,
+      height: r.height,
+    };
+  };
+  const frame = document.querySelector(p.frame),
+    brand = document.querySelector(p.brand);
+  const root = parseFloat(getComputedStyle(document.documentElement).fontSize),
+    issues = [];
+  const near = (a, b) => Math.abs(a - b) < 0.12;
+  const check = (pass, message) => {
+    if (!pass) issues.push(message);
+  };
+  const mark = brand.querySelector("img"),
+    word = brand.querySelector("span");
+  check(near(style(mark).width, 36) && near(style(mark).height, 36), "canonical 36px mark");
+  check(getComputedStyle(brand).gap === "12px", "brand gap");
+  if (visible(word)) {
+    const w = style(word);
+    check(
+      near(w.size, 1.125 * root) && w.weight === "500" && near(w.tracking, -0.03 * w.size),
+      "wordmark typography",
+    );
+  }
+  const footer = document.querySelector("footer"),
+    fs = getComputedStyle(footer);
+  const fr = footer.getBoundingClientRect(),
+    hr = frame.getBoundingClientRect();
+  check(
+    near(fr.left, hr.left) &&
+      near(fr.right, hr.right) &&
+      fs.paddingLeft === getComputedStyle(frame).paddingLeft,
+    "header/footer content alignment",
+  );
+  check(
+    fs.paddingTop === "32px" && fs.paddingBottom === "32px" && fs.borderTopWidth === "1px",
+    "footer cadence",
+  );
+  for (const n of document.querySelectorAll(
+    "header nav a,header .desktop-source,footer nav a,footer nav button",
+  )) {
+    if (!visible(n)) continue;
+    const v = style(n);
+    check(
+      near(v.size, 0.875 * root) && v.weight === "500" && near(v.line, 1.5 * v.size),
+      `navigation typography: ${v.text}`,
+    );
+    check(v.height >= 43.9 && v.width >= 43.9, `navigation target: ${v.text}`);
+    for (const icon of n.querySelectorAll("svg"))
+      check(
+        near(style(icon).width, 16) && near(style(icon).height, 16),
+        `navigation icon: ${v.text}`,
+      );
+  }
+
+  check(document.documentElement.scrollWidth <= innerWidth + 1, "horizontal overflow");
+  return issues;
+}
+
 const browser = await puppeteer.launch({
   browser: engine,
   executablePath:
@@ -84,6 +170,7 @@ const browser = await puppeteer.launch({
 const evidence = {
   engine: await browser.version(),
   layouts: [],
+  secondary: [],
   interactions: [],
   errors: [],
   failures: [],
@@ -118,9 +205,13 @@ try {
             height,
             ...(engine === "chrome" ? { hasTouch: width <= 1100 } : {}),
           });
-          await page.evaluate((size) => {
+          await page.evaluate(async (size) => {
             document.documentElement.style.fontSize = `${size}px`;
             document.querySelectorAll("header details").forEach((d) => (d.open = false));
+            await document.fonts.ready;
+            await new Promise((resolve) =>
+              requestAnimationFrame(() => requestAnimationFrame(resolve)),
+            );
           }, root);
           const result = await page.evaluate((p) => {
             const visible = (n) =>
@@ -189,7 +280,7 @@ try {
                 !n.textContent.trim() ||
                 !visible(el) ||
                 el.closest(
-                  "script,style,[aria-hidden=true],.visually-hidden,.sr-only,.skip-link,.air-page-skip",
+                  "script,style,[aria-hidden=true],.visually-hidden,.sr-only,.skip-link,.air-page-skip,.resume-skip",
                 )
               )
                 continue;
@@ -205,20 +296,7 @@ try {
             check(!textOverflow.length, "text overflow");
             const header = style(frame),
               s = getComputedStyle(frame);
-            // The PDF reading shell uses viewport media queries; the directory and
-            // static site use content containers. Both are permitted reflow modes.
-            const expectedGutter =
-              p.name === "cloakpdf"
-                ? innerWidth <= 40 * root
-                  ? 16
-                  : matchMedia("(max-width:60rem)").matches
-                    ? 24
-                    : 32
-                : innerWidth <= 40 * root
-                  ? 16
-                  : innerWidth <= 60 * root
-                    ? 24
-                    : 32;
+            const expectedGutter = innerWidth <= 40 * root ? 16 : innerWidth <= 60 * root ? 24 : 32;
             check(parseFloat(s.paddingLeft) === expectedGutter, "page gutter");
             check(header.width <= 1264.1, "page maximum width");
             const source = document.querySelector(p.source);
@@ -237,7 +315,7 @@ try {
             for (const b of buttons)
               check(b.radius === "10px" && b.fontWeight === "500", `control skin: ${b.text}`);
             for (const link of document.querySelectorAll(
-              ".footer-meta p a,.footer-inner p a,.pdf-footer p a",
+              ".footer-meta p a,.footer-inner p a,.pdf-footer p a,.resume-footer p a",
             )) {
               const s = getComputedStyle(link);
               check(
@@ -257,6 +335,7 @@ try {
               issues,
             };
           }, product);
+          result.issues.push(...(await page.evaluate(inspectShell, product)));
           const state = { product: product.name, theme, root, width, height };
           evidence.layouts.push({ ...state, ...result });
           for (const issue of result.issues) evidence.failures.push({ ...state, issue });
@@ -302,7 +381,10 @@ try {
         height: 900,
         ...(engine === "chrome" ? { hasTouch: false } : {}),
       });
-      await page.evaluate(() => (document.documentElement.style.fontSize = "16px"));
+      await page.evaluate(async () => {
+        document.documentElement.style.fontSize = "16px";
+        await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+      });
       const source = await page.$(product.source);
       if (source) {
         await source.focus();
@@ -329,7 +411,7 @@ try {
           });
       }
       if (product.privacy) {
-        if (product.privacy === "button") {
+        if (["button", "dialog"].includes(product.privacy)) {
           // A real first-install toast may arrive while the matrix is running.
           // Dismiss that temporary notice before pointer-testing the footer.
           const notice = await page.$('button[aria-label="Dismiss cache status"]');
@@ -343,10 +425,12 @@ try {
               await button.click();
               break;
             }
-          await page.waitForSelector(".pdf-policy");
+          await page.waitForSelector(
+            product.privacy === "dialog" ? ".resume-policy" : ".pdf-policy",
+          );
         } else await page.goto(urls[index] + product.privacy, { waitUntil: "networkidle0" });
         const privacy = await page.evaluate(() =>
-          [...document.querySelectorAll(".pdf-policy-body,.policy-document p")]
+          [...document.querySelectorAll(".pdf-policy-body,.policy-document p,.resume-policy-body")]
             .filter((n) => n.getClientRects().length)
             .map((n) => ({
               size: getComputedStyle(n).fontSize,
@@ -364,6 +448,59 @@ try {
           path: `${out}/${product.name}-privacy-${theme}.png`,
           fullPage: true,
         });
+        if (product.privacy !== "dialog") {
+          const route = "privacy",
+            routeShell = product;
+          for (const root of [16, 32])
+            for (const [width, height] of [
+              [320, 568],
+              [390, 844],
+              [844, 390],
+              [768, 1024],
+              [1280, 720],
+              [1440, 900],
+            ]) {
+              await page.setViewport({ width, height });
+              await page.evaluate(async (size) => {
+                document.documentElement.style.fontSize = `${size}px`;
+                await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+              }, root);
+              const issues = await page.evaluate(inspectShell, routeShell);
+              const state = { product: product.name, route, theme, root, width, height };
+              evidence.secondary.push({ ...state, issues });
+              for (const issue of issues) evidence.failures.push({ ...state, issue });
+            }
+        }
+      }
+      if (index > 0) {
+        const route = index === 2 ? "/missing-air-page" : "/404.html";
+        await page.goto(urls[index] + route, { waitUntil: "networkidle0" });
+        const routeShell =
+          index === 2 ? product : { frame: "header", brand: "header .air-page-brand" };
+        for (const root of [16, 32])
+          for (const [width, height] of [
+            [320, 568],
+            [390, 844],
+            [844, 390],
+            [768, 1024],
+            [1280, 720],
+            [1440, 900],
+          ]) {
+            await page.setViewport({ width, height });
+            await page.evaluate(async (size) => {
+              document.documentElement.style.fontSize = `${size}px`;
+              await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+            }, root);
+            const issues = await page.evaluate(inspectShell, routeShell);
+            const state = { product: product.name, route, theme, root, width, height };
+            evidence.secondary.push({ ...state, issues });
+            for (const issue of issues) evidence.failures.push({ ...state, issue });
+          }
+
+        await page.screenshot({
+          path: `${out}/${product.name}-recovery-${theme}.png`,
+          fullPage: true,
+        });
       }
     }
     await page.close();
@@ -373,7 +510,7 @@ try {
   await writeFile(`${out}/comparison.json`, JSON.stringify(evidence, null, 2) + "\n");
 }
 console.log(
-  `${evidence.layouts.length} layouts; ${evidence.failures.length} deviations; ${evidence.errors.length} browser errors. Evidence: ${out}`,
+  `${evidence.layouts.length} home layouts; ${evidence.secondary.length} secondary layouts; ${evidence.failures.length} deviations; ${evidence.errors.length} browser errors. Evidence: ${out}`,
 );
 console.log([...new Set(evidence.failures.map((f) => `${f.product}: ${f.issue}`))].join("\n"));
 if (!process.env.AIR_REPORT_ONLY) {

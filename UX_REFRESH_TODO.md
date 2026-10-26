@@ -21,6 +21,25 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Resume Storyline and four-app chrome — 2026-10-26
+
+- [x] User approved implementation; ship the finite Storyline with immediate entry,
+      pause/replay, static/hidden/offscreen/resize/unmount handling and no draft access.
+- [x] Air 1.2.0 owns shared header/footer geometry, type, marks and neutral links.
+      Correct Yard/PDF/Drop/Resume and privacy/recovery routes; remove obsolete skins.
+- [x] Pass 1,104 Chrome/Firefox layouts, 824 link states / 256 keyboard checks,
+      rendered desktop/laptop/phone light/dark and native Safari spot review.
+- [x] Pass Resume 373 tests, 349 entry layouts / 14 journeys, 68 artwork layouts
+      and eight animated arrivals; PDF 461 units / 16 smoke suites / 68 artwork;
+      Drop 432 site layouts / 34 journeys / 68 artwork; Yard/shared checks.
+- [x] Refresh Resume PWA/README/OG captures; record cleanup/evidence and local commits.
+      Preserve IMG's parked draft; validate portable maintenance in isolation.
+- [ ] Complete remaining physical/assistive/hardware and prior full-product/export
+      acceptance. Rollout remains a separate stage; no push/deploy in this piece.
+
+[Audit and evidence](docs/air/storyline-family-2026-10-26.md). The prior audit's
+32px mark exception was mistaken and is superseded by this correction.
+
 ## Family public-page comparison — 2026-10-25
 
 - [x] Compare Cloakyard/PDF/Drop against Air 1.1.0; correct typography, gutters,
@@ -33,7 +52,7 @@ The separately requested Drop installer now uses Air.
 - [x] Remove superseded CSS, add reusable family regression, record independent
       product evidence and passing local commits (see latest handoff).
 - [x] Prepare a separate animated Resume “storyline” study for visual review.
-- [ ] Approve Resume's new motif before production implementation. Preserve its
+- [x] Approve Resume's new motif before production implementation (2026-10-26). Preserve its
       remaining full-product/export follow-ups; IMG remains last.
 
 [Findings, evidence and scope](docs/air/family-comparison-2026-10-25.md).

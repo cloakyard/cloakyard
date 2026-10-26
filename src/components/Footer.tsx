@@ -3,12 +3,12 @@ import { productivityTools } from "../data/tools";
 
 export function Footer() {
   return (
-    <footer className="site-footer site-frame">
-      <nav className="footer-products" aria-label="Cloakyard products">
+    <footer className="air-page-footer site-footer site-frame">
+      <nav className="air-page-nav footer-products" aria-label="Cloakyard products">
         {productivityTools.map((tool) => (
           <a key={tool.slug} href={tool.href} translate="no">
             {tool.name}
-            <ArrowUpRight size={14} aria-hidden="true" />
+            <ArrowUpRight size={16} aria-hidden="true" />
           </a>
         ))}
       </nav>
