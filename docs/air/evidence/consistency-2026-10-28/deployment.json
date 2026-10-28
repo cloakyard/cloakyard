@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-28",
+  "releases": [
+    {
+      "app": "cloakyard",
+      "pr": "https://github.com/cloakyard/cloakyard/pull/26",
+      "merge": "75ea6cf83803767020e980dedd157301f958ef62",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakyard",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/db6e8eb7-d7a3-4068-b339-ba6fc91de176"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakyard/actions/runs/40640895987/job/122658523750"
+        }
+      ]
+    },
+    {
+      "app": "cloakpdf",
+      "pr": "https://github.com/cloakyard/cloakpdf/pull/213",
+      "merge": "9276c8a76867ca9f7da1eabe32399bc0dcedbe8a",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakpdf",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/6d040a1f-abe3-4283-b137-f8a8f6ae4d4d"
+        },
+        {
+          "name": "Dependency Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/40641950622/job/122661878039"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/40641950571/job/122661877920"
+        },
+        {
+          "name": "Scorecard Analysis",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/40641950530/job/122661877836"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/40641950561/job/122661877819"
+        }
+      ],
+      "refs": {
+        "HEAD": "9276c8a76867ca9f7da1eabe32399bc0dcedbe8a",
+        "origin/dev": "9276c8a76867ca9f7da1eabe32399bc0dcedbe8a",
+        "origin/main": "9276c8a76867ca9f7da1eabe32399bc0dcedbe8a"
+      }
+    },
+    {
+      "app": "cloakdrop",
+      "pr": "https://github.com/cloakyard/cloakdrop/pull/49",
+      "merge": "34c996f17b0b791c46023036b4e223c17ccdbde3",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakdrop",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakdrop/production/builds/4df30c8d-448a-43cd-8f9d-62f4850868df"
+        },
+        {
+          "name": "website",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakdrop/actions/runs/40640983061/job/122658807300"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakdrop/actions/runs/40640983061/job/122658806909"
+        }
+      ],
+      "refs": {
+        "HEAD": "34c996f17b0b791c46023036b4e223c17ccdbde3",
+        "origin/dev": "34c996f17b0b791c46023036b4e223c17ccdbde3",
+        "origin/main": "34c996f17b0b791c46023036b4e223c17ccdbde3"
+      }
+    },
+    {
+      "app": "cloakresume",
+      "pr": "https://github.com/cloakyard/cloakresume/pull/47",
+      "merge": "010faf8dea43f3645c3e1e62a07b2c83077efe2c",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakresume",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/261ce958-7a17-45c1-bb9d-76a0c0b6ef3f"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakresume/actions/runs/40642055172/job/122662203688"
+        }
+      ],
+      "refs": {
+        "HEAD": "010faf8dea43f3645c3e1e62a07b2c83077efe2c",
+        "origin/dev": "010faf8dea43f3645c3e1e62a07b2c83077efe2c",
+        "origin/main": "010faf8dea43f3645c3e1e62a07b2c83077efe2c"
+      }
+    }
+  ],
+  "resumeDesignPR": "https://github.com/cloakyard/cloakresume/pull/46",
+  "imgLocal": "338c206",
+  "imgDeployed": false
+}

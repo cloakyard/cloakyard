@@ -1,0 +1,15 @@
+{
+  "scanner": "OSV v2.7.0",
+  "scannerDarwinArm64Sha256": "d4926ef8da134332543be276dff157e4c170f99ad91fc48e89448a8816bdf70b",
+  "removed": "deepmerge@4.3.1",
+  "advisory": "GHSA-gcqx-w48m-w2h4",
+  "mechanism": "node-resolve@16.0.3 CJS/ESM patch: structuredClone of fixed defaults; remove dependency with scoped override",
+  "patchSha256": "be62dc9211d95e5034b7dc50fcd1c89993757756796f2f0b4e9386f191d50e53",
+  "unchangedPublicAssets": {
+    "cloakpdf": 130,
+    "cloakresume": 101
+  },
+  "imgUnchangedBuildFiles": 101,
+  "imgAdditionalFix": "serialize-javascript 7.1.2 to 7.1.4; local only",
+  "newExceptions": 0
+}
