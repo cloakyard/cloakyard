@@ -1,6 +1,6 @@
 # Responsive consistency audit — 2026-10-28
 
-Status: Air 1.2.4 candidate verified; individual dev → main releases are the next gate.
+Status: Air 1.2.4 deployed and production-verified through individual dev → main PRs.
 
 This repeat audit compares Yard, PDF, Drop's website and Resume against the Air
 contract and one another. It includes the published IMG site to identify remaining
@@ -92,10 +92,60 @@ The audit does not close full-product/device acceptance, Resume's existing expor
 intermittency, PDF's accepted Compact beta long-document limitation or node-forge
 exception through 2026-11-06, or Drop's approved official frozen-runtime exception.
 Physical touch, software keyboards/IME, spoken assistive technology and hardware
-power checks remain open. Current dependency locks are unchanged by this UI slice.
+power checks remain open. The build-only dependency follow-up below preserves the tested application bytes.
 
-## Deployment
+## Build dependency follow-up
 
-The four verified candidates follow the existing individual dev → main PR/check/
-merge workflow. Production verification and merge identities will be recorded here
-and in the handoff. IMG must not be pushed or deployed.
+PDF's PR security scan surfaced [GHSA-gcqx-w48m-w2h4](https://github.com/advisories/GHSA-gcqx-w48m-w2h4),
+updated on 2026-10-27. The unpatched deepmerge dependency is used by Workbox's
+resolver only to clone fixed defaults. PDF/Resume/IMG now pin a minimal CJS/ESM
+resolver patch using Node structuredClone and remove deepmerge with a scoped
+pnpm override. No new library or advisory suppression was added. Each repository
+contains its patch rationale and upstream removal condition. Frozen install,
+both resolver entry points, immutable defaults and absence of the removed package
+pass; OSV passes with only PDF's existing approved node-forge exception.
+
+IMG's isolated scan additionally found its older serialize-javascript 7.1.2;
+the build-only override now uses 7.1.4. Its final OSV scan is clean and 470 tests
+pass again. This maintenance remains local. All 130 PDF and 101 Resume public
+files and all 101 IMG isolated build files remain byte-identical after these
+build-tool changes, including service workers. Existing UI/feature evidence
+therefore still applies. The first asset enumeration included a local Resume
+`.DS_Store`; it is not deployed (404) and is excluded from public-asset counts.
+The earlier failed scan and enumeration are retained as evidence.
+
+## Deployment and final production proof
+
+All required main checks and Cloudflare builds pass. All 260 public asset hashes
+match the tested builds. Live comparisons pass 576 public/secondary layouts with
+zero deviations or browser errors, 80 exact local/live header/footer/menu pairs,
+eight exact live PDF/Resume first-install notice pairs and eight exact local/live
+settled Yard GPU artwork pairs. Yard's live duration is 900ms in all 22 GPU
+profiles, with 12 static profiles also passing. The actual first-install notices
+use production workers; their expiry is held only for capture. Waiting-update,
+saving, task deferral and activation safety were verified separately by the
+feature suites and 264-layout common-notice matrix.
+
+| App          | PR                                                                                                             | Final main | Public assets |
+| ------------ | -------------------------------------------------------------------------------------------------------------- | ---------- | ------------- |
+| Yard         | [26](https://github.com/cloakyard/cloakyard/pull/26)                                                           | `75ea6cf`  | 13            |
+| PDF          | [213](https://github.com/cloakyard/cloakpdf/pull/213)                                                          | `9276c8a`  | 130           |
+| Drop website | [49](https://github.com/cloakyard/cloakdrop/pull/49)                                                           | `34c996f`  | 16            |
+| Resume       | [46](https://github.com/cloakyard/cloakresume/pull/46), [47](https://github.com/cloakyard/cloakresume/pull/47) | `010faf8`  | 101           |
+
+Cloudflare stalled before application builds: Resume's superseded `ab63f55`
+preview was cancelled during cloning; its subsequent documentation preview failed
+fetching the repository. PDF's original main build stalled initializing and was
+cancelled/retried at the identical `9276c8a` revision. Retry
+`6d040a1f-abe3-4283-b137-f8a8f6ae4d4d` succeeded; Resume's queued main build
+`261ce958-7a17-45c1-bb9d-76a0c0b6ef3f` also succeeded. No app code, deployment
+settings or permission changes were needed for these infrastructure failures.
+The proposed prebuilt-version fallback was not used. Initial outcomes and the
+successful main checks are preserved in the evidence.
+
+PDF/Drop/Resume dev branches match released main. Yard's documentation-only
+closeout follows the same PR/check/merge/sync sequence and preserves the tested
+application bytes. The release ledger records exact identities. IMG maintenance
+commits `a220a94` and `338c206` remain local; all 15 parked draft paths match the
+saved hashes. All five task-owned preview ports and both audit browser tabs are
+closed. No ongoing local service is required.

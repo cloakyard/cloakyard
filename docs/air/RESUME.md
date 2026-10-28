@@ -7,31 +7,47 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.4 repeat audit verified (2026-10-28)
+### Current checkpoint — Air 1.2.4 repeat audit deployed (2026-10-28)
 
-Corrected a real production motion defect: CSS `.9s` was read as 0.9ms instead of
-900ms. The canonical runtime/reference now convert both CSS time units. All four
-public headers share the inclusive 40rem container boundary, compact row geometry
-and immediate open-chevron state. Removed duplicate per-app rules. PWA presentation
-already matches; its audit now covers all eleven sizes and 54 exact image pairs.
+Corrected the production CSS time bug (`.9s` was interpreted as 0.9ms) and unified
+public compact navigation at the inclusive 40rem container boundary. Air owns menu
+row spacing, inline arrows and immediate open-chevron state; duplicate app rules
+are removed. PWA presentation already matches; its audit now covers all eleven
+sizes and 54 exact pairs. Native apps and document/export code remain unchanged.
 
-Final local evidence: 1,152 Chrome/Firefox shell layouts, 264 PWA layouts, 22 Yard
-GPU timing/idle profiles, product artwork suites, PDF 461 units/all 16 smoke suites,
-Resume 373 tests/zero skips plus 28 affected tests, 335 entry layouts/14 journeys,
-Drop 432 layouts/34 journeys, links/builds/dead-code/design/22 portability checks.
-See [the full repeat audit](consistency-2026-10-28.md), including initial failures.
+Merged/deployed: Yard #26 (`75ea6cf`), PDF #213 (`9276c8a`), Drop #49 (`34c996f`),
+Resume #46 (`437841c`) and build-only #47 (`010faf8`). All required main checks and
+Cloudflare builds pass. Cloudflare initialization/repository-fetch failures were
+resolved by cancelling superseded previews and retrying PDF's identical main
+revision; no deployment settings changed. See [the audit and deployment ledger](consistency-2026-10-28.md).
 
-Next: commit the passing bounded pieces; release Yard/PDF/Drop website/Resume via
-individual dev → main PRs, verify live bytes and the stronger shell/timing checks,
-then synchronize dev. Existing deployment authorization persists. Cloudflare
-publishes main only. IMG portable maintenance stays local: its isolated snapshot
-passes 470 tests and 22 GPU profiles; all 15 parked draft paths match the saved
-hashes in this audit's evidence. Its published legacy shell/PWA remains an open
-Air deviation. Preserve `cloakresume-editor-audit`. Scratch and previews:
-`/tmp/air-audit-2026-10-28/`, ports 8340/8341/8342/8344/8345.
+Local: 1,152 Chrome/Firefox shell layouts, 264 PWA layouts/54 exact pairs, 22 Yard
+GPU duration/idle profiles, all product artwork suites; PDF 461 units/all 16 smoke
+suites; Resume 373 tests/zero skips plus 28 affected tests, 335 entry layouts/14
+journeys; Drop 432 layouts/34 journeys; links/check/build/dead-code/22 portability
+checks. Live: all 260 public hashes, 576 layouts with zero deviations/errors,
+96 exact render pairs (80 public shell, eight actual cache notices, eight GPU
+artwork), and all 22 actual Yard arrival durations at 900ms.
 
-Full-product, Resume export, PDF Compact beta and node-forge through 2026-11-06,
-Drop official-runtime and physical/assistive/hardware acceptance remain open.
+A newly reported deepmerge advisory was fixed in PDF/Resume/IMG by replacing the
+resolver's one fixed-defaults copy with native structuredClone and removing the
+unused dependency via a pinned build-only patch. IMG's older serialize-javascript
+was also updated locally. OSV passes with only PDF's approved node-forge exception;
+all generated app/service-worker bytes remain identical after the build fixes.
+Patch rationale/removal conditions are in each affected repository's patches/README.md.
+
+PDF/Drop/Resume dev match released main. Yard's documentation closeout uses the
+same passing PR/merge/fast-forward workflow; tested application bytes remain
+unchanged. IMG local maintenance `a220a94` / `338c206` passes isolated 470 tests,
+check/build/design/portability and 22 GPU profiles. All 15 parked draft paths still
+match the saved hashes. Its live legacy shell/PWA remains an open Air deviation;
+do not push/deploy IMG. Preserve the `cloakresume-editor-audit` worktree.
+
+Next: investigate the existing Resume export intermittency as a separate bounded
+piece, then remaining full-product/device acceptance. Keep PDF Compact beta and
+node-forge through 2026-11-06, Drop official-runtime and physical/assistive/hardware
+acceptance open. Scratch: `/tmp/air-audit-2026-10-28/`. All five task preview ports
+and the two audit browser tabs are closed; no ongoing local service is required.
 
 ### Prior checkpoint — Air 1.2.3 consistency deployed (2026-10-26)
 

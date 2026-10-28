@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.2.4 repeat audit verified; release pending; Air 1.2.3 deployed for Yard/PDF/Drop website/Resume; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.2.4 responsive/motion consistency deployed and verified for Yard/PDF/Drop website/Resume; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -34,8 +34,12 @@ The separately requested Drop installer now uses Air.
       remove duplicate per-app rules and compare geometry directly.
 - [x] Validate the production timing regression, consumer bundles and applicable features.
 - [x] Record the [visual audit and evidence](docs/air/consistency-2026-10-28.md).
-- [ ] Commit passing bounded pieces; deploy via individual dev → main PRs, verify,
-      and synchronize dev. IMG maintenance stays local and its draft stays parked.
+- [x] Remove newly flagged build-only deepmerge from PDF/Resume/IMG; fix IMG’s
+      older serialize-javascript, pass OSV and prove app/service-worker bytes unchanged.
+- [x] Commit passing bounded pieces; deploy via individual dev → main PRs and verify
+      all 260 live assets, 576 layouts and 96 exact render pairs.
+- [x] Synchronize PDF/Drop/Resume dev; Yard documentation closeout uses the same
+      PR/merge/sync workflow. IMG maintenance stays local and its draft stays parked.
 - [ ] Retain remaining full-product, export and physical/assistive/hardware acceptance.
 
 ## Footer heights and PWA notice consistency — 2026-10-26
