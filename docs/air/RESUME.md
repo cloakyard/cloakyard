@@ -1,13 +1,39 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-26
+## Start here in a new conversation — saved 2026-10-28
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.3 consistency deployed (2026-10-26)
+### Current checkpoint — Air 1.2.4 repeat audit verified (2026-10-28)
+
+Corrected a real production motion defect: CSS `.9s` was read as 0.9ms instead of
+900ms. The canonical runtime/reference now convert both CSS time units. All four
+public headers share the inclusive 40rem container boundary, compact row geometry
+and immediate open-chevron state. Removed duplicate per-app rules. PWA presentation
+already matches; its audit now covers all eleven sizes and 54 exact image pairs.
+
+Final local evidence: 1,152 Chrome/Firefox shell layouts, 264 PWA layouts, 22 Yard
+GPU timing/idle profiles, product artwork suites, PDF 461 units/all 16 smoke suites,
+Resume 373 tests/zero skips plus 28 affected tests, 335 entry layouts/14 journeys,
+Drop 432 layouts/34 journeys, links/builds/dead-code/design/22 portability checks.
+See [the full repeat audit](consistency-2026-10-28.md), including initial failures.
+
+Next: commit the passing bounded pieces; release Yard/PDF/Drop website/Resume via
+individual dev → main PRs, verify live bytes and the stronger shell/timing checks,
+then synchronize dev. Existing deployment authorization persists. Cloudflare
+publishes main only. IMG portable maintenance stays local: its isolated snapshot
+passes 470 tests and 22 GPU profiles; all 15 parked draft paths match the saved
+hashes in this audit's evidence. Its published legacy shell/PWA remains an open
+Air deviation. Preserve `cloakresume-editor-audit`. Scratch and previews:
+`/tmp/air-audit-2026-10-28/`, ports 8340/8341/8342/8344/8345.
+
+Full-product, Resume export, PDF Compact beta and node-forge through 2026-11-06,
+Drop official-runtime and physical/assistive/hardware acceptance remain open.
+
+### Prior checkpoint — Air 1.2.3 consistency deployed (2026-10-26)
 
 The latest audit fixes the previous footer exceptions and separate PWA notices.
 Yard/PDF/Drop website/Resume share footer content/order and natural heights,

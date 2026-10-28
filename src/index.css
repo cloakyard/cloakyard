@@ -353,6 +353,16 @@ summary:focus-visible {
   }
 }
 @container (width < 44em) {
+  .curiosity-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--air-space-12);
+  }
+  .principle-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--air-space-32);
+  }
+}
+@container (width <= 40rem) {
   .desktop-navigation,
   .desktop-source {
     display: none;
@@ -386,33 +396,8 @@ summary:focus-visible {
   .mobile-navigation summary::-webkit-details-marker {
     display: none;
   }
-  .mobile-navigation[open] summary svg {
-    rotate: 180deg;
-  }
   .mobile-navigation nav {
     pointer-events: auto;
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid var(--air-line);
-    margin-top: var(--air-space-12);
-    padding-top: var(--air-space-12);
-  }
-  .mobile-navigation nav a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 44px;
-    padding-block: var(--air-space-8);
-    font-size: var(--air-text-body);
-    color: var(--air-ink-secondary);
-  }
-  .curiosity-inner {
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--air-space-12);
-  }
-  .principle-list {
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--air-space-32);
   }
 }
 @container (width <= 40em) {

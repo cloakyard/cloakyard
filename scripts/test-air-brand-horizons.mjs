@@ -26,6 +26,14 @@ try {
     const errors = [];
     page.on("pageerror", (error) => errors.push(String(error)));
     const selector = `.${prefix}-horizon`;
+    await page.evaluateOnNewDocument((selector) => {
+      window.airArrivalDurations = [];
+      const animate = Element.prototype.animate;
+      Element.prototype.animate = function (frames, options) {
+        if (this.matches(`${selector} canvas`)) window.airArrivalDurations.push(options.duration);
+        return animate.call(this, frames, options);
+      };
+    }, selector);
     const url = process.env.AIR_URL || `http://127.0.0.1:${port}`;
     const layouts = [];
     for (const [width, height] of [
@@ -96,37 +104,58 @@ try {
         }
       }
     }
-    await page.setViewport({ width: 1440, height: 900 });
     const gpu = [];
-    for (const theme of ["light", "dark"]) {
-      await page.emulateMediaFeatures([
-        { name: "prefers-color-scheme", value: theme },
-        { name: "prefers-reduced-motion", value: "no-preference" },
-      ]);
-      await page.goto(url, { waitUntil: "networkidle0" });
-      await page.$eval(selector, (field) => field.scrollIntoView({ block: "center" }));
-      await page.waitForFunction(
-        (s) => document.querySelector(s).dataset.lightState === "idle",
-        { timeout: 15_000 },
-        selector,
-      );
-      const state = await page.$eval(selector, (field) => ({ ...field.dataset }));
-      assert.equal(state.lightReady, "true");
-      assert.ok(Number(state.lightFrames) > 0);
-      await new Promise((r) => setTimeout(r, 400));
-      assert.equal(
-        await page.$eval(selector, (field) => field.dataset.lightFrames),
-        state.lightFrames,
-      );
-      await page.screenshot({ path: resolve(output, `${app}-gpu-${theme}.png`) });
-      const horizon = await page.$(selector);
-      await horizon.screenshot({ path: resolve(output, `${app}-artwork-${theme}.png`) });
-      gpu.push({ theme, ...state });
-    }
+    for (const [width, height] of [
+      [320, 568],
+      [375, 812],
+      [390, 844],
+      [430, 932],
+      [844, 390],
+      [768, 1024],
+      [1024, 768],
+      [1280, 720],
+      [1366, 768],
+      [1440, 900],
+      [1920, 1080],
+    ])
+      for (const theme of ["light", "dark"]) {
+        await page.setViewport({ width, height, hasTouch: width <= 1024 });
+        await page.emulateMediaFeatures([
+          { name: "prefers-color-scheme", value: theme },
+          { name: "prefers-reduced-motion", value: "no-preference" },
+        ]);
+        await page.goto(url, { waitUntil: "networkidle0" });
+        await page.$eval(selector, (field) => field.scrollIntoView({ block: "center" }));
+        await page.waitForFunction(
+          (s) => document.querySelector(s).dataset.lightState === "idle",
+          { timeout: 15_000 },
+          selector,
+        );
+        const state = await page.$eval(selector, (field) => ({ ...field.dataset }));
+        const durations = await page.evaluate(() => window.airArrivalDurations);
+        assert.deepEqual(durations, [900], `${app}/${width}/${theme}: production arrival timing`);
+        assert.equal(state.lightReady, "true");
+        assert.ok(Number(state.lightFrames) > 0);
+        await new Promise((r) => setTimeout(r, 400));
+        assert.equal(
+          await page.$eval(selector, (field) => field.dataset.lightFrames),
+          state.lightFrames,
+        );
+        if ([390, 768, 1280, 1440].includes(width)) {
+          await page.screenshot({ path: resolve(output, `${app}-gpu-${width}-${theme}.png`) });
+          const horizon = await page.$(selector);
+          await horizon.screenshot({
+            path: resolve(output, `${app}-artwork-${width}-${theme}.png`),
+          });
+        }
+        gpu.push({ width, height, theme, durations, ...state });
+      }
     assert.deepEqual(errors, []);
     results.push({ app, url, layouts, gpu, errors });
     await context.close();
-    console.log(`${app}: ${layouts.length} layouts, both GPU themes and idle checks pass`);
+    console.log(
+      `${app}: ${layouts.length} static layouts, ${gpu.length} GPU timing/idle checks pass`,
+    );
   }
   await writeFile(resolve(output, "brand-horizons.json"), JSON.stringify(results, null, 2) + "\n");
 } finally {

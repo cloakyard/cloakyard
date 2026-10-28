@@ -2,8 +2,14 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { mountAirLight } from "../design/air/light-runtime.mjs";
+import { motionMilliseconds } from "../design/air/motion.mjs";
 
-function environment({ pendingMount = false, pendingDraw = false, resizeThrows = false } = {}) {
+function environment({
+  pendingMount = false,
+  pendingDraw = false,
+  resizeThrows = false,
+  arrival = "900ms",
+} = {}) {
   const saved = new Map();
   const set = (name, value) => {
     saved.set(name, Object.getOwnPropertyDescriptor(globalThis, name));
@@ -33,13 +39,17 @@ function environment({ pendingMount = false, pendingDraw = false, resizeThrows =
     },
   };
   const parent = new EventTarget();
+  const durations = [];
   const canvas = {
     style: {},
-    animate: () => ({
-      playState: "finished",
-      effect: { getComputedTiming: () => ({ progress: 1 }) },
-      cancel() {},
-    }),
+    animate: (_frames, options) => {
+      durations.push(options.duration);
+      return {
+        playState: "finished",
+        effect: { getComputedTiming: () => ({ progress: 1 }) },
+        cancel() {},
+      };
+    },
   };
   const field = {
     dataset: {},
@@ -59,7 +69,7 @@ function environment({ pendingMount = false, pendingDraw = false, resizeThrows =
     outlineColor: "#eee",
     colorScheme: "light",
     getPropertyValue: (name) =>
-      name === "--air-motion-arrival" ? "900ms" : "cubic-bezier(0.23,1,0.32,1)",
+      name === "--air-motion-arrival" ? arrival : "cubic-bezier(0.23,1,0.32,1)",
   }));
   set("matchMedia", (query) => {
     if (!media.has(query)) {
@@ -112,6 +122,7 @@ function environment({ pendingMount = false, pendingDraw = false, resizeThrows =
     parent,
     media,
     observers,
+    durations,
     flush,
     async enter(visible = true) {
       observers
@@ -143,6 +154,30 @@ function environment({ pendingMount = false, pendingDraw = false, resizeThrows =
     },
   };
 }
+
+test("CSS seconds and milliseconds retain the same Air timings", () => {
+  for (const [ms, seconds] of [
+    [900, ".9s"],
+    [240, ".24s"],
+    [160, ".16s"],
+    [0, "0s"],
+  ]) {
+    assert.equal(motionMilliseconds(`${ms}ms`), ms);
+    assert.equal(motionMilliseconds(` ${seconds} `), ms);
+  }
+});
+
+test("the shader arrival stays 900ms after CSS minification", async () => {
+  for (const arrival of ["900ms", ".9s"]) {
+    const e = environment({ arrival });
+    try {
+      await e.enter();
+      assert.deepEqual(e.durations, [900]);
+    } finally {
+      e.restore();
+    }
+  }
+});
 
 test("finite arrival submits once in the settled clock and rests until input", async () => {
   const e = environment();
