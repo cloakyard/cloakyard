@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.2.3 footer/PWA consistency deployed and verified for Yard/PDF/Drop website/Resume; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.2.4 repeat audit verified; release pending; Air 1.2.3 deployed for Yard/PDF/Drop website/Resume; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,23 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Repeat consistency audit — 2026-10-28
+
+- [x] Recheck all five live sites; preserve IMG's parked redesign and explicit legacy deviations.
+- [x] Verify 1,152 Chrome/Firefox public-shell layouts and 264 shared PWA layouts,
+      with 54 exact notice screenshot pairs, including tablet and enlarged-text focus.
+- [x] Exercise real motion at all eleven required sizes in both themes. Inspect
+      actual durations: production CSS `.9s` was misread as 0.9ms in Yard's horizon.
+- [x] Correct CSS time conversion in the canonical runtime and reference motion;
+      pin Air 1.2.4. Preserve approved product artwork, output and native apps.
+- [x] Standardize the inclusive 40rem compact boundary, menu rows and open chevron;
+      remove duplicate per-app rules and compare geometry directly.
+- [x] Validate the production timing regression, consumer bundles and applicable features.
+- [x] Record the [visual audit and evidence](docs/air/consistency-2026-10-28.md).
+- [ ] Commit passing bounded pieces; deploy via individual dev → main PRs, verify,
+      and synchronize dev. IMG maintenance stays local and its draft stays parked.
+- [ ] Retain remaining full-product, export and physical/assistive/hardware acceptance.
 
 ## Footer heights and PWA notice consistency — 2026-10-26
 

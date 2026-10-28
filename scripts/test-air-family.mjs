@@ -339,6 +339,10 @@ try {
               if (!condition) issues.push(message);
             };
             const root = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            check(
+              Boolean(menu && visible(menu)) === innerWidth <= 40 * root,
+              "shared compact boundary",
+            );
             const heroSize = Math.max(2.5 * root, Math.min(innerWidth * 0.055, 4.5 * root));
             check(
               near(heading.size, heroSize) &&
@@ -442,11 +446,34 @@ try {
               links: [...n.querySelectorAll("a")].filter((a) => a.getClientRects().length).length,
               bottom: n.getBoundingClientRect().bottom,
               headerBottom: n.closest("header").getBoundingClientRect().bottom,
+              chevron: getComputedStyle(n.querySelector("summary svg")).rotate,
             }));
             assert.ok(
               menu.open && menu.links > 0 && menu.bottom <= menu.headerBottom + 1,
               "Compact menu must expand in flow",
             );
+            assert.equal(menu.chevron, "180deg", `${product.name}: open menu chevron`);
+            const rows = await page.$eval(`${product.menu} nav`, (nav) => {
+              const style = getComputedStyle(nav);
+              return {
+                gap: style.rowGap,
+                margin: style.marginTop,
+                padding: style.paddingTop,
+                border: style.borderTopWidth,
+                links: [...nav.querySelectorAll("a")].map((a) => {
+                  const s = getComputedStyle(a);
+                  return { padding: s.padding, gap: s.gap, justify: s.justifyContent };
+                }),
+              };
+            });
+            assert.deepEqual(
+              { ...rows, links: undefined },
+              { gap: "0px", margin: "12px", padding: "8px", border: "1px", links: undefined },
+              `${product.name}: shared compact navigation rhythm`,
+            );
+            for (const link of rows.links)
+              assert.deepEqual(link, { padding: "8px 12px", gap: "8px", justify: "flex-start" });
+            evidence.interactions.push({ ...state, compactRows: rows });
             await page.keyboard.press("Tab");
             await page.keyboard.press("Escape");
             assert.equal(
@@ -718,6 +745,18 @@ try {
         issue: "cross-product footer height",
         actual: row.footer.height,
         expected: reference.footer.height,
+      });
+    if (
+      Boolean(row.menu) !== Boolean(reference.menu) ||
+      Math.abs(row.header.height - reference.header.height) > 0.5
+    )
+      evidence.failures.push({
+        product: row.product,
+        theme: row.theme,
+        root: row.root,
+        width: row.width,
+        height: row.height,
+        issue: "cross-product header mode/height",
       });
   }
 } finally {

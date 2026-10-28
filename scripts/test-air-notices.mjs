@@ -4,10 +4,8 @@ import { createHash } from "node:crypto";
 import { createServer } from "node:http";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve, extname } from "node:path";
-import { createRequire } from "node:module";
 const base = resolve(import.meta.dirname, "../..");
-const require = createRequire(resolve(base, "cloakresume/package.json"));
-const puppeteer = require("puppeteer-core");
+const { default: puppeteer } = await import(process.env.PUPPETEER_MODULE || "puppeteer-core");
 const out = process.env.AIR_EVIDENCE_DIR || "/tmp/air-family-notices";
 await mkdir(out, { recursive: true });
 const sizes = [
@@ -19,6 +17,7 @@ const sizes = [
   [768, 1024],
   [1024, 768],
   [1280, 720],
+  [1366, 768],
   [1440, 900],
   [1920, 1080],
 ];
@@ -150,10 +149,17 @@ try {
                 );
               }
               if (root === 32 && [320, 844].includes(width)) {
-                await capture(
-                  page,
-                  resolve(out, `${app}-${state}-${width}-${theme}-${root}-focused.png`),
-                );
+                const file = `${app}-${state}-${width}-${theme}-${root}-focused.png`;
+                captures.push({
+                  app,
+                  state,
+                  theme,
+                  root,
+                  width,
+                  focused: true,
+                  file,
+                  sha256: await capture(page, resolve(out, file)),
+                });
               }
               await page.evaluate(() => {
                 document.activeElement?.blur();
@@ -202,7 +208,7 @@ try {
               assert(metrics.actions.every((b) => b.height >= (width <= 1100 ? 43.9 : 39.9)));
               rows.push({ app, state, theme, root, width, height, metrics });
               if (
-                (root === 16 && [390, 1280, 1440].includes(width)) ||
+                (root === 16 && [390, 768, 1024, 1280, 1440].includes(width)) ||
                 (root === 32 && [320, 844].includes(width))
               ) {
                 const file = `${app}-${state}-${width}-${theme}-${root}.png`;
@@ -234,6 +240,12 @@ try {
       reference.metrics,
       `Cross-app notice drift: ${row.state}/${row.width}/${row.theme}/${row.root}`,
     );
+  }
+  for (const capture of captures.filter((c) => c.app === "cloakresume")) {
+    const reference = captures.find(
+      (c) => c.file === capture.file.replace("cloakresume-", "cloakpdf-"),
+    );
+    assert.equal(capture.sha256, reference?.sha256, `Cross-app notice pixels: ${capture.file}`);
   }
   assert.deepEqual(errors, []);
 } finally {
