@@ -23,14 +23,23 @@ Roll site/Worker plus 80 core/227 hosted/Debug/lint gates. Early test timing and
 harness-invocation failures are retained; final checks pass without relaxed assertions.
 Final desktop/laptop/tablet/phone light/dark comparison sheets are recorded.
 
-Next: commit the passing pieces, push dev and create individual dev → main PRs for
-Yard/PDF/Drop/Resume/Roll, wait for checks, merge with merge commits, verify production
-and fast-forward dev. Cloudflare main-only production and safe preview commands were
-verified read-only. No new native release/tag is requested. Drop's existing three
-native commits and their release evidence were reviewed and are part of its dev PR.
-IMG remains parked with all 15 paths/status/HEAD unchanged; preserve separate Resume
-worktrees. Existing Compact/node-forge, official-runtime, export and physical gates
-remain open. Scratch: `/tmp/air-family-2026-10-29/`; preview ports 8350/1/2/4/6.
+Merged and deployed: Yard #28 (`9b3c02f`), PDF #214 (`133198b`), Drop #50
+(`d5805af`), Resume #48 (`88fce67`) and Roll #3 (`8027c8f`). All main checks and
+Cloudflare builds pass. Live verification: 780 public/secondary layouts with zero
+deviations/errors, 44 still/22 real-motion profiles and all 270 public files match.
+267 raw hashes match; Roll's three HTML files match after removing only Cloudflare's
+injected detection script. Raw/normalized evidence and build URLs are retained.
+
+Dev is fast-forwarded from main; documentation closeout follows the same PR/merge
+workflow with identical application bytes. No native release/tag is created. Drop's
+three previously audited native commits are included in its dev promotion. IMG's
+15 paths/status/HEAD are unchanged; preserve separate Resume worktrees. Existing
+Compact/node-forge, official-runtime, export and physical gates remain open.
+
+Next: remaining separate Resume export and full-product/device acceptance, while
+keeping IMG last until its redesign begins. This requested five-site rollout is
+complete. Scratch: `/tmp/air-family-2026-10-29/`. Task previews are closed at handoff;
+no running local server is required.
 
 ### Prior checkpoint — Air 1.2.5 privacy consistency (2026-10-29)
 

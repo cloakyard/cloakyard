@@ -1,0 +1,47 @@
+[
+  {
+    "repo": "cloakyard",
+    "headRefOid": "538cad74a301025483299c5ddc2a8832d9ba1703",
+    "mergeCommit": {
+      "oid": "9b3c02f0ffba545eaf83986dbff49c9afbfc1983"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakyard/pull/28"
+  },
+  {
+    "repo": "cloakpdf",
+    "headRefOid": "c6387b298139a08658976c66fb8db187689476f7",
+    "mergeCommit": {
+      "oid": "133198bf249fb960a2ecff8a6641d111b4a36d12"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakpdf/pull/214"
+  },
+  {
+    "repo": "cloakdrop",
+    "headRefOid": "b213acc399740a0de0c2e914a3ce84ca54f1b976",
+    "mergeCommit": {
+      "oid": "d5805af093ccf3d45b26341bb9a5554f7d494b88"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakdrop/pull/50"
+  },
+  {
+    "repo": "cloakresume",
+    "headRefOid": "22f9a8eaaca27727f58e3a6e1e4ec6dd227e2b64",
+    "mergeCommit": {
+      "oid": "88fce676f56c0892cf32275a58a7c6b99b9491e8"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakresume/pull/48"
+  },
+  {
+    "repo": "cloakroll",
+    "headRefOid": "36c1daab04651a11633fa90f54b04900fef9eb89",
+    "mergeCommit": {
+      "oid": "8027c8f751df186d30560d6bb963ef7839c1df45"
+    },
+    "state": "MERGED",
+    "url": "https://github.com/cloakyard/cloakroll/pull/3"
+  }
+]
