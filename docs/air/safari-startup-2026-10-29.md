@@ -86,14 +86,16 @@ triggered preview-only builds on the same merge SHAs. Drop's preview initially
 failed during environment/dependency setup before building; its command is
 `wrangler versions upload`, so that failure did not affect production. The identical
 preview was retried without modifying settings or code and passed. Roll's separate
-dev preview built successfully but failed because its dashboard command selected
-`wrangler preview` without the required repository setup. Its preview-only command
-was changed to `npx wrangler versions upload`, matching the family workflow; `main`
-remains the production source with `wrangler deploy`, and preview URLs stay disabled.
-Old-build retries retain their saved command, so that redundant retry was cancelled.
-Roll's documentation-only [PR #5](https://github.com/cloakyard/cloakroll/pull/5)
-starts a fresh build using the corrected setting. This is a dashboard configuration correction;
-no native or application code changed.
+dev preview built successfully but failed because `wrangler preview` requires a
+`previews` block. A dashboard-only attempt to use `versions upload` did not change
+the next build's command and was reverted; there is no net dashboard change.
+Roll's [PR #5](https://github.com/cloakyard/cloakroll/pull/5) adds the required empty
+repository block for this static site, following
+[Cloudflare's configuration](https://developers.cloudflare.com/workers/previews/configuration/).
+Production remains `main`/`wrangler deploy`, preview URLs stay disabled, and no
+production routes or data bindings are added to previews. Application bytes are
+unchanged. A redundant old-build retry was cancelled; initial failed runs are
+retained in the build history.
 
 The canonical documentation closeout uses a separate dev → main PR and preserves
 all 12 Yard application files byte for byte.
