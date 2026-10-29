@@ -22,8 +22,17 @@ Ten WebKit comparison sheets and the initial failures are retained in
 [the audit](safari-startup-2026-10-29.md). Physical iPhone Safari/Low Power Mode
 confirmation remains distinct from WebKit mobile emulation.
 
-Next: finish individual authorized dev → main PR deployment, verify live and
-fast-forward dev. Scratch evidence: `/tmp/air-safari-2026-10-29/`.
+Merged and deployed: Yard #30 (`afb3ef6`), PDF #215 (`386e29f`), Drop #51
+(`f72b5b1`), Resume #49 (`2b20478`) and Roll #4 (`caa5d16`). All 270 public files
+match the tested builds (267 raw, three Roll HTML files after removing only the
+Cloudflare detection injection). Live WebKit passes ten moving phone layouts,
+20 fallbacks and five lifecycle journeys with four reported threads. Dev is
+fast-forwarded to each main merge. Canonical documentation closeout follows the
+same PR/merge/sync workflow with identical application bytes.
+
+Next: physical iPhone Safari/Low Power Mode confirmation, then the separately open
+Resume export and full-product/device acceptance; IMG remains last. Do not repeat
+this completed five-site startup rollout. Scratch: `/tmp/air-safari-2026-10-29/`.
 
 ### Prior checkpoint — Air 1.2.6 family gathering/support (2026-10-29)
 

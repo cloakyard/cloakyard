@@ -66,7 +66,54 @@ at their approved values; no new continuous effect or rendering dependency.
 
 ## Rollout
 
-Local checks pass. The authorized individual dev → main PR rollout is next. Desktop WebKit with a mobile viewport
+All five application PRs are merged and deployed; dev is synchronized with main.
+All 270 public files match the tested builds: 267 raw hashes and three Roll HTML
+files after removing only Cloudflare's injected detection script. Raw and normalized
+hashes are retained. Live WebKit passes ten moving phone layouts, 20 fallback visits
+and five lifecycle journeys, with four reported threads and no memory API.
+
+The live harness starts observation at navigation commit so network load milestones
+do not hide a short entry animation. Its initial DOMContentLoaded-based run missed
+Drop's playing window; an early diagnostic and the revised live run show progression.
+A subsequent run timed out finding Resume's artwork on its desktop lifecycle visit,
+after both phone themes and all fallbacks had passed. The unchanged Resume/Roll rerun
+passes completely. Final combined evidence uses the first three completed apps and
+the complete Resume/Roll rerun; partial results and logs remain archived.
+No application change was needed for those live-test retries.
+
+Cloudflare main builds deployed the verified bytes. The later dev synchronization
+triggered preview-only builds on the same merge SHAs. Drop's preview initially
+failed during environment/dependency setup before building; its command is
+`wrangler versions upload`, so that failure did not affect production. The identical
+preview was retried without modifying settings or code and passed. Roll's separate
+dev preview built successfully but failed because its dashboard command selected
+`wrangler preview` without the required repository setup. Its preview-only command
+was changed to `npx wrangler versions upload`, matching the family workflow; `main`
+remains the production source with `wrangler deploy`, and preview URLs stay disabled.
+Old-build retries retain their saved command, so that redundant retry was cancelled.
+Roll's documentation-only [PR #5](https://github.com/cloakyard/cloakroll/pull/5)
+starts a fresh build using the corrected setting. This is a dashboard configuration correction;
+no native or application code changed.
+
+The canonical documentation closeout uses a separate dev → main PR and preserves
+all 12 Yard application files byte for byte.
+
+| Site        | PR                                                      | Application merge                          |
+| ----------- | ------------------------------------------------------- | ------------------------------------------ |
+| cloakyard   | [#30](https://github.com/cloakyard/cloakyard/pull/30)   | `afb3ef695914731fc753605df6559bf3a09c29b3` |
+| cloakpdf    | [#215](https://github.com/cloakyard/cloakpdf/pull/215)  | `386e29fd2010003222258c5faeb06d22fb9d8774` |
+| cloakdrop   | [#51](https://github.com/cloakyard/cloakdrop/pull/51)   | `f72b5b1d193c96a84590dd179fdb3c935c50fde6` |
+| cloakresume | [#49](https://github.com/cloakyard/cloakresume/pull/49) | `2b204785502c394fda47eb59d72797d916c4e89a` |
+| cloakroll   | [#4](https://github.com/cloakyard/cloakroll/pull/4)     | `caa5d16dfae0744f45c33668c330c25d328a0b06` |
+
+Roll's existing dev PR also contained the already-published beta's documentation
+commit `3e1c862`. That diff and its original audit were reviewed, and the published
+release's asset sizes/digests were checked against GitHub. No native code, release
+tag or binary changed in this website promotion. The existing PR was updated to
+describe its full final scope. GitHub CLI handled writes because the connected
+GitHub integration's write permission was unavailable in this session's prior rollout.
+
+Desktop WebKit with a mobile viewport
 and four-thread/no-memory hints is browser-engine evidence, not a physical iPhone
 or Low Power Mode acceptance result. CloakIMG remains parked; native apps and
 KERR are unchanged. Existing full-product and device gates remain open.

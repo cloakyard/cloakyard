@@ -1,0 +1,3 @@
+webkit: cloakresume passed
+webkit: cloakroll passed
+webkit: 4 moving layouts, 8 fallbacks, 2 lifecycle journeys passed.

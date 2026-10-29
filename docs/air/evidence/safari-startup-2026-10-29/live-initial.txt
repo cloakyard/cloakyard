@@ -1,0 +1,14 @@
+webkit: cloakyard passed
+webkit: cloakpdf passed
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 10000ms exceeded.
+    at state (/private/tmp/air-safari-2026-10-29/live-smoke.mjs:50:8)
+    at /private/tmp/air-safari-2026-10-29/live-smoke.mjs:63:17 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.22.2
