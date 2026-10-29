@@ -1,0 +1,57 @@
+
+> cloakroll-site@1.0.0 verify
+> npm run check && npm run build && node scripts/verify-site.mjs
+
+
+> cloakroll-site@1.0.0 check
+> astro check
+
+20:03:48 [types] Generated 25ms
+20:03:48 [check] Getting diagnostics for Astro files in /Users/sumitsahoo/Developer/cloakroll/apps/site...
+Result (17 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> cloakroll-site@1.0.0 prebuild
+> node scripts/sync-assets.mjs
+
+
+> cloakroll-site@1.0.0 build
+> astro build
+
+20:03:50 [types] Generated 27ms
+20:03:50 [build] output: "static"
+20:03:50 [build] mode: "static"
+20:03:50 [build] directory: /Users/sumitsahoo/Developer/cloakroll/apps/site/dist/
+20:03:50 [build] Collecting build info...
+20:03:50 [build] ✓ Completed in 36ms.
+20:03:50 [build] Building static entrypoints...
+20:03:50 [vite] ✓ built in 103ms
+20:03:50 [vite] ✓ built in 11ms
+20:03:50 [build] Rearranging server assets...
+
+ generating static routes 
+20:03:50   ├─ /404.html (+5ms) 
+20:03:50   ├─ /privacy/index.html (+1ms) 
+20:03:50   ├─ /index.html (+1ms) 
+20:03:50 ✓ Completed in 13ms.
+
+20:03:50 [build] ✓ Completed in 145ms.
+20:03:50 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+20:03:50 [build] 3 page(s) built in 187ms
+20:03:50 [build] Complete!
+Air contract and 12 inventory records are valid. Runtime conformance is audited separately.
+Verified Air provenance, generated routes, anchors, local assets, canonical domain and release destination.
+
+> cloakroll-site@1.0.0 check:worker
+> wrangler deploy --dry-run --outdir build/worker
+
+
+ ⛅️ wrangler 4.154.0 (update available 4.155.0)
+───────────────────────────────────────────────
+✨ Read 15 files from the assets directory /Users/sumitsahoo/Developer/cloakroll/apps/site/dist
+Total Upload: 0.31 KiB / gzip: 0.22 KiB
+No bindings found.
+--dry-run: exiting now.

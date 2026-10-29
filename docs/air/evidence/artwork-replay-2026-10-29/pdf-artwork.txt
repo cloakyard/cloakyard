@@ -1,0 +1,2 @@
+Evidence: /tmp/air-replay-2026-10-29/product/cloakpdf-air-artwork-O383nm
+PASS: 68 layouts, finite unveiling, lifecycle/fallbacks and real file entry.

@@ -45,8 +45,8 @@ export function ToolGathering() {
     return () => artwork.destroy();
   }, []);
   return (
-    <div ref={root} className="tool-gathering" aria-hidden="true">
-      <div className="gathering-objects">
+    <div ref={root} className="tool-gathering air-artwork">
+      <div className="gathering-objects" aria-hidden="true">
         <div className="gathering-object gathering-paper">
           <svg viewBox="0 0 144 144" focusable="false">
             <g data-unfold="translate(20px, 9px) rotate(12deg)">
@@ -168,6 +168,12 @@ export function ToolGathering() {
         </div>
       </div>
       <img className="gathering-home" src="/cloakyard-mark.svg" width="40" height="40" alt="" />
+      <button
+        className="air-artwork-replay"
+        type="button"
+        aria-label="Replay Cloakyard animation"
+        hidden
+      />
     </div>
   );
 }

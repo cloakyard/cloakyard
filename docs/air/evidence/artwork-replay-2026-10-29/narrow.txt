@@ -1,0 +1,79 @@
+activate {
+  x: 160,
+  y: 447.140625,
+  target: 'air-artwork-replay',
+  scrollY: 94,
+  state: 'playing',
+  scale: 1
+}
+activate {
+  x: 160,
+  y: 447.140625,
+  target: 'air-artwork-replay',
+  scrollY: 309,
+  state: 'complete',
+  scale: 1
+}
+activate {
+  x: 160,
+  y: 447.140625,
+  target: 'air-artwork-replay',
+  scrollY: 309,
+  state: 'playing',
+  scale: 1
+}
+activate {
+  x: 160,
+  y: 447.140625,
+  target: 'air-artwork-replay',
+  scrollY: 309,
+  state: 'playing',
+  scale: 1
+}
+activate {
+  x: 160,
+  y: 447.140625,
+  target: 'air-artwork-replay',
+  scrollY: 94,
+  state: 'playing',
+  scale: 1
+}
+activate {
+  x: 160,
+  y: 662.140625,
+  target: undefined,
+  scrollY: 94,
+  state: 'complete',
+  scale: 1
+}
+failed {
+  state: 'complete',
+  scrollY: 0,
+  events: [
+    {
+      type: 'pointerdown',
+      target: 'air-artwork-replay',
+      state: 'playing'
+    },
+    {
+      type: 'pointerup',
+      target: 'air-artwork-replay',
+      state: 'playing'
+    },
+    { type: 'click', target: 'air-artwork-replay', state: 'playing' },
+    { type: 'pointerdown', target: '', state: 'complete' },
+    { type: 'pointerup', target: '', state: 'complete' }
+  ]
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 10000ms exceeded.
+    at state (/private/tmp/air-replay-2026-10-29/narrow.mjs:66:8)
+    at /private/tmp/air-replay-2026-10-29/narrow.mjs:197:17 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.22.2

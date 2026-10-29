@@ -1,0 +1,6 @@
+webkit: cloakyard passed
+webkit: cloakpdf passed
+webkit: cloakdrop passed
+webkit: cloakresume passed
+webkit: cloakroll passed
+webkit: 110 moving layouts, 20 fallbacks, 5 lifecycle journeys passed.

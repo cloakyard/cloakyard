@@ -1,0 +1,16 @@
+Evidence: /tmp/air-replay-2026-10-29/product/cloakdrop-air-artwork-aaTLAC
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Finite sequence exceeded five seconds: 5055ms
+    at file:///Users/sumitsahoo/Developer/cloakdrop/scripts/test-air-artwork.mjs:94:14 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

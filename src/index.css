@@ -155,7 +155,6 @@ summary:focus-visible {
   max-inline-size: 840px;
   margin: 32px auto 0;
   padding-block: 8px 16px;
-  pointer-events: none;
   overflow: clip;
 }
 .gathering-objects {
