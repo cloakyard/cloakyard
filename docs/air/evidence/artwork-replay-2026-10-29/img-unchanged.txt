@@ -1,1 +1,1 @@
-IMG HEAD, status and all 15 parked file hashes match initial.json.
+CloakIMG HEAD 338c206656d11e75fbce1f227687f1f1d8920643, NUL-separated status and all 15 parked file hashes match the initial snapshot.

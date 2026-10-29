@@ -26,7 +26,7 @@ claim that the entire sequence lasts 20% longer.
   light/dark. Transparent targets preserve the existing composition and task links.
   Additional light/dark focus captures verify the inset Air outline across all five.
 - Yard: check/types/build, dead-code, 44 static layouts, 22 complete arrivals and
-  four lifecycle/directory journeys. Entry is 76.26kB gzip (budget 85kB).
+  four lifecycle/directory journeys. Final entry is 76.38kB gzip (budget 85kB).
 - PDF: check/dead-code/build/assets, 461 unit tests, 68 artwork layouts and real
   upload/editor entry pass.
 - Drop: Astro check/build/assets, 68 artwork layouts, four silhouettes, finite
@@ -34,8 +34,8 @@ claim that the entire sequence lasts 20% longer.
 - Resume: check/build/dead-code, 68 artwork layouts and all 373 production tests
   (10 files, zero skips) pass. Existing separate export/device gates stay open.
 - Roll: Astro/routes/assets/provenance verification and Worker dry-run pass.
-- All five standalone bundles and portability checks pass. Contract hash begins
-  `6d62642bad78`. Runtime cleanup removes replay listeners with the animation.
+- All five standalone bundles and portability checks pass. Final Air 1.3.1 contract hash begins
+  `8270df3eb883`. Runtime cleanup removes replay listeners with the animation.
 
 Final replay/focus checks pass in both engines: ten further phone layouts, 20
 fallbacks and five lifecycle journeys each, including stationary pointer presses.
@@ -90,8 +90,17 @@ animation, hover movement or per-frame application state was introduced.
 build/test logs, ten family sheets, focus captures and diagnostics. Scratch:
 `/tmp/air-replay-2026-10-29/`.
 
-Deployment pending: verified pieces will be committed on dev, promoted through
-individual dev → main PRs, live-verified and dev fast-forwarded to each merge.
+The initial Air 1.3.0 replay rollout merged and published all five tested builds.
+Live checks then exposed the cold stylesheet defect described below; the follow-up
+Air 1.3.1 correction is the final production result.
+
+| Site        | PR                                                      | Main merge                                 |
+| ----------- | ------------------------------------------------------- | ------------------------------------------ |
+| cloakyard   | [#32](https://github.com/cloakyard/cloakyard/pull/32)   | `bac75ec8bf43810036ac8086d217b229830166d4` |
+| cloakpdf    | [#216](https://github.com/cloakyard/cloakpdf/pull/216)  | `155b619057c28bbbe97614c10410b8f21bc10dd6` |
+| cloakdrop   | [#52](https://github.com/cloakyard/cloakdrop/pull/52)   | `47a7d2925fe4863984e463e040acb4326bb12198` |
+| cloakroll   | [#6](https://github.com/cloakyard/cloakroll/pull/6)     | `e25ceac32a619376179b5b1e8e3e67481f22295e` |
+| cloakresume | [#50](https://github.com/cloakyard/cloakresume/pull/50) | `d85e0db7080d95a342f5cf30dabbb15d2e4626aa` |
 
 ## Air 1.3.1 — cold stylesheet correction
 
@@ -116,5 +125,35 @@ suites and real PDF entry pass again; all builds/design/dead-code gates pass.
 PDF again passes 461 units; Resume again passes all 373 production tests with
 zero skips. The final Yard entry is 76.38kB gzip, within its 85kB budget.
 The earlier 220-layout visual matrix retains the same styles and composition;
-new phone captures are included. Follow-up deployment is pending; original live
-failures and all previously passing replay/visual evidence remain retained.
+new phone captures are included. Original live failures and all previously passing
+replay/visual evidence remain retained.
+
+## Final production verification
+
+All five Air 1.3.1 dev → main PRs are merged. GitHub checks and Cloudflare production
+builds pass at the exact main revisions below. Strict live WebKit checks pass ten
+phone light/dark initial/replay layouts, 20 static fallback visits, five keyboard/
+lifecycle journeys and five two-second delayed-stylesheet startups/replays, with
+zero browser errors. Initial-movement assertions remain unchanged: the failed Drop
+intro was a real empty-easing exception, not normal completion before inspection.
+
+All 270 public files match the verified builds: 267 raw and three Roll HTML files
+after removing only Cloudflare's known detection-script injection. Raw and
+normalized hashes, exact main build URLs, PR metadata and live results are retained
+in the evidence folder.
+
+| Site        | PR                                                      | Main merge                                 |
+| ----------- | ------------------------------------------------------- | ------------------------------------------ |
+| cloakyard   | [#33](https://github.com/cloakyard/cloakyard/pull/33)   | `709894bb8ec6bc1c7fcc0d7bff4ba96949b17f28` |
+| cloakpdf    | [#217](https://github.com/cloakyard/cloakpdf/pull/217)  | `d66518e002ee7eaa193a26c4daff759b739ddef7` |
+| cloakdrop   | [#53](https://github.com/cloakyard/cloakdrop/pull/53)   | `9baea446227626acf48ca9af10f2a6ce321ebd70` |
+| cloakroll   | [#7](https://github.com/cloakyard/cloakroll/pull/7)     | `51abf897ecd369a3f87b079035a33c66f6528838` |
+| cloakresume | [#51](https://github.com/cloakyard/cloakresume/pull/51) | `3066986e79d14860f1ec4ea8a6bb49b522560620` |
+
+Dev is fast-forwarded to every main merge. Canonical documentation closeout follows
+the same dev → main PR/merge/sync workflow with identical application bytes.
+IMG's HEAD, 15 paths/status and file hashes remain unchanged; separate Resume
+worktrees are untouched. The task's local preview server is stopped.
+Physical iPhone Safari/Low Power Mode and assistive acceptance remain distinct
+from this automated WebKit verification. Existing export/product/security/runtime
+acceptance and documented exceptions remain open.
