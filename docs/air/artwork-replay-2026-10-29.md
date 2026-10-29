@@ -1,4 +1,4 @@
-# Air 1.3.0 — deliberate artwork replay, 29 October 2026
+# Air 1.3.1 — deliberate artwork replay, 29 October 2026
 
 Cloakyard, PDF, Drop, Resume and Roll now accept click/tap on their completed
 landing illustration to repeat the same finite sequence. A press begun while
@@ -92,3 +92,29 @@ build/test logs, ten family sheets, focus captures and diagnostics. Scratch:
 
 Deployment pending: verified pieces will be committed on dev, promoted through
 individual dev → main PRs, live-verified and dev fast-forwarded to each merge.
+
+## Air 1.3.1 — cold stylesheet correction
+
+The first live Drop probes appeared to finish before inspection, but a diagnostic
+caught a real WebKit exception: the 78% keyframe had `easing: ""`. A delayed CSS
+response reproduced it deterministically. The module had sampled the Air tokens
+before its stylesheet arrived; the subsequent error fallback hid replay. The
+same delayed-stylesheet profile exposed the shared startup risk in Yard.
+
+The canonical lifecycle now waits for applicable external stylesheets before
+running, keeps replay hidden during loading and removes load/error listeners on
+completion or departure. Drop reads its motion tokens inside each run after this
+gate. This uses no timer, duplicated easing or new dependency. Air 1.3.1 pins the
+portable correction (`8270df3eb883`); the approved compositions and replay behavior
+are unchanged. The new regression holds CSS for two seconds and requires actual
+initial movement, completion and replay in WebKit and Chrome.
+
+The final local WebKit and Chrome runs each pass five delayed-CSS profiles,
+ten normal phone light/dark initial/replay layouts, 20 fallbacks and five desktop
+keyboard/lifecycle journeys, with zero browser errors. Original product artwork
+suites and real PDF entry pass again; all builds/design/dead-code gates pass.
+PDF again passes 461 units; Resume again passes all 373 production tests with
+zero skips. The final Yard entry is 76.38kB gzip, within its 85kB budget.
+The earlier 220-layout visual matrix retains the same styles and composition;
+new phone captures are included. Follow-up deployment is pending; original live
+failures and all previously passing replay/visual evidence remain retained.

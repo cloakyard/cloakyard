@@ -1,0 +1,3 @@
+drop-artwork 0
+resume-artwork 0
+yard-artwork 0

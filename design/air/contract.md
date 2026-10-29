@@ -1,6 +1,6 @@
 # Cloakyard Air design contract
 
-Version: **1.3.0 — deliberate artwork replay** · Direction: **Air** · Updated: **2026-10-29**
+Version: **1.3.1 — stylesheet-ready artwork** · Direction: **Air** · Updated: **2026-10-29**
 
 The detailed Air system is **locked for implementation**. On 2026-10-13 the user
 authorized one final agent review followed by implementation; that review is
@@ -720,6 +720,12 @@ An accurate product screenshot may remain in the following feature section.
   memory API in WebKit as well as Chrome; do not normalize every test to eight.
   Live preference changes settle immediately. Suspend offscreen and hidden; resume
   the same finite sequence on return. Cancel animations/listeners on departure.
+- Wait for applicable external stylesheets before starting or reading motion tokens.
+  Cold WebKit can run a module while those sheets are pending. Keep the static
+  illustration visible and the replay target hidden until ready; use load/error
+  events with departure cleanup, not a timer or duplicate hardcoded easing values.
+  Read motion tokens inside each run, after readiness. Test a delayed CSS response
+  in WebKit and Chrome as well as a warm local load.
 - Landing artwork has no separate visible Play, Pause or Replay controls. Each
   automatic arrival finishes within five seconds and remains still; returning
   visibility or removing a motion restriction must not restart a completed sequence.

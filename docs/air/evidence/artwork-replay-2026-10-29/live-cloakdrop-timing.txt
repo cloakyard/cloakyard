@@ -1,0 +1,28 @@
+startup diagnostic {
+  state: 'complete',
+  hidden: false,
+  ready: 'complete',
+  scrollY: 0,
+  box: {
+    x: 16,
+    y: 329.578125,
+    width: 358,
+    height: 288,
+    top: 329.578125,
+    right: 374,
+    bottom: 617.578125,
+    left: 16
+  }
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 10000ms exceeded.
+    at state (/private/tmp/air-replay-2026-10-29/live-one.mjs:65:8)
+    at /private/tmp/air-replay-2026-10-29/live-one.mjs:143:23 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.22.2
