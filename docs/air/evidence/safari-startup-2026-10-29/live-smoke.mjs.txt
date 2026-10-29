@@ -1,0 +1,201 @@
+/** Finite artwork startup on real browser engines, with WebKit's four-thread hint. */
+import assert from "node:assert/strict";
+import { mkdir, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+
+const engines = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
+const engine = process.env.AIR_BROWSER || "webkit";
+const out = resolve(process.env.AIR_EVIDENCE_DIR || `/tmp/air-artwork-${engine}`);
+await mkdir(out, { recursive: true });
+const urls = (
+  process.env.AIR_FAMILY_URLS ||
+  "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356"
+).split(",");
+const names = ["cloakyard", "cloakpdf", "cloakdrop", "cloakresume", "cloakroll"];
+const sizes = [[390, 844]];
+const evidence = { engine, layouts: [], fallbacks: [], lifecycle: [], errors: [] };
+const browser = await engines[engine].launch({
+  headless: true,
+  ...(engine === "chromium" && process.env.CHROME_PATH
+    ? { executablePath: process.env.CHROME_PATH }
+    : {}),
+});
+async function visit(index, width, height, theme, mode = "normal") {
+  const context = await browser.newContext({
+    viewport: { width, height },
+    hasTouch: width <= 1024,
+    ...(engine !== "firefox" ? { isMobile: width <= 1024 } : {}),
+    colorScheme: theme,
+    reducedMotion: mode === "reduced" ? "reduce" : "no-preference",
+  });
+  await context.addInitScript((mode) => {
+    Object.defineProperty(navigator, "hardwareConcurrency", { value: 4 });
+    Object.defineProperty(navigator, "deviceMemory", {
+      value: mode === "constrained" ? 4 : undefined,
+    });
+    if (mode === "save-data")
+      Object.defineProperty(navigator, "connection", { value: { saveData: true } });
+    if (mode === "unsupported") Element.prototype.animate = undefined;
+  }, mode);
+  const page = await context.newPage();
+  page.on("pageerror", (error) =>
+    evidence.errors.push({ app: names[index], error: String(error) }),
+  );
+  await page.goto(urls[index], { waitUntil: "commit" });
+  const art = page.locator("[data-art-state]").first();
+  await art.waitFor();
+  return { context, page, art };
+}
+const state = (page, value) =>
+  page.waitForFunction(
+    (value) => document.querySelector("[data-art-state]")?.dataset.artState === value,
+    value,
+    { timeout: 10000 },
+  );
+try {
+  for (let index = 0; index < urls.length; index++) {
+    for (const theme of ["light", "dark"])
+      for (const [width, height] of sizes) {
+        const { context, page, art } = await visit(index, width, height, theme);
+        try {
+          const initial = await art.getAttribute("data-art-state");
+          await art.scrollIntoViewIfNeeded();
+          await state(page, "playing");
+          // Observe actual time and composited pixels changing, not just a state label.
+          const movement = await art.evaluate(async (root) => {
+            const effects = root.getAnimations({ subtree: true });
+            await Promise.all(effects.map((effect) => effect.ready));
+            const sample = () =>
+              effects.map((effect) => ({
+                time: effect.currentTime,
+                transform: getComputedStyle(effect.effect.target).transform,
+                opacity: getComputedStyle(effect.effect.target).opacity,
+              }));
+            const before = sample();
+            const start = performance.now();
+            let after;
+            // Some approved illustrations first hold their readable opening pose.
+            do {
+              await new Promise((resolve) => setTimeout(resolve, 100));
+              after = sample();
+            } while (
+              performance.now() - start < 2000 &&
+              after.every(
+                (row, i) =>
+                  row.transform === before[i].transform && row.opacity === before[i].opacity,
+              )
+            );
+            return {
+              count: effects.length,
+              before,
+              after,
+              observedAfter: performance.now() - start,
+            };
+          });
+          assert.ok(movement.count > 0, `${names[index]} has no effects`);
+          assert.ok(
+            movement.after.some((row, i) => row.time > movement.before[i].time),
+            "timeline must advance",
+          );
+          assert.ok(
+            movement.after.some(
+              (row, i) =>
+                row.transform !== movement.before[i].transform ||
+                row.opacity !== movement.before[i].opacity,
+            ),
+            "composited artwork must move",
+          );
+          const geometry = await art.evaluate((root) => {
+            const box = root.getBoundingClientRect();
+            return {
+              overflow: document.documentElement.scrollWidth > innerWidth + 1,
+              contained: box.left >= -1 && box.right <= innerWidth + 1,
+              cpu: navigator.hardwareConcurrency,
+              memory: navigator.deviceMemory ?? null,
+            };
+          });
+          assert.equal(geometry.overflow, false);
+          assert.equal(geometry.contained, true);
+          const capture = [390, 844, 768, 1280, 1440].includes(width);
+          const prefix = `${names[index]}-${width}-${theme}`;
+          if (capture)
+            await page.screenshot({ path: resolve(out, `${prefix}-moving.jpg`), quality: 75 });
+          const complete = width === 390 || width === 1440;
+          if (complete) {
+            await state(page, "complete");
+            assert.equal(
+              await art.evaluate((root) => root.getAnimations({ subtree: true }).length),
+              0,
+            );
+            await page.evaluate(() => {
+              dispatchEvent(new PageTransitionEvent("pagehide"));
+              dispatchEvent(new PageTransitionEvent("pageshow"));
+            });
+            assert.equal(await art.getAttribute("data-art-state"), "complete");
+            await page.screenshot({ path: resolve(out, `${prefix}-settled.jpg`), quality: 75 });
+          }
+          evidence.layouts.push({
+            app: names[index],
+            width,
+            height,
+            theme,
+            initial,
+            ...geometry,
+            movement,
+            complete,
+          });
+        } finally {
+          await context.close();
+        }
+      }
+    for (const mode of ["reduced", "constrained", "save-data", "unsupported"]) {
+      const { context, page, art } = await visit(index, 390, 844, "light", mode);
+      try {
+        await state(page, mode);
+        assert.equal(await art.evaluate((root) => root.getAnimations({ subtree: true }).length), 0);
+        evidence.fallbacks.push({ app: names[index], mode });
+      } finally {
+        await context.close();
+      }
+    }
+    const { context, page, art } = await visit(index, 1440, 900, "light");
+    try {
+      await state(page, "playing");
+      await page.locator("footer").scrollIntoViewIfNeeded();
+      await state(page, "offscreen");
+      const frozen = await art.evaluate(async (root) => {
+        const effects = root.getAnimations({ subtree: true });
+        await Promise.all(effects.map((effect) => effect.ready));
+        const before = effects.map((effect) => effect.currentTime);
+        await new Promise((resolve) => setTimeout(resolve, 150));
+        return effects.every(
+          (effect, i) => effect.playState === "paused" && effect.currentTime === before[i],
+        );
+      });
+      assert.ok(frozen);
+      await art.scrollIntoViewIfNeeded();
+      await state(page, "playing");
+      await page.emulateMedia({ reducedMotion: "reduce" });
+      await state(page, "reduced");
+      assert.equal(await art.evaluate((root) => root.getAnimations({ subtree: true }).length), 0);
+      await page.emulateMedia({ reducedMotion: "no-preference" });
+      await state(page, "complete");
+      evidence.lifecycle.push({
+        app: names[index],
+        offscreenFrozen: true,
+        livePreferenceSettles: true,
+        noReplay: true,
+      });
+    } finally {
+      await context.close();
+    }
+    console.log(`${engine}: ${names[index]} passed`);
+  }
+  assert.deepEqual(evidence.errors, []);
+} finally {
+  await browser.close();
+  await writeFile(resolve(out, "results.json"), JSON.stringify(evidence, null, 2));
+}
+console.log(
+  `${engine}: ${evidence.layouts.length} moving layouts, ${evidence.fallbacks.length} fallbacks, ${evidence.lifecycle.length} lifecycle journeys passed.`,
+);
