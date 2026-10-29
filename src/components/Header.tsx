@@ -8,7 +8,7 @@ const navigation = [
   { href: "#principles", label: "Our approach" },
 ];
 
-export function Header() {
+export function Header({ reading = false }: { reading?: boolean }) {
   const disclosure = useRef<HTMLDetailsElement>(null);
   return (
     <>
@@ -19,7 +19,7 @@ export function Header() {
         <Brand />
         <nav className="air-page-nav desktop-navigation" aria-label="Primary navigation">
           {navigation.map((item) => (
-            <a key={item.href} href={item.href}>
+            <a key={item.href} href={reading ? `/${item.href}` : item.href}>
               {item.label}
             </a>
           ))}
@@ -59,7 +59,7 @@ export function Header() {
             }}
           >
             {navigation.map((item) => (
-              <a key={item.href} href={item.href}>
+              <a key={item.href} href={reading ? `/${item.href}` : item.href}>
                 {item.label}
               </a>
             ))}

@@ -1,6 +1,6 @@
 /** Compare built public surfaces against Air, not against one another's drift.
  * Uses disposable Chrome/Firefox profiles. No external destinations are followed.
- * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume list; PUPPETEER_MODULE may
+ * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume,Roll list; PUPPETEER_MODULE may
  * point to existing external test tooling. AIR_REPORT_ONLY records initial drift. */
 import assert from "node:assert/strict";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -12,7 +12,7 @@ const out = resolve(process.env.AIR_EVIDENCE_DIR || `/tmp/air-family-${engine}`)
 await mkdir(out, { recursive: true });
 const urls = (
   process.env.AIR_FAMILY_URLS ||
-  "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182,http://127.0.0.1:8184"
+  "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182,http://127.0.0.1:8184,http://127.0.0.1:8186"
 ).split(",");
 const products = [
   {
@@ -22,7 +22,7 @@ const products = [
     sections: ".principles h2",
     menu: ".mobile-navigation",
     source: ".desktop-source",
-    privacy: null,
+    privacy: "/?view=privacy",
   },
   {
     name: "cloakpdf",
@@ -31,7 +31,7 @@ const products = [
     sections: ".pdf-home h2",
     menu: ".pdf-mobile-nav",
     source: ".pdf-desktop-nav a:last-child, .pdf-header > .air-page-nav a:last-child",
-    privacy: "button",
+    privacy: "/?view=privacy",
   },
   {
     name: "cloakdrop",
@@ -49,9 +49,18 @@ const products = [
     sections: ".resume-site main > section h2",
     menu: ".resume-menu",
     source: ".resume-nav a:last-child",
-    privacy: "dialog",
+    privacy: "/?view=privacy",
   },
 ];
+products.push({
+  name: "cloakroll",
+  frame: ".site-header",
+  brand: ".brand",
+  sections: ".section h2",
+  menu: ".mobile-nav",
+  source: ".desktop-source",
+  privacy: "/privacy/",
+});
 for (const p of products) {
   p.repo = `https://github.com/cloakyard/${p.name}`;
   if (["cloakpdf", "cloakresume"].includes(p.name))
@@ -179,8 +188,8 @@ function inspectShell(p) {
     ["MIT license", `${p.repo}/blob/main/LICENSE`],
     ...(p.name === "cloakyard"
       ? [
-          ["Privacy", "#principles"],
-          ["All apps", "#tools"],
+          ["Privacy", "/?view=privacy"],
+          ["All apps", "/#tools"],
         ]
       : [["Cloakyard", "https://cloakyard.com"]]),
   ])
@@ -215,13 +224,13 @@ function inspectShell(p) {
       "build-derived footer version",
     );
   const privacy = links.find((n) => label(n) === "Privacy");
-  if (p.name === "cloakdrop")
+  if (["cloakdrop", "cloakroll"].includes(p.name))
     check(privacy?.getAttribute("href") === "/privacy/", "policy destination");
   else if (p.name !== "cloakyard" && privacy?.tagName === "A")
     check(
       p.name === "cloakpdf"
         ? privacy.search === "?view=privacy"
-        : privacy.hash === "#privacy-policy",
+        : privacy.search === "?view=privacy" || privacy.hash === "#privacy-policy",
       "recovery policy destination",
     );
   check(footer.children.length === 2, "one identity group and one navigation group");
@@ -544,26 +553,9 @@ try {
           });
       }
       if (product.privacy) {
-        if (["button", "dialog"].includes(product.privacy)) {
-          // A real first-install toast may arrive while the matrix is running.
-          // Dismiss that temporary notice before pointer-testing the footer.
-          const notice = await page.$('button[aria-label="Dismiss offline status"]');
-          if (notice) {
-            await notice.focus();
-            await page.keyboard.press("Enter");
-          }
-          const buttons = await page.$$("button");
-          for (const button of buttons)
-            if (await button.evaluate((n) => n.textContent.trim() === "Privacy")) {
-              await button.click();
-              break;
-            }
-          await page.waitForSelector(
-            product.privacy === "dialog" ? ".resume-policy" : ".pdf-policy",
-          );
-        } else await page.goto(urls[index] + product.privacy, { waitUntil: "networkidle0" });
+        await page.goto(urls[index] + product.privacy, { waitUntil: "networkidle0" });
         const privacy = await page.evaluate(() =>
-          [...document.querySelectorAll(".pdf-policy-body,.policy-document p,.resume-policy-body")]
+          [...document.querySelectorAll(".air-policy .air-prose p")]
             .filter((n) => n.getClientRects().length)
             .map((n) => ({
               size: getComputedStyle(n).fontSize,
@@ -657,7 +649,7 @@ try {
           page.waitForNavigation({ waitUntil: "networkidle0" }),
           page.click('footer a[href$="?view=privacy"]'),
         ]);
-        await page.waitForSelector(".pdf-policy", { visible: true });
+        await page.waitForSelector(".air-policy", { visible: true });
         evidence.interactions.push({
           product: product.name,
           theme,
@@ -665,10 +657,11 @@ try {
         });
       }
       if (index > 0) {
-        const route = index === 2 ? "/missing-air-page" : "/404.html";
+        const route = [2, 4].includes(index) ? "/missing-air-page" : "/404.html";
         await page.goto(urls[index] + route, { waitUntil: "networkidle0" });
-        const routeShell =
-          index === 2 ? product : { ...product, frame: "header", brand: "header .air-page-brand" };
+        const routeShell = [2, 4].includes(index)
+          ? product
+          : { ...product, frame: "header", brand: "header .air-page-brand" };
         for (const root of [16, 32])
           for (const [width, height] of [
             [320, 568],
@@ -700,11 +693,13 @@ try {
               index === 1 ? 'footer a[href$="?view=privacy"]' : 'footer a[href$="#privacy-policy"]',
             ),
           ]);
-          await page.waitForSelector(index === 1 ? ".pdf-policy" : ".resume-policy", {
+          await page.waitForSelector(".air-policy", {
             visible: true,
           });
-          if (index === 1) await page.click('button[aria-label="Back to home"]');
-          else await page.keyboard.press("Escape");
+          await Promise.all([
+            page.waitForNavigation({ waitUntil: "networkidle0" }),
+            page.click(".air-policy-back"),
+          ]);
           assert.equal(
             new URL(page.url()).hash,
             "",
@@ -712,7 +707,7 @@ try {
           );
           await page.reload({ waitUntil: "networkidle0" });
           assert.equal(
-            await page.$(index === 1 ? ".pdf-policy" : ".resume-policy"),
+            await page.$(".air-policy"),
             null,
             "Dismissed recovery policy does not reopen on refresh",
           );

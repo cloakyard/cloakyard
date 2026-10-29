@@ -34,8 +34,8 @@
 
 - The hero assembles teal square pixels into FILE, PKG, ISO and ZIP silhouettes
   using the portable artwork lifecycle and precomputed Lucide-derived pixel masks.
-  Include a visible neutral Air pause/resume control; static/no-JS visits show FILE.
-  Pause offscreen/hidden and preserve manual pause across Back/Forward restoration.
+  Run the finite sequence once with no playback controls; static/no-JS visits show FILE.
+  Suspend offscreen/hidden and retain completion across Back/Forward restoration.
   Keep real download actions immediately available and the actual native screenshot
   in the product section below the hero. No shader, React runtime or native UI change.
 

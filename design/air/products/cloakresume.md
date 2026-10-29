@@ -57,11 +57,10 @@
   keyboard wrap and nested notices. Recovery describes the last saved draft without
   guaranteeing that unsaved changes survived a render failure.
 - The approved Storyline illustration gathers three milestones into a single
-  résumé spine. It plays once in 3400ms, supports Pause/Play/Replay and uses the
+  résumé spine. It plays once in 3400ms, has no playback controls and uses the
   shared artwork lifecycle. Reduced/forced colours, Save-Data, constrained or
   unsupported devices receive the static paper; no draft data is read. Entry
-  actions remain above the artwork. Geometry changes settle it; Replay uses the
-  new width. Paper typesetting (11–26px) and decorative labels (14px) are fixed
+  actions remain above the artwork. Geometry changes settle it at the new width. Paper typesetting (11–26px) and decorative labels (14px) are fixed
   illustration details, never reusable app typography. No production shader loads.
 - `node scripts/test-air-entry.mjs` checks the production entry and recovery matrix.
   Run full tests with `vp test run --no-file-parallelism`; use

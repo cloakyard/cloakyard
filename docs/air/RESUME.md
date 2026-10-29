@@ -1,13 +1,41 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-28
+## Start here in a new conversation — saved 2026-10-29
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.4 repeat audit deployed (2026-10-28)
+### Current checkpoint — Air 1.2.5 privacy consistency (2026-10-29)
+
+Public policies now share the same reading layout, explicit real home links,
+contents, neutral links and current-footer state across Yard/PDF/Drop/Resume/Roll.
+Yard has a dedicated directory policy. Resume keeps its existing in-editor modal
+with shared policy content; no saved draft or output behavior changed. Roll joins
+canonical synchronization and removes its competing copied Air package. Existing
+policy wording/dates remain intact (88 live paragraphs/items compared).
+
+340 policy layouts and 1,560 Chrome/Firefox family layouts pass, plus all five link
+matrices, PDF units/routing/search, Resume production behavior/output and corrected
+source inventory, 335 entry layouts, Drop 432 website layouts, Roll site/Worker
+checks, and all portable bundles. See [the detailed audit](privacy-2026-10-29.md).
+The final screenshot review covers phone/tablet/laptop/desktop light/dark, body and
+footer. Early failures and exact verification limits are retained in evidence.
+
+This pass is local; no push, PR, merge or deployment. Do not repeat the completed
+28 October rollout below. Drop dev already includes separate native changes at
+`fe7c5ab`; review their release gates before promoting the whole branch. IMG remains
+entirely untouched at its earlier pin, including all 15 parked files. Preserve the
+separate Resume worktrees. Existing full-product/device, PDF Compact/node-forge,
+Drop runtime and Resume export follow-ups remain open.
+
+Local passing commits: PDF `aeaa482`, Drop `68fd3da`, Resume
+`6773c2d`, Roll `a018775`; Yard’s contract, source and evidence are
+committed with this checkpoint. Task preview ports 8350/8351/8352/8354/8356/8358
+are closed. Scratch evidence remains under `/tmp/air-privacy-2026-10-29/`.
+
+### Prior checkpoint — Air 1.2.4 repeat audit deployed (2026-10-28)
 
 Corrected the production CSS time bug (`.9s` was interpreted as 0.9ms) and unified
 public compact navigation at the inclusive 40rem container boundary. Air owns menu
