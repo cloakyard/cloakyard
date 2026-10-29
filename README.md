@@ -3,7 +3,7 @@
 # Cloakyard
 
   <p><strong>Your work. A little lighter. Private by nature. Open by choice.</strong></p>
-  <p>The home of CloakPDF, CloakResume, CloakIMG, CloakDrop, and the experiments that do not fit in a productivity drawer.</p>
+  <p>The home of CloakPDF, CloakResume, CloakIMG, CloakDrop, CloakRoll, and the experiments that do not fit in a productivity drawer.</p>
 
   <p><a href="https://cloakyard.com/">cloakyard.com</a></p>
 
@@ -30,6 +30,7 @@
 - **[CloakResume](https://resume.cloakyard.com)** — build, tailor, review, and export an ATS-friendly résumé without uploading your career history.
 - **[CloakIMG](https://img.cloakyard.com)** — a private photo editor with retouching, metadata removal, and optional on-device AI.
 - **[CloakDrop](https://drop.cloakyard.com)** — a native macOS download manager with adaptive range transfers and zero telemetry.
+- **[CloakRoll](https://roll.cloakyard.com)** — back up original iPhone photos and videos over USB to your Mac; Apple silicon and macOS 26+.
 
 ### 🧪 Fun experiments
 
@@ -149,11 +150,10 @@ Licensed under the [MIT License](LICENSE).
 
 <p align="center">Built with care by <a href="https://github.com/sumitsahoo">Sumit Sahoo</a></p>
 
-### Air light
+### Family gathering
 
-The homepage hero includes the shared, locally bundled Shaders light. It arrives
-once and responds to the mouse, then rests. Reduced motion, constrained devices
-and unavailable graphics use the still artwork. Code loads only when the effect
-is visible; hidden/offscreen effects release their device. The design reference
-and homepage share `design/air/light-runtime.mjs`. Runtime checks: `node --test
-scripts/test-air-light-runtime.mjs`; build budgets and licenses are enforced by Vite.
+Five small materials open out from the family mark: pages, pixels, résumé lines,
+an image and a photo strip. The finite illustration uses local SVG and the shared
+Air artwork lifecycle. It stays still for reduced motion and constrained devices,
+pauses offscreen, and stops after arriving. No shader or new runtime dependency is
+loaded by the homepage. The complete directory and all actions remain available.

@@ -181,10 +181,20 @@ function inspectShell(p) {
     "Source",
     "MIT license",
     p.name === "cloakyard" ? "All apps" : "Cloakyard",
+    "Buy me a coffee",
   ];
   check(JSON.stringify(links.map(label)) === JSON.stringify(expected), "footer labels and order");
+  const support = links.find((n) => label(n) === "Buy me a coffee");
+  check(
+    support?.target === "_blank" &&
+      support.relList.contains("noopener") &&
+      support.relList.contains("noreferrer") &&
+      support.querySelector('svg[aria-hidden="true"]'),
+    "support link opens safely with a decorative angled arrow",
+  );
   for (const [text, href] of [
     ["Source", p.repo],
+    ["Buy me a coffee", "https://ko-fi.com/sumitsahoo21"],
     ["MIT license", `${p.repo}/blob/main/LICENSE`],
     ...(p.name === "cloakyard"
       ? [

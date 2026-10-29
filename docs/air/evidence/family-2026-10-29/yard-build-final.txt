@@ -1,0 +1,10 @@
+note: You are running `vp build` as a Vite+ built-in command. If you meant to run the build npm script, use `vpr build` instead.
+transforming...
+✓ 1946 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   3.19 kB │ gzip:  1.00 kB
+dist/assets/index-CFqhvSCX.css   52.33 kB │ gzip: 10.02 kB
+dist/assets/index-B0xHFMWz.js   243.45 kB │ gzip: 76.04 kB
+
+✓ built in 136ms

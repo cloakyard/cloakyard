@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 export function Footer() {
   return (
     <footer className="air-page-footer site-footer site-frame">
@@ -30,6 +31,9 @@ export function Footer() {
           MIT license
         </a>
         <a href="/#tools">All apps</a>
+        <a href="https://ko-fi.com/sumitsahoo21" target="_blank" rel="noopener noreferrer">
+          Buy me a coffee <ArrowUpRight aria-hidden="true" />
+        </a>
       </nav>
     </footer>
   );

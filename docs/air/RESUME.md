@@ -7,7 +7,32 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.5 privacy consistency (2026-10-29)
+### Current checkpoint — Air 1.2.6 family gathering/support (2026-10-29)
+
+The five active websites pass local verification. CloakRoll joins Yard's registry,
+no-JS fallback and OG card. Yard's generic shader is replaced by five finite SVG
+materials; its entry is 76.04kB gzip. Air now owns the exact fifth footer destination,
+Buy me a coffee, safe new-tab behavior and neutral ink in every state. Earlier
+Air 1.2.5 policy changes are included in this authorized rollout.
+
+See [the current audit](family-2026-10-29.md): 1,560 family layouts, 340 policies,
+1,444 neutral link states/506 keyboard checks, 44 still/22 real-motion profiles,
+PDF 461 units/routing/search/66 recovery layouts, Resume 373 production tests and
+335 entry layouts/14 journeys, Drop 432 layouts/34 journeys and 650 core tests,
+Roll site/Worker plus 80 core/227 hosted/Debug/lint gates. Early test timing and
+harness-invocation failures are retained; final checks pass without relaxed assertions.
+Final desktop/laptop/tablet/phone light/dark comparison sheets are recorded.
+
+Next: commit the passing pieces, push dev and create individual dev → main PRs for
+Yard/PDF/Drop/Resume/Roll, wait for checks, merge with merge commits, verify production
+and fast-forward dev. Cloudflare main-only production and safe preview commands were
+verified read-only. No new native release/tag is requested. Drop's existing three
+native commits and their release evidence were reviewed and are part of its dev PR.
+IMG remains parked with all 15 paths/status/HEAD unchanged; preserve separate Resume
+worktrees. Existing Compact/node-forge, official-runtime, export and physical gates
+remain open. Scratch: `/tmp/air-family-2026-10-29/`; preview ports 8350/1/2/4/6.
+
+### Prior checkpoint — Air 1.2.5 privacy consistency (2026-10-29)
 
 Public policies now share the same reading layout, explicit real home links,
 contents, neutral links and current-footer state across Yard/PDF/Drop/Resume/Roll.

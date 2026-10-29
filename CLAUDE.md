@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.2.5 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.2.6 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -20,6 +20,7 @@ Shared design commands:
 - `node scripts/check-air-portability.mjs` checks the independent bundle.
 - `node scripts/air-inventory.mjs` updates the surface list while preserving evidence.
 - `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume/Roll public pages and secondary reading/recovery shells.
+- `node scripts/test-air-gathering.mjs` checks the homepage's finite SVG motion, static preferences, responsive layout and directory links against the production build.
   Set `AIR_FAMILY_URLS` (five comma-separated URLs, in that order), `PUPPETEER_MODULE` and
   `AIR_EVIDENCE_DIR`; use `AIR_BROWSER=firefox AIR_THEME=light` (then `dark`)
   for Firefox, otherwise Chrome covers both themes. Profiles are disposable.
@@ -59,13 +60,11 @@ there is no stored homepage preference to migrate. Content-sized container queri
 make enlarged text reflow; 44px targets apply on coarse input. Keep semantic links,
 labels, decorative icon hiding, keyboard focus and the skip link intact.
 
-`AirHorizon` mounts the canonical `design/air/light-runtime.mjs`. Its pinned Shaders
-renderer is a separate lazy chunk, loaded only for visible, supported, unconstrained
-artwork. The 900ms arrival and spring pointer response stop at rest; offscreen/hidden
-states release the device. Reduced motion uses the still SVG, forced colours hide
-it. `vite.config.ts` enforces 350 kB gzip for the shader and 85 kB for the page entry,
-and ships dependency licenses. No shader is mounted inside an editor. Physical
-battery/thermal validation remains tracked separately after the user's live activation request.
+`ToolGathering` uses the canonical finite `docs/air/artwork.mjs` lifecycle and local
+SVG materials. Its short opening stops at rest, suspends offscreen/hidden, and
+settles immediately for reduced motion, forced colours or constrained devices.
+No shader loads on the homepage. Vite enforces an 85 kB gzip entry ceiling. The
+canonical light renderer remains available to standalone design references.
 
 ## Metadata and scope
 

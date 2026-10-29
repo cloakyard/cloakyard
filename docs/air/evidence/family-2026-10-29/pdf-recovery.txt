@@ -1,0 +1,2 @@
+Evidence: /var/folders/k0/mzs4nsyn7k78t1j1xlsxq1q40000gn/T/cloakpdf-air-recovery-page-nrAxKa
+PASS: 66 recovery layouts; HTTP 404 before/after install, no-JS keyboard/home, real offline entries and shared CSS.

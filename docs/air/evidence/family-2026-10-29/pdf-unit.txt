@@ -1,0 +1,18 @@
+$ pnpm test:unit
+$ vp test run tests/unit
+
+ RUN  v5.0.5 /Users/sumitsahoo/Developer/cloakpdf
+
+(node:77114) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:77116) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+ Test Files  48 passed (48)
+      Tests  461 passed (461)
+   Start at  13:11:52
+   Duration  1.52s (import 47%, tests 44%, transform 7%, worker 2%)
+
+    Isolate  48 workers spawned · ~98ms startup each (spawn + environment, per file)
+             at least ~330ms faster with isolate: false — reuses workers across files instead of one per file
+

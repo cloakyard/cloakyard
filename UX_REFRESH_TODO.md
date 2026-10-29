@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.2.5 privacy consistency verified locally for Yard/PDF/Drop website/Resume/Roll website; Air 1.2.4 rollout remains deployed; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.2.6 family gathering/support and 1.2.5 privacy verified for five active sites; individual dev → main rollout underway; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,17 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Family gathering, CloakRoll and support — 2026-10-29
+
+- [x] Add CloakRoll's mark, destinations, requirements and Beta status to the directory and social preview.
+- [x] Replace Yard's generic horizon with a finite family-material illustration; remove obsolete production shader code.
+- [x] Define and apply the fifth neutral Buy me a coffee footer link across Yard/PDF/Drop/Resume/Roll.
+- [x] Inspect rendered desktop/laptop/tablet/phone light/dark, check motion/static preferences and preserve IMG exactly.
+- [x] Pass shared shell/policy/link matrices, applicable product tests, builds, types and dead-code/provenance checks.
+- [x] Record [audit and evidence](docs/air/family-2026-10-29.md).
+- [ ] Deploy through individual dev → main PRs, verify production and synchronize dev.
+- [ ] Keep full-product/device and existing export/security/runtime acceptance separate.
 
 ## Privacy-page consistency including CloakRoll — 2026-10-29
 

@@ -14,7 +14,6 @@ light/dark, reduced motion and keyboard/touch modes as specified in DESIGN.md.
 | Source                                 | Kind        | Source audit | Air implementation | Validation |
 | -------------------------------------- | ----------- | ------------ | ------------------ | ---------- |
 | `src/App.tsx`                          | app-surface | Done         | Done               | Pending    |
-| `src/components/AirHorizon.tsx`        | app-surface | Done         | Done               | Pending    |
 | `src/components/Brand.tsx`             | app-surface | Done         | Done               | Pending    |
 | `src/components/ExperimentSection.tsx` | app-surface | Done         | Done               | Pending    |
 | `src/components/Footer.tsx`            | app-surface | Done         | Done               | Pending    |
@@ -23,6 +22,7 @@ light/dark, reduced motion and keyboard/touch modes as specified in DESIGN.md.
 | `src/components/Principles.tsx`        | app-surface | Done         | Done               | Pending    |
 | `src/components/PrivacyPolicy.tsx`     | app-surface | Done         | Done               | Pending    |
 | `src/components/ToolEntry.tsx`         | app-surface | Done         | Done               | Pending    |
+| `src/components/ToolGathering.tsx`     | app-surface | Done         | Done               | Pending    |
 | `src/components/ToolSection.tsx`       | app-surface | Done         | Done               | Pending    |
 | `src/index.css`                        | app-surface | Done         | Done               | Pending    |
 | `src/main.tsx`                         | app-surface | Done         | Done               | Pending    |

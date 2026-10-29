@@ -1,0 +1,1 @@
+All 15 parked IMG files, status and HEAD match the start-of-turn SHA-256 snapshot.
