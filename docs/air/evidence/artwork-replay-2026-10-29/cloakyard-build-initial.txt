@@ -1,0 +1,4 @@
+error: Formatting issues found
+docs/air/surfaces.json (0ms)
+
+Found formatting issues in 1 file (460ms, 12 threads). Run `vp check --fix` to fix them.

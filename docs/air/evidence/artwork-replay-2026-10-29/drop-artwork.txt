@@ -1,0 +1,2 @@
+Evidence: /tmp/air-replay-2026-10-29/product/cloakdrop-air-artwork-iCyjK9
+PASS: 68 layouts, 4 forms, finite lifecycle, no controls and static fallbacks.

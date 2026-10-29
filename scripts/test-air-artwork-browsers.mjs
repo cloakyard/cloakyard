@@ -12,19 +12,22 @@ const urls = (
   "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356"
 ).split(",");
 const names = ["cloakyard", "cloakpdf", "cloakdrop", "cloakresume", "cloakroll"];
-const sizes = [
-  [320, 568],
-  [375, 812],
-  [390, 844],
-  [430, 932],
-  [844, 390],
-  [768, 1024],
-  [1024, 768],
-  [1280, 720],
-  [1366, 768],
-  [1440, 900],
-  [1920, 1080],
-];
+const sizes =
+  process.env.AIR_SMOKE === "1"
+    ? [[390, 844]]
+    : [
+        [320, 568],
+        [375, 812],
+        [390, 844],
+        [430, 932],
+        [844, 390],
+        [768, 1024],
+        [1024, 768],
+        [1280, 720],
+        [1366, 768],
+        [1440, 900],
+        [1920, 1080],
+      ];
 const evidence = { engine, layouts: [], fallbacks: [], lifecycle: [], errors: [] };
 const browser = await engines[engine].launch({
   headless: true,
@@ -53,7 +56,7 @@ async function visit(index, width, height, theme, mode = "normal") {
   page.on("pageerror", (error) =>
     evidence.errors.push({ app: names[index], error: String(error) }),
   );
-  await page.goto(urls[index], { waitUntil: "domcontentloaded" });
+  await page.goto(urls[index], { waitUntil: "commit" });
   const art = page.locator("[data-art-state]").first();
   await art.waitFor();
   return { context, page, art };
@@ -64,6 +67,67 @@ const state = (page, value) =>
     value,
     { timeout: 10000 },
   );
+
+const observeMovement = async (art) =>
+  await art.evaluate(async (root) => {
+    const effects = root.getAnimations({ subtree: true });
+    await Promise.all(effects.map((effect) => effect.ready));
+    const sample = () =>
+      effects.map((effect) => ({
+        time: effect.currentTime,
+        transform: getComputedStyle(effect.effect.target).transform,
+        opacity: getComputedStyle(effect.effect.target).opacity,
+      }));
+    const before = sample();
+    const start = performance.now();
+    let after;
+    // Some approved illustrations first hold their readable opening pose.
+    do {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      after = sample();
+    } while (
+      performance.now() - start < 2000 &&
+      after.every(
+        (row, i) => row.transform === before[i].transform && row.opacity === before[i].opacity,
+      )
+    );
+    return {
+      count: effects.length,
+      before,
+      after,
+      observedAfter: performance.now() - start,
+    };
+  });
+async function finishFast(art) {
+  // Only used outside the real phone/desktop timing cases; advance every phase.
+  await art.evaluate(async (root) => {
+    const until = performance.now() + 2500;
+    while (root.dataset.artState !== "complete" && performance.now() < until) {
+      root.getAnimations({ subtree: true }).forEach((effect) => effect.finish());
+      await new Promise((resolve) => setTimeout(resolve, 20));
+    }
+  });
+  assert.equal(await art.getAttribute("data-art-state"), "complete");
+}
+async function activate(page, button, touch) {
+  // PDF's first-cache notice can reflow the narrow page after the initial visit.
+  // Target the current visible artwork, as a person would, before each press.
+  await button.scrollIntoViewIfNeeded();
+  const box = await button.boundingBox();
+  assert.ok(box && box.width >= 44 && box.height >= 44);
+  const x = box.x + box.width / 2,
+    y = box.y + box.height / 2;
+  assert.ok(
+    await button.evaluate((target, { x, y }) => document.elementFromPoint(x, y) === target, {
+      x,
+      y,
+    }),
+    "Press must hit the visible artwork",
+  );
+  if (touch) await page.touchscreen.tap(x, y);
+  else await page.mouse.click(x, y);
+}
+
 try {
   for (let index = 0; index < urls.length; index++) {
     for (const theme of ["light", "dark"])
@@ -71,39 +135,27 @@ try {
         const { context, page, art } = await visit(index, width, height, theme);
         try {
           const initial = await art.getAttribute("data-art-state");
+          const button = art.getByRole("button", {
+            name: `Replay ${["Cloakyard", "CloakPDF", "CloakDrop", "CloakResume", "CloakRoll"][index]} animation`,
+          });
           await art.scrollIntoViewIfNeeded();
           await state(page, "playing");
+          assert.equal(await button.getAttribute("aria-disabled"), "true");
+          const firstEffects = await art.evaluateHandle((root) =>
+            root.getAnimations({ subtree: true }),
+          );
+          await activate(page, button, width <= 1024);
+          assert.ok(
+            await art.evaluate(
+              (root, before) =>
+                before.every((effect) => root.getAnimations({ subtree: true }).includes(effect)),
+              firstEffects,
+            ),
+            "Initial run must ignore activation",
+          );
+          await firstEffects.dispose();
           // Observe actual time and composited pixels changing, not just a state label.
-          const movement = await art.evaluate(async (root) => {
-            const effects = root.getAnimations({ subtree: true });
-            await Promise.all(effects.map((effect) => effect.ready));
-            const sample = () =>
-              effects.map((effect) => ({
-                time: effect.currentTime,
-                transform: getComputedStyle(effect.effect.target).transform,
-                opacity: getComputedStyle(effect.effect.target).opacity,
-              }));
-            const before = sample();
-            const start = performance.now();
-            let after;
-            // Some approved illustrations first hold their readable opening pose.
-            do {
-              await new Promise((resolve) => setTimeout(resolve, 100));
-              after = sample();
-            } while (
-              performance.now() - start < 2000 &&
-              after.every(
-                (row, i) =>
-                  row.transform === before[i].transform && row.opacity === before[i].opacity,
-              )
-            );
-            return {
-              count: effects.length,
-              before,
-              after,
-              observedAfter: performance.now() - start,
-            };
-          });
+          const movement = await observeMovement(art);
           assert.ok(movement.count > 0, `${names[index]} has no effects`);
           assert.ok(
             movement.after.some((row, i) => row.time > movement.before[i].time),
@@ -146,6 +198,64 @@ try {
             assert.equal(await art.getAttribute("data-art-state"), "complete");
             await page.screenshot({ path: resolve(out, `${prefix}-settled.jpg`), quality: 75 });
           }
+          if (!complete) await finishFast(art);
+          assert.equal(await button.getAttribute("aria-disabled"), "false");
+          assert.equal(await button.getAttribute("tabindex"), "0");
+          await activate(page, button, width <= 1024);
+          await state(page, "playing");
+          const replayEffects = await art.evaluateHandle((root) =>
+            root.getAnimations({ subtree: true }),
+          );
+          await activate(page, button, width <= 1024);
+          await activate(page, button, width <= 1024);
+          assert.ok(
+            await art.evaluate(
+              (root, before) =>
+                before.every((effect) => root.getAnimations({ subtree: true }).includes(effect)),
+              replayEffects,
+            ),
+            JSON.stringify({
+              message: "Repeated presses must not restart or queue",
+              app: names[index],
+              width,
+              theme,
+              state: await art.getAttribute("data-art-state"),
+              effects: await art.evaluate((root) =>
+                root
+                  .getAnimations({ subtree: true })
+                  .map((a) => ({ time: a.currentTime, state: a.playState })),
+              ),
+              old: await replayEffects.evaluate((effects) =>
+                effects.map((a) => ({ time: a.currentTime, state: a.playState })),
+              ),
+              viewport: await page.evaluate(() => ({
+                width: innerWidth,
+                scale: visualViewport.scale,
+              })),
+            }),
+          );
+          await replayEffects.dispose();
+          const replayMovement = await observeMovement(art);
+          assert.ok(replayMovement.count > 0);
+          assert.ok(
+            replayMovement.after.some((row, i) => row.time > replayMovement.before[i].time),
+          );
+          assert.ok(
+            replayMovement.after.some(
+              (row, i) =>
+                row.transform !== replayMovement.before[i].transform ||
+                row.opacity !== replayMovement.before[i].opacity,
+            ),
+          );
+          if (complete) await state(page, "complete");
+          else await finishFast(art);
+          assert.equal(
+            await art.evaluate((root) => root.getAnimations({ subtree: true }).length),
+            0,
+          );
+          assert.equal(await button.getAttribute("aria-disabled"), "false");
+          await page.waitForTimeout(80);
+          assert.equal(await art.getAttribute("data-art-state"), "complete", "No queued run");
           evidence.layouts.push({
             app: names[index],
             width,
@@ -154,6 +264,8 @@ try {
             initial,
             ...geometry,
             movement,
+            replayMovement,
+            input: width <= 1024 ? "tap" : "click",
             complete,
           });
         } finally {
@@ -165,6 +277,8 @@ try {
       try {
         await state(page, mode);
         assert.equal(await art.evaluate((root) => root.getAnimations({ subtree: true }).length), 0);
+        assert.equal(await art.locator(".air-artwork-replay").isVisible(), false);
+        assert.equal(await art.locator(".air-artwork-replay").getAttribute("tabindex"), "-1");
         evidence.fallbacks.push({ app: names[index], mode });
       } finally {
         await context.close();
@@ -173,6 +287,42 @@ try {
     const { context, page, art } = await visit(index, 1440, 900, "light");
     try {
       await state(page, "playing");
+      const replay = art.locator(".air-artwork-replay");
+      // A press begun during the initial run cannot become a replay on release.
+      const box = await replay.boundingBox();
+      await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+      await page.mouse.down();
+      assert.equal(await replay.evaluate((button) => getComputedStyle(button).transform), "none");
+      assert.equal(await replay.evaluate((button) => button.getAnimations().length), 0);
+      await finishFast(art);
+      await page.mouse.up();
+      assert.equal(await art.getAttribute("data-art-state"), "complete");
+      await page.keyboard.press("Tab");
+      await replay.focus();
+      assert.equal(
+        await replay.evaluate((button) => getComputedStyle(button).outlineOffset),
+        "-3px",
+        "Replay keeps the shared inset focus outline",
+      );
+      await page.keyboard.down("Enter");
+      await state(page, "playing");
+      assert.ok(
+        await replay.evaluate((button) => button === document.activeElement),
+        "Focus retained while replay is unavailable",
+      );
+      await finishFast(art);
+      await page.keyboard.down("Enter");
+      assert.equal(
+        await art.getAttribute("data-art-state"),
+        "complete",
+        "Held Enter does not restart",
+      );
+      await page.keyboard.up("Enter");
+      await replay.scrollIntoViewIfNeeded();
+      const scroll = await page.evaluate(() => scrollY);
+      await page.keyboard.press("Space");
+      await state(page, "playing");
+      assert.equal(await page.evaluate(() => scrollY), scroll, "Space replays without scrolling");
       await page.locator("footer").scrollIntoViewIfNeeded();
       await state(page, "offscreen");
       const frozen = await art.evaluate(async (root) => {
@@ -194,6 +344,9 @@ try {
       await state(page, "complete");
       evidence.lifecycle.push({
         app: names[index],
+        keyboardReplay: true,
+        pressBeforeCompletionIgnored: true,
+        focusRetained: true,
         offscreenFrozen: true,
         livePreferenceSettles: true,
         noReplay: true,

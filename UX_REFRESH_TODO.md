@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.3.0 deliberate artwork replay verified locally, rollout pending; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,16 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Deliberate artwork replay — 2026-10-29
+
+- [x] Add click/tap replay after completion across Yard/PDF/Drop/Resume/Roll; ignore busy presses without a queue.
+- [x] Preserve static fallbacks, keyboard access, focus and existing real task controls; no separate playback controls.
+- [x] Slow Drop's pixel descent by 20% while keeping the complete sequence below five seconds.
+- [x] Inspect responsive light/dark and keyboard focus; pass applicable browser/product/build/dead-code/provenance checks.
+- [x] Record the [audit and evidence](docs/air/artwork-replay-2026-10-29.md); preserve IMG.
+- [ ] Commit passing pieces, deploy through individual dev → main PRs, verify live and synchronize dev.
+- [ ] Physical iPhone/assistive and separate full-product acceptance remain open.
 
 ## iPhone Safari artwork startup — 2026-10-29
 

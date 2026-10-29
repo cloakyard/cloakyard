@@ -1,0 +1,7 @@
+Finished in 87ms on 2 files using 12 threads.
+error: Formatting issues found
+docs/air/evidence/artwork-replay-2026-10-29/focus.json (0ms)
+docs/air/evidence/artwork-replay-2026-10-29/initial.json (0ms)
+docs/air/evidence/artwork-replay-2026-10-29/probe.json (0ms)
+
+Found formatting issues in 3 files (565ms, 12 threads). Run `vp check --fix` to fix them.

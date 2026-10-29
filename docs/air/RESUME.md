@@ -7,7 +7,25 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.7 Safari startup (2026-10-29)
+### Current checkpoint — Air 1.3.0 deliberate artwork replay (2026-10-29)
+
+All five active landing illustrations accept click/tap after completion. Busy or
+held presses cannot restart or queue; Enter/Space provide the equivalent explicit
+replay. The shared transparent target retains focus, uses Air's inset contour and
+hides in static/accessibility/resource/no-JS profiles. Drop's descent is 720ms
+(was 600ms); the full sequence remains below five seconds. IMG stays parked.
+
+Chrome/WebKit each pass 110 initial/replay layouts, 20 fallbacks and five lifecycle
+journeys. Product suites, PDF 461 units, Resume 373 production tests/zero skips,
+build/dead-code/provenance checks pass. Final focus-only refinement gets a further
+replay/focus pass. See [audit](artwork-replay-2026-10-29.md) for early failures and
+visual comparison. Physical iPhone/assistive acceptance stays separate.
+
+Next: complete the authorized individual dev → main PR rollout, verify live replay
+and all public assets, then fast-forward dev. Keep existing export/security/runtime
+and full-product/device gates open. Scratch: `/tmp/air-replay-2026-10-29/`.
+
+### Prior checkpoint — Air 1.2.7 Safari startup (2026-10-29)
 
 The shared finite artwork lifecycle no longer interprets four reported CPU threads
 as a constrained device. WebKit rounds many iPhones to that value; all five live
