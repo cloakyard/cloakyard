@@ -1,0 +1,19 @@
+Evidence: /tmp/air-family-2026-10-29/drop-site/cloakdrop-air-site-BYac6y
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+404 !== 200
+
+    at file:///Users/sumitsahoo/Developer/cloakdrop/scripts/test-air-site.mjs:226:14 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 404,
+  expected: 200,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

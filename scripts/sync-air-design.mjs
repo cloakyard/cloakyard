@@ -14,6 +14,7 @@ const products = [
   ["cloakimg", "CloakIMG", ["DESIGN.md"]],
   ["cloakresume", "CloakResume", ["DESIGN.md"]],
   ["cloakdrop", "CloakDrop website", ["DESIGN.md", "apps/site/DESIGN.md"]],
+  ["cloakroll", "CloakRoll website", ["DESIGN.md", "apps/site/DESIGN.md"]],
 ];
 const contract = (await readFile(resolve(repository, "design/air/contract.md"), "utf8")).trim();
 const hash = createHash("sha256").update(contract).digest("hex");
@@ -31,14 +32,15 @@ async function sync(path, content) {
   }
 }
 for (const [slug, name, destinations] of products) {
+  if (slug === "cloakimg") continue; // Parked redesign: retain its independently validated revision.
   const appendix = (
     await readFile(resolve(repository, `design/air/products/${slug}.md`), "utf8")
   ).trim();
   const content = `---
 name: ${name} — Cloakyard Air
-version: 1.2.4
+version: 1.2.6
 status: approved
-date: 2026-10-28
+date: 2026-10-29
 scope: complete-web-product
 source-repository: ${sourceRepository}
 source-directory: design/air
@@ -65,7 +67,7 @@ ${appendix}
     const filesHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/files.mjs")))
       .digest("hex");
-    const cssPath = `${slug === "cloakdrop" ? "apps/site/" : ""}src/styles/air.css`;
+    const cssPath = `${["cloakdrop", "cloakroll"].includes(slug) ? "apps/site/" : ""}src/styles/air.css`;
     const overlayHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/assets/air-overlays.js")))
       .digest("hex");
@@ -103,6 +105,7 @@ ${appendix}
       "artwork.mjs",
       "artwork.d.mts",
       "update-notice.tsx",
+      "privacy.tsx",
       "colour.mjs",
       "colour.d.mts",
       "light-controller.mjs",
@@ -130,7 +133,7 @@ ${appendix}
       studyAssets[asset] = createHash("sha256").update(content).digest("hex");
     }
     const manifest = {
-      version: "1.2.4",
+      version: "1.2.6",
       source: {
         repository: sourceRepository,
         directory: "design/air",
@@ -151,5 +154,5 @@ ${appendix}
 if (failures) process.exitCode = 1;
 else
   console.log(
-    `${check ? "Verified" : "Updated"} six portable Air specifications (${hash.slice(0, 12)}).`,
+    `${check ? "Verified" : "Updated"} seven active portable Air specifications (${hash.slice(0, 12)}).`,
   );

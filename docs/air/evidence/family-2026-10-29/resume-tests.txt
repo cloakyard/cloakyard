@@ -1,0 +1,48 @@
+
+ RUN  v5.0.5 /Users/sumitsahoo/Developer/cloakresume
+
+ ❯ tests/editor-browser.spec.ts (178 tests | 2 failed) 410941ms
+   ❯ editor browser regressions (requires Chrome or CHROME_PATH) (178)
+     × toggles underline using the toolbar and keyboard at 1440px 15111ms
+     × keeps contact reorder and remove controls inside the entry at 320px 1773ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/editor-browser.spec.ts > editor browser regressions (requires Chrome or CHROME_PATH) > toggles underline using the toolbar and keyboard at 1440px
+Error: Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/editor-browser.spec.ts:672:25
+    670|     );
+    671|
+    672|     it.each([1440, 320])(
+       |                         ^
+    673|       "toggles underline using the toolbar and keyboard at %ipx",
+    674|       async (width) => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/editor-browser.spec.ts > editor browser regressions (requires Chrome or CHROME_PATH) > keeps contact reorder and remove controls inside the entry at 320px
+Error: Node is detached from document
+ ❯ CdpElementHandle.assertConnectedElement node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1499:13
+ ❯ CdpElementHandle.scrollIntoView node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/cdp/ElementHandle.ts:92:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:140:14
+ ❯ CdpElementHandle.scrollIntoViewIfNeeded node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1516:5
+ ❯ CdpElementHandle.click node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:773:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:150:20
+ ❯ CdpFrame.click node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/Frame.ts:1091:5
+ ❯ tests/editor-browser.spec.ts:1878:7
+    1876|       });
+    1877|       expect(clipped).toEqual([]);
+    1878|       await page.click('.cr-editor-panel button[aria-label^="Remove "]…
+       |       ^
+    1879|       await page.click('.cr-editor-panel button[aria-label^="Confirm r…
+    1880|       expect((await savedResume()).contact).toEqual([]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed | 9 passed (10)
+      Tests  2 failed | 371 passed (373)
+   Start at  13:11:52
+   Duration  516.83s (tests 100%)
+

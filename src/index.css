@@ -150,36 +150,65 @@ summary:focus-visible {
   gap: var(--air-space-12);
   margin-top: var(--air-space-24);
 }
-.air-horizon {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  margin-top: var(--air-space-24);
-  color: var(--air-light-cloakyard);
-  background-color: var(--air-page);
-  outline-color: var(--air-surface-soft);
+/* The family opens out into five small, recognisable materials. */
+.tool-gathering {
+  max-inline-size: 840px;
+  margin: 32px auto 0;
+  padding-block: 8px 16px;
   pointer-events: none;
   overflow: clip;
 }
-.air-horizon svg,
-.air-horizon canvas {
-  position: absolute;
-  inset: 0;
+.gathering-objects {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+.gathering-object {
+  min-inline-size: 0;
+}
+.gathering-object svg {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  overflow: visible;
 }
-.air-horizon canvas {
-  visibility: hidden;
+.gathering-object [data-unfold] {
+  transform-box: fill-box;
+  transform-origin: center;
 }
-.air-horizon[data-light-ready="true"] canvas {
-  visibility: visible;
+.gathering-sheet {
+  fill: white;
+  stroke: var(--air-paper-line);
+  stroke-width: 1.5;
+}
+.gathering-ink {
+  fill: none;
+  stroke: var(--air-paper-line);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.gathering-paper {
+  color: var(--air-light-cloakpdf);
+}
+.gathering-pixels {
+  color: var(--air-light-cloakdrop);
+}
+.gathering-story {
+  color: var(--air-light-cloakresume);
+}
+.gathering-image {
+  color: var(--air-light-cloakimg);
+}
+.gathering-home {
+  display: block;
+  margin: 12px auto 0;
 }
 .tools-section {
   margin-top: var(--air-space-24);
 }
 .tool-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .tool-entry {
   display: flex;
@@ -334,6 +363,15 @@ summary:focus-visible {
     transform: translate(2px, -2px);
   }
 }
+@container (60em < width <= 80em) {
+  .tool-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: var(--air-space-24);
+  }
+  .tool-entry:nth-child(3n + 1) {
+    border-inline-start: none;
+  }
+}
 @container (width <= 60em) {
   .site-frame {
     padding-inline: var(--air-space-24);
@@ -410,9 +448,26 @@ summary:focus-visible {
   .hero-description {
     max-width: 25rem;
   }
-  .air-horizon {
-    height: 104px;
-    margin-top: var(--air-space-16);
+  .tool-gathering {
+    max-inline-size: 400px;
+    margin-top: 24px;
+  }
+  .gathering-objects {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0;
+  }
+  .gathering-object {
+    grid-column: span 2;
+  }
+  .gathering-object:nth-last-child(-n + 2) {
+    grid-column: span 3;
+    width: 66.666%;
+    justify-self: center;
+  }
+  .gathering-home {
+    margin-top: 4px;
+    width: 32px;
+    height: 32px;
   }
   .tools-section {
     margin-top: var(--air-space-16);
@@ -451,8 +506,14 @@ summary:focus-visible {
   .hero {
     padding-top: var(--air-space-24);
   }
-  .air-horizon {
-    height: 64px;
+  .tool-gathering {
+    max-inline-size: 420px;
+    margin-top: 8px;
+  }
+  .gathering-home {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -463,7 +524,7 @@ summary:focus-visible {
   }
 }
 @media (forced-colors: active) {
-  .air-horizon {
+  .tool-gathering {
     display: none;
   }
   .air-button--primary {

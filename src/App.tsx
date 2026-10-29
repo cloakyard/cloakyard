@@ -1,3 +1,4 @@
+import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { useEffect } from "react";
 import { ExperimentSection } from "./components/ExperimentSection";
 import { Footer } from "./components/Footer";
@@ -8,6 +9,7 @@ import { ToolSection } from "./components/ToolSection";
 import { experiments, productivityTools } from "./data/tools";
 
 export default function App() {
+  const privacy = new URLSearchParams(location.search).get("view") === "privacy";
   useEffect(() => {
     const followHash = () => {
       if (!window.location.hash) return;
@@ -27,12 +29,18 @@ export default function App() {
 
   return (
     <div className="site-shell">
-      <Header />
-      <main id="main" tabIndex={-1}>
-        <Hero />
-        <ToolSection tools={productivityTools} />
-        <ExperimentSection experiments={experiments} />
-        <Principles />
+      <Header reading={privacy} />
+      <main id="main" tabIndex={-1} className={privacy ? "site-frame" : undefined}>
+        {privacy ? (
+          <PrivacyPolicy />
+        ) : (
+          <>
+            <Hero />
+            <ToolSection tools={productivityTools} />
+            <ExperimentSection experiments={experiments} />
+            <Principles />
+          </>
+        )}
       </main>
       <Footer />
     </div>

@@ -60,6 +60,18 @@ export const productivityTools: ProductivityTool[] = [
     status: "Beta",
     logo: "/brands/cloakdrop-mark.svg",
   },
+  {
+    name: "CloakRoll",
+    slug: "roll",
+    description:
+      "Your memories, in your hands. Back up original iPhone photos and videos to your Mac over USB.",
+    href: "https://roll.cloakyard.com",
+    repo: "https://github.com/cloakyard/cloakroll",
+    platform: "macOS 26+ · Apple silicon",
+    privacy: "Originals stay yours",
+    status: "Beta",
+    logo: "/brands/cloakroll-mark.svg",
+  },
 ];
 
 export const experiments: YardProject[] = [

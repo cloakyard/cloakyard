@@ -14,8 +14,9 @@
 - Work tracking: `UX_REFRESH_TODO.md`; source inventory and validation evidence in
   `docs/air/`. A documentation-only phase is not a completed visual migration.
 
-- The hero uses the canonical finite Shaders runtime with a static first paint. Lazy
-  shader payload must remain below 350 kB gzip; page entry below 85 kB gzip. Preserve
-  licenses, 30fps/pixel-ratio caps, no idle frames and complete effect cleanup.
-  Record measured startup and queue completion separately from physical battery
-  and thermal acceptance. Do not add the renderer to product editors.
+- The hero opens five small tool materials out from the family mark: paper, download
+  pixels, a résumé spine, an image and a filmstrip. Use the common finite artwork
+  lifecycle; no shader, tracking, playback UI or animation dependency. Static first
+  paint, 60ms arrival stagger, 1,800ms ease-out arrivals and nested 45ms detail stagger
+  finish within 4,300ms. Only transform/opacity change; all tools remain usable.
+  Keep page entry below 85 kB gzip. The shared shader remains reference-only here.

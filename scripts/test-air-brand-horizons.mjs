@@ -4,11 +4,11 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 const { default: puppeteer } = await import(process.env.PUPPETEER_MODULE || "puppeteer-core");
 const output = process.env.AIR_EVIDENCE_DIR || "/tmp/air-brand-horizons";
-// PDF, Drop and Resume now have their own approved artwork acceptance suites.
-const apps = [
-  ["cloakyard", "air", 8170, "cloakyard-mark.svg"],
-  ["cloakimg", "img", 8174, "brands/cloakimg-mark.svg"],
-].filter(([app]) => !process.env.AIR_APP || app === process.env.AIR_APP);
+// All active sites have finite material artwork. This retains the parked IMG
+// horizon check until its separately authorized redesign.
+const apps = [["cloakimg", "img", 8174, "brands/cloakimg-mark.svg"]].filter(
+  ([app]) => !process.env.AIR_APP || app === process.env.AIR_APP,
+);
 await mkdir(output, { recursive: true });
 const browser = await puppeteer.launch({
   executablePath:

@@ -1,0 +1,2 @@
+Evidence: /tmp/air-family-2026-10-29/drop-site/cloakdrop-air-site-PRMxsP
+PASS 432 layouts; 34 journey records; 35 captures; no script errors or foreign runtime requests.
