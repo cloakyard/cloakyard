@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "1.2.6",
+  "contractVersion": "1.2.7",
   "note": "Presence in this inventory is not audit or validation. Preserve evidence when updating.",
   "surfaces": [
     {
@@ -350,7 +350,7 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": ["docs/air/family-2026-10-29.md"],
+      "evidence": ["docs/air/family-2026-10-29.md", "docs/air/safari-startup-2026-10-29.md"],
       "notes": "Air 1.2.6 finite SVG family motif: 44 static layouts, 22 actual timed arrivals, pause/resume/preference/constrained/no-JS journeys pass. Product controls remain usable; physical/assistive acceptance is separate."
     },
     {

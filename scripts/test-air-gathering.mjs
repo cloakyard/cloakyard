@@ -131,7 +131,7 @@ try {
   );
   const constrained = await browser.newPage();
   await constrained.evaluateOnNewDocument(() =>
-    Object.defineProperty(navigator, "hardwareConcurrency", { value: 4 }),
+    Object.defineProperty(navigator, "deviceMemory", { value: 4 }),
   );
   await constrained.goto(url, { waitUntil: "networkidle0" });
   assert.equal(

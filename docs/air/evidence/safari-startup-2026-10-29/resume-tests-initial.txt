@@ -1,0 +1,34 @@
+
+ RUN  v5.0.5 /Users/sumitsahoo/Developer/cloakresume
+
+ ❯ tests/editor-browser.spec.ts (178 tests | 1 failed) 383552ms
+   ❯ editor browser regressions (requires Chrome or CHROME_PATH) (178)
+     × keeps contact reorder and remove controls inside the entry at 320px 1760ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/editor-browser.spec.ts > editor browser regressions (requires Chrome or CHROME_PATH) > keeps contact reorder and remove controls inside the entry at 320px
+Error: Node is detached from document
+ ❯ CdpElementHandle.assertConnectedElement node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1499:13
+ ❯ CdpElementHandle.isIntersectingViewport node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1535:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:140:14
+ ❯ CdpElementHandle.scrollIntoViewIfNeeded node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:1510:7
+ ❯ CdpElementHandle.click node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:773:5
+ ❯ CdpElementHandle.<anonymous> node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/ElementHandle.ts:150:20
+ ❯ CdpFrame.click node_modules/.pnpm/puppeteer-core@25.16.0/node_modules/puppeteer-core/src/api/Frame.ts:1091:5
+ ❯ tests/editor-browser.spec.ts:1878:7
+    1876|       });
+    1877|       expect(clipped).toEqual([]);
+    1878|       await page.click('.cr-editor-panel button[aria-label^="Remove "]…
+       |       ^
+    1879|       await page.click('.cr-editor-panel button[aria-label^="Confirm r…
+    1880|       expect((await savedResume()).contact).toEqual([]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 9 passed (10)
+      Tests  1 failed | 372 passed (373)
+   Start at  18:31:19
+   Duration  383.94s (tests 100%)
+
