@@ -1,0 +1,2 @@
+Evidence: /tmp/air-safari-2026-10-29/product/cloakpdf-air-artwork-uzUTOo
+PASS: 68 layouts, finite unveiling, lifecycle/fallbacks and real file entry.

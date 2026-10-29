@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.2.7 Safari startup verified locally; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -20,6 +20,15 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## iPhone Safari artwork startup — 2026-10-29
+
+- [x] Trace the common startup restriction against WebKit's reported CPU values.
+- [x] Remove the CPU-count gate from finite local artwork; preserve all accessibility, memory/data-saving and visibility fallbacks.
+- [x] Reproduce the old failure and verify real animation progression/completion in WebKit and Chrome with four threads and no memory API.
+- [x] Inspect all five landing pages in responsive light/dark states; run applicable product/build/provenance checks.
+- [ ] Record evidence, commit passing pieces, promote via dev → main PRs and verify live.
+- [ ] Physical iPhone Safari confirmation remains distinct from desktop WebKit mobile emulation.
 
 ## Family gathering, CloakRoll and support — 2026-10-29
 

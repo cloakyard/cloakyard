@@ -1,0 +1,59 @@
+18:29:54 [types] Generated 82ms
+18:29:54 [check] Getting diagnostics for Astro files in /Users/sumitsahoo/Developer/cloakroll/apps/site...
+Result (17 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> cloakroll-site@1.0.0 prebuild
+> node scripts/sync-assets.mjs
+
+
+> cloakroll-site@1.0.0 build
+> astro build
+
+18:29:57 [types] Generated 93ms
+18:29:57 [build] output: "static"
+18:29:57 [build] mode: "static"
+18:29:57 [build] directory: /Users/sumitsahoo/Developer/cloakroll/apps/site/dist/
+18:29:57 [build] Collecting build info...
+18:29:57 [build] ✓ Completed in 254ms.
+18:29:57 [build] Building static entrypoints...
+18:29:57 [vite] ✓ built in 510ms
+18:29:58 [vite] ✓ built in 124ms
+18:29:58 [build] Rearranging server assets...
+
+ generating static routes 
+18:29:58   ├─ /404.html (+13ms) 
+18:29:58   ├─ /privacy/index.html (+5ms) 
+18:29:58   ├─ /index.html (+5ms) 
+18:29:58 ✓ Completed in 32ms.
+
+18:29:58 [build] ✓ Completed in 725ms.
+18:29:58 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+18:29:58 [build] 3 page(s) built in 1.01s
+18:29:58 [build] Complete!
+Bundle and inventory versions differ.
+node:internal/errors:986
+  const err = new Error(message);
+              ^
+
+Error: Command failed: /Users/sumitsahoo/.vite-plus/js_runtime/node/24.22.1/bin/node ../../scripts/check-air-design.mjs
+    at genericNodeError (node:internal/errors:986:15)
+    at wrappedFn (node:internal/errors:540:14)
+    at checkExecSyncError (node:child_process:943:11)
+    at execFileSync (node:child_process:979:15)
+    at file:///Users/sumitsahoo/Developer/cloakroll/apps/site/scripts/verify-site.mjs:6:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 92283,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v24.22.1

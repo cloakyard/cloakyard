@@ -1,0 +1,18 @@
+chromium: cloakyard passed
+chromium: cloakpdf passed
+chromium: cloakdrop passed
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: composited artwork must move
+    at file:///Users/sumitsahoo/Developer/cloakyard/scripts/test-air-artwork-browsers.mjs:95:18 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.22.2

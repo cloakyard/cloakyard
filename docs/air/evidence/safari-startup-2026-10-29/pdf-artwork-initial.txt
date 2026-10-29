@@ -1,0 +1,51 @@
+Evidence: /tmp/air-safari-2026-10-29/product/cloakpdf-air-artwork-vqEyv6
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Front sheet and real entry must remain anchored
++ actual - expected
+
+  [
+    {
+      height: 218.75946044921875,
+      width: 163.745361328125,
+      x: 636.8079223632812,
++     y: 551.5848999023438
+-     y: 447.58489990234375
+    },
+    {
+      height: 218.1875,
+      width: 672,
+      x: 384,
++     y: 808.953125
+-     y: 704.953125
+    }
+  ]
+
+    at file:///Users/sumitsahoo/Developer/cloakpdf/tests/e2e/landing-artwork.e2e.ts:159:14 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    {
+      x: 636.8079223632812,
+      y: 551.5848999023438,
+      width: 163.745361328125,
+      height: 218.75946044921875
+    },
+    { x: 384, y: 808.953125, width: 672, height: 218.1875 }
+  ],
+  expected: [
+    {
+      x: 636.8079223632812,
+      y: 447.58489990234375,
+      width: 163.745361328125,
+      height: 218.75946044921875
+    },
+    { x: 384, y: 704.953125, width: 672, height: 218.1875 }
+  ],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

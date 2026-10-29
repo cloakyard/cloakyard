@@ -1,0 +1,35 @@
+18:29:55 [types] Generated 67ms
+18:29:55 [check] Getting diagnostics for Astro files in /Users/sumitsahoo/Developer/cloakdrop/apps/site...
+Result (19 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+npm notice run cloakdrop-site@1.0.0 prebuild
+npm notice run npm run sync:assets
+npm notice run cloakdrop-site@1.0.0 sync:assets
+npm notice run node ../../scripts/sync-assets.mjs
+sync-assets: 0 copied, 7 up to date.
+npm notice run cloakdrop-site@1.0.0 build
+npm notice run astro build
+18:29:57 [types] Generated 267ms
+18:29:57 [build] output: "static"
+18:29:57 [build] mode: "static"
+18:29:57 [build] directory: /Users/sumitsahoo/Developer/cloakdrop/apps/site/dist/
+18:29:57 [build] Collecting build info...
+18:29:57 [build] ✓ Completed in 342ms.
+18:29:58 [build] Building static entrypoints...
+18:29:58 [vite] ✓ built in 400ms
+18:29:58 [vite] ✓ built in 15ms
+18:29:58 [build] Rearranging server assets...
+
+ generating static routes 
+18:29:58   ├─ /404.html (+7ms) 
+18:29:58   ├─ /privacy/index.html (+3ms) 
+18:29:58   ├─ /index.html (+8ms) 
+18:29:58 ✓ Completed in 24ms.
+
+18:29:58 [build] ✓ Completed in 495ms.
+18:29:58 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+18:29:58 [build] 3 page(s) built in 861ms
+18:29:58 [build] Complete!

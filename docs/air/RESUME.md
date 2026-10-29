@@ -7,7 +7,25 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.2.6 family gathering/support (2026-10-29)
+### Current checkpoint — Air 1.2.7 Safari startup (2026-10-29)
+
+The shared finite artwork lifecycle no longer interprets four reported CPU threads
+as a constrained device. WebKit rounds many iPhones to that value; all five live
+sites reproduced the resulting static state. Memory/data/accessibility/feature
+restrictions and finite visibility/departure behavior remain intact. No CSS,
+material, duration, task/editor, output or native behavior changed. IMG stays parked.
+
+All local checks pass: WebKit/Chrome each 110 moving layouts, 20 fallback visits
+and five lifecycle journeys; original artwork suites; PDF 461 units and real entry;
+Resume 373 production tests/zero skips; site/build/dead-code/provenance gates.
+Ten WebKit comparison sheets and the initial failures are retained in
+[the audit](safari-startup-2026-10-29.md). Physical iPhone Safari/Low Power Mode
+confirmation remains distinct from WebKit mobile emulation.
+
+Next: finish individual authorized dev → main PR deployment, verify live and
+fast-forward dev. Scratch evidence: `/tmp/air-safari-2026-10-29/`.
+
+### Prior checkpoint — Air 1.2.6 family gathering/support (2026-10-29)
 
 The five active websites pass local verification. CloakRoll joins Yard's registry,
 no-JS fallback and OG card. Yard's generic shader is replaced by five finite SVG

@@ -1,0 +1,6 @@
+chromium: cloakyard passed
+chromium: cloakpdf passed
+chromium: cloakdrop passed
+chromium: cloakresume passed
+chromium: cloakroll passed
+chromium: 110 moving layouts, 20 fallbacks, 5 lifecycle journeys passed.
