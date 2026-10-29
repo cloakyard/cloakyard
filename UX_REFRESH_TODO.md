@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.3.0 replay deployed; Air 1.3.1 cold stylesheet correction verified locally, follow-up rollout pending; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -29,7 +29,7 @@ The separately requested Drop installer now uses Air.
 - [x] Inspect responsive light/dark and keyboard focus; pass applicable browser/product/build/dead-code/provenance checks.
 - [x] Record the [audit and evidence](docs/air/artwork-replay-2026-10-29.md); preserve IMG.
 - [x] Deploy the initial five replay PRs and verify all 270 published files.
-- [ ] Complete Air 1.3.1 cold stylesheet follow-up verification, deploy through individual dev → main PRs, verify live and synchronize dev.
+- [x] Complete Air 1.3.1 cold stylesheet verification; deploy through five dev → main PRs, verify live replay/delayed CSS and all 270 public files, then synchronize dev.
 - [ ] Physical iPhone/assistive and separate full-product acceptance remain open.
 
 ## iPhone Safari artwork startup — 2026-10-29

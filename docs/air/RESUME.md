@@ -9,7 +9,9 @@ resolve them against the latest checkpoint and source before repeating work.
 
 ### Current checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
 
-The five initial replay PRs are merged/deployed and all 270 public files match.
+The five initial replay PRs and Air 1.3.1 correction PRs are merged/deployed. All
+270 current public files match the verified builds (267 raw, three normalized Roll
+HTML files).
 Live verification exposed a cold WebKit race: scripts may sample empty motion
 tokens before external stylesheets arrive. The shared lifecycle now waits for
 applicable stylesheet load/error events with cleanup; Drop reads tokens per run.
@@ -21,10 +23,17 @@ journeys. Product suites/builds/design/dead-code pass again, including PDF 461
 units and Resume 373 production tests/zero skips. See the
 [audit](artwork-replay-2026-10-29.md) for failures, evidence and exact limits.
 
-Next: promote the verified correction via individual dev → main PRs, verify all
-live replay/assets and synchronize dev. Keep IMG and the separate Resume worktrees
-untouched. Physical iPhone/assistive and existing product/export/security/runtime
-acceptance remain open. Scratch: `/tmp/air-replay-2026-10-29/`.
+Final PRs: cloakyard [#33](https://github.com/cloakyard/cloakyard/pull/33), cloakpdf [#217](https://github.com/cloakyard/cloakpdf/pull/217), cloakdrop [#53](https://github.com/cloakyard/cloakdrop/pull/53), cloakroll [#7](https://github.com/cloakyard/cloakroll/pull/7), cloakresume [#51](https://github.com/cloakyard/cloakresume/pull/51).
+All exact main checks and Cloudflare production builds pass. Live WebKit verifies
+ten phone light/dark initial/replay layouts, 20 fallbacks, five keyboard/lifecycle
+journeys and five delayed-CSS startups/replays, with zero browser errors.
+Dev is synchronized with main; documentation closeout uses the same PR workflow
+with identical application bytes. IMG and separate Resume worktrees are untouched.
+The task preview server is stopped.
+
+Next: physical iPhone/assistive confirmation and the separately open product/export/
+security/runtime acceptance. Keep IMG last; do not repeat this completed five-site
+replay rollout. Scratch: `/tmp/air-replay-2026-10-29/`.
 
 ### Prior checkpoint — Air 1.3.0 deliberate artwork replay (2026-10-29)
 
