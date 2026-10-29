@@ -28,7 +28,14 @@ const sizes =
         [1440, 900],
         [1920, 1080],
       ];
-const evidence = { engine, layouts: [], fallbacks: [], lifecycle: [], errors: [] };
+const evidence = {
+  engine,
+  layouts: [],
+  fallbacks: [],
+  lifecycle: [],
+  stylesheetStartup: [],
+  errors: [],
+};
 const browser = await engines[engine].launch({
   headless: true,
   ...(engine === "chromium" && process.env.CHROME_PATH
@@ -53,6 +60,11 @@ async function visit(index, width, height, theme, mode = "normal") {
     if (mode === "unsupported") Element.prototype.animate = undefined;
   }, mode);
   const page = await context.newPage();
+  if (mode === "slow-css")
+    await page.route("**/*.css", async (route) => {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await route.continue();
+    });
   page.on("pageerror", (error) =>
     evidence.errors.push({ app: names[index], error: String(error) }),
   );
@@ -280,6 +292,38 @@ try {
         assert.equal(await art.locator(".air-artwork-replay").isVisible(), false);
         assert.equal(await art.locator(".air-artwork-replay").getAttribute("tabindex"), "-1");
         evidence.fallbacks.push({ app: names[index], mode });
+      } finally {
+        await context.close();
+      }
+    }
+    // A cold stylesheet must not supply empty easing tokens or consume the intro.
+    {
+      const { context, page, art } = await visit(index, 390, 844, "light", "slow-css");
+      try {
+        await art.scrollIntoViewIfNeeded();
+        await state(page, "playing");
+        const movement = await observeMovement(art);
+        assert.ok(movement.count > 0);
+        assert.ok(movement.after.some((row, i) => row.time > movement.before[i].time));
+        assert.ok(
+          movement.after.some(
+            (row, i) =>
+              row.transform !== movement.before[i].transform ||
+              row.opacity !== movement.before[i].opacity,
+          ),
+        );
+        await state(page, "complete");
+        const replay = art.locator(".air-artwork-replay");
+        assert.equal(await replay.getAttribute("aria-disabled"), "false");
+        await activate(page, replay, true);
+        await state(page, "playing");
+        await finishFast(art);
+        evidence.stylesheetStartup.push({
+          app: names[index],
+          delayMs: 2000,
+          movement,
+          replay: true,
+        });
       } finally {
         await context.close();
       }

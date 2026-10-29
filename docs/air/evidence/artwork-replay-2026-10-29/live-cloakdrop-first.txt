@@ -1,0 +1,12 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 10000ms exceeded.
+    at state (/private/tmp/air-replay-2026-10-29/live-one.mjs:65:8)
+    at /private/tmp/air-replay-2026-10-29/live-one.mjs:143:17 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.22.2

@@ -1,0 +1,2 @@
+Evidence: /tmp/air-replay-2026-10-29/drop-cold-fix/cloakdrop-air-artwork-smovTc
+PASS: 68 layouts, 4 forms, finite lifecycle, no separate playback controls and static fallbacks.

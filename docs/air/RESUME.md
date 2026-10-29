@@ -7,7 +7,26 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.3.0 deliberate artwork replay (2026-10-29)
+### Current checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
+
+The five initial replay PRs are merged/deployed and all 270 public files match.
+Live verification exposed a cold WebKit race: scripts may sample empty motion
+tokens before external stylesheets arrive. The shared lifecycle now waits for
+applicable stylesheet load/error events with cleanup; Drop reads tokens per run.
+Air 1.3.1 is pinned (`8270df3eb883`), with no visual/timing/dependency change.
+
+WebKit/Chrome each pass five two-second delayed-CSS startups and replays, ten
+normal phone light/dark profiles, 20 fallbacks and five desktop keyboard/lifecycle
+journeys. Product suites/builds/design/dead-code pass again, including PDF 461
+units and Resume 373 production tests/zero skips. See the
+[audit](artwork-replay-2026-10-29.md) for failures, evidence and exact limits.
+
+Next: promote the verified correction via individual dev → main PRs, verify all
+live replay/assets and synchronize dev. Keep IMG and the separate Resume worktrees
+untouched. Physical iPhone/assistive and existing product/export/security/runtime
+acceptance remain open. Scratch: `/tmp/air-replay-2026-10-29/`.
+
+### Prior checkpoint — Air 1.3.0 deliberate artwork replay (2026-10-29)
 
 All five active landing illustrations accept click/tap after completion. Busy or
 held presses cannot restart or queue; Enter/Space provide the equivalent explicit

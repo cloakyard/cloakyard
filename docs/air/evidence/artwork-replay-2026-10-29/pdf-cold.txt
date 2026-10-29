@@ -1,0 +1,2 @@
+Evidence: /tmp/air-replay-2026-10-29/pdf-cold/cloakpdf-air-artwork-W3nDBS
+PASS: 68 layouts, finite unveiling, lifecycle/fallbacks and real file entry.

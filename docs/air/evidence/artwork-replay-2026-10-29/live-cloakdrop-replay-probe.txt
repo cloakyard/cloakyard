@@ -1,0 +1,17 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+locator.scrollIntoViewIfNeeded: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-art-state]').first().getByRole('button', { name: 'Replay CloakDrop animation' })[22m
+
+    at activate (/private/tmp/air-replay-2026-10-29/live-one.mjs:115:16)
+    at /private/tmp/air-replay-2026-10-29/live-one.mjs:147:43 {
+  log: [
+    "  - waiting for locator('[data-art-state]').first().getByRole('button', { name: 'Replay CloakDrop animation' })"
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v24.22.2

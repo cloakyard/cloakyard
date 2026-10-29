@@ -1,0 +1,34 @@
+Finished in 144ms on 2 files using 12 threads.
+pass: All 314 files are correctly formatted (488ms, 12 threads)
+pass: Found no warnings, lint errors, or type errors in 155 files (768ms, 12 threads)
+Tracked 89 surfaces in docs/air.
+Air contract and 89 inventory records are valid. Runtime conformance is audited separately.
+{
+  "product": "cloakresume",
+  "checks": [
+    "isolated bundle passes with no dependencies or sibling files",
+    "missing light lifecycle hash rejected",
+    "altered light lifecycle rejected",
+    "unsynchronized canonical source rejected when present",
+    "bundle paired with a different contract rejected",
+    "mismatched document version rejected",
+    "missing motion hash rejected",
+    "altered motion module rejected",
+    "missing shared update notice rejected",
+    "altered shared update notice rejected",
+    "altered colour math rejected",
+    "missing overlay bundle hash rejected",
+    "altered overlay module rejected",
+    "altered artwork lifecycle rejected",
+    "missing artwork lifecycle hash rejected",
+    "missing reading/recovery behavior hash rejected",
+    "altered reading page rejected",
+    "missing file lifecycle behavior hash rejected",
+    "altered file study rejected",
+    "altered collection study rejected",
+    "missing manifest rejected",
+    "restored bundle passes"
+  ],
+  "files": 28,
+  "fixture": null
+}
