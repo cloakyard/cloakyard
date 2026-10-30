@@ -18,11 +18,12 @@ CloakIMG now carries Air 1.3.1 and canonical synchronization includes it. The fi
 bounded slice covers public entry, the earlier still-photo/crop-frame concept,
 shared header/footer, a prerendered privacy page and guarded shared PWA notices.
 See [the audit](cloakimg-public-2026-10-30.md) and IMG's per-source inventory.
-The editor and start/export dialogs still require their full migration; do not
-mark the product complete or deploy the public-only slice.
+The editor foundation is now migrated and verified; see
+[the editor audit](cloakimg-editor-2026-10-30.md). Do not mark the product complete
+or deploy before the remaining tool/output/asset gates pass.
 
-Next: editor typography/composition and shared controls, every tool/AI/overlay/
-edge state and output preservation, then current assets and obsolete-code audit.
+Next: finish tool-specific precision values, AI/runtime and actual output acceptance,
+then current assets/dependencies and obsolete-code audit.
 Commit each fully passing bounded piece. Physical iPhone/assistive confirmation
 remains distinct from automated WebKit evidence. Existing family rollout below
 is complete and must not be repeated. Task preview: `http://127.0.0.1:8433`.

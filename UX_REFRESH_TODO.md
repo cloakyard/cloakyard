@@ -1115,7 +1115,7 @@ Adopt the current portable Air contract and preserve all output/canvas invariant
 
 - [x] Public landing/header/footer, direct file/clipboard entry, features/privacy and guarded shared PWA notice (30 October; see `docs/air/cloakimg-public-2026-10-30.md`).
 - [ ] Finish start dialog, recents/drafts and all entry edge states with the shared editor controls.
-- [ ] Editor top bar/rail/search/properties, image canvas, stage host and mobile more menu.
+- [x] Editor top bar/rail/search/properties, image canvas, stage host and mobile more menu (30 October; `docs/air/cloakimg-editor-2026-10-30.md`).
 - [ ] Layers, history list/scrubber, compare, file properties, batch view and privacy audit.
 - [ ] All fields/buttons/selects/segments, colour picker, histogram/levels/HSL/curves and numeric units.
 - [ ] All tool panels/stages in the inventory, including preview/apply/cancel and empty/invalid states.
