@@ -1,0 +1,358 @@
+{
+  "rollouts": [
+    {
+      "headRefOid": "494239b97942b9d68bf50b47f55724b354499f8c",
+      "mergeCommit": {
+        "oid": "52ccdb4563cbe377dcc318e9cc7f76ef774efa58"
+      },
+      "mergedAt": "2026-10-30T08:58:54Z",
+      "number": 22,
+      "state": "MERGED",
+      "url": "https://github.com/cloakyard/cloakimg/pull/22",
+      "app": "cloakimg",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakimg",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakimg/production/builds/fa722dbe-ed3c-45ab-add1-981f21f6e591"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakimg/actions/runs/41030101084/job/123977530000"
+        }
+      ]
+    },
+    {
+      "headRefOid": "1c5a577234779904fb09163ce2235aaaf884f4f1",
+      "mergeCommit": {
+        "oid": "6f14bee0206b241ad58ab8a3c25fa149f42e6891"
+      },
+      "mergedAt": "2026-10-30T09:01:02Z",
+      "number": 218,
+      "state": "MERGED",
+      "url": "https://github.com/cloakyard/cloakpdf/pull/218",
+      "app": "cloakpdf",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakpdf",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/16e746ea-c9c4-4dab-a684-ada0e0aac45d"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41030355499/job/123978352446"
+        },
+        {
+          "name": "Scorecard Analysis",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41030355394/job/123978352323"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41030355332/job/123978352228"
+        },
+        {
+          "name": "Dependency Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41030355385/job/123978352072"
+        }
+      ]
+    },
+    {
+      "headRefOid": "c3776960020ae5453e5f44816c4b336de025ca44",
+      "mergeCommit": {
+        "oid": "260c6e459136b83c8eb6d33ed1e58e463e517885"
+      },
+      "mergedAt": "2026-10-30T08:58:58Z",
+      "number": 52,
+      "state": "MERGED",
+      "url": "https://github.com/cloakyard/cloakresume/pull/52",
+      "app": "cloakresume",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakresume",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/56168be4-f130-4860-ad95-8cee37490d10"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakresume/actions/runs/41030108504/job/123977555935"
+        }
+      ]
+    },
+    {
+      "headRefOid": "55d570be99b3d43ed47ffdd25e30777d4b659b5d",
+      "mergeCommit": {
+        "oid": "6319d6e0a93976d4a443373a32c17da05bde3d32"
+      },
+      "mergedAt": "2026-10-30T09:00:17Z",
+      "number": 8,
+      "state": "MERGED",
+      "url": "https://github.com/cloakyard/cloakroll/pull/8",
+      "app": "cloakroll",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakroll",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakroll/production/builds/30f43b61-8b1d-4525-9466-9ab9cedf569f"
+        },
+        {
+          "name": "Website",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakroll/actions/runs/41030258832/job/123978050592"
+        }
+      ]
+    },
+    {
+      "headRefOid": "bc683ebc7e42b72d3868092eed742332ed482511",
+      "mergeCommit": {
+        "oid": "5b28bb294319b8b2f03188afb164c1cdd0152029"
+      },
+      "mergedAt": "2026-10-30T08:59:03Z",
+      "number": 54,
+      "state": "MERGED",
+      "url": "https://github.com/cloakyard/cloakdrop/pull/54",
+      "app": "cloakdrop",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakdrop",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakdrop/production/builds/b8ebaa24-01e1-43a1-9336-32859d462837"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakdrop/actions/runs/41030118502/job/123977589847"
+        },
+        {
+          "name": "website",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakdrop/actions/runs/41030118502/job/123977589430"
+        }
+      ]
+    },
+    {
+      "headRefOid": "78c9e8bbf05a571240940c2b2f0f1652f28aa404",
+      "mergeCommit": {
+        "oid": "a366f904999d076bc88aadba55c9424e09eaff95"
+      },
+      "mergedAt": "2026-10-30T08:59:08Z",
+      "number": 37,
+      "state": "MERGED",
+      "url": "https://github.com/cloakyard/cloakyard/pull/37",
+      "app": "cloakyard",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakyard",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/1a9354c5-d0d2-43bb-9ab6-beaef1dc04d3"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakyard/actions/runs/41030126554/job/123977616356"
+        }
+      ]
+    }
+  ],
+  "assets": {
+    "cloakyard": {
+      "files": 12,
+      "rawMatches": 12,
+      "matches": 12
+    },
+    "cloakpdf": {
+      "files": 130,
+      "rawMatches": 130,
+      "matches": 130
+    },
+    "cloakdrop": {
+      "files": 16,
+      "rawMatches": 16,
+      "matches": 16
+    },
+    "cloakresume": {
+      "files": 101,
+      "rawMatches": 101,
+      "matches": 101
+    },
+    "cloakroll": {
+      "files": 11,
+      "rawMatches": 8,
+      "matches": 11
+    },
+    "cloakimg": {
+      "files": 88,
+      "rawMatches": 88,
+      "matches": 88
+    }
+  },
+  "liveFamily": {
+    "layouts": 648,
+    "secondary": 288,
+    "interactions": 390,
+    "errors": 0,
+    "failures": 0
+  },
+  "liveWebKit": {
+    "layouts": 12,
+    "fallbacks": 24,
+    "lifecycle": 6,
+    "stylesheetStartup": 6,
+    "errors": 0
+  },
+  "liveImg": [
+    {
+      "engine": "chrome",
+      "w": 390,
+      "h": 844,
+      "theme": "light",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    },
+    {
+      "engine": "chrome",
+      "w": 390,
+      "h": 844,
+      "theme": "dark",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    },
+    {
+      "engine": "chrome",
+      "w": 768,
+      "h": 1024,
+      "theme": "light",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": false,
+      "errors": []
+    },
+    {
+      "engine": "chrome",
+      "w": 768,
+      "h": 1024,
+      "theme": "dark",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": false,
+      "errors": []
+    },
+    {
+      "engine": "chrome",
+      "w": 1440,
+      "h": 900,
+      "theme": "light",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    },
+    {
+      "engine": "chrome",
+      "w": 1440,
+      "h": 900,
+      "theme": "dark",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "w": 390,
+      "h": 844,
+      "theme": "light",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "w": 390,
+      "h": 844,
+      "theme": "dark",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "w": 768,
+      "h": 1024,
+      "theme": "light",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": false,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "w": 768,
+      "h": 1024,
+      "theme": "dark",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": false,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "w": 1440,
+      "h": 900,
+      "theme": "light",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "w": 1440,
+      "h": 900,
+      "theme": "dark",
+      "initialAndReplay": true,
+      "privacy": true,
+      "import": true,
+      "export": true,
+      "errors": []
+    }
+  ]
+}

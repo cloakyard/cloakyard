@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -31,10 +31,10 @@ The separately requested Drop installer now uses Air.
 - [x] Include IMG in the family shell, privacy, artwork and cross-app PWA comparison suites.
 - [x] Audit shared component families and editor/custom-control variants against Air in all six web products; preserve functional document/image output and native UI.
 - [x] Inspect required responsive light/dark, enlarged text, keyboard/touch, reduced-motion/forced-colour and edge states; fix verified deviations and record exact coverage.
-- [ ] Pass affected feature/unit/build/design/dead-code gates, commit bounded pieces, then use the authorized dev → main rollout and verify live.
+- [x] Pass affected feature/unit/build/design/dead-code gates, commit bounded pieces, then use the authorized dev → main rollout and verify live.
 - [x] Keep physical device/OS IME/spoken assistive gates distinct from automated results; do not claim 100% acceptance from source scans alone.
 
-Evidence: [six-app audit](docs/air/family-landscape-2026-10-30.md). Air **1.3.2** verified locally; authorized individual dev → main PR rollout next.
+Evidence: [six-app audit](docs/air/family-landscape-2026-10-30.md). Air **1.3.2** deployed through individual dev → main PRs; 358 served assets and both-engine/live family checks verified. Remote dev/main synchronized, existing local work preserved.
 
 ## Deliberate artwork replay — 2026-10-29
 
