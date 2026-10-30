@@ -7,31 +7,24 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — CloakIMG resumed (2026-10-30)
+### Current checkpoint — CloakIMG verified, release integration next (2026-10-30)
 
-The user has explicitly resumed the final pending product. IMG's preserved
-15-path draft is saved at `/tmp/air-img-2026-10-30/parked.patch`, with six-repository
-HEAD/status/hash evidence in `initial.json`. Work continues on IMG's existing
-`codex/air-refresh` branch. Other product checkouts/worktrees are preserved.
+The final pending product is implemented in Air 1.3.1 across public entry/privacy,
+PWA, all editor tools/shared controls, batch/recovery, output and assets. See
+[final acceptance](cloakimg-acceptance-2026-10-30.md) and its six linked bounded
+checkpoints. 483 units/50 files, both-engine tool matrices, real AI/output journeys,
+dead-code/dependency/build and portable-design checks pass. The 103-surface
+inventory records implementation and explicit remaining physical/assistive gates.
 
-CloakIMG now carries Air 1.3.1 and canonical synchronization includes it. The first
-bounded slice covers public entry, the earlier still-photo/crop-frame concept,
-shared header/footer, a prerendered privacy page and guarded shared PWA notices.
-See [the audit](cloakimg-public-2026-10-30.md) and IMG's per-source inventory.
-The editor foundation is now migrated and verified; see
-[the editor audit](cloakimg-editor-2026-10-30.md). Do not mark the product complete
-or deploy before the remaining tool/output/asset gates pass.
-
-Tool precision and current PWA/README/social assets are now verified in separate
-commits; see [precision](cloakimg-precision-2026-10-30.md) and
-[assets](cloakimg-assets-2026-10-30.md). Runtime/dependency and actual five-format
-output acceptance also pass; see [runtime](cloakimg-runtime-2026-10-30.md).
-Obsolete-code cleanup also passes, including both-engine tool sweeps and core
-feature journeys; see [cleanup](cloakimg-cleanup-2026-10-30.md). Next: batch recipe
-controls, final edge/accessibility acceptance and authorized IMG dev → main rollout.
-Commit each fully passing bounded piece. Physical iPhone/assistive confirmation
-remains distinct from automated WebKit evidence. Existing family rollout below
-is complete and must not be repeated. Task preview: `http://127.0.0.1:8433`.
+Next: commit the final controls/evidence piece, integrate current main and dev,
+create IMG dev → main PR, wait for checks, merge, verify Cloudflare production and
+live bytes/critical paths, then synchronize dev. Standing deployment authorization
+applies now that IMG has resumed. Cloudflare is signed in and confirms production
+branch main; non-production builds upload versions only. Root docs/sync registration
+also need their own dev → main PR, with unchanged homepage application bytes.
+Do not redeploy or modify the other products. Preserve the separate IMG dependency
+worktree and Resume worktrees. Scratch `/tmp/air-img-2026-10-30/`; preview8433/dev8434.
+Physical iPhone/assistive confirmation remains distinct from automated WebKit.
 
 ### Prior checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
 

@@ -22,10 +22,10 @@ Evidence is retained in `/tmp/air-img-2026-10-30/`: `editor-matrix-{chrome,webki
 
 ## Motion review
 
-| Before | After | Why |
-| --- | --- | --- |
-| Custom popup/modal choreography | Immediate menus; Air 240/160ms pointer-dialog transitions, immediate keyboard actions | Frequent editing stays responsive and focus follows semantic primitives |
-| Animated segmented marker and AI stripes | Immediate selection and static indeterminate status | Avoid motion on repeated controls while keeping progress meaning |
-| Duplicated compact transitions | Direct panel selection, bounded interruptible drag settling | Preserve the useful sheet gesture without decorative motion |
+| Before                                   | After                                                                                 | Why                                                                     |
+| ---------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Custom popup/modal choreography          | Immediate menus; Air 240/160ms pointer-dialog transitions, immediate keyboard actions | Frequent editing stays responsive and focus follows semantic primitives |
+| Animated segmented marker and AI stripes | Immediate selection and static indeterminate status                                   | Avoid motion on repeated controls while keeping progress meaning        |
+| Duplicated compact transitions           | Direct panel selection, bounded interruptible drag settling                           | Preserve the useful sheet gesture without decorative motion             |
 
 Approve the shared editor motion for this slice. The finite public illustration retains its prior approval. Reduced motion is respected; no image-processing algorithm is changed by this review.
