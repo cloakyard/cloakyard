@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.3.1 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.3.2 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -19,17 +19,17 @@ Shared design commands:
 - `node scripts/check-air-design.mjs` checks tokens, provenance and migrated sources.
 - `node scripts/check-air-portability.mjs` checks the independent bundle.
 - `node scripts/air-inventory.mjs` updates the surface list while preserving evidence.
-- `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume/Roll public pages and secondary reading/recovery shells.
+- `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume/Roll/IMG public pages and secondary reading/recovery shells.
 - `node scripts/test-air-gathering.mjs` checks the homepage's finite SVG motion, static preferences, responsive layout and directory links against the production build.
 - `node scripts/test-air-artwork-browsers.mjs` checks actual four-thread/no-memory
-  artwork progression across all five sites. Supply external `PLAYWRIGHT_MODULE`,
+  artwork progression across all six sites. Supply external `PLAYWRIGHT_MODULE`,
   `AIR_BROWSER=webkit` or `chromium`, and `AIR_EVIDENCE_DIR`; `CHROME_PATH` may
   select an installed Chrome. Uses the same `AIR_FAMILY_URLS` ordering below.
-  Set `AIR_FAMILY_URLS` (five comma-separated URLs, in that order), `PUPPETEER_MODULE` and
+  Set `AIR_FAMILY_URLS` (six comma-separated URLs, in that order), `PUPPETEER_MODULE` and
   `AIR_EVIDENCE_DIR`; use `AIR_BROWSER=firefox AIR_THEME=light` (then `dark`)
   for Firefox, otherwise Chrome covers both themes. Profiles are disposable.
-- `node scripts/test-air-privacy.mjs` compares all five public policies, explicit home/contents navigation, theme and text reflow. Set `AIR_PRIVACY_URLS` in the same product order and `PUPPETEER_MODULE` for external tooling.
-- `node scripts/test-air-notices.mjs` compares built PDF/Resume PWA notices with real
+- `node scripts/test-air-privacy.mjs` compares all six public policies, explicit home/contents navigation, theme and text reflow. Set `AIR_PRIVACY_URLS` in the same product order and `PUPPETEER_MODULE` for external tooling.
+- `node scripts/test-air-notices.mjs` compares built PDF/Resume/IMG PWA notices with real
   disposable workers across all eleven required viewport sizes, themes and enlarged
   text, including exact cross-app screenshot comparisons. Set `PUPPETEER_MODULE`
   to external browser tooling and `AIR_EVIDENCE_DIR` for captures; product lifecycle

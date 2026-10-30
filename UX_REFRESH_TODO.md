@@ -25,6 +25,17 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Six-app consistency and IMG vector landscape — 2026-10-30
+
+- [x] Replace IMG's photographic landing hook with a local SVG sun/mountain composition and finite Air motion; update its OG preview and retire obsolete landing assets.
+- [x] Include IMG in the family shell, privacy, artwork and cross-app PWA comparison suites.
+- [x] Audit shared component families and editor/custom-control variants against Air in all six web products; preserve functional document/image output and native UI.
+- [x] Inspect required responsive light/dark, enlarged text, keyboard/touch, reduced-motion/forced-colour and edge states; fix verified deviations and record exact coverage.
+- [ ] Pass affected feature/unit/build/design/dead-code gates, commit bounded pieces, then use the authorized dev → main rollout and verify live.
+- [x] Keep physical device/OS IME/spoken assistive gates distinct from automated results; do not claim 100% acceptance from source scans alone.
+
+Evidence: [six-app audit](docs/air/family-landscape-2026-10-30.md). Air **1.3.2** verified locally; authorized individual dev → main PR rollout next.
+
 ## Deliberate artwork replay — 2026-10-29
 
 - [x] Add click/tap replay after completion across Yard/PDF/Drop/Resume/Roll; ignore busy presses without a queue.

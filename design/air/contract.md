@@ -1,6 +1,6 @@
 # Cloakyard Air design contract
 
-Version: **1.3.1 — stylesheet-ready artwork** · Direction: **Air** · Updated: **2026-10-29**
+Version: **1.3.2 — six-app shell consistency** · Direction: **Air** · Updated: **2026-10-30**
 
 The detailed Air system is **locked for implementation**. On 2026-10-13 the user
 authorized one final agent review followed by implementation; that review is
@@ -776,7 +776,9 @@ Public shell content follows the same recipe across the family:
   static recovery pages derive it from the same package version as the application.
 - Footer navigation has exactly five destinations: **Privacy → Source → MIT license
   → Cloakyard → Buy me a coffee**. Source and License target the product repository and main-branch
-  LICENSE. The family destination keeps ArrowUpRight. Use `Footer navigation` as
+  LICENSE. Source, MIT license, the external family destination and support use
+  the same 16px ArrowUpRight cue. Privacy and the directory’s same-page All apps
+  link remain plain. Use `Footer navigation` as
   its landmark. Privacy opens the actual policy; the directory links to its own policy and uses **All apps** (`/#tools`) in the fourth slot.
 - The support link targets `https://ko-fi.com/sumitsahoo21`, uses ArrowUpRight,
   neutral ink in every state, and opens in a new tab with `noopener noreferrer`.

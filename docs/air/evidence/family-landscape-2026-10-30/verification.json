@@ -1,0 +1,114 @@
+{
+  "shell": {
+    "layouts": 648,
+    "secondary": 288,
+    "interactions": 390,
+    "errors": 0,
+    "failures": 0
+  },
+  "privacy": {
+    "layouts": 408,
+    "journeys": 22,
+    "errors": 0,
+    "failures": 0
+  },
+  "notices": {
+    "rows": 396,
+    "captures": 162,
+    "errors": 0
+  },
+  "webkit": {
+    "layouts": 132,
+    "fallbacks": 24,
+    "lifecycle": 6,
+    "stylesheetStartup": 6,
+    "errors": 0
+  },
+  "chromium": {
+    "layouts": 132,
+    "fallbacks": 24,
+    "lifecycle": 6,
+    "stylesheetStartup": 6,
+    "errors": 0
+  },
+  "imgChrome": {
+    "results": 356,
+    "failures": 0,
+    "errors": 0,
+    "requests": 0
+  },
+  "imgWebkit": {
+    "results": 356,
+    "failures": 0,
+    "errors": 0,
+    "requests": 0
+  },
+  "outputParity": [
+    {
+      "engine": "chromium",
+      "pixels": 3072,
+      "exactRGBAAgainstProduction": true,
+      "alphaPreserved": true,
+      "sourceChannelDifferences": 1472
+    },
+    {
+      "engine": "webkit",
+      "pixels": 3072,
+      "exactRGBAAgainstProduction": true,
+      "alphaPreserved": true,
+      "sourceChannelDifferences": 1472
+    }
+  ],
+  "dropIsolation": {
+    "same": true,
+    "count": 17,
+    "differences": []
+  },
+  "unitTests": {
+    "img": 483,
+    "pdf": 461,
+    "resume": 373
+  },
+  "resumeLayouts": {
+    "shell": 324,
+    "sections": 1666,
+    "options": 192,
+    "colour": 195,
+    "dates": 256,
+    "contact": 128,
+    "library": 386,
+    "review": 960
+  },
+  "links": {
+    "cloakyard": {
+      "layouts": 248,
+      "interactions": 92,
+      "errors": 0
+    },
+    "cloakpdf": {
+      "layouts": 188,
+      "interactions": 62,
+      "errors": 0
+    },
+    "cloakdrop": {
+      "layouts": 256,
+      "interactions": 96,
+      "errors": 0
+    },
+    "cloakresume": {
+      "layouts": 208,
+      "interactions": 72,
+      "errors": 0
+    },
+    "cloakroll": {
+      "layouts": 224,
+      "interactions": 80,
+      "errors": 0
+    },
+    "cloakimg": {
+      "layouts": 192,
+      "interactions": 64,
+      "errors": 0
+    }
+  }
+}

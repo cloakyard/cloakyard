@@ -1,6 +1,6 @@
 /** Compare built public surfaces against Air, not against one another's drift.
  * Uses disposable Chrome/Firefox profiles. No external destinations are followed.
- * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume,Roll list; PUPPETEER_MODULE may
+ * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume,Roll,IMG list; PUPPETEER_MODULE may
  * point to existing external test tooling. AIR_REPORT_ONLY records initial drift. */
 import assert from "node:assert/strict";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -12,7 +12,7 @@ const out = resolve(process.env.AIR_EVIDENCE_DIR || `/tmp/air-family-${engine}`)
 await mkdir(out, { recursive: true });
 const urls = (
   process.env.AIR_FAMILY_URLS ||
-  "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182,http://127.0.0.1:8184,http://127.0.0.1:8186"
+  "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182,http://127.0.0.1:8184,http://127.0.0.1:8186,http://127.0.0.1:8187"
 ).split(",");
 const products = [
   {
@@ -61,9 +61,18 @@ products.push({
   source: ".desktop-source",
   privacy: "/privacy/",
 });
+products.push({
+  name: "cloakimg",
+  frame: ".img-header",
+  brand: ".img-brand",
+  sections: ".img-section h2",
+  menu: ".img-mobile-navigation",
+  source: ".img-navigation a:last-child",
+  privacy: "/privacy/",
+});
 for (const p of products) {
   p.repo = `https://github.com/cloakyard/${p.name}`;
-  if (["cloakpdf", "cloakresume"].includes(p.name))
+  if (["cloakpdf", "cloakresume", "cloakimg"].includes(p.name))
     p.version = JSON.parse(
       await readFile(new URL(`../../${p.name}/package.json`, import.meta.url), "utf8"),
     ).version;
@@ -214,6 +223,14 @@ function inspectShell(p) {
       "canonical footer navigation gaps",
     );
   }
+  for (const link of links) {
+    const cue = link.querySelector("svg");
+    const needsCue = ["Source", "MIT license", "Cloakyard", "Buy me a coffee"].includes(
+      label(link),
+    );
+    check(Boolean(cue) === needsCue, `footer directional cue: ${label(link)}`);
+    if (cue) check(cue.getAttribute("aria-hidden") === "true", "decorative footer cue");
+  }
   const identity = footer.querySelector(".air-page-identity");
   if (identity) {
     const copy = getComputedStyle(identity);
@@ -229,12 +246,12 @@ function inspectShell(p) {
   if (p.version)
     check(
       label(identity || footer).startsWith(
-        `${p.name === "cloakpdf" ? "CloakPDF" : "CloakResume"} v${p.version}`,
+        `${{ cloakpdf: "CloakPDF", cloakresume: "CloakResume", cloakimg: "CloakIMG" }[p.name]} v${p.version}`,
       ),
       "build-derived footer version",
     );
   const privacy = links.find((n) => label(n) === "Privacy");
-  if (["cloakdrop", "cloakroll"].includes(p.name))
+  if (["cloakdrop", "cloakroll", "cloakimg"].includes(p.name))
     check(privacy?.getAttribute("href") === "/privacy/", "policy destination");
   else if (p.name !== "cloakyard" && privacy?.tagName === "A")
     check(
@@ -399,7 +416,7 @@ try {
                 !n.textContent.trim() ||
                 !visible(el) ||
                 el.closest(
-                  "script,style,[aria-hidden=true],.visually-hidden,.sr-only,.skip-link,.air-page-skip,.resume-skip",
+                  "script,style,[aria-hidden=true],.visually-hidden,.sr-only,.skip-link,.air-page-skip,.resume-skip,.img-skip",
                 )
               )
                 continue;
@@ -419,6 +436,10 @@ try {
             check(parseFloat(s.paddingLeft) === expectedGutter, "page gutter");
             check(header.width <= 1264.1, "page maximum width");
             const source = document.querySelector(p.source);
+            check(
+              Boolean(source && visible(source)) === !(menu && visible(menu)),
+              "one active navigation mode",
+            );
             const buttons = [...document.querySelectorAll(".air-button")]
               .filter(visible)
               .map((n) => {
@@ -667,9 +688,10 @@ try {
         });
       }
       if (index > 0) {
-        const route = [2, 4].includes(index) ? "/missing-air-page" : "/404.html";
+        // IMG deliberately recovers unknown routes to its start page; others ship a 404 shell.
+        const route = index === 5 ? "/missing-air-page" : "/404.html";
         await page.goto(urls[index] + route, { waitUntil: "networkidle0" });
-        const routeShell = [2, 4].includes(index)
+        const routeShell = [2, 4, 5].includes(index)
           ? product
           : { ...product, frame: "header", brand: "header .air-page-brand" };
         for (const root of [16, 32])
