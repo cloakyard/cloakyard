@@ -90,7 +90,7 @@ async function capture(page, path) {
   return previous;
 }
 try {
-  for (const app of ["cloakpdf", "cloakresume"]) {
+  for (const app of ["cloakpdf", "cloakresume", "cloakimg"]) {
     const server = await serve(app);
     for (const state of ["offline", "update", "updating"])
       for (const coarse of [true, false]) {
@@ -226,7 +226,7 @@ try {
         await context.close();
       }
   }
-  for (const row of rows.filter((r) => r.app === "cloakresume")) {
+  for (const row of rows.filter((r) => r.app !== "cloakpdf")) {
     const reference = rows.find(
       (r) =>
         r.app === "cloakpdf" &&
@@ -241,9 +241,9 @@ try {
       `Cross-app notice drift: ${row.state}/${row.width}/${row.theme}/${row.root}`,
     );
   }
-  for (const capture of captures.filter((c) => c.app === "cloakresume")) {
+  for (const capture of captures.filter((c) => !c.file.startsWith("cloakpdf-"))) {
     const reference = captures.find(
-      (c) => c.file === capture.file.replace("cloakresume-", "cloakpdf-"),
+      (c) => c.file === capture.file.replace(/^cloak(?:resume|img)-/, "cloakpdf-"),
     );
     assert.equal(capture.sha256, reference?.sha256, `Cross-app notice pixels: ${capture.file}`);
   }
@@ -260,5 +260,5 @@ try {
   );
 }
 console.log(
-  `${rows.length} real-worker notice layouts match across PDF and Resume; ${captures.length} captures; no errors.`,
+  `${rows.length} real-worker notice layouts match across PDF, Resume and IMG; ${captures.length} captures; no errors.`,
 );

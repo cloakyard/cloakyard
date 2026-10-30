@@ -7,7 +7,21 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — CloakIMG Air deployed and verified (2026-10-30)
+### Current checkpoint — six-app Air 1.3.2 verified, rollout next (2026-10-30)
+
+IMG uses a local vector landscape and shared OG source. The complete six-app
+consistency pass fixes IMG compact navigation/gutters, blue canvas selection and
+family footer cues, and includes IMG in all shared matrices. See the
+[audit](family-landscape-2026-10-30.md) for exact coverage and durable evidence.
+All required local checks pass, including 483 IMG, 461 PDF and 373 Resume tests,
+both-engine artwork/editor journeys, shared PWA pixels and real output parity.
+Next: individual dev → main PR rollout, live asset/UI verification, dev synchronization.
+Drop's three pre-existing native/release commits are excluded using an isolated
+web checkout at `/Users/sumitsahoo/Developer/.cloakdrop-air-release`.
+Scratch: `/tmp/air-landscape-family-2026-10-30/`; task static preview uses ports
+8440–8445. Physical/assistive/native gates remain open. Do not repeat the migration.
+
+### Prior checkpoint — CloakIMG Air deployed and verified (2026-10-30)
 
 The final pending product is implemented in Air 1.3.1 across public entry/privacy,
 PWA, all editor tools/shared controls, batch/recovery, output and assets. See

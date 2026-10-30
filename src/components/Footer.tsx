@@ -21,14 +21,14 @@ export function Footer() {
           Privacy
         </a>
         <a href="https://github.com/cloakyard/cloakyard" target="_blank" rel="noreferrer">
-          Source
+          Source <ArrowUpRight aria-hidden="true" />
         </a>
         <a
           href="https://github.com/cloakyard/cloakyard/blob/main/LICENSE"
           target="_blank"
           rel="noreferrer"
         >
-          MIT license
+          MIT license <ArrowUpRight aria-hidden="true" />
         </a>
         <a href="/#tools">All apps</a>
         <a href="https://ko-fi.com/sumitsahoo21" target="_blank" rel="noopener noreferrer">

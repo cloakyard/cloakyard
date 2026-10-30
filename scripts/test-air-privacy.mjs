@@ -7,9 +7,9 @@ const out = resolve(process.env.AIR_EVIDENCE_DIR || "/tmp/air-privacy");
 await mkdir(out, { recursive: true });
 const origins = (
   process.env.AIR_PRIVACY_URLS ||
-  "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356"
+  "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356,http://127.0.0.1:8357"
 ).split(",");
-const apps = ["yard", "pdf", "drop", "resume", "roll"];
+const apps = ["yard", "pdf", "drop", "resume", "roll", "img"];
 const sizes = [
   [320, 568],
   [375, 812],
@@ -42,7 +42,7 @@ try {
     await page.evaluateOnNewDocument(() =>
       Object.defineProperty(navigator, "serviceWorker", { value: undefined }),
     );
-    const route = [2, 4].includes(i) ? "/privacy/" : "/?view=privacy";
+    const route = [2, 4, 5].includes(i) ? "/privacy/" : "/?view=privacy";
     for (const theme of ["light", "dark"]) {
       await page.emulateMediaFeatures([
         { name: "prefers-color-scheme", value: theme },
@@ -236,7 +236,7 @@ try {
         "resume: direct privacy visit and home/reload preserve saved draft byte-for-byte",
       );
     }
-    if ([2, 4].includes(i)) {
+    if ([2, 4, 5].includes(i)) {
       await page.setJavaScriptEnabled(false);
       await page.goto(origins[i] + route, { waitUntil: "networkidle0" });
       assert.ok(await page.$(".air-policy-back"));

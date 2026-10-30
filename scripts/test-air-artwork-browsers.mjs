@@ -9,9 +9,9 @@ const out = resolve(process.env.AIR_EVIDENCE_DIR || `/tmp/air-artwork-${engine}`
 await mkdir(out, { recursive: true });
 const urls = (
   process.env.AIR_FAMILY_URLS ||
-  "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356"
+  "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356,http://127.0.0.1:8357"
 ).split(",");
-const names = ["cloakyard", "cloakpdf", "cloakdrop", "cloakresume", "cloakroll"];
+const names = ["cloakyard", "cloakpdf", "cloakdrop", "cloakresume", "cloakroll", "cloakimg"];
 const sizes =
   process.env.AIR_SMOKE === "1"
     ? [[390, 844]]
@@ -122,22 +122,33 @@ async function finishFast(art) {
   assert.equal(await art.getAttribute("data-art-state"), "complete");
 }
 async function activate(page, button, touch) {
-  // PDF's first-cache notice can reflow the narrow page after the initial visit.
-  // Target the current visible artwork, as a person would, before each press.
-  await button.scrollIntoViewIfNeeded();
-  const box = await button.boundingBox();
-  assert.ok(box && box.width >= 44 && box.height >= 44);
-  const x = box.x + box.width / 2,
-    y = box.y + box.height / 2;
-  assert.ok(
-    await button.evaluate((target, { x, y }) => document.elementFromPoint(x, y) === target, {
-      x,
-      y,
-    }),
-    "Press must hit the visible artwork",
-  );
-  if (touch) await page.touchscreen.tap(x, y);
-  else await page.mouse.click(x, y);
+  // Cache-status insertion/removal can reflow the artwork after a scroll.
+  // Read its hit target atomically and require two stable animation frames.
+  const point = await button.evaluate(async (target) => {
+    const until = performance.now() + 2500;
+    let previous = "";
+    while (performance.now() < until) {
+      target.scrollIntoView({ block: "center", behavior: "instant" });
+      await new Promise((resolve) => requestAnimationFrame(resolve));
+      const box = target.getBoundingClientRect();
+      const x = box.x + box.width / 2,
+        y = box.y + box.height / 2;
+      const key = `${x},${y}`;
+      if (
+        key === previous &&
+        box.width >= 44 &&
+        box.height >= 44 &&
+        document.elementFromPoint(x, y) === target
+      )
+        return { x, y };
+      previous = key;
+    }
+    return null;
+  });
+  assert.ok(point, "Press must hit the stable, visible artwork");
+  // Native coordinates deliberately allow a press on aria-disabled busy artwork.
+  if (touch) await page.touchscreen.tap(point.x, point.y);
+  else await page.mouse.click(point.x, point.y);
 }
 
 try {
@@ -148,7 +159,7 @@ try {
         try {
           const initial = await art.getAttribute("data-art-state");
           const button = art.getByRole("button", {
-            name: `Replay ${["Cloakyard", "CloakPDF", "CloakDrop", "CloakResume", "CloakRoll"][index]} animation`,
+            name: `Replay ${["Cloakyard", "CloakPDF", "CloakDrop", "CloakResume", "CloakRoll", "CloakIMG"][index]} animation`,
           });
           await art.scrollIntoViewIfNeeded();
           await state(page, "playing");
@@ -211,6 +222,14 @@ try {
             await page.screenshot({ path: resolve(out, `${prefix}-settled.jpg`), quality: 75 });
           }
           if (!complete) await finishFast(art);
+          // A first-cache notice may move a completed illustration offscreen.
+          // Re-enter it and let IntersectionObserver update replay availability.
+          await art.scrollIntoViewIfNeeded();
+          await page.waitForFunction(
+            () =>
+              document.querySelector(".air-artwork-replay")?.getAttribute("aria-disabled") ===
+              "false",
+          );
           assert.equal(await button.getAttribute("aria-disabled"), "false");
           assert.equal(await button.getAttribute("tabindex"), "0");
           await activate(page, button, width <= 1024);

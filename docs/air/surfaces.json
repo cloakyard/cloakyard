@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "1.3.1",
+  "contractVersion": "1.3.2",
   "note": "Presence in this inventory is not audit or validation. Preserve evidence when updating.",
   "surfaces": [
     {
@@ -152,7 +152,8 @@
         "evidence/public-shell-2026-10-26/checks.json.gz",
         "evidence/consistency-2026-10-26/checks.json.gz",
         "evidence/privacy-2026-10-29/policies.json.gz",
-        "docs/air/family-2026-10-29.md"
+        "docs/air/family-2026-10-29.md",
+        "docs/air/family-landscape-2026-10-30.md"
       ],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open. 2026-10-26: Air 1.2.0 public-shell/Storyline software audit passes; see current validation. Physical/assistive gates stay separate. Public header/footer content, spacing, rendering and navigation verified in Air 1.2.2; this evidence does not close unrelated product/device gates. Air 1.2.3 compares footer heights/content directly across products and uses the pinned PWA notice; current software checks pass. Separate product/device gates remain open. Air 1.2.5 public privacy/navigation software audit passes; policy meaning/dates and editor work preserved. Full product/device gates remain separate. Air 1.2.6 support link and footer software conformance pass across home/privacy/recovery; full product/device acceptance remains separate."
     },
