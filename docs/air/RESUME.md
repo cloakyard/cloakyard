@@ -24,8 +24,9 @@ or deploy before the remaining tool/output/asset gates pass.
 
 Tool precision and current PWA/README/social assets are now verified in separate
 commits; see [precision](cloakimg-precision-2026-10-30.md) and
-[assets](cloakimg-assets-2026-10-30.md). Next: AI/runtime and actual output
-acceptance, current dependencies and obsolete-code audit.
+[assets](cloakimg-assets-2026-10-30.md). Runtime/dependency and actual five-format
+output acceptance also pass; see [runtime](cloakimg-runtime-2026-10-30.md).
+Next: obsolete-code cleanup and final overlay/accessibility/visual acceptance.
 Commit each fully passing bounded piece. Physical iPhone/assistive confirmation
 remains distinct from automated WebKit evidence. Existing family rollout below
 is complete and must not be repeated. Task preview: `http://127.0.0.1:8433`.
