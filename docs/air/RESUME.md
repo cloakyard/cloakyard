@@ -7,7 +7,35 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — CloakIMG editor re-audit deployed (2026-10-30)
+### Current checkpoint — CloakIMG deeper tool-state audit deployed (2026-10-30)
+
+All 26 tools have a new alternate-state audit under Air 1.3.2. Native numeric fields,
+labelled switches, keyboard file browsing/retry, preset states and enlarged-text
+layouts are corrected. An active tool now remains accessible when entering the
+phone layout. Image processing/output, persistent canvas and AI consent are preserved.
+See the [tool-state audit](cloakimg-tool-state-audit-2026-10-30.md).
+
+Local gates pass: 484 units/50 files, build/design/portability/dead-code, 764 initial
+observations per engine, 692/688 alternate-state observations, 132 final preset/Chroma
+observations per engine and 80 retained-value/canvas breakpoint transitions. Real AI,
+keyboard/error recovery, selected-layer, batch and exact PNG parity checks pass.
+
+IMG [PR #24](https://github.com/cloakyard/cloakimg/pull/24) is merged/deployed;
+main/dev are `1c10ba23409e04468a784f79ac8e431efe4faea1`. Exact main checks pass;
+89 served files match raw local bytes. Live: 12 native field/switch/file-recovery,
+eight control/target, 80 retained-value/canvas transitions, and 12 public/privacy/editor
+journeys with eight real PNG downloads pass in both engines, with zero browser errors.
+
+Central documentation uses its own dev → main PR with unchanged application bytes.
+Task previews 8456/8457 are stopped. Scratch: `/tmp/air-img-tool-states-2026-10-30/`.
+Next: physical/device/assistive confirmation, then the separately tracked acceptance
+backlog. Do not repeat this completed audit or rollout.
+
+Physical iPhone/software-keyboard, OS IME and spoken assistive acceptance remain open.
+Other products, Drop's unpublished native/release commits and separate Resume worktrees
+are unchanged. Do not repeat the completed local audit.
+
+### Prior checkpoint — CloakIMG editor re-audit deployed (2026-10-30)
 
 IMG's fresh editor pass corrects enlarged-text overlap, export clipping, undersized
 controls, bespoke search/switch styling and tap-menu anchoring. It applies Air 1.3.2

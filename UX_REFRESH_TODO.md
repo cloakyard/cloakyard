@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,16 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## CloakIMG deeper tool-state audit — 2026-10-30
+
+- [x] Reinspect all 26 tools and alternate/selected/invalid/AI-ready states against Air 1.3.2.
+- [x] Correct native fields, labelled switches, file browsing/retry, preset selection and enlarged-text reflow; remove obsolete styling and bindings.
+- [x] Complete both-engine initial/alternate matrices and final bounded follow-up, record durable evidence and commit passing changes.
+- [x] Promote IMG dev → main by PR, verify live and synchronize dev; record the central documentation handoff.
+- [ ] Keep physical device, OS IME and spoken assistive acceptance separate.
+
+Evidence: [tool-state audit](docs/air/cloakimg-tool-state-audit-2026-10-30.md). IMG #24 is merged/deployed; 89 raw asset matches, 80 live breakpoint transitions, 20 live native/control journeys and 12 live public/privacy/editor journeys pass. Dev/main are synchronized.
 
 ## CloakIMG editor re-audit — 2026-10-30
 

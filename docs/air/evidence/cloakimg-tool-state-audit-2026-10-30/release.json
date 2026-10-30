@@ -1,0 +1,494 @@
+{
+  "date": "2026-10-30",
+  "product": "CloakIMG",
+  "url": "https://img.cloakyard.com/",
+  "pr": "https://github.com/cloakyard/cloakimg/pull/24",
+  "implementationCommit": "5e5ae1d070330f17fcd6b0cd935dc5a84ec5a360",
+  "main": "1c10ba23409e04468a784f79ac8e431efe4faea1",
+  "dev": "1c10ba23409e04468a784f79ac8e431efe4faea1",
+  "mainChecksBeforeDevSynchronization": [
+    {
+      "name": "Workers Builds: cloakimg",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakimg/production/builds/7b340a0a-3891-4d6e-a096-f9697ea0a171",
+      "head_sha": "1c10ba23409e04468a784f79ac8e431efe4faea1"
+    },
+    {
+      "name": "contract",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/cloakyard/cloakimg/actions/runs/41052112741/job/124050475269",
+      "head_sha": "1c10ba23409e04468a784f79ac8e431efe4faea1"
+    }
+  ],
+  "live": {
+    "servedFiles": 89,
+    "rawMatches": 89,
+    "normalizationExceptions": 0,
+    "deploymentOnlyFiles": ["_headers"],
+    "nativeFieldSwitchFileRecoveryJourneys": 12,
+    "controlTargetJourneys": 8,
+    "retainedInspectorValueCanvasTransitions": 80,
+    "publicPrivacyEditorJourneys": 12,
+    "realPNGDownloads": 8,
+    "browserErrors": 0,
+    "engines": ["Chromium", "WebKit"]
+  },
+  "assets": [
+    {
+      "path": "404.html",
+      "sha256": "fb065629c022d3c195b93db6828a3409699008199bbe644bacf1512536c8e0d4",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/BgBlurPanel-DMH2fINW.js",
+      "sha256": "4b0c1862ffa82e19c8ce94fbead081b9b5c3daf459a4b6693a7b13d433e73fcd",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/BgBlurTool-K4jE15Jz.js",
+      "sha256": "e5ebc286c28ef4d78621367d90d5a2b61a342d51b624ef47efeea4d04aed6279",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/BorderPanel-JvbQJY5d.js",
+      "sha256": "94c2399e68bc5080efb5eb8f2ca20193faef40940abf83d493edaaf2f8e9a2ce",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/BorderTool-X9G4L2r3.js",
+      "sha256": "f3d7b4ecbe273b85fa3473a25f96489291e757cf343997a09ab0a391b81485e0",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ColorPickerPanel-CUihssXx.js",
+      "sha256": "ac653b948b19f09fa16ff181ea600f5d73ec3b381943146a0b809a19910e4ab1",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ColorPickerTool-CSVCMPth.js",
+      "sha256": "16df26e3a4fc94a8c1583d528d6d4f25afca7377457406e6dbad8d0e51901ea8",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/DetectionStatus-dGtpYzzm.js",
+      "sha256": "e7eaceb42b52fe5b668cbd9ebe62e17a0be843189e8e5cf32ae62236fdedb75a",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/DrawPanel-Bblma6RT.js",
+      "sha256": "aafa3e6454b44283bb6625e4ceac1157918c16690a5275e7b87086d837256f53",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/DrawTool-DlKRTmhD.js",
+      "sha256": "4e017b57172ce9ee4512ebda935060802ec919790924cf47f58af52665a567ee",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/EditorContext-PvQcogCB.js",
+      "sha256": "c507814c1be2f6e99970d24783f8637f05db3c256dc5f216df0569a09df63f9e",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/EmojiPanel-C9TIYOig.js",
+      "sha256": "5cdb7a6d658dbd4484634b5d74ccc32cbb506fcb5d7e4d9f10e194ee01e4b678",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/EmojiTool-pQLHzxXE.js",
+      "sha256": "33033839d91b7ed99a8e09ccb3b20f56715099d4de05060e43724a3be814a3a3",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/FrameTool-QV7CExSx.js",
+      "sha256": "82a41e106a266ad36b93104db73f057df8a0dc2b477ce446af39f0be55ea36c2",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/HslPanel-CG1bZ5_r.js",
+      "sha256": "cde1fe696c15c9f50fdafb5d19a7a14b8222d18b049871c0d37123e79139eca5",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/HslTool-DTwEHb-J.js",
+      "sha256": "d5d840c38bb17a92853b069e1ab5e46f73a89c76cf9a8d6e17385503d3bf9087",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/IdPhotoTool-3XUiDwLW.js",
+      "sha256": "46db793675ee490399038d42ec26adfa4d399dbc403d39dadc437d20577ac2c4",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ImageFileButton-4vPHBeUl.js",
+      "sha256": "07c78b0cfc28cf568e18e8393bd488bb13bf9e21ffd695152fc94761301feee5",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ImagePanel-CbINkgFa.js",
+      "sha256": "135b2b7dcd7d29b33ef6cde8ce6ba02c1181df4fa674157479101dca1d0ac8f6",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ImageTool-C_v2sFEE.js",
+      "sha256": "b7e0fa930ae2bf22508337d4ea152ba3eb15990b95b5a265e5d5173db15a4c5f",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/LevelsPanel-MLLm1MeU.js",
+      "sha256": "20ee128bea3df1f73f5cbdd69f33f166cb42d559f20b8026785383ad633657fc",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/LevelsTool-Dh17MpDQ.js",
+      "sha256": "d560ee59e3f50bc31026909339ea25ffc48254d7665dc75e0389110253662a59",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/PenPanel-BkxaypAp.js",
+      "sha256": "f7f1748f6782e777809e0a7ed276e708e83557810a5954550a22fcf781f04403",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/PenTool-C132h0jo.js",
+      "sha256": "825af54dfff49c12eb421fdaa276c13f52ad22ec64aeb242dce90a7e80cde827",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/PerspectivePanel-Ddi-cj92.js",
+      "sha256": "6da875330346f67ef61286ff79605ba393a27f7c13708e0c22c76d7b8704b182",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/PerspectiveTool-C7fVLnHG.js",
+      "sha256": "645fa776680cff3ce44893cf4b5a7ed37398db9a20718033bda6e6ae27134af7",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/RedactPanel-DF0lnBCE.js",
+      "sha256": "16e827e10ef8e874e5ce8f7d9c652bb614ce09e80ba025a281d08513b08140b8",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/RedactTool-DUgNTOc9.js",
+      "sha256": "87b2836d324b656338a02e95d77982858a61293c43b4e5715ca51967f3e88559",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/RelightPanel-Bpc9mEkB.js",
+      "sha256": "d9ec8fd62e20ab65d52cd403a767ef5b04585473db1747cae6922bb1a0b69724",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/RelightTool-DtRLc9r2.js",
+      "sha256": "d7ca34d4a67615d0b46c0cacf4f9826c75b2a45580012a82b7913ae32dd55c71",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/RemoveBgPanel-C6HNfn52.js",
+      "sha256": "bc60238aad4d76c80bb370084d0d330b12689e7b59e5047f781e327a5ed012cc",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/RemoveBgTool-BYS7wAow.js",
+      "sha256": "47ed64f7bef7f6343db7c2ffb4f80c20dc44391e54f80849819a7bbf760fe58d",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ShapesPanel-BcQjp5IG.js",
+      "sha256": "aa169a775d3e12730b17e3747686fcfeac6b6e5874b9b7618f605f875607b1ca",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ShapesTool-CM8w_knC.js",
+      "sha256": "93bddcc762d824bb71be540671f51f95bbb03cae90498e2cb8b6b8c5fe8d4607",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/SpotHealPanel-CJTuDio9.js",
+      "sha256": "4a070705b573c14aa7db92371ceda461277f6ec36fde0148875f4a32c6f42844",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/SpotHealTool-zDdeZfhY.js",
+      "sha256": "63a2fd547c8d91ad4dcf767b8871d0c4a46a2ee8c1c7c7a5b1e20f4a6f627404",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/TapFixPanel-C-pe18HA.js",
+      "sha256": "1bfb6176ec760764c4db56693547253dcaf867205dce52b5ee1fb291949783fe",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/TapFixTool-CvByXXvv.js",
+      "sha256": "23b3733dc4e6948a2ea4605e70dad777ae008b534f331a823ccb983d47bbea67",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/TextPanel-BohO-zYz.js",
+      "sha256": "8125e34075c00579b4642639765a369e0232a2b00c0c3c7410489473ef3f3168",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/TimeOfDayPanel-zqbgLJad.js",
+      "sha256": "a3726e5c461d34b53ab9daae8b647417330ee7d0d8e5b118b039ae074ee23047",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/TimeOfDayTool-1YSEpuuz.js",
+      "sha256": "78ea965be3662ea33140e5495c9081933023b177ed499af6df66e881ec5489ce",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/ToolbarRootContext-BZUI92Mu.js",
+      "sha256": "825acf54320929e312310a1bddebb7a191fc593c6e485d53f6b5bd5fe3816f50",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/UnifiedEditor-B6Zy348u.js",
+      "sha256": "5bb9582d95394d0c67ab9953ad71526f2a7e7c680dfb134ebf23549ef6bad9ca",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/WatermarkPanel-CL5eV-KY.js",
+      "sha256": "488a116531ccf5f05774329ab42159fc2fe9f21e78b041659804ed03253d9dce",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/aiInspector-BkitVFxN.js",
+      "sha256": "b3813cb6a879016b752c2fb28755afe31d0dda915ee2d38d588e0fdfc25b8df4",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/air-entry-BpmwFjGS.js",
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/air-entry-DnLJlrJA.css",
+      "sha256": "19170830b4bdaa2eb7316efacba42ce8e0f36a5ec9672990060b18271a083a3f",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/avif_enc-Co4TcJko.wasm",
+      "sha256": "d9f2a95164362af48558d176e619becfd49dd97b50b86c679b47100860522b3d",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/avif_enc_mt-DFoVXd45.wasm",
+      "sha256": "202d7ec9fb7d658df7cbf17fd85d83da724ac9551818c2d5161c858353a683a4",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/avif_enc_mt.worker-Bn11VY3y.js",
+      "sha256": "3fd4983ebfc27b04e8dcc22c5463353d527c758b286062aabfb06f2c93a5ae8b",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/bgBlur-CHwVia2e.js",
+      "sha256": "4d672fde20304ec2bfa46b344311d57f73b9f8cf473bf480d4a18cda74316a49",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/border-mY-UERer.js",
+      "sha256": "7c506129d5fe8d4ad92df3fe3b24118acd2b63bb392323869f68422dbe06a7af",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/draft-B4xzGyzG.js",
+      "sha256": "05e86763867b34d206b655ce33494d885afdb599d0c6c6028290c007f0f8a1b3",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/emoji-CwPh1SHJ.js",
+      "sha256": "43101c88ee959d1218a1c3712964fef0041953c36cd545aabe97c68cfd223234",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/exportCodec.worker-D4uSCvdK.js",
+      "sha256": "c0d552c7f26adb7143b70de40a33d2e756b88549a4a81ea2e433fef03ddfc8b9",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/heif-codec-Bt9ehZlS.js",
+      "sha256": "c155264876a59843deb02cc838e5b1aea66f2672181b27902f6a7e4a080bc29f",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/index.min-6NjN9zuA.js",
+      "sha256": "d71acb641013989dbb75e7dbec081a9b7d9853b581949733d8f525ca36483a44",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/lanczos.worker-DM3rxwvq.js",
+      "sha256": "b1321c038c3d77120729cc341bf1985473e4d0fb24ef4afa98480883b3bb048f",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/main-CMW8Uz-E.css",
+      "sha256": "2a43e57e2dfc0dd87fbe75925b93ba4bedd348cc12f41264c7b10826feeddffd",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/main-Dx0sSI6Z.js",
+      "sha256": "6554dfdf119cd214b36e8f3e9ecded826c9941d5ce6ec935d521bb1cd862ac89",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/perspective-D2PSCm8s.js",
+      "sha256": "d9ccdfd5cfdb1f47580a1f2d4df4b8ded556103661806ccec7d2391fcf360969",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/previewSize-DuK55wBm.js",
+      "sha256": "57d3e6b78927164993ca7dc25e8464b2411364df1556c3e8f0c295cc6e1504f0",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/privacy-Bq4Yx00m.js",
+      "sha256": "f211cf67aaac4d8bcbff6dd338cce6042c645f67adbf12a7c7198ae431cb2005",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/relight-Bbg_bt19.js",
+      "sha256": "606115ee2d8279153642d23817ba7cb61c119980d8e9fe522a06e21766e619df",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/removeBg-DED2FiOi.js",
+      "sha256": "4cc9567af805290369b70d48f7cd14ddc79a9cd954e769c1e46079dcddebb6bf",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/runner-DSRf0v9s.js",
+      "sha256": "28bb991da7d34634e6d9815fd6e60fa6e7b5f48637ab0738ac6cd2d59b68ab7a",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/timeOfDay-DVWNIUV9.js",
+      "sha256": "e69f2d328c1ac8ab7387c75d7aa024beb56c1d4c5e31c14fc5662aa6c69fff52",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/useSubjectMask-BvDK7t5_.js",
+      "sha256": "b03b15cc0b8e3c6261b8711cfb0370011bf3bf21a32f36bf072c9747fa254585",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/workbox-window.prod.es5-Bd17z0YL.js",
+      "sha256": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "rawMatch": true
+    },
+    {
+      "path": "assets/worker-CCivsMyx.js",
+      "sha256": "c02e4287fce84c273991c9d98f1092eacc22b0567aa86fb47218a22a6ff61a03",
+      "rawMatch": true
+    },
+    {
+      "path": "cloakimg-mark.svg",
+      "sha256": "4a17998945a270941409abe2c6450b8ec1c15d24e4ca5bae61c95ccb1f2461fe",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/apple-touch-icon.png",
+      "sha256": "854b21a7a47fd69f20eda08adef0361c741a8af5e5c6b698fba534b81ebb63e5",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/cloakyard.svg",
+      "sha256": "e1dad723d74ac85fdcf2a15e73862b2034e3eedd0fb0f5eb18f23a64492d08d9",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/favicon.ico",
+      "sha256": "d8c589ce6a44d4074c1c8ec8d8856f09f7773aa7a6911398f11b85c04057d24d",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/favicon.svg",
+      "sha256": "2ccdc4217f30b07a1bf8af864e3e4b51b0357ee8cd4816f4a5cacebce4437f13",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/logo.svg",
+      "sha256": "1d81b6e592cd16fdf001c0c1cc5f955746b9b3b157f300f5361de4a665409000",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/maskable-icon-512x512.png",
+      "sha256": "f4b60067a5fb4b281592259db1f3c72f23d5abaddb2f592b32563771a8784cb9",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/og-image.png",
+      "sha256": "c386139c954670b27d78f05e3e157ba4fa1d61f723c91e675015e45c676a3974",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/pwa-192x192.png",
+      "sha256": "9b5fa051d8d7a0dd42a7a92a5c6478d476d64dc2659914cd9f5e4dd988a1ebec",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/pwa-512x512.png",
+      "sha256": "2bed376ebc98d370f1f29bc697be75d5d9307d7befeb188dead4e361daf0944f",
+      "rawMatch": true
+    },
+    {
+      "path": "icons/pwa-64x64.png",
+      "sha256": "38049a285b2004a1a78897cfb5e9a0fc3e31658d5d13a4950acaf69a55f27a1c",
+      "rawMatch": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "eed67a8846dc6a3d4d532d8328c1060b8456ae57f927c7715ca98c29b3215ec7",
+      "rawMatch": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha256": "bf4b63ef0069baee70751825e0fb7fd2fa1cbe86001fa2e98e20c61b4d1c990f",
+      "rawMatch": true
+    },
+    {
+      "path": "models/face/blaze_face_full_range.tflite",
+      "sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "rawMatch": true
+    },
+    {
+      "path": "privacy/index.html",
+      "sha256": "f4e6601a45b3439a78506791d9057d3d4c1b8bc2157b55c927bba4d6f013bf4a",
+      "rawMatch": true
+    },
+    {
+      "path": "screenshots/iPad.png",
+      "sha256": "fd44681001058de1c000984cb201b8ed71c87e5f4e6698eddf1411a6a7bcee04",
+      "rawMatch": true
+    },
+    {
+      "path": "screenshots/iPhone.png",
+      "sha256": "d72c61835723bf19bf74af32c2e41bf2d9408b8712737324977cb75f478cc883",
+      "rawMatch": true
+    },
+    {
+      "path": "sw.js",
+      "sha256": "a83912224f45cff3d399b4d8619d47ff13b0e802d65bf6e47a45221ed70c59de",
+      "rawMatch": true
+    },
+    {
+      "path": "workbox-271d3e69.js",
+      "sha256": "d88028613a86bbae28c2f19a29da8730c065cd4af7993b496ec7451ed1d6e68e",
+      "rawMatch": true
+    }
+  ],
+  "localEvidence": "https://github.com/cloakyard/cloakimg/blob/main/docs/air/evidence/tool-state-audit-2026-10-30/verification.json",
+  "previews8456And8457": "stopped",
+  "otherApps": "unchanged; preserve Drop unpublished native/release commits and separate Resume worktrees",
+  "remainingAcceptance": [
+    "physical iPhone/software keyboard",
+    "OS IME",
+    "spoken assistive output",
+    "separate high-resolution/native-codec/AI-tier acceptance"
+  ]
+}
