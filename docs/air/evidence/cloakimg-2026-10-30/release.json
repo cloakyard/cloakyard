@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-30",
+  "contract": "Air 1.3.1",
+  "site": "https://img.cloakyard.com/",
+  "applicationPr": "https://github.com/cloakyard/cloakimg/pull/20",
+  "applicationMerge": "c377680a67638477203787bb1fdaa2e5db77b931",
+  "deliveryPr": "https://github.com/cloakyard/cloakimg/pull/21",
+  "main": "a2fd4a0cb7b6b2a1ed9f67277668cdfd36c02692",
+  "dev": "a2fd4a0cb7b6b2a1ed9f67277668cdfd36c02692",
+  "previousMain": "77a8fccffbec7260892c28d556d3fa2722cad557",
+  "productionBuild": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakimg/production/builds/c58652f5-68ed-4df3-acb5-f718709e8d18",
+  "productionBranch": "main",
+  "nonProductionCommand": "npx wrangler versions upload",
+  "tests": {
+    "unitTests": 483,
+    "unitFiles": 50,
+    "toolObservationsPerEngine": 356,
+    "browserEngines": ["Chrome", "WebKit"],
+    "recoveryStates": 48,
+    "batchLayouts": 24,
+    "liveJourneys": 12,
+    "livePngDownloads": 8,
+    "exactServedAssets": 89
+  },
+  "limitations": [
+    "Physical iPhone/Android touch and software keyboards",
+    "OS IME",
+    "Spoken assistive acceptance"
+  ],
+  "runtimeEvidence": "../../cloakimg-runtime-2026-10-30.md",
+  "acceptanceEvidence": "../../cloakimg-acceptance-2026-10-30.md",
+  "localBuildMetadata": "The earlier 90-file local build included untracked .DS_Store; it was removed. Production has 89 served files; _headers is configuration, not served.",
+  "rootDocumentationPr": "https://github.com/cloakyard/cloakyard/pull/35",
+  "rootApplicationUnchanged": true
+}

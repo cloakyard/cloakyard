@@ -1,4 +1,8 @@
-# Four-site Air deployment — 2026-10-21
+# Air rollout ledger
+
+Current 2026-10-30: [CloakIMG Air is deployed and production-verified](cloakimg-release-2026-10-30.md) through IMG #20/#21. Main/dev are synchronized; 89 raw live assets, both-engine responsive journeys and actual exports pass. Other products are unchanged. Physical/family acceptance remains separate. The historical rollout records below retain their original scope.
+
+## Four-site Air deployment — 2026-10-21
 
 Current 2026-10-26 rollout: [verified Air 1.2 candidates](rollout-2026-10-26.md).
 Four individual dev → main releases are authorized; production results will be

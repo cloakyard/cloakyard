@@ -1,0 +1,6 @@
+{
+  "status": 200,
+  "cacheControl": "public, max-age=0, must-revalidate, no-transform",
+  "injectedChallengeScript": false,
+  "url": "https://img.cloakyard.com/"
+}

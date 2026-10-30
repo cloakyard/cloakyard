@@ -1,0 +1,65 @@
+{
+  "served": [
+    {
+      "path": "cloakyard-mark.svg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "og.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/cloakdrop-mark.svg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/cloakimg-mark.svg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/cloakpdf-mark.svg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/cloakresume-mark.svg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/cloakroll-mark.svg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "assets/index-BPevtn9B.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "assets/index-BXNcvPVA.js",
+      "status": 200,
+      "match": true
+    }
+  ],
+  "configurationNotServed": ["_headers"]
+}
