@@ -1,6 +1,10 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG implementation verified, rollout pending** · Direction: **Air** · Started: **2026-10-11**
+
+CloakIMG implementation and automated acceptance pass; see Phase 6 and the final
+audit. Current work is the authorized dev → main rollout. Physical device/assistive
+gates and the separate family acceptance backlog remain open.
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
 [implementation plan](docs/air/IMPLEMENTATION_PLAN.md) defines rollout order,
@@ -1105,27 +1109,28 @@ unused code, trace retained consumers, and keep current inventories/references a
 - [ ] Final inspection of all required layouts/themes/input/motion modes and remaining physical/assistive gates.
 - [ ] Record full-product acceptance evidence after every required gate passes.
 
-## Phase 6 — CloakIMG (last)
+## Phase 6 — CloakIMG (implementation verified, 2026-10-30)
 
-A landing/import draft is parked uncommitted at the user’s request. It has partial
-checks only; resume after Drop and Resume, then rerun the complete slice gates.
+The final product is implemented in Air 1.3.1. The initial parked draft is preserved
+in `/tmp/air-img-2026-10-30/parked.patch`. See [final acceptance](docs/air/cloakimg-acceptance-2026-10-30.md)
+and its linked public/editor/precision/assets/runtime/cleanup evidence. Automated
+browser checks do not substitute for the remaining physical input/assistive gates.
 
-- [ ] Landing/header/footer, drop/start flows, features/privacy and error/reload states.
-- [ ] Editor top bar/rail/search/properties, image canvas, stage host and mobile more menu.
-- [ ] Layers, history list/scrubber, compare, file properties, batch view and privacy audit.
-- [ ] All fields/buttons/selects/segments, colour picker, histogram/levels/HSL/curves and numeric units.
-- [ ] All tool panels/stages in the inventory, including preview/apply/cancel and empty/invalid states.
-- [ ] AI scope/consent/download/cached/ready/error/cancel/retry for segmentation, face and depth.
-- [ ] Export formats/options/metadata/privacy/progress and error/recovery flows.
-- [ ] Mobile full tool access, canvas/panel split, short screens, landscape and software keyboard.
-- [ ] Feature sweep: adjust, filters, levels/HSL, time-of-day, relight, blur, background removal.
-- [ ] Feature sweep: crop/resize/perspective, frames/borders, passport/visa layouts and print/PDF.
-- [ ] Feature sweep: retouch/spot heal, masks/faces/redaction, text/shapes/draw/pen, emoji/watermark/images.
-- [ ] Validate layers, reorder, undo/redo, compare, apply/cancel, batch, import HEIC and all export formats.
-- [ ] Keep pixel colours/alpha/output fidelity and AI consent/canvas-pool invariants intact.
-- [ ] Run check, all tests, build/asset limits, tool sweep and applicable audit/probe scripts.
-- [ ] Inspect all required layout classes, themes and input/motion modes; update PWA/social assets.
-- [ ] Record full evidence and commit each verified piece.
+- [x] Landing/header/footer, direct file/clipboard entry, recents/drafts/start controls, static privacy and guarded shared PWA notices.
+- [x] Editor header/rail/search/properties, persistent image canvas/stage host, compact tool picker and mobile more menu.
+- [x] Layers/reorder, history/scrubber, compare, file properties, privacy audit and responsive batch recipes with keyboard controls.
+- [x] Shared fields/buttons/selects/segments, exact numeric units, colour wheel/RGB/recents/EyeDropper, histogram/levels/HSL/curves.
+- [x] All 26 tool panels/stages, preview/apply/cancel, invalid drafts, selected/disabled and edge-state controls; 356 observations per browser engine.
+- [x] Segmentation/face/depth consent and runtime checks; cached, ready, failure/retry and honest cancel/pause/resume flows.
+- [x] Export controls and actual JPEG/PNG/WebP/AVIF/HEIC output, HEIC import/round-trips, metadata/privacy and ID print/PDF checks.
+- [x] Mobile full tool access, retained canvas/panel split, tablet, short-screen and landscape layouts in light/dark.
+- [x] Feature checks for adjustment/filter/levels/HSL/time-of-day/relight/blur/background removal; crop/resize/perspective/frame/border/ID; retouch/redaction/text/shapes/draw/pen/emoji/watermark/images, backed by applicable tool/output units and browser journeys.
+- [x] Preserve pixel/alpha/output fidelity, consent and canvas-pool invariants; fix Safari WebP fallback and stage-switch cleanup race.
+- [x] Update real PWA/README screenshots, OG preview and manifest; remove obsolete controls/assets/runtime references and unused exports.
+- [x] Required checks, 483 units, build/90-asset limits, zero dead-code issues, current dependency/security audit and standalone Air integrity pass.
+- [x] Record evidence for 103 source surfaces and commit bounded passing pieces.
+- [ ] Physical iPhone/Android touch, software keyboard, OS IME and spoken assistive acceptance; these remain explicit in the inventory.
+- [ ] Complete authorized dev → main PR rollout and verify live assets/entry/editor behaviour.
 
 ## Phase 7 — legacy design cleanup after redesign
 
@@ -1180,9 +1185,10 @@ interiors, custom controls, canvas chrome and less-visible states.
 
 ## Phase 9 — current dependencies and authorized release integration
 
-The latest explicit authorization deploys Cloakyard, PDF, Drop and Resume through
-individual dev → main PRs, while excluding IMG. The four sites are production-
-verified; remaining migration/device gates stay open. See docs/air/ROLLOUT.md.
+The earlier rollout excluded parked IMG. The user resumed IMG on 30 October; its
+verified Air work now follows the standing dev → main PR deployment authorization.
+The other sites are already production-verified and are not redeployed by the IMG
+implementation. Remaining physical/family acceptance gates stay open. See docs/air/ROLLOUT.md.
 
 - [x] Initial direct-dependency discovery: 38 outdated entries across the five
       repositories, with fresh npm registry metadata saved in
@@ -1886,8 +1892,8 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Inspect eleven sizes in light/dark, enlarged text, emulated touch/cancel,
       forced colours and reduced motion. Safari reviewed; Firefox at actual 200% reviewed.
 - [x] Remove replaced square/point styles and redundant callbacks; no dependency added.
-- [ ] Adopt the same wheel in CloakIMG's shared picker, preserving RGB, recent colours
-      and eye-dropper access; validate every tool consumer and actual image output.
+- [x] Adopt the same wheel in CloakIMG's shared picker, preserving RGB, recent colours
+      and eye-dropper access; tool-consumer and image-output checks pass (30 October).
 - [x] Align CloakResume's existing wheel mapping, controls and gesture/hex recovery
       with the family pattern; preserve primary colour and every template/export.
 - [x] PDF Fill form, Auto-fill and N-up pieces are implemented and tested in later checkpoints.

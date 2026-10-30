@@ -1,13 +1,32 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-29
+## Start here in a new conversation — saved 2026-10-30
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
+### Current checkpoint — CloakIMG verified, release integration next (2026-10-30)
+
+The final pending product is implemented in Air 1.3.1 across public entry/privacy,
+PWA, all editor tools/shared controls, batch/recovery, output and assets. See
+[final acceptance](cloakimg-acceptance-2026-10-30.md) and its six linked bounded
+checkpoints. 483 units/50 files, both-engine tool matrices, real AI/output journeys,
+dead-code/dependency/build and portable-design checks pass. The 103-surface
+inventory records implementation and explicit remaining physical/assistive gates.
+
+Next: commit the final controls/evidence piece, integrate current main and dev,
+create IMG dev → main PR, wait for checks, merge, verify Cloudflare production and
+live bytes/critical paths, then synchronize dev. Standing deployment authorization
+applies now that IMG has resumed. Cloudflare is signed in and confirms production
+branch main; non-production builds upload versions only. Root docs/sync registration
+also need their own dev → main PR, with unchanged homepage application bytes.
+Do not redeploy or modify the other products. Preserve the separate IMG dependency
+worktree and Resume worktrees. Scratch `/tmp/air-img-2026-10-30/`; preview8433/dev8434.
+Physical iPhone/assistive confirmation remains distinct from automated WebKit.
+
+### Prior checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
 
 The five initial replay PRs and Air 1.3.1 correction PRs are merged/deployed. All
 270 current public files match the verified builds (267 raw, three normalized Roll

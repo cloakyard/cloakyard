@@ -32,7 +32,6 @@ async function sync(path, content) {
   }
 }
 for (const [slug, name, destinations] of products) {
-  if (slug === "cloakimg") continue; // Parked redesign: retain its independently validated revision.
   const appendix = (
     await readFile(resolve(repository, `design/air/products/${slug}.md`), "utf8")
   ).trim();
@@ -154,5 +153,5 @@ ${appendix}
 if (failures) process.exitCode = 1;
 else
   console.log(
-    `${check ? "Verified" : "Updated"} seven active portable Air specifications (${hash.slice(0, 12)}).`,
+    `${check ? "Verified" : "Updated"} eight portable Air specifications (${hash.slice(0, 12)}).`,
   );
