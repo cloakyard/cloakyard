@@ -22,8 +22,10 @@ The editor foundation is now migrated and verified; see
 [the editor audit](cloakimg-editor-2026-10-30.md). Do not mark the product complete
 or deploy before the remaining tool/output/asset gates pass.
 
-Next: finish tool-specific precision values, AI/runtime and actual output acceptance,
-then current assets/dependencies and obsolete-code audit.
+Tool precision and current PWA/README/social assets are now verified in separate
+commits; see [precision](cloakimg-precision-2026-10-30.md) and
+[assets](cloakimg-assets-2026-10-30.md). Next: AI/runtime and actual output
+acceptance, current dependencies and obsolete-code audit.
 Commit each fully passing bounded piece. Physical iPhone/assistive confirmation
 remains distinct from automated WebKit evidence. Existing family rollout below
 is complete and must not be repeated. Task preview: `http://127.0.0.1:8433`.
