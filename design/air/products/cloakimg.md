@@ -34,3 +34,8 @@
   unchanged or unavailable model paths are never described as exercised.
 - Keep a per-component/state inventory and evidence in `docs/air/`. Local tokens
   and this complete contract travel with the repository.
+- Landing artwork uses a still photograph with a crop frame that settles around
+  its subject. The photo remains stationary; frame motion runs once in 2400ms
+  through the shared finite artwork lifecycle, with completed-only explicit
+  replay and static accessibility/resource fallbacks. The real upload target is
+  separate and immediately usable. Retain the approved orange photograph asset.

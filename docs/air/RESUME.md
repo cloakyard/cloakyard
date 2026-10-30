@@ -1,13 +1,33 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-29
+## Start here in a new conversation — saved 2026-10-30
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
+### Current checkpoint — CloakIMG resumed (2026-10-30)
+
+The user has explicitly resumed the final pending product. IMG's preserved
+15-path draft is saved at `/tmp/air-img-2026-10-30/parked.patch`, with six-repository
+HEAD/status/hash evidence in `initial.json`. Work continues on IMG's existing
+`codex/air-refresh` branch. Other product checkouts/worktrees are preserved.
+
+CloakIMG now carries Air 1.3.1 and canonical synchronization includes it. The first
+bounded slice covers public entry, the earlier still-photo/crop-frame concept,
+shared header/footer, a prerendered privacy page and guarded shared PWA notices.
+See [the audit](cloakimg-public-2026-10-30.md) and IMG's per-source inventory.
+The editor and start/export dialogs still require their full migration; do not
+mark the product complete or deploy the public-only slice.
+
+Next: editor typography/composition and shared controls, every tool/AI/overlay/
+edge state and output preservation, then current assets and obsolete-code audit.
+Commit each fully passing bounded piece. Physical iPhone/assistive confirmation
+remains distinct from automated WebKit evidence. Existing family rollout below
+is complete and must not be repeated. Task preview: `http://127.0.0.1:8433`.
+
+### Prior checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
 
 The five initial replay PRs and Air 1.3.1 correction PRs are merged/deployed. All
 270 current public files match the verified builds (267 raw, three normalized Roll

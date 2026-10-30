@@ -1105,12 +1105,16 @@ unused code, trace retained consumers, and keep current inventories/references a
 - [ ] Final inspection of all required layouts/themes/input/motion modes and remaining physical/assistive gates.
 - [ ] Record full-product acceptance evidence after every required gate passes.
 
-## Phase 6 — CloakIMG (last)
+## Phase 6 — CloakIMG (active, 2026-10-30)
 
-A landing/import draft is parked uncommitted at the user’s request. It has partial
-checks only; resume after Drop and Resume, then rerun the complete slice gates.
+The user resumed the final product on 30 October. The parked landing/import draft
+is preserved in `/tmp/air-img-2026-10-30/`; its partial checks do not establish
+acceptance. Work in bounded pieces: public entry/privacy/PWA/artwork; editor and
+shared controls; tool/AI/export edge states; assets, cleanup and full acceptance.
+Adopt the current portable Air contract and preserve all output/canvas invariants.
 
-- [ ] Landing/header/footer, drop/start flows, features/privacy and error/reload states.
+- [x] Public landing/header/footer, direct file/clipboard entry, features/privacy and guarded shared PWA notice (30 October; see `docs/air/cloakimg-public-2026-10-30.md`).
+- [ ] Finish start dialog, recents/drafts and all entry edge states with the shared editor controls.
 - [ ] Editor top bar/rail/search/properties, image canvas, stage host and mobile more menu.
 - [ ] Layers, history list/scrubber, compare, file properties, batch view and privacy audit.
 - [ ] All fields/buttons/selects/segments, colour picker, histogram/levels/HSL/curves and numeric units.
