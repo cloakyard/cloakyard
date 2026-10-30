@@ -1,0 +1,22 @@
+[
+  {
+    "repo": "cloakpdf",
+    "sameHead": true,
+    "sameStatus": true
+  },
+  {
+    "repo": "cloakresume",
+    "sameHead": true,
+    "sameStatus": true
+  },
+  {
+    "repo": "cloakdrop",
+    "sameHead": true,
+    "sameStatus": true
+  },
+  {
+    "repo": "cloakroll",
+    "sameHead": true,
+    "sameStatus": true
+  }
+]

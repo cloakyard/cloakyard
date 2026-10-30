@@ -1,0 +1,58 @@
+[
+  {
+    "zip": "chrome-light.zip",
+    "file": "orange.jpg",
+    "height": 213,
+    "width": 320,
+    "bytes": 11574
+  },
+  {
+    "zip": "chrome-light.zip",
+    "file": "00554.jpg",
+    "height": 168,
+    "width": 320,
+    "bytes": 11911
+  },
+  {
+    "zip": "webkit-light.zip",
+    "file": "orange.jpg",
+    "height": 213,
+    "width": 320,
+    "bytes": 18423
+  },
+  {
+    "zip": "webkit-light.zip",
+    "file": "00554.jpg",
+    "height": 168,
+    "width": 320,
+    "bytes": 17292
+  },
+  {
+    "zip": "webkit-dark.zip",
+    "file": "orange.jpg",
+    "height": 213,
+    "width": 320,
+    "bytes": 18423
+  },
+  {
+    "zip": "webkit-dark.zip",
+    "file": "00554.jpg",
+    "height": 168,
+    "width": 320,
+    "bytes": 17292
+  },
+  {
+    "zip": "chrome-dark.zip",
+    "file": "orange.jpg",
+    "height": 213,
+    "width": 320,
+    "bytes": 11574
+  },
+  {
+    "zip": "chrome-dark.zip",
+    "file": "00554.jpg",
+    "height": 168,
+    "width": 320,
+    "bytes": 11911
+  }
+]

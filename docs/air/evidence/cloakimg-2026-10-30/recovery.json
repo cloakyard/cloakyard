@@ -1,0 +1,482 @@
+[
+  {
+    "engine": "chrome",
+    "w": 320,
+    "h": 568,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [0, 152.75, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 320,
+    "h": 568,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [0, 16, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 320,
+    "h": 568,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [0, 152.75, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 320,
+    "h": 568,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [0, 16, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 390,
+    "h": 844,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [0, 50.453125, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 390,
+    "h": 844,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [0, 16, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 390,
+    "h": 844,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [0, 50.453125, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 390,
+    "h": 844,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [0, 16, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "chrome",
+    "w": 844,
+    "h": 390,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 844,
+    "h": 390,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 844,
+    "h": 390,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 844,
+    "h": 390,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 768,
+    "h": 1024,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [96, 326.265625, 672, 697.734375],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 768,
+    "h": 1024,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [96, 24, 672, 1000],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 768,
+    "h": 1024,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [96, 326.265625, 672, 697.734375],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 768,
+    "h": 1024,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [96, 24, 672, 1000],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1024,
+    "h": 768,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [224, 204.171875, 800, 563.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1024,
+    "h": 768,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [224, 24, 800, 744],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1024,
+    "h": 768,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [224, 204.171875, 800, 563.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1024,
+    "h": 768,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [224, 24, 800, 744],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1440,
+    "h": 900,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [432, 270.171875, 1008, 629.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1440,
+    "h": 900,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [432, 24, 1008, 876],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1440,
+    "h": 900,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [432, 270.171875, 1008, 629.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "chrome",
+    "w": 1440,
+    "h": 900,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [432, 24, 1008, 876],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 320,
+    "h": 568,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [0, 152.75, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 320,
+    "h": 568,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [0, 16, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 320,
+    "h": 568,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [0, 152.75, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 320,
+    "h": 568,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [0, 16, 320, 568],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 390,
+    "h": 844,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [0, 50.453125, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 390,
+    "h": 844,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [0, 16, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 390,
+    "h": 844,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [0, 50.453125, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 390,
+    "h": 844,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [0, 16, 390, 844],
+    "overflow": false,
+    "radius": "20px 20px 0px 0px"
+  },
+  {
+    "engine": "webkit",
+    "w": 844,
+    "h": 390,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 844,
+    "h": 390,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 844,
+    "h": 390,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 844,
+    "h": 390,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [134, 24, 710, 366],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 768,
+    "h": 1024,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [96, 326.265625, 672, 697.734375],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 768,
+    "h": 1024,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [96, 24, 672, 1000],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 768,
+    "h": 1024,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [96, 326.265625, 672, 697.734375],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 768,
+    "h": 1024,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [96, 24, 672, 1000],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1024,
+    "h": 768,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [224, 204.171875, 800, 563.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1024,
+    "h": 768,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [224, 24, 800, 744],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1024,
+    "h": 768,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [224, 204.171875, 800, 563.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1024,
+    "h": 768,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [224, 24, 800, 744],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1440,
+    "h": 900,
+    "theme": "light",
+    "variant": "card",
+    "bounds": [432, 270.171875, 1008, 629.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1440,
+    "h": 900,
+    "theme": "light",
+    "variant": "modal",
+    "bounds": [432, 24, 1008, 876],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1440,
+    "h": 900,
+    "theme": "dark",
+    "variant": "card",
+    "bounds": [432, 270.171875, 1008, 629.828125],
+    "overflow": false,
+    "radius": "20px"
+  },
+  {
+    "engine": "webkit",
+    "w": 1440,
+    "h": 900,
+    "theme": "dark",
+    "variant": "modal",
+    "bounds": [432, 24, 1008, 876],
+    "overflow": false,
+    "radius": "20px"
+  }
+]

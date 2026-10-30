@@ -1,9 +1,9 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG implementation verified, rollout pending** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
-CloakIMG implementation and automated acceptance pass; see Phase 6 and the final
-audit. Current work is the authorized dev → main rollout. Physical device/assistive
+CloakIMG implementation and deployment are verified; see Phase 6 and the
+[release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
 gates and the separate family acceptance backlog remain open.
 
 Resume from [the saved handoff](docs/air/RESUME.md), starting with its **Start here in a new conversation** section. It records current commits, the exact next piece and the remaining rollout. Earlier dated “Next” suggestions below are historical; reconcile them with the newest checkpoint before repeating work. The
@@ -18,8 +18,8 @@ KERR's app and native macOS UI are outside this redesign. The user authorized
 Cloakyard/PDF dev integration, main PRs and releases, followed by CloakDrop RC1
 publication, its Air website deployment, and the app-colour deployment. Cloakyard,
 PDF, Drop website and Resume are now live with their current Air artwork; main/dev
-integration is complete. IMG remains parked, excluded from deployment and last
-in the rollout. On 2026-10-21 the user authorized final dependency updates, dev
+integration is complete. IMG was resumed on 30 October and is now deployed through
+its own dev → main PRs, completing the previously parked implementation. On 2026-10-21 the user authorized final dependency updates, dev
 integration and dev → main PR merges after all remaining work is complete, with
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
@@ -1130,7 +1130,7 @@ browser checks do not substitute for the remaining physical input/assistive gate
 - [x] Required checks, 483 units, build/90-asset limits, zero dead-code issues, current dependency/security audit and standalone Air integrity pass.
 - [x] Record evidence for 103 source surfaces and commit bounded passing pieces.
 - [ ] Physical iPhone/Android touch, software keyboard, OS IME and spoken assistive acceptance; these remain explicit in the inventory.
-- [ ] Complete authorized dev → main PR rollout and verify live assets/entry/editor behaviour.
+- [x] Deploy through IMG #20/#21; main/dev synchronized at `a2fd4a0`. All 89 raw live hashes, 12 both-engine responsive journeys and eight real PNG exports pass; see the release ledger.
 
 ## Phase 7 — legacy design cleanup after redesign
 

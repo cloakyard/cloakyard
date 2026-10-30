@@ -7,24 +7,28 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — CloakIMG verified, release integration next (2026-10-30)
+### Current checkpoint — CloakIMG Air deployed and verified (2026-10-30)
 
 The final pending product is implemented in Air 1.3.1 across public entry/privacy,
 PWA, all editor tools/shared controls, batch/recovery, output and assets. See
-[final acceptance](cloakimg-acceptance-2026-10-30.md) and its six linked bounded
-checkpoints. 483 units/50 files, both-engine tool matrices, real AI/output journeys,
-dead-code/dependency/build and portable-design checks pass. The 103-surface
-inventory records implementation and explicit remaining physical/assistive gates.
+[acceptance](cloakimg-acceptance-2026-10-30.md) and [release](cloakimg-release-2026-10-30.md).
+483 units/50 files, both-engine tool matrices, real AI/output journeys, dead-code,
+dependency/build and portable-design checks pass. The 103-source inventory records
+implementation and explicit remaining physical/assistive acceptance.
 
-Next: commit the final controls/evidence piece, integrate current main and dev,
-create IMG dev → main PR, wait for checks, merge, verify Cloudflare production and
-live bytes/critical paths, then synchronize dev. Standing deployment authorization
-applies now that IMG has resumed. Cloudflare is signed in and confirms production
-branch main; non-production builds upload versions only. Root docs/sync registration
-also need their own dev → main PR, with unchanged homepage application bytes.
-Do not redeploy or modify the other products. Preserve the separate IMG dependency
-worktree and Resume worktrees. Scratch `/tmp/air-img-2026-10-30/`; preview8433/dev8434.
-Physical iPhone/assistive confirmation remains distinct from automated WebKit.
+IMG [#20](https://github.com/cloakyard/cloakimg/pull/20) and delivery [#21](https://github.com/cloakyard/cloakimg/pull/21) are merged/deployed. Main/dev are
+`a2fd4a0`; all 89 served files exactly match raw local bytes. The final family
+no-transform header removes the edge-injected script found during live verification.
+Twelve Chrome/WebKit phone/tablet/desktop light/dark live journeys and eight real PNG
+exports pass. Production remains main-only. Central docs/registration are merged
+through Yard #35; closeout uses the same dev → main PR workflow, with unchanged
+homepage application bytes. Other products and separate worktrees are preserved.
+
+Next: physical touch/software-keyboard, OS IME and spoken assistive confirmation,
+then the separately tracked family/product/output acceptance backlog. Do not redo
+this completed IMG migration or the prior five-site rollout. Scratch and full
+captures: `/tmp/air-img-2026-10-30/`; durable evidence is linked in the release record.
+Task preview ports 8433/8434 are stopped. Automated WebKit is not physical iPhone proof.
 
 ### Prior checkpoint — Air 1.3.1 stylesheet-ready replay (2026-10-29)
 
