@@ -3,7 +3,8 @@
 Status: **active — Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG last** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG resumed: public/editor/precision/assets and runtime/output pieces pass.
-See [runtime acceptance](docs/air/cloakimg-runtime-2026-10-30.md); cleanup and final
+See [runtime acceptance](docs/air/cloakimg-runtime-2026-10-30.md) and
+[cleanup](docs/air/cloakimg-cleanup-2026-10-30.md); batch controls and final
 visual/edge acceptance precede deployment. Physical/device gates remain open.
 
 
