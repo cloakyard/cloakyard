@@ -7,19 +7,32 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — six-app Air 1.3.2 verified, rollout next (2026-10-30)
+### Current checkpoint — six-app Air 1.3.2 deployed and verified (2026-10-30)
 
-IMG uses a local vector landscape and shared OG source. The complete six-app
-consistency pass fixes IMG compact navigation/gutters, blue canvas selection and
-family footer cues, and includes IMG in all shared matrices. See the
-[audit](family-landscape-2026-10-30.md) for exact coverage and durable evidence.
-All required local checks pass, including 483 IMG, 461 PDF and 373 Resume tests,
-both-engine artwork/editor journeys, shared PWA pixels and real output parity.
-Next: individual dev → main PR rollout, live asset/UI verification, dev synchronization.
-Drop's three pre-existing native/release commits are excluded using an isolated
-web checkout at `/Users/sumitsahoo/Developer/.cloakdrop-air-release`.
-Scratch: `/tmp/air-landscape-family-2026-10-30/`; task static preview uses ports
-8440–8445. Physical/assistive/native gates remain open. Do not repeat the migration.
+IMG has the local sun/mountain landscape and matching SVG-based OG. The six-app
+consistency audit fixes IMG compact navigation/gutters, Air blue canvas selection
+and exact family footer cues. All matrices now include IMG. See the
+[audit](family-landscape-2026-10-30.md) and durable release record for scope and limits.
+
+IMG #22, PDF #218, Resume #52, Roll #8, Drop #54 and Yard #37 are merged/deployed.
+All exact main builds pass; all 358 served assets match (355 raw, three existing
+Roll HTML normalization exceptions). Live family: 648 home/288 secondary layouts,
+390 interactions, no deviations/errors. Live WebKit: 12 motion/replay layouts,
+24 fallbacks, six lifecycle and six delayed-CSS journeys. IMG also passes 12 live
+both-engine journeys and eight real PNG downloads. Local units: IMG 483, PDF 461,
+Resume 373; all applicable feature/design/dead-code/build gates pass.
+
+Remote dev/main are synchronized. Drop local dev preserves three unpublished
+native/release commits and a merge of the web rollout; do not push them as part
+of this completed web task. Resume's separate main audit worktree (`14ccd0c`)
+and detached stats worktree are untouched. Roll reused its existing PR with
+already-published beta changes. The isolated Drop checkout and task preview ports
+8440–8445 are removed/stopped. Documentation closeout uses the same PR workflow
+with unchanged application bytes. Full scratch: `/tmp/air-landscape-family-2026-10-30/`.
+
+Next: physical iPhone/software-keyboard, OS IME and spoken assistive confirmation,
+then separately tracked product/output/native acceptance. Do not repeat this
+completed migration/audit/rollout or equate automated WebKit with physical Safari.
 
 ### Prior checkpoint — CloakIMG Air deployed and verified (2026-10-30)
 
