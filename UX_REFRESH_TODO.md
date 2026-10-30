@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,16 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## CloakIMG editor re-audit — 2026-10-30
+
+- [x] Reinspect all 26 tool panels, toolbar, picker, search, export and responsive/enlarged-text layouts against Air.
+- [x] Correct verified layout, typography, target-size, shared-control and obsolete-code deviations without changing image processing or consent.
+- [x] Finish final both-engine controls/toolbar checks, record durable before/after evidence and commit passing bounded changes.
+- [x] Promote IMG dev → main by PR, verify production, synchronize dev and record the central handoff for its documentation PR.
+- [ ] Keep physical device, OS IME and spoken assistive acceptance separate.
+
+Evidence: [editor re-audit](docs/air/cloakimg-editor-reaudit-2026-10-30.md). IMG #23 is merged/deployed; 88 raw asset matches, 60 live toolbar/export layouts, eight live control/anchor journeys and 12 live public/privacy/editor journeys pass. Dev/main are synchronized.
 
 ## Six-app consistency and IMG vector landscape — 2026-10-30
 

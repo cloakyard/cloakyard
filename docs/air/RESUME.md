@@ -7,7 +7,33 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — six-app Air 1.3.2 deployed and verified (2026-10-30)
+### Current checkpoint — CloakIMG editor re-audit deployed (2026-10-30)
+
+IMG's fresh editor pass corrects enlarged-text overlap, export clipping, undersized
+controls, bespoke search/switch styling and tap-menu anchoring. It applies Air 1.3.2
+without changing the portable contract, image processing or consent. See the
+[editor audit and release](cloakimg-editor-reaudit-2026-10-30.md).
+
+IMG [#23](https://github.com/cloakyard/cloakimg/pull/23) is merged; main/dev are
+`005702c11c3e7db3b439275858f30ea1ba85069e`. Exact main checks and Cloudflare build
+pass. All 88 served files match raw local bytes. Local verification: 483 units/50
+files; 764 initial layout observations and 408 strengthened target observations
+per engine; 24 final affected-tool observations per engine; 60 final toolbar/export
+layouts; eight keyboard/control/target-anchor journeys. Feature/output and visual
+coverage, test-harness corrections and before/after captures are in the product audit.
+
+Live verification passes 60 toolbar/export layouts, eight control/target-anchor
+journeys and 12 public/privacy/editor journeys with eight real PNG downloads,
+zero browser errors. Documentation closeout uses its own dev → main PR with
+unchanged application bytes. Other application code is unchanged. Drop's unpublished
+native/release commits and separate Resume worktrees are preserved. Task preview 8455 is stopped; full scratch is
+`/tmp/air-img-editor-reaudit-2026-10-30/`.
+
+Next: physical iPhone/software-keyboard, OS IME and spoken assistive confirmation,
+then separately tracked product/output/native acceptance. Do not repeat this
+completed editor correction or equate automated WebKit with physical Safari.
+
+### Prior checkpoint — six-app Air 1.3.2 deployed and verified (2026-10-30)
 
 IMG has the local sun/mountain landscape and matching SVG-based OG. The six-app
 consistency audit fixes IMG compact navigation/gutters, Air blue canvas selection
