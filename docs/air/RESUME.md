@@ -1,13 +1,41 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-30
+## Start here in a new conversation — saved 2026-10-31
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — CloakIMG deeper tool-state audit deployed (2026-10-30)
+### Current checkpoint — CloakIMG touch workspace deployed (2026-10-31)
+
+The approved photo-first touch study is implemented under Air 1.3.2. IMG now has a
+persistent labelled phone dock, focused adjustments, compact tablet rail/inspector,
+shared grouped catalogue and a side-by-side short-landscape layout. Cancel restores
+entry settings and history; pending controls remain mounted while browsing tools.
+The canonical product appendix, README and truthful PWA previews are updated.
+See the [touch workspace audit](cloakimg-touch-workspace-2026-10-31.md).
+
+IMG [PR #25](https://github.com/cloakyard/cloakimg/pull/25) is merged/deployed;
+main/dev are `abc65b2677a203d9ecabdcae163d945cecce8236`. Exact main checks pass;
+all 89 served files match raw build bytes. Live Chrome/WebKit checks pass 192
+retained-value/canvas transitions, eight compact menu/consent/batch journeys and
+12 actual PNG downloads with exact preceding-production pixel/alpha parity.
+
+Local gates pass: 486 units/50 files, format/lint/types, build, design/portability,
+105-source inventory and dead-code checks. Each engine passes 780 initial layout,
+180 final header and 360 alternate-state observations. Transaction, native field,
+file recovery, consent, batch, all-tool and output/history checks pass. Full counts,
+selected captures and test-harness corrections are in the product verification.
+
+Central documentation uses its own dev → main PR with unchanged homepage bytes.
+Task preview ports 8456/8457 are stopped. Scratch: `/tmp/air-img-touch-2026-10-31/`.
+Next: physical iPhone/software-keyboard, OS IME and spoken assistive acceptance,
+then the separately tracked product/output/native backlog. Do not repeat this
+completed implementation or equate emulated WebKit with physical Safari. Other
+products, Drop's unpublished native commits and separate Resume worktrees are unchanged.
+
+### Prior checkpoint — CloakIMG deeper tool-state audit deployed (2026-10-30)
 
 All 26 tools have a new alternate-state audit under Air 1.3.2. Native numeric fields,
 labelled switches, keyboard file browsing/retry, preset states and enlarged-text
