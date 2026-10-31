@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,18 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## CloakIMG touch workspace — 2026-10-31
+
+- [x] Approve the photo-first touch study; retain Air 1.3.2 materials and controls.
+- [x] Implement the persistent phone dock, focused adjustments, compact tablet rail, shared tool catalogue and short-landscape composition.
+- [x] Preserve the canvas, all 26 tools, pending previews, AI consent and processing; unify Cancel with the tool-entry settings/history checkpoint.
+- [x] Finish both-engine visual/feature/output checks, record evidence and commit the bounded change.
+- [x] Refresh truthful phone/tablet README and PWA screenshots, capture automation and manifest metadata; remove obsolete picker references.
+- [x] Promote IMG dev → main by PR, verify live and synchronize dev; record the central documentation handoff for its own PR.
+- [ ] Physical iPhone/software-keyboard, OS IME and spoken assistive acceptance remain separate.
+
+Evidence: [touch workspace audit](docs/air/cloakimg-touch-workspace-2026-10-31.md). IMG #25 is merged/deployed; 89 raw asset matches, 192 live breakpoint transitions, eight compact menu/consent/batch journeys and 12 real PNG downloads with exact preceding-production parity pass. Dev/main are synchronized.
 
 ## CloakIMG deeper tool-state audit — 2026-10-30
 
