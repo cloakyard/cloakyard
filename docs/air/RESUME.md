@@ -7,19 +7,38 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — clear editor actions, rollout in progress (2026-11-02)
+### Current checkpoint — Air 1.3.3 clear editor actions deployed (2026-11-02)
 
-Air 1.3.3 defines labelled Cancel / Apply, separate view controls and truthful Close.
-IMG and PDF implementation and actual action/output tests pass. Resume labels its
-mobile section dismissal Close while preserving autosave. All six web repositories
-carry synchronized standalone contracts. See [the action audit](simple-actions-2026-11-02.md).
+IMG and PDF now use labelled Cancel / Apply and separate Expand / Split view
+controls. Invalid/failed work stays open; Apply runs once; Cancel restores the
+entry draft/history. Inspection/output panels use Close. Resume shows Close and
+retains autosave. All eight standalone specifications are synchronized.
 
-The six-app public/mobile comparison and shared real-worker notices pass. Full IMG
-all-tool matrices pass in Chromium/WebKit. Final product gates, evidence and the
-individual dev → main promotion are being closed out; consult the audit and git
-state before repeating any checks. Scratch: `/tmp/air-simple-actions-2026-11-02/`.
-Drop's unpublished native/release commits and Resume's separate worktrees are preserved.
-Physical iPhone/software keyboard, OS IME and spoken assistive acceptance stay open.
+IMG #26, PDF #220, Resume #53, Drop website #55 and Roll website #9 are merged and
+production-verified. Exact main checks pass. Product assets: 344 raw matches plus
+Roll's three existing HTML challenge-script exceptions. Live checks pass 192 IMG
+layout transitions, eight compact journeys and twelve exact PNG output comparisons;
+twelve PDF phone/output journeys; sixteen Resume Close/reopen/autosave/reload journeys.
+Yard [#42](https://github.com/cloakyard/cloakyard/pull/42) carries the canonical
+contract and final release record; its description records its own main checks
+and final family production verification.
+
+Local gates include 487 IMG units, 461 PDF units, 373 Resume production tests with
+zero skips; 780 all-tool observations per browser; actual Apply/Cancel/retry/output
+journeys; 648 home/288 secondary layouts and 396 real-worker notice layouts.
+PDF's promotion also adopts patched node-forge/glob/minimatch/FileList dependencies,
+removes the old node-forge exception and fixes the runner's temporary directory.
+OSV/CodeQL and fresh signing/PWA/output tests pass; the separate approved Compact
+beta long-document limitation remains. See [the action audit](simple-actions-2026-11-02.md).
+
+Remote product dev/main are synchronized. Drop's unpublished native/release commits
+remain local; its isolated web checkout is removed. Resume's separate worktrees
+are untouched. Task preview ports 8460–8468 are stopped. Scratch:
+`/tmp/air-simple-actions-2026-11-02/`.
+
+Next: physical iPhone/software keyboard, OS IME and spoken assistive acceptance,
+then the separately tracked product/output/native backlog. Do not repeat this
+completed implementation or equate emulated WebKit with physical Safari.
 
 ### Prior checkpoint — CloakIMG touch workspace deployed (2026-10-31)
 

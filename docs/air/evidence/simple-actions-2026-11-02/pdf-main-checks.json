@@ -1,0 +1,51 @@
+{
+  "repo": "cloakyard/cloakpdf",
+  "sha": "753e554046e7101a63cf7dd9b41c26fb9cda7fdc",
+  "checks": [
+    {
+      "name": "Workers Builds: cloakpdf",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/f6b8a560-ad23-4664-86a0-5d421a29961c",
+      "started_at": "2026-11-02T15:59:10Z",
+      "completed_at": "2026-11-02T15:59:10Z",
+      "head_sha": "753e554046e7101a63cf7dd9b41c26fb9cda7fdc"
+    },
+    {
+      "name": "Scorecard Analysis",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41474437291/job/125376173649",
+      "started_at": "2026-11-02T15:43:49Z",
+      "completed_at": "2026-11-02T15:44:35Z",
+      "head_sha": "753e554046e7101a63cf7dd9b41c26fb9cda7fdc"
+    },
+    {
+      "name": "Dependency Audit",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41474437296/job/125376172618",
+      "started_at": "2026-11-02T15:43:54Z",
+      "completed_at": "2026-11-02T15:44:33Z",
+      "head_sha": "753e554046e7101a63cf7dd9b41c26fb9cda7fdc"
+    },
+    {
+      "name": "Analyze (javascript-typescript)",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41474437143/job/125376172145",
+      "started_at": "2026-11-02T15:43:52Z",
+      "completed_at": "2026-11-02T15:46:48Z",
+      "head_sha": "753e554046e7101a63cf7dd9b41c26fb9cda7fdc"
+    },
+    {
+      "name": "contract",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41474437142/job/125376171440",
+      "started_at": "2026-11-02T15:43:49Z",
+      "completed_at": "2026-11-02T15:44:11Z",
+      "head_sha": "753e554046e7101a63cf7dd9b41c26fb9cda7fdc"
+    }
+  ]
+}

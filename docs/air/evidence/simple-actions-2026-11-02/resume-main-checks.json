@@ -1,0 +1,24 @@
+{
+  "repo": "cloakyard/cloakresume",
+  "sha": "c23780e443d69c847841431896114365ddb5e1d0",
+  "checks": [
+    {
+      "name": "Workers Builds: cloakresume",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/320d79a1-55f6-45a5-b2c8-8ec8a4e18d29",
+      "started_at": "2026-11-02T15:41:28Z",
+      "completed_at": "2026-11-02T15:41:28Z",
+      "head_sha": "c23780e443d69c847841431896114365ddb5e1d0"
+    },
+    {
+      "name": "contract",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakresume/actions/runs/41473406977/job/125372578639",
+      "started_at": "2026-11-02T15:37:28Z",
+      "completed_at": "2026-11-02T15:37:40Z",
+      "head_sha": "c23780e443d69c847841431896114365ddb5e1d0"
+    }
+  ]
+}

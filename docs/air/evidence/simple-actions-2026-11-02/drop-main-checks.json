@@ -1,0 +1,33 @@
+{
+  "repo": "cloakyard/cloakdrop",
+  "sha": "aa167a96fac21b96bd1dfabace0e9ffbe25f7dcf",
+  "checks": [
+    {
+      "name": "Workers Builds: cloakdrop",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakdrop/production/builds/39b8c094-e728-481a-8f20-f0f4615aa4a6",
+      "started_at": "2026-11-02T15:37:35Z",
+      "completed_at": "2026-11-02T15:37:35Z",
+      "head_sha": "aa167a96fac21b96bd1dfabace0e9ffbe25f7dcf"
+    },
+    {
+      "name": "website",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakdrop/actions/runs/41473039039/job/125371335510",
+      "started_at": "2026-11-02T15:35:17Z",
+      "completed_at": "2026-11-02T15:35:41Z",
+      "head_sha": "aa167a96fac21b96bd1dfabace0e9ffbe25f7dcf"
+    },
+    {
+      "name": "contract",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakdrop/actions/runs/41473039039/job/125371334730",
+      "started_at": "2026-11-02T15:35:17Z",
+      "completed_at": "2026-11-02T15:35:28Z",
+      "head_sha": "aa167a96fac21b96bd1dfabace0e9ffbe25f7dcf"
+    }
+  ]
+}

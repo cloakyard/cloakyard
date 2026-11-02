@@ -1,0 +1,94 @@
+{
+  "base": "https://roll.cloakyard.com",
+  "results": [
+    {
+      "path": "_astro/Footer.XN0p57m7.css",
+      "status": 200,
+      "local": "ff3e658ede8cc32dd5a385f4808cab9e1957d7959d51eb034a8ed52b48f23fc6",
+      "remote": "ff3e658ede8cc32dd5a385f4808cab9e1957d7959d51eb034a8ed52b48f23fc6",
+      "match": true
+    },
+    {
+      "path": "404.html",
+      "status": 200,
+      "local": "aef0554bb90887581ee30d9335d05aa9c1f15089dfa77d11cad657ff84e7cd02",
+      "remote": "ab914b84e4a7ee88d1acc7e74fbc4bcb6d35154158770726ae02a6d7e66b36e0",
+      "match": false,
+      "normalizedMatch": true,
+      "normalization": "Remove exactly one existing Cloudflare challenge-platform injection before closing body; all remaining bytes identical.",
+      "normalizedSHA256": "aef0554bb90887581ee30d9335d05aa9c1f15089dfa77d11cad657ff84e7cd02"
+    },
+    {
+      "path": "cloakroll-mark.svg",
+      "status": 200,
+      "local": "b134b867d753f34e3735d9dafed04a5cf2247ae0bb0870af8995b45098bde9f7",
+      "remote": "b134b867d753f34e3735d9dafed04a5cf2247ae0bb0870af8995b45098bde9f7",
+      "match": true
+    },
+    {
+      "path": "cloakroll.png",
+      "status": 200,
+      "local": "c01fac16e18034b00c9d5a077d066a9ab7dc963211036866f82c3aa3c67234e9",
+      "remote": "c01fac16e18034b00c9d5a077d066a9ab7dc963211036866f82c3aa3c67234e9",
+      "match": true
+    },
+    {
+      "path": "images/library-dark.png",
+      "status": 200,
+      "local": "0e9048df871d8094ccb82ddcdb6f40ab7285dbe68bdb98bc5d67caa26e7a8691",
+      "remote": "0e9048df871d8094ccb82ddcdb6f40ab7285dbe68bdb98bc5d67caa26e7a8691",
+      "match": true
+    },
+    {
+      "path": "images/library-light.png",
+      "status": 200,
+      "local": "2a0e64065a2bebe3b99d4bf6e3cf9c5cced5e84abbaa0799c532fbd2e7526d4c",
+      "remote": "2a0e64065a2bebe3b99d4bf6e3cf9c5cced5e84abbaa0799c532fbd2e7526d4c",
+      "match": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "local": "c3602d7ed47930bcc5f0302ab16fdc06cb5351f37a6ef23e61143c74754c37f3",
+      "remote": "2793531a6bbed78374ea94a91f7c9f850972f1272e100c6351bb2cdcd9abd041",
+      "match": false,
+      "normalizedMatch": true,
+      "normalization": "Remove exactly one existing Cloudflare challenge-platform injection before closing body; all remaining bytes identical.",
+      "normalizedSHA256": "c3602d7ed47930bcc5f0302ab16fdc06cb5351f37a6ef23e61143c74754c37f3"
+    },
+    {
+      "path": "privacy/index.html",
+      "status": 200,
+      "local": "a5ec8af4b09a9da33d591eef29003cd40456452955b36786f32ea389339193a7",
+      "remote": "b9378ae5c8c9052c8f14d829979eb93b0ac3b9e5b02af07d13fd93326986e83c",
+      "match": false,
+      "normalizedMatch": true,
+      "normalization": "Remove exactly one existing Cloudflare challenge-platform injection before closing body; all remaining bytes identical.",
+      "normalizedSHA256": "a5ec8af4b09a9da33d591eef29003cd40456452955b36786f32ea389339193a7"
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "local": "72cb6c37393b04addc4486acfe9756e1be0b706386ea21e876784a48cd81d336",
+      "remote": "72cb6c37393b04addc4486acfe9756e1be0b706386ea21e876784a48cd81d336",
+      "match": true
+    },
+    {
+      "path": "sitemap-0.xml",
+      "status": 200,
+      "local": "94cb8e79caf4363aef63e5bb73bcc5640ba412cf20ba3b2e3b491c39fe9bb9af",
+      "remote": "94cb8e79caf4363aef63e5bb73bcc5640ba412cf20ba3b2e3b491c39fe9bb9af",
+      "match": true
+    },
+    {
+      "path": "sitemap-index.xml",
+      "status": 200,
+      "local": "d2d7218bf225463df0dfaa67e5d1e4f63fa2c3c98c16dc827bde543147488dd7",
+      "remote": "d2d7218bf225463df0dfaa67e5d1e4f63fa2c3c98c16dc827bde543147488dd7",
+      "match": true
+    }
+  ],
+  "matched": 8,
+  "total": 11,
+  "normalizedMatched": 3
+}

@@ -15,5 +15,51 @@
     "referenceTests": 15,
     "knip": "6.43.0: no issues",
     "galleryJourneys": 16
+  },
+  "liveVerified": {
+    "img": {
+      "assets": 89,
+      "breakpoints": 192,
+      "compactJourneys": 8,
+      "pngComparisons": 12
+    },
+    "resume": {
+      "assets": 101,
+      "autosaveJourneys": 16
+    },
+    "drop": {
+      "assets": 16
+    },
+    "roll": {
+      "rawAssets": 8,
+      "existingEdgeInjectionExceptions": 3
+    },
+    "pdf": {
+      "rawAssets": 130,
+      "phoneJourneysAndDownloads": 12
+    }
+  },
+  "productPRs": {
+    "img": 26,
+    "pdf": 220,
+    "resume": 53,
+    "drop": 55,
+    "roll": 9,
+    "yard": 42
+  },
+  "preserved": [
+    "Drop unpublished native/release history remains local",
+    "Resume separate main audit/detached stats worktrees unchanged"
+  ],
+  "securityFollowup": {
+    "product": "cloakpdf",
+    "osv": "No issues; no ignored advisories",
+    "codeql": "pass",
+    "runtime": "node-forge 1.4.2",
+    "buildTools": ["glob 14.0.3", "minimatch 11.0.4", "filelist 2.0.2"],
+    "unitTests": 461,
+    "standaloneWorkflows": 6,
+    "phoneJourneys": 12,
+    "pwaLayouts": 44
   }
 }
