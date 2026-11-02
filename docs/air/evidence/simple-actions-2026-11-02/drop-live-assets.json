@@ -1,0 +1,119 @@
+{
+  "base": "https://drop.cloakyard.com",
+  "results": [
+    {
+      "path": "_astro/Header.CO7SQlWC.css",
+      "status": 200,
+      "local": "85cc3044af908254e9fe4cdd79a9fe175a52bd5c1b7822370b3eb73aec26b1b1",
+      "remote": "85cc3044af908254e9fe4cdd79a9fe175a52bd5c1b7822370b3eb73aec26b1b1",
+      "match": true
+    },
+    {
+      "path": "_astro/PixelFiles.astro_astro_type_script_index_0_lang.Czb1lJk_.js",
+      "status": 200,
+      "local": "be90c35ac8e8ea59c96c940a98355a6a6ae7dd1b953e64a2107b2acff6c98f12",
+      "remote": "be90c35ac8e8ea59c96c940a98355a6a6ae7dd1b953e64a2107b2acff6c98f12",
+      "match": true
+    },
+    {
+      "path": "404.html",
+      "status": 200,
+      "local": "b4772e615ee438a059579bb620d4f2e2a6e445c5d03640ba9157af7d8bc00a64",
+      "remote": "b4772e615ee438a059579bb620d4f2e2a6e445c5d03640ba9157af7d8bc00a64",
+      "match": true
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "status": 200,
+      "local": "ec5ecf474a00c63922a493f6112c71191d50aec90a1ec2e9727d734745d83c34",
+      "remote": "ec5ecf474a00c63922a493f6112c71191d50aec90a1ec2e9727d734745d83c34",
+      "match": true
+    },
+    {
+      "path": "cloakdrop-mark.svg",
+      "status": 200,
+      "local": "d47058d6f2e955d2bdb5d093ca2378a07c3191c1d8d5b09b928f739d9238e68b",
+      "remote": "d47058d6f2e955d2bdb5d093ca2378a07c3191c1d8d5b09b928f739d9238e68b",
+      "match": true
+    },
+    {
+      "path": "favicon.png",
+      "status": 200,
+      "local": "140f80a65ef2b9422d7b923e30600924cd138240c1806a65d5d8a60f380583b9",
+      "remote": "140f80a65ef2b9422d7b923e30600924cd138240c1806a65d5d8a60f380583b9",
+      "match": true
+    },
+    {
+      "path": "hero.png",
+      "status": 200,
+      "local": "cac6e7b8991985c974405f11bd348e36eb25fc9d1fe25559a071fc5a644395ca",
+      "remote": "cac6e7b8991985c974405f11bd348e36eb25fc9d1fe25559a071fc5a644395ca",
+      "match": true
+    },
+    {
+      "path": "hero.webp",
+      "status": 200,
+      "local": "d81b91458d28ae9d0557ce3798c15fcf49615ce634ae2656f035fd6744eb9aab",
+      "remote": "d81b91458d28ae9d0557ce3798c15fcf49615ce634ae2656f035fd6744eb9aab",
+      "match": true
+    },
+    {
+      "path": "icons/favicon.svg",
+      "status": 200,
+      "local": "078a85597e9786a8f3ba9fee7d8e46bf9fbd42c7ca6d20e1bedb9cd024afefec",
+      "remote": "078a85597e9786a8f3ba9fee7d8e46bf9fbd42c7ca6d20e1bedb9cd024afefec",
+      "match": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "local": "053a2e2c4bc45361cd8f481983b1fcfa199e19f20d0885dfc7fee391ae3f42b4",
+      "remote": "053a2e2c4bc45361cd8f481983b1fcfa199e19f20d0885dfc7fee391ae3f42b4",
+      "match": true
+    },
+    {
+      "path": "og.png",
+      "status": 200,
+      "local": "7a920c2312904b39ab4dfe5e89cf866c7328b4de21ff80dc052caceb750cc73a",
+      "remote": "7a920c2312904b39ab4dfe5e89cf866c7328b4de21ff80dc052caceb750cc73a",
+      "match": true
+    },
+    {
+      "path": "pixel-art.LICENSE.txt",
+      "status": 200,
+      "local": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "remote": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "match": true
+    },
+    {
+      "path": "privacy/index.html",
+      "status": 200,
+      "local": "d383cddd414fd32069749e65b9518a21c9a23dcf67ddd8188cc2d8ba7df7ef9a",
+      "remote": "d383cddd414fd32069749e65b9518a21c9a23dcf67ddd8188cc2d8ba7df7ef9a",
+      "match": true
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "local": "ba3048b0e802a6f9093eb98023b66fffe1fa42b8ebb61c93864a5f0ee1cba97e",
+      "remote": "ba3048b0e802a6f9093eb98023b66fffe1fa42b8ebb61c93864a5f0ee1cba97e",
+      "match": true
+    },
+    {
+      "path": "sitemap-0.xml",
+      "status": 200,
+      "local": "c477e24dc2eba33a1c5229580a2cc4206180b86035e56f9509a394d1c25625f5",
+      "remote": "c477e24dc2eba33a1c5229580a2cc4206180b86035e56f9509a394d1c25625f5",
+      "match": true
+    },
+    {
+      "path": "sitemap-index.xml",
+      "status": 200,
+      "local": "cc3cad167f02f41b0221f8691cc3ff468ddeb39a9c4795e6d2515b19f139995f",
+      "remote": "cc3cad167f02f41b0221f8691cc3ff468ddeb39a9c4795e6d2515b19f139995f",
+      "match": true
+    }
+  ],
+  "matched": 16,
+  "total": 16
+}

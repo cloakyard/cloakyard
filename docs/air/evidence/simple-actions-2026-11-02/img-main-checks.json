@@ -1,0 +1,24 @@
+{
+  "repo": "cloakyard/cloakimg",
+  "sha": "e0c5f6ccd0c5ca772ed421cda32beaba247f4772",
+  "checks": [
+    {
+      "name": "Workers Builds: cloakimg",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakimg/production/builds/c46a97b6-5a62-44b5-ab12-899bf2fd9c7a",
+      "started_at": "2026-11-02T15:37:02Z",
+      "completed_at": "2026-11-02T15:37:02Z",
+      "head_sha": "e0c5f6ccd0c5ca772ed421cda32beaba247f4772"
+    },
+    {
+      "name": "contract",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/cloakyard/cloakimg/actions/runs/41473028579/job/125371299481",
+      "started_at": "2026-11-02T15:35:14Z",
+      "completed_at": "2026-11-02T15:35:22Z",
+      "head_sha": "e0c5f6ccd0c5ca772ed421cda32beaba247f4772"
+    }
+  ]
+}

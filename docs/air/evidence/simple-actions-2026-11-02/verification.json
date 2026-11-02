@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-02",
+  "baseline": "eba288405a21f65dfe71b5fb482c3a0d5ebb0e10",
+  "contract": {
+    "version": "1.3.3",
+    "sha256": "32aaa6dd8f858548d29309a87c7aae7878ddafb338b2fd0dce9e2d7e6b0b2a35"
+  },
+  "scratch": "/tmp/air-simple-actions-2026-11-02",
+  "physicalAcceptance": "Physical iPhone/software keyboard, OS IME and spoken assistive acceptance remain open.",
+  "checks": {
+    "design": "pass",
+    "portability": "pass",
+    "build": "pass",
+    "formatLintTypes": "pass",
+    "referenceTests": 15,
+    "knip": "6.43.0: no issues",
+    "galleryJourneys": 16
+  },
+  "liveVerified": {
+    "img": {
+      "assets": 89,
+      "breakpoints": 192,
+      "compactJourneys": 8,
+      "pngComparisons": 12
+    },
+    "resume": {
+      "assets": 101,
+      "autosaveJourneys": 16
+    },
+    "drop": {
+      "assets": 16
+    },
+    "roll": {
+      "rawAssets": 8,
+      "existingEdgeInjectionExceptions": 3
+    },
+    "pdf": {
+      "rawAssets": 130,
+      "phoneJourneysAndDownloads": 12
+    }
+  },
+  "productPRs": {
+    "img": 26,
+    "pdf": 220,
+    "resume": 53,
+    "drop": 55,
+    "roll": 9,
+    "yard": 42
+  },
+  "preserved": [
+    "Drop unpublished native/release history remains local",
+    "Resume separate main audit/detached stats worktrees unchanged"
+  ],
+  "securityFollowup": {
+    "product": "cloakpdf",
+    "osv": "No issues; no ignored advisories",
+    "codeql": "pass",
+    "runtime": "node-forge 1.4.2",
+    "buildTools": ["glob 14.0.3", "minimatch 11.0.4", "filelist 2.0.2"],
+    "unitTests": 461,
+    "standaloneWorkflows": 6,
+    "phoneJourneys": 12,
+    "pwaLayouts": 44
+  }
+}

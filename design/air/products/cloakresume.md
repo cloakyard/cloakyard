@@ -1,5 +1,9 @@
 ## CloakResume product requirements
 
+Mobile section dismissal uses a visible **Close** label and returns to the section
+picker. It preserves the autosaved draft; do not imply rollback with an X or invent
+an Apply transaction. Keep the existing accessible section-specific name.
+
 - Scope: landing/start/load/restore, editor shell and all content sections, section
   picker/rail, paginated canvas, formatting, template gallery, ATS/writing review,
   date/colour/logo/rich-text controls, overlays, privacy, export and PWA notices.
