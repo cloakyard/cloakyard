@@ -7,6 +7,16 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Latest review — CloakIMG panel toggle (2026-11-02)
+
+The user requested a visual review of the top up/down tool-panel control. Current
+production already shows Expand / Split view. A focused 64-state touch review
+finds twenty mobile cases with an ineffective toggle and a 128px expanded photo
+region on a 390px phone. The [visual proposal](cloakimg-panel-control-review-2026-11-02.md)
+uses a visible neutral More controls / Larger photo button only when useful and
+retains more photo space. Review artifacts and the recommendation are recorded;
+application code and the approved Air 1.3.3 contract are unchanged.
+
 ### Current checkpoint — Air 1.3.3 clear editor actions deployed (2026-11-02)
 
 IMG and PDF now use labelled Cancel / Apply and separate Expand / Split view

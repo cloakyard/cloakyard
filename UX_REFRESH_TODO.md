@@ -25,6 +25,14 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## CloakIMG panel-toggle review — 2026-11-02
+
+- [x] Review the current top tool-panel control with actual touch interactions in phone/tablet light/dark Chrome/WebKit.
+- [x] Record the ineffective expansion cases, undersized expanded photo region and a visual Air proposal.
+- [ ] If this direction proceeds, implement the useful-only labelled view control, retain a usable photo, synchronize applicable family guidance and run the all-tool/responsive/output gates.
+
+Evidence: [focused visual review](docs/air/cloakimg-panel-control-review-2026-11-02.md). This is a proposal; the deployed Air 1.3.3 implementation below remains unchanged.
+
 ## Simple editor actions — 2026-11-02
 
 - [x] Define one labelled Cancel / Apply pair for transactional tools, distinct view controls and truthful Close actions in Air; synchronize portable specifications.

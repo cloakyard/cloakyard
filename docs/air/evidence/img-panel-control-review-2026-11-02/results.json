@@ -1,0 +1,6005 @@
+{
+  "rows": [
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 254,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 677,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 609,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 454,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 254,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 677,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 609,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 454,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.89187622070312,
+          "y": 222.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 412.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 412.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 412.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 677,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 391.79937744140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 559,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 391.79937744140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 226.75,
+          "width": 390,
+          "height": 550.25
+        },
+        "header": {
+          "x": 0,
+          "y": 227.75,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 233.25,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 283.75,
+          "width": 390,
+          "height": 432.25,
+          "scrollHeight": 433,
+          "clientHeight": 432
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 162.75
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 391.79937744140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 412.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 412.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 412.94000244140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 677,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 391.79937744140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 559,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 391.79937744140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 226.75,
+          "width": 390,
+          "height": 550.25
+        },
+        "header": {
+          "x": 0,
+          "y": 227.75,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 233.25,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 283.75,
+          "width": 390,
+          "height": 432.25,
+          "scrollHeight": 433,
+          "clientHeight": 432
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 162.75
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.8918762207031,
+          "y": 391.79937744140625,
+          "width": 81.27874755859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.891845703125,
+          "y": 69.94000244140625,
+          "width": 81.27880859375,
+          "height": 43.1199951171875,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 254,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 677,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 609,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 454,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 254,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 254,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 677,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 677,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 609,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 609,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "height": 568,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 320,
+          "height": 309
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 210.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 320,
+          "height": 191,
+          "scrollHeight": 454,
+          "clientHeight": 191
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 216,
+          "width": 320,
+          "height": 285
+        },
+        "header": {
+          "x": 0,
+          "y": 217,
+          "width": 320,
+          "height": 56
+        },
+        "button": {
+          "x": 225.0625,
+          "y": 222.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 273,
+          "width": 320,
+          "height": 167,
+          "scrollHeight": 454,
+          "clientHeight": 167
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 320,
+          "height": 152
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 412.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 412.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 412.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 677,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 559,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 226.75,
+          "width": 390,
+          "height": 550.25
+        },
+        "header": {
+          "x": 0,
+          "y": 227.75,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 233.25,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 283.75,
+          "width": 390,
+          "height": 432.25,
+          "scrollHeight": 433,
+          "clientHeight": 432
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 162.75
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 412.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 412.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 406,
+          "width": 390,
+          "height": 371
+        },
+        "header": {
+          "x": 0,
+          "y": 407,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 412.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 463,
+          "width": 390,
+          "height": 253,
+          "scrollHeight": 254,
+          "clientHeight": 253
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 342
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 677,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 677,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 192,
+          "width": 390,
+          "height": 585
+        },
+        "header": {
+          "x": 0,
+          "y": 193,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 198.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 249,
+          "width": 390,
+          "height": 467,
+          "scrollHeight": 559,
+          "clientHeight": 467
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 128
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 559,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 0,
+          "y": 226.75,
+          "width": 390,
+          "height": 550.25
+        },
+        "header": {
+          "x": 0,
+          "y": 227.75,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 280.453125,
+          "y": 233.25,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 0,
+          "y": 283.75,
+          "width": 390,
+          "height": 432.25,
+          "scrollHeight": 433,
+          "clientHeight": 432
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 162.75
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 0,
+          "y": 384.859375,
+          "width": 390,
+          "height": 392.140625
+        },
+        "header": {
+          "x": 0,
+          "y": 385.859375,
+          "width": 390,
+          "height": 56
+        },
+        "button": {
+          "x": 295.0625,
+          "y": 391.359375,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 0,
+          "y": 441.859375,
+          "width": 390,
+          "height": 274.140625,
+          "scrollHeight": 433,
+          "clientHeight": 274
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 390,
+          "height": 320.859375
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 254,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 677,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 559,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "after": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 734.453125,
+          "y": 69.5,
+          "width": 97.546875,
+          "height": 44,
+          "text": "Split view",
+          "arrows": 0,
+          "pressed": "true"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      },
+      "reverted": {
+        "panel": {
+          "x": 489.53125,
+          "y": 64,
+          "width": 354.46875,
+          "height": 259
+        },
+        "header": {
+          "x": 490.53125,
+          "y": 64,
+          "width": 353.46875,
+          "height": 56
+        },
+        "button": {
+          "x": 749.0625,
+          "y": 69.5,
+          "width": 82.9375,
+          "height": 44,
+          "text": "Expand",
+          "arrows": 0,
+          "pressed": "false"
+        },
+        "body": {
+          "x": 490.53125,
+          "y": 120,
+          "width": 353.46875,
+          "height": 142,
+          "scrollHeight": 433,
+          "clientHeight": 142
+        },
+        "preview": {
+          "x": 0,
+          "y": 64,
+          "width": 489.53125,
+          "height": 259
+        },
+        "actions": ["Cancel", "Apply"]
+      }
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Adjust",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Crop & rotate",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Resize",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "tool": "Border",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Adjust",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Crop & rotate",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Resize",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "tool": "Border",
+      "before": {
+        "tablet": true
+      },
+      "after": null,
+      "reverted": null
+    }
+  ],
+  "errors": []
+}
