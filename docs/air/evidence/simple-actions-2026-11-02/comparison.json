@@ -1,0 +1,16 @@
+{
+  "family": {
+    "engine": "Chrome/156.0.8078.76",
+    "layouts": 648,
+    "secondary": 288,
+    "interactions": 390,
+    "errors": 0,
+    "failures": 0
+  },
+  "notices": {
+    "rows": 396,
+    "captures": 162,
+    "errors": 0
+  },
+  "galleryJourneys": 16
+}

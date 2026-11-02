@@ -37,7 +37,7 @@
 - The mobile working sheet starts at half height, reserving at least 18rem for
   controls when possible while keeping 64px of preview. Expand controls uses
   the available editor region; Return to split view preserves tool values and
-  the mounted document. Cancel/Done return focus to the tool selector.
+  the mounted document. Cancel/Apply return focus to the tool selector.
 - Tool navigation is immediate, including active-rail scrolling. Global history
   shortcuts cannot change the document behind a modal or during a busy operation.
 - Inspector headers use sentence case and secondary descriptions; omit the repeated
@@ -129,7 +129,7 @@
   composition owns Enter. Scrub counts describe the supported categories, never a
   blanket claim that a PDF is safe. Only selected removal categories enable Apply.
   Explain loss of bookmarks/form registration and the limits of keeping annotations.
-- Mobile Done waits for a promised operation to finish before closing the tool.
+- Mobile Apply waits for a promised operation to finish before closing the tool.
   Failures retain the tool, input and choices for retry; repeat activation must not
   apply twice. Desktop primary actions consume reported failures without an unhandled
   rejection. Undo remains the recovery path for successfully applied byte changes.
@@ -164,7 +164,7 @@
   Explain printed-title shortening/unsupported-glyph limits without changing
   complete Unicode outline titles. Do not silently discard pending objects.
 - Pending Apply remains registered when validation rejects before processing.
-  Concurrent flush callers wait for the same operation; failed mobile Done keeps
+  Concurrent flush callers wait for the same operation; failed mobile Apply keeps
   the tool and its draft available for correction and retry.
 
 - Attach uses open file rows, complete wrapping filenames, decoded sizes and
@@ -173,7 +173,7 @@
 - Failed attachment selections belong to exact source bytes, survive tool/viewport
   navigation and remain available for retry or discard. Cancel retires them;
   successful actions retire them before Undo. Immediate actions are guarded,
-  promised and undoable; mobile Done closes without discarding a failed selection.
+  promised and undoable; mobile Close preserves a failed selection.
 - Attachment handling preserves Unicode names and nested name trees. Remove by
   revision-scoped identity, clear standard associated-file/annotation references,
   delete unshared embedded bytes and preserve shared streams and unrelated content.
@@ -201,7 +201,7 @@
   and failure. Selection belongs to exact bytes and survives tool/viewport changes
   and failed Apply. Derive preview bands directly from the selected result; do not
   maintain a second copy of crop margins. Retire applied selections before Undo.
-- Crop and Strip furniture await their byte operation before mobile Done closes.
+- Crop and Strip furniture await their byte operation before mobile Apply closes.
   Failures keep the tool and draft ready for retry. Cropping hides content without
   deleting it; both tools must explain that it is not sensitive-data removal.
 
@@ -222,7 +222,7 @@
 - Copying to remaining pages stages placements from the first signed page; it is
   distinct from Apply and leaves occupied pages unchanged. Apply awaits embedding,
   preserves unrelated marks and PDF content, and removes only successful signature
-  drafts. Failed mobile Done keeps the tool and placements ready for retry. Undo
+  drafts. Failed mobile Apply keeps the tool and placements ready for retry. Undo
   restores the prior bytes/placements. Never silently omit an incomplete signature.
 
 - Stamp owns a byte-scoped preview and Air text, field-insertion, shape/finish,
@@ -242,7 +242,7 @@
   unsupported encoding offers a shape/ink correction without changing the PDF.
 - Stamp Apply awaits saving, retains a failed draft and retires a successful preview
   before Undo. Start another stamp explicitly re-arms the settings. Keep busy focus
-  in the panel and mobile Done open until success. Preserve existing text, metadata,
+  in the panel and mobile Apply open until success. Preserve existing text, metadata,
   attachments and visible-page geometry. A watermark is not redaction.
 
 - Page numbers uses the shared six-position grid, custom Air format menu and colour
@@ -259,8 +259,7 @@
   dimensions and actual text fit on every visible page, including mixed sizes,
   rotation, CropBox and UserUnit. Report the page that cannot fit; never silently
   clip numbers or change the working PDF on failure. Preserve text and catalog data.
-- Scope the pending numbering preview to exact document bytes. Await Apply/mobile
-  Done, retain failed drafts and prevent duplicate saves. Retire successful previews
+- Scope the pending numbering preview to exact document bytes. Await Apply on mobile, retain failed drafts and prevent duplicate saves. Retire successful previews
   before Undo; Start another numbering explicitly re-arms them. Keep busy focus in
   Page number settings. Cancel restores the tool checkpoint.
 
@@ -280,7 +279,7 @@
   between occupied fields. Reject clipped/overlapping text, multiline fields,
   unsupported characters and empty expanded output with an actionable message.
   Preserve catalog data, source text, rotation, CropBox and UserUnit on success.
-- Await Apply/mobile Done, retain failed drafts, keep busy focus in settings, retire
+- Await Apply/mobile Apply, retain failed drafts, keep busy focus in settings, retire
   successful previews before Undo and explicitly re-arm Start another header & footer.
   Cancel restores the checkpoint. Replaced TripleRow and native-value token insertion
   paths must not remain; retain only shared controls with live consumers.
@@ -296,7 +295,7 @@
   embedded-font widths; report fit, multiline, unsupported-character and sequence
   precision errors without changing the PDF. Keep identifiers selectable and retain
   page geometry, text and catalog data.
-- Scope the pending Bates preview to exact source bytes. Await Apply/mobile Done,
+- Scope the pending Bates preview to exact source bytes. Await Apply/mobile Apply,
   keep failed settings ready for retry, retire successful previews before Undo and
   explicitly re-arm Start another Bates numbering. Keep busy focus in settings;
   Cancel restores the checkpoint. Remove replaced StampTools and unused adapters;
@@ -332,7 +331,7 @@
   page sizes. Copy from the first stamped page only to pages without codes. Restore
   sensible focus after removal; use the shared on-paper selection accent.
 - Preserve four-module QR and ten-module barcode quiet zones and caption geometry
-  between preview/output. Await Apply/mobile Done, retain placed objects after failed
+  between preview/output. Await Apply/mobile Apply, retain placed objects after failed
   output, and prevent duplicate writes. Successful Apply removes pending objects;
   Undo restores their snapshot and Redo reapplies the output. Cancel restores the tool
   checkpoint. Keep original text/catalog data and verify vector output. Remove the
@@ -350,7 +349,7 @@
   displayed values. Drawing/text remain arm-once and icons retain repeat stamping.
   Preserve inline typing, wrapping, geometry, resize handles and keyboard nudges.
 - Coalesce live style/nudge edits without allowing deferred work to recreate history
-  after Undo, Cancel, removal or Apply. Await Apply/mobile Done; failed output retains
+  after Undo, Cancel, removal or Apply. Await Apply/mobile Apply; failed output retains
   pending objects and selection, successful output removes only annotation overlays,
   and Undo restores them. Preserve embedded fonts, vector marks, selectable original
   text, metadata and attachments. Remove retired StyleToggle/FontControls skins and
@@ -370,7 +369,7 @@
   Preserve the existing shrink/ellipsis behaviour for long answers and explain it
   beside the fields. Unsupported output characters fail explicitly with the draft
   intact. Preserve original vector text, rotated/cropped physical page geometry,
-  metadata and attachments. Await Apply/mobile Done, deduplicate, retire applied
+  metadata and attachments. Await Apply/mobile Apply, deduplicate, retire applied
   drafts before Undo, and preserve failure/retry and explicit Cancel semantics.
 
 - Fill form uses open Air rows, full native field names, page-navigation actions,
@@ -385,7 +384,7 @@
 - Save only changed writable values. Clearing choices must clear their PDF value;
   unsupported/read-only values cannot be silently overwritten. Field errors retain
   all input and identify the correction. Flattening is explicit and unavailable
-  when unsupported fields would be lost. Await Apply/mobile Done, preserve failed
+  when unsupported fields would be lost. Await Apply/mobile Apply, preserve failed
   work and prevent duplicate output. Verify field values/flags/widget geometry,
   catalog data, fixed appearances, Undo/Redo and Cancel before committing. Success
   feedback belongs to the editor's committed bytes and disappears on Undo; preserve

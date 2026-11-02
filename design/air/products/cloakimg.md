@@ -38,6 +38,10 @@
   unchanged or unavailable model paths are never described as exercised.
 - Keep a per-component/state inventory and evidence in `docs/air/`. Local tokens
   and this complete contract travel with the repository.
+- Tool completion uses one fixed labelled Cancel / Apply action row on phone, tablet
+  and desktop. Move, colour sampling and ID-photo output use Close, retaining their
+  specific layer, copy, print and download actions. Expand controls / Split view is
+  a separate view control; dragging the heading never commits or discards an edit.
 - Compact photo editing uses labelled Adjust / Crop / Retouch / Protect / Add /
   Tools shortcuts: a persistent phone dock and a 64px tablet rail. Tools opens
   the shared grouped, searchable catalogue without unmounting pending controls.
@@ -48,7 +52,7 @@
   tablet split; wide phones at 640px and above with at most 500px height place
   controls beside the photo and the dock below both. Enlarged text may grow the
   compact rail; horizontal dock/parameter scrolling stays inside its own region.
-  Cancel restores the tool-entry settings and history; Done bakes once. Reopening
+  Cancel restores the tool-entry settings and history; Apply bakes once. Reopening
   the same tool or browsing the catalogue must not silently commit a preview.
 - Landing artwork is a local vector landscape: a coral sun rises behind layered
   mountains while the foreground settles and the crop corners find the composition.

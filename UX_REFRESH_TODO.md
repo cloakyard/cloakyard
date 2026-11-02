@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.3.3 clear editor actions verified locally; rollout in progress; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,15 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Simple editor actions — 2026-11-02
+
+- [x] Define one labelled Cancel / Apply pair for transactional tools, distinct view controls and truthful Close actions in Air; synchronize portable specifications.
+- [x] Simplify IMG phone/tablet actions and remove duplicate per-tool commits; align PDF's mobile action pattern without changing document semantics or Resume autosave.
+- [x] Drive actual Apply, Cancel/re-entry, Undo/Redo, failure/retry, rapid activation, tool switching and export journeys; compare output with preceding production.
+- [x] Visually compare all six mobile sites and relevant editor/overlay actions in light/dark, short landscape and enlarged text; validate desktop/tablet regressions.
+- [ ] Record evidence, remove obsolete references, pass required gates, commit bounded changes and use the authorized dev → main rollout.
+- [ ] Keep physical iPhone/software-keyboard, OS IME and spoken assistive acceptance distinct from browser automation.
 
 ## CloakIMG touch workspace — 2026-10-31
 

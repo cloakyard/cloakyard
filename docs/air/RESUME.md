@@ -1,13 +1,27 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-10-31
+## Start here in a new conversation — saved 2026-11-02
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current checkpoint — CloakIMG touch workspace deployed (2026-10-31)
+### Current checkpoint — clear editor actions, rollout in progress (2026-11-02)
+
+Air 1.3.3 defines labelled Cancel / Apply, separate view controls and truthful Close.
+IMG and PDF implementation and actual action/output tests pass. Resume labels its
+mobile section dismissal Close while preserving autosave. All six web repositories
+carry synchronized standalone contracts. See [the action audit](simple-actions-2026-11-02.md).
+
+The six-app public/mobile comparison and shared real-worker notices pass. Full IMG
+all-tool matrices pass in Chromium/WebKit. Final product gates, evidence and the
+individual dev → main promotion are being closed out; consult the audit and git
+state before repeating any checks. Scratch: `/tmp/air-simple-actions-2026-11-02/`.
+Drop's unpublished native/release commits and Resume's separate worktrees are preserved.
+Physical iPhone/software keyboard, OS IME and spoken assistive acceptance stay open.
+
+### Prior checkpoint — CloakIMG touch workspace deployed (2026-10-31)
 
 The approved photo-first touch study is implemented under Air 1.3.2. IMG now has a
 persistent labelled phone dock, focused adjustments, compact tablet rail/inspector,
