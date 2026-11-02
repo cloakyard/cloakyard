@@ -7,15 +7,23 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Latest review — CloakIMG panel toggle (2026-11-02)
+### Latest direction — CloakIMG canvas-first mock (2026-11-02)
 
-The user requested a visual review of the top up/down tool-panel control. Current
-production already shows Expand / Split view. A focused 64-state touch review
-finds twenty mobile cases with an ineffective toggle and a 128px expanded photo
-region on a 390px phone. The [visual proposal](cloakimg-panel-control-review-2026-11-02.md)
-uses a visible neutral More controls / Larger photo button only when useful and
-retains more photo space. Review artifacts and the recommendation are recorded;
-application code and the approved Air 1.3.3 contract are unchanged.
+The user has superseded the More controls / Larger photo proposal with a mock
+that reserves at least 40% of the depicted screen height for the photo viewport,
+scrolls only the tool controls, and integrates the global toolbar into the canvas.
+Latest steering: X / tick belong in the fixed tool-panel header, beside its title,
+not at the top level. There is one completion pair and no additional Done action.
+
+The interactive phone/tablet mock and focused Chrome/WebKit evidence are recorded
+in [the canvas-first study](cloakimg-canvas-study-2026-11-02.md). All twelve mock
+states pass; this is not production or full-editor acceptance. Application source,
+Air 1.3.3 and deployment are unchanged. Next: user review of the mock before any
+implementation; then reconcile the approved action guidance and applicable siblings
+and run all-tool/output/device gates. Do not resume the superseded toggle proposal.
+
+The preceding [panel-control review](cloakimg-panel-control-review-2026-11-02.md)
+retains the 64-state evidence that motivated this exploration.
 
 ### Current checkpoint — Air 1.3.3 clear editor actions deployed (2026-11-02)
 

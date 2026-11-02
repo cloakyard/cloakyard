@@ -29,9 +29,11 @@ The separately requested Drop installer now uses Air.
 
 - [x] Review the current top tool-panel control with actual touch interactions in phone/tablet light/dark Chrome/WebKit.
 - [x] Record the ineffective expansion cases, undersized expanded photo region and a visual Air proposal.
-- [ ] If this direction proceeds, implement the useful-only labelled view control, retain a usable photo, synchronize applicable family guidance and run the all-tool/responsive/output gates.
+- [x] Explore the user's superseding canvas-first direction: minimum 40% photo viewport, canvas-integrated toolbar, scrollable controls and X / tick in the fixed tool-panel header.
+- [x] Verify the interactive mock in twelve Chrome/WebKit phone/tablet light/dark states and retain evidence.
+- [ ] After the mock direction is selected, implement the chosen layout, reconcile family guidance and run all-tool/responsive/output/device gates. The earlier useful-only toggle proposal is superseded.
 
-Evidence: [focused visual review](docs/air/cloakimg-panel-control-review-2026-11-02.md). This is a proposal; the deployed Air 1.3.3 implementation below remains unchanged.
+Evidence: [focused visual review](docs/air/cloakimg-panel-control-review-2026-11-02.md) and [latest interactive mock](docs/air/cloakimg-canvas-study-2026-11-02.md). These are proposals; the deployed Air 1.3.3 implementation below remains unchanged.
 
 ## Simple editor actions — 2026-11-02
 
