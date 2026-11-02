@@ -31,9 +31,10 @@ The separately requested Drop installer now uses Air.
 - [x] Record the ineffective expansion cases, undersized expanded photo region and a visual Air proposal.
 - [x] Explore the user's superseding canvas-first direction: minimum 40% photo viewport, canvas-integrated toolbar, scrollable controls and X / tick in the fixed tool-panel header.
 - [x] Verify the interactive mock in twelve Chrome/WebKit phone/tablet light/dark states and retain evidence.
-- [ ] After the mock direction is selected, implement the chosen layout, reconcile family guidance and run all-tool/responsive/output/device gates. The earlier useful-only toggle proposal is superseded.
+- [x] User approved the mock on 2026-11-02; save the implementation plan for 2026-11-03 (Asia/Kolkata).
+- [ ] Resume the approved canvas-first layout on the next requested work session, reconcile family guidance and run all-tool/responsive/output/device gates. Implementation is deferred; the earlier useful-only toggle proposal is superseded.
 
-Evidence: [focused visual review](docs/air/cloakimg-panel-control-review-2026-11-02.md) and [latest interactive mock](docs/air/cloakimg-canvas-study-2026-11-02.md). These are proposals; the deployed Air 1.3.3 implementation below remains unchanged.
+Evidence: [focused visual review](docs/air/cloakimg-panel-control-review-2026-11-02.md) and [latest interactive mock](docs/air/cloakimg-canvas-study-2026-11-02.md). The latest mock is approved and its implementation plan is saved for 2026-11-03; the deployed Air 1.3.3 implementation below remains unchanged.
 
 ## Simple editor actions — 2026-11-02
 

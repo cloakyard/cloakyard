@@ -7,9 +7,13 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Latest direction — CloakIMG canvas-first mock (2026-11-02)
+### Next session — approved CloakIMG canvas-first implementation (2026-11-03)
 
-The user has superseded the More controls / Larger photo proposal with a mock
+The user approved the canvas-first mock on 2026-11-02 and explicitly deferred
+implementation until tomorrow, 2026-11-03 (Asia/Kolkata). The saved implementation
+plan is in [the study](cloakimg-canvas-study-2026-11-02.md#saved-implementation-plan--resume-2026-11-03).
+No automatic run or reminder is scheduled. This supersedes the earlier proposal
+with a layout
 that reserves at least 40% of the depicted screen height for the photo viewport,
 scrolls only the tool controls, and integrates the global toolbar into the canvas.
 Latest steering: X / tick belong in the fixed tool-panel header, beside its title,
@@ -18,9 +22,10 @@ not at the top level. There is one completion pair and no additional Done action
 The interactive phone/tablet mock and focused Chrome/WebKit evidence are recorded
 in [the canvas-first study](cloakimg-canvas-study-2026-11-02.md). All twelve mock
 states pass; this is not production or full-editor acceptance. Application source,
-Air 1.3.3 and deployment are unchanged. Next: user review of the mock before any
-implementation; then reconcile the approved action guidance and applicable siblings
-and run all-tool/output/device gates. Do not resume the superseded toggle proposal.
+Air 1.3.3 and deployment are unchanged. Resume the saved implementation plan on
+the next requested work session, reconcile the approved action guidance and
+applicable siblings, and run all-tool/output/device gates. Mock approval is already
+given; do not ask for it again or resume the superseded toggle proposal.
 
 The preceding [panel-control review](cloakimg-panel-control-review-2026-11-02.md)
 retains the 64-state evidence that motivated this exploration.
