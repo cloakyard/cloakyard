@@ -1,0 +1,173 @@
+{
+  "checked_at": "2026-11-03T15:38:06.223098+00:00",
+  "releases": [
+    {
+      "app": "cloakpdf",
+      "pr": "https://github.com/cloakyard/cloakpdf/pull/230",
+      "state": "MERGED",
+      "main": "384cfdc754c4057c08f6fdc7dde059eb803873c7",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakpdf",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/42afe010-b051-4ff9-a451-4b347a23f31c"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41664259721/job/126015230205"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41664259553/job/126015229998"
+        },
+        {
+          "name": "Scorecard Analysis",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41663283503/job/126011797543"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41663283398/job/126011796713"
+        },
+        {
+          "name": "Dependency Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41663283403/job/126011796624"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakpdf/actions/runs/41663283406/job/126011796359"
+        }
+      ],
+      "assets": {
+        "base": "https://pdf.cloakyard.com",
+        "matched": 130,
+        "total": 130,
+        "normalizedMatched": 0,
+        "mismatches": []
+      },
+      "remote_refs": {
+        "refs/heads/dev": "384cfdc754c4057c08f6fdc7dde059eb803873c7",
+        "refs/heads/main": "384cfdc754c4057c08f6fdc7dde059eb803873c7"
+      },
+      "raw_receipt_sha256": "bdd0c548c1b372749ab1ea8a9b5f5b5700d5b92f48fc71de84c358e54a07c112"
+    },
+    {
+      "app": "cloakimg",
+      "pr": "https://github.com/cloakyard/cloakimg/pull/30",
+      "state": "MERGED",
+      "main": "a20296c7bfc306266eafe6f757415ca54994f8e4",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakimg",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakimg/production/builds/f05ab94a-47be-4157-8bec-fb04c07926f4"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakimg/actions/runs/41664254835/job/126015214059"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakimg/actions/runs/41662859797/job/126010346204"
+        }
+      ],
+      "assets": {
+        "base": "https://img.cloakyard.com",
+        "matched": 89,
+        "total": 89,
+        "normalizedMatched": 0,
+        "mismatches": []
+      },
+      "remote_refs": {
+        "refs/heads/dev": "a20296c7bfc306266eafe6f757415ca54994f8e4",
+        "refs/heads/main": "a20296c7bfc306266eafe6f757415ca54994f8e4"
+      },
+      "raw_receipt_sha256": "3ebee94b5c5528895e54ceadd933e24a24c6e5ce9e07c9d3aa43968e2bad2edf"
+    },
+    {
+      "app": "cloakresume",
+      "pr": "https://github.com/cloakyard/cloakresume/pull/58",
+      "state": "MERGED",
+      "main": "974830727ecc576ac70d9285c1111cf1bff6695e",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakresume",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/4b5437fa-0d8d-429c-a79e-06c0363a52a3"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakresume/actions/runs/41664257133/job/126015222136"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "details_url": "https://github.com/cloakyard/cloakresume/actions/runs/41662852703/job/126010328558"
+        }
+      ],
+      "assets": {
+        "base": "https://resume.cloakyard.com",
+        "matched": 101,
+        "total": 101,
+        "normalizedMatched": 0,
+        "mismatches": []
+      },
+      "remote_refs": {
+        "refs/heads/dev": "974830727ecc576ac70d9285c1111cf1bff6695e",
+        "refs/heads/main": "974830727ecc576ac70d9285c1111cf1bff6695e"
+      },
+      "raw_receipt_sha256": "113e81c634d7eb03551bfe76dabc2719a4027814ab12725bc53f0c87fade0972"
+    }
+  ],
+  "live_verification": {
+    "chromium": {
+      "cases": 24,
+      "errors": [],
+      "receipt_sha256": "c9adb2b4a46a50d103b9aaaf2c900a32dba2c4902633b663cb16be00a06678b1"
+    },
+    "webkit": {
+      "cases": 24,
+      "errors": [],
+      "receipt_sha256": "d4b056c3e3a83c0a0bc7088da58e23d2f24c8ee42a8ae81ecfd3b5dcc83f5bce"
+    },
+    "resume_dates": {
+      "layouts": 48,
+      "passed": true,
+      "receipt_sha256": "add2b56835dad07dfdf932875a1406d652461a203348178f773beabacf642ccf"
+    },
+    "img_watermark": {
+      "journeys": 12,
+      "exactDecodedPNGMatches": 48,
+      "errors": []
+    }
+  },
+  "yard": {
+    "pr": "https://github.com/cloakyard/cloakyard/pull/48",
+    "scope": "Comparison harness, audit evidence and contributor guidance; homepage payload unchanged. Its own post-merge checks, asset receipt and branch synchronization are recorded in the PR description."
+  },
+  "limits": [
+    "Physical Windows/iPhone, software keyboards, OS IME, actual browser zoom and spoken-assistive acceptance remain open.",
+    "Original PDF AI work and unpublished native Drop/Roll work remain excluded."
+  ]
+}

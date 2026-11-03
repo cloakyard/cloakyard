@@ -19,6 +19,7 @@ Shared design commands:
 - `node scripts/check-air-design.mjs` checks tokens, provenance and migrated sources.
 - `node scripts/check-air-portability.mjs` checks the independent bundle.
 - `node scripts/air-inventory.mjs` updates the surface list while preserving evidence.
+- `node scripts/test-air-editors.mjs` compares real PDF/IMG/Resume workspace controls, keyboard focus and dialogs in Chrome/WebKit; supply `PLAYWRIGHT_MODULE`, `AIR_EDITOR_URLS` and `AIR_PDF_FIXTURE`. Pair it with the per-product all-tool, secondary-flow, edge-state and output suites. App comparisons cover every applicable view, not only public pages; maintain an explicit coverage ledger.
 - `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume/Roll/IMG public pages and secondary reading/recovery shells.
 - `node scripts/test-air-gathering.mjs` checks the homepage's finite SVG motion, static preferences, responsive layout and directory links against the production build.
 - `node scripts/test-air-artwork-browsers.mjs` checks actual four-thread/no-memory

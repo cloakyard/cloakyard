@@ -7,36 +7,40 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Active: compact notices and modal scrolling — 2026-11-03
+### Completed: full-view editor comparison — 2026-11-03
 
-Air 1.6.0 fixes the user-reported update banner and native modal scrollbar. It
-standardizes a 384px bottom-right PWA popup, one 44px dismiss target and shared
-native scroll styling. PDF title/footer stay visible; IMG's shrinking metadata
-content and WebKit field focus are corrected. The family, PWA, dialog, all-tool,
-unit/output and worker checks pass. See [the audit](compact-popups-2026-11-03.md).
+The current pass compares actual PDF/IMG/Resume interiors and secondary flows,
+not only public pages. `AGENTS.md` and `CLAUDE.md` now require a per-view coverage
+ledger for future app comparisons. See [the audit](editor-comparison-2026-11-03.md).
+PDF heading/scrollbar drift, IMG watermark placement/Scale validation and Resume
+date-popup stacking are corrected and deployed through PDF #230, IMG #30 and
+Resume #58. Exact-main CI/Cloudflare checks, 320 exact live files, 48 live
+cross-editor cases, 48 live date layouts and 48 matching watermark PNG outputs
+pass. Product remote dev/main are synchronized. Yard #48 carries this audit and
+records its own post-merge checks in its description. Do not repeat completed UI
+work or the passing feature matrices.
 
-Yard #46, PDF #229, IMG #29, Resume #57 and Drop #58 are merged/deployed. All
-exact-main checks and 348 live asset comparisons pass; their remote dev/main are
-synchronized. The documentation closeout PR records its own checks. Roll website-only
-[PR #14](https://github.com/cloakyard/cloakroll/pull/14) has passing website and
-Cloudflare preview checks and awaits the user’s branch-path decision. Its dev has
-unrelated native beta commits absent from main; do not merge that native history or
-assume the pending answer. Roll production remains unchanged.
+The original PDF checkout contains unrelated uncommitted AI work. Use the isolated
+PDF at `/tmp/air-popups-2026-11-03/cloakpdf`; never stash/reset/publish the original
+changes. Canonical sync must run with `node --preserve-symlinks-main` through the
+Yard symlink in that scratch family. Drop's unpublished native history stays local.
 
-Isolated PDF, Drop and Roll checkouts are under `/tmp/air-popups-2026-11-03`; the other
-three sibling paths there are symlinks. Run canonical sync with
-`node --preserve-symlinks-main` through that Yard symlink while the original PDF’s
-uncommitted AI work remains active. Do not stash, reset or publish that work. Drop’s
-original dev includes the website merge while retaining unpublished native commits;
-do not push it wholesale. Task previews on 8500/8502–8506 are stopped after verification.
+Roll website-only PR #14 is merged at `e0f4fe3f811ff0094d823cf3504a101eb698a923` under
+the user's explicit exception. Exact-main Website/Cloudflare checks pass and
+production matches 8 raw files plus 3 existing HTML injection exceptions. Native
+dev `a708105f5dbf63122c130410570eedbe03066219` includes main and is pushed/verified;
+its additional native beta history remains off main. Do not ask this permission again.
 
-Next: resolve Roll’s pending branch-path decision, then physical-device/assistive
-acceptance and the separately tracked product/output backlog. Do not repeat this
-completed implementation or claim Roll’s production has changed.
+Air 1.6.0 compact notices and modal scrolling are deployed on all six websites.
+The preceding [popup audit](compact-popups-2026-11-03.md) retains the real-worker,
+classic-scrollbar and live-dialog receipts. Preserve browser tests that remove
+the default hidden-scrollbar flag and actually drag/scroll the native thumb.
 
-Physical Windows/iPhone and assistive/OS-keyboard acceptance remain open. Browser
-launchers hide scrollbars by default; the new dialog audit removes that flag and
-checks actual thumb dragging, not just computed CSS. Do not regress this coverage.
+Physical Windows/iPhone, software keyboards, OS IME, real browser zoom and spoken
+assistive acceptance remain open. Task previews on 8511–8514 are stopped; raw
+evidence remains in `/tmp/air-editor-comparison-2026-11-03`. Next: the separate
+device/assistive and product/output acceptance backlog. Do not equate automated WebKit or 32px root text with
+physical-device or actual browser-zoom acceptance.
 
 ### Prior: all-layout consistency follow-up — 2026-11-03
 

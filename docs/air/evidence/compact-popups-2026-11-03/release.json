@@ -172,8 +172,12 @@
   "roll": {
     "pr": 14,
     "head": "565059090e432eb553ab749c84495a998254b6da",
-    "checks": "website and Cloudflare preview passed",
-    "production": "unchanged; awaiting branch-path decision"
+    "checks": "Exact-main Website and Workers Builds passed; merged dev website verify passed",
+    "production": "8 raw matches and 3 existing Cloudflare HTML injection exceptions; zero mismatches",
+    "approval": "User approved website-only main merge followed by dev integration",
+    "main": "e0f4fe3f811ff0094d823cf3504a101eb698a923",
+    "dev": "a708105f5dbf63122c130410570eedbe03066219",
+    "branch_relation": "main is an ancestor of native dev; no native release"
   },
   "live_dialogs": {
     "cases": 48,

@@ -8,6 +8,14 @@ The complete refresh is tracked in `UX_REFRESH_TODO.md`; do not call a landing-o
 or token-only change a completed product migration. Audit custom controls, editor
 interiors, canvas chrome, overlays, edge states and every required viewport class.
 
+When the user asks to compare apps, compare every applicable view by default:
+landing, editor/workspace and every tool, standalone/batch/library flows,
+privacy/recovery, dialogs/popovers/PWA notices, and empty/loading/error states.
+Inspect phone, tablet, laptop and desktop in light/dark. Compare equivalent control
+roles while preserving each app's task-specific composition. Record a per-view
+coverage ledger and name anything untested; a public-page audit covers only those
+pages and cannot establish whole-app consistency.
+
 `design/air/contract.md` owns the portable family contract. Update it and regenerate
 the per-app documents with `node scripts/sync-air-design.mjs`; check with
 `node scripts/sync-air-design.mjs --check`. Standalone products include the complete

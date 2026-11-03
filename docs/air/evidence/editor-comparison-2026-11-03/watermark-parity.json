@@ -1,0 +1,8 @@
+{
+  "comparisons": 36,
+  "result": "pass",
+  "engines": ["chromium", "webkit"],
+  "widths": [390, 768, 1440],
+  "states": ["base", "placed", "cancelled"],
+  "note": "Existing older-history WebP compression is preserved, not pixel-lossless."
+}

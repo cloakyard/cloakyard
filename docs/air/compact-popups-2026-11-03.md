@@ -86,15 +86,15 @@ website merge and retains its unpublished native history; do not push it wholesa
 | Resume       | [#57](https://github.com/cloakyard/cloakresume/pull/57) | `4c292c0ed563a4f22af635170cae81537fc074fc` |
 | Drop website | [#58](https://github.com/cloakyard/cloakdrop/pull/58)   | `a8f4664b2a75a6cdf91f798eabc211bf43ca4541` |
 
-Roll's dev contains unrelated native beta commits absent from main. Website-only
-[PR #14](https://github.com/cloakyard/cloakroll/pull/14) is tested and ready at
-`565059090e432eb553ab749c84495a998254b6da`. Its GitHub website and Cloudflare preview
-checks pass. An earlier Cloudflare build environment timed out before cloning; the
-replacement build passed. The PR remains open pending the user's branch-path
-exception; Roll's production remains unchanged.
+The user approved the website-only branch exception. Roll
+[PR #14](https://github.com/cloakyard/cloakroll/pull/14) is merged at
+`e0f4fe3f811ff0094d823cf3504a101eb698a923`; exact-main Website and Cloudflare checks
+pass. Production matches eight raw files plus the three existing Cloudflare HTML
+injection exceptions. Native dev now includes main at
+`a708105f5dbf63122c130410570eedbe03066219`, pushed and website-verified. Main is an
+ancestor of dev; native beta history remains off main and is not released.
 
 The documentation closeout PR records its own main checks. Its build payload is
 unchanged from Yard #46. The [release evidence](evidence/compact-popups-2026-11-03/release.json)
 records exact deployed hashes and checks. Task preview servers are stopped after
-verification; isolated checkouts and scratch evidence are retained for the pending
-Roll decision and concurrent PDF work.
+verification; isolated checkouts and scratch evidence are retained for concurrent PDF work and the subsequent editor comparison.
