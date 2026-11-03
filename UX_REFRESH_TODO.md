@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.6.0 compact notices deployed to five websites, Roll PR #14 pending its branch-path decision; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -30,7 +30,8 @@ The separately requested Drop installer now uses Air.
 - [x] Apply Air 1.6.0 compact bottom-right PWA notices, one shared close target and native quiet scrolling; remove superseded skins.
 - [x] Keep PDF title/actions fixed, wrap long filenames in the body, and correct IMG content/focus clipping.
 - [x] Complete both-theme, all-layout dialog/PWA/public audits, actual visible scrollbar drag/wheel checks, applicable unit/output/lifecycle and portability checks.
-- [ ] Commit and promote individual website fixes, verify live assets and update dev. Roll website-only PR #14 awaits the branch-path exception because dev includes unrelated native work.
+- [x] Commit all six bounded website fixes; promote Yard #46, PDF #229, IMG #29, Resume #57 and Drop #58; verify 348 live assets and synchronize their remote dev/main.
+- [ ] Merge Roll website-only PR #14 after the pending branch-path decision, verify production and integrate into dev without promoting unrelated native work.
 - [ ] Physical Windows/iPhone, OS keyboard/IME, browser zoom and spoken-assistive acceptance remain separate.
 
 Evidence: [compact-popup audit](docs/air/compact-popups-2026-11-03.md).

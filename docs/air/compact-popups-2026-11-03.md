@@ -69,14 +69,32 @@ and automated WebKit do not certify those devices.
 ## Promotion and concurrent work
 
 PDF's separate AI work, Drop's unpublished native commits and Roll's native beta
-history are excluded using isolated checkouts. Original work is preserved. Product
-fixes are verified locally; individual PR/deployment status is recorded below.
-Roll's dev contains native commits absent from main. Website-only PR #14 is ready;
-the user has been asked to approve that exceptional branch path before merging.
+history are excluded using isolated checkouts. Original work is preserved. Five websites are deployed from individual dev → main PRs. All exact-main checks
+pass and all **348 production build files match byte-for-byte** (Yard 12, PDF 130,
+IMG 89, Resume 101, Drop 16). Remote dev/main are synchronized for these repositories.
+The focused production dialog pass adds **48 Chrome/WebKit cases** across 390, 768,
+1280 and 1440px in both themes, including classic thumb drag/wheel, fixed actions
+and field focus. Representative live captures were reviewed.
+Original PDF AI edits remain untouched. Drop's original local dev includes the
+website merge and retains its unpublished native history; do not push it wholesale.
 
-- Yard: pending commit/promotion.
-- PDF: [PR #229](https://github.com/cloakyard/cloakpdf/pull/229); release verification pending.
-- IMG: [PR #29](https://github.com/cloakyard/cloakimg/pull/29); release verification pending.
-- Resume: [PR #57](https://github.com/cloakyard/cloakresume/pull/57); release verification pending.
-- Drop website: [PR #58](https://github.com/cloakyard/cloakdrop/pull/58); release verification pending.
-- Roll website: [PR #14](https://github.com/cloakyard/cloakroll/pull/14), merge decision pending.
+| Website      | PR                                                      | Verified production commit                 |
+| ------------ | ------------------------------------------------------- | ------------------------------------------ |
+| Yard         | [#46](https://github.com/cloakyard/cloakyard/pull/46)   | `bed264880b722b27f884be40301a527405723191` |
+| PDF          | [#229](https://github.com/cloakyard/cloakpdf/pull/229)  | `6a8c2607d86cc6e87288dfd519d87ee966e6a4f9` |
+| IMG          | [#29](https://github.com/cloakyard/cloakimg/pull/29)    | `67b25a73e8ef55220e68c36ac2f200b1916f60f8` |
+| Resume       | [#57](https://github.com/cloakyard/cloakresume/pull/57) | `4c292c0ed563a4f22af635170cae81537fc074fc` |
+| Drop website | [#58](https://github.com/cloakyard/cloakdrop/pull/58)   | `a8f4664b2a75a6cdf91f798eabc211bf43ca4541` |
+
+Roll's dev contains unrelated native beta commits absent from main. Website-only
+[PR #14](https://github.com/cloakyard/cloakroll/pull/14) is tested and ready at
+`565059090e432eb553ab749c84495a998254b6da`. Its GitHub website and Cloudflare preview
+checks pass. An earlier Cloudflare build environment timed out before cloning; the
+replacement build passed. The PR remains open pending the user's branch-path
+exception; Roll's production remains unchanged.
+
+The documentation closeout PR records its own main checks. Its build payload is
+unchanged from Yard #46. The [release evidence](evidence/compact-popups-2026-11-03/release.json)
+records exact deployed hashes and checks. Task preview servers are stopped after
+verification; isolated checkouts and scratch evidence are retained for the pending
+Roll decision and concurrent PDF work.

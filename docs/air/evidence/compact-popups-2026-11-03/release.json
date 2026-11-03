@@ -1,0 +1,185 @@
+{
+  "verified_releases": [
+    {
+      "app": "cloakyard",
+      "sha": "bed264880b722b27f884be40301a527405723191",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakyard",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakyard/production/builds/7861b12a-134a-4797-b036-4b0350601d84"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakyard/actions/runs/41652825125/job/125975198089"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakyard/actions/runs/41652649955/job/125974592446"
+        }
+      ],
+      "assets": "pass"
+    },
+    {
+      "app": "cloakpdf",
+      "sha": "6a8c2607d86cc6e87288dfd519d87ee966e6a4f9",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakpdf",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakpdf/production/builds/4124eefc-ffc9-4148-a7a0-eb5aed968a82"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/41652828712/job/125975214869"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/41652828874/job/125975214381"
+        },
+        {
+          "name": "Dependency Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/41652652131/job/125974598961"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/41652652176/job/125974598558"
+        },
+        {
+          "name": "Scorecard Analysis",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/41652652277/job/125974598479"
+        },
+        {
+          "name": "Analyze (javascript-typescript)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakpdf/actions/runs/41652652062/job/125974598004"
+        }
+      ],
+      "assets": "pass"
+    },
+    {
+      "app": "cloakimg",
+      "sha": "67b25a73e8ef55220e68c36ac2f200b1916f60f8",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakimg",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakimg/production/builds/3aef5e64-bae6-4bd0-9f72-4ec6769d7b88"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakimg/actions/runs/41652605185/job/125974432040"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakimg/actions/runs/41652362987/job/125973575596"
+        }
+      ],
+      "assets": "pass"
+    },
+    {
+      "app": "cloakresume",
+      "sha": "4c292c0ed563a4f22af635170cae81537fc074fc",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakresume",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakresume/production/builds/7405acd5-7427-48ce-9ac8-7bb2620c297a"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakresume/actions/runs/41652607559/job/125974440620"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakresume/actions/runs/41652362304/job/125973573791"
+        }
+      ],
+      "assets": "pass"
+    },
+    {
+      "app": "cloakdrop",
+      "sha": "a8f4664b2a75a6cdf91f798eabc211bf43ca4541",
+      "checks": [
+        {
+          "name": "Workers Builds: cloakdrop",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://dash.cloudflare.com/73a3338267f567d02c3b79c9bcedc6a6/workers/services/view/cloakdrop/production/builds/63341aa4-56d0-46dd-9210-2c7fec350181"
+        },
+        {
+          "name": "website",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakdrop/actions/runs/41652650373/job/125974591447"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakdrop/actions/runs/41652650373/job/125974590928"
+        },
+        {
+          "name": "contract",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakdrop/actions/runs/41652544210/job/125974218489"
+        },
+        {
+          "name": "website",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/cloakyard/cloakdrop/actions/runs/41652544210/job/125974217965"
+        }
+      ],
+      "assets": "pass"
+    }
+  ],
+  "asset_counts": {
+    "cloakyard": 12,
+    "cloakpdf": 130,
+    "cloakimg": 89,
+    "cloakresume": 101,
+    "cloakdrop": 16
+  },
+  "roll": {
+    "pr": 14,
+    "head": "565059090e432eb553ab749c84495a998254b6da",
+    "checks": "website and Cloudflare preview passed",
+    "production": "unchanged; awaiting branch-path decision"
+  },
+  "live_dialogs": {
+    "cases": 48,
+    "engines": ["chromium", "webkit"],
+    "widths": [390, 768, 1280, 1440],
+    "themes": ["light", "dark"],
+    "result": "pass"
+  }
+}
