@@ -10,18 +10,23 @@ const urls = (
 await mkdir(out, { recursive: true });
 const results = [],
   errors = [];
-const profiles = process.env.AIR_QUICK
-  ? [[390, 844]]
-  : [
-      [320, 568],
-      [390, 844],
-      [430, 932],
-      [844, 390],
-      [768, 1024],
-      [1024, 768],
-      [1280, 720],
-      [1440, 900],
-    ];
+const profiles = process.env.AIR_PROFILES
+  ? JSON.parse(process.env.AIR_PROFILES)
+  : process.env.AIR_QUICK
+    ? [[390, 844]]
+    : [
+        [320, 568],
+        [375, 812],
+        [390, 844],
+        [430, 932],
+        [844, 390],
+        [768, 1024],
+        [1024, 768],
+        [1280, 720],
+        [1366, 768],
+        [1440, 900],
+        [1920, 1080],
+      ];
 // Sample actual running browser animations on paint frames, not a delayed protocol reply.
 const watchMotion = (p, selector) =>
   p.evaluate((selector) => {
@@ -37,6 +42,14 @@ const watchMotion = (p, selector) =>
     sample();
   }, selector);
 const duration = (p) => p.evaluate(() => [...new Set(window.airAuditDurations)]);
+// Wait for a painted observation, not an arbitrary protocol round trip. The
+// assertion still requires a real running animation with the exact duration.
+const observeDuration = (p, expected) =>
+  p.waitForFunction((expected) => window.airAuditDurations.includes(expected), expected, {
+    // Use the normal bounded page timeout. WebKit can deliver a recorded frame
+    // after a busy template-library render; it must still contain real motion.
+    polling: 50,
+  });
 const settle = (p) => p.waitForTimeout(300);
 for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chromium", "webkit"]) {
   const browser = await (engine === "webkit"
@@ -233,6 +246,7 @@ for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chr
           await (width < 1100 ? opener.tap() : opener.click());
           await dialog.waitFor();
           await p.waitForTimeout(35);
+          await observeDuration(p, 240);
           const entry = await duration(p);
           assert(
             entry.some((d) => d === 240),
@@ -252,6 +266,7 @@ for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chr
           await p.keyboard.press("Escape");
           await p.waitForTimeout(35);
           assert(await dialog.count(), "Exit unmounted immediately");
+          await observeDuration(p, 160);
           const exit = await duration(p);
           assert(
             exit.some((d) => d === 160),
@@ -269,9 +284,11 @@ for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chr
           await p.keyboard.press("Enter");
           await dialog.waitFor();
           await p.waitForTimeout(35);
+          await observeDuration(p, 240);
+          const keyboardEntry = await duration(p);
           assert(
-            (await duration(p)).some((d) => d === 240),
-            "Keyboard entry deviates",
+            keyboardEntry.some((d) => d === 240),
+            `${engine}/${app}/${width}/${theme}: keyboard entry deviates ${keyboardEntry}`,
           );
           await p.emulateMedia({ reducedMotion: "reduce" });
           await settle(p);
@@ -293,9 +310,9 @@ for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chr
         }
       }
   } finally {
+    await writeFile(`${out}/results.json`, JSON.stringify({ results, errors }, null, 2) + "\n");
     await browser.close();
   }
 }
-await writeFile(`${out}/results.json`, JSON.stringify({ results, errors }, null, 2) + "\n");
 assert.deepEqual(errors, []);
 console.log(`${results.length} surface motion and workflow checks passed`);

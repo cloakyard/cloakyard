@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,16 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## All-layout consistency follow-up — 2026-11-03
+
+- [x] Repeat the six-site public, privacy, neutral-link, header/footer and PWA notice matrices across phone, tablet, laptop, desktop and enlarged text.
+- [x] Inspect all 26 IMG tools and 22 PDF panels in both engines, plus Resume editor/Options states; retain rendered evidence.
+- [x] Correct PDF's split Cancel label and Roll's numbered labels/stale beta copy; strengthen the corresponding audit harnesses.
+- [x] Complete all 228 required presence observations; merge/deploy PDF #228, Resume #56 and Roll #12, verify live files and synchronize remote dev. The canonical Yard PR records its own final checks and deployment.
+- [ ] Physical iPhone/software-keyboard, OS IME, spoken-assistive and actual browser-zoom acceptance remain separate.
+
+Evidence and rollout: [six-app audit](docs/air/all-layout-audit-2026-11-03.md).
 
 ## Family phone UX and surface motion — 2026-11-03
 
