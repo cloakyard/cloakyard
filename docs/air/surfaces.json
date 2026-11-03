@@ -281,9 +281,7 @@
       "validated": false,
       "states": [],
       "viewports": [],
-      "evidence": [
-        "evidence/privacy-2026-10-29/policies.json.gz"
-      ],
+      "evidence": ["evidence/privacy-2026-10-29/policies.json.gz"],
       "notes": " Air 1.2.5 public privacy/navigation software audit passes; policy meaning/dates and editor work preserved. Full product/device gates remain separate."
     },
     {
@@ -394,10 +392,7 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": [
-        "docs/air/evidence/home-2026-10-13.json",
-        "docs/air/validation.md"
-      ],
+      "evidence": ["docs/air/evidence/home-2026-10-13.json", "docs/air/validation.md"],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
     },
     {
@@ -476,10 +471,7 @@
         "1440x900",
         "1920x1080"
       ],
-      "evidence": [
-        "docs/air/evidence/home-2026-10-13.json",
-        "docs/air/validation.md"
-      ],
+      "evidence": ["docs/air/evidence/home-2026-10-13.json", "docs/air/validation.md"],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
     },
     {
