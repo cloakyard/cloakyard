@@ -1,0 +1,162 @@
+[
+  {
+    "product": "cloakimg",
+    "headRefOid": "372602b0ca0c10fa6da9574e2a80e91a5ad3dec6",
+    "mergeCommit": {
+      "oid": "2673df41119d7de03243194ad189e828a90a93c2"
+    },
+    "mergedAt": "2026-11-03T07:03:48Z",
+    "url": "https://github.com/cloakyard/cloakimg/pull/27",
+    "checks": [
+      {
+        "name": "Workers Builds: cloakimg",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "product": "cloakpdf",
+    "headRefOid": "070f6ad554cd823a93ad1a7eb3f655246adfebb6",
+    "mergeCommit": {
+      "oid": "4bb3c5429d63ba59c7c6a851b931fd887537d837"
+    },
+    "mergedAt": "2026-11-03T06:58:32Z",
+    "url": "https://github.com/cloakyard/cloakpdf/pull/226",
+    "checks": [
+      {
+        "name": "Workers Builds: cloakpdf",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Analyze (javascript-typescript)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Scorecard Analysis",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Dependency Audit",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Analyze (javascript-typescript)",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "product": "cloakresume",
+    "headRefOid": "4a3ece8a0d4d7cd77b3d02afbc3ea3e8e60eb268",
+    "mergeCommit": {
+      "oid": "68ac708cd1704368351b349a5f50ef6ddceb9f92"
+    },
+    "mergedAt": "2026-11-03T06:57:43Z",
+    "url": "https://github.com/cloakyard/cloakresume/pull/54",
+    "checks": [
+      {
+        "name": "Workers Builds: cloakresume",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "product": "cloakdrop",
+    "headRefOid": "6232ac81382c224aa77f73535a97b969cd4dcc96",
+    "mergeCommit": {
+      "oid": "651d05dfd407e44e59d2101d21bacfb903d9b133"
+    },
+    "mergedAt": "2026-11-03T06:57:07Z",
+    "url": "https://github.com/cloakyard/cloakdrop/pull/56",
+    "checks": [
+      {
+        "name": "Workers Builds: cloakdrop",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "website",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "website",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "contract",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "product": "cloakroll",
+    "headRefOid": "c4585d80c8c2836ebe2e5a8583dcbb741af05a91",
+    "mergeCommit": {
+      "oid": "69564edb19321f3e63ecd253a5a8b0a9464ea016"
+    },
+    "mergedAt": "2026-11-03T06:57:08Z",
+    "url": "https://github.com/cloakyard/cloakroll/pull/10",
+    "checks": [
+      {
+        "name": "Workers Builds: cloakroll",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Website",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Website",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  }
+]

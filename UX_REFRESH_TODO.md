@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,29 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## CloakIMG canvas-first implementation — 2026-11-03
+
+- [x] Resume the approved mock and reconcile Air's optional compact tool-header action pattern.
+- [x] Replace panel expansion measurements with a 40% canvas minimum, fixed local X / tick actions and independently scrolling controls; integrate global actions into the canvas plane.
+- [x] Complete all-tool/browser/feature/output checks and visual review, including alternate states, enlarged text and breakpoint transitions.
+- [x] Refresh screenshots, remove obsolete references, update evidence and commit only after required gates pass.
+- [x] Promote verified product changes through dev → main PRs and verify deployment; retain separate physical-device acceptance. The canonical Yard PR records its own main/deployment checks.
+
+IMG #27 and the four sibling product contract PRs are merged and production-verified.
+Air 1.4.0 is synchronized across the family. Yard's central PR carries this record
+and its own final deployment checks. See `docs/air/cloakimg-canvas-first-2026-11-03.md`.
+
+## CloakIMG panel-toggle review — 2026-11-02
+
+- [x] Review the current top tool-panel control with actual touch interactions in phone/tablet light/dark Chrome/WebKit.
+- [x] Record the ineffective expansion cases, undersized expanded photo region and a visual Air proposal.
+- [x] Explore the user's superseding canvas-first direction: minimum 40% photo viewport, canvas-integrated toolbar, scrollable controls and X / tick in the fixed tool-panel header.
+- [x] Verify the interactive mock in twelve Chrome/WebKit phone/tablet light/dark states and retain evidence.
+- [x] User approved the mock on 2026-11-02; save the implementation plan for 2026-11-03 (Asia/Kolkata).
+- [x] Resume the approved canvas-first layout on 2026-11-03, reconcile family guidance and pass applicable automated all-tool/responsive/output gates. Physical-device acceptance remains open; the earlier useful-only toggle proposal is superseded.
+
+Evidence: [focused visual review](docs/air/cloakimg-panel-control-review-2026-11-02.md) and [latest interactive mock](docs/air/cloakimg-canvas-study-2026-11-02.md). The latest mock is approved and its implementation plan is saved for 2026-11-03; the deployed Air 1.3.3 implementation below remains unchanged.
 
 ## Simple editor actions — 2026-11-02
 
