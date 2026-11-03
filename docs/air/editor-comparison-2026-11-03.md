@@ -32,7 +32,7 @@ compact notice and scrollbar specification from the preceding pass.
 
 ## Equivalent roles, deliberate compositions
 
-The real field measurements agree across the three editors: Geist, 10px radius,
+The real field measurements agree across the three editors: the native system font stack, 10px radius,
 1px neutral contour, one 2px focus outline and no duplicate shadow; 16px touch
 input text and 14px desktop input text. Primary actions remain neutral. Dialog
 close targets use the same 44px dismiss component. The canvas surround changes

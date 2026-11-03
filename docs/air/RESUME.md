@@ -7,6 +7,19 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### In progress: component-state consistency follow-up — 2026-11-03
+
+The user requested another all-layout, all-view audit. Fresh comparisons against
+isolated canonical Air controls found IMG's duplicate button/field skins and
+Resume's 2px button-focus offset; PDF's select gap was 4px instead of 8px.
+Those bounded fixes are being checked in the isolated PDF and original IMG/Resume
+checkouts. IMG also adopts the shared vertical-rail scrollbar and error dismiss.
+IMG #31, Resume #59 and PDF #231 are merged; each remote dev includes main.
+PDF main is `e869028`, IMG main is `66ead3f` and Resume main is `a127dd7`.
+All local product gates pass. Production verification is in progress. Raw evidence:
+`/tmp/air-components-2026-11-03`; task previews use 8521–8523. Keep the isolation
+rules below. The full preceding rollout is complete, not pending.
+
 ### Completed: full-view editor comparison — 2026-11-03
 
 The current pass compares actual PDF/IMG/Resume interiors and secondary flows,
