@@ -25,6 +25,16 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Compact notices and modal scrolling — 2026-11-03
+
+- [x] Apply Air 1.6.0 compact bottom-right PWA notices, one shared close target and native quiet scrolling; remove superseded skins.
+- [x] Keep PDF title/actions fixed, wrap long filenames in the body, and correct IMG content/focus clipping.
+- [x] Complete both-theme, all-layout dialog/PWA/public audits, actual visible scrollbar drag/wheel checks, applicable unit/output/lifecycle and portability checks.
+- [ ] Commit and promote individual website fixes, verify live assets and update dev. Roll website-only PR #14 awaits the branch-path exception because dev includes unrelated native work.
+- [ ] Physical Windows/iPhone, OS keyboard/IME, browser zoom and spoken-assistive acceptance remain separate.
+
+Evidence: [compact-popup audit](docs/air/compact-popups-2026-11-03.md).
+
 ## All-layout consistency follow-up — 2026-11-03
 
 - [x] Repeat the six-site public, privacy, neutral-link, header/footer and PWA notice matrices across phone, tablet, laptop, desktop and enlarged text.

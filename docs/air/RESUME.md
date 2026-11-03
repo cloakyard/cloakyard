@@ -7,7 +7,29 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Active: all-layout consistency follow-up — 2026-11-03
+### Active: compact notices and modal scrolling — 2026-11-03
+
+Air 1.6.0 fixes the user-reported update banner and native modal scrollbar. It
+standardizes a 384px bottom-right PWA popup, one 44px dismiss target and shared
+native scroll styling. PDF title/footer stay visible; IMG's shrinking metadata
+content and WebKit field focus are corrected. The family, PWA, dialog, all-tool,
+unit/output and worker checks pass. See [the audit](compact-popups-2026-11-03.md).
+
+Promotion is next. Isolated PDF, Drop and Roll worktrees live under
+`/tmp/air-popups-2026-11-03`; the other three sibling paths there are symlinks.
+Run canonical sync with `node --preserve-symlinks-main` through that Yard symlink
+while concurrent native/PDF AI work is active. Original PDF AI changes, Drop's
+unpublished native history and Roll's native beta history must not be published
+as part of this UI task. Roll website-only PR #14 is ready and the user was asked
+to approve its alternate promotion path; do not assume the answer. Keep normal
+products on the authorized dev→main PR path. Task previews: Yard 8500, IMG 8502,
+Resume 8503, Drop 8504, Roll 8505, isolated PDF 8506.
+
+Physical Windows/iPhone and assistive/OS-keyboard acceptance remain open. Browser
+launchers hide scrollbars by default; the new dialog audit removes that flag and
+checks actual thumb dragging, not just computed CSS. Do not regress this coverage.
+
+### Prior: all-layout consistency follow-up — 2026-11-03
 
 The six-site Air 1.5.0 follow-up has completed the public/privacy/PWA, all-tool IMG
 and PDF, and Resume editor/Options matrices. Visual review found PDF's tablet
