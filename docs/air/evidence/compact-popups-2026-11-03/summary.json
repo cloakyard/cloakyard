@@ -1,0 +1,53 @@
+{
+  "version": "1.6.0",
+  "required_sizes": [
+    [320, 568],
+    [375, 812],
+    [390, 844],
+    [430, 932],
+    [844, 390],
+    [768, 1024],
+    [1024, 768],
+    [1280, 720],
+    [1366, 768],
+    [1440, 900],
+    [1920, 1080]
+  ],
+  "themes": ["light", "dark"],
+  "root_font_px": [16, 32],
+  "family": {
+    "home": 648,
+    "secondary": 288,
+    "deviations": 0
+  },
+  "notices": {
+    "layouts": 396,
+    "captures": 162,
+    "errors": 0
+  },
+  "dialogs": {
+    "layouts": 264,
+    "engines": ["chromium", "webkit"]
+  },
+  "units": {
+    "pdf": 461,
+    "img": 488,
+    "resume": 373
+  },
+  "img_tools": {
+    "img-tools": {
+      "observations": 718,
+      "errors": 0,
+      "model_requests": 0
+    },
+    "img-tools-webkit": {
+      "observations": 720,
+      "errors": 0,
+      "model_requests": 0
+    }
+  },
+  "limitations": [
+    "Classic-scrollbar Chrome on macOS is not a physical Windows acceptance run.",
+    "WebKit emulation is not physical iPhone/software-keyboard acceptance."
+  ]
+}
