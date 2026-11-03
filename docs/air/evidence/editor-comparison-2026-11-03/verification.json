@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-03",
+  "source_runs": [
+    {
+      "suite": "comparison",
+      "file": "/tmp/air-editor-comparison-2026-11-03/comparison/results.json",
+      "sha256": "c9adb2b4a46a50d103b9aaaf2c900a32dba2c4902633b663cb16be00a06678b1",
+      "counts": {
+        "rows": 24,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "comparison-webkit",
+      "file": "/tmp/air-editor-comparison-2026-11-03/comparison-webkit/results.json",
+      "sha256": "d4b056c3e3a83c0a0bc7088da58e23d2f24c8ee42a8ae81ecfd3b5dcc83f5bce",
+      "counts": {
+        "rows": 24,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "pdf-chromium-final",
+      "file": "/tmp/air-editor-comparison-2026-11-03/pdf-chromium-final/results.json",
+      "sha256": "7fcd72ac0cafe22fb8202f71e3f6e5e19307fbcaa12af4c03c3c1009c88701d9",
+      "counts": {
+        "results": 616,
+        "errors": 0,
+        "failures": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "pdf-webkit",
+      "file": "/tmp/air-editor-comparison-2026-11-03/pdf-webkit/results.json",
+      "sha256": "d74d494c603c464ebd0fbdde7271682cdf128748ae40ce8bf507b6a5d201c940",
+      "counts": {
+        "results": 616,
+        "errors": 0,
+        "failures": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "img-chromium",
+      "file": "/tmp/air-editor-comparison-2026-11-03/img-chromium/results.json",
+      "sha256": "25d42e46f30126ea72696e9eedb2ace5d5d473bc1d5dc4d41a6f7337f59ff26d",
+      "counts": {
+        "results": 780,
+        "failures": 0,
+        "errors": 0,
+        "requests": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "img-webkit-final",
+      "file": "/tmp/air-editor-comparison-2026-11-03/img-webkit-final/results.json",
+      "sha256": "49f27ad7328783065cbe65f9ca1c1d11b69fa49688c8977ef54a667d4f8e17ac",
+      "counts": {
+        "results": 780,
+        "failures": 0,
+        "errors": 0,
+        "requests": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "img-entry",
+      "file": "/tmp/air-editor-comparison-2026-11-03/img-entry/entry.json",
+      "sha256": "52c13768025827d4e6354720bd1201c7db77c0dc0975d64db8ffc2cdafcde0fe",
+      "counts": {
+        "layouts": 204,
+        "checks": 8,
+        "pageErrors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "img-actions",
+      "file": "/tmp/air-editor-comparison-2026-11-03/img-actions/results.json",
+      "sha256": "e59601a8ce0ae982cfb93be55f29e771bc62583a96af64c97cad85e808113f37",
+      "counts": {
+        "results": 20,
+        "errors": 0,
+        "requests": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "watermark",
+      "file": "/tmp/air-editor-comparison-2026-11-03/watermark/results.json",
+      "sha256": "19658d0fe07e7de1214586a3ee7d63fb22a28800d0863740ee5f5426c99ac0e6",
+      "counts": {
+        "rows": 12,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "resume-sections",
+      "file": "/tmp/air-editor-comparison-2026-11-03/resume-sections/results.json",
+      "sha256": "f34f27cbc7942eee53294ac3d3ad97e3166347dc693b38a13d4ba24faa019bda",
+      "counts": {
+        "layouts": 1666,
+        "contrasts": 16,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "resume-writing-fields",
+      "file": "/tmp/air-editor-comparison-2026-11-03/resume-writing-fields/layouts.json",
+      "sha256": "ba9a4140717de3b17fb2840178f6f65e861dd0cf6610ea9b7d256792792a7438",
+      "counts": {
+        "layouts": 384,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "resume-contact-selects",
+      "file": "/tmp/air-editor-comparison-2026-11-03/resume-contact-selects/layouts.json",
+      "sha256": "8b06a9a24236c49dd5a201558ff7b81fcee9c500d9793deeb2f80927dca9a0e9",
+      "counts": {
+        "layouts": 128,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "resume-dates",
+      "file": "/tmp/air-editor-comparison-2026-11-03/resume-dates/layouts.json",
+      "sha256": "1815e97037a42339a9cd81e5cec4c1a324a0b5dfd8059d66d2648157ed7739db",
+      "counts": {
+        "layouts": 256,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "resume-library",
+      "file": "/tmp/air-editor-comparison-2026-11-03/resume-library/results.json",
+      "sha256": "8a8ada242c207facd3ac67ff55babf84dd165108a034a78acf505b97b945586a",
+      "counts": {
+        "layouts": 386,
+        "contrasts": 8,
+        "errors": 0
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "resume-review-progress",
+      "file": "/tmp/air-editor-comparison-2026-11-03/resume-review-progress/results.json",
+      "sha256": "c3fb296fb8405e4a1be55415f792b51a83c2aa4f3ec5220b279c0b0325265495",
+      "counts": {
+        "records": 194,
+        "captures": 20,
+        "contrasts": 2
+      },
+      "result": "pass"
+    },
+    {
+      "suite": "resume-options",
+      "file": "/tmp/air-editor-comparison-2026-11-03/resume-options/matrix.json",
+      "sha256": "d900350886549e8e422a247e59059b37c466bedf15270cbcbba2a6cddbb2caa5",
+      "counts": {
+        "records": 192,
+        "captures": 18,
+        "contrast": 4,
+        "errors": 0
+      },
+      "result": "pass"
+    }
+  ],
+  "units": {
+    "pdf": 461,
+    "img": 488,
+    "resume": 373,
+    "yard_reference": 15
+  },
+  "source_gates": [
+    "vp check",
+    "build",
+    "Knip",
+    "Air provenance",
+    "standalone portability",
+    "canonical bundle sync"
+  ],
+  "pdf_smoke_suites": 16,
+  "watermark_production_pixel_matches": 36,
+  "notes": [
+    "IMG first WebKit pass stopped on a transient unmounted panel at observation 728 without JS errors; full final stable-build rerun passes 780.",
+    "PDF mobile/navigation/collection drivers now await retained notice and panel motion; all affected suites passed after correction.",
+    "Date popover hit-testing exposed and verifies an actual stacking fix.",
+    "Native date step validation exposed and verifies an actual image-watermark Apply fix.",
+    "Older IMG history compression remains unchanged; baseline output parity is not lossless-Undo acceptance."
+  ]
+}
