@@ -20,15 +20,14 @@ Exact product-main checks pass. Live IMG verification passes all 89 raw asset
 matches, twenty canvas/focus journeys, 192 retained-edit layout transitions and
 twelve exact preceding-production PNG comparisons. Other products match 255 raw
 assets plus Roll's three existing HTML injection exceptions. The live family pass
-repeats 648 home/288 secondary layouts and 390 interactions without deviations. Yard's own dev → main
-PR carries the canonical contract and final record; its description records its
+repeats 648 home/288 secondary layouts and 390 interactions without deviations. Yard [#43](https://github.com/cloakyard/cloakyard/pull/43) carries the canonical contract and final record; its description records its
 own exact-main checks and deployment verification.
 
 All local gates pass, including 487 IMG units, 780 initial/720 alternate tool
 observations per browser, final enlarged-text checks, real transaction/output,
 notice lifecycle and six-app comparison. See [the current record](cloakimg-canvas-first-2026-11-03.md).
 Product dev/main are synchronized. Drop's unpublished native/release commits remain
-local and its isolated web checkout is removed. Resume's other worktrees are untouched.
+local and its isolated web checkout is removed. Resume's other worktrees are untouched. Task preview ports 8470–8477 are stopped.
 
 Next: physical iPhone/software keyboard, OS IME and spoken assistive acceptance,
 then the separately tracked product/output/native backlog. Automated WebKit does

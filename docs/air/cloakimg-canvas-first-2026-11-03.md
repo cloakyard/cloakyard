@@ -79,7 +79,7 @@ separate worktrees remain untouched.
 | Resume       | [54](https://github.com/cloakyard/cloakresume/pull/54) | `68ac708cd1704368351b349a5f50ef6ddceb9f92` | 101 raw asset matches                                                                        |
 | Drop website | [56](https://github.com/cloakyard/cloakdrop/pull/56)   | `651d05dfd407e44e59d2101d21bacfb903d9b133` | 16 raw asset matches                                                                         |
 | Roll website | [10](https://github.com/cloakyard/cloakroll/pull/10)   | `69564edb19321f3e63ecd253a5a8b0a9464ea016` | Eight raw matches; three existing HTML injection exceptions                                  |
-| Yard         | Pending                                                | Pending                                    | Pending                                                                                      |
+| Yard         | [43](https://github.com/cloakyard/cloakyard/pull/43)   | Recorded in PR                             | Canonical contract/evidence; final own-main CI and live checks in PR description             |
 
 Roll's three HTML files differ only by one existing Cloudflare challenge-platform
 script; removing that exact injection leaves identical bytes. This is separate
@@ -92,3 +92,6 @@ its own final main checks and homepage asset verification after merge.
 
 The final production family comparison also passes 648 home and 288 secondary
 layouts plus 390 navigation/link interactions with zero deviations/browser errors.
+
+Task preview ports 8470–8477 are stopped. Physical/device/assistive and the separate
+product/output acceptance backlog remain open.
