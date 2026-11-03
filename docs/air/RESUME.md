@@ -15,15 +15,24 @@ native scroll styling. PDF title/footer stay visible; IMG's shrinking metadata
 content and WebKit field focus are corrected. The family, PWA, dialog, all-tool,
 unit/output and worker checks pass. See [the audit](compact-popups-2026-11-03.md).
 
-Promotion is next. Isolated PDF, Drop and Roll worktrees live under
-`/tmp/air-popups-2026-11-03`; the other three sibling paths there are symlinks.
-Run canonical sync with `node --preserve-symlinks-main` through that Yard symlink
-while concurrent native/PDF AI work is active. Original PDF AI changes, Drop's
-unpublished native history and Roll's native beta history must not be published
-as part of this UI task. Roll website-only PR #14 is ready and the user was asked
-to approve its alternate promotion path; do not assume the answer. Keep normal
-products on the authorized dev→main PR path. Task previews: Yard 8500, IMG 8502,
-Resume 8503, Drop 8504, Roll 8505, isolated PDF 8506.
+Yard #46, PDF #229, IMG #29, Resume #57 and Drop #58 are merged/deployed. All
+exact-main checks and 348 live asset comparisons pass; their remote dev/main are
+synchronized. The documentation closeout PR records its own checks. Roll website-only
+[PR #14](https://github.com/cloakyard/cloakroll/pull/14) has passing website and
+Cloudflare preview checks and awaits the user’s branch-path decision. Its dev has
+unrelated native beta commits absent from main; do not merge that native history or
+assume the pending answer. Roll production remains unchanged.
+
+Isolated PDF, Drop and Roll checkouts are under `/tmp/air-popups-2026-11-03`; the other
+three sibling paths there are symlinks. Run canonical sync with
+`node --preserve-symlinks-main` through that Yard symlink while the original PDF’s
+uncommitted AI work remains active. Do not stash, reset or publish that work. Drop’s
+original dev includes the website merge while retaining unpublished native commits;
+do not push it wholesale. Task previews on 8500/8502–8506 are stopped after verification.
+
+Next: resolve Roll’s pending branch-path decision, then physical-device/assistive
+acceptance and the separately tracked product/output backlog. Do not repeat this
+completed implementation or claim Roll’s production has changed.
 
 Physical Windows/iPhone and assistive/OS-keyboard acceptance remain open. Browser
 launchers hide scrollbars by default; the new dialog audit removes that flag and
