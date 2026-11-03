@@ -1,13 +1,40 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-11-02
+## Start here in a new conversation — saved 2026-11-03
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Next session — approved CloakIMG canvas-first implementation (2026-11-03)
+### Current checkpoint — Air 1.4.0 canvas-first layout (2026-11-03)
+
+The approved mock is implemented and production-verified. IMG keeps at least 40%
+photo viewport height, fixed local X / tick actions beside the title, independently
+scrolling controls and global actions on the canvas. Old expansion state,
+measurement observers and heading portals are removed; keyboard focus returns to
+the persistent tool shortcut after completion. Actual PWA/README previews are current.
+
+IMG #27, PDF #226, Resume #54, Drop website #56 and Roll website #10 are merged.
+Exact product-main checks pass. Live IMG verification passes all 89 raw asset
+matches, twenty canvas/focus journeys, 192 retained-edit layout transitions and
+twelve exact preceding-production PNG comparisons. Other products match 255 raw
+assets plus Roll's three existing HTML injection exceptions. The live family pass
+repeats 648 home/288 secondary layouts and 390 interactions without deviations. Yard's own dev → main
+PR carries the canonical contract and final record; its description records its
+own exact-main checks and deployment verification.
+
+All local gates pass, including 487 IMG units, 780 initial/720 alternate tool
+observations per browser, final enlarged-text checks, real transaction/output,
+notice lifecycle and six-app comparison. See [the current record](cloakimg-canvas-first-2026-11-03.md).
+Product dev/main are synchronized. Drop's unpublished native/release commits remain
+local and its isolated web checkout is removed. Resume's other worktrees are untouched.
+
+Next: physical iPhone/software keyboard, OS IME and spoken assistive acceptance,
+then the separately tracked product/output/native backlog. Automated WebKit does
+not close physical Safari acceptance. Do not repeat this completed implementation.
+
+### Prior approved mock and saved implementation plan (2026-11-02)
 
 The user approved the canvas-first mock on 2026-11-02 and explicitly deferred
 implementation until tomorrow, 2026-11-03 (Asia/Kolkata). The saved implementation

@@ -38,22 +38,27 @@
   unchanged or unavailable model paths are never described as exercised.
 - Keep a per-component/state inventory and evidence in `docs/air/`. Local tokens
   and this complete contract travel with the repository.
-- Tool completion uses one fixed labelled Cancel / Apply action row on phone, tablet
-  and desktop. Move, colour sampling and ID-photo output use Close, retaining their
-  specific layer, copy, print and download actions. Expand controls / Split view is
-  a separate view control; dragging the heading never commits or discards an edit.
-- Compact photo editing uses labelled Adjust / Crop / Retouch / Protect / Add /
-  Tools shortcuts: a persistent phone dock and a 64px tablet rail. Tools opens
-  the shared grouped, searchable catalogue without unmounting pending controls.
-  Phone Adjust puts its group selector in the fixed header and presents one
-  named parameter with its exact value and slider; tablet shows related values
-  together in the 288px inspector. Curves and all adjustments remain explicit
-  expanded views, with the preview and return action retained. At 768px, use the
-  tablet split; wide phones at 640px and above with at most 500px height place
-  controls beside the photo and the dock below both. Enlarged text may grow the
-  compact rail; horizontal dock/parameter scrolling stays inside its own region.
-  Cancel restores the tool-entry settings and history; Apply bakes once. Reopening
-  the same tool or browsing the catalogue must not silently commit a preview.
+- Phone/tablet tool completion uses the approved canvas-first composition: one
+  X / tick pair in the fixed panel header (accessible Cancel / Apply names), 48px
+  targets and a scrolling tool body. Desktop retains labelled Cancel / Apply.
+  Move, colour sampling and ID-photo output use labelled Close, retaining their
+  specific layer, copy, print and download actions. No duplicate Done or panel
+  expansion control. Cancel restores the tool-entry settings/history; Apply bakes
+  once. Reopening or browsing the catalogue cannot silently commit a preview.
+- Keep at least 40% of the visible editor height for the photo viewport on phones;
+  preserve image aspect ratio and persistent canvas/history. The top toolbar uses
+  the same canvas plane with a small opaque Air action group. All file, mode,
+  history, compare, zoom and export operations remain reachable. Respect safe
+  areas, browser chrome, software keyboards and enlarged text.
+- Compact editing keeps labelled Adjust / Crop / Retouch / Protect / Add / Tools
+  shortcuts: a phone dock and 64px tablet rail. Tools opens the grouped searchable
+  catalogue without unmounting pending controls. Adjust's group selector belongs
+  in the scrollable body; the fixed header retains its tool title and actions.
+  Phone shows one exact parameter/slider at a time; tablet groups related values.
+  Curves and All adjustments remain reachable views without shrinking the preview.
+  At 768px use the tablet split; wide phones at 640px and above with at most 500px
+  height place controls beside the photo and dock below both. Enlarged text may
+  grow the rail; intentional horizontal dock/parameter scrolling stays local.
 - Landing artwork is a local vector landscape: a coral sun rises behind layered
   mountains while the foreground settles and the crop corners find the composition.
   The sun uses a 2000ms Air arrival curve after 360ms; mountain/foreground spatial

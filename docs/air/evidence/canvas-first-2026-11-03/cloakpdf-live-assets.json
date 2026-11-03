@@ -1,0 +1,918 @@
+{
+  "base": "https://pdf.cloakyard.com",
+  "results": [
+    {
+      "path": "404.html",
+      "status": 200,
+      "local": "a684f481624781900715282eebd52ad4d748e4e1900d58e3171f7a16a80b4720",
+      "remote": "a684f481624781900715282eebd52ad4d748e4e1900d58e3171f7a16a80b4720",
+      "match": true
+    },
+    {
+      "path": "assets/ActionButton-DMhBTMDl.js",
+      "status": 200,
+      "local": "a1514143fc6163d35e899dd90f32e7d3a30e4c315b03d0da42a2b28b8e87e572",
+      "remote": "a1514143fc6163d35e899dd90f32e7d3a30e4c315b03d0da42a2b28b8e87e572",
+      "match": true
+    },
+    {
+      "path": "assets/AlertBox-DZJ51dhB.js",
+      "status": 200,
+      "local": "67f39c5de4ff450b3b308265168c480bd9d53dd732a138aa11c7d89964652957",
+      "remote": "67f39c5de4ff450b3b308265168c480bd9d53dd732a138aa11c7d89964652957",
+      "match": true
+    },
+    {
+      "path": "assets/AskPdf-BKaa-9tF.js",
+      "status": 200,
+      "local": "0036bd5ad158a614de7af0433e9a3bf058fbc03c7de64c25820df1de6fe6d1f6",
+      "remote": "0036bd5ad158a614de7af0433e9a3bf058fbc03c7de64c25820df1de6fe6d1f6",
+      "match": true
+    },
+    {
+      "path": "assets/ComparePdf-DXKeMKIc.js",
+      "status": 200,
+      "local": "c126c0a34227e19b595be7d93749ac21412dd1173c3debcc00fd2d37991dce17",
+      "remote": "c126c0a34227e19b595be7d93749ac21412dd1173c3debcc00fd2d37991dce17",
+      "match": true
+    },
+    {
+      "path": "assets/DigitalSignature-BfQlpOfs.js",
+      "status": 200,
+      "local": "c4245428663c50a86b80e9a2431fd5dd9d7074382d2747ebb100056de4bca335",
+      "remote": "c4245428663c50a86b80e9a2431fd5dd9d7074382d2747ebb100056de4bca335",
+      "match": true
+    },
+    {
+      "path": "assets/EditorView-iLSOEjQp.js",
+      "status": 200,
+      "local": "8c5de9b0dd23f896645c08a9a26091e977ae3eb0276981ce2bc4e020e98d8b0a",
+      "remote": "8c5de9b0dd23f896645c08a9a26091e977ae3eb0276981ce2bc4e020e98d8b0a",
+      "match": true
+    },
+    {
+      "path": "assets/ExtractImages-bHy2hMq2.js",
+      "status": 200,
+      "local": "36757b5db9205ac025540b1d7edea1e76861bfbe9a5c339262df37405ed77ca0",
+      "remote": "36757b5db9205ac025540b1d7edea1e76861bfbe9a5c339262df37405ed77ca0",
+      "match": true
+    },
+    {
+      "path": "assets/FileDropZone-E2n1JMsV.js",
+      "status": 200,
+      "local": "96f140fbe9d526b36e3f89479a63e1dda3bce3870273c6c1ae6b9ef0e884b57c",
+      "remote": "96f140fbe9d526b36e3f89479a63e1dda3bce3870273c6c1ae6b9ef0e884b57c",
+      "match": true
+    },
+    {
+      "path": "assets/FileInfoBar-BuvAhiK-.js",
+      "status": 200,
+      "local": "8c2c6d83d4fb8213a24cfc78d0cc2b6103c069735d4fcf344c1ba84771928061",
+      "remote": "8c2c6d83d4fb8213a24cfc78d0cc2b6103c069735d4fcf344c1ba84771928061",
+      "match": true
+    },
+    {
+      "path": "assets/FileQueue-DIS7vc18.js",
+      "status": 200,
+      "local": "b94f1a83c6818c51ce18132b37e9bfbbfd53191f8fb472bb036959fc8f109812",
+      "remote": "b94f1a83c6818c51ce18132b37e9bfbbfd53191f8fb472bb036959fc8f109812",
+      "match": true
+    },
+    {
+      "path": "assets/ImagesToPdf-Cxbvi2It.js",
+      "status": 200,
+      "local": "7b43f7cafbdd10d2b3ff8559f383a9dfe84fc6448515c1781bcfe7a60c1e4e6c",
+      "remote": "7b43f7cafbdd10d2b3ff8559f383a9dfe84fc6448515c1781bcfe7a60c1e4e6c",
+      "match": true
+    },
+    {
+      "path": "assets/LoadingState-DZ5sSszg.js",
+      "status": 200,
+      "local": "548b14e7f1f24f6de63d9a36d2f412b1c8e139489c41b78ffc5cc672de3d8d64",
+      "remote": "548b14e7f1f24f6de63d9a36d2f412b1c8e139489c41b78ffc5cc672de3d8d64",
+      "match": true
+    },
+    {
+      "path": "assets/MergePdf-7LrximEc.js",
+      "status": 200,
+      "local": "4bf129f12ac8be4d4f25e269d3b334d11ee50acf4f7f29a925c3598fd1946c3a",
+      "remote": "4bf129f12ac8be4d4f25e269d3b334d11ee50acf4f7f29a925c3598fd1946c3a",
+      "match": true
+    },
+    {
+      "path": "assets/PagePreviewNav-TXzFOKeT.js",
+      "status": 200,
+      "local": "4349bffb8b9b633b943edf60d3ac437ada4f59b28ca95e117bbad942df1af2a0",
+      "remote": "4349bffb8b9b633b943edf60d3ac437ada4f59b28ca95e117bbad942df1af2a0",
+      "match": true
+    },
+    {
+      "path": "assets/PdfPassword-di5LyG5J.js",
+      "status": 200,
+      "local": "b1db27bf02402de8239982364805297cfdba09d9b929c7e8a524a7d061e275f6",
+      "remote": "b1db27bf02402de8239982364805297cfdba09d9b929c7e8a524a7d061e275f6",
+      "match": true
+    },
+    {
+      "path": "assets/ProgressBar-C4mEtrT8.js",
+      "status": 200,
+      "local": "db894e7962af1a49abbe70e0f43789c168aaac2ff20671c1a2d567f21de01310",
+      "remote": "db894e7962af1a49abbe70e0f43789c168aaac2ff20671c1a2d567f21de01310",
+      "match": true
+    },
+    {
+      "path": "assets/SegmentedControl-BeJoFSPY.js",
+      "status": 200,
+      "local": "aba1e0f7c5b9352d4d56a7d50fb3f0356afcb9416ae27b96245d9803d436ab41",
+      "remote": "aba1e0f7c5b9352d4d56a7d50fb3f0356afcb9416ae27b96245d9803d436ab41",
+      "match": true
+    },
+    {
+      "path": "assets/ai-runtime-nFpoxTlF.js",
+      "status": 200,
+      "local": "25fe6ed8f3a55037ffc5381a2082e9a03210ba147d1d0280802f2b1e096bcf68",
+      "remote": "25fe6ed8f3a55037ffc5381a2082e9a03210ba147d1d0280802f2b1e096bcf68",
+      "match": true
+    },
+    {
+      "path": "assets/air-DPIujA2U.css",
+      "status": 200,
+      "local": "2668c9095c320f508ec612548d7753297d57a491871232fdeb54f8928143cea2",
+      "remote": "2668c9095c320f508ec612548d7753297d57a491871232fdeb54f8928143cea2",
+      "match": true
+    },
+    {
+      "path": "assets/air-Dj3-PVFJ.js",
+      "status": 200,
+      "local": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "remote": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "match": true
+    },
+    {
+      "path": "assets/app-BwaQP-C4.js",
+      "status": 200,
+      "local": "5f868175c647af76c7bc2c1d6e583329ac8cdbf859e87451abf5bcaa4dd7dcfb",
+      "remote": "5f868175c647af76c7bc2c1d6e583329ac8cdbf859e87451abf5bcaa4dd7dcfb",
+      "match": true
+    },
+    {
+      "path": "assets/app-W7SQzKUO.css",
+      "status": 200,
+      "local": "68e3144f23de064bf5a703ecd848c43e1202b29770b8df02f1bd59be9be2e560",
+      "remote": "68e3144f23de064bf5a703ecd848c43e1202b29770b8df02f1bd59be9be2e560",
+      "match": true
+    },
+    {
+      "path": "assets/arrow-down-DLOGKQvb.js",
+      "status": 200,
+      "local": "c1651bc00effb40d799501e7c2171169b7e8b463b7e62b4fb66dd9a125f3f7c9",
+      "remote": "c1651bc00effb40d799501e7c2171169b7e8b463b7e62b4fb66dd9a125f3f7c9",
+      "match": true
+    },
+    {
+      "path": "assets/check-CHopkSgz.js",
+      "status": 200,
+      "local": "b3dde1a77e97c73969f6600692f7452da8ec01aa1a909108bacf1cea48346862",
+      "remote": "b3dde1a77e97c73969f6600692f7452da8ec01aa1a909108bacf1cea48346862",
+      "match": true
+    },
+    {
+      "path": "assets/chevron-left-BYj9m3Ij.js",
+      "status": 200,
+      "local": "128142803e08755116161515bda36bf3e49933efc9aba3b01c2c72a208f5fd1c",
+      "remote": "128142803e08755116161515bda36bf3e49933efc9aba3b01c2c72a208f5fd1c",
+      "match": true
+    },
+    {
+      "path": "assets/crypto.worker-CMfjyB0t.js",
+      "status": 200,
+      "local": "37753d4e2aabd16a908bff6a4a4c944a65481a32d6608810d47385a79b67f87b",
+      "remote": "37753d4e2aabd16a908bff6a4a4c944a65481a32d6608810d47385a79b67f87b",
+      "match": true
+    },
+    {
+      "path": "assets/dist-BLu7XG2x.js",
+      "status": 200,
+      "local": "e1cb88718a0ebdb929ef034142fa50df01abdf9d53f4ae7271a41b024acbf8cb",
+      "remote": "e1cb88718a0ebdb929ef034142fa50df01abdf9d53f4ae7271a41b024acbf8cb",
+      "match": true
+    },
+    {
+      "path": "assets/eye-BF-KXCxI.js",
+      "status": 200,
+      "local": "e89e0390f65d3b21188b94c9dd2f9c3848a3532cca54fc5bb9e22279c5f04325",
+      "remote": "e89e0390f65d3b21188b94c9dd2f9c3848a3532cca54fc5bb9e22279c5f04325",
+      "match": true
+    },
+    {
+      "path": "assets/eye-off-CSWNy8NA.js",
+      "status": 200,
+      "local": "2bff916ad3e776b4d0c8ef721011335a914324df287fdb11c3733540af76d212",
+      "remote": "2bff916ad3e776b4d0c8ef721011335a914324df287fdb11c3733540af76d212",
+      "match": true
+    },
+    {
+      "path": "assets/liteparse_wasm-BM7xAqyh.js",
+      "status": 200,
+      "local": "61e834fba71f99337421a88c2dbf32743c148ca36692be003fe383ee5d6c94e2",
+      "remote": "61e834fba71f99337421a88c2dbf32743c148ca36692be003fe383ee5d6c94e2",
+      "match": true
+    },
+    {
+      "path": "assets/liteparse_wasm_bg-BDq_YbX2.js",
+      "status": 200,
+      "local": "55fbf5b4f6681a918e7244b6337b03194f1f040cd10584311452a12d6dc5d71c",
+      "remote": "55fbf5b4f6681a918e7244b6337b03194f1f040cd10584311452a12d6dc5d71c",
+      "match": true
+    },
+    {
+      "path": "assets/liteparse_wasm_bg-hDnUvAbp.wasm",
+      "status": 200,
+      "local": "a0f77b3329004b0150c99b0b4046a4da4b0cde1451ea9b2b9713a0b78025fd20",
+      "remote": "a0f77b3329004b0150c99b0b4046a4da4b0cde1451ea9b2b9713a0b78025fd20",
+      "match": true
+    },
+    {
+      "path": "assets/motion-DJn8oUFO.js",
+      "status": 200,
+      "local": "de2912db545dd2fb7b7449e2c7a0df68d4b6d9e950d463b4f4481b134db1bf65",
+      "remote": "de2912db545dd2fb7b7449e2c7a0df68d4b6d9e950d463b4f4481b134db1bf65",
+      "match": true
+    },
+    {
+      "path": "assets/notFound-CG8yPPQH.js",
+      "status": 200,
+      "local": "6ae50e7398b691e78d8a7f94ba1b8b522d965cf59bb5ca3941fe27fdd3f668b5",
+      "remote": "6ae50e7398b691e78d8a7f94ba1b8b522d965cf59bb5ca3941fe27fdd3f668b5",
+      "match": true
+    },
+    {
+      "path": "assets/pages-EBBleXnl.js",
+      "status": 200,
+      "local": "625a95b178b7aeb7b34af549264c143cc473ab547d9bfd730561a2582d76ebf6",
+      "remote": "625a95b178b7aeb7b34af549264c143cc473ab547d9bfd730561a2582d76ebf6",
+      "match": true
+    },
+    {
+      "path": "assets/pdf-B8OtAW3p.js",
+      "status": 200,
+      "local": "0c6efa78fd4d136268044b293b6d43e19375c3c0b52991dad7cac7edc13973e2",
+      "remote": "0c6efa78fd4d136268044b293b6d43e19375c3c0b52991dad7cac7edc13973e2",
+      "match": true
+    },
+    {
+      "path": "assets/pdf-D8aquQdK.js",
+      "status": 200,
+      "local": "879a8e6d7b21e81badda61e06ca1002d18459069c1e5d82d52b2d9fbed223ee4",
+      "remote": "879a8e6d7b21e81badda61e06ca1002d18459069c1e5d82d52b2d9fbed223ee4",
+      "match": true
+    },
+    {
+      "path": "assets/pdf-operations--CKzYQhK.js",
+      "status": 200,
+      "local": "8ca16534b481e3f958a1d9f2194cde4aeb97ff794ac7ea6e2c4a725c87f140cb",
+      "remote": "8ca16534b481e3f958a1d9f2194cde4aeb97ff794ac7ea6e2c4a725c87f140cb",
+      "match": true
+    },
+    {
+      "path": "assets/pdf-renderer-DeewrXol.js",
+      "status": 200,
+      "local": "0f9ef480b67389f00c1dd3172da4cc1e853cf5ca5f22aea15cb26d0e9963b2b6",
+      "remote": "0f9ef480b67389f00c1dd3172da4cc1e853cf5ca5f22aea15cb26d0e9963b2b6",
+      "match": true
+    },
+    {
+      "path": "assets/pdf-security-CZBE4m2b.js",
+      "status": 200,
+      "local": "12cfb8b5e5d0d222b27725da98e445fec92e786d9efb79bf8244b847a1285ee7",
+      "remote": "12cfb8b5e5d0d222b27725da98e445fec92e786d9efb79bf8244b847a1285ee7",
+      "match": true
+    },
+    {
+      "path": "assets/pdf.worker.min-CgLjDLAk.js",
+      "status": 200,
+      "local": "14c5528a0ba712c6de732f98d6dcb06de5308d878725db93d872d0334ac129a3",
+      "remote": "14c5528a0ba712c6de732f98d6dcb06de5308d878725db93d872d0334ac129a3",
+      "match": true
+    },
+    {
+      "path": "assets/pdf.worker.min-Coh1jAii.js",
+      "status": 200,
+      "local": "b6f7348165bd81f03c92e43f6717454e37a61daf4183bd3871fac7d035e6ce06",
+      "remote": "b6f7348165bd81f03c92e43f6717454e37a61daf4183bd3871fac7d035e6ce06",
+      "match": true
+    },
+    {
+      "path": "assets/pdf.worker.min-CqP03vj-.js",
+      "status": 200,
+      "local": "5c612b48ce2bfd61107d3e6ed665560fda9c28c3f9f0eda362a8d480e46ea91b",
+      "remote": "5c612b48ce2bfd61107d3e6ed665560fda9c28c3f9f0eda362a8d480e46ea91b",
+      "match": true
+    },
+    {
+      "path": "assets/pdfjs-config-B5pwv-IP.js",
+      "status": 200,
+      "local": "cb8dc3fb1bf6eb4bb32a307957047a4014377049b23900060c535a5ba2bb8ab2",
+      "remote": "cb8dc3fb1bf6eb4bb32a307957047a4014377049b23900060c535a5ba2bb8ab2",
+      "match": true
+    },
+    {
+      "path": "assets/persistence-CBWo_OaP.js",
+      "status": 200,
+      "local": "49e09080374c85d7e9d33b8325638c0bfb66a20b3519b9cdf544d9dc7e03877b",
+      "remote": "49e09080374c85d7e9d33b8325638c0bfb66a20b3519b9cdf544d9dc7e03877b",
+      "match": true
+    },
+    {
+      "path": "assets/persistence-DewyidqF.js",
+      "status": 200,
+      "local": "7f016cc3c359efd3d4b24d90e41962a75a1f0c69cae4a3be2bafab7d3cee6388",
+      "remote": "7f016cc3c359efd3d4b24d90e41962a75a1f0c69cae4a3be2bafab7d3cee6388",
+      "match": true
+    },
+    {
+      "path": "assets/pii-DUU3Qq75.js",
+      "status": 200,
+      "local": "6b4ad84610ec7e1256b6b1eafd904133bf3853d94eb53818418a75d576f62181",
+      "remote": "6b4ad84610ec7e1256b6b1eafd904133bf3853d94eb53818418a75d576f62181",
+      "match": true
+    },
+    {
+      "path": "assets/preload-helper-BLdHbfdN.js",
+      "status": 200,
+      "local": "8aec9ff75ffa86a03d51268b63126abadb3754aa5a6b6c5bb16e4e2446a63dee",
+      "remote": "8aec9ff75ffa86a03d51268b63126abadb3754aa5a6b6c5bb16e4e2446a63dee",
+      "match": true
+    },
+    {
+      "path": "assets/rolldown-runtime-BCiCTKAo.js",
+      "status": 200,
+      "local": "f85e715d54a11fa37b7774ad77b536896ed01bfdfc98f485b678c81859fc8e2e",
+      "remote": "f85e715d54a11fa37b7774ad77b536896ed01bfdfc98f485b678c81859fc8e2e",
+      "match": true
+    },
+    {
+      "path": "assets/src-BmUdCsRu.js",
+      "status": 200,
+      "local": "3bb4170a8703f0a9e3d524c9f0ff03ae8110c62aa3f7b953ccc5f776f366ecda",
+      "remote": "3bb4170a8703f0a9e3d524c9f0ff03ae8110c62aa3f7b953ccc5f776f366ecda",
+      "match": true
+    },
+    {
+      "path": "assets/tools-DmMMM_UA.js",
+      "status": 200,
+      "local": "c924523b9ba1a26c31a4b0fae50e38ce49e4766747a7f848cbd71d3ecfbeb3e5",
+      "remote": "c924523b9ba1a26c31a4b0fae50e38ce49e4766747a7f848cbd71d3ecfbeb3e5",
+      "match": true
+    },
+    {
+      "path": "assets/transformers.web-CAlckPEC.js",
+      "status": 200,
+      "local": "b9f3ced1e27eb141b9b0d3f1fd39066c306d3b1783ffc9cf4354ca38f6851e27",
+      "remote": "b9f3ced1e27eb141b9b0d3f1fd39066c306d3b1783ffc9cf4354ca38f6851e27",
+      "match": true
+    },
+    {
+      "path": "assets/triangle-alert-DZweXdFy.js",
+      "status": 200,
+      "local": "c6f4786add6322bc202419528275e478ec66577726811dbd44307839fe55289f",
+      "remote": "c6f4786add6322bc202419528275e478ec66577726811dbd44307839fe55289f",
+      "match": true
+    },
+    {
+      "path": "assets/useAsyncProcess-CT2pxU2Z.js",
+      "status": 200,
+      "local": "8c0e105154ce6188a5151977ea8d9666ff8205280057ffb477c61d6be0dde07f",
+      "remote": "8c0e105154ce6188a5151977ea8d9666ff8205280057ffb477c61d6be0dde07f",
+      "match": true
+    },
+    {
+      "path": "assets/usePdfFile-gFmpaHA4.js",
+      "status": 200,
+      "local": "391c5da05a087d3c7ab9df5ad6edcbf59237459a7d27efee0ba889644d5ef945",
+      "remote": "391c5da05a087d3c7ab9df5ad6edcbf59237459a7d27efee0ba889644d5ef945",
+      "match": true
+    },
+    {
+      "path": "assets/workbox-window.prod.es5-Bd17z0YL.js",
+      "status": 200,
+      "local": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "remote": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "match": true
+    },
+    {
+      "path": "assets/x-BlxL5abE.js",
+      "status": 200,
+      "local": "2de25a509ab10bcfe910fdf7382431b9f009d789c17b05dd2c758b2ed4699f9f",
+      "remote": "2de25a509ab10bcfe910fdf7382431b9f009d789c17b05dd2c758b2ed4699f9f",
+      "match": true
+    },
+    {
+      "path": "assets/zip-aWvN4PZo.js",
+      "status": 200,
+      "local": "e40c026611d47b3ee843b226eddc84bde2892b7fab27a5772e27c45e43b24460",
+      "remote": "e40c026611d47b3ee843b226eddc84bde2892b7fab27a5772e27c45e43b24460",
+      "match": true
+    },
+    {
+      "path": "cloakpdf-mark.svg",
+      "status": 200,
+      "local": "d1fa98f8ab9245757b4c7b1d1fcf6d8dcf584abb7ca65bc01b3a1ab7363f58aa",
+      "remote": "d1fa98f8ab9245757b4c7b1d1fcf6d8dcf584abb7ca65bc01b3a1ab7363f58aa",
+      "match": true
+    },
+    {
+      "path": "fonts/LICENSE.txt",
+      "status": 200,
+      "local": "96024e36f130019e65f5093fdee1acfd0de6633e64de4a4e6fa9acdb69d74687",
+      "remote": "96024e36f130019e65f5093fdee1acfd0de6633e64de4a4e6fa9acdb69d74687",
+      "match": true
+    },
+    {
+      "path": "fonts/README.md",
+      "status": 200,
+      "local": "2745ac9154f0babb8d41530bfe7606e0267154db0a1b3d906168687f97831bea",
+      "remote": "2745ac9154f0babb8d41530bfe7606e0267154db0a1b3d906168687f97831bea",
+      "match": true
+    },
+    {
+      "path": "fonts/lato/400-italic.ttf",
+      "status": 200,
+      "local": "82e08cf0834d2b4bd6dc2bbd3c519a6986a16e8a5aa9886de71b3c3a4f511602",
+      "remote": "82e08cf0834d2b4bd6dc2bbd3c519a6986a16e8a5aa9886de71b3c3a4f511602",
+      "match": true
+    },
+    {
+      "path": "fonts/lato/400-normal.ttf",
+      "status": 200,
+      "local": "e79e1d2371fd277467f7151eb10b5b2a9f58a2cb0a843df42d27f518af78f213",
+      "remote": "e79e1d2371fd277467f7151eb10b5b2a9f58a2cb0a843df42d27f518af78f213",
+      "match": true
+    },
+    {
+      "path": "fonts/lato/700-italic.ttf",
+      "status": 200,
+      "local": "6dc96cd53ef0884b9de6897ef01eae3283a18a7b6c17702dd143d064cb3a8f62",
+      "remote": "6dc96cd53ef0884b9de6897ef01eae3283a18a7b6c17702dd143d064cb3a8f62",
+      "match": true
+    },
+    {
+      "path": "fonts/lato/700-normal.ttf",
+      "status": 200,
+      "local": "5edf0ec54294d64bafcfc1b9d04bb892a6108747cbdee5efce83239b77c697b2",
+      "remote": "5edf0ec54294d64bafcfc1b9d04bb892a6108747cbdee5efce83239b77c697b2",
+      "match": true
+    },
+    {
+      "path": "fonts/lora/400-italic.ttf",
+      "status": 200,
+      "local": "66fbdb8692f7dd618275c18ea0d29485bfe7317f25b5e0d7c34267d573293d9e",
+      "remote": "66fbdb8692f7dd618275c18ea0d29485bfe7317f25b5e0d7c34267d573293d9e",
+      "match": true
+    },
+    {
+      "path": "fonts/lora/400-normal.ttf",
+      "status": 200,
+      "local": "784dc32dcfadafdcb84debb17585fa714d743da9ed32dac71a51c2c97332691c",
+      "remote": "784dc32dcfadafdcb84debb17585fa714d743da9ed32dac71a51c2c97332691c",
+      "match": true
+    },
+    {
+      "path": "fonts/lora/700-italic.ttf",
+      "status": 200,
+      "local": "7f39242a9ef52f48df76ab6b8e986308a457ef2d8e9eac88721f8e7afd34c225",
+      "remote": "7f39242a9ef52f48df76ab6b8e986308a457ef2d8e9eac88721f8e7afd34c225",
+      "match": true
+    },
+    {
+      "path": "fonts/lora/700-normal.ttf",
+      "status": 200,
+      "local": "438aecbcae427887eedf785e932fb96c5daf6f20a08ebe4ef8623fef8699fa3d",
+      "remote": "438aecbcae427887eedf785e932fb96c5daf6f20a08ebe4ef8623fef8699fa3d",
+      "match": true
+    },
+    {
+      "path": "fonts/merriweather/400-italic.ttf",
+      "status": 200,
+      "local": "37d54a3e4446ec93d78cd74b1634a76451ed4461b95c17dfc3c2cbe924685e6c",
+      "remote": "37d54a3e4446ec93d78cd74b1634a76451ed4461b95c17dfc3c2cbe924685e6c",
+      "match": true
+    },
+    {
+      "path": "fonts/merriweather/400-normal.ttf",
+      "status": 200,
+      "local": "9b2878cea0448ffb80d5f2b4741191f58adb2feb8dbf38539f1bce7ad4783355",
+      "remote": "9b2878cea0448ffb80d5f2b4741191f58adb2feb8dbf38539f1bce7ad4783355",
+      "match": true
+    },
+    {
+      "path": "fonts/merriweather/700-italic.ttf",
+      "status": 200,
+      "local": "c0bcea90f335b132c68d4caf656e41dde560841d92f98acd39cbc087d6016fc6",
+      "remote": "c0bcea90f335b132c68d4caf656e41dde560841d92f98acd39cbc087d6016fc6",
+      "match": true
+    },
+    {
+      "path": "fonts/merriweather/700-normal.ttf",
+      "status": 200,
+      "local": "788fb4eafc31961a6245ec5a3f2c77b44d8eae06b9d91f0cfb3c2711d77c0afa",
+      "remote": "788fb4eafc31961a6245ec5a3f2c77b44d8eae06b9d91f0cfb3c2711d77c0afa",
+      "match": true
+    },
+    {
+      "path": "fonts/montserrat/400-italic.ttf",
+      "status": 200,
+      "local": "cb2ed1c533ee5a2a4ff99e40e25fa351802f1db365190745eee30d8b85e0484f",
+      "remote": "cb2ed1c533ee5a2a4ff99e40e25fa351802f1db365190745eee30d8b85e0484f",
+      "match": true
+    },
+    {
+      "path": "fonts/montserrat/400-normal.ttf",
+      "status": 200,
+      "local": "b32dfec470f47ec29ca06deae23ed152c14595be7eed6ec77d240bc9c2671a48",
+      "remote": "b32dfec470f47ec29ca06deae23ed152c14595be7eed6ec77d240bc9c2671a48",
+      "match": true
+    },
+    {
+      "path": "fonts/montserrat/700-italic.ttf",
+      "status": 200,
+      "local": "c6eccb2b69d97d2cb4acb7917168869f6b27261b687f6082244750bbb7058ceb",
+      "remote": "c6eccb2b69d97d2cb4acb7917168869f6b27261b687f6082244750bbb7058ceb",
+      "match": true
+    },
+    {
+      "path": "fonts/montserrat/700-normal.ttf",
+      "status": 200,
+      "local": "5281906b240d4414c949eab4b225b2f26cf3fa33096675384889e0c45cef7e26",
+      "remote": "5281906b240d4414c949eab4b225b2f26cf3fa33096675384889e0c45cef7e26",
+      "match": true
+    },
+    {
+      "path": "fonts/opensans/400-italic.ttf",
+      "status": 200,
+      "local": "9c912a7a087721195871bd9b9635d980f6165617f07845b498fdf43a44171fbc",
+      "remote": "9c912a7a087721195871bd9b9635d980f6165617f07845b498fdf43a44171fbc",
+      "match": true
+    },
+    {
+      "path": "fonts/opensans/400-normal.ttf",
+      "status": 200,
+      "local": "322708862587c702b8cc5ed4d6a1f9d168b8f4d1c4fcd82e33c4cb093d86833a",
+      "remote": "322708862587c702b8cc5ed4d6a1f9d168b8f4d1c4fcd82e33c4cb093d86833a",
+      "match": true
+    },
+    {
+      "path": "fonts/opensans/700-italic.ttf",
+      "status": 200,
+      "local": "4b23e1351c6ad2391b912aed560e48232537f9ab9d732ea98a63393a2ac7d9f4",
+      "remote": "4b23e1351c6ad2391b912aed560e48232537f9ab9d732ea98a63393a2ac7d9f4",
+      "match": true
+    },
+    {
+      "path": "fonts/opensans/700-normal.ttf",
+      "status": 200,
+      "local": "63495f8966955f9d58036ff5e25b45fe8a71c15acbe89bfa0b51e24173176ad9",
+      "remote": "63495f8966955f9d58036ff5e25b45fe8a71c15acbe89bfa0b51e24173176ad9",
+      "match": true
+    },
+    {
+      "path": "fonts/oswald/400-normal.ttf",
+      "status": 200,
+      "local": "6cc0635d20ac6246823071af53f70a207a3360cd0311352c8a883b8532db3a1e",
+      "remote": "6cc0635d20ac6246823071af53f70a207a3360cd0311352c8a883b8532db3a1e",
+      "match": true
+    },
+    {
+      "path": "fonts/oswald/700-normal.ttf",
+      "status": 200,
+      "local": "0a56bb4131388fdb1d980b79e5b6aec381ca6a715f4e34621dc56db22c98ca7d",
+      "remote": "0a56bb4131388fdb1d980b79e5b6aec381ca6a715f4e34621dc56db22c98ca7d",
+      "match": true
+    },
+    {
+      "path": "fonts/playfairdisplay/400-italic.ttf",
+      "status": 200,
+      "local": "bf8108f692de64ae69e8bd77af211519690aaeb68a984f4357986dfb7c0bc939",
+      "remote": "bf8108f692de64ae69e8bd77af211519690aaeb68a984f4357986dfb7c0bc939",
+      "match": true
+    },
+    {
+      "path": "fonts/playfairdisplay/400-normal.ttf",
+      "status": 200,
+      "local": "e7b0ec52708b735081d8f2bd9073524c740924cfba4f1a43232c1c8af39d5073",
+      "remote": "e7b0ec52708b735081d8f2bd9073524c740924cfba4f1a43232c1c8af39d5073",
+      "match": true
+    },
+    {
+      "path": "fonts/playfairdisplay/700-italic.ttf",
+      "status": 200,
+      "local": "5e05ebacb87aa90c21f754e9b98b3c98f9087e45d066bae38d7243a9d150c227",
+      "remote": "5e05ebacb87aa90c21f754e9b98b3c98f9087e45d066bae38d7243a9d150c227",
+      "match": true
+    },
+    {
+      "path": "fonts/playfairdisplay/700-normal.ttf",
+      "status": 200,
+      "local": "7fc6ece5d5bce30c84f1666e28316f5c7218bd2015694737b958fff473734306",
+      "remote": "7fc6ece5d5bce30c84f1666e28316f5c7218bd2015694737b958fff473734306",
+      "match": true
+    },
+    {
+      "path": "fonts/poppins/400-italic.ttf",
+      "status": 200,
+      "local": "2dc0ecdbf0021dcfb680c1873f0247238e419a62e4a63bc0ebb23670d568f185",
+      "remote": "2dc0ecdbf0021dcfb680c1873f0247238e419a62e4a63bc0ebb23670d568f185",
+      "match": true
+    },
+    {
+      "path": "fonts/poppins/400-normal.ttf",
+      "status": 200,
+      "local": "c816ed684af7ed071214d948735c8c6a66ce4cb65e22cad24c71d29ae37efc48",
+      "remote": "c816ed684af7ed071214d948735c8c6a66ce4cb65e22cad24c71d29ae37efc48",
+      "match": true
+    },
+    {
+      "path": "fonts/poppins/700-italic.ttf",
+      "status": 200,
+      "local": "30a7ee673b0d29a315d9b58ccb7cd89a31f25312603e8318dc7411f7a1e59571",
+      "remote": "30a7ee673b0d29a315d9b58ccb7cd89a31f25312603e8318dc7411f7a1e59571",
+      "match": true
+    },
+    {
+      "path": "fonts/poppins/700-normal.ttf",
+      "status": 200,
+      "local": "360548eacbb0d4cb27c4763ad4b2e44d21bfb873f536d1bbb88e3006a2c2d184",
+      "remote": "360548eacbb0d4cb27c4763ad4b2e44d21bfb873f536d1bbb88e3006a2c2d184",
+      "match": true
+    },
+    {
+      "path": "fonts/roboto/400-italic.ttf",
+      "status": 200,
+      "local": "e4571ac267ced25ba6f323d863f5b991d795abb2ee3adec69003c2ed122b2dab",
+      "remote": "e4571ac267ced25ba6f323d863f5b991d795abb2ee3adec69003c2ed122b2dab",
+      "match": true
+    },
+    {
+      "path": "fonts/roboto/400-normal.ttf",
+      "status": 200,
+      "local": "73b5cc943fc011cb22e62fbbf51edfbda0515651fc9ba675d3df5e1499418c0c",
+      "remote": "73b5cc943fc011cb22e62fbbf51edfbda0515651fc9ba675d3df5e1499418c0c",
+      "match": true
+    },
+    {
+      "path": "fonts/roboto/700-italic.ttf",
+      "status": 200,
+      "local": "06e3d86108cb739332f7d36bb2770a5852d7e873d56038bc4fa838e5ea7605f3",
+      "remote": "06e3d86108cb739332f7d36bb2770a5852d7e873d56038bc4fa838e5ea7605f3",
+      "match": true
+    },
+    {
+      "path": "fonts/roboto/700-normal.ttf",
+      "status": 200,
+      "local": "7fc147166bf81d7d3f74b29ca5753dfe66347564477763c047d7a6b6d352434b",
+      "remote": "7fc147166bf81d7d3f74b29ca5753dfe66347564477763c047d7a6b6d352434b",
+      "match": true
+    },
+    {
+      "path": "fonts/robotomono/400-italic.ttf",
+      "status": 200,
+      "local": "a762419ac9443f3dd0caa6df15af42f8267ba5f088ef1bba38e1a879effb1f84",
+      "remote": "a762419ac9443f3dd0caa6df15af42f8267ba5f088ef1bba38e1a879effb1f84",
+      "match": true
+    },
+    {
+      "path": "fonts/robotomono/400-normal.ttf",
+      "status": 200,
+      "local": "45e65c7ed7cf7d3521a70bb3935f239422063b759c62ce7f96701ad6bdd80cea",
+      "remote": "45e65c7ed7cf7d3521a70bb3935f239422063b759c62ce7f96701ad6bdd80cea",
+      "match": true
+    },
+    {
+      "path": "fonts/robotomono/700-italic.ttf",
+      "status": 200,
+      "local": "d29fe50a5134115dbedaac8b481c3aab55a80a4cd247bfaedc993e0d892395be",
+      "remote": "d29fe50a5134115dbedaac8b481c3aab55a80a4cd247bfaedc993e0d892395be",
+      "match": true
+    },
+    {
+      "path": "fonts/robotomono/700-normal.ttf",
+      "status": 200,
+      "local": "b0dca72dd80d480ee578d15038406acce2c250ed0e51b8a06a4a4cdff778ed4e",
+      "remote": "b0dca72dd80d480ee578d15038406acce2c250ed0e51b8a06a4a4cdff778ed4e",
+      "match": true
+    },
+    {
+      "path": "fonts/sourcecodepro/400-italic.ttf",
+      "status": 200,
+      "local": "89cd1e60c61f75788ac1a23a7bb396dfc585855730b26f49ee2ef2fcc533ec76",
+      "remote": "89cd1e60c61f75788ac1a23a7bb396dfc585855730b26f49ee2ef2fcc533ec76",
+      "match": true
+    },
+    {
+      "path": "fonts/sourcecodepro/400-normal.ttf",
+      "status": 200,
+      "local": "531249a04d31457f28968394cbefb5a0f40bef3dbaa4516ab35948f20a5948da",
+      "remote": "531249a04d31457f28968394cbefb5a0f40bef3dbaa4516ab35948f20a5948da",
+      "match": true
+    },
+    {
+      "path": "fonts/sourcecodepro/700-italic.ttf",
+      "status": 200,
+      "local": "4232e9f62ce8e9e72a67abecca08569a44050f992601dac7df01f818a721a2c9",
+      "remote": "4232e9f62ce8e9e72a67abecca08569a44050f992601dac7df01f818a721a2c9",
+      "match": true
+    },
+    {
+      "path": "fonts/sourcecodepro/700-normal.ttf",
+      "status": 200,
+      "local": "6777fb79e8522a6bf66204fa875e8c730945a7dffa643787a8cce31fd8711981",
+      "remote": "6777fb79e8522a6bf66204fa875e8c730945a7dffa643787a8cce31fd8711981",
+      "match": true
+    },
+    {
+      "path": "icons/apple-touch-icon.png",
+      "status": 200,
+      "local": "b472e52bbe048e50c3cc2ddd65a44ac182af178ef6dde903006984ad0c35e5b4",
+      "remote": "b472e52bbe048e50c3cc2ddd65a44ac182af178ef6dde903006984ad0c35e5b4",
+      "match": true
+    },
+    {
+      "path": "icons/cloakpdf-app-icon.svg",
+      "status": 200,
+      "local": "32fb79af7a9137a874585795f02921347391dcb8ae76648c9fc6fcbe73eb3aa4",
+      "remote": "32fb79af7a9137a874585795f02921347391dcb8ae76648c9fc6fcbe73eb3aa4",
+      "match": true
+    },
+    {
+      "path": "icons/favicon.ico",
+      "status": 200,
+      "local": "959a1ec0f0231cbedb6d116d26279be46163313f2d8747b6b6d3ebdcaad3b6b2",
+      "remote": "959a1ec0f0231cbedb6d116d26279be46163313f2d8747b6b6d3ebdcaad3b6b2",
+      "match": true
+    },
+    {
+      "path": "icons/favicon.svg",
+      "status": 200,
+      "local": "d8278c0e3e68a3d712324f3b844a3b74d1e1cadfaa703e8cfcfbb08cff435dc8",
+      "remote": "d8278c0e3e68a3d712324f3b844a3b74d1e1cadfaa703e8cfcfbb08cff435dc8",
+      "match": true
+    },
+    {
+      "path": "icons/maskable-icon-512x512.png",
+      "status": 200,
+      "local": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "remote": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "match": true
+    },
+    {
+      "path": "icons/og-image.png",
+      "status": 200,
+      "local": "300b97475634d7014c9b283419c09495efac76d6b9183af7407613738b43a514",
+      "remote": "300b97475634d7014c9b283419c09495efac76d6b9183af7407613738b43a514",
+      "match": true
+    },
+    {
+      "path": "icons/pwa-192x192.png",
+      "status": 200,
+      "local": "0847e408e3305683e17e4013d8457b0465181e2078fc4281f033a9228e4b1e89",
+      "remote": "0847e408e3305683e17e4013d8457b0465181e2078fc4281f033a9228e4b1e89",
+      "match": true
+    },
+    {
+      "path": "icons/pwa-512x512.png",
+      "status": 200,
+      "local": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "remote": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "match": true
+    },
+    {
+      "path": "icons/pwa-64x64.png",
+      "status": 200,
+      "local": "af349d02381052f7bc7ba52484288697ae29171b953a0753c2ee83e0b995b8b1",
+      "remote": "af349d02381052f7bc7ba52484288697ae29171b953a0753c2ee83e0b995b8b1",
+      "match": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "local": "aedbe8879d32bda65862fe3911ffbd924f7cd5c4b15ded51b7c35b87f26259ba",
+      "remote": "aedbe8879d32bda65862fe3911ffbd924f7cd5c4b15ded51b7c35b87f26259ba",
+      "match": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "local": "f7e8af3fd02ede0fe24be639950f8e288d4bcbcff8c0a8fac9df98fab6536043",
+      "remote": "f7e8af3fd02ede0fe24be639950f8e288d4bcbcff8c0a8fac9df98fab6536043",
+      "match": true
+    },
+    {
+      "path": "pdfjs-wasm/jbig2.wasm",
+      "status": 200,
+      "local": "466f45c2a61a698152fb5400c27e56ff2ceb73dcb71fde3fc366a502308eaab0",
+      "remote": "466f45c2a61a698152fb5400c27e56ff2ceb73dcb71fde3fc366a502308eaab0",
+      "match": true
+    },
+    {
+      "path": "pdfjs-wasm/jbig2_nowasm_fallback.js",
+      "status": 200,
+      "local": "68686ced624a48c42f84cdaa482ec44b72b0de4dc84a0df903af1fb7b45b5d9a",
+      "remote": "68686ced624a48c42f84cdaa482ec44b72b0de4dc84a0df903af1fb7b45b5d9a",
+      "match": true
+    },
+    {
+      "path": "pdfjs-wasm/openjpeg.wasm",
+      "status": 200,
+      "local": "95e5002597af0824004aa57b1900fe019715db389e37640b1e58395e42f00cc5",
+      "remote": "95e5002597af0824004aa57b1900fe019715db389e37640b1e58395e42f00cc5",
+      "match": true
+    },
+    {
+      "path": "pdfjs-wasm/openjpeg_nowasm_fallback.js",
+      "status": 200,
+      "local": "9047b34b6bc142d85e4b0aa1b08b0b9baad4c6f8b7ac87641b9e8f90eb6fd23e",
+      "remote": "9047b34b6bc142d85e4b0aa1b08b0b9baad4c6f8b7ac87641b9e8f90eb6fd23e",
+      "match": true
+    },
+    {
+      "path": "pdfjs-wasm/qcms_bg.wasm",
+      "status": 200,
+      "local": "663d86126d5f5fcb1c61490f94353e2a8375660b8c5498ab3ebab5a34b08800e",
+      "remote": "663d86126d5f5fcb1c61490f94353e2a8375660b8c5498ab3ebab5a34b08800e",
+      "match": true
+    },
+    {
+      "path": "pdfjs-wasm/quickjs-eval.js",
+      "status": 200,
+      "local": "fe7930418e869791ce892567dbd0bc4698152b7e550b5cefa553992c56ddc325",
+      "remote": "fe7930418e869791ce892567dbd0bc4698152b7e550b5cefa553992c56ddc325",
+      "match": true
+    },
+    {
+      "path": "pdfjs-wasm/quickjs-eval.wasm",
+      "status": 200,
+      "local": "7bcacc9f22cacf7e9b23866d2a6d1639693d40c7f144e41b7c69ed37ba9cbe8f",
+      "remote": "7bcacc9f22cacf7e9b23866d2a6d1639693d40c7f144e41b7c69ed37ba9cbe8f",
+      "match": true
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "local": "7d8fcf826690be5aa22801fc9604421153b50f8c9136612d11f445ff6f3b18d6",
+      "remote": "7d8fcf826690be5aa22801fc9604421153b50f8c9136612d11f445ff6f3b18d6",
+      "match": true
+    },
+    {
+      "path": "screenshots/editor-narrow-dark.png",
+      "status": 200,
+      "local": "67e1980cda4ab3ddee69792f921fdacd64f73c3110cd99f9150e6bc3e814c22b",
+      "remote": "67e1980cda4ab3ddee69792f921fdacd64f73c3110cd99f9150e6bc3e814c22b",
+      "match": true
+    },
+    {
+      "path": "screenshots/editor-narrow-light.png",
+      "status": 200,
+      "local": "d70d1ebcca4c8504252555ce2d3dd9ff2c96083e14fa16f5baf1d26973e29da5",
+      "remote": "d70d1ebcca4c8504252555ce2d3dd9ff2c96083e14fa16f5baf1d26973e29da5",
+      "match": true
+    },
+    {
+      "path": "screenshots/editor-wide-dark.png",
+      "status": 200,
+      "local": "a2badb1adc9b3a2e284a94602fbd580cc56fbe3652a5eb88a32ec0e6ec595fcf",
+      "remote": "a2badb1adc9b3a2e284a94602fbd580cc56fbe3652a5eb88a32ec0e6ec595fcf",
+      "match": true
+    },
+    {
+      "path": "screenshots/editor-wide-light.png",
+      "status": 200,
+      "local": "7c842601847e7faaf05093d29f2665c146959c772635790a087b650e810dc641",
+      "remote": "7c842601847e7faaf05093d29f2665c146959c772635790a087b650e810dc641",
+      "match": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "local": "ef260e6278857fe36011d0b55929ffd318f34cb5da4fe83e5380275ac3c0807e",
+      "remote": "ef260e6278857fe36011d0b55929ffd318f34cb5da4fe83e5380275ac3c0807e",
+      "match": true
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "local": "e7a56dff0d500edb67ae0e6543125568074944012d3c2cf613f1d58976e9b497",
+      "remote": "e7a56dff0d500edb67ae0e6543125568074944012d3c2cf613f1d58976e9b497",
+      "match": true
+    },
+    {
+      "path": "workbox-c06bacfd.js",
+      "status": 200,
+      "local": "68ce0d4dc9fee93abd4ea61809620be1284e3f32714f5c995985d8c3df2e9a0d",
+      "remote": "68ce0d4dc9fee93abd4ea61809620be1284e3f32714f5c995985d8c3df2e9a0d",
+      "match": true
+    }
+  ],
+  "matched": 130,
+  "total": 130,
+  "normalizedMatched": 0
+}
