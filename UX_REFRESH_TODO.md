@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.6.0 compact notices deployed to all six websites; full-view editor comparison in progress; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.6.0 compact notices deployed to all six websites; full-view editor comparison deployed and production-verified; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -31,7 +31,7 @@ The separately requested Drop installer now uses Air.
 - [x] Compare real PDF/IMG/Resume workspaces, fields, focus, canvas and dialogs in both themes and all viewport classes; preserve approved task-specific compositions.
 - [x] Correct PDF heading/scrollbar drift, clarify IMG watermark placement and its invalid Scale minimum, and fix Resume date-popup stacking.
 - [x] Exercise all tools/sections and applicable output, batch, picker, library, modal and recovery paths; retain the unchanged public/PWA evidence with explicit provenance.
-- [ ] Finish bounded commits, promote individual dev → main PRs, verify exact production assets and synchronize dev.
+- [x] Finish bounded product commits, promote individual dev → main PRs, verify 320 exact production assets and synchronize dev; Yard #48 carries the canonical audit closeout.
 - [ ] Physical-device, OS keyboard/IME, actual browser-zoom and spoken-assistive acceptance remain separate.
 
 Evidence: [full-view editor audit](docs/air/editor-comparison-2026-11-03.md).

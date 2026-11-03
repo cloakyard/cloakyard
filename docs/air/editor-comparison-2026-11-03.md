@@ -93,9 +93,22 @@ explicit branch exception. Its native dev includes main; unrelated native beta
 work remains unreleased. See the preceding audit's updated release receipt.
 
 PDF, IMG and Resume changes are committed only after their required checks pass.
-Promotion uses [PDF #230](https://github.com/cloakyard/cloakpdf/pull/230),
+Production is verified after [PDF #230](https://github.com/cloakyard/cloakpdf/pull/230),
 [IMG #30](https://github.com/cloakyard/cloakimg/pull/30) and
 [Resume #58](https://github.com/cloakyard/cloakresume/pull/58), each dev → main.
-Release checks and exact live-file
-verification are recorded in this directory's release receipt. Original PDF AI
-work and Drop's unpublished native history are preserved.
+Exact-main CI and Cloudflare builds pass. All 320 production files match the tested
+builds (PDF 130, IMG 89, Resume 101), and each product's remote dev/main is synchronized.
+The initial Cloudflare queue delayed publication; no source or build failure required
+a code change or bypass.
+
+The final live pass repeats all 48 cross-editor cases in Chrome/WebKit, all four
+viewport classes and both themes. Resume adds 48 live date layouts with hit testing;
+IMG adds 12 live watermark journeys and 48 decoded PNG matches against the tested
+build. No page errors or asset mismatches remain. Exact commits, check URLs and
+receipt hashes are in the [release receipt](evidence/editor-comparison-2026-11-03/release.json).
+
+[Yard #48](https://github.com/cloakyard/cloakyard/pull/48) carries the comparison
+harness, evidence and contributor guidance; its own final main checks, unchanged
+homepage payload verification and dev synchronization are recorded in the PR
+description. Original PDF AI work and Drop's unpublished native history are
+preserved. Task previews on 8511–8514 are stopped; raw evidence remains in scratch.

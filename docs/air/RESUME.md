@@ -7,14 +7,18 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Active: full-view editor comparison — 2026-11-03
+### Completed: full-view editor comparison — 2026-11-03
 
 The current pass compares actual PDF/IMG/Resume interiors and secondary flows,
 not only public pages. `AGENTS.md` and `CLAUDE.md` now require a per-view coverage
 ledger for future app comparisons. See [the audit](editor-comparison-2026-11-03.md).
 PDF heading/scrollbar drift, IMG watermark placement/Scale validation and Resume
-date-popup stacking are corrected. Product gates and final promotion are recorded
-in the audit and its release receipt; do not repeat completed UI work.
+date-popup stacking are corrected and deployed through PDF #230, IMG #30 and
+Resume #58. Exact-main CI/Cloudflare checks, 320 exact live files, 48 live
+cross-editor cases, 48 live date layouts and 48 matching watermark PNG outputs
+pass. Product remote dev/main are synchronized. Yard #48 carries this audit and
+records its own post-merge checks in its description. Do not repeat completed UI
+work or the passing feature matrices.
 
 The original PDF checkout contains unrelated uncommitted AI work. Use the isolated
 PDF at `/tmp/air-popups-2026-11-03/cloakpdf`; never stash/reset/publish the original
@@ -33,8 +37,9 @@ classic-scrollbar and live-dialog receipts. Preserve browser tests that remove
 the default hidden-scrollbar flag and actually drag/scroll the native thumb.
 
 Physical Windows/iPhone, software keyboards, OS IME, real browser zoom and spoken
-assistive acceptance remain open. Task previews and pending rollout state are
-listed in the latest audit. Do not equate automated WebKit or 32px root text with
+assistive acceptance remain open. Task previews on 8511–8514 are stopped; raw
+evidence remains in `/tmp/air-editor-comparison-2026-11-03`. Next: the separate
+device/assistive and product/output acceptance backlog. Do not equate automated WebKit or 32px root text with
 physical-device or actual browser-zoom acceptance.
 
 ### Prior: all-layout consistency follow-up — 2026-11-03
