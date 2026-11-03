@@ -44,4 +44,20 @@ Native disclosures retain their immediate platform fallback where `::details-con
 
 ## Rollout
 
-Passing bounded commits are being promoted through individual dev → main PRs. Exact-main checks, asset parity and the final live pass will be appended before handoff. Drop's eight unpublished native/release commits remain local.
+Product changes are merged through individual dev → main PRs:
+
+| Product           | PR                                                      | Main commit | Live files                                               |
+| ----------------- | ------------------------------------------------------- | ----------- | -------------------------------------------------------- |
+| CloakIMG          | [#28](https://github.com/cloakyard/cloakimg/pull/28)    | `dbaf493`   | 89/89 exact                                              |
+| CloakPDF          | [#227](https://github.com/cloakyard/cloakpdf/pull/227)  | `f961ae5`   | 130/130 exact                                            |
+| CloakResume       | [#55](https://github.com/cloakyard/cloakresume/pull/55) | `73f6ae2`   | 101/101 exact                                            |
+| CloakDrop website | [#57](https://github.com/cloakyard/cloakdrop/pull/57)   | `9f69916`   | 16/16 exact                                              |
+| CloakRoll website | [#11](https://github.com/cloakyard/cloakroll/pull/11)   | `001977c`   | 8 exact; 3 existing Cloudflare HTML injection exceptions |
+
+Cloudflare built the merged main commits; initial reads during its build queue served the preceding release and were superseded by the passing asset comparisons. Roll's exception removes exactly one existing challenge-platform script per HTML page and requires every remaining byte to match. The complete 347-file report is saved in `evidence/surface-motion-2026-11-03/product-live-assets.json.gz`.
+
+The deployed products passed another 36 Chrome/WebKit phone motion checks and the 648 home/288 secondary/390-interaction family comparison with zero deviations/errors. This pre-merge comparison used Cloakyard's identical reviewed production preview alongside the five live product domains; Yard's own live verification is recorded in #44. The compressed reports are saved alongside asset evidence.
+
+Product remote dev/main are synchronized. Drop's isolated web checkout is removed; its local dev contains merged main plus the eight previously unpublished commits, this task's equivalent website commit and synchronization merge. That local history was not pushed. Resume's unrelated worktrees are untouched.
+
+Cloakyard [#44](https://github.com/cloakyard/cloakyard/pull/44) carries the canonical contract, implementation and final audit record. Its description records its own post-merge exact-main checks, live asset parity and final live family checks. Physical iPhone/software-keyboard, OS IME and spoken assistive acceptance remain open.

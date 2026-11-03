@@ -31,7 +31,7 @@ The separately requested Drop installer now uses Air.
 - [x] Apply Air 1.5.0 presence to dialogs, floating controls, notices, native disclosures and compact working panels; remove obsolete immediate-only rules.
 - [x] Round 1: inspect real opens/closes in phone light/dark; round 2: interruptions, keyboard, nested focus, reduced motion, enlarged text and short landscape; round 3: family comparison and tablet/desktop regressions.
 - [x] Pass applicable build, unit, feature/output, portability and dead-code gates; record evidence and commit bounded pieces.
-- [ ] Promote through individual dev → main PRs, verify deployment and keep dev synchronized. Keep Drop's local native/release work isolated.
+- [x] Promote products through individual dev → main PRs, verify all 347 live files and synchronize remote dev/main. Keep Drop's local unpublished work isolated. Yard #44 records its own post-merge checks and final live family acceptance.
 - [ ] Physical iPhone/software-keyboard and spoken assistive acceptance remain separate.
 
 ## CloakIMG canvas-first implementation — 2026-11-03

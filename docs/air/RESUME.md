@@ -17,13 +17,22 @@ regressions, 36 production smoke checks, 648 home/288 secondary/408 privacy layo
 488 IMG/461 PDF/373 Resume tests, real transaction/download and exact PNG-output
 parity checks. See [the audit](family-motion-2026-11-03.md).
 
-Passing bounded product commits are created. Rollout is underway through IMG #28,
-PDF #227, Resume #55, Drop website #57 and Roll website #11. The central Yard piece
-is being prepared; exact-main checks and live asset verification are not complete.
-Scratch: `/tmp/air-family-motion-2026-11-03`. Dev previews: 8470–8475; production:
-8480–8485. Drop's isolated worktree is `drop-web` in that scratch directory; only
-its website commit was pushed. Its eight unpublished native/release commits stay
-local. Preserve native apps and Resume's unrelated worktrees.
+IMG #28, PDF #227, Resume #55, Drop website #57 and Roll website #11 are merged
+and production-verified: 344 exact asset matches plus Roll's three existing HTML
+injection exceptions. Product remote dev/main are synchronized. Yard
+[#44](https://github.com/cloakyard/cloakyard/pull/44) carries the canonical change
+and audit; its description records its own post-merge checks, live assets and
+final family pass.
+
+Drop's isolated checkout is removed. Its original unpublished history stays local;
+local dev includes the merged website release and must not be pushed wholesale.
+Resume's unrelated worktrees remain untouched. Scratch evidence is retained in
+`/tmp/air-family-motion-2026-11-03`; task preview ports 8470–8475 and 8480–8485
+are for this audit only.
+
+Next: physical iPhone/software keyboard, OS IME and spoken assistive acceptance,
+then the separately tracked product/output/native backlog. Automated WebKit does
+not close physical Safari acceptance. Do not repeat this completed implementation.
 
 ### Current checkpoint — Air 1.4.0 canvas-first layout (2026-11-03)
 
