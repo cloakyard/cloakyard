@@ -7,6 +7,33 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Active: family phone UX and coherent motion — 2026-11-03
+
+Air 1.5.0 implements consistent retained motion across all six active websites,
+including dialogs, pickers, notices, disclosures and compact working panels. The
+three automated audit rounds pass: 170 presence observations, 38 final focused
+regressions, 36 production smoke checks, 648 home/288 secondary/408 privacy layouts,
+396 real-worker notice layouts, all 26 IMG tools in 416 observations per engine,
+488 IMG/461 PDF/373 Resume tests, real transaction/download and exact PNG-output
+parity checks. See [the audit](family-motion-2026-11-03.md).
+
+IMG #28, PDF #227, Resume #55, Drop website #57 and Roll website #11 are merged
+and production-verified: 344 exact asset matches plus Roll's three existing HTML
+injection exceptions. Product remote dev/main are synchronized. Yard
+[#44](https://github.com/cloakyard/cloakyard/pull/44) carries the canonical change
+and audit; its description records its own post-merge checks, live assets and
+final family pass.
+
+Drop's isolated checkout is removed. Its original unpublished history stays local;
+local dev includes the merged website release and must not be pushed wholesale.
+Resume's unrelated worktrees remain untouched. Scratch evidence is retained in
+`/tmp/air-family-motion-2026-11-03`; task preview ports 8470–8475 and 8480–8485
+are for this audit only.
+
+Next: physical iPhone/software keyboard, OS IME and spoken assistive acceptance,
+then the separately tracked product/output/native backlog. Automated WebKit does
+not close physical Safari acceptance. Do not repeat this completed implementation.
+
 ### Current checkpoint — Air 1.4.0 canvas-first layout (2026-11-03)
 
 The approved mock is implemented and production-verified. IMG keeps at least 40%

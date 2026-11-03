@@ -1,0 +1,5 @@
+{
+  "checks": 12,
+  "baseline": "Air 1.4.0 deployed canvas-first output-live/results.json",
+  "pixelHashDimensionsTransparency": "identical in every case"
+}

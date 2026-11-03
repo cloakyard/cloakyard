@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.4.0 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.5.0 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -58,6 +58,8 @@ owns tokens and shared control skins; index.css contains homepage composition.
 Never redefine `--air-*`, add a competing palette, or copy study/demo bundles into
 production. Complex React adapters will share the product's existing React runtime.
 Only extract a production adapter when a real product needs its behavior.
+Shared `docs/air/presence.mjs` and its React adapter retain surfaces through exit;
+use the canonical timing and reduced-motion rules in `DESIGN.md`.
 
 System appearance is the default. Shared `light-dark()` tokens handle both themes;
 there is no stored homepage preference to migrate. Content-sized container queries
