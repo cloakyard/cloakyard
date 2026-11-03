@@ -25,6 +25,16 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Component-state consistency follow-up — 2026-11-03
+
+- [x] Compare actual component states to the isolated portable Air reference, across all eleven viewport sizes, both themes and Chrome/WebKit.
+- [x] Retire IMG's divergent button/field skins; inspect custom selectors, focus, scrolling and compact controls across the editors.
+- [x] Repeat all-view public/privacy/recovery, PWA, editor-tool, secondary-flow and overlay audits, with an explicit per-view/component ledger.
+- [ ] Verify feature/output gates, remove obsolete references, record evidence, commit passing pieces and complete the authorized dev → main rollout.
+- [x] Keep physical-device, real browser-zoom, software keyboard/IME and spoken-assistive acceptance explicit.
+
+Evidence: [component audit](docs/air/component-consistency-2026-11-03.md). IMG #31, Resume #59 and PDF #231 are merged; production verification is in progress.
+
 ## Full-view editor comparison — 2026-11-03
 
 - [x] Make all applicable views the default scope for app comparisons; require a coverage ledger, including interiors and secondary/edge states.
