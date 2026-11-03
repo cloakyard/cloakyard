@@ -7,7 +7,33 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Active: family phone UX and coherent motion — 2026-11-03
+### Active: all-layout consistency follow-up — 2026-11-03
+
+The six-site Air 1.5.0 follow-up has completed the public/privacy/PWA, all-tool IMG
+and PDF, and Resume editor/Options matrices. Visual review found PDF's tablet
+Cancel label splitting; the three-line CSS fix and regression test pass. Roll's
+numbered feature labels and stale beta wording are corrected. Resume's layout
+harness now waits for the real dialog entrance. The canonical presence harness
+adds all eleven required sizes and records actual paint-frame motion.
+
+See [the audit](all-layout-audit-2026-11-03.md) for current results and rollout.
+The full 228-observation presence coverage passes, with all required keys present.
+PDF #228, Resume #56 and Roll #12 are merged, their exact-main checks and production
+files verified, and remote dev/main synchronized. Eight live PDF cancellation
+journeys pass. All six websites match 356 raw assets plus Roll's three existing
+HTML injection exceptions. Yard's canonical audit PR records its own final
+checks/deployment verification. Concurrent native Roll work in the original checkout is excluded;
+do not push or overwrite that local history. Drop's unpublished work and Resume's
+other worktrees remain untouched. Scratch: `/tmp/air-all-layouts-2026-11-03`.
+Task previews on 8490–8495 are stopped; the isolated Roll website checkout is
+removed. Its original native checkout remains in active use and was not cleaned.
+
+Physical iPhone/software-keyboard, OS IME and spoken-assistive acceptance remain
+open. Next: those device/assistive checks and the separately tracked product/output
+backlog. Do not repeat this completed audit or equate 32px root-font/emulated
+WebKit checks with physical-device or real browser-zoom acceptance.
+
+### Prior checkpoint: family phone UX and coherent motion — 2026-11-03
 
 Air 1.5.0 implements consistent retained motion across all six active websites,
 including dialogs, pickers, notices, disclosures and compact working panels. The
