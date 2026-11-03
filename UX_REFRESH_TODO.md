@@ -25,6 +25,15 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Family phone UX and surface motion — 2026-11-03
+
+- [x] Audit all six active websites and editor phone flows; record source gaps and preserve output/transaction semantics.
+- [x] Apply Air 1.5.0 presence to dialogs, floating controls, notices, native disclosures and compact working panels; remove obsolete immediate-only rules.
+- [x] Round 1: inspect real opens/closes in phone light/dark; round 2: interruptions, keyboard, nested focus, reduced motion, enlarged text and short landscape; round 3: family comparison and tablet/desktop regressions.
+- [x] Pass applicable build, unit, feature/output, portability and dead-code gates; record evidence and commit bounded pieces.
+- [ ] Promote through individual dev → main PRs, verify deployment and keep dev synchronized. Keep Drop's local native/release work isolated.
+- [ ] Physical iPhone/software-keyboard and spoken assistive acceptance remain separate.
+
 ## CloakIMG canvas-first implementation — 2026-11-03
 
 - [x] Resume the approved mock and reconcile Air's optional compact tool-header action pattern.

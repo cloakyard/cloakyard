@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState, type MouseEvent } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Popover } from "@base-ui/react/popover";
 import { Tooltip } from "@base-ui/react/tooltip";
@@ -54,7 +54,6 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
   const [confirm, setConfirm] = useState(false);
   const [contextOpen, setContextOpen] = useState(false);
   const [contextKeyboard, setContextKeyboard] = useState(false);
-  const [pointerMotion, setPointerMotion] = useState(false);
   const [status, setStatus] = useState("Local interaction study. No files are changed.");
   const more = useRef<HTMLButtonElement>(null);
   const restore = useRef<HTMLButtonElement>(null);
@@ -72,16 +71,14 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
     }
   }, [removed]);
 
-  function openRename(event: MouseEvent) {
+  function openRename() {
     dialogPending.current = true;
     setDraft(name);
     setError(false);
-    setPointerMotion(event.detail > 0);
     setRename(true);
   }
-  function openConfirmation(event: MouseEvent) {
+  function openConfirmation() {
     dialogPending.current = true;
-    setPointerMotion(event.detail > 0);
     setConfirm(true);
   }
   function actionItems(origin: "menu" | "context") {
@@ -93,9 +90,9 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
         <Menu.GroupLabel className="air-menu-label">Sample actions</Menu.GroupLabel>
         <Menu.Item
           className="air-menu-item"
-          onClick={(event) => {
+          onClick={() => {
             rememberOrigin();
-            openRename(event);
+            openRename();
           }}
         >
           Rename sample…
@@ -120,9 +117,9 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
         <Menu.Separator className="air-menu-separator" />
         <Menu.Item
           className="air-menu-item air-menu-item--danger"
-          onClick={(event) => {
+          onClick={() => {
             rememberOrigin();
-            openConfirmation(event);
+            openConfirmation();
           }}
         >
           Remove sample…
@@ -291,8 +288,7 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
       </div>
       <Dialog.Root
         open={rename}
-        onOpenChange={(open, event) => {
-          setPointerMotion("detail" in event.event && Number(event.event.detail) > 0);
+        onOpenChange={(open) => {
           setRename(open);
         }}
         onOpenChangeComplete={(open) => {
@@ -311,7 +307,6 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
                   ? renamePopup.current
                   : nameInput.current
               }
-              data-air-motion={pointerMotion ? "pointer" : "immediate"}
               finalFocus={() => dialogReturn.current}
             >
               <Dialog.Title className="air-floating-title">Rename the sample</Dialog.Title>
@@ -364,11 +359,7 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
                   <Dialog.Close className="air-button" type="button">
                     Cancel
                   </Dialog.Close>
-                  <button
-                    className="air-button air-button--primary"
-                    type="submit"
-                    onClick={(event) => setPointerMotion(event.detail > 0)}
-                  >
+                  <button className="air-button air-button--primary" type="submit">
                     Save name
                   </button>
                 </div>
@@ -379,8 +370,7 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
       </Dialog.Root>
       <AlertDialog.Root
         open={confirm}
-        onOpenChange={(open, event) => {
-          setPointerMotion("detail" in event.event && Number(event.event.detail) > 0);
+        onOpenChange={(open) => {
           setConfirm(open);
         }}
         onOpenChangeComplete={(open) => {
@@ -393,7 +383,6 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
             <AlertDialog.Popup
               className="air-modal"
               id="air-remove-dialog"
-              data-air-motion={pointerMotion ? "pointer" : "immediate"}
               initialFocus={cancel}
               finalFocus={() => (removed ? restore.current : dialogReturn.current)}
             >
@@ -411,8 +400,7 @@ function OverlayStudy({ focusOnMount }: { focusOnMount: boolean }) {
                 <button
                   className="air-button air-button--danger"
                   id="air-remove-confirm"
-                  onClick={(event) => {
-                    setPointerMotion(event.detail > 0);
+                  onClick={() => {
                     setRemoved(true);
                     setConfirm(false);
                     setStatus("Sample removed from the study. Restore it whenever you’re ready.");
