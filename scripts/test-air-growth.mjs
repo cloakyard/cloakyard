@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 const { default: puppeteer } = await import(process.env.PUPPETEER_MODULE || "puppeteer-core");
-const out = resolve(process.env.AIR_EVIDENCE_DIR || "/tmp/air-gathering");
+const out = resolve(process.env.AIR_EVIDENCE_DIR || "/tmp/air-growth");
 await mkdir(out, { recursive: true });
 const url = process.env.SITE_URL || "http://127.0.0.1:8350/";
 const sizes = [
@@ -48,17 +48,16 @@ try {
           font,
         );
         const row = await page.evaluate(() => {
-          const root = document.querySelector(".tool-gathering"),
+          const root = document.querySelector(".yard-growth"),
             box = root.getBoundingClientRect();
           return {
             state: root.dataset.artState,
             overflow: document.documentElement.scrollWidth > innerWidth + 1,
             contained: box.left >= 0 && box.right <= innerWidth + 1,
             active: root.getAnimations({ subtree: true }).length,
-            forms: root.querySelectorAll(".gathering-object").length,
-            sheets: [...root.querySelectorAll(".gathering-sheet")].map(
-              (n) => getComputedStyle(n).fill,
-            ),
+            forms: root.querySelectorAll("[data-app-cube]").length,
+            next: root.querySelectorAll(".yard-growth-next").length,
+            duplicateMark: root.querySelectorAll("img").length,
             labels: [...document.querySelectorAll(".tool-entry h3")].map((n) => n.textContent),
             roll: document.querySelector('.tool-entry a[href="https://roll.cloakyard.com"]')?.href,
           };
@@ -67,10 +66,10 @@ try {
         assert.equal(row.contained, true);
         assert.equal(row.state, "reduced");
         assert.equal(row.active, 0);
-        assert.equal(row.forms, 5);
-        assert.ok(row.sheets.every((c) => c === "rgb(255, 255, 255)"));
+        assert.equal(row.forms, row.labels.length);
+        assert.equal(row.next, 1);
+        assert.equal(row.duplicateMark, 0);
         assert.equal(row.roll, "https://roll.cloakyard.com/");
-        assert.equal(row.labels.length, 5);
         result.layouts.push({ theme, width, height, font, ...row });
       }
       await page.emulateMediaFeatures([
@@ -78,20 +77,29 @@ try {
         { name: "prefers-reduced-motion", value: "no-preference" },
       ]);
       await page.goto(url, { waitUntil: "domcontentloaded" });
-      await page.$eval(".tool-gathering", (n) => n.scrollIntoView({ block: "center" }));
+      await page.$eval(".yard-growth", (n) => n.scrollIntoView({ block: "center" }));
       await page.waitForFunction(
-        () => document.querySelector(".tool-gathering")?.dataset.artState === "playing",
+        () => document.querySelector(".yard-growth")?.dataset.artState === "playing",
       );
-      const timings = await page.$eval(".tool-gathering", (n) =>
+      const timings = await page.$eval(".yard-growth", (n) =>
         n.getAnimations({ subtree: true }).map((a) => a.effect.getTiming()),
       );
-      assert.equal(timings.length, 40);
-      assert.ok(timings.every((t) => t.duration === 1800 && t.duration + t.delay <= 4300));
+      const count = await page.$$eval(".tool-entry", (nodes) => nodes.length);
+      assert.equal(timings.length, count + 1);
+      const arrivals = timings.slice(0, -1);
+      assert.ok(timings.every((t) => t.duration + t.delay <= 4540));
+      assert.ok(
+        arrivals.every(
+          (t, i) =>
+            t.duration > 0 && (!i || t.delay >= arrivals[i - 1].delay + arrivals[i - 1].duration),
+        ),
+      );
+      assert.ok(timings.at(-1).delay >= arrivals.at(-1).delay + arrivals.at(-1).duration);
       await page.waitForFunction(
-        () => document.querySelector(".tool-gathering").dataset.artState === "complete",
+        () => document.querySelector(".yard-growth").dataset.artState === "complete",
       );
       assert.equal(
-        await page.$eval(".tool-gathering", (n) => n.getAnimations({ subtree: true }).length),
+        await page.$eval(".yard-growth", (n) => n.getAnimations({ subtree: true }).length),
         0,
       );
       result.arrivals.push({ theme, width, height, timings });
@@ -99,32 +107,32 @@ try {
   await page.setViewport({ width: 1440, height: 900 });
   await page.goto(url, { waitUntil: "domcontentloaded" });
   await page.waitForFunction(
-    () => document.querySelector(".tool-gathering")?.dataset.artState === "playing",
+    () => document.querySelector(".yard-growth")?.dataset.artState === "playing",
   );
   await page.$eval("footer", (n) => n.scrollIntoView());
   await page.waitForFunction(
-    () => document.querySelector(".tool-gathering").dataset.artState === "offscreen",
+    () => document.querySelector(".yard-growth").dataset.artState === "offscreen",
   );
   assert.ok(
-    await page.$eval(".tool-gathering", (n) =>
+    await page.$eval(".yard-growth", (n) =>
       n.getAnimations({ subtree: true }).every((a) => a.playState === "paused"),
     ),
   );
-  await page.$eval(".tool-gathering", (n) => n.scrollIntoView({ block: "center" }));
+  await page.$eval(".yard-growth", (n) => n.scrollIntoView({ block: "center" }));
   await page.waitForFunction(
-    () => document.querySelector(".tool-gathering").dataset.artState === "playing",
+    () => document.querySelector(".yard-growth").dataset.artState === "playing",
   );
   await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "reduce" }]);
   await page.waitForFunction(
-    () => document.querySelector(".tool-gathering").dataset.artState === "reduced",
+    () => document.querySelector(".yard-growth").dataset.artState === "reduced",
   );
   assert.equal(
-    await page.$eval(".tool-gathering", (n) => n.getAnimations({ subtree: true }).length),
+    await page.$eval(".yard-growth", (n) => n.getAnimations({ subtree: true }).length),
     0,
   );
   await page.emulateMediaFeatures([{ name: "prefers-reduced-motion", value: "no-preference" }]);
   await page.waitForFunction(
-    () => document.querySelector(".tool-gathering").dataset.artState === "complete",
+    () => document.querySelector(".yard-growth").dataset.artState === "complete",
   );
   result.journeys.push(
     "Offscreen pause/resume and immediate preference change; no restart after restriction",
@@ -134,10 +142,7 @@ try {
     Object.defineProperty(navigator, "deviceMemory", { value: 4 }),
   );
   await constrained.goto(url, { waitUntil: "networkidle0" });
-  assert.equal(
-    await constrained.$eval(".tool-gathering", (n) => n.dataset.artState),
-    "constrained",
-  );
+  assert.equal(await constrained.$eval(".yard-growth", (n) => n.dataset.artState), "constrained");
   await constrained.close();
   result.journeys.push("Constrained device uses the still");
   const nojs = await browser.newPage();
@@ -151,7 +156,7 @@ try {
   assert.deepEqual(result.errors, []);
 } finally {
   await browser.close();
-  await writeFile(resolve(out, "gathering.json"), JSON.stringify(result, null, 2));
+  await writeFile(resolve(out, "growth.json"), JSON.stringify(result, null, 2));
 }
 console.log(
   `${result.layouts.length} static layouts, ${result.arrivals.length} real arrivals and ${result.journeys.length} journeys passed.`,

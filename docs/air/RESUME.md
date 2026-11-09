@@ -7,6 +7,28 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Verified: growing family mark — 2026-11-09 (rollout 2026-11-10)
+
+The requested logo-inspired cube grid replaces all five bespoke app materials and
+the repeated mark. `YardGrowth` derives stable expanding shells from the registry;
+one faint next cell completes the current 3.74-second sequence. Future counts stay
+under 4.54 seconds. Static fallbacks, cold startup and completion-only replay remain.
+Air 1.7.2 records the motif; shared controls and all five product runtimes are unchanged.
+
+All 24 fresh audit suites and representative all-view visual comparisons pass.
+Read `growing-mark-2026-11-09.md` and its portable evidence manifest. PDF #236,
+IMG #36, Resume #63, Drop #62 and Roll #18 are merged; remote dev includes main.
+Production files match the tested builds, and Roll's native tree is unchanged.
+Original clean IMG/Resume dev are updated. GitHub startup errors were retried;
+fresh PR events passed without changing code or weakening checks.
+
+The canonical [PR #53](https://github.com/cloakyard/cloakyard/pull/53) records its
+own final exact-main CI/deployment, live animation and dev-sync receipts after merge.
+Keep raw evidence in the isolated family's `evidence/cube-growth`; previews used
+8820–8825 and stop after verification. Preserve original unrelated PDF AI/native
+work and physical-device, actual zoom, OS input/IME, assistive and print gates.
+Do not repeat the completed software audit or infer physical sign-off from it.
+
 ### Completed: refinement, cleanup and README consistency — 2026-11-09
 
 All six websites and all applicable working/secondary views have fresh software

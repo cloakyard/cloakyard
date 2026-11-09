@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.7.1 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.7.2 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -23,7 +23,7 @@ Shared design commands:
   Set `AIR_TOUCH=1` when checking larger tablets; field sizing is verified against
   the actual coarse-pointer state, independently of the viewport width.
 - `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume/Roll/IMG public pages and secondary reading/recovery shells.
-- `node scripts/test-air-gathering.mjs` checks the homepage's finite SVG motion, static preferences, responsive layout and directory links against the production build.
+- `node scripts/test-air-growth.mjs` checks the homepage's finite SVG motion, static preferences, responsive layout and directory links against the production build.
 - `node scripts/test-air-artwork-browsers.mjs` checks actual four-thread/no-memory
   artwork progression across all six sites. Supply external `PLAYWRIGHT_MODULE`,
   `AIR_BROWSER=webkit` or `chromium`, and `AIR_EVIDENCE_DIR`; `CHROME_PATH` may
@@ -69,8 +69,8 @@ there is no stored homepage preference to migrate. Content-sized container queri
 make enlarged text reflow; 44px targets apply on coarse input. Keep semantic links,
 labels, decorative icon hiding, keyboard focus and the skip link intact.
 
-`ToolGathering` uses the canonical finite `docs/air/artwork.mjs` lifecycle and local
-SVG materials. Its short opening stops at rest, suspends offscreen/hidden, and
+`YardGrowth` uses the canonical finite `docs/air/artwork.mjs` lifecycle and local
+SVG cube faces driven by the product registry. Its sequential opening stops at rest, suspends offscreen/hidden, and
 settles immediately for reduced motion, forced colours or constrained devices.
 No shader loads on the homepage. Vite enforces an 85 kB gzip entry ceiling. The
 canonical light renderer remains available to standalone design references.

@@ -1,5 +1,5 @@
 import { ArrowRight, LockKeyhole } from "lucide-react";
-import { ToolGathering } from "./ToolGathering";
+import { YardGrowth } from "./YardGrowth";
 
 export function Hero() {
   return (
@@ -22,7 +22,7 @@ export function Hero() {
           Our approach
         </a>
       </div>
-      <ToolGathering />
+      <YardGrowth />
     </section>
   );
 }
