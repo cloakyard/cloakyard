@@ -12,11 +12,11 @@ const check = process.argv.includes("--check");
 // Air registers one custom generator directly, with no media/natural-size nodes.
 // Exclude that unused catalog, while preserving the unmodified renderer/std code.
 // A dependency upgrade must review this exact module and its exported interface.
-const catalog = resolve(root, "node_modules/shaders/dist/core/shaderRegistry-CICZOQmw.js");
+const catalog = resolve(root, "node_modules/shaders/dist/core/shaderRegistry-D2rb4WWr.js");
 const catalogSource = await readFile(catalog, "utf8");
 if (
   createHash("sha256").update(catalogSource).digest("hex") !==
-  "7dc16fa289879a98f36eb35e2325120cb99800aaf7cc241f84205b31345f24d1"
+  "62d90cf715e4f27cd182380013b9153403f8e0c427efbeec25d2aa88cfa56389"
 )
   throw new Error("Shaders catalog changed; review the pinned custom-only adapter");
 if (
@@ -34,7 +34,7 @@ const result = await build({
     {
       name: "air-custom-generator-only",
       load(id) {
-        if (id.endsWith("/shaders/dist/core/shaderRegistry-CICZOQmw.js"))
+        if (id.endsWith("/shaders/dist/core/shaderRegistry-D2rb4WWr.js"))
           return "export const a={}; export const i=()=>[]; export const n=()=>undefined; export const r=()=>[]; export const t=()=>[];";
       },
     },
@@ -51,7 +51,7 @@ const output = (Array.isArray(result) ? result[0] : result).output;
 if (output.length !== 1 || output[0].type !== "chunk")
   throw new Error("Expected one self-contained shader bundle");
 const code =
-  "/* Air light / Shaders 4.0.5. Generated; see THIRD_PARTY_LICENSES.txt. */\n" + output[0].code;
+  "/* Air light / Shaders 4.0.7. Generated; see THIRD_PARTY_LICENSES.txt. */\n" + output[0].code;
 const compressed = gzipSync(code).byteLength;
 // Measured custom-only engine floor is ~371 kB. This is a lazy design-study
 // ceiling, not a waiver of production startup/device-performance validation.

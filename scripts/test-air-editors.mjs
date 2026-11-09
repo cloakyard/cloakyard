@@ -216,7 +216,7 @@ try {
         assert.equal(metrics.heading[0].weight, "500", `${app} heading weight`);
         assert.equal(
           metrics.heading[0].size,
-          app === "resume" ||
+          (app === "resume" && width >= 1024) ||
             (await p
               .locator(
                 '.editor-properties:not([data-compact]),.editor-properties[data-compact="false"]',
@@ -250,10 +250,10 @@ try {
         assert.equal(rows.at(-1).focus.outlineStyle, "solid", `${app} focus outline style`);
         assert.equal(rows.at(-1).focus.shadow, "none", `${app} focus shadow`);
         if (app === "resume") {
-          const more = p.getByRole("button", { name: "More options", exact: true });
+          const more = p.getByRole("button", { name: "More actions", exact: true });
           if (await more.isVisible()) {
             await more.click();
-            await p.getByRole("dialog", { name: "Options", exact: true }).waitFor();
+            await p.getByRole("dialog", { name: "Actions", exact: true }).waitFor();
           } else {
             await p.getByRole("button", { name: /^Template:/ }).click();
             await p.getByRole("dialog", { name: "Choose a template", exact: true }).waitFor();

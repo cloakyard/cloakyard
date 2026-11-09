@@ -1,11 +1,39 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-11-03
+## Start here in a new conversation — saved 2026-11-09
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+
+### In progress: mobile simplicity, motion and dependencies — 2026-11-09
+
+The latest user asks for simpler consistent mobile editors, a full-view visual and
+motion audit of all six websites, and current dependencies. Air 1.7.0 and compact
+PDF/IMG/Resume changes are committed; all applicable local browser, visual, feature
+and output gates pass. Stable web dependencies are upgraded with zero current audit
+findings; Astro retains its supported TypeScript 6 checker. Drop #59, Resume #60,
+PDF #232 and IMG #32 are merged/deployed with exact-main checks and 334 exact live
+files. Final live verification passes: 48 Chromium/WebKit cross-editor cases,
+16 PDF transaction/download journeys, eight IMG completion journeys and 12
+pixel-identical IMG outputs. Their remote dev branches include main. Original clean IMG/Resume dev
+checkouts are fast-forwarded and frozen dependencies installed. Roll website-only
+#15 is tested/green and awaits the new branch exception; keep its 11 unrelated native dev commits off main. Yard #49 carries the
+canonical audit and dependency update. Do not equate this with physical acceptance.
+
+Use the persistent isolated family `/Users/sumitsahoo/Developer/.air-mobile-2026-11-09`.
+Its Yard symlink points here; all five product worktrees start at origin/main on
+`codex/air-mobile-2026-11-09`. PDF's original checkout contains unrelated AI work;
+Drop's original dev has unpublished native commits; Roll's dev has native commits
+absent from main. Do not alter or publish them. Sync through the isolated family:
+`node --preserve-symlinks-main <family>/cloakyard/scripts/sync-air-design.mjs --bundle`.
+Fresh evidence, baseline production dist copies and registry snapshots are under
+`<family>/evidence`; task previews used ports 8620–8625 (restart when needed).
+Old `/tmp` evidence is gone; tracked Nov 3 compressed evidence remains. The prior
+component-state product changes are included in this verified pass. Yard #49
+records its own final main/deployment checks in its PR description. Read
+`mobile-simplicity-2026-11-09.md` next.
 
 ### In progress: component-state consistency follow-up — 2026-11-03
 

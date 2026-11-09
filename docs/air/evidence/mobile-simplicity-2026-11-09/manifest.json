@@ -1,0 +1,231 @@
+{
+  "date": "2026-11-09",
+  "coverage": "Browser observations; see the per-view ledger. No physical-device acceptance.",
+  "receipts": [
+    {
+      "source": "gates-summary.json",
+      "file": "gates-summary.json.gz",
+      "sha256": "ab2c4a0cd780d5e36b8b518ac350afef0dbc20414681405446340fa0329d5103"
+    },
+    {
+      "source": "public/comparison.json",
+      "file": "public--comparison.json.gz",
+      "sha256": "9ffb8353bf86dead66094d3244d9098a08c0f0f23cd0f2e6665f835376a20da9"
+    },
+    {
+      "source": "privacy/results.json",
+      "file": "privacy--results.json.gz",
+      "sha256": "bc4a4b0ced604b8321b396c09c9afdf94d72303240abb92518a2b99d9016379e"
+    },
+    {
+      "source": "editors/results.json",
+      "file": "editors--results.json.gz",
+      "sha256": "c4e6640917596dba48f2f84e96473c1fc651f11130b8986f5e47e159abd01caa"
+    },
+    {
+      "source": "editors-webkit/results.json",
+      "file": "editors-webkit--results.json.gz",
+      "sha256": "b548423456027520eb496881852ee2657a424203f21ed17a2db7ebc5cef7e2eb"
+    },
+    {
+      "source": "editors-final-compact/results.json",
+      "file": "editors-final-compact--results.json.gz",
+      "sha256": "b7629ad1c45ab61a9c2856c6b8e9dfc7c9e514cd7c49ddc6304b19a20204a9dc"
+    },
+    {
+      "source": "notices/notices.json",
+      "file": "notices--notices.json.gz",
+      "sha256": "80cdb2b289525036260e59676ef16be88c6f5614afc796e83dc8e670fc52c365"
+    },
+    {
+      "source": "dialogs/results.json",
+      "file": "dialogs--results.json.gz",
+      "sha256": "8ace65fbb0eaa1d74f006329d6c9be595a58c2c6fa3aab8d0b38b19a4ed4509a"
+    },
+    {
+      "source": "presence/results.json",
+      "file": "presence--results.json.gz",
+      "sha256": "7d70eb4a8cbe9a6e9dc6bf63ee0e148bca66d315b2811700a1cd3451ef84ffe3"
+    },
+    {
+      "source": "artwork-chromium/results.json",
+      "file": "artwork-chromium--results.json.gz",
+      "sha256": "edd9bff61217d5ddb29bb0b24f9a455ffa996a3d2e5623422411eadf093df766"
+    },
+    {
+      "source": "artwork-webkit/results.json",
+      "file": "artwork-webkit--results.json.gz",
+      "sha256": "0d18cbb080a4350951ccde318de3f061c4f0c71fe98db7245d3dc03b111069be"
+    },
+    {
+      "source": "img-tools/results.json",
+      "file": "img-tools--results.json.gz",
+      "sha256": "a8a231546257385770f1a5da1847145eb241cba7cf4b64bad96e38e40582c726"
+    },
+    {
+      "source": "img-tools-webkit/results.json",
+      "file": "img-tools-webkit--results.json.gz",
+      "sha256": "f14fa32e89dbc83793f7b063db7a530b8717e9df1a2cd69003b6c7512578fd3b"
+    },
+    {
+      "source": "img-batch/results.json",
+      "file": "img-batch--results.json.gz",
+      "sha256": "fa13997519391734621a3dab03c3ca4ce74c01f4a370ec95d3b882170b69450f"
+    },
+    {
+      "source": "img-entry/entry.json",
+      "file": "img-entry--entry.json.gz",
+      "sha256": "2b4f534fcce963ca2c16ab661849576adc98b603bf190bb6192aef8757151f4b"
+    },
+    {
+      "source": "img-controls/results.json",
+      "file": "img-controls--results.json.gz",
+      "sha256": "93135cb6db3e05001ab0c90a9aa386c7c00b6c2397e9499faf0414c57db71b8c"
+    },
+    {
+      "source": "img-batch-motion.json",
+      "file": "img-batch-motion.json.gz",
+      "sha256": "339c34baac44babc8d9366fe4111a8bfffbb658f5857472397e616f3554091e0"
+    },
+    {
+      "source": "pdf-navigation.json",
+      "file": "pdf-navigation.json.gz",
+      "sha256": "b46b1a0d7f055617994eb3a1b6029cf2110d7fd783140d46bee4e63529efa55d"
+    },
+    {
+      "source": "img-output-parity.json",
+      "file": "img-output-parity.json.gz",
+      "sha256": "5dbbdb3c0f08701b82c15ff42c5a6dcbd79ea6e85b02cf5e8db368a0a46a9fc9"
+    },
+    {
+      "source": "img-compact/results.json",
+      "file": "img-compact--results.json.gz",
+      "sha256": "038a6bf8ed0c34f079c214a6f87d56f3bd3855ce6df01a12f9daf7131bc31eae"
+    },
+    {
+      "source": "img-workspace/results.json",
+      "file": "img-workspace--results.json.gz",
+      "sha256": "997f69f7dccac3c9c8cd018e8ade012e12c52bcf1b8117decf6c3775f565c96c"
+    },
+    {
+      "source": "pdf-actions/results.json",
+      "file": "pdf-actions--results.json.gz",
+      "sha256": "59a121862f598bf7690a25d5b970ced8da0bc8b801bab93593b62de3a64e52b4"
+    },
+    {
+      "source": "pdf-model-summary.json",
+      "file": "pdf-model-summary.json.gz",
+      "sha256": "cdce047d5b3f7d4755519342cce70d47a3ec8aae4806726f8616adef6daf4e47"
+    },
+    {
+      "source": "resume-sections/results.json",
+      "file": "resume-sections--results.json.gz",
+      "sha256": "5003a8e4c05df448be82440ed910580ebf19260f2c6a3389ec5e5b2d4657d341"
+    },
+    {
+      "source": "resume-library/results.json",
+      "file": "resume-library--results.json.gz",
+      "sha256": "8a8ada242c207facd3ac67ff55babf84dd165108a034a78acf505b97b945586a"
+    },
+    {
+      "source": "resume-review/results.json",
+      "file": "resume-review--results.json.gz",
+      "sha256": "50a36e7eaf415df33c00dd2e68e6265e7637ab5f075b16128b77d298220972f5"
+    },
+    {
+      "source": "resume-options/matrix.json",
+      "file": "resume-options--matrix.json.gz",
+      "sha256": "f415cb14d6af05efefe60bf9d27165548daf81a097a469c451cccc0a2b1432a4"
+    },
+    {
+      "source": "light-gpu.json",
+      "file": "light-gpu.json.gz",
+      "sha256": "88577e2a3a37f3dc4e4c1c4a79352641eabb4cba150e0ff4d1b8937f078a503d"
+    },
+    {
+      "source": "registry-snapshot.json",
+      "file": "registry-snapshot.json.gz",
+      "sha256": "07b4d46ec73042cd917ce50395d162ff2e1daa7ffeef96c4af1ecfac4018d48d"
+    },
+    {
+      "source": "live/main-checks.json",
+      "file": "live--main-checks.json.gz",
+      "sha256": "1481674ac648cd7fe1ce3f64846b92bf757d437b0db9455292ded73e5871fa2a"
+    },
+    {
+      "source": "live/pdf.json",
+      "file": "live--pdf.json.gz",
+      "sha256": "fd8d9a5a3dfbcb2a91e43f572c181c78146653b54a9a6299680ec3ef4c61a19f"
+    },
+    {
+      "source": "live/pdf-actions/results.json",
+      "file": "live--pdf-actions--results.json.gz",
+      "sha256": "59a121862f598bf7690a25d5b970ced8da0bc8b801bab93593b62de3a64e52b4"
+    },
+    {
+      "source": "live/editors/results.json",
+      "file": "live--editors--results.json.gz",
+      "sha256": "0a75ffdc26542b0990ac1478814f7b57bf221bca0fe3492bcc131f1f61cbf63f"
+    },
+    {
+      "source": "live/editors-webkit/results.json",
+      "file": "live--editors-webkit--results.json.gz",
+      "sha256": "387e506189ddb7494648ea731da6f76c50a85a3f8e651188ee55a5dcf440aaa8"
+    },
+    {
+      "source": "live/drop.json",
+      "file": "live--drop.json.gz",
+      "sha256": "7a71b77cc482be922af841a0b7a2762d158230d31c268fc7f8c6a932e1b84480"
+    },
+    {
+      "source": "live/resume.json",
+      "file": "live--resume.json.gz",
+      "sha256": "e923e3c584a47fdc4fa854a24c80ef16a536e3c85d70ac488b4195f6bfdd0f11"
+    },
+    {
+      "source": "live/img.json",
+      "file": "live--img.json.gz",
+      "sha256": "f2fb4e1183b737948f420e46c809244c8e107f1172bcc32c47149b35986d9b99"
+    },
+    {
+      "source": "live/img-actions/results.json",
+      "file": "live--img-actions--results.json.gz",
+      "sha256": "038a6bf8ed0c34f079c214a6f87d56f3bd3855ce6df01a12f9daf7131bc31eae"
+    },
+    {
+      "source": "live/img-output-parity.json",
+      "file": "live--img-output-parity.json.gz",
+      "sha256": "b48a48ac6575c2eba4c5dae9183d114479dfcec281bf26b7ca3bc62376a70389"
+    },
+    {
+      "source": "cloakyard-audit.json",
+      "file": "cloakyard-audit.json.gz",
+      "sha256": "c22caff58552b90e26ae05875853701ccb0248d347151481d43a5aa1ffd36897"
+    },
+    {
+      "source": "cloakpdf-audit.json",
+      "file": "cloakpdf-audit.json.gz",
+      "sha256": "5d8dae62518c764baf9eeeaa0f0120dc758e7002829adf919e27844d6ddad6d5"
+    },
+    {
+      "source": "cloakimg-audit.json",
+      "file": "cloakimg-audit.json.gz",
+      "sha256": "b0b9100d898b0e006cec5329f92713d47cf217508ef1cf3e616bd4735c82877d"
+    },
+    {
+      "source": "cloakresume-audit.json",
+      "file": "cloakresume-audit.json.gz",
+      "sha256": "e67cf2495b3190da8f8078efcbe3ff407b5c9bd343eb9f046bd82625f037b71e"
+    },
+    {
+      "source": "cloakdrop-audit.json",
+      "file": "cloakdrop-audit.json.gz",
+      "sha256": "9dd2ef076007a0056148b3ff78efb1e64c4b137a7aff34366cfe729f59a6e304"
+    },
+    {
+      "source": "cloakroll-audit.json",
+      "file": "cloakroll-audit.json.gz",
+      "sha256": "f8cde923135949ae28ce5d03456d4631fe5305cb12cd4f4e31cb8a82981b457f"
+    }
+  ]
+}

@@ -47,7 +47,8 @@
   once. Reopening or browsing the catalogue cannot silently commit a preview.
 - Keep at least 40% of the visible editor height for the photo viewport on phones;
   preserve image aspect ratio and persistent canvas/history. The top toolbar uses
-  the same canvas plane with a small opaque Air action group. All file, mode,
+  the same canvas plane with unboxed compact actions and the shared Export/More
+  actions order; desktop may retain its small opaque action group. All file, mode,
   history, compare, zoom and export operations remain reachable. Respect safe
   areas, browser chrome, software keyboards and enlarged text.
 - Compact editing keeps labelled Adjust / Crop / Retouch / Protect / Add / Tools
