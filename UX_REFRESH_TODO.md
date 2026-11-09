@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — fresh tablet all-view audit and PDF/IMG rollout verified; canonical receipt in #51; Air 1.7.1 component-radius audit passed and product websites merged; canonical release receipt in its PR; Air 1.7.0 mobile simplicity/current-library rollout complete; Air 1.6.0 compact notices deployed to all six websites; full-view editor comparison deployed and production-verified; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — deployed Air 1.7.1 web family; refinement/cleanup/README audit verified and deployed; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,16 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Refinement, cleanup and README consistency — 2026-11-09
+
+- [x] Standardize six product and two website READMEs; validate local links, preserve published anchors and document the shared structure.
+- [x] Review module/dependency and stylesheet candidates; remove confirmed unused IMG styles and redundant configuration, preserve dynamic consumers.
+- [x] Refresh PDF/IMG/Resume editor/PWA/README assets, keeping documentation-only images out of the PWA cache.
+- [x] Complete fresh all-view/all-layout visual comparisons and applicable feature/output checks; retain honest per-view coverage and initial diagnostic failures.
+- [x] Record portable evidence, commit passing bounded pieces, promote five product PRs, verify production and synchronize dev; the canonical PR records its own final receipt.
+
+Evidence: `docs/air/refinement-2026-11-09.md` and the isolated family's `evidence/refinement`.
 
 ## Tablet consistency follow-up — 2026-11-09
 

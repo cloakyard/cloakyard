@@ -25,3 +25,7 @@ Implement one bounded piece, inspect rendered desktop/laptop/mobile light/dark
 states, run all applicable checks and feature tests, record evidence, then commit.
 Never commit a piece with failing required checks. Keep KERR's app and native
 macOS UI unchanged; the family homepage presents KERR only as an exploration link.
+
+Keep product and website READMEs aligned with `docs/README_STANDARD.md`. Validate
+section order and local references with `node scripts/check-readmes.mjs`; use
+`--family /path/to/checkouts` for a family documentation pass.
