@@ -1,6 +1,6 @@
 /** Real-engine presence, interruption and phone workflow audit. No app state is fabricated. */
 import assert from "node:assert/strict";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 const { chromium, webkit } = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
 const out = process.env.AIR_EVIDENCE_DIR || "/tmp/air-presence";
 const urls = (
@@ -62,6 +62,15 @@ for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chr
     // The portable controller: actual composited reversal, repeat close, live preference and disposal.
     if (!process.env.AIR_SKIP_CONTROLLER) {
       const harness = await browser.newPage({ viewport: { width: 390, height: 844 } });
+      // This controlled lifecycle fixture imports the real pinned modules. Built
+      // sites omit the reference gallery; serve only these two fixture modules.
+      for (const name of ["presence.mjs", "motion.mjs"])
+        await harness.route(`**/docs/air/${name}`, async (route) =>
+          route.fulfill({
+            contentType: "text/javascript",
+            body: await readFile(new URL(`../design/air/${name}`, import.meta.url), "utf8"),
+          }),
+        );
       await harness.goto(urls[0]);
       assert(
         await harness.evaluate(() => {
@@ -228,8 +237,8 @@ for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chr
           } else {
             await p.getByRole("button", { name: "Start blank", exact: true }).first().click();
             if (width < 1024) {
-              opener = p.getByRole("button", { name: "More options", exact: true });
-              close = p.getByRole("button", { name: "Close options", exact: true });
+              opener = p.getByRole("button", { name: "More actions", exact: true });
+              close = p.getByRole("button", { name: "Close actions", exact: true });
             } else {
               opener = p.getByRole("button", { name: /^Template:/ });
               close = p.getByRole("button", { name: "Close template library", exact: true });

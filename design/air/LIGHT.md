@@ -24,7 +24,7 @@ vp check
 vp build
 ```
 
-The build is pinned to Shaders 4.0.5. Its core imports the full built-in catalog
+The build is pinned to Shaders 4.0.7. Its core imports the full built-in catalog
 for media sizing; Air uses one custom generator and no media. The build adapter
 excludes that catalog after checking its exact SHA-256 and export interface.
 The published renderer/std code is bundled without local edits. Review this adapter on every dependency upgrade;

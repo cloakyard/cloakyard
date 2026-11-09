@@ -3,6 +3,7 @@
  * Supply PLAYWRIGHT_MODULE, AIR_EDITOR_URLS (PDF,IMG,Resume), AIR_PDF_FIXTURE,
  * AIR_EVIDENCE_DIR and optionally AIR_BROWSER=webkit. No runtime dependency is added. */
 import assert from "node:assert/strict";
+import { compareControlStates } from "./air-component-audit.mjs";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { mkdir, writeFile } from "node:fs/promises";
@@ -63,12 +64,10 @@ const b = await (engine === "webkit"
       ignoreDefaultArgs: ["--hide-scrollbars"],
     }));
 try {
-  for (const [width, height] of [
-    [390, 844],
-    [768, 1024],
-    [1280, 720],
-    [1440, 900],
-  ])
+  for (const [width, height] of JSON.parse(
+    process.env.AIR_PROFILES ||
+      "[[320,568],[375,812],[390,844],[430,932],[844,390],[768,1024],[1024,768],[1280,720],[1366,768],[1440,900],[1920,1080]]",
+  ))
     for (const theme of ["light", "dark"])
       for (const app of ["pdf", "img", "resume"]) {
         const p = await b.newPage({
@@ -217,7 +216,14 @@ try {
         assert.equal(metrics.heading[0].weight, "500", `${app} heading weight`);
         assert.equal(
           metrics.heading[0].size,
-          app === "resume" || width >= 1100 ? "20px" : "14px",
+          (app === "resume" && width >= 1024) ||
+            (await p
+              .locator(
+                '.editor-properties:not([data-compact]),.editor-properties[data-compact="false"]',
+              )
+              .count())
+            ? "20px"
+            : "14px",
           `${app} heading hierarchy`,
         );
         const field = p.locator(selectors.field).first();
@@ -244,10 +250,10 @@ try {
         assert.equal(rows.at(-1).focus.outlineStyle, "solid", `${app} focus outline style`);
         assert.equal(rows.at(-1).focus.shadow, "none", `${app} focus shadow`);
         if (app === "resume") {
-          const more = p.getByRole("button", { name: "More options", exact: true });
+          const more = p.getByRole("button", { name: "More actions", exact: true });
           if (await more.isVisible()) {
             await more.click();
-            await p.getByRole("dialog", { name: "Options", exact: true }).waitFor();
+            await p.getByRole("dialog", { name: "Actions", exact: true }).waitFor();
           } else {
             await p.getByRole("button", { name: /^Template:/ }).click();
             await p.getByRole("dialog", { name: "Choose a template", exact: true }).waitFor();
@@ -259,16 +265,58 @@ try {
         await p.waitForTimeout(400);
         await p.screenshot({ path: `${out}/${app}-${width}-${theme}-dialog.png` });
         const dismiss = p.getByRole("dialog").last().locator(".air-dismiss").first();
+        const modalControls = [{ locator: dismiss, kind: "dismiss", name: "Dialog close" }];
+        if (app !== "resume") {
+          modalControls.push({
+            locator: p.getByRole("dialog").getByRole("button", { name: "Download", exact: true }),
+            kind: "primary",
+            name: "Download",
+          });
+          if (app === "img")
+            modalControls.push({
+              locator: p.getByRole("dialog").getByRole("button", { name: "Copy", exact: true }),
+              kind: "secondary",
+              name: "Copy",
+            });
+        }
+        rows.at(-1).componentStates = await compareControlStates(p, modalControls);
         const box = await dismiss.boundingBox();
         assert(box && box.width >= 44 && box.height >= 44, `${app} dismiss target`);
         await dismiss.click();
         await p.getByRole("dialog").waitFor({ state: "hidden" });
         assert(await field.isVisible(), `${app} workspace lost after closing dialog`);
+        const editorControls = [{ locator: field, kind: "field", name: "Editor text field" }];
+        if (app === "resume")
+          editorControls.push({
+            locator: p.getByRole("button", { name: "Add photo", exact: true }),
+            kind: "secondary",
+            name: "Add photo",
+          });
+        rows.at(-1).componentStates.push(...(await compareControlStates(p, editorControls)));
+        const differences = rows.at(-1).componentStates.flatMap((control) =>
+          control.states.flatMap((state) =>
+            state.differences.map((difference) => ({
+              control: control.name,
+              state: state.state,
+              ...difference,
+            })),
+          ),
+        );
+        rows.at(-1).componentDifferences = differences;
+        if (!process.env.AIR_REPORT_ONLY)
+          assert.deepEqual(differences, [], `${app} ${width} ${theme}: shared component states`);
         await p.close();
-        console.log(app, width, theme);
+        console.log(
+          app,
+          width,
+          theme,
+          differences.length
+            ? `${differences.length} component differences`
+            : "component states match",
+        );
       }
   // Compare computed control colours and font roles, not app-specific document composition.
-  for (const width of [390, 768, 1280, 1440])
+  for (const width of new Set(rows.map((row) => row.width)))
     for (const theme of ["light", "dark"]) {
       const group = rows.filter((r) => r.width === width && r.theme === theme);
       for (const other of group.slice(1))

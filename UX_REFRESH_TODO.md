@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.6.0 compact notices deployed to all six websites; full-view editor comparison deployed and production-verified; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.7.0 mobile simplicity and current-library audit passed, rollout in progress; Air 1.6.0 compact notices deployed to all six websites; full-view editor comparison deployed and production-verified; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,27 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Mobile simplicity, motion and dependency audit — 2026-11-09
+
+- [x] Capture baseline phone/tablet/landscape editors in both themes; preserve built output for comparison.
+- [x] Implement shared compact header/Actions geometry, simpler PDF completion and Resume Preview/Edit.
+- [x] Verify all tools and draft/apply/cancel/export behavior, focus and short-screen usability.
+- [x] Upgrade stable web dependencies and document any demonstrated compatibility exception.
+- [x] Audit all six websites, every applicable view, motion state and viewport class in both themes.
+- [ ] Record coverage/evidence, commit passing bounded pieces, update dev and finish the authorized PR rollout.
+
+Evidence: [current audit](docs/air/mobile-simplicity-2026-11-09.md). Browser/visual gates pass; Drop #59, Resume #60, PDF #232 and IMG #32 are deployed and dev updated (334 exact live files). Roll #15 awaits the website-only branch exception; Yard #49 carries the canonical record.
+
+## Component-state consistency follow-up — 2026-11-03
+
+- [x] Compare actual component states to the isolated portable Air reference, across all eleven viewport sizes, both themes and Chrome/WebKit.
+- [x] Retire IMG's divergent button/field skins; inspect custom selectors, focus, scrolling and compact controls across the editors.
+- [x] Repeat all-view public/privacy/recovery, PWA, editor-tool, secondary-flow and overlay audits, with an explicit per-view/component ledger.
+- [x] Verify feature/output gates, remove obsolete references, record evidence, commit passing pieces and complete the authorized dev → main rollout; the canonical closeout is included in Yard #49.
+- [x] Keep physical-device, real browser-zoom, software keyboard/IME and spoken-assistive acceptance explicit.
+
+Evidence: [component audit](docs/air/component-consistency-2026-11-03.md). IMG #31, Resume #59 and PDF #231 are included in the production-verified Nov 9 follow-up; Yard #49 carries the canonical closeout.
 
 ## Full-view editor comparison — 2026-11-03
 

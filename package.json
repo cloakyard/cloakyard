@@ -19,7 +19,7 @@
     "test:air-links": "node scripts/test-air-links.mjs"
   },
   "dependencies": {
-    "lucide-react": "1.61.0",
+    "lucide-react": "1.70.0",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },
@@ -27,15 +27,15 @@
     "@base-ui/react": "1.9.0",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "@vitejs/plugin-react": "6.1.2",
-    "shaders": "4.0.5",
+    "@vitejs/plugin-react": "6.3.0",
+    "shaders": "4.0.7",
     "typescript": "7.0.2",
     "vite": "catalog:",
     "vite-plus": "catalog:",
-    "wrangler": "4.152.0"
+    "wrangler": "4.158.0"
   },
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@12.15.0"
+  "packageManager": "pnpm@12.18.0"
 }
