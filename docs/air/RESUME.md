@@ -7,6 +7,29 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Completed: refinement, cleanup and README consistency — 2026-11-09
+
+All six websites and all applicable working/secondary views have fresh software
+verification. Read `refinement-2026-11-09.md` and its coverage ledger. Eight READMEs
+share `docs/README_STANDARD.md`; 114 local references pass. IMG removes six unused
+styles/redundant Knip configuration; captures are refreshed. PDF and Resume visible
+labels now follow Air sentence case. Drop/Roll CI uses the declared npm version.
+Air remains 1.7.1. Native implementation and original unrelated PDF AI work are
+untouched. The raw evidence remains in the isolated family’s `evidence/refinement`;
+portable compressed receipts and reviewed captures are tracked here.
+
+Drop #61, Roll #17, PDF #235, IMG #35 and Resume #62 are merged/deployed;
+remote dev includes main and exact-main checks pass. Roll's native tree is unchanged.
+Production matches 334 exact files plus Roll's ten files (three existing Cloudflare
+HTML injections normalized). The six-site public/privacy smoke passes 48 journeys;
+Resume's final live library copy passes eight loaded states. The canonical PR
+records its own post-merge CI, live asset and dev-sync receipts.
+
+Keep the isolated family and raw/portable evidence for reproduction. Task previews
+used 8820–8825 and are stopped after final verification; restart as needed. Preserve
+physical-device/OS input/IME/assistive/print and separate product acceptance gates.
+Do not repeat completed software matrices or publish unrelated native/PDF AI work.
+
 ### Completed: tablet consistency follow-up — 2026-11-09
 
 The fresh four-profile tablet audit passes across all six websites, including
