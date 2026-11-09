@@ -15,10 +15,11 @@ The registry drives stable expanding shells; one faint next cell completes the
 3.74-second current sequence. Future counts remain under 4.54 seconds. Air 1.7.2
 records the motif; shared control/runtime assets are unchanged in all five products.
 
-The implementation, model regression and initial checks pass. Fresh all-view
-browser audits are running in the persistent isolated family; raw evidence is in
-`evidence/cube-growth` and previews use 8820–8825. Finish the coverage/visual review,
-record evidence, commit passing pieces and use the existing PR rollout authority.
+The implementation, model regression and all 24 fresh audit suites pass, with
+representative all-view visual review recorded in `growing-mark-2026-11-09.md`.
+Raw evidence is in `evidence/cube-growth`; previews use 8820–8825. Product docs
+are committed in PDF #236, IMG #36, Resume #63, Drop #62 and Roll #18. Finish their
+hosted checks/merges and the canonical PR, verify production and synchronize dev.
 Preserve the original PDF AI and Drop/Roll native work and physical acceptance gates.
 
 ### Completed: refinement, cleanup and README consistency — 2026-11-09

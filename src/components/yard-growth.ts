@@ -11,11 +11,10 @@ export function yardGrowth(count: number) {
       }
     }
   }
-  const points = cells.slice(0, count + 1).map(({ x, y, z }, order) => ({
+  const points = cells.slice(0, count + 1).map(({ x, y, z }) => ({
     x: (x - y) * 50,
     y: (x + y) * 25 - z * 58,
     depth: x + y + z * 100,
-    order,
   }));
   const left = Math.min(...points.map((p) => p.x)) - 48;
   const right = Math.max(...points.map((p) => p.x)) + 48;

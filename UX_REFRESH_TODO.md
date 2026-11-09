@@ -29,7 +29,7 @@ The separately requested Drop installer now uses Air.
 
 - [x] Replace the five bespoke app illustrations and repeated mark with registry-driven isometric cubes and one future cell.
 - [x] Keep sequential growth bounded, static fallbacks, completion-only replay and responsive containment; verify future app counts.
-- [ ] Finish browser/motion checks and fresh all-view family refinement, recording representative visual review and full software matrices.
+- [x] Finish browser/motion checks and fresh all-view family refinement, recording representative visual review and full software matrices.
 - [ ] Publish Air 1.7.2 portable documents, passing bounded commits and individual PRs; verify deployments and update dev.
 
 Evidence: `docs/air/growing-mark-2026-11-09.md`; raw data in the isolated family's `evidence/cube-growth`.

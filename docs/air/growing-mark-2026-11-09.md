@@ -1,6 +1,6 @@
 # Growing family mark — 2026-11-09
 
-Status: implementation and focused gates verified; broader refinement in progress.
+Status: implementation and full software refinement verified; PR rollout follows.
 Air 1.7.2 records this homepage motif. Shared controls and all five product runtimes
 remain unchanged; portable contract documents and inventories adopt the new version.
 
@@ -39,7 +39,7 @@ the existing hidden-artwork treatment; reduced-motion visits retain the still.
 ## Focused verification
 
 Format/lint, types, production build, Knip and portable contract checks pass.
-The entry remains below its 85 kB gzip ceiling (76.01 kB). Sixteen pure tests pass,
+The entry remains below its 85 kB gzip ceiling (76.00 kB). Sixteen pure tests pass,
 including the new growth invariant. The README check passes eight documents and
 114 local references. All public links retain neutral ink in 248 state/layout and
 92 keyboard checks.
@@ -65,11 +65,43 @@ fallbacks. Device feel remains subject to physical acceptance, not a screenshot 
 
 ## Coverage and acceptance
 
-The all-view refinement is still running. Its final ledger will distinguish fresh
-geometry/behavior matrices, representative visual review and prior same-day output
-and unit evidence for unchanged product code. It includes public/reading/recovery
-pages, all editor tools/sections, standalone/batch/library flows, dialogs/notices,
-custom controls and edge states in both themes and all viewport classes.
+All 24 fresh audit suites pass. The final cleanup removes an unused model field;
+both browser engines then repeat the Yard matrix (22 layouts, four fallbacks,
+one lifecycle and one cold-stylesheet journey each). The complete product source,
+styles, dependencies and runtime bundle files are unchanged from the earlier
+same-day verified builds. Their unit, output-parity and full-engine tool evidence
+in [the refinement ledger](refinement-2026-11-09.md) remains applicable; it is not
+reported as newly rerun here. Fresh format/lint/Astro and portable checks pass.
+
+| View / state                                  | Fresh coverage and result                                                                                                                                                                                                     |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Six landing pages, headers, footers and menus | 648 layout observations and 390 interactions; 120 home/privacy captures across five profiles, both themes. Four viewport classes visually compared.                                                                           |
+| Privacy, recovery and secondary reading pages | 288 secondary shell observations; 408 policy layouts and 22 return/contents journeys, including enlarged text.                                                                                                                |
+| PDF/IMG/Resume editors and common controls    | 24 Chromium + 24 WebKit cases at 390/768/1280/1440, both themes; editor, active controls, Actions/Export and focus/hover compared.                                                                                            |
+| Dialogs, update notices and scrolling         | 264 dialog cases and 396 notice states, including classic scrollbar emulation, short screens and enlarged text. 162 notice captures.                                                                                          |
+| Motion                                        | 74 presence cases; both engines each pass 132 six-site moving layouts, 24 fallbacks, six lifecycle and six delayed-stylesheet journeys. Yard's focused static/arrival and final-engine reruns also pass.                      |
+| IMG all 26 tools and alternate states         | 480 observations across four viewport classes and both themes; no errors, failures or unexpected requests. Fresh representative tool sheets compared. Prior same-day complete WebKit/enlarged-text matrix remains applicable. |
+| IMG entry and batch                           | 204 entry layouts, eight entry checks and three fidelity checks; 176 batch observations. Previous same-day canvas, transaction and pixel-output proofs apply to unchanged code.                                               |
+| PDF all editor tools and collections          | 176 registered tool selections, 148 navigation layouts and 88 collection cases; 16 Chromium/WebKit phone apply/cancel/download journeys.                                                                                      |
+| PDF standalone and Ask entry                  | 260 empty/selected/loading observations across seven tools, two engines, five profiles and both themes. Fully loaded Ask and AI dialog edge states retain earlier same-day evidence; no new inference claim.                  |
+| Resume all 13 content sections                | 1,666 empty/populated observations, 16 profiles, both themes and 16/32px text, with 16 contrast pairs.                                                                                                                        |
+| Resume library, review and controls           | 386 library, 960 review, 192 options, 256 dates, 320 logo/photo and 128 contact/language observations; empty, busy, failure and populated states included.                                                                    |
+| Links, documentation and contract             | 248 link states and 92 keyboard checks; eight READMEs/114 local references; eight synchronized Air 1.7.2 specifications and five portable product bundles.                                                                    |
+
+Representative visual review covers landing/header/footer and privacy compositions,
+all three editors, compact tools, dialogs/notices, IMG tools, PDF standalone flows
+and Resume sections/library/review/options. The full machine matrices are broader
+than the sampled images; this does not claim human inspection of every screenshot.
+Equivalent controls follow the same Air roles; task-specific composition and exported
+content remain intentional. No further product UI change was warranted by this pass.
+
+Portable receipts and selected reviewed images are in the
+[evidence manifest](evidence/growing-mark-2026-11-09/manifest.json).
+Initial command diagnostics are retained: two Astro roots have no Vite workspace,
+a direct canonical sync check resolved original siblings rather than the isolated
+family, and the README family checker requires an explicit checkout directory.
+Correct package tools, symlink-preserving paths and the explicit family argument
+pass. These setup errors are not accepted as passing product gates.
 
 Raw evidence: `/Users/sumitsahoo/Developer/.air-mobile-2026-11-09/evidence/cube-growth`.
 This work does not close physical Windows/iPhone/iPad, actual browser zoom, OS
