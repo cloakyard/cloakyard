@@ -13,7 +13,10 @@ const properties = [
   "borderBottomColor",
   "borderLeftColor",
   "borderTopWidth",
-  "borderRadius",
+  "borderTopLeftRadius",
+  "borderTopRightRadius",
+  "borderBottomRightRadius",
+  "borderBottomLeftRadius",
   "boxShadow",
   "opacity",
 ];

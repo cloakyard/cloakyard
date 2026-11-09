@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.6.0 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.7.1 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -87,7 +87,7 @@ completion, and do not push or deploy without authorization.
 
 ## Dead-code audit
 
-Run `npx --yes knip@6.43.0` for the declared web graph in `knip.json`. The pinned
+Run `npx --yes knip@6.44.2` for the declared web graph in `knip.json`. The pinned
 CLI can also be supplied externally; no runtime package is required. Manual audit
 commands and portable Air library entries are deliberate public entry points.
 

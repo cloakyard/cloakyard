@@ -4,8 +4,7 @@ Status: implementation, all applicable browser gates and visual review passed.
 Drop #59, Resume #60, IMG #32 and PDF #232 are deployed with exact-main checks
 and 334 exact live files; their remote dev branches include main. Yard #49 carries
 this canonical update and records its own post-merge verification in its description.
-Roll website-only #15 awaits the branch exception; its unrelated native dev
-history remains excluded. Do not infer physical-device acceptance.
+Roll website-only #15 is merged at `f81c19f`, with passing exact-main Website/Cloudflare checks and production verification (seven raw files, three existing Cloudflare HTML-injection exceptions). Dev `6ee0140` includes main, with its native tree unchanged and unrelated native history excluded. Do not infer physical-device acceptance.
 
 Scope: all six websites and all applicable views. Native Drop/Roll/KERR UI is
 excluded. Original PDF AI changes and unpublished native branches remain untouched.

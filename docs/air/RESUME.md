@@ -7,7 +7,31 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### In progress: mobile simplicity, motion and dependencies — 2026-11-09
+### Completed: component corners — 2026-11-09
+
+The approved Roll #15 merge is complete. Air 1.7.1 now defines corner roles for
+all web apps. Drop #60 (`8b683e9`), Roll #16 (`db7469b`), Resume #61 (`f556c92`),
+PDF #233 (`e3dbd46`) and IMG #33 (`6decd7e`) are merged. Their remote dev branches
+include main; Roll dev `0c376c9` preserves its native tree and unrelated native
+commits remain off main. Original clean IMG/Resume dev checkouts are fast-forwarded.
+Yard's canonical PR records its own final main/deployment receipt after merge.
+
+All local gates pass: all-view layouts in both themes, 1,560 effective Chromium
+and 512 WebKit IMG tool observations, shared component states, real-worker notices,
+classic scrollbars, transactions and output parity. The corner checker reports
+zero failures in 595 distinct checked entries. Source/visual review documents
+functional shapes and output/artwork exceptions. Read
+`component-corners-2026-11-09.md` and its portable evidence manifest next.
+
+Keep the isolated family `/Users/sumitsahoo/Developer/.air-mobile-2026-11-09` for
+reproducible evidence. Raw captures/receipts are in `evidence/radii`; previews used
+8720–8725 (restart when needed). No original PDF AI work or Drop/Roll native history
+was published. Physical-device/IME, actual browser zoom and spoken assistive
+acceptance remain separate. Do not repeat the completed component implementation
+or call these automated checks physical sign-off. The separate acceptance backlog
+is still in `UX_REFRESH_TODO.md`.
+
+### Completed: mobile simplicity, motion and dependencies — 2026-11-09
 
 The latest user asks for simpler consistent mobile editors, a full-view visual and
 motion audit of all six websites, and current dependencies. Air 1.7.0 and compact
@@ -19,7 +43,7 @@ files. Final live verification passes: 48 Chromium/WebKit cross-editor cases,
 16 PDF transaction/download journeys, eight IMG completion journeys and 12
 pixel-identical IMG outputs. Their remote dev branches include main. Original clean IMG/Resume dev
 checkouts are fast-forwarded and frozen dependencies installed. Roll website-only
-#15 is tested/green and awaits the new branch exception; keep its 11 unrelated native dev commits off main. Yard #49 carries the
+#15 is merged under the explicit exception; its unrelated native dev commits remain off main. Yard #49 carries the
 canonical audit and dependency update. Do not equate this with physical acceptance.
 
 Use the persistent isolated family `/Users/sumitsahoo/Developer/.air-mobile-2026-11-09`.
