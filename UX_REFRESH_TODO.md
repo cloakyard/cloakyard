@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.7.0 mobile simplicity and current-library audit passed, rollout in progress; Air 1.6.0 compact notices deployed to all six websites; full-view editor comparison deployed and production-verified; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.7.1 component-radius audit passed and product websites merged; canonical release receipt in its PR; Air 1.7.0 mobile simplicity/current-library rollout complete; Air 1.6.0 compact notices deployed to all six websites; full-view editor comparison deployed and production-verified; Air 1.5.0 coherent surface motion deployed and production-verified; Air 1.4.0 canvas-first product layout deployed and production-verified; Air 1.3.3 clear editor actions deployed and production-verified; CloakIMG touch workspace deployed and production-verified; CloakIMG deeper tool-state audit deployed and production-verified; CloakIMG editor re-audit deployed; Air 1.3.2 six-app consistency/vector landscape deployed and production-verified; Air 1.3.1 replay and cold stylesheet correction deployed and production-verified; Air 1.2.7 Safari startup deployed and production-verified; Air 1.2.6 family gathering/support and 1.2.5 privacy deployed and production-verified for five active sites; landing playback controls removed; remaining export/device/product acceptance open; CloakIMG Air deployed and production-verified** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -25,6 +25,16 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Component corners — 2026-11-09
+
+- [x] Complete the approved Roll #15 website-only merge; update dev without publishing native history.
+- [x] Audit source radius roles and rendered editor/tool, secondary-flow and public controls.
+- [x] Define Air 1.7.1 corner-role rules and sync standalone bundles; correct IMG custom roles and PDF's small-phone calendar.
+- [x] Finish the all-layout/light-dark matrices and visual review, capture the per-view ledger and output evidence.
+- [x] Commit passing pieces, promote the authorized website changes and verify main/deployment/dev synchronization; the canonical PR records its own final receipt.
+
+Evidence: `docs/air/component-corners-2026-11-09.md` and its portable manifest; raw observations remain in the isolated family's `evidence/radii`.
+
 ## Mobile simplicity, motion and dependency audit — 2026-11-09
 
 - [x] Capture baseline phone/tablet/landscape editors in both themes; preserve built output for comparison.
@@ -32,9 +42,9 @@ The separately requested Drop installer now uses Air.
 - [x] Verify all tools and draft/apply/cancel/export behavior, focus and short-screen usability.
 - [x] Upgrade stable web dependencies and document any demonstrated compatibility exception.
 - [x] Audit all six websites, every applicable view, motion state and viewport class in both themes.
-- [ ] Record coverage/evidence, commit passing bounded pieces, update dev and finish the authorized PR rollout.
+- [x] Record coverage/evidence, commit passing bounded pieces, update dev and finish the authorized PR rollout.
 
-Evidence: [current audit](docs/air/mobile-simplicity-2026-11-09.md). Browser/visual gates pass; Drop #59, Resume #60, PDF #232 and IMG #32 are deployed and dev updated (334 exact live files). Roll #15 awaits the website-only branch exception; Yard #49 carries the canonical record.
+Evidence: [current audit](docs/air/mobile-simplicity-2026-11-09.md). Browser/visual gates pass; Drop #59, Resume #60, PDF #232 and IMG #32 are deployed and dev updated (334 exact live files). Roll #15 is merged under the explicit website-only exception, production verified, and native dev updated without publishing native work; Yard #49 is merged and carries the canonical record.
 
 ## Component-state consistency follow-up — 2026-11-03
 

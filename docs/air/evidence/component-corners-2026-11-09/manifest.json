@@ -1,0 +1,462 @@
+{
+  "date": "2026-11-09",
+  "contract": "Air 1.7.1 / 9f46b7f494fa",
+  "coverage": "Browser observations and reviewed captures. See per-view ledger for reruns, exceptions and untested physical-device acceptance.",
+  "notes": [
+    "Original IMG receipts retain ten text-reflow and eighteen nested-button clipping failures; the effective receipt uses passing corrected reruns.",
+    "Roll raw HTML mismatch is the existing identified Cloudflare challenge injection; normalized receipt verifies every remaining byte.",
+    "Main deployment receipts are supplemented by final release PR descriptions."
+  ],
+  "receipts": [
+    {
+      "source": "source-hits.txt",
+      "file": "source-hits.txt.gz",
+      "sha256": "f2b189e790d4078e98b62887af624e429d5ea7893e658cb78307d7d01ad0af26"
+    },
+    {
+      "source": "radius-report.json",
+      "file": "radius-report.json.gz",
+      "sha256": "a314e2b14e7c9b4d04b7646e56d47b0023e424088d00a6d3cda0f4996628c85e"
+    },
+    {
+      "source": "source-review.json",
+      "file": "source-review.json.gz",
+      "sha256": "87167aabd97b528c644a6797d94f0108294b48d51bef5fedcfb6b731f168261d"
+    },
+    {
+      "source": "img-tools-effective.json",
+      "file": "img-tools-effective.json.gz",
+      "sha256": "4a50db9fd54bbe0d9c5f72f0073cee7155283ddaca16ae3db5813f22a33c62dd"
+    },
+    {
+      "source": "public-shots/comparison.json",
+      "file": "public-shots--comparison.json.gz",
+      "sha256": "9ffb8353bf86dead66094d3244d9098a08c0f0f23cd0f2e6665f835376a20da9"
+    },
+    {
+      "source": "privacy-shots/results.json",
+      "file": "privacy-shots--results.json.gz",
+      "sha256": "bc4a4b0ced604b8321b396c09c9afdf94d72303240abb92518a2b99d9016379e"
+    },
+    {
+      "source": "editors-chromium/results.json",
+      "file": "editors-chromium--results.json.gz",
+      "sha256": "c1ed45b3c03e826bf050335ea2cde2af3d4cd4ccb52feb7fd8b4dada14e61d0a"
+    },
+    {
+      "source": "editors-webkit/results.json",
+      "file": "editors-webkit--results.json.gz",
+      "sha256": "b6e8267290e342d8c2dd8e8178966844f1bf28aecb855b0f944223047601a894"
+    },
+    {
+      "source": "editors-final/results.json",
+      "file": "editors-final--results.json.gz",
+      "sha256": "6da375a9d6c7f7a0c1935264c125b3a0d7ed26ad3e1816d6d721c8e0fc19ec9b"
+    },
+    {
+      "source": "editors-final-webkit/results.json",
+      "file": "editors-final-webkit--results.json.gz",
+      "sha256": "8cd5873f52dab1f3b332e6a5b774b23f502e864da2049dfa2582781ec0f0a6b5"
+    },
+    {
+      "source": "notices/notices.json",
+      "file": "notices--notices.json.gz",
+      "sha256": "fbe3c6de360a964f0a1a154adaa0a2ab266af1359137f4c4df59d5ec93e70db3"
+    },
+    {
+      "source": "dialogs/results.json",
+      "file": "dialogs--results.json.gz",
+      "sha256": "ff61652ae609913c6491c96f27a3f7fd4c5d8422176c372def40626a1991e73c"
+    },
+    {
+      "source": "presence/results.json",
+      "file": "presence--results.json.gz",
+      "sha256": "6cb711c7dee91fc179922bac3ab4d074dfe2423d660eef66f944e9bcb9675d94"
+    },
+    {
+      "source": "calendar-built/results.json",
+      "file": "calendar-built--results.json.gz",
+      "sha256": "c325a53fb2ab951845938b82a34e9e489678d25b4fb4b2f341ecc4129a305ef0"
+    },
+    {
+      "source": "library-clip/results.json",
+      "file": "library-clip--results.json.gz",
+      "sha256": "ec21cd2d42178b190676b1c275adf5b2c0c4d5300dd822776dfe9041c042e121"
+    },
+    {
+      "source": "release-editors/results.json",
+      "file": "release-editors--results.json.gz",
+      "sha256": "cd20469c6fd4d632579dd0c2c0be22a54a071788fc508aaf2862e8e828002678"
+    },
+    {
+      "source": "live/public-smoke/results.json",
+      "file": "live--public-smoke--results.json.gz",
+      "sha256": "fcedba1975cd91de497214593b78792e61a392937492be4dab288d3b6555db1a"
+    },
+    {
+      "source": "img-tools-shots/results.json",
+      "file": "img-tools-shots--results.json.gz",
+      "sha256": "a52a39c531949fa963b194e822bc80e0adf6cca126f013187d1d1a51ed513823"
+    },
+    {
+      "source": "img-tools-webkit-shots/results.json",
+      "file": "img-tools-webkit-shots--results.json.gz",
+      "sha256": "f14fa32e89dbc83793f7b063db7a530b8717e9df1a2cd69003b6c7512578fd3b"
+    },
+    {
+      "source": "img-reflow-final-shots/results.json",
+      "file": "img-reflow-final-shots--results.json.gz",
+      "sha256": "60bd82c17ae139407938b38c2364658a0ce536d3fcddb1ae9b115b4f23ecc101"
+    },
+    {
+      "source": "img-reflow-webkit-shots/results.json",
+      "file": "img-reflow-webkit-shots--results.json.gz",
+      "sha256": "607f1c97bfb93d911ce50aa4c0f9876a6ba1d9f39a8c7e263f4cfa64f8f23ae1"
+    },
+    {
+      "source": "img-remove-final-shots/results.json",
+      "file": "img-remove-final-shots--results.json.gz",
+      "sha256": "eb9373e1ca9d6a17ccf57c2cdf6dfade1416c822eaf739b217673f938f192dd5"
+    },
+    {
+      "source": "img-remove-final-webkit-shots/results.json",
+      "file": "img-remove-final-webkit-shots--results.json.gz",
+      "sha256": "2c92539c837fa814b978770d49eb8180e7eca2f1f5aa17e34aee9e660b18b198"
+    },
+    {
+      "source": "img-labels-final-shots/results.json",
+      "file": "img-labels-final-shots--results.json.gz",
+      "sha256": "59fba890c912d3eb77c8a8f590042418458df59f7920bc06f4601ce99d8570cb"
+    },
+    {
+      "source": "img-labels-fixed-shots/results.json",
+      "file": "img-labels-fixed-shots--results.json.gz",
+      "sha256": "691effca5a4187d9eadd5a6f112c46a2a401d515aa8816df69b269ae048a21d8"
+    },
+    {
+      "source": "img-text-final-shots/results.json",
+      "file": "img-text-final-shots--results.json.gz",
+      "sha256": "691effca5a4187d9eadd5a6f112c46a2a401d515aa8816df69b269ae048a21d8"
+    },
+    {
+      "source": "img-crop-final-shots/results.json",
+      "file": "img-crop-final-shots--results.json.gz",
+      "sha256": "909839807ede95e6f01430fff19b8c2085f2396a7c7c815d65db0e636d506c74"
+    },
+    {
+      "source": "img-crop-final-webkit-shots/results.json",
+      "file": "img-crop-final-webkit-shots--results.json.gz",
+      "sha256": "97dba093dfbabd73dd06c53d7fa936eb5512c057a68ec3d439a2342a5304e0bb"
+    },
+    {
+      "source": "img-inspector-fixed-shots/results.json",
+      "file": "img-inspector-fixed-shots--results.json.gz",
+      "sha256": "68f69d590339b6725a1bd5589ce4e48dd7a203ec58c0ddeef5e6d484239db651"
+    },
+    {
+      "source": "img-inspector-webkit-shots/results.json",
+      "file": "img-inspector-webkit-shots--results.json.gz",
+      "sha256": "b4a567d43d1c0f717bd5e11d2f7a20df96dca014253a1741449851b8ce6b303d"
+    },
+    {
+      "source": "img-entry/entry.json",
+      "file": "img-entry--entry.json.gz",
+      "sha256": "e45f3d1351bea26d633299842a2efcb30f90699bd50162f2ebddbd50189cbbbb"
+    },
+    {
+      "source": "img-batch/results.json",
+      "file": "img-batch--results.json.gz",
+      "sha256": "fa13997519391734621a3dab03c3ca4ce74c01f4a370ec95d3b882170b69450f"
+    },
+    {
+      "source": "img-feedback-final-shots/results.json",
+      "file": "img-feedback-final-shots--results.json.gz",
+      "sha256": "bd926c20ba2777586957ee84eecf2879ad026d012f8216215f101df126c53d8e"
+    },
+    {
+      "source": "img-actions-final/results.json",
+      "file": "img-actions-final--results.json.gz",
+      "sha256": "038a6bf8ed0c34f079c214a6f87d56f3bd3855ce6df01a12f9daf7131bc31eae"
+    },
+    {
+      "source": "img-output-final-parity.json",
+      "file": "img-output-final-parity.json.gz",
+      "sha256": "ed52572c4d7f5c4f0ceb7391e22fc9026b7c4b84b44d63a106a0d053c2210a0f"
+    },
+    {
+      "source": "resume-section-shots/results.json",
+      "file": "resume-section-shots--results.json.gz",
+      "sha256": "9594667b7efa78abd62b184a546cf8ef3a5846384cc5946544f5ac5f8ec8fad6"
+    },
+    {
+      "source": "resume-library-shots/results.json",
+      "file": "resume-library-shots--results.json.gz",
+      "sha256": "8a8ada242c207facd3ac67ff55babf84dd165108a034a78acf505b97b945586a"
+    },
+    {
+      "source": "resume-review-shots/results.json",
+      "file": "resume-review-shots--results.json.gz",
+      "sha256": "724f788b2cfa8899b3c921d6895349da875e8e81537366722b0168bafd03b5ac"
+    },
+    {
+      "source": "resume-options-shots/matrix.json",
+      "file": "resume-options-shots--matrix.json.gz",
+      "sha256": "f415cb14d6af05efefe60bf9d27165548daf81a097a469c451cccc0a2b1432a4"
+    },
+    {
+      "source": "pdf-collections-final-shots/cloakpdf-air-collections-1y5Rqa/collections.json",
+      "file": "pdf-collections-final-shots--cloakpdf-air-collections-1y5Rqa--collections.json.gz",
+      "sha256": "0adef1431860441a1ca53fd7acbd8f88b92fbc5ad050d792e53420ae3a7ec578"
+    },
+    {
+      "source": "pdf-calendar-final-shots/cloakpdf-air-review-qHfIgZ/metadata-calendar.json",
+      "file": "pdf-calendar-final-shots--cloakpdf-air-review-qHfIgZ--metadata-calendar.json.gz",
+      "sha256": "6986976593454b8c4bae56938024e1a850268985d97ae66464f6d9a14df9fa6f"
+    },
+    {
+      "source": "roll-release.json",
+      "file": "roll-release.json.gz",
+      "sha256": "6b32f559445eea31df0c917e73e4ca8d71bce257847af06e8d48a9e06db961f5"
+    },
+    {
+      "source": "live/main-checks.json",
+      "file": "live--main-checks.json.gz",
+      "sha256": "5a50865d0dc70d4b04a87d6a3f013f6701129498861c330778c69fccb5e5e6c6"
+    },
+    {
+      "source": "live/drop.json",
+      "file": "live--drop.json.gz",
+      "sha256": "b08925eca3d15681066c4c1f61cf7939f49c8ffb1d5d7be0f48391e899e10120"
+    },
+    {
+      "source": "live/roll.json",
+      "file": "live--roll.json.gz",
+      "sha256": "540e5bba592d20b81f82c82ff931ebda5cae0b6f783be6a710441f0ccad43769"
+    },
+    {
+      "source": "live/roll-normalized.json",
+      "file": "live--roll-normalized.json.gz",
+      "sha256": "10ec0076d2a75c1af27c2f0f2ffdeb6c8ab405711852e982dc3be72e0d8aaf80"
+    },
+    {
+      "source": "live/resume.json",
+      "file": "live--resume.json.gz",
+      "sha256": "0ad04bb3e54792b0d0c5ed760d53a5a279aa82663782f65c96d0bf1b01990c91"
+    },
+    {
+      "source": "live/pdf.json",
+      "file": "live--pdf.json.gz",
+      "sha256": "cac0574b7c55822f0631a1532bd8f82098b07b7c45602e0dd3d816e50a035d2b"
+    },
+    {
+      "source": "live/img.json",
+      "file": "live--img.json.gz",
+      "sha256": "00745329d2b2bd70304f97c9d1e32c2a8a0fc81b09b9ea77cbf6bf1a54872878"
+    },
+    {
+      "source": "live/img-output-parity.json",
+      "file": "live--img-output-parity.json.gz",
+      "sha256": "ed52572c4d7f5c4f0ceb7391e22fc9026b7c4b84b44d63a106a0d053c2210a0f"
+    },
+    {
+      "source": "live/img-actions/results.json",
+      "file": "live--img-actions--results.json.gz",
+      "sha256": "038a6bf8ed0c34f079c214a6f87d56f3bd3855ce6df01a12f9daf7131bc31eae"
+    },
+    {
+      "source": "cloakpdf-dead.log",
+      "file": "cloakpdf-dead.log.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "cloakresume-dead.log",
+      "file": "cloakresume-dead.log.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "drop-final-build.log",
+      "file": "drop-final-build.log.gz",
+      "sha256": "d6b57a01bef238915c9d40173c1c4edfc80fb20a46162118d549c790cf0d9d8c"
+    },
+    {
+      "source": "drop-final-check.log",
+      "file": "drop-final-check.log.gz",
+      "sha256": "6b25ce66c7758695416931ee00419c72340497ba992f5c24e594f1444fb6b648"
+    },
+    {
+      "source": "drop-final-design.log",
+      "file": "drop-final-design.log.gz",
+      "sha256": "6571cf02a1fcdc2b4a1137e3adb4981c36acdf9862baab9810872222fbb30ca3"
+    },
+    {
+      "source": "img-feedback-final.log",
+      "file": "img-feedback-final.log.gz",
+      "sha256": "8a862980ce7ad40441db373bb786abbbff74b9079c2a5efc564c7c01a76ad5c0"
+    },
+    {
+      "source": "img-final-build.log",
+      "file": "img-final-build.log.gz",
+      "sha256": "de54fc69e055088037d5839a6c2e48c9517ba4145531d619d9c733ef6fee3a67"
+    },
+    {
+      "source": "img-final-check.log",
+      "file": "img-final-check.log.gz",
+      "sha256": "922f1101a7e788bd778aae3bb8abd93143f1029f1fb6623394c433c5b583c7e0"
+    },
+    {
+      "source": "img-final-dead.log",
+      "file": "img-final-dead.log.gz",
+      "sha256": "fcfc339beefb8d9498a0cb2676f8505b3ac92ee9a655bc1f97a65a48fac1da22"
+    },
+    {
+      "source": "img-final-design.log",
+      "file": "img-final-design.log.gz",
+      "sha256": "bb9d2a1b80b61b73b4ab4f98a33a0236761289bdd4f091ab18250d32bd9eefc9"
+    },
+    {
+      "source": "img-final-unit.log",
+      "file": "img-final-unit.log.gz",
+      "sha256": "27043e5ccc0b383cec070b1a4185e323a130360e7a6f7753442e58b9f44fdfbf"
+    },
+    {
+      "source": "library-clip.log",
+      "file": "library-clip.log.gz",
+      "sha256": "e7a0049714b143916a0029dbf284cdd33f12d443e647aa0825682576fcb5c254"
+    },
+    {
+      "source": "pdf-ai-states.log",
+      "file": "pdf-ai-states.log.gz",
+      "sha256": "c5133c3d54e2119eb08ae1473fb4accda93a91a743abef868766a8fd06c0b8d2"
+    },
+    {
+      "source": "pdf-export.log",
+      "file": "pdf-export.log.gz",
+      "sha256": "8bf4f41545b0f8e18c732bb48e3b5a0c31c225af91adfbef2bc80de6b40b8685"
+    },
+    {
+      "source": "pdf-final-build.log",
+      "file": "pdf-final-build.log.gz",
+      "sha256": "63c3b2cb82143c28bb492951a7bd4e497c2ebeba8c4204912285dfc099a8bbf7"
+    },
+    {
+      "source": "pdf-final-check.log",
+      "file": "pdf-final-check.log.gz",
+      "sha256": "02320f9bc28f70a9feb9fe12904eb561910c30040362b7ee700c2cffc5676591"
+    },
+    {
+      "source": "pdf-final-dead.log",
+      "file": "pdf-final-dead.log.gz",
+      "sha256": "daa78c62defd32cfe45e8193016880c25efa2229e923d0018ab14d0f327f4a65"
+    },
+    {
+      "source": "pdf-final-design.log",
+      "file": "pdf-final-design.log.gz",
+      "sha256": "2c910b2f2758813faa64ca4a7e0e55c02da7170475754219918c7f3207d59b29"
+    },
+    {
+      "source": "pdf-navigation.log",
+      "file": "pdf-navigation.log.gz",
+      "sha256": "6035dc962ea638e7157ba85ec408d25f4e4af9771bf0cf6f7acfe8665b4b09de"
+    },
+    {
+      "source": "pdf-standalone.log",
+      "file": "pdf-standalone.log.gz",
+      "sha256": "77287fd50b3ef0ed8f02f8a468d6487181df0628f7b982977e259d5e3dd9d816"
+    },
+    {
+      "source": "pdf-unit.log",
+      "file": "pdf-unit.log.gz",
+      "sha256": "28834a8250926dca39103e39e6fa6f89a51bae1c970b9da49098007933cc239f"
+    },
+    {
+      "source": "resume-final-build.log",
+      "file": "resume-final-build.log.gz",
+      "sha256": "430bbc1316c4c82bf5cfa591cf26ddcc3a426368544ab62be6667efcb032cd29"
+    },
+    {
+      "source": "resume-final-check.log",
+      "file": "resume-final-check.log.gz",
+      "sha256": "2b8dc9b22c22162ae03112c33f9767f0e85dd99a4a8e7d2ab7db27f000fa0a64"
+    },
+    {
+      "source": "resume-final-design.log",
+      "file": "resume-final-design.log.gz",
+      "sha256": "3ac64bb130e55abb9c66d3e4b03c8574ac51e4ce8aa331b5573529a327a11c94"
+    },
+    {
+      "source": "resume-unit.log",
+      "file": "resume-unit.log.gz",
+      "sha256": "a92cef9629c8ffa30c6a21d82b43cbf675cabfcec668e9fb0645e9d87e06633e"
+    },
+    {
+      "source": "roll-final-build.log",
+      "file": "roll-final-build.log.gz",
+      "sha256": "cf25d5ad0eadcc50f49747342372e018479a6b9b964f507515650b9daedd7520"
+    },
+    {
+      "source": "roll-final-portability.log",
+      "file": "roll-final-portability.log.gz",
+      "sha256": "027b64d79d3aaa9508e78f9ed4b80d46b79219a274e98bf093fe05fb121c29dd"
+    },
+    {
+      "source": "yard-final-build.log",
+      "file": "yard-final-build.log.gz",
+      "sha256": "40d973f9fb32832353717345dbf0c7b89147cb5c6eaa5b95e1bf94b5768d7242"
+    },
+    {
+      "source": "yard-final-check.log",
+      "file": "yard-final-check.log.gz",
+      "sha256": "fecacdbefe1b9ab7474858d915bb2ee9f15e052cf4809ee7cd06bf53d85b0ce8"
+    },
+    {
+      "source": "yard-final-dead.log",
+      "file": "yard-final-dead.log.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "yard-final-design.log",
+      "file": "yard-final-design.log.gz",
+      "sha256": "c31f7ed08f00e7958555129e3cce6a0e70ba10a04616e721c5b843bde4c1d956"
+    },
+    {
+      "source": "yard-final-tests.log",
+      "file": "yard-final-tests.log.gz",
+      "sha256": "f29739c0283a0d65bed8482a6b2a89a49fa5949404f5cd4dcb8874c2cf85c47d"
+    },
+    {
+      "source": "yard-final-types.log",
+      "file": "yard-final-types.log.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "images": [
+    "review/390-editor.webp",
+    "review/768-editor.webp",
+    "review/1280-dialog.webp",
+    "review/1440-controls.webp",
+    "review/320-dialog.webp",
+    "review/1440-editor.webp",
+    "review/public-390-light-top.webp",
+    "review/public-390-dark-footer.webp",
+    "review/public-768-light-top.webp",
+    "review/public-768-dark-footer.webp",
+    "review/public-1280-light-top.webp",
+    "review/public-1440-dark-footer.webp",
+    "review/tools-390-dark-0.webp",
+    "review/tools-390-dark-1.webp",
+    "review/tools-390-dark-2.webp",
+    "review/tools-390-dark-3.webp",
+    "review/tools-768-light-0.webp",
+    "review/tools-1280-dark-1.webp",
+    "review/tools-1440-light-2.webp",
+    "review/sections-390-dark-0.webp",
+    "review/sections-390-dark-1.webp",
+    "review/sections-1440-light-0.webp",
+    "img-feedback-final-shots/390-dark.png",
+    "img-feedback-final-shots/768-light.png",
+    "img-reflow-final-shots/768-16-light-id-photo-sheet-initial.png",
+    "img-labels-fixed-shots/1280-32-light-remove-bg-initial-bottom.png",
+    "img-reflow-final-shots/1280-32-light-selective-color-magenta-bottom.png",
+    "img-crop-final-shots/1280-32-dark-crop-rotate-initial-bottom.png"
+  ]
+}
