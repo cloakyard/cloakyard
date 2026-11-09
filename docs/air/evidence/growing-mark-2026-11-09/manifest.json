@@ -198,6 +198,11 @@
       "sha256": "e6b3a1b5b00e7f991d8c1b4ae1d216678cd5e17ef4437e5951f6aef3ae6aa163"
     },
     {
+      "source": "github-refreshed-pr-events.json",
+      "file": "github-refreshed-pr-events.json.gz",
+      "sha256": "6454946359f7cae8b7b5d6d9c63dabe9d4fa3d7a6e8b668370672c3a9b025549"
+    },
+    {
       "source": "growth/growth.json",
       "file": "growth--growth.json.gz",
       "sha256": "4f8044d6fe69c507c6abd1ee6e18070582cde099eef4e7ad71e76723fecd41f6"
@@ -273,6 +278,81 @@
       "sha256": "a73520dafb5d79aad607df413ccc4129c8f43120441f673c224ef3103da8f627"
     },
     {
+      "source": "live/branch-sync.json",
+      "file": "live--branch-sync.json.gz",
+      "sha256": "c27fc784f032d95f9f7d10490f655ffa19e61fd387ab973f6608cc5df95a56e8"
+    },
+    {
+      "source": "live/cloakdrop-main.json",
+      "file": "live--cloakdrop-main.json.gz",
+      "sha256": "0fe0336c1251634cac3c86ff3a727d31685c36ed90c039791950fe588d3025a6"
+    },
+    {
+      "source": "live/cloakimg-main.json",
+      "file": "live--cloakimg-main.json.gz",
+      "sha256": "750d0e646e413f78fe6a3d0451af7cab5f9a78a3ab4549ff8284e6f808396922"
+    },
+    {
+      "source": "live/cloakpdf-main.json",
+      "file": "live--cloakpdf-main.json.gz",
+      "sha256": "e6d73f7f54b9e8897143347d0785f9d14a590483304673de92fa937bdf512064"
+    },
+    {
+      "source": "live/cloakresume-main.json",
+      "file": "live--cloakresume-main.json.gz",
+      "sha256": "cb506cec9012af4041f7133861f57c3937992e079bacc021dc2bfd31fcae4357"
+    },
+    {
+      "source": "live/cloakroll-main.json",
+      "file": "live--cloakroll-main.json.gz",
+      "sha256": "04866f7e55efdc32a6225b338f9293f93b44e4c1f483433e263647d2319dadce"
+    },
+    {
+      "source": "live/drop.json",
+      "file": "live--drop.json.gz",
+      "sha256": "b08925eca3d15681066c4c1f61cf7939f49c8ffb1d5d7be0f48391e899e10120"
+    },
+    {
+      "source": "live/drop.log",
+      "file": "live--drop.log.gz",
+      "sha256": "2350dd6a5b855d32c517b8a4112011ff7f82db85d7e40aa3aa0d5c15dfb76f5e"
+    },
+    {
+      "source": "live/img.json",
+      "file": "live--img.json.gz",
+      "sha256": "e0a176d59fbe707077542162e7b8c131ef6eae4b093c6e0fa6411cc928f9f699"
+    },
+    {
+      "source": "live/pdf.json",
+      "file": "live--pdf.json.gz",
+      "sha256": "2a358f6fed9e4e4d639ada5c3c01efeaef8711df02609444e89a43903b2ae84a"
+    },
+    {
+      "source": "live/products-early.log",
+      "file": "live--products-early.log.gz",
+      "sha256": "63076d0fd02ec5fbd36368e6eab82dd86af7f874db9b9d60a132a2b5aeca3d9b"
+    },
+    {
+      "source": "live/resume.json",
+      "file": "live--resume.json.gz",
+      "sha256": "20aa6a7ff30a782f0d8e0dc4c3ef84c3e7a67d392f2873bceca2336997186fb5"
+    },
+    {
+      "source": "live/resume.log",
+      "file": "live--resume.log.gz",
+      "sha256": "fbc3ebcefbd83a7537c90da11707fc9e5cc0369a8aa130d216dce20d0db64909"
+    },
+    {
+      "source": "live/roll-normalized.json",
+      "file": "live--roll-normalized.json.gz",
+      "sha256": "a8aa6582b1111e83548609330cd14f5141ccafb96cc9ef92312e66287275679e"
+    },
+    {
+      "source": "live/roll.json",
+      "file": "live--roll.json.gz",
+      "sha256": "0e95064319beb2a7a0375d2f6b88da652d740a39f3015b880d671df62c3af3ae"
+    },
+    {
       "source": "notices/notices.json",
       "file": "notices--notices.json.gz",
       "sha256": "311495f71c129d411d2fbcbb6ca3ad06de3a8115d9222d0fc2a4e0a23f48c1bc"
@@ -281,6 +361,16 @@
       "source": "notices.log",
       "file": "notices.log.gz",
       "sha256": "1d23b23118912ae916d16e618e380e5e90ea32598f7fedba21dcb32b8fb23840"
+    },
+    {
+      "source": "original-clean-dev-sync.json",
+      "file": "original-clean-dev-sync.json.gz",
+      "sha256": "6c5d9f62609c5c6c1779a320f25c5baf4ee7c91c7bca6e5c5723255372e06d1a"
+    },
+    {
+      "source": "partial-dev-sync.json",
+      "file": "partial-dev-sync.json.gz",
+      "sha256": "caa513ce718d0b0d843ed3e414fd2785d1b36eb13f55595cda9ff1009f21ee22"
     },
     {
       "source": "partial-merges.json",
@@ -383,6 +473,11 @@
       "sha256": "677682d9d0d8a24c08f0e36eb15c110a6a7c1d74dfc18a14af07683eddf37d90"
     },
     {
+      "source": "product-merges.json",
+      "file": "product-merges.json.gz",
+      "sha256": "adb39a14a6aa010fb50186dfab1fdcc7b017f91d2f4d7a4d5d4cde5b52cb0c26"
+    },
+    {
       "source": "product-portable-final.json",
       "file": "product-portable-final.json.gz",
       "sha256": "cd1520aea91f10d87271fb75609e199deaf33be23a8dec7f7627295bd63605ec"
@@ -390,7 +485,7 @@
     {
       "source": "product-pr-status.json",
       "file": "product-pr-status.json.gz",
-      "sha256": "c360c5d969c281ac2cce0701b40cd15423a9b6a4f7dc9fb964ef10d98b3bdeaa"
+      "sha256": "21a1d9bb245046b4f2e44609b608fe27f81ab2f0b9b409aed64cb3f926a6f7e6"
     },
     {
       "source": "product-prs.json",

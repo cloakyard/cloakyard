@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — deployed Air 1.7.1 web family; refinement/cleanup/README audit verified and deployed; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.7.2 growing mark and full-view refinement verified; product documentation promoted, canonical PR #53 owns its final rollout receipt; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -30,7 +30,7 @@ The separately requested Drop installer now uses Air.
 - [x] Replace the five bespoke app illustrations and repeated mark with registry-driven isometric cubes and one future cell.
 - [x] Keep sequential growth bounded, static fallbacks, completion-only replay and responsive containment; verify future app counts.
 - [x] Finish browser/motion checks and fresh all-view family refinement, recording representative visual review and full software matrices.
-- [ ] Publish Air 1.7.2 portable documents, passing bounded commits and individual PRs; verify deployments and update dev.
+- [x] Publish Air 1.7.2 portable documents and passing bounded commits; promote five product PRs, verify production assets and sync dev. Canonical PR #53 records its own final deployment/dev receipt.
 
 Evidence: `docs/air/growing-mark-2026-11-09.md`; raw data in the isolated family's `evidence/cube-growth`.
 

@@ -1,6 +1,6 @@
 # Growing family mark — 2026-11-09
 
-Status: implementation and full software refinement verified; PR rollout follows.
+Status: implementation and full software refinement verified; five product documentation PRs merged and dev synchronized. Canonical PR #53 records its own final deployment receipt.
 Air 1.7.2 records this homepage motif. Shared controls and all five product runtimes
 remain unchanged; portable contract documents and inventories adopt the new version.
 
@@ -109,5 +109,31 @@ keyboard/IME, spoken assistive or physical print acceptance. Native apps, KERR a
 unrelated original PDF AI work remain untouched. The existing approved Compact
 model quality limitation is unchanged; UI audits do not certify AI inference.
 
-Individual tested PRs and their post-merge deployment/dev receipts follow the
-completed refinement. No production deployment has occurred for this piece yet.
+## Promotion receipts
+
+| Product     | PR                                                      | Main commit |
+| ----------- | ------------------------------------------------------- | ----------- |
+| cloakpdf    | [#236](https://github.com/cloakyard/cloakpdf/pull/236)  | `b536029`   |
+| cloakimg    | [#36](https://github.com/cloakyard/cloakimg/pull/36)    | `d25af37`   |
+| cloakresume | [#63](https://github.com/cloakyard/cloakresume/pull/63) | `a08921c`   |
+| cloakdrop   | [#62](https://github.com/cloakyard/cloakdrop/pull/62)   | `b4f6acf`   |
+| cloakroll   | [#18](https://github.com/cloakyard/cloakroll/pull/18)   | `f58ff48`   |
+
+All five product documentation PRs are merged after passing hosted checks;
+remote dev includes main. Roll's native tree remains `0070581a9987d3bf69923e7ed263d81892d03042`.
+Original clean IMG/Resume dev checkouts are fast-forwarded; unrelated original
+PDF AI and Drop/Roll native work are preserved. Production matches 334 exact
+product files, plus Roll's ten files after normalizing only three existing
+Cloudflare challenge-script insertions. Runtime files did not change in these
+five documentation promotions. Exact-main hosted status receipts are retained.
+
+Some GitHub PR workflows initially failed with an internal server error before
+jobs were created. Reruns recovered most; refreshing the same Resume/Drop PR
+events recovered the remaining jobs. Source and checks were not weakened. Both
+fresh PR events pass, as do their same-head push checks and Cloudflare previews.
+
+[Cloakyard #53](https://github.com/cloakyard/cloakyard/pull/53) promotes the actual
+animation through dev → main. Its description records final exact-main checks,
+live asset/motion verification and dev synchronization after merge, avoiding a
+recursive documentation-only deployment. The rollout concludes on 2026-11-10
+local time; this ledger retains its implementation date.
