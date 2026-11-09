@@ -22,8 +22,8 @@ light/dark, reduced motion and keyboard/touch modes as specified in DESIGN.md.
 | `src/components/Principles.tsx`        | app-surface | Done         | Done               | Pending    |
 | `src/components/PrivacyPolicy.tsx`     | app-surface | Done         | Done               | Pending    |
 | `src/components/ToolEntry.tsx`         | app-surface | Done         | Done               | Pending    |
-| `src/components/ToolGathering.tsx`     | app-surface | Done         | Done               | Pending    |
 | `src/components/ToolSection.tsx`       | app-surface | Done         | Done               | Pending    |
+| `src/components/YardGrowth.tsx`        | app-surface | Done         | Done               | Pending    |
 | `src/index.css`                        | app-surface | Done         | Done               | Pending    |
 | `src/main.tsx`                         | app-surface | Done         | Done               | Pending    |
 | `src/styles/air.css`                   | app-surface | Done         | Done               | Pending    |

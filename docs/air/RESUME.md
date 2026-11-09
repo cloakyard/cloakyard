@@ -7,6 +7,20 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### In progress: growing family mark — 2026-11-09
+
+The user requested a logo-inspired cube grid, one block per app, room for more and
+no repeated mark beneath it. `YardGrowth` replaces the five bespoke materials.
+The registry drives stable expanding shells; one faint next cell completes the
+3.74-second current sequence. Future counts remain under 4.54 seconds. Air 1.7.2
+records the motif; shared control/runtime assets are unchanged in all five products.
+
+The implementation, model regression and initial checks pass. Fresh all-view
+browser audits are running in the persistent isolated family; raw evidence is in
+`evidence/cube-growth` and previews use 8820–8825. Finish the coverage/visual review,
+record evidence, commit passing pieces and use the existing PR rollout authority.
+Preserve the original PDF AI and Drop/Roll native work and physical acceptance gates.
+
 ### Completed: refinement, cleanup and README consistency — 2026-11-09
 
 All six websites and all applicable working/secondary views have fresh software

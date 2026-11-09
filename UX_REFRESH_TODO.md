@@ -25,6 +25,15 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Growing family mark and refinement — 2026-11-09
+
+- [x] Replace the five bespoke app illustrations and repeated mark with registry-driven isometric cubes and one future cell.
+- [x] Keep sequential growth bounded, static fallbacks, completion-only replay and responsive containment; verify future app counts.
+- [ ] Finish browser/motion checks and fresh all-view family refinement, recording representative visual review and full software matrices.
+- [ ] Publish Air 1.7.2 portable documents, passing bounded commits and individual PRs; verify deployments and update dev.
+
+Evidence: `docs/air/growing-mark-2026-11-09.md`; raw data in the isolated family's `evidence/cube-growth`.
+
 ## Refinement, cleanup and README consistency — 2026-11-09
 
 - [x] Standardize six product and two website READMEs; validate local links, preserve published anchors and document the shared structure.

@@ -14,9 +14,9 @@
 - Work tracking: `UX_REFRESH_TODO.md`; source inventory and validation evidence in
   `docs/air/`. A documentation-only phase is not a completed visual migration.
 
-- The hero opens five small tool materials out from the family mark: paper, download
-  pixels, a résumé spine, an image and a filmstrip. Use the common finite artwork
-  lifecycle; no shader, tracking, playback UI or animation dependency. Static first
-  paint, 60ms arrival stagger, 1,800ms ease-out arrivals and nested 45ms detail stagger
-  finish within 4,300ms. Only transform/opacity change; all tools remain usable.
-  Keep page entry below 85 kB gzip. The shared shader remains reference-only here.
+- The hero builds one isometric block per registry productivity app, followed by
+  one outlined future cell. Use stable expanding shells and a bounded sequential
+  timeline so new apps need no artwork edits. Remove the five bespoke materials
+  and repeated mark. Use the common finite lifecycle, static first paint,
+  reduced-motion/resource fallbacks and completion-only replay. No shader,
+  tracking, playback UI or animation dependency; keep entry below 85 kB gzip.

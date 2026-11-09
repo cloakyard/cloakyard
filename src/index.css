@@ -150,57 +150,45 @@ summary:focus-visible {
   gap: var(--air-space-12);
   margin-top: var(--air-space-24);
 }
-/* The family opens out into five small, recognisable materials. */
-.tool-gathering {
-  max-inline-size: 840px;
-  margin: 32px auto 0;
-  padding-block: 8px 16px;
+/* The mark grows one app at a time; artwork colours never reach UI controls. */
+.yard-growth {
+  position: relative;
+  isolation: isolate;
+  inline-size: min(100%, 360px);
+  aspect-ratio: 3 / 2;
+  margin: 24px auto 0;
+  color: var(--air-light-cloakyard);
   overflow: clip;
 }
-.gathering-objects {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+.yard-growth-scene {
+  position: absolute;
+  inset: 0;
+  isolation: isolate;
 }
-.gathering-object {
-  min-inline-size: 0;
+.yard-growth-cube {
+  position: absolute;
 }
-.gathering-object svg {
+.yard-growth-cube svg {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow: visible;
+  stroke: color-mix(in srgb, currentColor 32%, var(--air-surface));
+  stroke-width: 1;
+  stroke-linejoin: round;
 }
-.gathering-object [data-unfold] {
-  transform-box: fill-box;
-  transform-origin: center;
+.yard-growth-top {
+  fill: color-mix(in srgb, currentColor 16%, var(--air-surface));
 }
-.gathering-sheet {
-  fill: white;
-  stroke: var(--air-paper-line);
-  stroke-width: 1.5;
+.yard-growth-left {
+  fill: color-mix(in srgb, currentColor 72%, var(--air-surface));
 }
-.gathering-ink {
-  fill: none;
-  stroke: var(--air-paper-line);
-  stroke-width: 2;
-  stroke-linecap: round;
+.yard-growth-right {
+  fill: color-mix(in srgb, currentColor 92%, var(--air-ink));
 }
-.gathering-paper {
-  color: var(--air-light-cloakpdf);
-}
-.gathering-pixels {
-  color: var(--air-light-cloakdrop);
-}
-.gathering-story {
-  color: var(--air-light-cloakresume);
-}
-.gathering-image {
-  color: var(--air-light-cloakimg);
-}
-.gathering-home {
-  display: block;
-  margin: 12px auto 0;
+.yard-growth-next path {
+  fill: color-mix(in srgb, currentColor 3%, var(--air-page));
+  stroke: color-mix(in srgb, currentColor 28%, var(--air-page));
 }
 .tools-section {
   margin-top: var(--air-space-24);
@@ -447,27 +435,6 @@ summary:focus-visible {
   .hero-description {
     max-width: 25rem;
   }
-  .tool-gathering {
-    max-inline-size: 400px;
-    margin-top: 24px;
-  }
-  .gathering-objects {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 0;
-  }
-  .gathering-object {
-    grid-column: span 2;
-  }
-  .gathering-object:nth-last-child(-n + 2) {
-    grid-column: span 3;
-    width: 66.666%;
-    justify-self: center;
-  }
-  .gathering-home {
-    margin-top: 4px;
-    width: 32px;
-    height: 32px;
-  }
   .tools-section {
     margin-top: var(--air-space-16);
   }
@@ -505,14 +472,9 @@ summary:focus-visible {
   .hero {
     padding-top: var(--air-space-24);
   }
-  .tool-gathering {
-    max-inline-size: 420px;
+  .yard-growth {
+    inline-size: min(100%, 240px);
     margin-top: 8px;
-  }
-  .gathering-home {
-    width: 24px;
-    height: 24px;
-    margin-top: 0;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -523,7 +485,7 @@ summary:focus-visible {
   }
 }
 @media (forced-colors: active) {
-  .tool-gathering {
+  .yard-growth {
     display: none;
   }
   .air-button--primary {

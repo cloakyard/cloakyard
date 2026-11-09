@@ -37,11 +37,12 @@ Product copy, destinations, status, and icons live in one registry: [`src/data/t
 
 ### Family artwork
 
-Five small materials open out from the family mark: pages, pixels, résumé lines,
-an image and a photo strip. The finite illustration uses local SVG and the shared
-Air artwork lifecycle. It stays still for reduced motion and constrained devices,
-pauses offscreen, and stops after arriving. No shader or new runtime dependency is
-loaded by the homepage. The complete directory and all actions remain available.
+One blue cube arrives per app, building an isometric grid inspired by the family
+mark. A faint next cell leaves room for more. Cells come from the product registry,
+so adding an app needs no bespoke artwork. The finite local SVG sequence uses the
+shared Air lifecycle, stays still for reduced motion and constrained devices,
+pauses offscreen and supports replay only after completion. The directory and all
+actions remain available throughout; no graphics dependency or shader is loaded.
 
 ## Privacy
 
@@ -91,7 +92,7 @@ The production site is a small client-rendered React app. There is no router, ba
 
 ## Design and assets
 
-This repository owns the [portable Air contract](design/air/contract.md), [reference and tokens](design/air/README.md), and [component matrix](design/air/COMPONENTS.md). The current pinned baseline is Air 1.7.1. Product copies are generated with `node scripts/sync-air-design.mjs --bundle`; verify them with `--bundle --check`.
+This repository owns the [portable Air contract](design/air/contract.md), [reference and tokens](design/air/README.md), and [component matrix](design/air/COMPONENTS.md). The current pinned baseline is Air 1.7.2. Product copies are generated with `node scripts/sync-air-design.mjs --bundle`; verify them with `--bundle --check`.
 
 Read [DESIGN.md](DESIGN.md) before UI changes. The [refresh ledger](UX_REFRESH_TODO.md) and [handoff](docs/air/RESUME.md) distinguish verified software coverage from open physical-device acceptance. [README guidance](docs/README_STANDARD.md) defines the family documentation structure. `artwork/og.html` and `vp run generate:og` own the local social preview.
 

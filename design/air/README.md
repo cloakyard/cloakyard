@@ -1,7 +1,8 @@
 # Air — the Cloakyard family design system
 
-Air 1.0.0 is **locked for implementation** following the user-authorized final
-review on 2026-10-13. Product adoption and feature/device evidence remain separate.
+Air **1.7.2** is the current approved contract. The original direction was locked
+after the user-authorized review on 2026-10-13. Product adoption and feature/device
+evidence remain separate.
 See [the review record](../../docs/air/DESIGN_FREEZE.md).
 
 This directory in **cloakyard/cloakyard is the canonical source** for every Air web
@@ -41,9 +42,9 @@ bundle paired with a different contract. The preview stylesheet URL includes its
 content revision so a cached earlier skin cannot masquerade as the current one.
 No live upstream fetch, sibling checkout or runtime network dependency is needed.
 
-During review, exact content hashes and the source commit identify a candidate.
-The version `1.0.0` is the target contract interface, not approval to ship. After
-visual approval, changes follow major (breaking), minor (additive) and patch
+Exact content hashes and the source commit identify every candidate. The original
+`1.0.0` review is historical; the contract and bundle pin the current revision.
+Changes follow major (breaking), minor (additive) and patch
 (compatible corrections) versions. Record the affected components and adoption
 steps in the validation/change record, sync the candidate, then let each app pass
 its own feature/visual gates before committing its runtime adoption.

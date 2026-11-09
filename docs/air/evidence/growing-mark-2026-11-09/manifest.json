@@ -1,0 +1,79 @@
+{
+  "contract": "Air 1.7.2",
+  "status": "Focused implementation gates; full refinement follows",
+  "receipts": [
+    {
+      "source": "source-check.log",
+      "file": "source-check.log.gz",
+      "sha256": "5ef4d6343f832d4a1d0c11b27879ba31bd16dff90ce7ff8b7183ba91713e34d9"
+    },
+    {
+      "source": "types.log",
+      "file": "types.log.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "unit.log",
+      "file": "unit.log.gz",
+      "sha256": "8f54cfeee57217ae10313a2480d408e0280201f3e957f7b3fbf4e592843a2d3d"
+    },
+    {
+      "source": "knip.log",
+      "file": "knip.log.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "build.log",
+      "file": "build.log.gz",
+      "sha256": "7c589243d9a898e27bf2a9df9ddd87506db80230b4d7a9f3a7b0941669b222e6"
+    },
+    {
+      "source": "readmes.log",
+      "file": "readmes.log.gz",
+      "sha256": "840a7f8a7b34ffe09b93bab4e1d4217282ef5c29909b175298be70c25e80f11a"
+    },
+    {
+      "source": "portable-gates.json",
+      "file": "portable-gates.json.gz",
+      "sha256": "f58ba560046e20812272cbed8d19748efa10957e1bdc7a4a227e11b9240492ea"
+    },
+    {
+      "source": "unchanged-products.json",
+      "file": "unchanged-products.json.gz",
+      "sha256": "a979b620eb4acd421d13adf043ec6db5d76b48e4bbfc498dca6faff19373bbc8"
+    },
+    {
+      "source": "growth/growth.json",
+      "file": "growth--growth.json.gz",
+      "sha256": "4f8044d6fe69c507c6abd1ee6e18070582cde099eef4e7ad71e76723fecd41f6"
+    },
+    {
+      "source": "artwork-chromium/results.json",
+      "file": "artwork-chromium--results.json.gz",
+      "sha256": "0644cac193eeaf17ed6404a7e4b1811f2f45c89bca9fe97b9ff790c4f1b1cfd3"
+    },
+    {
+      "source": "artwork-webkit/results.json",
+      "file": "artwork-webkit--results.json.gz",
+      "sha256": "c706da957db290eb65668e18f3cb0afc7a790ff66833930bee0dce8df170d4de"
+    },
+    {
+      "source": "links/links.json",
+      "file": "links--links.json.gz",
+      "sha256": "a73520dafb5d79aad607df413ccc4129c8f43120441f673c224ef3103da8f627"
+    }
+  ],
+  "images": [
+    "motion--light-storyboard.webp",
+    "motion--dark-storyboard.webp",
+    "motion--preview.gif",
+    "review--public-390-light-top-0.webp",
+    "review--public-768-dark-top-0.webp",
+    "review--editors-390-editor-0.webp",
+    "review--editors-768-controls-0.webp",
+    "review--editors-1280-dialog-0.webp",
+    "review--editors-1440-editor-0.webp",
+    "review--dialogs-390-0.webp",
+    "review--notices-768-0.webp"
+  ]
+}
