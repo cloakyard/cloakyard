@@ -1,7 +1,8 @@
 # Tablet consistency follow-up — 2026-11-09
 
-Status: all local gates pass; PDF #234 and IMG #34 carry the bounded fixes through
-dev → main. Final main/deployment receipts are recorded below and in the PRs.
+Status: local and live tablet checks pass. PDF #234 and IMG #34 are merged,
+deployed and synchronized with dev. Final product receipts are recorded below;
+the canonical PR records its own final main/deployment receipt.
 Air remains 1.7.1; the existing contract already specifies these component roles.
 
 ## Findings and changes
@@ -107,3 +108,17 @@ audit/comparator follows through its own dev → main PR. Unchanged Resume, Drop
 Roll code needs no additional release. Exact-main checks, live asset hashes and
 dev synchronization are recorded after merge; the canonical PR carries its own
 final receipt to avoid a recursive evidence-only deployment.
+
+### Verified product rollout
+
+| App      | PR   | Main and dev                               | Production                                           |
+| -------- | ---- | ------------------------------------------ | ---------------------------------------------------- |
+| CloakPDF | #234 | `aa261849e359d9b011e8ca8a4c23e8113682c62f` | Exact-main checks pass; all 130 deployed files match |
+| CloakIMG | #34  | `cdac89e2b4d0101721e33917f6ef75bf9c720a9d` | Exact-main checks pass; all 89 deployed files match  |
+
+Final production editor comparison passes 24 Chrome and 24 WebKit tablet cases,
+all four tablet profiles, both themes, explicit touch and canonical action states.
+Live controls were also inspected visually. Original clean IMG dev is fast-forwarded;
+original dirty PDF work remains untouched. Canonical [#51](https://github.com/cloakyard/cloakyard/pull/51)
+records its final deployment and dev receipt after merge. Task previews on 8720–8725
+are stopped after verification; retained evidence can be reproduced by restarting them.

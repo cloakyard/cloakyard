@@ -7,21 +7,25 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
-### Current: tablet consistency follow-up — 2026-11-09
+### Completed: tablet consistency follow-up — 2026-11-09
 
 The fresh four-profile tablet audit passes across all six websites, including
 editors/tools, secondary flows, privacy, dialogs, notices and motion. Read
 `tablet-audit-2026-11-09.md` and its per-view coverage ledger. Air remains 1.7.1.
 PDF short rail labels and IMG primary Export/ID-photo action wrapping are fixed;
-PDF #234 and IMG #34 carry the passing pieces through dev → main. The canonical
-comparator now measures actual pointer type and includes primary Export.
+PDF #234 (`aa26184`) and IMG #34 (`cdac89e`) are merged and deployed; their remote
+dev equals main. All exact-main checks pass and 219 live files match the tested
+builds. Original clean IMG dev is fast-forwarded. The canonical comparator now
+measures actual pointer type and includes primary Export.
 
 Raw evidence is in the isolated family's `evidence/tablet`; the portable manifest
 preserves diagnostic failures and successful reruns. Final shared comparisons pass
 42 Chrome + 42 WebKit touch cases and 12 fine-pointer cases. IMG has 768 effective
 Chrome / 312 WebKit tool observations, eight actual ID-photo PDF/print journeys
 and 12 pixel-identical PNG exports. PDF's new rail regression passes 104 cases.
-The product PRs and canonical audit PR record exact-main deployment receipts.
+Final production tablet comparisons pass 24 Chrome + 24 WebKit cases. The product
+PRs and canonical #51 record exact-main deployment receipts. Task previews on
+8720–8725 are stopped after verification; restart them to reproduce the raw matrix.
 Keep the physical-device/IME/assistive and broader product backlog open; do not
 repeat completed software matrices or publish unrelated native/PDF AI work.
 
