@@ -72,7 +72,7 @@ try {
       for (const app of ["pdf", "img", "resume"]) {
         const p = await b.newPage({
           viewport: { width, height },
-          hasTouch: width < 1100,
+          hasTouch: process.env.AIR_TOUCH === "1" || width < 1100,
           colorScheme: theme,
           reducedMotion: "reduce",
           serviceWorkers: "block",
@@ -193,6 +193,7 @@ try {
             ]),
           );
           return {
+            coarse: matchMedia("(pointer: coarse)").matches,
             tokens,
             shell: val(document.querySelector(sel.shell)),
             header: val(document.querySelector(sel.header)),
@@ -210,8 +211,8 @@ try {
         assert.equal(control.radius, "10px", `${app} field radius`);
         assert.equal(control.borderWidth, "1px", `${app} field contour`);
         assert.equal(control.shadow, "none", `${app} field shadow`);
-        assert.equal(control.size, width < 1100 ? "16px" : "14px", `${app} field text`);
-        assert(control.rect.height >= (width < 1100 ? 44 : 32), `${app} field target`);
+        assert.equal(control.size, metrics.coarse ? "16px" : "14px", `${app} field text`);
+        assert(control.rect.height >= (metrics.coarse ? 44 : 32), `${app} field target`);
         assert.equal(metrics.heading.length > 0, true, `${app} heading missing`);
         assert.equal(metrics.heading[0].weight, "500", `${app} heading weight`);
         assert.equal(
@@ -285,7 +286,17 @@ try {
         await dismiss.click();
         await p.getByRole("dialog").waitFor({ state: "hidden" });
         assert(await field.isVisible(), `${app} workspace lost after closing dialog`);
-        const editorControls = [{ locator: field, kind: "field", name: "Editor text field" }];
+        const editorControls = [
+          { locator: field, kind: "field", name: "Editor text field" },
+          {
+            locator: p.getByRole("button", {
+              name: app === "resume" ? "Export to PDF" : "Export",
+              exact: true,
+            }),
+            kind: "primary",
+            name: "Editor export",
+          },
+        ];
         if (app === "resume")
           editorControls.push({
             locator: p.getByRole("button", { name: "Add photo", exact: true }),

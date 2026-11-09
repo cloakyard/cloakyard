@@ -7,6 +7,24 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Current: tablet consistency follow-up — 2026-11-09
+
+The fresh four-profile tablet audit passes across all six websites, including
+editors/tools, secondary flows, privacy, dialogs, notices and motion. Read
+`tablet-audit-2026-11-09.md` and its per-view coverage ledger. Air remains 1.7.1.
+PDF short rail labels and IMG primary Export/ID-photo action wrapping are fixed;
+PDF #234 and IMG #34 carry the passing pieces through dev → main. The canonical
+comparator now measures actual pointer type and includes primary Export.
+
+Raw evidence is in the isolated family's `evidence/tablet`; the portable manifest
+preserves diagnostic failures and successful reruns. Final shared comparisons pass
+42 Chrome + 42 WebKit touch cases and 12 fine-pointer cases. IMG has 768 effective
+Chrome / 312 WebKit tool observations, eight actual ID-photo PDF/print journeys
+and 12 pixel-identical PNG exports. PDF's new rail regression passes 104 cases.
+The product PRs and canonical audit PR record exact-main deployment receipts.
+Keep the physical-device/IME/assistive and broader product backlog open; do not
+repeat completed software matrices or publish unrelated native/PDF AI work.
+
 ### Completed: component corners — 2026-11-09
 
 The approved Roll #15 merge is complete. Air 1.7.1 now defines corner roles for
