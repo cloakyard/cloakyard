@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.7.2 growing mark and full-view refinement verified; product documentation promoted, canonical PR #53 owns its final rollout receipt; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.7.3 maintenance audit verified; product websites deployed; canonical PR #54 owns final rollout receipts; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,17 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Maintenance, privacy and dependencies — 2026-11-14
+
+- [x] Recheck real PWA update/offline notices at desktop bottom-right and phone bottom, with shared states and work protection.
+- [x] Upgrade current compatible web dependencies and native Mac dependencies; document Astro TypeScript and the approved official yt-dlp runtime exception.
+- [x] Align privacy statements with actual behavior and remove duplicated policy bodies/dates; sync Air 1.7.3.
+- [x] Complete all-view, all-layout, both-theme motion/component/feature audits and representative visual comparisons.
+- [x] Check dead code, remove obsolete overrides/duplicates and preserve README consistency.
+- [x] Commit passing pieces; promote all five product PRs; verify exact-main/live assets and dev synchronization. Canonical PR #54 records its own final CI/deployment/dev receipts.
+
+Evidence: [maintenance audit](docs/air/maintenance-audit-2026-11-14.md). Physical-device and separate acceptance gates remain open.
 
 ## Growing family mark and refinement — 2026-11-09
 

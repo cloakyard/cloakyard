@@ -132,9 +132,26 @@ for (const engine of process.env.AIR_BROWSER ? [process.env.AIR_BROWSER] : ["chr
         window.airMotionAudit.controller.update(false);
         window.airMotionAudit.controller.update(false);
       });
+      // Emulation delivers media changes on a rendering turn. Observe the actual
+      // event, then require synchronous settlement in that turn, without a sleep.
+      await harness.evaluate(() => {
+        matchMedia("(prefers-reduced-motion: reduce)").addEventListener(
+          "change",
+          () => {
+            window.airPreferenceResult = {
+              exits: window.airMotionAudit.exits,
+              animations: window.airMotionAudit.el.getAnimations().length,
+            };
+          },
+          { once: true },
+        );
+      });
       await harness.emulateMedia({ reducedMotion: "reduce" });
-      await harness.waitForTimeout(40);
-      assert.equal(await harness.evaluate(() => window.airMotionAudit.exits), 1);
+      await harness.waitForFunction(() => window.airPreferenceResult !== undefined);
+      assert.deepEqual(await harness.evaluate(() => window.airPreferenceResult), {
+        exits: 1,
+        animations: 0,
+      });
       await harness.evaluate(() => window.airMotionAudit.controller.destroy());
       assert.equal(
         await harness.evaluate(() => window.airMotionAudit.el.getAnimations().length),
