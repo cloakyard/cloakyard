@@ -1,6 +1,6 @@
 # Family maintenance audit — 14 November 2026
 
-Status: full-view software audit and dependency checks pass; website promotion is in progress. Air 1.7.3 adds privacy-source consistency; the
+Status: full-view software audit and dependency checks pass; all five product websites are merged and production-verified. Canonical PR #54 records its own final deployment/dev receipts. Air 1.7.3 adds privacy-source consistency; the
 shared visual components, notice geometry and motion implementation are unchanged.
 
 ## Changes
@@ -143,3 +143,27 @@ evidence. Private fixture captures stay local. Physical Windows/iPhone/iPad,
 software keyboards/IME, actual browser zoom, spoken assistive technology, physical
 print/USB and native distribution acceptance remain explicitly open. WebKit and
 32px root-font tests are not substitutes for those gates.
+
+## Website promotion and branch synchronization
+
+All five product PRs pass their exact-main checks. Production matches 334 exact
+files across PDF, IMG, Resume and Drop, plus all ten Roll files after removing
+only the three already-identified Cloudflare challenge-script injections. The
+canonical [PR #54](https://github.com/cloakyard/cloakyard/pull/54) owns its final
+main SHA, CI, live/public/editor smoke and dev-sync receipts after merge.
+
+| Website     | PR                                                      | Main commit |
+| ----------- | ------------------------------------------------------- | ----------- |
+| cloakimg    | [#37](https://github.com/cloakyard/cloakimg/pull/37)    | `3c18e0e`   |
+| cloakresume | [#64](https://github.com/cloakyard/cloakresume/pull/64) | `5acc6d3`   |
+| cloakdrop   | [#63](https://github.com/cloakyard/cloakdrop/pull/63)   | `f72a27d`   |
+| cloakroll   | [#19](https://github.com/cloakyard/cloakroll/pull/19)   | `14d1e04`   |
+| cloakpdf    | [#237](https://github.com/cloakyard/cloakpdf/pull/237)  | `59f53e0`   |
+
+Remote dev includes main for all products. Roll uses the standing website-only
+main exception; its tested GRDB commit is integrated into dev without promoting
+unrelated native features to main. Original clean IMG/Resume/Roll dev checkouts
+are synchronized. Drop's original local dev merges website main while preserving
+its unpublished native history and newer policy/RC2 notes; its remote dev remains
+the website main. All native source remains identical to the tested native commits.
+Original PDF's unrelated dirty AI work is untouched. No native release is published.

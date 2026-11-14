@@ -1182,6 +1182,56 @@
       "source": "visual/review/resume-review-390-0.webp",
       "file": "resume-review-390-0.webp",
       "sha256": "d9b659396a2372b686c554896098e54af781eaee7d4f75ecacc1bc739c5fb019"
+    },
+    {
+      "source": "rollout/merged.json",
+      "file": "rollout--merged.json.gz",
+      "sha256": "502c88a53cbf8aff2f17624a771b1836d6ce36b09f7c4a03777f51b5f92fdd3f"
+    },
+    {
+      "source": "rollout/dev-sync.json",
+      "file": "rollout--dev-sync.json.gz",
+      "sha256": "81854fe6afd755cf40ccf53f5aa742a1ebf84895a494089e20ae0b8dfe598324"
+    },
+    {
+      "source": "rollout/native-dev-sync.json",
+      "file": "rollout--native-dev-sync.json.gz",
+      "sha256": "edce9642f276fd6763dc785b14829cabd9509f58a26fa2e2858d8affbe8b9d15"
+    },
+    {
+      "source": "rollout/live/pdf.json",
+      "file": "rollout--live--pdf.json.gz",
+      "sha256": "a0b936bcfbcf2fdca98655d50c3023d45f51b26276daed2ab4687695ccabd46f"
+    },
+    {
+      "source": "rollout/live/roll.json",
+      "file": "rollout--live--roll.json.gz",
+      "sha256": "6520df38a54fb4ae3dceef4aaae13bf5e7bcdff47273895e533f12df3bfe5878"
+    },
+    {
+      "source": "rollout/live/img.json",
+      "file": "rollout--live--img.json.gz",
+      "sha256": "668d3051ce044487669a94c56724289d96633e9519f9d161776d521efbbd3abe"
+    },
+    {
+      "source": "rollout/live/drop.json",
+      "file": "rollout--live--drop.json.gz",
+      "sha256": "f19f242ea4411664bb3ba6c546b16281bcbf1f8de5b5be9b5608aec5f9039c6a"
+    },
+    {
+      "source": "rollout/live/resume.json",
+      "file": "rollout--live--resume.json.gz",
+      "sha256": "5dd30752c2056a09a0f1cbf2f3b3f91aae7fc3dc4d0bcf34c699a9f04b2411d5"
+    },
+    {
+      "source": "rollout/live/roll-normalized.json",
+      "file": "rollout--live--roll-normalized.json.gz",
+      "sha256": "03eb73efff783745e1f2cee73dcbef5ccf4b616bca99194b1604448f3f89aeb1"
+    },
+    {
+      "source": "rollout/product-main-checks.json",
+      "file": "rollout--product-main-checks.json.gz",
+      "sha256": "7274eea40899b1082ab2f39b974f9a8864a7891fe5542f58c65b91a082972a36"
     }
   ]
 }

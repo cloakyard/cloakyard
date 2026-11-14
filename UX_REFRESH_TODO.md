@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.7.3 maintenance audit verified locally; website promotion in progress; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.7.3 maintenance audit verified; product websites deployed; canonical PR #54 owns final rollout receipts; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -32,7 +32,7 @@ The separately requested Drop installer now uses Air.
 - [x] Align privacy statements with actual behavior and remove duplicated policy bodies/dates; sync Air 1.7.3.
 - [x] Complete all-view, all-layout, both-theme motion/component/feature audits and representative visual comparisons.
 - [x] Check dead code, remove obsolete overrides/duplicates and preserve README consistency.
-- [ ] Finish bounded website commits, PR promotion, exact-main/live verification and dev synchronization.
+- [x] Commit passing pieces; promote all five product PRs; verify exact-main/live assets and dev synchronization. Canonical PR #54 records its own final CI/deployment/dev receipts.
 
 Evidence: [maintenance audit](docs/air/maintenance-audit-2026-11-14.md). Physical-device and separate acceptance gates remain open.
 
