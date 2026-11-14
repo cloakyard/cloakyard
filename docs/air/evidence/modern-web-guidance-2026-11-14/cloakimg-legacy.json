@@ -1,0 +1,126 @@
+{
+  "targetDir": "/Users/sumitsahoo/Developer/.air-review-2026-11-14/cloakimg",
+  "totalFindings": 6,
+  "guides": [
+    {
+      "guideId": "checkbox",
+      "retrieveCommand": "npx modern-web-guidance retrieve checkbox",
+      "count": 2,
+      "rules": [
+        {
+          "ruleId": "checkbox",
+          "summary": "Hiding native checkboxes with opacity: 0 or drawing replacement boxes on sibling label/span pseudo-elements should be modernized with native accent-color or appearance: none directly on <input type=\"checkbox\">.",
+          "verifierRubric": {
+            "keepWhen": [
+              "The CSS rule hides or strips a checkbox input (opacity: 0 or appearance: none on input[type=\"checkbox\"], .custom-checkbox, or .custom-control-input) to delegate box rendering to a sibling (+ label, ~ label, + span, ::before, ::after) rather than styling the <input> directly.",
+              "The CSS rule styles custom checkbox checkmark icons on sibling pseudo-elements (:checked + label::before / :checked + span::before) without using accent-color or direct input appearance: none."
+            ],
+            "dropWhen": [
+              "Modern custom checkboxes applying appearance: none directly on input[type=\"checkbox\"] (styling &::before / :indeterminate::before on the input itself with no fake sibling box).",
+              "Bare utility rules setting opacity: 0 or form resets stripping appearance across inputs with no sibling custom-box visual replacement.",
+              "Custom toggle-switch components (role=\"switch\", .switch, .toggle), star ratings, or CSS-only accordion/tab/disclosure hacks using :checked + label.",
+              "The stylesheet already defines standard accent-color property declarations or guards the rule inside @supports (accent-color: ...).",
+              "The selector is an accessible screen-reader utility class (.sr-only or .visually-hidden) that preserves keyboard accessibility and element geometry."
+            ]
+          },
+          "count": 2,
+          "findings": [
+            {
+              "file": "src/style.css",
+              "line": 527,
+              "message": "CSS rule styles custom checkmark icons on sibling pseudo-elements; modernize using accent-color or appearance: none directly on the checkbox input.",
+              "lineContent": ".img-segments input:checked + span::before {"
+            },
+            {
+              "file": "src/style.css",
+              "line": 679,
+              "message": "CSS rule styles custom checkmark icons on sibling pseudo-elements; modernize using accent-color or appearance: none directly on the checkbox input.",
+              "lineContent": ".img-segments input:checked + span::before {"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "guideId": "dark-mode",
+      "retrieveCommand": "npx modern-web-guidance retrieve dark-mode",
+      "count": 1,
+      "rules": [
+        {
+          "ruleId": "dark-mode",
+          "summary": "Stylesheets overriding colors in @media (prefers-color-scheme: dark) without color-scheme should use color-scheme: light dark and light-dark().",
+          "verifierRubric": {
+            "keepWhen": [
+              "CSS rules duplicate theme properties inside @media (prefers-color-scheme: dark) without declaring color-scheme: light dark or using light-dark() CSS color tokens.",
+              "Component styles override foreground, background, or border colors within prefers-color-scheme media blocks without root color-scheme enablement."
+            ],
+            "dropWhen": [
+              "The stylesheet already declares color-scheme: light dark on :root, html, or container elements.",
+              "The stylesheet utilizes light-dark() color functions for automatic color switching.",
+              "The media query is inside an external print stylesheet or handles high-contrast forced-colors mode overrides."
+            ]
+          },
+          "count": 1,
+          "findings": [
+            {
+              "file": "public/404.html",
+              "line": 31,
+              "message": "CSS rule inside @media (prefers-color-scheme: dark) overrides colors; modernize using color-scheme: light dark and light-dark() CSS color functions.",
+              "lineContent": "body {"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "guideId": "ime-safe-enter-submit",
+      "retrieveCommand": "npx modern-web-guidance retrieve ime-safe-enter-submit",
+      "count": 3,
+      "rules": [
+        {
+          "ruleId": "ime-safe-enter-submit",
+          "summary": "Flag keydown event listeners on inputs or textareas intercepting Enter (event.key or event.code \"Enter\") to submit forms, send messages, or trigger actions without checking event.isComposing or event.keyCode === 229, breaking IME input in CJK languages.",
+          "verifierRubric": {
+            "keepWhen": [
+              "Keydown event listeners on inputs or textareas checking event.key === \"Enter\" or event.code === \"Enter\" to trigger submission, search, or message sending without checking event.isComposing or event.keyCode === 229.",
+              "Custom enter-to-submit implementations intercepting Enter to call form.submit(), form.requestSubmit(), or trigger a click on a submit button without IME composition gating."
+            ],
+            "dropWhen": [
+              "Keyup or keypress event listeners (composition has already ended by keyup).",
+              "Handlers that check event.isComposing or event.keyCode === 229.",
+              "Handlers that detect Enter only through event.keyCode === 13 or event.which === 13 (the keydown that confirms an IME composition reports keyCode 229, so these never fire mid-composition).",
+              "Handlers strictly requiring modifier keys (Ctrl+Enter or Cmd+Enter) where IME character selection is not triggered.",
+              "Native form submit events or standard inputs inside a form with no custom Enter keydown listener (native Enter submission handles IME automatically).",
+              "Global document-level hotkeys, non-text UI widgets (buttons, menus, tabs, treeviews, dropdowns, modals, media players), or rich-text/code editor newline/indentation handlers rather than text-input submission."
+            ]
+          },
+          "count": 3,
+          "findings": [
+            {
+              "file": "src/editor/ColorPicker.tsx",
+              "line": 268,
+              "message": "Keydown Enter listener triggers submission/action without checking event.isComposing or event.keyCode === 229 for IME composition safety",
+              "lineContent": "if (e.key === \"Enter\") {"
+            },
+            {
+              "file": "src/editor/tools/CropTool.tsx",
+              "line": 557,
+              "message": "Keydown Enter listener triggers submission/action without checking event.isComposing or event.keyCode === 229 for IME composition safety",
+              "lineContent": "if (e.key === \"Enter\") {"
+            },
+            {
+              "file": "src/editor/tools/EmojiPanel.tsx",
+              "line": 140,
+              "message": "Keydown Enter listener triggers submission/action without checking event.isComposing or event.keyCode === 229 for IME composition safety",
+              "lineContent": "if (e.key === \"Enter\") {"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activeRuleCount": 35,
+  "activeGuideCount": 33,
+  "note": "Checked 33 guides (35 deterministic rules; ~20% of the guidance corpus). Finding 6 items here only reflects deterministic legacy patterns; use 'search <topic>' for the rest of the catalog.",
+  "skippedDocsAndTestsCount": 79
+}

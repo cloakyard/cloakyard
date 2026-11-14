@@ -1,0 +1,62 @@
+{
+  "cloakyard": [
+    {
+      "command": ["vp", "check"],
+      "exit": 0
+    },
+    {
+      "command": ["vp", "run", "build"],
+      "exit": 0
+    }
+  ],
+  "cloakpdf": [
+    {
+      "command": ["vp", "check"],
+      "exit": 0
+    },
+    {
+      "command": ["vp", "run", "build"],
+      "exit": 0
+    }
+  ],
+  "cloakimg": [
+    {
+      "command": ["vp", "check"],
+      "exit": 0
+    },
+    {
+      "command": ["vp", "run", "build"],
+      "exit": 0
+    }
+  ],
+  "cloakresume": [
+    {
+      "command": ["vp", "check"],
+      "exit": 0
+    },
+    {
+      "command": ["vp", "run", "build"],
+      "exit": 0
+    }
+  ],
+  "cloakdrop": [
+    {
+      "command": ["npm", "run", "check"],
+      "exit": 0
+    },
+    {
+      "command": ["npm", "run", "build"],
+      "exit": 0
+    }
+  ],
+  "cloakroll": [
+    {
+      "command": ["npm", "run", "check"],
+      "exit": 0
+    },
+    {
+      "command": ["npm", "run", "build"],
+      "exit": 0
+    }
+  ]
+}

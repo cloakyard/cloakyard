@@ -1,0 +1,2 @@
+Configuration hints (1)
+.css  Compiled extension excluded by knip.json → project (imports not followed)

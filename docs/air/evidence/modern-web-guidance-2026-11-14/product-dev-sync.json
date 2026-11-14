@@ -1,0 +1,30 @@
+[
+  {
+    "app": "cloakpdf",
+    "main": "68869bad04c4cbff62cb8d44822c2b8079b6f0b8",
+    "remoteDev": "68869bad04c4cbff62cb8d44822c2b8079b6f0b8"
+  },
+  {
+    "app": "cloakimg",
+    "main": "00704696863e14e602a69865b2872833226c48e8",
+    "remoteDev": "00704696863e14e602a69865b2872833226c48e8"
+  },
+  {
+    "app": "cloakresume",
+    "main": "81e09bfdc3074190646c62bc488aaa37fcadc122",
+    "remoteDev": "81e09bfdc3074190646c62bc488aaa37fcadc122"
+  },
+  {
+    "app": "cloakdrop",
+    "main": "d98a86e4974dece8643d6e1b4ffa329cb9e4a5df",
+    "remoteDev": "d98a86e4974dece8643d6e1b4ffa329cb9e4a5df"
+  },
+  {
+    "app": "cloakroll",
+    "before": "680198eaaf35449114ecc5afaa08d0245e3dfaea",
+    "main": "d65e9d403eff13887910bc11617da382f5a95e26",
+    "remoteDev": "4d30bd252946f7587b710e2ba5fde4f5a25035df",
+    "nativeTreeUnchanged": "c76539c98a74ee21da3c2a495aa848dc27d9ad2a",
+    "websiteTreeMatchesMain": true
+  }
+]

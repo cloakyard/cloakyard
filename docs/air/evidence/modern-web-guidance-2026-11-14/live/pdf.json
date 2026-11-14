@@ -1,0 +1,966 @@
+{
+  "url": "https://pdf.cloakyard.com",
+  "rows": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "5796babdb58ed6a78a5efe35ff0d85eb3180119ce23f5f2fc9da295eb6d1e8ae",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/ActionButton-BBVXIeXE.js",
+      "status": 200,
+      "expected": "79e7b7ad22e4a743c56db5e796fa5a115697ce12216adab0ff236027de9cb160",
+      "actual": "79e7b7ad22e4a743c56db5e796fa5a115697ce12216adab0ff236027de9cb160",
+      "match": true
+    },
+    {
+      "file": "assets/AlertBox-5I2CHGvE.js",
+      "status": 200,
+      "expected": "eae130fb0fb74537b2848c78c5f98a087c874354649a35baf15046234961c9c0",
+      "actual": "eae130fb0fb74537b2848c78c5f98a087c874354649a35baf15046234961c9c0",
+      "match": true
+    },
+    {
+      "file": "assets/AskPdf-WZjUJQCs.js",
+      "status": 200,
+      "expected": "a0849a0dc00ebad1422549371548c2b173318f64b13948b84e30409533fd7774",
+      "actual": "a0849a0dc00ebad1422549371548c2b173318f64b13948b84e30409533fd7774",
+      "match": true
+    },
+    {
+      "file": "assets/ComparePdf-CQJHN2T6.js",
+      "status": 200,
+      "expected": "99df8c2468e4906c32062305aed9a04cca9db308685359feb6fceb5dd2d5c50c",
+      "actual": "99df8c2468e4906c32062305aed9a04cca9db308685359feb6fceb5dd2d5c50c",
+      "match": true
+    },
+    {
+      "file": "assets/DigitalSignature-BlyjzQkx.js",
+      "status": 200,
+      "expected": "6b46f1031d8a50110e11c48b14d0f02c6449976a8bb3c81fd01c21bad49f0ca6",
+      "actual": "6b46f1031d8a50110e11c48b14d0f02c6449976a8bb3c81fd01c21bad49f0ca6",
+      "match": true
+    },
+    {
+      "file": "assets/EditorView-DnWMQUy3.js",
+      "status": 200,
+      "expected": "d0321edbdba64fbacf14ea0730d1271cc112cad3537a47c4737afc215be10de5",
+      "actual": "d0321edbdba64fbacf14ea0730d1271cc112cad3537a47c4737afc215be10de5",
+      "match": true
+    },
+    {
+      "file": "assets/ExtractImages-BDIMfhdW.js",
+      "status": 200,
+      "expected": "c89cf65eca870e8e7abe9352f5aefb50b07d6c13f303208fae0541cb8a524e6e",
+      "actual": "c89cf65eca870e8e7abe9352f5aefb50b07d6c13f303208fae0541cb8a524e6e",
+      "match": true
+    },
+    {
+      "file": "assets/FileDropZone-B5CGVIhe.js",
+      "status": 200,
+      "expected": "38656423aecb02f85d61476cdcd66e60a87275e17cffdbbd81e20c901d54f41d",
+      "actual": "38656423aecb02f85d61476cdcd66e60a87275e17cffdbbd81e20c901d54f41d",
+      "match": true
+    },
+    {
+      "file": "assets/FileInfoBar-Pithrb0E.js",
+      "status": 200,
+      "expected": "94f826c12c44b1557e602f20f2a30db55e08b52f550b0699837cdfa0b3c2bd8a",
+      "actual": "94f826c12c44b1557e602f20f2a30db55e08b52f550b0699837cdfa0b3c2bd8a",
+      "match": true
+    },
+    {
+      "file": "assets/FileQueue-X22WguYc.js",
+      "status": 200,
+      "expected": "598ddebc5820e9b33845375cfdc0566ea45cad6a6ed2f40c08318449729e097a",
+      "actual": "598ddebc5820e9b33845375cfdc0566ea45cad6a6ed2f40c08318449729e097a",
+      "match": true
+    },
+    {
+      "file": "assets/ImagesToPdf-Dk_6ix4C.js",
+      "status": 200,
+      "expected": "0a516f413e5c767b70cbbb3a03444a56c5febe1229eecb25ff5871388cca0f98",
+      "actual": "0a516f413e5c767b70cbbb3a03444a56c5febe1229eecb25ff5871388cca0f98",
+      "match": true
+    },
+    {
+      "file": "assets/LoadingState-QFozc_qq.js",
+      "status": 200,
+      "expected": "19da109b4f6feee1514b72ea10ce2bfe4822b0409864b0fa34e99fdbee85e25f",
+      "actual": "19da109b4f6feee1514b72ea10ce2bfe4822b0409864b0fa34e99fdbee85e25f",
+      "match": true
+    },
+    {
+      "file": "assets/MergePdf-B7GkAS0B.js",
+      "status": 200,
+      "expected": "f814459c9395430b4562bf3fe9a97348d7e1d3d7d065f91f471c6781f6733c79",
+      "actual": "f814459c9395430b4562bf3fe9a97348d7e1d3d7d065f91f471c6781f6733c79",
+      "match": true
+    },
+    {
+      "file": "assets/PagePreviewNav-Dc_NPZwF.js",
+      "status": 200,
+      "expected": "8f20eeb627dec07a787e55b40e5aa5d97ab6c21d8d9a4e37c46650e9abf07e16",
+      "actual": "8f20eeb627dec07a787e55b40e5aa5d97ab6c21d8d9a4e37c46650e9abf07e16",
+      "match": true
+    },
+    {
+      "file": "assets/PdfPassword-fCTnIclC.js",
+      "status": 200,
+      "expected": "8cc855c21e6f1eeb65487326660d05ad7b6854f0f1b09a3f8b1bf28950bea5da",
+      "actual": "8cc855c21e6f1eeb65487326660d05ad7b6854f0f1b09a3f8b1bf28950bea5da",
+      "match": true
+    },
+    {
+      "file": "assets/ProgressBar-dtpo0MW3.js",
+      "status": 200,
+      "expected": "e2a68ff2038efbb589783f6bd8de356c6c05d82d75556ca33d1e5fa27446e699",
+      "actual": "e2a68ff2038efbb589783f6bd8de356c6c05d82d75556ca33d1e5fa27446e699",
+      "match": true
+    },
+    {
+      "file": "assets/SegmentedControl-Buwjub7C.js",
+      "status": 200,
+      "expected": "aceb3f72533e600f7b7c1ef91d5fbcd14ec57c3aaa185b978476e36a66df87d5",
+      "actual": "aceb3f72533e600f7b7c1ef91d5fbcd14ec57c3aaa185b978476e36a66df87d5",
+      "match": true
+    },
+    {
+      "file": "assets/ai-runtime-DmEEkU9W.js",
+      "status": 200,
+      "expected": "b3e60c7ac6ace3cb39779820a432e2fd071d2bdc09f9b04f291132696c4573d0",
+      "actual": "b3e60c7ac6ace3cb39779820a432e2fd071d2bdc09f9b04f291132696c4573d0",
+      "match": true
+    },
+    {
+      "file": "assets/air-BW4Q3uTe.css",
+      "status": 404,
+      "expected": "1410d6e573db76eb55dd095a683ea687680e05d9c1d2fd2a27503e12dae08119",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/air-CnxVARMm.js",
+      "status": 404,
+      "expected": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/app-8DnBYMlK.css",
+      "status": 200,
+      "expected": "6ccc19260de47f699b9c2949cc29b3507cb771fa536311a360ab185d460276c2",
+      "actual": "6ccc19260de47f699b9c2949cc29b3507cb771fa536311a360ab185d460276c2",
+      "match": true
+    },
+    {
+      "file": "assets/app-CSE1xcx3.js",
+      "status": 404,
+      "expected": "b1ea94f551300cc26a19c4f883ec3d39bbb485384bb3929a570656e68bce8053",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/arrow-down-DZU6Vfr-.js",
+      "status": 200,
+      "expected": "38780fa0c5fba2507e8b08dd5c92d80877b8ce4d9c7ae068157e13566657d288",
+      "actual": "38780fa0c5fba2507e8b08dd5c92d80877b8ce4d9c7ae068157e13566657d288",
+      "match": true
+    },
+    {
+      "file": "assets/check-DIWQzlU9.js",
+      "status": 200,
+      "expected": "5cf50f92fac6531a67b2f0d9482ebb623049e0ee5cd53d001715b5a57fc0e6d5",
+      "actual": "5cf50f92fac6531a67b2f0d9482ebb623049e0ee5cd53d001715b5a57fc0e6d5",
+      "match": true
+    },
+    {
+      "file": "assets/chevron-left-BaH1kPVO.js",
+      "status": 200,
+      "expected": "f9ab9ef9ce56ca49a176482ae6c6caae8656f9ec91a40a41be805bdf7fb551b4",
+      "actual": "f9ab9ef9ce56ca49a176482ae6c6caae8656f9ec91a40a41be805bdf7fb551b4",
+      "match": true
+    },
+    {
+      "file": "assets/crypto.worker-CKzjpwg2.js",
+      "status": 200,
+      "expected": "240984888ae3f2ff5e5691f654f278fdafa3f5713c53b40adb378f5a29729b22",
+      "actual": "240984888ae3f2ff5e5691f654f278fdafa3f5713c53b40adb378f5a29729b22",
+      "match": true
+    },
+    {
+      "file": "assets/dist-B3_OzN2x.js",
+      "status": 200,
+      "expected": "701514b196a38fc53e1a9dc1760393d827f865f8c7ad0a44cdd0b2a8bf8d9883",
+      "actual": "701514b196a38fc53e1a9dc1760393d827f865f8c7ad0a44cdd0b2a8bf8d9883",
+      "match": true
+    },
+    {
+      "file": "assets/eye-B4ZEhygA.js",
+      "status": 200,
+      "expected": "a0bcc181527d5faa4d6c7d9538c0c56a623e89d9b864fce9b87093c47d808776",
+      "actual": "a0bcc181527d5faa4d6c7d9538c0c56a623e89d9b864fce9b87093c47d808776",
+      "match": true
+    },
+    {
+      "file": "assets/eye-off-BWY7wM6A.js",
+      "status": 200,
+      "expected": "a91825e435565781f83fd5a124314f3220f864ee1acc6f18c0175127e3f609c6",
+      "actual": "a91825e435565781f83fd5a124314f3220f864ee1acc6f18c0175127e3f609c6",
+      "match": true
+    },
+    {
+      "file": "assets/liteparse_wasm-DXzWsvkr.js",
+      "status": 200,
+      "expected": "e088e95ee6a5bddfff070e4bc090257961fd3af6abed7cc8400be68c21ca7ff8",
+      "actual": "e088e95ee6a5bddfff070e4bc090257961fd3af6abed7cc8400be68c21ca7ff8",
+      "match": true
+    },
+    {
+      "file": "assets/liteparse_wasm_bg-D7l-xHoE.wasm",
+      "status": 200,
+      "expected": "c581916caba834c77593983342d8469c1fafe3c625df8c4ae57d6627cf6c82c7",
+      "actual": "c581916caba834c77593983342d8469c1fafe3c625df8c4ae57d6627cf6c82c7",
+      "match": true
+    },
+    {
+      "file": "assets/liteparse_wasm_bg-juTA64uI.js",
+      "status": 200,
+      "expected": "45b60321b8037b162b367b143dfbc0f930045d32eb4635bd2196139822b471e0",
+      "actual": "45b60321b8037b162b367b143dfbc0f930045d32eb4635bd2196139822b471e0",
+      "match": true
+    },
+    {
+      "file": "assets/motion-C7gspLod.js",
+      "status": 200,
+      "expected": "d059b60cd4c14cf8a0ee3df0acc3ed0b94ab260aabdb4223dbd03a24b8ec3521",
+      "actual": "d059b60cd4c14cf8a0ee3df0acc3ed0b94ab260aabdb4223dbd03a24b8ec3521",
+      "match": true
+    },
+    {
+      "file": "assets/notFound-B2yRMGMG.js",
+      "status": 404,
+      "expected": "b5348c954a1513b4c34f4ca2440b0f7b388dd1f69df3d796d34c52cc1ac1c39f",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/pages-DpW7KFLq.js",
+      "status": 200,
+      "expected": "84fb98d29e8d2b179891245b8fa84c492d5f1e909ed278e65a8592808357f1ce",
+      "actual": "84fb98d29e8d2b179891245b8fa84c492d5f1e909ed278e65a8592808357f1ce",
+      "match": true
+    },
+    {
+      "file": "assets/pdf-Bnu16sQT.js",
+      "status": 200,
+      "expected": "fe1806808d958563c06a0d19ebfd08915948fd74c7a69eac924fe73fda3e2e68",
+      "actual": "fe1806808d958563c06a0d19ebfd08915948fd74c7a69eac924fe73fda3e2e68",
+      "match": true
+    },
+    {
+      "file": "assets/pdf-operations-BKDV_RzB.js",
+      "status": 200,
+      "expected": "f5d805c08e1a146eed8d62fb9f0a8c5914583a0f549c8c505862c1f0eeae9964",
+      "actual": "f5d805c08e1a146eed8d62fb9f0a8c5914583a0f549c8c505862c1f0eeae9964",
+      "match": true
+    },
+    {
+      "file": "assets/pdf-renderer-6hZO8Q1Q.js",
+      "status": 200,
+      "expected": "73bcfe46f1b11f6835681e9c73e01e9808ef15a3beb4085281ed1f910b0830f3",
+      "actual": "73bcfe46f1b11f6835681e9c73e01e9808ef15a3beb4085281ed1f910b0830f3",
+      "match": true
+    },
+    {
+      "file": "assets/pdf-security--Ebhd8MU.js",
+      "status": 200,
+      "expected": "efbf87402ed88460715e583243143cf8e3064af791cbf542e4bade10d2175c9c",
+      "actual": "efbf87402ed88460715e583243143cf8e3064af791cbf542e4bade10d2175c9c",
+      "match": true
+    },
+    {
+      "file": "assets/pdf-tZbbIngH.js",
+      "status": 200,
+      "expected": "a7e56a695f99208ee56e0590268ad00c94dbe92ac59bff19ee65126372bbb2fe",
+      "actual": "a7e56a695f99208ee56e0590268ad00c94dbe92ac59bff19ee65126372bbb2fe",
+      "match": true
+    },
+    {
+      "file": "assets/pdf.worker.min-C5HlG1St.js",
+      "status": 200,
+      "expected": "1b09f7999f19a7275dec7da3b6578ab10c072b1259f3a3e6943c42fa1a8b718e",
+      "actual": "1b09f7999f19a7275dec7da3b6578ab10c072b1259f3a3e6943c42fa1a8b718e",
+      "match": true
+    },
+    {
+      "file": "assets/pdf.worker.min-CPi9uReZ.js",
+      "status": 200,
+      "expected": "d70309de8d24eb5b11777a81867d5dab99fe38698d3344f5cf94eb6de5656fe1",
+      "actual": "d70309de8d24eb5b11777a81867d5dab99fe38698d3344f5cf94eb6de5656fe1",
+      "match": true
+    },
+    {
+      "file": "assets/pdf.worker.min-CtcaKvfl.js",
+      "status": 200,
+      "expected": "01414b487df32ab07b0f41dd424e3536a3a3a388685e9b7ae7dc323f712ceeda",
+      "actual": "01414b487df32ab07b0f41dd424e3536a3a3a388685e9b7ae7dc323f712ceeda",
+      "match": true
+    },
+    {
+      "file": "assets/pdfjs-config-B5pwv-IP.js",
+      "status": 200,
+      "expected": "cb8dc3fb1bf6eb4bb32a307957047a4014377049b23900060c535a5ba2bb8ab2",
+      "actual": "cb8dc3fb1bf6eb4bb32a307957047a4014377049b23900060c535a5ba2bb8ab2",
+      "match": true
+    },
+    {
+      "file": "assets/persistence-DvDOl4df.js",
+      "status": 200,
+      "expected": "a48ce08660f6e96fb2debc49ece8c64c4d7e1524bf2a0a68ab414ff1f0a85ab1",
+      "actual": "a48ce08660f6e96fb2debc49ece8c64c4d7e1524bf2a0a68ab414ff1f0a85ab1",
+      "match": true
+    },
+    {
+      "file": "assets/persistence-MrPhJPbz.js",
+      "status": 200,
+      "expected": "3cd033ce12b3836ffa3287e4341232b8083cb0c1cd34eb2692be9d343e12efef",
+      "actual": "3cd033ce12b3836ffa3287e4341232b8083cb0c1cd34eb2692be9d343e12efef",
+      "match": true
+    },
+    {
+      "file": "assets/pii-BKNKleZI.js",
+      "status": 200,
+      "expected": "f12be24e78223cd2204eb835e0244d1ec6a013887857ac6713e7d1984c25540f",
+      "actual": "f12be24e78223cd2204eb835e0244d1ec6a013887857ac6713e7d1984c25540f",
+      "match": true
+    },
+    {
+      "file": "assets/preload-helper-7y9sWmk5.js",
+      "status": 200,
+      "expected": "564eabb7e91110d437ceb9cb09dadea1e9bbbe5fcb5480b8d981c1a20d30f4fc",
+      "actual": "564eabb7e91110d437ceb9cb09dadea1e9bbbe5fcb5480b8d981c1a20d30f4fc",
+      "match": true
+    },
+    {
+      "file": "assets/rolldown-runtime-BCiCTKAo.js",
+      "status": 200,
+      "expected": "f85e715d54a11fa37b7774ad77b536896ed01bfdfc98f485b678c81859fc8e2e",
+      "actual": "f85e715d54a11fa37b7774ad77b536896ed01bfdfc98f485b678c81859fc8e2e",
+      "match": true
+    },
+    {
+      "file": "assets/src-BmUdCsRu.js",
+      "status": 200,
+      "expected": "3bb4170a8703f0a9e3d524c9f0ff03ae8110c62aa3f7b953ccc5f776f366ecda",
+      "actual": "3bb4170a8703f0a9e3d524c9f0ff03ae8110c62aa3f7b953ccc5f776f366ecda",
+      "match": true
+    },
+    {
+      "file": "assets/tools-CmRTWbQH.js",
+      "status": 200,
+      "expected": "5203403a5a5115f9cb0582cd882167531aa8f40f0fe17f418481502ffda7968a",
+      "actual": "5203403a5a5115f9cb0582cd882167531aa8f40f0fe17f418481502ffda7968a",
+      "match": true
+    },
+    {
+      "file": "assets/transformers.web-CrdNmtJ2.js",
+      "status": 200,
+      "expected": "64c8518b2c899449df6becdd93f1ec740f363f814d71d6e3664314953043072f",
+      "actual": "64c8518b2c899449df6becdd93f1ec740f363f814d71d6e3664314953043072f",
+      "match": true
+    },
+    {
+      "file": "assets/triangle-exclamation-point-Ddl8WLKu.js",
+      "status": 200,
+      "expected": "2d7077b0a90eb011bda95faec89aece4a5c714f03d75e0124d41e859e7ebc9db",
+      "actual": "2d7077b0a90eb011bda95faec89aece4a5c714f03d75e0124d41e859e7ebc9db",
+      "match": true
+    },
+    {
+      "file": "assets/useAsyncProcess-B7j1BeHW.js",
+      "status": 200,
+      "expected": "be3fd5e8f1aa89d01a2fc267ae30db053ccbf15646ffb98113b6e6edb60ce097",
+      "actual": "be3fd5e8f1aa89d01a2fc267ae30db053ccbf15646ffb98113b6e6edb60ce097",
+      "match": true
+    },
+    {
+      "file": "assets/usePdfFile-B1JSNVKB.js",
+      "status": 200,
+      "expected": "ff7878af80711cb0c1cc18fc6fc04bcd532426f0720489f4c4d0059227261f54",
+      "actual": "ff7878af80711cb0c1cc18fc6fc04bcd532426f0720489f4c4d0059227261f54",
+      "match": true
+    },
+    {
+      "file": "assets/workbox-window.prod.es5-Bd17z0YL.js",
+      "status": 200,
+      "expected": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "actual": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "match": true
+    },
+    {
+      "file": "assets/x-B9OFHaV1.js",
+      "status": 200,
+      "expected": "b60dfabb2c7f292283ced5bdd991f598896985c232ac809cabf30ce79e8aa3f4",
+      "actual": "b60dfabb2c7f292283ced5bdd991f598896985c232ac809cabf30ce79e8aa3f4",
+      "match": true
+    },
+    {
+      "file": "assets/zip-aWvN4PZo.js",
+      "status": 200,
+      "expected": "e40c026611d47b3ee843b226eddc84bde2892b7fab27a5772e27c45e43b24460",
+      "actual": "e40c026611d47b3ee843b226eddc84bde2892b7fab27a5772e27c45e43b24460",
+      "match": true
+    },
+    {
+      "file": "cloakpdf-mark.svg",
+      "status": 200,
+      "expected": "d1fa98f8ab9245757b4c7b1d1fcf6d8dcf584abb7ca65bc01b3a1ab7363f58aa",
+      "actual": "d1fa98f8ab9245757b4c7b1d1fcf6d8dcf584abb7ca65bc01b3a1ab7363f58aa",
+      "match": true
+    },
+    {
+      "file": "fonts/LICENSE.txt",
+      "status": 200,
+      "expected": "96024e36f130019e65f5093fdee1acfd0de6633e64de4a4e6fa9acdb69d74687",
+      "actual": "96024e36f130019e65f5093fdee1acfd0de6633e64de4a4e6fa9acdb69d74687",
+      "match": true
+    },
+    {
+      "file": "fonts/README.md",
+      "status": 200,
+      "expected": "2745ac9154f0babb8d41530bfe7606e0267154db0a1b3d906168687f97831bea",
+      "actual": "2745ac9154f0babb8d41530bfe7606e0267154db0a1b3d906168687f97831bea",
+      "match": true
+    },
+    {
+      "file": "fonts/lato/400-italic.ttf",
+      "status": 200,
+      "expected": "82e08cf0834d2b4bd6dc2bbd3c519a6986a16e8a5aa9886de71b3c3a4f511602",
+      "actual": "82e08cf0834d2b4bd6dc2bbd3c519a6986a16e8a5aa9886de71b3c3a4f511602",
+      "match": true
+    },
+    {
+      "file": "fonts/lato/400-normal.ttf",
+      "status": 200,
+      "expected": "e79e1d2371fd277467f7151eb10b5b2a9f58a2cb0a843df42d27f518af78f213",
+      "actual": "e79e1d2371fd277467f7151eb10b5b2a9f58a2cb0a843df42d27f518af78f213",
+      "match": true
+    },
+    {
+      "file": "fonts/lato/700-italic.ttf",
+      "status": 200,
+      "expected": "6dc96cd53ef0884b9de6897ef01eae3283a18a7b6c17702dd143d064cb3a8f62",
+      "actual": "6dc96cd53ef0884b9de6897ef01eae3283a18a7b6c17702dd143d064cb3a8f62",
+      "match": true
+    },
+    {
+      "file": "fonts/lato/700-normal.ttf",
+      "status": 200,
+      "expected": "5edf0ec54294d64bafcfc1b9d04bb892a6108747cbdee5efce83239b77c697b2",
+      "actual": "5edf0ec54294d64bafcfc1b9d04bb892a6108747cbdee5efce83239b77c697b2",
+      "match": true
+    },
+    {
+      "file": "fonts/lora/400-italic.ttf",
+      "status": 200,
+      "expected": "66fbdb8692f7dd618275c18ea0d29485bfe7317f25b5e0d7c34267d573293d9e",
+      "actual": "66fbdb8692f7dd618275c18ea0d29485bfe7317f25b5e0d7c34267d573293d9e",
+      "match": true
+    },
+    {
+      "file": "fonts/lora/400-normal.ttf",
+      "status": 200,
+      "expected": "784dc32dcfadafdcb84debb17585fa714d743da9ed32dac71a51c2c97332691c",
+      "actual": "784dc32dcfadafdcb84debb17585fa714d743da9ed32dac71a51c2c97332691c",
+      "match": true
+    },
+    {
+      "file": "fonts/lora/700-italic.ttf",
+      "status": 200,
+      "expected": "7f39242a9ef52f48df76ab6b8e986308a457ef2d8e9eac88721f8e7afd34c225",
+      "actual": "7f39242a9ef52f48df76ab6b8e986308a457ef2d8e9eac88721f8e7afd34c225",
+      "match": true
+    },
+    {
+      "file": "fonts/lora/700-normal.ttf",
+      "status": 200,
+      "expected": "438aecbcae427887eedf785e932fb96c5daf6f20a08ebe4ef8623fef8699fa3d",
+      "actual": "438aecbcae427887eedf785e932fb96c5daf6f20a08ebe4ef8623fef8699fa3d",
+      "match": true
+    },
+    {
+      "file": "fonts/merriweather/400-italic.ttf",
+      "status": 200,
+      "expected": "37d54a3e4446ec93d78cd74b1634a76451ed4461b95c17dfc3c2cbe924685e6c",
+      "actual": "37d54a3e4446ec93d78cd74b1634a76451ed4461b95c17dfc3c2cbe924685e6c",
+      "match": true
+    },
+    {
+      "file": "fonts/merriweather/400-normal.ttf",
+      "status": 200,
+      "expected": "9b2878cea0448ffb80d5f2b4741191f58adb2feb8dbf38539f1bce7ad4783355",
+      "actual": "9b2878cea0448ffb80d5f2b4741191f58adb2feb8dbf38539f1bce7ad4783355",
+      "match": true
+    },
+    {
+      "file": "fonts/merriweather/700-italic.ttf",
+      "status": 200,
+      "expected": "c0bcea90f335b132c68d4caf656e41dde560841d92f98acd39cbc087d6016fc6",
+      "actual": "c0bcea90f335b132c68d4caf656e41dde560841d92f98acd39cbc087d6016fc6",
+      "match": true
+    },
+    {
+      "file": "fonts/merriweather/700-normal.ttf",
+      "status": 200,
+      "expected": "788fb4eafc31961a6245ec5a3f2c77b44d8eae06b9d91f0cfb3c2711d77c0afa",
+      "actual": "788fb4eafc31961a6245ec5a3f2c77b44d8eae06b9d91f0cfb3c2711d77c0afa",
+      "match": true
+    },
+    {
+      "file": "fonts/montserrat/400-italic.ttf",
+      "status": 200,
+      "expected": "cb2ed1c533ee5a2a4ff99e40e25fa351802f1db365190745eee30d8b85e0484f",
+      "actual": "cb2ed1c533ee5a2a4ff99e40e25fa351802f1db365190745eee30d8b85e0484f",
+      "match": true
+    },
+    {
+      "file": "fonts/montserrat/400-normal.ttf",
+      "status": 200,
+      "expected": "b32dfec470f47ec29ca06deae23ed152c14595be7eed6ec77d240bc9c2671a48",
+      "actual": "b32dfec470f47ec29ca06deae23ed152c14595be7eed6ec77d240bc9c2671a48",
+      "match": true
+    },
+    {
+      "file": "fonts/montserrat/700-italic.ttf",
+      "status": 200,
+      "expected": "c6eccb2b69d97d2cb4acb7917168869f6b27261b687f6082244750bbb7058ceb",
+      "actual": "c6eccb2b69d97d2cb4acb7917168869f6b27261b687f6082244750bbb7058ceb",
+      "match": true
+    },
+    {
+      "file": "fonts/montserrat/700-normal.ttf",
+      "status": 200,
+      "expected": "5281906b240d4414c949eab4b225b2f26cf3fa33096675384889e0c45cef7e26",
+      "actual": "5281906b240d4414c949eab4b225b2f26cf3fa33096675384889e0c45cef7e26",
+      "match": true
+    },
+    {
+      "file": "fonts/opensans/400-italic.ttf",
+      "status": 200,
+      "expected": "9c912a7a087721195871bd9b9635d980f6165617f07845b498fdf43a44171fbc",
+      "actual": "9c912a7a087721195871bd9b9635d980f6165617f07845b498fdf43a44171fbc",
+      "match": true
+    },
+    {
+      "file": "fonts/opensans/400-normal.ttf",
+      "status": 200,
+      "expected": "322708862587c702b8cc5ed4d6a1f9d168b8f4d1c4fcd82e33c4cb093d86833a",
+      "actual": "322708862587c702b8cc5ed4d6a1f9d168b8f4d1c4fcd82e33c4cb093d86833a",
+      "match": true
+    },
+    {
+      "file": "fonts/opensans/700-italic.ttf",
+      "status": 200,
+      "expected": "4b23e1351c6ad2391b912aed560e48232537f9ab9d732ea98a63393a2ac7d9f4",
+      "actual": "4b23e1351c6ad2391b912aed560e48232537f9ab9d732ea98a63393a2ac7d9f4",
+      "match": true
+    },
+    {
+      "file": "fonts/opensans/700-normal.ttf",
+      "status": 200,
+      "expected": "63495f8966955f9d58036ff5e25b45fe8a71c15acbe89bfa0b51e24173176ad9",
+      "actual": "63495f8966955f9d58036ff5e25b45fe8a71c15acbe89bfa0b51e24173176ad9",
+      "match": true
+    },
+    {
+      "file": "fonts/oswald/400-normal.ttf",
+      "status": 200,
+      "expected": "6cc0635d20ac6246823071af53f70a207a3360cd0311352c8a883b8532db3a1e",
+      "actual": "6cc0635d20ac6246823071af53f70a207a3360cd0311352c8a883b8532db3a1e",
+      "match": true
+    },
+    {
+      "file": "fonts/oswald/700-normal.ttf",
+      "status": 200,
+      "expected": "0a56bb4131388fdb1d980b79e5b6aec381ca6a715f4e34621dc56db22c98ca7d",
+      "actual": "0a56bb4131388fdb1d980b79e5b6aec381ca6a715f4e34621dc56db22c98ca7d",
+      "match": true
+    },
+    {
+      "file": "fonts/playfairdisplay/400-italic.ttf",
+      "status": 200,
+      "expected": "bf8108f692de64ae69e8bd77af211519690aaeb68a984f4357986dfb7c0bc939",
+      "actual": "bf8108f692de64ae69e8bd77af211519690aaeb68a984f4357986dfb7c0bc939",
+      "match": true
+    },
+    {
+      "file": "fonts/playfairdisplay/400-normal.ttf",
+      "status": 200,
+      "expected": "e7b0ec52708b735081d8f2bd9073524c740924cfba4f1a43232c1c8af39d5073",
+      "actual": "e7b0ec52708b735081d8f2bd9073524c740924cfba4f1a43232c1c8af39d5073",
+      "match": true
+    },
+    {
+      "file": "fonts/playfairdisplay/700-italic.ttf",
+      "status": 200,
+      "expected": "5e05ebacb87aa90c21f754e9b98b3c98f9087e45d066bae38d7243a9d150c227",
+      "actual": "5e05ebacb87aa90c21f754e9b98b3c98f9087e45d066bae38d7243a9d150c227",
+      "match": true
+    },
+    {
+      "file": "fonts/playfairdisplay/700-normal.ttf",
+      "status": 200,
+      "expected": "7fc6ece5d5bce30c84f1666e28316f5c7218bd2015694737b958fff473734306",
+      "actual": "7fc6ece5d5bce30c84f1666e28316f5c7218bd2015694737b958fff473734306",
+      "match": true
+    },
+    {
+      "file": "fonts/poppins/400-italic.ttf",
+      "status": 200,
+      "expected": "2dc0ecdbf0021dcfb680c1873f0247238e419a62e4a63bc0ebb23670d568f185",
+      "actual": "2dc0ecdbf0021dcfb680c1873f0247238e419a62e4a63bc0ebb23670d568f185",
+      "match": true
+    },
+    {
+      "file": "fonts/poppins/400-normal.ttf",
+      "status": 200,
+      "expected": "c816ed684af7ed071214d948735c8c6a66ce4cb65e22cad24c71d29ae37efc48",
+      "actual": "c816ed684af7ed071214d948735c8c6a66ce4cb65e22cad24c71d29ae37efc48",
+      "match": true
+    },
+    {
+      "file": "fonts/poppins/700-italic.ttf",
+      "status": 200,
+      "expected": "30a7ee673b0d29a315d9b58ccb7cd89a31f25312603e8318dc7411f7a1e59571",
+      "actual": "30a7ee673b0d29a315d9b58ccb7cd89a31f25312603e8318dc7411f7a1e59571",
+      "match": true
+    },
+    {
+      "file": "fonts/poppins/700-normal.ttf",
+      "status": 200,
+      "expected": "360548eacbb0d4cb27c4763ad4b2e44d21bfb873f536d1bbb88e3006a2c2d184",
+      "actual": "360548eacbb0d4cb27c4763ad4b2e44d21bfb873f536d1bbb88e3006a2c2d184",
+      "match": true
+    },
+    {
+      "file": "fonts/roboto/400-italic.ttf",
+      "status": 200,
+      "expected": "e4571ac267ced25ba6f323d863f5b991d795abb2ee3adec69003c2ed122b2dab",
+      "actual": "e4571ac267ced25ba6f323d863f5b991d795abb2ee3adec69003c2ed122b2dab",
+      "match": true
+    },
+    {
+      "file": "fonts/roboto/400-normal.ttf",
+      "status": 200,
+      "expected": "73b5cc943fc011cb22e62fbbf51edfbda0515651fc9ba675d3df5e1499418c0c",
+      "actual": "73b5cc943fc011cb22e62fbbf51edfbda0515651fc9ba675d3df5e1499418c0c",
+      "match": true
+    },
+    {
+      "file": "fonts/roboto/700-italic.ttf",
+      "status": 200,
+      "expected": "06e3d86108cb739332f7d36bb2770a5852d7e873d56038bc4fa838e5ea7605f3",
+      "actual": "06e3d86108cb739332f7d36bb2770a5852d7e873d56038bc4fa838e5ea7605f3",
+      "match": true
+    },
+    {
+      "file": "fonts/roboto/700-normal.ttf",
+      "status": 200,
+      "expected": "7fc147166bf81d7d3f74b29ca5753dfe66347564477763c047d7a6b6d352434b",
+      "actual": "7fc147166bf81d7d3f74b29ca5753dfe66347564477763c047d7a6b6d352434b",
+      "match": true
+    },
+    {
+      "file": "fonts/robotomono/400-italic.ttf",
+      "status": 200,
+      "expected": "a762419ac9443f3dd0caa6df15af42f8267ba5f088ef1bba38e1a879effb1f84",
+      "actual": "a762419ac9443f3dd0caa6df15af42f8267ba5f088ef1bba38e1a879effb1f84",
+      "match": true
+    },
+    {
+      "file": "fonts/robotomono/400-normal.ttf",
+      "status": 200,
+      "expected": "45e65c7ed7cf7d3521a70bb3935f239422063b759c62ce7f96701ad6bdd80cea",
+      "actual": "45e65c7ed7cf7d3521a70bb3935f239422063b759c62ce7f96701ad6bdd80cea",
+      "match": true
+    },
+    {
+      "file": "fonts/robotomono/700-italic.ttf",
+      "status": 200,
+      "expected": "d29fe50a5134115dbedaac8b481c3aab55a80a4cd247bfaedc993e0d892395be",
+      "actual": "d29fe50a5134115dbedaac8b481c3aab55a80a4cd247bfaedc993e0d892395be",
+      "match": true
+    },
+    {
+      "file": "fonts/robotomono/700-normal.ttf",
+      "status": 200,
+      "expected": "b0dca72dd80d480ee578d15038406acce2c250ed0e51b8a06a4a4cdff778ed4e",
+      "actual": "b0dca72dd80d480ee578d15038406acce2c250ed0e51b8a06a4a4cdff778ed4e",
+      "match": true
+    },
+    {
+      "file": "fonts/sourcecodepro/400-italic.ttf",
+      "status": 200,
+      "expected": "89cd1e60c61f75788ac1a23a7bb396dfc585855730b26f49ee2ef2fcc533ec76",
+      "actual": "89cd1e60c61f75788ac1a23a7bb396dfc585855730b26f49ee2ef2fcc533ec76",
+      "match": true
+    },
+    {
+      "file": "fonts/sourcecodepro/400-normal.ttf",
+      "status": 200,
+      "expected": "531249a04d31457f28968394cbefb5a0f40bef3dbaa4516ab35948f20a5948da",
+      "actual": "531249a04d31457f28968394cbefb5a0f40bef3dbaa4516ab35948f20a5948da",
+      "match": true
+    },
+    {
+      "file": "fonts/sourcecodepro/700-italic.ttf",
+      "status": 200,
+      "expected": "4232e9f62ce8e9e72a67abecca08569a44050f992601dac7df01f818a721a2c9",
+      "actual": "4232e9f62ce8e9e72a67abecca08569a44050f992601dac7df01f818a721a2c9",
+      "match": true
+    },
+    {
+      "file": "fonts/sourcecodepro/700-normal.ttf",
+      "status": 200,
+      "expected": "6777fb79e8522a6bf66204fa875e8c730945a7dffa643787a8cce31fd8711981",
+      "actual": "6777fb79e8522a6bf66204fa875e8c730945a7dffa643787a8cce31fd8711981",
+      "match": true
+    },
+    {
+      "file": "icons/apple-touch-icon.png",
+      "status": 200,
+      "expected": "b472e52bbe048e50c3cc2ddd65a44ac182af178ef6dde903006984ad0c35e5b4",
+      "actual": "b472e52bbe048e50c3cc2ddd65a44ac182af178ef6dde903006984ad0c35e5b4",
+      "match": true
+    },
+    {
+      "file": "icons/cloakpdf-app-icon.svg",
+      "status": 200,
+      "expected": "32fb79af7a9137a874585795f02921347391dcb8ae76648c9fc6fcbe73eb3aa4",
+      "actual": "32fb79af7a9137a874585795f02921347391dcb8ae76648c9fc6fcbe73eb3aa4",
+      "match": true
+    },
+    {
+      "file": "icons/favicon.ico",
+      "status": 200,
+      "expected": "959a1ec0f0231cbedb6d116d26279be46163313f2d8747b6b6d3ebdcaad3b6b2",
+      "actual": "959a1ec0f0231cbedb6d116d26279be46163313f2d8747b6b6d3ebdcaad3b6b2",
+      "match": true
+    },
+    {
+      "file": "icons/favicon.svg",
+      "status": 200,
+      "expected": "d8278c0e3e68a3d712324f3b844a3b74d1e1cadfaa703e8cfcfbb08cff435dc8",
+      "actual": "d8278c0e3e68a3d712324f3b844a3b74d1e1cadfaa703e8cfcfbb08cff435dc8",
+      "match": true
+    },
+    {
+      "file": "icons/maskable-icon-512x512.png",
+      "status": 200,
+      "expected": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "actual": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "match": true
+    },
+    {
+      "file": "icons/og-image.png",
+      "status": 200,
+      "expected": "8ed8d7ee4bace839d62baf3dda37f328f1d0e82d4d9cef6f8d4dedad5a046144",
+      "actual": "8ed8d7ee4bace839d62baf3dda37f328f1d0e82d4d9cef6f8d4dedad5a046144",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-192x192.png",
+      "status": 200,
+      "expected": "0847e408e3305683e17e4013d8457b0465181e2078fc4281f033a9228e4b1e89",
+      "actual": "0847e408e3305683e17e4013d8457b0465181e2078fc4281f033a9228e4b1e89",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-512x512.png",
+      "status": 200,
+      "expected": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "actual": "b8aa8602ca484bc6f62118c4c1727a277b0c5db4aa64dccc32d5c4f62d07e85f",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-64x64.png",
+      "status": 200,
+      "expected": "af349d02381052f7bc7ba52484288697ae29171b953a0753c2ee83e0b995b8b1",
+      "actual": "af349d02381052f7bc7ba52484288697ae29171b953a0753c2ee83e0b995b8b1",
+      "match": true
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "12aa36d48ef647c10f3313454502f468b24a0ffc927955ddc110d653e7f5a04c",
+      "actual": "5f77047c1ab5c6835d39f5d4b5523894e40e5a4452c2502229bbcc3fc7e03b3b",
+      "match": false
+    },
+    {
+      "file": "manifest.webmanifest",
+      "status": 200,
+      "expected": "f7e8af3fd02ede0fe24be639950f8e288d4bcbcff8c0a8fac9df98fab6536043",
+      "actual": "f7e8af3fd02ede0fe24be639950f8e288d4bcbcff8c0a8fac9df98fab6536043",
+      "match": true
+    },
+    {
+      "file": "pdfjs-wasm/jbig2.wasm",
+      "status": 200,
+      "expected": "466f45c2a61a698152fb5400c27e56ff2ceb73dcb71fde3fc366a502308eaab0",
+      "actual": "466f45c2a61a698152fb5400c27e56ff2ceb73dcb71fde3fc366a502308eaab0",
+      "match": true
+    },
+    {
+      "file": "pdfjs-wasm/jbig2_nowasm_fallback.js",
+      "status": 200,
+      "expected": "70150223396487e1ccfef7eac61fc780074ad7fcc9e843b702a8a3bc23107494",
+      "actual": "70150223396487e1ccfef7eac61fc780074ad7fcc9e843b702a8a3bc23107494",
+      "match": true
+    },
+    {
+      "file": "pdfjs-wasm/openjpeg.wasm",
+      "status": 200,
+      "expected": "7ea4b2b04613370ad4e9c1162da750cc88b4b176eac0d0c164b3caff23fc0a46",
+      "actual": "7ea4b2b04613370ad4e9c1162da750cc88b4b176eac0d0c164b3caff23fc0a46",
+      "match": true
+    },
+    {
+      "file": "pdfjs-wasm/openjpeg_nowasm_fallback.js",
+      "status": 200,
+      "expected": "2855f1590e7fd7abbbf204cd13a5c09d30c92fe2c9313fb72b64aa763fe8b4f3",
+      "actual": "2855f1590e7fd7abbbf204cd13a5c09d30c92fe2c9313fb72b64aa763fe8b4f3",
+      "match": true
+    },
+    {
+      "file": "pdfjs-wasm/qcms_bg.wasm",
+      "status": 200,
+      "expected": "663d86126d5f5fcb1c61490f94353e2a8375660b8c5498ab3ebab5a34b08800e",
+      "actual": "663d86126d5f5fcb1c61490f94353e2a8375660b8c5498ab3ebab5a34b08800e",
+      "match": true
+    },
+    {
+      "file": "pdfjs-wasm/quickjs-eval.js",
+      "status": 200,
+      "expected": "fe7930418e869791ce892567dbd0bc4698152b7e550b5cefa553992c56ddc325",
+      "actual": "fe7930418e869791ce892567dbd0bc4698152b7e550b5cefa553992c56ddc325",
+      "match": true
+    },
+    {
+      "file": "pdfjs-wasm/quickjs-eval.wasm",
+      "status": 200,
+      "expected": "7bcacc9f22cacf7e9b23866d2a6d1639693d40c7f144e41b7c69ed37ba9cbe8f",
+      "actual": "7bcacc9f22cacf7e9b23866d2a6d1639693d40c7f144e41b7c69ed37ba9cbe8f",
+      "match": true
+    },
+    {
+      "file": "robots.txt",
+      "status": 200,
+      "expected": "7d8fcf826690be5aa22801fc9604421153b50f8c9136612d11f445ff6f3b18d6",
+      "actual": "7d8fcf826690be5aa22801fc9604421153b50f8c9136612d11f445ff6f3b18d6",
+      "match": true
+    },
+    {
+      "file": "screenshots/editor-narrow-dark.png",
+      "status": 200,
+      "expected": "c35fd28b924f05585a820442c5c9aa44067d98987f3fcb9f305ec39298230deb",
+      "actual": "c35fd28b924f05585a820442c5c9aa44067d98987f3fcb9f305ec39298230deb",
+      "match": true
+    },
+    {
+      "file": "screenshots/editor-narrow-light.png",
+      "status": 200,
+      "expected": "672a73402e5ff50c4d5c2e24152fd50a799ba9fab9326c31481ce637bad009b9",
+      "actual": "672a73402e5ff50c4d5c2e24152fd50a799ba9fab9326c31481ce637bad009b9",
+      "match": true
+    },
+    {
+      "file": "screenshots/editor-wide-dark.png",
+      "status": 200,
+      "expected": "6ae3c088a3faa2b255ba0d145eb010f701352cf90ec4c32133b6b62528775b69",
+      "actual": "6ae3c088a3faa2b255ba0d145eb010f701352cf90ec4c32133b6b62528775b69",
+      "match": true
+    },
+    {
+      "file": "screenshots/editor-wide-light.png",
+      "status": 200,
+      "expected": "1ad868a6012153080b15d15fbfa52ca6fa80fb2d3d7ee8c9f936719f4c3352fd",
+      "actual": "1ad868a6012153080b15d15fbfa52ca6fa80fb2d3d7ee8c9f936719f4c3352fd",
+      "match": true
+    },
+    {
+      "file": "sitemap.xml",
+      "status": 200,
+      "expected": "ef260e6278857fe36011d0b55929ffd318f34cb5da4fe83e5380275ac3c0807e",
+      "actual": "ef260e6278857fe36011d0b55929ffd318f34cb5da4fe83e5380275ac3c0807e",
+      "match": true
+    },
+    {
+      "file": "sw.js",
+      "status": 200,
+      "expected": "52693e1726daae3a7485d8411e12d6eaa589438445a89464585ef0570888d878",
+      "actual": "fa259cebd9f9435feaed94daf699f212a5e8db882d8f7937234b815eb953f9f7",
+      "match": false
+    },
+    {
+      "file": "workbox-c06bacfd.js",
+      "status": 200,
+      "expected": "68ce0d4dc9fee93abd4ea61809620be1284e3f32714f5c995985d8c3df2e9a0d",
+      "actual": "68ce0d4dc9fee93abd4ea61809620be1284e3f32714f5c995985d8c3df2e9a0d",
+      "match": true
+    }
+  ],
+  "failures": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "5796babdb58ed6a78a5efe35ff0d85eb3180119ce23f5f2fc9da295eb6d1e8ae",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/air-BW4Q3uTe.css",
+      "status": 404,
+      "expected": "1410d6e573db76eb55dd095a683ea687680e05d9c1d2fd2a27503e12dae08119",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/air-CnxVARMm.js",
+      "status": 404,
+      "expected": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/app-CSE1xcx3.js",
+      "status": 404,
+      "expected": "b1ea94f551300cc26a19c4f883ec3d39bbb485384bb3929a570656e68bce8053",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "assets/notFound-B2yRMGMG.js",
+      "status": 404,
+      "expected": "b5348c954a1513b4c34f4ca2440b0f7b388dd1f69df3d796d34c52cc1ac1c39f",
+      "actual": "486b1bd5dd6e6cbf146d136810d974f3446f7ce1b955b0794dcbd0cd8d28cc73",
+      "match": false
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "12aa36d48ef647c10f3313454502f468b24a0ffc927955ddc110d653e7f5a04c",
+      "actual": "5f77047c1ab5c6835d39f5d4b5523894e40e5a4452c2502229bbcc3fc7e03b3b",
+      "match": false
+    },
+    {
+      "file": "sw.js",
+      "status": 200,
+      "expected": "52693e1726daae3a7485d8411e12d6eaa589438445a89464585ef0570888d878",
+      "actual": "fa259cebd9f9435feaed94daf699f212a5e8db882d8f7937234b815eb953f9f7",
+      "match": false
+    }
+  ]
+}

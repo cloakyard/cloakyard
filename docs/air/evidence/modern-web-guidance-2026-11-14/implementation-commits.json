@@ -1,0 +1,22 @@
+[
+  {
+    "app": "cloakpdf",
+    "commit": "1f67cabecbdce189e2c81712591267cd65ac0efc"
+  },
+  {
+    "app": "cloakimg",
+    "commit": "c28cceb7e12e3a2ab62e826d52bf1ff0181ad163"
+  },
+  {
+    "app": "cloakresume",
+    "commit": "801c42ac6d150bb09c9fd97489f9215821503eff"
+  },
+  {
+    "app": "cloakdrop",
+    "commit": "0810be9138d1b672f4f0311bbf33b57bf312f4d5"
+  },
+  {
+    "app": "cloakroll",
+    "commit": "55f01c0df6a9294897650840c7f7f16cf8dc6605"
+  }
+]

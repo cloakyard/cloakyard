@@ -1,0 +1,16 @@
+✔ wheel coordinates match the displayed clockwise spectrum (0.7555ms)
+✔ thumb and pointer are inverse mappings throughout the wheel (0.8905ms)
+✔ author colours round-trip without changing channel bytes (3.553375ms)
+✔ detects a single asymmetric corner and the legacy layer action (0.671875ms)
+✔ preserves distinct sheet, attached pane, nested clip and palette roles (0.398542ms)
+✔ does not turn unknown artwork or output into a conformance claim (0.120709ms)
+✔ reference form values remain text across HTML reconstruction (0.391833ms)
+✔ a reconstructed slider cannot interpolate markup from its retained value (0.112917ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52.583459

@@ -1,0 +1,103 @@
+$ node scripts/generate-static-pages.mjs ⊘ cache disabled
+11:14:26 PM [vite+] (client) page reload privacy/index.html
+
+$ tsc ⊘ cache disabled
+
+$ vp build ⊘ cache disabled
+transforming...
+✓ 604 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest                            1.29 kB
+dist/assets/lanczos.worker-DM3rxwvq.js               1.79 kB
+dist/index.html                                      4.60 kB │ gzip:     1.55 kB
+dist/404.html                                        7.71 kB │ gzip:     1.43 kB
+dist/privacy/index.html                             12.85 kB │ gzip:     2.85 kB
+dist/assets/avif_enc_mt.worker-D9er1KFK.js          28.15 kB
+dist/assets/worker-C8A7Y1k1.js                     504.89 kB
+dist/assets/exportCodec.worker-YuBgrYUu.js       2,510.47 kB
+dist/assets/avif_enc-Co4TcJko.wasm               3,485.87 kB │ gzip: 1,136.17 kB
+dist/assets/avif_enc_mt-DFoVXd45.wasm            3,534.66 kB │ gzip: 1,150.16 kB
+dist/assets/air-entry-pVQsCe1X.css                  55.49 kB │ gzip:    10.36 kB
+dist/assets/main-DZ49dN_j.css                      119.29 kB │ gzip:    21.63 kB
+dist/assets/ImageTool-tFhZoFC8.js                    0.12 kB │ gzip:     0.13 kB
+dist/assets/previewSize-DuK55wBm.js                  0.13 kB │ gzip:     0.13 kB
+dist/assets/TimeOfDayTool-CH6fPy_A.js                0.45 kB │ gzip:     0.31 kB
+dist/assets/SpotHealPanel-DL58TkDp.js                0.64 kB │ gzip:     0.41 kB
+dist/assets/ColorPickerTool-CGuFUwLx.js              0.65 kB │ gzip:     0.44 kB
+dist/assets/air-entry-D5i5azWo.js                    0.67 kB │ gzip:     0.38 kB
+dist/assets/static-pages-PVUoxwQT.js                 0.77 kB │ gzip:     0.41 kB
+dist/assets/DrawPanel-54sndnAV.js                    0.87 kB │ gzip:     0.52 kB
+dist/assets/ImageFileButton-CxYIKenV.js              0.96 kB │ gzip:     0.61 kB
+dist/assets/EmojiTool-MlEmP3lM.js                    0.97 kB │ gzip:     0.62 kB
+dist/assets/DrawTool-_o6orD59.js                     0.99 kB │ gzip:     0.59 kB
+dist/assets/BorderTool-DqMhvD47.js                   1.00 kB │ gzip:     0.56 kB
+dist/assets/border-C7JV1w9U.js                       1.02 kB │ gzip:     0.54 kB
+dist/assets/useSubjectMask-BjvLbf8X.js               1.20 kB │ gzip:     0.60 kB
+dist/assets/timeOfDay-CWbCTlC3.js                    1.39 kB │ gzip:     0.71 kB
+dist/assets/aiInspector-BkitVFxN.js                  1.54 kB │ gzip:     0.80 kB
+dist/assets/PerspectivePanel-0qS87Y2P.js             1.69 kB │ gzip:     0.93 kB
+dist/assets/BgBlurTool-MwtVsBwu.js                   2.04 kB │ gzip:     0.96 kB
+dist/assets/TapFixPanel-CgK0bkE5.js                  2.07 kB │ gzip:     1.01 kB
+dist/assets/HslTool-BDFA1AQN.js                      2.07 kB │ gzip:     0.96 kB
+dist/assets/PerspectiveTool-CBj3HTM8.js              2.16 kB │ gzip:     0.99 kB
+dist/assets/LevelsTool-EPGbD_Ig.js                   2.22 kB │ gzip:     0.99 kB
+dist/assets/PenPanel-B8qEbRTV.js                     2.22 kB │ gzip:     1.08 kB
+dist/assets/RedactTool-7Jb3RqJF.js                   2.25 kB │ gzip:     1.06 kB
+dist/assets/relight-peO347C7.js                      2.38 kB │ gzip:     1.26 kB
+dist/assets/perspective-MARPhu9c.js                  2.68 kB │ gzip:     1.27 kB
+dist/assets/ShapesPanel-DK7RtsQ_.js                  2.80 kB │ gzip:     1.08 kB
+dist/assets/EmojiPanel-CAVOGNPP.js                   2.82 kB │ gzip:     1.31 kB
+dist/assets/BorderPanel-CaaXTBZ5.js                  2.93 kB │ gzip:     1.34 kB
+dist/assets/SpotHealTool-ClLv_ydK.js                 3.17 kB │ gzip:     1.39 kB
+dist/assets/BgBlurPanel-DLU3v4AY.js                  3.34 kB │ gzip:     1.56 kB
+dist/assets/HslPanel-BXtIk_MZ.js                     3.70 kB │ gzip:     1.58 kB
+dist/assets/RemoveBgTool-oCPuGfgN.js                 3.76 kB │ gzip:     1.58 kB
+dist/assets/DetectionStatus-B7tt8JiC.js              3.80 kB │ gzip:     1.39 kB
+dist/assets/LevelsPanel-DCSjFeRv.js                  3.95 kB │ gzip:     1.39 kB
+dist/assets/TapFixTool-Crr9b936.js                   3.98 kB │ gzip:     1.89 kB
+dist/assets/removeBg-D4lg8LjB.js                     4.30 kB │ gzip:     1.83 kB
+dist/assets/ColorPickerPanel-DO73xYyp.js             4.38 kB │ gzip:     1.82 kB
+dist/assets/ImagePanel-Da6pBg7O.js                   4.46 kB │ gzip:     1.75 kB
+dist/assets/bgBlur-DH-SaDdQ.js                       4.46 kB │ gzip:     1.71 kB
+dist/assets/RelightTool-BeECgl8R.js                  4.59 kB │ gzip:     1.86 kB
+dist/assets/TimeOfDayPanel-Bk4rFShr.js               4.65 kB │ gzip:     2.08 kB
+dist/assets/PenTool-CCfwMgde.js                      5.04 kB │ gzip:     1.99 kB
+dist/assets/RedactPanel-DiATJ-V2.js                  5.40 kB │ gzip:     2.24 kB
+dist/assets/workbox-window.prod.es5-Bd17z0YL.js      5.65 kB │ gzip:     2.20 kB
+dist/assets/WatermarkPanel-DaB1x-ne.js               5.68 kB │ gzip:     2.44 kB
+dist/assets/RelightPanel-B4ZOdbzv.js                 5.95 kB │ gzip:     2.17 kB
+dist/assets/ShapesTool-Dn1VVn5v.js                   6.23 kB │ gzip:     2.51 kB
+dist/assets/TextPanel-BzUTh0xR.js                    7.02 kB │ gzip:     2.73 kB
+dist/assets/emoji-CwPh1SHJ.js                        7.13 kB │ gzip:     3.36 kB
+dist/assets/FrameTool-VGJedAUs.js                    9.70 kB │ gzip:     4.00 kB
+dist/assets/draft-XASuHkVt.js                       13.04 kB │ gzip:     5.06 kB
+dist/assets/RemoveBgPanel-BFUCkpQC.js               13.51 kB │ gzip:     4.24 kB
+dist/assets/IdPhotoTool-h6zQssqL.js                 22.02 kB │ gzip:     8.52 kB
+dist/assets/EditorContext-BW6GOSQG.js               78.47 kB │ gzip:    26.01 kB
+dist/assets/ToolbarRootContext-DF3rxtQr.js          87.22 kB │ gzip:    31.04 kB
+dist/assets/runner-B6G3yLLj.js                     157.52 kB │ gzip:    46.82 kB
+dist/assets/UnifiedEditor-fBnbYfT5.js              239.14 kB │ gzip:    73.65 kB
+dist/assets/index.min-6NjN9zuA.js                  284.36 kB │ gzip:    88.30 kB
+dist/assets/main-B2DQn4MU.js                       319.36 kB │ gzip:   100.64 kB
+dist/assets/heif-codec-DXhKMotS.js               2,460.71 kB │ gzip:   754.34 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 587ms
+
+PWA v2.0.0
+mode      generateSW
+precache  90 entries (3716.44 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-271d3e69.js
+
+$ node scripts/check-deploy-assets.mjs ⊘ cache disabled
+Deployment asset check passed: 90 files, all <= 25 MiB.
+
+---
+vp run: 4/4 successful. (Run `vp run --last-details` for full details)

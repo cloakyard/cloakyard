@@ -1,0 +1,29 @@
+{
+  "scope": "Only the identified Cloudflare challenge script is removed; all other bytes must match.",
+  "rows": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "0a9e9a75242c40c0113cff54a0b0b7169482815968767e84b3083e847c6e4bff",
+      "normalized": "0d9e03b901f9f5e5a32f691324fd4ddd2bcc2410fda7a53c7a19942d84e68fce",
+      "identifiedChallengeScripts": 1,
+      "match": false
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "f6286a845d416c190a626a93dbdc208364609a7347dd052655e8f6c083889abe",
+      "normalized": "8e243303e4dbf5c6b9ec62267dcdb867341630e98136d38f703d54d31a7b3e7d",
+      "identifiedChallengeScripts": 1,
+      "match": false
+    },
+    {
+      "file": "privacy/index.html",
+      "status": 200,
+      "expected": "2fa86d57186f52e61f49a860eeae10d56a766d496aaccb997f7c8e20bdec66dc",
+      "normalized": "6c4e610af7a7c2c06d23075486d6aebb5049e41fa5886658144be293131e4207",
+      "identifiedChallengeScripts": 1,
+      "match": false
+    }
+  ]
+}

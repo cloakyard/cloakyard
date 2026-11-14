@@ -7,6 +7,35 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Verified: Modern Web Guidance / Air 1.7.4 — 2026-11-14
+
+The requested GoogleChrome skill is installed in all six isolated web repositories
+on `codex/modern-web-guidance-2026-11-14`, with identical upstream bytes and
+telemetry disabled. Read `modern-web-guidance-audit-2026-11-14.md` and its portable
+evidence before repeating work. Installation is a separate passing commit in each
+repo. PDF #238, IMG #38, Resume #65, Drop #64 and Roll #20 are merged; all
+remote dev branches include main. IMG/Resume/Drop live files match. PDF/Roll still
+serve previous CSS: the user deferred Cloudflare verification until later, and a green dev preview
+is not production proof. The canonical PR records its own final rollout receipts.
+
+Air 1.7.4 adds composition-safe actions and increased-contrast scroll thumbs.
+IMG fixes its custom IME shortcuts and native-button handoff, uses the existing
+animated Cancel path, and replaces the shipped legacy 404 with static shared Air
+recovery. No drastic design/architecture change or native source change is made.
+501 IMG tests, 128 targeted tool states, 16 composition/recovery journeys, 12 PNG
+downloads, 8 no-JavaScript states, 90 cross-editor comparisons and 936 public
+layout states pass. Motion has 115 completed Chromium and 115 full-rerun WebKit
+states; retain the initial WebKit frame-observation timeout with the passing rerun.
+Physical IME/assistive/device acceptance remains open; synthetic signals do not
+close it. Current scan exceptions are deliberate, not unhandled UI regressions.
+
+Keep the original PDF AI working tree untouched. Do not push Drop's local native
+history wholesale to remote dev. Roll retains the already-approved website-only
+PR exception, followed by merging main into dev. The original PDF checkout now has only the skill piece (`17b7a00`); its unrelated
+diff hash and all 54 status entries remain identical. Original IMG/Resume/Roll
+checkouts are updated; Drop has a local merge preserving its native tree.
+Do not merge runtime changes into dirty PDF or publish native history.
+
 ### Verified: family maintenance audit — 2026-11-14
 
 Air 1.7.3 adds one maintained privacy body/date/lead. All six websites have current
