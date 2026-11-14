@@ -89,7 +89,7 @@ completion, and do not push or deploy without authorization.
 
 ## Dead-code audit
 
-Run `npx --yes knip@6.44.2` for the declared web graph in `knip.json`. The pinned
+Run `npx --yes knip@6.45.1` for the declared web graph in `knip.json`. The pinned
 CLI can also be supplied externally; no runtime package is required. Manual audit
 commands and portable Air library entries are deliberate public entry points.
 

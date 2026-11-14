@@ -1,11 +1,29 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-11-09
+## Start here in a new conversation — saved 2026-11-14
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+
+### Verified locally: family maintenance audit — 2026-11-14
+
+Air 1.7.3 adds one maintained privacy body/date/lead. All six websites have current
+compatible dependencies and refreshed full-view light/dark responsive verification.
+The PWA popup already conforms at bottom-right/phone-bottom; shared visual and
+motion runtime files are unchanged. Read `maintenance-audit-2026-11-14.md` for the
+per-view ledger, registry exceptions and portable evidence. Website promotion is
+in progress; preserve the original PDF's unrelated AI work and native history.
+
+Use the isolated family `/Users/sumitsahoo/Developer/.air-review-2026-11-14`.
+All six website worktrees start from published main. Native Roll upgrades GRDB to
+7.12.0 in both packages (`8d8ddfb`); Drop's current pins and official yt-dlp runtime
+exception are reverified (`00cdde6`). Both original local dev branches include
+these native commits; no native release is authorized by the website promotion.
+The physical-device/IME/assistive/print/USB gates remain open. Do not repeat the
+completed software matrix or conflate real-model fixture success with universal AI
+quality. The user's prior Compact long-document limitation exception still applies.
 
 ### Verified: growing family mark — 2026-11-09 (rollout 2026-11-10)
 
