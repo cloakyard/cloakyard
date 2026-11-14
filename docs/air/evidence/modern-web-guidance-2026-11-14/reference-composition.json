@@ -1,0 +1,22 @@
+[
+  {
+    "engine": "chromium",
+    "colorScheme": "light",
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "colorScheme": "dark",
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "colorScheme": "light",
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "colorScheme": "dark",
+    "pass": true
+  }
+]

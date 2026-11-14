@@ -1,0 +1,42 @@
+{
+  "targetDir": ".",
+  "totalFindings": 1,
+  "guides": [
+    {
+      "guideId": "custom-text-decorations",
+      "retrieveCommand": "npx modern-web-guidance retrieve custom-text-decorations",
+      "count": 1,
+      "rules": [
+        {
+          "ruleId": "custom-text-decorations",
+          "summary": "Use native CSS text-decoration shorthand, text-decoration-thickness, and text-underline-offset instead of border-bottom and padding-bottom underline hacks.",
+          "verifierRubric": {
+            "keepWhen": [
+              "CSS border-bottom and padding-bottom underline simulation on inline text or link selectors paired with text-decoration: none",
+              "CSS linear-gradient underline background hacks on inline text or link elements paired with text-decoration: none"
+            ],
+            "dropWhen": [
+              "Block-level container borders (cards, tables, panels, modals, headers, footers)",
+              "Tab navigation component active state indicators (.tab, [role=\"tab\"])",
+              "Rule declaring display: block, flex, or grid",
+              "Rule already declaring text-underline-offset or text-decoration-thickness"
+            ]
+          },
+          "count": 1,
+          "findings": [
+            {
+              "file": "src/index.css",
+              "line": 166,
+              "message": "Simulating text underline with border-bottom; native text-decoration with text-underline-offset and text-decoration-thickness avoids box-model side-effects and follows text wrapping.",
+              "lineContent": ".resume-root a.tpl-link,"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activeRuleCount": 35,
+  "activeGuideCount": 33,
+  "note": "Checked 33 guides (35 deterministic rules; ~20% of the guidance corpus). Finding 1 item here only reflects deterministic legacy patterns; use 'search <topic>' for the rest of the catalog.",
+  "skippedDocsAndTestsCount": 38
+}

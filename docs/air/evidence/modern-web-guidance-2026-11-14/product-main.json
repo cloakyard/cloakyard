@@ -1,0 +1,42 @@
+[
+  {
+    "app": "cloakpdf",
+    "url": "https://github.com/cloakyard/cloakpdf/pull/238",
+    "branch": "dev",
+    "main": "68869bad04c4cbff62cb8d44822c2b8079b6f0b8",
+    "testedTree": "bb704e0ee2148ef4a32fed0fd0ddfeaf126c23cf",
+    "mainTree": "bb704e0ee2148ef4a32fed0fd0ddfeaf126c23cf"
+  },
+  {
+    "app": "cloakimg",
+    "url": "https://github.com/cloakyard/cloakimg/pull/38",
+    "branch": "dev",
+    "main": "00704696863e14e602a69865b2872833226c48e8",
+    "testedTree": "f96adbf3fd29e280cc5715e08868f4a682ef396e",
+    "mainTree": "f96adbf3fd29e280cc5715e08868f4a682ef396e"
+  },
+  {
+    "app": "cloakresume",
+    "url": "https://github.com/cloakyard/cloakresume/pull/65",
+    "branch": "dev",
+    "main": "81e09bfdc3074190646c62bc488aaa37fcadc122",
+    "testedTree": "cef017b585821452933dac2cbf10e8d8c442ff3f",
+    "mainTree": "cef017b585821452933dac2cbf10e8d8c442ff3f"
+  },
+  {
+    "app": "cloakdrop",
+    "url": "https://github.com/cloakyard/cloakdrop/pull/64",
+    "branch": "dev",
+    "main": "d98a86e4974dece8643d6e1b4ffa329cb9e4a5df",
+    "testedTree": "27e2fc1d4c07f2ef63fe5b452641e201fce2054a",
+    "mainTree": "27e2fc1d4c07f2ef63fe5b452641e201fce2054a"
+  },
+  {
+    "app": "cloakroll",
+    "url": "https://github.com/cloakyard/cloakroll/pull/20",
+    "branch": "codex/modern-web-guidance-2026-11-14",
+    "main": "d65e9d403eff13887910bc11617da382f5a95e26",
+    "testedTree": "6cce9d5956fea184bbf564bc675eb3542ed2df29",
+    "mainTree": "6cce9d5956fea184bbf564bc675eb3542ed2df29"
+  }
+]

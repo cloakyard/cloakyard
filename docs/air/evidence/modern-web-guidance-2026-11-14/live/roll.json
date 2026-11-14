@@ -1,0 +1,98 @@
+{
+  "url": "https://roll.cloakyard.com",
+  "rows": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "0a9e9a75242c40c0113cff54a0b0b7169482815968767e84b3083e847c6e4bff",
+      "actual": "0170e37edb0fd653c55f16596cc6e1406620b30549bc19347ffd18a9d39a287f",
+      "match": false
+    },
+    {
+      "file": "cloakroll-mark.svg",
+      "status": 200,
+      "expected": "b134b867d753f34e3735d9dafed04a5cf2247ae0bb0870af8995b45098bde9f7",
+      "actual": "b134b867d753f34e3735d9dafed04a5cf2247ae0bb0870af8995b45098bde9f7",
+      "match": true
+    },
+    {
+      "file": "cloakroll.png",
+      "status": 200,
+      "expected": "c01fac16e18034b00c9d5a077d066a9ab7dc963211036866f82c3aa3c67234e9",
+      "actual": "c01fac16e18034b00c9d5a077d066a9ab7dc963211036866f82c3aa3c67234e9",
+      "match": true
+    },
+    {
+      "file": "images/library-dark.png",
+      "status": 200,
+      "expected": "0e9048df871d8094ccb82ddcdb6f40ab7285dbe68bdb98bc5d67caa26e7a8691",
+      "actual": "0e9048df871d8094ccb82ddcdb6f40ab7285dbe68bdb98bc5d67caa26e7a8691",
+      "match": true
+    },
+    {
+      "file": "images/library-light.png",
+      "status": 200,
+      "expected": "2a0e64065a2bebe3b99d4bf6e3cf9c5cced5e84abbaa0799c532fbd2e7526d4c",
+      "actual": "2a0e64065a2bebe3b99d4bf6e3cf9c5cced5e84abbaa0799c532fbd2e7526d4c",
+      "match": true
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "f6286a845d416c190a626a93dbdc208364609a7347dd052655e8f6c083889abe",
+      "actual": "ea0dd78678607c55e50176a70132ee4477bb0d421b048836775b25557bd6c85a",
+      "match": false
+    },
+    {
+      "file": "privacy/index.html",
+      "status": 200,
+      "expected": "2fa86d57186f52e61f49a860eeae10d56a766d496aaccb997f7c8e20bdec66dc",
+      "actual": "be95b1dbbe5dfc67ba806f28564fe1c7c3d68efc52b0ad6baf37f6de9a4a93bc",
+      "match": false
+    },
+    {
+      "file": "robots.txt",
+      "status": 200,
+      "expected": "72cb6c37393b04addc4486acfe9756e1be0b706386ea21e876784a48cd81d336",
+      "actual": "72cb6c37393b04addc4486acfe9756e1be0b706386ea21e876784a48cd81d336",
+      "match": true
+    },
+    {
+      "file": "sitemap-0.xml",
+      "status": 200,
+      "expected": "94cb8e79caf4363aef63e5bb73bcc5640ba412cf20ba3b2e3b491c39fe9bb9af",
+      "actual": "94cb8e79caf4363aef63e5bb73bcc5640ba412cf20ba3b2e3b491c39fe9bb9af",
+      "match": true
+    },
+    {
+      "file": "sitemap-index.xml",
+      "status": 200,
+      "expected": "d2d7218bf225463df0dfaa67e5d1e4f63fa2c3c98c16dc827bde543147488dd7",
+      "actual": "d2d7218bf225463df0dfaa67e5d1e4f63fa2c3c98c16dc827bde543147488dd7",
+      "match": true
+    }
+  ],
+  "failures": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "0a9e9a75242c40c0113cff54a0b0b7169482815968767e84b3083e847c6e4bff",
+      "actual": "0170e37edb0fd653c55f16596cc6e1406620b30549bc19347ffd18a9d39a287f",
+      "match": false
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "f6286a845d416c190a626a93dbdc208364609a7347dd052655e8f6c083889abe",
+      "actual": "ea0dd78678607c55e50176a70132ee4477bb0d421b048836775b25557bd6c85a",
+      "match": false
+    },
+    {
+      "file": "privacy/index.html",
+      "status": 200,
+      "expected": "2fa86d57186f52e61f49a860eeae10d56a766d496aaccb997f7c8e20bdec66dc",
+      "actual": "be95b1dbbe5dfc67ba806f28564fe1c7c3d68efc52b0ad6baf37f6de9a4a93bc",
+      "match": false
+    }
+  ]
+}

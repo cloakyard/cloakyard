@@ -1,0 +1,50 @@
+[
+  {
+    "engine": "chromium",
+    "width": 390,
+    "colorScheme": "light",
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "width": 390,
+    "colorScheme": "dark",
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "colorScheme": "light",
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "width": 1440,
+    "colorScheme": "dark",
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "colorScheme": "light",
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "width": 390,
+    "colorScheme": "dark",
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "colorScheme": "light",
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "width": 1440,
+    "colorScheme": "dark",
+    "pass": true
+  }
+]

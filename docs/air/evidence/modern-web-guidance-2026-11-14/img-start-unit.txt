@@ -1,0 +1,10 @@
+note: You are running `vp test` as a Vite+ built-in command. If you meant to run the test npm script, use `vpr test` instead.
+
+ RUN  v5.1.0 /Users/sumitsahoo/Developer/.air-review-2026-11-14/cloakimg
+
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  23:14:25
+   Duration  761ms (environment 51%, tests 17%, import 16%, setup 10%, transform 6%)
+

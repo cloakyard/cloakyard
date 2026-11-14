@@ -1,0 +1,104 @@
+{
+  "url": "https://drop.cloakyard.com",
+  "rows": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "3cc6b5dac2799fd6b5a32b8a0f2ce49e9082cf985250ea3467dccb2153ceca7e",
+      "actual": "3cc6b5dac2799fd6b5a32b8a0f2ce49e9082cf985250ea3467dccb2153ceca7e",
+      "match": true
+    },
+    {
+      "file": "apple-touch-icon.png",
+      "status": 200,
+      "expected": "ec5ecf474a00c63922a493f6112c71191d50aec90a1ec2e9727d734745d83c34",
+      "actual": "ec5ecf474a00c63922a493f6112c71191d50aec90a1ec2e9727d734745d83c34",
+      "match": true
+    },
+    {
+      "file": "cloakdrop-mark.svg",
+      "status": 200,
+      "expected": "d47058d6f2e955d2bdb5d093ca2378a07c3191c1d8d5b09b928f739d9238e68b",
+      "actual": "d47058d6f2e955d2bdb5d093ca2378a07c3191c1d8d5b09b928f739d9238e68b",
+      "match": true
+    },
+    {
+      "file": "favicon.png",
+      "status": 200,
+      "expected": "140f80a65ef2b9422d7b923e30600924cd138240c1806a65d5d8a60f380583b9",
+      "actual": "140f80a65ef2b9422d7b923e30600924cd138240c1806a65d5d8a60f380583b9",
+      "match": true
+    },
+    {
+      "file": "hero.png",
+      "status": 200,
+      "expected": "cac6e7b8991985c974405f11bd348e36eb25fc9d1fe25559a071fc5a644395ca",
+      "actual": "cac6e7b8991985c974405f11bd348e36eb25fc9d1fe25559a071fc5a644395ca",
+      "match": true
+    },
+    {
+      "file": "hero.webp",
+      "status": 200,
+      "expected": "d81b91458d28ae9d0557ce3798c15fcf49615ce634ae2656f035fd6744eb9aab",
+      "actual": "d81b91458d28ae9d0557ce3798c15fcf49615ce634ae2656f035fd6744eb9aab",
+      "match": true
+    },
+    {
+      "file": "icons/favicon.svg",
+      "status": 200,
+      "expected": "078a85597e9786a8f3ba9fee7d8e46bf9fbd42c7ca6d20e1bedb9cd024afefec",
+      "actual": "078a85597e9786a8f3ba9fee7d8e46bf9fbd42c7ca6d20e1bedb9cd024afefec",
+      "match": true
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "a402357aa922957d9d6b4102dd89aa8360799573fe8c9ca39e0d71b2b70e1149",
+      "actual": "a402357aa922957d9d6b4102dd89aa8360799573fe8c9ca39e0d71b2b70e1149",
+      "match": true
+    },
+    {
+      "file": "og.png",
+      "status": 200,
+      "expected": "7a920c2312904b39ab4dfe5e89cf866c7328b4de21ff80dc052caceb750cc73a",
+      "actual": "7a920c2312904b39ab4dfe5e89cf866c7328b4de21ff80dc052caceb750cc73a",
+      "match": true
+    },
+    {
+      "file": "pixel-art.LICENSE.txt",
+      "status": 200,
+      "expected": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "actual": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "match": true
+    },
+    {
+      "file": "privacy/index.html",
+      "status": 200,
+      "expected": "bd55eeb4a1465d7eaf5dbef31fa1423a7e38788fd3f30d92a1513f53592c9747",
+      "actual": "bd55eeb4a1465d7eaf5dbef31fa1423a7e38788fd3f30d92a1513f53592c9747",
+      "match": true
+    },
+    {
+      "file": "robots.txt",
+      "status": 200,
+      "expected": "ba3048b0e802a6f9093eb98023b66fffe1fa42b8ebb61c93864a5f0ee1cba97e",
+      "actual": "ba3048b0e802a6f9093eb98023b66fffe1fa42b8ebb61c93864a5f0ee1cba97e",
+      "match": true
+    },
+    {
+      "file": "sitemap-0.xml",
+      "status": 200,
+      "expected": "c477e24dc2eba33a1c5229580a2cc4206180b86035e56f9509a394d1c25625f5",
+      "actual": "c477e24dc2eba33a1c5229580a2cc4206180b86035e56f9509a394d1c25625f5",
+      "match": true
+    },
+    {
+      "file": "sitemap-index.xml",
+      "status": 200,
+      "expected": "cc3cad167f02f41b0221f8691cc3ff468ddeb39a9c4795e6d2515b19f139995f",
+      "actual": "cc3cad167f02f41b0221f8691cc3ff468ddeb39a9c4795e6d2515b19f139995f",
+      "match": true
+    }
+  ],
+  "failures": []
+}

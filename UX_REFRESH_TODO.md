@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.7.3 maintenance audit verified; product websites deployed; canonical PR #54 owns final rollout receipts; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.7.4 guidance audit verified; five product PRs merged; IMG/Resume/Drop live; PDF/Roll production verification pending; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,18 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Modern Web Guidance — 2026-11-14
+
+- [x] Install the same upstream GoogleChrome skill through npx in all six web repositories, preserving licenses/provenance and keeping it out of runtime bundles.
+- [x] Audit with retrieved guides and the limited legacy scanner; verify every finding and retain justified compatibility/output exceptions.
+- [x] Add small Air 1.7.4 composition/contrast refinements; fix IMG input shortcuts, animated Cancel and the legacy recovery page.
+- [x] Validate changed controls/output and cross-app views in both themes and every viewport class; inspect visual sheets and record the initial motion timeout plus unchanged passing rerun.
+- [x] Keep README structure, portable bundles and dead-code checks current. No new runtime library or native change.
+- [ ] Promote the bounded website updates and synchronize dev using the established PR flow; preserve original PDF AI work and separate native history.
+- [ ] Complete the existing physical-device/IME/assistive acceptance backlog; no score or software scan closes those gates.
+
+See [the guidance audit](docs/air/modern-web-guidance-audit-2026-11-14.md) for exact coverage and evidence.
 
 ## Maintenance, privacy and dependencies — 2026-11-14
 

@@ -1,0 +1,713 @@
+{
+  "url": "https://resume.cloakyard.com",
+  "rows": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "ebb99ad82ee1253bd97fe4bbf4420e95559e678b91834cd0d7d937c87af3c264",
+      "actual": "ebb99ad82ee1253bd97fe4bbf4420e95559e678b91834cd0d7d937c87af3c264",
+      "match": true
+    },
+    {
+      "file": "assets/Academic-C2MHA3T1.js",
+      "status": 200,
+      "expected": "4640e1ec70c4768120ff928608b5472ffcdfe17ed4151ae6fa8d1cdbc7d1d14a",
+      "actual": "4640e1ec70c4768120ff928608b5472ffcdfe17ed4151ae6fa8d1cdbc7d1d14a",
+      "match": true
+    },
+    {
+      "file": "assets/AtsPlain-BBrApzT6.js",
+      "status": 200,
+      "expected": "8468b6d7bb3d10f0dc494e2e0bc606bbf3e4bea7225b77f2431dd9ca603f9b2d",
+      "actual": "8468b6d7bb3d10f0dc494e2e0bc606bbf3e4bea7225b77f2431dd9ca603f9b2d",
+      "match": true
+    },
+    {
+      "file": "assets/AtsProfessional-DqzAYjbf.js",
+      "status": 200,
+      "expected": "c18d4cf4f28e20de0d7635a09310e29310f9329e63cf73a4158c768a425fc6cb",
+      "actual": "c18d4cf4f28e20de0d7635a09310e29310f9329e63cf73a4158c768a425fc6cb",
+      "match": true
+    },
+    {
+      "file": "assets/AtsReviewContent-BmdHAYR2.js",
+      "status": 200,
+      "expected": "343e833ca850ddf8f09182129ae66503b5338f966f590401b6d5a7aee63e3c33",
+      "actual": "343e833ca850ddf8f09182129ae66503b5338f966f590401b6d5a7aee63e3c33",
+      "match": true
+    },
+    {
+      "file": "assets/Aurora-BB2Jf2YB.js",
+      "status": 200,
+      "expected": "a2d9bb0d839ab2c629e4c5bf11699c6c7790f46ed6993fce75f0b518d73c129c",
+      "actual": "a2d9bb0d839ab2c629e4c5bf11699c6c7790f46ed6993fce75f0b518d73c129c",
+      "match": true
+    },
+    {
+      "file": "assets/Bauhaus-JDEEEIwQ.js",
+      "status": 200,
+      "expected": "8b092c339f7afa929ed27023aa87f90fd1090a579e8b405800a832a0ef4778ec",
+      "actual": "8b092c339f7afa929ed27023aa87f90fd1090a579e8b405800a832a0ef4778ec",
+      "match": true
+    },
+    {
+      "file": "assets/BinaryModule-DMhzYB6c-HRJ-MgRX.js",
+      "status": 200,
+      "expected": "24b9b5ba66e59bb6a3caa2f119b2d3b125c68a5f75e84d705a2484bd02008178",
+      "actual": "24b9b5ba66e59bb6a3caa2f119b2d3b125c68a5f75e84d705a2484bd02008178",
+      "match": true
+    },
+    {
+      "file": "assets/ClassicImpact--j7B1n21.js",
+      "status": 200,
+      "expected": "e1b15fac8f9418d2f2ca8a2df2f19b6863c85e82c10510a11efec0340110dd11",
+      "actual": "e1b15fac8f9418d2f2ca8a2df2f19b6863c85e82c10510a11efec0340110dd11",
+      "match": true
+    },
+    {
+      "file": "assets/ClassicSidebar-hpyAoGxz.js",
+      "status": 200,
+      "expected": "46d1c18e3f961895e3e905f0fb993698366a980ad66f649dea1825c992eed8fb",
+      "actual": "46d1c18e3f961895e3e905f0fb993698366a980ad66f649dea1825c992eed8fb",
+      "match": true
+    },
+    {
+      "file": "assets/CompactTimeline-C2Enc3mG.js",
+      "status": 200,
+      "expected": "0c1f72b2a1383515b3bfe241db0ecd920588dc0da31dc4600d818778131d8ac4",
+      "actual": "0c1f72b2a1383515b3bfe241db0ecd920588dc0da31dc4600d818778131d8ac4",
+      "match": true
+    },
+    {
+      "file": "assets/ExecutiveSerif-CwUGfeUE.js",
+      "status": 200,
+      "expected": "06ac610a08a915581f840c8fc73b5eb1329591882957e01adf32f9f56614cd93",
+      "actual": "06ac610a08a915581f840c8fc73b5eb1329591882957e01adf32f9f56614cd93",
+      "match": true
+    },
+    {
+      "file": "assets/GradientHeader-CLynT5m7.js",
+      "status": 200,
+      "expected": "028b6ab767cec0b54bd63c0d06cb55f2fb26b13b2b353fa405c7c083f06af121",
+      "actual": "028b6ab767cec0b54bd63c0d06cb55f2fb26b13b2b353fa405c7c083f06af121",
+      "match": true
+    },
+    {
+      "file": "assets/Horizon-9wuCN0af.js",
+      "status": 200,
+      "expected": "be307bcfb88bf463fdb8d03d340022eaca8733d97cb8a55862d3ade166c065d9",
+      "actual": "be307bcfb88bf463fdb8d03d340022eaca8733d97cb8a55862d3ade166c065d9",
+      "match": true
+    },
+    {
+      "file": "assets/Ledger-CVo-xc0h.js",
+      "status": 200,
+      "expected": "ab7065e17b51264f498aa0b64a997df5c8512385f10aeaf8b462eb7c7d7123e9",
+      "actual": "ab7065e17b51264f498aa0b64a997df5c8512385f10aeaf8b462eb7c7d7123e9",
+      "match": true
+    },
+    {
+      "file": "assets/Minimalist-BeXYqTUc.js",
+      "status": 200,
+      "expected": "0c555cb282c6cfa7b978aa867d4ea7fc82c3b990e8264987f8a699d75d09e5b9",
+      "actual": "0c555cb282c6cfa7b978aa867d4ea7fc82c3b990e8264987f8a699d75d09e5b9",
+      "match": true
+    },
+    {
+      "file": "assets/ModernMinimal-BWr_wV0G.js",
+      "status": 200,
+      "expected": "733a4f54e99b645b1c080b5f16ff2abbd1c21c92f621dc18818c46fd3b59e5de",
+      "actual": "733a4f54e99b645b1c080b5f16ff2abbd1c21c92f621dc18818c46fd3b59e5de",
+      "match": true
+    },
+    {
+      "file": "assets/Monograph-NSKErsM4.js",
+      "status": 200,
+      "expected": "38bd3f3be9f921588c4566756c79662ae90c2f1877086626d944cc56e71e2626",
+      "actual": "38bd3f3be9f921588c4566756c79662ae90c2f1877086626d944cc56e71e2626",
+      "match": true
+    },
+    {
+      "file": "assets/Prism-9wnxOhh6.js",
+      "status": 200,
+      "expected": "5700b50de1956b9d497c6a1de980f38d1c06ae3fadac40a4c61cbda85adbdae9",
+      "actual": "5700b50de1956b9d497c6a1de980f38d1c06ae3fadac40a4c61cbda85adbdae9",
+      "match": true
+    },
+    {
+      "file": "assets/Typographic-JdMHuMGk.js",
+      "status": 200,
+      "expected": "f9b9e9e8a62106c8418f53b81252902a65db58732fdd4cc6363dd5bbd6e56290",
+      "actual": "f9b9e9e8a62106c8418f53b81252902a65db58732fdd4cc6363dd5bbd6e56290",
+      "match": true
+    },
+    {
+      "file": "assets/air-BW4Q3uTe.css",
+      "status": 200,
+      "expected": "1410d6e573db76eb55dd095a683ea687680e05d9c1d2fd2a27503e12dae08119",
+      "actual": "1410d6e573db76eb55dd095a683ea687680e05d9c1d2fd2a27503e12dae08119",
+      "match": true
+    },
+    {
+      "file": "assets/air-CnxVARMm.js",
+      "status": 200,
+      "expected": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "actual": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "match": true
+    },
+    {
+      "file": "assets/binary-CSzfR38c.js",
+      "status": 200,
+      "expected": "b6d568e4ac23b794386a6f224932ae049d5f921d2fab0734a07155fc3f20b871",
+      "actual": "b6d568e4ac23b794386a6f224932ae049d5f921d2fab0734a07155fc3f20b871",
+      "match": true
+    },
+    {
+      "file": "assets/dist-CSYkg0_P.js",
+      "status": 200,
+      "expected": "6111105e87b7dc959bbaac8966567fc7083fb7574d0b871d39c28c76058542a9",
+      "actual": "6111105e87b7dc959bbaac8966567fc7083fb7574d0b871d39c28c76058542a9",
+      "match": true
+    },
+    {
+      "file": "assets/geist-cyrillic-ext-wght-normal-DjL33-gN.woff2",
+      "status": 200,
+      "expected": "2317fa4bb293c9c0b110e18315d529235c47a0ddd3338cea3d8c7955e927899e",
+      "actual": "2317fa4bb293c9c0b110e18315d529235c47a0ddd3338cea3d8c7955e927899e",
+      "match": true
+    },
+    {
+      "file": "assets/geist-cyrillic-wght-normal-BEAKL7Jp.woff2",
+      "status": 200,
+      "expected": "6894439694946a589d157ece003086960a6a4013d74a813dab7602efdb3d8c09",
+      "actual": "6894439694946a589d157ece003086960a6a4013d74a813dab7602efdb3d8c09",
+      "match": true
+    },
+    {
+      "file": "assets/geist-latin-ext-wght-normal-DC-KSUi6.woff2",
+      "status": 200,
+      "expected": "824f485b5d26e2f2da3c2b236132ece1bc8e4e43373452950bb0e40548b4313f",
+      "actual": "824f485b5d26e2f2da3c2b236132ece1bc8e4e43373452950bb0e40548b4313f",
+      "match": true
+    },
+    {
+      "file": "assets/geist-latin-wght-normal-BgDaEnEv.woff2",
+      "status": 200,
+      "expected": "19f9c92546aa300c312235e3125af1b81394d8db9a4bc4a425cd5b641d2d54e1",
+      "actual": "19f9c92546aa300c312235e3125af1b81394d8db9a4bc4a425cd5b641d2d54e1",
+      "match": true
+    },
+    {
+      "file": "assets/geist-vietnamese-wght-normal-6IgcOCM7.woff2",
+      "status": 200,
+      "expected": "8fa40e5d248247735eb97a0bd593b8852440430600d6ba01364c31fe0abc1fe1",
+      "actual": "8fa40e5d248247735eb97a0bd593b8852440430600d6ba01364c31fe0abc1fe1",
+      "match": true
+    },
+    {
+      "file": "assets/harper_wasm_bg-BnO2gAsz.wasm",
+      "status": 200,
+      "expected": "59594a825a04c152a5e0a47ccbd3d2c89efc98469658de0f0d2a1df27093ba00",
+      "actual": "59594a825a04c152a5e0a47ccbd3d2c89efc98469658de0f0d2a1df27093ba00",
+      "match": true
+    },
+    {
+      "file": "assets/html2canvas-zRALU_B7.js",
+      "status": 200,
+      "expected": "73fef76b039256c51889caec1e6c7913fa65a38f62b8598e6f45d2df4d135e39",
+      "actual": "73fef76b039256c51889caec1e6c7913fa65a38f62b8598e6f45d2df4d135e39",
+      "match": true
+    },
+    {
+      "file": "assets/index.es-EbHolbMZ.js",
+      "status": 200,
+      "expected": "989a79284aabba0dcbfa4dd52f3889a65687c2f3646ce206af5586327e29a74d",
+      "actual": "989a79284aabba0dcbfa4dd52f3889a65687c2f3646ce206af5586327e29a74d",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-400-italic-DKMiL14s.woff2",
+      "status": 200,
+      "expected": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7",
+      "actual": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-400-italic-u__WvvIK.woff",
+      "status": 200,
+      "expected": "9bc25f743ba6bf9091d37de465dedb2d2cb0c0614738bec1c551922fb2794d1d",
+      "actual": "9bc25f743ba6bf9091d37de465dedb2d2cb0c0614738bec1c551922fb2794d1d",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-400-normal-BVbkICAY.woff",
+      "status": 200,
+      "expected": "6d0b022af858becb27f1a033de5d3c0604fc6f2191a7f3ff4dba5d3515e95051",
+      "actual": "6d0b022af858becb27f1a033de5d3c0604fc6f2191a7f3ff4dba5d3515e95051",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-400-normal-DnYpCC2O.woff2",
+      "status": 200,
+      "expected": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "actual": "5eb09b5ac0e28b67c2f041c8ba6d244604ca0c0980d65912ab2d47fed84ddc31",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-ext-400-italic-C9HzH3YL.woff2",
+      "status": 200,
+      "expected": "d0014821252a8a770bf7551641572f239a8ede83d75652d84fef0c3627751baf",
+      "actual": "d0014821252a8a770bf7551641572f239a8ede83d75652d84fef0c3627751baf",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-ext-400-italic-D7-lnxEk.woff",
+      "status": 200,
+      "expected": "f393f76db28120fbfee2844ba6ca2be0fa3e28ecd27f72dcc1c00045e32e377b",
+      "actual": "f393f76db28120fbfee2844ba6ca2be0fa3e28ecd27f72dcc1c00045e32e377b",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-ext-400-normal-C2je3j2s.woff2",
+      "status": 200,
+      "expected": "290e6267dd833bf5f899eba4c29ad0a9b09dbe53f6075b18af38057159e1ff20",
+      "actual": "290e6267dd833bf5f899eba4c29ad0a9b09dbe53f6075b18af38057159e1ff20",
+      "match": true
+    },
+    {
+      "file": "assets/instrument-serif-latin-ext-400-normal-CFCUzsTy.woff",
+      "status": 200,
+      "expected": "1719ae18b98d033d2555f5a5971a30f5bb610ed849fc5a1119fe39db6d40eb3e",
+      "actual": "1719ae18b98d033d2555f5a5971a30f5bb610ed849fc5a1119fe39db6d40eb3e",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-600-normal-DuzuWObJ.woff2",
+      "status": 200,
+      "expected": "b3ba5dad180e78000d8c3f3aec5f589fb05e3a83d8486caea70449179d522cd2",
+      "actual": "b3ba5dad180e78000d8c3f3aec5f589fb05e3a83d8486caea70449179d522cd2",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-600-normal-j6UMqgXb.woff",
+      "status": 200,
+      "expected": "56d20e6e99a4a49b9db438bc285cde7a51ce1267897200d73c7c6169e91e2e6d",
+      "actual": "56d20e6e99a4a49b9db438bc285cde7a51ce1267897200d73c7c6169e91e2e6d",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-700-normal-CicHrsUU.woff2",
+      "status": 200,
+      "expected": "f0550b4dae0b9c17427d61f42edd6b5f44b1b7b0aca53788505fe1dce5c3a022",
+      "actual": "f0550b4dae0b9c17427d61f42edd6b5f44b1b7b0aca53788505fe1dce5c3a022",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-700-normal-CoUvLzhc.woff",
+      "status": 200,
+      "expected": "e1de8fb9bc4e95df116f8c8b67309233f5a7dca806a338585012cc978995d9c1",
+      "actual": "e1de8fb9bc4e95df116f8c8b67309233f5a7dca806a338585012cc978995d9c1",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-ext-600-normal-BobJ8QCm.woff",
+      "status": 200,
+      "expected": "f0731992f9a29c40a5cb343af43204d0e7d432ca6196e0c8d46f76656d692639",
+      "actual": "f0731992f9a29c40a5cb343af43204d0e7d432ca6196e0c8d46f76656d692639",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-ext-600-normal-CYLe3Bq4.woff2",
+      "status": 200,
+      "expected": "11d673543b8920347d4d4aa9ddcede5ac220684f356aa6189b8fc56ad98d2162",
+      "actual": "11d673543b8920347d4d4aa9ddcede5ac220684f356aa6189b8fc56ad98d2162",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-ext-700-normal-B20D6wuF.woff",
+      "status": 200,
+      "expected": "f966b729bfdf3b352295b197f8a7205c47ed7619b0e5fd5acd58994583fdd4d0",
+      "actual": "f966b729bfdf3b352295b197f8a7205c47ed7619b0e5fd5acd58994583fdd4d0",
+      "match": true
+    },
+    {
+      "file": "assets/lora-cyrillic-ext-700-normal-CH2Ef3pd.woff2",
+      "status": 200,
+      "expected": "0fa7baca53fccf91fbbdd6b7933c5a9257f16f950454f50fdfa061fec07135c5",
+      "actual": "0fa7baca53fccf91fbbdd6b7933c5a9257f16f950454f50fdfa061fec07135c5",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-600-normal-B-3RcLOQ.woff2",
+      "status": 200,
+      "expected": "7bbfe9f3c9e9d6d07e17da4d5229a42b042cc2e16024993cb687dc08cc762557",
+      "actual": "7bbfe9f3c9e9d6d07e17da4d5229a42b042cc2e16024993cb687dc08cc762557",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-600-normal-Dc3EneHn.woff",
+      "status": 200,
+      "expected": "e395f87029ff87a7850f15959c4e64dc941c90df34efb3aea1ac8624aa3327b7",
+      "actual": "e395f87029ff87a7850f15959c4e64dc941c90df34efb3aea1ac8624aa3327b7",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-700-normal-BHK4Pzk4.woff2",
+      "status": 200,
+      "expected": "c05fd5289492ed310ed882259b944ca5287e76e572a65d92d3941f9f44f0342a",
+      "actual": "c05fd5289492ed310ed882259b944ca5287e76e572a65d92d3941f9f44f0342a",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-700-normal-Yfa97ytg.woff",
+      "status": 200,
+      "expected": "543af1e069e40ba4f031fba3d12e5a3a75f7a0962698fbdda00e04d98fd722de",
+      "actual": "543af1e069e40ba4f031fba3d12e5a3a75f7a0962698fbdda00e04d98fd722de",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-ext-600-normal-BX8pxmH4.woff",
+      "status": 200,
+      "expected": "101819c7b38bc1d256b3c8e6f087f8fd7125f7a0473f86484615c98237d04c34",
+      "actual": "101819c7b38bc1d256b3c8e6f087f8fd7125f7a0473f86484615c98237d04c34",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-ext-600-normal-CURVZmIT.woff2",
+      "status": 200,
+      "expected": "1af859efe22ded676752168b656fd5d5814a62717f4f9fcebc0475754caca27d",
+      "actual": "1af859efe22ded676752168b656fd5d5814a62717f4f9fcebc0475754caca27d",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-ext-700-normal-DbHby4fw.woff2",
+      "status": 200,
+      "expected": "eacd7ecd09a1b5cc2706867f2505fb139825c3db70b17123538565fb723d0000",
+      "actual": "eacd7ecd09a1b5cc2706867f2505fb139825c3db70b17123538565fb723d0000",
+      "match": true
+    },
+    {
+      "file": "assets/lora-latin-ext-700-normal-XBj10pPw.woff",
+      "status": 200,
+      "expected": "8a9b52760adecb7b2d2fffe6160d4b96ece3d9bddd2e205a4f89681d843fbc79",
+      "actual": "8a9b52760adecb7b2d2fffe6160d4b96ece3d9bddd2e205a4f89681d843fbc79",
+      "match": true
+    },
+    {
+      "file": "assets/lora-math-600-normal-B9Wi-uy2.woff2",
+      "status": 200,
+      "expected": "8a26334eaa3e70aefc20c9ecec3f9886f3e33b6bb6e0326135455d321dca57c6",
+      "actual": "8a26334eaa3e70aefc20c9ecec3f9886f3e33b6bb6e0326135455d321dca57c6",
+      "match": true
+    },
+    {
+      "file": "assets/lora-math-600-normal-soY6uGQW.woff",
+      "status": 200,
+      "expected": "ba0101bd2b2855445b132c648215a7951bb5d336a6e3322d7ead54789bbc1fae",
+      "actual": "ba0101bd2b2855445b132c648215a7951bb5d336a6e3322d7ead54789bbc1fae",
+      "match": true
+    },
+    {
+      "file": "assets/lora-math-700-normal-BdgFUNlJ.woff2",
+      "status": 200,
+      "expected": "5c64ee0174979325e60b0519fc54492049956af730775d1ff0be535757e99442",
+      "actual": "5c64ee0174979325e60b0519fc54492049956af730775d1ff0be535757e99442",
+      "match": true
+    },
+    {
+      "file": "assets/lora-math-700-normal-JjB0YUk-.woff",
+      "status": 200,
+      "expected": "64a3863bc9dfcf98116bba3a951da8fd420d2736aaafa48aba288664979be2d0",
+      "actual": "64a3863bc9dfcf98116bba3a951da8fd420d2736aaafa48aba288664979be2d0",
+      "match": true
+    },
+    {
+      "file": "assets/lora-symbols-600-normal-CURAubwP.woff",
+      "status": 200,
+      "expected": "fc3e2c4a3127bd47cdf850b167a523806a84057059b31810df51c2b1f47b2ea2",
+      "actual": "fc3e2c4a3127bd47cdf850b167a523806a84057059b31810df51c2b1f47b2ea2",
+      "match": true
+    },
+    {
+      "file": "assets/lora-symbols-600-normal-DaMEG5Dn.woff2",
+      "status": 200,
+      "expected": "7f058124a74d26b1be21d2f851d24c713204a8be0b6ddb623c8e6f0dd82a23bf",
+      "actual": "7f058124a74d26b1be21d2f851d24c713204a8be0b6ddb623c8e6f0dd82a23bf",
+      "match": true
+    },
+    {
+      "file": "assets/lora-symbols-700-normal-DaE8wqnc.woff",
+      "status": 200,
+      "expected": "c72114e200dfa2bbdfe7d1f7bc4193abd9b38fd9b5376d0111b0d8723e9f18e0",
+      "actual": "c72114e200dfa2bbdfe7d1f7bc4193abd9b38fd9b5376d0111b0d8723e9f18e0",
+      "match": true
+    },
+    {
+      "file": "assets/lora-symbols-700-normal-zYsi5zvy.woff2",
+      "status": 200,
+      "expected": "69520d2cf5b39945d2f706a243edafb3df7b9a8d15acacc1b5a6473a2dcf3405",
+      "actual": "69520d2cf5b39945d2f706a243edafb3df7b9a8d15acacc1b5a6473a2dcf3405",
+      "match": true
+    },
+    {
+      "file": "assets/lora-vietnamese-600-normal-B_IFhWKN.woff2",
+      "status": 200,
+      "expected": "1cf73cadb39aafa8896f3df9f1799c826fd7bb7fc3bd3102cc26fb4ffc9ce5d8",
+      "actual": "1cf73cadb39aafa8896f3df9f1799c826fd7bb7fc3bd3102cc26fb4ffc9ce5d8",
+      "match": true
+    },
+    {
+      "file": "assets/lora-vietnamese-600-normal-BnEhOXH8.woff",
+      "status": 200,
+      "expected": "61098fe3ada034963384dd42dca0a4da734e7f7e5582247b64b2dc48f5722540",
+      "actual": "61098fe3ada034963384dd42dca0a4da734e7f7e5582247b64b2dc48f5722540",
+      "match": true
+    },
+    {
+      "file": "assets/lora-vietnamese-700-normal-BHDzxyiD.woff2",
+      "status": 200,
+      "expected": "c6195d771bdd65f6d08633c6eef7320f1d5136030ed0a94c08b7a77cd8583690",
+      "actual": "c6195d771bdd65f6d08633c6eef7320f1d5136030ed0a94c08b7a77cd8583690",
+      "match": true
+    },
+    {
+      "file": "assets/lora-vietnamese-700-normal-DyKKCAD2.woff",
+      "status": 200,
+      "expected": "125db9351c72fe3714a7efad5e91422adf0f91b85c7b48da53d7e8ccc75ca9a2",
+      "actual": "125db9351c72fe3714a7efad5e91422adf0f91b85c7b48da53d7e8ccc75ca9a2",
+      "match": true
+    },
+    {
+      "file": "assets/main-D8hT1nVI.js",
+      "status": 200,
+      "expected": "8941c7fa5664d95c7cc983c9709864bef4c1dd77d281dbc444871f36da135abc",
+      "actual": "8941c7fa5664d95c7cc983c9709864bef4c1dd77d281dbc444871f36da135abc",
+      "match": true
+    },
+    {
+      "file": "assets/main-Y_jajWPr.css",
+      "status": 200,
+      "expected": "2613ba629bd232e8c59dced866e7b25cd343da970a28f95105fa5a7801961cde",
+      "actual": "2613ba629bd232e8c59dced866e7b25cd343da970a28f95105fa5a7801961cde",
+      "match": true
+    },
+    {
+      "file": "assets/notFound-DoTMRNgg.js",
+      "status": 200,
+      "expected": "2c160c008bc35333867ba2c64efa77759839fb42cb15c2c40f655933dd53e603",
+      "actual": "2c160c008bc35333867ba2c64efa77759839fb42cb15c2c40f655933dd53e603",
+      "match": true
+    },
+    {
+      "file": "assets/notFound-DxuZpUnx.css",
+      "status": 200,
+      "expected": "39b7034bd95f48cee5543061ebe05e0d96a6c5ceb88baf149d2162d4094c3f53",
+      "actual": "39b7034bd95f48cee5543061ebe05e0d96a6c5ceb88baf149d2162d4094c3f53",
+      "match": true
+    },
+    {
+      "file": "assets/paginationAtoms-BFEgjUNy.js",
+      "status": 200,
+      "expected": "40084155b0c8feac469631ada7d81f5a6b1458218e1aec8d557dd6fbd4afa41e",
+      "actual": "40084155b0c8feac469631ada7d81f5a6b1458218e1aec8d557dd6fbd4afa41e",
+      "match": true
+    },
+    {
+      "file": "assets/pdfExport-ByQpVYoh.js",
+      "status": 200,
+      "expected": "d74569d62c0ec2f8306bb30063453f1699985012a64d09e84f10bf562d3f68bf",
+      "actual": "d74569d62c0ec2f8306bb30063453f1699985012a64d09e84f10bf562d3f68bf",
+      "match": true
+    },
+    {
+      "file": "assets/purify.es-Dqk5qvad.js",
+      "status": 200,
+      "expected": "1cedd641cf71c424a9a1da85d51ce5d898e35d915fea81ac037f16d532a769ea",
+      "actual": "1cedd641cf71c424a9a1da85d51ce5d898e35d915fea81ac037f16d532a769ea",
+      "match": true
+    },
+    {
+      "file": "assets/react-BbggMMhK.js",
+      "status": 200,
+      "expected": "7059d4970c953cc58eee8ef6637f1a44ef8b515b0c9c2ca89b3bb7e0024c02e9",
+      "actual": "7059d4970c953cc58eee8ef6637f1a44ef8b515b0c9c2ca89b3bb7e0024c02e9",
+      "match": true
+    },
+    {
+      "file": "assets/rolldown-runtime-WkwZ5CU-.js",
+      "status": 200,
+      "expected": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
+      "actual": "2629f2ad3cb75a57d98de697127f5af7d777ef572bbcdfa6e3ce8f438cd4527e",
+      "match": true
+    },
+    {
+      "file": "assets/shared-BLvYBvDU.js",
+      "status": 200,
+      "expected": "f8e0b8228780a4616274062316f840df2cc1fc1903a1921f27347dc57d661df4",
+      "actual": "f8e0b8228780a4616274062316f840df2cc1fc1903a1921f27347dc57d661df4",
+      "match": true
+    },
+    {
+      "file": "assets/workbox-window.prod.es5-Bd17z0YL.js",
+      "status": 200,
+      "expected": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "actual": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "match": true
+    },
+    {
+      "file": "cloakresume-mark.svg",
+      "status": 200,
+      "expected": "e679eae8e3644336f9313e99c27c087bd862e84f04d48563a4fee55db779b233",
+      "actual": "e679eae8e3644336f9313e99c27c087bd862e84f04d48563a4fee55db779b233",
+      "match": true
+    },
+    {
+      "file": "icons/apple-touch-icon.png",
+      "status": 200,
+      "expected": "a6972bc8520cf3a6d34fd7485ed705bcd354b670a1bb56ba0b3289b357871dcf",
+      "actual": "a6972bc8520cf3a6d34fd7485ed705bcd354b670a1bb56ba0b3289b357871dcf",
+      "match": true
+    },
+    {
+      "file": "icons/cloakresume-app-icon.svg",
+      "status": 200,
+      "expected": "f23402bdc0de4a4db82705ddbfa7a634ecc4ffc674cbed144f0309db042e1e0b",
+      "actual": "f23402bdc0de4a4db82705ddbfa7a634ecc4ffc674cbed144f0309db042e1e0b",
+      "match": true
+    },
+    {
+      "file": "icons/favicon.ico",
+      "status": 200,
+      "expected": "2fff392afa1ed6680f35bd4e67621c54fe4ff7e3217f21092dc290573d30a022",
+      "actual": "2fff392afa1ed6680f35bd4e67621c54fe4ff7e3217f21092dc290573d30a022",
+      "match": true
+    },
+    {
+      "file": "icons/favicon.svg",
+      "status": 200,
+      "expected": "341d6873d4b2fa8a0bdbb7f8bcd111984cb2cca252200fce7fcd280155737379",
+      "actual": "341d6873d4b2fa8a0bdbb7f8bcd111984cb2cca252200fce7fcd280155737379",
+      "match": true
+    },
+    {
+      "file": "icons/logo.svg",
+      "status": 200,
+      "expected": "0df062deb4e4d740b7e2862d4d29ea55c5095c4abd21f5328c25c94decbc7408",
+      "actual": "0df062deb4e4d740b7e2862d4d29ea55c5095c4abd21f5328c25c94decbc7408",
+      "match": true
+    },
+    {
+      "file": "icons/maskable-icon-512x512.png",
+      "status": 200,
+      "expected": "5961b15ad12f7c66f599fce7c21d60e2245c0fb50ac7e6a304f606652aa2debe",
+      "actual": "5961b15ad12f7c66f599fce7c21d60e2245c0fb50ac7e6a304f606652aa2debe",
+      "match": true
+    },
+    {
+      "file": "icons/og-image.png",
+      "status": 200,
+      "expected": "17faccd440da65803ccd89959dd81a89b8629821d5fe3e6e0766df2bc85900f4",
+      "actual": "17faccd440da65803ccd89959dd81a89b8629821d5fe3e6e0766df2bc85900f4",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-192x192.png",
+      "status": 200,
+      "expected": "f9747d90677b131687154bdbce0299ace1ce1e33ddcacb18d9acbab5dd76496f",
+      "actual": "f9747d90677b131687154bdbce0299ace1ce1e33ddcacb18d9acbab5dd76496f",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-512x512.png",
+      "status": 200,
+      "expected": "5961b15ad12f7c66f599fce7c21d60e2245c0fb50ac7e6a304f606652aa2debe",
+      "actual": "5961b15ad12f7c66f599fce7c21d60e2245c0fb50ac7e6a304f606652aa2debe",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-64x64.png",
+      "status": 200,
+      "expected": "1d454384c2db85057ef48d7381276c9cdd9fcd0704abe49555b377758fee6814",
+      "actual": "1d454384c2db85057ef48d7381276c9cdd9fcd0704abe49555b377758fee6814",
+      "match": true
+    },
+    {
+      "file": "icons/safari-pinned-tab.svg",
+      "status": 200,
+      "expected": "48c8b75cddd090e24cdd738f334f36228207172b167882fc6a0c0d9d37ffa274",
+      "actual": "48c8b75cddd090e24cdd738f334f36228207172b167882fc6a0c0d9d37ffa274",
+      "match": true
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "599209cac1eeac760383bd8b8ddb924f44d4a7f83fbd5a2ed10321566d7df3a9",
+      "actual": "599209cac1eeac760383bd8b8ddb924f44d4a7f83fbd5a2ed10321566d7df3a9",
+      "match": true
+    },
+    {
+      "file": "manifest.webmanifest",
+      "status": 200,
+      "expected": "49bc283ce2491b8c6af940e4fd427f5417d7aa69beb1bda8c18f74b0fe48f648",
+      "actual": "49bc283ce2491b8c6af940e4fd427f5417d7aa69beb1bda8c18f74b0fe48f648",
+      "match": true
+    },
+    {
+      "file": "robots.txt",
+      "status": 200,
+      "expected": "6f52f04c20581d7270f216304a571588c8c7a3faff0ba13760503fa3b595bef4",
+      "actual": "6f52f04c20581d7270f216304a571588c8c7a3faff0ba13760503fa3b595bef4",
+      "match": true
+    },
+    {
+      "file": "screenshots/editor-wide-dark.png",
+      "status": 200,
+      "expected": "b9eb17e99586eebbcf31e2ee349d770190da707e9a311f342d06c7689e8b414b",
+      "actual": "b9eb17e99586eebbcf31e2ee349d770190da707e9a311f342d06c7689e8b414b",
+      "match": true
+    },
+    {
+      "file": "screenshots/editor-wide-light.png",
+      "status": 200,
+      "expected": "c0b0e582fed974cd4f012567122bc5b70e7541800e4c8fa42d001cb2d7080ce2",
+      "actual": "c0b0e582fed974cd4f012567122bc5b70e7541800e4c8fa42d001cb2d7080ce2",
+      "match": true
+    },
+    {
+      "file": "screenshots/landing-narrow-dark.png",
+      "status": 200,
+      "expected": "cfa0f11a8acd8a61aa60a769118ba0de10326195980b129d9a6410e49dbb8125",
+      "actual": "cfa0f11a8acd8a61aa60a769118ba0de10326195980b129d9a6410e49dbb8125",
+      "match": true
+    },
+    {
+      "file": "screenshots/landing-narrow-light.png",
+      "status": 200,
+      "expected": "8307cb9ee3525d398be58c5c2c487eb90161d5db4eac3823c48a4f7a3a45ac22",
+      "actual": "8307cb9ee3525d398be58c5c2c487eb90161d5db4eac3823c48a4f7a3a45ac22",
+      "match": true
+    },
+    {
+      "file": "sitemap.xml",
+      "status": 200,
+      "expected": "1cc78e53460e6e278b622f38baf01bb576b4a5a6f361b80a98871690aecefd2b",
+      "actual": "1cc78e53460e6e278b622f38baf01bb576b4a5a6f361b80a98871690aecefd2b",
+      "match": true
+    },
+    {
+      "file": "sw.js",
+      "status": 200,
+      "expected": "c3038f406a23c00cd41d77b2bbb3d217c3fe54ad0680661e1d5e863ddf285002",
+      "actual": "c3038f406a23c00cd41d77b2bbb3d217c3fe54ad0680661e1d5e863ddf285002",
+      "match": true
+    },
+    {
+      "file": "workbox-271d3e69.js",
+      "status": 200,
+      "expected": "d88028613a86bbae28c2f19a29da8730c065cd4af7993b496ec7451ed1d6e68e",
+      "actual": "d88028613a86bbae28c2f19a29da8730c065cd4af7993b496ec7451ed1d6e68e",
+      "match": true
+    }
+  ],
+  "failures": []
+}

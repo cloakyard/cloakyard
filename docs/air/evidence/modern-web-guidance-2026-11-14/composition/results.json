@@ -1,0 +1,357 @@
+{
+  "rows": [
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "height": 1024,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "height": 720,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1280,
+      "height": 720,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "height": 900,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "height": 844,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "height": 1024,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "height": 720,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1280,
+      "height": 720,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "colorScheme": "light",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#202329",
+        "ink": "#202329"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "height": 900,
+      "colorScheme": "dark",
+      "recovery": {
+        "overflow": false,
+        "scheme": "light dark",
+        "marks": [36],
+        "scripts": [
+          "http://127.0.0.1:8922/assets/air-entry-D5i5azWo.js",
+          "http://127.0.0.1:8922/assets/static-pages-PVUoxwQT.js"
+        ],
+        "footer": "CloakIMG v1.0.0Built by Sumit Sahoo PrivacySource MIT license Cloakyard Buy me a coffee"
+      },
+      "contrast": {
+        "thumb": "#f1f3f7",
+        "ink": "#f1f3f7"
+      },
+      "composition": ["emoji", "hex", "number"],
+      "pass": true
+    }
+  ],
+  "errors": []
+}

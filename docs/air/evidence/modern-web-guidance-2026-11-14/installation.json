@@ -1,0 +1,104 @@
+[
+  {
+    "app": "cloakyard",
+    "command": [
+      "npx",
+      "--yes",
+      "skills@latest",
+      "add",
+      "GoogleChrome/modern-web-guidance",
+      "--skill",
+      "modern-web-guidance",
+      "--agent",
+      "codex",
+      "claude-code",
+      "--yes"
+    ],
+    "exitCode": 0
+  },
+  {
+    "app": "cloakpdf",
+    "command": [
+      "npx",
+      "--yes",
+      "skills@latest",
+      "add",
+      "GoogleChrome/modern-web-guidance",
+      "--skill",
+      "modern-web-guidance",
+      "--agent",
+      "codex",
+      "claude-code",
+      "--yes"
+    ],
+    "exitCode": 0
+  },
+  {
+    "app": "cloakimg",
+    "command": [
+      "npx",
+      "--yes",
+      "skills@latest",
+      "add",
+      "GoogleChrome/modern-web-guidance",
+      "--skill",
+      "modern-web-guidance",
+      "--agent",
+      "codex",
+      "claude-code",
+      "--yes"
+    ],
+    "exitCode": 0
+  },
+  {
+    "app": "cloakresume",
+    "command": [
+      "npx",
+      "--yes",
+      "skills@latest",
+      "add",
+      "GoogleChrome/modern-web-guidance",
+      "--skill",
+      "modern-web-guidance",
+      "--agent",
+      "codex",
+      "claude-code",
+      "--yes"
+    ],
+    "exitCode": 0
+  },
+  {
+    "app": "cloakdrop",
+    "command": [
+      "npx",
+      "--yes",
+      "skills@latest",
+      "add",
+      "GoogleChrome/modern-web-guidance",
+      "--skill",
+      "modern-web-guidance",
+      "--agent",
+      "codex",
+      "claude-code",
+      "--yes"
+    ],
+    "exitCode": 0
+  },
+  {
+    "app": "cloakroll",
+    "command": [
+      "npx",
+      "--yes",
+      "skills@latest",
+      "add",
+      "GoogleChrome/modern-web-guidance",
+      "--skill",
+      "modern-web-guidance",
+      "--agent",
+      "codex",
+      "claude-code",
+      "--yes"
+    ],
+    "exitCode": 0
+  }
+]

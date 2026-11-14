@@ -1,0 +1,629 @@
+{
+  "url": "https://img.cloakyard.com",
+  "rows": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "expected": "8e43ce8bb284e84b88083c3822b2b69c58793bf8ef720b7ccf892398d84da23d",
+      "actual": "8e43ce8bb284e84b88083c3822b2b69c58793bf8ef720b7ccf892398d84da23d",
+      "match": true
+    },
+    {
+      "file": "assets/BgBlurPanel-DLU3v4AY.js",
+      "status": 200,
+      "expected": "0c43c00730ea86151d3a54f5751633161f85aaea3230978ce5ad4fd933592569",
+      "actual": "0c43c00730ea86151d3a54f5751633161f85aaea3230978ce5ad4fd933592569",
+      "match": true
+    },
+    {
+      "file": "assets/BgBlurTool-MwtVsBwu.js",
+      "status": 200,
+      "expected": "01cf046769c30ebfce0deaf22e1a94df1c83c499a81743c7652edcd0982850b5",
+      "actual": "01cf046769c30ebfce0deaf22e1a94df1c83c499a81743c7652edcd0982850b5",
+      "match": true
+    },
+    {
+      "file": "assets/BorderPanel-CaaXTBZ5.js",
+      "status": 200,
+      "expected": "23de009fea240f0c745466adcf133898729f6054936c94cf61658f92e9cb7abc",
+      "actual": "23de009fea240f0c745466adcf133898729f6054936c94cf61658f92e9cb7abc",
+      "match": true
+    },
+    {
+      "file": "assets/BorderTool-DqMhvD47.js",
+      "status": 200,
+      "expected": "fc46873e23e60d6507d45eb2f0f8d68a158d7e1710c29204230355fd77584a31",
+      "actual": "fc46873e23e60d6507d45eb2f0f8d68a158d7e1710c29204230355fd77584a31",
+      "match": true
+    },
+    {
+      "file": "assets/ColorPickerPanel-DO73xYyp.js",
+      "status": 200,
+      "expected": "362416f5124666b67135c5c2f3707565fa2312114a02a8de8eea8c78c003459f",
+      "actual": "362416f5124666b67135c5c2f3707565fa2312114a02a8de8eea8c78c003459f",
+      "match": true
+    },
+    {
+      "file": "assets/ColorPickerTool-CGuFUwLx.js",
+      "status": 200,
+      "expected": "64a07cd601a1b4c2f0aaddfab8e4b2d08a8cc3bdb63cb9dcaeef50c9f844ce1f",
+      "actual": "64a07cd601a1b4c2f0aaddfab8e4b2d08a8cc3bdb63cb9dcaeef50c9f844ce1f",
+      "match": true
+    },
+    {
+      "file": "assets/DetectionStatus-B7tt8JiC.js",
+      "status": 200,
+      "expected": "70232979f7a0ede0695129478dd12af69a0d6ab915c334a92992620fc201cbae",
+      "actual": "70232979f7a0ede0695129478dd12af69a0d6ab915c334a92992620fc201cbae",
+      "match": true
+    },
+    {
+      "file": "assets/DrawPanel-54sndnAV.js",
+      "status": 200,
+      "expected": "516a8a1029c66c0a7198248c5369e3a4420ece8e70deb61bcae957e82219d864",
+      "actual": "516a8a1029c66c0a7198248c5369e3a4420ece8e70deb61bcae957e82219d864",
+      "match": true
+    },
+    {
+      "file": "assets/DrawTool-_o6orD59.js",
+      "status": 200,
+      "expected": "b2107c4b099897437db07838586353f823e379643075cc77301c2f59d0de0080",
+      "actual": "b2107c4b099897437db07838586353f823e379643075cc77301c2f59d0de0080",
+      "match": true
+    },
+    {
+      "file": "assets/EditorContext-BW6GOSQG.js",
+      "status": 200,
+      "expected": "8c2283f341b8c8d12707e421b78abe80d3e0e89a6ee9390589d435e0a83e0f8c",
+      "actual": "8c2283f341b8c8d12707e421b78abe80d3e0e89a6ee9390589d435e0a83e0f8c",
+      "match": true
+    },
+    {
+      "file": "assets/EmojiPanel-CAVOGNPP.js",
+      "status": 200,
+      "expected": "5efe62f88edd745a577c2674000a8697d41ad6d5ce23a559c088dc2341126461",
+      "actual": "5efe62f88edd745a577c2674000a8697d41ad6d5ce23a559c088dc2341126461",
+      "match": true
+    },
+    {
+      "file": "assets/EmojiTool-MlEmP3lM.js",
+      "status": 200,
+      "expected": "fd17a610de511bbca74ade0d54185cc681d81917d37a611e5f89e7bdac6a3480",
+      "actual": "fd17a610de511bbca74ade0d54185cc681d81917d37a611e5f89e7bdac6a3480",
+      "match": true
+    },
+    {
+      "file": "assets/FrameTool-VGJedAUs.js",
+      "status": 200,
+      "expected": "685db10984bb9834d2cca0e7416e9fb3e32fa2c8bb37becfa3c2b22c093280e1",
+      "actual": "685db10984bb9834d2cca0e7416e9fb3e32fa2c8bb37becfa3c2b22c093280e1",
+      "match": true
+    },
+    {
+      "file": "assets/HslPanel-BXtIk_MZ.js",
+      "status": 200,
+      "expected": "fb697b7a033371e478e0dbf699e3e80f6eef7acacef0a2dd143436c5ec5d3c30",
+      "actual": "fb697b7a033371e478e0dbf699e3e80f6eef7acacef0a2dd143436c5ec5d3c30",
+      "match": true
+    },
+    {
+      "file": "assets/HslTool-BDFA1AQN.js",
+      "status": 200,
+      "expected": "a4e2aea4b3005345bd831346e05f451a075fb03c689af590cbae49da421cf6e8",
+      "actual": "a4e2aea4b3005345bd831346e05f451a075fb03c689af590cbae49da421cf6e8",
+      "match": true
+    },
+    {
+      "file": "assets/IdPhotoTool-h6zQssqL.js",
+      "status": 200,
+      "expected": "d3da30c23e33edc12784018fcca5f6c935e4a157a9a3af39ef36c7bc3bd57f63",
+      "actual": "d3da30c23e33edc12784018fcca5f6c935e4a157a9a3af39ef36c7bc3bd57f63",
+      "match": true
+    },
+    {
+      "file": "assets/ImageFileButton-CxYIKenV.js",
+      "status": 200,
+      "expected": "3316fdca0feab9d1417cc38e6524de1803f762975a79e6829ecde45590fd44ab",
+      "actual": "3316fdca0feab9d1417cc38e6524de1803f762975a79e6829ecde45590fd44ab",
+      "match": true
+    },
+    {
+      "file": "assets/ImagePanel-Da6pBg7O.js",
+      "status": 200,
+      "expected": "b01c296c5d98a9b38c3f6bdd52a26ffdb51eabfbd7fcac3d69d499632da4d152",
+      "actual": "b01c296c5d98a9b38c3f6bdd52a26ffdb51eabfbd7fcac3d69d499632da4d152",
+      "match": true
+    },
+    {
+      "file": "assets/ImageTool-tFhZoFC8.js",
+      "status": 200,
+      "expected": "0a980b9c22b42168d0c06ab0c981902d1ab14a4c742893c0c1bc127fa357fbc7",
+      "actual": "0a980b9c22b42168d0c06ab0c981902d1ab14a4c742893c0c1bc127fa357fbc7",
+      "match": true
+    },
+    {
+      "file": "assets/LevelsPanel-DCSjFeRv.js",
+      "status": 200,
+      "expected": "e3e98a08105894b5a91528a3b513ee0cff4c880f0e72d9eb029436b9df2d8019",
+      "actual": "e3e98a08105894b5a91528a3b513ee0cff4c880f0e72d9eb029436b9df2d8019",
+      "match": true
+    },
+    {
+      "file": "assets/LevelsTool-EPGbD_Ig.js",
+      "status": 200,
+      "expected": "e9922129800745a78d81c0e0bdf930f776741519cbe672bd91be71a3466ccb91",
+      "actual": "e9922129800745a78d81c0e0bdf930f776741519cbe672bd91be71a3466ccb91",
+      "match": true
+    },
+    {
+      "file": "assets/PenPanel-B8qEbRTV.js",
+      "status": 200,
+      "expected": "7260c78c7c86bf17ad2205d288ad69ba2255725385bbd56a218e1a9fd9d34d7a",
+      "actual": "7260c78c7c86bf17ad2205d288ad69ba2255725385bbd56a218e1a9fd9d34d7a",
+      "match": true
+    },
+    {
+      "file": "assets/PenTool-CCfwMgde.js",
+      "status": 200,
+      "expected": "69c0f1c8ff617e4a459d693be7443c1608ceee4acf3d07190c6110c16ee11a12",
+      "actual": "69c0f1c8ff617e4a459d693be7443c1608ceee4acf3d07190c6110c16ee11a12",
+      "match": true
+    },
+    {
+      "file": "assets/PerspectivePanel-0qS87Y2P.js",
+      "status": 200,
+      "expected": "25adbc0e4335657178562f13513262a4b739beb08945b43bb2e04e134d3f599a",
+      "actual": "25adbc0e4335657178562f13513262a4b739beb08945b43bb2e04e134d3f599a",
+      "match": true
+    },
+    {
+      "file": "assets/PerspectiveTool-CBj3HTM8.js",
+      "status": 200,
+      "expected": "e703f533cbf9bee6a5faf20ca4a1cf22b96f547004f6e0d497a4926483a40159",
+      "actual": "e703f533cbf9bee6a5faf20ca4a1cf22b96f547004f6e0d497a4926483a40159",
+      "match": true
+    },
+    {
+      "file": "assets/RedactPanel-DiATJ-V2.js",
+      "status": 200,
+      "expected": "e566251597a6c29fc81c61e8ea03e99ce7aa91c4a2b50ed91148dffe1b985cdb",
+      "actual": "e566251597a6c29fc81c61e8ea03e99ce7aa91c4a2b50ed91148dffe1b985cdb",
+      "match": true
+    },
+    {
+      "file": "assets/RedactTool-7Jb3RqJF.js",
+      "status": 200,
+      "expected": "25a0a6ebd8ac2884c9da7f52c5f781d42c8205797cfb7dc612cd49b318bd35b4",
+      "actual": "25a0a6ebd8ac2884c9da7f52c5f781d42c8205797cfb7dc612cd49b318bd35b4",
+      "match": true
+    },
+    {
+      "file": "assets/RelightPanel-B4ZOdbzv.js",
+      "status": 200,
+      "expected": "bb4c0ceea43cc2389ca563cda224373e699628caa8a4846de1be2c36260fcc85",
+      "actual": "bb4c0ceea43cc2389ca563cda224373e699628caa8a4846de1be2c36260fcc85",
+      "match": true
+    },
+    {
+      "file": "assets/RelightTool-BeECgl8R.js",
+      "status": 200,
+      "expected": "f27ccb05902fb3831e1b124babb9dd3d5f572dca07b0e84204dc4e8f390da313",
+      "actual": "f27ccb05902fb3831e1b124babb9dd3d5f572dca07b0e84204dc4e8f390da313",
+      "match": true
+    },
+    {
+      "file": "assets/RemoveBgPanel-BFUCkpQC.js",
+      "status": 200,
+      "expected": "9deb740675841abf1952ed7aa95be565cbe83444e25b432ea8a225e453196281",
+      "actual": "9deb740675841abf1952ed7aa95be565cbe83444e25b432ea8a225e453196281",
+      "match": true
+    },
+    {
+      "file": "assets/RemoveBgTool-oCPuGfgN.js",
+      "status": 200,
+      "expected": "2d11fc7e5363be9c94bdbbec6e299de031465d56e23b253616a1690f05605ead",
+      "actual": "2d11fc7e5363be9c94bdbbec6e299de031465d56e23b253616a1690f05605ead",
+      "match": true
+    },
+    {
+      "file": "assets/ShapesPanel-DK7RtsQ_.js",
+      "status": 200,
+      "expected": "6b33c0a3f46d0b263cc81658848f7504679a98e59c2f9f9462b696b0794b0b99",
+      "actual": "6b33c0a3f46d0b263cc81658848f7504679a98e59c2f9f9462b696b0794b0b99",
+      "match": true
+    },
+    {
+      "file": "assets/ShapesTool-Dn1VVn5v.js",
+      "status": 200,
+      "expected": "7891488b162904d3c3917d9a1b2af59f9d34aa886eaacac52154b01b969c295c",
+      "actual": "7891488b162904d3c3917d9a1b2af59f9d34aa886eaacac52154b01b969c295c",
+      "match": true
+    },
+    {
+      "file": "assets/SpotHealPanel-DL58TkDp.js",
+      "status": 200,
+      "expected": "6491ea94b7437807cc8733bab0602e891c7730730994df24b5df027bcc206395",
+      "actual": "6491ea94b7437807cc8733bab0602e891c7730730994df24b5df027bcc206395",
+      "match": true
+    },
+    {
+      "file": "assets/SpotHealTool-ClLv_ydK.js",
+      "status": 200,
+      "expected": "2fe6665a38cd29cb92bdd4ce2fb1b7c02b79baaad6e261546d896e189ec0bf88",
+      "actual": "2fe6665a38cd29cb92bdd4ce2fb1b7c02b79baaad6e261546d896e189ec0bf88",
+      "match": true
+    },
+    {
+      "file": "assets/TapFixPanel-CgK0bkE5.js",
+      "status": 200,
+      "expected": "984f9f27b1e3e3a5671aad9db3c8690384c7aa7629a28373b7fd9b65bc2bf4a9",
+      "actual": "984f9f27b1e3e3a5671aad9db3c8690384c7aa7629a28373b7fd9b65bc2bf4a9",
+      "match": true
+    },
+    {
+      "file": "assets/TapFixTool-Crr9b936.js",
+      "status": 200,
+      "expected": "be6884fd60bb477a7dd8111d0ec93b22eed07ae0874c4fdf244662e62f8949c1",
+      "actual": "be6884fd60bb477a7dd8111d0ec93b22eed07ae0874c4fdf244662e62f8949c1",
+      "match": true
+    },
+    {
+      "file": "assets/TextPanel-BzUTh0xR.js",
+      "status": 200,
+      "expected": "316db6c79a1d6ad4f016bc8e2abe58bcb3b9ca414c9cc1135927a5af0cc5dbd7",
+      "actual": "316db6c79a1d6ad4f016bc8e2abe58bcb3b9ca414c9cc1135927a5af0cc5dbd7",
+      "match": true
+    },
+    {
+      "file": "assets/TimeOfDayPanel-Bk4rFShr.js",
+      "status": 200,
+      "expected": "8dd6668e5b18ea91ec0b0617ed1f12dd3d3a669176a769a79b9ff7f61ca1949b",
+      "actual": "8dd6668e5b18ea91ec0b0617ed1f12dd3d3a669176a769a79b9ff7f61ca1949b",
+      "match": true
+    },
+    {
+      "file": "assets/TimeOfDayTool-CH6fPy_A.js",
+      "status": 200,
+      "expected": "400277c11927662c4978beeb1a63605ae6f1593fea5cea7edf7a16456e249d44",
+      "actual": "400277c11927662c4978beeb1a63605ae6f1593fea5cea7edf7a16456e249d44",
+      "match": true
+    },
+    {
+      "file": "assets/ToolbarRootContext-DF3rxtQr.js",
+      "status": 200,
+      "expected": "b63c4bf648ce274173863037b599fa4d5b2ada86381546e78f7a34e3e80347a0",
+      "actual": "b63c4bf648ce274173863037b599fa4d5b2ada86381546e78f7a34e3e80347a0",
+      "match": true
+    },
+    {
+      "file": "assets/UnifiedEditor-fBnbYfT5.js",
+      "status": 200,
+      "expected": "f97465b008d93fa188840e21af2d8be33ca57b15fc36a1125fbd5d56286b8eee",
+      "actual": "f97465b008d93fa188840e21af2d8be33ca57b15fc36a1125fbd5d56286b8eee",
+      "match": true
+    },
+    {
+      "file": "assets/WatermarkPanel-DaB1x-ne.js",
+      "status": 200,
+      "expected": "4ba2a845055bcdec97bd685d4e24fab35c5e1ee61243b87d65ae43a7d54bcd19",
+      "actual": "4ba2a845055bcdec97bd685d4e24fab35c5e1ee61243b87d65ae43a7d54bcd19",
+      "match": true
+    },
+    {
+      "file": "assets/aiInspector-BkitVFxN.js",
+      "status": 200,
+      "expected": "b3813cb6a879016b752c2fb28755afe31d0dda915ee2d38d588e0fdfc25b8df4",
+      "actual": "b3813cb6a879016b752c2fb28755afe31d0dda915ee2d38d588e0fdfc25b8df4",
+      "match": true
+    },
+    {
+      "file": "assets/air-entry-D5i5azWo.js",
+      "status": 200,
+      "expected": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "actual": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "match": true
+    },
+    {
+      "file": "assets/air-entry-pVQsCe1X.css",
+      "status": 200,
+      "expected": "4ec93115a6c90e4cab7c38fe73bc168382f39bee1cde6a6d9c52703b4ccbb043",
+      "actual": "4ec93115a6c90e4cab7c38fe73bc168382f39bee1cde6a6d9c52703b4ccbb043",
+      "match": true
+    },
+    {
+      "file": "assets/avif_enc-Co4TcJko.wasm",
+      "status": 200,
+      "expected": "d9f2a95164362af48558d176e619becfd49dd97b50b86c679b47100860522b3d",
+      "actual": "d9f2a95164362af48558d176e619becfd49dd97b50b86c679b47100860522b3d",
+      "match": true
+    },
+    {
+      "file": "assets/avif_enc_mt-DFoVXd45.wasm",
+      "status": 200,
+      "expected": "202d7ec9fb7d658df7cbf17fd85d83da724ac9551818c2d5161c858353a683a4",
+      "actual": "202d7ec9fb7d658df7cbf17fd85d83da724ac9551818c2d5161c858353a683a4",
+      "match": true
+    },
+    {
+      "file": "assets/avif_enc_mt.worker-D9er1KFK.js",
+      "status": 200,
+      "expected": "a3a1382021f845dc19304f1e09edc52993199b90e2dee25fe8338d960e4fcb7d",
+      "actual": "a3a1382021f845dc19304f1e09edc52993199b90e2dee25fe8338d960e4fcb7d",
+      "match": true
+    },
+    {
+      "file": "assets/bgBlur-DH-SaDdQ.js",
+      "status": 200,
+      "expected": "72be111de023d15be89f5af51b0c4eca815d90364a77db908711647974d6ff82",
+      "actual": "72be111de023d15be89f5af51b0c4eca815d90364a77db908711647974d6ff82",
+      "match": true
+    },
+    {
+      "file": "assets/border-C7JV1w9U.js",
+      "status": 200,
+      "expected": "c0d136b1839cbc50a0ca981bae7c39d3502e433194096134ba2504d79167a519",
+      "actual": "c0d136b1839cbc50a0ca981bae7c39d3502e433194096134ba2504d79167a519",
+      "match": true
+    },
+    {
+      "file": "assets/draft-XASuHkVt.js",
+      "status": 200,
+      "expected": "21f8f6793d7932ca58873bd305756c297c8f2a916f2589119f21a48d43d34ce4",
+      "actual": "21f8f6793d7932ca58873bd305756c297c8f2a916f2589119f21a48d43d34ce4",
+      "match": true
+    },
+    {
+      "file": "assets/emoji-CwPh1SHJ.js",
+      "status": 200,
+      "expected": "43101c88ee959d1218a1c3712964fef0041953c36cd545aabe97c68cfd223234",
+      "actual": "43101c88ee959d1218a1c3712964fef0041953c36cd545aabe97c68cfd223234",
+      "match": true
+    },
+    {
+      "file": "assets/exportCodec.worker-YuBgrYUu.js",
+      "status": 200,
+      "expected": "ce2bd2daf9c7936299c60b2f315277f444b554c1912af10260ae2ba2ede34678",
+      "actual": "ce2bd2daf9c7936299c60b2f315277f444b554c1912af10260ae2ba2ede34678",
+      "match": true
+    },
+    {
+      "file": "assets/heif-codec-DXhKMotS.js",
+      "status": 200,
+      "expected": "a8abb5611e874e03f531c7941ace0468e2fbb6c2d475e277311a46b68f5ce836",
+      "actual": "a8abb5611e874e03f531c7941ace0468e2fbb6c2d475e277311a46b68f5ce836",
+      "match": true
+    },
+    {
+      "file": "assets/index.min-6NjN9zuA.js",
+      "status": 200,
+      "expected": "d71acb641013989dbb75e7dbec081a9b7d9853b581949733d8f525ca36483a44",
+      "actual": "d71acb641013989dbb75e7dbec081a9b7d9853b581949733d8f525ca36483a44",
+      "match": true
+    },
+    {
+      "file": "assets/lanczos.worker-DM3rxwvq.js",
+      "status": 200,
+      "expected": "b1321c038c3d77120729cc341bf1985473e4d0fb24ef4afa98480883b3bb048f",
+      "actual": "b1321c038c3d77120729cc341bf1985473e4d0fb24ef4afa98480883b3bb048f",
+      "match": true
+    },
+    {
+      "file": "assets/main-B2DQn4MU.js",
+      "status": 200,
+      "expected": "0850a8663dcbd9610dbd541b61de00f040a9db04adb4348c1cec3819497658d3",
+      "actual": "0850a8663dcbd9610dbd541b61de00f040a9db04adb4348c1cec3819497658d3",
+      "match": true
+    },
+    {
+      "file": "assets/main-DZ49dN_j.css",
+      "status": 200,
+      "expected": "5bcb42ea783648d2cf11128c396f440772c941176aba6b2c34436853eeee5877",
+      "actual": "5bcb42ea783648d2cf11128c396f440772c941176aba6b2c34436853eeee5877",
+      "match": true
+    },
+    {
+      "file": "assets/perspective-MARPhu9c.js",
+      "status": 200,
+      "expected": "3718463242953f0ed9fa13d4c3aac85667a56a7486c5083f772ff389883b6f56",
+      "actual": "3718463242953f0ed9fa13d4c3aac85667a56a7486c5083f772ff389883b6f56",
+      "match": true
+    },
+    {
+      "file": "assets/previewSize-DuK55wBm.js",
+      "status": 200,
+      "expected": "57d3e6b78927164993ca7dc25e8464b2411364df1556c3e8f0c295cc6e1504f0",
+      "actual": "57d3e6b78927164993ca7dc25e8464b2411364df1556c3e8f0c295cc6e1504f0",
+      "match": true
+    },
+    {
+      "file": "assets/relight-peO347C7.js",
+      "status": 200,
+      "expected": "a85926324860cf3c1eb5e7de05c5f9775503fc371037f442a55d6a814577f4a7",
+      "actual": "a85926324860cf3c1eb5e7de05c5f9775503fc371037f442a55d6a814577f4a7",
+      "match": true
+    },
+    {
+      "file": "assets/removeBg-D4lg8LjB.js",
+      "status": 200,
+      "expected": "ca26cdd71a04d4872af92f6941265d1985f045c5287b3d15330a1ed2568916c2",
+      "actual": "ca26cdd71a04d4872af92f6941265d1985f045c5287b3d15330a1ed2568916c2",
+      "match": true
+    },
+    {
+      "file": "assets/runner-B6G3yLLj.js",
+      "status": 200,
+      "expected": "f9228a3baf1ab308d3018d89d638873464c2eb8356a3b5c337506ae0c15e0090",
+      "actual": "f9228a3baf1ab308d3018d89d638873464c2eb8356a3b5c337506ae0c15e0090",
+      "match": true
+    },
+    {
+      "file": "assets/static-pages-PVUoxwQT.js",
+      "status": 200,
+      "expected": "60be7ccc06ac19d86feb34a486153d59fad69f0904446137f0c8acdc4b01753c",
+      "actual": "60be7ccc06ac19d86feb34a486153d59fad69f0904446137f0c8acdc4b01753c",
+      "match": true
+    },
+    {
+      "file": "assets/timeOfDay-CWbCTlC3.js",
+      "status": 200,
+      "expected": "32aaf65b1d4224c77173c45f38dc5732ba557af7a52514e07c5533ba48d3dd10",
+      "actual": "32aaf65b1d4224c77173c45f38dc5732ba557af7a52514e07c5533ba48d3dd10",
+      "match": true
+    },
+    {
+      "file": "assets/useSubjectMask-BjvLbf8X.js",
+      "status": 200,
+      "expected": "1c49e4ff18330b007df5ec68897209075cd5f794d6c6eadc125baa5f4c966364",
+      "actual": "1c49e4ff18330b007df5ec68897209075cd5f794d6c6eadc125baa5f4c966364",
+      "match": true
+    },
+    {
+      "file": "assets/workbox-window.prod.es5-Bd17z0YL.js",
+      "status": 200,
+      "expected": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "actual": "17bcc17d60dc78f927834b880c39649b03af46fd1f5cdbb8c42c5ae2b515dce9",
+      "match": true
+    },
+    {
+      "file": "assets/worker-C8A7Y1k1.js",
+      "status": 200,
+      "expected": "5730269dbf00108fb5983e1224e887162c01eb641f4a06359dbcac4df1f372aa",
+      "actual": "5730269dbf00108fb5983e1224e887162c01eb641f4a06359dbcac4df1f372aa",
+      "match": true
+    },
+    {
+      "file": "cloakimg-mark.svg",
+      "status": 200,
+      "expected": "4a17998945a270941409abe2c6450b8ec1c15d24e4ca5bae61c95ccb1f2461fe",
+      "actual": "4a17998945a270941409abe2c6450b8ec1c15d24e4ca5bae61c95ccb1f2461fe",
+      "match": true
+    },
+    {
+      "file": "icons/apple-touch-icon.png",
+      "status": 200,
+      "expected": "854b21a7a47fd69f20eda08adef0361c741a8af5e5c6b698fba534b81ebb63e5",
+      "actual": "854b21a7a47fd69f20eda08adef0361c741a8af5e5c6b698fba534b81ebb63e5",
+      "match": true
+    },
+    {
+      "file": "icons/cloakyard.svg",
+      "status": 200,
+      "expected": "e1dad723d74ac85fdcf2a15e73862b2034e3eedd0fb0f5eb18f23a64492d08d9",
+      "actual": "e1dad723d74ac85fdcf2a15e73862b2034e3eedd0fb0f5eb18f23a64492d08d9",
+      "match": true
+    },
+    {
+      "file": "icons/favicon.ico",
+      "status": 200,
+      "expected": "d8c589ce6a44d4074c1c8ec8d8856f09f7773aa7a6911398f11b85c04057d24d",
+      "actual": "d8c589ce6a44d4074c1c8ec8d8856f09f7773aa7a6911398f11b85c04057d24d",
+      "match": true
+    },
+    {
+      "file": "icons/favicon.svg",
+      "status": 200,
+      "expected": "2ccdc4217f30b07a1bf8af864e3e4b51b0357ee8cd4816f4a5cacebce4437f13",
+      "actual": "2ccdc4217f30b07a1bf8af864e3e4b51b0357ee8cd4816f4a5cacebce4437f13",
+      "match": true
+    },
+    {
+      "file": "icons/logo.svg",
+      "status": 200,
+      "expected": "1d81b6e592cd16fdf001c0c1cc5f955746b9b3b157f300f5361de4a665409000",
+      "actual": "1d81b6e592cd16fdf001c0c1cc5f955746b9b3b157f300f5361de4a665409000",
+      "match": true
+    },
+    {
+      "file": "icons/maskable-icon-512x512.png",
+      "status": 200,
+      "expected": "f4b60067a5fb4b281592259db1f3c72f23d5abaddb2f592b32563771a8784cb9",
+      "actual": "f4b60067a5fb4b281592259db1f3c72f23d5abaddb2f592b32563771a8784cb9",
+      "match": true
+    },
+    {
+      "file": "icons/og-image.png",
+      "status": 200,
+      "expected": "c386139c954670b27d78f05e3e157ba4fa1d61f723c91e675015e45c676a3974",
+      "actual": "c386139c954670b27d78f05e3e157ba4fa1d61f723c91e675015e45c676a3974",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-192x192.png",
+      "status": 200,
+      "expected": "9b5fa051d8d7a0dd42a7a92a5c6478d476d64dc2659914cd9f5e4dd988a1ebec",
+      "actual": "9b5fa051d8d7a0dd42a7a92a5c6478d476d64dc2659914cd9f5e4dd988a1ebec",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-512x512.png",
+      "status": 200,
+      "expected": "2bed376ebc98d370f1f29bc697be75d5d9307d7befeb188dead4e361daf0944f",
+      "actual": "2bed376ebc98d370f1f29bc697be75d5d9307d7befeb188dead4e361daf0944f",
+      "match": true
+    },
+    {
+      "file": "icons/pwa-64x64.png",
+      "status": 200,
+      "expected": "38049a285b2004a1a78897cfb5e9a0fc3e31658d5d13a4950acaf69a55f27a1c",
+      "actual": "38049a285b2004a1a78897cfb5e9a0fc3e31658d5d13a4950acaf69a55f27a1c",
+      "match": true
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "expected": "a83184139f605e4d710f8aa4dad45c76988c3764cb43a45c144a5ce8c3788b11",
+      "actual": "a83184139f605e4d710f8aa4dad45c76988c3764cb43a45c144a5ce8c3788b11",
+      "match": true
+    },
+    {
+      "file": "manifest.webmanifest",
+      "status": 200,
+      "expected": "f8af4c1a2cfbd2ba05d3c75ee54a94ea14b01bc1885405bf9d20b05abc5b1342",
+      "actual": "f8af4c1a2cfbd2ba05d3c75ee54a94ea14b01bc1885405bf9d20b05abc5b1342",
+      "match": true
+    },
+    {
+      "file": "models/face/blaze_face_full_range.tflite",
+      "status": 200,
+      "expected": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "actual": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "match": true
+    },
+    {
+      "file": "privacy/index.html",
+      "status": 200,
+      "expected": "c1a0b98596553f5747c2474130446c4fc1750386ee3b70b7e1581929489322dc",
+      "actual": "c1a0b98596553f5747c2474130446c4fc1750386ee3b70b7e1581929489322dc",
+      "match": true
+    },
+    {
+      "file": "screenshots/iPad.png",
+      "status": 200,
+      "expected": "a3ad9f8e9e09542f9c4f03d02f16bfe73a08a7096029d800dd998710ecbf6697",
+      "actual": "a3ad9f8e9e09542f9c4f03d02f16bfe73a08a7096029d800dd998710ecbf6697",
+      "match": true
+    },
+    {
+      "file": "screenshots/iPhone.png",
+      "status": 200,
+      "expected": "fc58c52e6c3591f86ec8bf864b1c6532e2794bf3772f74e3840dd9cb2ded0e86",
+      "actual": "fc58c52e6c3591f86ec8bf864b1c6532e2794bf3772f74e3840dd9cb2ded0e86",
+      "match": true
+    },
+    {
+      "file": "sw.js",
+      "status": 200,
+      "expected": "16dafe440d76d9642a3426ed1ffd1338593cff9c922636f60d2df22d01ca4d88",
+      "actual": "16dafe440d76d9642a3426ed1ffd1338593cff9c922636f60d2df22d01ca4d88",
+      "match": true
+    },
+    {
+      "file": "workbox-271d3e69.js",
+      "status": 200,
+      "expected": "d88028613a86bbae28c2f19a29da8730c065cd4af7993b496ec7451ed1d6e68e",
+      "actual": "d88028613a86bbae28c2f19a29da8730c065cd4af7993b496ec7451ed1d6e68e",
+      "match": true
+    }
+  ],
+  "failures": []
+}
