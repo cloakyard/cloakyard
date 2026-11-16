@@ -1,0 +1,37 @@
+[
+  {
+    "app": "cloakpdf",
+    "url": "https://github.com/cloakyard/cloakpdf/pull/239",
+    "number": 239,
+    "main": "ec9d4730bef5bbdb1d8a4051de065f9850fde0d2",
+    "dev": "ec9d4730bef5bbdb1d8a4051de065f9850fde0d2"
+  },
+  {
+    "app": "cloakimg",
+    "url": "https://github.com/cloakyard/cloakimg/pull/39",
+    "number": 39,
+    "main": "c378464fb56b6b49ad2fe34240bd35409b7ce8a3",
+    "dev": "c378464fb56b6b49ad2fe34240bd35409b7ce8a3"
+  },
+  {
+    "app": "cloakresume",
+    "url": "https://github.com/cloakyard/cloakresume/pull/66",
+    "number": 66,
+    "main": "896801c0c7ac4efd6825fcbca97b06d936e96bb8",
+    "dev": "896801c0c7ac4efd6825fcbca97b06d936e96bb8"
+  },
+  {
+    "app": "cloakdrop",
+    "url": "https://github.com/cloakyard/cloakdrop/pull/65",
+    "number": 65,
+    "main": "d952080c34007e6a758283c17846f725c02ad169",
+    "dev": "d952080c34007e6a758283c17846f725c02ad169"
+  },
+  {
+    "app": "cloakroll",
+    "url": "https://github.com/cloakyard/cloakroll/pull/21",
+    "number": 21,
+    "main": "bbfe03b71a2b85a1263f4de87f254f38f4233167",
+    "dev": "6a59d40a6d0e534732cd587ad84b3237d4e36784"
+  }
+]

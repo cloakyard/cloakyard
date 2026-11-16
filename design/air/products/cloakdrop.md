@@ -25,9 +25,9 @@
 - Policy contents derive from the same imported Markdown headings. Preserve the
   displayed revision, real HTTP 404 and native link/no-JS recovery. Same-page
   enhancement preserves Back/Forward and the next keyboard destination.
-- `assets/social/og.html` imports the pinned Air CSS and composes the real native
-  screenshot; `scripts/make-og.sh` renders 1200×630. Keep source/capture/metadata
-  aligned without editing logos, native screenshots or installation guarantees.
+- `artwork/social.json` and the portable social template compose the static pixel
+  file from the built landing. `scripts/make-og.sh` renders 1200×630. Keep image and
+  metadata aligned; preserve native screenshots and installation guarantees.
 - `scripts/test-air-site.mjs` checks the built site with external Puppeteer tooling;
   it is not a runtime dependency. Supplement it with native browser/zoom review and
   keep physical/assistive acceptance distinct from browser input emulation.

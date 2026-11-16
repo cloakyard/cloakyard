@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.7.4 guidance audit verified; five product PRs merged; IMG/Resume/Drop live; PDF/Roll production verification pending; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.7.5 social previews verified; five product PRs merged and live; canonical PR records Cloakyard’s final rollout; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -25,6 +25,17 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Consistent social previews — 2026-11-16
+
+- [x] Audit all six OG images and crawler-visible metadata, including static privacy/recovery and inherited SPA cards.
+- [x] Publish one Air card composition with product-specific existing artwork; remove superseded generators and templates.
+- [x] Validate 1200×630 dimensions, matching image URLs/alternatives, repeatable pixels and both-theme responsive card previews. Add the metadata/image check to every production build.
+- [x] Preserve README/PWA/native screenshots and application output; update the portable Air contract and scoped evidence.
+- [x] Complete required regression checks, including PDF 461, IMG 501 and Resume 373 tests.
+- [x] Commit passing product pieces; merge all five product PRs, verify live HTML/PNG bytes and synchronize dev. The canonical PR records its own final Cloakyard deployment/dev receipts.
+
+Evidence: [social preview audit](docs/air/social-preview-audit-2026-11-16.md). This is an OG asset/metadata pass; full-view and physical acceptance remain separate.
+
 ## Modern Web Guidance — 2026-11-14
 
 - [x] Install the same upstream GoogleChrome skill through npx in all six web repositories, preserving licenses/provenance and keeping it out of runtime bundles.
@@ -32,7 +43,7 @@ The separately requested Drop installer now uses Air.
 - [x] Add small Air 1.7.4 composition/contrast refinements; fix IMG input shortcuts, animated Cancel and the legacy recovery page.
 - [x] Validate changed controls/output and cross-app views in both themes and every viewport class; inspect visual sheets and record the initial motion timeout plus unchanged passing rerun.
 - [x] Keep README structure, portable bundles and dead-code checks current. No new runtime library or native change.
-- [ ] Promote the bounded website updates and synchronize dev using the established PR flow; preserve original PDF AI work and separate native history.
+- [x] Promote the bounded website updates and synchronize dev; all six sites verified live in PR #55’s final follow-up. Original PDF AI work and separate native history preserved.
 - [ ] Complete the existing physical-device/IME/assistive acceptance backlog; no score or software scan closes those gates.
 
 See [the guidance audit](docs/air/modern-web-guidance-audit-2026-11-14.md) for exact coverage and evidence.

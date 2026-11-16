@@ -1,0 +1,178 @@
+{
+  "checkedAt": "2026-11-16T12:04:25.211Z",
+  "results": [
+    {
+      "app": "cloakpdf",
+      "pages": [
+        {
+          "file": "404.html",
+          "url": "https://pdf.cloakyard.com/404.html",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "index.html",
+          "url": "https://pdf.cloakyard.com/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "SPA privacy",
+          "url": "https://pdf.cloakyard.com/?view=privacy",
+          "status": 200,
+          "match": true
+        }
+      ],
+      "image": {
+        "url": "https://pdf.cloakyard.com/icons/og-image.png?v=air-1.7.5",
+        "status": 200,
+        "type": "image/png",
+        "expected": "e52ac9b2f0412fa847e4c781a19b79775659c80b996d8d30d3a73b5a0a94d838",
+        "actual": "e52ac9b2f0412fa847e4c781a19b79775659c80b996d8d30d3a73b5a0a94d838",
+        "match": true
+      },
+      "verified": true
+    },
+    {
+      "app": "cloakimg",
+      "pages": [
+        {
+          "file": "404.html",
+          "url": "https://img.cloakyard.com/404.html",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "index.html",
+          "url": "https://img.cloakyard.com/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "privacy/index.html",
+          "url": "https://img.cloakyard.com/privacy/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        }
+      ],
+      "image": {
+        "url": "https://img.cloakyard.com/icons/og-image.png?v=air-1.7.5",
+        "status": 200,
+        "type": "image/png",
+        "expected": "2625bf39610ec2917abdcd98213ee440b1dab7d89539761a86dad382c72b1020",
+        "actual": "2625bf39610ec2917abdcd98213ee440b1dab7d89539761a86dad382c72b1020",
+        "match": true
+      },
+      "verified": true
+    },
+    {
+      "app": "cloakresume",
+      "pages": [
+        {
+          "file": "404.html",
+          "url": "https://resume.cloakyard.com/404.html",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "index.html",
+          "url": "https://resume.cloakyard.com/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "SPA privacy",
+          "url": "https://resume.cloakyard.com/?view=privacy",
+          "status": 200,
+          "match": true
+        }
+      ],
+      "image": {
+        "url": "https://resume.cloakyard.com/icons/og-image.png?v=air-1.7.5",
+        "status": 200,
+        "type": "image/png",
+        "expected": "093223293f2b3e0c416d2944bff8ef728ce25115983a147dc75617f9dcf13bba",
+        "actual": "093223293f2b3e0c416d2944bff8ef728ce25115983a147dc75617f9dcf13bba",
+        "match": true
+      },
+      "verified": true
+    },
+    {
+      "app": "cloakdrop",
+      "pages": [
+        {
+          "file": "404.html",
+          "url": "https://drop.cloakyard.com/404.html",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "index.html",
+          "url": "https://drop.cloakyard.com/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "privacy/index.html",
+          "url": "https://drop.cloakyard.com/privacy/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        }
+      ],
+      "image": {
+        "url": "https://drop.cloakyard.com/og.png?v=air-1.7.5",
+        "status": 200,
+        "type": "image/png",
+        "expected": "9fc17ac8633920f5b4d8a333f12d4d28f9c48b31ade379271e02b8cddcf99c06",
+        "actual": "9fc17ac8633920f5b4d8a333f12d4d28f9c48b31ade379271e02b8cddcf99c06",
+        "match": true
+      },
+      "verified": true
+    },
+    {
+      "app": "cloakroll",
+      "pages": [
+        {
+          "file": "404.html",
+          "url": "https://roll.cloakyard.com/404.html",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "index.html",
+          "url": "https://roll.cloakyard.com/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        },
+        {
+          "file": "privacy/index.html",
+          "url": "https://roll.cloakyard.com/privacy/",
+          "status": 200,
+          "differences": [],
+          "match": true
+        }
+      ],
+      "image": {
+        "url": "https://roll.cloakyard.com/og.png?v=air-1.7.5",
+        "status": 200,
+        "type": "image/png",
+        "expected": "a49c302fbf413c363aedf1b760db2bfb7f6df12b4fe9b5aee86727c338df1511",
+        "actual": "a49c302fbf413c363aedf1b760db2bfb7f6df12b4fe9b5aee86727c338df1511",
+        "match": true
+      },
+      "verified": true
+    }
+  ]
+}

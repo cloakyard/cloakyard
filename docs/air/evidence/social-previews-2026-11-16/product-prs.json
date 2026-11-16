@@ -1,0 +1,27 @@
+[
+  {
+    "app": "cloakpdf",
+    "url": "https://github.com/cloakyard/cloakpdf/pull/239",
+    "number": 239
+  },
+  {
+    "app": "cloakimg",
+    "url": "https://github.com/cloakyard/cloakimg/pull/39",
+    "number": 39
+  },
+  {
+    "app": "cloakresume",
+    "url": "https://github.com/cloakyard/cloakresume/pull/66",
+    "number": 66
+  },
+  {
+    "app": "cloakdrop",
+    "url": "https://github.com/cloakyard/cloakdrop/pull/65",
+    "number": 65
+  },
+  {
+    "app": "cloakroll",
+    "url": "https://github.com/cloakyard/cloakroll/pull/21",
+    "number": 21
+  }
+]

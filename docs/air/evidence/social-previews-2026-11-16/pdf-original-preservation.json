@@ -1,0 +1,8 @@
+{
+  "app": "cloakpdf",
+  "head": "17b7a00052f36f5f953cb24690a183ceb38402b4",
+  "statusEntries": 54,
+  "diffSha256": "5d41cd2d74249f7bb69fcf1a94e30f0c6e352494f04ce620f2243e44a10950b3",
+  "statusSha256": "f6d71a16c346453939db8fd72513048073b6dbe21166ae524188fa9885d9a651",
+  "matchesPriorUnrelatedDiff": true
+}

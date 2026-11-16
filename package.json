@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vp build",
+    "build": "vp build && node docs/air/check-social.mjs",
     "deploy": "vp check && vp build && wrangler deploy",
-    "generate:og": "node scripts/render-og.mjs",
+    "generate:og": "node docs/air/render-social.mjs",
     "design:light": "node scripts/build-air-light.mjs",
     "design:light:check": "node scripts/build-air-light.mjs --check",
     "design:overlays": "node scripts/build-air-overlays.mjs",
@@ -16,7 +16,8 @@
     "design:inventory": "node scripts/air-inventory.mjs",
     "design:sync": "node scripts/sync-air-design.mjs",
     "design:files:test": "node --test scripts/test-air-file-workflow.mjs",
-    "test:air-links": "node scripts/test-air-links.mjs"
+    "test:air-links": "node scripts/test-air-links.mjs",
+    "check:og": "node docs/air/check-social.mjs"
   },
   "dependencies": {
     "lucide-react": "1.73.0",

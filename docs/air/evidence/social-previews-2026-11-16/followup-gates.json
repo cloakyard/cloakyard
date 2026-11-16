@@ -1,0 +1,102 @@
+[
+  {
+    "app": "cloakyard",
+    "gates": [
+      {
+        "gate": "inventory-final",
+        "exit": 0
+      },
+      {
+        "gate": "fmt-final",
+        "exit": 0
+      },
+      {
+        "gate": "check-final",
+        "exit": 0
+      },
+      {
+        "gate": "air-final",
+        "exit": 0
+      }
+    ]
+  },
+  {
+    "app": "cloakpdf",
+    "gates": [
+      {
+        "gate": "inventory-final",
+        "exit": 0
+      },
+      {
+        "gate": "fmt-final",
+        "exit": 0
+      },
+      {
+        "gate": "check-final",
+        "exit": 0
+      },
+      {
+        "gate": "air-final",
+        "exit": 0
+      },
+      {
+        "gate": "unit",
+        "exit": 0
+      },
+      {
+        "gate": "dead",
+        "exit": 0
+      }
+    ]
+  },
+  {
+    "app": "cloakimg",
+    "gates": [
+      {
+        "gate": "inventory-final",
+        "exit": 0
+      },
+      {
+        "gate": "fmt-final",
+        "exit": 0
+      },
+      {
+        "gate": "check-final",
+        "exit": 0
+      },
+      {
+        "gate": "air-final",
+        "exit": 0
+      },
+      {
+        "gate": "unit",
+        "exit": 0
+      }
+    ]
+  },
+  {
+    "app": "cloakresume",
+    "gates": [
+      {
+        "gate": "inventory-final",
+        "exit": 0
+      },
+      {
+        "gate": "fmt-final",
+        "exit": 0
+      },
+      {
+        "gate": "check-final",
+        "exit": 0
+      },
+      {
+        "gate": "air-final",
+        "exit": 0
+      },
+      {
+        "gate": "unit",
+        "exit": 0
+      }
+    ]
+  }
+]

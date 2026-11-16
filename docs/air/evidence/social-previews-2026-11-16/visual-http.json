@@ -1,0 +1,654 @@
+{
+  "crawlerPages": [
+    {
+      "app": "cloakyard",
+      "file": "index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakyard",
+      "file": "index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakpdf",
+      "file": "404.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakpdf",
+      "file": "404.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakpdf",
+      "file": "index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakpdf",
+      "file": "index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakimg",
+      "file": "404.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakimg",
+      "file": "404.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakimg",
+      "file": "index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakimg",
+      "file": "index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakimg",
+      "file": "privacy/index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakimg",
+      "file": "privacy/index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakresume",
+      "file": "404.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakresume",
+      "file": "404.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakresume",
+      "file": "index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakresume",
+      "file": "index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakdrop",
+      "file": "404.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakdrop",
+      "file": "404.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakdrop",
+      "file": "index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakdrop",
+      "file": "index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakdrop",
+      "file": "privacy/index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakdrop",
+      "file": "privacy/index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakroll",
+      "file": "404.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakroll",
+      "file": "404.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakroll",
+      "file": "index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakroll",
+      "file": "index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    },
+    {
+      "app": "cloakroll",
+      "file": "privacy/index.html",
+      "agent": "facebookexternalhit/1.1",
+      "status": 200
+    },
+    {
+      "app": "cloakroll",
+      "file": "privacy/index.html",
+      "agent": "Twitterbot/1.0",
+      "status": 200
+    }
+  ],
+  "cardLayouts": [
+    {
+      "app": "cloakyard",
+      "layout": "phone",
+      "theme": "light",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "phone",
+      "theme": "light",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "phone",
+      "theme": "light",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "phone",
+      "theme": "light",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "phone",
+      "theme": "light",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "phone",
+      "theme": "light",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakyard",
+      "layout": "phone",
+      "theme": "dark",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "phone",
+      "theme": "dark",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "phone",
+      "theme": "dark",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "phone",
+      "theme": "dark",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "phone",
+      "theme": "dark",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "phone",
+      "theme": "dark",
+      "width": 358,
+      "height": 187.9375,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakyard",
+      "layout": "tablet",
+      "theme": "light",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "tablet",
+      "theme": "light",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "tablet",
+      "theme": "light",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "tablet",
+      "theme": "light",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "tablet",
+      "theme": "light",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "tablet",
+      "theme": "light",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakyard",
+      "layout": "tablet",
+      "theme": "dark",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "tablet",
+      "theme": "dark",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "tablet",
+      "theme": "dark",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "tablet",
+      "theme": "dark",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "tablet",
+      "theme": "dark",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "tablet",
+      "theme": "dark",
+      "width": 788,
+      "height": 413.6875,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakyard",
+      "layout": "laptop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "laptop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "laptop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "laptop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "laptop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "laptop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakyard",
+      "layout": "laptop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "laptop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "laptop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "laptop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "laptop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "laptop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakyard",
+      "layout": "desktop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "desktop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "desktop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "desktop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "desktop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "desktop",
+      "theme": "light",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakyard",
+      "layout": "desktop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakpdf",
+      "layout": "desktop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakimg",
+      "layout": "desktop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakresume",
+      "layout": "desktop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakdrop",
+      "layout": "desktop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    },
+    {
+      "app": "cloakroll",
+      "layout": "desktop",
+      "theme": "dark",
+      "width": 1200,
+      "height": 630,
+      "naturalWidth": 1200,
+      "naturalHeight": 630,
+      "overflow": false
+    }
+  ]
+}

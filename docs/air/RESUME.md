@@ -1,11 +1,28 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-11-14
+## Start here in a new conversation — saved 2026-11-16
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+
+### Verified: consistent social previews / Air 1.7.5 — 2026-11-16
+
+The six web cards now use one portable composition and their existing static
+landing artwork. Read [the scoped audit](social-preview-audit-2026-11-16.md) and
+[regeneration workflow](social-previews.md). Metadata is present on all emitted
+home/privacy/recovery HTML; SPA workspaces inherit the generic product image.
+The new production-build guard catches metadata/PNG drift. Old bespoke OG
+sources/renderers are retired; real README/PWA/native screenshots are preserved.
+
+Work is isolated on `codex/air-og-consistency-2026-11-16` in the same review family.
+PDF #239, IMG #39, Resume #66, Drop #65 and Roll #21 are merged and live-file
+verified. All product remote dev branches include main. The canonical PR records
+its own final Cloakyard checks, deployment and dev sync. Keep PDF's 54 unrelated
+AI files and Drop/Roll native history untouched. Roll retains the approved
+website-only PR exception. This task does not re-certify editor features or close
+physical/assistive acceptance. Third-party cached share previews may refresh later.
 
 ### Verified: Modern Web Guidance / Air 1.7.4 — 2026-11-14
 
@@ -14,9 +31,9 @@ on `codex/modern-web-guidance-2026-11-14`, with identical upstream bytes and
 telemetry disabled. Read `modern-web-guidance-audit-2026-11-14.md` and its portable
 evidence before repeating work. Installation is a separate passing commit in each
 repo. PDF #238, IMG #38, Resume #65, Drop #64 and Roll #20 are merged; all
-remote dev branches include main. IMG/Resume/Drop live files match. PDF/Roll still
-serve previous CSS: the user deferred Cloudflare verification until later, and a green dev preview
-is not production proof. The canonical PR records its own final rollout receipts.
+remote dev branches include main. All six sites were production-verified in the
+2026-11-14 18:16 UTC follow-up: PDF/Roll had propagated too. The canonical
+[PR #55](https://github.com/cloakyard/cloakyard/pull/55) records those final receipts.
 
 Air 1.7.4 adds composition-safe actions and increased-contrast scroll thumbs.
 IMG fixes its custom IME shortcuts and native-button handoff, uses the existing

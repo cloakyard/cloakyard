@@ -1,0 +1,56 @@
+[
+  {
+    "app": "cloakyard",
+    "exit": 0,
+    "identical": true,
+    "hashes": [
+      "18cc7c7cd51d9ac08d87c1d7754087364728d174d0811120dcfd967bac9da47f",
+      "18cc7c7cd51d9ac08d87c1d7754087364728d174d0811120dcfd967bac9da47f"
+    ]
+  },
+  {
+    "app": "cloakpdf",
+    "exit": 0,
+    "identical": true,
+    "hashes": [
+      "e52ac9b2f0412fa847e4c781a19b79775659c80b996d8d30d3a73b5a0a94d838",
+      "e52ac9b2f0412fa847e4c781a19b79775659c80b996d8d30d3a73b5a0a94d838"
+    ]
+  },
+  {
+    "app": "cloakimg",
+    "exit": 0,
+    "identical": true,
+    "hashes": [
+      "2625bf39610ec2917abdcd98213ee440b1dab7d89539761a86dad382c72b1020",
+      "2625bf39610ec2917abdcd98213ee440b1dab7d89539761a86dad382c72b1020"
+    ]
+  },
+  {
+    "app": "cloakresume",
+    "exit": 0,
+    "identical": true,
+    "hashes": [
+      "093223293f2b3e0c416d2944bff8ef728ce25115983a147dc75617f9dcf13bba",
+      "093223293f2b3e0c416d2944bff8ef728ce25115983a147dc75617f9dcf13bba"
+    ]
+  },
+  {
+    "app": "cloakdrop",
+    "exit": 0,
+    "identical": true,
+    "hashes": [
+      "9fc17ac8633920f5b4d8a333f12d4d28f9c48b31ade379271e02b8cddcf99c06",
+      "9fc17ac8633920f5b4d8a333f12d4d28f9c48b31ade379271e02b8cddcf99c06"
+    ]
+  },
+  {
+    "app": "cloakroll",
+    "exit": 0,
+    "identical": true,
+    "hashes": [
+      "a49c302fbf413c363aedf1b760db2bfb7f6df12b4fe9b5aee86727c338df1511",
+      "a49c302fbf413c363aedf1b760db2bfb7f6df12b4fe9b5aee86727c338df1511"
+    ]
+  }
+]
