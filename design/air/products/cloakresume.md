@@ -335,7 +335,7 @@ an Apply transaction. Keep the existing accessible section-specific name.
   for reproducibility; never capture personal drafts or replace visible controls.
   Reduced motion and capture-only worker suppression avoid transient artwork/notices.
 - Social artwork is a fixed 1200×630 composition using pinned local Air CSS, the
-  canonical mark and the real editor image. Keep product claims accurate, type
+  canonical mark and the static landing résumé artwork. Keep product claims accurate, type
   neutral and document output unchanged. Artwork source stays out of the app build.
 - Manifest screenshots use content/appearance labels and exact image dimensions.
   README selects its matching theme with a light fallback. Install metadata uses

@@ -77,7 +77,7 @@ canonical light renderer remains available to standalone design references.
 
 ## Metadata and scope
 
-Keep `index.html` OG/Twitter/JSON-LD and theme colours, `artwork/og.html`, the rendered
+Keep `index.html` OG/Twitter/JSON-LD and theme colours, `artwork/social.json` and the portable social template, the rendered
 1200×630 `public/og.png`, README, sitemap and registry aligned. Brand artwork is a
 brand asset; it does not define UI control colours. No remote icon fallback is needed.
 

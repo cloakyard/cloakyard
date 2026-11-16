@@ -1,0 +1,32 @@
+[
+  {
+    "app": "cloakyard",
+    "main": "1b8c140a2bc7bdd126933c11642118cca3a0e795",
+    "dev": "1b8c140a2bc7bdd126933c11642118cca3a0e795"
+  },
+  {
+    "app": "cloakpdf",
+    "main": "68869bad04c4cbff62cb8d44822c2b8079b6f0b8",
+    "dev": "68869bad04c4cbff62cb8d44822c2b8079b6f0b8"
+  },
+  {
+    "app": "cloakimg",
+    "main": "00704696863e14e602a69865b2872833226c48e8",
+    "dev": "00704696863e14e602a69865b2872833226c48e8"
+  },
+  {
+    "app": "cloakresume",
+    "main": "81e09bfdc3074190646c62bc488aaa37fcadc122",
+    "dev": "81e09bfdc3074190646c62bc488aaa37fcadc122"
+  },
+  {
+    "app": "cloakdrop",
+    "main": "d98a86e4974dece8643d6e1b4ffa329cb9e4a5df",
+    "dev": "d98a86e4974dece8643d6e1b4ffa329cb9e4a5df"
+  },
+  {
+    "app": "cloakroll",
+    "main": "d65e9d403eff13887910bc11617da382f5a95e26",
+    "dev": "4d30bd252946f7587b710e2ba5fde4f5a25035df"
+  }
+]

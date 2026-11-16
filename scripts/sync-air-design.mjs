@@ -37,9 +37,9 @@ for (const [slug, name, destinations] of products) {
   ).trim();
   const content = `---
 name: ${name} — Cloakyard Air
-version: 1.7.4
+version: 1.7.5
 status: approved
-date: 2026-11-14
+date: 2026-11-16
 scope: complete-web-product
 source-repository: ${sourceRepository}
 source-directory: design/air
@@ -94,6 +94,10 @@ ${appendix}
     }
     const studyAssets = { "components.html": createHash("sha256").update(gallery).digest("hex") };
     for (const asset of [
+      "social.html",
+      "render-social.mjs",
+      "check-social.mjs",
+      "social-previews.md",
       "reading.html",
       "recovery.html",
       "pages.mjs",
@@ -136,7 +140,7 @@ ${appendix}
       studyAssets[asset] = createHash("sha256").update(content).digest("hex");
     }
     const manifest = {
-      version: "1.7.4",
+      version: "1.7.5",
       source: {
         repository: sourceRepository,
         directory: "design/air",

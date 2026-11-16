@@ -94,7 +94,7 @@ The production site is a small client-rendered React app. There is no router, ba
 
 This repository owns the [portable Air contract](design/air/contract.md), [reference and tokens](design/air/README.md), and [component matrix](design/air/COMPONENTS.md). The current pinned baseline is Air 1.7.2. Product copies are generated with `node scripts/sync-air-design.mjs --bundle`; verify them with `--bundle --check`.
 
-Read [DESIGN.md](DESIGN.md) before UI changes. The [refresh ledger](UX_REFRESH_TODO.md) and [handoff](docs/air/RESUME.md) distinguish verified software coverage from open physical-device acceptance. [README guidance](docs/README_STANDARD.md) defines the family documentation structure. `artwork/og.html` and `vp run generate:og` own the local social preview.
+Read [DESIGN.md](DESIGN.md) before UI changes. The [refresh ledger](UX_REFRESH_TODO.md) and [handoff](docs/air/RESUME.md) distinguish verified software coverage from open physical-device acceptance. [README guidance](docs/README_STANDARD.md) defines the family documentation structure. The [social preview workflow](docs/air/social-previews.md) uses `artwork/social.json` and `vp run generate:og` with the shared Air template.
 
 ## Project structure
 

@@ -1,0 +1,27 @@
+{
+  "oldDev": "4d30bd252946f7587b710e2ba5fde4f5a25035df",
+  "main": "bbfe03b71a2b85a1263f4de87f254f38f4233167",
+  "dev": "6a59d40a6d0e534732cd587ad84b3237d4e36784",
+  "preservedNativeHistory": true,
+  "changedPaths": [
+    ".gitignore",
+    "DESIGN.md",
+    "apps/site/DESIGN.md",
+    "apps/site/README.md",
+    "apps/site/package.json",
+    "apps/site/scripts/sync-assets.mjs",
+    "apps/site/src/layouts/BaseLayout.astro",
+    "apps/site/src/pages/404.astro",
+    "artwork/social.json",
+    "assets/social/og.png",
+    "docs/air/bundle.json",
+    "docs/air/check-social.mjs",
+    "docs/air/evidence/social-previews-2026-11-16/receipt.json",
+    "docs/air/render-social.mjs",
+    "docs/air/social-preview-audit-2026-11-16.md",
+    "docs/air/social-previews.md",
+    "docs/air/social.html",
+    "docs/air/surfaces.json"
+  ],
+  "websiteVerify": "pass"
+}

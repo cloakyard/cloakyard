@@ -1,0 +1,22 @@
+[
+  {
+    "app": "cloakpdf",
+    "build": 0,
+    "check": 0
+  },
+  {
+    "app": "cloakimg",
+    "build": 0,
+    "check": 0
+  },
+  {
+    "app": "cloakresume",
+    "build": 0,
+    "check": 0
+  },
+  {
+    "app": "cloakroll",
+    "build": 0,
+    "check": 0
+  }
+]
