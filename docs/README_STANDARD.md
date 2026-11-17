@@ -1,6 +1,6 @@
 # Family README standard
 
-The six product READMEs and the Drop/Roll website READMEs use the same navigation
+The seven product READMEs and the Drop/Roll/Tools website READMEs use the same navigation
 and section order. Product-specific capabilities, privacy boundaries, build tools
 and release limits remain explicit. Native SwiftUI apps keep their own design and
 verification requirements; the Air contract governs web UI.
@@ -41,7 +41,7 @@ Review changed captures in both themes. Historical audit records stay historical
 update current entry points rather than rewriting past evidence.
 
 Run `node scripts/check-readmes.mjs` for this repository, or
-`node scripts/check-readmes.mjs --family /path/to/family` for all six sibling
-checkouts and both website READMEs. The check validates the section order and
+`node scripts/check-readmes.mjs --family /path/to/family` for all seven sibling
+checkouts and three website READMEs. The check validates the section order and
 local linked files/Markdown anchors; visual and factual review is still required.
 It is a contributor audit, not a runtime dependency between products.

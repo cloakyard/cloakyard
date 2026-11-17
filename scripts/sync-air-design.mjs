@@ -15,6 +15,7 @@ const products = [
   ["cloakresume", "CloakResume", ["DESIGN.md"]],
   ["cloakdrop", "CloakDrop website", ["DESIGN.md", "apps/site/DESIGN.md"]],
   ["cloakroll", "CloakRoll website", ["DESIGN.md", "apps/site/DESIGN.md"]],
+  ["cloaktools", "CloakTools website", ["DESIGN.md", "apps/site/DESIGN.md"]],
 ];
 const contract = (await readFile(resolve(repository, "design/air/contract.md"), "utf8")).trim();
 const hash = createHash("sha256").update(contract).digest("hex");
@@ -66,7 +67,7 @@ ${appendix}
     const filesHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/files.mjs")))
       .digest("hex");
-    const cssPath = `${["cloakdrop", "cloakroll"].includes(slug) ? "apps/site/" : ""}src/styles/air.css`;
+    const cssPath = `${["cloakdrop", "cloakroll", "cloaktools"].includes(slug) ? "apps/site/" : ""}src/styles/air.css`;
     const overlayHash = createHash("sha256")
       .update(await readFile(resolve(repository, "design/air/assets/air-overlays.js")))
       .digest("hex");
@@ -161,5 +162,5 @@ ${appendix}
 if (failures) process.exitCode = 1;
 else
   console.log(
-    `${check ? "Verified" : "Updated"} eight portable Air specifications (${hash.slice(0, 12)}).`,
+    `${check ? "Verified" : "Updated"} ${products.reduce((count, product) => count + product[2].length, 0)} portable Air specifications (${hash.slice(0, 12)}).`,
   );

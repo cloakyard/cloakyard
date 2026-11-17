@@ -1,0 +1,6 @@
+{
+  "result": {
+    "type": "string",
+    "value": "{\"state\":\"offscreen\",\"animations\":[{\"delay\":160,\"direction\":\"normal\",\"duration\":600,\"easing\":\"cubic-bezier(0.23, 1, 0.32, 1)\",\"endDelay\":0,\"fill\":\"both\",\"iterationStart\":0,\"iterations\":1},{\"delay\":780,\"direction\":\"normal\",\"duration\":600,\"easing\":\"cubic-bezier(0.23, 1, 0.32, 1)\",\"endDelay\":0,\"fill\":\"both\",\"iterationStart\":0,\"iterations\":1},{\"delay\":1400,\"direction\":\"normal\",\"duration\":600,\"easing\":\"cubic-bezier(0.23, 1, 0.32, 1)\",\"endDelay\":0,\"fill\":\"both\",\"iterationStart\":0,\"iterations\":1},{\"delay\":2020,\"direction\":\"normal\",\"duration\":600,\"easing\":\"cubic-bezier(0.23, 1, 0.32, 1)\",\"endDelay\":0,\"fill\":\"both\",\"iterationStart\":0,\"iterations\":1},{\"delay\":2640,\"direction\":\"normal\",\"duration\":600,\"easing\":\"cubic-bezier(0.23, 1, 0.32, 1)\",\"endDelay\":0,\"fill\":\"both\",\"iterationStart\":0,\"iterations\":1},{\"delay\":3260,\"direction\":\"normal\",\"duration\":600,\"easing\":\"cubic-bezier(0.23, 1, 0.32, 1)\",\"endDelay\":0,\"fill\":\"both\",\"iterationStart\":0,\"iterations\":1},{\"delay\":3880,\"direction\":\"normal\",\"duration\":480,\"easing\":\"cubic-bezier(0.23, 1, 0.32, 1)\",\"endDelay\":0,\"fill\":\"both\",\"iterationStart\":0,\"iterations\":1}]}"
+  }
+}

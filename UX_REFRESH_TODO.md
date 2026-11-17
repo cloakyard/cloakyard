@@ -2196,3 +2196,12 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
       dialog correction; keep document typography and live date/drag adapters.
 - [ ] Retain final target/motion and untested physical acceptance gates; deployment
       is not a claim of complete family migration.
+
+## CloakTools family integration — November 17, 2026
+
+- [x] Register CloakTools in the directory, no-script fallback, product contract and shared audits.
+- [x] Verify all seven CloakTools routes, disclosures, links and artwork across the eleven Air sizes in light/dark; compare equivalent family shells.
+- [x] Match GitHub README/provenance/CI/support conventions and add the native About support link.
+- [x] Regenerate six-cube directory social artwork, inspect changed web/native surfaces and run required gates. Release through verified dev → main PRs and the connected Cloudflare builds.
+- Scope: native tools are unchanged apart from About support. No claim of whole-family editor or physical-device acceptance.
+- Evidence: [CloakTools integration audit](docs/air/cloaktools-integration-2026-11-17.md). Deployment receipts are attached to the release PR checks.

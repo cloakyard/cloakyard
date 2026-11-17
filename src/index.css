@@ -195,7 +195,8 @@ summary:focus-visible {
 }
 .tool-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: var(--air-space-24);
 }
 .tool-entry {
   display: flex;
@@ -350,11 +351,7 @@ summary:focus-visible {
     transform: translate(2px, -2px);
   }
 }
-@container (60em < width <= 80em) {
-  .tool-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    row-gap: var(--air-space-24);
-  }
+@container (width > 60em) {
   .tool-entry:nth-child(3n + 1) {
     border-inline-start: none;
   }
@@ -365,7 +362,6 @@ summary:focus-visible {
   }
   .tool-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: var(--air-space-24);
   }
   .tool-entry:nth-child(odd) {
     border-inline-start: none;

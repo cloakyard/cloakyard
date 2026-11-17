@@ -9,7 +9,7 @@ export interface YardProject {
 export interface ProductivityTool extends YardProject {
   platform: string;
   privacy: string;
-  status: "Live" | "Beta";
+  status: "Live" | "Beta" | "Preview";
   logo: string;
 }
 
@@ -71,6 +71,18 @@ export const productivityTools: ProductivityTool[] = [
     privacy: "Originals stay yours",
     status: "Beta",
     logo: "/brands/cloakroll-mark.svg",
+  },
+  {
+    name: "CloakTools",
+    slug: "tools",
+    description:
+      "Small tasks. Less friction. Create files, prepare images and PDFs, and open links in the right app.",
+    href: "https://tools.cloakyard.com",
+    repo: "https://github.com/cloakyard/cloaktools",
+    platform: "macOS 27+ · Apple silicon",
+    privacy: "Files stay local",
+    status: "Preview",
+    logo: "/brands/cloaktools-mark.svg",
   },
 ];
 

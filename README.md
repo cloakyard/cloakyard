@@ -17,7 +17,7 @@
 
 ## Overview
 
-The directory for CloakPDF, CloakResume, CloakIMG, CloakDrop and CloakRoll, with a separate link to KERR. Web tools process work locally; the native apps have their own documented network and storage boundaries.
+The directory for CloakPDF, CloakResume, CloakIMG, CloakDrop, CloakRoll and CloakTools, with a separate link to KERR. Web tools process work locally; the native apps have their own documented network and storage boundaries.
 
 ## Features
 
@@ -28,6 +28,8 @@ The directory for CloakPDF, CloakResume, CloakIMG, CloakDrop and CloakRoll, with
 - **[CloakIMG](https://img.cloakyard.com)** — a private photo editor with retouching, metadata removal, and optional on-device AI.
 - **[CloakDrop](https://drop.cloakyard.com)** — a native macOS download manager with adaptive range transfers and zero telemetry.
 - **[CloakRoll](https://roll.cloakyard.com)** — back up original iPhone photos and videos over USB to your Mac; Apple silicon and macOS 26+.
+
+- **[CloakTools](https://tools.cloakyard.com)** — create files, prepare images and PDFs, and route links on Mac; macOS 27+, Apple silicon, development preview.
 
 ### Explorations
 
@@ -92,7 +94,7 @@ The production site is a small client-rendered React app. There is no router, ba
 
 ## Design and assets
 
-This repository owns the [portable Air contract](design/air/contract.md), [reference and tokens](design/air/README.md), and [component matrix](design/air/COMPONENTS.md). The current pinned baseline is Air 1.7.2. Product copies are generated with `node scripts/sync-air-design.mjs --bundle`; verify them with `--bundle --check`.
+This repository owns the [portable Air contract](design/air/contract.md), [reference and tokens](design/air/README.md), and [component matrix](design/air/COMPONENTS.md). The current pinned baseline is Air 1.7.5. Product copies are generated with `node scripts/sync-air-design.mjs --bundle`; verify them with `--bundle --check`.
 
 Read [DESIGN.md](DESIGN.md) before UI changes. The [refresh ledger](UX_REFRESH_TODO.md) and [handoff](docs/air/RESUME.md) distinguish verified software coverage from open physical-device acceptance. [README guidance](docs/README_STANDARD.md) defines the family documentation structure. The [social preview workflow](docs/air/social-previews.md) uses `artwork/social.json` and `vp run generate:og` with the shared Air template.
 

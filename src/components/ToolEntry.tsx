@@ -6,7 +6,7 @@ export function ToolEntry({ tool }: { tool: ProductivityTool }) {
     <article className="tool-entry">
       <div className="tool-heading">
         <img className="tool-logo" src={tool.logo} alt="" width="36" height="36" />
-        {tool.status === "Beta" && <span className="tool-status">Beta</span>}
+        {tool.status !== "Live" && <span className="tool-status">{tool.status}</span>}
       </div>
       <h3 translate="no">{tool.name}</h3>
       <p className="tool-description">{tool.description}</p>
