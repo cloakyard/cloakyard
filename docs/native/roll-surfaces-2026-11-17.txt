@@ -1,0 +1,110 @@
+Source pattern inventory, not a rendered-state pass. Paths relative to cloakroll.
+
+apps/macos/App/Shared/BackupDockExamples.swift:5:struct BackupDockExamples: View {
+apps/macos/App/Shared/BackupDockExamples.swift:28:private struct DockExampleTile: NSViewRepresentable {
+apps/macos/App/Shared/ThumbnailSizeControl.swift:25:struct ThumbnailSizePicker: View {
+apps/macos/App/Shared/BackupHistoryExample.swift:10:struct BackupHistoryExample: View {
+apps/macos/App/Shared/FeaturePreview.swift:7:struct FeaturePreviewWindow: View {
+apps/macos/App/Shared/FeaturePreview.swift:29:        .sheet(isPresented: $settings) {
+apps/macos/App/Shared/LibraryPreviews.swift:3:private struct SamplePreview: View {
+apps/macos/App/Shared/BackupDetailValue.swift:4:struct BackupDetailValue: View {
+apps/macos/App/App/LibraryCommands.swift:63:private struct LibraryActionItems: View {
+apps/macos/App/Features/Help/BackupHelpView.swift:15:struct BackupHelpView: View {
+apps/macos/App/Features/Settings/AboutHeaderView.swift:3:struct AboutHeaderView: View {
+apps/macos/App/Features/Settings/AboutHeaderView.swift:18:            .buttonStyle(.plain)
+apps/macos/App/Features/Sidebar/DeviceBackupSummary.swift:40:struct DeviceBackupSummary: View {
+apps/macos/App/Features/Settings/PrivacySettingsView.swift:3:struct PrivacySettingsView: View {
+apps/macos/App/Features/Library/MediaThumbnail.swift:6:struct MediaThumbnail: View {
+apps/macos/App/Features/Sidebar/SidebarView.swift:4:struct SidebarView: View {
+apps/macos/App/Features/Sidebar/SidebarView.swift:68:                    .buttonStyle(.borderless)
+apps/macos/App/Features/Sidebar/SidebarView.swift:115:struct DeviceSummary: View {
+apps/macos/App/Features/Library/CaptureDateFilterView.swift:4:struct CaptureDateFilterButton: View {
+apps/macos/App/Features/Library/CaptureDateFilterView.swift:14:        .popover(isPresented: $model.dateFilterPresented, arrowEdge: .bottom) {
+apps/macos/App/Features/Library/CaptureDateFilterView.swift:23:private struct CaptureDateFilterView: View {
+apps/macos/App/Features/Sidebar/ConnectedDevicePicker.swift:21:struct ConnectedDevicePicker: View {
+apps/macos/App/Features/Settings/MatrixRainView.swift:8:struct MatrixRainView: View {
+apps/macos/App/Features/Settings/AboutSettingsView.swift:3:struct AboutSettingsView: View {
+apps/macos/App/Features/Settings/AboutSettingsView.swift:34:        .sheet(isPresented: $showingLicenses) { LicensesView() }
+apps/macos/App/Features/Settings/AboutSettingsView.swift:48:private struct LicensesView: View {
+apps/macos/App/Features/Library/LiveLibraryNotice.swift:3:struct LiveLibraryNotice: View {
+apps/macos/App/Features/Library/MediaInfoNavigation.swift:4:struct MediaInfoNavigation: View {
+apps/macos/App/Features/Library/MediaInfoCameraView.swift:5:struct MediaInfoCameraView: View {
+apps/macos/App/Features/Settings/NotificationSettingsView.swift:3:struct NotificationSettingsView: View {
+apps/macos/App/Features/Settings/SettingsLinkRow.swift:4:struct SettingsLinkRow: View {
+apps/macos/App/Features/Settings/SettingsLinkRow.swift:25:        .buttonStyle(.plain)
+apps/macos/App/Features/Settings/SettingsView.swift:7:struct SettingsView: View {
+apps/macos/App/Features/Settings/SettingsView.swift:119:private struct SettingsShortcutRow: View {
+apps/macos/App/Features/Backup/BackupNotificationClient.swift:28:        authorize: { try await UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) },
+apps/macos/App/Features/Backup/BackupPreviewView.swift:21:struct BackupPreviewView: View {
+apps/macos/App/Features/Library/MediaInfoDetailRow.swift:3:struct MediaInfoDetailRow: View {
+apps/macos/App/Features/Backup/BackupProgressView.swift:3:struct BackupProgressView: View {
+apps/macos/App/Features/Backup/BackupProgressView.swift:20:                    .buttonStyle(.borderless)
+apps/macos/App/Features/Backup/BackupProgressView.swift:22:                    .popover(isPresented: $showsDetails, arrowEdge: .top) {
+apps/macos/App/Features/History/SavedLibraryView.swift:5:struct SavedLibraryView: View {
+apps/macos/App/Features/History/SavedLibraryView.swift:66:        .sheet(item: $actions.preview) { SavedOriginalPreview(request: $0) }
+apps/macos/App/Features/History/SavedLibraryView.swift:67:        .alert("Original Unavailable", isPresented: Binding(
+apps/macos/App/Features/History/SavedLibraryView.swift:127:                .buttonStyle(.bordered)
+apps/macos/App/Features/Library/LibraryViewOptions.swift:5:struct LibraryViewOptions: View {
+apps/macos/App/Features/Library/LibraryEmptyResultsView.swift:3:struct LibraryEmptyResultsView: View {
+apps/macos/App/Features/Library/MediaCell.swift:5:struct MediaCell: View {
+apps/macos/App/Features/Library/MediaCell.swift:46:        .buttonStyle(.plain)
+apps/macos/App/Features/Library/MediaCell.swift:93:private struct MediaItemActions: View {
+apps/macos/App/Features/Library/MediaCell.swift:125:struct SampleThumbnail: View {
+apps/macos/App/Features/Library/ViewOptionsButton.swift:3:struct ViewOptionsButton: View {
+apps/macos/App/Features/Library/MediaInfoView.swift:5:struct MediaInfoSheet: View {
+apps/macos/App/Features/Library/MediaInfoView.swift:13:struct MediaInfoView: View {
+apps/macos/App/Features/Library/MediaInfoOriginalsView.swift:5:struct MediaInfoOriginalsView: View {
+apps/macos/App/Features/Library/LibraryView.swift:6:struct LibraryView: View {
+apps/macos/App/Features/Library/LibraryView.swift:150:struct DeviceEmptyView: View {
+apps/macos/App/Features/Library/GridKeyboardBridge.swift:13:struct GridKeyboardBridge: NSViewRepresentable {
+apps/macos/App/Features/Backup/DestinationReadinessLabel.swift:3:struct DestinationReadinessLabel: View {
+apps/macos/App/Features/Backup/UnavailableOriginalsView.swift:4:struct UnavailableOriginalsView: View {
+apps/macos/App/Features/History/BackupHistoryFilters.swift:4:struct BackupHistoryFilters: View {
+apps/macos/App/Features/Library/LibrarySectionHeader.swift:5:struct LibrarySectionHeader: View {
+apps/macos/App/Features/Library/LibrarySectionHeader.swift:12:        label.glassEffect(.regular, in: .capsule)
+apps/macos/App/Features/History/BackupFolderRecoveryView.swift:3:struct BackupFolderRecoveryView: View {
+apps/macos/App/Features/Library/ThumbnailViewport.swift:19:struct ThumbnailViewport: ViewModifier {
+apps/macos/App/Features/Backup/BackupBar.swift:4:struct BackupBar: View {
+apps/macos/App/Features/Backup/BackupBar.swift:34:        .sheet(isPresented: $showingUnavailableOriginals) {
+apps/macos/App/Features/Backup/BackupBar.swift:54:                        .buttonStyle(.borderless)
+apps/macos/App/Features/Backup/BackupBar.swift:73:                    .buttonStyle(.borderedProminent)
+apps/macos/App/Features/Backup/BackupBar.swift:77:                    .buttonStyle(.borderedProminent)
+apps/macos/App/Features/History/BackupHistoryView.swift:4:struct BackupHistoryView: View {
+apps/macos/App/Features/History/BackupHistoryView.swift:18:        .sheet(item: $checkRequest) { request in
+apps/macos/App/Features/History/BackupHistoryView.swift:23:        .sheet(isPresented: $isShowingRecovery) { BackupFolderRecoveryView() }
+apps/macos/App/Features/Library/DateGroupSelectionActions.swift:4:struct DateGroupSelectionActions: View {
+apps/macos/App/Features/History/BackupSessionCheckView.swift:9:struct BackupSessionCheckView: View {
+apps/macos/App/Features/History/BackupHistoryList.swift:5:struct BackupHistoryList: View {
+apps/macos/App/Features/History/BackupHealthView.swift:4:struct BackupHealthView: View {
+apps/macos/App/Features/History/BackupHealthView.swift:44:        .sheet(item: $request, onDismiss: { revision += 1 }, content: { request in
+apps/macos/App/Features/History/BackupHealthView.swift:66:private struct BackupHealthRow: View {
+apps/macos/App/Features/History/BackupHealthView.swift:111:            .buttonStyle(.bordered)
+apps/macos/App/Features/History/BackupHealthView.swift:123:        .sheet(isPresented: $showingContinuation) { BackupContinuationView(session: entry.latestSession) }
+apps/macos/App/Features/RootView.swift:4:struct RootView: View {
+apps/macos/App/Features/RootView.swift:33:        .sheet(item: $model.presentation) { presentation in
+apps/macos/App/Features/RootView.swift:43:        .sheet(item: $model.backupPreviewRequest) { BackupPreviewView(request: $0) }
+apps/macos/App/Features/RootView.swift:44:        .alert("Backup Unavailable", isPresented: Binding(
+apps/macos/App/Features/RootView.swift:55:private struct BackupBarPlacement: ViewModifier {
+apps/macos/App/Features/RootView.swift:64:                    .glassEffect(.regular, in: .rect(cornerRadius: 16))
+apps/macos/App/Features/History/SavedOriginalPreview.swift:29:struct SavedOriginalThumbnail: View {
+apps/macos/App/Features/History/SavedOriginalPreview.swift:60:struct SavedOriginalPreview: View {
+apps/macos/App/Features/History/SavedOriginalPreview.swift:77:private struct SavedQuickLook: NSViewRepresentable {
+apps/macos/App/Features/History/BackupHistoryRow.swift:4:struct BackupHistoryRow: View {
+apps/macos/App/Features/History/BackupHistoryRow.swift:56:        .sheet(isPresented: $showingContinuation) { BackupContinuationView(session: session) }
+apps/macos/App/Features/History/BackupHistoryRow.swift:108:        .buttonStyle(.bordered)
+apps/macos/App/Features/History/BackupContinuationView.swift:5:struct BackupContinuationView: View {
+apps/macos/App/Features/History/BackupContinuationView.swift:54:        .sheet(item: $storageRequest) { BackupPreviewView(request: $0, didStart: { dismiss() }) }
+
+Scene, panel and AppKit entry points
+apps/macos/App/Features/Backup/BackupDestinationStore.swift:319:        let panel = NSOpenPanel()
+apps/macos/App/Features/Backup/BackupDestinationStore.swift:350:    let panel: NSOpenPanel
+apps/macos/App/Features/Backup/BackupDestinationStore.swift:354:    init(panel: NSOpenPanel) { self.panel = panel }
+apps/macos/App/App/DevelopmentCommands.swift:35:                Button("Sample Backup History · 205 Sessions") { openWindow(id: "sample-backup-history") }
+apps/macos/App/App/DevelopmentCommands.swift:36:                Button("Dock Progress Examples") { openWindow(id: "dock-progress-examples") }
+apps/macos/App/App/DevelopmentCommands.swift:37:                Button("New Features · Generated Backups") { openWindow(id: "feature-preview") }
+apps/macos/App/App/CloakRollApp.swift:29:        Window("CloakRoll", id: "main") {
+apps/macos/App/App/CloakRollApp.swift:45:        Window("Generated Backup Features", id: "feature-preview") {
+apps/macos/App/App/CloakRollApp.swift:46:            FeaturePreviewWindow()
+apps/macos/App/App/CloakRollApp.swift:49:        Window("Sample Backup History", id: "sample-backup-history") {
+apps/macos/App/App/CloakRollApp.swift:56:        Window("Dock Progress Examples", id: "dock-progress-examples") {
+apps/macos/App/App/LibraryCommands.swift:58:        openWindow(id: "main")
