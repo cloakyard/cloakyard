@@ -1,0 +1,126 @@
+Source pattern inventory, not a rendered-state pass. Paths relative to cloakdrop.
+
+apps/macos/App/Shared/CircleActionButton.swift:5:struct CircleActionButton: View {
+apps/macos/App/Shared/CircleActionButton.swift:27:        .buttonStyle(.plain)
+apps/macos/App/Shared/DesignTokens.swift:36:struct CapsuleProgressBar: View {
+apps/macos/App/Shared/DesignTokens.swift:79:private struct ActivitySweep: View {
+apps/macos/App/Shared/EmptyStateView.swift:10:struct EmptyStateView<Extra: View>: View {
+apps/macos/App/Ambient/MenuBarContent.swift:6:struct MenuBarContent: View {
+apps/macos/App/Shared/SheetHeader.swift:7:struct SheetHeader<Accessory: View>: View {
+apps/macos/App/Shared/SheetHeader.swift:48:        .background(.regularMaterial)
+apps/macos/App/Ambient/NotificationManager.swift:29:        _ = try? await center.requestAuthorization(options: [.alert, .sound, .badge])
+apps/macos/App/Features/RootView.swift:9:struct RootView: View {
+apps/macos/App/Features/RootView.swift:20:        .sheet(isPresented: $model.isAddSheetPresented) {
+apps/macos/App/Features/RootView.swift:23:        .sheet(isPresented: $model.isBatchSheetPresented) {
+apps/macos/App/Features/RootView.swift:26:        .sheet(item: $model.pendingDownloadRepair) { download in
+apps/macos/App/Features/RootView.swift:29:        .sheet(isPresented: $model.isPlaylistSheetPresented) { PlaylistImportSheet() }
+apps/macos/App/Features/RootView.swift:30:        .alert("Couldn’t Change Download", isPresented: Binding(
+apps/macos/App/Features/RootView.swift:39:        .sheet(item: $model.pendingMediaSelection) { selection in
+apps/macos/App/Features/RootView.swift:82:        .alert(
+apps/macos/App/Features/RootView.swift:111:            .background(.regularMaterial, in: Capsule())
+apps/macos/App/Features/RootView.swift:123:private struct PersistentInspectorSplitView: View {
+apps/macos/App/Features/RootView.swift:164:private struct InspectorDivider: View {
+apps/macos/App/Features/RootView.swift:198:private struct ResizeCursorArea: NSViewRepresentable {
+apps/macos/App/Features/AddDownload/MediaPickerSheet.swift:6:struct MediaPickerSheet: View {
+apps/macos/App/Features/AddDownload/MediaPickerSheet.swift:210:                    .buttonStyle(.borderedProminent)
+apps/macos/App/Features/DownloadList/DownloadListView.swift:6:struct DownloadListView: View {
+apps/macos/App/Features/DownloadList/DownloadListView.swift:46:        .confirmationDialog(
+apps/macos/App/Features/DownloadList/DownloadListView.swift:105:                    .buttonStyle(.borderedProminent)
+apps/macos/App/Features/DownloadList/DownloadListView.swift:113:                .buttonStyle(.borderless)
+apps/macos/App/Features/DownloadList/DownloadListView.swift:119:            .background(.regularMaterial)
+apps/macos/App/Features/DownloadList/DownloadListView.swift:168:                    .buttonStyle(.borderedProminent)
+apps/macos/App/Features/Sidebar/SidebarView.swift:13:struct SidebarView: View {
+apps/macos/App/Features/AddDownload/BatchAddSheet.swift:9:struct BatchAddSheet: View {
+apps/macos/App/Features/Inspector/InspectorView.swift:8:struct InspectorView: View {
+apps/macos/App/Features/Inspector/InspectorView.swift:321:                .buttonStyle(.borderless)
+apps/macos/App/App/CloakDropApp.swift:202:private struct CaptureIntakeInstaller: View {
+apps/macos/App/Features/AddDownload/PlaylistImportSheet.swift:5:struct PlaylistImportSheet: View {
+apps/macos/App/Features/AddDownload/DownloadRepairSheet.swift:4:struct DownloadRepairSheet: View {
+apps/macos/App/Features/DownloadList/DownloadRowView.swift:7:struct DownloadRowView: View {
+apps/macos/App/Features/DownloadList/DownloadRowView.swift:247:private struct MediaThumbnailImage: View {
+apps/macos/App/Features/AddDownload/AddDownloadSheet.swift:8:struct AddDownloadSheet: View {
+apps/macos/App/Features/Browser/OfflineRunnerView.swift:8:struct BrowserOfflineView: View {
+apps/macos/App/Features/Browser/OfflineRunnerView.swift:70:struct BrowserRunnerView: View {
+apps/macos/App/Features/Browser/OfflineRunnerView.swift:90:private struct OfflineRunnerView: View {
+apps/macos/App/Features/Browser/OfflineRunnerView.swift:134:                .buttonStyle(.plain)
+apps/macos/App/Features/Browser/OfflineRunnerView.swift:211:            .buttonStyle(.plain)
+apps/macos/App/Features/Settings/PrivacySettingsView.swift:5:struct PrivacySettingsView: View {
+apps/macos/App/Features/Settings/PrivacySettingsView.swift:243:        .buttonStyle(.plain)
+apps/macos/App/Features/Browser/MediaShelfView.swift:6:struct MediaShelfView: View {
+apps/macos/App/Features/Browser/MediaShelfView.swift:74:        .buttonStyle(.plain)
+apps/macos/App/Features/Browser/MediaShelfView.swift:87:private struct ShelfRow: View {
+apps/macos/App/Features/Browser/MediaShelfView.swift:123:            .buttonStyle(.plain)
+apps/macos/App/Features/Settings/MatrixRainView.swift:8:struct AboutHeaderView: View {
+apps/macos/App/Features/Settings/MatrixRainView.swift:50:            .buttonStyle(.plain)
+apps/macos/App/Features/Settings/MatrixRainView.swift:107:struct MatrixRainView: View {
+apps/macos/App/Features/Settings/StatsSettingsView.swift:7:struct StatsSettingsView: View {
+apps/macos/App/Features/Settings/StatsSettingsView.swift:67:                .confirmationDialog("Reset download stats?", isPresented: $showResetConfirm, titleVisibility: .visible) {
+apps/macos/App/Features/Settings/RulesSettingsView.swift:6:struct RulesSettingsView: View {
+apps/macos/App/Features/Settings/RulesSettingsView.swift:40:        .sheet(isPresented: $isEditorPresented) {
+apps/macos/App/Features/Settings/RulesSettingsView.swift:67:private struct RuleRow: View {
+apps/macos/App/Features/Settings/RulesSettingsView.swift:107:            .buttonStyle(.plain)
+apps/macos/App/Features/Browser/BrowserWebView.swift:52:struct BrowserWebViewHost: NSViewRepresentable {
+apps/macos/App/Features/Browser/BrowserWebView.swift:61:struct BrowserWindowConfigurator: NSViewRepresentable {
+apps/macos/App/Features/Settings/BrowserSettingsView.swift:19:struct BrowserSettingsView: View {
+apps/macos/App/Features/Settings/BrowserSettingsView.swift:95:        .confirmationDialog(
+apps/macos/App/Features/Settings/RuleEditorView.swift:88:struct RuleEditorView: View {
+apps/macos/App/Features/Settings/RuleEditorView.swift:179:                            .buttonStyle(.borderless)
+apps/macos/App/Features/Settings/RuleEditorView.swift:270:            .buttonStyle(.borderless)
+apps/macos/App/Features/Settings/SettingsView.swift:11:struct SettingsView: View {
+apps/macos/App/Features/Settings/SettingsView.swift:284:        .buttonStyle(.plain)
+apps/macos/App/Features/Settings/SpeedTestSettingsView.swift:7:struct SpeedTestSettingsView: View {
+apps/macos/App/Features/Settings/SpeedTestSettingsView.swift:78:                    .buttonStyle(.borderedProminent)
+apps/macos/App/Features/Settings/SpeedTestSettingsView.swift:161:private struct SpeedometerView: View {
+apps/macos/App/Features/Browser/OfflineRunnerAnimals.swift:25:struct PixelAnimalObstacle: View {
+apps/macos/App/Features/Browser/BrowserSession+Delegates.swift:196:                                   kind: .alert { continuation.resume() })
+apps/macos/App/Features/Browser/OfflineRunnerScenery.swift:5:struct RunnerPixelSky: View {
+apps/macos/App/Features/Browser/OfflineRunnerScenery.swift:52:struct RunnerPixelCelestialBody: View {
+apps/macos/App/Features/Browser/OfflineRunnerScenery.swift:114:struct RunnerPixelCloud: View {
+apps/macos/App/Features/Browser/OfflineRunnerScenery.swift:159:struct RunnerPixelMountains: View {
+apps/macos/App/Features/Browser/OfflineRunnerPhaseView.swift:19:struct RunnerPhasePanel: View {
+apps/macos/App/Features/Browser/OfflineRunnerPhaseView.swift:234:private struct RunnerScoreTile: View {
+apps/macos/App/Features/Browser/OfflineRunnerPhaseView.swift:262:private struct RunnerKeycap: View {
+apps/macos/App/Features/Browser/OfflineRunnerPhaseView.swift:333:private struct RunnerPhaseArtwork: View {
+apps/macos/App/Features/Browser/BrowserModels.swift:82:        case .alert(let done): done()
+apps/macos/App/Features/Browser/OfflineRunnerArtwork.swift:148:struct PixelRunnerObstacle: View {
+apps/macos/App/Features/Browser/OfflineRunnerArtwork.swift:338:struct PixelGroundDetails: View {
+apps/macos/App/Features/Browser/OfflineRunnerArtwork.swift:363:struct PixelBird: View {
+apps/macos/App/Features/Browser/OfflineRunnerArtwork.swift:414:struct PixelNightStars: View {
+apps/macos/App/Features/Browser/OfflineRunnerArtwork.swift:444:struct CloakedRunnerSprite: View {
+apps/macos/App/Features/Browser/BrowserView.swift:7:struct BrowserView: View {
+apps/macos/App/Features/Browser/BrowserView.swift:68:        .alert(dialogTitle, isPresented: dialogPresented, presenting: session.dialog) { dialog in
+apps/macos/App/Features/Browser/BrowserView.swift:73:        .sheet(item: authBinding) { request in
+apps/macos/App/Features/Browser/BrowserView.swift:166:                .buttonStyle(.plain)
+apps/macos/App/Features/Browser/BrowserView.swift:263:            .buttonStyle(.plain)
+apps/macos/App/Features/Browser/BrowserView.swift:299:        .popover(isPresented: $isShelfPresented, arrowEdge: .bottom) {
+apps/macos/App/Features/Browser/BrowserView.swift:390:        case .alert:
+apps/macos/App/Features/Browser/BrowserView.swift:413:private struct BrowserAuthSheet: View {
+apps/macos/App/Features/Browser/BrowserURLField.swift:10:struct URLTextField: NSViewRepresentable {
+
+Scene, panel and AppKit entry points
+apps/macos/App/Ambient/MenuBarContent.swift:24:                    showMainWindow()
+apps/macos/App/Ambient/MenuBarContent.swift:37:        Button("Open CloakDrop") { showMainWindow() }
+apps/macos/App/Ambient/MenuBarContent.swift:40:            openWindow(id: BrowserScene.windowID)
+apps/macos/App/Ambient/MenuBarContent.swift:63:    private func showMainWindow() {
+apps/macos/App/Ambient/MenuBarContent.swift:67:            openWindow(id: CloakDropApp.mainWindowID)
+apps/macos/App/Features/DownloadList/DownloadListView.swift:207:                openWindow(id: BrowserScene.windowID)
+apps/macos/App/Features/AddDownload/BatchAddSheet.swift:298:        let panel = NSOpenPanel()
+apps/macos/App/Features/AddDownload/BatchAddSheet.swift:324:        let panel = NSOpenPanel()
+apps/macos/App/Features/AddDownload/AddDownloadSheet.swift:419:        let panel = NSOpenPanel()
+apps/macos/App/App/CloakDropApp.swift:60:        // A single main window (not a WindowGroup): the menu-bar "Open CloakDrop" can then
+apps/macos/App/App/CloakDropApp.swift:63:        Window("CloakDrop", id: Self.mainWindowID) {
+apps/macos/App/App/CloakDropApp.swift:80:        MenuBarExtra("CloakDrop", systemImage: "arrow.down.circle") {
+apps/macos/App/App/CloakDropApp.swift:129:            Button("New Browser Window") { openWindow(id: BrowserScene.windowID) }
+apps/macos/App/App/CloakDropApp.swift:173:        reopenMainWindow()
+apps/macos/App/App/CloakDropApp.swift:215:                        openWindow(id: CloakDropApp.mainWindowID)
+apps/macos/App/App/CloakDropApp.swift:221:                    showMainWindow()
+apps/macos/App/Features/Browser/BrowserWebView.swift:17:    override func viewDidMoveToWindow() {
+apps/macos/App/Features/Browser/BrowserWebView.swift:18:        super.viewDidMoveToWindow()
+apps/macos/App/Features/AddDownload/PlaylistImportSheet.swift:142:        let panel = NSOpenPanel()
+apps/macos/App/App/AppModel+DownloadEdits.swift:6:        let panel = NSOpenPanel()
+apps/macos/App/App/AppModel+Metalink.swift:43:        let panel = NSOpenPanel()
+apps/macos/App/Features/Settings/RuleEditorView.swift:281:        let panel = NSOpenPanel()
+apps/macos/App/Features/Browser/BrowserView.swift:55:            session.onOpenWindow = { openWindow(id: BrowserScene.windowID, value: BrowserLaunch(url: $0, openedByPage: true)) }
+apps/macos/App/App/AppModel.swift:464:        let panel = NSSavePanel()
+apps/macos/App/Features/Browser/BrowserScene.swift:4:/// value-presented `WindowGroup`s otherwise dedupe by value (opening the same URL twice would
+apps/macos/App/Features/Browser/BrowserScene.swift:20:        WindowGroup(id: Self.windowID, for: BrowserLaunch.self) { $launch in

@@ -1,0 +1,370 @@
+{
+  "date": "2026-11-17",
+  "policy": "Captures remain local; may contain user filenames/paths. Consult the coverage ledger; file existence is not a visual pass.",
+  "captures": [
+    {
+      "file": "drop-dark-add-download.png",
+      "bytes": 102247,
+      "sha256": "f41a9256e572eb2ce26f493fac66077a865e83290981e77eacaebf5634965edb"
+    },
+    {
+      "file": "drop-dark-browser-alert.png",
+      "bytes": 7023,
+      "sha256": "c08109d6dd497d06c624bd864533ffcfe02e2d86b0e7f60a5f96c930a1af5334",
+      "excluded": "Blank system-alert capture; accessibility-only verification."
+    },
+    {
+      "file": "drop-dark-browser-confirm.png",
+      "bytes": 7023,
+      "sha256": "c08109d6dd497d06c624bd864533ffcfe02e2d86b0e7f60a5f96c930a1af5334",
+      "excluded": "Blank system-alert capture; accessibility-only verification."
+    },
+    {
+      "file": "drop-dark-completed-inspector.png",
+      "bytes": 280811,
+      "sha256": "e5064579b02294ab0b0b213b6f013a423a086a357b121fda2283b85ffa2ff5f6"
+    },
+    {
+      "file": "drop-dark-general-bottom.png",
+      "bytes": 163999,
+      "sha256": "3d4ac733b8a8503d2fc47f803f63c8d058a2ae8ebf64763d21714a9b6e3ea80e"
+    },
+    {
+      "file": "drop-dark-grab-links-clipping.png",
+      "bytes": 107002,
+      "sha256": "f8df3379d0310bcf2e17b05ab1141aff7b2db56d0f85986b0bc38800c89a82eb"
+    },
+    {
+      "file": "drop-dark-media-format-menu.png",
+      "bytes": 70198,
+      "sha256": "95dedb0eeaf652fd1f6af5f1dc9be0d92eca150141e868317abea4977eeb5cf9"
+    },
+    {
+      "file": "drop-dark-media-picker.png",
+      "bytes": 66253,
+      "sha256": "cca63f946f6876ec8eb264ecc32b30e8255597f35dfd23244b3a578737d1daab"
+    },
+    {
+      "file": "drop-dark-media-shelf.png",
+      "bytes": 177231,
+      "sha256": "fd2daceddef067822ca2dd50d01e6c6152af8db766c7dba979bd5826837d9377"
+    },
+    {
+      "file": "drop-dark-playlist.png",
+      "bytes": 48783,
+      "sha256": "d724ded4d42ee377f5369a109ef0df73b816276f946a0407431f9e2bb0dac399"
+    },
+    {
+      "file": "drop-dark-privacy-bottom.png",
+      "bytes": 348492,
+      "sha256": "43fe512c2f52a7e01ebef26ed89fe0d744ca9bc1497bbb54447c9e35e6ee15f4"
+    },
+    {
+      "file": "drop-dark-privacy-middle.png",
+      "bytes": 350538,
+      "sha256": "f4accb021bef006dadf8a13b314062dfffd5356b804c4a8cc0b1ced976970a63"
+    },
+    {
+      "file": "drop-dark-row-menu.png",
+      "bytes": 289847,
+      "sha256": "7cb94f5cae00b16054856c549192db18c8733832d7f4cd58ce2a5ef59f37fb73"
+    },
+    {
+      "file": "drop-dark-rule-editor.png",
+      "bytes": 76345,
+      "sha256": "ed34abfdf2489faad58c76ec991615cbe8559c5e72606cf0f58bf9007b371a75"
+    },
+    {
+      "file": "drop-dark-runner-ready.png",
+      "bytes": 291944,
+      "sha256": "9fa76cddbe3a0a1297b8a34acf66446f04271d61fd23a44646414bffe8dfd890"
+    },
+    {
+      "file": "drop-dark-settings-about.png",
+      "bytes": 93806,
+      "sha256": "3c691064fe0724b86baeb8289352295adf8d0768c0345fe3d59655a18f84ffe5"
+    },
+    {
+      "file": "drop-dark-settings-browser.png",
+      "bytes": 193595,
+      "sha256": "d583d2266abfb1ceb317db086729f1efae463ba45d69701082b46489a3b5ddd3"
+    },
+    {
+      "file": "drop-dark-settings-general.png",
+      "bytes": 171164,
+      "sha256": "25034e609ce7377e163b145c499243973b7cc6f51e5acc5730b8b0397cbaa406"
+    },
+    {
+      "file": "drop-dark-settings-network.png",
+      "bytes": 80924,
+      "sha256": "dcb080e9fb71a1ad8c811a3a280f1a23070cf7097eb7d0992597c4bc27d14233"
+    },
+    {
+      "file": "drop-dark-settings-privacy.png",
+      "bytes": 262739,
+      "sha256": "76e0a2c27b5d9fa09da189470bdd75f4bb1b51afdd466188f6cea6148b27039d"
+    },
+    {
+      "file": "drop-dark-settings-rules.png",
+      "bytes": 78337,
+      "sha256": "56fe930f3f9bd16354fd0a69a5b63dcd6ff491634e0d9ce27e8f5e215bff043c"
+    },
+    {
+      "file": "drop-dark-settings-speed-test.png",
+      "bytes": 129104,
+      "sha256": "ac403d0192cffd43a0e2954fa3a511963d7ef94a06262257ca6a2e61e88d4ba0"
+    },
+    {
+      "file": "drop-dark-settings-stats.png",
+      "bytes": 109191,
+      "sha256": "f729d00eee066f319c8aeed1abe4c9eb2052c476b1b43e6eaf04900cf35d39cb"
+    },
+    {
+      "file": "drop-dark-sort.png",
+      "bytes": 283760,
+      "sha256": "ead0dd7e19ed4a72925213073855e666bb2362cca3114f454ac758a2f20c6d17"
+    },
+    {
+      "file": "drop-dark-stats-bottom.png",
+      "bytes": 123365,
+      "sha256": "57a4b66655a007cfe24b71e4c459c954fd54add596080c5c923c7758430c5f98"
+    },
+    {
+      "file": "drop-light-about.png",
+      "bytes": 95136,
+      "sha256": "1f4fe8924146ffb45589eaea050ed710aeb076c2d5cb3735df060025eb680f58"
+    },
+    {
+      "file": "drop-light-browser.png",
+      "bytes": 193798,
+      "sha256": "017a8bcccba9bed25762a099714714c3eddf5a973249c26822518121fc6a44a8"
+    },
+    {
+      "file": "drop-light-network.png",
+      "bytes": 82308,
+      "sha256": "cd354d960e57c62259b9875ecdefdb5978848ce6fb83129896649496c40cc5e7"
+    },
+    {
+      "file": "drop-light-privacy.png",
+      "bytes": 264218,
+      "sha256": "50e829c4906946d827bfe304df9677c1f946d0afb42eee90ab8f05cbbe78b0f1"
+    },
+    {
+      "file": "drop-light-speed-test.png",
+      "bytes": 131604,
+      "sha256": "d00df02a59a7fc1c076da1364d1f5d81e5fd45f12a576472fbaad81e570413cc"
+    },
+    {
+      "file": "drop-light-stats.png",
+      "bytes": 110554,
+      "sha256": "6ce701085c93b9ead9b63306fb646bbb144a1c2cc1b0fc5e9419b8f8a8176a18"
+    },
+    {
+      "file": "roll-dark-compact-finishing.png",
+      "bytes": 200613,
+      "sha256": "73ccddb81eada9602bd7bc6b649b72014708c39291c5b12a3207e12641c9d55b"
+    },
+    {
+      "file": "roll-dark-compact-preparing.png",
+      "bytes": 200779,
+      "sha256": "edc578f0a62d3289ac83d9d20b9389eab0e96493bff10762e308059bffe3a9e4"
+    },
+    {
+      "file": "roll-dark-compact-stopping.png",
+      "bytes": 202365,
+      "sha256": "745f20c5c4d92753bdf53adf7b7357b0dfafba543b4f167b37b7964743aaf791"
+    },
+    {
+      "file": "roll-dark-compact-verifying.png",
+      "bytes": 200655,
+      "sha256": "a5a58b0ad656faa2086dee53b05215f5c5adf297d14ee318bfac7d42ea3f6f2d"
+    },
+    {
+      "file": "roll-dark-copying.png",
+      "bytes": 317340,
+      "sha256": "5fea8b4e18a9613d7eea4e088a24a242c3f0dc58628f900ce281518a26928c35"
+    },
+    {
+      "file": "roll-dark-date-popover.png",
+      "bytes": 339054,
+      "sha256": "7c27ca5cab3358d7567bd89fc1948a2fc6361e44d6cde2a2cbc8b7a8e72f1a5d"
+    },
+    {
+      "file": "roll-dark-disconnected-library.png",
+      "bytes": 133456,
+      "sha256": "b93561085928ede6a3767803c3292683cb8ce4bd071153890ed306c20d63e171"
+    },
+    {
+      "file": "roll-dark-help-interrupted.png",
+      "bytes": 168900,
+      "sha256": "facbc784343ef616db5ba5ffe5f23205682ad2612cb64b5f401d4fa78b2e1bf4"
+    },
+    {
+      "file": "roll-dark-help-start.png",
+      "bytes": 160947,
+      "sha256": "34bbd2651d27aed8c84ccf95fb61c2347ab8161296a27a515be403ea4c9be7dc"
+    },
+    {
+      "file": "roll-dark-help-usb.png",
+      "bytes": 163344,
+      "sha256": "3a4db9e4ffda8aa9a930bbc00096299e4166524c59e93c2b5d59fff663340ced"
+    },
+    {
+      "file": "roll-dark-history-expanded.png",
+      "bytes": 137451,
+      "sha256": "0b0b552db8b007454c4aa37803cf6e4a66086ded537c34c206f9ac5268870415"
+    },
+    {
+      "file": "roll-dark-history-filter.png",
+      "bytes": 141025,
+      "sha256": "2affa073ba48c0eddff5df646d9c1f6a869e2d86f10a21fc47e0dba85c8d38aa"
+    },
+    {
+      "file": "roll-dark-history.png",
+      "bytes": 162358,
+      "sha256": "9f252a4aa517179945e23178e3d4e1e74b4a125d9ff036970c6a4fe642d58e05"
+    },
+    {
+      "file": "roll-dark-info-long.png",
+      "bytes": 140399,
+      "sha256": "48c5a204da8e527b78ea8500c4730fb28a33eca590b99e78c73470151dfbb9fe"
+    },
+    {
+      "file": "roll-dark-info-missing.png",
+      "bytes": 75302,
+      "sha256": "cb61b25da84fa024fb9d496718b27ea19a9e30d4aae40407691cc30d7167fea0"
+    },
+    {
+      "file": "roll-dark-library.png",
+      "bytes": 322742,
+      "sha256": "94617b5bb07fdc2559198b51f23a370584ed06a9278460dd735359d73e38ef7b"
+    },
+    {
+      "file": "roll-dark-licenses.png",
+      "bytes": 210146,
+      "sha256": "23929ea7af8c260aa87b26db07d46dbbc467c3b02eca1ebf81922a0a2c0418bf"
+    },
+    {
+      "file": "roll-dark-matrix.png",
+      "bytes": 105895,
+      "sha256": "db93726ca2233f88b84ce49334109fd0a73500edc5bd6c016248c4b0b7b8ed11",
+      "excluded": "Misnamed: ordinary About view, not Matrix animation."
+    },
+    {
+      "file": "roll-dark-no-device.png",
+      "bytes": 146196,
+      "sha256": "7823f9939f05bce6564686ae5d019bff0eee1eeb4871fef563279d701042bc3f"
+    },
+    {
+      "file": "roll-dark-progress-popover.png",
+      "bytes": 335093,
+      "sha256": "6e71845a77e4d1a6d059d7dc10e78c8c5488fb3bb3f40becbca5a4ddc611ce74"
+    },
+    {
+      "file": "roll-dark-recovery-idle.png",
+      "bytes": 110693,
+      "sha256": "9d5502f2b76e35cfba6cb84d14f6dac1eb2c06a3164f5cd485025188ecf0222e"
+    },
+    {
+      "file": "roll-dark-recovery-usb.png",
+      "bytes": 124754,
+      "sha256": "e1b9aa39b61f26ab604d6734c12e63178b5307d5a0ef5c946d76eb397dd4fa4f"
+    },
+    {
+      "file": "roll-dark-restricted-device.png",
+      "bytes": 140384,
+      "sha256": "04a181467a1f432bf259e82e9e5e512095a63b39444ad6632664b010e8e30bb2"
+    },
+    {
+      "file": "roll-dark-settings-about.png",
+      "bytes": 105475,
+      "sha256": "56c0f4af41569b324955cd216acde3f1a15c287d1dadef8b573368d81cd0c483"
+    },
+    {
+      "file": "roll-dark-settings-backup.png",
+      "bytes": 110044,
+      "sha256": "8dfa3ee5ceb87dc019e10acc44818898be49fce1172dac9320099433f000309c"
+    },
+    {
+      "file": "roll-dark-settings-general.png",
+      "bytes": 133769,
+      "sha256": "ce8115ef172e427b9f325db3496d07780bbe816fb22b257289552d7a72b160f7"
+    },
+    {
+      "file": "roll-dark-settings-notifications.png",
+      "bytes": 165866,
+      "sha256": "051518866843915fc4818ac99873019f6ccd68a5e0b4b9404510d2cb71d513f2"
+    },
+    {
+      "file": "roll-dark-settings-privacy.png",
+      "bytes": 203573,
+      "sha256": "97936dd36db1a836b4c77524b7007addebf4812ff36f2920945454741a339e9f"
+    },
+    {
+      "file": "roll-dark-view-menu.png",
+      "bytes": 330824,
+      "sha256": "193b799320429400e59e400261a57e5294b4867a423ba96fddf0a7070c55a7f1"
+    },
+    {
+      "file": "roll-light-check-result.png",
+      "bytes": 106932,
+      "sha256": "4443f1bcebf1763be3452bd46c03d3b407bbebb470f07a609dda70652f4aca7b"
+    },
+    {
+      "file": "roll-light-check-saved.png",
+      "bytes": 96132,
+      "sha256": "267aaecf80d22d528e3f2df373f835e296bb19d6ed2b6bd6914b71bf64a0bb3d"
+    },
+    {
+      "file": "roll-light-date-popover.png",
+      "bytes": 342809,
+      "sha256": "ee893a76a657b1959ffd4eb2abaf123e6b470cc3d2e9ca6b966f2286dcabaa84"
+    },
+    {
+      "file": "roll-light-licenses.png",
+      "bytes": 217128,
+      "sha256": "848ea29b610e85ea51f3045acc0aa5c5de4ed88d5178b45f5b72ab3eec037011"
+    },
+    {
+      "file": "roll-light-original-loaded.png",
+      "bytes": 63024,
+      "sha256": "40d5d9199d100228eeac5de896c950dc400dfaff69c9e898bd8479f46299514b"
+    },
+    {
+      "file": "roll-light-original-preview.png",
+      "bytes": 34401,
+      "sha256": "6fdfb54012ce4335d64c850f56bde629e43e1f4b536bb797b1e713adbeb91fad"
+    },
+    {
+      "file": "roll-light-saved-originals.png",
+      "bytes": 184748,
+      "sha256": "e0c471aff791e5fc7ac000b14a6afb3eeb0fd109f5fd7a10ec8a6cee392d93af"
+    },
+    {
+      "file": "roll-light-settings-about.png",
+      "bytes": 105084,
+      "sha256": "5ca665791917ca891d096359bc1b210ca7eaffe33670e455c5af6ac2e04f37cf"
+    },
+    {
+      "file": "roll-light-settings-backup.png",
+      "bytes": 111487,
+      "sha256": "ea8e408e26a5fbfd384ef52397bb697834d3c93adbd3f06e9a88702357e8b336"
+    },
+    {
+      "file": "roll-light-settings-general.png",
+      "bytes": 135474,
+      "sha256": "3ad135155d85828a899db2a2c0a656b40cf7c0c82effa104c4589dbe1d7eb488"
+    },
+    {
+      "file": "roll-light-settings-notifications.png",
+      "bytes": 169730,
+      "sha256": "682ddb83e3a819c53cb651d4a52ecf430bd8bf7657003e48b3e184e46c40b9ce"
+    },
+    {
+      "file": "roll-light-settings-privacy.png",
+      "bytes": 200662,
+      "sha256": "216c64120ad8ed0a93f44df7079d1dbd5f07069563c32baa6cd58fb6cb3e8e23"
+    }
+  ],
+  "storage": "Chat-local native-glass-audit directory; image bytes are excluded from the repository."
+}
