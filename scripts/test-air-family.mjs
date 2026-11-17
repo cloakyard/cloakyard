@@ -1,6 +1,6 @@
 /** Compare built public surfaces against Air, not against one another's drift.
  * Uses disposable Chrome/Firefox profiles. No external destinations are followed.
- * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume,Roll,IMG list; PUPPETEER_MODULE may
+ * AIR_FAMILY_URLS is a comma-separated yard,PDF,Drop,Resume,Roll,IMG,Tools list; PUPPETEER_MODULE may
  * point to existing external test tooling. AIR_REPORT_ONLY records initial drift. */
 import assert from "node:assert/strict";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -12,7 +12,7 @@ const out = resolve(process.env.AIR_EVIDENCE_DIR || `/tmp/air-family-${engine}`)
 await mkdir(out, { recursive: true });
 const urls = (
   process.env.AIR_FAMILY_URLS ||
-  "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182,http://127.0.0.1:8184,http://127.0.0.1:8186,http://127.0.0.1:8187"
+  "http://127.0.0.1:8180,http://127.0.0.1:8181,http://127.0.0.1:8182,http://127.0.0.1:8184,http://127.0.0.1:8186,http://127.0.0.1:8187,http://127.0.0.1:8188"
 ).split(",");
 const products = [
   {
@@ -68,6 +68,15 @@ products.push({
   sections: ".img-section h2",
   menu: ".img-mobile-navigation",
   source: ".img-navigation a:last-child",
+  privacy: "/privacy/",
+});
+products.push({
+  name: "cloaktools",
+  frame: ".site-header",
+  brand: ".brand",
+  sections: ".section h2",
+  menu: ".mobile-nav",
+  source: ".desktop-source",
   privacy: "/privacy/",
 });
 for (const p of products) {

@@ -9,9 +9,17 @@ const out = resolve(process.env.AIR_EVIDENCE_DIR || `/tmp/air-artwork-${engine}`
 await mkdir(out, { recursive: true });
 const urls = (
   process.env.AIR_FAMILY_URLS ||
-  "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356,http://127.0.0.1:8357"
+  "http://127.0.0.1:8350,http://127.0.0.1:8351,http://127.0.0.1:8352,http://127.0.0.1:8354,http://127.0.0.1:8356,http://127.0.0.1:8357,http://127.0.0.1:8358"
 ).split(",");
-const names = ["cloakyard", "cloakpdf", "cloakdrop", "cloakresume", "cloakroll", "cloakimg"];
+const names = [
+  "cloakyard",
+  "cloakpdf",
+  "cloakdrop",
+  "cloakresume",
+  "cloakroll",
+  "cloakimg",
+  "cloaktools",
+];
 const sizes =
   process.env.AIR_SMOKE === "1"
     ? [[390, 844]]

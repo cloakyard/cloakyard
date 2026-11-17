@@ -8,6 +8,6 @@
   "headline": ["Your work.", "A little lighter."],
   "description": ["Private tools for everyday work.", "Free to use. Open source."],
   "artAlt": "Blue cubes forming a growing grid.",
-  "imageAlt": "Cloakyard — Your work. A little lighter. Blue cubes forming a growing grid.",
-  "imagePath": "/og.png?v=air-1.7.5"
+  "imageAlt": "Cloakyard \u2014 Your work. A little lighter. Blue cubes forming a growing grid.",
+  "imagePath": "/og.png?v=air-1.7.5-tools"
 }

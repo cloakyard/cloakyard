@@ -1,11 +1,21 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-11-16
+## Start here in a new conversation — saved 2026-11-17
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+
+### Verified for release: CloakTools family integration — 2026-11-17
+
+CloakTools joins the directory, generated Air bundle, README standard and family
+browser runners. Wide directory layouts use three columns for six products.
+The Mac About pane and GitHub funding metadata use the family Ko-fi destination.
+Read [the integration audit](cloaktools-integration-2026-11-17.md) for the complete
+website coverage ledger, dead-code findings and explicit native/editor limits.
+Only CloakTools and Cloakyard are release targets. Follow their dev → main PR
+checks and existing Cloudflare builds; do not deploy unrelated PDF AI work.
 
 ### Verified: consistent social previews / Air 1.7.5 — 2026-11-16
 

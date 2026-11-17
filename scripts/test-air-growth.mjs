@@ -59,6 +59,8 @@ try {
             next: root.querySelectorAll(".yard-growth-next").length,
             duplicateMark: root.querySelectorAll("img").length,
             labels: [...document.querySelectorAll(".tool-entry h3")].map((n) => n.textContent),
+            tools: document.querySelector('.tool-entry a[href="https://tools.cloakyard.com"]')
+              ?.href,
             roll: document.querySelector('.tool-entry a[href="https://roll.cloakyard.com"]')?.href,
           };
         });
@@ -69,6 +71,8 @@ try {
         assert.equal(row.forms, row.labels.length);
         assert.equal(row.next, 1);
         assert.equal(row.duplicateMark, 0);
+        assert.equal(row.tools, "https://tools.cloakyard.com/");
+        assert.equal(row.forms, 6);
         assert.equal(row.roll, "https://roll.cloakyard.com/");
         result.layouts.push({ theme, width, height, font, ...row });
       }
@@ -149,8 +153,9 @@ try {
   await nojs.setJavaScriptEnabled(false);
   await nojs.goto(url, { waitUntil: "networkidle0" });
   assert.ok(await nojs.$('noscript a[href="https://roll.cloakyard.com"]'));
+  assert.ok(await nojs.$('noscript a[href="https://tools.cloakyard.com"]'));
   await nojs.close();
-  result.journeys.push("No-JavaScript directory includes CloakRoll");
+  result.journeys.push("No-JavaScript directory includes CloakRoll and CloakTools");
   assert.ok(requests.every((u) => !u.includes("air-light-shader") && !u.includes("ko-fi.com")));
   result.journeys.push("No shader or support-service requests on page load");
   assert.deepEqual(result.errors, []);
