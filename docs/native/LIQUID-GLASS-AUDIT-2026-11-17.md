@@ -1,5 +1,13 @@
 # CloakDrop and CloakRoll native Liquid Glass audit
 
+**Implementation follow-up:** CloakDrop local source commit `35147a3` replaces
+the three custom regular-material treatments with plain sheet headings and
+Liquid Glass floating chrome, and shares glass actions across seven dialogs.
+Light/dark, compact-window and representative accessibility checks are recorded
+in CloakDrop's `docs/audits/2026-11-17-modern-materials.md`. Browser authentication
+still needs a live visual check. This follow-up has not published a native
+release; the findings and ledger below preserve the original pre-change audit.
+
 November 17, 2026. **Both apps adopt the modern macOS system appearance.
 CloakRoll also explicitly applies Liquid Glass to floating backup controls and
 date-group chrome. CloakDrop retains three custom regular-material surfaces.**
