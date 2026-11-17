@@ -17,7 +17,7 @@
 
 ## Overview
 
-The directory for CloakPDF, CloakResume, CloakIMG, CloakDrop, CloakRoll and CloakTools, with a separate link to KERR. Web tools process work locally; the native apps have their own documented network and storage boundaries.
+The directory groups CloakPDF, CloakResume and CloakIMG under **Web apps**, and CloakDrop, CloakRoll and CloakTools under **macOS apps**, with a separate link to KERR. Web tools process work locally; the native apps have their own documented network and storage boundaries.
 
 ## Features
 

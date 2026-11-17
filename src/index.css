@@ -193,6 +193,26 @@ summary:focus-visible {
 .tools-section {
   margin-top: var(--air-space-24);
 }
+.tool-group + .tool-group {
+  margin-top: var(--air-space-48);
+}
+.tool-group-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--air-space-8) var(--air-space-16);
+  padding-inline: var(--air-space-24);
+  margin-bottom: var(--air-space-24);
+}
+.tool-group-heading h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+.tool-group-heading p {
+  color: var(--air-ink-secondary);
+  font-size: var(--air-text-body);
+}
 .tool-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -433,6 +453,10 @@ summary:focus-visible {
   }
   .tools-section {
     margin-top: var(--air-space-16);
+  }
+  .tool-group-heading {
+    padding-inline: 0;
+    margin-bottom: var(--air-space-16);
   }
   .tool-list {
     grid-template-columns: minmax(0, 1fr);

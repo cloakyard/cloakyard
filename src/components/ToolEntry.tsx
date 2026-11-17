@@ -15,8 +15,16 @@ export function ToolEntry({ tool }: { tool: ProductivityTool }) {
         <span>{tool.privacy}</span>
       </p>
       <div className="tool-actions">
-        <a className="text-link" href={tool.href}>
-          Open {tool.name}
+        <a
+          className="text-link"
+          href={tool.href}
+          aria-label={
+            tool.platformType === "web"
+              ? `Open in browser: ${tool.name}`
+              : `Visit website: ${tool.name}`
+          }
+        >
+          {tool.platformType === "web" ? "Open in browser" : "Visit website"}
           <ArrowUpRight size={16} aria-hidden="true" />
         </a>
         <a
