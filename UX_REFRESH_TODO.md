@@ -25,6 +25,14 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Homepage platform groups — 2026-11-17
+
+- [x] Group the six productivity entries under Web apps and macOS apps, with short explanatory headings and platform-appropriate link labels; mirror the categories without JavaScript.
+- [x] Inspect the directory at every required viewport in light/dark, enlarged text, keyboard/touch and reduced motion; verify links and record bounded evidence.
+- [x] Pass applicable repository checks and commit this homepage-only piece. Native apps and KERR remain outside scope.
+
+Evidence: [platform groups](docs/air/platform-groups-2026-11-17.md). Local implementation; publication is separate.
+
 ## Consistent social previews — 2026-11-16
 
 - [x] Audit all six OG images and crawler-visible metadata, including static privacy/recovery and inherited SPA cards.

@@ -7,6 +7,7 @@ export interface YardProject {
 }
 
 export interface ProductivityTool extends YardProject {
+  platformType: "web" | "macos";
   platform: string;
   privacy: string;
   status: "Live" | "Beta" | "Preview";
@@ -20,6 +21,7 @@ export const productivityTools: ProductivityTool[] = [
     description: "A clear space for every page. Edit, annotate, redact and organise your PDFs.",
     href: "https://pdf.cloakyard.com",
     repo: "https://github.com/cloakyard/cloakpdf",
+    platformType: "web",
     platform: "Web · PWA",
     privacy: "Files stay local",
     status: "Live",
@@ -32,6 +34,7 @@ export const productivityTools: ProductivityTool[] = [
       "Your experience, beautifully told. Build, tailor and export an ATS-friendly résumé.",
     href: "https://resume.cloakyard.com",
     repo: "https://github.com/cloakyard/cloakresume",
+    platformType: "web",
     platform: "Web · PWA",
     privacy: "Drafts stay local",
     status: "Live",
@@ -43,6 +46,7 @@ export const productivityTools: ProductivityTool[] = [
     description: "Make a little more of your images. Edit, retouch and remove metadata, privately.",
     href: "https://img.cloakyard.com",
     repo: "https://github.com/cloakyard/cloakimg",
+    platformType: "web",
     platform: "Web · PWA",
     privacy: "Pixels stay local",
     status: "Live",
@@ -55,6 +59,7 @@ export const productivityTools: ProductivityTool[] = [
       "Downloads that feel at home on Mac. Start, pause and safely pick up where you left off.",
     href: "https://drop.cloakyard.com",
     repo: "https://github.com/cloakyard/cloakdrop",
+    platformType: "macos",
     platform: "macOS · Native",
     privacy: "Zero telemetry",
     status: "Beta",
@@ -67,6 +72,7 @@ export const productivityTools: ProductivityTool[] = [
       "Your memories, in your hands. Back up original iPhone photos and videos to your Mac over USB.",
     href: "https://roll.cloakyard.com",
     repo: "https://github.com/cloakyard/cloakroll",
+    platformType: "macos",
     platform: "macOS 26+ · Apple silicon",
     privacy: "Originals stay yours",
     status: "Beta",
@@ -79,6 +85,7 @@ export const productivityTools: ProductivityTool[] = [
       "Small tasks. Less friction. Create files, prepare images and PDFs, and open links in the right app.",
     href: "https://tools.cloakyard.com",
     repo: "https://github.com/cloakyard/cloaktools",
+    platformType: "macos",
     platform: "macOS 27+ · Apple silicon",
     privacy: "Files stay local",
     status: "Preview",
