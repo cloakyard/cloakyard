@@ -2213,3 +2213,8 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 - [x] Regenerate six-cube directory social artwork, inspect changed web/native surfaces and run required gates. Release through verified dev → main PRs and the connected Cloudflare builds.
 - Scope: native tools are unchanged apart from About support. No claim of whole-family editor or physical-device acceptance.
 - Evidence: [CloakTools integration audit](docs/air/cloaktools-integration-2026-11-17.md). Deployment receipts are attached to the release PR checks.
+
+## CloakTools icon refresh — November 18, 2026
+
+- [x] Copy the circular web mark from CloakTools commit `2e2b6ff` into the directory. The directory image, the product header and the SVG favicon all resolve to the same artwork (SHA-256 `7dbf9d80e7883d8ba626043f73782c72aac01871f50c9ce3488e4e37ef48fb24`).
+- [x] Check the directory and seven CloakTools routes in Chrome at 390, 768, 1280 and 1920 px in both themes. All 64 samples displayed the 36 px mark and reflowed at 200% root text size. The phone menu and privacy contents disclosure passed keyboard checks in both themes, and the menu passed emulated touch. [Rendered directory and header crops](docs/air/evidence/cloaktools-icon-2026-11-18/marks.jpg).
