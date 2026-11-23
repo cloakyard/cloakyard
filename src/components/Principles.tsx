@@ -32,13 +32,14 @@ export function Principles() {
       </h2>
       <div className="principle-list">
         {principles.map((principle) => (
-          <div className="principle" key={principle.title}>
+          <div className="principle" data-air-reveal="" key={principle.title}>
             <h3>{principle.title}</h3>
             <p>{principle.description}</p>
+            <span className="air-reveal-veil" aria-hidden="true" />
           </div>
         ))}
       </div>
-      <div className="open-invitation">
+      <div className="open-invitation" data-air-reveal="">
         <p>A small family. An open invitation.</p>
         <a
           className="text-link"
@@ -48,6 +49,7 @@ export function Principles() {
         >
           Build with us <ArrowUpRight size={16} aria-hidden="true" />
         </a>
+        <span className="air-reveal-veil" aria-hidden="true" />
       </div>
     </section>
   );

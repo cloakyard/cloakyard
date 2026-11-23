@@ -1,5 +1,6 @@
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { mountLandingReveals } from "../docs/air/landing-reveal.mjs";
 import { ExperimentSection } from "./components/ExperimentSection";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -9,6 +10,7 @@ import { ToolSection } from "./components/ToolSection";
 import { experiments, productivityTools } from "./data/tools";
 
 export default function App() {
+  const main = useRef<HTMLElement>(null);
   const privacy = new URLSearchParams(location.search).get("view") === "privacy";
   useEffect(() => {
     const followHash = () => {
@@ -27,10 +29,14 @@ export default function App() {
     return () => window.removeEventListener("hashchange", followHash);
   }, []);
 
+  useEffect(() => {
+    if (!privacy && main.current) return mountLandingReveals(main.current);
+  }, [privacy]);
+
   return (
     <div className="site-shell">
       <Header reading={privacy} />
-      <main id="main" tabIndex={-1} className={privacy ? "site-frame" : undefined}>
+      <main ref={main} id="main" tabIndex={-1} className={privacy ? "site-frame" : undefined}>
         {privacy ? (
           <PrivacyPolicy />
         ) : (

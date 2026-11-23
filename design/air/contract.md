@@ -1,6 +1,6 @@
 # Cloakyard Air design contract
 
-Version: **1.7.5 — consistent social previews** · Direction: **Air** · Updated: **2026-11-16**
+Version: **1.8.0 — landing block reveals** · Direction: **Air** · Updated: **2026-11-23**
 
 The detailed Air system is **locked for implementation**. On 2026-10-13 the user
 authorized one final agent review followed by implementation; that review is
@@ -1297,6 +1297,17 @@ performance approval.
   A landing entry may use a single 900ms light arrival. These are the moments for
   playful character. Avoid bouncing controls, moving text, repeated reveals and
   continuous decorative activity during work.
+- Public landing directories may reveal each editorial block once as it enters view.
+  Use a soft top-to-bottom wipe over a 4px upward settle and a fade from 60% to
+  full opacity. All three run together for 520ms with CSS `ease-out`. Start
+  simultaneously eligible blocks 240ms apart in reading order. The wipe uses
+  the flat page colour at 85% opacity and a feather 35% of the block height.
+  Keep each block's layout and dividers steady. Skip blocks the reader scrolls past.
+  Content is visible before enhancement. Focus, deep links, history restoration,
+  print, forced colours and reduced motion show the relevant content immediately.
+  Keep navigation, the hero, utility pages and active workspaces outside this treatment.
+  The portable `landing-reveal.css` and `landing-reveal.mjs` implement the approved
+  recipe. Each landing page opts in after its responsive and accessibility review.
 - Pointer hover may move a directional arrow by 2px over 160ms. Press uses 0.98
   scale for 120ms; release is immediate. Keyboard presses never compress controls.
   Control colours, selection, focus and appearance changes are immediate. No hover

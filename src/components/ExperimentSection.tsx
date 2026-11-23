@@ -9,7 +9,7 @@ export function ExperimentSection({ experiments }: { experiments: YardProject[] 
       tabIndex={-1}
       aria-labelledby="curiosity-title"
     >
-      <div className="curiosity-inner">
+      <div className="curiosity-inner" data-air-reveal="">
         <h2 id="curiosity-title">A little room for curiosity, too.</h2>
         {experiments.map((experiment) => (
           <div className="experiment-link" key={experiment.slug}>
@@ -31,6 +31,7 @@ export function ExperimentSection({ experiments }: { experiments: YardProject[] 
             </div>
           </div>
         ))}
+        <span className="air-reveal-veil" aria-hidden="true" />
       </div>
     </section>
   );

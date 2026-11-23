@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.7.5 social previews verified; five product PRs merged and live; canonical PR records Cloakyard’s final rollout; physical-device and separate product acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.8.0 adds the approved landing reveal on Cloakyard; adoption on other landing pages and physical-device acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -2218,3 +2218,9 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 
 - [x] Copy the circular web mark from CloakTools commit `2e2b6ff` into the directory. The directory image, the product header and the SVG favicon all resolve to the same artwork (SHA-256 `7dbf9d80e7883d8ba626043f73782c72aac01871f50c9ce3488e4e37ef48fb24`).
 - [x] Check the directory and seven CloakTools routes in Chrome at 390, 768, 1280 and 1920 px in both themes. All 64 samples displayed the 36 px mark and reflowed at 200% root text size. The phone menu and privacy contents disclosure passed keyboard checks in both themes, and the menu passed emulated touch. [Rendered directory and header crops](docs/air/evidence/cloaktools-icon-2026-11-18/marks.jpg).
+
+## Cloakyard landing reveals — November 23, 2026
+
+- [x] Approve the combined wipe, fade and lift at 520ms with 240ms between blocks.
+- [x] Verify directory cards, curiosity, principles and invitation across phone, landscape, tablet, laptop and desktop in light and dark. Exercise fast scroll, focus, fragment navigation, history traversal, reduced motion, forced colours and print. [Coverage and rendered samples](docs/air/landing-reveals-2026-11-23.md).
+- [ ] Review each sibling landing page before adopting the pattern there.
