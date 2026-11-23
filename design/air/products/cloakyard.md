@@ -20,3 +20,5 @@
   and repeated mark. Use the common finite lifecycle, static first paint,
   reduced-motion/resource fallbacks and completion-only replay. No shader,
   tracking, playback UI or animation dependency; keep entry below 85 kB gzip.
+
+- Apply the combined landing reveal to individual app entries, the curiosity band, each principle and the closing invitation. The hero retains its finite cube sequence.

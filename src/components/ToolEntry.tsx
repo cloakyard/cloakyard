@@ -3,7 +3,7 @@ import type { ProductivityTool } from "../data/tools";
 
 export function ToolEntry({ tool }: { tool: ProductivityTool }) {
   return (
-    <article className="tool-entry">
+    <article className="tool-entry" data-air-reveal="">
       <div className="tool-heading">
         <img className="tool-logo" src={tool.logo} alt="" width="36" height="36" />
         {tool.status !== "Live" && <span className="tool-status">{tool.status}</span>}
@@ -37,6 +37,7 @@ export function ToolEntry({ tool }: { tool: ProductivityTool }) {
           <GitBranch size={16} aria-hidden="true" />
         </a>
       </div>
+      <span className="air-reveal-veil" aria-hidden="true" />
     </article>
   );
 }

@@ -1,6 +1,6 @@
 ## CloakTools product requirements
 
-Air 1.7.5 is pinned in `docs/air/bundle.json`, including the exact contract, CSS, artwork lifecycle and social-card tools. This complete contract travels with a standalone checkout. Product composition never overrides `--air-*` values. Native SwiftUI windows follow `NATIVE_DESIGN.md`, not web skins.
+Air 1.8.0 is pinned in `docs/air/bundle.json`, including the exact contract, CSS, artwork lifecycle and social-card tools. This complete contract travels with a standalone checkout. Product composition never overrides `--air-*` values. Native SwiftUI windows follow `NATIVE_DESIGN.md`, not web skins.
 
 The seven public surfaces are Home, Install, Privacy, Support, Source, License and 404. Header, mobile disclosure, footer, primary/quiet actions, reading layout, contents links, skip link and replay use the family recipes. README navigation follows the family README standard. Source and license links use the maintainer-supplied repository and `main/LICENSE`; no placeholder release download is shown.
 

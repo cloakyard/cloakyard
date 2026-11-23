@@ -1,11 +1,17 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-11-17
+## Start here in a new conversation — saved 2026-11-23
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+
+### Cloakyard landing reveals — 2026-11-23
+
+Air 1.8.0 adds the combined landing reveal to the family directory. The other
+landing pages retain their current behavior pending individual adoption reviews.
+See the [responsive motion checks and rendered samples](landing-reveals-2026-11-23.md).
 
 ### Verified for release: CloakTools family integration — 2026-11-17
 
