@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
+  <title id="title">CloakIMG</title>
+  <rect width="16" height="16" rx="3.5" fill="#f6a47b"/>
+  <g transform="rotate(-10 8 8)">
+    <rect x="1.5" y="3" width="12.5" height="10" rx="1" fill="#ffecd0"/>
+    <path d="M3 5h9.5v5.5H3Z" fill="#e18365"/>
+    <path d="m3 8.8 9.5-1v2.7H3Z" fill="#487c80"/>
+  </g>
+  <path d="m10.4 9.2 3.1 4.1" stroke="#294854" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="9" cy="7" r="3.4" fill="#ffca83" stroke="#334850" stroke-width="1.3"/>
+  <path d="M6.8 8.6 11.5 7.5A2.7 2.7 0 0 1 6.8 8.6Z" fill="#57928c"/>
+</svg>

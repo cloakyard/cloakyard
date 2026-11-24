@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">CloakIMG · The slide loupe</title>
+  <desc id="description">A loupe magnifies the setting sun on a mounted photographic slide. The sea and sky continue across the edge of the lens.</desc>
+  <defs>
+    <linearGradient id="coral" x2=".74" y2="1"><stop stop-color="#ffe6c8"/><stop offset=".48" stop-color="#ffb287"/><stop offset="1" stop-color="#e97354"/></linearGradient>
+    <linearGradient id="mount" x2=".7" y2="1"><stop stop-color="#fff8e4"/><stop offset=".68" stop-color="#f4dfbb"/><stop offset="1" stop-color="#d7ba94"/></linearGradient>
+    <linearGradient id="sky" x2=".2" y2="1"><stop stop-color="#dc5b48"/><stop offset=".58" stop-color="#f68a62"/><stop offset="1" stop-color="#ffc98a"/></linearGradient>
+    <linearGradient id="ocean" x2=".3" y2="1"><stop stop-color="#428e92"/><stop offset="1" stop-color="#235567"/></linearGradient>
+    <linearGradient id="brass" x2=".82" y2="1"><stop stop-color="#f9dd9b"/><stop offset=".22" stop-color="#d19a5a"/><stop offset=".43" stop-color="#80543d"/><stop offset=".62" stop-color="#efc485"/><stop offset=".78" stop-color="#a47750"/><stop offset="1" stop-color="#553e35"/></linearGradient>
+    <linearGradient id="grip" x2="1" y2="0"><stop stop-color="#1e3742"/><stop offset=".35" stop-color="#58747a"/><stop offset=".72" stop-color="#304e58"/><stop offset="1" stop-color="#182d3a"/></linearGradient>
+    <clipPath id="aperture"><rect x="61" y="75" width="132" height="87" rx="5"/></clipPath>
+    <clipPath id="glass"><circle cx="147" cy="114" r="36"/></clipPath>
+    <filter id="shadow" x="-.6" y="-.6" width="2.2" height="2.2"><feGaussianBlur stdDeviation="3.5"/></filter>
+    <view id="light" viewBox="0 0 256 256"/>
+    <view id="dark" viewBox="0 0 256 256"/>
+    <view id="ground-light" viewBox="0 0 256 256"/>
+    <view id="ground-dark" viewBox="0 0 256 256"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target, #ground-light:target) { color-scheme: light }
+      svg:has(#dark:target, #ground-dark:target) { color-scheme: dark }
+      svg:has(> g:target) > g:not(:target),
+      svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
+      #coral stop:nth-child(1) { stop-color: light-dark(#ffe6c8, #684a4c) }
+      #coral stop:nth-child(2) { stop-color: light-dark(#ffb287, #483139) }
+      #coral stop:nth-child(3) { stop-color: light-dark(#e97354, #302532) }
+      #ground > rect:nth-of-type(2) { stroke: light-dark(#b96548, #efbc9d) }
+      #ground > path { stroke: light-dark(#fff9ed, #7e899c); opacity: .6 }
+    </style>
+  </defs>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="01 · Coral ground">
+    <rect x="5" y="5" width="246" height="246" rx="54" fill="url(#coral)"/>
+    <rect x="6" y="6" width="244" height="244" rx="53" fill="none" stroke="#b96548" stroke-opacity=".4"/>
+    <path d="M12 76V60c0-29 19-47 47-48h75" fill="none" stroke="#fff3d6" stroke-width="2" opacity=".85"/>
+  </g>
+  <g id="slide" inkscape:groupmode="layer" inkscape:label="02 · Mounted transparency">
+    <g transform="rotate(-10 127 124)">
+      <rect x="42" y="57" width="173" height="146" rx="11" fill="#79402e" opacity=".35" filter="url(#shadow)"/>
+      <rect x="40" y="49" width="172" height="148" rx="10" fill="#a48166"/>
+      <rect x="40" y="46" width="172" height="147" rx="10" fill="url(#mount)"/>
+      <path d="M44 72V57q0-7 7-7h140" fill="none" stroke="#fffbea" stroke-width="2"/>
+      <rect x="58" y="72" width="138" height="93" rx="7" fill="#9f8369"/>
+      <g clip-path="url(#aperture)">
+        <rect x="61" y="75" width="132" height="87" fill="url(#sky)"/>
+        <circle cx="147" cy="113" r="15" fill="#ffde92"/>
+        <path d="m59 127 32-6 18 2 23-5 29 3 34-4v46H59Z" fill="#507879"/>
+        <path d="M60 132q38-4 66-2t68-4v38H60Z" fill="url(#ocean)"/>
+        <path d="m78 146 30-2m5-8 16-1m20 7 29-2" stroke="#9fc9b4" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <path d="M61 175h26m-26 4h15" stroke="#a88d72" stroke-width="2.2"/>
+      <path d="M182 173h9l-4.5 5Z" fill="#b2684f"/>
+    </g>
+  </g>
+  <g id="barrel" inkscape:groupmode="layer" inkscape:label="03 · Machined loupe">
+    <path d="m166 155 34 39q6 9 13 3" fill="none" stroke="#553d33" stroke-opacity=".38" stroke-width="20" filter="url(#shadow)"/>
+    <circle cx="150" cy="123" r="45" fill="#6a4838" opacity=".32" filter="url(#shadow)"/>
+    <g transform="rotate(-34 147 114)">
+      <rect x="140" y="151" width="14" height="18" rx="3" fill="url(#brass)"/>
+      <rect x="136" y="165" width="22" height="53" rx="9" fill="url(#grip)"/>
+      <rect x="136" y="167" width="22" height="6" rx="2" fill="url(#brass)"/>
+      <path d="M141 177v30m5-31v34m6-34v31" fill="none" stroke="#9eb3ad" stroke-opacity=".42" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <circle cx="147" cy="117" r="47" fill="#38464b"/>
+    <circle cx="147" cy="114" r="47" fill="url(#brass)"/>
+    <circle cx="147" cy="114" r="42.5" fill="#344954"/>
+    <circle cx="147" cy="114" r="38.5" fill="#132d3b"/>
+  </g>
+  <g id="optics" inkscape:groupmode="layer" inkscape:label="04 · Magnified sunset">
+    <g clip-path="url(#glass)">
+      <rect x="110" y="77" width="74" height="74" fill="url(#sky)"/>
+      <circle cx="148" cy="107" r="24" fill="#ffe5a0"/>
+      <path d="m107 141 26-10 17-2 11-6 27-4v37h-81Z" fill="#547b7e"/>
+      <path d="m108 145 28-9 14-2 18-5 20-3v30h-80Z" fill="url(#ocean)"/>
+      <path d="m135 142 15-3m4-7 11-2" fill="none" stroke="#b1d7bb" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="m106 103 29-31h15l-44 47Zm5 22 41-48h5l-44 55Z" fill="#fff9df" opacity=".18"/>
+    </g>
+    <path d="M107 106c2-14 13-26 28-30" fill="none" stroke="#fff1c7" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
+  </g>
+</svg>

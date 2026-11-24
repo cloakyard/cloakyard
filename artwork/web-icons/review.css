@@ -1,0 +1,241 @@
+:root {
+  color-scheme: light dark;
+  font:
+    100%/1.5 -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    sans-serif;
+  color: light-dark(#20252b, #f0f3f5);
+  background: light-dark(#fafbfc, #101216);
+  --muted: light-dark(#535d67, #adb7c2);
+  --line: light-dark(#d7dde2, #39404b);
+}
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+body,
+figure,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+main {
+  max-width: 80rem;
+  margin: auto;
+  padding: clamp(1rem, 4.5vw, 4rem);
+}
+header,
+.inspector-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+h1 {
+  font-size: clamp(2.3rem, 5vw, 3.8rem);
+  font-weight: 470;
+  line-height: 1.05;
+  letter-spacing: -0.058em;
+}
+header p,
+.inspector-heading p,
+#description {
+  color: var(--muted);
+}
+header p {
+  margin-top: 0.65rem;
+}
+label,
+select {
+  font: inherit;
+}
+header label,
+.inspector-heading label {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+select {
+  color: inherit;
+  background: light-dark(#fff, #1b2026);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.25rem 0.55rem;
+  margin-inline-start: 0.5rem;
+}
+:focus-visible {
+  outline: 2px solid light-dark(#285ed0, #9abfff);
+  outline-offset: 4px;
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 3rem);
+  margin: 2.5rem 0 3.5rem;
+}
+.art-link {
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+}
+.master {
+  display: block;
+  width: min(100%, 14.75rem);
+  height: auto;
+}
+.specimen h2 {
+  margin-top: 1.05rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+  font-weight: 540;
+  letter-spacing: -0.045em;
+}
+.object-name {
+  color: var(--muted);
+}
+.sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.1rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+}
+.sizes figure:first-child {
+  border-right: 1px solid var(--line);
+}
+.sizes figure > div {
+  min-height: 40px;
+  display: grid;
+  place-items: center;
+}
+.sizes figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+.inspector {
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+}
+.inspector-heading h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -0.05em;
+}
+.workbench {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: clamp(1rem, 4vw, 4rem);
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.stage {
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  min-width: 0;
+  overflow: hidden;
+  height: clamp(17rem, 28vw, 23rem);
+  border-radius: 1.1rem;
+  background-color: light-dark(#eef1f3, #1b2027);
+  background-image: radial-gradient(light-dark(#c9d1d5, #36404b) 0.8px, transparent 0.8px);
+  background-size: 0.65rem 0.65rem;
+  container-type: inline-size;
+}
+.stage img {
+  grid-area: 1 / 1;
+  width: 52%;
+  height: auto;
+}
+.stage.spread-out img {
+  transform: translate(calc(var(--offset) * 10cqw), calc(var(--offset) * -4cqw)) scale(0.86);
+}
+.controls h3 {
+  font-size: 1.4rem;
+  font-weight: 530;
+  letter-spacing: -0.035em;
+}
+.controls p {
+  margin: 0.35rem 0 0.9rem;
+  max-width: 39ch;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 0.75rem;
+}
+legend {
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 0;
+  margin-bottom: 0.25rem;
+}
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  flex: none;
+}
+.spread {
+  border-top: 1px solid var(--line);
+  margin-top: 0.35rem;
+}
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.sources a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: inherit;
+  text-underline-offset: 0.2em;
+  font-size: 0.9rem;
+}
+@media (max-width: 55rem) {
+  .collection {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 2.5rem;
+  }
+  .workbench {
+    grid-template-columns: 1fr;
+  }
+  .stage {
+    height: clamp(14rem, 60vw, 22rem);
+  }
+  .stage img {
+    max-width: 17rem;
+  }
+}
+@media (max-width: 27rem) {
+  .object-name {
+    font-size: 0.9rem;
+  }
+  .collection {
+    margin-block: 1.6rem 2.4rem;
+  }
+}
+@media (max-width: 20rem) {
+  .collection,
+  fieldset {
+    grid-template-columns: 1fr;
+  }
+}

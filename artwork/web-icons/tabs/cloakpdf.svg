@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
+  <title id="title">CloakPDF</title>
+  <rect width="16" height="16" rx="3.5" fill="#cbdaf1"/>
+  <path d="m.8 8.4 10-2.8 4.6 7L5 15.2Z" fill="#ffefd7"/>
+  <g transform="rotate(-13 8 8)">
+    <path d="M5.7 3.5a2.8 2.8 0 1 1 4.9 1.9C9.6 6.5 9.2 7.3 10 8.3H7c.7-1.2.1-2.1-.7-3-.4-.5-.6-1.1-.6-1.8Z" fill="#284c90"/>
+    <path d="M3 9 4 7.7h8L13 9v1.8H3Z" fill="#1e3765"/>
+    <path d="M3 10.5h10v1.4H3Z" fill="#d56545"/>
+  </g>
+</svg>

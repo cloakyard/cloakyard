@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
+  <title id="title">CloakResume</title>
+  <rect width="16" height="16" rx="3.5" fill="#dbe6cd"/>
+  <g transform="rotate(-9 8 8)">
+    <rect x="2.4" y="1.4" width="10.8" height="13" rx="1.2" fill="#24584d"/>
+    <path d="M3.1 12h9.4v1.5h-9.4Z" fill="#f5e7bd"/>
+    <rect x="2" y="1" width="10.5" height="12" rx="1" fill="#28796a"/>
+    <path d="M10 13h1.5v2L10 14.6Z" fill="#ae4530"/>
+  </g>
+  <path d="m10 2.5.9 4.4-3.4 3.4-1.5-.6.3-4Z" fill="#ffdb83"/>
+  <path d="m10 2.5-1.2 4.2" stroke="#73532f" stroke-width=".6"/>
+</svg>

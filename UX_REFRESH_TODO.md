@@ -25,6 +25,12 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Proposed web app icons — 2026-11-24
+
+- [x] Draw the courtyard, proof stamp, writing folio and slide loupe for Cloakyard, PDF, Resume and IMG. Each master has four editable vector layers, light and dark grounds and a separate 16 px drawing. The study borrows depth grouping from the native CloakTools toolbox and overlapping planes from CloakRoll's landscape. [Interactive review board](artwork/web-icons/index.html) · [Assembled and exploded artwork](artwork/web-icons/preview.png) · [Apple app icon guidance](https://developer.apple.com/design/human-interface-guidelines/app-icons/)
+- [x] Inspect the review board in light and dark at 390×844, 768×1024, 1280×800 and 1600×1000. In Chrome and WebKit, check every layer toggle, compare the reassembled pixels to each complete master, switch appearances, follow source links, operate the controls by keyboard and open the static gallery with scripting disabled. Text at 200% fits at widths from 320 to 1600 px. Viewports were emulated.
+- [ ] User review of these concepts. Production identities, install assets and the Air contract retain their current revisions.
+
 ## Cross-app consistency audit — 2026-11-24
 
 - [x] Compare the seven web entries, three editor workspaces, tool rosters, secondary flows, overlays and recovery states. [Per-view ledger and screenshots](docs/air/consistency-audit-2026-11-24.md).

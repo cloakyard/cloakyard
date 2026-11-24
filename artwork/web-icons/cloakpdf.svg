@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">CloakPDF · The proof stamp</title>
+  <desc id="description">A turned blue stamp lifts from a sheet of ivory paper, revealing a fresh vermilion impression.</desc>
+  <defs>
+    <linearGradient id="desk" x2=".84" y2="1"><stop stop-color="#eaf1fe"/><stop offset=".52" stop-color="#c4d4f0"/><stop offset="1" stop-color="#8c9fcb"/></linearGradient>
+    <linearGradient id="paper" x2=".7" y2="1"><stop stop-color="#fffcf1"/><stop offset=".75" stop-color="#f4e9d3"/><stop offset="1" stop-color="#dfcfb4"/></linearGradient>
+    <linearGradient id="lacquer" x2=".95" y2=".13"><stop stop-color="#1c3479"/><stop offset=".18" stop-color="#436bc1"/><stop offset=".36" stop-color="#7198e2"/><stop offset=".52" stop-color="#3358a1"/><stop offset=".8" stop-color="#1d376d"/><stop offset="1" stop-color="#102441"/></linearGradient>
+    <radialGradient id="knob" cx=".3" cy=".19" r=".88"><stop stop-color="#8fb4ff"/><stop offset=".24" stop-color="#618bdb"/><stop offset=".59" stop-color="#365da8"/><stop offset=".87" stop-color="#233e78"/><stop offset="1" stop-color="#192e58"/></radialGradient>
+    <linearGradient id="base" x2=".3" y2="1"><stop stop-color="#6890d0"/><stop offset=".45" stop-color="#3e609b"/><stop offset="1" stop-color="#1e3869"/></linearGradient>
+    <filter id="blur" x="-.4" y="-.8" width="1.8" height="2.8"><feGaussianBlur stdDeviation="4"/></filter>
+    <view id="light" viewBox="0 0 256 256"/>
+    <view id="dark" viewBox="0 0 256 256"/>
+    <view id="ground-light" viewBox="0 0 256 256"/>
+    <view id="ground-dark" viewBox="0 0 256 256"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target, #ground-light:target) { color-scheme: light }
+      svg:has(#dark:target, #ground-dark:target) { color-scheme: dark }
+      svg:has(> g:target) > g:not(:target),
+      svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
+      #desk stop:nth-child(1) { stop-color: light-dark(#eaf1fe, #3d526f) }
+      #desk stop:nth-child(2) { stop-color: light-dark(#c4d4f0, #293952) }
+      #desk stop:nth-child(3) { stop-color: light-dark(#8c9fcb, #162138) }
+      #ground > rect:nth-of-type(2) { stroke: light-dark(#627aa7, #9dbbdf) }
+      #ground > path { stroke: light-dark(#fff9ed, #7e899c); opacity: .6 }
+    </style>
+  </defs>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="01 · Blue worktop">
+    <rect x="5" y="5" width="246" height="246" rx="54" fill="url(#desk)"/>
+    <rect x="6" y="6" width="244" height="244" rx="53" fill="none" stroke="#627aa7" stroke-opacity=".38"/>
+    <path d="M12 76V60c0-29 19-47 47-48h75" fill="none" stroke="#f6f9ff" stroke-width="2" opacity=".8"/>
+  </g>
+  <g id="sheets" inkscape:groupmode="layer" inkscape:label="02 · Proof sheets">
+    <path d="m35 126 128-35 61 90-132 38Z" fill="#415276" opacity=".37" filter="url(#blur)"/>
+    <path d="m31 119 126-36 66 94-3 6-129 36Z" fill="#a59683"/>
+    <path d="m32 118 126-36 65 94-131 38Z" fill="#f7ead3"/>
+    <path d="m33 116 124-36 64 92v3L91 212Z" fill="#baa88f"/>
+    <path d="m30 114 127-36 64 93-132 37Z" fill="url(#paper)"/>
+    <path d="m31 114 126-36 63 92" fill="none" stroke="#fffdf7" stroke-width="1.6"/>
+    <g transform="matrix(1 -.28 .65 .94 46 120)">
+      <path d="M0 0h41v4H0Z" fill="#657182"/>
+      <path d="M0 13h68m-68 7h49m-49 7h57" fill="none" stroke="#a3a4a0" stroke-width="2.4"/>
+      <path d="M8 58h85v13H8Z" fill="#c64c35"/>
+      <path d="M11 59h20m43 10h15" stroke="#ebaa80" stroke-width="1.2"/>
+    </g>
+  </g>
+  <g id="shoe" inkscape:groupmode="layer" inkscape:label="03 · Rubber and enamel shoe">
+    <g transform="rotate(-13 144 134)">
+      <path d="m80 148 113-4 12 18-117 5Z" fill="#55473d" opacity=".3" filter="url(#blur)"/>
+      <rect x="80" y="132" width="124" height="24" rx="5" fill="#6b292f"/>
+      <rect x="80" y="129" width="124" height="22" rx="4.5" fill="#e27555"/>
+      <path d="M81 145h122" stroke="#f19a71" stroke-width="2"/>
+      <path d="m82 124 12-15h96l13 15v13q0 5-5 5H87q-6 0-6-5Z" fill="url(#base)"/>
+      <path d="m82 124 12-15h96l12 15Z" fill="#7694c2"/>
+      <path d="M82 125h120" stroke="#9cbae2" stroke-width="2"/>
+      <path d="M85 137h114" stroke="#183565" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="handle" inkscape:groupmode="layer" inkscape:label="04 · Turned handle">
+    <g transform="rotate(-13 144 134)">
+      <ellipse cx="142" cy="115" rx="29" ry="6" fill="#2e4980"/>
+      <path d="M123 69c3 12 11 16 11 25 0 7-4 11-12 15v5c9 5 31 6 40 0v-5c-8-4-12-8-12-15 0-8 8-14 11-25Z" fill="url(#lacquer)"/>
+      <ellipse cx="142" cy="109" rx="20" ry="5.7" fill="#7190bf"/>
+      <path d="M122 109c9 5 31 6 40 0v5c-9 6-32 6-40 0Z" fill="url(#lacquer)"/>
+      <path d="M110 51c0-17 13-29 32-29s33 12 33 29c0 14-12 21-17 28-4 7-26 8-31 0-5-8-17-14-17-28Z" fill="url(#knob)"/>
+      <path d="M117 45c3-9 11-15 21-16" fill="none" stroke="#d1e4ff" stroke-opacity=".6" stroke-width="2.8" stroke-linecap="round"/>
+      <path d="M128 78c7 4 21 5 29 0l-1 5c-6 4-19 4-26 0Z" fill="#c89759"/>
+      <path d="M128 78c7 4 22 5 29 0" fill="none" stroke="#ffe5a3" stroke-width="1.6"/>
+    </g>
+  </g>
+</svg>
