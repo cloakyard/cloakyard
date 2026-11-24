@@ -1,6 +1,6 @@
 # Cloakyard Air design contract
 
-Version: **1.8.2 — editor update notices** · Direction: **Air** · Updated: **2026-11-24**
+Version: **1.8.3 — compact editor export** · Direction: **Air** · Updated: **2026-11-24**
 
 The detailed Air system is **locked for implementation**. On 2026-10-13 the user
 authorized one final agent review followed by implementation; that review is
@@ -415,7 +415,9 @@ No glass blur behind forms, body copy, tables, or document content.
 - **Compact editor header:** use `air-editor-header--compact`, with a 64px minimum
   height, 12px side insets, quiet canvas-plane background and no floating toolbar
   enclosure. Place the home mark at the leading edge; Export and More actions are
-  the trailing actions. Export uses the monochrome primary button; More actions
+  the trailing actions. In the compact header, Export uses the quiet download icon
+  with an accessible name, a 44px target and a visible keyboard focus ring.
+  The desktop header keeps its monochrome primary Export action. More actions
   opens the shared Actions dialog/sheet. Use `air-editor-menu` and its rows/zoom
   composition with shared 18px/1.6 icons. Task-specific navigation or history may
   use the remaining space; secondary commands remain available in Actions.

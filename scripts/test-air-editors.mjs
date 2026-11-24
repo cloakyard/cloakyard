@@ -286,14 +286,35 @@ try {
         await dismiss.click();
         await p.getByRole("dialog").waitFor({ state: "hidden" });
         assert(await field.isVisible(), `${app} workspace lost after closing dialog`);
+        const exportButton = p.getByRole("button", {
+          name: app === "resume" ? "Export to PDF" : "Export",
+          exact: true,
+        });
+        const compactHeader = await exportButton.evaluate((button) =>
+          Boolean(button.closest(".air-editor-header--compact")),
+        );
+        if (compactHeader) {
+          const target = await exportButton.boundingBox();
+          const glyph = exportButton.locator("svg");
+          const icon = await glyph.boundingBox();
+          assert.equal(
+            await glyph.evaluate((svg) => parseFloat(getComputedStyle(svg).strokeWidth)),
+            1.6,
+          );
+          assert.ok(target && icon, `${app} compact export target and icon are visible`);
+          assert.deepEqual([target.width, target.height], [44, 44], `${app} compact export target`);
+          assert.deepEqual([icon.width, icon.height], [18, 18], `${app} compact export icon`);
+          assert.ok(
+            Math.abs(target.x + target.width / 2 - icon.x - icon.width / 2) < 1 &&
+              Math.abs(target.y + target.height / 2 - icon.y - icon.height / 2) < 1,
+            `${app} compact export icon is centered`,
+          );
+        }
         const editorControls = [
           { locator: field, kind: "field", name: "Editor text field" },
           {
-            locator: p.getByRole("button", {
-              name: app === "resume" ? "Export to PDF" : "Export",
-              exact: true,
-            }),
-            kind: "primary",
+            locator: exportButton,
+            kind: compactHeader ? "quiet" : "primary",
             name: "Editor export",
           },
         ];

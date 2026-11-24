@@ -10,9 +10,10 @@ resolve them against the latest checkpoint and source before repeating work.
 ### Full web consistency audit — 2026-11-24
 
 The [per-view audit and release verification](consistency-audit-2026-11-24.md)
-record the six initial findings and their corrections in Air 1.8.2. The compact
-PDF Export action follows the filled family style. The three editors keep their
-update notices clear of workspace controls.
+record the six initial findings and their corrections in Air 1.8.2. Air 1.8.3
+restores the quiet compact Export icon across PDF, IMG and Resume. The
+[mobile comparison](consistency-audit-2026-11-24.md#mobile-editor-export--air-183)
+records the layout boundaries and file output checks.
 
 ### Product landing reveals and dependencies — 2026-11-24
 
