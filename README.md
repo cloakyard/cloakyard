@@ -78,7 +78,7 @@ vp dev
 | `vp preview`    | Preview the production build           |
 | `vp run deploy` | Check, build, and deploy with Wrangler |
 
-Also run `vp exec tsc --noEmit`, `node scripts/check-air-design.mjs` and `npx --yes knip@6.44.2`.
+Also run `vp exec tsc --noEmit`, `node scripts/check-air-design.mjs` and `npx --yes knip@6.48.0`.
 
 ### Technology
 

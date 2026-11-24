@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.8.0 adds the approved landing reveal on Cloakyard; adoption on other landing pages and physical-device acceptance remain open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.8.2 closes the family software audit findings and retains the landing reveal across the seven public homepages. Physical-device acceptance remains open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -24,6 +24,19 @@ integration and dev → main PR merges after all remaining work is complete, wit
 deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
+
+## Cross-app consistency audit — 2026-11-24
+
+- [x] Compare the seven web entries, three editor workspaces, tool rosters, secondary flows, overlays and recovery states. [Per-view ledger and screenshots](docs/air/consistency-audit-2026-11-24.md).
+- [x] Keep the waiting-update notice clear of the PDF and IMG phone toolbars.
+- [x] Show an immediately visible script-disabled entry in PDF and IMG.
+- [x] Add an accessible IMG editor loading status and resolve Roll’s missing installation label.
+- [x] Reconcile PDF’s documented compact Export appearance with the family contract.
+
+## Product landing reveals and web dependencies — 2026-11-24
+
+- [x] Verify each public entry in Chromium and WebKit at phone, landscape, tablet, laptop and desktop sizes in both themes. Cover scroll order, immediate focus, fragments, return navigation, reduced motion, forced colours and print.
+- [x] Check the production bundles, package locks and editor/launch regressions for the dependency upgrades. [Coverage, results and limits](docs/air/product-landing-reveals-2026-11-24.md).
 
 ## Homepage platform groups — 2026-11-17
 
@@ -2223,4 +2236,4 @@ full family refresh remain unfinished. Local commits only; no push/deployment.
 
 - [x] Approve the combined wipe, fade and lift at 520ms with 240ms between blocks.
 - [x] Verify directory cards, curiosity, principles and invitation across phone, landscape, tablet, laptop and desktop in light and dark. Exercise fast scroll, focus, fragment navigation, history traversal, reduced motion, forced colours and print. [Coverage and rendered samples](docs/air/landing-reveals-2026-11-23.md).
-- [ ] Review each sibling landing page before adopting the pattern there.
+- [x] Review each sibling landing page and verify the family rollout. [Product reveal checks](docs/air/product-landing-reveals-2026-11-24.md).

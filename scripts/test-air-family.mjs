@@ -260,7 +260,7 @@ function inspectShell(p) {
       "build-derived footer version",
     );
   const privacy = links.find((n) => label(n) === "Privacy");
-  if (["cloakdrop", "cloakroll", "cloakimg"].includes(p.name))
+  if (p.privacy === "/privacy/")
     check(privacy?.getAttribute("href") === "/privacy/", "policy destination");
   else if (p.name !== "cloakyard" && privacy?.tagName === "A")
     check(
@@ -520,8 +520,15 @@ try {
               { gap: "0px", margin: "12px", padding: "8px", border: "1px", links: undefined },
               `${product.name}: shared compact navigation rhythm`,
             );
-            for (const link of rows.links)
-              assert.deepEqual(link, { padding: "8px 12px", gap: "8px", justify: "flex-start" });
+            for (const { padding, gap, justify } of rows.links) {
+              assert.equal(padding, "8px 12px");
+              assert.equal(gap, "8px");
+              // Current Chromium serializes flex-start as flow-start in a flex row.
+              assert.ok(
+                ["flex-start", "flow-start"].includes(justify),
+                `${product.name}: ${justify}`,
+              );
+            }
             evidence.interactions.push({ ...state, compactRows: rows });
             await page.keyboard.press("Tab");
             await page.keyboard.press("Escape");

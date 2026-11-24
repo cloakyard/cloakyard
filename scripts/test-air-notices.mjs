@@ -276,6 +276,46 @@ try {
                 });
               }
             }
+        if (state === "update") {
+          await page.setViewport({
+            width: coarse ? 390 : 1280,
+            height: coarse ? 844 : 720,
+            hasTouch: coarse,
+          });
+          await page.evaluate(() => (document.documentElement.style.fontSize = "16px"));
+          if (app === "cloakresume") {
+            await page.locator("button::-p-text(Start blank)").click();
+            await page.waitForSelector('.resume-root[data-template-ready="true"]');
+          } else {
+            const fixture =
+              app === "cloakpdf"
+                ? resolve(base, "cloakpdf/tests/fixtures/demo/multipage.pdf")
+                : resolve(base, "cloakimg/scripts/fixtures/orange.webp");
+            await (await page.waitForSelector("input[type=file]")).uploadFile(fixture);
+            await page.waitForSelector(
+              app === "cloakpdf" ? 'img[alt="Page 1"]' : "canvas.upper-canvas",
+            );
+          }
+          await page.waitForSelector('.air-update[data-state="update"]', { visible: true });
+          await frame(page);
+          const covered = await page.$$eval(
+            ".editor-mobile-dock button, .resume-preview-tools button",
+            (buttons) =>
+              buttons
+                .filter((button) => {
+                  const rect = button.getBoundingClientRect();
+                  return (
+                    rect.width &&
+                    rect.height &&
+                    document
+                      .elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2)
+                      ?.closest(".air-update")
+                  );
+                })
+                .map((button) => button.getAttribute("aria-label") || button.innerText.trim()),
+          );
+          assert.deepEqual(covered, [], `${app} update covers workspace controls`);
+        }
         await context.close();
       }
   }

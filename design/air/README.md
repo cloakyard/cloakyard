@@ -1,6 +1,6 @@
 # Air — the Cloakyard family design system
 
-Air **1.8.0** is the current approved contract. The original direction was locked
+Air **1.8.2** is the current approved contract. The original direction was locked
 after the user-authorized review on 2026-10-13. Product adoption and feature/device
 evidence remain separate.
 See [the review record](../../docs/air/DESIGN_FREEZE.md).

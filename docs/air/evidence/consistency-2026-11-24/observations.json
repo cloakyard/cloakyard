@@ -1,0 +1,1237 @@
+{
+  "date": "2026-11-24",
+  "checkouts": {
+    "cloakyard": "d3215470634b5fce0b84dd8da912309865150621",
+    "cloakpdf": "1f606dddd621cde1365a924dd3645b5e0dde87bb",
+    "cloakimg": "56fb6032eb921407883d23dded756129bc0b424a",
+    "cloakresume": "00220fffefd84e7e800f7c1e7c989bec337414fd",
+    "cloakroll": "6d218884601876bca5950995cfbfd65cd7acd3a0",
+    "cloakdrop": "c134246d092ce710cec0b242b9d2c17e28fd8662",
+    "cloaktools": "38a4d0bd74e6ee2e6d97b06b51be780864fb1a61"
+  },
+  "chrome": "Chrome/158.0.8127.37",
+  "public": {
+    "homeLayouts": {
+      "cloakdrop": 108,
+      "cloakimg": 108,
+      "cloakpdf": 108,
+      "cloakresume": 108,
+      "cloakroll": 108,
+      "cloaktools": 108,
+      "cloakyard": 108
+    },
+    "secondaryLayouts": {
+      "cloakdrop": 48,
+      "cloakimg": 48,
+      "cloakpdf": 72,
+      "cloakresume": 48,
+      "cloakroll": 48,
+      "cloaktools": 48,
+      "cloakyard": 24
+    },
+    "interactions": 454,
+    "errors": [],
+    "deviations": []
+  },
+  "landingMotionChrome": {
+    "cloakyard": 44,
+    "cloakpdf": 44,
+    "cloakimg": 44,
+    "cloakresume": 44,
+    "cloakroll": 44,
+    "cloakdrop": 44,
+    "cloaktools": 44
+  },
+  "privacy": {
+    "layouts": {
+      "drop": 68,
+      "img": 68,
+      "pdf": 68,
+      "resume": 68,
+      "roll": 68,
+      "tools": 68,
+      "yard": 68
+    },
+    "journeys": [
+      "yard/light: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "yard/dark: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "yard: forced-colour return and readable layout",
+      "pdf/light: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "pdf/dark: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "pdf: forced-colour return and readable layout",
+      "drop/light: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "drop/dark: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "drop: forced-colour return and readable layout",
+      "drop: no-JavaScript contents and home",
+      "resume/light: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "resume/dark: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "resume: forced-colour return and readable layout",
+      "resume: direct privacy visit and home/reload preserve saved draft byte-for-byte",
+      "roll/light: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "roll/dark: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "roll: forced-colour return and readable layout",
+      "roll: no-JavaScript contents and home",
+      "img/light: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "img/dark: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "img: forced-colour return and readable layout",
+      "img: no-JavaScript contents and home",
+      "tools/light: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "tools/dark: direct visit, anchor/focus/reload, disclosure Escape/Enter and keyboard home",
+      "tools: forced-colour return and readable layout",
+      "tools: no-JavaScript contents and home"
+    ],
+    "errors": [],
+    "deviations": []
+  },
+  "workspace": {
+    "chromium": {
+      "workspaceViews": 66,
+      "testedControlStates": 858,
+      "matchingViews": 54,
+      "differingViews": [
+        {
+          "app": "pdf",
+          "width": 320,
+          "height": 568,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 320,
+          "height": 568,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 375,
+          "height": 812,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 375,
+          "height": 812,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 390,
+          "height": 844,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 390,
+          "height": 844,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 430,
+          "height": 932,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 430,
+          "height": 932,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 844,
+          "height": 390,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 844,
+          "height": 390,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 768,
+          "height": 1024,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 768,
+          "height": 1024,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        }
+      ]
+    },
+    "webkit": {
+      "workspaceViews": 66,
+      "testedControlStates": 858,
+      "matchingViews": 54,
+      "differingViews": [
+        {
+          "app": "pdf",
+          "width": 320,
+          "height": 568,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 320,
+          "height": 568,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 375,
+          "height": 812,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 375,
+          "height": 812,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 390,
+          "height": 844,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 390,
+          "height": 844,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 430,
+          "height": 932,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 430,
+          "height": 932,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 844,
+          "height": 390,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 844,
+          "height": 390,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 768,
+          "height": 1024,
+          "theme": "light",
+          "controls": ["Editor export"]
+        },
+        {
+          "app": "pdf",
+          "width": 768,
+          "height": 1024,
+          "theme": "dark",
+          "controls": ["Editor export"]
+        }
+      ]
+    }
+  },
+  "dialogs": {
+    "img": 88,
+    "pdf": 88,
+    "resume": 88
+  },
+  "noticesInIsolation": {
+    "offline": 132,
+    "update": 132,
+    "updating": 132
+  },
+  "updatesInEditors": [
+    {
+      "app": "cloakpdf",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "shown": true,
+      "intercepted": [
+        {
+          "label": "Annotate",
+          "x": 53.125,
+          "y": 812
+        },
+        {
+          "label": "Sign",
+          "x": 147.375,
+          "y": 812
+        },
+        {
+          "label": "Fill form",
+          "x": 241.625,
+          "y": 812
+        },
+        {
+          "label": "All tools",
+          "x": 336.875,
+          "y": 812
+        }
+      ],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": ["Annotate", "Sign", "Fill form", "All tools"]
+    },
+    {
+      "app": "cloakpdf",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [
+        {
+          "label": "Annotate",
+          "x": 53.125,
+          "y": 812
+        },
+        {
+          "label": "Sign",
+          "x": 147.375,
+          "y": 812
+        },
+        {
+          "label": "Fill form",
+          "x": 241.625,
+          "y": 812
+        },
+        {
+          "label": "All tools",
+          "x": 336.875,
+          "y": 812
+        }
+      ],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": ["Annotate", "Sign", "Fill form", "All tools"]
+    },
+    {
+      "app": "cloakpdf",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakpdf",
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakpdf",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakimg",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "shown": true,
+      "intercepted": [
+        {
+          "label": "Adjust",
+          "x": 38.359375,
+          "y": 811
+        },
+        {
+          "label": "Crop",
+          "x": 98.9609375,
+          "y": 811
+        },
+        {
+          "label": "Retouch",
+          "x": 165.0703125,
+          "y": 811
+        },
+        {
+          "label": "Protect",
+          "x": 238.1953125,
+          "y": 811
+        },
+        {
+          "label": "Add",
+          "x": 299.2265625,
+          "y": 811
+        },
+        {
+          "label": "Open tools",
+          "x": 354.5,
+          "y": 811
+        }
+      ],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": ["Adjust", "Crop", "Retouch", "Protect", "Add", "Open tools"]
+    },
+    {
+      "app": "cloakimg",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [
+        {
+          "label": "Adjust",
+          "x": 38.359375,
+          "y": 811
+        },
+        {
+          "label": "Crop",
+          "x": 98.9609375,
+          "y": 811
+        },
+        {
+          "label": "Retouch",
+          "x": 165.0703125,
+          "y": 811
+        },
+        {
+          "label": "Protect",
+          "x": 238.1953125,
+          "y": 811
+        },
+        {
+          "label": "Add",
+          "x": 299.2265625,
+          "y": 811
+        },
+        {
+          "label": "Open tools",
+          "x": 354.5,
+          "y": 811
+        }
+      ],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": ["Adjust", "Crop", "Retouch", "Protect", "Add", "Open tools"]
+    },
+    {
+      "app": "cloakimg",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakimg",
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakimg",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nSave or download your work, then return home to update.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakresume",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nA new version is ready. Update and reload to use it.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakresume",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nA new version is ready. Update and reload to use it.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakresume",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [],
+      "detail": "Update available\n\nA new version is ready. Update and reload to use it.\n\nUpdate and reload",
+      "restored": []
+    },
+    {
+      "app": "cloakresume",
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "shown": true,
+      "intercepted": [
+        {
+          "label": "Zoom in",
+          "x": 918.015625,
+          "y": 696
+        },
+        {
+          "label": "Fit preview",
+          "x": 967.015625,
+          "y": 696
+        }
+      ],
+      "detail": "Update available\n\nA new version is ready. Update and reload to use it.\n\nUpdate and reload",
+      "restored": ["Zoom in", "Fit preview"]
+    },
+    {
+      "app": "cloakresume",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "shown": true,
+      "intercepted": [
+        {
+          "label": "Fit preview",
+          "x": 1051.453125,
+          "y": 876
+        }
+      ],
+      "detail": "Update available\n\nA new version is ready. Update and reload to use it.\n\nUpdate and reload",
+      "restored": ["Fit preview"]
+    }
+  ],
+  "noScriptEntry": {
+    "drop": {
+      "testedViews": 16,
+      "firstViewportWithContent": 16,
+      "phone": {
+        "engine": "chromium",
+        "app": "drop",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "characters": 2603,
+        "firstContentTop": 77,
+        "headingTop": 137,
+        "emptyMountHeight": null,
+        "scrollHeight": 4225,
+        "visibleContent": true
+      }
+    },
+    "img": {
+      "testedViews": 16,
+      "firstViewportWithContent": 0,
+      "phone": {
+        "engine": "chromium",
+        "app": "img",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "characters": 353,
+        "firstContentTop": 877,
+        "headingTop": 939,
+        "emptyMountHeight": 844,
+        "scrollHeight": 1688,
+        "visibleContent": false,
+        "afterScroll": {
+          "y": 844,
+          "top": 94.59375
+        }
+      }
+    },
+    "pdf": {
+      "testedViews": 16,
+      "firstViewportWithContent": 0,
+      "phone": {
+        "engine": "chromium",
+        "app": "pdf",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "characters": 0,
+        "firstContentTop": null,
+        "headingTop": null,
+        "emptyMountHeight": 844,
+        "scrollHeight": 844,
+        "visibleContent": false
+      }
+    },
+    "resume": {
+      "testedViews": 16,
+      "firstViewportWithContent": 16,
+      "phone": {
+        "engine": "chromium",
+        "app": "resume",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "characters": 154,
+        "firstContentTop": 56,
+        "headingTop": 56,
+        "emptyMountHeight": 844,
+        "scrollHeight": 844,
+        "visibleContent": true
+      }
+    },
+    "roll": {
+      "testedViews": 16,
+      "firstViewportWithContent": 16,
+      "phone": {
+        "engine": "chromium",
+        "app": "roll",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "characters": 3195,
+        "firstContentTop": 77,
+        "headingTop": 137,
+        "emptyMountHeight": null,
+        "scrollHeight": 4624,
+        "visibleContent": true
+      }
+    },
+    "tools": {
+      "testedViews": 16,
+      "firstViewportWithContent": 16,
+      "phone": {
+        "engine": "chromium",
+        "app": "tools",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "characters": 3455,
+        "firstContentTop": 77,
+        "headingTop": 137,
+        "emptyMountHeight": null,
+        "scrollHeight": 4800,
+        "visibleContent": true
+      }
+    },
+    "yard": {
+      "testedViews": 16,
+      "firstViewportWithContent": 16,
+      "phone": {
+        "engine": "chromium",
+        "app": "yard",
+        "width": 390,
+        "height": 844,
+        "theme": "light",
+        "characters": 251,
+        "firstContentTop": 72,
+        "headingTop": 72,
+        "emptyMountHeight": 0,
+        "scrollHeight": 844,
+        "visibleContent": true
+      }
+    }
+  },
+  "publicSemantics": {
+    "scannedViews": 48,
+    "unresolvedReferences": [
+      {
+        "app": "Roll",
+        "width": 390,
+        "route": "/",
+        "invalid": [
+          [
+            "aria-labelledby",
+            "install-title",
+            "DIV",
+            true,
+            "<div class=\"install\" aria-labelledby=\"install-title\" data-air-reveal=\"\"><span class=\"air-reveal-veil\" aria-hidden=\"true\"></span><h3>From iPhone to folder.</h3><ol><li>Download the "
+          ]
+        ]
+      },
+      {
+        "app": "Roll",
+        "width": 1440,
+        "route": "/",
+        "invalid": [
+          [
+            "aria-labelledby",
+            "install-title",
+            "DIV",
+            true,
+            "<div class=\"install\" aria-labelledby=\"install-title\" data-air-reveal=\"\"><span class=\"air-reveal-veil\" aria-hidden=\"true\"></span><h3>From iPhone to folder.</h3><ol><li>Download the "
+          ]
+        ]
+      }
+    ],
+    "duplicateIds": 0,
+    "brokenSameDocumentFragments": 0
+  },
+  "toolsReadingRoutes": {
+    "layouts": {
+      "/install/": 32,
+      "/license/": 32,
+      "/source/": 32,
+      "/support/": 32
+    },
+    "pageOverflows": 0
+  },
+  "otherRecoveryRoutes": {
+    "img": 8,
+    "yard": 8
+  },
+  "loadingAndRecovery": [
+    {
+      "app": "img",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "img",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "img",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "img",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "img",
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "img",
+      "width": 1280,
+      "height": 720,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "img",
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "img",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading editor…",
+        "live": null,
+        "animation": []
+      },
+      "title": "Something broke unexpectedly",
+      "overflow": false,
+      "actions": ["Copy error details", "Report on GitHub", "Go to home"],
+      "returned": "Your photos.\nYour way."
+    },
+    {
+      "app": "resume",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    },
+    {
+      "app": "resume",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    },
+    {
+      "app": "resume",
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    },
+    {
+      "app": "resume",
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    },
+    {
+      "app": "resume",
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    },
+    {
+      "app": "resume",
+      "width": 1280,
+      "height": 720,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    },
+    {
+      "app": "resume",
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    },
+    {
+      "app": "resume",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "loading": {
+        "text": "Loading the local review workspace…",
+        "live": "<p role=\"status\">Loading the local review workspace…</p>",
+        "animation": []
+      },
+      "title": "ATS review hit a snag",
+      "overflow": false,
+      "actions": ["Report on GitHub", "Go Home", "Copy error details"],
+      "returned": "Your story.\nTaking shape."
+    }
+  ],
+  "pdf": {
+    "editorToolSelections": {
+      "add-bookmarks": 8,
+      "add-page-numbers": 8,
+      "annotate-pdf": 8,
+      "auto-fill": 8,
+      "bates-numbering": 8,
+      "crop-pages": 8,
+      "file-attachment": 8,
+      "fill-pdf-form": 8,
+      "find-act": 8,
+      "header-footer": 8,
+      "metadata": 8,
+      "nup-pages": 8,
+      "ocr": 8,
+      "organize-pages": 8,
+      "pdf-scrub": 8,
+      "qr-stamp": 8,
+      "redact-pdf": 8,
+      "select-text": 8,
+      "signature": 8,
+      "smart-erase": 8,
+      "stamp-pdf": 8,
+      "strip-furniture": 8
+    },
+    "collectionStates": {
+      "organize": 44,
+      "overview": 44
+    },
+    "standalone": [
+      {
+        "id": "ask-pdf",
+        "observations": 20,
+        "states": ["empty"]
+      },
+      {
+        "id": "compare-pdf",
+        "observations": 40,
+        "states": ["empty", "selected"]
+      },
+      {
+        "id": "digital-signature",
+        "observations": 40,
+        "states": ["empty", "selected"]
+      },
+      {
+        "id": "extract-images",
+        "observations": 40,
+        "states": ["empty", "selected"]
+      },
+      {
+        "id": "images-to-pdf",
+        "observations": 40,
+        "states": ["empty", "selected"]
+      },
+      {
+        "id": "merge",
+        "observations": 40,
+        "states": ["empty", "selected"]
+      },
+      {
+        "id": "pdf-password",
+        "observations": 40,
+        "states": ["empty", "selected"]
+      }
+    ],
+    "chatUiStates": {
+      "answer": 64,
+      "answer-error": 64,
+      "empty": 64,
+      "index-error": 64,
+      "indexing": 64,
+      "long-content": 64,
+      "no-text": 64
+    }
+  },
+  "img": {
+    "inspectors": [
+      {
+        "name": "Adjust",
+        "observations": 20,
+        "states": ["adjusted", "initial"]
+      },
+      {
+        "name": "Border",
+        "observations": 20,
+        "states": ["aspect", "initial"]
+      },
+      {
+        "name": "Color picker",
+        "observations": 20,
+        "states": ["initial", "palette"]
+      },
+      {
+        "name": "Crop & rotate",
+        "observations": 20,
+        "states": ["initial", "square-flipped"]
+      },
+      {
+        "name": "Draw",
+        "observations": 20,
+        "states": ["eraser", "initial"]
+      },
+      {
+        "name": "Emoji",
+        "observations": 20,
+        "states": ["custom", "initial"]
+      },
+      {
+        "name": "Filters",
+        "observations": 20,
+        "states": ["initial", "selected"]
+      },
+      {
+        "name": "Frame",
+        "observations": 20,
+        "states": ["initial", "polaroid"]
+      },
+      {
+        "name": "ID photo sheet",
+        "observations": 30,
+        "states": ["custom", "initial", "paper"]
+      },
+      {
+        "name": "Levels",
+        "observations": 20,
+        "states": ["adjusted", "initial"]
+      },
+      {
+        "name": "Move",
+        "observations": 10,
+        "states": ["initial"]
+      },
+      {
+        "name": "Pen",
+        "observations": 20,
+        "states": ["fill", "initial"]
+      },
+      {
+        "name": "Perspective",
+        "observations": 10,
+        "states": ["initial"]
+      },
+      {
+        "name": "Place image",
+        "observations": 20,
+        "states": ["image-selected", "initial"]
+      },
+      {
+        "name": "Portrait blur",
+        "observations": 40,
+        "states": ["alternate-lens", "consent-background", "initial", "whole"]
+      },
+      {
+        "name": "Redact",
+        "observations": 20,
+        "states": ["brush-inspector", "initial"]
+      },
+      {
+        "name": "Relight",
+        "observations": 20,
+        "states": ["consent-background", "initial"]
+      },
+      {
+        "name": "Remove BG",
+        "observations": 50,
+        "states": ["background-fill", "chroma", "chroma-picking", "chroma-sampled", "initial"]
+      },
+      {
+        "name": "Resize",
+        "observations": 20,
+        "states": ["initial", "unlocked"]
+      },
+      {
+        "name": "Selective color",
+        "observations": 20,
+        "states": ["initial", "magenta"]
+      },
+      {
+        "name": "Shapes",
+        "observations": 40,
+        "states": ["initial", "polygon", "rounded-rectangle", "star"]
+      },
+      {
+        "name": "Spot heal",
+        "observations": 20,
+        "states": ["brush", "initial"]
+      },
+      {
+        "name": "Tap to fix",
+        "observations": 20,
+        "states": ["initial", "target"]
+      },
+      {
+        "name": "Text",
+        "observations": 20,
+        "states": ["initial", "outline-curve"]
+      },
+      {
+        "name": "Time of day",
+        "observations": 20,
+        "states": ["golden", "initial"]
+      },
+      {
+        "name": "Watermark",
+        "observations": 40,
+        "states": ["image-empty", "image-ready", "initial", "same-image-reselected"]
+      }
+    ],
+    "componentFailures": [],
+    "runtimeErrors": [],
+    "batchStates": {
+      "completed": 44,
+      "empty": 44,
+      "queued": 44,
+      "recipe-expanded": 44
+    },
+    "feedbackLayouts": 10
+  },
+  "resume": {
+    "sections": {
+      "Awards": 128,
+      "Certifications": 128,
+      "Contact": 128,
+      "Custom": 128,
+      "Education": 128,
+      "Experience": 128,
+      "Interests & tools": 128,
+      "Languages": 128,
+      "Profile": 128,
+      "Projects": 128,
+      "Quick stats": 128,
+      "Skills": 128,
+      "Target JD": 130
+    },
+    "libraryStates": {
+      "filtered": 128,
+      "forced-colours-keyboard": 2,
+      "gallery": 128,
+      "no-results": 128
+    },
+    "reviewTabs": {
+      "insights": 192,
+      "keywords": 192,
+      "overview": 192,
+      "parse": 192,
+      "summary": 192
+    },
+    "exportOptionsLayouts": 192,
+    "templateLayouts": {
+      "academic": 10,
+      "ats-plain": 10,
+      "ats-professional": 10,
+      "aurora": 10,
+      "bauhaus": 10,
+      "classic-impact": 10,
+      "classic-sidebar": 10,
+      "compact-timeline": 10,
+      "executive-serif": 10,
+      "gradient-header": 10,
+      "horizon": 10,
+      "ledger": 10,
+      "minimalist": 10,
+      "modern-minimal": 10,
+      "monograph": 10,
+      "prism": 10,
+      "typographic": 10
+    }
+  }
+}

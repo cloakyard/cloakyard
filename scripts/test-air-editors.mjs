@@ -113,7 +113,7 @@ try {
               .getByRole("button", { name: "Metadata", exact: true })
               .click();
           else {
-            await p.getByRole("button", { name: "Open tools", exact: true }).click();
+            await p.getByRole("button", { name: "All tools", exact: true }).click();
             await p
               .locator(".editor-mobile-sheet")
               .getByRole("button", { name: "Metadata", exact: true })

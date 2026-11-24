@@ -1,10 +1,37 @@
-/** Check the shipped homepage by scrolling it. Optional AIR_EVIDENCE_DIR saves review captures. */
+/** Check a built landing page. Set AIR_PRODUCT, SITE_URL and optionally AIR_EVIDENCE_DIR. */
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const playwright = await import(process.env.PLAYWRIGHT_MODULE || "playwright");
 const base = process.env.SITE_URL || "http://127.0.0.1:4397/";
+const pages = {
+  cloakyard: { count: 11, hash: "principles", linkedBlock: ".principle", policy: "?view=privacy" },
+  cloakpdf: {
+    count: 4,
+    hash: "privacy-model",
+    linkedBlock: "#privacy-model",
+    policy: "?view=privacy",
+  },
+  cloakimg: { count: 8, hash: "privacy-model", linkedBlock: "#privacy-model", policy: "privacy/" },
+  cloakresume: { count: 7, hash: "privacy", linkedBlock: "#privacy", policy: "?view=privacy" },
+  cloakroll: {
+    count: 13,
+    hash: "download",
+    linkedBlock: "#download .section-intro",
+    policy: "privacy/",
+  },
+  cloakdrop: { count: 11, hash: "privacy", linkedBlock: "#privacy", policy: "privacy/" },
+  cloaktools: {
+    count: 13,
+    hash: "download",
+    linkedBlock: "#download .section-intro",
+    policy: "privacy/",
+  },
+};
+const product = process.env.AIR_PRODUCT || "cloakyard";
+const landing = pages[product];
+assert.ok(landing, "Unknown AIR_PRODUCT: " + product);
 const engine = process.env.AIR_BROWSER || "chromium";
 const browser = await playwright[engine].launch();
 const out = process.env.AIR_EVIDENCE_DIR;
@@ -40,9 +67,16 @@ try {
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
     for (const [width, height] of sizes) {
+      await page.goto("about:blank");
       await page.setViewportSize({ width, height });
       await page.goto(base);
-      await page.waitForSelector('[data-air-reveal="pending"]', { state: "attached" });
+      try {
+        await page.waitForSelector('[data-air-reveal="pending"]', { state: "attached" });
+      } catch (error) {
+        throw new Error(JSON.stringify({ product, engine, width, height, theme, errors }), {
+          cause: error,
+        });
+      }
       const result = await page.evaluate(async () => {
         const blocks = [...document.querySelectorAll("[data-air-reveal]")];
         const target = blocks.find(
@@ -72,7 +106,7 @@ try {
         let combined = false;
         do {
           await new Promise((r) => requestAnimationFrame(r));
-          const content = getComputedStyle(target.firstElementChild);
+          const content = getComputedStyle(target.querySelector(":scope > :not(.air-reveal-veil)"));
           const veil = getComputedStyle(target.querySelector(".air-reveal-veil"), "::before");
           if (content.transform !== "none" && veil.transform !== "none") {
             const y = new DOMMatrix(content.transform).m42;
@@ -104,7 +138,7 @@ try {
         };
       });
       const label = JSON.stringify({ engine, width, height, theme, result });
-      assert.equal(result.count, 11, label);
+      assert.equal(result.count, landing.count, label);
       assert.ok(result.combined && result.settled && !result.overflow, label);
       assert.equal(result.durations.length, result.row, label);
       assert.equal(result.delays.length, result.row, label);
@@ -123,11 +157,12 @@ try {
     viewport: { width: 390, height: 844 },
     reducedMotion: "no-preference",
   });
-  await page.goto(base + "#principles");
-  await page.waitForFunction(() => document.activeElement.id === "principles");
+  await page.goto(new URL("#" + landing.hash, base).href);
+  await page.locator(landing.linkedBlock).first().waitFor();
+  await page.waitForFunction((id) => document.activeElement.id === id, landing.hash);
   assert.ok(
     await page
-      .locator(".principle")
+      .locator(landing.linkedBlock)
       .first()
       .evaluate((block) => block.dataset.airReveal === ""),
   );
@@ -163,21 +198,27 @@ try {
   );
   await page.reload();
   await page.waitForSelector('[data-air-reveal="pending"]', { state: "attached" });
-  const entry = page.locator(".tool-entry").last();
-  await entry.locator("a").first().focus();
-  assert.equal(await entry.getAttribute("data-air-reveal"), "");
+  const entry = page.locator('[data-air-reveal="pending"]:has(a, button)').last();
+  const control = entry.locator("a, button").first();
+  const focusedBlock = await entry.elementHandle();
+  await control.focus();
+  assert.equal(await focusedBlock.getAttribute("data-air-reveal"), "");
   await page.reload();
-  await page.locator(".curiosity-inner").evaluate((el) => el.scrollIntoView({ block: "center" }));
+  await page
+    .locator("[data-air-reveal]")
+    .last()
+    .evaluate((el) => el.scrollIntoView({ block: "center" }));
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.waitForFunction(
     () => ![...document.querySelectorAll("[data-air-reveal]")].some((el) => el.dataset.airReveal),
   );
   assert.equal(await page.locator(".air-reveal-veil:visible").count(), 0);
   await page.emulateMedia({ reducedMotion: "no-preference" });
-  await page.goto(base + "?view=privacy");
+  await page.goto(new URL(landing.policy, base).href);
+  await page.locator("h1:visible").first().waitFor();
   assert.equal(await page.locator("[data-air-reveal]").count(), 0);
   await page.goBack();
-  await page.locator(".tool-entry").first().waitFor({ state: "visible" });
+  await page.locator("[data-air-reveal]").first().waitFor({ state: "visible" });
   assert.ok(
     await page.evaluate(async () => {
       await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
@@ -188,6 +229,32 @@ try {
     }),
     "Visible blocks should be ready when returning from privacy",
   );
+  for (const media of [
+    { media: "print" },
+    { reducedMotion: "reduce" },
+    { forcedColors: "active" },
+  ]) {
+    await page.emulateMedia(media);
+    await page.reload();
+    await page.locator("[data-air-reveal]").first().waitFor();
+    assert.equal(await page.locator(".air-reveal-veil:visible").count(), 0);
+    await page.emulateMedia({
+      media: "screen",
+      reducedMotion: "no-preference",
+      forcedColors: "none",
+    });
+  }
+  const staticPage = await browser.newPage({
+    viewport: { width: 390, height: 844 },
+    javaScriptEnabled: false,
+  });
+  await staticPage.goto(base);
+  const heading = await staticPage.locator("h1").first().boundingBox();
+  assert.ok(
+    heading && heading.y >= 0 && heading.y < 844,
+    `${product}: visible entry without JavaScript`,
+  );
+  await staticPage.close();
   if (out) await writeFile(resolve(out, engine + ".json"), JSON.stringify(layouts, null, 2) + "\n");
   console.log(
     engine +

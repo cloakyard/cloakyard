@@ -1,15 +1,30 @@
 import { motionMilliseconds } from "./motion.mjs";
 
 /** A landing block opts in with data-air-reveal and one decorative .air-reveal-veil child. */
-export function mountLandingReveals(root) {
+export function mountLandingReveals(root, { restoreFragment = false } = {}) {
   const doc = root.ownerDocument;
   const win = doc.defaultView;
+  const navigation = win?.performance.getEntriesByType?.("navigation")[0];
+  if (!win || navigation?.type === "back_forward") return;
+  // In client-rendered entries the browser can resolve the initial hash before the target exists.
+  if (restoreFragment && win.location.hash && doc.activeElement === doc.body) {
+    let id;
+    try {
+      id = decodeURIComponent(win.location.hash.slice(1));
+    } catch {
+      // Malformed fragments have no destination.
+    }
+    const target = id && doc.getElementById(id);
+    if (target && root.contains(target)) {
+      target.focus({ preventScroll: true });
+      target.scrollIntoView();
+    }
+  }
+  if (!win.IntersectionObserver || !win.matchMedia) return;
   const media = win.matchMedia(
     "screen and (prefers-reduced-motion: no-preference) and (forced-colors: none)",
   );
-  // A full history traversal can restore the scroll position after the app mounts.
-  const navigation = win.performance.getEntriesByType("navigation")[0];
-  if (!media.matches || !win.IntersectionObserver || navigation?.type === "back_forward") return;
+  if (!media.matches) return;
 
   const blocks = [...root.querySelectorAll("[data-air-reveal]")];
   if (!blocks.length) return;
