@@ -7,6 +7,10 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Post-release web UI audit — 2026-11-24
+
+The [per-view audit and production checks](post-release-ui-audit-2026-11-24.md) record the compact Export comparison, keyboard preview scrolling, hybrid input sizing, missing-link recovery and current dependency verification.
+
 ### Full web consistency audit — 2026-11-24
 
 The [per-view audit and release verification](consistency-audit-2026-11-24.md)
