@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
+  <title id="title">Cloakyard · Touchdown</title>
+  <desc id="description">A fifth cube hovers above the four lower cubes on a blue enamel disc.</desc>
+  <defs>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="light-dark(#96baff, #6b89cd)"/>
+      <stop offset=".47" stop-color="light-dark(#4569d6, #364c91)"/>
+      <stop offset="1" stop-color="light-dark(#263fa4, #23316b)"/>
+    </linearGradient>
+    <view id="light" viewBox="0 0 16 16"/>
+    <view id="dark" viewBox="0 0 16 16"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
+      svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
+      svg {
+        --roof: light-dark(#f5f4ef, #eef5fa);
+        --west: light-dark(#bed4fa, #a8cae9);
+        --east: light-dark(#7f9fe3, #80a2db);
+        --join: light-dark(#4f6fb1, #324e82);
+      }
+      .cell { stroke: var(--join); stroke-width: 4; stroke-linejoin: round }
+      .west { fill: var(--west) }
+      .east { fill: var(--east) }
+      .roof { fill: var(--roof) }
+    </style>
+    <g id="block" class="cell">
+      <path class="west" d="M-48 24 0 48V104L-48 80Z"/>
+      <path class="east" d="M0 48 48 24V80L0 104Z"/>
+      <path class="roof" d="M0 0 48 24 0 48-48 24Z"/>
+    </g>
+  </defs>
+  <g id="disc" inkscape:groupmode="layer" inkscape:label="Enamel disc">
+    <circle id="disc-base" cx="8" cy="8" r="7.5" fill="url(#enamel)"/>
+  </g>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Rear of platform" transform="translate(8 6.25) scale(.05)">
+    <use href="#block" x="0.0" y="0.0"/>
+    <use href="#block" x="-51.0" y="25.5"/>
+    <use href="#block" x="51.0" y="25.5"/>
+  </g>
+  <g id="front" inkscape:groupmode="layer" inkscape:label="Front cube" transform="translate(8 6.25) scale(.05)">
+    <use href="#block" x="0.0" y="51.0"/>
+  </g>
+  <g id="arrival" inkscape:groupmode="layer" inkscape:label="Arriving cube" transform="translate(8 6.25) scale(.05)">
+    <use href="#block" x="-8.4" y="-86.6"/>
+  </g>
+</svg>

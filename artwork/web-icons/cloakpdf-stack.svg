@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
+  <title id="title">CloakPDF · Folded report</title>
+  <desc id="description">A white folded report on a blue enamel disc, with printed lines and a two-column table.</desc>
+  <defs>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="light-dark(#83c8ff, #599cce)"/>
+      <stop offset=".47" stop-color="light-dark(#327de5, #285c9a)"/>
+      <stop offset="1" stop-color="light-dark(#194db0, #1c3870)"/>
+    </linearGradient>
+    <linearGradient id="rim" x1=".24" y1="0" x2=".76" y2="1">
+      <stop stop-color="#fff" stop-opacity=".88"/>
+      <stop offset=".39" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".7" stop-color="#0a1540" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".46"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx=".24" cy=".16" r=".8">
+      <stop stop-color="#fff" stop-opacity=".27"/>
+      <stop offset=".68" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <view id="light" viewBox="0 0 64 64"/>
+    <view id="dark" viewBox="0 0 64 64"/>
+    <view id="ink" viewBox="0 0 64 64"/>
+    <view id="ground-light" viewBox="0 0 64 64"/>
+    <view id="ground-dark" viewBox="0 0 64 64"/>
+    <view id="page-light" viewBox="0 0 64 64"/>
+    <view id="page-dark" viewBox="0 0 64 64"/>
+    <view id="print-light" viewBox="0 0 64 64"/>
+    <view id="print-dark" viewBox="0 0 64 64"/>
+    <view id="disc-light" viewBox="0 0 64 64"/>
+    <view id="disc-dark" viewBox="0 0 64 64"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
+      svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
+      svg:has(> g:target) > g:not(:target) { display: none }
+      svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
+      svg:has(#page-light:target, #page-dark:target) > g:not(#page) { display: none }
+      svg:has(#print-light:target, #print-dark:target) > g:not(#print) { display: none }
+      svg {
+        --ink: light-dark(#163675, #183970);
+        --muted: light-dark(#6783aa, #637fa9);
+        --grid: light-dark(#335da5, #315995);
+        --cell: light-dark(#eef4fb, #e2ecf7);
+        --leaf: #fff;
+        --foot: #e6e9ec;
+        --fold: #d9dfe4;
+        --crease: #a0a9b1;
+        --cover: light-dark(#2253af, #1d447f);
+        --lip: light-dark(#5989df, #4d79bb);
+        --deep: light-dark(#183b7b, #112a51);
+      }
+      svg:has(#ink:target) {
+        --ink: #202832;
+        --muted: #202832;
+        --grid: #202832;
+        --cell: white;
+        --leaf: white;
+        --foot: white;
+        --fold: white;
+        --crease: #202832;
+        --cover: #202832;
+        --lip: #202832;
+        --deep: #202832;
+      }
+      svg:has(#ink:target) .shadow { display: none }
+      svg:has(#disc-light:target, #disc-dark:target) > g:not(#disc) { display: none }
+      svg:has(#ink:target) #disc-base { fill: white; stroke: #202832; stroke-width: .9 }
+      svg:has(#ink:target) #disc-rim { display: none }
+    </style>
+    <linearGradient id="stock" x1="0" y1="0" x2=".72" y2="1">
+      <stop offset="0" stop-color="var(--leaf)"/>
+      <stop offset="0.68" stop-color="var(--leaf)"/>
+      <stop offset="1" stop-color="var(--foot)"/>
+    </linearGradient>
+    <filter id="cast" x="-25%" y="-20%" width="150%" height="155%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+  </defs>
+  <g id="disc" inkscape:groupmode="layer" inkscape:label="Enamel disc">
+    <circle id="disc-base" cx="32" cy="32" r="30" fill="url(#enamel)"/>
+    <circle id="disc-rim" cx="32" cy="32" r="29.5" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
+  </g>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Blue backing sheet" transform="translate(32.25 32) scale(.22) translate(-128 -128)">
+    <g transform="rotate(-8 128 128)">
+      <rect class="shadow" x="60" y="53" width="138" height="163" rx="10" fill="#17345f" opacity=".2" filter="url(#cast)"/>
+      <rect x="59" y="49" width="137" height="164" rx="9" fill="var(--cover)" stroke="var(--deep)" stroke-width="2"/>
+      <path d="M67 206h118" fill="none" stroke="var(--lip)" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="page" inkscape:groupmode="layer" inkscape:label="Folded paper" transform="translate(32.25 32) scale(.22) translate(-128 -128)">
+    <g transform="rotate(4 128 128)">
+      <path class="shadow" d="M65 41h98l32 32v130a8 8 0 0 1-8 8H65a8 8 0 0 1-8-8V49a8 8 0 0 1 8-8Z" transform="translate(1 4)" fill="#142e59" opacity=".28" filter="url(#cast)"/>
+      <path d="M65 41h98l32 32v130a8 8 0 0 1-8 8H65a8 8 0 0 1-8-8V49a8 8 0 0 1 8-8Z" transform="translate(0 2)" fill="var(--crease)" stroke="var(--crease)" stroke-width="1.5"/>
+      <path d="M65 41h98l32 32v130a8 8 0 0 1-8 8H65a8 8 0 0 1-8-8V49a8 8 0 0 1 8-8Z" fill="url(#stock)" stroke="var(--crease)" stroke-width="1.5"/>
+      <path d="M163 42v23a8 8 0 0 0 8 8h23" fill="var(--fold)" stroke="var(--crease)" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g id="print" inkscape:groupmode="layer" inkscape:label="Printed lines and table" transform="translate(32.25 32) scale(.22) translate(-128 -128)">
+    <g transform="rotate(4 128 128)">
+      <path d="M77 70h47" stroke="var(--ink)" stroke-width="7" stroke-linecap="round"/>
+      <path d="M77 88h69" stroke="var(--muted)" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M77 99h49" stroke="var(--muted)" stroke-width="4.5" stroke-linecap="round"/>
+      <rect x="75" y="121" width="99" height="57" rx="2" fill="var(--cell)" stroke="var(--grid)" stroke-width="3.5"/>
+      <path d="M75 134v-11q0-2 2-2h95q2 0 2 2v11Z" fill="var(--grid)"/>
+      <path d="M134 134v44M75 156h99" fill="none" stroke="var(--grid)" stroke-width="3.5"/>
+      <path d="M134 122v12" stroke="var(--cell)" stroke-width="2.8"/>
+      <path d="M82 127.5h25.38M139 127.5h15.6" fill="none" stroke="var(--cell)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M82 145h29.4M82 167h21.56M168 145h-12.6M168 167h-17.36" fill="none" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

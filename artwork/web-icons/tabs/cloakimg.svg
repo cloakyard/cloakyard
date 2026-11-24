@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
+  <title id="title">CloakIMG</title>
+  <defs><linearGradient id="coral" x2=".6" y2="1"><stop stop-color="#ff9b75"/><stop offset="1" stop-color="#cf482b"/></linearGradient></defs>
+  <circle cx="8" cy="8" r="7.5" fill="url(#coral)"/>
+  <rect x="3.45" y="4.05" width="9.1" height="7.9" rx="1.1" fill="#ffad80" stroke="#fff3db" stroke-width="1.1"/>
+  <path d="m7.3 11.4 2.77-3.72 1.95 2.48v.73q0 .51-.54.51Z" fill="#c65e44"/>
+  <path d="m4.05 11.04 2.95-3.23 3.3 3.59H4.63q-.52 0-.58-.36Z" fill="#973e31"/>
+  <circle cx="9.9" cy="6.22" r=".93" fill="#fff6d8"/>
+</svg>

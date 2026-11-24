@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description" data-logo-spec="cloakyard-mark-v2">
+  <title id="title">Cloakyard</title>
+  <desc id="description">Six raised cubes share a blue enamel disc with an outlined seventh cell.</desc>
+  <defs>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="#96baff"/>
+      <stop offset=".47" stop-color="#4569d6"/>
+      <stop offset="1" stop-color="#263fa4"/>
+    </linearGradient>
+    <g id="block" stroke="#4f6fb1" stroke-width="4" stroke-linejoin="round">
+      <path d="M-48 24 0 48V104L-48 80Z" fill="#bed4fa"/>
+      <path d="M0 48 48 24V80L0 104Z" fill="#7f9fe3"/>
+      <path d="M0 0 48 24 0 48-48 24Z" fill="#f5f4ef"/>
+    </g>
+    <g id="enamel-face">
+      <circle cx="8" cy="8" r="7.5" fill="url(#enamel)"/>
+    </g>
+    <clipPath id="open-cell">
+      <path transform="translate(8 5.55) scale(.051) translate(51 -33.7)" d="M0 0 48 24V80L0 104 -48 80V24Z"/>
+    </clipPath>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        [stop-color="#96baff"] { stop-color: #6b89cd }
+        [stop-color="#4569d6"] { stop-color: #364c91 }
+        [stop-color="#263fa4"] { stop-color: #23316b }
+        [stroke="#4f6fb1"] { stroke: #324e82 }
+        [fill="#bed4fa"] { fill: #a8cae9 }
+        [fill="#7f9fe3"] { fill: #80a2db }
+        [fill="#f5f4ef"] { fill: #eef5fa }
+        [stroke="#dce6ff"] { stroke: #c7dcf6 }
+      }
+    </style>
+  </defs>
+  <g id="disc">
+    <use href="#enamel-face"/>
+  </g>
+  <g id="artwork">
+    <g id="ground" transform="translate(8 5.55) scale(.051)">
+      <use href="#block" x="0.0" y="0.0"/>
+      <use href="#block" x="-51.0" y="25.5"/>
+      <use href="#block" x="51.0" y="25.5"/>
+      <use href="#block" x="0.0" y="51.0"/>
+    </g>
+    <g id="tier" transform="translate(8 5.55) scale(.051)">
+      <use href="#block" x="0.0" y="-59.2"/>
+      <use href="#block" x="-51.0" y="-33.7"/>
+    </g>
+    <g id="future">
+      <use href="#enamel-face" clip-path="url(#open-cell)"/>
+      <g transform="translate(8 5.55) scale(.051) translate(51 -33.7)" fill="none" stroke="#dce6ff" stroke-width="6.8" stroke-linejoin="round">
+        <path d="M0 0 48 24V80L0 104 -48 80V24ZM-48 24 0 48 48 24M0 48v56"/>
+      </g>
+    </g>
+  </g>
+</svg>

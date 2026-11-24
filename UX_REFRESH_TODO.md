@@ -25,6 +25,16 @@ deployment preparation. This supersedes older local-only notes for that final
 sequence, without closing any unresolved acceptance gate.
 The separately requested Drop installer now uses Air.
 
+## Web app icons — 2026-11-24
+
+- [x] Draw two Cloakyard proposals from the rendered homepage animation. **Room to grow** uses its settled arrangement of six cubes and the open seventh cell. **Touchdown** freezes the fifth cube in flight above four, at full ink so its silhouette holds at tab size. The board includes frames captured from the running animation.
+- [x] Draw two CloakPDF reports with text strokes and a ruled two-column table. **Folded report** uses overlapping sheets and a dog-ear. **Bound report** uses a cloth cover, paper edges and a ribbon, taking its cobalt and amber from the CloakTools macOS icon. Each proposal has separate editable layers, a one-ink proof and a 16 px drawing. [Review board](artwork/web-icons/index.html)
+- [x] Carry the CloakIMG study’s circular enamel field, upper-left light and thin raised rim through both Cloakyard, CloakPDF and CloakResume options. The [family proof](artwork/web-icons/preview.png) places the original CloakIMG study beside the settled cubes, folded report and index card. In Chrome and WebKit, compare all seven outer silhouettes with CloakIMG at 16, 36 and 128 px and verify all six linked single-ink proofs.
+- [x] Use neutral white paper with cool gray folds and edges across both PDF and Resume studies, including the 16 px SVGs. The three CloakResume index tabs reuse one outline at equal intervals in each drawing.
+- [x] Inspect the board in light and dark at 390×844, 768×1024, 1280×800 and 1600×1000 in Chrome and WebKit. Compare reassembled layers to the master, toggle each layer and appearance, open both reference panels by keyboard, follow local SVG links and load the static gallery with scripting disabled. Text at 200% fits from 320 to 1600 px. Viewports were emulated.
+- [x] Implement the approved Room to grow, Folded report, Index card and Framed landscape marks in the four local production builds. Update the Cloakyard directory, optical favicons, three PWA install sets and screenshots, and all four social cards. [Artwork and verification](docs/air/evidence/web-logos-2026-11-24/README.md)
+- [x] Measure the logo on each public and editor shell and check the visible disc in both themes. Exercise individual tools, standalone workflows, library and batch states, recovery, popovers and update notices. [Logo size audit](docs/air/evidence/web-logos-2026-11-24/sizes/README.md)
+
 ## Cross-app consistency audit — 2026-11-24
 
 - [x] Compare the seven web entries, three editor workspaces, tool rosters, secondary flows, overlays and recovery states. [Per-view ledger and screenshots](docs/air/consistency-audit-2026-11-24.md).

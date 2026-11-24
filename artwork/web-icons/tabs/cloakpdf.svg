@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
+  <title id="title">CloakPDF · Bound report at 16 pixels</title>
+  <desc id="description">A ruled report with a cobalt cover and an amber ribbon on a blue enamel disc.</desc>
+  <defs>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="light-dark(#83c8ff, #599cce)"/>
+      <stop offset=".47" stop-color="light-dark(#327de5, #285c9a)"/>
+      <stop offset="1" stop-color="light-dark(#194db0, #1c3870)"/>
+    </linearGradient>
+    <view id="light" viewBox="0 0 16 16"/>
+    <view id="dark" viewBox="0 0 16 16"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
+      svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
+    </style>
+  </defs>
+  <g id="disc" inkscape:groupmode="layer" inkscape:label="Enamel disc">
+    <circle id="disc-base" cx="8" cy="8" r="7.5" fill="url(#enamel)"/>
+  </g>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Backing">
+    <rect x="3.6" y="3" width="8.55" height="10" rx=".7" fill="#183e78"/>
+    <path d="M4.5 3.6V12.3" stroke="#86a5d5" stroke-width=".65"/>
+  </g>
+  <g id="page" inkscape:groupmode="layer" inkscape:label="Report sheet">
+    <path d="M9.3 11.2h1.35v2.1l-.67-.4-.68.4Z" fill="#ffc667"/>
+    <path d="M5.35 3.45h6v8.65h-6Z" fill="#fff"/>
+  </g>
+  <g id="print" inkscape:groupmode="layer" inkscape:label="Printed lines and table">
+    <path d="M6.25 5h2.7m-2.7 1.3h3.8" stroke="#365174" stroke-width=".7" stroke-linecap="round"/>
+    <path d="M6.25 7.7h4.2v3.25h-4.2Zm1.9 0v3.25m-1.9-1.6h4.2" fill="none" stroke="#315186" stroke-width=".75"/>
+  </g>
+</svg>
