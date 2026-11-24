@@ -1,0 +1,22 @@
+# Web app logo sizes
+
+Every displayed product mark measured **36 × 36 CSS px** on the local Cloakyard, CloakPDF, CloakResume and CloakIMG builds. The smallest interactive logo target was **44 × 44 CSS px**. The [public screens and directory](public-sizes.png) and [workspace headers](workspace-sizes.png) show native-size crops from Chrome.
+
+The four SVGs draw a 60-unit disc on a 64-unit canvas. At a 36 px placement the visible disc is 33.75 px across. In 380 paired screenshots at 1× device scale, WebKit painted 34 × 34 px. Chrome painted 34 × 34 or 34 × 35 px as the artwork landed on different pixel boundaries.
+
+## Screen coverage
+
+| Product or screen | Views exercised                                                                                                                                                                                                                                                                                                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cloakyard         | Homepage, all three Web apps directory marks, mobile navigation, privacy, 404 and script-disabled entry.                                                                                                                                                                                                                                                                        |
+| CloakPDF          | Landing, privacy, 404, render-error page, editor loading, all 22 editor tools, page collection, document actions, command palette, export and PWA update. Opened all seven standalone tools. Six file utilities were checked empty and with input. Ask your PDF covered model choice, details, indexing, retry/error, empty and populated chat, answer errors and long content. |
+| CloakResume       | Landing, privacy, 404, blank and populated drafts, all 13 editor sections, document preview, More actions, template library and empty search, the four review tabs, editor privacy, review loading/error and PWA update.                                                                                                                                                        |
+| CloakIMG          | Landing, privacy, static 404 and client-side missing route, all 26 inspectors, local-model consent, file properties, export, batch queue before and after adding images, recipe editing, completed batch, editor loading/error and PWA update.                                                                                                                                  |
+
+The [per-view measurements](measurements.json) record engines, themes, tested viewport sizes, observation counts, mark sizes and interactive target minima. The main header and directory checks covered Chrome and WebKit in light and dark at 320, 375, 390, 430, 768, 844, 1023, 1024, 1179, 1180, 1280, 1366, 1440, 1600 and 1920 px wide. This includes landscape phone and both sides of the two compact editor breakpoints. The tool sweeps used 390, 768, 1280 and 1600 px. Additional checks covered doubled root text, script-disabled recovery and interrupted navigation.
+
+## Measurement
+
+Opened production builds, loaded local documents and images through the apps, waited for each SVG to decode and measured the browser layout box. For the ink measurement, scrolled each mark into view and compared the same screenshot region with the image visible and transparent. A difference of at least eight in any RGB channel counted as painted. The core checks also hit-tested the center of each mark. A visible waiting service-worker notice left all 24 tested editor logos unobstructed.
+
+The ledger includes states that intentionally present only text or a loading indicator. Its mark count is zero for those states. Modal measurements refer to the underlying header where the dialog has its own focus and backdrop. The additional Ask your PDF lifecycle used the repository’s controlled model fixture in Chrome. Devices and touch input were emulated. Physical hardware, OS launcher masks and browser-tab favicons were outside this in-page size comparison.

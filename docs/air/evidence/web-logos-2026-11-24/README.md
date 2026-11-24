@@ -22,3 +22,5 @@ The [four 1200×630 social cards](social-cards.png) use the full mark. Each app 
 | Distribution                            | Built and served all four sites locally. Browser viewports were emulated.                                                                                                                                          |
 
 All four repositories passed their production builds, formatting, lint, Air design and portability checks. The suites passed 16 tests in Cloakyard, 474 in CloakPDF, 375 in CloakResume and 501 in CloakIMG. Cloakyard’s landing-animation browser checks covered 44 layouts, 22 arrivals and four journeys. CloakPDF’s browser update checks covered 44 deferred-update layouts. CloakIMG’s mask audit found all 68,382 foreground pixels inside the safe circle.
+
+The [logo size audit](sizes/README.md) covers the public screens, editor tools, secondary workspaces, overlays and recovery states.
