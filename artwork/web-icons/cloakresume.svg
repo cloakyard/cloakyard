@@ -1,69 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
-  <title id="title">CloakResume · Profile shield</title>
-  <desc id="description">A pearl portrait and four pale lines sit inside a translucent emerald shield.</desc>
+  <title id="title">CloakResume · Index card</title>
+  <desc id="description">An emerald index card holds a portrait and four cut lines of type.</desc>
   <defs>
-    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
-      <stop offset="0" stop-color="#6ee7b7"/>
-      <stop offset=".47" stop-color="#10b981"/>
-      <stop offset="1" stop-color="#03755d"/>
-    </linearGradient>
-    <linearGradient id="rim" x1=".24" y1="0" x2=".76" y2="1">
-      <stop stop-color="#fff" stop-opacity=".88"/><stop offset=".39" stop-color="#fff" stop-opacity=".08"/>
-      <stop offset=".7" stop-color="#0a1540" stop-opacity=".24"/><stop offset="1" stop-color="#fff" stop-opacity=".46"/>
-    </linearGradient>
-    <radialGradient id="bloom" cx=".24" cy=".16" r=".8">
-      <stop stop-color="#fff" stop-opacity=".27"/><stop offset=".68" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="contact" filterUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><feGaussianBlur stdDeviation="1.05"/></filter>
-    <path id="outline" d="M32 12.1 48.2 18.7v13.6c0 8.6-5.4 15.2-16.2 20.4-10.8-5.2-16.2-11.8-16.2-20.4V18.7L32 12.1Z"/>
-    <linearGradient id="silver" x1="0" y1=".08" x2=".77" y2="1">
-      <stop stop-color="#fefff6"/><stop offset=".31" stop-color="#c8f9e5"/><stop offset=".54" stop-color="#88d8b6"/>
-      <stop offset=".76" stop-color="#f0fff1"/><stop offset="1" stop-color="#8ccbb6"/>
-    </linearGradient>
-    <linearGradient id="jade" x1=".1" y1="0" x2=".85" y2=".93">
-      <stop stop-color="#6bd4a5"/><stop offset=".49" stop-color="#199876"/><stop offset="1" stop-color="#087159"/>
-    </linearGradient>
-    <radialGradient id="pearl" cx=".32" cy=".2" r=".9">
-      <stop stop-color="white"/><stop offset=".48" stop-color="#eaffed"/><stop offset="1" stop-color="#a6d9be"/>
-    </radialGradient>
-    <path id="profile-lines" d="M31.6 26.3h8.5m-8.5 5.4h6.3m-13.5 5.8h15.2m-14.4 4.5H35"/>
+    <mask id="profile-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="white"/><circle cx="22" cy="27" r="3.3"/><path d="M16.45 34.5q.75-4.1 5.55-4.1t5.55 4.1q-5.55 1.45-11.1 0Z"/><path d="M32.5 27h12m-12 5.5h8.8m-23.8 7.3h27m-27 4.2h18.1" fill="none" stroke="black" stroke-width="2.15" stroke-linecap="round"/></mask>
+    <mask id="index-edge" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="white"/><path d="M9.5 20.2v-4.1q0-1.4 1.4-1.4h12.75c1.9 0 2.82 4.1 4.85 4.1h24.55q1.45 0 1.45 1.45v28.4q0 1.45-1.45 1.45H10.95q-1.45 0-1.45-1.45Z" stroke="black" stroke-width="1.6"/></mask>
     <view id="light" viewBox="0 0 64 64"/>
     <view id="dark" viewBox="0 0 64 64"/>
+    <view id="ink" viewBox="0 0 64 64"/>
     <view id="ground-light" viewBox="0 0 64 64"/>
     <view id="ground-dark" viewBox="0 0 64 64"/>
+    <view id="divider-light" viewBox="0 0 64 64"/>
+    <view id="divider-dark" viewBox="0 0 64 64"/>
+    <view id="face-light" viewBox="0 0 64 64"/>
+    <view id="face-dark" viewBox="0 0 64 64"/>
     <style>
       svg { color-scheme: light dark }
-      svg:has(#light:target, #ground-light:target) { color-scheme: light }
-      svg:has(#dark:target, #ground-dark:target) { color-scheme: dark }
-      svg:has(> g:target) > g:not(:target),
+      svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
+      svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
+      svg:has(> g:target) > g:not(:target) { display: none }
       svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
-      #enamel stop:nth-child(1) { stop-color: light-dark(#6ee7b7, #2c977d) }
-      #enamel stop:nth-child(2) { stop-color: light-dark(#10b981, #18664f) }
-      #enamel stop:nth-child(3) { stop-color: light-dark(#03755d, #0b483e) }
+      svg:has(#divider-light:target, #divider-dark:target) > g:not(#divider) { display: none }
+      svg:has(#face-light:target, #face-dark:target) > g:not(#face) { display: none }
+      [fill="#1a7656"] { fill: light-dark(#1a7656, #76c49f) }
+      [fill="#389a73"] { fill: light-dark(#389a73, #70b592) }
+      [fill="#74b597"] { fill: light-dark(#74b597, #9ed0b3) }
+      svg:has(#ink:target) [data-ink] { fill: light-dark(#253346, #e6edf7) }
     </style>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="01 · Enamel disc">
-    <circle cx="32" cy="32" r="30" fill="url(#enamel)"/>
-    <circle cx="32" cy="32" r="29.5" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Rear tab">
+    <g transform="rotate(-5 32 32)" mask="url(#index-edge)"><path data-ink="" fill="#74b597" d="M14.1 19.3h24.7c1.7 0 2.24-5.78 4.17-5.78h6.7q1.7 0 1.7 1.55v30.6H14.1Z"/></g>
   </g>
-  <g id="setting" inkscape:groupmode="layer" inkscape:label="02 · Shield setting">
-    <use href="#outline" transform="translate(.3 1.8)" fill="#024e40" opacity=".55" filter="url(#contact)"/>
-    <use href="#outline" transform="translate(.24 .85)" fill="#227860" stroke="#58a88e" stroke-width="2.4" stroke-linejoin="round"/>
-    <use href="#outline" fill="url(#silver)" stroke="url(#silver)" stroke-width="2.2" stroke-linejoin="round"/>
+  <g id="divider" inkscape:groupmode="layer" inkscape:label="Middle tab">
+    <g transform="rotate(-5 32 32)" mask="url(#index-edge)"><path data-ink="" fill="#389a73" d="M13.6 19.3h12.6c1.84 0 2.58-5.04 4.25-5.04h7.03q1.7 0 1.7 1.55v28.1H13.6Z"/></g>
   </g>
-  <g id="face" inkscape:groupmode="layer" inkscape:label="03 · Emerald face">
-    <g transform="translate(32 32) scale(.94) translate(-32 -32)">
-      <use href="#outline" fill="url(#jade)" stroke="#19755d" stroke-width=".72" stroke-linejoin="round"/>
-      <path d="m32 12.7 15.55 6.32v13.25c0 8.1-5.2 14.9-15.55 20Z" fill="#00583f" opacity=".13"/>
-      <path d="m16.38 19.03 15.62-6.32 15.55 6.32" fill="none" stroke="#c8ffe4" stroke-opacity=".63" stroke-width=".6"/>
-    </g>
-  </g>
-  <g id="profile" inkscape:groupmode="layer" inkscape:label="04 · Profile and type">
-    <g fill="none" stroke-linecap="round">
-      <use href="#profile-lines" transform="translate(.08 .43)" stroke="#08694f" stroke-width="2.25"/>
-      <use href="#profile-lines" stroke="#e4ffeb" stroke-width="1.98"/>
-    </g>
-    <path d="M21.5 32.4c.34-1.4 1.75-2.4 3.72-2.4 1.93 0 3.36 1 3.67 2.4-1.9.92-5.45.92-7.39 0Z" fill="#b8f3cd"/>
-    <circle cx="25.2" cy="26.6" r="2.57" fill="url(#pearl)" stroke="#f2fff0" stroke-width=".4"/>
+  <g id="face" inkscape:groupmode="layer" inkscape:label="Profile card">
+    <path transform="rotate(-5 32 32)" data-ink="" fill="#1a7656" mask="url(#profile-cut)" d="M9.5 20.2v-4.1q0-1.4 1.4-1.4h12.75c1.9 0 2.82 4.1 4.85 4.1h24.55q1.45 0 1.45 1.45v28.4q0 1.45-1.45 1.45H10.95q-1.45 0-1.45-1.45Z"/>
   </g>
 </svg>

@@ -1,10 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
-  <title id="title">Cloakyard</title>
-  <defs><linearGradient id="blue" x2=".6" y2="1"><stop stop-color="#639fff"/><stop offset="1" stop-color="#274ccb"/></linearGradient></defs>
-  <circle cx="8" cy="8" r="7.5" fill="url(#blue)"/>
-  <g stroke-linejoin="round" stroke-width="1">
-    <rect x="4.1" y="8.65" width="6.35" height="3.25" rx=".65" fill="#79a6ef" stroke="#d3e8ff"/>
-    <rect x="4.1" y="5.55" width="3.15" height="6.35" rx=".65" fill="#a1d6ff" fill-opacity=".6" stroke="#f1f9ff"/>
-    <rect x="8.8" y="4.05" width="3.05" height="3.05" rx=".5" fill="#a7d9ff" stroke="#f4fdff"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
+  <title id="title">Cloakyard · Linked tiles</title>
+  <desc id="description">Three connected cells and one detached square.</desc>
+  <circle cx="8" cy="8" r="7.5" fill="#3465d5"/>
+  <path fill="#fff" fill-rule="evenodd" d="M4.4 5.45h3.23V8.3h2.9v3.01q0 .94-.96.94H4.79q-.94 0-.94-.94V6.05q0-.6.55-.6ZM4.87 6.48v1.84h1.76V6.48Zm2.76 2.84v1.94h1.92V9.32Z"/>
+  <rect x="8.6" y="4" width="3.5" height="3.5" rx=".42" fill="#fff"/>
 </svg>

@@ -1,32 +1,56 @@
 const studies = {
   cloakyard: {
     description:
-      "The two panes meet in the original lower-left square. The overlap picks up both tints, and a small shadow lifts the upper-right tile.",
+      "The three connected cells and detached tile retain the arrangement of the family mark. Filling the junction makes the overlap legible at tab size.",
     layers: [
-      ["ground", "Enamel disc"],
-      ["horizontal", "Horizontal pane"],
-      ["vertical", "Upright pane"],
-      ["tile", "Floating square"],
+      ["ground", "Blue field"],
+      ["linked", "Connected tiles"],
+      ["tile", "Detached tile"],
+    ],
+  },
+  "cloakyard-cube": {
+    description:
+      "Six identical modules represent the six apps in the directory. The corner opening reveals the assembly even in one ink.",
+    layers: [
+      ["ground", "Lower pair"],
+      ["tier", "Upper tier"],
+      ["front", "Front module"],
+    ],
+  },
+  "cloakpdf-stack": {
+    description:
+      "Two offset page outlines take the place of the shield. The three lines keep the lengths and spacing of the existing PDF mark.",
+    layers: [
+      ["ground", "Blue field"],
+      ["back", "Rear sheet"],
+      ["page", "Printed sheet"],
     ],
   },
   cloakpdf: {
     description:
-      "The shield takes the form of a sheet of paper. A turned corner and two page edges give it thickness. The three lines keep their original lengths and spacing.",
+      "The three lines are cut through a solid page. The curved opening at the lower right reveals the turned corner and the sheet beneath it.",
     layers: [
-      ["ground", "Enamel disc"],
-      ["leaves", "Page edges"],
-      ["sheet", "Paper shield"],
-      ["type", "Printed lines"],
+      ["ground", "Lower page"],
+      ["page", "Printed page"],
+      ["curl-tip", "Paper turn"],
     ],
   },
   cloakresume: {
     description:
-      "The profile dot gains a shoulder line. A thin raised rim frames the emerald shield, with the short name and résumé lines in their familiar positions.",
+      "The portrait and résumé lines are cut into an emerald index card. Two staggered tabs suggest a collection of drafts.",
     layers: [
-      ["ground", "Enamel disc"],
-      ["setting", "Shield setting"],
-      ["face", "Emerald face"],
-      ["profile", "Profile and type"],
+      ["ground", "Rear tab"],
+      ["divider", "Middle tab"],
+      ["face", "Profile card"],
+    ],
+  },
+  "cloakresume-cameo": {
+    description:
+      "A side profile grows out of the original portrait dot. Two short name lines sit alongside it, with two longer résumé lines underneath.",
+    layers: [
+      ["ground", "Portrait"],
+      ["name", "Name lines"],
+      ["body", "Résumé lines"],
     ],
   },
   cloakimg: {
@@ -57,12 +81,20 @@ function selectedScheme() {
 function updateAppearance() {
   const scheme = selectedScheme();
   document.documentElement.style.colorScheme = scheme;
-  for (const card of document.querySelectorAll(".specimen")) {
-    for (const image of card.querySelectorAll(".master, .header-mark")) {
-      image.src = `${card.id}.svg#${scheme}`;
-    }
+  for (const image of document.querySelectorAll(".master, .header-mark, .tab-mark")) {
+    const source = new URL(image.src);
+    source.hash = scheme;
+    image.src = source.href;
   }
-  stage.firstElementChild.src = `${product.value}.svg#ground-${scheme}`;
+  for (const image of stage.children) {
+    image.src = layerSource(image.dataset.layer, scheme);
+  }
+}
+
+function layerSource(id, scheme) {
+  const hasAppearance = product.value !== "cloakimg" || id === "ground";
+  const view = hasAppearance ? `${id}-${scheme}` : id;
+  return `${product.value}.svg#${view}`;
 }
 
 function inspectProduct() {
@@ -70,17 +102,18 @@ function inspectProduct() {
   const study = studies[name];
   stage.replaceChildren();
   layers.replaceChildren(legend);
-  document.getElementById("object-name").textContent = document.querySelector(
-    `#${name} .object-name`,
-  ).textContent;
+  document.getElementById("object-name").textContent = product.selectedOptions[0].label;
   document.getElementById("description").textContent = study.description;
   document.getElementById("master-source").href = `${name}.svg`;
   document.getElementById("tab-source").href = `tabs/${name}.svg`;
 
+  const inkSource = document.getElementById("ink-source");
+  inkSource.href = `${name}.svg#ink`;
+  inkSource.hidden = name === "cloakimg";
   for (const [index, [id, label]] of study.layers.entries()) {
     const image = document.createElement("img");
-    const view = id === "ground" ? `ground-${selectedScheme()}` : id;
-    image.src = `${name}.svg#${view}`;
+    image.dataset.layer = id;
+    image.src = layerSource(id, selectedScheme());
     image.alt = "";
     image.style.setProperty("--offset", index - (study.layers.length - 1) / 2);
     stage.append(image);

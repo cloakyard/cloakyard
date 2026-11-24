@@ -1,66 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
-  <title id="title">CloakPDF · Document shield</title>
-  <desc id="description">Three blue lines sit on a white paper shield. Two thin page edges show beneath the front sheet.</desc>
+  <title id="title">CloakPDF · Page turn</title>
+  <desc id="description">Three lines cut into a blue page. A darker, upturned corner reveals a second sheet.</desc>
   <defs>
-    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
-      <stop offset="0" stop-color="#71b5ff"/>
-      <stop offset=".47" stop-color="#2b69eb"/>
-      <stop offset="1" stop-color="#1947b0"/>
-    </linearGradient>
-    <linearGradient id="rim" x1=".24" y1="0" x2=".76" y2="1">
-      <stop stop-color="#fff" stop-opacity=".88"/><stop offset=".39" stop-color="#fff" stop-opacity=".08"/>
-      <stop offset=".7" stop-color="#0a1540" stop-opacity=".24"/><stop offset="1" stop-color="#fff" stop-opacity=".46"/>
-    </linearGradient>
-    <radialGradient id="bloom" cx=".24" cy=".16" r=".8">
-      <stop stop-color="#fff" stop-opacity=".27"/><stop offset=".68" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="contact" filterUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><feGaussianBlur stdDeviation="1.05"/></filter>
-    <path id="outline" d="M32 12.1 48.2 18.7v13.6c0 8.6-5.4 15.2-16.2 20.4-10.8-5.2-16.2-11.8-16.2-20.4V18.7L32 12.1Z"/>
-    <linearGradient id="paper" x1=".1" y1=".03" x2=".85" y2=".98">
-      <stop stop-color="#fffefb"/><stop offset=".43" stop-color="#f5f8ff"/><stop offset=".8" stop-color="#d6e7ff"/><stop offset="1" stop-color="#afc9ee"/>
-    </linearGradient>
-    <linearGradient id="fold" x1=".2" y1=".9" x2=".9" y2=".1">
-      <stop stop-color="#e3efff"/><stop offset=".5" stop-color="#b9d3f4"/><stop offset="1" stop-color="#89b0e0"/>
-    </linearGradient>
-    <linearGradient id="ink" x2=".9" y2=".65"><stop stop-color="#2456a4"/><stop offset="1" stop-color="#416dba"/></linearGradient>
-    <path id="lines" d="M23.9 26.8h16.2m-16.2 6.7h12.5m-12.5 6.6h8.9"/>
+    <mask id="type" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="white"/><path d="M19 22.8h16.8m-16.8 6.3h12.8m-12.8 6.3h8.8" fill="none" stroke="black" stroke-width="2.9" stroke-linecap="round"/></mask>
+    <mask id="behind" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><rect width="64" height="64" fill="white"/><path transform="rotate(-7 32 32)" d="M12.8 9h36.4v23.3C46.72 35.14 42.45 36.93 35.04 35.1c.77 8.54-2.4 14.32-9.86 19.6H12.8Z" fill="black" stroke="black" stroke-width="1.75"/><path transform="rotate(-7 32 32)" d="M36 35.8c6 2 10 1 13-2m-22.2 21c7.1-5.3 9.8-11.9 9.2-19Z" stroke="black" stroke-width="2" fill="none"/></mask>
     <view id="light" viewBox="0 0 64 64"/>
     <view id="dark" viewBox="0 0 64 64"/>
+    <view id="ink" viewBox="0 0 64 64"/>
     <view id="ground-light" viewBox="0 0 64 64"/>
     <view id="ground-dark" viewBox="0 0 64 64"/>
+    <view id="page-light" viewBox="0 0 64 64"/>
+    <view id="page-dark" viewBox="0 0 64 64"/>
+    <view id="curl-tip-light" viewBox="0 0 64 64"/>
+    <view id="curl-tip-dark" viewBox="0 0 64 64"/>
     <style>
       svg { color-scheme: light dark }
-      svg:has(#light:target, #ground-light:target) { color-scheme: light }
-      svg:has(#dark:target, #ground-dark:target) { color-scheme: dark }
-      svg:has(> g:target) > g:not(:target),
+      svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
+      svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
+      svg:has(> g:target) > g:not(:target) { display: none }
       svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
-      #enamel stop:nth-child(1) { stop-color: light-dark(#71b5ff, #355fa1) }
-      #enamel stop:nth-child(2) { stop-color: light-dark(#2b69eb, #203e8a) }
-      #enamel stop:nth-child(3) { stop-color: light-dark(#1947b0, #172757) }
+      svg:has(#page-light:target, #page-dark:target) > g:not(#page) { display: none }
+      svg:has(#curl-tip-light:target, #curl-tip-dark:target) > g:not(#curl-tip) { display: none }
+      [fill="#182f69"] { fill: light-dark(#182f69, #5286df) }
+      [fill="#3367ce"] { fill: light-dark(#3367ce, #88b0fb) }
+      [fill="#84a6e6"] { fill: light-dark(#84a6e6, #7d9ac9) }
+      svg:has(#ink:target) [data-ink] { fill: light-dark(#253346, #e6edf7) }
     </style>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="01 · Enamel disc">
-    <circle cx="32" cy="32" r="30" fill="url(#enamel)"/>
-    <circle cx="32" cy="32" r="29.5" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Lower page">
+    <path mask="url(#behind)" data-ink="" fill="#84a6e6" d="M15 17.3 49.4 12.8l3.37 39.1-34.4 3.8Z"/>
   </g>
-  <g id="leaves" inkscape:groupmode="layer" inkscape:label="02 · Page edges">
-    <use href="#outline" transform="translate(.6 2.55)" fill="#0a2a6b" opacity=".56" filter="url(#contact)"/>
-    <g stroke-linejoin="round" stroke-width="1.5">
-      <use href="#outline" transform="translate(1.15 1.65)" fill="#c8dcfc" stroke="#a8c7f1"/>
-      <use href="#outline" transform="translate(.65 .9)" fill="#5587c4" stroke="#5b88c0"/>
-    </g>
+  <g id="page" inkscape:groupmode="layer" inkscape:label="Printed page">
+    <g transform="rotate(-7 32 32)" mask="url(#type)"><path data-ink="" fill="#3367ce" d="M12.8 9h36.4v23.3C46.72 35.14 42.45 36.93 35.04 35.1c.77 8.54-2.4 14.32-9.86 19.6H12.8Z"/></g>
   </g>
-  <g id="sheet" inkscape:groupmode="layer" inkscape:label="03 · Shield-shaped sheet">
-    <use href="#outline" fill="url(#paper)" stroke="#f4faff" stroke-width="1.18" stroke-linejoin="round"/>
-    <path d="m16.6 19.05 15.45-6.25 13.6 5.5" fill="none" stroke="#fff" stroke-width=".56" stroke-linecap="round"/>
-    <path d="m40.55 15.62 7.65 3.08v6.03Z" fill="#afcaed"/>
-    <path d="M40.55 15.62q1.05 3.75.05 6.72 3.65-.56 7.6 2.39Z" fill="#739bc9" opacity=".46" transform="translate(.04 .36)"/>
-    <path d="M40.55 15.62q1.05 3.75.05 6.72 3.65-.56 7.6 2.39Z" fill="url(#fold)"/>
-    <path d="m40.55 15.62 7.65 9.11" fill="none" stroke="#f8fbff" stroke-width=".42"/>
-    <path d="M47.5 31c0 8.6-5.15 15.1-15.5 20.4" fill="none" stroke="#94b5e0" stroke-width=".47" stroke-linecap="round"/>
-  </g>
-  <g id="type" inkscape:groupmode="layer" inkscape:label="04 · Printed lines">
-    <use href="#lines" transform="translate(0 .44)" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-    <use href="#lines" fill="none" stroke="url(#ink)" stroke-width="2.9" stroke-linecap="round"/>
+  <g id="curl-tip" inkscape:groupmode="layer" inkscape:label="Paper turn">
+    <path transform="rotate(-7 32 32)" data-ink="" fill="#182f69" d="M36.79 37.07c5.25.99 9.49.27 12.25-2.04-2.84 8.27-10.7 16-19.66 19.18 5.12-4.46 7.81-10.68 7.41-17.14Z"/>
   </g>
 </svg>

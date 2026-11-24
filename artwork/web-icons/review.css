@@ -85,7 +85,18 @@ select {
   gap: 0.75rem;
   margin-top: 1rem;
 }
+.pair.alternatives {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.sample {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 .pair figcaption {
+  overflow-wrap: anywhere;
   margin-top: 0.25rem;
   text-align: center;
   font-size: 0.875rem;
@@ -141,6 +152,17 @@ select {
   font-size: 1.8rem;
   letter-spacing: -0.05em;
 }
+.inspector-heading label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+.inspector-heading select {
+  max-width: 100%;
+  margin-inline-start: 0;
+}
 .workbench {
   display: grid;
   grid-template-columns: 1.35fr 1fr;
@@ -183,7 +205,8 @@ fieldset {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-inline-size: 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
   column-gap: 0.75rem;
 }
 legend {

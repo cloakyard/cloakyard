@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
+  <title id="title">Cloakyard · App cube</title>
+  <desc id="description">Six blue modules form one compact cube with an open corner.</desc>
+  <defs>
+    <view id="light" viewBox="0 0 64 64"/>
+    <view id="dark" viewBox="0 0 64 64"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target) { color-scheme: light }
+      svg:has(#dark:target) { color-scheme: dark }
+      [fill="#20489d"] { fill: light-dark(#20489d, #4778d2) }
+      [fill="#3569cf"] { fill: light-dark(#3569cf, #6699f0) }
+      [fill="#6494ef"] { fill: light-dark(#6494ef, #9bbaf8) }
+    </style>
+  </defs>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Lower pair">
+    <g aria-label="Cube 1">
+      <path data-ink="" fill="#3569cf" d="M18.43 52.32 18.43 39.83 7.62 33.59 7.62 46.08Z"/>
+    </g>
+    <g aria-label="Cube 2">
+      <path data-ink="" fill="#20489d" d="M56.38 33.59 45.57 39.83 45.57 52.32 56.38 46.08Z"/>
+    </g>
+  </g>
+  <g id="tier" inkscape:groupmode="layer" inkscape:label="Upper tier">
+    <g aria-label="Cube 3">
+      <path data-ink="" fill="#6494ef" d="M32 16.33 42.81 10.09 32 3.85 21.19 10.09Z"/>
+    </g>
+    <g aria-label="Cube 4">
+      <path data-ink="" fill="#6494ef" d="M19.35 24.7 31.08 17.92 31.08 17.92 19.35 11.15 7.62 17.92 7.62 17.92Z"/>
+      <path data-ink="" fill="#3569cf" d="M19.35 24.7 7.62 17.92 7.62 31.47 19.35 38.24Z"/>
+      <path data-ink="" fill="#20489d" d="M19.35 24.7 19.35 38.24 31.08 31.47 31.08 17.92Z"/>
+    </g>
+    <g aria-label="Cube 5">
+      <path data-ink="" fill="#6494ef" d="M44.65 24.7 56.38 17.92 56.38 17.92 44.65 11.15 32.92 17.92 32.92 17.92Z"/>
+      <path data-ink="" fill="#3569cf" d="M44.65 24.7 32.92 17.92 32.92 31.47 44.65 38.24Z"/>
+      <path data-ink="" fill="#20489d" d="M44.65 24.7 44.65 38.24 56.38 31.47 56.38 17.92Z"/>
+    </g>
+  </g>
+  <g id="front" inkscape:groupmode="layer" inkscape:label="Front module">
+    <g aria-label="Cube 6">
+      <path data-ink="" fill="#6494ef" d="M32 46.61 43.73 39.83 32 33.06 20.27 39.83Z"/>
+      <path data-ink="" fill="#3569cf" d="M32 46.61 20.27 39.83 20.27 53.38 32 60.15Z"/>
+      <path data-ink="" fill="#20489d" d="M32 46.61 32 60.15 43.73 53.38 43.73 39.83Z"/>
+    </g>
+  </g>
+</svg>

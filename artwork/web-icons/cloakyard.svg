@@ -1,64 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
-  <title id="title">Cloakyard · Overlapping panes</title>
-  <desc id="description">Two frosted blue panes cross at the lower left. A third square floats above the gap.</desc>
+  <title id="title">Cloakyard · Linked tiles</title>
+  <desc id="description">Three connected cells and a detached square keep the family mark’s original arrangement. The shared cell and raised tile are solid.</desc>
   <defs>
-    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
-      <stop offset="0" stop-color="#71bbff"/>
-      <stop offset=".47" stop-color="#3975f6"/>
-      <stop offset="1" stop-color="#243ec5"/>
-    </linearGradient>
-    <linearGradient id="rim" x1=".24" y1="0" x2=".76" y2="1">
-      <stop stop-color="#fff" stop-opacity=".88"/><stop offset=".39" stop-color="#fff" stop-opacity=".08"/>
-      <stop offset=".7" stop-color="#0a1540" stop-opacity=".24"/><stop offset="1" stop-color="#fff" stop-opacity=".46"/>
-    </linearGradient>
-    <radialGradient id="bloom" cx=".24" cy=".16" r=".8">
-      <stop stop-color="#fff" stop-opacity=".27"/><stop offset=".68" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="contact" filterUnits="userSpaceOnUse" x="0" y="0" width="64" height="64"><feGaussianBlur stdDeviation="1.05"/></filter>
-    <linearGradient id="glass" x1=".13" y1="0" x2=".89" y2="1">
-      <stop stop-color="#e7fbff"/><stop offset=".49" stop-color="#b6e6fe"/><stop offset="1" stop-color="#659bec"/>
-    </linearGradient>
-    <linearGradient id="lip" x1=".12" y1="0" x2=".81" y2="1">
-      <stop stop-color="#fff"/><stop offset=".52" stop-color="#e8f6ff"/><stop offset="1" stop-color="#9fc0ff"/>
-    </linearGradient>
-    <path id="across" d="M17.15 34.97h22.27a1.49 1.49 0 0 1 1.49 1.49v7.42a2.97 2.97 0 0 1-2.97 2.97H20.12a2.97 2.97 0 0 1-2.97-2.97Z"/>
-    <path id="upright" d="M17.15 26.06a2.97 2.97 0 0 1 2.97-2.97h7.42a1.49 1.49 0 0 1 1.49 1.49v22.27h-8.91a2.97 2.97 0 0 1-2.97-2.97Z"/>
-    <rect id="square" x="34.97" y="17.15" width="11.88" height="11.88" rx="1.49"/>
     <view id="light" viewBox="0 0 64 64"/>
     <view id="dark" viewBox="0 0 64 64"/>
+    <view id="ink" viewBox="0 0 64 64"/>
     <view id="ground-light" viewBox="0 0 64 64"/>
     <view id="ground-dark" viewBox="0 0 64 64"/>
+    <view id="linked-light" viewBox="0 0 64 64"/>
+    <view id="linked-dark" viewBox="0 0 64 64"/>
+    <view id="tile-light" viewBox="0 0 64 64"/>
+    <view id="tile-dark" viewBox="0 0 64 64"/>
     <style>
       svg { color-scheme: light dark }
-      svg:has(#light:target, #ground-light:target) { color-scheme: light }
-      svg:has(#dark:target, #ground-dark:target) { color-scheme: dark }
-      svg:has(> g:target) > g:not(:target),
-      svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
-      #enamel stop:nth-child(1) { stop-color: light-dark(#71bbff, #406dba) }
-      #enamel stop:nth-child(2) { stop-color: light-dark(#3975f6, #254ca8) }
-      #enamel stop:nth-child(3) { stop-color: light-dark(#243ec5, #142669) }
+      svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
+      svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
+      svg:has(> g:target) > g:not(:target) { display:none }
+      svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display:none }
+      svg:has(#linked-light:target, #linked-dark:target) > g:not(#linked) { display:none }
+      svg:has(#tile-light:target, #tile-dark:target) > g:not(#tile) { display:none }
+      [fill="#3465d5"] { fill:light-dark(#3465d5,#365fc0) }
+      svg:has(#ink:target) #ground circle { fill:#263446 }
+      svg:has(#ink:target) .face { fill:#fff }
+      svg:has(#ink:target) .return { fill:#263446 }
     </style>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="01 · Enamel disc">
-    <circle cx="32" cy="32" r="30" fill="url(#enamel)"/>
-    <circle cx="32" cy="32" r="29.5" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Blue field">
+    <circle cx="32" cy="32" r="30" fill="#3465d5"/>
   </g>
-  <g id="horizontal" inkscape:groupmode="layer" inkscape:label="02 · Horizontal pane">
-    <use href="#across" transform="translate(.4 1.85)" fill="#112f8d" opacity=".66" filter="url(#contact)"/>
-    <use href="#across" transform="translate(.35 1.15)" fill="#476fc7" stroke="#597ecf" stroke-width="1.7" stroke-linejoin="round"/>
-    <use href="#across" fill="url(#glass)" fill-opacity=".60" stroke="url(#lip)" stroke-width="1.7" stroke-linejoin="round"/>
-    <path d="M30.3 36.1h8.7l.65.55v1.15h-9.35Z" fill="#f5fdff" opacity=".18"/>
+  <g id="linked" inkscape:groupmode="layer" inkscape:label="Connected tiles">
+    <path class="face" fill="#fff" fill-rule="evenodd" d="M19.4 21.8h9.2q1.65 0 1.65 1.65V33.6h9.5q2.1 0 2.1 2.1v8.5q0 3.9-3.9 3.9H20.2q-4.6 0-4.6-4.6V25.65q0-3.85 3.8-3.85ZM19 25.3v8.3h7.85v-8.3Zm11.25 11.7v7.65h7.86V37Z"/>
+    <path fill="#bed6ff" class="face" d="M18.96 36.97h7.9v7.72h-6.32q-1.58 0-1.58-1.61Z"/>
   </g>
-  <g id="vertical" inkscape:groupmode="layer" inkscape:label="03 · Upright pane">
-    <use href="#upright" transform="translate(.55 1)" fill="#2449a5" fill-opacity=".28" stroke="#223e8a" stroke-width="1.5" opacity=".66" filter="url(#contact)"/>
-    <use href="#upright" fill="url(#glass)" fill-opacity=".70" stroke="url(#lip)" stroke-width="1.7" stroke-linejoin="round"/>
-    <path d="M17.9 34.97h10.3" stroke="#e8f7ff" stroke-opacity=".77" stroke-width="1.2"/>
-    <path d="M18.5 30.1v-3.9q0-1.7 1.75-1.7h5.6" fill="none" stroke="#fff" stroke-opacity=".56" stroke-width=".48" stroke-linecap="round"/>
-  </g>
-  <g id="tile" inkscape:groupmode="layer" inkscape:label="04 · Floating square">
-    <use href="#square" transform="translate(.75 2.3)" fill="#13348e" opacity=".68" filter="url(#contact)"/>
-    <use href="#square" transform="translate(.38 1.16)" fill="#5187d2" stroke="#699ae5" stroke-width="1.6"/>
-    <use href="#square" fill="url(#glass)" fill-opacity=".80" stroke="url(#lip)" stroke-width="1.7"/>
-    <path d="M36.15 18.2h9.1l-9.1 6.5Z" fill="#fff" opacity=".23"/>
+  <g id="tile" inkscape:groupmode="layer" inkscape:label="Detached tile">
+    <path class="face" fill="#fff" d="M35.3 15.85h10.35q2 0 2 2v10.4q0 1.45-1.45 1.45h-10.9q-1.5 0-1.5-1.5V17.35q0-1.5 1.5-1.5Z"/>
+    <path class="return" fill="#bad3ff" d="m47.65 21.95-7.74 7.75h6.29q1.45 0 1.45-1.45Z"/>
   </g>
 </svg>

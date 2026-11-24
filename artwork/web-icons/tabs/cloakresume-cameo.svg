@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
+  <title id="title">CloakResume · Cameo</title>
+  <desc id="description">A green side profile with résumé lines.</desc>
+  <defs>
+    <view id="light" viewBox="0 0 64 64"/>
+    <view id="dark" viewBox="0 0 64 64"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target) { color-scheme: light }
+      svg:has(#dark:target) { color-scheme: dark }
+      [fill="#197859"] { fill: light-dark(#197859, #81c9a7) }
+      [fill="#368c68"] { fill: light-dark(#368c68, #9cdabb) }
+    </style>
+  </defs>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Portrait">
+    <path data-ink="" fill="#197859" d="M8.2 40.2c.74-3.84 3.88-5.78 7.65-7.62 2.25-1.16 2.88-2.54 2.56-4.28-.2-1.4-1.17-2.95-2.24-4.43-1.55-2.16-2.21-4.22-1.99-6.88.41-5.33 4.58-8.95 9.57-8.87 4.96.11 8.07 3.5 8.23 8.07 0 1.85.24 2.55.98 3.72l2.19 3.02c.31.49.17.94-.44 1.12l-2.16.58c.12 2.76-.88 4.53-2.97 5.16-1.11.33-2.18.12-3.35.18-.38 2.24.58 3.84 2.69 5.27 1.91 1.29 3.24 2.93 3.63 4.96Z"/>
+  </g>
+  <g id="name" inkscape:groupmode="layer" inkscape:label="Name lines">
+    <path data-ink="" fill="#368c68" d="M39 18h15v3.65H39Zm0 7.25h10.45v3.65H39Z"/>
+  </g>
+  <g id="body" inkscape:groupmode="layer" inkscape:label="Résumé lines">
+    <path data-ink="" fill="#197859" d="M9.15 45h44.8v3.3H9.15Zm0 7.05h30.1v3.3H9.15Z"/>
+  </g>
+</svg>

@@ -1,8 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
-  <title id="title">CloakPDF</title>
-  <defs><linearGradient id="blue" x2=".65" y2="1"><stop stop-color="#689fff"/><stop offset="1" stop-color="#204db6"/></linearGradient></defs>
-  <circle cx="8" cy="8" r="7.5" fill="url(#blue)"/>
-  <path d="M8 2.7 12.4 4.5v3.6c0 2.5-1.7 4.25-4.4 5.55-2.7-1.3-4.4-3.05-4.4-5.55V4.5Z" fill="#f1f7ff"/>
-  <path d="m10.4 3.7 2 .8v1.65Z" fill="#b0d1f7"/>
-  <path d="M5.9 6.4h4.2M5.9 8.25h3.35m-3.35 1.85h2.35" fill="none" stroke="#315ba1" stroke-width=".95" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
+  <title id="title">CloakPDF · Page turn</title>
+  <desc id="description">A turned page and three lines.</desc>
+  <defs>
+    <view id="light" viewBox="0 0 16 16"/>
+    <view id="dark" viewBox="0 0 16 16"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target) { color-scheme: light }
+      svg:has(#dark:target) { color-scheme: dark }
+      [fill="#1a397f"] { fill: light-dark(#1a397f, #5286df) }
+      [fill="#3367ce"] { fill: light-dark(#3367ce, #88b0fb) }
+    </style>
+  </defs>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Page">
+    <path data-ink="" fill="#3367ce" fill-rule="evenodd" d="M2.55 2.76 12.2 1.7l.48 5.71c-.98.72-2.06 1.15-3.69.92.44 2.53-.2 4.12-2.21 5.59l-3.18.37ZM4.62 5.35l.11.97 4.52-.51-.11-.97Zm.21 2.03.11.95 3.47-.4-.12-.96Zm.2 2.02.11.96 2.22-.25-.11-.96Z"/>
+  </g>
+  <g id="turn" inkscape:groupmode="layer" inkscape:label="Turn">
+    <path data-ink="" fill="#1a397f" d="M9.66 9c1.03.15 2.28-.08 3.12-.6-.41 2.02-2.45 4.42-4.67 5.21 1.18-1.28 1.78-2.91 1.55-4.61Z"/>
+  </g>
 </svg>

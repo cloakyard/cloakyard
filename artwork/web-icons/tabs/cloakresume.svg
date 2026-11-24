@@ -1,9 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
-  <title id="title">CloakResume</title>
-  <defs><linearGradient id="green" x2=".7" y2="1"><stop stop-color="#53d9ab"/><stop offset="1" stop-color="#058263"/></linearGradient></defs>
-  <circle cx="8" cy="8" r="7.5" fill="url(#green)"/>
-  <path d="M8 2.9 12.25 4.6v3.5c0 2.3-1.5 4.05-4.25 5.4-2.75-1.35-4.25-3.1-4.25-5.4V4.6Z" fill="#127b5b" stroke="#e1ffea" stroke-width=".95" stroke-linejoin="round"/>
-  <circle cx="6.22" cy="6.55" r=".85" fill="#f2fff2"/>
-  <path d="M4.97 8.28q.17-.72 1.25-.72t1.25.72q-1.25.54-2.5 0Z" fill="#c8f3d2"/>
-  <path d="M8.4 6.45h2m-2 1.55h1.55m-3.9 1.75h3.8" fill="none" stroke="#e4ffec" stroke-width=".87" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
+  <title id="title">CloakResume · Index card</title>
+  <desc id="description">A green tabbed card with a cutout portrait.</desc>
+  <defs>
+    <view id="light" viewBox="0 0 16 16"/>
+    <view id="dark" viewBox="0 0 16 16"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target) { color-scheme: light }
+      svg:has(#dark:target) { color-scheme: dark }
+      [fill="#196e51"] { fill: light-dark(#196e51, #76c49f) }
+      [fill="#479e78"] { fill: light-dark(#479e78, #9ed0b3) }
+    </style>
+  </defs>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Index tabs">
+    <path data-ink="" fill="#479e78" d="M7.15 4.3 7.7 3.3h1.92v1Zm3.1 0 .57-1.18h1.82v1.18Z"/>
+  </g>
+  <g id="card" inkscape:groupmode="layer" inkscape:label="Card">
+    <path data-ink="" fill="#196e51" fill-rule="evenodd" d="M2.14 3.81h3.12l1.02 1.15h7.63v7.89H2.14ZM5.44 5.97a.88.88 0 1 0 .01 0Zm-1.65 3.27q.18-1.29 1.62-1.29t1.64 1.29Zm4.42-2.71v.9h3.85v-.9Zm0 1.83v.89h2.63v-.89Zm-4.3 2.21v.92h8.15v-.92Z"/>
+  </g>
 </svg>
