@@ -28,3 +28,17 @@ The [logo size audit](sizes/README.md) covers the public screens, editor tools, 
 ## Cloakyard animation match
 
 The [settled frame and current mark](settled-cubes.png) show the homepage artwork beside the 64-unit mark, the 36 px header and the separate 16 px tab in both themes. The export uses the same face paths, stacking order, colours and positions as the seven cells on the homepage. In 32 Chrome and WebKit comparisons across phone, tablet, laptop and desktop, cell placement differed by less than 0.002 SVG units and the sRGB paint values by at most one channel step. The homepage animation passed its 44 static layouts, 22 arrivals and four navigation journeys.
+
+## Final logo corrections
+
+The [light and dark comparison](refined-family.png) shows the four marks at header and browser-tab sizes, followed by the three installable apps’ standard and maskable launchers. CloakPDF retains the folded white sheet, three text lines and ruled table. Removing the small cell strokes makes the grid easier to distinguish at 36 px. CloakIMG’s browser tab uses the header’s dark coral gradient, and its standard launchers fill the canvas at 64, 192 and 512 px.
+
+| Surface           | Verification                                                                                                                                                                                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Directory         | The PDF, Resume and IMG marks match the corresponding apps’ public SVGs byte-for-byte. All three render at 36 × 36 CSS px.                                                                                                                                                     |
+| Workspace headers | Chrome and WebKit in light and dark, at widths of 320, 390, 768, 1023, 1024, 1280, 1440 and 1920 px. Each mark measures 36 × 36 CSS px.                                                                                                                                        |
+| PDF Home control  | The chevron and mark share one native button on desktop. The compact control retains its pending-mark badge. Checked pointer return, keyboard return and a single focus stop across the breakpoint. The PDF navigation suite also checked 176 layouts and 176 tool selections. |
+| Social cards      | Regenerated all four 1200 × 630 cards from production builds. The PDF card reflects the new report. Cloakyard, IMG and Resume reproduced their existing PNGs byte-for-byte.                                                                                                    |
+| Installable icons | All pixels in IMG’s three standard launchers are opaque. Its maskable foreground fits the safe circle. PDF’s install icons and all four editor screenshots were regenerated.                                                                                                   |
+
+The comparisons used emulated viewports and browser-rendered favicons. OS launcher installation on physical devices was outside this pass.
