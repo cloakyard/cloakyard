@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
   <title id="title">CloakResume · Index card</title>
-  <desc id="description">An ivory portrait card and two index tabs sit on a green enamel disc.</desc>
+  <desc id="description">A white portrait card and two index tabs sit on a green enamel disc.</desc>
   <defs>
     <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
       <stop offset="0" stop-color="light-dark(#84d8ae, #5c987b)"/>
@@ -18,8 +18,9 @@
       <stop offset=".68" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="paper" x1=".22" y1="0" x2=".78" y2="1">
-      <stop stop-color="#fff8e6"/>
-      <stop offset="1" stop-color="#e8dfbc"/>
+      <stop stop-color="#fff"/>
+      <stop offset=".68" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e9ecef"/>
     </linearGradient>
     <mask id="profile-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
       <rect width="64" height="64" fill="white"/>
@@ -68,19 +69,19 @@
   </g>
   <g id="ground" inkscape:groupmode="layer" inkscape:label="Rear tab" transform="translate(5.12 5.12) scale(.84)">
     <g transform="rotate(-5 32 32)" mask="url(#index-edge)">
-      <path data-ink="" fill="#a6d9b7" d="M14.1 19.3h24.7c1.7 0 2.24-5.78 4.17-5.78h6.7q1.7 0 1.7 1.55v30.6H14.1Z"/>
+      <path data-ink="" fill="#b8c3c9" d="M14.1 19.3h24.7c1.7 0 2.24-5.78 4.17-5.78h6.7q1.7 0 1.7 1.55v30.6H14.1Z"/>
     </g>
   </g>
   <g id="divider" inkscape:groupmode="layer" inkscape:label="Middle tab" transform="translate(5.12 5.12) scale(.84)">
     <g transform="rotate(-5 32 32)" mask="url(#index-edge)">
-      <path data-ink="" fill="#e3d5a5" d="M13.6 19.3h12.6c1.84 0 2.58-5.04 4.25-5.04h7.03q1.7 0 1.7 1.55v28.1H13.6Z"/>
+      <path data-ink="" fill="#d9dfe3" d="M13.6 19.3h12.6c1.84 0 2.58-5.04 4.25-5.04h7.03q1.7 0 1.7 1.55v28.1H13.6Z"/>
     </g>
   </g>
   <g id="face" inkscape:groupmode="layer" inkscape:label="Profile card" transform="translate(5.12 5.12) scale(.84)">
     <g transform="rotate(-5 32 32)">
       <use class="contact" href="#index-face" transform="translate(.45 1.6)" fill="#104b37" opacity=".48" filter="url(#contact)"/>
-      <use class="edge" href="#index-face" transform="translate(.18 .68)" fill="#c3ad7d" stroke="#c3ad7d" stroke-width=".65"/>
-      <use data-ink="" href="#index-face" fill="url(#paper)" stroke="#fffcdf" stroke-width=".55" stroke-linejoin="round"/>
+      <use class="edge" href="#index-face" transform="translate(.18 .68)" fill="#b6bec4" stroke="#b6bec4" stroke-width=".65"/>
+      <use data-ink="" href="#index-face" fill="url(#paper)" stroke="#fff" stroke-width=".55" stroke-linejoin="round"/>
     </g>
   </g>
 </svg>

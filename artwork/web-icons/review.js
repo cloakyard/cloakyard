@@ -21,7 +21,7 @@ const studies = {
   },
   "cloakpdf-stack": {
     description:
-      "A blue backing sheet sets off the ivory stock and its folded corner. Three lines lead into a two-column table with a solid header.",
+      "A blue backing sheet sets off the white paper and its folded corner. Three lines lead into a two-column table with a solid header.",
     layers: [
       ["disc", "Enamel disc"],
       ["ground", "Blue backing sheet"],
@@ -41,7 +41,7 @@ const studies = {
   },
   cloakresume: {
     description:
-      "The portrait and résumé lines are cut into an ivory card above green enamel. Two staggered tabs suggest a collection of drafts.",
+      "The portrait and résumé lines are cut into a white card above green enamel. Two staggered tabs suggest a collection of drafts.",
     layers: [
       ["disc", "Enamel disc"],
       ["ground", "Rear tab"],
@@ -51,7 +51,7 @@ const studies = {
   },
   "cloakresume-cameo": {
     description:
-      "An ivory side profile rises from the green disc. Two short name lines sit alongside it, with two longer résumé lines underneath.",
+      "A white side profile rises from the green disc. Two short name lines sit alongside it, with two longer résumé lines underneath.",
     layers: [
       ["disc", "Enamel disc"],
       ["ground", "Portrait"],

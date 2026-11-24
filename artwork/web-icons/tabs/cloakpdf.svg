@@ -24,7 +24,7 @@
   </g>
   <g id="page" inkscape:groupmode="layer" inkscape:label="Report sheet">
     <path d="M9.3 11.2h1.35v2.1l-.67-.4-.68.4Z" fill="#ffc667"/>
-    <path d="M5.35 3.45h6v8.65h-6Z" fill="#fff2d8"/>
+    <path d="M5.35 3.45h6v8.65h-6Z" fill="#fff"/>
   </g>
   <g id="print" inkscape:groupmode="layer" inkscape:label="Printed lines and table">
     <path d="M6.25 5h2.7m-2.7 1.3h3.8" stroke="#365174" stroke-width=".7" stroke-linecap="round"/>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
   <title id="title">CloakPDF · Folded report</title>
-  <desc id="description">An ivory folded report on a blue enamel disc, with printed lines and a two-column table.</desc>
+  <desc id="description">A white folded report on a blue enamel disc, with printed lines and a two-column table.</desc>
   <defs>
     <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
       <stop offset="0" stop-color="light-dark(#83c8ff, #599cce)"/>
@@ -41,10 +41,10 @@
         --muted: light-dark(#6783aa, #637fa9);
         --grid: light-dark(#335da5, #315995);
         --cell: light-dark(#eef4fb, #e2ecf7);
-        --leaf: light-dark(#fff9e9, #fff7e5);
-        --foot: light-dark(#ead6b9, #e5d7be);
-        --fold: light-dark(#c2daeb, #bbd2e2);
-        --crease: light-dark(#7c9ab9, #8ba6c3);
+        --leaf: #fff;
+        --foot: #e6e9ec;
+        --fold: #d9dfe4;
+        --crease: #a0a9b1;
         --cover: light-dark(#2253af, #1d447f);
         --lip: light-dark(#5989df, #4d79bb);
         --deep: light-dark(#183b7b, #112a51);
