@@ -1,11 +1,17 @@
 # Air refresh — current handoff
 
-## Start here in a new conversation — saved 2026-11-23
+## Start here in a new conversation — saved 2026-11-24
 
 This section is the current entry point. The dated checkpoints below preserve the
 implementation history and evidence. Older “Next” suggestions are historical;
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
+
+### Product landing reveals and dependencies — 2026-11-24
+
+The six product homepages now use the directory reveal. Air 1.8.1 adds initial
+fragment restoration for client-rendered entries. The [coverage ledger](product-landing-reveals-2026-11-24.md)
+records the motion checks, dependency constraints and application test scope.
 
 ### Cloakyard landing reveals — 2026-11-23
 

@@ -1,6 +1,6 @@
 # Repository guidance
 
-Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.8.0 is
+Read `AGENTS.md` and the complete `DESIGN.md` before visible changes. Air 1.8.1 is
 the implementation baseline. `design/air/` in this repository owns the family
 contract; products receive self-contained, pinned copies.
 
@@ -24,7 +24,8 @@ Shared design commands:
   the actual coarse-pointer state, independently of the viewport width.
 - `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume/Roll/IMG/Tools public pages and secondary reading/recovery shells.
 - `node scripts/test-air-growth.mjs` checks the homepage's finite SVG motion, static preferences, responsive layout and directory links against the production build.
-- `node scripts/test-air-landing-reveals.mjs` scrolls the built homepage in light and dark and checks the combined motion, reading order and navigation fallbacks. Set `SITE_URL`, `PLAYWRIGHT_MODULE` and `AIR_BROWSER` (chromium or webkit).
+- `node scripts/test-air-landing-reveals.mjs` scrolls a built landing page in light and dark and checks the combined motion, reading order and navigation fallbacks. Set `AIR_PRODUCT` to the repository name (defaults to `cloakyard`), `SITE_URL`,
+  `PLAYWRIGHT_MODULE` and `AIR_BROWSER` (chromium or webkit).
 - `node scripts/test-air-artwork-browsers.mjs` checks actual four-thread/no-memory
   artwork progression across all seven sites. Supply external `PLAYWRIGHT_MODULE`,
   `AIR_BROWSER=webkit` or `chromium`, and `AIR_EVIDENCE_DIR`; `CHROME_PATH` may
@@ -90,7 +91,7 @@ completion, and do not push or deploy without authorization.
 
 ## Dead-code audit
 
-Run `npx --yes knip@6.45.1` for the declared web graph in `knip.json`. The pinned
+Run `npx --yes knip@6.48.0` for the declared web graph in `knip.json`. The pinned
 CLI can also be supplied externally; no runtime package is required. Manual audit
 commands and portable Air library entries are deliberate public entry points.
 

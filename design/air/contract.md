@@ -1,6 +1,6 @@
 # Cloakyard Air design contract
 
-Version: **1.8.0 — landing block reveals** · Direction: **Air** · Updated: **2026-11-23**
+Version: **1.8.1 — landing block reveals** · Direction: **Air** · Updated: **2026-11-24**
 
 The detailed Air system is **locked for implementation**. On 2026-10-13 the user
 authorized one final agent review followed by implementation; that review is
@@ -1307,7 +1307,10 @@ performance approval.
   print, forced colours and reduced motion show the relevant content immediately.
   Keep navigation, the hero, utility pages and active workspaces outside this treatment.
   The portable `landing-reveal.css` and `landing-reveal.mjs` implement the approved
-  recipe. Each landing page opts in after its responsive and accessibility review.
+  recipe. Client-rendered entries can request initial fragment restoration after the
+  target mounts. This also applies with reduced motion or without an observer.
+  Preserve browser history restoration and focus already placed by the reader.
+  Each landing page opts in after its responsive and accessibility review.
 - Pointer hover may move a directional arrow by 2px over 160ms. Press uses 0.98
   scale for 120ms; release is immediate. Keyboard presses never compress controls.
   Control colours, selection, focus and appearance changes are immediate. No hover

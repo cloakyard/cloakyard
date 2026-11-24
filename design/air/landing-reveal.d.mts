@@ -1,1 +1,4 @@
-export function mountLandingReveals(root: HTMLElement): (() => void) | undefined;
+export function mountLandingReveals(
+  root: HTMLElement,
+  options?: { restoreFragment?: boolean },
+): (() => void) | undefined;

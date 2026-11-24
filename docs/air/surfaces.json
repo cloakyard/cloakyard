@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "1.8.0",
+  "contractVersion": "1.8.1",
   "note": "Presence in this inventory is not audit or validation. Preserve evidence when updating.",
   "surfaces": [
     {
@@ -37,7 +37,8 @@
         "docs/air/validation.md",
         "docs/air/consistency-2026-10-28.md",
         "docs/air/family-motion-2026-11-03.md",
-        "docs/air/landing-reveals-2026-11-23.md"
+        "docs/air/landing-reveals-2026-11-23.md",
+        "docs/air/product-landing-reveals-2026-11-24.md"
       ],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Air 1.5.0 family phone/presence software audit passed; physical/assistive acceptance remains separate."
     },
@@ -112,7 +113,8 @@
         "docs/air/validation.md",
         "docs/air/link-arrows-2026-10-19.md",
         "docs/air/hyperlinks-2026-10-19.md",
-        "docs/air/landing-reveals-2026-11-23.md"
+        "docs/air/landing-reveals-2026-11-23.md",
+        "docs/air/product-landing-reveals-2026-11-24.md"
       ],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed."
     },
@@ -276,7 +278,8 @@
         "docs/air/link-arrows-2026-10-19.md",
         "docs/air/hyperlinks-2026-10-19.md",
         "docs/air/evidence/family-comparison-2026-10-25/",
-        "docs/air/landing-reveals-2026-11-23.md"
+        "docs/air/landing-reveals-2026-11-23.md",
+        "docs/air/product-landing-reveals-2026-11-24.md"
       ],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open."
     },
@@ -328,7 +331,8 @@
         "docs/air/hyperlinks-2026-10-19.md",
         "docs/air/family-2026-10-29.md",
         "docs/air/cloaktools-integration-2026-11-17.md",
-        "docs/air/landing-reveals-2026-11-23.md"
+        "docs/air/landing-reveals-2026-11-23.md",
+        "docs/air/product-landing-reveals-2026-11-24.md"
       ],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases. Air 1.2.6 support link and footer software conformance pass across home/privacy/recovery; full product/device acceptance remains separate."
     },
@@ -454,7 +458,8 @@
         "docs/air/compact-popups-2026-11-03.md",
         "docs/air/growing-mark-2026-11-09.md",
         "docs/air/cloaktools-integration-2026-11-17.md",
-        "docs/air/landing-reveals-2026-11-23.md"
+        "docs/air/landing-reveals-2026-11-23.md",
+        "docs/air/product-landing-reveals-2026-11-24.md"
       ],
       "notes": "AIR-04 implemented. Chromium matrix and Safari/Firefox spot checks pass. Physical touch and screen-reader interaction are still open; final acceptance is not claimed. Real product marks verified at 36px in 22 size/theme cases. Actual shader activated; shared lifecycle and 22 production layout/theme cases pass. Physical power/thermal acceptance pending. 2026-10-19: app logo colour in both GPU and static artwork; 12 theme/viewport cases and both GPU themes pass. Physical GPU/battery acceptance remains open. 2026-10-25: Public family comparison: canonical type, gutter boundaries, focus, inline credits, 44px brand target and in-flow compact menu corrected. Chrome/Firefox 160 local layouts plus Safari spot review pass. Existing physical/assistive gates remain open. 2026-10-26: Air 1.2.0 public-shell/Storyline software audit passes; see current validation. Physical/assistive gates stay separate. Public header/footer content, spacing, rendering and navigation verified in Air 1.2.2; this evidence does not close unrelated product/device gates. Air 1.2.3 compares footer heights/content directly across products and uses the pinned PWA notice; current software checks pass. Separate product/device gates remain open. Air 1.2.6 support link and footer software conformance pass across home/privacy/recovery; full product/device acceptance remains separate."
     },
