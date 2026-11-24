@@ -1,42 +1,42 @@
 const studies = {
   cloakyard: {
     description:
-      "An apricot tree grows inside a blue arcade. Two open doorways make a small courtyard out of the isometric blocks on the family homepage.",
+      "The two panes meet in the original lower-left square. The overlap picks up both tints, and a small shadow lifts the upper-right tile.",
     layers: [
-      ["ground", "Porcelain"],
-      ["terrace", "Stone terrace"],
-      ["arcade", "Cobalt arcade"],
-      ["tree", "Apricot topiary"],
+      ["ground", "Enamel disc"],
+      ["horizontal", "Horizontal pane"],
+      ["vertical", "Upright pane"],
+      ["tile", "Floating square"],
     ],
   },
   cloakpdf: {
     description:
-      "A turned handle lifts from the page, leaving one vermilion bar of ink. The impression is the cue for redaction.",
+      "The shield takes the form of a sheet of paper. A turned corner and two page edges give it thickness. The three lines keep their original lengths and spacing.",
     layers: [
-      ["ground", "Blue worktop"],
-      ["sheets", "Proof sheets"],
-      ["shoe", "Rubber shoe"],
-      ["handle", "Turned handle"],
+      ["ground", "Enamel disc"],
+      ["leaves", "Page edges"],
+      ["sheet", "Paper shield"],
+      ["type", "Printed lines"],
     ],
   },
   cloakresume: {
     description:
-      "A brass nib catches the light on a clothbound portfolio. Cream paper and a ribbon bookmark peek out below the cover.",
+      "The profile dot gains a shoulder line. A thin raised rim frames the emerald shield, with the short name and résumé lines in their familiar positions.",
     layers: [
-      ["ground", "Sage ground"],
-      ["leaves", "Paper and ribbon"],
-      ["cover", "Book cloth"],
-      ["nib", "Brass pen nib"],
+      ["ground", "Enamel disc"],
+      ["setting", "Shield setting"],
+      ["face", "Emerald face"],
+      ["profile", "Profile and type"],
     ],
   },
   cloakimg: {
     description:
-      "A brass-rimmed lens enlarges the sunset on a photographic slide. The horizon continues through the glass.",
+      "The original twin peaks sit on separate planes inside the picture frame. The near ridge catches a thin edge of light, and the sun sits above the right peak.",
     layers: [
-      ["ground", "Coral ground"],
-      ["slide", "Mounted slide"],
-      ["barrel", "Machined loupe"],
-      ["optics", "Magnified sunset"],
+      ["ground", "Enamel disc"],
+      ["frame", "Picture frame"],
+      ["ridgelines", "Layered ridges"],
+      ["sun", "Raised sun"],
     ],
   },
 };

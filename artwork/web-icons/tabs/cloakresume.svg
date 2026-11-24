@@ -1,12 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
   <title id="title">CloakResume</title>
-  <rect width="16" height="16" rx="3.5" fill="#dbe6cd"/>
-  <g transform="rotate(-9 8 8)">
-    <rect x="2.4" y="1.4" width="10.8" height="13" rx="1.2" fill="#24584d"/>
-    <path d="M3.1 12h9.4v1.5h-9.4Z" fill="#f5e7bd"/>
-    <rect x="2" y="1" width="10.5" height="12" rx="1" fill="#28796a"/>
-    <path d="M10 13h1.5v2L10 14.6Z" fill="#ae4530"/>
-  </g>
-  <path d="m10 2.5.9 4.4-3.4 3.4-1.5-.6.3-4Z" fill="#ffdb83"/>
-  <path d="m10 2.5-1.2 4.2" stroke="#73532f" stroke-width=".6"/>
+  <defs><linearGradient id="green" x2=".7" y2="1"><stop stop-color="#53d9ab"/><stop offset="1" stop-color="#058263"/></linearGradient></defs>
+  <circle cx="8" cy="8" r="7.5" fill="url(#green)"/>
+  <path d="M8 2.9 12.25 4.6v3.5c0 2.3-1.5 4.05-4.25 5.4-2.75-1.35-4.25-3.1-4.25-5.4V4.6Z" fill="#127b5b" stroke="#e1ffea" stroke-width=".95" stroke-linejoin="round"/>
+  <circle cx="6.22" cy="6.55" r=".85" fill="#f2fff2"/>
+  <path d="M4.97 8.28q.17-.72 1.25-.72t1.25.72q-1.25.54-2.5 0Z" fill="#c8f3d2"/>
+  <path d="M8.4 6.45h2m-2 1.55h1.55m-3.9 1.75h3.8" fill="none" stroke="#e4ffec" stroke-width=".87" stroke-linecap="round"/>
 </svg>
