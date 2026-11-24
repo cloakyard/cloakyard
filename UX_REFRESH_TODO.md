@@ -34,6 +34,7 @@ The separately requested Drop installer now uses Air.
 - [x] Inspect the board in light and dark at 390×844, 768×1024, 1280×800 and 1600×1000 in Chrome and WebKit. Compare reassembled layers to the master, toggle each layer and appearance, open both reference panels by keyboard, follow local SVG links and load the static gallery with scripting disabled. Text at 200% fits from 320 to 1600 px. Viewports were emulated.
 - [x] Implement the approved Room to grow, Folded report, Index card and Framed landscape marks in the four local production builds. Update the Cloakyard directory, optical favicons, three PWA install sets and screenshots, and all four social cards. [Artwork and verification](docs/air/evidence/web-logos-2026-11-24/README.md)
 - [x] Measure the logo on each public and editor shell and check the visible disc in both themes. Exercise individual tools, standalone workflows, library and batch states, recovery, popovers and update notices. [Logo size audit](docs/air/evidence/web-logos-2026-11-24/sizes/README.md)
+- [x] Export the Cloakyard mark from the settled homepage animation in both themes, verify its faces and positions, and regenerate the social card. [Visual comparison](docs/air/evidence/web-logos-2026-11-24/settled-cubes.png)
 
 ## Cross-app consistency audit — 2026-11-24
 
