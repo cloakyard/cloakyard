@@ -3,13 +3,16 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite-plus";
 
 export default defineConfig({
+  build: {
+    rollupOptions: { input: { main: "index.html", recovery: "404.html" } },
+  },
   plugins: [
     react(),
     {
       name: "air-home-asset-budgets",
       generateBundle(_options, bundle) {
         const chunks = Object.values(bundle).filter((asset) => asset.type === "chunk");
-        const entry = chunks.find((chunk) => chunk.isEntry);
+        const entry = chunks.find((chunk) => chunk.isEntry && chunk.name === "main");
         if (!entry || gzipSync(entry.code).byteLength > 85_000)
           this.error("Home entry exceeds 85 kB gzip");
       },

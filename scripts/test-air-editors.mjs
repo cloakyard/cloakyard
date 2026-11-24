@@ -72,7 +72,8 @@ try {
       for (const app of ["pdf", "img", "resume"]) {
         const p = await b.newPage({
           viewport: { width, height },
-          hasTouch: process.env.AIR_TOUCH === "1" || width < 1100,
+          hasTouch:
+            process.env.AIR_TOUCH === undefined ? width < 1100 : process.env.AIR_TOUCH === "1",
           colorScheme: theme,
           reducedMotion: "reduce",
           serviceWorkers: "block",
@@ -211,7 +212,11 @@ try {
         assert.equal(control.radius, "10px", `${app} field radius`);
         assert.equal(control.borderWidth, "1px", `${app} field contour`);
         assert.equal(control.shadow, "none", `${app} field shadow`);
-        assert.equal(control.size, metrics.coarse ? "16px" : "14px", `${app} field text`);
+        assert.equal(
+          control.size,
+          metrics.coarse || width <= 640 ? "16px" : "14px",
+          `${app} field text`,
+        );
         assert(control.rect.height >= (metrics.coarse ? 44 : 32), `${app} field target`);
         assert.equal(metrics.heading.length > 0, true, `${app} heading missing`);
         assert.equal(metrics.heading[0].weight, "500", `${app} heading weight`);

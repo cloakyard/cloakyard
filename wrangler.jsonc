@@ -4,7 +4,7 @@
   "compatibility_date": "2026-07-29",
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "single-page-application",
+    "not_found_handling": "404-page",
   },
   // Apex domain is bound here so `wrangler deploy` is the single source of truth.
   // Requires the cloakyard.com zone to already exist in this Cloudflare account.

@@ -42,6 +42,14 @@ summary:focus-visible {
 .site-shell {
   container-type: inline-size;
 }
+.yard-recovery {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100svh;
+}
+.yard-recovery main {
+  flex: 1;
+}
 .site-frame {
   max-width: calc(var(--air-page-max) + 64px);
   margin-inline: auto;
