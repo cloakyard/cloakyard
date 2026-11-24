@@ -1,58 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
-  <title id="title">Cloakyard · App cube</title>
-  <desc id="description">Six blue modules form one compact cube with an open corner.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="-126 -89 252 252" role="img" aria-labelledby="title description">
+  <title id="title">Cloakyard · Touchdown</title>
+  <desc id="description">Four cubes form a low platform. A fifth cube descends towards its back corner.</desc>
   <defs>
-    <view id="light" viewBox="0 0 64 64"/>
-    <view id="dark" viewBox="0 0 64 64"/>
-    <view id="ink" viewBox="0 0 64 64"/>
-    <view id="ground-light" viewBox="0 0 64 64"/>
-    <view id="ground-dark" viewBox="0 0 64 64"/>
-    <view id="tier-light" viewBox="0 0 64 64"/>
-    <view id="tier-dark" viewBox="0 0 64 64"/>
-    <view id="front-light" viewBox="0 0 64 64"/>
-    <view id="front-dark" viewBox="0 0 64 64"/>
+    <view id="light" viewBox="-126 -89 252 252"/>
+    <view id="dark" viewBox="-126 -89 252 252"/>
+    <view id="ink" viewBox="-126 -89 252 252"/>
+    <view id="ground-light" viewBox="-126 -89 252 252"/>
+    <view id="ground-dark" viewBox="-126 -89 252 252"/>
+    <view id="front-light" viewBox="-126 -89 252 252"/>
+    <view id="front-dark" viewBox="-126 -89 252 252"/>
+    <view id="arrival-light" viewBox="-126 -89 252 252"/>
+    <view id="arrival-dark" viewBox="-126 -89 252 252"/>
     <style>
       svg { color-scheme: light dark }
       svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
       svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
       svg:has(> g:target) > g:not(:target) { display: none }
       svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
-      svg:has(#tier-light:target, #tier-dark:target) > g:not(#tier) { display: none }
       svg:has(#front-light:target, #front-dark:target) > g:not(#front) { display: none }
-      [fill="#20489d"] { fill: light-dark(#20489d, #4778d2) }
-      [fill="#3569cf"] { fill: light-dark(#3569cf, #6699f0) }
-      [fill="#6494ef"] { fill: light-dark(#6494ef, #9bbaf8) }
-      svg:has(#ink:target) [data-ink] { fill: light-dark(#253346, #e6edf7) }
+      svg:has(#arrival-light:target, #arrival-dark:target) > g:not(#arrival) { display: none }
+      svg {
+        --roof: light-dark(#c7dbff, #9bd2ff);
+        --west: light-dark(#76a5fb, #578fc9);
+        --east: light-dark(#315fd3, #2879bc);
+        --join: light-dark(#eaf2ff, #183b5a);
+      }
+      svg:has(#ink:target) {
+        --roof: #fff;
+        --west: #fff;
+        --east: #202832;
+        --join: #202832;
+      }
+      .cell { stroke: var(--join); stroke-width: 1.6; stroke-linejoin: round }
+      .west { fill: var(--west) }
+      .east { fill: var(--east) }
+      .roof { fill: var(--roof) }
     </style>
+    <g id="block" class="cell">
+      <path class="west" d="M-48 24 0 48V104L-48 80Z"/>
+      <path class="east" d="M0 48 48 24V80L0 104Z"/>
+      <path class="roof" d="M0 0 48 24 0 48-48 24Z"/>
+    </g>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="Lower pair">
-    <g aria-label="Cube 1">
-      <path data-ink="" fill="#3569cf" d="M18.58 52.58 18.58 39.75 7.47 33.33 7.47 46.16Z"/>
-    </g>
-    <g aria-label="Cube 2">
-      <path data-ink="" fill="#20489d" d="M56.53 33.33 45.42 39.75 45.42 52.58 56.53 46.16Z"/>
-    </g>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Rear of platform">
+    <use href="#block" x="0.0" y="0.0"/>
+    <use href="#block" x="-51.0" y="25.5"/>
+    <use href="#block" x="51.0" y="25.5"/>
   </g>
-  <g id="tier" inkscape:groupmode="layer" inkscape:label="Upper tier">
-    <g aria-label="Cube 3">
-      <path data-ink="" fill="#6494ef" d="M32 16.5 43.11 10.09 32 3.68 20.89 10.09Z"/>
-    </g>
-    <g aria-label="Cube 4">
-      <path data-ink="" fill="#6494ef" d="M19.35 24.7 31.23 17.84 19.35 10.98 7.47 17.84 7.47 17.84Z"/>
-      <path data-ink="" fill="#3569cf" d="M19.35 24.7 7.47 17.84 7.47 31.56 19.35 38.41Z"/>
-      <path data-ink="" fill="#20489d" d="M19.35 24.7 19.35 38.41 31.23 31.56 31.23 17.84 31.23 17.84Z"/>
-    </g>
-    <g aria-label="Cube 5">
-      <path data-ink="" fill="#6494ef" d="M44.65 24.7 56.53 17.84 56.53 17.84 44.65 10.98 32.77 17.84 32.77 17.84Z"/>
-      <path data-ink="" fill="#3569cf" d="M44.65 24.7 32.77 17.84 32.77 31.56 44.65 38.41Z"/>
-      <path data-ink="" fill="#20489d" d="M44.65 24.7 44.65 38.41 56.53 31.56 56.53 17.84Z"/>
-    </g>
+  <g id="front" inkscape:groupmode="layer" inkscape:label="Front cube">
+    <use href="#block" x="0.0" y="51.0"/>
   </g>
-  <g id="front" inkscape:groupmode="layer" inkscape:label="Front module">
-    <g aria-label="Cube 6">
-      <path data-ink="" fill="#6494ef" d="M32 46.61 43.88 39.75 32 32.89 20.12 39.75Z"/>
-      <path data-ink="" fill="#3569cf" d="M32 46.61 20.12 39.75 20.12 53.47 32 60.32Z"/>
-      <path data-ink="" fill="#20489d" d="M32 46.61 32 60.32 43.88 53.47 43.88 39.75Z"/>
-    </g>
+  <g id="arrival" inkscape:groupmode="layer" inkscape:label="Arriving cube">
+    <use href="#block" x="-8.4" y="-79.6"/>
   </g>
 </svg>

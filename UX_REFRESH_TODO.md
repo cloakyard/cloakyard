@@ -27,8 +27,9 @@ The separately requested Drop installer now uses Air.
 
 ## Proposed web app icons — 2026-11-24
 
-- [x] Compare the shipping marks with flat, symbol-only proposals. Cloakyard’s Linked tiles retain the original arrangement. App cube groups six interchangeable modules, one for each directory app. Page stack and Page turn preserve PDF’s three document lines. The Resume variants retain its portrait and lines. The previous IMG landscape study is shown for context. Each new design has editable layers, a one-ink proof and a 16 px drawing. [Interactive comparisons](artwork/web-icons/index.html) · [Cloakyard and PDF proposals](artwork/web-icons/preview.png)
-- [x] Inspect the review board in light and dark at 390×844, 768×1024, 1280×800 and 1600×1000. In Chrome and WebKit, check every layer toggle, compare the reassembled pixels to each complete master, switch appearances, follow source links, operate the controls by keyboard and open the static gallery with scripting disabled. Text at 200% fits at widths from 320 to 1600 px. Viewports were emulated.
+- [x] Draw two Cloakyard proposals from the rendered homepage animation. **Room to grow** uses its settled arrangement of six cubes and the open seventh cell. **Touchdown** freezes the fifth cube in flight above four, at full ink so its silhouette holds at tab size. The board includes frames captured from the running animation.
+- [x] Draw two CloakPDF reports with text strokes and a ruled two-column table. **Folded report** uses overlapping sheets and a dog-ear. **Bound report** uses a cloth cover, paper edges and a ribbon, taking its cobalt and amber from the CloakTools macOS icon. Each proposal has separate editable layers, a one-ink proof and a 16 px drawing. [Review board](artwork/web-icons/index.html) · [Visual comparison](artwork/web-icons/preview.png)
+- [x] Inspect the board in light and dark at 390×844, 768×1024, 1280×800 and 1600×1000 in Chrome and WebKit. Compare reassembled layers to the master, toggle each layer and appearance, open both reference panels by keyboard, follow local SVG links and load the static gallery with scripting disabled. Text at 200% fits from 320 to 1600 px. Viewports were emulated.
 - [ ] User review of these concepts. Production identities, install assets and the Air contract retain their current revisions.
 
 ## Cross-app consistency audit — 2026-11-24

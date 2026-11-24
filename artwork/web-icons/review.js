@@ -1,38 +1,38 @@
 const studies = {
   cloakyard: {
     description:
-      "The three connected cells and detached tile retain the arrangement of the family mark. Filling the junction makes the overlap legible at tab size.",
+      "The landing animation settles with six solid cubes. The outlined seventh cell leaves a place for the next app.",
     layers: [
-      ["ground", "Blue field"],
-      ["linked", "Connected tiles"],
-      ["tile", "Detached tile"],
+      ["ground", "Four lower cubes"],
+      ["tier", "Two upper cubes"],
+      ["future", "Open cell"],
     ],
   },
   "cloakyard-cube": {
     description:
-      "Six identical modules represent the six apps in the directory. The corner opening reveals the assembly even in one ink.",
+      "The fifth cube descends towards the back of the four-cube platform. This pose comes from the landing animation just before the cube settles.",
     layers: [
-      ["ground", "Lower pair"],
-      ["tier", "Upper tier"],
-      ["front", "Front module"],
+      ["ground", "Rear of platform"],
+      ["front", "Front cube"],
+      ["arrival", "Arriving cube"],
     ],
   },
   "cloakpdf-stack": {
     description:
-      "Two offset page outlines take the place of the shield. The three lines keep the lengths and spacing of the existing PDF mark.",
+      "A blue backing sheet sets off the ivory stock and its folded corner. Three lines lead into a two-column table with a solid header.",
     layers: [
-      ["ground", "Blue field"],
-      ["back", "Rear sheet"],
-      ["page", "Printed sheet"],
+      ["ground", "Blue backing sheet"],
+      ["page", "Folded paper"],
+      ["print", "Printed lines and table"],
     ],
   },
   cloakpdf: {
     description:
-      "The three lines are cut through a solid page. The curved opening at the lower right reveals the turned corner and the sheet beneath it.",
+      "A cobalt cloth cover holds a ruled report with an amber bookmark. The exposed binding, stacked leaves and ribbon borrow their material palette from CloakTools on macOS.",
     layers: [
-      ["ground", "Lower page"],
-      ["page", "Printed page"],
-      ["curl-tip", "Paper turn"],
+      ["ground", "Cloth cover"],
+      ["page", "Leaves and ribbon"],
+      ["print", "Printed lines and table"],
     ],
   },
   cloakresume: {

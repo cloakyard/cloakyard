@@ -1,7 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title">
-  <title id="title">CloakPDF · Page stack</title>
-  <circle cx="8" cy="8" r="7.5" fill="#285bc8"/>
-  <path d="M3.4 5.2v6.85q0 .9.9.9h6.1" fill="none" stroke="#b6d4ff" stroke-width=".86"/>
-  <path d="M5.05 3.4h4.26l2.62 2.63v5.35H5.05Zm4.16.24v2.6h2.53" fill="none" stroke="#fff" stroke-width=".98" stroke-linejoin="round"/>
-  <path d="M6.28 7.25h4.08m-4.08 1.52h3.05m-3.05 1.49h2.06" stroke="#fff" stroke-width=".72" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
+  <title id="title">CloakPDF · Folded report at 16 pixels</title>
+  <desc id="description">A folded ivory sheet sits above a blue backing page. Three lines of print sit above a ruled two-column table.</desc>
+  <defs>
+    <view id="light" viewBox="0 0 16 16"/>
+    <view id="dark" viewBox="0 0 16 16"/>
+    <style>
+      svg { color-scheme: light dark }
+      svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
+      svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
+      svg {
+        --ink: light-dark(#163675, #183970);
+        --grid: light-dark(#335da5, #315995);
+        --leaf: light-dark(#fffef6, #f6f5ed);
+        --fold: light-dark(#b8cee4, #aec4de);
+        --crease: light-dark(#7c9ab9, #8ba6c3);
+        --cover: light-dark(#2253af, #1d447f);
+      }
+    </style>
+  </defs>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Backing sheet">
+    <rect x="1.5" y="2" width="11.5" height="13" rx="1.1" transform="rotate(-7 8 8)" fill="var(--cover)"/>
+  </g>
+  <g id="page" inkscape:groupmode="layer" inkscape:label="Folded sheet">
+    <path d="M3.5 1h7l3.5 3.5v10H3.5Z" fill="var(--leaf)" stroke="var(--crease)" stroke-width=".8"/>
+    <path d="M10.5 1v3.5H14" fill="var(--fold)" stroke="var(--crease)" stroke-width=".6"/>
+  </g>
+  <g id="print" inkscape:groupmode="layer" inkscape:label="Ink">
+    <path d="M5.5 4h3m-3 2H11" fill="none" stroke="var(--ink)" stroke-linecap="round"/>
+    <path d="M5.5 8h6.5v4H5.5ZM9.5 8v4m-4-2H12" stroke="var(--grid)" fill="none"/>
+  </g>
 </svg>

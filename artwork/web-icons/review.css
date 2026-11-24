@@ -276,3 +276,18 @@ input[type="checkbox"] {
     grid-template-columns: 1fr;
   }
 }
+.reference {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-block-start: 1rem;
+}
+.reference summary {
+  cursor: pointer;
+  padding-block: 0.65rem;
+}
+.reference img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-block-start: 0.25rem;
+}

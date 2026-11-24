@@ -1,39 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
-  <title id="title">Cloakyard · Linked tiles</title>
-  <desc id="description">Three connected cells and a detached square keep the family mark’s original arrangement. The shared cell and raised tile are solid.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="-119 -71 238 238" role="img" aria-labelledby="title description">
+  <title id="title">Cloakyard · Room to grow</title>
+  <desc id="description">Six cubes in the landing animation’s settled arrangement, with an outlined seventh cell on the upper right.</desc>
   <defs>
-    <view id="light" viewBox="0 0 64 64"/>
-    <view id="dark" viewBox="0 0 64 64"/>
-    <view id="ink" viewBox="0 0 64 64"/>
-    <view id="ground-light" viewBox="0 0 64 64"/>
-    <view id="ground-dark" viewBox="0 0 64 64"/>
-    <view id="linked-light" viewBox="0 0 64 64"/>
-    <view id="linked-dark" viewBox="0 0 64 64"/>
-    <view id="tile-light" viewBox="0 0 64 64"/>
-    <view id="tile-dark" viewBox="0 0 64 64"/>
+    <view id="light" viewBox="-119 -71 238 238"/>
+    <view id="dark" viewBox="-119 -71 238 238"/>
+    <view id="ink" viewBox="-119 -71 238 238"/>
+    <view id="ground-light" viewBox="-119 -71 238 238"/>
+    <view id="ground-dark" viewBox="-119 -71 238 238"/>
+    <view id="tier-light" viewBox="-119 -71 238 238"/>
+    <view id="tier-dark" viewBox="-119 -71 238 238"/>
+    <view id="future-light" viewBox="-119 -71 238 238"/>
+    <view id="future-dark" viewBox="-119 -71 238 238"/>
     <style>
       svg { color-scheme: light dark }
       svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
       svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
-      svg:has(> g:target) > g:not(:target) { display:none }
-      svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display:none }
-      svg:has(#linked-light:target, #linked-dark:target) > g:not(#linked) { display:none }
-      svg:has(#tile-light:target, #tile-dark:target) > g:not(#tile) { display:none }
-      [fill="#3465d5"] { fill:light-dark(#3465d5,#365fc0) }
-      svg:has(#ink:target) #ground circle { fill:#263446 }
-      svg:has(#ink:target) .face { fill:#fff }
-      svg:has(#ink:target) .return { fill:#263446 }
+      svg:has(> g:target) > g:not(:target) { display: none }
+      svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
+      svg:has(#tier-light:target, #tier-dark:target) > g:not(#tier) { display: none }
+      svg:has(#future-light:target, #future-dark:target) > g:not(#future) { display: none }
+      svg {
+        --roof: light-dark(#c7dbff, #9bd2ff);
+        --west: light-dark(#76a5fb, #578fc9);
+        --east: light-dark(#315fd3, #2879bc);
+        --join: light-dark(#eaf2ff, #183b5a);
+        --edge: light-dark(#7299d4, #679cc6);
+        --empty: light-dark(#f4f8ff, #25384e);
+      }
+      svg:has(#ink:target) {
+        --roof: #fff;
+        --west: #fff;
+        --east: #202832;
+        --join: #202832;
+        --edge: #202832;
+        --empty: #fff;
+      }
+      .cell { stroke: var(--join); stroke-width: 1.6; stroke-linejoin: round }
+      .west { fill: var(--west) }
+      .east { fill: var(--east) }
+      .roof { fill: var(--roof) }
+      .open { fill: var(--empty); stroke: var(--edge); stroke-width: 3.2; stroke-linejoin: round }
     </style>
+    <g id="block" class="cell">
+      <path class="west" d="M-48 24 0 48V104L-48 80Z"/>
+      <path class="east" d="M0 48 48 24V80L0 104Z"/>
+      <path class="roof" d="M0 0 48 24 0 48-48 24Z"/>
+    </g>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="Blue field">
-    <circle cx="32" cy="32" r="30" fill="#3465d5"/>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Four lower cubes">
+    <use href="#block" x="0.0" y="0.0"/>
+    <use href="#block" x="-51.0" y="25.5"/>
+    <use href="#block" x="51.0" y="25.5"/>
+    <use href="#block" x="0.0" y="51.0"/>
   </g>
-  <g id="linked" inkscape:groupmode="layer" inkscape:label="Connected tiles">
-    <path class="face" fill="#fff" fill-rule="evenodd" d="M19.4 21.8h9.2q1.65 0 1.65 1.65V33.6h9.5q2.1 0 2.1 2.1v8.5q0 3.9-3.9 3.9H20.2q-4.6 0-4.6-4.6V25.65q0-3.85 3.8-3.85ZM19 25.3v8.3h7.85v-8.3Zm11.25 11.7v7.65h7.86V37Z"/>
-    <path fill="#bed6ff" class="face" d="M18.96 36.97h7.9v7.72h-6.32q-1.58 0-1.58-1.61Z"/>
+  <g id="tier" inkscape:groupmode="layer" inkscape:label="Two upper cubes">
+    <use href="#block" x="0.0" y="-59.2"/>
+    <use href="#block" x="-51.0" y="-33.7"/>
   </g>
-  <g id="tile" inkscape:groupmode="layer" inkscape:label="Detached tile">
-    <path class="face" fill="#fff" d="M35.3 15.85h10.35q2 0 2 2v10.4q0 1.45-1.45 1.45h-10.9q-1.5 0-1.5-1.5V17.35q0-1.5 1.5-1.5Z"/>
-    <path class="return" fill="#bad3ff" d="m47.65 21.95-7.74 7.75h6.29q1.45 0 1.45-1.45Z"/>
+  <g id="future" inkscape:groupmode="layer" inkscape:label="Open cell">
+    <g class="open" transform="translate(51.0 -33.7)">
+      <path d="M0 0 48 24V80L0 104 -48 80V24Z"/>
+      <path fill="none" d="m-48 24 48 24 48-24M0 48v56"/>
+    </g>
   </g>
 </svg>
