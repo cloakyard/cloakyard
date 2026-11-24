@@ -20,9 +20,10 @@ Shared design commands:
 - `node scripts/check-air-portability.mjs` checks the independent bundle.
 - `node scripts/air-inventory.mjs` updates the surface list while preserving evidence.
 - `node scripts/test-air-editors.mjs` compares real PDF/IMG/Resume workspace controls, keyboard focus and dialogs in Chrome/WebKit at all eleven required sizes. Default/hover/focus appearances are checked against an isolated canonical Air reference; `AIR_PROFILES` can narrow a diagnostic run but does not certify the full matrix; supply `PLAYWRIGHT_MODULE`, `AIR_EDITOR_URLS` and `AIR_PDF_FIXTURE`. Pair it with the per-product all-tool, secondary-flow, edge-state and output suites. App comparisons cover every applicable view, not only public pages; maintain an explicit coverage ledger.
-  Set `AIR_TOUCH=1` when checking larger tablets; field sizing is verified against
-  the actual coarse-pointer state, independently of the viewport width.
+  Set `AIR_TOUCH=1` for a touch device or `AIR_TOUCH=0` for a mouse at any width.
+  Editable text uses the larger size on touch devices and at widths up to 640px.
 - `node scripts/test-air-family.mjs` compares built Yard/PDF/Drop/Resume/Roll/IMG/Tools public pages and secondary reading/recovery shells.
+- `node scripts/test-air-host-recovery.mjs` checks missing URLs at two path depths and follows the return link with JavaScript disabled. Supply `AIR_FAMILY_URLS` for the Workers previews or deployed origins and `PLAYWRIGHT_MODULE` for the browser driver.
 - `node scripts/test-air-growth.mjs` checks the homepage's finite SVG motion, static preferences, responsive layout and directory links against the production build.
 - `node scripts/test-air-landing-reveals.mjs` scrolls a built landing page in light and dark and checks the combined motion, reading order and navigation fallbacks. Set `AIR_PRODUCT` to the repository name (defaults to `cloakyard`), `SITE_URL`,
   `PLAYWRIGHT_MODULE` and `AIR_BROWSER` (chromium or webkit).
