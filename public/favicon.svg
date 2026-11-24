@@ -1,55 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description" data-logo-spec="cloakyard-mark-v2">
   <title id="title">Cloakyard</title>
-  <desc id="description">Six raised cubes share a blue enamel disc with an outlined seventh cell.</desc>
+  <desc id="description">The landing animation’s settled blue cubes and open next cell on an indigo disc.</desc>
   <defs>
     <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
-      <stop offset="0" stop-color="#96baff"/>
-      <stop offset=".47" stop-color="#4569d6"/>
-      <stop offset="1" stop-color="#263fa4"/>
+      <stop id="enamel-light" stop-color="#96baff"/>
+      <stop id="enamel-mid" offset=".47" stop-color="#4569d6"/>
+      <stop id="enamel-deep" offset="1" stop-color="#263fa4"/>
     </linearGradient>
-    <g id="block" stroke="#4f6fb1" stroke-width="4" stroke-linejoin="round">
-      <path d="M-48 24 0 48V104L-48 80Z" fill="#bed4fa"/>
-      <path d="M0 48 48 24V80L0 104Z" fill="#7f9fe3"/>
-      <path d="M0 0 48 24 0 48-48 24Z" fill="#f5f4ef"/>
-    </g>
-    <g id="enamel-face">
-      <circle cx="8" cy="8" r="7.5" fill="url(#enamel)"/>
-    </g>
-    <clipPath id="open-cell">
-      <path transform="translate(8 5.55) scale(.051) translate(51 -33.7)" d="M0 0 48 24V80L0 104 -48 80V24Z"/>
-    </clipPath>
+    <symbol id="solid" viewBox="-49 -1 98 106" overflow="visible" stroke-linejoin="round" stroke-width="1">
+      <path id="solid-0" d="M-48 24 0 48V104L-48 80Z" fill="#709cf9" stroke="#c0d3fc"/>
+      <path id="solid-1" d="M0 48 48 24V80L0 104Z" fill="#376ee6" stroke="#c0d3fc"/>
+      <path id="solid-2" d="M0 0 48 24 0 48-48 24Z" fill="#dfe9fe" stroke="#c0d3fc"/>
+    </symbol>
+    <symbol id="open" viewBox="-49 -1 98 106" overflow="visible" stroke-linejoin="round" stroke-width="6">
+      <path id="open-0" d="M-48 24 0 48V104L-48 80Z" fill="#f4f7fc" stroke="#c4d5fa"/>
+      <path id="open-1" d="M0 48 48 24V80L0 104Z" fill="#f4f7fc" stroke="#c4d5fa"/>
+      <path id="open-2" d="M0 0 48 24 0 48-48 24Z" fill="#f4f7fc" stroke="#c4d5fa"/>
+    </symbol>
     <style>
       @media (prefers-color-scheme: dark) {
-        [stop-color="#96baff"] { stop-color: #6b89cd }
-        [stop-color="#4569d6"] { stop-color: #364c91 }
-        [stop-color="#263fa4"] { stop-color: #23316b }
-        [stroke="#4f6fb1"] { stroke: #324e82 }
-        [fill="#bed4fa"] { fill: #a8cae9 }
-        [fill="#7f9fe3"] { fill: #80a2db }
-        [fill="#f5f4ef"] { fill: #eef5fa }
-        [stroke="#dce6ff"] { stroke: #c7dcf6 }
+        #enamel-light { stop-color: #6b89cd }
+        #enamel-mid { stop-color: #364c91 }
+        #enamel-deep { stop-color: #23316b }
+        #solid-0 { fill: #5795c1; stroke: #355269 }
+        #solid-1 { fill: #79c7fe; stroke: #355269 }
+        #solid-2 { fill: #283846; stroke: #355269 }
+        #open-0 { fill: #13171d; stroke: #2b4457 }
+        #open-1 { fill: #13171d; stroke: #2b4457 }
+        #open-2 { fill: #13171d; stroke: #2b4457 }
       }
     </style>
   </defs>
   <g id="disc">
-    <use href="#enamel-face"/>
+    <circle cx="8" cy="8" r="7.5" fill="url(#enamel)"/>
   </g>
   <g id="artwork">
-    <g id="ground" transform="translate(8 5.55) scale(.051)">
-      <use href="#block" x="0.0" y="0.0"/>
-      <use href="#block" x="-51.0" y="25.5"/>
-      <use href="#block" x="51.0" y="25.5"/>
-      <use href="#block" x="0.0" y="51.0"/>
-    </g>
-    <g id="tier" transform="translate(8 5.55) scale(.051)">
-      <use href="#block" x="0.0" y="-59.2"/>
-      <use href="#block" x="-51.0" y="-33.7"/>
-    </g>
-    <g id="future">
-      <use href="#enamel-face" clip-path="url(#open-cell)"/>
-      <g transform="translate(8 5.55) scale(.051) translate(51 -33.7)" fill="none" stroke="#dce6ff" stroke-width="6.8" stroke-linejoin="round">
-        <path d="M0 0 48 24V80L0 104 -48 80V24ZM-48 24 0 48 48 24M0 48v56"/>
-      </g>
-    </g>
+    <use href="#solid" x="5.509" y="5.509" width="4.981" height="5.396"/>
+    <use href="#solid" x="2.915" y="6.807" width="4.981" height="5.396"/>
+    <use href="#solid" x="8.104" y="6.807" width="4.981" height="5.396"/>
+    <use href="#solid" x="5.509" y="8.104" width="4.981" height="5.396"/>
+    <use href="#solid" x="5.509" y="2.5" width="4.981" height="5.396"/>
+    <use href="#solid" x="2.915" y="3.797" width="4.981" height="5.396"/>
+    <use href="#open" x="8.104" y="3.797" width="4.981" height="5.396"/>
   </g>
 </svg>

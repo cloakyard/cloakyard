@@ -103,7 +103,8 @@ Read [DESIGN.md](DESIGN.md) before UI changes. The [refresh ledger](UX_REFRESH_T
 ```text
 cloakyard/
 ├── public/
-│   ├── cloakyard-mark.svg     # Primary brand mark and favicon
+│   ├── cloakyard-mark.svg     # Circular mark from the settled landing animation
+│   ├── favicon.svg            # Browser-tab drawing
 │   ├── og.png                 # 1200×630 social preview
 │   ├── robots.txt
 │   └── sitemap.xml

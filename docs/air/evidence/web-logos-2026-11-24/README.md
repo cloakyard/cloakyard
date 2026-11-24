@@ -1,6 +1,6 @@
 # Web app logos
 
-The [four production marks](marks.png) use the circular field from the CloakIMG study. Each site has an independent 16 px browser-tab drawing. Cloakyard displays byte-identical copies of the three app marks in its [Web apps directory](directory.png).
+The [four marks in the initial release](marks.png) use the circular field from the CloakIMG study. Each site has an independent 16 px browser-tab drawing. Cloakyard displays byte-identical copies of the three app marks in its [Web apps directory](directory.png).
 
 | Site        | Approved drawing                                                             | Social card                 |
 | ----------- | ---------------------------------------------------------------------------- | --------------------------- |
@@ -9,7 +9,7 @@ The [four production marks](marks.png) use the circular field from the CloakIMG 
 | CloakResume | A white index card with three tabs that reuse one outline at equal intervals | `public/icons/og-image.png` |
 | CloakIMG    | A raised frame, overlapping coral ridges and a sun                           | `public/icons/og-image.png` |
 
-The [four 1200×630 social cards](social-cards.png) use the full mark. Each app also ships a separate opaque launcher master and regenerated install screenshots.
+The [four initial 1200×630 social cards](social-cards.png) use the full mark. Each app also ships a separate opaque launcher master and regenerated install screenshots.
 
 ## Local production verification
 
@@ -24,3 +24,7 @@ The [four 1200×630 social cards](social-cards.png) use the full mark. Each app 
 All four repositories passed their production builds, formatting, lint, Air design and portability checks. The suites passed 16 tests in Cloakyard, 474 in CloakPDF, 375 in CloakResume and 501 in CloakIMG. Cloakyard’s landing-animation browser checks covered 44 layouts, 22 arrivals and four journeys. CloakPDF’s browser update checks covered 44 deferred-update layouts. CloakIMG’s mask audit found all 68,382 foreground pixels inside the safe circle.
 
 The [logo size audit](sizes/README.md) covers the public screens, editor tools, secondary workspaces, overlays and recovery states.
+
+## Cloakyard animation match
+
+The [settled frame and current mark](settled-cubes.png) show the homepage artwork beside the 64-unit mark, the 36 px header and the separate 16 px tab in both themes. The export uses the same face paths, stacking order, colours and positions as the seven cells on the homepage. In 32 Chrome and WebKit comparisons across phone, tablet, laptop and desktop, cell placement differed by less than 0.002 SVG units and the sRGB paint values by at most one channel step. The homepage animation passed its 44 static layouts, 22 arrivals and four navigation journeys.
