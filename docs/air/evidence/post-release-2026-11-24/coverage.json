@@ -1,0 +1,1778 @@
+{
+  "date": "2026-11-24",
+  "themes": ["light", "dark"],
+  "inspectionViewports": [
+    [390, 844],
+    [768, 1024],
+    [1280, 720],
+    [1440, 900]
+  ],
+  "browser": "Chrome/158.0.8127.37",
+  "public": {
+    "home": {
+      "cloakdrop": 108,
+      "cloakimg": 108,
+      "cloakpdf": 108,
+      "cloakresume": 108,
+      "cloakroll": 108,
+      "cloaktools": 108,
+      "cloakyard": 108
+    },
+    "secondary": {
+      "cloakdrop": 48,
+      "cloakimg": 48,
+      "cloakpdf": 72,
+      "cloakresume": 48,
+      "cloakroll": 48,
+      "cloaktools": 48,
+      "cloakyard": 24
+    },
+    "interactions": 454,
+    "errors": [],
+    "failures": [],
+    "privacy": {
+      "drop": 68,
+      "img": 68,
+      "pdf": 68,
+      "resume": 68,
+      "roll": 68,
+      "tools": 68,
+      "yard": 68
+    },
+    "privacyJourneys": 26,
+    "noScriptEntries": {
+      "drop": 16,
+      "img": 16,
+      "pdf": 16,
+      "resume": 16,
+      "roll": 16,
+      "tools": 16,
+      "yard": 16
+    },
+    "loadedFailedAndRecovered": {
+      "img": 8,
+      "resume": 8
+    },
+    "semanticsViews": 48,
+    "invalidReferences": 0
+  },
+  "links": {
+    "cloakdrop": {
+      "/": 116,
+      "/404.html": 88,
+      "/privacy/": 152
+    },
+    "cloakroll": {
+      "/": 112,
+      "/404.html": 88,
+      "/privacy/": 112
+    },
+    "cloaktools": {
+      "/": 120,
+      "/404.html": 88,
+      "/install/": 236,
+      "/license/": 88,
+      "/privacy/": 172,
+      "/source/": 136,
+      "/support/": 240
+    }
+  },
+  "motion": {
+    "cloakyard": {
+      "chromium": 44,
+      "webkit": 44
+    },
+    "cloakpdf": {
+      "chromium": 44,
+      "webkit": 44
+    },
+    "cloakimg": {
+      "chromium": 44,
+      "webkit": 44
+    },
+    "cloakresume": {
+      "chromium": 44,
+      "webkit": 44
+    },
+    "cloakdrop": {
+      "chromium": 44,
+      "webkit": 44
+    },
+    "cloakroll": {
+      "chromium": 44,
+      "webkit": 44
+    },
+    "cloaktools": {
+      "chromium": 44,
+      "webkit": 44
+    }
+  },
+  "editorControls": {
+    "workspace-chrome-release": {
+      "views": 66,
+      "widths": [320, 375, 390, 430, 768, 844, 1024, 1280, 1366, 1440, 1920],
+      "states": 858,
+      "differences": 0,
+      "errors": []
+    },
+    "workspace-webkit-release": {
+      "views": 66,
+      "widths": [320, 375, 390, 430, 768, 844, 1024, 1280, 1366, 1440, 1920],
+      "states": 858,
+      "differences": 0,
+      "errors": []
+    },
+    "hybrid-chromium-0": {
+      "views": 18,
+      "widths": [390, 768, 1280],
+      "states": 234,
+      "differences": 0,
+      "errors": []
+    },
+    "hybrid-chromium-1": {
+      "views": 18,
+      "widths": [390, 768, 1280],
+      "states": 234,
+      "differences": 0,
+      "errors": []
+    },
+    "hybrid-webkit-0": {
+      "views": 18,
+      "widths": [390, 768, 1280],
+      "states": 234,
+      "differences": 0,
+      "errors": []
+    },
+    "hybrid-webkit-1": {
+      "views": 18,
+      "widths": [390, 768, 1280],
+      "states": 234,
+      "differences": 0,
+      "errors": []
+    }
+  },
+  "editorFields": {
+    "before": [
+      {
+        "app": "pdf",
+        "width": 390,
+        "height": 844,
+        "touch": false,
+        "coarse": false,
+        "font": "16px",
+        "fieldHeight": 42
+      },
+      {
+        "app": "pdf",
+        "width": 390,
+        "height": 844,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 390,
+        "height": 844,
+        "touch": false,
+        "coarse": false,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 390,
+        "height": 844,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 390,
+        "height": 844,
+        "touch": false,
+        "coarse": false,
+        "font": "16px",
+        "fieldHeight": 42
+      },
+      {
+        "app": "resume",
+        "width": 390,
+        "height": 844,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 768,
+        "height": 1024,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 768,
+        "height": 1024,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 768,
+        "height": 1024,
+        "touch": false,
+        "coarse": false,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 768,
+        "height": 1024,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 768,
+        "height": 1024,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 768,
+        "height": 1024,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1023,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1023,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1023,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1023,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1023,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1023,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1024,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1024,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1024,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1179,
+        "height": 800,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1179,
+        "height": 800,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1179,
+        "height": 800,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1179,
+        "height": 800,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1179,
+        "height": 800,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1179,
+        "height": 800,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      }
+    ],
+    "after": [
+      {
+        "app": "pdf",
+        "width": 390,
+        "height": 844,
+        "touch": false,
+        "coarse": false,
+        "font": "16px",
+        "fieldHeight": 42
+      },
+      {
+        "app": "pdf",
+        "width": 390,
+        "height": 844,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 390,
+        "height": 844,
+        "touch": false,
+        "coarse": false,
+        "font": "16px",
+        "fieldHeight": 42
+      },
+      {
+        "app": "img",
+        "width": 390,
+        "height": 844,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 390,
+        "height": 844,
+        "touch": false,
+        "coarse": false,
+        "font": "16px",
+        "fieldHeight": 42
+      },
+      {
+        "app": "resume",
+        "width": 390,
+        "height": 844,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 768,
+        "height": 1024,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 768,
+        "height": 1024,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 768,
+        "height": 1024,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 768,
+        "height": 1024,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 768,
+        "height": 1024,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 768,
+        "height": 1024,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1023,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1023,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1023,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1023,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1023,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1023,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1024,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1024,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1024,
+        "height": 768,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1179,
+        "height": 800,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1179,
+        "height": 800,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1179,
+        "height": 800,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1179,
+        "height": 800,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1179,
+        "height": 800,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1179,
+        "height": 800,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "pdf",
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "pdf",
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "img",
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "img",
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      },
+      {
+        "app": "resume",
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "coarse": false,
+        "font": "14px",
+        "fieldHeight": 40
+      },
+      {
+        "app": "resume",
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "coarse": true,
+        "font": "16px",
+        "fieldHeight": 44
+      }
+    ]
+  },
+  "overlays": {
+    "dialogs": {
+      "img": 88,
+      "pdf": 88,
+      "resume": 88
+    },
+    "notices": {
+      "offline": 132,
+      "update": 132,
+      "updating": 132
+    },
+    "integratedUpdateViews": 36,
+    "blockedControls": 0
+  },
+  "pdf": {
+    "editorTools": {
+      "add-bookmarks": 8,
+      "add-page-numbers": 8,
+      "annotate-pdf": 8,
+      "auto-fill": 8,
+      "bates-numbering": 8,
+      "crop-pages": 8,
+      "file-attachment": 8,
+      "fill-pdf-form": 8,
+      "find-act": 8,
+      "header-footer": 8,
+      "metadata": 8,
+      "nup-pages": 8,
+      "ocr": 8,
+      "organize-pages": 8,
+      "pdf-scrub": 8,
+      "qr-stamp": 8,
+      "redact-pdf": 8,
+      "select-text": 8,
+      "signature": 8,
+      "smart-erase": 8,
+      "stamp-pdf": 8,
+      "strip-furniture": 8
+    },
+    "collections": {
+      "organize": 44,
+      "overview": 44
+    },
+    "standalone": {
+      "ask-pdf": {
+        "count": 20,
+        "states": ["empty"]
+      },
+      "compare-pdf": {
+        "count": 40,
+        "states": ["empty", "selected"]
+      },
+      "digital-signature": {
+        "count": 40,
+        "states": ["empty", "selected"]
+      },
+      "extract-images": {
+        "count": 40,
+        "states": ["empty", "selected"]
+      },
+      "images-to-pdf": {
+        "count": 40,
+        "states": ["empty", "selected"]
+      },
+      "merge": {
+        "count": 40,
+        "states": ["empty", "selected"]
+      },
+      "pdf-password": {
+        "count": 40,
+        "states": ["empty", "selected"]
+      }
+    },
+    "chatHarness": {
+      "answer": 64,
+      "answer-error": 64,
+      "empty": 64,
+      "index-error": 64,
+      "indexing": 64,
+      "long-content": 64,
+      "no-text": 64
+    },
+    "actionCases": 16
+  },
+  "image": {
+    "inspectors": {
+      "Adjust": {
+        "count": 20,
+        "states": ["adjusted", "initial"]
+      },
+      "Border": {
+        "count": 20,
+        "states": ["aspect", "initial"]
+      },
+      "Color picker": {
+        "count": 20,
+        "states": ["initial", "palette"]
+      },
+      "Crop & rotate": {
+        "count": 20,
+        "states": ["initial", "square-flipped"]
+      },
+      "Draw": {
+        "count": 20,
+        "states": ["eraser", "initial"]
+      },
+      "Emoji": {
+        "count": 20,
+        "states": ["custom", "initial"]
+      },
+      "Filters": {
+        "count": 20,
+        "states": ["initial", "selected"]
+      },
+      "Frame": {
+        "count": 20,
+        "states": ["initial", "polaroid"]
+      },
+      "ID photo sheet": {
+        "count": 30,
+        "states": ["custom", "initial", "paper"]
+      },
+      "Levels": {
+        "count": 20,
+        "states": ["adjusted", "initial"]
+      },
+      "Move": {
+        "count": 10,
+        "states": ["initial"]
+      },
+      "Pen": {
+        "count": 20,
+        "states": ["fill", "initial"]
+      },
+      "Perspective": {
+        "count": 10,
+        "states": ["initial"]
+      },
+      "Place image": {
+        "count": 20,
+        "states": ["image-selected", "initial"]
+      },
+      "Portrait blur": {
+        "count": 40,
+        "states": ["alternate-lens", "consent-background", "initial", "whole"]
+      },
+      "Redact": {
+        "count": 20,
+        "states": ["brush-inspector", "initial"]
+      },
+      "Relight": {
+        "count": 20,
+        "states": ["consent-background", "initial"]
+      },
+      "Remove BG": {
+        "count": 50,
+        "states": ["background-fill", "chroma", "chroma-picking", "chroma-sampled", "initial"]
+      },
+      "Resize": {
+        "count": 20,
+        "states": ["initial", "unlocked"]
+      },
+      "Selective color": {
+        "count": 20,
+        "states": ["initial", "magenta"]
+      },
+      "Shapes": {
+        "count": 40,
+        "states": ["initial", "polygon", "rounded-rectangle", "star"]
+      },
+      "Spot heal": {
+        "count": 20,
+        "states": ["brush", "initial"]
+      },
+      "Tap to fix": {
+        "count": 20,
+        "states": ["initial", "target"]
+      },
+      "Text": {
+        "count": 20,
+        "states": ["initial", "outline-curve"]
+      },
+      "Time of day": {
+        "count": 20,
+        "states": ["golden", "initial"]
+      },
+      "Watermark": {
+        "count": 40,
+        "states": ["image-empty", "image-ready", "initial", "same-image-reselected"]
+      }
+    },
+    "batch": {
+      "completed": 44,
+      "empty": 44,
+      "queued": 44,
+      "recipe-expanded": 44
+    },
+    "feedback": 10
+  },
+  "resume": {
+    "sections": {
+      "Awards": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Certifications": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Contact": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Custom": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Education": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Experience": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Interests & tools": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Languages": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Profile": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Projects": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Quick stats": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Skills": {
+        "count": 128,
+        "states": ["empty", "populated"]
+      },
+      "Target JD": {
+        "count": 130,
+        "states": ["empty", "populated"]
+      }
+    },
+    "library": {
+      "filtered": 128,
+      "forced-colours-keyboard": 2,
+      "gallery": 128,
+      "no-results": 128
+    },
+    "review": {
+      "insights": 192,
+      "keywords": 192,
+      "overview": 192,
+      "parse": 192,
+      "summary": 192
+    },
+    "options": 192,
+    "templates": {
+      "academic": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "ats-plain": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "ats-professional": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "aurora": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "bauhaus": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "classic-impact": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "classic-sidebar": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "compact-timeline": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "executive-serif": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "gradient-header": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "horizon": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "ledger": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "minimalist": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "modern-minimal": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "monograph": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "prism": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      },
+      "typographic": {
+        "count": 10,
+        "states": ["compact", "long-fields", "sample-241", "sample-987", "sparse"]
+      }
+    }
+  },
+  "keyboardScroll": {
+    "before": [
+      {
+        "engine": "chromium",
+        "w": 390,
+        "theme": "light",
+        "focused": true,
+        "after": 296
+      },
+      {
+        "engine": "chromium",
+        "w": 390,
+        "theme": "dark",
+        "focused": true,
+        "after": 296
+      },
+      {
+        "engine": "chromium",
+        "w": 768,
+        "theme": "light",
+        "focused": true,
+        "after": 386
+      },
+      {
+        "engine": "chromium",
+        "w": 768,
+        "theme": "dark",
+        "focused": true,
+        "after": 386
+      },
+      {
+        "engine": "chromium",
+        "w": 1280,
+        "theme": "light",
+        "focused": true,
+        "after": 567
+      },
+      {
+        "engine": "chromium",
+        "w": 1280,
+        "theme": "dark",
+        "focused": true,
+        "after": 567
+      },
+      {
+        "engine": "chromium",
+        "w": 1440,
+        "theme": "light",
+        "focused": true,
+        "after": 412
+      },
+      {
+        "engine": "chromium",
+        "w": 1440,
+        "theme": "dark",
+        "focused": true,
+        "after": 412
+      },
+      {
+        "engine": "webkit",
+        "w": 390,
+        "theme": "light",
+        "focused": false,
+        "after": 0
+      },
+      {
+        "engine": "webkit",
+        "w": 390,
+        "theme": "dark",
+        "focused": false,
+        "after": 0
+      },
+      {
+        "engine": "webkit",
+        "w": 768,
+        "theme": "light",
+        "focused": false,
+        "after": 0
+      },
+      {
+        "engine": "webkit",
+        "w": 768,
+        "theme": "dark",
+        "focused": false,
+        "after": 0
+      },
+      {
+        "engine": "webkit",
+        "w": 1280,
+        "theme": "light",
+        "focused": false,
+        "after": 0
+      },
+      {
+        "engine": "webkit",
+        "w": 1280,
+        "theme": "dark",
+        "focused": false,
+        "after": 0
+      },
+      {
+        "engine": "webkit",
+        "w": 1440,
+        "theme": "light",
+        "focused": false,
+        "after": 0
+      },
+      {
+        "engine": "webkit",
+        "w": 1440,
+        "theme": "dark",
+        "focused": false,
+        "after": 0
+      }
+    ],
+    "production": [
+      {
+        "engine": "chromium",
+        "w": 390,
+        "theme": "light",
+        "focused": true,
+        "after": 296
+      },
+      {
+        "engine": "chromium",
+        "w": 390,
+        "theme": "dark",
+        "focused": true,
+        "after": 296
+      },
+      {
+        "engine": "chromium",
+        "w": 768,
+        "theme": "light",
+        "focused": true,
+        "after": 386
+      },
+      {
+        "engine": "chromium",
+        "w": 768,
+        "theme": "dark",
+        "focused": true,
+        "after": 386
+      },
+      {
+        "engine": "chromium",
+        "w": 1280,
+        "theme": "light",
+        "focused": true,
+        "after": 567
+      },
+      {
+        "engine": "chromium",
+        "w": 1280,
+        "theme": "dark",
+        "focused": true,
+        "after": 567
+      },
+      {
+        "engine": "chromium",
+        "w": 1440,
+        "theme": "light",
+        "focused": true,
+        "after": 412
+      },
+      {
+        "engine": "chromium",
+        "w": 1440,
+        "theme": "dark",
+        "focused": true,
+        "after": 412
+      },
+      {
+        "engine": "webkit",
+        "w": 390,
+        "theme": "light",
+        "focused": true,
+        "after": 288
+      },
+      {
+        "engine": "webkit",
+        "w": 390,
+        "theme": "dark",
+        "focused": true,
+        "after": 288
+      },
+      {
+        "engine": "webkit",
+        "w": 768,
+        "theme": "light",
+        "focused": true,
+        "after": 378
+      },
+      {
+        "engine": "webkit",
+        "w": 768,
+        "theme": "dark",
+        "focused": true,
+        "after": 378
+      },
+      {
+        "engine": "webkit",
+        "w": 1280,
+        "theme": "light",
+        "focused": true,
+        "after": 559
+      },
+      {
+        "engine": "webkit",
+        "w": 1280,
+        "theme": "dark",
+        "focused": true,
+        "after": 559
+      },
+      {
+        "engine": "webkit",
+        "w": 1440,
+        "theme": "light",
+        "focused": true,
+        "after": 412
+      },
+      {
+        "engine": "webkit",
+        "w": 1440,
+        "theme": "dark",
+        "focused": true,
+        "after": 412
+      }
+    ]
+  },
+  "manualContrast": [
+    {
+      "engine": "chromium",
+      "width": 390,
+      "unselectedText": [82, 91, 104],
+      "sampledSurface": [240, 242, 246],
+      "darkestRenderedPixel": [82, 91, 104],
+      "contrast": 6.13,
+      "automatedReading": 2.37
+    },
+    {
+      "engine": "chromium",
+      "width": 768,
+      "unselectedText": [82, 91, 104],
+      "sampledSurface": [240, 242, 246],
+      "darkestRenderedPixel": [82, 91, 104],
+      "contrast": 6.13,
+      "automatedReading": 2.37
+    },
+    {
+      "engine": "webkit",
+      "width": 390,
+      "unselectedText": [82, 91, 104],
+      "sampledSurface": [240, 242, 246],
+      "darkestRenderedPixel": [82, 91, 104],
+      "contrast": 6.13,
+      "automatedReading": 2.37
+    },
+    {
+      "engine": "webkit",
+      "width": 768,
+      "unselectedText": [82, 91, 104],
+      "sampledSurface": [240, 242, 246],
+      "darkestRenderedPixel": [82, 91, 104],
+      "contrast": 6.13,
+      "automatedReading": 2.37
+    }
+  ],
+  "liveAccessibility": {
+    "before": {
+      "views": 168,
+      "overflows": 0,
+      "byApp": {
+        "yard": {
+          "views": {
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "pdf": {
+          "views": {
+            "dialog": 8,
+            "editor": 8,
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "img": {
+          "views": {
+            "dialog": 8,
+            "editor": 8,
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "resume": {
+          "views": {
+            "dialog": 8,
+            "editor": 8,
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": [
+            {
+              "view": "editor",
+              "width": 390,
+              "theme": "light",
+              "rules": ["scrollable-region-focusable"]
+            },
+            {
+              "view": "dialog",
+              "width": 390,
+              "theme": "light",
+              "rules": ["color-contrast"]
+            },
+            {
+              "view": "editor",
+              "width": 390,
+              "theme": "dark",
+              "rules": ["scrollable-region-focusable"]
+            },
+            {
+              "view": "editor",
+              "width": 768,
+              "theme": "light",
+              "rules": ["scrollable-region-focusable"]
+            },
+            {
+              "view": "dialog",
+              "width": 768,
+              "theme": "light",
+              "rules": ["color-contrast"]
+            },
+            {
+              "view": "editor",
+              "width": 768,
+              "theme": "dark",
+              "rules": ["scrollable-region-focusable"]
+            },
+            {
+              "view": "editor",
+              "width": 1280,
+              "theme": "light",
+              "rules": ["scrollable-region-focusable"]
+            },
+            {
+              "view": "editor",
+              "width": 1280,
+              "theme": "dark",
+              "rules": ["scrollable-region-focusable"]
+            },
+            {
+              "view": "editor",
+              "width": 1440,
+              "theme": "light",
+              "rules": ["scrollable-region-focusable"]
+            },
+            {
+              "view": "editor",
+              "width": 1440,
+              "theme": "dark",
+              "rules": ["scrollable-region-focusable"]
+            }
+          ]
+        },
+        "drop": {
+          "views": {
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "roll": {
+          "views": {
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "tools": {
+          "views": {
+            "home": 8,
+            "install": 8,
+            "privacy": 8
+          },
+          "findings": []
+        }
+      }
+    },
+    "final": {
+      "views": 168,
+      "overflows": 0,
+      "byApp": {
+        "yard": {
+          "views": {
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "pdf": {
+          "views": {
+            "dialog": 8,
+            "editor": 8,
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "img": {
+          "views": {
+            "dialog": 8,
+            "editor": 8,
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "resume": {
+          "views": {
+            "dialog": 8,
+            "editor": 8,
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": [
+            {
+              "view": "dialog",
+              "width": 390,
+              "theme": "light",
+              "rules": ["color-contrast"]
+            },
+            {
+              "view": "dialog",
+              "width": 768,
+              "theme": "light",
+              "rules": ["color-contrast"]
+            }
+          ]
+        },
+        "drop": {
+          "views": {
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "roll": {
+          "views": {
+            "home": 8,
+            "privacy": 8
+          },
+          "findings": []
+        },
+        "tools": {
+          "views": {
+            "home": 8,
+            "install": 8,
+            "privacy": 8
+          },
+          "findings": []
+        }
+      }
+    }
+  },
+  "productionRecovery": {
+    "yard": {
+      "before": 200,
+      "after": [404],
+      "deepLinksAndReturn": "passed"
+    },
+    "pdf": {
+      "before": 404,
+      "after": [404],
+      "deepLinksAndReturn": "passed"
+    },
+    "img": {
+      "before": 200,
+      "after": [404],
+      "deepLinksAndReturn": "passed"
+    },
+    "resume": {
+      "before": 404,
+      "after": [404],
+      "deepLinksAndReturn": "passed"
+    },
+    "drop": {
+      "before": 404,
+      "after": [404],
+      "deepLinksAndReturn": "passed"
+    },
+    "roll": {
+      "before": 404,
+      "after": [404],
+      "deepLinksAndReturn": "passed"
+    },
+    "tools": {
+      "before": 404,
+      "after": [404],
+      "deepLinksAndReturn": "passed"
+    }
+  },
+  "workerRoutes": {
+    "browserAndNoScriptCases": 64,
+    "installedImageWorker": [
+      {
+        "app": "img",
+        "engine": "chromium",
+        "serviceWorker": true,
+        "path": "/missing-with-worker-20261124",
+        "state": "online",
+        "status": 404,
+        "h1": "Page not found."
+      },
+      {
+        "app": "img",
+        "engine": "chromium",
+        "serviceWorker": true,
+        "path": "/privacy/",
+        "state": "online",
+        "status": 200,
+        "h1": "Privacy policy"
+      },
+      {
+        "app": "img",
+        "engine": "chromium",
+        "serviceWorker": true,
+        "path": "/?text=document",
+        "state": "offline",
+        "status": 200,
+        "h1": "Your photos.\nYour way."
+      },
+      {
+        "app": "img",
+        "engine": "chromium",
+        "serviceWorker": true,
+        "path": "/privacy/",
+        "state": "offline",
+        "status": 200,
+        "h1": "Privacy policy"
+      },
+      {
+        "app": "img",
+        "state": "offline",
+        "action": "open image from cached share entry",
+        "success": true
+      }
+    ]
+  },
+  "exportChecks": {
+    "byEditor": {
+      "img": 16,
+      "pdf": 16,
+      "resume": 16
+    },
+    "outputLog": [
+      "pdf light multipage_edited.pdf 12646 255044462d312e330a25938c",
+      "pdf dark multipage_edited.pdf 12646 255044462d312e330a25938c",
+      "img light orange.webp 38882 52494646da97000057454250",
+      "img dark orange.webp 38882 52494646da97000057454250",
+      "resume light jordan-morgan-2026-11-24.pdf 52355 255044462d312e330a25badf",
+      "resume dark jordan-morgan-2026-11-24.pdf 52355 255044462d312e330a25badf"
+    ]
+  },
+  "deployedAssets": {
+    "cloakyard": {
+      "sha256Matches": 2,
+      "entryMatch": true,
+      "release": "26195c2c84e40dbe385ff6c2caba9e4e99098be1"
+    },
+    "cloakpdf": {
+      "sha256Matches": 71,
+      "entryMatch": true,
+      "release": "733b1de2b0510dcfe645e4cd14d8678daa3f9907"
+    },
+    "cloakimg": {
+      "sha256Matches": 67,
+      "entryMatch": true,
+      "release": "17e8788e5a373e90e4a89d573d40ba4e8dfd2eb7"
+    },
+    "cloakresume": {
+      "sha256Matches": 36,
+      "entryMatch": true,
+      "release": "a91d83921ce447f89769777c256575ea85d9b902"
+    },
+    "cloakdrop": {
+      "sha256Matches": 2,
+      "entryMatch": true,
+      "release": "48f4bc22d071734c854119c15e89b7a42e01b195"
+    },
+    "cloakroll": {
+      "sha256Matches": 1,
+      "entryMatch": true,
+      "release": "ba99ab886db58055d59d5889fac6f6d9e8f92b7f"
+    },
+    "cloaktools": {
+      "sha256Matches": 1,
+      "entryMatch": true,
+      "release": "fa7bbbb25e912b18d70dd83dce985808248cfd09"
+    }
+  },
+  "dependencies": {
+    "declarations": 106,
+    "directUpdates": {
+      "lucide-react": "1.79.0",
+      "@langchain/core": "1.5.1"
+    },
+    "astroTypescript": "6.0.3",
+    "knownPackageAuditFindings": 0
+  },
+  "firefoxPublic": {
+    "light": {
+      "browser": "firefox/160.0.1",
+      "homeViews": 378,
+      "secondaryViews": 168,
+      "interactions": 227,
+      "failures": [],
+      "errors": []
+    },
+    "dark": {
+      "browser": "firefox/160.0.1",
+      "homeViews": 378,
+      "secondaryViews": 168,
+      "interactions": 227,
+      "failures": [],
+      "errors": []
+    }
+  }
+}
