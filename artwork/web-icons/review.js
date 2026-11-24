@@ -3,6 +3,7 @@ const studies = {
     description:
       "The landing animation settles with six solid cubes. The outlined seventh cell leaves a place for the next app.",
     layers: [
+      ["disc", "Enamel disc"],
       ["ground", "Four lower cubes"],
       ["tier", "Two upper cubes"],
       ["future", "Open cell"],
@@ -12,6 +13,7 @@ const studies = {
     description:
       "The fifth cube descends towards the back of the four-cube platform. This pose comes from the landing animation just before the cube settles.",
     layers: [
+      ["disc", "Enamel disc"],
       ["ground", "Rear of platform"],
       ["front", "Front cube"],
       ["arrival", "Arriving cube"],
@@ -21,6 +23,7 @@ const studies = {
     description:
       "A blue backing sheet sets off the ivory stock and its folded corner. Three lines lead into a two-column table with a solid header.",
     layers: [
+      ["disc", "Enamel disc"],
       ["ground", "Blue backing sheet"],
       ["page", "Folded paper"],
       ["print", "Printed lines and table"],
@@ -30,6 +33,7 @@ const studies = {
     description:
       "A cobalt cloth cover holds a ruled report with an amber bookmark. The exposed binding, stacked leaves and ribbon borrow their material palette from CloakTools on macOS.",
     layers: [
+      ["disc", "Enamel disc"],
       ["ground", "Cloth cover"],
       ["page", "Leaves and ribbon"],
       ["print", "Printed lines and table"],
@@ -37,8 +41,9 @@ const studies = {
   },
   cloakresume: {
     description:
-      "The portrait and résumé lines are cut into an emerald index card. Two staggered tabs suggest a collection of drafts.",
+      "The portrait and résumé lines are cut into an ivory card above green enamel. Two staggered tabs suggest a collection of drafts.",
     layers: [
+      ["disc", "Enamel disc"],
       ["ground", "Rear tab"],
       ["divider", "Middle tab"],
       ["face", "Profile card"],
@@ -46,8 +51,9 @@ const studies = {
   },
   "cloakresume-cameo": {
     description:
-      "A side profile grows out of the original portrait dot. Two short name lines sit alongside it, with two longer résumé lines underneath.",
+      "An ivory side profile rises from the green disc. Two short name lines sit alongside it, with two longer résumé lines underneath.",
     layers: [
+      ["disc", "Enamel disc"],
       ["ground", "Portrait"],
       ["name", "Name lines"],
       ["body", "Résumé lines"],
@@ -81,7 +87,7 @@ function selectedScheme() {
 function updateAppearance() {
   const scheme = selectedScheme();
   document.documentElement.style.colorScheme = scheme;
-  for (const image of document.querySelectorAll(".master, .header-mark, .tab-mark")) {
+  for (const image of document.querySelectorAll(".family-mark, .master, .header-mark, .tab-mark")) {
     const source = new URL(image.src);
     source.hash = scheme;
     image.src = source.href;

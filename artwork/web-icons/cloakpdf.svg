@@ -1,16 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
   <title id="title">CloakPDF · Bound report</title>
-  <desc id="description">A cobalt-bound report with warm paper, a narrow amber bookmark, short printed lines and a ruled table.</desc>
+  <desc id="description">A ruled report with a cobalt cover and an amber ribbon on a blue enamel disc.</desc>
   <defs>
-    <view id="light" viewBox="0 0 256 256"/>
-    <view id="dark" viewBox="0 0 256 256"/>
-    <view id="ink" viewBox="0 0 256 256"/>
-    <view id="ground-light" viewBox="0 0 256 256"/>
-    <view id="ground-dark" viewBox="0 0 256 256"/>
-    <view id="page-light" viewBox="0 0 256 256"/>
-    <view id="page-dark" viewBox="0 0 256 256"/>
-    <view id="print-light" viewBox="0 0 256 256"/>
-    <view id="print-dark" viewBox="0 0 256 256"/>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="light-dark(#83c8ff, #599cce)"/>
+      <stop offset=".47" stop-color="light-dark(#327de5, #285c9a)"/>
+      <stop offset="1" stop-color="light-dark(#194db0, #1c3870)"/>
+    </linearGradient>
+    <linearGradient id="rim" x1=".24" y1="0" x2=".76" y2="1">
+      <stop stop-color="#fff" stop-opacity=".88"/>
+      <stop offset=".39" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".7" stop-color="#0a1540" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".46"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx=".24" cy=".16" r=".8">
+      <stop stop-color="#fff" stop-opacity=".27"/>
+      <stop offset=".68" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <view id="light" viewBox="0 0 64 64"/>
+    <view id="dark" viewBox="0 0 64 64"/>
+    <view id="ink" viewBox="0 0 64 64"/>
+    <view id="ground-light" viewBox="0 0 64 64"/>
+    <view id="ground-dark" viewBox="0 0 64 64"/>
+    <view id="page-light" viewBox="0 0 64 64"/>
+    <view id="page-dark" viewBox="0 0 64 64"/>
+    <view id="print-light" viewBox="0 0 64 64"/>
+    <view id="print-dark" viewBox="0 0 64 64"/>
+    <view id="disc-light" viewBox="0 0 64 64"/>
+    <view id="disc-dark" viewBox="0 0 64 64"/>
     <style>
       svg { color-scheme: light dark }
       svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
@@ -24,18 +41,15 @@
         --muted: light-dark(#6783aa, #637fa9);
         --grid: light-dark(#335da5, #315995);
         --cell: light-dark(#eef4fb, #e2ecf7);
-        --leaf: light-dark(#fffef6, #f6f5ed);
-        --foot: light-dark(#e7e5d7, #d9ddde);
-        --fold: light-dark(#b8cee4, #aec4de);
+        --leaf: light-dark(#fff9e9, #fff7e5);
+        --foot: light-dark(#ead6b9, #e5d7be);
+        --fold: light-dark(#c2daeb, #bbd2e2);
         --crease: light-dark(#7c9ab9, #8ba6c3);
         --cover: light-dark(#2253af, #1d447f);
         --lip: light-dark(#5989df, #4d79bb);
         --deep: light-dark(#183b7b, #112a51);
         --amber: light-dark(#ffc66c, #ffbe61);
         --amberedge: light-dark(#bf7a28, #cc8734);
-        --sky: light-dark(#f6f6f1, #424f65);
-        --base: light-dark(#e4e9ee, #263047);
-        --rim: light-dark(#d1d9e0, #53647b);
       }
       svg:has(#ink:target) {
         --ink: #202832;
@@ -52,12 +66,11 @@
         --amber: white;
         --amberedge: #202832;
       }
-      svg:has(#ink:target) .tile, svg:has(#ink:target) .shadow { display: none }
+      svg:has(#ink:target) .shadow { display: none }
+      svg:has(#disc-light:target, #disc-dark:target) > g:not(#disc) { display: none }
+      svg:has(#ink:target) #disc-base { fill: white; stroke: #202832; stroke-width: .9 }
+      svg:has(#ink:target) #disc-rim { display: none }
     </style>
-    <linearGradient id="field" x1="0" y1="0" x2=".72" y2="1">
-      <stop offset="0" stop-color="var(--sky)"/>
-      <stop offset="1" stop-color="var(--base)"/>
-    </linearGradient>
     <linearGradient id="stock" x1="0" y1="0" x2=".72" y2="1">
       <stop offset="0" stop-color="var(--leaf)"/>
       <stop offset="0.68" stop-color="var(--leaf)"/>
@@ -71,8 +84,11 @@
       <feGaussianBlur stdDeviation="3.2"/>
     </filter>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="Cloth cover">
-    <path class="tile" d="M128 8C181 8 207 8 226 27S246 72 246 126v4c0 54 0 80-19 99s-46 19-99 19-80 0-99-19S10 184 10 130v-4c0-54 0-80 19-99S75 8 128 8Z" fill="url(#field)" stroke="var(--rim)" stroke-width="1.5"/>
+  <g id="disc" inkscape:groupmode="layer" inkscape:label="Enamel disc">
+    <circle id="disc-base" cx="32" cy="32" r="30" fill="url(#enamel)"/>
+    <circle id="disc-rim" cx="32" cy="32" r="29.5" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
+  </g>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Cloth cover" transform="translate(32 32) scale(.211) translate(-128 -128)">
     <g transform="rotate(-5 128 128)">
       <rect class="shadow" x="58" y="42" width="148" height="181" rx="12" fill="#263855" opacity=".25" filter="url(#cast)"/>
       <rect x="52" y="39" width="149" height="177" rx="11" fill="var(--deep)"/>
@@ -81,7 +97,7 @@
       <path d="M71 38v173" stroke="var(--lip)" stroke-width="2"/>
     </g>
   </g>
-  <g id="page" inkscape:groupmode="layer" inkscape:label="Leaves and ribbon">
+  <g id="page" inkscape:groupmode="layer" inkscape:label="Leaves and ribbon" transform="translate(32 32) scale(.211) translate(-128 -128)">
     <g transform="rotate(-5 128 128)">
       <path d="M82 54h104v152H84q-6 0-6-6V60q0-6 4-6Z" fill="var(--fold)" stroke="var(--crease)" stroke-width="1.5"/>
       <path d="M82 49h103v154H83q-6 0-6-6V55q0-6 5-6Z" fill="var(--foot)" stroke="var(--crease)" stroke-width="1.3"/>
@@ -90,7 +106,7 @@
       <path d="M84 46v146" stroke="var(--foot)" stroke-width="2"/>
     </g>
   </g>
-  <g id="print" inkscape:groupmode="layer" inkscape:label="Printed lines and table">
+  <g id="print" inkscape:groupmode="layer" inkscape:label="Printed lines and table" transform="translate(32 32) scale(.211) translate(-128 -128)">
     <g transform="rotate(-5 128 128)">
       <path d="M95 69h45" stroke="var(--ink)" stroke-width="7" stroke-linecap="round"/>
       <path d="M95 84h64" stroke="var(--muted)" stroke-width="4" stroke-linecap="round"/>

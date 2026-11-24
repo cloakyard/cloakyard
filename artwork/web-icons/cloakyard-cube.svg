@@ -1,16 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="-126 -89 252 252" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
   <title id="title">Cloakyard · Touchdown</title>
-  <desc id="description">Four cubes form a low platform. A fifth cube descends towards its back corner.</desc>
+  <desc id="description">A fifth cube hovers above the four lower cubes on a blue enamel disc.</desc>
   <defs>
-    <view id="light" viewBox="-126 -89 252 252"/>
-    <view id="dark" viewBox="-126 -89 252 252"/>
-    <view id="ink" viewBox="-126 -89 252 252"/>
-    <view id="ground-light" viewBox="-126 -89 252 252"/>
-    <view id="ground-dark" viewBox="-126 -89 252 252"/>
-    <view id="front-light" viewBox="-126 -89 252 252"/>
-    <view id="front-dark" viewBox="-126 -89 252 252"/>
-    <view id="arrival-light" viewBox="-126 -89 252 252"/>
-    <view id="arrival-dark" viewBox="-126 -89 252 252"/>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="light-dark(#96baff, #6b89cd)"/>
+      <stop offset=".47" stop-color="light-dark(#4569d6, #364c91)"/>
+      <stop offset="1" stop-color="light-dark(#263fa4, #23316b)"/>
+    </linearGradient>
+    <linearGradient id="rim" x1=".24" y1="0" x2=".76" y2="1">
+      <stop stop-color="#fff" stop-opacity=".88"/>
+      <stop offset=".39" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".7" stop-color="#0a1540" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".46"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx=".24" cy=".16" r=".8">
+      <stop stop-color="#fff" stop-opacity=".27"/>
+      <stop offset=".68" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lit-roof" x1=".22" y1="0" x2=".78" y2="1">
+      <stop stop-color="#fff9e8"/>
+      <stop offset="1" stop-color="var(--roof)"/>
+    </linearGradient>
+    <linearGradient id="lit-west" x1=".22" y1="0" x2=".78" y2="1">
+      <stop stop-color="#e0eaff"/>
+      <stop offset="1" stop-color="var(--west)"/>
+    </linearGradient>
+    <linearGradient id="lit-east" x1=".22" y1="0" x2=".78" y2="1">
+      <stop stop-color="#a8bced"/>
+      <stop offset="1" stop-color="var(--east)"/>
+    </linearGradient>
+    <filter id="contact" x="-28%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <view id="light" viewBox="0 0 64 64"/>
+    <view id="dark" viewBox="0 0 64 64"/>
+    <view id="ink" viewBox="0 0 64 64"/>
+    <view id="ground-light" viewBox="0 0 64 64"/>
+    <view id="ground-dark" viewBox="0 0 64 64"/>
+    <view id="front-light" viewBox="0 0 64 64"/>
+    <view id="front-dark" viewBox="0 0 64 64"/>
+    <view id="arrival-light" viewBox="0 0 64 64"/>
+    <view id="arrival-dark" viewBox="0 0 64 64"/>
+    <view id="disc-light" viewBox="0 0 64 64"/>
+    <view id="disc-dark" viewBox="0 0 64 64"/>
     <style>
       svg { color-scheme: light dark }
       svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
@@ -20,37 +52,53 @@
       svg:has(#front-light:target, #front-dark:target) > g:not(#front) { display: none }
       svg:has(#arrival-light:target, #arrival-dark:target) > g:not(#arrival) { display: none }
       svg {
-        --roof: light-dark(#c7dbff, #9bd2ff);
-        --west: light-dark(#76a5fb, #578fc9);
-        --east: light-dark(#315fd3, #2879bc);
-        --join: light-dark(#eaf2ff, #183b5a);
+        --roof: light-dark(#f5f4ef, #eef5fa);
+        --west: light-dark(#bed4fa, #a8cae9);
+        --east: light-dark(#7f9fe3, #80a2db);
+        --join: light-dark(#4f6fb1, #324e82);
       }
       svg:has(#ink:target) {
+        --disc-paint: white;
+        --disc-outline: #202832;
+        --disc-width: .9;
+        --rim-opacity: 0;
+        --edge-opacity: 0;
+        --roof-paint: var(--roof);
+        --west-paint: var(--west);
+        --east-paint: var(--east);
         --roof: #fff;
         --west: #fff;
         --east: #202832;
         --join: #202832;
       }
-      .cell { stroke: var(--join); stroke-width: 1.6; stroke-linejoin: round }
-      .west { fill: var(--west) }
-      .east { fill: var(--east) }
-      .roof { fill: var(--roof) }
+      .cell { stroke: var(--join); stroke-width: 1.9; stroke-linejoin: round }
+      .west { fill: var(--west-paint, url(#lit-west)) }
+      .east { fill: var(--east-paint, url(#lit-east)) }
+      .roof { fill: var(--roof-paint, url(#lit-roof)) }
+      svg:has(#disc-light:target, #disc-dark:target) > g:not(#disc) { display: none }
+      svg:has(#ink:target) .shadow { display: none }
     </style>
     <g id="block" class="cell">
       <path class="west" d="M-48 24 0 48V104L-48 80Z"/>
       <path class="east" d="M0 48 48 24V80L0 104Z"/>
       <path class="roof" d="M0 0 48 24 0 48-48 24Z"/>
+      <path opacity="var(--edge-opacity, 1)" d="m-46 25 46 23 46-23" fill="none" stroke="#fff8e9" stroke-width="2"/>
     </g>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="Rear of platform">
+  <g id="disc" inkscape:groupmode="layer" inkscape:label="Enamel disc">
+    <circle cx="32" cy="32" r="30" fill="var(--disc-paint, url(#enamel))" stroke="var(--disc-outline, none)" stroke-width="var(--disc-width, 0)"/>
+    <circle cx="32" cy="32" r="29.5" opacity="var(--rim-opacity, 1)" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
+  </g>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Rear of platform" transform="translate(32 25.2) scale(.174)">
+    <path class="shadow" d="M-99 49-1 0l100 50v57L0 158-99 107Z" transform="translate(1 4)" fill="#142954" opacity=".55" filter="url(#contact)"/>
     <use href="#block" x="0.0" y="0.0"/>
     <use href="#block" x="-51.0" y="25.5"/>
     <use href="#block" x="51.0" y="25.5"/>
   </g>
-  <g id="front" inkscape:groupmode="layer" inkscape:label="Front cube">
+  <g id="front" inkscape:groupmode="layer" inkscape:label="Front cube" transform="translate(32 25.2) scale(.174)">
     <use href="#block" x="0.0" y="51.0"/>
   </g>
-  <g id="arrival" inkscape:groupmode="layer" inkscape:label="Arriving cube">
+  <g id="arrival" inkscape:groupmode="layer" inkscape:label="Arriving cube" transform="translate(32 25.2) scale(.174)">
     <use href="#block" x="-8.4" y="-79.6"/>
   </g>
 </svg>

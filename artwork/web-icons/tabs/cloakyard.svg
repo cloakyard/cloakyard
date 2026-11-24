@@ -1,47 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="-111 -65 222 222" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
   <title id="title">Cloakyard · Room to grow</title>
-  <desc id="description">Six cubes in the landing animation’s settled arrangement, with an outlined seventh cell on the upper right.</desc>
+  <desc id="description">Six raised cubes share a blue enamel disc with an outlined seventh cell.</desc>
   <defs>
-    <view id="light" viewBox="-111 -65 222 222"/>
-    <view id="dark" viewBox="-111 -65 222 222"/>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="light-dark(#96baff, #6b89cd)"/>
+      <stop offset=".47" stop-color="light-dark(#4569d6, #364c91)"/>
+      <stop offset="1" stop-color="light-dark(#263fa4, #23316b)"/>
+    </linearGradient>
+    <view id="light" viewBox="0 0 16 16"/>
+    <view id="dark" viewBox="0 0 16 16"/>
     <style>
       svg { color-scheme: light dark }
       svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
       svg:has(#dark:target, view[id$="-dark"]:target) { color-scheme: dark }
       svg {
-        --roof: light-dark(#c7dbff, #9bd2ff);
-        --west: light-dark(#76a5fb, #578fc9);
-        --east: light-dark(#315fd3, #2879bc);
-        --join: light-dark(#eaf2ff, #183b5a);
-        --edge: light-dark(#7299d4, #679cc6);
-        --empty: light-dark(#f4f8ff, #25384e);
+        --roof: light-dark(#f5f4ef, #eef5fa);
+        --west: light-dark(#bed4fa, #a8cae9);
+        --east: light-dark(#7f9fe3, #80a2db);
+        --join: light-dark(#4f6fb1, #324e82);
+        --edge: light-dark(#dce6ff, #c7dcf6);
       }
       .cell { stroke: var(--join); stroke-width: 4; stroke-linejoin: round }
       .west { fill: var(--west) }
       .east { fill: var(--east) }
       .roof { fill: var(--roof) }
-      .open { fill: var(--empty); stroke: var(--edge); stroke-width: 6.8; stroke-linejoin: round }
+      .open { fill: none; stroke: var(--edge); stroke-width: 6.8; stroke-linejoin: round }
     </style>
     <g id="block" class="cell">
       <path class="west" d="M-48 24 0 48V104L-48 80Z"/>
       <path class="east" d="M0 48 48 24V80L0 104Z"/>
       <path class="roof" d="M0 0 48 24 0 48-48 24Z"/>
     </g>
+    <g id="enamel-face">
+      <circle class="disc-base" cx="8" cy="8" r="7.5" fill="url(#enamel)"/>
+    </g>
+    <clipPath id="open-cell">
+      <path transform="translate(8 5.55) scale(.051) translate(51 -33.7)" d="M0 0 48 24V80L0 104 -48 80V24Z"/>
+    </clipPath>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="Four lower cubes">
+  <g id="disc" inkscape:groupmode="layer" inkscape:label="Enamel disc">
+    <use href="#enamel-face"/>
+  </g>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Four lower cubes" transform="translate(8 5.55) scale(.051)">
     <use href="#block" x="0.0" y="0.0"/>
     <use href="#block" x="-51.0" y="25.5"/>
     <use href="#block" x="51.0" y="25.5"/>
     <use href="#block" x="0.0" y="51.0"/>
   </g>
-  <g id="tier" inkscape:groupmode="layer" inkscape:label="Two upper cubes">
+  <g id="tier" inkscape:groupmode="layer" inkscape:label="Two upper cubes" transform="translate(8 5.55) scale(.051)">
     <use href="#block" x="0.0" y="-59.2"/>
     <use href="#block" x="-51.0" y="-33.7"/>
   </g>
   <g id="future" inkscape:groupmode="layer" inkscape:label="Open cell">
-    <g class="open" transform="translate(51.0 -33.7)">
-      <path d="M0 0 48 24V80L0 104 -48 80V24Z"/>
-      <path fill="none" d="m-48 24 48 24 48-24M0 48v56"/>
+    <use href="#enamel-face" clip-path="url(#open-cell)"/>
+    <g class="open" transform="translate(8 5.55) scale(.051) translate(51 -33.7)">
+      <path d="M0 0 48 24V80L0 104 -48 80V24ZM-48 24 0 48 48 24M0 48v56"/>
     </g>
   </g>
 </svg>

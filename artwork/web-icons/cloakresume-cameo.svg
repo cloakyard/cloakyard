@@ -1,7 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
   <title id="title">CloakResume · Cameo</title>
-  <desc id="description">A cut-paper side profile sits beside two name lines, above two lines of résumé text.</desc>
+  <desc id="description">An ivory side profile and résumé strokes stand in relief on a green enamel disc.</desc>
   <defs>
+    <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
+      <stop offset="0" stop-color="light-dark(#84d8ae, #5c987b)"/>
+      <stop offset=".47" stop-color="light-dark(#26936a, #26694f)"/>
+      <stop offset="1" stop-color="light-dark(#126349, #154b3f)"/>
+    </linearGradient>
+    <linearGradient id="rim" x1=".24" y1="0" x2=".76" y2="1">
+      <stop stop-color="#fff" stop-opacity=".88"/>
+      <stop offset=".39" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".7" stop-color="#0a1540" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".46"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx=".24" cy=".16" r=".8">
+      <stop stop-color="#fff" stop-opacity=".27"/>
+      <stop offset=".68" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paper" x1=".22" y1="0" x2=".78" y2="1">
+      <stop stop-color="#fff8e6"/>
+      <stop offset="1" stop-color="#e8dfbc"/>
+    </linearGradient>
     <view id="light" viewBox="0 0 64 64"/>
     <view id="dark" viewBox="0 0 64 64"/>
     <view id="ink" viewBox="0 0 64 64"/>
@@ -11,6 +30,8 @@
     <view id="name-dark" viewBox="0 0 64 64"/>
     <view id="body-light" viewBox="0 0 64 64"/>
     <view id="body-dark" viewBox="0 0 64 64"/>
+    <view id="disc-light" viewBox="0 0 64 64"/>
+    <view id="disc-dark" viewBox="0 0 64 64"/>
     <style>
       svg { color-scheme: light dark }
       svg:has(#light:target, view[id$="-light"]:target) { color-scheme: light }
@@ -19,18 +40,25 @@
       svg:has(#ground-light:target, #ground-dark:target) > g:not(#ground) { display: none }
       svg:has(#name-light:target, #name-dark:target) > g:not(#name) { display: none }
       svg:has(#body-light:target, #body-dark:target) > g:not(#body) { display: none }
-      [fill="#197859"] { fill: light-dark(#197859, #81c9a7) }
-      [fill="#368c68"] { fill: light-dark(#368c68, #9cdabb) }
-      svg:has(#ink:target) [data-ink] { fill: light-dark(#253346, #e6edf7) }
+      svg:has(#ink:target) [data-ink] { fill: #202832 }
+      svg:has(#disc-light:target, #disc-dark:target) > g:not(#disc) { display: none }
+      svg:has(#ink:target) #disc-base { fill: white; stroke: #202832; stroke-width: .9 }
+      svg:has(#ink:target) #disc-rim { display: none }
+      svg:has(#ink:target) .relief { display: none }
     </style>
   </defs>
-  <g id="ground" inkscape:groupmode="layer" inkscape:label="Portrait">
-    <path data-ink="" fill="#197859" d="M8.2 40.2c.74-3.84 3.88-5.78 7.65-7.62 2.25-1.16 2.88-2.54 2.56-4.28-.2-1.4-1.17-2.95-2.24-4.43-1.55-2.16-2.21-4.22-1.99-6.88.41-5.33 4.58-8.95 9.57-8.87 4.96.11 8.07 3.5 8.23 8.07 0 1.85.24 2.55.98 3.72l2.19 3.02c.31.49.17.94-.44 1.12l-2.16.58c.12 2.76-.88 4.53-2.97 5.16-1.11.33-2.18.12-3.35.18-.38 2.24.58 3.84 2.69 5.27 1.91 1.29 3.24 2.93 3.63 4.96Z"/>
+  <g id="disc" inkscape:groupmode="layer" inkscape:label="Enamel disc">
+    <circle id="disc-base" cx="32" cy="32" r="30" fill="url(#enamel)"/>
+    <circle id="disc-rim" cx="32" cy="32" r="29.5" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
   </g>
-  <g id="name" inkscape:groupmode="layer" inkscape:label="Name lines">
-    <path data-ink="" fill="#368c68" d="M39 18h15v3.65H39Zm0 7.25h10.45v3.65H39Z"/>
+  <g id="ground" inkscape:groupmode="layer" inkscape:label="Portrait" transform="translate(7.75 7.85) scale(.76)">
+    <path class="relief" d="M8.2 40.2c.74-3.84 3.88-5.78 7.65-7.62 2.25-1.16 2.88-2.54 2.56-4.28-.2-1.4-1.17-2.95-2.24-4.43-1.55-2.16-2.21-4.22-1.99-6.88.41-5.33 4.58-8.95 9.57-8.87 4.96.11 8.07 3.5 8.23 8.07 0 1.85.24 2.55.98 3.72l2.19 3.02c.31.49.17.94-.44 1.12l-2.16.58c.12 2.76-.88 4.53-2.97 5.16-1.11.33-2.18.12-3.35.18-.38 2.24.58 3.84 2.69 5.27 1.91 1.29 3.24 2.93 3.63 4.96Z" transform="translate(.3 .9)" fill="#1c6a50"/>
+    <path data-ink="" fill="url(#paper)" d="M8.2 40.2c.74-3.84 3.88-5.78 7.65-7.62 2.25-1.16 2.88-2.54 2.56-4.28-.2-1.4-1.17-2.95-2.24-4.43-1.55-2.16-2.21-4.22-1.99-6.88.41-5.33 4.58-8.95 9.57-8.87 4.96.11 8.07 3.5 8.23 8.07 0 1.85.24 2.55.98 3.72l2.19 3.02c.31.49.17.94-.44 1.12l-2.16.58c.12 2.76-.88 4.53-2.97 5.16-1.11.33-2.18.12-3.35.18-.38 2.24.58 3.84 2.69 5.27 1.91 1.29 3.24 2.93 3.63 4.96Z"/>
   </g>
-  <g id="body" inkscape:groupmode="layer" inkscape:label="Résumé lines">
-    <path data-ink="" fill="#197859" d="M9.15 45h44.8v3.3H9.15Zm0 7.05h30.1v3.3H9.15Z"/>
+  <g id="name" inkscape:groupmode="layer" inkscape:label="Name lines" transform="translate(7.75 7.85) scale(.76)">
+    <path data-ink="" fill="#f1eacb" d="M39 18h15v3.65H39Zm0 7.25h10.45v3.65H39Z"/>
+  </g>
+  <g id="body" inkscape:groupmode="layer" inkscape:label="Résumé lines" transform="translate(7.75 7.85) scale(.76)">
+    <path data-ink="" fill="url(#paper)" d="M9.15 45h44.8v3.3H9.15Zm0 7.05h30.1v3.3H9.15Z"/>
   </g>
 </svg>
