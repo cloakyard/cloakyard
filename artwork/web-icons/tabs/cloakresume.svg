@@ -1,12 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="title description">
   <title id="title">CloakResume · Index card</title>
-  <desc id="description">A white portrait card and two index tabs sit on a green enamel disc.</desc>
+  <desc id="description">A white portrait card with three equal index tabs sits on a green enamel disc.</desc>
   <defs>
     <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
       <stop offset="0" stop-color="light-dark(#84d8ae, #5c987b)"/>
       <stop offset=".47" stop-color="light-dark(#26936a, #26694f)"/>
       <stop offset="1" stop-color="light-dark(#126349, #154b3f)"/>
     </linearGradient>
+    <path id="index-tab" d="M0 1.95V1.6L.42.33Q.52 0 .87 0h1.38q.35 0 .45.33l.425 1.27v.35Z"/>
     <view id="light" viewBox="0 0 16 16"/>
     <view id="dark" viewBox="0 0 16 16"/>
     <style>
@@ -19,9 +20,11 @@
     <circle id="disc-base" cx="8" cy="8" r="7.5" fill="url(#enamel)"/>
   </g>
   <g id="ground" inkscape:groupmode="layer" inkscape:label="Index tabs" transform="translate(1.6 1.6) scale(.8)">
-    <path data-ink="" fill="#ccd4d9" d="M7.15 4.3 7.7 3.3h1.92v1Zm3.1 0 .57-1.18h1.82v1.18Z"/>
+    <use href="#index-tab" x="10.25" y="3.36" fill="#b8c3c9"/>
+    <use href="#index-tab" x="6.5" y="3.36" fill="#d9dfe3"/>
   </g>
   <g id="card" inkscape:groupmode="layer" inkscape:label="Card" transform="translate(1.6 1.6) scale(.8)">
-    <path data-ink="" fill="#fff" fill-rule="evenodd" d="M2.14 3.81h3.12l1.02 1.15h7.63v7.89H2.14ZM5.44 5.97a.88.88 0 1 0 .01 0Zm-1.65 3.27q.18-1.29 1.62-1.29t1.64 1.29Zm4.42-2.71v.9h3.85v-.9Zm0 1.83v.89h2.63v-.89Zm-4.3 2.21v.92h8.15v-.92Z"/>
+    <use href="#index-tab" x="2.75" y="3.36" fill="#fff"/>
+    <path data-ink="" fill="#fff" fill-rule="evenodd" d="M2.14 4.96h11.77v7.89H2.14ZM5.44 5.97a.88.88 0 1 0 .01 0Zm-1.65 3.27q.18-1.29 1.62-1.29t1.64 1.29Zm4.42-2.71v.9h3.85v-.9Zm0 1.83v.89h2.63v-.89Zm-4.3 2.21v.92h8.15v-.92Z"/>
   </g>
 </svg>

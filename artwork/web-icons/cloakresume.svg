@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" viewBox="0 0 64 64" role="img" aria-labelledby="title description">
   <title id="title">CloakResume · Index card</title>
-  <desc id="description">A white portrait card and two index tabs sit on a green enamel disc.</desc>
+  <desc id="description">A white portrait card with three equal index tabs sits on a green enamel disc.</desc>
   <defs>
     <linearGradient id="enamel" x1=".19" y1="0" x2=".75" y2="1">
       <stop offset="0" stop-color="light-dark(#84d8ae, #5c987b)"/>
@@ -17,7 +17,7 @@
       <stop stop-color="#fff" stop-opacity=".27"/>
       <stop offset=".68" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="paper" x1=".22" y1="0" x2=".78" y2="1">
+    <linearGradient id="paper" gradientUnits="userSpaceOnUse" x1="19.4" y1="14.7" x2="44.6" y2="50.1">
       <stop stop-color="#fff"/>
       <stop offset=".68" stop-color="#fff"/>
       <stop offset="1" stop-color="#e9ecef"/>
@@ -28,10 +28,9 @@
       <path d="M16.45 34.5q.75-4.1 5.55-4.1t5.55 4.1q-5.55 1.45-11.1 0Z"/>
       <path d="M32.5 27h12m-12 5.5h8.8m-23.8 7.3h27m-27 4.2h18.1" fill="none" stroke="black" stroke-width="2.15" stroke-linecap="round"/>
     </mask>
-    <mask id="index-edge" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
-      <rect width="64" height="64" fill="white"/>
-      <path d="M9.5 20.2v-4.1q0-1.4 1.4-1.4h12.75c1.9 0 2.82 4.1 4.85 4.1h24.55q1.45 0 1.45 1.45v28.4q0 1.45-1.45 1.45H10.95q-1.45 0-1.45-1.45Z" stroke="black" stroke-width="1.6"/>
-    </mask>
+    <path id="index-tab" d="M0 5.5v-.7l1.12-3.55Q1.51 0 2.78 0h7.94q1.27 0 1.66 1.25L13.5 4.8v.7Z"/>
+    <path id="card-body" mask="url(#profile-cut)" d="M9.5 19.95Q9.5 19 10.45 19h43.1q.95 0 .95 .95v28.7q0 1.45-1.45 1.45h-42.1q-1.45 0-1.45-1.45Z"/>
+    <clipPath id="below-tabs"><rect x="0" y="19" width="64" height="45"/></clipPath>
     <view id="light" viewBox="0 0 64 64"/>
     <view id="dark" viewBox="0 0 64 64"/>
     <view id="ink" viewBox="0 0 64 64"/>
@@ -55,10 +54,9 @@
       svg:has(#disc-light:target, #disc-dark:target) > g:not(#disc) { display: none }
       svg:has(#ink:target) #disc-base { fill: white; stroke: #202832; stroke-width: .9 }
       svg:has(#ink:target) #disc-rim { display: none }
-      svg:has(#ink:target) #face use[data-ink] { stroke: #202832 }
+      svg:has(#ink:target) use[href="#card-body"][data-ink] { stroke: #202832 }
       svg:has(#ink:target) .edge, svg:has(#ink:target) .contact { display: none }
     </style>
-    <path id="index-face" mask="url(#profile-cut)" d="M9.5 20.2v-4.1q0-1.4 1.4-1.4h12.75c1.9 0 2.82 4.1 4.85 4.1h24.55q1.45 0 1.45 1.45v28.4q0 1.45-1.45 1.45H10.95q-1.45 0-1.45-1.45Z"/>
     <filter id="contact" x="-15%" y="-15%" width="135%" height="140%">
       <feGaussianBlur stdDeviation=".85"/>
     </filter>
@@ -68,20 +66,23 @@
     <circle id="disc-rim" cx="32" cy="32" r="29.5" fill="url(#bloom)" stroke="url(#rim)" stroke-width="1"/>
   </g>
   <g id="ground" inkscape:groupmode="layer" inkscape:label="Rear tab" transform="translate(5.12 5.12) scale(.84)">
-    <g transform="rotate(-5 32 32)" mask="url(#index-edge)">
-      <path data-ink="" fill="#b8c3c9" d="M14.1 19.3h24.7c1.7 0 2.24-5.78 4.17-5.78h6.7q1.7 0 1.7 1.55v30.6H14.1Z"/>
+    <g transform="rotate(-5 32 32)">
+      <use href="#index-tab" x="40" y="14.2" data-ink="" fill="#b8c3c9"/>
     </g>
   </g>
   <g id="divider" inkscape:groupmode="layer" inkscape:label="Middle tab" transform="translate(5.12 5.12) scale(.84)">
-    <g transform="rotate(-5 32 32)" mask="url(#index-edge)">
-      <path data-ink="" fill="#d9dfe3" d="M13.6 19.3h12.6c1.84 0 2.58-5.04 4.25-5.04h7.03q1.7 0 1.7 1.55v28.1H13.6Z"/>
+    <g transform="rotate(-5 32 32)">
+      <use href="#index-tab" x="25.25" y="14.2" data-ink="" fill="#d9dfe3"/>
     </g>
   </g>
   <g id="face" inkscape:groupmode="layer" inkscape:label="Profile card" transform="translate(5.12 5.12) scale(.84)">
     <g transform="rotate(-5 32 32)">
-      <use class="contact" href="#index-face" transform="translate(.45 1.6)" fill="#104b37" opacity=".48" filter="url(#contact)"/>
-      <use class="edge" href="#index-face" transform="translate(.18 .68)" fill="#b6bec4" stroke="#b6bec4" stroke-width=".65"/>
-      <use data-ink="" href="#index-face" fill="url(#paper)" stroke="#fff" stroke-width=".55" stroke-linejoin="round"/>
+      <use href="#index-tab" x="10.5" y="14.2" data-ink="" fill="#fff"/>
+      <g clip-path="url(#below-tabs)">
+        <use class="contact" href="#card-body" transform="translate(.45 1.6)" fill="#104b37" opacity=".48" filter="url(#contact)"/>
+        <use class="edge" href="#card-body" transform="translate(.18 .68)" fill="#b6bec4" stroke="#b6bec4" stroke-width=".65"/>
+        <use href="#card-body" data-ink="" fill="url(#paper)" stroke="#fff" stroke-width=".55" stroke-linejoin="round"/>
+      </g>
     </g>
   </g>
 </svg>
