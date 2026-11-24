@@ -1,8 +1,20 @@
 # Web family consistency audit
 
-24 November 2026 · Air 1.8.1 audit and Air 1.8.2 release verification · Seven web builds
+24 November 2026 · Air 1.8.1 audit, Air 1.8.2 release verification and Air 1.8.3 compact editor audit · Seven web builds
 
 The audit found that a waiting app update covered the phone tool dock in CloakPDF and CloakIMG until dismissed. The seven homepages passed the same landing motion checks. The shared headers, footers and policy pages also passed their layout and navigation checks.
+
+## Mobile editor Export — Air 1.8.3
+
+The compact editor header uses CloakPDF’s original quiet download icon. At rest, the background and border are transparent. The centered 18 px glyph uses a 1.6 stroke and has a 44 × 44 px target. The existing desktop header and the final Download action retain their previous treatment. [Mobile editor headers in both themes](evidence/consistency-2026-11-24/mobile-export.png)
+
+| Editor      | Compact header                                         | Activation checked with a real file                                       |
+| ----------- | ------------------------------------------------------ | ------------------------------------------------------------------------- |
+| CloakPDF    | Below 1024 px                                          | Enter on Export opens the format dialog. Download produced an edited PDF. |
+| CloakIMG    | Below 1180 px, following the existing workspace layout | Enter on Export opens the format dialog. Download produced a WebP image.  |
+| CloakResume | Below 1024 px                                          | Enter on Export to PDF downloaded the résumé directly.                    |
+
+The editor comparison covers Chromium and WebKit in light and dark across 14 viewport sizes, including both sides of the 1024 px and 1180 px layout boundaries. It checks resting, hover and keyboard-focus appearances against the shared button styles. The three mobile download flows were exercised in both themes, and the resulting files were checked for their expected signatures. The desktop checks cover the existing filled Export action. Installer links, native apps, physical devices and spoken screen-reader output were outside this mobile-header change.
 
 ## Release verification — Air 1.8.2
 

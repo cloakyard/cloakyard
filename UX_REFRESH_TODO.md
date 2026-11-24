@@ -1,6 +1,6 @@
 # Cloakyard Air — full UX refresh
 
-Status: **active — Air 1.8.2 closes the family software audit findings and retains the landing reveal across the seven public homepages. Physical-device acceptance remains open** · Direction: **Air** · Started: **2026-10-11**
+Status: **active — Air 1.8.3 aligns compact editor Export controls across PDF, IMG and Resume. Physical-device acceptance remains open** · Direction: **Air** · Started: **2026-10-11**
 
 CloakIMG implementation and deployment are verified; see Phase 6 and the
 [release ledger](docs/air/cloakimg-release-2026-10-30.md). Physical device/assistive
@@ -31,7 +31,7 @@ The separately requested Drop installer now uses Air.
 - [x] Keep the waiting-update notice clear of the PDF and IMG phone toolbars.
 - [x] Show an immediately visible script-disabled entry in PDF and IMG.
 - [x] Add an accessible IMG editor loading status and resolve Roll’s missing installation label.
-- [x] Reconcile PDF’s documented compact Export appearance with the family contract.
+- [x] Apply PDF’s quiet compact Export icon across all three editing workspaces. [Mobile comparison](docs/air/consistency-audit-2026-11-24.md#mobile-editor-export--air-183).
 
 ## Product landing reveals and web dependencies — 2026-11-24
 
