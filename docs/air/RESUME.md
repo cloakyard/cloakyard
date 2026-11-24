@@ -7,6 +7,13 @@ implementation history and evidence. Older “Next” suggestions are historical
 resolve them against the latest checkpoint and source before repeating work.
 `UX_REFRESH_TODO.md` remains the exhaustive scope, including acceptance still open.
 
+### Full web consistency audit — 2026-11-24
+
+The [per-view audit and release verification](consistency-audit-2026-11-24.md)
+record the six initial findings and their corrections in Air 1.8.2. The compact
+PDF Export action follows the filled family style. The three editors keep their
+update notices clear of workspace controls.
+
 ### Product landing reveals and dependencies — 2026-11-24
 
 The six product homepages now use the directory reveal. Air 1.8.1 adds initial

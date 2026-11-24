@@ -164,8 +164,13 @@ try {
         }
       await page.setViewport({ width: 390, height: 844 });
       await page.evaluate(() => (document.documentElement.style.fontSize = "16px"));
-      await page.click(".air-contents a:last-child");
-      const id = decodeURIComponent(new URL(page.url()).hash.slice(1));
+      if (!(await page.$eval(".air-contents", (node) => node.open)))
+        await page.click(".air-contents summary");
+      const lastEntry = ".air-contents nav a:last-of-type";
+      const hash = await page.$eval(lastEntry, (link) => link.hash);
+      const id = decodeURIComponent(hash.slice(1));
+      await page.click(lastEntry);
+      await page.waitForFunction((target) => location.hash === target, {}, hash);
       assert.equal(await page.evaluate(() => document.activeElement.id), id, `${app} anchor focus`);
       await page.reload({ waitUntil: "networkidle0" });
       assert.equal(

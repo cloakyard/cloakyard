@@ -244,6 +244,17 @@ try {
       forcedColors: "none",
     });
   }
+  const staticPage = await browser.newPage({
+    viewport: { width: 390, height: 844 },
+    javaScriptEnabled: false,
+  });
+  await staticPage.goto(base);
+  const heading = await staticPage.locator("h1").first().boundingBox();
+  assert.ok(
+    heading && heading.y >= 0 && heading.y < 844,
+    `${product}: visible entry without JavaScript`,
+  );
+  await staticPage.close();
   if (out) await writeFile(resolve(out, engine + ".json"), JSON.stringify(layouts, null, 2) + "\n");
   console.log(
     engine +
